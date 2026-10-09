@@ -1,0 +1,1132 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=24mm]{geometry}
+\usepackage{CJKutf8}
+\usepackage{amsmath,amssymb,amsthm,bm}
+\usepackage{booktabs,longtable,array}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[unicode,colorlinks=true,linkcolor=MidnightBlue,citecolor=MidnightBlue,urlcolor=MidnightBlue]{hyperref}
+\usepackage{fancyhdr}
+\setlength{\parindent}{1em}
+\setlength{\parskip}{0.35em}
+\setlength{\emergencystretch}{2em}
+\renewcommand{\arraystretch}{1.25}
+\numberwithin{equation}{section}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\id}{\operatorname{id}}
+\newcommand{\rank}{\operatorname{rank}}
+\newcommand{\I}{\mathbf{1}}
+\newcommand{\ket}[1]{\lvert#1\rangle}
+\newcommand{\bra}[1]{\langle#1\rvert}
+\newcommand{\braket}[2]{\langle#1\vert#2\rangle}
+\newcommand{\D}[1]{\mathcal D_{#1}}
+\newcommand{\vid}[2]{\href{https://www.youtube.com/watch?v=3gDSaNy1O7Y\&t=#1s}{#2}}
+\newcommand{\source}[1]{\par\noindent\textcolor{MidnightBlue}{\textbf{動画対応：}#1}\par}
+\newcommand{\supp}[3]{\par\smallskip\noindent\textcolor{BrickRed}{\textbf{補足 #1}}\quad\textbf{資料：}#2\par\noindent\textbf{ここで適用できる理由：}#3\par}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small Open Systems: Lecture 1 Review}
+\fancyhead[R]{\small Pajer / IHES 2026}
+\fancyfoot[C]{\thepage}
+\setlength{\headheight}{14pt}
+\begin{document}
+\begin{CJK*}{UTF8}{min}
+\renewcommand{\contentsname}{目次}
+\renewcommand{\refname}{参考文献と閲覧範囲}
+\title{開放量子系の有効記述\\密度行列から GKSL 方程式へ\\\large Enrico Pajer 氏・IHES 第1講の数式詳解レビュー}
+\author{対象動画の説明を再構成し、省略された導出を明示的に補足}
+\date{2026年10月4日}
+\maketitle
+\begin{abstract}
+観測しない自由度を環境として扱うと、全体系がユニタリーに発展していても、観測する部分系の記述には密度行列、情報の移動、非ハミルトニアンな時間発展が必要になる。本稿は、Enrico Pajer 氏による ``EFT of Open Systems: Density Matrices and the Operator Formalism (1/4)''（1時間40分33秒）の論理を、複合系、部分トレース、Schmidt 分解、エントロピー、縮約動力学、CPTP 写像、半群、GKSL 定理、微視的近似の順に追う。動画で省略された計算は番号付きの補足として展開する。数学的構造定理と、その構造を具体的な物理系で正当化する近似を区別し、適用条件を各導出に付す。
+\end{abstract}
+\tableofcontents
+\clearpage
+
+\section{対象・体裁・読み方}
+\label{sec:editorial}
+\subsection{対象と確認に用いた資料}
+主資料は\href{https://www.youtube.com/watch?v=3gDSaNy1O7Y}{対象動画}\cite{video}である。公開元は Institut des Hautes Études Scientifiques、講師は Enrico Pajer 氏。講義は2026年7月6日の IHES Summer School の第1講である。動画の時刻は挨拶も含むプレーヤー表示に合わせる。
+
+本稿では、タイムスタンプ付きの日本語自動生成字幕を通読し、数式を講師本人の公開ノート\cite{pajer}と照合した。板書は43分付近など一部の画面を確認した。英語原語の完全な逐語録や全フレームの検証ではない。字幕には「行」と $\rho$、「合成」と分解、「ミクロ性」と Markov 性などの認識の揺れがあるため、発言の逐語的再現ではなく、文脈と数式を照合した内容レビューとする。細かな語調や字幕で不明瞭な語の断定は避ける。
+
+補足の主資料は同じ講師の \emph{Lectures on Open Systems and Cosmology}, arXiv:2607.14351v1 である。これは動画より後に公開された、全講義を含む140ページのノートであり、第1講そのものの逐語録ではない。本稿は主に第1・2節を参照する。第2講以降の Schwinger--Keldysh 経路積分、インフレーションの具体的モデル、ゲージ理論の構成は本文に取り込まない。
+
+\subsection{動画の主張と補足の区別}
+各節冒頭の「動画対応」は、説明が現れるおおよその時刻範囲を示す。\textcolor{BrickRed}{「補足 B01」等}は本稿で追加した導出・例・適用条件であり、講師が動画中にその計算を実演したという意味ではない。補足には、資料の節、使用する場所、動画の仮定にどう合わせたかを記載する。付録\ref{app:ledger}に対応表を集約する。
+
+\subsection{章立てと動画との対応}
+\begin{longtable}{p{0.06\textwidth}p{0.42\textwidth}p{0.21\textwidth}p{0.21\textwidth}}
+\toprule
+章 & 内容 & 動画の対応時刻 & 追加する主な行間\\\midrule\endhead
+1 & 対象・体裁・読み方 & 全体 & 出典と検証範囲\\
+2 & 開放系と宇宙論・重力への動機 & 0:13--17:52 & 前提の整理\\
+3 & 複合系・密度行列・部分トレース & 17:52--32:03 & 成分計算・期待値の一致\\
+4 & Schmidt 分解と縮約スペクトル & 32:12--43:04 & 特異値分解からの証明\\
+5 & エントロピーとエンタングルメント & 43:04--51:39 & 純粋性との同値・例\\
+6 & 閉じた系と開いた系の時間発展 & 51:45--1:00:45 & 交換子と情報保存の導出\\
+7 & CPTP 写像と Kraus 表現 & 1:00:49--1:10:07 & 部分転置の反例・CPTP の証明\\
+8 & Markov 性・半群・Liouvillian & 1:10:16--1:22:17 & 無限小生成子の導出\\
+9 & GKSL 定理と Lindblad 方程式 & 1:22:17--1:29:14 & 短時間写像・二重交換子\\
+10 & 微視的導出を支える近似 & 1:29:25--1:35:06 & Born・Markov・secular の各段階\\
+11 & 最後の質疑と適用範囲 & 1:35:08--1:40:18 & Lamb shift・表現の非一意性\\
+付録 & 用語、時間依存の場合、補足出典台帳 & 関連箇所 & 本文との区別を維持\\\bottomrule
+\end{longtable}
+
+\subsection{記号と数学的範囲}
+動画の $A,B$ を複合系の一般論ではそのまま使い、動力学では $A\to S$（system）、$B\to E$（environment）と読み替える。$\mathcal H$ は Hilbert 空間、$H$ は Hamiltonian、$\mathcal L$ は演算子に作用する超演算子である。$\I_A$ は Hilbert 空間上の恒等演算子、$\id_A$ は演算子空間上の恒等写像を表す。
+
+基本計算は有限次元で行う。Schmidt 分解などは適切な可分 Hilbert 空間にも拡張できるが、無限次元ではトレース級性、作用素の定義域、強連続性などの条件を別途要する。動画の1:21付近の留保に合わせ、有限次元の証明を量子場理論の無限自由度へ無条件に移さない。自然対数を用い、$k_B=1$、原則 $\hbar=1$ とする。したがって $H$ の単位は時間の逆数、Lindblad 演算子 $L_\mu$ の単位は時間の逆数の平方根である。
+
+\section{開放系とは何か：講義の動機}
+\label{sec:motivation}
+\source{\vid{86}{1:26}--\vid{1072}{17:52}。冒頭の動機、宇宙論・重力、全4講の位置づけ。}
+\subsection{環境は、観測・記述しない自由度}
+講師の出発点は、環境を「空間的に外側にあるもの」だけに限定しないことである。離れた物体だけでなく、測定しない高エネルギーモード、重い自由度、複雑すぎて記述しない自由度も環境になりうる。開放系とは、こうした自由度と相互作用する部分系の有効記述である。
+
+ここでの「観測しない」は、物理的に存在しないという意味ではない。全体系の中には依然として存在し、相互作用や相関を通じて観測対象へ影響する。この意味で、環境を消去する開放系の考え方は、有効場理論で不要な自由度を消去する発想と近い。ただし講師はこの見方を、自身の研究上の視点として提示している。
+
+全体系と部分系の区別を、先取りして書けば
+\begin{equation}
+\mathcal H_{\rm total}=\mathcal H_S\otimes\mathcal H_E,
+\qquad \rho_S=\Tr_E\rho_{SE}.
+\label{eq:split-preview}
+\end{equation}
+部分系の発展には散逸、ノイズ、デコヒーレンス、エントロピーの変化が現れうる。全体系の Hamiltonian を知らず、環境も観測できない場合には、その影響を有効な係数・演算子で記述したい。
+
+4:29付近では、環境効果の大きさが環境の占有数や環境演算子の期待値に関連するという経験的な説明がある。これは普遍的な厳密比例則として提示されたものではない。具体的な係数の相互作用・環境相関への依存は、第\ref{sec:micro}章の補足 B17 で示す。
+
+\subsection{宇宙論を開放系として見る理由}
+5:19--9:17付近で講師は、インフレーション、暗黒物質、暗黒エネルギーについて、時空を満たすセクターの微視的な正体が不明である一方、その重力的な効果を観測している点を強調する。そこで、未知の環境の存在下における重力の有効理論という視点を提案する。特定の未知セクターを最初から一種類の粒子や単一のスカラー場に決めるより、観測可能な自由度と許される有効構造から始めるという動機である。
+
+これは「すべての宇宙論的観測が例外なく重力だけを直接測る」という一般定理ではない。講義が論じる主要な未知セクターについて、その観測的手掛かりが主として重力効果であるという範囲で読む。
+
+\subsection{重力での時間依存と観測限界}
+9:20--11:28付近では、物質を入れれば背景時空も変化すること、時間並進対称性や便利な保存エネルギーが一般にはないこと、重力が広い範囲の物質に結合すること、地平線の存在が観測可能な自由度を制限することが挙げられる。
+
+\supp{B20}{Pajer\cite{pajer}, Introduction、および本稿の第\ref{sec:micro}章で参照する §2.6。使用箇所：本章の動機の適用範囲。}{動画の研究上の視点を、背景の時間依存性と観測対象の範囲に沿って読む。「時間に依存する重力系では便利な保存エネルギーがない」という動機を、すべての保存則を否定する普遍的主張へ拡大しない。}
+このエネルギーの説明は、時間並進対称性に対応する大域的な保存量を当然には使えないという文脈である。宇宙論に関する動機も、未知セクターの主な重力的手掛かりを論じる範囲で読み、あらゆる観測の一般定理にはしない。
+
+11:39以降の質疑では、地平線の外側が直接影響しなくても、内外のエンタングルメントが部分系の記述を混合状態にする可能性が説明される。またブラックホールや流体力学における散逸の話題が出るが、具体的な地平線の力学の導出はこの講義の範囲外である。
+
+\subsection{大きな閉じた系へ埋め込めても、部分系を記述する価値は残る}
+14:10付近の質疑の趣旨は、開放系をより大きなユニタリーな系の一部として考えられる場合があっても、全宇宙を実際に解くことが実用的とは限らないという点にある。状態の purification と動力学の unitary dilation は関連するが別の構成であり、両者を同一の定理とはしない。
+
+\supp{B01}{Pajer\cite{pajer}, §1.4 ``Purification''、§2.2。使用箇所：本節。}{動画で述べられる「より大きい系」を、まず一時刻の密度行列についてだけ具体化する。これは環境の時間発展や Markov 性を仮定する計算ではない。}
+有限次元で $\rho_S=\sum_i p_i\ket{i}_S\bra{i}_S$ と対角化し、補助空間 $R$ に同数の直交ベクトルを取ると
+\begin{equation}
+\ket{\Psi}_{SR}=\sum_i\sqrt{p_i}\ket{i}_S\ket{i}_R,
+\qquad \Tr_R\ket{\Psi}\bra{\Psi}=\rho_S.
+\label{eq:purification}
+\end{equation}
+これは混合状態を純粋状態の縮約として実現する構成である。特定の物理的環境がこの $R$ であることや、任意の過程に小さく時間不変な浴が存在することまでは結論しない。
+
+\section{複合系・密度行列・部分トレース}
+\label{sec:composite}
+\source{\vid{1072}{17:52}--\vid{1923}{32:03}。テンソル積、局所観測量、密度行列の短い復習、縮約密度行列。}
+\subsection{Hilbert 空間のテンソル積}
+二つの系 $A,B$ を合わせた純粋状態は
+\begin{equation}
+\mathcal H_{AB}=\mathcal H_A\otimes\mathcal H_B
+\label{eq:tensor}
+\end{equation}
+のベクトルで表す。$\{\ket{e_a}\}_{a=1}^{d_A}$ と $\{\ket{f_\alpha}\}_{\alpha=1}^{d_B}$ を正規直交基底とすると、$\{\ket{e_a}\otimes\ket{f_\alpha}\}$ が複合系の基底であり
+\begin{equation}
+\ket{\Psi}=\sum_{a=1}^{d_A}\sum_{\alpha=1}^{d_B}
+c_{a\alpha}\ket{e_a}\otimes\ket{f_\alpha},
+\qquad \sum_{a,\alpha}|c_{a\alpha}|^2=1.
+\label{eq:generalpsi}
+\end{equation}
+一般には係数行列 $C=(c_{a\alpha})$ を指定する必要がある。積状態は、ある二つの規格化ベクトルを用いて
+\begin{equation}
+\ket{\Psi}=\ket{\phi}_A\otimes\ket{\chi}_B,
+\qquad c_{a\alpha}=u_a v_\alpha
+\label{eq:product}
+\end{equation}
+と書ける特別な場合である。純粋状態について、この形で書けなければ entangled と呼ぶ。純粋状態の「積でない」と、密度行列の「混合である」は別の性質である。
+
+\subsection{演算子と、部分系で測定する量}
+複合系の演算子は、有限次元では積演算子の線形結合として
+\begin{equation}
+O_{AB}=\sum_j O_A^{(j)}\otimes O_B^{(j)}
+\end{equation}
+と書ける。積演算子の作用は
+\begin{equation}
+(O_A\otimes O_B)(\ket{\phi}_A\otimes\ket{\chi}_B)
+=(O_A\ket{\phi}_A)\otimes(O_B\ket{\chi}_B)
+\end{equation}
+を線形に拡張したものになる。
+
+講義で本質的なのは、$A$ だけを測定する演算子
+\begin{equation}
+Q_{AB}=Q_A\otimes\I_B
+\label{eq:localobs}
+\end{equation}
+である。$B$ を測定しないと決めたとき、この形の任意の観測量の期待値を、$A$ 上のデータだけから計算したい。
+
+\subsection{密度行列：スペクトルと純粋性}
+25分付近で講師は、状態の古典的な不確かさも含めた表現として
+\begin{equation}
+\rho=\sum_k p_k\ket{\psi_k}\bra{\psi_k},
+\quad p_k\geq0,\quad \sum_k p_k=1,
+\quad \braket{\psi_k}{\psi_k}=1
+\label{eq:ensemble}
+\end{equation}
+を述べる。この ensemble 表現では $\ket{\psi_k}$ が互いに直交する必要はない。状態がどのベクトルとして準備されたか分からないという不確かさを、量子測定の確率性に重ねて表せる。
+
+\supp{B02}{Pajer\cite{pajer}, §1.1。使用箇所：式\eqref{eq:ensemble}--\eqref{eq:pureequiv}。}{動画25:18--27:16および37:49--39:15の二つの特徴付けを、有限次元のスペクトル定理で結ぶ。ensemble の確率 $p_k$ と、純粋状態の振幅を混同しない。}
+密度行列の作用素としての条件は
+\begin{equation}
+\rho^\dagger=\rho,\qquad \rho\geq0,\qquad \Tr\rho=1.
+\label{eq:densityconditions}
+\end{equation}
+$\rho\geq0$ は任意の $\ket{v}$ に対して $\bra{v}\rho\ket{v}\geq0$ を意味する。式\eqref{eq:ensemble}からは
+\begin{equation}
+\bra{v}\rho\ket{v}=\sum_kp_k|\braket{\psi_k}{v}|^2\geq0,
+\qquad \Tr\rho=\sum_kp_k=1
+\end{equation}
+が従う。逆に式\eqref{eq:densityconditions}を満たせば、スペクトル定理により
+\begin{equation}
+\rho=\sum_nq_n\ket{n}\bra{n},
+\quad q_n\geq0,\quad\sum_nq_n=1,
+\quad\braket{m}{n}=\delta_{mn}
+\label{eq:spectral}
+\end{equation}
+と書ける。ensemble 表現は一般に非一意であるが、固有値の多重集合は一意である。
+
+純粋状態の密度行列 $\rho=\ket{\psi}\bra{\psi}$ は
+\begin{equation}
+\rho^2=\ket{\psi}\braket{\psi}{\psi}\bra{\psi}=\rho,
+\qquad \Tr\rho^2=1.
+\end{equation}
+逆向きも、固有値を用いると確認できる。$q_n\in[0,1]$ より
+\begin{equation}
+1-\Tr\rho^2=\sum_n(q_n-q_n^2)
+=\sum_nq_n(1-q_n)\geq0.
+\end{equation}
+等号が成り立つには各非零固有値が1でなければならず、$\sum_nq_n=1$ から非零固有値は一つだけとなる。したがって
+\begin{equation}
+\rho\text{ は純粋}\quad\Longleftrightarrow\quad
+\rho^2=\rho\quad\Longleftrightarrow\quad\Tr\rho^2=1.
+\label{eq:pureequiv}
+\end{equation}
+混合状態では $\Tr\rho^2<1$ である。動画28:44--29:00付近の正規化の訂正に合わせ、本稿の確率は $\sum_kp_k=1$ とする。振幅の二乗の和が1になる条件は後述の Schmidt 係数に対する別の条件である。
+
+\subsection{部分トレースの定義と成分計算}
+全体系の状態 $\rho_{AB}$ に対して、$A$ の縮約密度行列は
+\begin{equation}
+\rho_A:=\Tr_B\rho_{AB}
+=\sum_\alpha(\I_A\otimes\bra{f_\alpha})
+\rho_{AB}(\I_A\otimes\ket{f_\alpha}).
+\label{eq:ptrace}
+\end{equation}
+右辺は $A$ 上の演算子である。$B$ の添字を閉じる一方、$A$ の添字は残す。
+
+\supp{B03}{Pajer\cite{pajer}, §1.3。使用箇所：式\eqref{eq:ptracecomponents}--\eqref{eq:allinfo}。}{動画は $Q_A\otimes\I_B$ 型の観測量だけを対象とする。本補足も同じ観測量の集合について、成分で期待値の一致を証明する。}
+行列要素を $\rho_{a\alpha,b\beta}=\bra{e_a,f_\alpha}\rho_{AB}\ket{e_b,f_\beta}$ と定義すると
+\begin{equation}
+(\rho_A)_{ab}=\sum_\alpha \rho_{a\alpha,b\alpha}.
+\label{eq:ptracecomponents}
+\end{equation}
+別の正規直交基底 $\ket{g_\mu}=\sum_\alpha W_{\alpha\mu}\ket{f_\alpha}$ に変更しても、$\sum_\mu W_{\alpha\mu}W^*_{\beta\mu}=\delta_{\alpha\beta}$ より同じ $\rho_A$ を得る。部分トレースは基底を使って計算するが、結果は基底に依存しない。
+
+さらに、$\rho_A$ が密度行列であることも分かる。Hermiticity は式\eqref{eq:ptrace}の随伴から従い、正値性は
+\begin{equation}
+\bra{v}\rho_A\ket{v}
+=\sum_\alpha\bra{v,f_\alpha}\rho_{AB}\ket{v,f_\alpha}\geq0
+\end{equation}
+から従う。トレースは
+\begin{equation}
+\Tr_A\rho_A=\sum_{a,\alpha}\rho_{a\alpha,a\alpha}
+=\Tr_{AB}\rho_{AB}=1.
+\end{equation}
+局所観測量の期待値は
+\begin{align}
+\Tr_{AB}[\rho_{AB}(Q_A\otimes\I_B)]
+&=\sum_{a,b,\alpha}\rho_{a\alpha,b\alpha}(Q_A)_{ba}\nonumber\\
+&=\sum_{a,b}(\rho_A)_{ab}(Q_A)_{ba}
+=\Tr_A(\rho_AQ_A).
+\label{eq:allinfo}
+\end{align}
+これが動画29:08--30:31の「部分系について必要な情報は縮約密度行列にある」の正確な内容である。ここでいう情報は、任意の $A$ 局所観測量についての一時刻の統計であり、$A$ と $B$ の相関全体まで復元できるという意味ではない。
+
+\supp{B04}{Pajer\cite{pajer}, §1.3 の計算法。使用箇所：以下の具体例。}{動画31:42付近で例として qubit が挙がるため、二つの qubit で同じ部分トレースを実演する。状態の選択は本稿の補足例である。}
+\begin{equation}
+\ket{\Psi_\theta}=\cos\theta\ket{00}+\sin\theta\ket{11},
+\qquad 0\leq\theta\leq\frac{\pi}{2}.
+\label{eq:theta}
+\end{equation}
+全密度行列には対角項に加え、$\cos\theta\sin\theta\ket{00}\bra{11}$ とその随伴がある。しかし
+\begin{equation}
+\Tr_B(\ket{00}\bra{11})=\ket{0}\bra{1}\braket{1}{0}=0
+\end{equation}
+なので
+\begin{equation}
+\rho_A=\begin{pmatrix}\cos^2\theta&0\\0&\sin^2\theta\end{pmatrix}.
+\label{eq:theta-reduced}
+\end{equation}
+例えば $Q_A=\sigma_z$ なら、全体系でも縮約系でも $\langle\sigma_z\rangle=\cos^2\theta-\sin^2\theta=\cos2\theta$ である。
+
+\section{Schmidt 分解と縮約密度行列のスペクトル}
+\label{sec:schmidt}
+\source{\vid{1932}{32:12}--\vid{2584}{43:04}。Schmidt 定理、ランクの上限、純粋全状態の縮約。}
+\subsection{定理の内容と、二種類の係数}
+任意の規格化された二体系の純粋状態は、状態に応じて選んだ二つの正規直交集合を用いて
+\begin{equation}
+\ket{\Psi}=\sum_{i=1}^{r}s_i\ket{i}_A\otimes\ket{i}_B,
+\qquad s_i>0,\qquad \sum_{i=1}^{r}s_i^2=1
+\label{eq:schmidt}
+\end{equation}
+と書ける。零係数を和に含める流儀では $s_i\geq0$ とする。$s_i$ が Schmidt 係数であり、板書の $\phi_i$、公開ノートの $\lambda_i$ に相当する。本稿は、後に現れる動力学の写像 $\Phi$ との混同を避けて $s_i$ とする。
+
+\begin{equation}
+r=\#\{i:s_i\neq0\}\leq\min(d_A,d_B)
+\label{eq:rankbound}
+\end{equation}
+は Schmidt rank である。例えば $A$ が一 qubit なら、$B$ が非常に大きくても一つの純粋全状態を展開するために必要な $B$ の直交ベクトルは高々二つである。ただし、この二つのベクトルを具体的に知るのが容易になるとは限らず、状態を変えればそれらも変わる。
+
+\subsection{特異値分解からの導出}
+\supp{B05}{Pajer\cite{pajer}, §1.4 ``Schmidt decomposition and Schmidt number''。使用箇所：式\eqref{eq:svd}--\eqref{eq:svdorthogonal}。}{動画35:08--35:23で、証明には特異値分解を使い、板書では省略すると述べる。同じ係数行列 $c_{a\alpha}$ を使って、その省略部分だけを補う。}
+式\eqref{eq:generalpsi}の $d_A\times d_B$ 行列 $C$ を特異値分解すると
+\begin{equation}
+C=U\Sigma V^\dagger,
+\qquad c_{a\alpha}=\sum_{i=1}^{r}U_{ai}s_iV^*_{\alpha i}
+\label{eq:svd}
+\end{equation}
+となる。$U,V$ はユニタリー、$\Sigma$ は非負の対角成分を持つ長方形行列である。そこで
+\begin{equation}
+\ket{i}_A=\sum_aU_{ai}\ket{e_a},
+\qquad \ket{i}_B=\sum_\alpha V^*_{\alpha i}\ket{f_\alpha}
+\label{eq:svdbases}
+\end{equation}
+と定義する。$B$ 側の係数の複素共役は $V^\dagger$ から来るものであり、省略すると一般の複素状態に対して誤った展開になる。
+
+式\eqref{eq:svd}を式\eqref{eq:generalpsi}へ代入すれば式\eqref{eq:schmidt}となる。直交性は
+\begin{equation}
+\braket{i_A}{j_A}=\sum_aU^*_{ai}U_{aj}=\delta_{ij},
+\quad
+\braket{i_B}{j_B}=\sum_\alpha V_{\alpha i}V^*_{\alpha j}=\delta_{ij}
+\label{eq:svdorthogonal}
+\end{equation}
+である。規格化より $1=\braket{\Psi}{\Psi}=\sum_i s_i^2$。また $r=\rank C$ は二つの次元の小さい方を超えないため、式\eqref{eq:rankbound}も従う。
+
+\subsection{部分トレースを一行ずつ実行する}
+全体系が純粋であるという動画39:30付近の仮定を維持する。Schmidt 形から
+\begin{equation}
+\rho_{AB}=\ket{\Psi}\bra{\Psi}
+=\sum_{i,j}s_is_j\ket{i}_A\bra{j}_A\otimes\ket{i}_B\bra{j}_B.
+\end{equation}
+よって
+\begin{align}
+\rho_A
+&=\sum_{i,j}s_is_j\ket{i}_A\bra{j}_A
+\Tr_B(\ket{i}_B\bra{j}_B)\nonumber\\
+&=\sum_{i,j}s_is_j\ket{i}_A\bra{j}_A\braket{j_B}{i_B}\nonumber\\
+&=\sum_is_i^2\ket{i}_A\bra{i}_A.
+\label{eq:schmidt-reduced}
+\end{align}
+同じ計算を逆向きにすれば
+\begin{equation}
+\rho_B=\sum_is_i^2\ket{i}_B\bra{i}_B.
+\end{equation}
+したがって $\rho_A$ と $\rho_B$ の非零固有値は
+\begin{equation}
+p_i=s_i^2,\qquad\sum_ip_i=1,
+\qquad\rank\rho_A=\rank\rho_B=r
+\label{eq:common-spectrum}
+\end{equation}
+で一致する。空間の次元が違えば、付随する零固有値の数は違ってよい。動画の「同じ固有値」はこの非零スペクトルについての主張である。
+
+\subsection{純粋全状態のエンタングルメントと混合性の同値}
+式\eqref{eq:product}では $C$ が階数1なので $r=1$。逆に $r=1$ なら式\eqref{eq:schmidt}は一つの積である。式\eqref{eq:common-spectrum}より、縮約状態が純粋であることも $r=1$ と同値である。従って
+\begin{equation}
+\begin{split}
+\ket{\Psi}\text{ は積状態}
+&\Longleftrightarrow r=1
+\Longleftrightarrow\rho_A\text{ は純粋}
+\Longleftrightarrow\rho_B\text{ は純粋},\\
+\ket{\Psi}\text{ は entangled}
+&\Longleftrightarrow r>1
+\Longleftrightarrow\rho_A\text{ は混合}
+\Longleftrightarrow\rho_B\text{ は混合}.
+\end{split}
+\label{eq:entmixed}
+\end{equation}
+この結論には\textbf{全状態が純粋}という仮定が必要である。
+
+\section{エントロピーとエンタングルメント}
+\label{sec:entropy}
+\source{\vid{2584}{43:04}--\vid{3099}{51:39}。von Neumann entropy、自然対数、積状態との同値、省略する話題。}
+\subsection{行列の対数とエントロピー}
+定義は
+\begin{equation}
+S(\rho)=-\Tr(\rho\ln\rho).
+\label{eq:vn}
+\end{equation}
+零固有値がある場合には、$\ln\rho$ を支持空間上で扱い、最終式で $0\ln0:=0$ と連続延長する。式\eqref{eq:spectral}で対角化すれば
+\begin{equation}
+\ln\rho=\sum_{q_n>0}(\ln q_n)\ket{n}\bra{n},
+\qquad S(\rho)=-\sum_{q_n>0}q_n\ln q_n.
+\label{eq:spectralentropy}
+\end{equation}
+動画44:24--45:18の行列対数の計算はこれである。スペクトルに対しては Shannon entropy と同じ式になるが、任意の ensemble 表現の $p_k$ を無条件に代入してよいわけではない。
+
+\supp{B06}{Pajer\cite{pajer}, §1.1 および §1.4。使用箇所：式\eqref{eq:entropyzero}--\eqref{eq:entropybound}と混合全状態の留保。}{動画のエントロピーは自然対数を用い、Schmidt 分解では全状態を純粋に限定している。その同じ条件の下で必要十分条件を導き、適用範囲を示す。}
+$0<q_n\leq1$ なので、各 $-q_n\ln q_n\geq0$。零になるには唯一の非零固有値が1でなければならない。従って
+\begin{equation}
+S(\rho)\geq0,\qquad
+S(\rho)=0\Longleftrightarrow\rho\text{ は純粋}.
+\label{eq:entropyzero}
+\end{equation}
+有限次元 $d$ では、一様分布のエントロピーが最大となり $S(\rho)\leq\ln d$ である。Schmidt rank が $r$ なら
+\begin{equation}
+S(\rho_A)=S(\rho_B)=-\sum_{i=1}^{r}p_i\ln p_i
+\leq\ln r\leq\ln\min(d_A,d_B).
+\label{eq:entropybound}
+\end{equation}
+最後の上限は有限次元の場合であり、無限次元では一般にエントロピーが有限とは限らない。
+
+\subsection{純粋全状態の entanglement entropy}
+動画の定義に従い、$\rho_{AB}=\ket{\Psi}\bra{\Psi}$ の場合に
+\begin{equation}
+S_{\rm ent}(\Psi):=S(\rho_A)=S(\rho_B)
+\label{eq:ententropy}
+\end{equation}
+とする。式\eqref{eq:entmixed}と式\eqref{eq:entropyzero}をまとめると
+\begin{equation}
+\begin{split}
+S_{\rm ent}=0&\Longleftrightarrow\ket{\Psi}\text{ は積状態},\\
+S_{\rm ent}>0&\Longleftrightarrow\ket{\Psi}\text{ は entangled}.
+\end{split}
+\label{eq:entzero}
+\end{equation}
+全状態は純粋なままで $S(\rho_{AB})=0$ なのに、$S(\rho_A)$ と $S(\rho_B)$ が正になる。この情報は $A$ と $B$ の関係に保持されており、部分系だけの状態に閉じ込められてはいない。
+
+全状態が混合の場合には、縮約状態のエントロピーだけを entanglement の量と解釈できない。例えば
+\begin{equation}
+\rho_{AB}=\frac12\ket{00}\bra{00}+\frac12\ket{11}\bra{11}
+\label{eq:classicalcorrelation}
+\end{equation}
+は積状態の凸結合なので separable だが、$\rho_A=\rho_B=\I/2$ で $S(\rho_A)=\ln2$。動画49分付近の同値を一般の混合全状態へ広げない理由がここにある。
+
+\subsection{二 qubit の補足例をエントロピーまで計算する}
+補足 B04 の式\eqref{eq:theta}を用いると
+\begin{align}
+\Tr\rho_A^2&=\cos^4\theta+\sin^4\theta
+=1-\frac12\sin^2(2\theta),\\
+S_{\rm ent}(\theta)&=-\cos^2\theta\ln(\cos^2\theta)
+-\sin^2\theta\ln(\sin^2\theta).
+\end{align}
+$\theta=0,\pi/2$ では積状態でエントロピーは0、$\theta=\pi/4$ では最大エンタングル状態で $S_{\rm ent}=\ln2$。基底を変えても、固有値とこのエントロピーは変わらない。
+
+\subsection{この講義が深入りしない話題}
+50:25--51:39付近では Rényi entropy、linear entropy、subadditivity、decoherence が挙げられるが、講師はそれらに深入りしないと明示する。本稿もこれらを独立した長い章にしない。特に「縮約密度行列がある」だけで、任意の基底で非対角要素が消えるとか、古典世界の説明が完結するという結論はしない。次の主題は動力学である。
+
+\section{閉じた系と開いた系の時間発展}
+\label{sec:dynamics}
+\source{\vid{3105}{51:45}--\vid{3645}{1:00:45}。Schrödinger 方程式、von Neumann 方程式、縮約時間発展、自律的記述の目標。}
+\subsection{閉じた系のユニタリー発展}
+まず動画と同じく、時間に依存しない Hermitian Hamiltonian $H=H^\dagger$ を考える。
+\begin{equation}
+i\frac{d}{dt}\ket{\psi(t)}=H\ket{\psi(t)},
+\qquad U(t)=e^{-iHt},\qquad U^\dagger U=\I.
+\label{eq:schrodinger}
+\end{equation}
+混合状態に対しても、各ベクトルを同じ $U$ で発展させれば
+\begin{equation}
+\rho(t)=U(t)\rho(0)U^\dagger(t)
+\label{eq:unitaryrho}
+\end{equation}
+となる。動画の要点は、密度行列の左には $U$、右には $U^\dagger$ が現れることである。
+
+\supp{B07}{Pajer\cite{pajer}, §2.1。使用箇所：式\eqref{eq:von-neumann}--\eqref{eq:unitaryinvariants}。}{動画53:50で時間不変の $H$ を仮定し、55分付近で交換子の符号を強調する。その条件と Schrödinger picture を維持して微分する。}
+$\dot U=-iHU$、$\dot U^\dagger=iU^\dagger H$ より
+\begin{align}
+\dot\rho
+&=\dot U\rho(0)U^\dagger+U\rho(0)\dot U^\dagger\nonumber\\
+&=-iH\rho+i\rho H=-i[H,\rho].
+\label{eq:von-neumann}
+\end{align}
+これが von Neumann 方程式である。$\hbar$ を戻すなら $\dot\rho=-(i/\hbar)[H,\rho]$。Heisenberg picture の観測量は $Q_H=U^\dagger Q U$ であり、明示的時間依存がなければ $\dot Q_H=+i[H,Q_H]$ となる。動画が強調する符号の違いは、$U$ と $U^\dagger$ の配置の違いに由来する。
+
+ユニタリー発展では
+\begin{equation}
+\rho(t)^n=U(t)\rho(0)^nU^\dagger(t),
+\qquad \Tr\rho(t)^n=\Tr\rho(0)^n.
+\label{eq:unitaryinvariants}
+\end{equation}
+固有値が変わらないので、純粋性や $S(\rho)$ も保存される。有限次元で定義できる任意のスペクトル関数 $f$ について $\Tr f(\rho(t))=\Tr f(\rho(0))$ である。「閉じた系では情報が保存される」という56分付近の説明は、このスペクトル保存に対応する。
+
+\subsection{縮約発展の正確な式}
+全体系を $S,E$ に分け、全体系の発展を $U_{SE}(t)$ とすると
+\begin{equation}
+\rho_S(t)=\Tr_E\!\left[U_{SE}(t)\rho_{SE}(0)U_{SE}^\dagger(t)\right].
+\label{eq:exact-reduced}
+\end{equation}
+これは近似を含まない。しかし $\rho_{SE}(0)$ と $U_{SE}$ を全部知る必要があるため、未知の環境を含む問題を解きやすくした式ではまだない。動画58:30--58:50の目標は、$\rho_S$ だけについて閉じた、自律的に使える方程式を得ることである。
+
+\supp{B08}{Pajer\cite{pajer}, §2.1、§2.6。使用箇所：式\eqref{eq:notclosed}と式\eqref{eq:mapdefinition}。}{動画の「正確だが役に立ちにくい」を、一般の相互作用で $\rho_S$ だけに閉じないこととして示す。初期積状態の仮定を導入する時点も明示する。}
+全 Hamiltonian を
+\begin{equation}
+H_{SE}=H_S\otimes\I_E+\I_S\otimes H_E+H_{\rm int}
+\label{eq:totalhamiltonian}
+\end{equation}
+とすると、部分トレースした von Neumann 方程式は
+\begin{equation}
+\dot\rho_S=-i[H_S,\rho_S]-i\Tr_E[H_{\rm int},\rho_{SE}].
+\label{eq:notclosed}
+\end{equation}
+$H_E$ の交換子の部分トレースは零になるが、相互作用項には全状態、特に $S$--$E$ 相関が残る。
+
+ここで、すべての入力 $\rho_S(0)$ について同じ、固定された環境状態 $\rho_E$ を取り
+\begin{equation}
+\rho_{SE}(0)=\rho_S(0)\otimes\rho_E
+\label{eq:initial-factorized}
+\end{equation}
+を仮定すると、動画59分付近で導入される dynamical map を
+\begin{equation}
+\Phi_t[X]:=\Tr_E[U_{SE}(t)(X\otimes\rho_E)U_{SE}^\dagger(t)],
+\qquad \rho_S(t)=\Phi_t[\rho_S(0)]
+\label{eq:mapdefinition}
+\end{equation}
+と定義できる。式\eqref{eq:exact-reduced}は初期相関があっても正確だが、式\eqref{eq:mapdefinition}はその中の特別な場合である。初期相関があると、任意の $\rho_S(0)$ に対して同じ環境準備を使う、状態に依存しない CPTP 写像をこの式から得る保証はない。初期相関のある物理系が禁止されるという意味ではない。
+
+\section{CPTP 写像と Kraus 表現}
+\label{sec:channels}
+\source{\vid{3649}{1:00:49}--\vid{4207}{1:10:07}。線形性、trace preservation、positivity、complete positivity、初期積状態からの帰結。}
+\subsection{要求する性質を区別する}
+写像は密度行列だけでなく、演算子空間上で定義される。有限次元の線形写像 $\Phi$ に対して、動画の性質は次のように書ける。
+\begin{align}
+\Phi[aX+bY]&=a\Phi[X]+b\Phi[Y] &&\text{（線形性）},\\
+\Tr\Phi[X]&=\Tr X &&\text{（trace preserving）},\\
+X\geq0&\Longrightarrow\Phi[X]\geq0 &&\text{（positive）}.
+\end{align}
+Hermiticity preservation は $\Phi[X^\dagger]=\Phi[X]^\dagger$ である。複素線形な positive map では、Hermitian $X$ を二つの正作用素の差として書けるので Hermiticity preservation も従う。動画では状態の条件を保つ性質として個別に確認している。
+
+complete positivity（CP）は、任意の補助系 $R$ について
+\begin{equation}
+X_{SR}\geq0\quad\Longrightarrow\quad
+(\Phi\otimes\id_R)[X_{SR}]\geq0
+\label{eq:cpdefinition}
+\end{equation}
+となる性質である。$R$ には何もしないが、入力 $X_{SR}$ が $S$ と entangled でありうるため、positivity より強い条件になる。動画の「何もしない補助系を付けても整合する」という説明を、環境 $E$ と区別した記号 $R$ で表した。
+
+\subsection{転置は positive だが CP ではない}
+\supp{B09}{Pajer\cite{pajer}, §2.3 の CP の定義と転置の反例。使用箇所：式\eqref{eq:transpose-counterexample}。}{動画1:07:29--1:07:39では転置写像が反例として述べられるが計算は省略される。同じ写像を二 qubit に適用し、負固有値を実際に示す。}
+固定した基底で $T[X]=X^{\mathsf T}$ とする。$X\geq0$ なら $X^{\mathsf T}$ も同じ非負固有値を持つので $T$ は positive であり、トレースも保存する。
+
+ところが $\ket{\Omega}=(\ket{00}+\ket{11})/\sqrt2$ について、$\ket{00},\ket{01},\ket{10},\ket{11}$ の順の基底で
+\begin{equation}
+(T\otimes\id)[\ket{\Omega}\bra{\Omega}]
+=\frac12\begin{pmatrix}
+1&0&0&0\\0&0&1&0\\0&1&0&0\\0&0&0&1
+\end{pmatrix}.
+\label{eq:transpose-counterexample}
+\end{equation}
+中央の $2\times2$ ブロックの固有値は $\pm1/2$ である。反対称ベクトル $(\ket{01}-\ket{10})/\sqrt2$ に対する期待値は $-1/2$。従って $T$ は CP ではない。補助系と相関のない入力だけを試すと、この問題を見落とす。
+
+\subsection{部分トレースから Kraus 演算子を導く}
+\supp{B10}{Pajer\cite{pajer}, §2.2。使用箇所：式\eqref{eq:krausdef}--\eqref{eq:krausnormalization}。}{動画1:08:21--1:09:56の二つの仮定、初期積状態と全体系のユニタリー発展、だけを使用する。Born、Markov、時間並進不変性はここでは仮定しない。}
+環境状態を $\rho_E=\sum_\alpha q_\alpha\ket{\alpha}_E\bra{\alpha}_E$ と対角化し、終状態の部分トレースを基底 $\ket{\beta}_E$ で取る。$q_\alpha\geq0$、$\sum_\alpha q_\alpha=1$ である。$S$ 上の演算子を
+\begin{equation}
+M_{\beta\alpha}(t):=\sqrt{q_\alpha}\,
+(\I_S\otimes\bra{\beta})U_{SE}(t)(\I_S\otimes\ket{\alpha})
+\label{eq:krausdef}
+\end{equation}
+と定義すると
+\begin{align}
+\Phi_t[X]
+&=\sum_{\alpha,\beta}q_\alpha
+\bra{\beta}U_{SE}\ket{\alpha}\,X\,
+\bra{\alpha}U_{SE}^\dagger\ket{\beta}\nonumber\\
+&=\sum_{\alpha,\beta}M_{\beta\alpha}X M_{\beta\alpha}^\dagger.
+\label{eq:kraussum}
+\end{align}
+環境についての bra、ket は $S$ 上の演算子を残している。二つの添字を $\mu=(\beta,\alpha)$ にまとめれば $\Phi[X]=\sum_\mu M_\mu XM_\mu^\dagger$ となる。
+
+ユニタリー性から
+\begin{align}
+\sum_{\alpha,\beta}M_{\beta\alpha}^\dagger M_{\beta\alpha}
+&=\sum_\alpha q_\alpha\bra{\alpha}U_{SE}^\dagger
+\left(\I_S\otimes\sum_\beta\ket{\beta}\bra{\beta}\right)
+U_{SE}\ket{\alpha}\nonumber\\
+&=\sum_\alpha q_\alpha\I_S=\I_S.
+\label{eq:krausnormalization}
+\end{align}
+これはスカラーの規格化ではなく、$S$ 上の演算子の等式である。$M_\mu$ は有限時間の写像の Kraus 演算子であり、後述の生成子の jump 演算子 $L_\mu$ と同じものではない。
+
+\subsection{Kraus 表現が CPTP を与える理由}
+\supp{B11}{Pajer\cite{pajer}, §2.3 ``Kraus representation implies CPTP''。使用箇所：式\eqref{eq:krausCP}。}{B10で導いた同じ $M_\mu$ と規格化を使う。補助系には恒等写像だけを作用させ、動画の CP の定義を直接確認する。}
+トレースについては巡回性により
+\begin{equation}
+\Tr\Phi[X]=\sum_\mu\Tr(M_\mu XM_\mu^\dagger)
+=\Tr\!\left[X\sum_\mu M_\mu^\dagger M_\mu\right]=\Tr X.
+\end{equation}
+positivity は $X\geq0$ のとき
+\begin{equation}
+\bra{v}\Phi[X]\ket{v}
+=\sum_\mu\bra{M_\mu^\dagger v}X\ket{M_\mu^\dagger v}\geq0
+\end{equation}
+から従う。任意の補助系 $R$ に拡張しても
+\begin{equation}
+(\Phi\otimes\id_R)[X_{SR}]
+=\sum_\mu(M_\mu\otimes\I_R)X_{SR}(M_\mu^\dagger\otimes\I_R)\geq0
+\label{eq:krausCP}
+\end{equation}
+なので CP である。Hermiticity と線形性も式\eqref{eq:kraussum}から直ちに従う。
+
+ここまでの結論は、初期積状態とユニタリー全発展から CPTP な有限時間写像が得られる、というものである。$\Phi_t$ が半群であることや、時間に局所的な Lindblad 方程式に従うことはまだ証明していない。
+
+\section{Markov 性、半群、Liouvillian}
+\label{sec:semigroup}
+\source{\vid{4216}{1:10:16}--\vid{4937}{1:22:17}。記憶の有無、時間並進不変性、半群性、微分可能性、超演算子。}
+\subsection{追加する二つの仮定}
+講師は、CPTP だけでは目的の方程式を得るには足りず、特別な場合としてさらに性質を仮定すると説明する。まず Markov 性は、次の発展を記述するために、現在の部分系状態に加えて過去の詳細を参照しなくてよいという考え方である。動画のジャグラーの例では、手にボールがないという部分情報だけでは、ボールが空中にある履歴を失ってしまう。
+
+次に時間並進不変性（time homogeneity）は、発展が始めた絶対時刻によらず、時間差だけに依存する条件である。ここで扱う数学的枠組みでは、すべての中間区間の写像も CPTP とし、連続な一パラメーター半群を仮定する。一般の量子過程についての Markov 性には複数の定義があるので、ここでは動画が定理へ進むために使う半群の意味を採用する。
+
+\begin{equation}
+\Phi_0=\id,
+\qquad \Phi_{t+s}=\Phi_t\circ\Phi_s,
+\qquad t,s\geq0.
+\label{eq:semigroup}
+\end{equation}
+現在状態だけで次を記述する性質が合成を許し、時間並進不変性が $\Phi(t+s,s)=\Phi_t$ という一パラメーター表現を許す。
+
+1:13付近の自動字幕には「時間局所性」と「時間並進不変性」の用語の揺れがある。本稿では1:16:19--1:16:40の「時間間隔だけに依存する」という説明に合わせて、式\eqref{eq:semigroup}の仮定を時間並進不変性と呼ぶ。\textbf{時間に局所的な微分方程式であることとは別}である。時間依存の場合の整理だけを付録\ref{app:time-dependent}に置く。
+
+\subsection{生成子を微分から定義する}
+\supp{B12}{Pajer\cite{pajer}, §2.4。使用箇所：式\eqref{eq:generator}--\eqref{eq:exponentiation}。}{動画1:17:09--1:17:17は微分できることを仮定する。本稿も有限次元でその仮定を採用し、半群式から微分方程式へ進む計算を明示する。}
+生成子（Liouvillian superoperator）を
+\begin{equation}
+\mathcal L[X]:=\lim_{\epsilon\downarrow0}
+\frac{\Phi_\epsilon[X]-X}{\epsilon}
+\label{eq:generator}
+\end{equation}
+と定義する。式\eqref{eq:semigroup}より
+\begin{align}
+\frac{\Phi_{t+\epsilon}[X]-\Phi_t[X]}{\epsilon}
+&=\frac{(\Phi_\epsilon-\id)[\Phi_t[X]]}{\epsilon}
+\ \longrightarrow\ \mathcal L[\Phi_t[X]].
+\end{align}
+従って
+\begin{equation}
+\dot\rho(t)=\mathcal L[\rho(t)],
+\qquad \rho(t)=e^{t\mathcal L}[\rho(0)].
+\label{eq:exponentiation}
+\end{equation}
+指数関数は演算子を直接掛ける行列指数ではなく
+\begin{equation}
+e^{t\mathcal L}[X]=X+t\mathcal L[X]+
+\frac{t^2}{2!}\mathcal L[\mathcal L[X]]+\cdots
+\label{eq:super-exp}
+\end{equation}
+という、超演算子の繰り返し作用である。
+
+\subsection{超演算子と通常の演算子は作用する対象が違う}
+通常の $H$ は $\ket{\psi}$ に作用するが、$\mathcal L$ は演算子 $X$ に作用する。閉じた系の例は
+\begin{equation}
+\mathcal L_H[X]=-i[H,X].
+\end{equation}
+これは $-iHX$ だけではなく、$+iXH$ も含む。有限次元では $d\times d$ 行列の空間は $d^2$ 次元なので、$\mathcal L$ を $d^2\times d^2$ 行列として表すこともできる。ただし動画と同様、本文ではその成分表示を必須にしない。
+
+1:20--1:21付近の質疑に合わせ、$\mathcal L$ は入力の $\rho$ に応じて変更される演算子ではなく、固定された線形写像とする。密度行列でない $X$ に対しても定義できる。この線形性が崩れる状態依存の有効方程式は、ここでの定理の前提から外れる。
+
+\subsection{半群の逆は物理的とは限らない}
+$e^{t\mathcal L}$ は有限次元では線形写像として逆行列を持ちうるが、$e^{-t\mathcal L}$ が CPTP とは限らない。混合や散逸を逆向きに戻す写像が、任意の密度行列を密度行列に送るとは限らないからである。式\eqref{eq:semigroup}の $t\geq0$ はこの点に関係する。
+
+\section{GKSL 定理と Lindblad 方程式}
+\label{sec:gksl}
+\source{\vid{4937}{1:22:17}--\vid{5354}{1:29:14}。定理の提示、jump 演算子、trace と Hermiticity の確認。}
+\subsection{定理の仮定と結論}
+有限次元の系で、$\{\Phi_t\}_{t\geq0}$ が連続な線形 CPTP 半群なら、その生成子は
+\begin{equation}
+\boxed{\mathcal L[\rho]=-i[H,\rho]+
+\sum_\mu\left(L_\mu\rho L_\mu^\dagger-
+\frac12\{L_\mu^\dagger L_\mu,\rho\}\right)}
+\label{eq:lindblad}
+\end{equation}
+の形に書ける。$H=H^\dagger$ であり、$L_\mu$ は一般には Hermitian でなくてよい。$\{A,B\}=AB+BA$ は反交換子である。逆にこの形の時間不変生成子は CPTP 半群を生成する。これが Gorini--Kossakowski--Sudarshan--Lindblad（GKSL）定理であり、原著の出典は\cite{gks,lindblad}、本稿の式と証明の参照先は\cite{pajer} §2.5である。
+
+\begin{equation}
+\dot\rho=\mathcal L[\rho]
+\end{equation}
+を Lindblad master equation と呼ぶ。これは一つの $H$ と $L_\mu$ を特定する定理ではなく、許される生成子の\textbf{一般形}を制約する定理である。具体的な物理系の情報は、これらの演算子と係数の選択に入る。
+
+動画1:26付近では、$H$ と jump 演算子を選んで解を研究できる段階に到達したことが強調される。一方、任意の厳密な縮約発展がこの形になるという主張ではない。半群の仮定を満たす必要がある。無限次元の場合の定義域や有界性の問題も、有限次元の式だけでは解決しない。
+
+\subsection{トレース保存と Hermiticity を直接確認する}
+動画1:27:42--1:28:33の計算を展開する。巡回性から
+\begin{align}
+\Tr\mathcal L[\rho]
+&=-i\Tr(H\rho-\rho H)\nonumber\\
+&\quad+\sum_\mu\left[\Tr(L_\mu\rho L_\mu^\dagger)
+-\frac12\Tr(L_\mu^\dagger L_\mu\rho)
+-\frac12\Tr(\rho L_\mu^\dagger L_\mu)\right]\nonumber\\
+&=0.
+\label{eq:trL}
+\end{align}
+特に gain 項 $L_\mu\rho L_\mu^\dagger$ のトレースは一般には零でなく、反交換子の二項がそれを打ち消す。係数 $1/2$ はこの整合に必要である。
+
+$\rho^\dagger=\rho$ のとき
+\begin{equation}
+(-i[H,\rho])^\dagger=-i[H,\rho],\qquad
+(L_\mu\rho L_\mu^\dagger)^\dagger=L_\mu\rho L_\mu^\dagger
+\end{equation}
+であり、反交換子も Hermitian。従って Hermiticity を保つ。これらの二つの確認だけでは CP の証明は完了しない。CP と一般形の必要性が定理の非自明な部分である。
+
+\subsection{短時間 Kraus 表現から一般形が現れる計算}
+\supp{B13}{Pajer\cite{pajer}, §2.5 ``Sketch of the derivation in finite dimensions''。使用箇所：式\eqref{eq:shortkraus}--\eqref{eq:Kconstraint}。}{動画は証明を省きノートの概略へ案内している。有限次元・微分可能な CPTP 半群に限定し、短時間の Kraus 表現から式\eqref{eq:lindblad}を導く物理的な概略を補う。無限次元の厳密証明には置き換えない。}
+恒等チャネルに近い短時間写像について、適切な Kraus 表現で
+\begin{equation}
+M_0=\I+\delta t K+o(\delta t),
+\qquad M_\mu=\sqrt{\delta t}\,L_\mu+o(\sqrt{\delta t})
+\quad(\mu\geq1)
+\label{eq:shortkraus}
+\end{equation}
+と整理する。非自明な Kraus 演算子の $\sqrt{\delta t}$ は、写像中で二つ掛け合わされ、確率的な寄与が $\delta t$ の次数に入ることに対応する。この表現の存在や必要な正則性を全面的に証明することが、厳密な構造定理では重要になる。
+
+規格化を一次まで展開すると
+\begin{align}
+\sum_\mu M_\mu^\dagger M_\mu
+&=\I+\delta t\left(K+K^\dagger+
+\sum_{\mu\geq1}L_\mu^\dagger L_\mu\right)+o(\delta t)=\I.
+\end{align}
+従って
+\begin{equation}
+K+K^\dagger=-\sum_\mu L_\mu^\dagger L_\mu,
+\qquad K=-iH-\frac12\sum_\mu L_\mu^\dagger L_\mu.
+\label{eq:Kconstraint}
+\end{equation}
+反 Hermitian 部分を $-iH$ と置けば $H$ は Hermitian である。写像を展開して
+\begin{align}
+\Phi_{\delta t}[\rho]
+&=\rho+\delta t\left(K\rho+\rho K^\dagger+
+\sum_\mu L_\mu\rho L_\mu^\dagger\right)+o(\delta t).
+\end{align}
+式\eqref{eq:Kconstraint}を代入し、$(\Phi_{\delta t}-\id)/\delta t$ の極限を取れば、交換子と反交換子を含む式\eqref{eq:lindblad}が得られる。
+
+\subsection{逆向き：Lindblad 形から CP を保証する小刻みな写像}
+\supp{B14}{Pajer\cite{pajer}, §2.3--2.5 の Kraus 表現と生成子の定理。使用箇所：式\eqref{eq:normalized-step}--\eqref{eq:CP-limit}。}{動画1:28:37以降で非自明とされる CP を、同じ有限次元の枠組みで説明する。以下の厳密に規格化された小時間写像の構成は、本稿が基本的な Kraus の条件から展開した計算である。}
+$R:=\sum_\mu L_\mu^\dagger L_\mu\geq0$ とし、$\delta t\|R\|\leq1$ となるほど小さな $\delta t$ を取る。
+\begin{equation}
+N_0=e^{-iH\delta t}\sqrt{\I-\delta t R},
+\qquad N_\mu=\sqrt{\delta t}\,L_\mu
+\label{eq:normalized-step}
+\end{equation}
+なら
+\begin{equation}
+\sum_{\mu\geq0}N_\mu^\dagger N_\mu
+=(\I-\delta t R)+\delta t R=\I.
+\end{equation}
+したがって $\Psi_{\delta t}[X]=\sum_\mu N_\mu XN_\mu^\dagger$ は\textbf{各小時間で厳密に CPTP}である。平方根を展開すれば
+\begin{equation}
+N_0=\I+\delta t(-iH-R/2)+O(\delta t^2),
+\quad\Psi_{\delta t}=\id+\delta t\mathcal L+O(\delta t^2).
+\end{equation}
+有限次元では
+\begin{equation}
+e^{t\mathcal L}=\lim_{n\to\infty}(\Psi_{t/n})^n
+\label{eq:CP-limit}
+\end{equation}
+となる。CPTP 写像の合成と有限次元での極限は CPTP なので、有限時間の発展も CP を保つ。単に $\rho+\delta t\mathcal L[\rho]$ という Euler 更新が任意の有限 $\delta t$ で positive だと主張する必要はない。
+
+\subsection{Hermitian jump と二重交換子}
+\supp{B15}{Pajer\cite{pajer}, §2.5 の double commutator。使用箇所：式\eqref{eq:double-commutator}。}{動画1:28:56--1:29:08で述べられ、板書では省略された変形を示す。条件 $L^\dagger=L$ を付け、一般の非 Hermitian jump には適用しない。}
+$L=L^\dagger$ の場合
+\begin{align}
+\D{L}[\rho]
+&:=L\rho L^\dagger-\frac12\{L^\dagger L,\rho\}\nonumber\\
+&=L\rho L-\frac12(L^2\rho+\rho L^2)
+=-\frac12[L,[L,\rho]].
+\label{eq:double-commutator}
+\end{align}
+最後の等式は $[L,[L,\rho]]=L^2\rho-2L\rho L+\rho L^2$ を展開して確認できる。jump の Hermiticity がない場合に $L^\dagger$ を消してはならない。
+
+\subsection{Kossakowski 行列による係数の正値性}
+\supp{B16}{Pajer\cite{pajer}, §2.5 ``Non-diagonal form and Kossakowski matrix''。使用箇所：式\eqref{eq:kossakowski}。}{動画の jump 形式の一般性を明確にし、最後の質疑の「最小の $L$」「標準的な形」へつなぐ補足である。同じ有限次元の演算子空間を用いる。}
+トレース零の正規直交演算子基底 $F_a$、$a=1,\ldots,d^2-1$ を用いれば
+\begin{equation}
+\mathcal L[\rho]=-i[H,\rho]+\sum_{a,b}C_{ab}
+\left(F_a\rho F_b^\dagger-\frac12\{F_b^\dagger F_a,\rho\}\right),
+\qquad C\geq0.
+\label{eq:kossakowski}
+\end{equation}
+$C_{ab}=\sum_\mu\gamma_\mu u_{a\mu}u_{b\mu}^*$、$\gamma_\mu\geq0$ と対角化し
+\begin{equation}
+L_\mu=\sqrt{\gamma_\mu}\sum_a u_{a\mu}F_a
+\end{equation}
+と置けば式\eqref{eq:lindblad}に戻る。この規格化で $L_\mu$ に率を含める場合と、$L_\mu=\sqrt{\gamma_\mu}A_\mu$ と率を外に出す場合を混同しない。
+
+\section{微視的導出を支える近似}
+\label{sec:micro}
+\source{\vid{5365}{1:29:25}--\vid{5706}{1:35:06}。全 Hamiltonian、弱結合、Born、大きな浴、短い浴時間、回転波近似、十分条件と必要条件。}
+\subsection{構造定理と物理的近似を分ける}
+講師が強調する区別は、GKSL 定理は数学的な仮定から一般形を得る定理であり、「その系で仮定が成立するか」は別問題だということである。全体系から導く標準的な弱結合の経路では、複数の近似を使う。その近似の組は典型的な十分条件であって、すべての Lindblad 記述が必ずそれらの微視的条件を満たすという必要条件の列ではない。
+
+動画では近似の一覧を短く説明し、系ごとの詳細には深入りしない。以下はその各語が、どの式のどの項を変えるかを示すための補足である。これは動画の実演を転記したものではない。
+
+\supp{B17}{Pajer\cite{pajer}, §2.6、特に ``Microscopic setup''--``Summary of assumptions''。使用箇所：本章全体。}{動画の $H_S+H_E+H_{\rm int}$ と弱結合の説明を、時間不変の系と定常浴に限定して数式化する。定常浴、中心化した相互作用、周波数分離は導出を閉じるための追加条件として明記する。宇宙論の一般の時間依存背景にそのまま適用しない。}
+\subsection{相互作用と環境の準備}
+式\eqref{eq:totalhamiltonian}において
+\begin{equation}
+H_{\rm int}=g\sum_\alpha S_\alpha\otimes B_\alpha
+\label{eq:interaction}
+\end{equation}
+と書く。$g$ は結合の大きさを示すパラメーターで、ここでは各 $S_\alpha,B_\alpha$ を Hermitian に選ぶ。一般の Hermitian 相互作用も、演算子の実部と虚部に分けることでこの種の表現ができる。浴には
+\begin{equation}
+\rho_{SE}(0)=\rho_S(0)\otimes\rho_E,
+\qquad[H_E,\rho_E]=0
+\label{eq:microinitial}
+\end{equation}
+を仮定する。後者は、浴が自由 Hamiltonian の下で定常であるという、本章の追加条件である。
+
+平均 $b_\alpha:=\Tr_E(\rho_EB_\alpha)$ が零でなければ
+\begin{equation}
+B_\alpha\longrightarrow B_\alpha-b_\alpha\I_E,
+\qquad H_S\longrightarrow H_S+g\sum_\alpha b_\alpha S_\alpha
+\label{eq:centering}
+\end{equation}
+と再定義する。これで $\Tr_E(\rho_E B_\alpha)=0$ とできる。平均の効果を消したのではなく Hamiltonian に移したのであり、後の Lamb shift はこの一次の平均補正とは別の二次の補正である。
+
+\subsection{相互作用描像での正確な積分式}
+$H_0=H_S\otimes\I+\I\otimes H_E$ に関する相互作用描像をチルダで表す。
+\begin{equation}
+\widetilde\rho_{SE}(t)=e^{iH_0t}\rho_{SE}(t)e^{-iH_0t},
+\qquad \widetilde H_{\rm int}(t)=e^{iH_0t}H_{\rm int}e^{-iH_0t}.
+\end{equation}
+正確な方程式とその積分は
+\begin{align}
+\dot{\widetilde\rho}_{SE}(t)
+&=-i[\widetilde H_{\rm int}(t),\widetilde\rho_{SE}(t)],\\
+\widetilde\rho_{SE}(t)
+&=\rho_{SE}(0)-i\int_0^t ds\,
+[\widetilde H_{\rm int}(s),\widetilde\rho_{SE}(s)].
+\end{align}
+第二式を第一式へ代入し、環境をトレースすると
+\begin{align}
+\dot{\widetilde\rho}_S(t)
+&=-i\Tr_E[\widetilde H_{\rm int}(t),\rho_{SE}(0)]\nonumber\\
+&\quad-\int_0^t ds\,\Tr_E
+[\widetilde H_{\rm int}(t),
+[\widetilde H_{\rm int}(s),\widetilde\rho_{SE}(s)]].
+\label{eq:exact-integral}
+\end{align}
+ここではまだ二次で打ち切っていない。積分の中に\textbf{正確な全状態}が残るため、この書き方自体は正確である。初期積状態、定常浴、式\eqref{eq:centering}を用いると第一項は零になる。
+
+\subsection{Born 近似：記憶はまだ残る}
+弱結合で、浴への backreaction と相関の寄与を、この二次の核の中で無視できるとして
+\begin{equation}
+\widetilde\rho_{SE}(s)\simeq
+\widetilde\rho_S(s)\otimes\rho_E
+\label{eq:born}
+\end{equation}
+と置く。その結果
+\begin{equation}
+\dot{\widetilde\rho}_S(t)\simeq
+-\int_0^t ds\,\Tr_E
+[\widetilde H_{\rm int}(t),
+[\widetilde H_{\rm int}(s),\widetilde\rho_S(s)\otimes\rho_E]].
+\label{eq:bornmemory}
+\end{equation}
+系だけの方程式にはなったが、過去の $\widetilde\rho_S(s)$ を積分している。Born 近似だけで Markov 性が得られたわけではない。
+
+動画の「大きな環境」は、浴の状態が系の作用で大きく変わらないことを動機づける。大きさの数だけで十分条件が証明されたことにはならない。また式\eqref{eq:born}は、全状態の entanglement が現実にすべての時刻で厳密に零であるという主張ではない。相互作用の二次の寄与を評価する際の近似として用いている。
+
+\subsection{Markov 近似：浴の相関時間と系の変化時間}
+環境の相関関数を
+\begin{equation}
+C_{\alpha\beta}(\tau):=\Tr_E[\rho_E B_\alpha(\tau)B_\beta(0)],
+\qquad B_\alpha(\tau)=e^{iH_E\tau}B_\alpha e^{-iH_E\tau}
+\label{eq:bathcorrelator}
+\end{equation}
+とする。$[H_E,\rho_E]=0$ より絶対時刻でなく時間差に依存する。相関が $\tau_E$ 程度で減衰し、相互作用描像の系の縮約状態の変化時間 $\tau_S$ がそれより十分長いとして
+\begin{equation}
+\tau_E\ll\tau_S,\qquad
+\widetilde\rho_S(t-\tau)
+=\widetilde\rho_S(t)-\tau\dot{\widetilde\rho}_S(t)+\cdots
+\simeq\widetilde\rho_S(t)
+\label{eq:markovscale}
+\end{equation}
+とする。核が重要な領域 $\tau\lesssim\tau_E$ で、次項の相対的な大きさは概ね $\tau_E/\tau_S$ である。$\tau_S$ はここでは相互作用描像の緩和・変化の時間であり、必ずしも裸の振動周期そのものではない。動画終盤の「速い局所緩和に比べて遅い輸送を見る」という説明に合わせた条件である。
+
+さらに $t\gg\tau_E$ の領域で相関の長時間の尾を無視し、$\tau=t-s$ の積分の上限を $t$ から $\infty$ へ延長する。
+\begin{equation}
+\dot{\widetilde\rho}_S(t)\simeq-
+\int_0^\infty d\tau\,\Tr_E
+[\widetilde H_{\rm int}(t),
+[\widetilde H_{\rm int}(t-\tau),\widetilde\rho_S(t)\otimes\rho_E]].
+\label{eq:bornmarkov}
+\end{equation}
+これは時間に局所的な Born--Markov 方程式だが、まだ manifest な GKSL 形とは限らない。初期の $t\lesssim\tau_E$、浴の長い記憶、強い backreaction がある領域ではこの近似を使う根拠を再検討する必要がある。
+
+\subsection{Bohr 周波数と secular／回転波近似}
+$H_S=\sum_nE_n\ket{n}\bra{n}$ を用い
+\begin{equation}
+A_\alpha(\omega):=\sum_{E_n-E_m=\omega}
+\ket{m}\bra{m}S_\alpha\ket{n}\bra{n}
+\label{eq:bohroperator}
+\end{equation}
+と定義すると、$S_\alpha=\sum_\omega A_\alpha(\omega)$ で
+\begin{equation}
+[H_S,A_\alpha(\omega)]=-\omega A_\alpha(\omega),
+\qquad\widetilde S_\alpha(t)=\sum_\omega e^{-i\omega t}A_\alpha(\omega).
+\end{equation}
+$\omega>0$ は、ここでの定義では系のエネルギーを $\omega$ 下げる成分である。この符号を後の浴の Fourier 変換と揃える。
+
+式\eqref{eq:bornmarkov}を展開すると $e^{i(\omega'-\omega)t}$ を含む項が現れる。平均時間幅 $\Delta t$ で
+\begin{equation}
+\frac1{\Delta t}\int_{t_0}^{t_0+\Delta t}
+e^{i(\omega'-\omega)t}dt
+=e^{i(\omega'-\omega)(t_0+\Delta t/2)}
+\frac{\sin[(\omega'-\omega)\Delta t/2]}{(\omega'-\omega)\Delta t/2}.
+\label{eq:secular-average}
+\end{equation}
+従って、異なる周波数について $|\omega'-\omega|\Delta t\gg1$ なら寄与が小さい。浴の記憶を越えて、系の緩和より短い幅
+\begin{equation}
+\tau_E\ll\Delta t\ll\tau_S,
+\qquad |\omega'-\omega|^{-1}\ll\Delta t
+\label{eq:secular-window}
+\end{equation}
+を取れることが、完全 secular 近似の一つの条件である。$\omega=\omega'$ の項は残す。縮退した遷移は同じ周波数ブロックにまとめ、近接した周波数を根拠なく消さない。
+
+動画1:33:09付近の「回転波近似」を、ここでは散逸導出の secular 近似として具体化した。何の周波数が高速なのかが重要であり、単に $\omega$ が大きければすべて消すという意味ではない。
+
+\subsection{浴スペクトルと正の散逸行列}
+この近似のもとで、散逸係数は
+\begin{equation}
+\gamma_{\alpha\beta}(\omega):=g^2\int_{-\infty}^{\infty}
+d\tau\,e^{i\omega\tau}C_{\alpha\beta}(\tau)
+\label{eq:gamma}
+\end{equation}
+として現れる。$g^2$ を外に出したので、$\gamma$ の中に結合定数が二重に入らないようにする。浴の時間スケール分離は相関の可積分性・減衰を使うための条件であり、有限の孤立した小浴では再帰のため成立しないことがある。
+
+定常浴で $H_E\ket{r}=\epsilon_r\ket{r}$、$\rho_E=\sum_r p_r\ket{r}\bra{r}$ と同時対角化すると、分布の意味で
+\begin{equation}
+\gamma_{\alpha\beta}(\omega)=2\pi g^2\sum_{r,s}p_r
+(B_\alpha)_{rs}(B_\beta)_{sr}
+\delta(\omega+\epsilon_r-\epsilon_s).
+\label{eq:gammapsd}
+\end{equation}
+任意の複素数列 $z_\alpha$ に対し、$B_\alpha$ が Hermitian なので
+\begin{equation}
+\sum_{\alpha,\beta}z_\alpha^*\gamma_{\alpha\beta}(\omega)z_\beta
+=2\pi g^2\sum_{r,s}p_r
+\left|\sum_\beta z_\beta(B_\beta)_{sr}\right|^2
+\delta(\omega+\epsilon_r-\epsilon_s)\geq0.
+\end{equation}
+離散浴では正のスペクトル測度としての式であり、通常の減衰率として使うには連続スペクトルや十分な coarse graining を要する。この positivity を用いて、各 $\omega$ ブロックを対角化すれば jump 演算子が構成できる。これは B17 の浴相関の説明に対し、本稿でスペクトルを挿入して示した計算である。
+
+\subsection{最後に得られる方程式と Lamb shift}
+半無限の相関積分を
+\begin{equation}
+\Gamma_{\alpha\beta}(\omega)=g^2\int_0^\infty d\tau\,
+e^{i\omega\tau}C_{\alpha\beta}(\tau)
+\end{equation}
+と置き、行列としての Hermitian 部分と反 Hermitian 部分を
+\begin{equation}
+\gamma_{\alpha\beta}=\Gamma_{\alpha\beta}+\Gamma_{\beta\alpha}^*,
+\qquad h_{\alpha\beta}=
+\frac{\Gamma_{\alpha\beta}-\Gamma_{\beta\alpha}^*}{2i}
+\label{eq:Gamma-decomposition}
+\end{equation}
+に分ける。定常相関では第一式が式\eqref{eq:gamma}に一致する。$h$ も Hermitian 行列であり
+\begin{equation}
+H_{\rm LS}=\sum_{\omega,\alpha,\beta}
+h_{\alpha\beta}(\omega)A_\alpha^\dagger(\omega)A_\beta(\omega)
+\label{eq:lambshift}
+\end{equation}
+は Hermitian である。Schrödinger picture に戻すと
+\begin{align}
+\dot\rho_S
+&=-i[H_S+H_{\rm LS},\rho_S]\nonumber\\
+&\quad+\sum_{\omega,\alpha,\beta}\gamma_{\alpha\beta}(\omega)
+\left(A_\beta(\omega)\rho_SA_\alpha^\dagger(\omega)
+-\frac12\{A_\alpha^\dagger(\omega)A_\beta(\omega),\rho_S\}\right).
+\label{eq:microscopic-gksl}
+\end{align}
+これは $\gamma(\omega)\geq0$ により GKSL 形である。式\eqref{eq:centering}の平均補正もある場合には、ここでの $H_S$ はそれを吸収したものと読む。浴が熱的であることや、熱平衡への収束はこの章では仮定していない。
+
+\subsection{各段階で何が変わったか}
+\begin{longtable}{p{0.23\textwidth}p{0.34\textwidth}p{0.34\textwidth}}
+\toprule
+段階 & 置いた条件・行った操作 & 得たものと残った問題\\\midrule\endhead
+全体系の正確な発展 & ユニタリーな $U_{SE}$ & 部分トレースは正確だが、全状態が必要\\
+初期積状態・固定浴 & $\rho_S(0)\otimes\rho_E$ & CPTP な $\Phi_t$。半群性は未保証\\
+弱結合・Born & 二次核で $\rho_{SE}(s)\simeq\rho_S(s)\otimes\rho_E$ & 系に閉じた記憶積分\\
+短い浴の記憶・Markov & 過去の系状態を現在に置き換え、上限を延長 & 時間局所。CP はなお未保証\\
+周波数分離・secular & 異なる Bohr 周波数の交差項を平均で除く & 正の率行列を持つ GKSL 形\\\bottomrule
+\end{longtable}
+「弱結合だから必ず Markov」「時間局所だから必ず CP」「GKSL だから必ず弱結合」という逆向きの推論は行わない。動画1:33:58--1:34:59の十分条件と必要条件の区別は、この表を読む上でも重要である。
+
+\section{最後の質疑：Hamiltonian の補正と適用範囲}
+\label{sec:questions}
+\source{\vid{5708}{1:35:08}--\vid{6018}{1:40:18}。Lamb shift、jump の非一意性、時間スケール、テンソル積構造。}
+\subsection{有効 Hamiltonian は裸の系の Hamiltonian と同じとは限らない}
+1:35:08の質問では、式\eqref{eq:lindblad}の $H$ が系だけの Hamiltonian なのか、環境による補正も含むのかが問われる。回答は、環境による Hamiltonian の補正を含むというものだった。本稿の微視的な補足では
+\begin{equation}
+H=H_S+H_{\rm LS}
+\end{equation}
+であり、一次の環境平均も必要なら式\eqref{eq:centering}のように吸収する。$H$ 自体は Hermitian のままであり、全 Hamiltonian $H_{SE}$ をそのまま $S$ 上へ持ち込んだものではない。
+
+\subsection{jump 演算子と Hamiltonian の分け方は一意ではない}
+\supp{B18}{Pajer\cite{pajer}, §2.5 ``Redundancies in the Lindblad representation''。使用箇所：式\eqref{eq:unitaryrotation}--\eqref{eq:jump-shift}。}{動画1:36:01--1:36:55は $L$ の定数シフトと $H$ の同時シフト、および標準的な表示に言及する。そこで同じ規約の式\eqref{eq:lindblad}に合わせて、符号も含めてその変形を計算する。}
+第一に、jump の添字にユニタリー行列を作用させ
+\begin{equation}
+L'_\mu=\sum_\nu W_{\mu\nu}L_\nu,\qquad W^\dagger W=\I
+\label{eq:unitaryrotation}
+\end{equation}
+としても、$\sum_\mu L'_\mu\rho L_\mu^{\prime\dagger}=\sum_\mu L_\mu\rho L_\mu^\dagger$ および $\sum_\mu L_\mu^{\prime\dagger}L'_\mu=\sum_\mu L_\mu^\dagger L_\mu$ なので生成子は変わらない。
+
+第二に、一つの jump を $L'=L+a\I$、$a\in\mathbb C$ とすると、定数二乗の項は打ち消し合い
+\begin{align}
+\D{L+a\I}[\rho]-\D{L}[\rho]
+&=\frac{a^*}{2}(L\rho-\rho L)
+-\frac{a}{2}(L^\dagger\rho-\rho L^\dagger)\nonumber\\
+&=\frac12[a^*L-aL^\dagger,\rho]
+=-i[h_a,\rho],\\
+h_a&:=\frac{i}{2}(a^*L-aL^\dagger)=h_a^\dagger.
+\end{align}
+よって、複数の jump では同時に
+\begin{equation}
+\boxed{L'_\mu=L_\mu+a_\mu\I,\qquad
+H'=H-\frac{i}{2}\sum_\mu(a_\mu^*L_\mu-a_\mu L_\mu^\dagger)}
+\label{eq:jump-shift}
+\end{equation}
+とすれば\textbf{全生成子は同じ}である。$\mathcal L$ は同じでも、Hamiltonian 項と dissipator の内訳に表現上の自由度がある。
+
+有限次元では、jump の恒等成分をこの自由度で除き、トレース零の基底における正の $C$ を対角化する。零固有値を除けば、この規約での非自明な jump の数は $\rank C$ となる。縮退した固有値の部分空間や位相にはなお自由度があるので、すべての $L_\mu$ が無条件に一意だとはしない。これは講師が数式を思い出せないとしていた「標準的な方法」を補う説明であり、動画で実演された導出ではない。
+
+\subsection{時間スケールの分離は、個別の系で確認する}
+1:37付近では、速い平衡化と遅い波動・輸送が分離すれば、遅い自由度について Markov 的な記述を期待できるという説明がある。1:38付近の再質問では、近似を一つずつ適用して項を除く必要があると強調される。
+
+本稿でその行間を埋めた箇所は式\eqref{eq:markovscale}と式\eqref{eq:secular-window}である。浴の相関時間の短さと、異なる遷移周波数を平均で分離できる条件は、別々の条件である。一方が成立すれば他方も必ず成立するとは考えない。
+
+\subsection{部分系の分割は、単に状態の一部を捨てることではない}
+最後の質疑では、$\mathcal H_S\otimes\mathcal H_E$ という構造がこの議論の前提であることが確認される。分割の選択は一意とは限らないが、ここでは選択後に局所演算子 $Q_S\otimes\I_E$ と部分トレースが定義できる必要がある。
+
+例えば、一 qubit の $\ket{\uparrow}$ だけを残し $\ket{\downarrow}$ を見ないという射影は、二つの因子へのテンソル積分割ではない。射影して結果を条件付ける操作は、環境を無条件にトレースする式\eqref{eq:ptrace}とは異なる。量子場理論、ゲージ制約、重力、地平線内外への分割では Hilbert 空間の factorization 自体が繊細な問題になりうる。動画はこの問題を認めつつ、午後の議論へ送って終わる。本稿もその問題を解決済みとして扱わない。
+
+\subsection{第1講が到達した論理}
+動画の説明を式だけで連結すると
+\begin{equation}
+\begin{gathered}
+\mathcal H_{SE}=\mathcal H_S\otimes\mathcal H_E,
+\qquad\rho_S=\Tr_E\rho_{SE},\\
+\rho_{SE}(0)=\rho_S(0)\otimes\rho_E,
+\quad U_{SE}\text{ はユニタリー}
+\quad\Longrightarrow\quad\Phi_t\text{ は CPTP},\\
+\Phi_t\text{ は連続な時間不変の CPTP 半群}
+\quad\Longrightarrow\quad\dot\rho_S=\mathcal L[\rho_S]
+\quad\text{（GKSL 形）}.
+\end{gathered}
+\label{eq:logic}
+\end{equation}
+第一の矢印に Markov 性は不要であり、第二の矢印には半群の追加仮定が必要である。具体的な環境から第二の前提を正当化する標準的な経路が、第\ref{sec:micro}章の弱結合・Born・Markov・secular の近似である。これが第1講の核であり、後続の経路積分や宇宙論モデルの導出へ進むための準備となる。
+
+\appendix
+\section{時間依存の場合を混同しないための短い補足}
+\label{app:time-dependent}
+\supp{B19}{Pajer\cite{pajer}, §2.7。使用箇所：本付録のみ。}{動画1:13:52--1:14:22は重力の時間依存性と記憶を区別する必要を示し、1:16:19以降は時間不変の半群を扱う。その境界を明確にするための補足であり、第1講でこの付録の式がすべて導出されたという意味ではない。}
+時間に依存する $H(t)$ の閉じた系では
+\begin{equation}
+U(t,t_0)=\mathcal T\exp\!\left(-i\int_{t_0}^{t}ds\,H(s)\right),
+\qquad\rho(t)=U(t,t_0)\rho(t_0)U^\dagger(t,t_0).
+\end{equation}
+これは依然としてユニタリーであり、エントロピーを保つが、一般には時間差だけには依存しない。
+
+開いた系については二パラメーター写像 $\Phi(t,t_0)$ を使う。すべての中間区間に CPTP な $V(t_2,t_1)$ が存在して
+\begin{equation}
+\Phi(t_2,t_0)=V(t_2,t_1)\circ\Phi(t_1,t_0),
+\qquad t_2\geq t_1\geq t_0
+\end{equation}
+と書ければ、CP divisible と呼ぶ。微分可能性などの適切な条件の下では、各時刻で GKSL 形の生成子、非負の canonical rates と対応する。
+
+\begin{equation}
+\dot\rho(t)=\mathcal L_t[\rho(t)],
+\qquad \Phi(t,t_0)=\mathcal T\exp\!\left(\int_{t_0}^{t}ds\,\mathcal L_s\right).
+\end{equation}
+この式は時間局所だが、$\mathcal L_t$ が明示的に時間に依存すれば一パラメーター半群ではない。また一般の非 Markov 過程にも、可逆な領域で $\mathcal L_t=\dot\Phi(t,t_0)\Phi(t,t_0)^{-1}$ とした時間局所表示が存在する場合がある。その生成子が各時刻で正の GKSL 率を持つ保証はない。従って「時間局所」「時間並進不変」「CP divisible」は同じ語として使わない。
+
+\section{記号・用語・字幕の扱い}
+\label{app:terminology}
+\begin{longtable}{p{0.25\textwidth}p{0.65\textwidth}}
+\toprule
+表現 & 本稿での意味・対応\\\midrule\endhead
+$A,B$ と $S,E$ & 一般の二体系と、観測系・環境への読み替え。\\
+$s_i$、$p_i$ & Schmidt の振幅 $s_i$ と縮約状態の確率 $p_i=s_i^2$。板書の $\phi_i$、ノートの $\lambda_i$ を本稿では $s_i$ とした。\\
+$\rho$ & 密度行列。「行」「row」などの自動字幕は文脈から復元。\\
+pure / mixed & $\rho^2=\rho$ か否か。$\ket{\Psi}$ が積か否かとは別の分類。\\
+product / entangled & 純粋二体系については一つのテンソル積で書けるか否か。混合全状態での量子相関の判定には別の議論を要する。\\
+Schmidt decomposition & 自動字幕の「シュミットの合成」等を、係数行列の特異値分解に合う分解定理として整理。\\
+von Neumann entropy & 自動字幕の音写の揺れを $-\Tr\rho\ln\rho$ で特定。自然対数。\\
+Markovianity & 履歴の記憶に関する条件。自動字幕の「ミクロ性」「マロフ性」等を文脈で整理。\\
+time homogeneity & 時間差のみへの依存。時間局所の微分方程式とは区別。\\
+$\Phi_t$、$\mathcal L$ & 有限時間の dynamical map と、その無限小生成子。\\
+$M_\mu$、$L_\mu$ & Kraus 演算子と Lindblad の jump 演算子。役割・時間の単位が異なる。\\
+RWA / secular & 本稿の浴導出では異なる Bohr 周波数の項を coarse graining で除く近似。\\
+Lamb shift & 環境の二次相関から生じる有効 Hermitian Hamiltonian の補正。\\\bottomrule
+\end{longtable}
+この表は発言の正確な英語表現を断定するものではなく、数式と文脈に整合するための編集規約である。
+
+\section{補足出典・使用箇所・適用条件の台帳}
+\label{app:ledger}
+以下の「P」は Pajer\cite{pajer}（v1、2026年7月15日）を指す。節番号は原資料の番号である。各行は、本文の該当する補足番号と組み合わせて読む。新しい例や代数的展開は、示した定義・定理から本稿が計算したものであり、資料の文章をそのまま翻訳したものではない。
+\begin{longtable}{p{0.07\textwidth}p{0.2\textwidth}p{0.28\textwidth}p{0.35\textwidth}}
+\toprule
+番号 & 原資料の箇所 & 本稿の使用箇所 & 動画に合わせた条件・役割\\\midrule\endhead
+B01 & P §1.4 Purification、§2.2 & 第\ref{sec:motivation}章、式\eqref{eq:purification} & 一時刻の有限次元状態。動力学の dilation と同一視しない。\\
+B02 & P §1.1 & 第\ref{sec:composite}章、式\eqref{eq:densityconditions}--\eqref{eq:pureequiv} & 密度行列の規格化と純粋性。確率と振幅を区別。\\
+B03 & P §1.3 & 第\ref{sec:composite}章、式\eqref{eq:ptracecomponents}--\eqref{eq:allinfo} & 動画の局所観測量 $Q_A\otimes\I_B$ に限定して完全な情報を主張。\\
+B04 & P §1.3 の部分トレースの方法 & 式\eqref{eq:theta}--\eqref{eq:theta-reduced}、第\ref{sec:entropy}章の具体例 & 動画の qubit の言及に対応する本稿の二 qubit 例。\\
+B05 & P §1.4 Schmidt decomposition & 第\ref{sec:schmidt}章、式\eqref{eq:svd}--\eqref{eq:svdorthogonal} & 純粋全状態。$B$ 側の複素共役を含め、動画で省略された SVD 証明を展開。\\
+B06 & P §1.1、§1.4 & 第\ref{sec:entropy}章、式\eqref{eq:entropyzero}--\eqref{eq:entropybound} & 自然対数と非零スペクトル。混合全状態へ同値を広げない。\\
+B07 & P §2.1 & 第\ref{sec:dynamics}章、式\eqref{eq:von-neumann}--\eqref{eq:unitaryinvariants} & 時間不変 Hermitian $H$、Schrödinger picture の符号。\\
+B08 & P §2.1、§2.6 & 式\eqref{eq:notclosed}--\eqref{eq:mapdefinition} & 正確な縮約発展と、固定環境の初期積状態を使う写像を区別。\\
+B09 & P §2.3 & 第\ref{sec:channels}章、式\eqref{eq:transpose-counterexample} & 動画で挙がる転置の反例を Bell 状態で計算。\\
+B10 & P §2.2 & 式\eqref{eq:krausdef}--\eqref{eq:krausnormalization} & 初期積状態、固定浴、全発展のユニタリー性。Markov 性不要。\\
+B11 & P §2.3 & 式\eqref{eq:krausCP}とその前後 & Kraus 演算子を補助系の恒等作用で拡張。\\
+B12 & P §2.4 & 第\ref{sec:semigroup}章、式\eqref{eq:generator}--\eqref{eq:super-exp} & 微分可能な、時間不変の半群。\\
+B13 & P §2.5 derivation sketch & 第\ref{sec:gksl}章、式\eqref{eq:shortkraus}--\eqref{eq:Kconstraint} & 有限次元の証明概略。短時間 Kraus の正則性の全面証明は含めない。\\
+B14 & P §2.3--2.5 の構造 & 式\eqref{eq:normalized-step}--\eqref{eq:CP-limit} & 本稿の厳密な小時間 CPTP 写像と極限。Euler 更新の positivity を仮定しない。\\
+B15 & P §2.5 double commutator & 式\eqref{eq:double-commutator} & Hermitian jump の場合だけ適用。\\
+B16 & P §2.5 Kossakowski matrix & 式\eqref{eq:kossakowski} & トレース零の演算子基底、正半定値の係数行列。\\
+B17 & P §2.6 & 第\ref{sec:micro}章、式\eqref{eq:interaction}--\eqref{eq:microscopic-gksl} & 弱結合、初期積、定常浴、中心化、短い相関時間、周波数分離を段階別に適用。平均式とスペクトル計算は本稿の展開。\\
+B18 & P §2.5 redundancies & 第\ref{sec:questions}章、式\eqref{eq:unitaryrotation}--\eqref{eq:jump-shift} & 動画終盤の定数シフトを、同じ dissipator 規約で検算。\\
+B19 & P §2.7 & 付録\ref{app:time-dependent}のみ & 時間依存、時間局所、CP divisibility と半群の区別。本文の定理の適用範囲を拡大しない。\\
+B20 & P Introduction、§2.6 & 第\ref{sec:motivation}章の動機の留保 & 講師の視点と普遍的な定理を区別。環境効果の係数は第\ref{sec:micro}章の相関式で具体化。\\\bottomrule
+\end{longtable}
+
+\subsection*{文献を使った範囲}
+\begin{itemize}
+\item 対象動画\cite{video}：時間順の主題、仮定、具体的な質疑を再構成する主資料。時刻は自動字幕に基づくおおよその対応。
+\item Pajer の公開ノート\cite{pajer}：数式、定義、適用条件、動画で省略された導出を確認した補足の実用的な参照先。LaTeX 原資料の第1・2節を確認した。
+\item GKSL の二つの原著\cite{gks,lindblad}：定理の出典と書誌情報を併記。今回、原著本文を全面的に精読したという意味ではない。本文の導出に使用した具体的な式の参照先は上の台帳の P §2.5である。
+\end{itemize}
+動画1:38:44付近で案内される Breuer--Petruccione の書籍も重要な参照先だが、本稿の式の根拠を未確認のページ番号へ割り当ててはいない。本稿の補足台帳は実際に確認した Pajer のノートに基づく。
+
+\begin{thebibliography}{99}
+\bibitem{video}
+Enrico Pajer, \emph{EFT of Open Systems: Density Matrices and the Operator Formalism (1/4)}, IHES Summer School, 6 July 2026, 1:40:33.
+\href{https://www.youtube.com/watch?v=3gDSaNy1O7Y}{YouTube 対象動画};
+\href{https://www.carmin.tv/en/collections/2026-ihes-summer-school-cosmological-correlators}{Carmin.tv の公式講義コレクション}.
+
+\bibitem{pajer}
+Enrico Pajer, \emph{Lectures on Open Systems and Cosmology: Master Equation, Schwinger--Keldysh and Open Effective Field Theories}, arXiv:2607.14351v1, 15 July 2026, 140 pages.
+\href{https://arxiv.org/abs/2607.14351v1}{書誌・PDF・TeX 原資料};
+\href{https://arxiv.org/html/2607.14351v1}{HTML 版}.
+本稿の主な使用範囲：Introduction、§1.1、§1.3、§1.4、§2.1--2.7。
+
+\bibitem{gks}
+V. Gorini, A. Kossakowski, E. C. G. Sudarshan,
+\emph{Completely positive dynamical semigroups of N-level systems},
+Journal of Mathematical Physics \textbf{17}, 821--825 (1976).
+\href{https://doi.org/10.1063/1.522979}{doi:10.1063/1.522979}.
+
+\bibitem{lindblad}
+G. Lindblad, \emph{On the generators of quantum dynamical semigroups},
+Communications in Mathematical Physics \textbf{48}, 119--130 (1976).
+\href{https://doi.org/10.1007/BF01608499}{doi:10.1007/BF01608499}.
+\end{thebibliography}
+
+\end{CJK*}
+\end{document}

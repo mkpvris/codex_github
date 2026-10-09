@@ -1,0 +1,762 @@
+\documentclass[a4paper,11pt]{ltjsarticle}
+
+% ========== package ========== %
+% --- 数式環境 --- %
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+% --- 数式環境 END --- %
+% ブラケット
+\usepackage{braket}
+% ベクトルの太文字
+\usepackage{bm}
+% 添え字左右上下 \fourIdx{左上}{左下}{右上}{右下}{ベース} で使う．Iは大文字
+\usepackage{fouridx}
+% 色
+\usepackage{color}
+% 余白指定
+\usepackage{geometry}
+% --- ページ内リンク --- %
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue}
+% --- ページ内リンク END --- %
+% 花文字
+\usepackage{mathrsfs}
+% 画像
+\usepackage{graphicx}
+% tcolorbox
+\usepackage{tcolorbox}
+% appendix
+\usepackage{appendix}
+% --- 参考文献 --- %
+\usepackage{etoolbox}
+\usepackage{fontspec} % fontspecは読み込んでOKですが、設定順序に注意が必要です
+%% --- 参考文献フォント --- %%
+  \IfFontExistsTF{Times New Roman}{
+    \newfontfamily\bibfontface{Times New Roman}
+  }{
+    \newfontfamily\bibfontface{FreeSerif} % 代替フォント
+  }
+%% --- 参考文献フォント END --- %%
+%% --- 参考文献リンク位置 --- %%
+  \BeforeBeginEnvironment{thebibliography}{%
+    \phantomsection
+    \addcontentsline{toc}{section}{参考文献}
+  }
+  \AtBeginEnvironment{thebibliography}{%
+    \normalfont\bibfontface
+  }
+%% --- 参考文献のリンク位置 --- %%
+% --- 参考文献 END --- %
+% ========== package END ========== %
+
+% ========== newcommand ========== %
+% --- セクションから目次へのリンク --- %
+\newcommand{\sectionlink}[1]{\section[#1]{\hyperlink{toc}{#1}}}
+\newcommand{\subsectionlink}[1]{\subsection[#1]{\hyperlink{toc}{#1}}}
+% セクション番号リンク
+\makeatletter
+\renewcommand{\@seccntformat}[1]{%
+  \protect\hyperlink{toc}{\csname the#1\endcsname}\quad
+}
+\makeatother
+
+\numberwithin{equation}{section}
+% ==========- newcommand END ========== %
+\allowdisplaybreaks
+%===========================================================
+% --- タイトル --- %
+%===========================================================
+\geometry{left=25mm, right=25mm, top=30mm, bottom=30mm}
+\usepackage{booktabs,longtable}
+\definecolor{noteblue}{rgb}{0.08,0.22,0.38}
+\definecolor{notered}{rgb}{0.50,0.15,0.08}
+\hypersetup{citecolor=noteblue,urlcolor=noteblue,pdftitle={開放系の有効場理論 第2講}}
+\setlength{\emergencystretch}{3em}
+\setlength{\parskip}{0.3em}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\id}{\mathbf{1}}
+\newcommand{\Diss}{\mathcal{D}}
+\newcommand{\SK}{\mathrm{SK}}
+\newcommand{\IF}{\mathrm{IF}}
+\newcommand{\av}[1]{\langle #1\rangle}
+\newcommand{\pav}[1]{\langle\!\langle #1\rangle\!\rangle}
+\newcommand{\video}[2]{\href{https://www.youtube.com/watch?v=RYxzcUhIHjk\&t=#1s}{#2}}
+\newcommand{\videosource}[1]{\par\noindent\textcolor{noteblue}{\textbf{動画対応：}#1}\par\smallskip}
+\newcommand{\supplement}[1]{\par\medskip\noindent\textcolor{notered}{\textbf{文献補足：}}#1\par\smallskip}
+% 各節を改ページして組版し、節ごとの画像確認をしやすくする。
+\NewDocumentEnvironment{lecturesection}{m m +b}{\sectionlink{#2}#3\clearpage}{}
+\title{\bfseries 開放系の有効場理論 第2講\\[0.5em]\large 経路積分とSchwinger--Keldysh形式}
+\author{Enrico Pajer 氏の講義に基づく日本語講義ノート}
+\date{講義：2026年7月6日\quad ノート作成：2026年10月6日}
+
+%===========================================================
+% --- 以下本文 --- %
+%===========================================================
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Lindblad方程式の具体例を通して減衰、位相緩和、エントロピーを整理し、
+期待値の演算子表示から二重化された経路積分を構成する。
+閉時間経路上の相関関数、Keldysh基底、環境の積分消去による影響汎関数を、
+動画の順序に沿ってまとめる。これは逐語訳ではなく、数式を整えた日本語の要約ノートである。
+動画にない計算・詳しい留保は付録にまとめ、本文から参照する。必要な仮定は本文にも出典付きで示す。
+\end{abstract}
+
+
+\hypertarget{toc}{}
+\tableofcontents
+\clearpage
+
+% =================================================================
+% --- section 1 --- %
+% =================================================================
+\begin{lecturesection}{1}{対象動画・出典・読み方}
+\label{sec:scope}
+対象は\href{https://www.youtube.com/watch?v=RYxzcUhIHjk}{Enrico Pajer, ``EFT of Open Systems:
+Path Integrals and the Schwinger--Keldysh Formalism (2/4)''}である。
+公開元はInstitut des Hautes Études Scientifiques（IHES）、動画の長さは1時間25分59秒。
+\href{https://www.carmin.tv/en/video/eft-of-open-systems-path-integrals-and-the-schwinger-keldysh-formalism-2-4}{公式配信ページ}の収録日は2026年7月6日、YouTubeの公開日は7月7日である。
+
+\subsectionlink{確認した範囲と補足の扱い}
+日本語自動生成字幕を通読し、数式は講師の公開ノート\cite{Pajer:2026fuo}と照合して再構成した。
+自動字幕は原語の校訂済み逐語録ではない。動画の対応時刻を各節冒頭に付け、
+省略された計算や詳しい適用条件は、引用箇所を明示して付録にまとめる。
+
+参照する公開ノートは\emph{Lectures on Open Systems and Cosmology},
+arXiv:2607.14351v1である。動画より後に公表された複数の学校向けのノートなので、
+文献の章立て・式番号を動画の板書番号と混同しない。
+本稿中の文献の節番号はこのv1版を指す。
+
+\begin{longtable}{@{}p{0.08\textwidth}p{0.48\textwidth}p{0.35\textwidth}@{}}
+\toprule 本稿 & 内容 & 動画のおおよその範囲\\\midrule\endhead
+2 & 減衰振動子とHeisenberg描像 & 0:56--15:03\\
+3 & 純粋位相緩和 & 15:12--19:04\\
+4 & 定常状態、unital性、エントロピー & 19:07--26:52\\
+5 & 経路積分を使う目的 & 27:14--37:17\\
+6 & 期待値から閉時間経路へ & 37:17--55:40\\
+7 & ソースと生成汎関数 & 55:47--58:34\\
+8 & 経路順序と各種相関関数 & 59:05--1:09:42\\
+9 & Keldysh基底と因果的応答 & 1:09:48--1:16:15\\
+10 & 環境の消去と影響汎関数 & 1:16:33--1:25:44\\\bottomrule
+\end{longtable}
+
+\subsectionlink{記法とページ構成}
+$\hbar=1$とし、$\rho$は密度演算子、$H$はHamiltonian、$\mathcal L$はその時間発展の生成子とする。
+演算子の期待値を$\av{O}=\Tr(\rho O)$、経路積分内の平均を$\pav{f}$と書く。
+初期時刻は$t_0$、観測時刻は$t$、経路の折返し時刻は$t_f\ge t$である。
+演算子と積分変数は文脈で区別し、必要な箇所では演算子にハットを付ける。
+
+各節は改ページし、付録の式番号はA.1などとする。青字は動画の対応時刻、赤茶色は文献補足を示す。
+見出しから目次、時刻から動画へ移動できる。
+\end{lecturesection}
+
+\begin{lecturesection}{2}{減衰する調和振動子とHeisenberg描像}
+\label{sec:damping}
+\videosource{\video{56}{0:56}--\video{903}{15:03}。一量子損失、占有確率、定常状態、随伴生成子。}
+\subsectionlink{ジャンプ演算子が表す過程}
+前講のLindblad方程式を出発点とする。
+\begin{align}
+ \dot\rho&=\mathcal L(\rho)=-i[H,\rho]+\sum_\mu\Diss[L_\mu]\rho,
+ \label{eq:lindblad}\\
+ \Diss[L]\rho&=L\rho L^\dagger-\frac12\{L^\dagger L,\rho\}.
+\end{align}
+$[a,a^\dagger]=1$、$N=a^\dagger a$、$H=\omega(N+1/2)$と置く。
+$L\propto a,a^\dagger,N$は、それぞれ損失、利得、位相緩和の例である。
+最初に計算するのは純粋減衰$L=\sqrt\kappa\,a$（$\kappa>0$）であり、散逸項の係数は$\kappa$になる。
+
+\subsectionlink{占有確率の閉じた方程式}
+数状態$\ket n$での対角成分$p_n=\bra n\rho\ket n$を占有確率（population）と呼ぶ。
+このモデルでは対角成分だけで方程式が閉じ、
+\begin{equation}
+ \dot p_n=\kappa\bigl[(n+1)p_{n+1}-np_n\bigr],\qquad n=0,1,\ldots
+ \label{eq:pauli}
+\end{equation}
+となる。第1項は$n+1\to n$の流入、第2項は$n\to n-1$の流出を表す。
+Hamiltonianはこの基底で対角なので、$\omega$は現れない。
+規格化された定常分布は$p_0=1$、$p_{n>0}=0$である。
+講師は、基底状態への緩和を古典的な振り子の減衰の量子版として説明する。
+
+\par\noindent 計算と出典は付録\ref{app:pop}にまとめる。
+
+\subsectionlink{期待値から見る同じ減衰}
+\videosource{\video{546}{9:06}--\video{903}{15:03}。}
+状態を発展させるSchr\"odinger描像と、観測量に双対写像を作用させる描像は等価である。
+\begin{align}
+ \Tr\bigl[\Phi_t(\rho_0)O\bigr]
+   &=\Tr\bigl[\rho_0\Phi_t^\dagger(O)\bigr],\\
+ \mathcal L^\dagger(O)
+   &=i[H,O]+\sum_\mu\left(L_\mu^\dagger O L_\mu
+       -\frac12\{L_\mu^\dagger L_\mu,O\}\right).
+ \label{eq:dual}
+\end{align}
+Hamiltonian部分は$+i$となり、散逸部分の$L\rho L^\dagger$は$L^\dagger O L$へ移る。
+$O=N$なら
+\begin{equation}
+ \mathcal L^\dagger(N)=-\kappa N,\qquad
+ \av{N(t)}=e^{-\kappa(t-t_0)}\av{N(t_0)}.
+ \label{eq:decayN}
+\end{equation}
+基底状態への緩和に対応して$\av N\to0$となる。ゼロ点エネルギー$\omega/2$と占有数は別の量である（計算は付録\ref{app:dual}）。
+
+\end{lecturesection}
+
+\begin{lecturesection}{3}{純粋位相緩和：占有確率を変えずに干渉を失う}
+\label{sec:dephasing}
+\videosource{\video{912}{15:12}--\video{1144}{19:04}。}
+次は$L=\sqrt\gamma\,N$（$\gamma\ge0$）を選ぶ。
+$L=L^\dagger$である。
+\par\noindent 二重交換子による書き換えは付録\ref{app:dephase}にまとめる。
+
+数基底で$\rho_{mn}=\bra m\rho\ket n$とすると、各成分が独立に発展する。
+\begin{align}
+ \dot\rho_{mn}
+  &=\left[-i\omega(m-n)-\frac\gamma2(m-n)^2\right]\rho_{mn},\\
+ \rho_{mn}(t)
+  &=e^{-i\omega(m-n)\Delta t}
+    e^{-\gamma(m-n)^2\Delta t/2}\rho_{mn}(t_0),
+ \qquad\Delta t=t-t_0.
+ \label{eq:dephasing}
+\end{align}
+対角成分では$m=n$なので$p_n(t)=p_n(t_0)$。
+非対角成分（coherence）はエネルギー差$\omega(m-n)$で振動し、$\gamma>0$なら減衰する。
+このようにエネルギー占有を変えずに位相の情報が失われる過程を純粋位相緩和と呼ぶ。
+
+\begin{center}
+\begin{tabular}{lll}\toprule
+ & 純粋減衰 & 純粋位相緩和\\\midrule
+ジャンプ演算子 & $\sqrt\kappa\,a$ & $\sqrt\gamma\,N$\\
+占有確率 & 低い$n$へ移動 & 一定\\
+長時間の状態 & 基底状態へ緩和 & 初期占有を残した対角状態\\
+主な効果 & 励起の損失 & 数基底の非対角成分の減衰\\\bottomrule
+\end{tabular}
+\end{center}
+
+\par\noindent 式の校訂と定常状態に関する注意は付録\ref{app:dephase}にまとめる。
+
+\end{lecturesection}
+
+\begin{lecturesection}{4}{定常状態・unital性・エントロピー}
+\label{sec:unital}
+\videosource{\video{1147}{19:07}--\video{1612}{26:52}。減衰例のエントロピーの議論は\video{481}{8:01}--\video{546}{9:06}。}
+\subsectionlink{定常状態の条件}
+定常状態$\rho_*$は$\mathcal L(\rho_*)=0$を満たす。
+閉じた系なら$[H,\rho_*]=0$である。エネルギー固有状態の混合はその例である。
+開放系ではHamiltonian項と散逸項を合わせてゼロにする必要がある。
+講義の減衰例は、初めに混合状態であっても純粋な基底状態に到達しうることを示す。
+したがって部分系のvon Neumannエントロピー
+\begin{equation}S(\rho)=-\Tr(\rho\log\rho)\end{equation}
+が常に増加するとは限らない。
+
+\subsectionlink{Unitalはunitaryとは異なる}
+写像$\Phi$が恒等演算子を保つことをunital性と呼ぶ。
+\begin{equation}\Phi(\id)=\id.\end{equation}
+有限次元$d$では、これは最大混合状態$\id/d$を保つことと同じである。
+時間一様なLindblad半群$\Phi_t=e^{t\mathcal L}$では
+\begin{equation}
+ \mathcal L(\id)=\sum_\mu[L_\mu,L_\mu^\dagger]=0
+ \label{eq:unital}
+\end{equation}
+が条件になる。各$L_\mu$がその随伴と可換なら十分だが、必要なのは和がゼロになることである。
+講師はこの点を口頭で言い直している。
+特にHermiteなジャンプ演算子による位相緩和はこの条件を満たす。
+
+有限次元のunitalなCPTP写像には
+\begin{equation}S(\Phi(\rho))\ge S(\rho)\label{eq:entropy}
+\end{equation}
+が成り立つ。講義では定理として紹介され、証明は行われない。
+
+\par\noindent 半群・有限次元の適用条件は付録\ref{app:entropy_conditions}にまとめる。
+
+減衰の途中でエントロピーが増える例もある。単調減少とは限らないことの具体例は付録\ref{app:entropy_example}に示す。
+
+\end{lecturesection}
+
+\begin{lecturesection}{5}{演算子から経路積分へ：何を計算したいのか}
+\label{sec:motivation}
+\videosource{\video{1634}{27:14}--\video{2237}{37:17}。}
+\subsectionlink{同じ形式、異なる物理的設定}
+講師は、繰り込みやゲージ理論、場の理論への拡張を見据えて、
+演算子形式と等価な経路積分の記述を用意する。
+さらに、同時刻の期待値だけでなく、異なる時刻の相関を一つの枠組みで扱うことを重視する。
+演算子形式で異時刻相関が計算できないという意味ではなく、その構造を整理する方法として経路積分が便利なのである。
+
+Schwinger--Keldysh（SK）形式が使われる状況は、講義では次のように区別される。
+\begin{enumerate}
+ \item 純粋状態をHamiltonianでユニタリーに発展させる場合。
+ \item 混合状態をHamiltonianでユニタリーに発展させる場合。
+ \item 環境を捨象した部分系の非Hamiltonian的な発展を扱う場合。
+\end{enumerate}
+SK形式は最初の二つにも使える。混合状態を使うこと、場を二重化すること、
+散逸が存在することは、それぞれ異なる事項である。
+講師がここで「閉じた系／開いた系」と言うときはHamiltonian的な発展かどうかに注目しており、
+電荷保存の有無だけで区別しているわけではない。
+
+\subsectionlink{期待値の二通りの表示}
+まず閉じた系を考え、$\rho_0=\rho(t_0)$とする。
+\begin{align}
+ \av{O(t)}
+   &=\Tr\bigl[U(t,t_0)\rho_0U^\dagger(t,t_0)O\bigr]\\
+   &=\Tr\bigl[\rho_0U^\dagger(t,t_0)O U(t,t_0)\bigr].
+ \label{eq:trace}
+\end{align}
+一行目は状態の時間発展、二行目は$O_H(t)=U^\dagger O U$という観測量の時間発展に対応する。
+この等式はトレースの巡回性による。
+\videosource{時間依存Hamiltonianに関する説明：\video{2623}{43:43}--\video{2670}{44:30}。}
+時間依存Hamiltonianも含めると
+\begin{equation}
+ U(t,t_0)=\mathcal T\exp\left[-i\int_{t_0}^t ds\,H(s)\right].
+\end{equation}
+時間に沿って順に微小発展を掛けるため、時間順序$\mathcal T$が自然に現れる。
+これを経路積分へ置き換えるのが次節の課題である。
+
+トレース内の$O$は固定演算子である。描像と積分変数の記法は付録\ref{app:notation}で補足する。
+
+\end{lecturesection}
+
+\begin{lecturesection}{6}{二本の経路と閉時間経路の構成}
+\label{sec:contour}
+\videosource{\video{2237}{37:17}--\video{3340}{55:40}。位置基底の挿入、境界条件、場の二重化。}
+\subsectionlink{三つの通常の積分}
+簡単のため観測量を$\hat x^n$に限る。
+$\id=\int dx\ket x\bra x$をトレースの三か所へ挿入すると
+\begin{align}
+ \av{\hat x_H(t)^n}
+  &=\int dx_{+,0}\,dx_{-,0}\,dx_f\;
+     \rho_0(x_{+,0},x_{-,0})\,x_f^n\notag\\[-0.3em]
+  &\quad\times
+     \bra{x_f}U(t,t_0)\ket{x_{+,0}}
+     \bra{x_{-,0}}U^\dagger(t,t_0)\ket{x_f},
+ \label{eq:threeintegrals}\\
+ \rho_0(x_{+,0},x_{-,0})&=\bra{x_{+,0}}\rho_0\ket{x_{-,0}}.
+\end{align}
+$x_{+,0}$と$x_{-,0}$は初期密度行列の二つの添字を区別する名前である。
+$x_f$は観測時刻にトレースをとるための共通の位置である。
+$\hat x^n$が位置基底で対角だから、終点での挿入は単なる数$x_f^n$になる。
+
+\subsectionlink{二つの発展核を経路積分にする}
+次に、それぞれの行列要素を履歴の積分へ置き換える。
+\begin{align}
+ \bra{x_f}U\ket{x_{+,0}}
+   &=\int_{x_+(t_0)=x_{+,0}}^{x_+(t)=x_f}\!\mathcal D x_+\;e^{iS[x_+]},\\
+ \bra{x_{-,0}}U^\dagger\ket{x_f}
+   &=\int_{x_-(t_0)=x_{-,0}}^{x_-(t)=x_f}\!\mathcal D x_-\;e^{-iS[x_-]},\\
+ S[x]&=\int_{t_0}^t ds\,L(x(s),\dot x(s)).
+\end{align}
+二本目の重みの符号が逆なのは、時間発展演算子の随伴を用いているからである。
+二つの独立な積分変数を$x_+$と$x_-$と呼ぶことが「場の二重化」であり、
+実在する量子自由度を二倍に増やしたわけではない。
+
+\begin{align}
+ \av{\hat x_H(t)^n}
+  &=\int dx_{+,0}\,dx_{-,0}\,dx_f\;\rho_0(x_{+,0},x_{-,0})\notag\\
+  &\quad\times\int_{x_{+,0}}^{x_f}\mathcal D x_+
+       \int_{x_{-,0}}^{x_f}\mathcal D x_-\;
+       e^{iS[x_+]-iS[x_-]}x_f^n.
+ \label{eq:skfull}
+\end{align}
+境界の数を積分する$dx$と、時間に依存する履歴を積分する$\mathcal D x$を区別する。
+講師はこの点を繰り返し強調する。
+
+\subsectionlink{終点では貼り合わせ、初期点では密度行列で重み付けする}
+式\eqref{eq:skfull}には次の二つの条件が組み込まれている。
+\begin{equation}
+ x_+(t)=x_-(t)=x_f,\qquad
+ (x_{+,0},x_{-,0})\text{の重み}=\rho_0(x_{+,0},x_{-,0}).
+\end{equation}
+終点の共通の値$x_f$も積分する。一方、初期点の二つの値は一般には一致しない。
+初期点まで$x_{+,0}=x_{-,0}$と置くと、初期密度行列の非対角成分を捨ててしまう。
+
+\begin{center}
+\begin{tikzpicture}[>=stealth,scale=0.95]
+ \draw[->,thick,noteblue] (0,0.6)--(8,0.6);
+ \draw[->,thick,noteblue] (8,-0.6)--(0,-0.6);
+ \draw[thick] (8,0.6)--(8,-0.6);
+ \node[above] at (4,0.6) {$+\text{枝}:\ e^{+iS[x_+]}$};
+ \node[below] at (4,-0.6) {$-\text{枝}:\ e^{-iS[x_-]}$};
+ \node[left] at (0,0.6) {$x_{+,0}$};
+ \node[left] at (0,-0.6) {$x_{-,0}$};
+ \node[right] at (8,0) {$x_f\text{を共通に積分}$};
+ \node[below] at (0,-1.15) {$t_0:\ \rho_0\text{による重み}$};
+ \node[below] at (8,-1.15) {$t$};
+\end{tikzpicture}
+\end{center}
+図は動画の前進枝・後退枝の説明を描き直したものである。
+紙面上の上下は経路を区別するための表示である。
+
+境界積分・初期密度行列・終点の貼り合わせをまとめてI.C.（initial conditions）と略記すると
+\begin{equation}
+ \av{\hat x_H(t)^n}
+ =\int_{\mathrm{I.C.}}\mathcal D x_+\mathcal D x_-\;
+   e^{iS[x_+]-iS[x_-]}x_\pm(t)^n.
+\end{equation}
+この式の挿入時刻は折返し点なので、$x_+(t)=x_-(t)$である。
+途中の異なる時刻へ演算子を挿入するときは、どちらの枝に置くかが重要になる。
+
+\par\noindent 初期状態と境界条件の補足は付録\ref{app:boundary}にまとめる。
+
+\end{lecturesection}
+
+\begin{lecturesection}{7}{外部ソースと生成汎関数}
+\label{sec:sources}
+\videosource{\video{3347}{55:47}--\video{3514}{58:34}。}
+\subsectionlink{汎関数微分で演算子を挿入する}
+観測量のたびに新しい積分を書く代わりに、各枝へ外部ソース$J_\pm(t)$を導入する。
+ここからは折返し時刻を$t_f$と書き、作用$S[x_\pm]$の積分上限およびI.C.の貼り合わせ時刻も$t_f$とする。
+\begin{align}
+ Z[J_+,J_-]
+ &=\int_{\mathrm{I.C.}}\mathcal D x_+\mathcal D x_-\;
+ \exp\left\{iS[x_+]-iS[x_-]
+     +i\int_{t_0}^{t_f}ds\,[J_+x_+-J_-x_-]\right\}.
+ \label{eq:Z}
+\end{align}
+$J_+$も$J_-$も自由に指定する外部関数であり、積分する動的変数ではない。
+指数をソースで微分し、最後に$J_\pm=0$と置くことで場の挿入が得られる。
+\begin{equation}
+ x_+(s)\ \longleftrightarrow\ \frac1i\frac\delta{\delta J_+(s)},
+ \qquad
+ x_-(s)\ \longleftrightarrow\ -\frac1i\frac\delta{\delta J_-(s)}.
+\end{equation}
+後退枝のソース項の符号を忘れない。多点関数にはこれらの微分を繰り返す。
+
+\subsectionlink{両枝に同じソースを加えると1になる}
+動画で強調される規格化は
+\begin{equation}Z[J,J]=1\label{eq:ZZ}
+\end{equation}
+である。これは$J=0$に限った規格化よりも強い条件である。
+前進・後退で同一の外部作用を加えれば、二つの時間発展は打ち消し合う。
+
+規格化された初期状態と、両枝で同じ実ソースを用いる。演算子表示による確認は付録\ref{app:normalization}に示す。
+
+\end{lecturesection}
+
+\begin{lecturesection}{8}{経路順序から時間順序・Wightman関数へ}
+\label{sec:ordering}
+\videosource{\video{3545}{59:05}--\video{4182}{1:09:42}。}
+\subsectionlink{経路上で後の演算子を左に置く}
+経路積分中の$x_\pm$は可換な数値の履歴だが、対応する量子演算子は一般には可換でない。
+その対応を指定するのが経路順序である。
+閉時間経路を$t_0\to t_f\to t_0$とたどったとき、後に現れる挿入を演算子積の左へ置く。
+したがって、$+$枝上では時間順序、$-$枝上では反時間順序になる。
+また$-$枝は経路上で必ず$+$枝より後なので、異なる枝の積では$-$枝の演算子を左へ置く。
+
+二点関数を$C_{ab}(t,t')=\pav{x_a(t)x_b(t')}$（ここだけ$a,b\in\{+,-\}$）と書くと
+\begin{align}
+ C_{++}(t,t')&=\av{\mathcal T\hat x(t)\hat x(t')},\\
+ C_{--}(t,t')&=\av{\overline{\mathcal T}\hat x(t)\hat x(t')},\\
+ C_{+-}(t,t')&=\av{\hat x(t')\hat x(t)},\label{eq:cpm}\\
+ C_{-+}(t,t')&=\av{\hat x(t)\hat x(t')}.\label{eq:cmp}
+\end{align}
+右辺の演算子はHeisenberg描像である。
+最後の二つは時間順序を付けないWightman関数である。
+$C_{+-}$の右辺の順序が逆転するのは$t$と$t'$の大小ではなく、枝の配置による。
+動画でも講師がこの順序をその場で確認している。
+
+\subsectionlink{多点関数と二本の枝で扱える範囲}
+同じ規則は多点関数にも適用できる。
+\begin{equation}
+ \pav{\prod_i x_+(t_i)\prod_j x_-(s_j)}
+  =\av{\overline{\mathcal T}\left[\prod_j\hat x(s_j)\right]
+          \mathcal T\left[\prod_i\hat x(t_i)\right]}.
+\end{equation}
+二本の枝は、反時間順序のブロックと時間順序のブロックを作る。
+より複雑な順序を持つOTOC（out-of-time-order correlator）には、
+さらに折返しを増やした経路が必要になる場合がある。
+講義はこの点を紹介するにとどめ、一般の多重経路の計算は行わない。
+
+折返し時刻$t_f$はすべての挿入時刻より後に選ぶ。余分な発展が相殺されることの確認は付録\ref{app:turnaround}に示す。
+
+講義の休憩後には、真空・ユニタリー発展での通常のin--out経路積分との関係についても言及がある。
+ただし、その場では証明は示されない。本稿ではこの発言を、
+すべてのSK相関関数が通常の時間順序積と同じだという主張には拡張しない。
+複素時間経路と$i\epsilon$処方についても短い助言があるが、具体的な計算はこの動画の範囲外である。
+\end{lecturesection}
+
+\begin{lecturesection}{9}{Keldysh基底：ゆらぎと応答を分ける}
+\label{sec:keldysh}
+\videosource{\video{4188}{1:09:48}--\video{4575}{1:16:15}。}
+\subsectionlink{平均と差への基底変換}
+二本の枝を次の線形結合へ組み替える。
+\begin{equation}
+ x_r=\frac{x_++x_-}{2},\qquad x_a=x_+-x_-,\qquad
+ x_\pm=x_r\pm\frac{x_a}{2}.
+ \label{eq:ra}
+\end{equation}
+講師は$r,a$をretarded/advancedの名称で呼ぶ。
+この段階では変数の名前であり、以下の相関関数の因果構造を見るとその意味が明らかになる。
+
+\subsectionlink{四つの二点関数}
+このノートでは講師の公開ノートと同じく、$G_R,G_A$の定義に$-i$を含めない。
+\begin{align}
+ G_K(t,t')&:=\pav{x_r(t)x_r(t')}
+       =\frac12\av{\{\hat x(t),\hat x(t')\}},\label{eq:GK}\\
+ G_R(t,t')&:=\pav{x_r(t)x_a(t')}
+       =\theta(t-t')\av{[\hat x(t),\hat x(t')]},\label{eq:GR}\\
+ G_A(t,t')&:=\pav{x_a(t)x_r(t')}
+       =\theta(t'-t)\av{[\hat x(t'),\hat x(t)]},\label{eq:GA}\\
+ \pav{x_a(t)x_a(t')}&=0.\label{eq:aa}
+\end{align}
+$G_K$は対称化されたゆらぎ、$G_R$は後の時刻に現れる因果的応答の構造を表す。
+また$G_A(t,t')=G_R(t',t)$である。
+$rr$の反交換子には$1/2$があるが、$ra,ar$には付けない。
+
+\par\noindent 規約の詳しい照合と混合相関の展開は付録\ref{app:ra}にまとめる。
+
+\subsectionlink{何がゼロになるのか}
+式\eqref{eq:aa}の一般化は、すべての挿入が$a$場である相関の消失である。
+\begin{equation}
+ \pav{x_a(t_1)\cdots x_a(t_n)}=0\qquad(n\ge1).
+ \label{eq:alla}
+\end{equation}
+自動字幕の「$a$場を一つでも含めばゼロ」という読み方は採用しない。
+実際、$ra$と$ar$は一般に非ゼロである。
+二重化された場は、新たな独立の物理的振動子を二つ導入するものではなく、
+相関と応答を整理する構造を持っている。
+
+\par\noindent ソース微分による証明は付録\ref{app:alla}にまとめる。
+
+\end{lecturesection}
+
+\begin{lecturesection}{10}{環境の積分消去とFeynman--Vernon影響汎関数}
+\label{sec:influence}
+\videosource{\video{4593}{1:16:33}--\video{5144}{1:25:44}。}
+\subsectionlink{系と環境を分ける}
+ここまで経路積分として構成したのは閉じたHamiltonian系である。
+SK形式を導入しただけでは散逸は生じない。
+そこで全体系の変数を、追跡したい系$x$と、追跡しない環境$q$に分ける。
+\begin{equation}
+ S_{\mathrm{tot}}[x,q]=S_S[x]+S_E[q]+S_{\mathrm{int}}[x,q].
+\end{equation}
+両枝に$x_\pm,q_\pm$を用意した上で、$q_+,q_-$の積分を実行し、$x_+,x_-$の記述だけを残す。
+
+\subsectionlink{影響汎関数の定義}
+\supplement{この分離表示では因子化初期状態$\rho_{SE}(t_0)=\rho_S(t_0)\otimes\rho_E(t_0)$を仮定する（文献\cite{Pajer:2026fuo}第4.3節、式(4.54)；付録\ref{app:initial}）。}
+環境に依存する重みをまとめて
+\begin{align}
+ \mathcal F[x_+,x_-]&:=e^{iS_{\IF}[x_+,x_-]}\notag\\
+ &=\int_{\rho_{E,0}}\mathcal Dq_+\mathcal Dq_-\;
+ \exp\Bigl\{iS_E[q_+]-iS_E[q_-]\notag\\
+ &\hspace{8em}+iS_{\mathrm{int}}[x_+,q_+]
+                   -iS_{\mathrm{int}}[x_-,q_-]\Bigr\}
+ \label{eq:influence}
+\end{align}
+と定義する。この$\mathcal F$がFeynman--Vernon影響汎関数であり、$S_{\IF}$を影響作用と呼ぶ。
+講義では$S_{\IF}$自体を影響汎関数と呼ぶこともあるので、本稿では二つを記号で区別する。
+計算できるかどうかとは独立に、環境の全効果をこの一つの量へまとめられる。
+
+積分の添字$\rho_{E,0}$には環境の初期密度行列による重みと終点のトレースを含む。詳細は付録\ref{app:initial}を参照。
+
+\subsectionlink{系だけの有効作用}
+環境を積分した後、系の生成汎関数は
+\begin{align}
+ Z[J_+,J_-]
+ &=\int_{\rho_{S,0}}\mathcal D x_+\mathcal D x_-\;
+ \exp\left\{iS_{\mathrm{eff}}[x_+,x_-]
+ +i\int ds\,(J_+x_+-J_-x_-)\right\},\\
+ S_{\mathrm{eff}}[x_+,x_-]
+ &=S_S[x_+]-S_S[x_-]+S_{\IF}[x_+,x_-].
+ \label{eq:seff}
+\end{align}
+閉じた系では作用は$+$枝だけの関数と$-$枝だけの関数の差だった。
+環境の相関を介して$q$を消去すると、$x_+$と$x_-$を同時に含む枝間相互作用が生じる。
+これが部分系の非ユニタリーな発展を表す経路積分上の新しい構造である。
+演算子形式の散逸項に対応する役割を、ここでは影響作用が担う。
+
+講義の結びでは、影響作用に散逸、雑音、非Markov的な記憶効果が含まれることを述べる。
+これらを具体的な模型で計算するのは次の段階であり、この動画では影響汎関数の導入で終わる。
+
+\supplement{非零の影響作用が必ず散逸を意味するわけではない。作用補正や記憶効果との区別は、文献\cite{Pajer:2026fuo}第4.3節に基づき付録\ref{app:if}で補う。}
+
+\subsectionlink{この動画で到達した点}
+密度行列の両側の時間発展が二本の経路になり、枝の選択が演算子の順序を指定する。
+平均と差の基底に移ると、ゆらぎと因果的応答が明確になる。
+さらに環境を積分すると、同じ経路積分の中に部分系の開放的な力学を組み込める。
+以上が本動画の到達点である。動画説明欄に挙げられている有効作用の制約や摂動論の全項目が、
+この85分間ですべて導出されたわけではない。
+\end{lecturesection}
+
+
+% ============================================================
+% 付録：動画で省略された計算・適用条件・出典対応表
+% ============================================================
+\appendix
+\renewcommand{\theequation}{\Alph{section}.\arabic{equation}}
+
+\sectionlink{演算子形式の補足計算}
+\label{app:operator}
+本文第2・3節の追加計算をまとめる。以下は文献に基づく補足であり、動画の逐語的な再現ではない。
+
+\subsectionlink{占有確率と定常分布}
+\label{app:pop}
+\supplement{占有確率の式の成分計算：文献\cite{Pajer:2026fuo}第3.5節「Pure damping」。以下は講義で省略された行間の計算である。}
+\begin{align}
+ \bra n a\rho a^\dagger\ket n&=(n+1)p_{n+1},\\
+ \tfrac12\bra n\{N,\rho\}\ket n&=np_n.
+\end{align}
+定常条件の$n=0$成分から$p_1=0$、続いて$p_2=0,\ldots$が得られ、規格化が$p_0=1$を決める。
+対角成分の閉性はこの$H,L$の選択の性質であり、任意のジャンプ演算子に対して仮定しない。
+
+\subsectionlink{随伴生成子と平均占有数}
+\label{app:dual}
+\supplement{双対性の意味と計算：文献\cite{Pajer:2026fuo}第2.5節「The Heisenberg-picture master equation」、第3.5節。}
+式\eqref{eq:dual}はトレースの巡回性から定義される随伴であり、
+$\mathcal L$自体が自己随伴という主張ではない。
+$a^\dagger Na=N(N-1)$を使うと$\mathcal L^\dagger(N)=\kappa[N(N-1)-N^2]$となる。
+
+\subsectionlink{位相緩和の二重交換子表示と校訂}
+\label{app:dephase}
+\supplement{二重交換子への書き換え：文献\cite{Pajer:2026fuo}第2.5節、式(2.83)。本文の成分表示を整理するために次式を補った。}
+\begin{equation}
+ \dot\rho=-i\omega[N,\rho]-\frac\gamma2[N,[N,\rho]].
+\end{equation}
+
+\supplement{式の復元と留保：文献\cite{Pajer:2026fuo}第3.5節「Pure dephasing」。}
+自動字幕では式\eqref{eq:dephasing}の位相の符号と$(m-n)^2$の二乗が不明瞭である。
+ここでは$\dot\rho=-i[H,\rho]+\cdots$という規約から復元した。
+非対角成分の消失は指定した基底についての記述であり、
+これだけで古典力学の全性質が導かれるわけではない。
+また、定常状態は一意ではなく、数基底で対角な規格化密度行列はすべて定常である。
+
+\clearpage
+\sectionlink{エントロピーの適用条件と検算例}
+\label{app:entropy}
+
+\subsectionlink{Unital性から時間に関する単調性を読む条件}
+\label{app:entropy_conditions}
+\supplement{定理の使い方：文献\cite{Pajer:2026fuo}第3.2節「Unital maps and the non-decrease of entropy」。}
+半群の任意の時間差に式\eqref{eq:entropy}を適用すれば、時刻に関する単調非減少性が従う。
+単に初期時刻からの各$\Phi_t$がunitalだというだけでは、任意の二時刻を結ぶ写像が
+unitalかつCPTPであるとは限らない。このノートでは講義と同じ半群の設定を用いる。
+調和振動子は無限次元であり、$\id$は規格化可能な状態ではない。
+$\id/d$を用いる有限次元の議論をそのまま無限次元へ移さない。
+
+\subsectionlink{純粋状態から出発する減衰の例}
+\label{app:entropy_example}
+\supplement{「基底状態へ行く」と「単調にエントロピーが減る」の区別：文献\cite{Pajer:2026fuo}第3.5節「Entropy and stationary states」。以下は本文の式\eqref{eq:pauli}から追加した検算例である。}
+純粋な$\ket1$からの減衰では、$q=e^{-\kappa\Delta t}$として
+\begin{equation}
+ \rho(t)=q\ket1\bra1+(1-q)\ket0\bra0,\qquad
+ S(t)=-q\log q-(1-q)\log(1-q).
+\end{equation}
+初期・終状態では$S=0$だが、中間では$S>0$である。
+したがって講義の「ゼロへ減る」は長時間の極限を述べるものと読み、任意の初期状態からの単調減少とは解釈しない。
+閉じた全体系がユニタリーに発展する場合、その全体系のvon Neumannエントロピーは一定である。
+
+\clearpage
+\sectionlink{Schwinger--Keldysh形式の補足確認}
+\label{app:sk}
+
+\subsectionlink{演算子と積分変数の記法}
+\label{app:notation}
+\supplement{記法の照合：文献\cite{Pajer:2026fuo}第4.1節、式(4.1)--(4.4)。}
+式\eqref{eq:trace}のトレース内の$O$はSchr\"odinger描像の固定演算子であり、
+外側の$\av{O(t)}$は時刻$t$における期待値を意味する。
+本文第6節で用いた経路$x_+(s),x_-(s)$は演算子ではなく積分変数である。
+この区別を保つと、二本の経路から一つの量子系の相関が得られる理由を追いやすい。
+
+\subsectionlink{初期状態と境界条件}
+\label{app:boundary}
+\supplement{数式と境界条件の照合：文献\cite{Pajer:2026fuo}第4.1節、式(4.6)--(4.12)。}
+I.C.という略記は、初期状態が真空であるとか、初期点が$-\infty$であることを意味しない。
+有限の$t_0$における一般の密度行列を重みとして選べる。
+本文第6節の導出は動画に合わせて位置の関数に限定している。
+
+\subsectionlink{生成汎関数の規格化}
+\label{app:normalization}
+\supplement{演算子表示による確認：文献\cite{Pajer:2026fuo}第4.1節、式(4.13)--(4.14)、(4.18)、(4.22)。}
+$H_J=H-J\hat x$と定義すると、
+\begin{align}
+ Z[J_+,J_-]&=\Tr\bigl[U_{J_+}\rho_0U_{J_-}^\dagger\bigr],\\
+ Z[J,J]&=\Tr\bigl[\rho_0 U_J^\dagger U_J\bigr]=\Tr\rho_0=1.
+\end{align}
+最後の等式は規格化された初期状態と、実ソースに対するユニタリー発展を使う。
+この恒等式から、付録\ref{app:alla}のように$a$場だけの相関関数が消えることも導ける。
+
+\subsectionlink{折返し時刻の自由度}
+\label{app:turnaround}
+\supplement{対応式の照合と折返し点：文献\cite{Pajer:2026fuo}第4.2節、式(4.23)、(4.26)--(4.30)。}
+折返し時刻$t_f$は最後の演算子挿入より後に選ぶことができる。
+挿入のない余分な区間は$U^\dagger(t_f,t)U(t_f,t)=\id$として相殺される。
+これは、観測時刻と経路の終端を同一視しなくてもよい理由である。
+
+\subsectionlink{混合相関の符号と係数}
+\label{app:ra}
+\supplement{規約と係数の照合：文献\cite{Pajer:2026fuo}第4.2節、式(4.31)--(4.41)。}
+本文の式\eqref{eq:GR}で定義した$G_R$を、$-i$または$i$を含む別の慣用的なGreen関数と同一視しない。
+ソースへの線形応答の係数を使うときも、ソースをHamiltonianへ入れる符号と揃える必要がある。
+特に$G_A$の交換子は$G_R$と引数の順序が逆である。
+以下に示す一例の展開は、動画で省略された代数計算を補ったものである。
+$t>t'$として$A=\av{\hat x(t)\hat x(t')}$、$B=\av{\hat x(t')\hat x(t)}$とすると
+\begin{equation}
+ \pav{x_r(t)x_a(t')}
+   =\tfrac12(C_{++}-C_{+-}+C_{-+}-C_{--})
+   =\tfrac12(A-B+A-B)=A-B.
+\end{equation}
+$t<t'$では同じ線形結合がゼロになり、式\eqref{eq:GR}の$\theta$関数が得られる。
+
+\subsectionlink{全ての挿入が差の場である相関の消失}
+\label{app:alla}
+\supplement{全$a$相関が消える理由：文献\cite{Pajer:2026fuo}第4.2節、式(4.42)--(4.46)。}
+ソースにも$J_r=(J_++J_-)/2$、$J_a=J_+-J_-$を定義すれば
+\begin{equation}
+ J_+x_+-J_-x_-=J_a x_r+J_r x_a.
+\end{equation}
+両枝のソースが等しい条件は$J_a=0$であり、$Z[J_r,J_a=0]=1$となる。
+この恒等式を$J_r$で何度微分してもゼロなので、式\eqref{eq:alla}が導かれる。
+これは二点関数に限らない、規格化からの制約である。
+
+\clearpage
+\sectionlink{影響作用の初期条件と解釈}
+\label{app:influence}
+
+\subsectionlink{因子化初期状態と環境のトレース}
+\label{app:initial}
+\supplement{初期条件と用語：文献\cite{Pajer:2026fuo}第4.3節、式(4.54)--(4.55)および同節の脚注。原論文は\cite{Feynman:1963fq}。}
+式\eqref{eq:influence}のように環境だけの初期重みを切り出す際は
+\begin{equation}\rho_{SE}(t_0)=\rho_S(t_0)\otimes\rho_E(t_0)
+\end{equation}
+という因子化初期状態を仮定している。これは字幕で明示されない仮定を文献から補ったものである。
+積分記号の添字$\rho_{E,0}$には、初期の$q_{+,0},q_{-,0}$の密度行列による重みと、
+終点$q_+(t_f)=q_-(t_f)=q_f$の貼り合わせおよび$q_f$の積分を含める。
+初期相関がある場合には初期の共同密度行列を保持し、この単純な分離をそのまま使わない。
+
+\subsectionlink{作用の補正・散逸・記憶効果の区別}
+\label{app:if}
+\supplement{模式的な「$S_{\IF}\ne0$なら開放系」の精密化：文献\cite{Pajer:2026fuo}第4.3節、式(4.55)--(4.57)とその後の物理的解釈に基づく整理。}
+影響作用にはパラメータの補正も含まれる。
+例えば実の局所汎関数について$S_{\IF}=\delta S[x_+]-\delta S[x_-]$と分離できる部分だけなら、
+系の作用を$S_S+\delta S$へ変更して吸収できる。
+したがって非零の影響作用のすべてが、それだけで散逸を意味するわけではない。
+枝間の\emph{相関関数}は閉じた系にも存在するが、ここで注目しているのは有効\emph{作用}の枝間結合である。
+また、環境の積分消去は一般に時刻間の非局所性を生む。
+それを局所的なLindblad方程式へ置き換えるには追加の近似・条件が必要であり、
+影響汎関数を定義しただけでMarkov性が成立したとはみなさない。
+
+\clearpage
+\sectionlink{補足出典の対応表}
+\label{app:sources}
+以下の節・式番号はすべて文献\cite{Pajer:2026fuo}のarXiv v1版を指す。
+\begin{longtable}{@{}p{0.09\textwidth}p{0.40\textwidth}p{0.43\textwidth}@{}}
+\toprule 本稿 & 文献で補った内容 & 引用箇所\\\midrule\endhead
+2 & 占有確率と随伴生成子の計算 & 第3.5節、式(3.114)--(3.127)；第2.5節、式(2.98)--(2.103)\\
+3 & 位相緩和の符号・平方・定常状態 & 第2.5節、式(2.83)；第3.5節、式(3.139)--(3.143)\\
+4 & 半群・有限次元の条件、非単調なエントロピー & 第3.2節、式(3.34)--(3.50)；第3.5節末尾「Entropy and stationary states」\\
+5--6 & 描像・積分変数・境界条件の区別 & 第4.1節、式(4.1)--(4.12)\\
+7 & $Z[J,J]=1$の演算子による確認 & 第4.1節、式(4.13)--(4.22)\\
+8 & 折返し点と相関の対応 & 第4.2節、式(4.23)、(4.26)--(4.30)\\
+9 & $r/a$係数・符号と全$a$相関の消失 & 第4.2節、式(4.31)--(4.46)\\
+10 & 因子化初期状態、影響作用の定義と解釈 & 第4.3節、式(4.52)--(4.57)とその前後\\\bottomrule
+\end{longtable}
+\noindent\texttt{ref.bib}には、元のファイルを残した上で、INSPIREのBibTeX出力をそのまま追記した。
+各エントリ直前のコメントに取得URLを記載している。
+元から存在したCaldeira--Leggettのエントリは保管しているが、本動画の補足の直接の出典には用いていないため、参考文献一覧には出力しない。
+\clearpage
+\renewcommand{\refname}{\hyperlink{toc}{参考文献}}
+\bibliographystyle{utphys}%
+\bibliography{ref}%参考文献リストを入れているファイル名。ref.bibから取り出す。
+
+\newpage
+
+\end{document}
