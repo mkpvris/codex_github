@@ -1,0 +1,173 @@
+{
+  "labels": {
+    "source_count": 52,
+    "translation_count": 52,
+    "identical_order": true
+  },
+  "references": {
+    "source_count": 62,
+    "translation_count": 62,
+    "identical_order": true
+  },
+  "citations": {
+    "source_count": 19,
+    "translation_count": 19,
+    "identical_order": true
+  },
+  "environments": {
+    "source_count": 114,
+    "translation_count": 114,
+    "identical_order": true
+  },
+  "figure_files": {
+    "source_count": 14,
+    "translation_count": 14,
+    "identical_order": true
+  },
+  "equation_macros": {
+    "source_count": 206,
+    "translation_count": 206,
+    "identical_order": true
+  },
+  "footnotes": {
+    "source_count": 6,
+    "translation_count": 6,
+    "identical_order": true
+  },
+  "parts": {
+    "source_count": 2,
+    "translation_count": 2,
+    "identical_order": true
+  },
+  "sections": {
+    "source_count": 8,
+    "translation_count": 8,
+    "identical_order": true
+  },
+  "subsections": {
+    "source_count": 19,
+    "translation_count": 19,
+    "identical_order": true
+  },
+  "subsubsections": {
+    "source_count": 13,
+    "translation_count": 13,
+    "identical_order": true
+  },
+  "captions": {
+    "source_count": 15,
+    "translation_count": 15,
+    "identical_order": true
+  },
+  "display_equations": {
+    "source_count": 117,
+    "translation_count": 117,
+    "identical_except_translated_prose": true,
+    "prose_only_changes": [
+      44,
+      57,
+      69
+    ]
+  },
+  "inline_math": {
+    "source_count": 373,
+    "translation_count": 373,
+    "identical_multiset_except_translated_prose": true,
+    "missing": {},
+    "added": {}
+  },
+  "comments": {
+    "source_count": 106,
+    "translation_count": 106,
+    "unchanged_content": true,
+    "missing": {},
+    "added": {}
+  },
+  "brace_balance": {
+    "source": 0,
+    "translation": 0
+  },
+  "coverage": "All active human prose, headings, quotations, table labels, captions, exercises and footnotes translated. Untranslated active words are personal names, established abbreviations, units, math notation and file/reference keys.",
+  "source_issues_preserved": [
+    {
+      "source_lines": [
+        317,
+        318
+      ],
+      "issue": "光円錐のキャプションで時間的 ds^2>0、空間的 ds^2<0 と記載され、本文の計量符号 (-+++) と不整合。"
+    },
+    {
+      "source_lines": [
+        412,
+        420
+      ],
+      "issue": "完全流体の混合エネルギー運動量テンソルの圧力項および対角成分の符号が、本文の (-+++) と整合しない。"
+    },
+    {
+      "source_lines": [
+        462
+      ],
+      "issue": "a(t) の指数が t^{2/3(1+w)} と記載され、2/[3(1+w)] の分母を明示していない。"
+    },
+    {
+      "source_lines": [
+        534,
+        536
+      ],
+      "issue": "ダークエネルギーの割合が本文では73%、直後の式では ΩΛ=0.72。"
+    },
+    {
+      "source_lines": [
+        692
+      ],
+      "issue": "演習の Ω_k=Ω−1 は先行箇所の Ω_k=1−Ω と符号が異なる。"
+    },
+    {
+      "source_lines": [
+        787
+      ],
+      "issue": "本文に固定文字列 Figure 2 があり、直後の地平線の図への参照としては図番号が不適切に見える。原文どおり図2と訳した。"
+    },
+    {
+      "source_lines": [
+        940,
+        954,
+        1149,
+        1299
+      ],
+      "issue": "スカラー作用の運動項および共変運動方程式のポテンシャル微分の符号が、冒頭の (-+++) 規約と不整合に見える。"
+    },
+    {
+      "source_lines": [
+        914,
+        976
+      ],
+      "issue": "sec:SR ラベルが原文に二重定義されている。原文どおり保持。"
+    },
+    {
+      "source_lines": [
+        1346
+      ],
+      "issue": "平面について a^2=0 と記載されるが、先行する平坦極限は a^2→∞。"
+    },
+    {
+      "source_lines": [
+        1360
+      ],
+      "issue": "問題集のFRW計量が本文とは逆の (+---) 符号規約で表記される。"
+    },
+    {
+      "source_lines": [
+        1382
+      ],
+      "issue": "R_ij が δ_ij[2 dot(a)^2+a ddot(a)+2k/a^2] と記載されており、一般の曲率を持つFRW座標での式として確認が必要。"
+    },
+    {
+      "source_lines": [
+        1424,
+        1425
+      ],
+      "issue": "問題名は m φ^2、直後の本文は m^2 φ^2 と記載される。"
+    }
+  ]
+}

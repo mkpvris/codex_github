@@ -1,0 +1,1296 @@
+
+\appendix
+\renewcommand{\thesection}{\Alph{section}}
+
+
+
+\part{付録}
+\sectionlink{宇宙論的摂動論}
+\label{sec:CPT}
+\setcounter{equation}{0}
+\renewcommand{\theequation}{A.\arabic{equation}}
+
+
+
+
+この付録では宇宙論的摂動論の基本事項をまとめる．内容は，Uros SeljakとChris Hirataによるプリンストン大学での講義の未公刊ノート，およびMalikとWandsの総説\cite{Malik:2008im}に基づく．
+
+ 
+%\subsectionlink{Gauges and Physical Perturbations}
+
+\subsectionlink{摂動を受けた宇宙}
+
+
+%A basic assumption of cosmology is that the universe is the homogeneous and isotropic  when averaged over large scales.
+
+一様な背景時空と宇宙のエネルギー運動量に対する摂動を考える．
+
+
+
+\subsubsection{計量摂動}
+
+
+
+空間的に平坦なFRW計量の最も一般的な1次摂動は
+\beq
+\label{equ:SVTmetric}
+\d s^2 = -(1+2 \Phi) \d t^2 + 2  a(t) B_{i} \d x^i \d t + a^2(t) [(1- 2 \Psi) \delta_{ij} + 2 E_{ij}] \d x^i \d x^j 
+\eeq
+である．ここで，$\Phi$は\textit{ラプス}と呼ばれる3次元スカラー，$B_i$は\textit{シフト}と呼ばれる3次元ベクトル，$\Psi$は空間\textit{曲率}摂動と呼ばれる3次元スカラーであり，$E_{ij}$は空間的な\textit{せん断}を表す3次元テンソルで，対称かつトレースレス，すなわち$E^i_i = \delta^{ij} E_{ij}=0$である．時刻$t$が一定の3次元超曲面を\textit{スライス}と呼び，空間座標$x^i$を一定に保ち時間$t$のみを変化させた曲線を\textit{スレッド}と呼ぶ．
+
+
+
+\subsubsection{エネルギー運動量の摂動}
+
+
+
+エネルギー運動量テンソルは，密度$\rho$，圧力$p$，3次元運動量密度が消える系の4元速度$u^\mu$，および異方的応力$\Sigma^{\mu \nu}$によって記述できる．
+
+
+
+密度摂動と圧力摂動は，自然に次のように定義される：
+\beq
+\delta \rho(t, x^i) \equiv \rho(t,x^i) - \bar \rho(t)\, , \qquad \text{かつ} \qquad \delta p(t, x^i) \equiv p(t, x^i) - \bar p(t)\, .
+\eeq
+ここで，上線は背景の値を表す．
+%If it doesn't cause confusion we will often drop the overbars.
+
+4元速度は拘束条件$g_{\mu \nu} u^\mu u^\nu = -1$を満たさなければならないため，計量を固定すると独立な成分は3つしかない．摂動された計量(\ref{equ:SVTmetric})において，摂動された4元速度は
+\beq
+u_\mu \equiv (-1-\Phi, a v_i) \, , \qquad \text{または} \qquad u^\mu \equiv (1 -\Phi, a^{-1}(v^i - B^i))\, .
+\eeq
+である．ここで$u_0$は，すべての摂動の1次まで拘束条件$u_\mu u^\mu = -1$を満たすように選んでいる．摂動のないFRW宇宙では異方的応力は消えるので，$\Sigma^{\mu \nu}$は1次摂動である．さらに，$\Sigma^{\mu \nu}$は次の拘束条件を満たす：
+\beq
+\Sigma^{\mu \nu} u_\nu = \Sigma^\mu_\mu = 0\, .
+\eeq
+$u_\mu$との直交性から$\Sigma^{0 0} = \Sigma^{0 j} = 0$が従う．すなわち，空間成分$\Sigma^{ij}$のみがゼロでない．トレースに関する条件からは$\Sigma^i_i=0$が従う．したがって，異方的応力はトレースレスな対称3次元テンソルである．
+
+
+
+最後に，これらの定義を用いると，摂動されたエネルギー運動量テンソルは
+\bea
+T^0_0 &=& - (\bar \rho + \delta \rho) \\
+T^0_i &=& (\bar \rho +\bar p)\, a v_i \\
+T^i_0 &=& -(\bar \rho + \bar p) (v^i - B^i)/a \\
+T^i_j &=& \delta^i_j (\bar p + \delta p) + \Sigma^i_j\, .
+\eea
+となる．エネルギー運動量テンソルに複数の寄与がある場合（例えば光子，バリオン，暗黒物質など），それらは$T_{\mu \nu} = \sum_I T^I_{\mu \nu}$と加え合わせる．このことから
+\begin{eqnarray}
+\delta \rho &=& \sum_I \delta \rho_I \\
+\delta p &=& \sum_I \delta p_I \\
+(\bar \rho + \bar p) v^i &=& \sum_I (\bar \rho_I + \bar p_I) v_I^i \\
+\Sigma^{ij} &=& \sum_I \Sigma_I^{ij}\, .
+\end{eqnarray}
+が従う．密度，圧力，異方的応力の摂動は単純に加算される．しかし速度は加算されない．そこで3次元運動量密度を
+\beq
+\delta q^i \equiv (\bar \rho + \bar p) \, av^i\, ,
+\eeq
+と定義すると，
+\beq
+\delta q^i = \sum_I \delta q^i_I\, .
+\eeq
+となる．
+
+
+
+
+\subsectionlink{スカラー，ベクトル，テンソル}
+
+
+
+Einstein方程式は，計量摂動とエネルギー運動量の摂動を関係づける．Einstein方程式は複雑な連立2階偏微分方程式であり，しかも非線形である．幸い，平坦なFRW背景時空の対称性により，摂動を独立なスカラー，ベクトル，テンソル成分に分解できる．これによってEinstein方程式は互いに結合しない常微分方程式の組に帰着する．
+
+
+
+
+\subsubsection{フーリエ空間におけるヘリシティとSVT分解}
+
+
+
+スカラー，ベクトル，テンソル摂動への分解は，フーリエ空間で最も明快に説明できる．一般の摂動$\delta Q(t,{\bf x})$のフーリエ成分を次のように定義する：
+\beq
+\delta Q(t, {\bf k}) = \int \d^3 {\bf x} \, \delta Q(t,{\bf x}) e^{-i {\bf k} \cdot {\bf x}}\, . 
+\eeq
+まず，\underline{並進不変性}の帰結として，異なるフーリエモード（異なる波数$k$）は独立に発展することに注意する．\footnote{以下の証明はUros SeljakとChris Hirataに教えていただいた．}
+
+
+
+\vspace{0.5cm}
+\hrule \vspace{0.3cm}
+{\bf 証明：}
+
+
+
+$N$個の摂動$\delta Q_I$（$I=1,\dots, N$）について，初期時刻$t_1$から終時刻$t_2$までの線形発展を考える：
+\beq
+\delta Q_I(t_2, {\bf k}) = \sum_{J=1}^N \int \d^3 \bar {\bf k} \ T_{IJ}(t_2,t_1, {\bf k}, \bar {\bf k}) \delta Q_J(t_1, \bar {\bf k})\, ,
+\eeq
+ここで伝達行列$T_{IJ}(t_2,t_1, {\bf k}, \bar {\bf k}) $はEinstein方程式から定まり，$k$モードが混合する可能性を許している．以下では，並進不変性が実際にはそのような結合を禁じることを示す．座標変換
+\beq
+x^{i'} = x^i + \Delta x^i\, , \qquad \text{ただし} \quad \Delta x^i = const.
+\eeq
+を考える．フーリエ振幅が次のように変化することを確認できる：
+\beq
+\delta Q_I'(t, {\bf k} ) = e^{-i k_j \Delta x^j} \delta Q_I(t, {\bf k} ) \, .
+\eeq
+したがって，プライム付き座標系における発展方程式は
+\begin{align}
+\delta Q_I'(t_2, {\bf k}) &= \sum_{J=1}^N \int \d^3 \bar {\bf k} \ e^{-i k_j \Delta x^j} T_{IJ}(t_2,t_1, {\bf k}, \bar {\bf k}) e^{i \bar k_j \Delta x^j }\,\delta Q_J'(t_1, \bar {\bf k}) \\
+&\equiv \sum_{J=1}^N \int \d^3 \bar {\bf k} \ T_{IJ}'(t_2,t_1, {\bf k}, \bar {\bf k}) \delta Q_J(t_1, \bar {\bf k})\, .
+\end{align}
+となる．並進不変性により，運動方程式は両座標系で同一でなければならない．すなわち，伝達行列$T_{IJ}$と$T'_{IJ}$は等しくなければならず，
+\beq
+ T_{IJ}(t_2,t_1, {\bf k}, \bar {\bf k}) =  e^{i(\bar k_j - k_j) \Delta x^j} T_{IJ}(t_2,t_1, {\bf k}, \bar {\bf k}) \, .
+\eeq
+である．これはすべての$\Delta x^j$に対して成り立たなければならない．したがって，$\bar {\bf k} = {\bf k}$であるか，あるいは$T_{IJ}(t_2,t_1; {\bf k}, \bar {\bf k}) =0$である．すなわち，波数ベクトル${\bf k}$をもつ摂動$\delta Q_I(t_2, {\bf k}) $は，波数ベクトル${\bf k}$をもつ初期摂動にのみ依存する．線形次数では，異なる$k$モードの間に結合はない．証明終．
+\vspace{0.2cm} \hrule
+\vspace{0.5cm}
+
+ 
+
+次に，フーリエ波数ベクトル${\bf k}$のまわりの角度$\psi$の回転を考える．摂動をその\textit{ヘリシティ}$m$によって分類する．ヘリシティ$m$の摂動は，上の回転によって振幅が$e^{im \psi}$倍される．スカラー，ベクトル，テンソル摂動を，それぞれヘリシティ0，$\pm 1$，$\pm 2$をもつ摂動として定義する．
+
+
+
+\vskip 6pt
+波数ベクトル${\bf k}$をもつフーリエモードを考える．一般性を失わずに${\bf k}=(0,0,k)$と仮定できる（あるいは背景の回転不変性を用いてもよい）．このとき任意の摂動の空間依存性は
+\beq
+\delta Q \propto e^{i k x^3}\, .
+\eeq
+である．${\bf k}$のまわりの回転を調べるには，ヘリシティ基底
+\beq
+{\bf e}_\pm \equiv \frac{{\bf e}_1 \pm i {\bf e}_2}{\sqrt{2}}\, , \qquad {\bf e}_3\, ,
+\eeq
+に移ると便利である．ここで$\{{\bf e}_1, {\bf e}_2, {\bf e}_3\}$は直交座標基底である．第3軸のまわりの角度$\psi$の回転は，次の作用をもつ：
+\beq
+\left( \begin{array}{c} x^{1'}  \\ x^{2'}  \end{array}\right) = \left( \begin{array}{c c} \cos \psi & \sin \psi \\ -\sin \psi & \cos \psi \end{array}\right)  \left( \begin{array}{c} x^1 \\ x^2 \end{array}\right) \, , \qquad x^{3'} = x^3\, , 
+\eeq
+また，
+\beq	
+ {\bf e}_\pm' = e^{\pm i \psi} {\bf e}_\pm\, , \qquad {\bf e}_3' ={\bf e}_3\, .
+\eeq
+である．任意のテンソル$T_{i_1 i_2 \dots i_n}$の反変成分は
+\beq
+T'_{i_1 i_2 \dots i_n} = e^{i(n_+ -n_-)\psi} T_{i_1 i_2 \dots i_n} \equiv e^{im \psi} T_{i_1 i_2 \dots i_n}
+\eeq
+と変換される．ここで$n_+$と$n_-$は，それぞれ$i_1 \dots i_n$に含まれるプラス添字とマイナス添字の個数を数える．ヘリシティはその差$m \equiv n_+ - n_-$として定義される．
+
+
+
+ヘリシティ基底$\{{\bf e}_\pm, {\bf e}_3\}$において，3次元スカラー$\alpha$は添字をもたない1つの成分のみからなり，明らかにヘリシティ0である．3次元ベクトル$\beta_i$は，ヘリシティ$\pm 1$および0の3つの成分$\beta_+, \beta_-, \beta_3$をもつ．対称かつトレースレスな3次元テンソル$\gamma_{ij}$は，ヘリシティ$\pm 2$，$\pm 1$，0の5つの成分$\gamma_{--},  \gamma_{++},\gamma_{-3},  \gamma_{+3}, \gamma_{33}$をもつ（トレースレス条件によって$\gamma_{-+}$は独立でなくなる）．
+
+
+
+\vskip 6pt
+背景の\underline{回転不変性}から，ヘリシティの意味でのスカラー，ベクトル，テンソルは独立に発展する．\footnote{以下の証明はUros SeljakとChris Hirataに教えていただいた．}
+
+
+
+
+\vspace{0.5cm}
+\hrule \vspace{0.3cm}
+{\bf 証明：}
+
+
+
+ヘリシティ$m_I$をもつ$N$個の摂動$\delta Q_I$（$I=1, \dots, N$）を考える．線形発展は
+\beq
+\delta Q_I(t_2, {\bf k}) = \sum_{J=1}^N T_{IJ}(t_2,t_1, {\bf k}) \delta Q_J(t_1, {\bf k})\, ,
+\eeq
+であり，伝達行列$T_{IJ}(t_2,t_1, {\bf k}) $はEinstein方程式から定まる．回転のもとで摂動は
+\beq
+\delta Q_I' (t, {\bf k})= e^{i m_I \psi} \delta Q_I(t, {\bf k})
+\eeq
+と変換され，
+\beq
+\delta Q_I'(t_2, {\bf k}) = \sum_{J=1}^N e^{i m_I \psi} \, T_{IJ}(t_2,t_1, {\bf k})\, e^{-im_J \psi}\delta Q_J'(t_1, {\bf k})\, .
+\eeq
+となる．運動方程式の回転不変性から
+\beq
+T_{IJ}(t_2,t_1, {\bf k}) = e^{i m_I \psi} \, T_{IJ}(t_2,t_1, {\bf k})\, e^{-im_J \psi} = e^{i(m_I-m_J)\psi } T_{IJ}(t_2,t_1, {\bf k})\, ,
+\eeq
+であり，これは任意の角度$\psi$に対して成り立たなければならない．したがって，$m_I=m_J$，すなわち$\delta Q_I$と$\delta Q_J$が同じヘリシティをもつか，あるいは$T_{IJ}(t_2,t_1, {\bf k})=0$である．これにより，運動方程式は異なるヘリシティのモードを混合しないことが示された．証明終．
+\vspace{0.2cm} \hrule
+\vspace{0.5cm}
+
+ 
+ 
+
+\subsubsection{実空間におけるSVT分解}
+
+ 
+
+前節では，3次元スカラーはヘリシティ・スカラーに対応し，3次元ベクトルはヘリシティ・スカラーとベクトルに分解され，3次元テンソルはヘリシティ・スカラー，ベクトル，テンソルに分解されることを見た．ここではこれを別の視点から考える．
+
+
+
+3次元スカラーは，明らかにヘリシティ・スカラーでもある：
+\beq
+\alpha = \alpha^S\, .
+\eeq
+3次元ベクトル$\beta_i$を考える．これは
+\beq
+\beta_i = \beta_i^S + \beta_i^V\, ,
+\eeq
+と分解できる．ここで
+\beq
+\beta_i^S = \nabla_i \hat \beta\, , \qquad \nabla^i \beta_i^V = 0\, ,
+\eeq
+であり，フーリエ空間では
+\beq
+\beta_i^S =-\frac{i k_i}{k}  \beta\, , \qquad k_i \beta_i^V = 0\, .
+\eeq
+となる．ここでは$\beta \equiv k \hat \beta$と定義した．
+%\beq
+%\nabla_i \to -  \frac{ik_i}{k}\, .
+%\eeq
+%This slightly unconventional normalization may be achieved by rescaling $\beta$.
+
+\begin{thm}[ヘリシティ・ベクトル]
+$\beta_i^V$がヘリシティ・ベクトルであることを示せ．
+\end{thm}
+
+
+
+同様に，トレースレスな対称3次元テンソルは
+\beq
+\gamma_{ij} = \gamma_{ij}^S + \gamma_{ij}^V + \gamma_{ij}^T\, ,
+\eeq
+と書ける．ここで
+\begin{eqnarray}
+\gamma_{ij}^S &=& \left( \nabla_i \nabla_j - \frac{1}{3} \delta_{ij} \nabla^2 \right) \hat \gamma\\
+\gamma_{ij}^V &=& \frac{1}{2} \left(\nabla_i \hat \gamma_j + \nabla_j \hat \gamma_i \right)\, , \quad \nabla_i \hat \gamma_i =0\\
+\nabla_i \gamma_{ij}^T &=&  =0\, .
+\end{eqnarray}
+であり，あるいは
+\begin{eqnarray}
+\gamma_{ij}^S &=&  \left(-\frac{k_i k_j}{k^2} + \frac{1}{3} \delta_{ij} \right) \gamma\\
+\gamma_{ij}^V &=& -\frac{i}{2k} \left( k_i \gamma_j + k_j \gamma_i \right)\, , \quad k_i \gamma_i =0\\
+k_i \gamma_{ij}^T &=&  =0\, .
+\end{eqnarray}
+と書ける．ここでは$\gamma \equiv k^2 \hat \gamma$および$\gamma_i \equiv k \hat \gamma_i$と定義した．
+
+
+
+\begin{thm}[ヘリシティ・ベクトルとテンソル]
+$\gamma_{ij}^V$と$\gamma_{ij}^T$が，それぞれヘリシティ・ベクトルとヘリシティ・テンソルであることを示せ．
+\end{thm}
+
+
+
+${\bf k}$を第3軸方向にとる，すなわち${\bf k}=(0,0,k)$とすると，
+\beq
+\gamma_{ij}^S = \frac{1}{3} \left( \begin{array}{ccc} \gamma & 0 & 0 \\ 0 & \gamma & 0 \\ 0 & 0 & - 2 \gamma \end{array}\right)
+\eeq
+\beq
+\gamma_{ij}^V = -\frac{i}{2} \left( \begin{array}{ccc} 0 & 0 & \gamma_1 \\ 0 & 0 & \gamma_2 \\ \gamma_1 & \gamma_2 & 0 \end{array}\right)
+\eeq
+\beq
+\gamma_{ij}^T =  \left( \begin{array}{ccc} \gamma^\times & \gamma^+ & 0 \\ \gamma^+ & - \gamma^\times & 0 \\ 0 & 0 & 0 \end{array}\right)\, .
+\eeq
+を得る．
+
+
+
+\subsectionlink{スカラー}
+
+
+
+\subsubsection{計量摂動}
+
+
+
+3次元スカラー，その微分，および背景の空間計量から，4つのスカラー計量摂動$\Phi$，$B_{,i}$，$\Psi \delta_{ij}$，$E_{, ij}$を構成できる．すなわち，
+\beq
+\label{equ:Smetric}
+\d s^2 = -(1+2 \Phi) \d t^2 + 2 a(t) B_{,i} \d x^i \d t + a^2(t)[(1-2\Psi) \delta_{ij} + 2 E_{, ij}] \d x^i \d x^j
+\eeq
+である．ここでは，ヘリシティ・スカラー$E_{ij}^{S}$のうち$\nabla^2 E\, \delta_{ij}$の部分を$\Psi\, \delta_{ij}$に吸収した．
+
+
+
+時刻一定の超曲面に固有のRicciスカラー曲率は
+\beq
+R_{(3)} = \frac{4}{a^2} \nabla^2 \Psi\, .
+\eeq
+である．このことから，$\Psi$がしばしば曲率摂動と呼ばれる理由が分かる．
+
+
+
+スカラー型のゲージ変換は2つある：
+\bea
+t &\to& t + \alpha\ , \\
+x^i &\to& x^i + \delta^{ij} \beta_{,j}\, .
+\eea
+これらの座標変換のもとで，スカラー計量摂動は次のように変換される：
+\bea
+\Phi &\to& \Phi - \dot \alpha \\
+B &\to & B + a^{-1} \alpha - a \dot \beta \\
+E &\to & E - \beta \\
+\Psi &\to& \Psi + H \alpha \, .
+\eea
+
+
+組合せ$\dot E - B/a$は空間的ゲージに依存せず，時間的ゲージだけに依存することに注意する．これは，時刻一定の超曲面に直交する世界線の異方的せん断に対するスカラーポテンシャルと呼ばれる．物理的な結果を取り出すには，スカラー計量摂動のゲージ不変な組合せを定義すると便利である．Bardeen\cite{Bardeen:1980kt}は，次の2つの重要なゲージ不変量を導入した：
+\bea
+\Phi_{\rm B} &\equiv& \Phi - \frac{d}{dt} [a^2 (\dot E - B/a)] \\
+\Psi_{\rm B} &\equiv& \Psi + a^2 H(\dot E - B/a)\, .
+\eea
+
+
+\subsubsection{物質摂動}
+
+
+
+物質摂動もゲージに依存する．例えば，時間的ゲージ変換のもとで密度摂動と圧力摂動は次のように変換される：
+\beq
+\delta \rho \to \delta \rho - \dot {\bar \rho}\, \alpha\, , \qquad \delta p \to \delta p- \dot {\bar p}\, \alpha\, .
+\eeq
+断熱的圧力摂動を
+\beq
+\delta p_{ad} \equiv \frac{\dot {\bar p}}{\dot {\bar \rho}}\, \delta \rho\, .
+\eeq
+と定義する．このとき圧力摂動の非断熱成分，すなわちエントロピー成分はゲージ不変であり，
+\beq
+\delta p_{en} \equiv \delta p - \frac{\dot {\bar p}}{\dot {\bar \rho}} \, \delta \rho\, .
+\eeq
+である．3次元運動量密度のスカラー成分$(\delta q)_{,i}$は
+\beq
+\delta q \to \delta q +(\bar \rho + \bar p)\, \alpha\, .
+\eeq
+と変換される．したがって，ゲージ不変な共動密度摂動を
+\beq
+\delta \rho_m \equiv \delta \rho - 3 H \delta q\, .
+\eeq
+
+
+と定義できる．最後に，物質摂動と計量摂動の組合せから，2つの重要なゲージ不変量を構成する．\textit{一様密度超曲面上の曲率摂動}は
+\beq
+- \zeta \equiv \Psi + \frac{H}{\dot {\bar \rho}} \delta \rho\, . 
+\eeq
+である．\textit{共動曲率摂動}は
+\beq
+{\cal R} = \Psi - \frac{H}{\bar \rho + \bar p} \delta q\, .
+\eeq
+である．後に，$\zeta$と$\R$は地平線を超えるスケールで等しくなり，そこで時間に依存しなくなることを示す．インフレーションによる摂動スペクトルの計算は，$\zeta$と$\R$を用いると最も明瞭に記述できる．
+
+
+
+\subsubsection{Einstein方程式}
+
+
+
+計量摂動とエネルギー運動量の摂動を関係づけるため，摂動されたEinstein方程式
+\beq
+\delta G_{\mu \nu} = 8 \pi G\, \delta T_{\mu \nu}\, .
+\eeq
+を考える．線形次数で計算すると，\textit{エネルギー拘束方程式および運動量拘束方程式}
+\begin{eqnarray}
+3H(\dot \Psi + H \Phi) + \frac{k^2}{a^2} \left[ \Psi + H(a^2 \dot E- aB)\right] &=& - 4\pi G \, \delta \rho \\
+\dot \Psi + H \Phi &=& - 4\pi G \, \delta q \, .
+\end{eqnarray}
+が得られる．これらを組み合わせると，ゲージ不変な\textit{Poisson方程式}
+\beq
+\frac{k^2}{a^2} \Psi_{\rm B} = - 4 \pi G \delta \rho_m\, .
+\eeq
+が得られる．Einstein方程式からは，さらに2つの\textit{発展方程式}
+\begin{eqnarray}
+\ddot \Psi + 3 H \dot \Psi + H \dot \Phi + (3 H^2 + 2 \dot H) \Phi &=& 4 \pi G\, \left( \delta p - \frac{2}{3} k^2 \delta \Sigma \right) \\
+(\partial_t + 3 H) (\dot E - B/a) + \frac{\Psi - \Phi}{a^2}&=& 8 \pi G\, \delta \Sigma\, .
+\end{eqnarray}
+が得られる．最後の方程式は次のように書ける：
+\beq
+\Psi_{\rm B} - \Phi_{\rm B} = 8 \pi G\, a^2 \delta \Sigma\, .
+\eeq
+異方的応力が存在しない場合，この式から$\Psi_{\rm B} = \Phi_{\rm B}$が従う．
+
+
+
+エネルギー運動量保存則$\nabla_\mu T^{\mu \nu} = 0$から，\textit{連続の式}および\textit{Euler方程式}
+\begin{eqnarray}
+\label{equ:conX}
+\dot{\delta \rho} + 3 H (\delta \rho + \delta p) &=& \frac{k^2}{a^2} \delta q + (\bar \rho + \bar p) [3 \dot \Psi + k^2 (\dot E + B/a)] \, ,\\
+\dot{\delta q} + 3 H \delta q &=& - \delta p + \frac{2}{3} k^2 \delta \Sigma - (\bar \rho + \bar p) \Phi\, .
+\end{eqnarray}
+
+
+が得られる．一様密度超曲面上の曲率摂動$\zeta$で表すと，式(\ref{equ:conX})は
+\beq
+\dot \zeta = - H \frac{\delta p_{en}}{\bar \rho + \bar p} - \Pi\, ,
+\eeq
+となる．ここで$\delta p_{en}$は圧力摂動の非断熱成分であり，$\Pi$は共動世界線に沿ったスカラーせん断である：
+\begin{eqnarray}
+\frac{\Pi}{H} &\equiv& - \frac{k^2}{3H} \left[ \dot E - B/a + \frac{\delta q}{a^2(\bar \rho + \bar p)}\right] \\
+&=& - \frac{k^2}{3 a^2 H^2} \left[ \zeta - \Psi_{\rm B} \left(1- \frac{2 \bar \rho}{9(\bar \rho+ \bar p)} \frac{k^2}{a^2 H^2}\right)\right]\, .
+\end{eqnarray}
+断熱摂動$\delta p_{en} =0$に対しては，地平線を超えるスケール$k/(aH) \ll 1$（すなわち，有限の$\zeta$と$\Psi_{\rm B}$に対して$\Pi/H \to 0$となる領域）で曲率摂動$\zeta$は一定になる．これは，\textbf{第2講}でインフレーションによる$\zeta$のスペクトルを計算するうえで決定的な結果である．これにより，地平線退出時に$\zeta$を計算し，地平線を超えた後の発展を無視することが正当化される．
+
+
+
+
+\subsubsection{よく用いられるゲージ}
+
+
+
+参照のため，よく用いられるさまざまなゲージでEinstein方程式と保存方程式を示す：
+
+
+
+\begin{itemize}
+\item {\bf 同期ゲージ}
+
+
+
+同期ゲージは，とくに摂動方程式を数値的に実装する際によく使われるゲージである（{\sf CMBFAST}~\cite{CMBFAST}や{\sf CAMB}~\cite{CAMB}を参照）．これは
+\beq
+\Phi = B=0\, .
+\eeq
+によって定義される．Einstein方程式は
+\begin{eqnarray}
+3H \dot \Psi + \frac{k^2}{a^2} \left[ \Psi + H a^2 \dot E\right] &=& - 4\pi G \, \delta \rho \\
+\dot \Psi &=& - 4\pi G \, \delta q \\
+\ddot \Psi + 3 H \dot \Psi &=& 4 \pi G\, \left( \delta p - \frac{2}{3} k^2 \delta \Sigma \right) \\
+(\partial_t + 3 H) \dot E  + \frac{\Psi }{a^2}&=& 8 \pi G\, \delta \Sigma\, .
+\end{eqnarray}
+となる．保存方程式は
+\begin{eqnarray}
+\label{equ:con:source-duplicate-1}
+\dot{\delta \rho} + 3 H (\delta \rho + \delta p) &=& \frac{k^2}{a^2} \delta q + (\bar \rho + \bar p) [3 \dot \Psi + k^2 \dot E ] \\
+\dot{\delta q} + 3 H \delta q &=& - \delta p + \frac{2}{3} k^2 \delta \Sigma \, .
+\end{eqnarray}
+である．
+
+
+
+\item {\bf Newtonゲージ}
+
+
+
+Newtonゲージという名称は，小スケール極限でNewton重力に帰着することに由来する．計量摂動とエネルギー運動量摂動の間に代数的関係が得られるため，解析的研究によく用いられる．
+
+
+
+Newtonゲージは
+\beq
+B=E=0\, ,
+\eeq
+および
+\beq
+\d s^2 -(1+2\Phi) \d t^2 + a^2(t) (1-2 \Psi) \delta_{ij} \d x^i \d x^j\, .
+\eeq
+によって定義される．Einstein方程式は
+\begin{eqnarray}
+3H(\dot \Psi + H \Phi) + \frac{k^2}{a^2}  \Psi &=& - 4\pi G \, \delta \rho \\
+\dot \Psi + H \Phi &=& - 4\pi G \, \delta q\\
+\ddot \Psi + 3 H \dot \Psi + H \dot \Phi + (3 H^2 + 2 \dot H) \Phi &=& 4 \pi G\, \left( \delta p - \frac{2}{3} k^2 \delta \Sigma \right) \\
+\frac{\Psi - \Phi}{a^2}&=& 8 \pi G\, \delta \Sigma\, .
+\end{eqnarray}
+である．連続の式は
+\begin{eqnarray}
+\label{equ:con:source-duplicate-2}
+\dot{\delta \rho} + 3 H (\delta \rho + \delta p) &=& \frac{k^2}{a^2} \delta q + 3 (\bar \rho + \bar p)  \dot \Psi \, ,\\
+\dot{\delta q} + 3 H \delta q &=& - \delta p + \frac{2}{3} k^2 \delta \Sigma - (\bar \rho + \bar p) \Phi\, .
+\end{eqnarray}
+である．
+
+
+
+\item {\bf 一様密度ゲージ}
+
+
+
+一様密度ゲージは，地平線を超えるスケールでの摂動の発展を記述するのに便利である．その名のとおり，
+\beq
+\delta \rho = 0\, .
+\eeq
+によって定義される．さらに，
+\beq
+E=0\, , \qquad
+-\Psi \equiv \zeta\, .
+\eeq
+
+
+ととると便利である．Einstein方程式は
+\begin{eqnarray}
+3H(- \dot \zeta + H \Phi) - \frac{k^2}{a^2} \left[ \zeta + a H B\right] &=& 0 \label{equ:x1} \\
+- \dot \zeta + H \Phi &=& - 4\pi G \, \delta q\\
+- \ddot \zeta - 3 H \dot \zeta + H \dot \Phi + (3 H^2 + 2 \dot H) \Phi &=& 4 \pi G\, \left( \delta p - \frac{2}{3} k^2 \delta \Sigma \right) \\
+(\partial_t + 3 H)  B/a + \frac{\zeta + \Phi}{a^2}&=& - 8 \pi G\, \delta \Sigma\, .
+\end{eqnarray}
+である．連続の式は
+\begin{eqnarray}
+\label{equ:con:source-duplicate-3}
+ 3 H \delta p&=& \frac{k^2}{a^2} \delta q + (\bar \rho + \bar p) [- 3 \dot \zeta + k^2  B/a] \, ,\\
+\dot{\delta q} + 3 H \delta q &=& - \delta p + \frac{2}{3} k^2 \delta \Sigma - (\bar \rho + \bar p) \Phi\, .
+\end{eqnarray}
+である．
+
+
+
+\item {\bf 共動ゲージ}
+
+
+
+共動ゲージはスカラー運動量密度が消える条件
+\beq
+\delta q = 0\, , \qquad E =0 \, .
+\eeq
+によって定義される．このゲージでは通常，$- \Psi \equiv {\cal R}$ともおく．
+
+
+
+Einstein方程式は
+\begin{eqnarray}
+3H(- \dot {\cal R} + H \Phi) + \frac{k^2}{a^2} \left[ - {\cal R} - aH B \right] &=& - 4\pi G \, \delta \rho \\
+- \dot {\cal R} + H \Phi &=& 0 \label{equ:xx1} \\
+- \ddot {\cal R} - 3 H \dot {\cal R} + H \dot \Phi + (3 H^2 + 2 \dot H) \Phi &=& 4 \pi G\, \left( \delta p - \frac{2}{3} k^2 \delta \Sigma \right) \\
+(\partial_t + 3 H) B/a + \frac{{\cal R} + \Phi}{a^2}&=& -8 \pi G\, \delta \Sigma\, .
+\end{eqnarray}
+である．連続の式は
+\begin{eqnarray}
+\label{equ:con:source-duplicate-4}
+\dot{\delta \rho} + 3 H (\delta \rho + \delta p) &=&  (\bar \rho + \bar p) [- 3 \dot {\cal R} + k^2  B/a] \, .\\
+0 &=& - \delta p + \frac{2}{3} k^2 \delta \Sigma - (\bar \rho + \bar p) \Phi \, .\label{equ:xx2}
+\end{eqnarray}
+である．式(\ref{equ:xx2})と(\ref{equ:xx1})を組み合わせると，
+\beq
+\Phi = \frac{- \delta p + \frac{2}{3} \Sigma}{\bar \rho + \bar p}\, , \qquad k B = \frac{4\pi G a^2 \delta \rho - k^2 {\cal R}}{a H}\, .
+\eeq
+となる．
+
+
+
+\item {\bf 空間的平坦ゲージ}
+
+
+
+インフレーションによる摂動の計算に便利なゲージは，空間的平坦ゲージ
+\beq
+\Psi=E=0\, .
+\eeq
+である．このとき，インフレーション中のすべてのスカラー摂動は$\delta \phi$によって記述される．
+
+
+
+Einstein方程式は
+\begin{eqnarray}
+3H^2 \Phi + \frac{k^2}{a^2} \left[- aH B)\right] &=& - 4\pi G \, \delta \rho \\
+ H \Phi &=& - 4\pi G \, \delta q\\
+ H \dot \Phi + (3 H^2 + 2 \dot H) \Phi &=& 4 \pi G\, \left( \delta p - \frac{2}{3} k^2 \delta \Sigma \right) \\
+(\partial_t + 3 H) B/a + \frac{ \Phi}{a^2}&=& - 8 \pi G\, \delta \Sigma\, .
+\end{eqnarray}
+
+
+である．連続の式は
+\begin{eqnarray}
+\label{equ:con}
+\dot{\delta \rho} + 3 H (\delta \rho + \delta p) &=& \frac{k^2}{a^2} \delta q + (\bar \rho + \bar p) [ k^2  B/a] \, ,\\
+\dot{\delta q} + 3 H \delta q &=& - \delta p + \frac{2}{3} k^2 \delta \Sigma - (\bar \rho + \bar p) \Phi\, .
+\end{eqnarray}
+である．
+
+
+
+\end{itemize}
+
+
+
+
+\subsectionlink{ベクトル}
+
+
+
+\subsubsection{計量摂動}
+
+
+
+ベクトル型の計量摂動は
+\beq
+\label{equ:Vmetric}
+\d s^2 = - \d t^2 + 2 a(t) S_{i} \d x^i \d t +  a^2(t) [\delta_{ij}+2 F_{(i, j)} ] \d x^i \d x^j\, ,
+\eeq
+と定義される．ここで$S_{i,i}= F_{i,i} = 0$である．ベクトル型のゲージ変換は
+\beq
+x^i \to x^i + \beta^i\, , \qquad \beta_{i,i}=0\, .
+\eeq
+であり，これによって次の変換が生じる：
+\bea
+S_i &\to& S_i + a \dot \beta_i\, , \\
+F_i &\to& F_i - \beta_i\, .
+\eea
+組合せ$\dot F_i + S_i/a$は，ゲージ不変なベクトルせん断摂動と呼ばれる．
+
+
+
+\subsubsection{物質摂動}
+
+
+
+異方的応力のベクトル成分を
+\beq
+\delta \Sigma_{ij} = \partial_{(i} \Sigma_{j)}\, , 
+\eeq
+によって定義する．ここで$\Sigma_i$は発散がゼロ，すなわち$\Sigma_{i,i} =0$である．
+
+
+
+\subsubsection{Einstein方程式}
+
+
+
+ベクトル摂動に対するEinstein方程式は2つだけである：
+%the {\it momentum and anisotropic stress equations}.
+%These may be written in the following form
+\begin{align}
+\dot{\delta q_i} + 3 H \delta q_i &= k^2 \delta \Sigma_i\, , \label{equ:div}  \\
+k^2 (\dot {F_i} + S_i/a) & = 16 \pi G \, \delta q_i\, . \label{equ:div2}
+\end{align}
+異方的応力が存在しない場合（$\delta \Sigma_i = 0$），発散がゼロの運動量$\delta q_i$は宇宙の膨張とともに減衰する．式(\ref{equ:div})を参照されたい．その結果，式(\ref{equ:div2})によってせん断摂動$\dot F_i + S_i/a$も消える．したがって，ほとんどの状況でベクトル摂動の寄与は副次的である．本講義では重要な役割を果たさない．とくに，ベクトル摂動はインフレーションによって生成されない．
+%\beq
+%Einstein
+%\eeq
+%Energy-momentum conservation is ensured by the {\it Euler equation} alone
+%The gauge-invariant vector shear perturbation relates directly to the divergence-free part of the momentum density via the constraint equation
+%\beq
+%k^2 (\dot {F_i} + S_i/a) = 16 \pi G \, \delta q_i\, .
+%\eeq
+
+\subsectionlink{テンソル}
+
+
+
+
+\subsubsection{計量摂動}
+
+
+
+テンソル計量摂動は
+\beq
+\label{equ:Tmetric}
+\d s^2 = - \d t^2 + a^2(t)[\delta_{ij} +  h_{ ij}] \d x^i \d x^j\, ,
+\eeq
+によって定義される．ここで$h_{ij, i} = h^{i}_i = 0$である．テンソル摂動は線形次数で自動的にゲージ不変となる．通常，テンソル摂動を，共動波数$k$とスカラー振幅$h(t)$をもつ空間Laplacianの固有モード$\nabla^2 e_{ij} = - k^2 e_{ij}$に分解する：
+\beq
+h_{ij} = h(t) e_{ij}^{(+,\times)}(x)\, .
+\eeq
+ここで$+$と$\times$は，可能な2つの偏極状態を表す．
+
+
+
+
+
+\subsubsection{物質摂動}
+
+
+
+テンソル摂動の源は，$\Sigma_{ij,i} = \Sigma^i_i =0$を満たす異方的応力$\Sigma_{ij}$である．ニュートリノの自由飛行によって小さな振幅が生じるものの，異方的応力を無視することは通常よい近似となる．
+
+
+
+\subsubsection{Einstein方程式}
+
+
+
+テンソル摂動に対するEinstein方程式は1つだけである．異方的応力がない場合，これは
+\beq
+\ddot h + 3H \dot h + \frac{k^2}{a^2} h = 0\, .
+\eeq
+となる．これは膨張宇宙における重力波の発展を記述する波動方程式である．重力波はインフレーションによって生成されるが，その後は宇宙の膨張とともに減衰する．しかし，再結合時にもその振幅が十分大きければ，CMB偏光の$B$モードに特徴的な痕跡を残す可能性がある．
+
+
+%\subsectionlink{Scalar-Vector-Tensor Decomposition}
+
+%\begin{thm}[Perturbed Einstein Equations]
+%Derive the linearized Einstein equations. 
+%Show that scalar, vector and tensor modes decouple. Warning: This might take a while!
+%\end{thm}
+
+
+
+%prove that scalars, vectors and tensors don't mix at first order
+
+
+
+\newpage
+\subsectionlink{統計}
+
+
+
+統計に関するいくつかの基本事項を復習する．詳しくはLicia Verdeの講義ノート\cite{LiciaStats}を参照されたい．
+
+
+
+
+\subsubsection{フーリエ変換の規約}% as a Source of Confusing}
+
+
+
+フーリエ変換の規格化にはさまざまな規約がある．
+\bea
+\R_{\bf k} &=& A \int \d^3 x \, \R(\bf x) \, e^{-i {\bf k} \cdot {\bf x}} \label{equ:F1} \, ,\\
+\R({\bf x}) &=& B \int \d^3 k \, \R_{\bf k} \, e^{i {\bf k} \cdot {\bf x}}\, ,
+\eea
+と定義すると，Diracのデルタ関数は
+\beq
+\delta({\bf k}) =  B A \int \d^3 x\, e^{\pm i {\bf k} \cdot {\bf x}}\, , \qquad BA = \frac{1}{(2\pi)^3}\, .
+\eeq
+となる．拘束条件$BA = 1/(2\pi)^3$を除けば，$A$と$B$の値について異なる規約を選べる．これらの規約は，パワースペクトルの規格化に含まれる$2\pi$の因子について混乱を招くことがある．本文では$A=1$，$B= 1/(2\pi)^{3}$という規約に従う（もう1つの一般的な規約は$A=B=1/(2\pi)^{3/2}$であり，基底関数$e^{i{\bf k} {\bf x}}$が単に直交するだけでなく正規直交するという利点がある）．ただし，この付録では文献中の規格化の誤りを見つけやすくするため，規約を一般のままにしておく．
+
+
+
+
+\subsubsection{2点相関関数}
+
+
+
+以下の2点相関関数を頻繁に用いる：
+\beq
+\xi_\R(r) \equiv \langle \R({\bf x}) \R({\bf x}+ {\bf r}) \rangle \, .
+\eeq
+ここでは，等方性によって$\xi$は$r \equiv |{\bf r}|$のみに依存する，すなわち方向ではなく距離にのみ依存すると仮定した．
+
+
+
+\subsubsection{パワースペクトル}
+
+
+
+次のアンサンブル平均を考える：
+\beq
+\langle \R_{{\bf k}}\, \R_{{\bf k}'}\rangle \, ,
+\eeq
+ここで，$\R({\bf x})$は実数なので$\R^*_{\bf k} = \R_{-{\bf k}}$である．式(\ref{equ:F1})を代入すると，
+\bea
+\langle \R_{{\bf k}}\, \R_{{\bf k}'}\rangle &=&  A^2 \int \d^3 x \, e^{ -i ({\bf k}+{\bf k}') {\bf x}} \int \d^3 r\, \xi_\R(r) e^{-i {\bf k} {\bf r}} \\
+&=& \frac{A}{B} \delta({\bf k} + {\bf k}') \int \d^3 r \, \xi_\R(r) e^{-i {\bf k} {\bf r}} \, .
+\eea
+を得る．パワースペクトルを2点相関関数のフーリエ変換として
+\beq
+P_\R(k) \equiv  A \int \d^3 r \, \xi_\R(r) \, e^{-i {\bf k} \cdot {\bf r}}\, ,
+\eeq
+と\textit{定義}すれば，
+\beq
+\langle \R_{{\bf k}}\, \R_{{\bf k}'}\rangle  = \frac{1}{B} P_\R(k) \delta({\bf k} + {\bf k}') \, .
+\eeq
+となる．パワースペクトルはしばしば
+\beq
+\langle \R_{{\bf k}}\, \R_{{\bf k}'}\rangle = (2\pi)^3 P_\R(k) \delta({\bf k} + {\bf k}')\, .
+\eeq
+と定義されることに注意する．ここまでの議論から，パワースペクトルを本当に2点関数のフーリエ変換とするなら，この定義はフーリエ変換の規約を$B=1/(2\pi)^3$に固定することを意味する．文献では，この点が正しく扱われていないことがよくある．
+
+
+
+
+分散
+\beq
+\sigma^2_\R \equiv \langle \R^2(x) \rangle = \xi_\R(0) = B \int \d^3 k\, P_\R(k)\, .
+\eeq
+を考える．これはしばしば
+\beq
+\sigma_\R^2 \equiv \int \d \ln k \, \Delta^2_\R(k)\, ,
+\eeq
+と定義される．ここで
+\beq
+\Delta_\R^2(k) \equiv 4\pi B \, k^3 P_\R(k)\, .
+\eeq
+である．よく用いられるフーリエ変換の規約$B=1/(2\pi)^3$では，これは
+\beq
+\Delta_\R^2(k) \equiv \frac{k^3}{2\pi^2} P_\R(k)\, .
+\eeq
+となる．別のフーリエ変換の規約では，$\Delta_\R^2(k)$と$P_\R(k)$の間の関係に数値因子の違いが生じる．
+
+
+
+\subsubsection{バイスペクトル}
+
+
+
+ガウス的な摂動では，パワースペクトルがすべての情報を含む（すべての高次相関関数は2点関数で表せる）．非ガウス性は，ゼロでない3点関数，あるいは同等に，フーリエ空間での次のバイスペクトルによって測られる：
+\beq
+\langle \R_{{\bf k}_1} \R_{{\bf k}_2} \R_{{\bf k}_3}\rangle = (2\pi)^3 B_\R(k_1, k_2, k_3) \delta({\bf k}_1 + {\bf k}_2 + {\bf k}_3)\, .
+\eeq
+
+
+\newpage
+\sectionlink{$\R$の自由場作用}
+\label{sec:malda}
+
+
+
+この付録では，共動曲率摂動$\R$の2次作用を計算する．これは，\textbf{第2講}で宇宙論的スカラー摂動を量子化するための基本的な要素である．\\
+
+
+
+重力に最小結合した正準スカラー場$\phi$で記述される，スローロール・インフレーション模型を考える：
+\beq
+\label{equ:SRaction}
+S = \frac{1}{2} \int \d^4 x \sqrt{-g}\, \left[R-(\nabla \phi)^2 - 2 V(\phi)
+\right]\, , %\qquad \Mp^{-2} \equiv 8 \pi G = 1\, .
+\eeq
+単位系は$\Mp^{-2} \equiv 8 \pi G = 1$とする．スカラー場$\delta \phi(t, x^i) \equiv \phi(t, x^i) - \bar \phi(t) $および計量の揺らぎによって生じる，この作用の摂動を調べる．計量揺らぎはADM形式（Arnowitt--Deser--Misner）\cite{ADM}で扱う．
+
+
+
+
+\subsectionlink{スローロール背景}
+
+
+
+平坦な背景計量
+\beq
+\d s^2 = - \d t^2 + a(t)^2\delta_{ij} \d x^i \d x^j = a^2(\tau) (-\d \tau^2 + \delta_{ij} \d x^i \d x^j) \, ,
+\eeq
+を考える．スケール因子$a(t)$とハッブルパラメータ$H(t) \equiv \partial_t \ln a$はFriedmann方程式
+\beq
+3 H^2 = \frac{1}{2} \dot \phi^2 + V(\phi)\, , \qquad 
+\dot H = - \frac{1}{2} \dot \phi^2 \, .
+\eeq
+を満たす．スカラー場はKlein--Gordon方程式
+\beq
+ \ddot \phi + 3 H \dot \phi + V_{,\phi} = 0\, .
+\eeq
+を満たす．標準的なスローロール・パラメータは
+\beq
+\epsilon_{\rm v} = \frac{1}{2} \Bigl(\frac{V_{, \phi}}{V} \Bigr)^2 \approx \frac{1}{2} \frac{\dot \phi^2}{H^2} \, , \qquad
+\eta_{\rm v} = \frac{V_{, \phi \phi}}{V} \approx - \frac{\ddot \phi}{H \dot \phi}  + \frac{1}{2} \frac{\dot \phi^2}{H^2}\, .
+\eeq
+である．
+
+
+
+\subsectionlink{ADM形式}
+揺らぎをADM形式\cite{ADM}で扱う．この形式では，時空を3次元超曲面に分割する：
+\beq
+\d s^2 = - N^2 \d t^2 + g_{ij} (\d x^i + N^i \d t) (\d x^j + N^j \d t)\, .
+\eeq
+ここで$g_{ij}$は，$t$一定のスライス上の3次元計量である．ラプス関数$N({\bf x})$とシフト関数$N_i({\bf x})$は，式(\ref{equ:Smetric})の計量摂動$\Phi$および$B$と同じ情報を含む．ただし，作用中で非力学的なLagrange未定乗数として現れるように選ばれており，その運動方程式は純粋に代数的である．作用(\ref{equ:SRaction})は
+\begin{align}
+\label{equ:ADMaction}
+S = \frac{1}{2} \int \d^4 x \sqrt{-g} \Bigl[ & N R^{(3)} - 2 N V + N^{-1} (E_{ij} E^{ij} -E^2) + \nonumber \\
+&  N^{-1} (\dot \phi - N^i \partial_i \phi)^2 - N g^{ij} \partial_i \phi \partial_j \phi - 2 V \Bigr]\, ,
+\end{align}
+となる．ここで
+\beq
+E_{ij} \equiv \frac{1}{2} (\dot g_{ij} - \nabla_i N_j - \nabla_j N_i)\, , \qquad E = E^{i}_i\, .
+\eeq
+である．$E_{ij}$は，3次元空間スライスの外部曲率$K_{ij} = N^{-1} E_{ij}$に関係している．
+
+
+
+\begin{thm}[ADM作用]
+式(\ref{equ:ADMaction})を確認せよ．
+\end{thm}
+
+
+
+\subsubsection{共動ゲージ}
+時間および空間の再パラメータ化を固定するため，力学変数$g_{ij}$と$\phi$について次のゲージを選ぶ：
+\beq
+\delta \phi = 0\, , \qquad g_{ij} = a^2 [(1- 2 \R) \delta_{ij} + h_{ij}]\, , \qquad \partial_i h_{ij} = h^i_{i} = 0\, .
+\eeq
+このゲージではインフラトン場に摂動はなく，すべてのスカラー自由度は計量揺らぎ$\R(t, {\bf x})$によってパラメータ化される．幾何学的には，$\R$は$\phi$一定の超曲面の空間曲率を測り，$R^{(3)} =  4 \nabla^2 \R/a^2$である．$\R$の重要な性質は，地平線の外側で一定に保たれることである．このため，\textbf{第2講}では計算を地平線通過時の相関関数に限定できる．
+
+
+
+\subsubsection{拘束方程式}
+ADM作用(\ref{equ:ADMaction})から，Lagrange未定乗数$N$および$N^i$について次の拘束方程式が得られる：
+\bea
+&& \nabla_i [N^{-1} (E^i_j - \delta^i_j E)] = 0\, , \label{equ:N}\\
+&& R^{(3)} - 2 V - N^{-2} (E_{ij} E^{ij} - E^2) - N^{-2} \dot \phi^2 = 0 \label{equ:Ni}\, .
+\eea
+
+
+\begin{thm}[拘束方程式]
+ADM作用(\ref{equ:ADMaction})から拘束方程式(\ref{equ:N})および(\ref{equ:Ni})を導け．
+\end{thm}
+
+
+
+拘束条件を解くため，シフトベクトル$N_i$を渦なしのスカラー成分と非圧縮のベクトル成分に分解する：
+\beq
+N_i \equiv \psi_{, i} + \tilde N_i\, , \quad \text{ただし} \quad \tilde N_{i,i} = 0\, ,
+\eeq
+また，ラプスの摂動を
+\beq
+N \equiv 1 + \alpha\, .
+\eeq
+と定義する．このとき量$\alpha$，$\psi$，$\tilde N_i$は，$\R$のべきで展開できる：
+\bea
+ \alpha &=&  \alpha_1+ \alpha_2+ \dots \, , \nonumber \\
+ \psi &=& \psi_1+\psi_2 + \dots\, , \nonumber \\
+ \tilde N_i &=& \tilde N_i^{(1)} + \tilde N_i^{(2)} + \dots \, ,
+ \eea
+ここで，例えば$\alpha_n ={\cal O}(\R^n)$である．各次数で拘束方程式をゼロとおくことができる．
+
+ 
+
+\begin{thm}[拘束方程式の1次解]
+
+ 
+
+1次では式(\ref{equ:Ni})から
+\beq
+ \label{equ:a1}
+\alpha_1 = \frac{\dot \R}{H}\, , \qquad \partial^2 \tilde N_i^{(1)} = 0\, .
+\eeq
+が従うことを示せ．境界条件を適切に選ぶと$\tilde N_i^{(1)} \equiv 0$とおける．1次では式(\ref{equ:N})から
+\beq
+ \label{equ:psi1}
+ \psi_1 = - \frac{\R}{H} + \frac{a^2}{H} \epsilon_{\rm v}\, \partial^{-2} \dot \R\, ,
+ \eeq
+が従うことを示せ．ここで$\partial^{-2}$は$\partial^{-2} (\partial^2 \phi) = \phi$によって定義される．
+\end{thm}
+
+ 
+
+%\subsectionlink{Scalar Perturbations}
+
+\subsubsection{自由場作用}
+
+
+
+
+$N$と$N_i$の1次解を作用に代入すると，次の2次作用が得られる\cite{malda}：
+\beq
+\label{equ:S2}
+\fbox{$\displaystyle
+S_2 = \frac{1}{2} \int \d^4 x \, a^3 \frac{\dot \phi^2}{H^2} \left[ \dot \R^2 - a^{-2} (\partial_i \R)^2 \right] $}\, .%\equiv \int \d \tau \d^3 x \, a^2 \, \epsilon \, \Box \zeta\, .
+\eeq
+
+
+\begin{thm}[2次作用]
+式(\ref{equ:S2})を確認せよ．ヒント：部分積分と背景の運動方程式を用いる．
+\end{thm}
+
+ 
+
+$\R$の2次作用(\ref{equ:S2})はこの付録の主要な結果であり，\textbf{第2講}で宇宙論的摂動を量子化する際の基礎となる．
+
+
+
+\newpage
+\sectionlink{in-in形式の簡単な復習}
+\label{sec:inin}
+
+
+
+宇宙論で相関関数を計算する問題は，素粒子物理に場の量子論を適用する際の対応する解析と，重要な点で異なる．素粒子物理の中心的な対象はS行列であり，遠い過去の状態$|\psi\rangle$が遠い未来のある状態$|
+\psi' \rangle $へ遷移する確率を記述する：$\langle \psi' | S | \psi \rangle = \langle \psi'(+\infty) | \psi(- \infty) \rangle$．この場合には，非常に早い時刻と非常に遅い時刻の\textit{両方}で漸近条件を課すことに意味がある．Minkowski空間では，遠い過去と遠い未来で状態は相互作用しないと仮定するからである．すなわち，漸近状態は自由Hamiltonian$H_0$の真空状態とみなされる．
+
+
+
+一方，宇宙論では，\textit{固定した時刻}における場の積の期待値を評価する．場に対する条件は，非常に早い時刻と非常に遅い時刻の両方に課すの\textit{ではなく}，波長が地平線の十分内側にある非常に早い時刻にのみ課す．\textbf{第2講}で論じたように，この極限では，等価原理によって相互作用表示の場はMinkowski空間と同じ形をもつはずである．これによりBunch--Davies真空，すなわちMinkowski空間の自由真空の定義に至った．
+
+
+
+この付録では，宇宙論的相関関数を計算するためのSchwinger--Keldyshの「in-in」形式\cite{Schwinger:1960qe}を説明する．CalzettaとHu\cite{Calzetta:1986ey}，およびJordan\cite{Jordan:1986ug}による先駆的研究の後，in-in形式の宇宙論的問題への適用は，近年Maldacena\cite{malda}とWeinberg\cite{Weinberg:2005vy}によって再び活発になった（\cite{Seery:2007we, Adshead:2009cb}も参照）．
+
+
+
+
+\subsectionlink{相互作用表示における時間発展}
+
+
+
+宇宙論的摂動の時間発展を記述するため，Hamiltonianを自由部分と相互作用部分に分ける：
+\beq
+\fbox{$\displaystyle
+H = H_0 + H_{\rm int} $}\, .
+\eeq
+自由場Hamiltonian$H_0$は摂動の2次式である．\textbf{第2講}の2点相関を計算するには2次までで十分だった．しかし，\textbf{第4講}の非ガウス性の研究で扱った高次相関には，2次を超えて相互作用Hamiltonian$H_{\rm int}$を定義する必要がある．相互作用Hamiltonianは，よく知られた時間発展演算子
+\beq
+U(\tau_2, \tau_1) = T \exp \left( - i \int_{\tau_1}^{\tau_2} \d \tau' H_{\rm int}(\tau') \right)\, ,
+\eeq
+を通じて状態の発展を定める．ここで$T$は時間順序演算子を表す．時間発展演算子$U$を用いると，任意の時刻における相互作用真空$|\Omega(\tau) \rangle$と自由なBunch--Davies真空$| 0 \rangle$を関係づけられる．まず，$\Omega(\tau)$を自由Hamiltonianの固有状態で展開する：
+\beq
+| \Omega \rangle = \sum_n |n \rangle \langle n | \Omega(\tau) \rangle\, .
+\eeq
+次に，$| \Omega(\tau) \rangle$を次のように時間発展させる：
+\beq
+\label{equ:evo}
+|\Omega(\tau_2) \rangle = U(\tau_2, \tau_1) | \Omega(\tau_1) \rangle = |0 \rangle \langle 0 | \Omega \rangle + \sum_{n \ge 1} e^{+ i E_n(\tau_2 - \tau_1)} | n \rangle \langle n | \Omega(\tau_1) \rangle \, .
+\eeq
+
+
+\subsectionlink{$| {\rm in}\rangle$真空}
+
+
+
+式(\ref{equ:evo})から，$\tau_2 = - \infty (1- i \epsilon)$という選択によってすべての励起状態が射影により取り除かれることが分かる．したがって，$\tau= - \infty(1-i \epsilon)$における相互作用真空と自由真空$| 0 \rangle$の間に，次の関係を得る：
+\beq
+|\Omega(-\infty(1-i\epsilon)) \rangle = |0\rangle \langle 0 | \Omega \rangle\, .
+\eeq
+最後に，任意の時刻$\tau$における相互作用真空は
+\bea
+| {\rm in} \rangle &\equiv& |\Omega(\tau) \rangle  = U(\tau, -\infty(1-i\epsilon)) | \Omega(-\infty(1-i \epsilon)) \rangle \\
+&=& T \exp \left( -i \int_{-\infty(1-i \epsilon)}^\tau \d \tau' H_{\rm int}(\tau')\right) | 0 \rangle \langle 0 | \Omega \rangle\, .
+\eea
+である．
+
+
+
+\subsectionlink{期待値}
+
+
+
+in-in形式では，時刻$\tau$における演算子の積$W(\tau)$の期待値$\langle W(\tau) \rangle$を，次のように評価する\footnote{この結果の導出についてはWeinberg\cite{Weinberg:2005vy}を参照．}：
+\bea
+\langle W(\tau) \rangle & \equiv & \frac{\langle {\rm in} | W(\tau) | {\rm in} \rangle}{\langle {\rm in} | {\rm in} \rangle} \\
+&=& \Bigl\langle 0 \Bigr| \left( T e^{-i \int_{-\infty^+}^\tau H_{\rm int}(\tau') \d \tau'} \right)^\dagger W(\tau)  \left( T e^{-i \int_{-\infty^+}^\tau H_{\rm int}(\tau'') \d \tau''} \right) \Bigl|0 \Bigr\rangle \, ,
+\eea
+あるいは，
+\beq
+\fbox{$\displaystyle
+\langle W(\tau) \rangle = \Bigl\langle 0 \Bigr| \left( \bar T e^{-i \int_{-\infty^-}^\tau H_{\rm int}(\tau') \d \tau'} \right) W(\tau)  \left( T e^{-i \int_{-\infty^+}^\tau H_{\rm int}(\tau'') \d \tau''} \right) \Bigl|0 \Bigr\rangle $} \, ,
+\eeq
+と書ける．ここで反時間順序演算子$\bar T$と記法$- \infty^\pm \equiv - \infty(1 \mp i \epsilon)$を定義した．相互作用Hamiltonian$H_{\rm int}$によって相関関数$\langle W(\tau) \rangle$を定義するこの式が，in-in形式の主要な結果である．相互作用Hamiltonianは一般相対論のADMアプローチ\cite{malda}で計算し，その後で$\langle W(\tau) \rangle$を摂動的に評価する．
+
+
+
+\textbf{第4講}では，さまざまなインフレーション模型の3点関数を計算する際に，暗黙のうちにこの形式を用いた：
+\begingroup
+\small
+\beq
+\label{equ:inin}
+\fbox{$\displaystyle
+\langle \R_{{\bf k}_1} \R_{{\bf k}_2} \R_{{\bf k}_3}\rangle(\tau)  =  \Bigl\langle 0 \Bigr| \left( \bar T e^{-i \int_{-\infty^-}^\tau H_{\rm int}(\tau') \d \tau'} \right)  \R_{{\bf k}_1}(\tau) \R_{{\bf k}_2}(\tau) \R_{{\bf k}_3}(\tau)  \left( T e^{-i \int_{-\infty^+}^\tau H_{\rm int}(\tau'') \d \tau''} \right) \Bigl|0 \Bigr\rangle $}\, .
+\eeq
+\endgroup
+
+
+
+\subsectionlink{相互作用Hamiltonian}
+
+
+
+相互作用Hamiltonianの計算法を概説しよう\footnote{完全な（骨の折れる）詳細を示す計算例についてはMaldacena\cite{malda}を参照．}．インフレーションの作用を摂動的に展開する：
+\beq
+S = S_0[\bar \phi, \bar g_{\mu \nu}] + S_2[\R^2] + S_3[\R^3] + \cdots \ .
+\eeq
+ここで背景部分$S_0$，2次の自由場部分$S_2$，非線形相互作用項$S_3$を定義した．背景作用$S_0$は，ハッブルパラメータ$H$およびスローロール・パラメータ$\varepsilon$，$\eta$を定める．自由場作用$S_2$は，相互作用表示におけるモード関数$\R(\tau)$（しばしば$\R_{\rm I}(\tau)$と記す）の時間発展を定める．作用の非線形部分は相互作用Hamiltonianを定める．例えば3次では$S_3 = - \int \d \tau H_{\rm int}(\R_{\rm I})$である．概略的に，相互作用Hamiltonianは次の形をとる：
+\beq
+H_{\rm int} = \sum_i f_i(\varepsilon, \eta, \dots) \R_{\rm I}^3(\tau)\, .
+\eeq
+
+
+
+
+\subsectionlink{摂動展開}
+
+
+
+\textbf{第2講}では，Mukhanov変数$v = 2 a^2 \varepsilon\, \R$に対応する演算子の，生成・消滅演算子による展開を定義した：
+\beq
+\hat v_{\bf k}(\tau) = v_k(\tau) \hat a_{\bf k} + v_k^*(\tau) \hat a_{-{\bf k}}^\dagger\, .
+\eeq
+モード関数$v_k(\tau)$は，すべてのモードが地平線の十分内側にあったときの初期状態の境界条件によって，一意に定められた：
+\beq
+v_k(\tau) = \frac{e^{-ik \tau}}{\sqrt{2k}} \left( 1 - \frac{i}{k \tau}\right)\, .
+\eeq
+自由な2点相関関数は
+\beq
+\langle 0 | \hat v_{{\bf k}_1}(\tau_1) \hat v_{{\bf k}_2}(\tau_2) |0 \rangle = (2\pi)^3 \delta({\bf k}_1+{\bf k}_2) G_{k_1}(\tau_1, \tau_2)\, ,
+\eeq
+であり，ここで
+\beq
+\label{equ:two}
+G_{k_1}(\tau_1, \tau_2) \equiv v_k(\tau_1) v_k^*(\tau_2)\, .
+\eeq
+である．式(\ref{equ:inin})を$H_{\rm int}$のべきで展開すると，次のようになる：
+\begin{itemize}
+\item 0次では
+\beq
+\label{equ:zero}
+\langle W(\tau) \rangle^{(0)}= \langle 0| W(\tau) | 0 \rangle\, ,
+\eeq
+である．ここで$W(\tau) \equiv \R_{{\bf k}_1}(\tau) \R_{{\bf k}_2}(\tau) \R_{{\bf k}_3}(\tau)$とした．
+\item 1次では
+\beq
+\label{equ:first}
+\langle W(\tau) \rangle^{(1)}= 2 \,{\rm Re} \left[ - i \int_{-\infty^+}^\tau \d \tau' \langle 0| W(\tau) H_{\rm int}(\tau') | 0 \rangle \right]\, .
+\eeq
+\item 2次では
+\bea
+\langle W(\tau) \rangle^{(2)} &=& - 2\, {\rm Re} \left[ \int_{-\infty^+}^\tau \d \tau'   \int_{-\infty^+}^{\tau'} \d \tau''  \langle 0| W(\tau) H_{\rm int}(\tau') H_{\rm int}(\tau'') | 0 \rangle \right]\, \nonumber \\
+&& \qquad + \int_{-\infty^-}^\tau \d \tau' \int_{-\infty^+}^\tau \d \tau'' \langle 0 | H_{\rm int}(\tau') W(\tau) H_{\rm int}(\tau'') | 0 \rangle\, .
+\eea
+\end{itemize}
+\textbf{第2講}のバイスペクトル計算では，ガウス的初期条件に対して0次の項(\ref{equ:zero})が消える．したがって主要な結果は式(\ref{equ:first})から得られる．式(\ref{equ:first})の評価にはWickの定理を用い，結果を2点関数(\ref{equ:two})の積として表す．
+
+
+
+
+\newpage
+\sectionlink{Hamilton--Jacobiアプローチによるスローロール・インフレーション}
+\label{sec:HSR}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setcounter{equation}{0}
+\renewcommand{\theequation}{B.\arabic{equation}}
+
+
+
+本講義では，\textit{厳密な}スローロール条件をパラメータ
+\beq
+\varepsilon = - \frac{\dot H}{H^2}\, ,\qquad \eta = - \frac{\ddot \phi}{H \dot \phi}\, ,
+\eeq
+によって定義し，\textit{近似的な}条件を
+\beq
+\epsilon_{\rm v} = \frac{\Mp^2}{2} \left(\frac{V_{,\phi}}{V} \right)^2\, , \qquad \eta_{\rm v} = \Mp^2 \frac{V_{, \phi \phi}}{V}\, .
+\eeq
+によって定義した．この付録では，これらの関係をさらに詳しく調べる．
+
+
+
+\subsectionlink{Hamilton--Jacobi形式}
+Hamilton--Jacobiアプローチでは，時間の関数としてのハッブル膨張率$H(\phi)= {\cal H}/a$を基本量として扱う．次の式を考える：
+\beq
+H_{,\phi} = \frac{H'}{\phi'} = \frac{- ({\cal H}^2 -{\cal H}')/a}{\phi'} = - \frac{\phi'}{2a}\, ,
+\eeq
+ここでは${\cal H}^2 -{\cal H}' = a^2 (\rho + p)/2 =  (\phi')^2/2$を用い，プライムは共形時間に関する微分を表す．これから基本方程式
+\beq
+\label{equ:master}
+\fbox{$\displaystyle
+\frac{d \phi}{d t} = \frac{\phi'}{a} = -2 H_{,\phi}$}\, .
+\eeq
+が得られる．この式を用いると，Friedmann方程式
+\beq
+H^2 = \frac{1}{3} \left[\frac{1}{2} \left(\frac{d \phi}{d t}\right)^2 +V(\phi)\right]
+\eeq
+を次のように書き直せる：
+\beq
+\label{HJ}
+\fbox{$\displaystyle
+[H_{,\phi}]^2 -\frac{3}{2} H^2 = -\frac{1}{2} V(\phi)$}\, .
+\eeq
+Hamilton--Jacobi方程式(\ref{HJ})の次の重要な帰結に注意する．任意の指定された関数$H(\phi)$に対し，それを厳密なインフレーション解$H(\phi)$として許すポテンシャル$V(\phi)$が得られる．式(\ref{equ:master})を積分すると，
+\beq
+\int \d t = -\frac{1}{2} \int \frac{\d \phi}{ H'(\phi)}
+\eeq
+によって$\phi$と固有時$t$が関係づけられる．これにより$H(t)$が求まり，さらに積分して$a(t)$を得られる．したがってHamilton--Jacobi形式を用いれば，背景膨張について厳密な解析解が分かっているインフレーション模型を無限に生成できる．ただし，ここでより重視するのは，この形式がスローロール・パラメータの明快で直観的な定義を与える点である．
+
+
+
+\subsectionlink{ハッブル・スローロール・パラメータ}
+
+
+
+スローロール・インフレーション中，背景時空は近似的にde Sitter時空である．背景の状態方程式
+\beq
+w=\frac{p}{\rho} = \frac{(\phi')^2/2a^2 -V}{(\phi')^2/2a^2 + V}
+\eeq
+の，厳密なde Sitter極限$w=-1$からのずれは，パラメータ
+\beq
+\fbox{$\displaystyle
+\varepsilon \equiv \frac{3}{2}(1+w) $}\, .
+\eeq
+によって定義できる．Friedmann方程式
+\begin{eqnarray}
+{\cal H}^2 &=& \frac{1}{3} a^2 \rho\\
+{\cal H}' &=& -\frac{1}{6} a^2 (\rho+3p)
+\end{eqnarray}
+を$\varepsilon$を用いて表すと，
+\begin{eqnarray}
+{\cal H}^2 &=& \frac{1}{3} \frac{(\phi')^2}{\varepsilon}\\
+{\cal H}' &=& {\cal H}^2 (1-\varepsilon) \, .
+\end{eqnarray}
+となる．したがって，
+\beq
+\varepsilon = 1-\frac{{\cal H}'}{{\cal H}^2} = \frac{d (H^{-1})}{d t} = - \frac{\dot H}{H^2}\, .
+\eeq
+である．これは，$e$フォールド数$\d N = H \d t = -\frac{1}{2} \frac{H(\phi)}{H_{,\phi}} \d\phi$に対するハッブルパラメータ$H$の変化率と解釈できることに注意する：
+\beq
+\fbox{$\displaystyle
+\varepsilon = -\frac{d \ln H}{d N} = 2 \left(\frac{H_{,\phi}}{H}\right)^2 $}\, .
+\eeq
+同様に，第2のスローロール・パラメータを$H_{,\phi}$の変化率として定義する：
+\beq
+\fbox{$\displaystyle
+\eta = - \frac{d \ln |H_{,\phi}|}{d N} = 2 \frac{H_{,\phi \phi}}{H}$}\, .
+\eeq
+式(\ref{equ:master})を用いると，これは
+\beq
+\eta = \frac{d \ln | \dot \phi |}{d N}\, .
+\eeq
+とも書ける．
+
+
+
+\subsectionlink{スローロール・インフレーション}
+
+
+
+定義によれば，スローロールとは，物理的な固有単位で測った宇宙のあらゆる力学的性質が，膨張の1 $e$フォールドの間にほとんど変化しない領域をいう．これにより，原始摂動はすべてのスケールでほぼ等しいパワーをもって生成され，スケール不変な摂動スペクトルが生じる．
+
+
+
+$\varepsilon$と$\eta$は，$e$フォールド数に対する$H$と$H_{,\phi}$の変化率を特徴づけるので，スローロールは自然に
+\begin{equation}
+\varepsilon \ll 1\, , \quad 
+|\eta| \ll 1 \, .
+\end{equation}
+と定義される．第1のスローロール条件から
+\beq
+\varepsilon \ll 1 \qquad \Rightarrow \qquad {\cal H}^2 = \frac{1}{3} \frac{(\phi')^2}{\varepsilon} \gg (\phi')^2\, ,
+\eeq
+が従い，第1 Friedmann方程式のスローロール極限は
+\beq
+{\cal H}^2 \approx \frac{1}{3} a^2 V \, .
+\eeq
+となる．第2のスローロール条件から
+\beq
+\eta = \frac{d \ln |\dot\phi|]}{d N} = \frac{\ddot \phi}{H |\dot \phi|}  \ll 1 \quad \quad \Rightarrow \quad \quad |\ddot \phi | \ll H |\dot \phi |\, ,
+\eeq
+が従い，Klein--Gordon方程式は
+\beq
+\dot{\phi} \approx - \frac{a^2 V'}{3 {\cal H}}\, .
+\eeq
+に帰着する．\textbf{第1講}では，ポテンシャル$V(\phi)$の局所的形状を用いて，よく使われる別の組のスローロール・パラメータを定義した：
+\begin{eqnarray}
+\epsilon_{\rm v} &\equiv& \frac{1}{2} \left(\frac{V_{,\phi}}{V}\right)^2\\
+\eta_{\rm v} &\equiv& \frac{V_{,\phi \phi}}{V}\, .
+\end{eqnarray}
+$\varepsilon(\phi_{\rm end}) \equiv 1$はインフレーションの終わりの厳密な定義であるが，$\epsilon_{\rm v}(\phi_{\rm end}) =1$は近似にすぎないことに注意する．スローロール領域では次の関係が成り立つ：
+\begin{eqnarray}
+\varepsilon &\approx& \epsilon_{\rm v} \\
+\eta &\approx& \eta_{\rm v} - \epsilon_{\rm v}\, .
+\end{eqnarray}
+
+
+\subsectionlink{インフレーションのアトラクター解}
+
+
+
+ここでは，スローロール条件$\varepsilon < 1$が，インフレーションがアトラクター解であることも意味することを示す．
+
+
+
+$\bar H(\phi)$をHamilton--Jacobi方程式(\ref{HJ})の解とする（この段階では，これがインフレーション解であることは要求しない）．小さな摂動$\delta H(\phi)$，すなわち
+\beq
+H(\phi) = \bar H(\phi) + \delta H(\phi)\, .
+\eeq
+を考える．式(\ref{HJ})を線形化すると，
+\beq
+\bar H_{, \phi}\, \delta H_{,\phi} \approx \frac{3}{2} \bar H \delta H\, ,
+\eeq
+あるいは
+\beq
+\frac{d}{d \phi} (\ln \delta H) = \frac{3}{2} \frac{\bar H}{\bar H_{, \phi}}\, .
+\eeq
+が得られる．その解は
+\beq
+\delta H(\phi) = \delta H(\phi_{\rm i}) \exp \left[ \frac{3}{2} \int_{\phi_{\rm i}}^\phi  \frac{\bar H}{\bar H_{, \phi}} \d \phi \right]\, .
+\eeq
+である．
+\beq
+\d N = - \frac{1}{2} \frac{H}{H_{, \phi}} \d \phi = \frac{| \d \phi|}{\sqrt{2 \varepsilon}} \ >\ 0\, ,
+\eeq
+であることを思い出すと，これは
+\beq
+\delta H(\phi) = \delta H(\phi_i) \exp \left[ -3 (N-N_i) \right]\, .
+\eeq
+と書ける．インフレーション中は$\varepsilon < 1$であり，膨張の$e$フォールド数$N$が急速に大きくなるため，インフレーション解への任意の摂動$\delta H$は指数関数的に希釈される．その結果，$H(\phi)$は$\bar H(\phi)$に近づく．
+
+
+%\sectionlink{The $\delta N$ Formalism}
+%\end{document}

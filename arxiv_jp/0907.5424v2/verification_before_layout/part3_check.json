@@ -1,0 +1,81 @@
+{
+  "source_lines": 1420,
+  "translated_source_lines": 613,
+  "replacement_blocks": 367,
+  "labels": {
+    "source": 57,
+    "translated": 57,
+    "missing": {},
+    "extra": {}
+  },
+  "references": {
+    "source": 65,
+    "translated": 65,
+    "missing": {},
+    "extra": {}
+  },
+  "citations": {
+    "source": 97,
+    "translated": 97,
+    "missing": {},
+    "extra": {}
+  },
+  "figures": {
+    "source": 14,
+    "translated": 14,
+    "missing": {},
+    "extra": {}
+  },
+  "environments": {
+    "source": 88,
+    "translated": 88,
+    "missing": {},
+    "extra": {}
+  },
+  "inline_math": {
+    "source": 318,
+    "translated": 318,
+    "missing": {},
+    "extra": {}
+  },
+  "display_math": {
+    "source": 82,
+    "translated": 82,
+    "changed": [
+      {
+        "index": 11,
+        "source": "K_p &=& \\sum_i (k_i)^p \\quad {\\rm with} \\quad K = K_1 \\\\\nK_{pq} &=& \\frac{1}{\\Delta_{pq}} \\sum_{i \\ne j} (k_i)^p (k_j)^q \\\\\nK_{pqr} &=& \\frac{1}{\\Delta_{pqr}} \\sum_{i \\ne j \\ne l} (k_i)^p (k_j)^q (k_l)^q \\\\\n\\tilde k_{ip} &=& K_p - 2 (k_i)^p \\quad {\\rm with} \\quad \\tilde k_i = \\tilde k_{i1}\\, ,",
+        "translated": "K_p &=& \\sum_i (k_i)^p \\quad \\text{ただし} \\quad K = K_1 \\\\\nK_{pq} &=& \\frac{1}{\\Delta_{pq}} \\sum_{i \\ne j} (k_i)^p (k_j)^q \\\\\nK_{pqr} &=& \\frac{1}{\\Delta_{pqr}} \\sum_{i \\ne j \\ne l} (k_i)^p (k_j)^q (k_l)^q \\\\\n\\tilde k_{ip} &=& K_p - 2 (k_i)^p \\quad \\text{ただし} \\quad \\tilde k_i = \\tilde k_{i1}\\, ,"
+      },
+      {
+        "index": 21,
+        "source": "S = \\frac{1}{2} \\int \\d^4 x \\sqrt{-g} \\left[ R - P(X, \\phi)\\right]\\, , \\quad {\\rm where} \\quad X \\equiv (\\partial_\\mu \\phi)^2\\, .",
+        "translated": "S = \\frac{1}{2} \\int \\d^4 x \\sqrt{-g} \\left[ R - P(X, \\phi)\\right]\\, , \\quad \\text{ただし} \\quad X \\equiv (\\partial_\\mu \\phi)^2\\, ."
+      },
+      {
+        "index": 31,
+        "source": "- 4& \\ < \\ f_{\\rm NL}^{\\rm local} \\ < \\ \\ +80 \\quad {\\rm at} \\ \\ 95\\% \\ {\\rm CL}\\, , \\\\\n- 125& \\ < \\ f_{\\rm NL}^{\\rm equil} \\ < \\ \\ +435 \\quad {\\rm at} \\ \\ 95\\% \\ {\\rm CL}\\, .",
+        "translated": "- 4& \\ < \\ f_{\\rm NL}^{\\rm local} \\ < \\ \\ +80 \\quad \\text{（信頼水準} \\ \\ 95\\% \\ \\text{）}\\, , \\\\\n- 125& \\ < \\ f_{\\rm NL}^{\\rm equil} \\ < \\ \\ +435 \\quad \\text{（信頼水準} \\ \\ 95\\% \\ \\text{）}\\, ."
+      },
+      {
+        "index": 33,
+        "source": "- 29 \\ < \\ f_{\\rm NL}^{\\rm local} \\ < \\ + 70 \\quad {\\rm at} \\ \\ 95\\% \\ {\\rm CL}\\, .",
+        "translated": "- 29 \\ < \\ f_{\\rm NL}^{\\rm local} \\ < \\ + 70 \\quad \\text{（信頼水準} \\ \\ 95\\% \\ \\text{）}\\, ."
+      }
+    ]
+  },
+  "unchanged_english_candidates": [
+    {
+      "line": 248,
+      "text": "\\d s^2 =  - \\d t^2 + a(t)^2 e^{2\\R} \\d {\\bf x}^2\\, ."
+    },
+    {
+      "line": 280,
+      "text": "S_{(2)} = \\int \\d^4 x \\, \\varepsilon \\left[ a^3 (\\dot \\R)^2/ \\underline{\\underline{c_s^2}} - a (\\partial_i \\R)^2\\right] + {\\cal O}(\\varepsilon^2)"
+    },
+    {
+      "line": 285,
+      "text": "S_{(3)} = \\int \\d^4 x\\, \\underline{\\underline{\\varepsilon^2}} \\left[ \\dots a^3 (\\dot \\R)^2 \\R/ \\underline{\\underline{c_s^2}} + \\dots a (\\partial_i \\R)^2 \\R + \\dots a^3 (\\dot \\R)^3/ \\underline{\\underline{c_s^2}} \\right] + {\\cal O}(\\varepsilon^3)"
+    }
+  ]
+}

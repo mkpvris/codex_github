@@ -1,0 +1,107 @@
+\documentclass[a4paper,11pt]{ltjsarticle}
+
+% ========== package ========== %
+% --- 数式環境 --- %
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+% --- 数式環境 END --- %
+% ブラケット
+\usepackage{braket}
+% ベクトルの太文字
+\usepackage{bm}
+% 添え字左右上下 \fourIdx{左上}{左下}{右上}{右下}{ベース} で使う．Iは大文字
+\usepackage{fouridx}
+% 色
+\usepackage{color}
+% 余白指定
+\usepackage{geometry}
+% --- ページ内リンク --- %
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue}
+% --- ページ内リンク END --- %
+% 花文字
+\usepackage{mathrsfs}
+% 画像
+\usepackage{graphicx}
+% tcolorbox
+\usepackage{tcolorbox}
+% appendix
+\usepackage{appendix}
+% --- 参考文献 --- %
+\usepackage{etoolbox}
+\usepackage{fontspec} % fontspecは読み込んでOKですが、設定順序に注意が必要です
+%% --- 参考文献フォント --- %%
+  \IfFontExistsTF{Times New Roman}{
+    \newfontfamily\bibfontface{Times New Roman}
+  }{
+    \newfontfamily\bibfontface{FreeSerif} % 代替フォント
+  }
+%% --- 参考文献フォント END --- %%
+%% --- 参考文献リンク位置 --- %%
+  \BeforeBeginEnvironment{thebibliography}{%
+    \phantomsection
+    \addcontentsline{toc}{section}{参考文献}
+  }
+  \AtBeginEnvironment{thebibliography}{%
+    \normalfont\bibfontface
+  }
+%% --- 参考文献のリンク位置 --- %%
+% --- 参考文献 END --- %
+% ========== package END ========== %
+
+% ========== newcommand ========== %
+% --- セクションから目次へのリンク --- %
+\newcommand{\sectionlink}[1]{\section[#1]{\hyperlink{toc}{#1}}}
+\newcommand{\subsectionlink}[1]{\subsection[#1]{\hyperlink{toc}{#1}}}
+% セクション番号リンク
+\makeatletter
+\renewcommand{\@seccntformat}[1]{%
+  \protect\hyperlink{toc}{\csname the#1\endcsname}\quad
+}
+\makeatother
+
+% 原文との照合のため，式番号は原文の通し番号と付録番号を保持する．
+% ==========- newcommand END ========== %
+\allowdisplaybreaks
+%===========================================================
+% --- タイトル --- %
+%===========================================================
+\geometry{left=25mm, right=25mm, top=30mm, bottom=30mm}
+
+% 原文の記号，引用，演習環境を再現する最小限の追加設定
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage[hang,small,bf]{caption}
+\usepackage{rotating}
+\DeclareRobustCommand{\SkipTocEntry}[4]{}
+\def\beq{\begin{equation}}
+\def\eeq{\end{equation}}
+\def\bea{\begin{eqnarray}}
+\def\eea{\end{eqnarray}}
+\def\Mp{M_{\rm pl}}
+\def\d{{\rm d}}
+\def\R{{\cal R}}
+\def\l{\ell}
+\newtheorem{thm}{演習}
+\newtheorem{thmP}{問題}
+\renewcommand{\theequation}{\arabic{equation}}
+\renewcommand{\theHequation}{\arabic{part}.\arabic{section}.\arabic{equation}}
+\setlength{\emergencystretch}{3em}
+\hypersetup{pdftitle={インフレーションに関するTASI講義（日本語訳）},pdfauthor={Daniel Baumann},unicode=true}
+\title{\bfseries インフレーションに関するTASI講義}
+\author{Daniel Baumann\\
+{\small ハーバード大学物理学科，Cambridge, MA 02138, USA}\\
+{\small プリンストン高等研究所自然科学部門，Princeton, NJ 08540, USA}}
+\date{\small 原文PDF表記：2024年11月26日\\arXiv第2版：2012年11月30日}
+
+\input{parts/front_ja.tex}
+\input{parts/part1_ja.tex}
+\input{parts/part2_ja.tex}
+\input{parts/part3_ja.tex}
+\input{parts/appendices_ja.tex}
+
+\clearpage
+\renewcommand{\refname}{\hyperlink{toc}{参考文献}}
+\bibliographystyle{utphys}
+\bibliography{ref}
+\end{document}
