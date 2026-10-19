@@ -1,0 +1,882 @@
+{
+  "provided_pdf": {
+    "path": "C:\\Users\\false\\OneDrive\\desktop\\Schwinger_Keldysh_OpenEFT\\#4_0709.0293v2.pdf"
+  },
+  "translation_pdf": {
+    "path": "C:\\Users\\false\\OneDrive\\ドキュメント\\ChatGPT\\pdf翻訳系\\tmp\\eft0709\\arxiv_jp\\0709.0293v2\\pdf\\0709.0293v2_jp.pdf",
+    "sha256": "3074c4debf9711baa824be7d2a8338a62b886b783131b88e16af41ce61c5d2fe",
+    "bytes": 629723,
+    "pages": 29
+  },
+  "math_comparison": [
+    {
+      "part": 1,
+      "explicit_display_count_original": 17,
+      "explicit_display_count_translation": 17,
+      "explicit_display_math_exact": true,
+      "be_ee_original_count": 10,
+      "be_ee_translation_count": 10,
+      "be_ee_multiset_exact": true,
+      "be_ee_ordered_exact": true,
+      "inline_math_original_count": 130,
+      "inline_math_translation_count": 130,
+      "inline_math_multiset_exact": true,
+      "labels_ordered_exact": true,
+      "cites_ordered_exact": true,
+      "refs_ordered_exact": true,
+      "footnotes_original": 4,
+      "footnotes_translation": 4
+    },
+    {
+      "part": 2,
+      "explicit_display_count_original": 6,
+      "explicit_display_count_translation": 6,
+      "explicit_display_math_exact": true,
+      "be_ee_original_count": 18,
+      "be_ee_translation_count": 18,
+      "be_ee_multiset_exact": true,
+      "be_ee_ordered_exact": true,
+      "inline_math_original_count": 146,
+      "inline_math_translation_count": 146,
+      "inline_math_multiset_exact": true,
+      "labels_ordered_exact": true,
+      "cites_ordered_exact": true,
+      "refs_ordered_exact": true,
+      "footnotes_original": 5,
+      "footnotes_translation": 5
+    },
+    {
+      "part": 3,
+      "explicit_display_count_original": 14,
+      "explicit_display_count_translation": 14,
+      "explicit_display_math_exact": true,
+      "be_ee_original_count": 17,
+      "be_ee_translation_count": 17,
+      "be_ee_multiset_exact": true,
+      "be_ee_ordered_exact": true,
+      "inline_math_original_count": 177,
+      "inline_math_translation_count": 177,
+      "inline_math_multiset_exact": true,
+      "labels_ordered_exact": true,
+      "cites_ordered_exact": true,
+      "refs_ordered_exact": true,
+      "footnotes_original": 7,
+      "footnotes_translation": 7
+    }
+  ],
+  "source_partition_complete": true,
+  "source_partition_scope": "Every active source token from Introduction through AppendixB, including acknowledgments, all footnotes, and the trailing bibliography style declarations footnotesize/parskip0pt, before begin{thebibliography}. Comments and whitespace are ignored. Earlier false flag was an audit-boundary bug:24 trailing style-declaration characters were included on one side only; no prose or mathematics was missing.",
+  "labels": {
+    "count_original": 30,
+    "count_translation": 30,
+    "exact_with_documented_normalizations": true,
+    "differences": {},
+    "normalizations": [
+      "The original eq:general2 label sat on an unnumbered continuation row and resolved to85; moved to numbered row84 without changing math.",
+      "Japanese appendix prefix 付録 is ignored when comparing A/B labels."
+    ]
+  },
+  "bibliography": {
+    "count": 32,
+    "all_numbers_match_original": true,
+    "ref16_intro_translated": true
+  },
+  "displayed_equations": {
+    "ordered_1_to_84": true,
+    "count": 84,
+    "locations": [
+      {
+        "number": 1,
+        "page": 3,
+        "x0": 510.47,
+        "x1": 524.41,
+        "top": 356.75,
+        "gap_from_nearest_formula_glyph_pt": 119.13,
+        "nearest_formula_glyph": "."
+      },
+      {
+        "number": 2,
+        "page": 3,
+        "x0": 510.47,
+        "x1": 524.41,
+        "top": 657.73,
+        "gap_from_nearest_formula_glyph_pt": 31.88,
+        "nearest_formula_glyph": "2"
+      },
+      {
+        "number": 3,
+        "page": 4,
+        "x0": 510.47,
+        "x1": 524.41,
+        "top": 359.63,
+        "gap_from_nearest_formula_glyph_pt": 45.71,
+        "nearest_formula_glyph": "."
+      },
+      {
+        "number": 4,
+        "page": 5,
+        "x0": 510.47,
+        "x1": 524.41,
+        "top": 221.03,
+        "gap_from_nearest_formula_glyph_pt": 149.83,
+        "nearest_formula_glyph": ","
+      },
+      {
+        "number": 5,
+        "page": 6,
+        "x0": 510.47,
+        "x1": 524.41,
+        "top": 359.63,
+        "gap_from_nearest_formula_glyph_pt": 71.23,
+        "nearest_formula_glyph": ","
+      },
+      {
+        "number": 6,
+        "page": 6,
+        "x0": 510.47,
+        "x1": 524.41,
+        "top": 648.52,
+        "gap_from_nearest_formula_glyph_pt": 161.47,
+        "nearest_formula_glyph": "r"
+      },
+      {
+        "number": 7,
+        "page": 6,
+        "x0": 510.47,
+        "x1": 524.41,
+        "top": 721.18,
+        "gap_from_nearest_formula_glyph_pt": 160.2,
+        "nearest_formula_glyph": "2"
+      },
+      {
+        "number": 8,
+        "page": 7,
+        "x0": 510.47,
+        "x1": 524.41,
+        "top": 118.38,
+        "gap_from_nearest_formula_glyph_pt": 141.75,
+        "nearest_formula_glyph": "]︁"
+      },
+      {
+        "number": 9,
+        "page": 7,
+        "x0": 510.47,
+        "x1": 524.41,
+        "top": 147.9,
+        "gap_from_nearest_formula_glyph_pt": 121.75,
+        "nearest_formula_glyph": "."
+      },
+      {
+        "number": 10,
+        "page": 7,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 261.82,
+        "gap_from_nearest_formula_glyph_pt": 32.56,
+        "nearest_formula_glyph": "."
+      },
+      {
+        "number": 11,
+        "page": 7,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 547.83,
+        "gap_from_nearest_formula_glyph_pt": 33.59,
+        "nearest_formula_glyph": "."
+      },
+      {
+        "number": 12,
+        "page": 8,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 155.27,
+        "gap_from_nearest_formula_glyph_pt": 126.2,
+        "nearest_formula_glyph": ")"
+      },
+      {
+        "number": 13,
+        "page": 8,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 424.05,
+        "gap_from_nearest_formula_glyph_pt": 103.56,
+        "nearest_formula_glyph": ","
+      },
+      {
+        "number": 14,
+        "page": 8,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 485.07,
+        "gap_from_nearest_formula_glyph_pt": 114.08,
+        "nearest_formula_glyph": "."
+      },
+      {
+        "number": 15,
+        "page": 8,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 545.03,
+        "gap_from_nearest_formula_glyph_pt": 91.85,
+        "nearest_formula_glyph": "."
+      },
+      {
+        "number": 16,
+        "page": 8,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 616.96,
+        "gap_from_nearest_formula_glyph_pt": 136.69,
+        "nearest_formula_glyph": ")"
+      },
+      {
+        "number": 17,
+        "page": 8,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 744.61,
+        "gap_from_nearest_formula_glyph_pt": 149.38,
+        "nearest_formula_glyph": "a"
+      },
+      {
+        "number": 18,
+        "page": 9,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 178.18,
+        "gap_from_nearest_formula_glyph_pt": 127.49,
+        "nearest_formula_glyph": "."
+      },
+      {
+        "number": 19,
+        "page": 9,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 241.54,
+        "gap_from_nearest_formula_glyph_pt": 102.23,
+        "nearest_formula_glyph": "."
+      },
+      {
+        "number": 20,
+        "page": 9,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 299.38,
+        "gap_from_nearest_formula_glyph_pt": 69.87,
+        "nearest_formula_glyph": "."
+      },
+      {
+        "number": 21,
+        "page": 9,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 391.24,
+        "gap_from_nearest_formula_glyph_pt": 59.34,
+        "nearest_formula_glyph": "."
+      },
+      {
+        "number": 22,
+        "page": 9,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 455.21,
+        "gap_from_nearest_formula_glyph_pt": 161.78,
+        "nearest_formula_glyph": "."
+      },
+      {
+        "number": 23,
+        "page": 9,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 512.6,
+        "gap_from_nearest_formula_glyph_pt": 28.54,
+        "nearest_formula_glyph": "."
+      },
+      {
+        "number": 24,
+        "page": 9,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 555.84,
+        "gap_from_nearest_formula_glyph_pt": 129.84,
+        "nearest_formula_glyph": "."
+      },
+      {
+        "number": 25,
+        "page": 9,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 667.12,
+        "gap_from_nearest_formula_glyph_pt": 123.73,
+        "nearest_formula_glyph": "+"
+      },
+      {
+        "number": 26,
+        "page": 10,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 255.94,
+        "gap_from_nearest_formula_glyph_pt": 170.27,
+        "nearest_formula_glyph": "."
+      },
+      {
+        "number": 27,
+        "page": 10,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 343.22,
+        "gap_from_nearest_formula_glyph_pt": 180.48,
+        "nearest_formula_glyph": "0"
+      },
+      {
+        "number": 28,
+        "page": 10,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 467.09,
+        "gap_from_nearest_formula_glyph_pt": 86.56,
+        "nearest_formula_glyph": "."
+      },
+      {
+        "number": 29,
+        "page": 11,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 486.04,
+        "gap_from_nearest_formula_glyph_pt": 127.77,
+        "nearest_formula_glyph": "]"
+      },
+      {
+        "number": 30,
+        "page": 11,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 584.4,
+        "gap_from_nearest_formula_glyph_pt": 158.25,
+        "nearest_formula_glyph": "."
+      },
+      {
+        "number": 31,
+        "page": 11,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 688.65,
+        "gap_from_nearest_formula_glyph_pt": 117.08,
+        "nearest_formula_glyph": ","
+      },
+      {
+        "number": 32,
+        "page": 11,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 743.94,
+        "gap_from_nearest_formula_glyph_pt": 32.18,
+        "nearest_formula_glyph": "."
+      },
+      {
+        "number": 33,
+        "page": 12,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 157.85,
+        "gap_from_nearest_formula_glyph_pt": 61.73,
+        "nearest_formula_glyph": "."
+      },
+      {
+        "number": 34,
+        "page": 12,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 673.59,
+        "gap_from_nearest_formula_glyph_pt": 103.89,
+        "nearest_formula_glyph": "′"
+      },
+      {
+        "number": 35,
+        "page": 13,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 203.58,
+        "gap_from_nearest_formula_glyph_pt": 171.05,
+        "nearest_formula_glyph": "."
+      },
+      {
+        "number": 36,
+        "page": 13,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 348.76,
+        "gap_from_nearest_formula_glyph_pt": 67.17,
+        "nearest_formula_glyph": "."
+      },
+      {
+        "number": 37,
+        "page": 13,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 661.93,
+        "gap_from_nearest_formula_glyph_pt": 154.56,
+        "nearest_formula_glyph": "."
+      },
+      {
+        "number": 38,
+        "page": 14,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 121.78,
+        "gap_from_nearest_formula_glyph_pt": 163.61,
+        "nearest_formula_glyph": "."
+      },
+      {
+        "number": 39,
+        "page": 14,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 307.13,
+        "gap_from_nearest_formula_glyph_pt": 77.66,
+        "nearest_formula_glyph": "."
+      },
+      {
+        "number": 40,
+        "page": 14,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 491.51,
+        "gap_from_nearest_formula_glyph_pt": 8.1,
+        "nearest_formula_glyph": "."
+      },
+      {
+        "number": 41,
+        "page": 14,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 555.15,
+        "gap_from_nearest_formula_glyph_pt": 35.53,
+        "nearest_formula_glyph": "."
+      },
+      {
+        "number": 42,
+        "page": 15,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 182.42,
+        "gap_from_nearest_formula_glyph_pt": 117.3,
+        "nearest_formula_glyph": ","
+      },
+      {
+        "number": 43,
+        "page": 15,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 275.54,
+        "gap_from_nearest_formula_glyph_pt": 165.19,
+        "nearest_formula_glyph": "."
+      },
+      {
+        "number": 44,
+        "page": 15,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 437.65,
+        "gap_from_nearest_formula_glyph_pt": 139.91,
+        "nearest_formula_glyph": "."
+      },
+      {
+        "number": 45,
+        "page": 15,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 619.65,
+        "gap_from_nearest_formula_glyph_pt": 163.87,
+        "nearest_formula_glyph": "."
+      },
+      {
+        "number": 46,
+        "page": 15,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 672.83,
+        "gap_from_nearest_formula_glyph_pt": 124.61,
+        "nearest_formula_glyph": "."
+      },
+      {
+        "number": 47,
+        "page": 16,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 114.15,
+        "gap_from_nearest_formula_glyph_pt": 149.3,
+        "nearest_formula_glyph": "."
+      },
+      {
+        "number": 48,
+        "page": 16,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 232.03,
+        "gap_from_nearest_formula_glyph_pt": 130.82,
+        "nearest_formula_glyph": "."
+      },
+      {
+        "number": 49,
+        "page": 16,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 506.38,
+        "gap_from_nearest_formula_glyph_pt": 121.3,
+        "nearest_formula_glyph": "."
+      },
+      {
+        "number": 50,
+        "page": 16,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 702.12,
+        "gap_from_nearest_formula_glyph_pt": 97.79,
+        "nearest_formula_glyph": "."
+      },
+      {
+        "number": 51,
+        "page": 17,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 326.53,
+        "gap_from_nearest_formula_glyph_pt": 169.49,
+        "nearest_formula_glyph": "5"
+      },
+      {
+        "number": 52,
+        "page": 17,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 381.02,
+        "gap_from_nearest_formula_glyph_pt": 160.46,
+        "nearest_formula_glyph": "."
+      },
+      {
+        "number": 53,
+        "page": 18,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 201.48,
+        "gap_from_nearest_formula_glyph_pt": 79.8,
+        "nearest_formula_glyph": "."
+      },
+      {
+        "number": 54,
+        "page": 18,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 262.27,
+        "gap_from_nearest_formula_glyph_pt": 133.39,
+        "nearest_formula_glyph": ","
+      },
+      {
+        "number": 55,
+        "page": 18,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 439.77,
+        "gap_from_nearest_formula_glyph_pt": 148.14,
+        "nearest_formula_glyph": "."
+      },
+      {
+        "number": 56,
+        "page": 18,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 596.86,
+        "gap_from_nearest_formula_glyph_pt": 150.18,
+        "nearest_formula_glyph": "."
+      },
+      {
+        "number": 57,
+        "page": 19,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 292.03,
+        "gap_from_nearest_formula_glyph_pt": 136.28,
+        "nearest_formula_glyph": "2"
+      },
+      {
+        "number": 58,
+        "page": 19,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 348.36,
+        "gap_from_nearest_formula_glyph_pt": 180.53,
+        "nearest_formula_glyph": "."
+      },
+      {
+        "number": 59,
+        "page": 19,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 609.51,
+        "gap_from_nearest_formula_glyph_pt": 105.81,
+        "nearest_formula_glyph": "."
+      },
+      {
+        "number": 60,
+        "page": 19,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 680.47,
+        "gap_from_nearest_formula_glyph_pt": 91.04,
+        "nearest_formula_glyph": "."
+      },
+      {
+        "number": 61,
+        "page": 20,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 229.09,
+        "gap_from_nearest_formula_glyph_pt": 75.64,
+        "nearest_formula_glyph": "."
+      },
+      {
+        "number": 62,
+        "page": 20,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 342.24,
+        "gap_from_nearest_formula_glyph_pt": 110.38,
+        "nearest_formula_glyph": "."
+      },
+      {
+        "number": 63,
+        "page": 20,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 631.64,
+        "gap_from_nearest_formula_glyph_pt": 136.01,
+        "nearest_formula_glyph": "."
+      },
+      {
+        "number": 64,
+        "page": 21,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 119.42,
+        "gap_from_nearest_formula_glyph_pt": 173.99,
+        "nearest_formula_glyph": "."
+      },
+      {
+        "number": 65,
+        "page": 21,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 210.3,
+        "gap_from_nearest_formula_glyph_pt": 162.37,
+        "nearest_formula_glyph": "."
+      },
+      {
+        "number": 66,
+        "page": 21,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 356.12,
+        "gap_from_nearest_formula_glyph_pt": 34.99,
+        "nearest_formula_glyph": "."
+      },
+      {
+        "number": 67,
+        "page": 21,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 406.41,
+        "gap_from_nearest_formula_glyph_pt": 133.61,
+        "nearest_formula_glyph": "."
+      },
+      {
+        "number": 68,
+        "page": 21,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 599.42,
+        "gap_from_nearest_formula_glyph_pt": 164.2,
+        "nearest_formula_glyph": "."
+      },
+      {
+        "number": 69,
+        "page": 21,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 684.99,
+        "gap_from_nearest_formula_glyph_pt": 171.79,
+        "nearest_formula_glyph": "."
+      },
+      {
+        "number": 70,
+        "page": 22,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 364.87,
+        "gap_from_nearest_formula_glyph_pt": 32.56,
+        "nearest_formula_glyph": "."
+      },
+      {
+        "number": 71,
+        "page": 23,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 540.01,
+        "gap_from_nearest_formula_glyph_pt": 141.41,
+        "nearest_formula_glyph": "."
+      },
+      {
+        "number": 72,
+        "page": 23,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 708.91,
+        "gap_from_nearest_formula_glyph_pt": 152.49,
+        "nearest_formula_glyph": "."
+      },
+      {
+        "number": 73,
+        "page": 24,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 136.89,
+        "gap_from_nearest_formula_glyph_pt": 107.76,
+        "nearest_formula_glyph": ")"
+      },
+      {
+        "number": 74,
+        "page": 24,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 241.15,
+        "gap_from_nearest_formula_glyph_pt": 69.73,
+        "nearest_formula_glyph": "."
+      },
+      {
+        "number": 75,
+        "page": 24,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 391.74,
+        "gap_from_nearest_formula_glyph_pt": 106.17,
+        "nearest_formula_glyph": ","
+      },
+      {
+        "number": 76,
+        "page": 24,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 550.62,
+        "gap_from_nearest_formula_glyph_pt": 25.44,
+        "nearest_formula_glyph": "."
+      },
+      {
+        "number": 77,
+        "page": 25,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 166.05,
+        "gap_from_nearest_formula_glyph_pt": 264.51,
+        "nearest_formula_glyph": "ν"
+      },
+      {
+        "number": 78,
+        "page": 25,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 184.54,
+        "gap_from_nearest_formula_glyph_pt": 70.34,
+        "nearest_formula_glyph": "."
+      },
+      {
+        "number": 79,
+        "page": 25,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 388.75,
+        "gap_from_nearest_formula_glyph_pt": 107.31,
+        "nearest_formula_glyph": "."
+      },
+      {
+        "number": 80,
+        "page": 25,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 660.26,
+        "gap_from_nearest_formula_glyph_pt": 86.11,
+        "nearest_formula_glyph": "."
+      },
+      {
+        "number": 81,
+        "page": 25,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 709.44,
+        "gap_from_nearest_formula_glyph_pt": 28.37,
+        "nearest_formula_glyph": "."
+      },
+      {
+        "number": 82,
+        "page": 26,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 120.37,
+        "gap_from_nearest_formula_glyph_pt": 70.67,
+        "nearest_formula_glyph": ","
+      },
+      {
+        "number": 83,
+        "page": 26,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 167.52,
+        "gap_from_nearest_formula_glyph_pt": 60.31,
+        "nearest_formula_glyph": "0"
+      },
+      {
+        "number": 84,
+        "page": 26,
+        "x0": 505.01,
+        "x1": 524.41,
+        "top": 278.32,
+        "gap_from_nearest_formula_glyph_pt": 31.04,
+        "nearest_formula_glyph": "+"
+      }
+    ],
+    "note": "Geometry-aware search uses character match positions even when a number is joined to formula text by PDF extraction.",
+    "gaps_under_5pt": []
+  },
+  "glyphs_outside_page": [],
+  "links": {
+    "named_destinations": 187,
+    "link_annotations": 167,
+    "internal_links": 167,
+    "external_uri_links": 0,
+    "unresolved_named_destinations": [],
+    "numbered_equation_anchors": 82,
+    "equation_anchor_page_mismatches": []
+  },
+  "layout_log": {
+    "overfull_hbox": [],
+    "overfull_vbox": [
+      "Overfull \\vbox (1.43356pt too high) has occurred while \\output is active []"
+    ],
+    "missing_glyph_warnings": [],
+    "undefined_reference_warnings": [],
+    "vertical_warning_visual_review": "Parent visually inspected page19 and confirmed the 1.43356pt overfull vbox leaves the complete footnote inside the page with no clipping or overlap; independent page-bounds audit found no glyphs outside page."
+  },
+  "math_normalization": "Whitespace, label placement, alignment separators &, row breaks, nonumber, qquad spacing, negative thin-space controls, and invisible delimiter controls right./left. ignored. These are documented layout-only reflow controls; original excessive negative thin spacing beside S= in equations10/70 was removed to prevent glyph overlap. No visible mathematical symbols, signs, factors, indices, or equation content ignored.",
+  "reflowed_equations": [
+    3,
+    10,
+    21,
+    28,
+    39,
+    70,
+    80
+  ],
+  "geometry_audit_scope": "Automated checks cover equation-number clearance and page bounds. Internal equation typography and page layout require the separate full-page visual review performed by the parent; a source negative-space overlap in equations10/70 was found there and repaired.",
+  "known_source_issues_preserved": [
+    "Section4.2 NEC-violation sign; eq41 n_s instead of n_s-1; eq77 and earlier definition a²Hh; eq78 2(H+k); original source formula content retained and translator notes identify issues."
+  ],
+  "overall_pass": true
+}

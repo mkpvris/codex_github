@@ -1,0 +1,34 @@
+インフレーションの有効場理論 / The Effective Field Theory of Inflation
+Clifford Cheung, Paolo Creminelli, A. Liam Fitzpatrick, Jared Kaplan, Leonardo Senatore
+arXiv:0709.0293v2 [hep-th], 2008年3月5日
+日本語訳作成日: 2026年10月19日
+
+対象
+指定された26ページのPDFを基準に、同じ版のarXiv TeX原稿を照合して翻訳した。
+題名・著者・所属・要旨・全5節・付録A/B・16脚注・謝辞を収録した。
+84式と32件の参考文献の番号を原文に合わせて保持した。
+参考文献の題名・書誌情報は原語を保持した。
+原文中の表記に関する確認事項は、PDF末尾の訳注に記載した。
+
+構成
+0709.0293v2_jp.tex: 主原稿
+parts/: 日本語訳本文
+pdf/0709.0293v2_jp.pdf: 閲覧用PDF
+ref.bib, utphys.bst: 参考文献
+original/: 入力PDFおよびarXiv第2版のTeX原稿
+template_original.tex, template_pdf_backup/: 使用したtemplateと既存生成物の控え
+verification/: 内容・番号・リンク・表示の検証結果
+
+テンプレート
+C:/codex/templateを複製して使用した。文書クラス、パッケージ、余白、本文フォント、
+見出しから目次へのリンクを維持した。原文との照合のため数式は通し番号とした。
+長い数式の折り返し、数式の字間、目次の改ページを調整した。
+元のtemplateや入力PDFは変更していない。
+
+再コンパイル
+このフォルダを作業ディレクトリとして、LuaLaTeX → BibTeX → LuaLaTeX 2回を実行する。
+同梱のbuild.ps1でも実行できる。TeX Live等の日本語LuaLaTeX環境が必要。
+
+原稿取得元
+https://arxiv.org/abs/0709.0293v2
+https://arxiv.org/src/0709.0293v2
