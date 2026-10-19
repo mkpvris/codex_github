@@ -32,3 +32,11 @@ C:/codex/templateを複製して使用した。文書クラス、パッケージ
 原稿取得元
 https://arxiv.org/abs/0709.0293v2
 https://arxiv.org/src/0709.0293v2
+
+今回の修正
+参考文献32件はINSPIRE-HEPの公式BibTeX出力を取得し、そのままref.bibに収録した。
+本文の引用キーを対応させ、原文の引用番号と順序を保持した。
+人名・固有名詞は原則として英語表記に統一した。
+タイトルのarXiv番号から指定版v2の原文PDFを開ける。
+取得元はverification/inspire_sources.json、今回の検証はverification/revision_link_audit.jsonに記録。
+independent_source_and_number_audit.jsonとvisual_review.txtは初版翻訳時の検証記録として保持した。

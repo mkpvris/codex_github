@@ -18,7 +18,7 @@
 \usepackage{geometry}
 % --- ページ内リンク --- %
 \usepackage{hyperref}
-\hypersetup{colorlinks=true,linkcolor=blue}
+\hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue}
 % --- ページ内リンク END --- %
 % 花文字
 \usepackage{mathrsfs}
@@ -104,17 +104,17 @@
 \author{Clifford Cheung$^{\rm a}$，Paolo Creminelli$^{\rm b}$，\\
 A.~Liam Fitzpatrick$^{\rm a}$，Jared Kaplan$^{\rm a}$，\\
 Leonardo Senatore$^{\rm a}$\\[0.7em]
-{\small $^{\rm a}$ ハーバード大学 Jefferson Physical Laboratory}\\
+{\small $^{\rm a}$ Jefferson Physical Laboratory, Harvard University}\\
 {\small Cambridge, MA 02138, USA}\\[0.3em]
-{\small $^{\rm b}$ アブドゥス・サラム国際理論物理学センター}\\
+{\small $^{\rm b}$ Abdus Salam International Center for Theoretical Physics}\\
 {\small Strada Costiera 11, 34014 Trieste, Italy}}
-\date{\small arXiv:0709.0293v2 [hep-th]（2008年3月5日）\\IC/2007/032}
+\date{\small \href{https://arxiv.org/pdf/0709.0293v2}{arXiv:0709.0293v2} [hep-th]（2008年3月5日）\\IC/2007/032}
 \begin{document}
 \maketitle
-\nocite{Creminelli:2006xe,Alishahiha:2004eh,Chen:2005ad,Shandera:2006ax,Kecskemeti:2006cg,Shiu:2006kj,Arkani-Hamed:2003uz,Dubovsky:2005xd,Cornwall:1974km,Salopek:1990jq,Lyth:2004gb,verification,Maldacena:2002vr,Seery:2006vu,'tHooft:1974bx,Barbieri:2004qk,Hsu:2004vr,Adams:2006sv,Mukhanov:2005bu,Garriga:1999vw,Chen:2006nt,Babich:2004gb,Creminelli:2006rz,Huang:2006eh,Arkani-Hamed:2003uy,Arkani-Hamed:2005gu,Senatore:2004rj,Polchinski:1992ed,Buchbinder:2007ad,Creminelli:2007aq,ArkaniHamed:2007ky,Wald:1984rg}
+\nocite{Creminelli:2006xe,Alishahiha:2004eh,Chen:2005ad,Shandera:2006ax,Kecskemeti:2006cg,Shiu:2006kj,Arkani-Hamed:2003juy,Dubovsky:2005xd,Cornwall:1974km,Salopek:1990jq,Lyth:2004gb,Cheung:2007sv,Maldacena:2002vr,Seery:2006vu,tHooft:1974toh,Barbieri:2004qk,Hsu:2004vr,Adams:2006sv,Mukhanov:2005bu,Garriga:1999vw,Chen:2006nt,Babich:2004gb,Creminelli:2006rz,Chen:2006dfn,Arkani-Hamed:2003pdi,Arkani-Hamed:2005teg,Senatore:2004rj,Polchinski:1992ed,Buchbinder:2007ad,Creminelli:2007aq,Arkani-Hamed:2007ryv,Wald:1984rg}
 
 \begin{abstract}
-単一場模型の場合について，インフレーションの有効場理論，すなわち準デ・ジッター背景のまわりの揺らぎを記述する最も一般的な理論を研究する．ユニタリーゲージへ移ることにより，スカラー・モードを計量に吸収させることができる．このゲージでは，最も一般的な理論は，$g^{00}$や時間一定面の外的曲率$K_{\mu\nu}$など，空間微分同相変換のもとで不変な最低次元の演算子によって構成される．このアプローチにより，単純なスローロール・インフレーションに対する，ありうるすべての高エネルギー補正を特徴付けることができ，その大きさは実験によって制限される．また，音速の小さい模型やゴースト・インフレーションを含む，すべての単一場模型を共通の言葉で記述し，準デ・ジッター背景を持つことが何を意味するかを明らかにする．時間微分同相変換の非線形実現によって，音速の低下と非ガウス性の増大のような，異なる観測量どうしの相関が強制される．
+単一場模型の場合について，インフレーションの有効場理論，すなわち準de Sitter背景のまわりの揺らぎを記述する最も一般的な理論を研究する．ユニタリーゲージへ移ることにより，スカラー・モードを計量に吸収させることができる．このゲージでは，最も一般的な理論は，$g^{00}$や時間一定面の外的曲率$K_{\mu\nu}$など，空間微分同相変換のもとで不変な最低次元の演算子によって構成される．このアプローチにより，単純なスローロール・インフレーションに対する，ありうるすべての高エネルギー補正を特徴付けることができ，その大きさは実験によって制限される．また，音速の小さい模型やゴースト・インフレーションを含む，すべての単一場模型を共通の言葉で記述し，準de Sitter背景を持つことが何を意味するかを明らかにする．時間微分同相変換の非線形実現によって，音速の低下と非Gaussian性の増大のような，異なる観測量どうしの相関が強制される．
 \end{abstract}
 \clearpage
 \hypertarget{toc}{}
@@ -140,6 +140,7 @@ Leonardo Senatore$^{\rm a}$\\[0.7em]
 \item 第2節の$\delta K_{\mu\nu}$の定義および式(77)には$a^2Hh_{\mu\nu}$が現れる．誘導計量$h_{\mu\nu}$の定義との整合性に疑義があるが，原文を保持した．式(78)の第1項も，原文PDFとTeX原稿の双方にある$2(H+k)h_{\mu[\rho}h_{\sigma]\nu}$のままである．
 \item 第3節の正準規格化の説明には$\dot H^{1/2}$という表記がある．通常のスローロールでは$\dot H<0$なので，規格化の大きさについては$|\dot H|^{1/2}$と読む必要があるが，本文の式は変更していない．
 \item 第4.1節の式(36)直前の本文には，$\bar M_3(t)$を係数とする表記がある．式(10)および式(36)の$\bar M_3^2$との違いを含め，原文どおり収録した．
-\item 第3節末尾の英文は，非ガウス性についての例示の係り受けが曖昧である．本訳では第4.1節の明示的な説明に従い，通常のスローロール・インフレーションの非ガウス性を，重力との混合が重要な例として訳した．
+\item 第3節末尾の英文は，非Gaussian性についての例示の係り受けが曖昧である．本訳では第4.1節の明示的な説明に従い，通常のスローロール・インフレーションの非Gaussian性を，重力との混合が重要な例として訳した．
+\item 参考文献はINSPIRE-HEPから取得したBibTeXに基づき、原文の引用番号と対応順を維持して収録した。原文では文献[16]が、普遍的補正に関する最近の議論として紹介されている。書誌情報はINSPIRE-HEPの現在の収録内容に従うため、原文の表記と異なる場合がある。
 \end{itemize}
 \end{document}
