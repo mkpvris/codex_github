@@ -1,0 +1,806 @@
+\sectionlink{Schwinger-Keldysh形式に基づくEFTの構築}
+\label{section:ConstructingEFT}
+
+ここまで、1次元のBrown粒子における対称性の構造を明らかにし、表~\ref{table:ss}にまとめたように、それがSchwinger-Keldyshの観点から自然に理解できることを示した。本節では、これまでの議論、特に$\epsilon_R$で特徴づけられるSSBの\textit{弱い}判定基準を踏まえて、時間依存する凝縮を伴う非平衡状況を、時間並進対称性の破れた相とみなす。\ref{sec:Prelim}節では、まずin-out形式における時間並進対称性の破れの有効Lagrangianと、Schwinger-Keldysh（in-in）形式に基づくEFTの基本的な構築法を概観する。\ref{subsec:EFT_const}節では、対称性の構造に基づいてNambu-Goldstone場の一般的な有効Lagrangianを構築する。NGボソンの分散関係を導出し、動的KMS対称性からEFTに課される制約も考察する。さらに\ref{sec:ModelAnalysis}節では、ノイズと散逸を伴う単一のスカラー場からなる簡単なUV模型を考え、ツリーレベルの解析を行う。この模型解析により、構築したEFTの低エネルギー係数がUV理論の情報とどのように関連するかを示す。本節全体を通じて、特に断らない限り、対称性が破れる前の系はもともとLorentz不変であると仮定する。
+
+\begin{table}[t]
+  \centering
+  \begin{tabular}{c|cc}
+    \hline
+    &$H_{A}$対称性&$H_{R}$対称性\\
+    \hline \hline
+   開放系（定常） & 破れていない & 陽に破れている \\
+   開放系（非定常） & 自発的に破れている & 陽に破れている \\
+    \hline
+  \end{tabular}
+ \caption{開放系における対称性の構造。Schwinger-Keldysh形式では対称性が二重化されるため、$H_A$対称性と$H_R$対称性を別々に議論する必要がある。開放系では$H_R$対称性は陽に破れている一方、$H_A$対称性は定常背景では破れておらず、非定常背景では自発的に破れている。これは、全系のHamiltonianによってダイナミクスが記述される、温度ゼロの閉鎖系とは著しく異なる。}
+ \label{table:ss}
+\end{table}
+
+\subsectionlink{準備}
+\label{sec:Prelim}
+\ref{subsec:EFT_in-out}節では、まず、宇宙インフレーションの文脈で発展してきた時間並進対称性の破れに対する有効場理論の基本的な構築法をまとめる~\cite{Cheung:2007st}。続いて、Schwinger-Keldysh形式に基づき、このEFTを非平衡状況にある開放系へ拡張する方法を示す。
+
+\subsubsection{in-out形式における有効Lagrangian}
+\label{subsec:EFT_in-out}
+
+まず、時間並進対称性の破れに対するin-out有効Lagrangianを簡単に振り返る。時間並進不変な作用$S_{\mathrm{micro}}$をもつ\textit{任意の}UV理論を考え、あるスカラー凝縮$\langle\phi(t,\mathbf{x})\rangle$が非自明な時間依存性をもつと仮定する：
+\begin{align}
+\label{condensate}
+ \langle\phi(t,\mathbf{x})\rangle
+ = \bar{\phi}(t)
+\quad
+{\rm with}
+\quad
+\dot{\bar{\phi}}\neq0
+\,.
+\end{align}
+
+この状況では、系の時間並進対称性は明らかに破れている。したがってNGモード$\pi(x)$を、この時間依存する凝縮に次のように埋め込むことができる：
+\begin{align}
+\label{embedding}
+\phi(t,\mathbf{x})=\bar{\phi} \big(t+\pi(t,\mathbf{x}) \big)
+\end{align}
+
+このとき、並進の下での変換則は
+\begin{align}
+ \label{translations}
+ \pi(t,\mathbf{x})
+ \to \pi'(t,\mathbf{x})
+ = \pi(t+\epsilon^0,\mathbf{x}+\boldsymbol{\epsilon})+\epsilon^0\,.
+\end{align}
+
+である。さらにLorentz変換の下では、NGモード$\pi(x)$は
+\begin{align}
+ \label{Lorentz}
+ \pi(t,\mathbf{x})
+ \to \pi' (t,\mathbf{x}) 
+ = \pi \left(\Lambda^0{}_\mu x^\mu,\Lambda^i{}_\mu x^\mu\right)+\Lambda^0{}_\mu x^\mu-t
+\,,
+\end{align}
+
+と変換する。ここで$\Lambda^\mu{}_\nu\in SO(1,3)$を導入した。NGモードに通常みられるように、$\pi(x)$は、時間依存する凝縮~\eqref{condensate}によって破られる時間並進およびブーストの下で非線形に変換することに注意されたい\footnote{逆Higgs効果~\cite{Ivanov:1975zq}として知られているように（最近の議論については、例えば文献~\cite{Nicolis:2013sga,Endlich:2013vfa,Brauner:2014aha,Hidaka:2014fra}も参照）、質量のないNGボソンの数は、破れた時空対称性の数と必ずしも一致しない。その結果、ブーストに対応するNGボソンを導入せずに、破れたブースト対称性を非線形に実現できる。}。説明のために単一のスカラー凝縮を例にとったが、上の変換則は一般に適用できる。
+
+\medskip
+埋め込み~\eqref{embedding}が示唆するように、一般的な有効作用は、次のものから構築される~\cite{Cheung:2007st}：
+\begin{align}
+ t + \pi(x)
+\quad
+\text{およびその微分}
+\end{align}
+
+実際、これらの構成要素は、適切な座標変換を併せて行えば、変換~\eqref{translations}--\eqref{Lorentz}の下で不変であることを明示的に示せる。有効Lagrangianを構築する際には、
+\begin{align}
+P_\mu=\partial_\mu(t+\pi)=\delta^0_\mu+\partial_\mu\pi\,,
+\label{notation:P}
+\end{align}
+
+を導入し、基本的な構成要素として用いると便利である。特に、そのLorentz不変な2乗は
+\begin{align}
+ P_\mu P^\mu=-1-2\dot{\pi}+(\partial_\mu\pi)^2\,.
+\end{align}
+
+となる。微分展開の最低次\footnote{$\pi$に2階以上の微分が作用する高階微分項を省いた。}では、一般的な有効作用は次式で与えられる~\cite{Cheung:2007st}：
+\begin{align}
+\label{S_in-out_P}
+ S_{\text{in-out}} 
+ = -\frac{1}{2}\int d^4x 
+ \left[ \alpha_0(t+\pi) + \alpha_1(t+\pi) P_\mu P^\mu 
+ + \sum_{n\geq2}\alpha_n(t+\pi)(P_\mu P^\mu+1)^n 
+\right]\,,
+\end{align}
+
+ここで$\alpha_n$は$t+\pi$の任意関数である。内部対称性が破れる場合とは異なり、NGボソン$\pi$は一般にはシフト対称性をもたない。その結果、上の作用には$\pi$について1次の項が含まれる：
+\begin{align}
+ S_{\text{in-out}} 
+ = -\frac{1}{2}\int d^4x 
+ \left[ \alpha_0(t) - \alpha_1(t)
+ + \Big(\alpha'_0(t)-\alpha'_1(t)\Big)\pi-2\alpha_1(t)\dot{\pi} + O (\pi^2)
+\right]\,.
+\end{align}
+
+このようなタドポール項を取り除くため、背景の運動方程式を用いて$\alpha'_0=-\alpha'_1$を要求する。すると作用は次のように書き直せる：
+\begin{align}
+S_{\text{in-out}}=-\frac{1}{2}\int d^4x\left[\alpha_1(t+\pi)(\partial_\mu\pi)^2+\sum_{n\geq2}\alpha_n(t+\pi)\left(-2\dot{\pi}+(\partial_\mu\pi)^2\right)^n
+\right]\,,\label{action:pi:inout}
+\end{align}
+
+ここでは方程式$\alpha'_0=-\alpha'_1$の積分定数を、$\alpha_0=-\alpha_1$となるように選んだ。これが、破れた時間並進に対応するNGボソンの一般的なin-out有効作用である。
+
+\medskip
+ここで強調しておくと、式~\eqref{action:pi:inout}のEFT係数$\alpha_n$は、内部対称性の破れの場合とは異なり、一般には時間に依存する。したがって、関数の自由度があるため、この段階ではEFTの予言能力は限られる。また、時間並進不変性はもはや存在しないので、エネルギーも明確には定義されない。エネルギーを明確に定義し、EFTに普遍的な予言能力を与えるには、さらに別の対称性の仮定を課すと便利である。典型的な例の一つは、秩序変数の時間依存性を無視することである\footnote{別の興味深い状況として、同期現象や時間結晶のように、秩序変数が時間に関して周期的な場合がある。その場合、長時間領域ではエネルギーが明確に定義される。NG場には、空間方向の周期的変調の場合~\cite{Hidaka:2015xza}と同様に、バンド構造が現れるだろう。この問題は別の機会に再び取り上げる。}。宇宙インフレーションとの類似から\footnote{スローロール・インフレーションの間、インフラトン背景の速度$\dot{\bar{\phi}}$はほぼ一定である。その結果、近似的なde Sitter時間並進対称性が存在する。}、このパラメータ領域をスローロール領域と呼ぶ。
+
+\medskip
+スローロール領域では$\alpha_n$の時間依存性を無視でき、NGモードの有効作用は次の形に簡単化される：
+\begin{align}
+ \label{slow-roll_in-out}
+ S_{\text{in-out}} 
+ = - \frac{1}{2} \int d^4x
+ \left[ \alpha_1 (\partial_\mu\pi)^2 + 
+ \sum_{n\geq2} \alpha_n \left(-2\dot{\pi} + (\partial_\mu\pi)^2 \right)^n
+ \right]\,,
+\end{align}
+
+ここで$\alpha_n$は定数パラメータとなり、$\alpha_1$は対称性の破れのスケールを特徴づける。第1項は正準的な運動項に全体の係数$\alpha_1$を掛けただけのものであることに注意されたい。したがって、高次の項$\alpha_n$を有効にしない限り、NGモードは相対論的な分散関係に従い、自己相互作用をもたない。一般には、NGモードは1とは異なる伝播速度をもつ線形分散に従う：
+\begin{equation}
+ \omega^2 = c_s^2 k^2 \with 
+  c_s^2 \equiv \frac{\alpha_1}{ \alpha_1 - 4 \alpha_2}\,.
+\end{equation}
+
+以下では、ゆらぎや散逸などの開放系の効果を考慮したとき、この線形分散関係がどのように修正されるかを見る。
+
+\medskip
+本小節を終える前に、スローロール領域におけるNGモードの変換特性について述べる。式~\eqref{slow-roll_in-out}からわかるように、スローロール領域ではNGボソンはシフト対称性をもつ。言い換えると、スローロール領域は、$\pi(x)$に対して、並進の下での非線形な変換則~\eqref{translations}の代わりに、次の\textit{線形な}変換則を与えることで実現される：
+\begin{align}
+ \label{linear_translations}
+ \pi(t,\mathbf{x}) 
+ \to \pi'(t,\mathbf{x}) 
+ = \pi (t + \epsilon^0,\mathbf{x} + \mathbf{\epsilon}) \,,
+\end{align}
+
+線形な変換則~\eqref{linear_translations}は通常の物質スカラー場のものと同じなので、有効Lagrangianに$\pi^{n}$も加えられるように思われるかもしれない。しかし、実際にはそうではない。なぜなら、ブーストについては依然として非線形な変換則~\eqref{Lorentz}を課しているからである\footnote{相対論的超流動のNGモードも、変換則~\eqref{linear_translations}および\eqref{Lorentz}に従う。したがって、相対論的な設定では、その有効作用は式~\eqref{slow-roll_in-out}で与えられる。}。その結果、NGモードには常に微分が伴わなければならず、有効作用の構成要素は$t+\pi(x)$の微分となる。別の言い方をすれば、$\partial_{\mu}\pi$は非線形なブースト変換の下で共変ではない。したがって、微分展開の最低次では有効作用は式~\eqref{slow-roll_in-out}で与えられる。
+
+\subsubsection{Schwinger-Keldysh形式に基づくEFTの構築法}
+\label{subsec:EFT_in-in}
+
+\ref{micro:origin}節ですでに導入したように、Schwinger-Keldysh形式で最も重要な量は閉時間経路生成汎関数（CTPGF）$Z[J_1, J_2]$である。CTPGFは理論の実時間ダイナミクスに関するすべての情報を含むが、ここで関心があるのは、時間並進対称性の破れに伴う低エネルギーのダイナミクスだけである。そこで、二重化されたNG型モード$\pi_a(x) ~(a=1,2)$を除くすべてのUV自由度を積分消去し、これらのモードのEFTを次のように構築したい：
+\begin{align}
+\nonumber
+  Z[J_1, J_2] 
+  &= \mathrm{Tr} \Big[\hat{\rho}_0 \,
+  \hat{U}_{J_2}^\dagger(\infty,-\infty)
+  \hat{U}_{J_1} (\infty,-\infty) \Big]\,  \\
+\nonumber
+  &=\int \mathcal{D} \varphi_1 \mathcal{D} \varphi_2
+  \mathcal{D} \sigma_1 \mathcal{D} \sigma_2
+  \exp \Big[
+  iS_{\mathrm{micro}} [\varphi_1,\sigma_1;J_1] 
+ - iS_{\mathrm{micro}} [\varphi_2,\sigma_2;J_2] \Big]  
+  \rho_0 (\varphi,\sigma) 
+  \, \\
+  &= \int \mathcal{D} \pi_1 \mathcal{D} \pi_2
+  \exp \Big[
+  iS_{\mathrm{eff}} [\pi_1,\pi_2;J_1,J_2] \Big]\, .
+ \label{eq:CTPGF}
+\end{align}
+
+ここで$\varphi$はUV理論の力学的自由度、$\sigma$は存在しうる環境、$J$は外部ソース、$\rho_0$は初期密度演算子を表す。$\hat{U}_{J_1}$と$\hat{U}^\dag_{J_2}$があるため、場はすべて二重化される。二重化されたNGモードの有効作用$S_{\mathrm{eff}} [\pi_1,\pi_2;J_1,J_2]$は、前小節で示したin-out形式と同様に、時間並進対称性が破れた系の普遍的な低エネルギーダイナミクスを捉えることができる。ただし、Schwinger-Keldysh形式の二重化という性質のために、構造がより複雑になることに注意する必要がある。
+
+\medskip
+このような構築法は、散逸を伴う相対論的流体力学のEFTを与えるために、近年明らかにされた~\cite{Crossley:2015evo,Glorioso:2017fpd}。その定式化の基礎を簡単にまとめる。重要なのは、CTPGFが満たす以下の基本的性質を保つように、有効作用$S_{\mathrm{eff}} [\pi_1,\pi_2;J_1,J_2]$を構築することである（これらの条件の導出および詳しい議論は、文献~\cite{Crossley:2015evo,Glorioso:2017fpd}を参照）：
+\begin{enumerate}
+ \item \textbf{ユニタリティ条件：}
+       規格化された初期密度演算子$\mathrm{Tr}\,\hat{\rho}_0 = 1$に対して、CTPGF~\eqref{eq:CTPGF}は
+\begin{equation}
+	Z[J_1 = J ,J_2 = J] = 1 ,
+       \end{equation}
+
+を満たす。これは時間発展演算子のユニタリティ$\hat{U}_{J}^\dagger\hat{U}_{J}=1$から従う。
+ \item \textbf{共役条件：}
+       初期密度演算子$\hat{\rho}_{0}$の自己共役性（$\hat{\rho}_0^\dag = \hat{\rho}_0$）から、
+\begin{equation}
+	Z^* [J_1, J_2] = Z[J_2, J_1] .
+       \end{equation}
+
+が従う。
+ \item \textbf{KMS条件（任意）：}
+       初期密度演算子が熱的なもの$\hat{\rho}_0 = e^{-\beta \hat{H}}/Z$であるとき、次の追加的な対称性が現れる：
+\begin{equation}
+       \label{eq_KMS}
+	Z [J_1,J_2 ] =  Z [J_1', J_2'] \with 
+	 \begin{cases}
+	  J_1'(t) = \epsilon_{\mathcal{T}_J} J_1 (-t + i \beta /2) , \\
+	  J_2'(t) = \epsilon_{\mathcal{T}_J} J_2 (-t - i\beta/2) ,
+	 \end{cases}
+       \end{equation}
+
+ここで$\epsilon_{\mathcal{T}_J}$は、$J$に結合する演算子の、時間反転（必要ならパリティ変換も同時に行う）の下での固有値を表す。
+\end{enumerate}
+最初の二つの条件は非常に一般的だが、最後の条件には初期密度演算子$\rho_0$に対する強い仮定が必要なので、これを任意の条件として扱うことに注意されたい。
+
+\medskip
+次に問題となるのは、これらの性質に基づいてEFTの構造をどのように制限するかである。上の条件が確実に満たされるように、有効作用$S_{\mathrm{eff}} [\pi_1,\pi_2;J_1,J_2]$にいくつかの仮定を置く。簡単のため、以下では外部ソースを省くが、それらを含めることも容易である。ユニタリティ条件と共役条件は、次を課すことによって$S_{\mathrm{eff}} [\pi_1,\pi_2]$に実装できる：
+\begin{align}
+ S_{\mathrm{eff}} [\pi,\pi] &=0 ,\label{+-unitary:action}
+ \\
+ S_{\mathrm{eff}} [\pi_1,\pi_2]& = -S[\pi_2,\pi_1]^*,
+\label{+-unitarity:2}
+\end{align}
+
+ここで$S[\pi_1,\pi_2]^*$は$S[\pi_1,\pi_2]$の複素共役を表す。第2の関係~\eqref{+-unitarity:2}は、一般に有効作用が虚部をもつことを示している。環境（UV）の自由度を積分消去した後のダイナミクスは一般にゆらぎと散逸を含むので、これは開放系の基本的な特徴である。経路積分の重みが$e^{iS_{\mathrm{eff}}}$であることを思い出すと、$\mathrm{Im} S_{\mathrm{eff}} < 0$の場合にはCTPGFが発散する可能性がある。この問題を避けるため、有効作用の虚部の正値性も課す\footnote{正値性条件の導出については文献~\cite{Glorioso:2016gsa}を参照。}：
+\begin{align}
+ \mathrm{Im} S_{\mathrm{eff}} [\pi_1,\pi_2] \geq 0.\label{unitary:open}
+\end{align}
+
+次で定義される$RA$基底を導入することも便利である：
+\begin{align}
+ \pi_R = \frac{\pi_1 + \pi_2}{2}\,,
+ \quad
+ \pi_A=\pi_1-\pi_2\,.
+\label{def:RAbasis}
+\end{align}
+
+すると、有効作用に対するユニタリティ条件および共役条件~(\ref{+-unitary:action})、(\ref{+-unitarity:2})は、
+\begin{align}
+S[\pi_{R},\pi_{A}=0]&=0,\label{unitary:action}
+\\
+S[\pi_{R},\pi_{A}]&=-S [\pi_{R},-\pi_{A}]^*,
+\label{unitarity:2}
+\end{align}
+
+と書き直せる。次小節ではこれらを用いる。KMS条件からEFTに制約を課すこともできる。しかし、KMS条件はEFTに現れることも現れないこともあるため、この問題については、次小節で一般的な有効Lagrangianを構築した後に議論する。
+
+\subsectionlink{開放系における有効Lagrangian}
+\label{subsec:EFT_const}
+
+次に、開放系におけるNGモードのEFTを構築する。\ref{micro:origin}節で詳しく述べたように、Schwinger-Keldysh形式では、すべての微視的な対称性が二重化される。非線形な変換則~\eqref{translations}--\eqref{Lorentz}に対応して、二重化されたNGモードの、二重化されたPoincar\'e対称性の変換は、次で与えられる（$a=1,2$）：
+\begin{align}
+\label{pi_a_translations}
+ \pi_a(t,\mathbf{x})
+ &\to \pi_a'(t,\mathbf{x})
+ = \pi_a\left(t+\epsilon^0_a,\mathbf{x}+\boldsymbol{\epsilon}_a\right)+\epsilon^0_a\,,
+\\
+\pi_a(t,\mathbf{x})
+ &\to \pi_a' (t,\mathbf{x}) 
+ = \pi_a \left(\Lambda_a^0\,{}_\mu x^\mu,\Lambda_a^i\,{}_\mu x^\mu\right)+\Lambda_a^0\,{}_\mu x^\mu-t
+\,,
+\end{align}
+
+ここで$\epsilon_a$および$\Lambda_a^\mu\,{}_\nu\in SO(1,3)$は、それぞれ二重化された並進対称性とLorentz対称性の変換パラメータである。特に、開放系であることにより、二重化された対称性は対角的なもの、すなわち$\epsilon_1=\epsilon_2=\epsilon_R$および$\Lambda_1=\Lambda_2=\Lambda_R$へと陽に破れる。ここから先では、この二つを$\epsilon_R$対称性と$\Lambda_R$対称性と呼ぶ。なお前節では、$\epsilon_R$対称性を$H_A$対称性と呼んでいた。また、破れた対称性を$\displaystyle\epsilon_1=-\epsilon_2=\frac{\epsilon_A}{2}$および$\Lambda_1=(\Lambda_2)^{-1}=(\Lambda_A)^{1/2}$とパラメータ化し、それらを$\epsilon_A$対称性および$\Lambda_A$対称性と呼ぶ。$RA$基底~\eqref{def:RAbasis}では、NGモードの$\epsilon_R$変換は
+\begin{align}
+\label{R_translations_R}
+ \pi_R(t,\mathbf{x})
+ &\to \pi_R'(t,\mathbf{x})
+ = \pi_R\left(t+\epsilon^0_R,\mathbf{x}+\boldsymbol{\epsilon}_R\right)+\epsilon^0_R\,,
+\\
+\label{R_translations_A}
+  \pi_A(t,\mathbf{x})
+ &\to \pi_A'(t,\mathbf{x})
+ = \pi_A\left(t+\epsilon^0_R,\mathbf{x}+\boldsymbol{\epsilon}_R\right),
+\end{align}
+
+であり、$\Lambda_R$変換は次で与えられる：
+\begin{align}
+\label{R_Lorentz_R}
+\pi_R(t,\mathbf{x})
+ &\to \pi_R' (t,\mathbf{x}) 
+ = \pi_R \left(\Lambda_R^0\,{}_\mu x^\mu,\Lambda_R^i\,{}_\mu x^\mu\right)+\Lambda_R^0\,{}_\mu x^\mu-t\,,
+ \\
+\label{R_Lorentz_A}
+ \pi_A(t,\mathbf{x})
+ &\to \pi_A' (t,\mathbf{x}) 
+ = \pi_A \left(\Lambda_R^0\,{}_\mu x^\mu,\Lambda_R^i\,{}_\mu x^\mu\right)\,.
+\end{align}
+
+ここで重要なのは、$\pi_A$場が、通常の物質場と同じように、$\epsilon_R$対称性および$\Lambda_R$対称性の下で\textit{線形に}変換することである。同様に、$\pi_{R/A}$場は$\epsilon_A$対称性および$\Lambda_A$対称性の下で、それぞれ線形／非線形に変換することがわかる（$RA$基底での変換則は、後で必要になったときに明示する）。以下では、この対称性の構造と、\ref{subsec:EFT_in-in}節でまとめたSchwinger-Keldysh条件に基づき、二重化されたNGモードの有効Lagrangianを構築・解析する。
+
+\subsubsection{一般的なLagrangian}
+
+先ほど述べたように、$\epsilon_R$対称性および$\Lambda_R$対称性の観点からは、$\pi_A$場を物質場とみなせる。したがって、$\epsilon_R$対称性と$\Lambda_R$対称性のみを保つ、開放系の有効作用の一般的な構成要素は、次で与えられる：
+\begin{align}
+\pi_{A},~t+\pi_{R} \quad\text{およびそれらの微分},
+\label{ingredients}
+\end{align}
+
+これらはin-outの場合と同様に、適切な座標変換を併せて行えば、式~\eqref{R_translations_R}--\eqref{R_Lorentz_A}の下で不変である。これらの構成要素に基づき、正値性条件~\eqref{unitary:open}、ユニタリティ条件~(\ref{unitary:action})および共役条件~(\ref{unitarity:2})と整合的な、一般的なLagrangianを構築する。
+
+\paragraph{$\hbar$展開}
+まず、$RA$場の$\hbar$依存性が次のように与えられることを思い出そう：
+\begin{align}
+\pi_R=\mathcal{O}(\hbar^0)\,,
+\quad
+\pi_A=\mathcal{O}(\hbar)\,.
+\end{align}
+
+すると、有効Lagrangianは$\hbar$について次のように展開できる：
+\begin{align}
+\mathcal{L}_{\rm eff}=\sum_{n=1}^\infty \mathcal{L}_n
+\quad
+{\rm s.t.}
+\quad
+\mathcal{L}_n=\mathcal{O}(\pi_A^n)=\mathcal{O}(\hbar^n)\,,
+\end{align}
+
+ここで、$\hbar$展開は$\pi_A$の個数についての展開に対応し、ユニタリティ条件~\eqref{unitary:action}のために、Lagrangianは$\pi_A$の1次の項から始まることに注意されたい。また、共役条件~(\ref{unitarity:2})は、$n$が奇数（偶数）の$\mathcal{L}_n$に現れる演算子の係数が実数（純虚数）であることを要求する。後で見るように、最低次のLagrangian $\mathcal{L}_1$は散逸項を含み、2次のLagrangian $\mathcal{L}_2$はノイズ項を含む。$\mathcal{O}(\hbar^2)$で展開を打ち切ることを半古典極限と呼ぶ。これはMSR作用のレベルで議論することと等価である。$\hbar$のより高次への構築の拡張は容易だが、以下では技術的に簡単にするため、この半古典極限を用い、$\mathcal{L}_1$と$\mathcal{L}_2$だけを構築する。
+
+\paragraph{$\mathcal{L}_1$の具体例}
+
+まず最低次の$\mathcal{L}_1$から始める。一般的なLagrangianを考える前に、以下の簡単な例を考えると理解しやすい：
+\begin{align}
+\mathcal{L}_1^{\rm simple}&=
+\gamma_0(t+\pi_R)\pi_A
++\gamma_1(t+\pi_R)(P_\mu P^\mu+1)\pi_A
+ -\alpha_1(t+\pi_R)P^\mu\partial_\mu\pi_A\,,
+ \label{Eq:SimpleL}
+\end{align}
+
+ここで$P_\mu=\partial_\mu(t+\pi_R)=\delta_\mu^0+\partial_\mu\pi_R$を導入した。in-outの場合と同様に、EFTパラメータ$\gamma_0$、$\gamma_1$、$\alpha_1$は$t+\pi_R$の関数であり、共役条件~(\ref{unitarity:2})のために実数値でなければならない。また、このLagrangianは$\pi$について1次の項を含む：
+\begin{align}
+\mathcal{L}_1^{\rm simple}&=\gamma_0(t)\pi_A+\alpha_1(t)\dot{\pi}_A+\mathcal{O}(\pi^2)\,,
+\end{align}
+
+そこで、$\pi_A$の背景の運動方程式を課して$\gamma_0=\alpha_1'$を要求する。すると、Lagrangian~\eqref{Eq:SimpleL}は次の形になる：
+\begin{align}
+\mathcal{L}_1^{\rm simple}
+&=
+\gamma_1(t+\pi_R)\left(-2\dot{\pi}_R+(\partial_\mu\pi_R)^2\right)\pi_A
+-\alpha_1(t+\pi_R)\partial_\mu\pi_R\partial^\mu\pi_A
+-\alpha_1'(t+\pi_R)\dot{\pi}_R\pi_A\,,
+\end{align}
+
+ここでは全微分を省いた。これらの演算子を直感的に理解するには、EFTパラメータ$\alpha_1$と$\gamma_1$が定数となるスローロール領域を考えると有用である：
+\begin{align}
+\mathcal{L}_1^{\rm simple}
+&=
+\gamma_1\left(-2\dot{\pi}_R+(\partial_\mu\pi_R)^2\right)\pi_A
+-\alpha_1\partial_\mu\pi_R\partial^\mu\pi_A\,.
+\end{align}
+
+例えば式~\eqref{eq:MSR2}との比較からわかるように、$\alpha_1$項はNGボソン$\pi$の通常の運動項である。一方、$\gamma_1$項は散逸項$\dot{\pi}_R\pi_A$を含む。興味深いことに、開放系で時間並進対称性が破れた相では、ブースト対称性を損なうことなく散逸項が現れうる。ブースト対称性は、3次の相互作用項$(\partial_\mu\pi_R)^2\pi_A$を伴うことによって非線形に実現される。
+
+\paragraph{一般的な$\mathcal{L}_1$の構築}
+
+次に、一般的な$\mathcal{L}_1$を考える。in-outの場合~\eqref{S_in-out_P}と同様に、$\pi_{R/A}$に作用する微分が高々1階である演算子に限定しよう。この仮定の下で、一般的なLagrangianは次で与えられる：
+\begin{align}
+\mathcal{L}_1&=
+\mathcal{L}_1^{\rm simple}+\sum_{n=2}^\infty\gamma_n(P^\mu P_\mu+1)^n\pi_A
+-\sum_{n=2}^\infty\alpha_n(P^\mu P_\mu+1)^{n-1}P^\mu\partial_\mu\pi_A\,,
+\end{align}
+
+ここで$\gamma_n$と$\alpha_n$は$t+\pi_R$の実関数である。$\pi$について1次の項は$\mathcal{L}_1^{\rm simple}$にのみ現れるため、背景の運動方程式は先ほどと同じであることに注意されたい。より具体的には、
+\begin{align}
+\nonumber
+\mathcal{L}_1&=
+-\alpha_1(t+\pi_R)\partial_\mu\pi_R\partial^\mu\pi_A
+-\alpha_1'(t+\pi_R)\dot{\pi}_R\pi_A
+\\
+\nonumber
+&\quad
+-\sum_{n=2}^\infty\alpha_n(t+\pi_R)\left[-2\dot{\pi}_R+(\partial_\mu\pi_R)^2\right]^{n-1}(-\dot{\pi}_A+\partial_\mu\pi_R\partial^\mu\pi_A)
+\\
+&\quad
++\sum_{n=1}^\infty\gamma_n(t+\pi_R)\left[-2\dot{\pi}_R+(\partial_\mu\pi_R)^2\right]^n\pi_A\,.
+\label{EFTLag:pi_A1}
+\end{align}
+
+となる。特に、NGモードの分散関係に関わる$\pi$の2次の項を与えるのは、$\alpha_1$、$\alpha_2$、$\gamma_1$の三つの演算子だけである。
+
+\paragraph{$\mathcal{L}_2$の構築}
+
+次に、2次の項$\mathcal{L}_2$に進む。再び、$\pi_{R/A}$に作用する微分が高々1階である演算子に注目しよう。この仮定の下では、分散関係に関わる演算子は四つある：
+\begin{align}
+\label{L2_simple_P}
+\mathcal{L}_2\ni i\Big[
+\beta_1\pi_A^2+\beta_2(\partial_\mu\pi_A)^2
++\beta_3(P^\mu\partial_\mu\pi_A)\,\pi_A
++\beta_4(P^\mu\partial_\mu\pi_A)^2
+\Big]\,,
+\end{align}
+
+ここで$\beta_i$は$t+\pi_R$の実関数である。より具体的には、次のように書ける：
+\begin{align}
+\nonumber
+\mathcal{L}_2&\ni i\Big[
+\beta_1(t+\pi_R)\pi_A^2+\beta_2(t+\pi_R)(\partial_\mu\pi_A)^2
++\beta_3(t+\pi_R)(-\dot{\pi}_A+\partial_\mu\pi_R\partial^\mu\pi_A)\pi_A
+\\
+\nonumber
+&\qquad
++\beta_4(t+\pi_R)\big(\dot{\pi}_A^2-2\dot{\pi}_A\partial_\mu\pi_R\partial^\mu\pi_A
++(\partial_\mu\pi_R\partial^\mu\pi_A)^2\big)
+\Big]
+\\
+\label{L2_simple}
+&= i\Big[
+\big(\beta_1(t) + \tfrac{1}{2}\beta_3'(t)\big)\pi_A^2+\beta_2(t)(\partial_\mu\pi_A)^2
++\beta_4(t)\dot{\pi}_A^2
++\mathcal{O}(\pi^3)\Big]
+\,,
+\end{align}
+
+ここでは、等号のところで全微分を省いた。また、$\beta_1$と$\beta_3$の演算子は、独立な高次相互作用項を与えるものの、$\pi$の2次のレベルでは縮退していることに注意されたい。
+
+\medskip
+式~\eqref{L2_simple}の最終行にある三つの項のうち、第1項は時間依存する係数をもつ通常のノイズ項である。一方、残りの二つは高階微分補正であり、ノイズをスケール依存にする。特に、$\beta_4$項はLorentz対称性を破るため、自発的に破れたブースト対称性を非線形に実現するには、3次および4次の相互作用項を伴わなければならない。同様に、$\mathcal{L}_2$の一般的な演算子は、上に示した四つの演算子に$(P_\mu P^\mu+1)=-2\dot{\pi}_R+(\partial_\mu\pi_R)^2$の任意のべきを掛けることで得られる。これらの新しい演算子は3次以上の相互作用項を生成するため、分散関係には関わらず、弱結合領域では劣位の寄与でもある。
+
+\medskip
+すでに述べたように、共役条件~(\ref{unitarity:2})は、偶数$n$の$\mathcal{L}_n$が有効作用の虚部に寄与することを要求する。その符号は正値性条件~\eqref{unitary:open}によって固定される。弱結合領域では、2次の項が3次以上の相互作用よりも支配的なので、虚部への主要な寄与は式~\eqref{L2_simple}の三つの2次の項である。ここで、$\mathcal{L}_n$（$n\geq3$）は、定義により二つより多くの$\pi_A$を含むため、2次の項をまったく与えないことに注意されたい。また、微分展開が有効である限り、第1項が他の項よりも支配的である。これらの仮定の下で、正値性条件~\eqref{unitary:open}は$\beta_1-\tfrac{1}{2}\beta_3'>0$と表せる。
+
+\subsubsection{低エネルギースペクトル}
+
+次に、低エネルギー領域の分散関係を議論する。分散関係を求めるため、EFTパラメータを定数として扱うことができ、エネルギーが明確に定義されるスローロール領域に注目しよう。この領域では、有効Lagrangianの2次の部分は次の形をとる：
+\begin{align}
+\nonumber
+\mathcal{L}_{\rm eff}&\ni
+(\alpha_1-2\alpha_2)\dot{\pi}_R\dot{\pi}_A-\alpha_1\partial_i\pi_R\partial_i\pi_A
+-2\gamma_1\dot{\pi}_R\pi_A
+\\
+\label{quadratic_EFT}
+&\quad
++i\Big[
+\beta_1\pi_A^2-(\beta_2-\beta_4)\dot{\pi}_A^2+\beta_2(\partial_i\pi_A)^2
+\Big]\,,
+\end{align}
+
+ここで、すべてのEFTパラメータは実定数であり、正値性条件~\eqref{unitary:open}によって$\beta_1>0$が要求される。低エネルギー極限では、以下の演算子が他の演算子よりも支配的となる：
+\begin{align}
+\nonumber
+\mathcal{L}_{\rm eff}&\ni
+-\alpha_1\partial_i\pi_R\partial_i\pi_A
+-2\gamma_1\dot{\pi}_R\pi_A
++i\beta_1\pi_A^2\,,
+\end{align}
+
+ここでは、
+\begin{align}
+\label{low-energy_assumptions}
+\omega\ll\gamma_1/\alpha_i\,,
+\quad
+\omega^2,k^2\ll|\beta_1/\beta_{2,4}|\,,
+\end{align}
+
+を用いて高階微分項を省いた。この二つの条件の物理的解釈は後で示すが、いずれにせよ、十分に低いエネルギースケールを考える限り、これらは満たされる。この低エネルギー極限では、オンシェル条件は次のように表せる：
+\begin{align}
+{\rm det}\left(
+\begin{array}{cc}0 &-\frac{1}{2} \alpha_1k^2- i\gamma_1\omega \\ -\frac{1}{2}\alpha_1k^2+i\gamma_1\omega & i\beta_1\end{array}
+\right)=0
+\quad
+\Leftrightarrow
+\quad
+\omega^2=-\frac{\alpha_1^2}{4\gamma_1^2}k^4\,.
+\end{align}
+
+ここで、ノイズ項$\beta_1$は分散関係に影響しないことに注意されたい。興味深いことに、二重化されたNGモードは正準共役対を形成し、2次の分散をもつ単一の\textit{拡散}モードを記述する。これは閉鎖系のNGモードとは著しく異なる。開放系におけるNGモードのこのような分散関係は、内部対称性の破れの場合について以前に見いだされている~\cite{Minami:2018oxl}。本研究の設定で拡散モードと2次分散が現れる起源は、そこで議論された内部対称性の破れの場合と本質的に同じである。
+
+\subsubsection{エネルギースケール}
+
+ここで、低エネルギー極限をとるために用いた二つの条件~\eqref{low-energy_assumptions}に戻ろう。まず、第2の条件は容易に理解できる。これは、ノイズ効果を生成する演算子の間で微分展開が有効であることを要求しているだけである。一方、第1の条件にはもう少し考察が必要である。説明したように、$\gamma_1$演算子は散逸項であるのに対し、$\alpha_1$演算子は通常の運動項である。したがって、第1の条件は、散逸項が時間方向の運動項よりも支配的であることを意味する。言い換えると、この条件は散逸効果のエネルギースケール$E_{\rm diss}$を、次のように特徴づける：
+\begin{align}
+E_{\rm diss}\sim\gamma_1/\alpha_1\,.
+\end{align}
+
+したがって、上で議論した低エネルギー極限は$\omega\ll E_{\rm diss}$と表せる。ここで、時間並進対称性の破れのスケール$E_{\rm SSB}$が、
+\begin{align}
+E_{\rm SSB}^4\sim \alpha_1\,.
+\end{align}
+
+によって特徴づけられることを思い出そう。散逸効果と対称性の破れは異なる起源をもつので、二つのスケール$E_{\rm diss}$と$E_{\rm SSB}$は一般に独立である。特に、階層性$E_{\rm diss}\ll E_{\rm SSB}$が存在すれば、$E_{\rm diss}\ll \omega\ll E_{\rm SSB}$を満たすスケール$\omega$があり、この領域ではNGモードのダイナミクスに対する散逸効果は劣位の寄与となる。したがって、低エネルギー極限を超えて考える場合には、どの演算子が散逸効果に関連しているのか、さらに一般に、どの演算子が開放系に特有なのかを明らかにすることが重要になる\footnote{逆の階層性$E_{\rm SSB}\ll \omega\ll E_{\rm diss}$の場合、EFTによる記述はもはや適用できず、元のUV理論において単にゆらぎと散逸が存在する。}。
+
+\medskip
+この動機に基づき、EFTの演算子を分類しよう。まず、$\mathcal{L}_1$と$\mathcal{L}_2$は$\hbar$展開の異なる次数にある。$\mathcal{L}_2$が純虚数であることからわかるように、これは統計的ノイズを記述するので、開放系に特有のものである。一方、$\mathcal{L}_1$には、開放系に特有の演算子と、閉鎖系にも存在しうる演算子の両方が含まれる。\ref{micro:origin}節で議論したように、後者の演算子は$\epsilon_A$対称性と$\Lambda_A$対称性をもつ。特に、二重化されたNGモードの$\epsilon_A$時間並進対称変換は、式~\eqref{pi_a_translations}で$\epsilon^0_1=-\epsilon^0_2=\epsilon_A/2$とおくことで、次のように与えられる：
+\begin{align}
+\label{epsilon_A_R}
+ \pi_R(t,\mathbf{x})&\to 
+ \pi'_R(t,\mathbf{x}) 
+ = \pi_R(t,\mathbf{x}) 
+ +\mathcal{O}(\hbar^2)\,,
+ \\
+\label{epsilon_A_A}
+ \pi_A(t,\mathbf{x})&\to 
+ \pi'_A(t,\mathbf{x})
+ =\pi_A(t,\mathbf{x})+\dot{\pi}_R(t,\mathbf{x})\epsilon_A+\epsilon_A+ O(\hbar^3)\,,
+\end{align}
+
+ここでは、変換パラメータ$\epsilon_A$の$\hbar$依存性を$\epsilon_A=\mathcal{O}(\hbar)$とした。この次数で打ち切ることは、Schwinger-Keldysh作用の半古典極限、すなわちMSR有効作用と整合的であることに注意されたい。次に、$\mathcal{L}_1$の$\epsilon_A$変換を考える。簡単のため、スローロール領域に注目しよう：
+\begin{align}
+\mathcal{L}_1&=
+\sum_{n=1}^\infty\gamma_n(P^\mu P_\mu+1)^n\pi_A
+-\sum_{n=1}^\infty\alpha_n(P^\mu P_\mu+1)^{n-1}P^\mu\partial_\mu\pi_A
+\,,
+\end{align}
+
+ここで$\alpha_n$と$\gamma_n$は定数である。次の変換特性に注意すると、
+\begin{align}
+\delta_{\epsilon_A} (P^\mu\partial_\mu\pi_A)=\epsilon_A\,P^\mu\partial_\mu(\dot{\pi}_R+1)=\frac{1}{2}\epsilon_A\,\partial_t(P^\mu P_\mu+1)\,,
+\end{align}
+
+$\mathcal{L}_1$の$\epsilon_A$変換は次のように計算できる：
+\begin{align}
+\delta_{\epsilon_A} \mathcal{L}_1&=
+\epsilon_A\left[
+\sum_{n=1}^\infty\gamma_n(P^\mu P_\mu+1)^n(\dot{\pi}_R+1)
+-\sum_{n=1}^\infty\alpha_n\frac{1}{2n}\partial_t(P^\mu P_\mu+1)^{n}
+\right]
+\,.
+\end{align}
+
+第2項は全微分なので、$\alpha_n$演算子は$\epsilon_A$時間並進の下で不変であることがわかる\footnote{\label{footnote:non-slow_roll}スローロールの仮定を緩めた場合、$\alpha_n'= - 2n\gamma_n$と選ぶことで、$\epsilon_A$不変な演算子が与えられる。}。これらが$\Lambda_A$対称性ももつことを示せる。したがって、$\alpha_n$演算子は閉鎖系にも存在しうる一方、$\gamma_n$演算子は開放系に特有である。対応するEFT係数は、次のように見積もられる：
+\begin{align}
+\alpha_n\sim E_{\rm SSB}^4\,,
+\quad
+\gamma_n\sim E_{\rm diss}\,E_{\rm SSB}^4\,.
+\end{align}
+
+\medskip
+最後に、低エネルギー極限を超えて有効な分散関係を導出する。階層性$E_{\rm diss}\ll E_{\rm SSB}$があり、低エネルギー極限での結果がもはや適用できない中間スケール$E_{\rm diss}\lesssim \omega\ll E_{\rm SSB}$が存在すると仮定しよう。この中間スケールでは、2次のLagrangian~\eqref{quadratic_EFT}において、次の演算子が主要な演算子となりうる：
+\begin{align}
+\nonumber
+\mathcal{L}_{\rm eff}&\ni
+(\alpha_1-2\alpha_2)\dot{\pi}_R\dot{\pi}_A-\alpha_1\partial_i\pi_R\partial_i\pi_A
+-2\gamma_1\dot{\pi}_R\pi_A+i\beta_1\pi_A^2
+\\
+&=
+(\alpha_1-2\alpha_2)\left(
+\dot{\pi}_R\dot{\pi}_A-c_s^2\partial_i\pi_R\partial_i\pi_A
+-\gamma\dot{\pi}_R\pi_A+i\frac{A}{2}\pi_A^2
+\right)
+\,,
+\label{eq:lag_eff_intscale}
+\end{align}
+
+ここでは、ノイズ項に対する高階微分補正を省いた。また、
+\begin{align}
+c_s^2=\frac{\alpha_1}{\alpha_1-2\alpha_2}\,,
+\quad
+\gamma=\frac{2\gamma_1}{\alpha_1-2\alpha_2}\,,
+\quad
+A=\frac{2\beta_1}{\alpha_1-2\alpha_2}\,,
+\end{align}
+
+を導入した。ここで$\gamma\sim E_{\rm diss}$と$A$は、それぞれ減衰係数とノイズの振幅である。また、$c_s$はNGモードの伝播速度を表す。分散関係は、
+\begin{align}
+{\rm det}\left(
+\begin{array}{cc}0 &\omega^2-c_s^2k^2- i\gamma\omega \\ \omega^2-c_s^2k^2+ i\gamma\omega & iA\end{array}
+\right)=0
+\quad
+\Leftrightarrow
+\quad
+\omega^2=c_{s}^{2}k^2-\frac{\gamma^2}{2}\pm\sqrt{\frac{\gamma^4}{4}-\gamma^2c_{s}^{2}k^2}\,.
+\end{align}
+
+となる。低エネルギー極限$c_{s}k\ll\gamma\sim E_{\rm diss}$では、ギャップのない拡散モードとギャップをもつ拡散モードが一つずつ得られる：
+\begin{align}
+\omega^2\simeq- \frac{c_{s}^{4}k^4}{\gamma^2}\,,
+\quad
+\omega^2\simeq-  \gamma^2+2c_{s}^{2}k^2\,,
+\end{align}
+
+ここで、先ほどの議論では低エネルギー極限をとることにより時間方向の運動項$\dot{\pi}_R\dot{\pi}_A$を無視したため、ギャップをもつモードを捉えられなかったことに注意されたい。一方、$c_{s}k\gg \gamma\sim E_{\rm diss}$を満たす短い長さスケールでは、小さな散逸を伴う二つの伝播モードが得られる：
+\begin{align}
+\omega^2\simeq c_{s}^{2}k^2\pm i \gamma c_{s}k\,.
+\end{align}
+
+\subsubsection{動的KMS対称性からEFTへの制約}
+\label{subsec:KMS}
+
+\ref{subsec:KMS_B}節で議論したように、系が初期に熱平衡状態にある場合、KMS対称性と呼ばれる追加的な離散対称性が現れる。本小節の残りでは、この対称性が有効作用の低エネルギー係数に及ぼす帰結を議論する。
+
+\paragraph{KMS変換}
+
+\medskip
+\ref{subsec:KMS_B}節では、動的KMS変換を、純虚数の変換パラメータ$\epsilon_A=-i\beta$（$\beta$は逆温度）をもつ$\epsilon_A$時間並進~\eqref{epsilon_A_R}--\eqref{epsilon_A_A}と、時間反転変換の組合せとして導入した。NG場のKMS変換を特定するには、時間依存する背景をもつ凝縮場$\phi$を導入すると便利である：
+\begin{align}
+\langle\phi_a(t,{\bf x})\rangle=\bar{\phi}(t)\,,
+\end{align}
+
+ここで$a=1,2$はKeldysh経路上の二重化された場を区別するラベルである。すると、二重化されたNG場$\pi_a$（$a=1,2$）を、次のように埋め込める：
+\begin{align}
+\phi_a(t,{\bf x})=\bar\phi(t+\pi_a(t,\mathbf x))\,.
+\end{align}
+
+凝縮場$\phi$の時間反転パリティが偶であり、
+\begin{align}
+\phi_a(t,{\bf x})\to\phi_a'(t,{\bf x})=\phi_a(-t,{\bf x})
+\quad
+(a=1,2)\,,
+\label{ota}
+\end{align}
+
+ならば、NG場の時間反転変換は次で与えられる：
+\begin{align}
+\pi_a(t,\mathbf x)\to \pi_a'(t,\mathbf x) = -2t+\pi_a(-t,\mathbf x)\quad
+(a=1,2)\,.
+\end{align}
+
+$RA$基底では、これを次のように書き直せる：
+\begin{align}
+    \pi'_R(t,\mathbf x)=-2t+\pi_R(-t,\mathbf x),~~
+        \pi'_A(t,\mathbf x)=\pi_A(-t,\mathbf x).
+        \label{time:rev}
+\end{align}
+
+時間反転対称性はNG場によって非線形に実現されることに注意されたい。その本質的な理由は、時間依存する背景が一般に時間反転対称性を破ることである。
+
+\medskip
+したがって、上の時間反転変換と$\epsilon_A$時間並進を用いて、動的KMS変換を導入できる。再び半古典極限をとり、MSR作用のレベルで議論する。パラメータ$\epsilon_A=-i\beta$を用いた式~\eqref{epsilon_A_R}--\eqref{epsilon_A_A}と、式~\eqref{time:rev}から、次の形のKMS変換を得る：
+\begin{align}
+\label{KMS}
+ \pi_R'(t,\mathbf x) =-2t+\pi_R(-t,\mathbf x)
+ \,,
+ \quad
+ \pi_A'(t,\mathbf x) = 
+ \pi_A(-t,\mathbf x) 
+ + i\beta \big[\partial_{-t} \pi_R(-t,\mathbf x)+1\big]\,,
+\end{align}
+
+ここで、$\pi_R$と$\pi_A$の両方が非線形に変換されることに注意されたい\footnote{散逸流体の文脈~\cite{Glorioso:2017fpd}では、非線形な変換~\eqref{KMS}の代わりに、線形なKMS変換則
+\begin{align}
+\label{dfKMS}
+\pi_R'(t,\mathbf x) =-\pi_R(-t,\mathbf x)
+ \,,
+ \quad
+ \pi_A'(t,\mathbf x) = 
+ -\pi_A(-t,\mathbf x) 
+ - i\beta \partial_{-t} \pi_R(-t,\mathbf x)\,,
+\end{align}
+
+がしばしば用いられる。この文脈では、凝縮場$\phi$のパリティは奇であり、定数$v$を用いて$\langle\phi_a(x)\rangle=vt$と書かれるスローロール型の背景をもつ。埋め込み$\phi_a(t,\mathbf x)=v(t+\pi_a(t,\mathbf x))$と、時間反転変換$\phi_a(t,{\bf x})\to\phi_a'(t,{\bf x})=-\phi_a(-t,{\bf x})$から、NG場の動的KMS変換則は次のように従う：
+\begin{align}
+\label{dfKMS_pre}
+ \pi_R'(t,\mathbf x) =-\pi_R(-t,\mathbf x)
+ \,,
+ \quad
+ \pi_A'(t,\mathbf x) = 
+ -\pi_A(-t,\mathbf x) 
+ - i\beta \big[\partial_{-t} \pi_R(-t,\mathbf x)+1\big]\,,
+\end{align}
+
+この段階では、$\pi_R$は線形に変換するが、$\pi_A$は非線形に変換することに注意されたい。さらに、散逸流体では全系のエネルギー保存を実現するために、$\pi_A$のシフト対称性を課す。その結果、$\pi_A$の適切な定数シフトを伴わせることで、非線形な変換~\eqref{dfKMS_pre}を線形な変換~\eqref{dfKMS}へと帰着できる。このように、線形に実現されるKMS対称性を得るには、追加の対称性の存在が決定的に重要である。本論文では、時間並進対称性の破れについてより一般的な設定を考えているため、散逸流体の場合とは異なり、非線形に実現される変換~\eqref{KMS}を採用した。}。
+
+\paragraph{2次のLagrangianへの制約}
+
+次に、動的KMS変換の下での不変性から生じる、任意に課すことのできる制約を議論する。説明のため、EFT係数$\alpha_n, \beta_n, \gamma_n$の時間依存性を無視できるスローロール領域に注目し、KMS不変性がEFTパラメータをどのように制限するかを示す。
+
+\medskip
+まず、2次のLagrangian~\eqref{eq:lag_eff_intscale}のKMS変換から始める。最初に、座標変換$t\to-t$を併せて行えば、$\alpha_n$演算子がKMS変換の下で不変であることは容易に示せる。KMS変換と座標変換$t\to-t$の下で、散逸項は次のように変換される：
+\begin{align}
+ -\gamma\dot{\pi}_R\pi_A 
+ &\to \gamma\dot{\pi}_R\pi_A 
+ +2\gamma\pi_A+2i\gamma\beta(\dot{\pi}_R+1)
+ + i\gamma\beta\dot{\pi}_R(\dot{\pi}_R+1)\,,
+\end{align}
+
+一方、ゆらぎの項は次のように変換される：
+\begin{align}
+ i\frac{A}{2}\pi_A^2 
+ \to i\frac{A}{2}\pi_A^2 
+-A\beta(\dot{\pi}_R+1)\pi_A
+ - i\frac{A\beta^2}{2}(\dot{\pi}_R+1)^2\,.
+\end{align}
+
+したがって、減衰係数$\gamma$とノイズの振幅$A$が次の関係を満たすならば、2次のLagrangian~\eqref{eq:lag_eff_intscale}は、全微分を除いてKMS変換~\eqref{KMS}の下で不変となる：
+\begin{align}
+A=\frac{2\gamma}{\beta}\,,
+\end{align}
+
+これは、ほかならぬ揺動散逸関係（FDR）である。正値性条件~\eqref{unitary:open}によって$A>0$が要求されるため、FDRが満たされるならば、減衰係数は正、すなわち$\gamma>0$であることがわかる。
+
+\paragraph{2次のレベルを超えて}
+
+次に相互作用項を取り入れる。ここで非自明なのは、（非線形に実現される）ブースト対称性を保つ限り、散逸項$\dot{\pi}_R\pi_A$には3次の相互作用$\pi_A(\partial_\mu\pi_R)^2$が伴わなければならないことである。FDRが満たされていても、この3次の項$\pi_A(\partial_\mu\pi_R)^2$がKMS変換の下で不変ではないことは容易にわかる。著者らの知る限り、ブースト対称性と動的KMS対称性の両方を保つEFTパラメータの組は存在しない。有限温度の効果はブースト対称性を破るので、このことはそれほど意外ではない。実際、（非線形に実現される時間並進を保ちつつ）ブースト対称性を要求しないことにすれば、有効Lagrangianの構築に$\delta^0_\mu$を用いることができる。例えば、3次の相互作用を伴わずに、散逸項
+\begin{align}
+\label{Lorentz_breaking_dissipation}
+\widetilde{\gamma}_1\left[\delta^0_\mu\partial^\mu(t+\pi_R)\pi_A+\pi_A\right]=-\widetilde{\gamma}_1\dot{\pi}_R\pi_A\,,
+\end{align}
+
+を導入できる（EFT係数を$\widetilde{\gamma}_1$と記した）。この演算子は、FDRの下で動的KMS不変なLagrangianを与える。
+
+\subsectionlink{模型解析}
+\label{sec:ModelAnalysis}
+
+\paragraph{模型}
+
+本節の最後に、EFTの低エネルギー係数とUV理論の情報の関係を示すため、1成分のスカラー$\phi$からなる簡単なUV模型を考える。スカラー$\phi$に結合しうる環境を考慮して、半古典極限における次のSchwinger-Keldysh作用から始める：
+\begin{align}
+\label{scalar_model}
+S[\phi_R,\phi_A] 
+ =\int d^4x\,\left[
+\phi_A\Big(\Box\phi_R-V'(\phi_R)
+ - \gamma\partial_t\phi_R\Big)
+ +\frac{iA}{2}\phi_A^2
+ \right]\,,
+\end{align}
+
+ここで、最初の二つの項は、正準的な運動項とポテンシャル$V(\phi)$をもつ閉鎖系の作用に対応する。最後の二つの項はノイズ項と散逸項を表す。この模型は、前節のBrown粒子系と本質的に同じ対称性の構造をもつ。すなわち、$\gamma$と$A$の任意の値に対して、作用は$\epsilon_R$時間並進対称性をもつ：
+\begin{align}
+\nonumber
+ &\phi_R (t,\mathbf{x}) 
+ \xrightarrow { \epsilon_R }  \phi'_R(t,\mathbf{x}) = \phi_R (t+\epsilon_R,\mathbf{x})
+ \,,
+ \\
+&\phi_A (t,\mathbf{x})
+ \xrightarrow { \epsilon_R } \phi'_A (t,\mathbf{x}) = \phi_A (t+\epsilon_R,\mathbf{x})\,.
+\end{align}
+
+ノイズも散逸も存在しない場合、すなわち$\gamma=A=0$の場合には、対称性が拡大し、作用は、次で与えられる$\epsilon_A$時間並進の下での対称性ももつ：
+\begin{align}
+ \nonumber
+ &\phi_R(t,\mathbf{x})
+ \xrightarrow { \epsilon_A } \phi'_R(t,\mathbf{x}) = \phi_R(t,\mathbf{x}) 
+ \,,
+ \\
+ &\phi_A (t,\mathbf{x})
+ \xrightarrow { \epsilon_A } \phi'_A (t,\mathbf{x}) = \phi_A (t,\mathbf{x})+\dot{\phi}_R (t,\mathbf{x})\epsilon_A  \,.
+\end{align}
+
+Lorentz対称性は、散逸項によって陽に破られていることに注意されたい。
+
+\paragraph{対称性の破れ}
+次に、この模型における時間並進対称性の破れを議論し、NG場の有効Lagrangianを導出する。スカラー場が、時間依存する背景
+\begin{align}
+\langle\phi_R (t,\mathbf{x})\rangle
+ =\bar{\phi}(t)\,, \quad \langle\phi_A (t,\mathbf{x})\rangle=0\,,
+\end{align}
+
+をもつと仮定しよう。ここで$\bar{\phi}(t)$は、運動方程式
+\begin{align}
+\label{EMO:phibar}
+\ddot{\bar{\phi}}+\gamma\dot{\bar{\phi}}+V'(\bar{\phi})=0\,.
+\end{align}
+
+の空間的に一様な解である。すると、この背景は$\epsilon_R$時間並進対称性と$\epsilon_A$時間並進対称性の両方を破る。より具体的には、$\phi_R$の背景は$\epsilon_R$変換の下で、
+\begin{align}
+\label{transf_backgrounds}
+ \langle\phi_R (t,\mathbf{x})\rangle 
+ = \bar{\phi}(t) &\xrightarrow { \epsilon_R } \langle \phi'_R (t,\mathbf{x})\rangle =
+ \langle \phi_R(t+\epsilon_R,\mathbf{x})\rangle=\bar{\phi}(t+\epsilon_R) 
+ \,,
+\end{align}
+
+と変換し、$\phi_A$の背景は$\epsilon_A$変換の下で、
+\begin{align}
+ \langle\phi_A (t,\mathbf{x})\rangle 
+ = 0  &\xrightarrow { \epsilon_A } \langle \phi'_A (t,\mathbf{x})\rangle =
+ \langle \phi_A(t,\mathbf{x})+\dot{\phi}_R (t,\mathbf{x})\epsilon_A\rangle=\dot{\bar{\phi}}(t)\epsilon_A\,.
+\end{align}
+
+と変換する。したがって、$\gamma=A=0$ならば二つのNG場が存在する一方、ゆらぎと散逸が存在すると、その一方は擬NG場となる。式~\eqref{transf_backgrounds}の変換パラメータ$\epsilon_R$と$\epsilon_A$を、それぞれ局所場$\pi_R (x)$と$\pi_A (x)$に昇格させることで、NG場を元の場$\phi_R$と$\phi_A$に次のように埋め込める：
+\begin{align}
+\label{phi_piRA}
+ \phi_R(t,\mathbf{x}) 
+ = \bar{\phi} \big( t+\pi_R(t,\mathbf{x}) \big)\,,
+ \quad
+ \phi_A(t,\mathbf{x}) 
+ = \dot{\bar{\phi}} \big(t+\pi_R(t,\mathbf{x}) \big) \pi_A (t,\mathbf{x}) \,.
+\end{align}
+
+前小節ですでに議論したように、二つのNG場の変換則は、式~\eqref{R_translations_R}--\eqref{R_translations_A}および式~\eqref{epsilon_A_R}--\eqref{epsilon_A_A}で与えられる。
+
+\paragraph{NG場の作用}
+NG場の作用は、関係式~\eqref{phi_piRA}を元の作用~\eqref{scalar_model}に代入することで得られる：
+\begin{align}
+S[\phi_R,\phi_A] 
+=\int d^4x\left[
+\dot{\bar{\phi}}\,\pi_A\Big(\dot{\bar{\phi}}\,\Box\pi_R+\ddot{\bar{\phi}}\,(-2\dot{\pi}_R+\partial_\mu\pi_R\partial^\mu\pi_R)
+ - \gamma\dot{\bar{\phi}}\,\dot{\pi}_R\Big)
+ +\frac{iA}{2}\dot{\bar{\phi}}^2\pi_A^2
+ \right]\,,
+\end{align}
+
+ここで、$\bar{\phi}$およびその微分の引数は$t+\pi_R$である。また、運動方程式~\eqref{EMO:phibar}を用いた。部分積分を行うと、次のように書き直せる：
+\begin{align}
+\label{model_pi}
+S[\phi_R,\phi_A] 
+=\int d^4x\left[
+-\dot{\bar{\phi}}^2
+\partial_\mu\pi_R\partial^\mu\pi_A
+-\ddot{\bar{\phi}}\dot{\bar{\phi}}\,
+(\partial_\mu\pi_R\partial^\mu\pi_R)\pi_A
+ - \gamma\dot{\bar{\phi}}^2\dot{\pi}_R\pi_A
+ +\frac{iA}{2}\dot{\bar{\phi}}^2\pi_A^2
+ \right]\,.
+\end{align}
+
+述べたように、元の設定~\eqref{scalar_model}ではLorentz対称性が陽に破れている。したがって、この模型をEFTの枠組みに組み込むには、有効Lagrangian~\eqref{EFTLag:pi_A1}--\eqref{L2_simple_P}に、Lorentz対称性を破る演算子~\eqref{Lorentz_breaking_dissipation}を加える必要がある：
+\begin{align}
+\label{EFT_Lbreaking}
+\mathcal{L}_{\rm eff}=
+-\alpha_1
+\partial_\mu\pi_R\partial^\mu\pi_A
+-\alpha_1'\dot{\pi}_R\pi_A
++\gamma_1
+(-2\dot{\pi}_R+\partial_\mu\pi_R\partial^\mu\pi_R)\pi_A
++i\beta_1\pi_A^2
+- \widetilde{\gamma}_1\dot{\pi}_R\pi_A\,,
+\end{align}
+
+ここで最初の三つの項は、$\alpha_n$、$\gamma_n$、$\beta_n$の各セクターにおける最低次の項であり、最後の項は\ref{subsec:KMS}節で導入した、Lorentz対称性を破る演算子~\eqref{Lorentz_breaking_dissipation}である。式~\eqref{model_pi}と式~\eqref{EFT_Lbreaking}を比較すると、低エネルギー係数は次のように求まる：
+\begin{align}
+\nonumber
+\alpha_1(t+\pi_R)=\dot{\bar{\phi}}^2(t+\pi_R),& \quad \widetilde{\gamma}_1(t+\pi_R)=\gamma\dot{\bar{\phi}}^2(t+\pi_R),
+\\
+\gamma_1(t+\pi_R)=-\dot{\bar{\phi}}\ddot{\bar{\phi}}(t+\pi_R),& \quad \beta_1(t+\pi_R)=\frac{iA}{2}\dot{\bar{\phi}}^2(t+\pi_R).
+\end{align}
+
+特に、運動項の係数$\alpha_1$が秩序変数$\dot{\bar{\phi}}$に直接関係していることがわかる。また、この模型は$\alpha_1'=-2\gamma_1$を満たすため、式~\eqref{EFT_Lbreaking}の最初の三つの項は、$\epsilon_A$対称性および$\Lambda_A$対称性の下で不変であることもわかる（脚注~\ref{footnote:non-slow_roll}を参照）。分散関係と、動的KMS対称性を用いた揺動散逸関係の導出は、前小節と同様に行うことができる。
+

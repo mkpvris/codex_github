@@ -1,0 +1,27 @@
+Visual review: Japanese translation PDF, pages 25--36
+Reviewer: bibliography subagent
+
+Method and coverage:
+- Actually displayed and inspected all twelve pages in the three contact sheets contact_25_28.png, contact_29_32.png, contact_33_36.png.
+- Additionally inspected single-page images page-25.png, page-28.png, page-30.png, page-31.png, page-33.png, page-34.png, page-35.png, page-36.png.
+- All four bibliography pages (33--36) were checked as single pages at readable size.
+- Page 35 was freshly rendered from the current PDF to qa/review_page35_current.png at a 1600-pixel longest dimension and displayed at original resolution, confirming the [33] arXiv subject-class continuation and all subsequent entries are visible.
+- This report concerns visual appearance. PDF annotation targets and URI values require the separate link audit.
+
+Result: PASS. No clipped text or formula, overlapping lines, missing visible glyph, collision with equation numbers, damaged figure, or unreadable reference text found on pages 25--36.
+
+Page-by-page observations:
+25: Equations (3.57)--(3.62) are aligned and visible. Long footnote 16, including (3.63)/(3.64), remains above the footer with no overlap. Its smaller type remains legible on the single-page image.
+26: Equations (3.65)--(3.69), the KMS restriction discussion and section 3.3 start are visible. No isolated heading or clipped expression.
+27: Equations (3.70)--(3.77), transformation arrows, primes and subscripts are legible. Bottom equation and page number have adequate separation.
+28: Long equations (3.78)/(3.79) remain within the page and do not collide with the numbers. Two-row (3.80) is clear. Section 4 begins with ample space and the prose has no broken Japanese characters.
+29: Summary continuation, acknowledgments, all grant identifiers and Appendix A heading/prose are intact. Appendix heading is followed by substantive content. A sentence crosses the page boundary, but no characters are clipped or lost.
+30: Equations (A.1)--(A.9) and all greater/lesser signs are clear. The long matrix expression (A.9) fits. Its number is deliberately below the expression at the right, with no collision or clipping.
+31: Figure 3 is crisp, with all CTP arrows, contour labels, epsilon, sigma, t_0 and beta labels visible. The translated caption does not overlap the graphic or body. Equations (A.10)--(A.12) are clear; all four lines of the Green functions are present.
+32: Equations (A.13)--(A.17), integral limits, derivative primes, Ohmic expansion, final renormalization and rescaling are readable and properly spaced. The final body ends with comfortable white space.
+33: References [1]--[16] are readable. Pink DOI/arXiv link text has no missing characters or overlap. Reference [16] continues naturally onto page 34.
+34: Continuation of [16] and references [17]--[31] are visible. Book notes, article numbers, accented names and long URLs remain legible. The Buca old-title note appears with its closing quotation mark in the single-page image inspected; the parent will also perform the requested post-rebuild recheck of [28].
+35: References [32]--[47] are readable. Fresh render verifies [33]'s [hep-th] continuation. The Zinn-Justin publisher/edition note and all arXiv categories/long DOI text are visible. No right-margin clipping or excessive compression.
+36: References [48]--[55] and all associated link text are intact. The final reference ends well above the footer; remaining blank space is normal for the end of the bibliography.
+
+No layout correction is required by this visual review. The usual template's link colors, bibliography type sizes and equation-number alignment are maintained.

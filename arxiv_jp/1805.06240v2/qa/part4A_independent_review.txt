@@ -1,0 +1,45 @@
+Independent review of parts/part4A.tex
+Reviewer: bibliography subagent (did not author this translation)
+Source coverage: original/SSBofDspv2.tex, lines 2131--2463, including all of Summary and Outlook, Acknowledgments, Appendix A, Figure 3 caption, and the final rescaling statement. Entire translated file was read against the source.
+
+Result: no omitted paragraph, missing equation, incorrect equation sign, or substantive mistranslation found. One small uncertainty qualifier should be restored (item 1 below).
+
+1. Minor precision correction, translation line 7:
+Original: "... chemical and possibly biological or economic systems ..."
+Current Japanese: "...化学系、さらには生物系や経済系に至るまで多岐にわたる。"
+The original makes application to biological/economic systems tentative; the translation presently sounds definite.
+Suggested full first sentence: "本定式化を適用できる非平衡系は、宇宙論、物性物理学、化学系に加え、場合によっては生物系や経済系にまで及ぶ。"
+No edit was made by this reviewer; parent can apply this wording.
+
+Detailed semantic coverage:
+- Summary paragraph 1: construction of open-system EFT, weak SSB criterion, doubled Schwinger-Keldysh symmetries, NG/gapped dispersion relations, Wilson coefficients and dynamical KMS constraints are all retained accurately.
+- Summary paragraph 2: all fields of application, inflation, curved spacetime, hidden sectors, cosmological collider complementarity, stochastic/warm inflation and all six citations are retained. Only "possibly" qualifier is the minor issue above.
+- Summary paragraph 3: driven dissipative cold atoms, nonequilibrium transitions, time-dependent condensates, strong criterion, footnote reference, combined time translation/U(1), and alternative descriptions are all retained accurately.
+- Summary paragraph 4: chemical/biological possibility, Belousov-Zhabotinsky synchronization, singular perturbation method, phase dynamics and comparison of methods are all retained accurately.
+- Acknowledgments: all three thanked names, all four authors' support statements, RIKEN, Senshu Scholarship Foundation, JSPS/MEXT grants (JP17H02894, JP18K13539, JP18H04352), Overseas Research Fellowships and iTHEMS STAMP are retained accurately.
+- Appendix introduction: all source equation references, rescalings of X, x_n, g_n, single-to-multiple oscillator generalization and initial thermalization are retained accurately.
+- CTP contour definitions: t=z(v), increasing v, sigma, four segments, C_2, theta_C, delta_C and usual theta/delta explanations are retained.
+- Green functions: time ordering, thermal trace, inverse temperature, greater/lesser functions, KMS condition, Fourier-space expressions, spectral function, Bose-Einstein distribution and harmonic-oscillator spectral density are retained.
+- Figure 3: both contour limits, past infinity, sigma=epsilon<<1, overlap and (X_1,sigma_1)/(X_2,sigma_2) are retained. The supplied original PDF physical page 33 (printed p. 32) was rendered and inspected; the visible figure labels/caption agree with the source TeX and Japanese caption. The image path points to the original vector figure.
+- Effective action: C_12 reduction, Gaussian integration reasoning, all matrix signs, four Green functions and Fourier formulas are retained.
+- Principal value and coarse graining: both explanations and omega_0-dependence are retained.
+- Multiple oscillators: sum, large-N/continuous spectrum equivalence, weight function and normalization, cutoff and Lambda~T rationale are retained.
+- Ohmic approximation: omega<<T, oddness, finiteness at zero, coefficient positivity and mass dimension, factor 2 convention, bath name and citation are retained.
+- Final results: all four Green functions, C=2Lambda/pi, omitted higher orders, real-time derivatives, action terms, renormalization of V(X), and final X rescaling are retained.
+
+Automated independent checks (qa/part4A_math_reference_check.json):
+- All 16 display-math environments (17 numbered equations A.1--A.17) match exactly after removal of whitespace.
+- All equation/figure/section labels match in order.
+- All citation and cross-reference targets match; eq:EachL/eq:TotalL order reverses naturally in Japanese syntax, with their semantic association preserved.
+- Inline mathematics: 61 source math spans vs 59 Japanese spans. The only reductions are two literal "2" tokens rendered as normal Japanese prose ("2点" and "係数2"); all mathematical content remains present. A few spans move to follow Japanese word order, with no change to their values.
+- No new footnotes occur in this portion. The reference to footnote4 is retained and the original aux confirms it is footnote 5.
+- The original printed equation A.11 has G_22(omega;omega_0^2) = [G_11(omega;omega_0)]* with omega_0 (not squared) on its RHS. This original inconsistency is faithfully retained and should not be silently corrected.
+- The source prose following A.2 uses delta(t-t') while the parameterized identity contains delta(v-v'); this original notation is likewise retained.
+
+Bibliography completion checks (separate task):
+- ref.bib contains 55 entries in the exact original order, retaining all original manuscript citation keys.
+- 46 complete official INSPIRE-HEP exports; 9 official Crossref exports after failed INSPIRE title and DOI searches.
+- All raw exports are cached, and all INSPIRE field values are unchanged. Additional fields only restore missing source metadata or supply an accessible record link.
+- Independent comparison against source .bbl and original citations passed. Raw export hashes and no-field-loss checks passed.
+- Standalone BibTeX run with the template utphys.bst produced 55 bibitems, zero errors and zero warnings (qa/bibliography_test.blg).
+- Final PDF internal and external links are intentionally left for the parent's final-PDF inspection, not claimed verified by the BibTeX run.
