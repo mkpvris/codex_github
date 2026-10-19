@@ -1,0 +1,2925 @@
+{
+  "reference_numbers": 56,
+  "works": 65,
+  "source_counts": {
+    "CiNii Books": 1,
+    "Crossref": 2,
+    "INSPIRE": 61,
+    "Original bibliography; checked against library catalogues": 1
+  },
+  "official_export_unretrieved": [
+    "[39] Fetter and Walecka (1971): no matching INSPIRE record found; complete original @book transcribed and library catalogue checked."
+  ],
+  "numbering": "utphys formats every work via BibTeX; group_bibliography.py joins continuation items under the original reference number without changing formatted entry text.",
+  "records": [
+    {
+      "original_number": 1,
+      "original_key": "iraeft",
+      "citation_key": "iraeft",
+      "official_key": "Rothstein:2003mp",
+      "source": "INSPIRE",
+      "url": "https://inspirehep.net/api/arxiv/hep-ph/0308266?format=bibtex",
+      "raw_file": "work/bibliography_cache/iraeft_1.bib",
+      "raw_sha256": "0ee8c5998703fdbcbb3b5b4d4079064ca66d262660afffbdafb45ac48e3b6e3e",
+      "original_entry": "I.~Z.~Rothstein,\n  ``TASI lectures on effective field theories,''\n  arXiv:hep-ph/0308266.",
+      "match": {
+        "arxiv": "hep-ph/0308266",
+        "bibtex_url": "https://inspirehep.net/api/arxiv/hep-ph/0308266?format=bibtex",
+        "file": "iraeft_1.bib",
+        "titles": [
+          {
+            "title": "TASI lectures on effective field theories"
+          },
+          {
+            "title": "THEORETICAL ADVANCE STUDY INSTITUTE"
+          },
+          {
+            "title": "TASI lectures on effective field theories.",
+            "source": "arXiv"
+          }
+        ],
+        "authors": [
+          "Rothstein, Ira Z."
+        ],
+        "doi": null,
+        "publication": null
+      },
+      "adjustments": [
+        "Citation key: Rothstein:2003mp -> iraeft"
+      ]
+    },
+    {
+      "original_number": 2,
+      "original_key": "joeeft",
+      "citation_key": "joeeft",
+      "official_key": "Polchinski:1992ed",
+      "source": "INSPIRE",
+      "url": "https://inspirehep.net/api/arxiv/hep-th/9210046?format=bibtex",
+      "raw_file": "work/bibliography_cache/joeeft_1.bib",
+      "raw_sha256": "11572b426f570b228bcd5f6a39c732da63f97a70d1c71e6b2bfd7abebfaff7b5",
+      "original_entry": "J.~Polchinski,\n  ``Effective Field Theory And The Fermi Surface,''\n  arXiv:hep-th/9210046.",
+      "match": {
+        "arxiv": "hep-th/9210046",
+        "bibtex_url": "https://inspirehep.net/api/arxiv/hep-th/9210046?format=bibtex",
+        "file": "joeeft_1.bib",
+        "titles": [
+          {
+            "title": "Effective field theory and the Fermi surface"
+          }
+        ],
+        "authors": [
+          "Polchinski, Joseph"
+        ],
+        "doi": null,
+        "publication": [
+          {
+            "cnum": "C92-06-03.1",
+            "page_end": "276",
+            "page_start": "0235",
+            "parent_record": {
+              "$ref": "https://inspirehep.net/api/literature/376253"
+            },
+            "pubinfo_freetext": "Boulder TASI 92:0235-276",
+            "conference_record": {
+              "$ref": "https://inspirehep.net/api/conferences/968297"
+            }
+          },
+          {
+            "pubinfo_freetext": "In *Boulder 1992, Proceedings, Recent directions in particle theory* 235-274, and Calif. Univ. Santa Barbara - NSF-ITP-92-132 (92,rec.Nov.) 39 p. (220633) Texas Univ. Austin - UTTG-92-20 (92,rec.Nov.) 39 p"
+          }
+        ]
+      },
+      "adjustments": [
+        "Citation key: Polchinski:1992ed -> joeeft"
+      ]
+    },
+    {
+      "original_number": 3,
+      "original_key": "nrgr1",
+      "citation_key": "nrgr1",
+      "official_key": "Goldberger:2004jt",
+      "source": "INSPIRE",
+      "url": "https://inspirehep.net/api/arxiv/hep-th/0409156?format=bibtex",
+      "raw_file": "work/bibliography_cache/nrgr1_1.bib",
+      "raw_sha256": "da60f282143301a00e29f69f376637e800011926431c96efa33ff4986f2574ad",
+      "original_entry": "W.~D.~Goldberger and I.~Z.~Rothstein, ``An effective field theory of gravity for extended objects,'' Phys.\\ Rev.\\  D {\\bf 73}, 104029 (2006)\n  [arXiv:hep-th/0409156];",
+      "match": {
+        "arxiv": "hep-th/0409156",
+        "bibtex_url": "https://inspirehep.net/api/arxiv/hep-th/0409156?format=bibtex",
+        "file": "nrgr1_1.bib",
+        "titles": [
+          {
+            "title": "An Effective field theory of gravity for extended objects"
+          },
+          {
+            "title": "An effective field theory of gravity for extended objects.",
+            "source": "arXiv"
+          },
+          {
+            "title": "An Effective Field Theory of Gravity for Extended Objects",
+            "source": "arXiv"
+          }
+        ],
+        "authors": [
+          "Goldberger, Walter D.",
+          "Rothstein, Ira Z."
+        ],
+        "doi": [
+          {
+            "value": "10.1103/PhysRevD.73.104029"
+          }
+        ],
+        "publication": [
+          {
+            "year": 2006,
+            "artid": "104029",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "73"
+          }
+        ]
+      },
+      "adjustments": [
+        "Citation key: Goldberger:2004jt -> nrgr1"
+      ]
+    },
+    {
+      "original_number": 4,
+      "original_key": "nrgr1p",
+      "citation_key": "nrgr1p",
+      "official_key": "Porto:2005ac",
+      "source": "INSPIRE",
+      "url": "https://inspirehep.net/api/arxiv/gr-qc/0511061?format=bibtex",
+      "raw_file": "work/bibliography_cache/nrgr1p_1.bib",
+      "raw_sha256": "01b38aa3fd111ee37e78f73c0d0479840a30663bf287b2b6270f34ecd4de39a5",
+      "original_entry": "R.~A.~Porto, ``Post-Newtonian corrections to the motion of spinning bodies in NRGR,'' Phys.\\ Rev.\\  D {\\bf 73}, 104031 (2006) [arXiv:gr-qc/0511061].",
+      "match": {
+        "arxiv": "gr-qc/0511061",
+        "bibtex_url": "https://inspirehep.net/api/arxiv/gr-qc/0511061?format=bibtex",
+        "file": "nrgr1p_1.bib",
+        "titles": [
+          {
+            "title": "Post-Newtonian corrections to the motion of spinning bodies in NRGR"
+          },
+          {
+            "title": "POSTNEWTONIAN"
+          },
+          {
+            "title": "Post-Newtonian corrections to the motion of spinning bodies in NRGR",
+            "source": "arXiv"
+          }
+        ],
+        "authors": [
+          "Porto, Rafael A."
+        ],
+        "doi": [
+          {
+            "value": "10.1103/PhysRevD.73.104031"
+          }
+        ],
+        "publication": [
+          {
+            "year": 2006,
+            "artid": "104031",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "73"
+          }
+        ]
+      },
+      "adjustments": [
+        "Citation key: Porto:2005ac -> nrgr1p"
+      ]
+    },
+    {
+      "original_number": 5,
+      "original_key": "radgo",
+      "citation_key": "radgo",
+      "official_key": "Goldberger:2009qd",
+      "source": "INSPIRE",
+      "url": "https://inspirehep.net/api/arxiv/0912.4254?format=bibtex",
+      "raw_file": "work/bibliography_cache/radgo_1.bib",
+      "raw_sha256": "3ffa3d5583bd4e4f4daae72265df6504a73c48cd5726a04c353ae4b9ec1c8212",
+      "original_entry": "W.~D.~Goldberger and A.~Ross,  ``Gravitational radiative corrections from effective field theory,'' Phys.\\ Rev.\\  D {\\bf 81}, 124015 (2010) [arXiv:0912.4254 [gr-qc]].",
+      "match": {
+        "arxiv": "0912.4254",
+        "bibtex_url": "https://inspirehep.net/api/arxiv/0912.4254?format=bibtex",
+        "file": "radgo_1.bib",
+        "titles": [
+          {
+            "title": "Gravitational radiative corrections from effective field theory"
+          },
+          {
+            "title": "Gravitational radiative corrections from effective field theory",
+            "source": "arXiv"
+          }
+        ],
+        "authors": [
+          "Goldberger, Walter D.",
+          "Ross, Andreas"
+        ],
+        "doi": [
+          {
+            "value": "10.1103/PhysRevD.81.124015"
+          }
+        ],
+        "publication": [
+          {
+            "year": 2010,
+            "artid": "124015",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "81"
+          }
+        ]
+      },
+      "adjustments": [
+        "Citation key: Goldberger:2009qd -> radgo"
+      ]
+    },
+    {
+      "original_number": 6,
+      "original_key": "nrgr2",
+      "citation_key": "nrgr2",
+      "official_key": "Porto:2010zg",
+      "source": "INSPIRE",
+      "url": "https://inspirehep.net/api/arxiv/1007.1312?format=bibtex",
+      "raw_file": "work/bibliography_cache/nrgr2_1.bib",
+      "raw_sha256": "4e615ec313d85b5c1bdeeafe04854af3c96132f2bdb847a7c34937d1234c5a41",
+      "original_entry": "R.~A.~Porto, A.~Ross and I.~Z.~Rothstein, ``Spin induced multipole moments for the gravitational wave flux from binary inspirals to third Post-Newtonian order,''  JCAP {\\bf 1103}, 009 (2011) [arXiv:1007.1312 [gr-qc]]",
+      "match": {
+        "arxiv": "1007.1312",
+        "bibtex_url": "https://inspirehep.net/api/arxiv/1007.1312?format=bibtex",
+        "file": "nrgr2_1.bib",
+        "titles": [
+          {
+            "title": "Spin induced multipole moments for the gravitational wave flux from binary inspirals to third Post-Newtonian order"
+          },
+          {
+            "title": "Spin induced multipole moments for the gravitational wave flux from binary inspirals to third Post-Newtonian order",
+            "source": "arXiv"
+          }
+        ],
+        "authors": [
+          "Porto, Rafael A.",
+          "Ross, Andreas",
+          "Rothstein, Ira Z."
+        ],
+        "doi": [
+          {
+            "value": "10.1088/1475-7516/2011/03/009"
+          }
+        ],
+        "publication": [
+          {
+            "year": 2011,
+            "artid": "009",
+            "page_start": "009",
+            "journal_title": "JCAP",
+            "journal_record": {
+              "$ref": "https://inspirehep.net/api/journals/1212538"
+            },
+            "journal_volume": "03"
+          }
+        ]
+      },
+      "adjustments": [
+        "Citation key: Porto:2010zg -> nrgr2"
+      ]
+    },
+    {
+      "original_number": 7,
+      "original_key": "nrgr2p",
+      "citation_key": "nrgr2p",
+      "official_key": "Porto:2010tr",
+      "source": "INSPIRE",
+      "url": "https://inspirehep.net/api/arxiv/1005.5730?format=bibtex",
+      "raw_file": "work/bibliography_cache/nrgr2p_1.bib",
+      "raw_sha256": "e78f28abf95b32802738bcf6f5bb5f2cfa994daec57ed5bfc0cfec8d863d6ef4",
+      "original_entry": "R.~A.~Porto,  ``Next to leading order spin-orbit effects in the motion of inspiralling\n  compact binaries,'' Class.\\ Quant.\\ Grav.\\  {\\bf 27}, 205001 (2010) [arXiv:1005.5730 [gr-qc]]",
+      "match": {
+        "arxiv": "1005.5730",
+        "bibtex_url": "https://inspirehep.net/api/arxiv/1005.5730?format=bibtex",
+        "file": "nrgr2p_1.bib",
+        "titles": [
+          {
+            "title": "Next to leading order spin-orbit effects in the motion of inspiralling compact binaries"
+          },
+          {
+            "title": "Next to leading order spin-orbit effects in the motion of inspiralling compact binaries",
+            "source": "arXiv"
+          }
+        ],
+        "authors": [
+          "Porto, Rafael A."
+        ],
+        "doi": [
+          {
+            "value": "10.1088/0264-9381/27/20/205001"
+          }
+        ],
+        "publication": [
+          {
+            "year": 2010,
+            "artid": "205001",
+            "journal_title": "Class.Quant.Grav.",
+            "journal_record": {
+              "$ref": "https://inspirehep.net/api/journals/1214779"
+            },
+            "journal_volume": "27"
+          }
+        ]
+      },
+      "adjustments": [
+        "Citation key: Porto:2010tr -> nrgr2p"
+      ]
+    },
+    {
+      "original_number": 8,
+      "original_key": "nrgr2p2",
+      "citation_key": "nrgr2p2",
+      "official_key": "Porto:2008tb",
+      "source": "INSPIRE",
+      "url": "https://inspirehep.net/api/arxiv/0802.0720?format=bibtex",
+      "raw_file": "work/bibliography_cache/nrgr2p2_1.bib",
+      "raw_sha256": "a3d706aa6191bfd82c9683260efdb95d2aafcdbab4d0b4c0f8de1484fa9009fb",
+      "original_entry": "R.~A.~Porto and I.~Z.~Rothstein, ``Spin(1)Spin(2) Effects in the Motion of Inspiralling Compact Binaries at Third Order in the Post-Newtonian Expansion.\" Phys.\\ Rev.\\  D {\\bf 78}, 044012 (2008) [Erratum-ibid.\\  D {\\bf 81}, 029904 (2010)] [arXiv:0802.0720 [gr-qc]];  ``Next to Leading Order Spin(1)Spin(1) Effects in the Motion of Inspiralling Compact Binaries,'' Phys.\\ Rev.\\  D {\\bf 78}, 044013 (2008) [Erratum-ibid.\\  D {\\bf 81}, 029905 (2010)] [arXiv:0804.0260 [gr-qc]]; ``The hyperfine Einstein-Infeld-Hoffmann potential,''  Phys.\\ Rev.\\ Lett.\\  {\\bf 97}, 021101 (2006) [arXiv:gr-qc/0604099];  arXiv:0712.2032 [gr-qc].",
+      "match": {
+        "arxiv": "0802.0720",
+        "bibtex_url": "https://inspirehep.net/api/arxiv/0802.0720?format=bibtex",
+        "file": "nrgr2p2_1.bib",
+        "titles": [
+          {
+            "title": "Spin(1)Spin(2) Effects in the Motion of Inspiralling Compact Binaries at Third Order in the Post-Newtonian Expansion"
+          },
+          {
+            "title": "Spin(1)Spin(2) Effects in the Motion of Inspiralling Compact Binaries at Third Order in the Post-Newtonian Expansion",
+            "source": "arXiv"
+          }
+        ],
+        "authors": [
+          "Porto, Rafael A.",
+          "Rothstein, Ira Z."
+        ],
+        "doi": [
+          {
+            "value": "10.1103/PhysRevD.78.044012"
+          },
+          {
+            "value": "10.1103/PhysRevD.81.029904"
+          }
+        ],
+        "publication": [
+          {
+            "year": 2008,
+            "artid": "044012",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "78"
+          },
+          {
+            "year": 2010,
+            "artid": "029904",
+            "material": "erratum",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "81"
+          }
+        ]
+      },
+      "adjustments": [
+        "Citation key: Porto:2008tb -> nrgr2p2"
+      ]
+    },
+    {
+      "original_number": 8,
+      "original_key": "nrgr2p2",
+      "citation_key": "nrgr2p2__2",
+      "official_key": "Porto:2008jj",
+      "source": "INSPIRE",
+      "url": "https://inspirehep.net/api/arxiv/0804.0260?format=bibtex",
+      "raw_file": "work/bibliography_cache/nrgr2p2_2.bib",
+      "raw_sha256": "9feeb35f8f9c1e9a5974c947e9d0c9cb024cd625f1f1782c2df09017b5aa0813",
+      "original_entry": "R.~A.~Porto and I.~Z.~Rothstein, ``Spin(1)Spin(2) Effects in the Motion of Inspiralling Compact Binaries at Third Order in the Post-Newtonian Expansion.\" Phys.\\ Rev.\\  D {\\bf 78}, 044012 (2008) [Erratum-ibid.\\  D {\\bf 81}, 029904 (2010)] [arXiv:0802.0720 [gr-qc]];  ``Next to Leading Order Spin(1)Spin(1) Effects in the Motion of Inspiralling Compact Binaries,'' Phys.\\ Rev.\\  D {\\bf 78}, 044013 (2008) [Erratum-ibid.\\  D {\\bf 81}, 029905 (2010)] [arXiv:0804.0260 [gr-qc]]; ``The hyperfine Einstein-Infeld-Hoffmann potential,''  Phys.\\ Rev.\\ Lett.\\  {\\bf 97}, 021101 (2006) [arXiv:gr-qc/0604099];  arXiv:0712.2032 [gr-qc].",
+      "match": {
+        "arxiv": "0804.0260",
+        "bibtex_url": "https://inspirehep.net/api/arxiv/0804.0260?format=bibtex",
+        "file": "nrgr2p2_2.bib",
+        "titles": [
+          {
+            "title": "Next to Leading Order Spin(1)Spin(1) Effects in the Motion of Inspiralling Compact Binaries"
+          },
+          {
+            "title": "Next to Leading Order Spin(1)Spin(1) Effects in the Motion of Inspiralling Compact Binaries",
+            "source": "arXiv"
+          }
+        ],
+        "authors": [
+          "Porto, Rafael A",
+          "Rothstein, Ira Z."
+        ],
+        "doi": [
+          {
+            "value": "10.1103/PhysRevD.78.044013"
+          },
+          {
+            "value": "10.1103/PhysRevD.81.029905"
+          }
+        ],
+        "publication": [
+          {
+            "year": 2008,
+            "artid": "044013",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "78"
+          },
+          {
+            "year": 2010,
+            "artid": "029905",
+            "material": "erratum",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "81"
+          },
+          {
+            "cnum": "C07-07-23.6",
+            "conference_record": {
+              "$ref": "https://inspirehep.net/api/conferences/979542"
+            }
+          }
+        ]
+      },
+      "adjustments": [
+        "Citation key: Porto:2008jj -> nrgr2p2__2"
+      ]
+    },
+    {
+      "original_number": 8,
+      "original_key": "nrgr2p2",
+      "citation_key": "nrgr2p2__3",
+      "official_key": "Porto:2006bt",
+      "source": "INSPIRE",
+      "url": "https://inspirehep.net/api/arxiv/gr-qc/0604099?format=bibtex",
+      "raw_file": "work/bibliography_cache/nrgr2p2_3.bib",
+      "raw_sha256": "fe55d811e5ce08b999580968c42fd398a5e51fc3d2b4731c45a64bba77b847fd",
+      "original_entry": "R.~A.~Porto and I.~Z.~Rothstein, ``Spin(1)Spin(2) Effects in the Motion of Inspiralling Compact Binaries at Third Order in the Post-Newtonian Expansion.\" Phys.\\ Rev.\\  D {\\bf 78}, 044012 (2008) [Erratum-ibid.\\  D {\\bf 81}, 029904 (2010)] [arXiv:0802.0720 [gr-qc]];  ``Next to Leading Order Spin(1)Spin(1) Effects in the Motion of Inspiralling Compact Binaries,'' Phys.\\ Rev.\\  D {\\bf 78}, 044013 (2008) [Erratum-ibid.\\  D {\\bf 81}, 029905 (2010)] [arXiv:0804.0260 [gr-qc]]; ``The hyperfine Einstein-Infeld-Hoffmann potential,''  Phys.\\ Rev.\\ Lett.\\  {\\bf 97}, 021101 (2006) [arXiv:gr-qc/0604099];  arXiv:0712.2032 [gr-qc].",
+      "match": {
+        "arxiv": "gr-qc/0604099",
+        "bibtex_url": "https://inspirehep.net/api/arxiv/gr-qc/0604099?format=bibtex",
+        "file": "nrgr2p2_3.bib",
+        "titles": [
+          {
+            "title": "The Hyperfine Einstein-Infeld-Hoffmann potential"
+          },
+          {
+            "title": "SPIN SPIN"
+          },
+          {
+            "title": "The hyperfine Einstein-Infeld-Hoffmann potential.",
+            "source": "arXiv"
+          }
+        ],
+        "authors": [
+          "Porto, Rafael A.",
+          "Rothstein, Ira Z."
+        ],
+        "doi": [
+          {
+            "value": "10.1103/PhysRevLett.97.021101"
+          }
+        ],
+        "publication": [
+          {
+            "year": 2006,
+            "artid": "021101",
+            "journal_title": "Phys.Rev.Lett.",
+            "journal_record": {
+              "$ref": "https://inspirehep.net/api/journals/1214495"
+            },
+            "journal_volume": "97"
+          }
+        ]
+      },
+      "adjustments": [
+        "Citation key: Porto:2006bt -> nrgr2p2__3"
+      ]
+    },
+    {
+      "original_number": 8,
+      "original_key": "nrgr2p2",
+      "citation_key": "nrgr2p2__4",
+      "official_key": "Porto:2007tt",
+      "source": "INSPIRE",
+      "url": "https://inspirehep.net/api/arxiv/0712.2032?format=bibtex",
+      "raw_file": "work/bibliography_cache/nrgr2p2_4.bib",
+      "raw_sha256": "ecf45c354ac73baff02797cc4d5d30ff4bd6257cb14167163b76e286a2976692",
+      "original_entry": "R.~A.~Porto and I.~Z.~Rothstein, ``Spin(1)Spin(2) Effects in the Motion of Inspiralling Compact Binaries at Third Order in the Post-Newtonian Expansion.\" Phys.\\ Rev.\\  D {\\bf 78}, 044012 (2008) [Erratum-ibid.\\  D {\\bf 81}, 029904 (2010)] [arXiv:0802.0720 [gr-qc]];  ``Next to Leading Order Spin(1)Spin(1) Effects in the Motion of Inspiralling Compact Binaries,'' Phys.\\ Rev.\\  D {\\bf 78}, 044013 (2008) [Erratum-ibid.\\  D {\\bf 81}, 029905 (2010)] [arXiv:0804.0260 [gr-qc]]; ``The hyperfine Einstein-Infeld-Hoffmann potential,''  Phys.\\ Rev.\\ Lett.\\  {\\bf 97}, 021101 (2006) [arXiv:gr-qc/0604099];  arXiv:0712.2032 [gr-qc].",
+      "match": {
+        "arxiv": "0712.2032",
+        "bibtex_url": "https://inspirehep.net/api/arxiv/0712.2032?format=bibtex",
+        "file": "nrgr2p2_4.bib",
+        "titles": [
+          {
+            "title": "Comment on `On the next-to-leading order gravitational spin(1) - spin(2) dynamics' by J. Steinhoff et al"
+          },
+          {
+            "title": "Comment on `On the next-to-leading order gravitational spin(1)-spin(2) dynamics' by J. Steinhoff et al",
+            "source": "arXiv"
+          }
+        ],
+        "authors": [
+          "Porto, Rafael A.",
+          "Rothstein, Ira Z."
+        ],
+        "doi": null,
+        "publication": null
+      },
+      "adjustments": [
+        "Citation key: Porto:2007tt -> nrgr2p2__4"
+      ]
+    },
+    {
+      "original_number": 9,
+      "original_key": "andi",
+      "citation_key": "andi",
+      "official_key": "Gilmore:2008gq",
+      "source": "INSPIRE",
+      "url": "https://inspirehep.net/api/arxiv/0810.1328?format=bibtex",
+      "raw_file": "work/bibliography_cache/andi_1.bib",
+      "raw_sha256": "c3575c7fe2aa42cea82e2f9388c06948162b87ec17410dc88a23d0b4b21dfca8",
+      "original_entry": "J.~B.~Gilmore, A.~Ross,\n  ``Effective field theory calculation of second post-Newtonian binary dynamics,''\n  Phys.\\ Rev.\\  {\\bf D78}, 124021 (2008).\n  [arXiv:0810.1328 [gr-qc]].",
+      "match": {
+        "arxiv": "0810.1328",
+        "bibtex_url": "https://inspirehep.net/api/arxiv/0810.1328?format=bibtex",
+        "file": "andi_1.bib",
+        "titles": [
+          {
+            "title": "Effective field theory calculation of second post-Newtonian binary dynamics"
+          },
+          {
+            "title": "second post-Newtonian"
+          },
+          {
+            "title": "Effective Field Theory Calculation of 2PN Binary Dynamics"
+          },
+          {
+            "title": "Effective field theory calculation of second post-Newtonian binary dynamics",
+            "source": "arXiv"
+          }
+        ],
+        "authors": [
+          "Gilmore, James B.",
+          "Ross, Andreas"
+        ],
+        "doi": [
+          {
+            "value": "10.1103/PhysRevD.78.124021"
+          }
+        ],
+        "publication": [
+          {
+            "year": 2008,
+            "artid": "124021",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "78"
+          }
+        ]
+      },
+      "adjustments": [
+        "Citation key: Gilmore:2008gq -> andi"
+      ]
+    },
+    {
+      "original_number": 10,
+      "original_key": "foffa",
+      "citation_key": "foffa",
+      "official_key": "Foffa:2011ub",
+      "source": "INSPIRE",
+      "url": "https://inspirehep.net/api/arxiv/1104.1122?format=bibtex",
+      "raw_file": "work/bibliography_cache/foffa_1.bib",
+      "raw_sha256": "a4ac7166fc21a726aaeb75b97863001104e5b4a5a4e9ba59a6bfa6c697cc4faf",
+      "original_entry": "S.~Foffa and R.~Sturani,\n  ``Effective field theory calculation of conservative binary dynamics at third post-Newtonian order,''  Phys.\\ Rev.\\  {\\bf D84}, 044031 (2011)\n  arXiv:1104.1122 [gr-qc]",
+      "match": {
+        "arxiv": "1104.1122",
+        "bibtex_url": "https://inspirehep.net/api/arxiv/1104.1122?format=bibtex",
+        "file": "foffa_1.bib",
+        "titles": [
+          {
+            "title": "Effective field theory calculation of conservative binary dynamics at third post-Newtonian order"
+          },
+          {
+            "title": "Effective field theory calculation of conservative binary dynamics at third post-Newtonian order",
+            "source": "arXiv"
+          }
+        ],
+        "authors": [
+          "Foffa, Stefano",
+          "Sturani, Riccardo"
+        ],
+        "doi": [
+          {
+            "value": "10.1103/PhysRevD.84.044031"
+          }
+        ],
+        "publication": [
+          {
+            "year": 2011,
+            "artid": "044031",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "84"
+          }
+        ]
+      },
+      "adjustments": [
+        "Citation key: Foffa:2011ub -> foffa"
+      ]
+    },
+    {
+      "original_number": 11,
+      "original_key": "eftrev",
+      "citation_key": "eftrev",
+      "official_key": "Goldberger:2007hy",
+      "source": "INSPIRE",
+      "url": "https://inspirehep.net/api/arxiv/hep-ph/0701129?format=bibtex",
+      "raw_file": "work/bibliography_cache/eftrev_1.bib",
+      "raw_sha256": "b0bdaee380d2a53488b4885b37e1a7a2115933557528cbd0bc09dac38636c204",
+      "original_entry": "For a review see  W.~D.~Goldberger,\n  ``Les Houches lectures on effective field theories and gravitational\n  radiation,''\n  arXiv:hep-ph/0701129;  R.~A.~Porto and R.~Sturani,\n  ``Scalar gravity: Post-Newtonian corrections via an effective field theory\n  approach,'' arXiv:gr-qc/0701105.",
+      "match": {
+        "arxiv": "hep-ph/0701129",
+        "bibtex_url": "https://inspirehep.net/api/arxiv/hep-ph/0701129?format=bibtex",
+        "file": "eftrev_1.bib",
+        "titles": [
+          {
+            "title": "Les Houches lectures on effective field theories and gravitational radiation"
+          },
+          {
+            "title": "Les Houches lectures on effective field theories and gravitational radiation.",
+            "source": "arXiv"
+          }
+        ],
+        "authors": [
+          "Goldberger, Walter D."
+        ],
+        "doi": null,
+        "publication": [
+          {
+            "cnum": "C06-07-31.1",
+            "conference_record": {
+              "$ref": "https://inspirehep.net/api/conferences/977514"
+            }
+          }
+        ]
+      },
+      "adjustments": [
+        "Citation key: Goldberger:2007hy -> eftrev"
+      ]
+    },
+    {
+      "original_number": 11,
+      "original_key": "eftrev",
+      "citation_key": "eftrev__2",
+      "official_key": "Porto:2007pw",
+      "source": "INSPIRE",
+      "url": "https://inspirehep.net/api/arxiv/gr-qc/0701105?format=bibtex",
+      "raw_file": "work/bibliography_cache/eftrev_2.bib",
+      "raw_sha256": "4aa264d2dbdd3a5dfda233a16517e7844d6dd01b2a332c3cb82d0dbee976df17",
+      "original_entry": "For a review see  W.~D.~Goldberger,\n  ``Les Houches lectures on effective field theories and gravitational\n  radiation,''\n  arXiv:hep-ph/0701129;  R.~A.~Porto and R.~Sturani,\n  ``Scalar gravity: Post-Newtonian corrections via an effective field theory\n  approach,'' arXiv:gr-qc/0701105.",
+      "match": {
+        "arxiv": "gr-qc/0701105",
+        "bibtex_url": "https://inspirehep.net/api/arxiv/gr-qc/0701105?format=bibtex",
+        "file": "eftrev_2.bib",
+        "titles": [
+          {
+            "title": "Scalar gravity: Post-Newtonian corrections via an effective field theory approach"
+          },
+          {
+            "title": "POSTNEWTONIAN"
+          },
+          {
+            "title": "Scalar gravity: Post-Newtonian corrections via an effective field theory approach",
+            "source": "arXiv"
+          }
+        ],
+        "authors": [
+          "Porto, Rafael A.",
+          "Sturani, Riccardo"
+        ],
+        "doi": null,
+        "publication": [
+          {
+            "cnum": "C06-07-31.1",
+            "conference_record": {
+              "$ref": "https://inspirehep.net/api/conferences/977514"
+            }
+          }
+        ]
+      },
+      "adjustments": [
+        "Citation key: Porto:2007pw -> eftrev__2"
+      ]
+    },
+    {
+      "original_number": 12,
+      "original_key": "eftfluid",
+      "citation_key": "eftfluid",
+      "official_key": "Baumann:2010tm",
+      "source": "INSPIRE",
+      "url": "https://inspirehep.net/api/arxiv/1004.2488?format=bibtex",
+      "raw_file": "work/bibliography_cache/eftfluid_1.bib",
+      "raw_sha256": "b3a43c38b1029ce3f19e6b2c88d1a2f0db5a48f13ee720f259bfdd3a1162a7d4",
+      "original_entry": "D.~Baumann, A.~Nicolis, L.~Senatore and M.~Zaldarriaga,\n  ``Cosmological Non-Linearities as an Effective Fluid,''\n  arXiv:1004.2488 [astro-ph.CO].",
+      "match": {
+        "arxiv": "1004.2488",
+        "bibtex_url": "https://inspirehep.net/api/arxiv/1004.2488?format=bibtex",
+        "file": "eftfluid_1.bib",
+        "titles": [
+          {
+            "title": "Cosmological Non-Linearities as an Effective Fluid"
+          },
+          {
+            "title": "Cosmological Non-Linearities as an Effective Fluid",
+            "source": "arXiv"
+          }
+        ],
+        "authors": [
+          "Baumann, Daniel",
+          "Nicolis, Alberto",
+          "Senatore, Leonardo",
+          "Zaldarriaga, Matias"
+        ],
+        "doi": [
+          {
+            "value": "10.1088/1475-7516/2012/07/051"
+          }
+        ],
+        "publication": [
+          {
+            "year": 2012,
+            "artid": "051",
+            "page_start": "051",
+            "journal_title": "JCAP",
+            "journal_record": {
+              "$ref": "https://inspirehep.net/api/journals/1212538"
+            },
+            "journal_volume": "07"
+          }
+        ]
+      },
+      "adjustments": [
+        "Citation key: Baumann:2010tm -> eftfluid"
+      ]
+    },
+    {
+      "original_number": 13,
+      "original_key": "eft1",
+      "citation_key": "eft1",
+      "official_key": "Cheung:2007st",
+      "source": "INSPIRE",
+      "url": "https://inspirehep.net/api/arxiv/0709.0293?format=bibtex",
+      "raw_file": "work/bibliography_cache/eft1_1.bib",
+      "raw_sha256": "90de2703f5314ef94c9484c54b4d237ac8065969e9dd209d3c297533031b94f6",
+      "original_entry": "C.~Cheung, P.~Creminelli, A.~L.~Fitzpatrick, J.~Kaplan and L.~Senatore,\n  ``The Effective Field Theory of Inflation,''\n  JHEP {\\bf 0803} (2008) 014\n  [arXiv:0709.0293 [hep-th]].",
+      "match": {
+        "arxiv": "0709.0293",
+        "bibtex_url": "https://inspirehep.net/api/arxiv/0709.0293?format=bibtex",
+        "file": "eft1_1.bib",
+        "titles": [
+          {
+            "title": "The Effective Field Theory of Inflation"
+          },
+          {
+            "title": "The Effective Field Theory of Inflation",
+            "source": "arXiv"
+          }
+        ],
+        "authors": [
+          "Cheung, Clifford",
+          "Creminelli, Paolo",
+          "Fitzpatrick, A.Liam",
+          "Kaplan, Jared",
+          "Senatore, Leonardo"
+        ],
+        "doi": [
+          {
+            "value": "10.1088/1126-6708/2008/03/014"
+          }
+        ],
+        "publication": [
+          {
+            "year": 2008,
+            "artid": "014",
+            "page_start": "014",
+            "journal_title": "JHEP",
+            "journal_record": {
+              "$ref": "https://inspirehep.net/api/journals/1213103"
+            },
+            "journal_volume": "03"
+          }
+        ]
+      },
+      "adjustments": [
+        "Citation key: Cheung:2007st -> eft1"
+      ]
+    },
+    {
+      "original_number": 14,
+      "original_key": "Cheung:2007sv",
+      "citation_key": "Cheung:2007sv",
+      "official_key": "Cheung:2007sv",
+      "source": "INSPIRE",
+      "url": "https://inspirehep.net/api/arxiv/0709.0295?format=bibtex",
+      "raw_file": "work/bibliography_cache/Cheung_2007sv_1.bib",
+      "raw_sha256": "741cf70cf2d644d9bab4a9bd971b452e233f388d767c7c275ff46dcd3fc25bec",
+      "original_entry": "C.~Cheung, A.~L.~Fitzpatrick, J.~Kaplan and L.~Senatore,\n  ``On the consistency relation of the 3-point function in single field\n  inflation,''\n  JCAP {\\bf 0802} (2008) 021\n  [arXiv:0709.0295 [hep-th]].",
+      "match": {
+        "arxiv": "0709.0295",
+        "bibtex_url": "https://inspirehep.net/api/arxiv/0709.0295?format=bibtex",
+        "file": "Cheung_2007sv_1.bib",
+        "titles": [
+          {
+            "title": "On the consistency relation of the 3-point function in single field inflation"
+          },
+          {
+            "title": "On the consistency relation of the 3-point function in single field inflation",
+            "source": "arXiv"
+          }
+        ],
+        "authors": [
+          "Cheung, Clifford",
+          "Fitzpatrick, A.Liam",
+          "Kaplan, Jared",
+          "Senatore, Leonardo"
+        ],
+        "doi": [
+          {
+            "value": "10.1088/1475-7516/2008/02/021"
+          }
+        ],
+        "publication": [
+          {
+            "year": 2008,
+            "artid": "021",
+            "page_start": "021",
+            "journal_title": "JCAP",
+            "journal_record": {
+              "$ref": "https://inspirehep.net/api/journals/1212538"
+            },
+            "journal_volume": "02"
+          }
+        ]
+      },
+      "adjustments": []
+    },
+    {
+      "original_number": 15,
+      "original_key": "Senatore:2009gt",
+      "citation_key": "Senatore:2009gt",
+      "official_key": "Senatore:2009gt",
+      "source": "INSPIRE",
+      "url": "https://inspirehep.net/api/arxiv/0905.3746?format=bibtex",
+      "raw_file": "work/bibliography_cache/Senatore_2009gt_1.bib",
+      "raw_sha256": "fabd5ea888f8618c2dcd3ce523757817f078c5667ec474cb15b76b9881f0f698",
+      "original_entry": "L.~Senatore, K.~M.~Smith and M.~Zaldarriaga,\n  ``Non-Gaussianities in Single Field Inflation and their Optimal Limits from\n  the WMAP 5-year Data,''\n  arXiv:0905.3746 [astro-ph.CO].",
+      "match": {
+        "arxiv": "0905.3746",
+        "bibtex_url": "https://inspirehep.net/api/arxiv/0905.3746?format=bibtex",
+        "file": "Senatore_2009gt_1.bib",
+        "titles": [
+          {
+            "title": "Non-Gaussianities in Single Field Inflation and their Optimal Limits from the WMAP 5-year Data"
+          },
+          {
+            "title": "Non-Gaussianities in Single Field Inflation and their Optimal Limits from the WMAP 5-year Data",
+            "source": "arXiv"
+          }
+        ],
+        "authors": [
+          "Senatore, Leonardo",
+          "Smith, Kendrick M.",
+          "Zaldarriaga, Matias"
+        ],
+        "doi": [
+          {
+            "value": "10.1088/1475-7516/2010/01/028"
+          }
+        ],
+        "publication": [
+          {
+            "year": 2010,
+            "artid": "028",
+            "page_start": "028",
+            "journal_title": "JCAP",
+            "journal_record": {
+              "$ref": "https://inspirehep.net/api/journals/1212538"
+            },
+            "journal_volume": "01"
+          }
+        ]
+      },
+      "adjustments": []
+    },
+    {
+      "original_number": 16,
+      "original_key": "Senatore:2009cf",
+      "citation_key": "Senatore:2009cf",
+      "official_key": "Senatore:2009cf",
+      "source": "INSPIRE",
+      "url": "https://inspirehep.net/api/arxiv/0912.2734?format=bibtex",
+      "raw_file": "work/bibliography_cache/Senatore_2009cf_1.bib",
+      "raw_sha256": "856175f6233eeb0a0d4325d9838bc757872938e8331a9c0e4075c44189b1d35d",
+      "original_entry": "L.~Senatore and M.~Zaldarriaga,\n  ``On Loops in Inflation,''\n  arXiv:0912.2734 [hep-th].",
+      "match": {
+        "arxiv": "0912.2734",
+        "bibtex_url": "https://inspirehep.net/api/arxiv/0912.2734?format=bibtex",
+        "file": "Senatore_2009cf_1.bib",
+        "titles": [
+          {
+            "title": "On Loops in Inflation"
+          },
+          {
+            "title": "On Loops in Inflation",
+            "source": "arXiv"
+          }
+        ],
+        "authors": [
+          "Senatore, Leonardo",
+          "Zaldarriaga, Matias"
+        ],
+        "doi": [
+          {
+            "value": "10.1007/JHEP12(2010)008"
+          }
+        ],
+        "publication": [
+          {
+            "year": 2010,
+            "artid": "008",
+            "page_start": "008",
+            "journal_title": "JHEP",
+            "journal_record": {
+              "$ref": "https://inspirehep.net/api/journals/1213103"
+            },
+            "journal_volume": "12"
+          }
+        ]
+      },
+      "adjustments": []
+    },
+    {
+      "original_number": 17,
+      "original_key": "Senatore:2010jy",
+      "citation_key": "Senatore:2010jy",
+      "official_key": "Senatore:2010jy",
+      "source": "INSPIRE",
+      "url": "https://inspirehep.net/api/arxiv/1004.1201?format=bibtex",
+      "raw_file": "work/bibliography_cache/Senatore_2010jy_1.bib",
+      "raw_sha256": "70bd76bcfcb14e81013f3d3a11be0d8410f01152f4d718f5b228e845ad753a51",
+      "original_entry": "L.~Senatore and M.~Zaldarriaga,\n  ``A Naturally Large Four-Point Function in Single Field Inflation,''\n  arXiv:1004.1201 [hep-th].",
+      "match": {
+        "arxiv": "1004.1201",
+        "bibtex_url": "https://inspirehep.net/api/arxiv/1004.1201?format=bibtex",
+        "file": "Senatore_2010jy_1.bib",
+        "titles": [
+          {
+            "title": "A Naturally Large Four-Point Function in Single Field Inflation"
+          },
+          {
+            "title": "A Naturally Large Four-Point Function in Single Field Inflation",
+            "source": "arXiv"
+          }
+        ],
+        "authors": [
+          "Senatore, Leonardo",
+          "Zaldarriaga, Matias"
+        ],
+        "doi": [
+          {
+            "value": "10.1088/1475-7516/2011/01/003"
+          }
+        ],
+        "publication": [
+          {
+            "year": 2011,
+            "artid": "003",
+            "page_start": "003",
+            "journal_title": "JCAP",
+            "journal_record": {
+              "$ref": "https://inspirehep.net/api/journals/1212538"
+            },
+            "journal_volume": "01"
+          }
+        ]
+      },
+      "adjustments": []
+    },
+    {
+      "original_number": 18,
+      "original_key": "Creminelli:2006xe",
+      "citation_key": "Creminelli:2006xe",
+      "official_key": "Creminelli:2006xe",
+      "source": "INSPIRE",
+      "url": "https://inspirehep.net/api/arxiv/hep-th/0606090?format=bibtex",
+      "raw_file": "work/bibliography_cache/Creminelli_2006xe_1.bib",
+      "raw_sha256": "5c374c7bcff431bbcc085b3aeb77576342362e546c2843c899d289fbdaaac90a",
+      "original_entry": "P.~Creminelli, M.~A.~Luty, A.~Nicolis and L.~Senatore,\n  ``Starting the universe: Stable violation of the null energy condition and\n  non-standard cosmologies,''\n  JHEP {\\bf 0612} (2006) 080\n  [arXiv:hep-th/0606090].",
+      "match": {
+        "arxiv": "hep-th/0606090",
+        "bibtex_url": "https://inspirehep.net/api/arxiv/hep-th/0606090?format=bibtex",
+        "file": "Creminelli_2006xe_1.bib",
+        "titles": [
+          {
+            "title": "Starting the Universe: Stable Violation of the Null Energy Condition and Non-standard Cosmologies"
+          },
+          {
+            "title": "NONSTANDARD"
+          },
+          {
+            "title": "Starting the universe: Stable violation of the null energy condition and non-standard cosmologies.",
+            "source": "arXiv"
+          }
+        ],
+        "authors": [
+          "Creminelli, Paolo",
+          "Luty, Markus A.",
+          "Nicolis, Alberto",
+          "Senatore, Leonardo"
+        ],
+        "doi": [
+          {
+            "value": "10.1088/1126-6708/2006/12/080"
+          }
+        ],
+        "publication": [
+          {
+            "year": 2006,
+            "artid": "080",
+            "page_start": "080",
+            "journal_title": "JHEP",
+            "journal_record": {
+              "$ref": "https://inspirehep.net/api/journals/1213103"
+            },
+            "journal_volume": "12"
+          }
+        ]
+      },
+      "adjustments": []
+    },
+    {
+      "original_number": 19,
+      "original_key": "Bartolo:2010bj",
+      "citation_key": "Bartolo:2010bj",
+      "official_key": "Bartolo:2010bj",
+      "source": "INSPIRE",
+      "url": "https://inspirehep.net/api/arxiv/1004.0893?format=bibtex",
+      "raw_file": "work/bibliography_cache/Bartolo_2010bj_1.bib",
+      "raw_sha256": "0ed81e66cfe84c7e1e135a50331379668a9bddae3a0314e767a76a8aeac28c94",
+      "original_entry": "N.~Bartolo, M.~Fasiello, S.~Matarrese and A.~Riotto,\n  ``Large non-Gaussianities in the Effective Field Theory Approach to\n  Single-Field Inflation: the Bispectrum,''\n  arXiv:1004.0893 [astro-ph.CO].",
+      "match": {
+        "arxiv": "1004.0893",
+        "bibtex_url": "https://inspirehep.net/api/arxiv/1004.0893?format=bibtex",
+        "file": "Bartolo_2010bj_1.bib",
+        "titles": [
+          {
+            "title": "Large non-Gaussianities in the Effective Field Theory Approach to Single-Field Inflation: the Bispectrum"
+          },
+          {
+            "title": "Large non-Gaussianities in the Effective Field Theory Approach to Single-Field Inflation: the Bispectrum",
+            "source": "arXiv"
+          }
+        ],
+        "authors": [
+          "Bartolo, Nicola",
+          "Fasiello, Matteo",
+          "Matarrese, Sabino",
+          "Riotto, Antonio"
+        ],
+        "doi": [
+          {
+            "value": "10.1088/1475-7516/2010/08/008"
+          }
+        ],
+        "publication": [
+          {
+            "year": 2010,
+            "artid": "008",
+            "page_start": "008",
+            "journal_title": "JCAP",
+            "journal_record": {
+              "$ref": "https://inspirehep.net/api/journals/1212538"
+            },
+            "journal_volume": "08"
+          }
+        ]
+      },
+      "adjustments": []
+    },
+    {
+      "original_number": 20,
+      "original_key": "Bartolo:2010di",
+      "citation_key": "Bartolo:2010di",
+      "official_key": "Bartolo:2010di",
+      "source": "INSPIRE",
+      "url": "https://inspirehep.net/api/arxiv/1006.5411?format=bibtex",
+      "raw_file": "work/bibliography_cache/Bartolo_2010di_1.bib",
+      "raw_sha256": "0c99eb4699b2ec76dc155d12398d7e8049eb49f2039595660ccbb10b6adb2897",
+      "original_entry": "N.~Bartolo, M.~Fasiello, S.~Matarrese and A.~Riotto,\n  ``Large non-Gaussianities in the Effective Field Theory Approach to\n  Single-Field Inflation: the Trispectrum,''\n  arXiv:1006.5411 [astro-ph.CO].",
+      "match": {
+        "arxiv": "1006.5411",
+        "bibtex_url": "https://inspirehep.net/api/arxiv/1006.5411?format=bibtex",
+        "file": "Bartolo_2010di_1.bib",
+        "titles": [
+          {
+            "title": "Large non-Gaussianities in the Effective Field Theory Approach to Single-Field Inflation: the Trispectrum"
+          },
+          {
+            "title": "Large non-Gaussianities in the Effective Field Theory Approach to Single-Field Inflation: the Trispectrum",
+            "source": "arXiv"
+          }
+        ],
+        "authors": [
+          "Bartolo, Nicola",
+          "Fasiello, Matteo",
+          "Matarrese, Sabino",
+          "Riotto, Antonio"
+        ],
+        "doi": [
+          {
+            "value": "10.1088/1475-7516/2010/09/035"
+          }
+        ],
+        "publication": [
+          {
+            "year": 2010,
+            "artid": "035",
+            "page_start": "035",
+            "journal_title": "JCAP",
+            "journal_record": {
+              "$ref": "https://inspirehep.net/api/journals/1212538"
+            },
+            "journal_volume": "09"
+          }
+        ]
+      },
+      "adjustments": []
+    },
+    {
+      "original_number": 21,
+      "original_key": "dan2",
+      "citation_key": "dan2",
+      "official_key": "Baumann:2011su",
+      "source": "INSPIRE",
+      "url": "https://inspirehep.net/api/arxiv/1102.5343?format=bibtex",
+      "raw_file": "work/bibliography_cache/dan2_1.bib",
+      "raw_sha256": "993c61e2503cd4d2f37360df216b6b51eade4d5b9b402b2b2d8cf87b01a21709",
+      "original_entry": "D.~Baumann and D.~Green,\n  ``Equilateral Non-Gaussianity and New Physics on the Horizon,''\n  arXiv:1102.5343 [hep-th].",
+      "match": {
+        "arxiv": "1102.5343",
+        "bibtex_url": "https://inspirehep.net/api/arxiv/1102.5343?format=bibtex",
+        "file": "dan2_1.bib",
+        "titles": [
+          {
+            "title": "Equilateral Non-Gaussianity and New Physics on the Horizon"
+          },
+          {
+            "title": "Equilateral Non-Gaussianity and New Physics on the Horizon",
+            "source": "arXiv"
+          }
+        ],
+        "authors": [
+          "Baumann, Daniel",
+          "Green, Daniel"
+        ],
+        "doi": [
+          {
+            "value": "10.1088/1475-7516/2011/09/014"
+          }
+        ],
+        "publication": [
+          {
+            "year": 2011,
+            "artid": "014",
+            "page_start": "014",
+            "journal_title": "JCAP",
+            "journal_record": {
+              "$ref": "https://inspirehep.net/api/journals/1212538"
+            },
+            "journal_volume": "09"
+          }
+        ]
+      },
+      "adjustments": [
+        "Citation key: Baumann:2011su -> dan2"
+      ]
+    },
+    {
+      "original_number": 22,
+      "original_key": "strongc",
+      "citation_key": "strongc",
+      "official_key": "Baumann:2011dt",
+      "source": "INSPIRE",
+      "url": "https://inspirehep.net/api/arxiv/1101.3320?format=bibtex",
+      "raw_file": "work/bibliography_cache/strongc_1.bib",
+      "raw_sha256": "f25a3803e2bdb0d853da60bbcae43eab40bdf8e3856f0cf539700ff251b4e71a",
+      "original_entry": "D.~Baumann, L.~Senatore and M.~Zaldarriaga,\n  ``Scale-Invariance and the Strong Coupling Problem,''\n  arXiv:1101.3320 [hep-th].",
+      "match": {
+        "arxiv": "1101.3320",
+        "bibtex_url": "https://inspirehep.net/api/arxiv/1101.3320?format=bibtex",
+        "file": "strongc_1.bib",
+        "titles": [
+          {
+            "title": "Scale-Invariance and the Strong Coupling Problem"
+          },
+          {
+            "title": "Scale-Invariance and the Strong Coupling Problem",
+            "source": "arXiv"
+          }
+        ],
+        "authors": [
+          "Baumann, Daniel",
+          "Senatore, Leonardo",
+          "Zaldarriaga, Matias"
+        ],
+        "doi": [
+          {
+            "value": "10.1088/1475-7516/2011/05/004"
+          }
+        ],
+        "publication": [
+          {
+            "year": 2011,
+            "artid": "004",
+            "page_start": "004",
+            "journal_title": "JCAP",
+            "journal_record": {
+              "$ref": "https://inspirehep.net/api/journals/1212538"
+            },
+            "journal_volume": "05"
+          }
+        ]
+      },
+      "adjustments": [
+        "Citation key: Baumann:2011dt -> strongc"
+      ]
+    },
+    {
+      "original_number": 23,
+      "original_key": "dan2new",
+      "citation_key": "dan2new",
+      "official_key": "Baumann:2011nk",
+      "source": "INSPIRE",
+      "url": "https://inspirehep.net/api/arxiv/1109.0292?format=bibtex",
+      "raw_file": "work/bibliography_cache/dan2new_1.bib",
+      "raw_sha256": "7b3a3f6c89e67832e0eae5639b9aeee2455c962c549ebe83d15ec2ed67489661",
+      "original_entry": "D.~Baumann and D.~Green,\n  ``Signatures of Supersymmetry from the Early Universe,''\n  arXiv:1109.0292 [hep-th].",
+      "match": {
+        "arxiv": "1109.0292",
+        "bibtex_url": "https://inspirehep.net/api/arxiv/1109.0292?format=bibtex",
+        "file": "dan2new_1.bib",
+        "titles": [
+          {
+            "title": "Signatures of Supersymmetry from the Early Universe"
+          },
+          {
+            "title": "Signatures of Supersymmetry from the Early Universe",
+            "source": "arXiv"
+          }
+        ],
+        "authors": [
+          "Baumann, Daniel",
+          "Green, Daniel"
+        ],
+        "doi": [
+          {
+            "value": "10.1103/PhysRevD.85.103520"
+          }
+        ],
+        "publication": [
+          {
+            "year": 2012,
+            "artid": "103520",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "85"
+          }
+        ]
+      },
+      "adjustments": [
+        "Citation key: Baumann:2011nk -> dan2new"
+      ]
+    },
+    {
+      "original_number": 24,
+      "original_key": "peskin",
+      "citation_key": "peskin",
+      "official_key": "Peskin:1995ev",
+      "source": "INSPIRE",
+      "url": "https://inspirehep.net/api/literature/407703?format=bibtex",
+      "raw_file": "work/bibliography_cache/peskin_1.bib",
+      "raw_sha256": "be1b98952109191460fe05a93247fc3c0a9454feaaee2f0d81c262ed24788957",
+      "original_entry": "M.~E.~Peskin, D.~V.~Schroeder, ``An Introduction to quantum field theory,''\n  Reading, USA: Addison-Wesley (1995).",
+      "match": {
+        "file": "peskin_1.bib",
+        "bibtex_url": "https://inspirehep.net/api/literature/407703?format=bibtex",
+        "source": "INSPIRE"
+      },
+      "adjustments": [
+        "Citation key: Peskin:1995ev -> peskin"
+      ]
+    },
+    {
+      "original_number": 25,
+      "original_key": "ben",
+      "citation_key": "ben",
+      "official_key": "Distler:2006if",
+      "source": "INSPIRE",
+      "url": "https://inspirehep.net/api/arxiv/hep-ph/0604255?format=bibtex",
+      "raw_file": "work/bibliography_cache/ben_1.bib",
+      "raw_sha256": "776b69a87b30e6830dbc40b8811d73e4a2c9e7792ba5f67a80f64967c98e75b6",
+      "original_entry": "J.~Distler, B.~Grinstein, R.~A.~Porto and I.~Z.~Rothstein,\n  ``Falsifying Models of New Physics Via WW Scattering,''\n  Phys.\\ Rev.\\ Lett.\\  {\\bf 98}, 041601 (2007)\n  [arXiv:hep-ph/0604255].",
+      "match": {
+        "arxiv": "hep-ph/0604255",
+        "bibtex_url": "https://inspirehep.net/api/arxiv/hep-ph/0604255?format=bibtex",
+        "file": "ben_1.bib",
+        "titles": [
+          {
+            "title": "Falsifying Models of New Physics via WW Scattering"
+          },
+          {
+            "title": "Falsifying String Theory Through WW Scattering"
+          },
+          {
+            "title": "Falsifying Models of New Physics Via WW Scattering",
+            "source": "arXiv"
+          }
+        ],
+        "authors": [
+          "Distler, Jacques",
+          "Grinstein, Benjamin",
+          "Porto, Rafael A.",
+          "Rothstein, Ira Z."
+        ],
+        "doi": [
+          {
+            "value": "10.1103/PhysRevLett.98.041601"
+          }
+        ],
+        "publication": [
+          {
+            "year": 2007,
+            "artid": "041601",
+            "journal_title": "Phys.Rev.Lett.",
+            "journal_record": {
+              "$ref": "https://inspirehep.net/api/journals/1214495"
+            },
+            "journal_volume": "98"
+          }
+        ]
+      },
+      "adjustments": [
+        "Citation key: Distler:2006if -> ben"
+      ]
+    },
+    {
+      "original_number": 26,
+      "original_key": "multieft",
+      "citation_key": "multieft",
+      "official_key": "Senatore:2010wk",
+      "source": "INSPIRE",
+      "url": "https://inspirehep.net/api/arxiv/1009.2093?format=bibtex",
+      "raw_file": "work/bibliography_cache/multieft_1.bib",
+      "raw_sha256": "666cdb7dc556e61e0866887a5ca49f455d6fbc8e509e59c618ee232559cf5c5b",
+      "original_entry": "L.~Senatore, M.~Zaldarriaga,\n  ``The Effective Field Theory of Multifield Inflation,''\n    [arXiv:1009.2093 [hep-th]].",
+      "match": {
+        "arxiv": "1009.2093",
+        "bibtex_url": "https://inspirehep.net/api/arxiv/1009.2093?format=bibtex",
+        "file": "multieft_1.bib",
+        "titles": [
+          {
+            "title": "The Effective Field Theory of Multifield Inflation"
+          },
+          {
+            "title": "The Effective Field Theory of Multifield Inflation",
+            "source": "arXiv"
+          }
+        ],
+        "authors": [
+          "Senatore, Leonardo",
+          "Zaldarriaga, Matias"
+        ],
+        "doi": [
+          {
+            "value": "10.1007/JHEP04(2012)024"
+          }
+        ],
+        "publication": [
+          {
+            "year": 2012,
+            "artid": "024",
+            "page_start": "024",
+            "journal_title": "JHEP",
+            "journal_record": {
+              "$ref": "https://inspirehep.net/api/journals/1213103"
+            },
+            "journal_volume": "04"
+          }
+        ]
+      },
+      "adjustments": [
+        "Citation key: Senatore:2010wk -> multieft"
+      ]
+    },
+    {
+      "original_number": 27,
+      "original_key": "trapped",
+      "citation_key": "trapped",
+      "official_key": "Green:2009ds",
+      "source": "INSPIRE",
+      "url": "https://inspirehep.net/api/arxiv/0902.1006?format=bibtex",
+      "raw_file": "work/bibliography_cache/trapped_1.bib",
+      "raw_sha256": "857f95fb18de0044fa6a8da2136b01cfbfb06c2cc1fc50e8266cca2d8ecababc",
+      "original_entry": "D.~Green, B.~Horn, L.~Senatore and E.~Silverstein, ``Trapped Inflation,''\n  Phys.\\ Rev.\\  D {\\bf 80}, 063533 (2009)\n  [arXiv:0902.1006 [hep-th]].",
+      "match": {
+        "arxiv": "0902.1006",
+        "bibtex_url": "https://inspirehep.net/api/arxiv/0902.1006?format=bibtex",
+        "file": "trapped_1.bib",
+        "titles": [
+          {
+            "title": "Trapped Inflation"
+          },
+          {
+            "title": "Trapped Inflation",
+            "source": "arXiv"
+          }
+        ],
+        "authors": [
+          "Green, Daniel",
+          "Horn, Bart",
+          "Senatore, Leonardo",
+          "Silverstein, Eva"
+        ],
+        "doi": [
+          {
+            "value": "10.1103/PhysRevD.80.063533"
+          }
+        ],
+        "publication": [
+          {
+            "year": 2009,
+            "artid": "063533",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "80"
+          }
+        ]
+      },
+      "adjustments": [
+        "Citation key: Green:2009ds -> trapped"
+      ]
+    },
+    {
+      "original_number": 28,
+      "original_key": "beauty",
+      "citation_key": "beauty",
+      "official_key": "Kofman:2004yc",
+      "source": "INSPIRE",
+      "url": "https://inspirehep.net/api/arxiv/hep-th/0403001?format=bibtex",
+      "raw_file": "work/bibliography_cache/beauty_1.bib",
+      "raw_sha256": "54135aaeb20ace935c539198b64c4b044b73ef933c0640a81513250fc7fe9612",
+      "original_entry": "L.~Kofman, A.~D.~Linde, X.~Liu, A.~Maloney, L.~McAllister, E.~Silverstein,\n  ``Beauty is attractive: Moduli trapping at enhanced symmetry points,''\n  JHEP {\\bf 0405}, 030 (2004).\n  [hep-th/0403001].",
+      "match": {
+        "arxiv": "hep-th/0403001",
+        "bibtex_url": "https://inspirehep.net/api/arxiv/hep-th/0403001?format=bibtex",
+        "file": "beauty_1.bib",
+        "titles": [
+          {
+            "title": "Beauty is attractive: Moduli trapping at enhanced symmetry points"
+          },
+          {
+            "title": "Beauty is attractive: Moduli trapping at enhanced symmetry points.",
+            "source": "arXiv"
+          }
+        ],
+        "authors": [
+          "Kofman, Lev",
+          "Linde, Andrei D.",
+          "Liu, Xiao",
+          "Maloney, Alexander",
+          "McAllister, Liam",
+          "Silverstein, Eva"
+        ],
+        "doi": [
+          {
+            "value": "10.1088/1126-6708/2004/05/030"
+          }
+        ],
+        "publication": [
+          {
+            "year": 2004,
+            "artid": "030",
+            "page_start": "030",
+            "journal_title": "JHEP",
+            "journal_record": {
+              "$ref": "https://inspirehep.net/api/journals/1213103"
+            },
+            "journal_volume": "05"
+          }
+        ]
+      },
+      "adjustments": [
+        "Citation key: Kofman:2004yc -> beauty"
+      ]
+    },
+    {
+      "original_number": 29,
+      "original_key": "calzetta",
+      "citation_key": "calzetta",
+      "official_key": "Calzetta:2008iqa",
+      "source": "INSPIRE",
+      "url": "https://inspirehep.net/api/literature/1384872?format=bibtex",
+      "raw_file": "work/bibliography_cache/calzetta_1.bib",
+      "raw_sha256": "c8c959e1c5596a725276dbcccce4e8e15f390b0227c6a278d70b775f57c7d422",
+      "original_entry": "E. Calzetta and B. L. Hu, ``Nonequilibrium Quantum Field Theory,\" Cambridge University Press (2008).",
+      "match": {
+        "file": "calzetta_1.bib",
+        "bibtex_url": "https://inspirehep.net/api/literature/1384872?format=bibtex",
+        "source": "INSPIRE"
+      },
+      "adjustments": [
+        "Citation key: Calzetta:2008iqa -> calzetta",
+        "Corrected INSPIRE export publisher Oxford University Press and year 2009 to Cambridge University Press, 2008 using the original and publisher front matter. DOI and all ISBN values retained. Evidence: https://assets.cambridge.org/97805216/41685/frontmatter/9780521641685_frontmatter.pdf"
+      ]
+    },
+    {
+      "original_number": 30,
+      "original_key": "dis1",
+      "citation_key": "dis1",
+      "official_key": "Goldberger:2005cd",
+      "source": "INSPIRE",
+      "url": "https://inspirehep.net/api/arxiv/hep-th/0511133?format=bibtex",
+      "raw_file": "work/bibliography_cache/dis1_1.bib",
+      "raw_sha256": "00a0fc286a6bf002dbdc8342dfd33ea1a10db1a0ea8c3e566927d21dcbe3ab25",
+      "original_entry": "W.~D.~Goldberger and I.~Z.~Rothstein,\n  ``Dissipative effects in the worldline approach to black hole dynamics,''\n  Phys.\\ Rev.\\  D {\\bf 73}, 104030 (2006)\n  [arXiv:hep-th/0511133].",
+      "match": {
+        "arxiv": "hep-th/0511133",
+        "bibtex_url": "https://inspirehep.net/api/arxiv/hep-th/0511133?format=bibtex",
+        "file": "dis1_1.bib",
+        "titles": [
+          {
+            "title": "Dissipative effects in the worldline approach to black hole dynamics"
+          },
+          {
+            "title": "Dissipative effects in the worldline approach to black hole dynamics.",
+            "source": "arXiv"
+          }
+        ],
+        "authors": [
+          "Goldberger, Walter D.",
+          "Rothstein, Ira Z."
+        ],
+        "doi": [
+          {
+            "value": "10.1103/PhysRevD.73.104030"
+          }
+        ],
+        "publication": [
+          {
+            "year": 2006,
+            "artid": "104030",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "73"
+          }
+        ]
+      },
+      "adjustments": [
+        "Citation key: Goldberger:2005cd -> dis1"
+      ]
+    },
+    {
+      "original_number": 31,
+      "original_key": "dis2",
+      "citation_key": "dis2",
+      "official_key": "Porto:2007qi",
+      "source": "INSPIRE",
+      "url": "https://inspirehep.net/api/arxiv/0710.5150?format=bibtex",
+      "raw_file": "work/bibliography_cache/dis2_1.bib",
+      "raw_sha256": "9e1650e8d307a83c254f367952ec42915f18ee4c383fc3b99c490d4158068dda",
+      "original_entry": "R.~A.~Porto,\n  ``Absorption Effects due to Spin in the Worldline Approach to Black Hole\n  Dynamics,''\n  Phys.\\ Rev.\\  D {\\bf 77}, 064026 (2008)\n  [arXiv:0710.5150 [hep-th]].",
+      "match": {
+        "arxiv": "0710.5150",
+        "bibtex_url": "https://inspirehep.net/api/arxiv/0710.5150?format=bibtex",
+        "file": "dis2_1.bib",
+        "titles": [
+          {
+            "title": "Absorption effects due to spin in the worldline approach to black hole dynamics"
+          },
+          {
+            "title": "Absorption Effects due to Spin in the Worldline Approach to Black Hole Dynamics",
+            "source": "arXiv"
+          }
+        ],
+        "authors": [
+          "Porto, Rafael A."
+        ],
+        "doi": [
+          {
+            "value": "10.1103/PhysRevD.77.064026"
+          }
+        ],
+        "publication": [
+          {
+            "year": 2008,
+            "artid": "064026",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "77"
+          }
+        ]
+      },
+      "adjustments": [
+        "Citation key: Porto:2007qi -> dis2"
+      ]
+    },
+    {
+      "original_number": 32,
+      "original_key": "hydro",
+      "citation_key": "hydro",
+      "official_key": "Endlich:2012vt",
+      "source": "INSPIRE",
+      "url": "https://inspirehep.net/api/literature/1204617?format=bibtex",
+      "raw_file": "work/bibliography_cache/hydro_1.bib",
+      "raw_sha256": "8049d4f5891ee8c134d8728df9c6cfbdc9c6aee9b15fcfc5c483a1b7fe02b5ed",
+      "original_entry": "S. Endlich, A. Nicolis, R. A. Porto and J. Wang, ``Dissipative effects in the Effective Field Theory for hydrodynamics\", in progress.",
+      "match": {
+        "file": "hydro_1.bib",
+        "bibtex_url": "https://inspirehep.net/api/literature/1204617?format=bibtex",
+        "source": "INSPIRE"
+      },
+      "adjustments": [
+        "Citation key: Endlich:2012vt -> hydro",
+        "Original in-progress title retained in a note; full author quartet and subject match the later published work 1211.6461."
+      ]
+    },
+    {
+      "original_number": 33,
+      "original_key": "efthydro",
+      "citation_key": "efthydro",
+      "official_key": "Endlich:2010hf",
+      "source": "INSPIRE",
+      "url": "https://inspirehep.net/api/arxiv/1011.6396?format=bibtex",
+      "raw_file": "work/bibliography_cache/efthydro_1.bib",
+      "raw_sha256": "f5ff289df62b09c2aa94e7b1184276f136db6f0fcf7dc0bb3dc2fb33e91ad2a4",
+      "original_entry": "S.~Endlich, A.~Nicolis, R.~Rattazzi and J.~Wang, ``The quantum mechanics of perfect fluids,''\n  JHEP {\\bf 1104}, 102 (2011) [arXiv:1011.6396 [hep-th]].  S.~Dubovsky, L.~Hui, A.~Nicolis and D.~T.~Son,\n  ``Effective field theory for hydrodynamics: thermodynamics, and the derivative expansion,''\n  arXiv:1107.0731 [hep-th].",
+      "match": {
+        "arxiv": "1011.6396",
+        "bibtex_url": "https://inspirehep.net/api/arxiv/1011.6396?format=bibtex",
+        "file": "efthydro_1.bib",
+        "titles": [
+          {
+            "title": "The Quantum mechanics of perfect fluids"
+          },
+          {
+            "title": "The quantum mechanics of perfect fluids",
+            "source": "arXiv"
+          }
+        ],
+        "authors": [
+          "Endlich, Solomon",
+          "Nicolis, Alberto",
+          "Rattazzi, Riccardo",
+          "Wang, Junpu"
+        ],
+        "doi": [
+          {
+            "value": "10.1007/JHEP04(2011)102"
+          }
+        ],
+        "publication": [
+          {
+            "year": 2011,
+            "artid": "102",
+            "page_start": "102",
+            "journal_title": "JHEP",
+            "journal_record": {
+              "$ref": "https://inspirehep.net/api/journals/1213103"
+            },
+            "journal_volume": "04"
+          }
+        ]
+      },
+      "adjustments": [
+        "Citation key: Endlich:2010hf -> efthydro"
+      ]
+    },
+    {
+      "original_number": 33,
+      "original_key": "efthydro",
+      "citation_key": "efthydro__2",
+      "official_key": "Dubovsky:2011sj",
+      "source": "INSPIRE",
+      "url": "https://inspirehep.net/api/arxiv/1107.0731?format=bibtex",
+      "raw_file": "work/bibliography_cache/efthydro_2.bib",
+      "raw_sha256": "f03a004756b12b3bbc15411f3ef7a59451ad540fe0373dd54a44b749eac5b11c",
+      "original_entry": "S.~Endlich, A.~Nicolis, R.~Rattazzi and J.~Wang, ``The quantum mechanics of perfect fluids,''\n  JHEP {\\bf 1104}, 102 (2011) [arXiv:1011.6396 [hep-th]].  S.~Dubovsky, L.~Hui, A.~Nicolis and D.~T.~Son,\n  ``Effective field theory for hydrodynamics: thermodynamics, and the derivative expansion,''\n  arXiv:1107.0731 [hep-th].",
+      "match": {
+        "arxiv": "1107.0731",
+        "bibtex_url": "https://inspirehep.net/api/arxiv/1107.0731?format=bibtex",
+        "file": "efthydro_2.bib",
+        "titles": [
+          {
+            "title": "Effective field theory for hydrodynamics: thermodynamics, and the derivative expansion"
+          },
+          {
+            "title": "Effective field theory for hydrodynamics: thermodynamics, and the derivative expansion",
+            "source": "arXiv"
+          }
+        ],
+        "authors": [
+          "Dubovsky, Sergei",
+          "Hui, Lam",
+          "Nicolis, Alberto",
+          "Son, Dam Thanh"
+        ],
+        "doi": [
+          {
+            "value": "10.1103/PhysRevD.85.085029"
+          }
+        ],
+        "publication": [
+          {
+            "year": 2012,
+            "artid": "085029",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "85"
+          }
+        ]
+      },
+      "adjustments": [
+        "Citation key: Dubovsky:2011sj -> efthydro__2"
+      ]
+    },
+    {
+      "original_number": 34,
+      "original_key": "berera1",
+      "citation_key": "berera1",
+      "official_key": "Berera:1995ie",
+      "source": "INSPIRE",
+      "url": "https://inspirehep.net/api/arxiv/astro-ph/9509049?format=bibtex",
+      "raw_file": "work/bibliography_cache/berera1_1.bib",
+      "raw_sha256": "24fa0139418f8ac1d5def915f1490b727c9f0470bf5f930e9a6dffde111b99d9",
+      "original_entry": "A.~Berera, ``Warm inflation,''\n  Phys.\\ Rev.\\ Lett.\\  {\\bf 75}, 3218-3221 (1995).\n  [astro-ph/9509049]. ``Thermal properties of an inflationary universe,''\n  Phys.\\ Rev.\\  {\\bf D54}, 2519-2534 (1996).\n  [hep-th/9601134].",
+      "match": {
+        "arxiv": "astro-ph/9509049",
+        "bibtex_url": "https://inspirehep.net/api/arxiv/astro-ph/9509049?format=bibtex",
+        "file": "berera1_1.bib",
+        "titles": [
+          {
+            "title": "Warm inflation"
+          },
+          {
+            "title": "Warm Inflation",
+            "source": "arXiv"
+          }
+        ],
+        "authors": [
+          "Berera, Arjun"
+        ],
+        "doi": [
+          {
+            "value": "10.1103/PhysRevLett.75.3218"
+          }
+        ],
+        "publication": [
+          {
+            "year": 1995,
+            "page_end": "3221",
+            "page_start": "3218",
+            "journal_title": "Phys.Rev.Lett.",
+            "journal_record": {
+              "$ref": "https://inspirehep.net/api/journals/1214495"
+            },
+            "journal_volume": "75"
+          }
+        ]
+      },
+      "adjustments": [
+        "Citation key: Berera:1995ie -> berera1"
+      ]
+    },
+    {
+      "original_number": 34,
+      "original_key": "berera1",
+      "citation_key": "berera1__2",
+      "official_key": "Berera:1996nv",
+      "source": "INSPIRE",
+      "url": "https://inspirehep.net/api/arxiv/hep-th/9601134?format=bibtex",
+      "raw_file": "work/bibliography_cache/berera1_2.bib",
+      "raw_sha256": "2cee19cfcc82b327d4d31f4aa18e2454c1a6587bf470b20ca44ed6513b22c7f5",
+      "original_entry": "A.~Berera, ``Warm inflation,''\n  Phys.\\ Rev.\\ Lett.\\  {\\bf 75}, 3218-3221 (1995).\n  [astro-ph/9509049]. ``Thermal properties of an inflationary universe,''\n  Phys.\\ Rev.\\  {\\bf D54}, 2519-2534 (1996).\n  [hep-th/9601134].",
+      "match": {
+        "arxiv": "hep-th/9601134",
+        "bibtex_url": "https://inspirehep.net/api/arxiv/hep-th/9601134?format=bibtex",
+        "file": "berera1_2.bib",
+        "titles": [
+          {
+            "title": "Thermal properties of an inflationary universe"
+          },
+          {
+            "title": "Thermal Properties of an Inflationary Universe",
+            "source": "arXiv"
+          }
+        ],
+        "authors": [
+          "Berera, Arjun"
+        ],
+        "doi": [
+          {
+            "value": "10.1103/PhysRevD.54.2519"
+          }
+        ],
+        "publication": [
+          {
+            "year": 1996,
+            "page_end": "2534",
+            "page_start": "2519",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "54"
+          }
+        ]
+      },
+      "adjustments": [
+        "Citation key: Berera:1996nv -> berera1__2"
+      ]
+    },
+    {
+      "original_number": 35,
+      "original_key": "berera2",
+      "citation_key": "berera2",
+      "official_key": "Berera:1995wh",
+      "source": "INSPIRE",
+      "url": "https://inspirehep.net/api/arxiv/astro-ph/9501024?format=bibtex",
+      "raw_file": "work/bibliography_cache/berera2_1.bib",
+      "raw_sha256": "fcc29bb43e406396a443a37169172a154cbc873343d64b7499d6cd37b6bf077e",
+      "original_entry": "A.~Berera and L.~Z.~Fang,\n  ``Thermally induced density perturbations in the inflation era,''\n  Phys.\\ Rev.\\ Lett.\\  {\\bf 74}, 1912 (1995)\n  [arXiv:astro-ph/9501024].",
+      "match": {
+        "arxiv": "astro-ph/9501024",
+        "bibtex_url": "https://inspirehep.net/api/arxiv/astro-ph/9501024?format=bibtex",
+        "file": "berera2_1.bib",
+        "titles": [
+          {
+            "title": "Thermally induced density perturbations in the inflation era"
+          },
+          {
+            "title": "Thermally Induced Density Perturbations in the Inflation Era",
+            "source": "arXiv"
+          }
+        ],
+        "authors": [
+          "Berera, Arjun",
+          "Fang, Li-Zhi"
+        ],
+        "doi": [
+          {
+            "value": "10.1103/PhysRevLett.74.1912"
+          }
+        ],
+        "publication": [
+          {
+            "year": 1995,
+            "page_end": "1915",
+            "page_start": "1912",
+            "journal_title": "Phys.Rev.Lett.",
+            "journal_record": {
+              "$ref": "https://inspirehep.net/api/journals/1214495"
+            },
+            "journal_volume": "74"
+          }
+        ]
+      },
+      "adjustments": [
+        "Citation key: Berera:1995wh -> berera2"
+      ]
+    },
+    {
+      "original_number": 36,
+      "original_key": "warm",
+      "citation_key": "warm",
+      "official_key": "Berera:2006xq",
+      "source": "INSPIRE",
+      "url": "https://inspirehep.net/api/arxiv/0809.4198?format=bibtex",
+      "raw_file": "work/bibliography_cache/warm_1.bib",
+      "raw_sha256": "eb1bbbc0aa89b7ef69e2c590535c6f4f08bf953ee9a1b7c5c35618e24c40e767",
+      "original_entry": "A.~Berera,\n  ``The warm inflationary universe,''\n  Contemp.\\ Phys.\\  {\\bf 47}, 33 (2006)\n  [arXiv:0809.4198 [hep-ph]].  A.~Berera, I.~G.~Moss and R.~O.~Ramos,\n  ``Warm Inflation and its Microphysical Basis,''\n  Rept.\\ Prog.\\ Phys.\\  {\\bf 72}, 026901 (2009)\n  [arXiv:0808.1855 [hep-ph]]. M.~Bastero-Gil, A.~Berera, ``Warm inflation model building,''\n  Int.\\ J.\\ Mod.\\ Phys.\\  {\\bf A24}, 2207-2240 (2009). [arXiv:0902.0521 [hep-ph]].",
+      "match": {
+        "arxiv": "0809.4198",
+        "bibtex_url": "https://inspirehep.net/api/arxiv/0809.4198?format=bibtex",
+        "file": "warm_1.bib",
+        "titles": [
+          {
+            "title": "The warm inflationary universe"
+          }
+        ],
+        "authors": [
+          "Berera, A."
+        ],
+        "doi": [
+          {
+            "value": "10.1080/00107510500392030"
+          }
+        ],
+        "publication": [
+          {
+            "year": 2006,
+            "page_end": "49",
+            "page_start": "33",
+            "journal_title": "Contemp.Phys.",
+            "journal_record": {
+              "$ref": "https://inspirehep.net/api/journals/1214775"
+            },
+            "journal_volume": "47"
+          }
+        ]
+      },
+      "adjustments": [
+        "Citation key: Berera:2006xq -> warm"
+      ]
+    },
+    {
+      "original_number": 36,
+      "original_key": "warm",
+      "citation_key": "warm__2",
+      "official_key": "Berera:2008ar",
+      "source": "INSPIRE",
+      "url": "https://inspirehep.net/api/arxiv/0808.1855?format=bibtex",
+      "raw_file": "work/bibliography_cache/warm_2.bib",
+      "raw_sha256": "5bdf3b9034b0f8fecce6099a4ef70f40c4841440bcc32bc133e23efe06155b6f",
+      "original_entry": "A.~Berera,\n  ``The warm inflationary universe,''\n  Contemp.\\ Phys.\\  {\\bf 47}, 33 (2006)\n  [arXiv:0809.4198 [hep-ph]].  A.~Berera, I.~G.~Moss and R.~O.~Ramos,\n  ``Warm Inflation and its Microphysical Basis,''\n  Rept.\\ Prog.\\ Phys.\\  {\\bf 72}, 026901 (2009)\n  [arXiv:0808.1855 [hep-ph]]. M.~Bastero-Gil, A.~Berera, ``Warm inflation model building,''\n  Int.\\ J.\\ Mod.\\ Phys.\\  {\\bf A24}, 2207-2240 (2009). [arXiv:0902.0521 [hep-ph]].",
+      "match": {
+        "arxiv": "0808.1855",
+        "bibtex_url": "https://inspirehep.net/api/arxiv/0808.1855?format=bibtex",
+        "file": "warm_2.bib",
+        "titles": [
+          {
+            "title": "Warm Inflation and its Microphysical Basis"
+          },
+          {
+            "title": "Warm Inflation and its Microphysical Basis",
+            "source": "arXiv"
+          }
+        ],
+        "authors": [
+          "Berera, Arjun",
+          "Moss, Ian G.",
+          "Ramos, Rudnei O."
+        ],
+        "doi": [
+          {
+            "value": "10.1088/0034-4885/72/2/026901"
+          }
+        ],
+        "publication": [
+          {
+            "year": 2009,
+            "artid": "026901",
+            "journal_title": "Rept.Prog.Phys.",
+            "journal_record": {
+              "$ref": "https://inspirehep.net/api/journals/1214416"
+            },
+            "journal_volume": "72"
+          }
+        ]
+      },
+      "adjustments": [
+        "Citation key: Berera:2008ar -> warm__2"
+      ]
+    },
+    {
+      "original_number": 36,
+      "original_key": "warm",
+      "citation_key": "warm__3",
+      "official_key": "Bastero-Gil:2009sdq",
+      "source": "INSPIRE",
+      "url": "https://inspirehep.net/api/arxiv/0902.0521?format=bibtex",
+      "raw_file": "work/bibliography_cache/warm_3.bib",
+      "raw_sha256": "5c34fd071aaedef3f871f4a6c4b7bc031fc5df1909f317ca26eb6c8900462c4f",
+      "original_entry": "A.~Berera,\n  ``The warm inflationary universe,''\n  Contemp.\\ Phys.\\  {\\bf 47}, 33 (2006)\n  [arXiv:0809.4198 [hep-ph]].  A.~Berera, I.~G.~Moss and R.~O.~Ramos,\n  ``Warm Inflation and its Microphysical Basis,''\n  Rept.\\ Prog.\\ Phys.\\  {\\bf 72}, 026901 (2009)\n  [arXiv:0808.1855 [hep-ph]]. M.~Bastero-Gil, A.~Berera, ``Warm inflation model building,''\n  Int.\\ J.\\ Mod.\\ Phys.\\  {\\bf A24}, 2207-2240 (2009). [arXiv:0902.0521 [hep-ph]].",
+      "match": {
+        "arxiv": "0902.0521",
+        "bibtex_url": "https://inspirehep.net/api/arxiv/0902.0521?format=bibtex",
+        "file": "warm_3.bib",
+        "titles": [
+          {
+            "title": "Warm inflation model building"
+          },
+          {
+            "title": "Warm inflation model building",
+            "source": "arXiv"
+          }
+        ],
+        "authors": [
+          "Bastero-Gil, Mar",
+          "Berera, Arjun"
+        ],
+        "doi": [
+          {
+            "value": "10.1142/S0217751X09044206"
+          }
+        ],
+        "publication": [
+          {
+            "year": 2009,
+            "page_end": "2240",
+            "page_start": "2207",
+            "journal_title": "Int.J.Mod.Phys.A",
+            "journal_volume": "24"
+          }
+        ]
+      },
+      "adjustments": [
+        "Citation key: Bastero-Gil:2009sdq -> warm__3"
+      ]
+    },
+    {
+      "original_number": 37,
+      "original_key": "weiss",
+      "citation_key": "weiss",
+      "official_key": "Weiss_2008",
+      "source": "Crossref",
+      "url": "https://api.crossref.org/works/10.1142/6738/transform/application/x-bibtex",
+      "raw_file": "work/bibliography_cache/weiss_1.bib",
+      "raw_sha256": "f1f4cf920ff4d503bfc797b99c861e4bcdd7051da9acc56a9e12d055abeb172f",
+      "original_entry": "U. Weiss, ``Quantum Dissipative Systems,\"  World Scientific Publishing (2008).",
+      "match": {
+        "file": "weiss_1.bib",
+        "bibtex_url": "https://api.crossref.org/works/10.1142/6738/transform/application/x-bibtex",
+        "source": "Crossref"
+      },
+      "adjustments": [
+        "Citation key: Weiss_2008 -> weiss",
+        "TeX-safe quoted month and page-range hyphen normalization; all fields retained.",
+        "2008 third edition verified by DOI and Crossref; rejected INSPIRE 2021 fifth edition. Series and volume supplemented from publisher data."
+      ]
+    },
+    {
+      "original_number": 38,
+      "original_key": "Zhang",
+      "citation_key": "Zhang",
+      "official_key": "Zhang_1993",
+      "source": "Crossref",
+      "url": "https://api.crossref.org/works/10.1103/PhysRevE.47.3745/transform/application/x-bibtex",
+      "raw_file": "work/bibliography_cache/Zhang_1.bib",
+      "raw_sha256": "f83bcaf51dfa8d82a1b14b72100fe0bcc7abf9e0894e53150838cb38e815d7e8",
+      "original_entry": "Y. Zhang, ``Path-integral formalism for classical Brownian motion in a general environment,''\n  Phys.\\ Rev.\\  D {\\bf 47}, 3745 (1993)",
+      "match": {
+        "file": "Zhang_1.bib",
+        "bibtex_url": "https://api.crossref.org/works/10.1103/PhysRevE.47.3745/transform/application/x-bibtex",
+        "source": "Crossref"
+      },
+      "adjustments": [
+        "Citation key: Zhang_1993 -> Zhang",
+        "TeX-safe quoted month and page-range hyphen normalization; all fields retained.",
+        "Original journal Phys. Rev. D is a typo. Publisher confirms Phys. Rev. E 47, 3745 (1993). Title and author match. https://journals.aps.org/pre/abstract/10.1103/PhysRevE.47.3745"
+      ]
+    },
+    {
+      "original_number": 39,
+      "original_key": "Fetter",
+      "citation_key": "Fetter",
+      "official_key": "Fetter:1971",
+      "source": "Original bibliography; checked against library catalogues",
+      "url": "https://library.kaist.ac.kr/search/ctlgSearch/posesn/view.do?bibctrlno=11584&ty=B",
+      "raw_file": "work/bibliography_cache/Fetter_original.bib",
+      "raw_sha256": "438afd0cdb3eba0e75cac528a4d34434c4114e3ad888d2cbc0f04d4993cd76b7",
+      "original_entry": "A. L. Fetter and J. D. Walecka,  ``Quantum Theory of Many-Particle Systems,\" McGraw-Hill, San Francisco, (1971).",
+      "match": {
+        "file": "Fetter_original.bib",
+        "bibtex_url": "https://library.kaist.ac.kr/search/ctlgSearch/posesn/view.do?bibctrlno=11584&ty=B",
+        "source": "Original bibliography; checked against library catalogues"
+      },
+      "adjustments": [
+        "Citation key: Fetter:1971 -> Fetter"
+      ]
+    },
+    {
+      "original_number": 40,
+      "original_key": "radre",
+      "citation_key": "radre",
+      "official_key": "Galley:2009px",
+      "source": "INSPIRE",
+      "url": "https://inspirehep.net/api/arxiv/0903.1122?format=bibtex",
+      "raw_file": "work/bibliography_cache/radre_1.bib",
+      "raw_sha256": "fcd3c051080eeb74d124e6999b687af4562e55d04b038328d4bdb57a4a476a06",
+      "original_entry": "C.~R.~Galley and M.~Tiglio,\n  ``Radiation reaction and gravitational waves in the effective field theory\n  approach,''  Phys.\\ Rev.\\  D {\\bf 79}, 124027 (2009)\n  [arXiv:0903.1122 [gr-qc]].; C.~R.~Galley, A.~K.~Leibovich and I.~Z.~Rothstein,\n  ``Finite size corrections to the radiation reaction force in classical electrodynamics,''\n  arXiv:1005.2617 [gr-qc].",
+      "match": {
+        "arxiv": "0903.1122",
+        "bibtex_url": "https://inspirehep.net/api/arxiv/0903.1122?format=bibtex",
+        "file": "radre_1.bib",
+        "titles": [
+          {
+            "title": "Radiation reaction and gravitational waves in the effective field theory approach"
+          },
+          {
+            "title": "Radiation reaction and gravitational waves in the effective field theory approach",
+            "source": "arXiv"
+          }
+        ],
+        "authors": [
+          "Galley, Chad R.",
+          "Tiglio, Manuel"
+        ],
+        "doi": [
+          {
+            "value": "10.1103/PhysRevD.79.124027"
+          }
+        ],
+        "publication": [
+          {
+            "year": 2009,
+            "artid": "124027",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "79"
+          }
+        ]
+      },
+      "adjustments": [
+        "Citation key: Galley:2009px -> radre"
+      ]
+    },
+    {
+      "original_number": 40,
+      "original_key": "radre",
+      "citation_key": "radre__2",
+      "official_key": "Galley:2010es",
+      "source": "INSPIRE",
+      "url": "https://inspirehep.net/api/arxiv/1005.2617?format=bibtex",
+      "raw_file": "work/bibliography_cache/radre_2.bib",
+      "raw_sha256": "2a1dfd4a934599814ed1424bc3d59364e65779dfdba68d89147e9c441e4bd307",
+      "original_entry": "C.~R.~Galley and M.~Tiglio,\n  ``Radiation reaction and gravitational waves in the effective field theory\n  approach,''  Phys.\\ Rev.\\  D {\\bf 79}, 124027 (2009)\n  [arXiv:0903.1122 [gr-qc]].; C.~R.~Galley, A.~K.~Leibovich and I.~Z.~Rothstein,\n  ``Finite size corrections to the radiation reaction force in classical electrodynamics,''\n  arXiv:1005.2617 [gr-qc].",
+      "match": {
+        "arxiv": "1005.2617",
+        "bibtex_url": "https://inspirehep.net/api/arxiv/1005.2617?format=bibtex",
+        "file": "radre_2.bib",
+        "titles": [
+          {
+            "title": "Finite size corrections to the radiation reaction force in classical electrodynamics"
+          },
+          {
+            "title": "Finite size corrections to the radiation reaction force in classical electrodynamics",
+            "source": "arXiv"
+          }
+        ],
+        "authors": [
+          "Galley, Chad R.",
+          "Leibovich, Adam K.",
+          "Rothstein, Ira Z."
+        ],
+        "doi": [
+          {
+            "value": "10.1103/PhysRevLett.105.094802"
+          }
+        ],
+        "publication": [
+          {
+            "year": 2010,
+            "artid": "094802",
+            "journal_title": "Phys.Rev.Lett.",
+            "journal_record": {
+              "$ref": "https://inspirehep.net/api/journals/1214495"
+            },
+            "journal_volume": "105"
+          }
+        ]
+      },
+      "adjustments": [
+        "Citation key: Galley:2010es -> radre__2"
+      ]
+    },
+    {
+      "original_number": 41,
+      "original_key": "memory",
+      "citation_key": "memory",
+      "official_key": "Favata:2010zu",
+      "source": "INSPIRE",
+      "url": "https://inspirehep.net/api/arxiv/1003.3486?format=bibtex",
+      "raw_file": "work/bibliography_cache/memory_1.bib",
+      "raw_sha256": "ec5957e0a54b8ddc97a414ab87108e0ac3b1f5147d0e8c19e58e202c773d127f",
+      "original_entry": "See for example  M.~Favata,\n  ``The gravitational-wave memory effect,'' Class.\\ Quant.\\ Grav.\\  {\\bf 27}, 084036 (2010)\n  [arXiv:1003.3486 [gr-qc]], and references therein.",
+      "match": {
+        "arxiv": "1003.3486",
+        "bibtex_url": "https://inspirehep.net/api/arxiv/1003.3486?format=bibtex",
+        "file": "memory_1.bib",
+        "titles": [
+          {
+            "title": "The gravitational-wave memory effect"
+          },
+          {
+            "title": "The gravitational-wave memory effect",
+            "source": "arXiv"
+          }
+        ],
+        "authors": [
+          "Favata, Marc"
+        ],
+        "doi": [
+          {
+            "value": "10.1088/0264-9381/27/8/084036"
+          }
+        ],
+        "publication": [
+          {
+            "year": 2010,
+            "artid": "084036",
+            "journal_title": "Class.Quant.Grav.",
+            "journal_record": {
+              "$ref": "https://inspirehep.net/api/journals/1214779"
+            },
+            "journal_volume": "27"
+          },
+          {
+            "cnum": "C09-06-21.1",
+            "parent_record": {
+              "$ref": "https://inspirehep.net/api/literature/858749"
+            },
+            "conference_record": {
+              "$ref": "https://inspirehep.net/api/conferences/979813"
+            }
+          }
+        ]
+      },
+      "adjustments": [
+        "Citation key: Favata:2010zu -> memory"
+      ]
+    },
+    {
+      "original_number": 42,
+      "original_key": "gel",
+      "citation_key": "gel",
+      "official_key": "DiMarco:2002eb",
+      "source": "INSPIRE",
+      "url": "https://inspirehep.net/api/arxiv/astro-ph/0211276?format=bibtex",
+      "raw_file": "work/bibliography_cache/gel_1.bib",
+      "raw_sha256": "6a7b2fff4e626e9f84746807b5cd401256621fa3d706743cd4afdb91780de79f",
+      "original_entry": "F.~Di Marco, F.~Finelli and R.~Brandenberger,\n  ``Adiabatic and isocurvature perturbations for multifield generalized\n  Einstein models,''\n  Phys.\\ Rev.\\  D {\\bf 67}, 063512 (2003)\n  [arXiv:astro-ph/0211276].",
+      "match": {
+        "arxiv": "astro-ph/0211276",
+        "bibtex_url": "https://inspirehep.net/api/arxiv/astro-ph/0211276?format=bibtex",
+        "file": "gel_1.bib",
+        "titles": [
+          {
+            "title": "Adiabatic and isocurvature perturbations for multifield generalized Einstein models"
+          },
+          {
+            "title": "Adiabatic and Isocurvature Perturbations for Multifield Generalized Einstein Models",
+            "source": "arXiv"
+          }
+        ],
+        "authors": [
+          "Di Marco, Fabrizio",
+          "Finelli, Fabio",
+          "Brandenberger, Robert"
+        ],
+        "doi": [
+          {
+            "value": "10.1103/PhysRevD.67.063512"
+          }
+        ],
+        "publication": [
+          {
+            "year": 2003,
+            "artid": "063512",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "67"
+          }
+        ]
+      },
+      "adjustments": [
+        "Citation key: DiMarco:2002eb -> gel"
+      ]
+    },
+    {
+      "original_number": 43,
+      "original_key": "Komatsu:2010fb",
+      "citation_key": "Komatsu:2010fb",
+      "official_key": "WMAP:2010qai",
+      "source": "INSPIRE",
+      "url": "https://inspirehep.net/api/arxiv/1001.4538?format=bibtex",
+      "raw_file": "work/bibliography_cache/Komatsu_2010fb_1.bib",
+      "raw_sha256": "4f84e66379a9a267a9b0477ed44677ff8b0aafd2e90ec5641ba6d83b2a3a14e0",
+      "original_entry": "E.~Komatsu {\\it et al.}  [WMAP Collaboration],\n  ``Seven-Year Wilkinson Microwave Anisotropy Probe (WMAP) Observations:\n  Cosmological Interpretation,''\n  Astrophys.\\ J.\\ Suppl.\\  {\\bf 192} (2011) 18\n  [arXiv:1001.4538 [astro-ph.CO]].",
+      "match": {
+        "arxiv": "1001.4538",
+        "bibtex_url": "https://inspirehep.net/api/arxiv/1001.4538?format=bibtex",
+        "file": "Komatsu_2010fb_1.bib",
+        "titles": [
+          {
+            "title": "Seven-Year Wilkinson Microwave Anisotropy Probe (WMAP) Observations: Cosmological Interpretation"
+          },
+          {
+            "title": "Seven-Year Wilkinson Microwave Anisotropy Probe (WMAP) Observations: Cosmological Interpretation",
+            "source": "arXiv"
+          }
+        ],
+        "authors": [
+          "Komatsu, E.",
+          "Smith, K.M.",
+          "Dunkley, J.",
+          "Bennett, C.L.",
+          "Gold, B.",
+          "Hinshaw, G.",
+          "Jarosik, N.",
+          "Larson, D.",
+          "Nolta, M.R.",
+          "Page, L.",
+          "Spergel, D.N.",
+          "Halpern, M.",
+          "Hill, R.S.",
+          "Kogut, A.",
+          "Limon, M.",
+          "Meyer, S.S.",
+          "Odegard, N.",
+          "Tucker, G.S.",
+          "Weiland, J.L.",
+          "Wollack, E.",
+          "Wright, E.L."
+        ],
+        "doi": [
+          {
+            "value": "10.1088/0067-0049/192/2/18"
+          }
+        ],
+        "publication": [
+          {
+            "year": 2011,
+            "artid": "18",
+            "page_start": "18",
+            "journal_title": "Astrophys.J.Suppl.",
+            "journal_record": {
+              "$ref": "https://inspirehep.net/api/journals/1214856"
+            },
+            "journal_volume": "192"
+          }
+        ]
+      },
+      "adjustments": [
+        "Citation key: WMAP:2010qai -> Komatsu:2010fb"
+      ]
+    },
+    {
+      "original_number": 44,
+      "original_key": "consist",
+      "citation_key": "consist",
+      "official_key": "Creminelli:2004yq",
+      "source": "INSPIRE",
+      "url": "https://inspirehep.net/api/arxiv/astro-ph/0407059?format=bibtex",
+      "raw_file": "work/bibliography_cache/consist_1.bib",
+      "raw_sha256": "b611cfec77c9f7d794edf21802d16500eddfb985452bde8bb61e5241b35b6d54",
+      "original_entry": "P.~Creminelli and M.~Zaldarriaga,\n  ``Single field consistency relation for the 3-point function,''\n  JCAP {\\bf 0410}, 006 (2004)\n  [arXiv:astro-ph/0407059].",
+      "match": {
+        "arxiv": "astro-ph/0407059",
+        "bibtex_url": "https://inspirehep.net/api/arxiv/astro-ph/0407059?format=bibtex",
+        "file": "consist_1.bib",
+        "titles": [
+          {
+            "title": "Single field consistency relation for the 3-point function"
+          },
+          {
+            "title": "Single field consistency relation for the 3-point function",
+            "source": "arXiv"
+          }
+        ],
+        "authors": [
+          "Creminelli, Paolo",
+          "Zaldarriaga, Matias"
+        ],
+        "doi": [
+          {
+            "value": "10.1088/1475-7516/2004/10/006"
+          }
+        ],
+        "publication": [
+          {
+            "year": 2004,
+            "artid": "006",
+            "page_start": "006",
+            "journal_title": "JCAP",
+            "journal_record": {
+              "$ref": "https://inspirehep.net/api/journals/1212538"
+            },
+            "journal_volume": "10"
+          }
+        ]
+      },
+      "adjustments": [
+        "Citation key: Creminelli:2004yq -> consist"
+      ]
+    },
+    {
+      "original_number": 45,
+      "original_key": "creminelli11",
+      "citation_key": "creminelli11",
+      "official_key": "Creminelli:2011rh",
+      "source": "INSPIRE",
+      "url": "https://inspirehep.net/api/arxiv/1106.1462?format=bibtex",
+      "raw_file": "work/bibliography_cache/creminelli11_1.bib",
+      "raw_sha256": "b37f992c87ccff174ef14df16b7e13187fad9c975df1a19edc46140ef8af87ad",
+      "original_entry": "P.~Creminelli, G.~D'Amico, M.~Musso and J.~Nore\\~na,\n  ``The (not so) squeezed limit of the primordial 3-point function,''\n   [arXiv:1106.1462 [astro-ph]].",
+      "match": {
+        "arxiv": "1106.1462",
+        "bibtex_url": "https://inspirehep.net/api/arxiv/1106.1462?format=bibtex",
+        "file": "creminelli11_1.bib",
+        "titles": [
+          {
+            "title": "The (not so) squeezed limit of the primordial 3-point function"
+          },
+          {
+            "title": "The (not so) squeezed limit of the primordial 3-point function",
+            "source": "arXiv"
+          }
+        ],
+        "authors": [
+          "Creminelli, Paolo",
+          "D'Amico, Guido",
+          "Musso, Marcello",
+          "Norena, Jorge"
+        ],
+        "doi": [
+          {
+            "value": "10.1088/1475-7516/2011/11/038"
+          }
+        ],
+        "publication": [
+          {
+            "year": 2011,
+            "artid": "038",
+            "page_start": "038",
+            "journal_title": "JCAP",
+            "journal_record": {
+              "$ref": "https://inspirehep.net/api/journals/1212538"
+            },
+            "journal_volume": "11"
+          }
+        ]
+      },
+      "adjustments": [
+        "Citation key: Creminelli:2011rh -> creminelli11"
+      ]
+    },
+    {
+      "original_number": 46,
+      "original_key": "warmf33",
+      "citation_key": "warmf33",
+      "official_key": "Graham:2009bf",
+      "source": "INSPIRE",
+      "url": "https://inspirehep.net/api/arxiv/0905.3500?format=bibtex",
+      "raw_file": "work/bibliography_cache/warmf33_1.bib",
+      "raw_sha256": "d7efc29ae8662a8c742a2ec0592faf6ab35a517097c59ab98ff6f033936d71af",
+      "original_entry": "C.~Graham and I.~G.~Moss,\n  ``Density fluctuations from warm inflation,''\n  JCAP {\\bf 0907}, 013 (2009)\n  [arXiv:0905.3500 [astro-ph.CO]].",
+      "match": {
+        "arxiv": "0905.3500",
+        "bibtex_url": "https://inspirehep.net/api/arxiv/0905.3500?format=bibtex",
+        "file": "warmf33_1.bib",
+        "titles": [
+          {
+            "title": "Density fluctuations from warm inflation"
+          },
+          {
+            "title": "Density fluctuations from warm inflation",
+            "source": "arXiv"
+          }
+        ],
+        "authors": [
+          "Graham, Chris",
+          "Moss, Ian G."
+        ],
+        "doi": [
+          {
+            "value": "10.1088/1475-7516/2009/07/013"
+          }
+        ],
+        "publication": [
+          {
+            "year": 2009,
+            "artid": "013",
+            "page_start": "013",
+            "journal_title": "JCAP",
+            "journal_record": {
+              "$ref": "https://inspirehep.net/api/journals/1212538"
+            },
+            "journal_volume": "07"
+          }
+        ]
+      },
+      "adjustments": [
+        "Citation key: Graham:2009bf -> warmf33"
+      ]
+    },
+    {
+      "original_number": 47,
+      "original_key": "berera11",
+      "citation_key": "berera11",
+      "official_key": "Bastero-Gil:2011rva",
+      "source": "INSPIRE",
+      "url": "https://inspirehep.net/api/arxiv/1106.0701?format=bibtex",
+      "raw_file": "work/bibliography_cache/berera11_1.bib",
+      "raw_sha256": "5e1e25517884cc37814f11d7bbfbbaad244a788be7eaef96fc6bc5e923b5b535",
+      "original_entry": "M.~Bastero-Gil, A.~Berera, R.~O.~Ramos, ``Shear viscous effects on the primordial power spectrum from warm inflation,''\n  [arXiv:1106.0701 [astro-ph.CO]].",
+      "match": {
+        "arxiv": "1106.0701",
+        "bibtex_url": "https://inspirehep.net/api/arxiv/1106.0701?format=bibtex",
+        "file": "berera11_1.bib",
+        "titles": [
+          {
+            "title": "Shear viscous effects on the primordial power spectrum from warm inflation"
+          },
+          {
+            "title": "Shear viscous effects on the primordial power spectrum from warm inflation",
+            "source": "arXiv"
+          }
+        ],
+        "authors": [
+          "Bastero-Gil, Mar",
+          "Berera, Arjun",
+          "Ramos, Rudnei O."
+        ],
+        "doi": [
+          {
+            "value": "10.1088/1475-7516/2011/07/030"
+          }
+        ],
+        "publication": [
+          {
+            "year": 2011,
+            "artid": "030",
+            "page_start": "030",
+            "journal_title": "JCAP",
+            "journal_record": {
+              "$ref": "https://inspirehep.net/api/journals/1212538"
+            },
+            "journal_volume": "07"
+          }
+        ]
+      },
+      "adjustments": [
+        "Citation key: Bastero-Gil:2011rva -> berera11"
+      ]
+    },
+    {
+      "original_number": 48,
+      "original_key": "reheating",
+      "citation_key": "reheating",
+      "official_key": "Moss:2008lkw",
+      "source": "INSPIRE",
+      "url": "https://inspirehep.net/api/arxiv/0810.2039?format=bibtex",
+      "raw_file": "work/bibliography_cache/reheating_1.bib",
+      "raw_sha256": "364e6b8584deed89c5b0b8c17eca616ed637f1e0da42b49d8a3f9877e24f4efc",
+      "original_entry": "I.~G.~Moss, C.~M.~Graham, ``Particle production and reheating in the inflationary universe,''\n  Phys.\\ Rev.\\  {\\bf D78}, 123526 (2008).\n  [arXiv:0810.2039 [hep-ph]].",
+      "match": {
+        "arxiv": "0810.2039",
+        "bibtex_url": "https://inspirehep.net/api/arxiv/0810.2039?format=bibtex",
+        "file": "reheating_1.bib",
+        "titles": [
+          {
+            "title": "Particle production and reheating in the inflationary universe"
+          },
+          {
+            "title": "Particle production and reheating in the inflationary universe",
+            "source": "arXiv"
+          }
+        ],
+        "authors": [
+          "Moss, Ian G.",
+          "Graham, Chris M."
+        ],
+        "doi": [
+          {
+            "value": "10.1103/PhysRevD.78.123526"
+          }
+        ],
+        "publication": [
+          {
+            "year": 2008,
+            "artid": "123526",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "78"
+          }
+        ]
+      },
+      "adjustments": [
+        "Citation key: Moss:2008lkw -> reheating"
+      ]
+    },
+    {
+      "original_number": 49,
+      "original_key": "bastero",
+      "citation_key": "bastero",
+      "official_key": "Bastero-Gil:2006ahd",
+      "source": "INSPIRE",
+      "url": "https://inspirehep.net/api/arxiv/hep-ph/0610343?format=bibtex",
+      "raw_file": "work/bibliography_cache/bastero_1.bib",
+      "raw_sha256": "5efa5ff0e97ab79dcf54e12dacdafaf704b7017aa43a2c1ba8aea729692a5d38",
+      "original_entry": "M.~Bastero-Gil and A.~Berera,\n  ``Warm inflation dynamics in the low temperature regime,''\n  Phys.\\ Rev.\\  D {\\bf 76}, 043515 (2007)\n  [arXiv:hep-ph/0610343].",
+      "match": {
+        "arxiv": "hep-ph/0610343",
+        "bibtex_url": "https://inspirehep.net/api/arxiv/hep-ph/0610343?format=bibtex",
+        "file": "bastero_1.bib",
+        "titles": [
+          {
+            "title": "Warm inflation dynamics in the low temperature regime"
+          },
+          {
+            "title": "Warm inflation dynamics in the low temperature regime.",
+            "source": "arXiv"
+          }
+        ],
+        "authors": [
+          "Bastero-Gil, Mar",
+          "Berera, Arjun"
+        ],
+        "doi": [
+          {
+            "value": "10.1103/PhysRevD.76.043515"
+          }
+        ],
+        "publication": [
+          {
+            "year": 2007,
+            "artid": "043515",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "76"
+          }
+        ]
+      },
+      "adjustments": [
+        "Citation key: Bastero-Gil:2006ahd -> bastero"
+      ]
+    },
+    {
+      "original_number": 50,
+      "original_key": "bueno",
+      "citation_key": "bueno",
+      "official_key": "BuenoSanchez:2008nc",
+      "source": "INSPIRE",
+      "url": "https://inspirehep.net/api/arxiv/0802.4354?format=bibtex",
+      "raw_file": "work/bibliography_cache/bueno_1.bib",
+      "raw_sha256": "f1be2a97802787008e585997b81fac8930470003f321e25d9fc0737273ec4131",
+      "original_entry": "J~C.~Bueno Sanchez, M.~Bastero-Gil, A.~Berera, K.~Dimopoulos,\n  ``Warm hilltop inflation,''\n  Phys.\\ Rev.\\  {\\bf D77}, 123527 (2008).\n  [arXiv:0802.4354 [hep-ph]].",
+      "match": {
+        "arxiv": "0802.4354",
+        "bibtex_url": "https://inspirehep.net/api/arxiv/0802.4354?format=bibtex",
+        "file": "bueno_1.bib",
+        "titles": [
+          {
+            "title": "Warm hilltop inflation"
+          },
+          {
+            "title": "Warm hilltop inflation",
+            "source": "arXiv"
+          }
+        ],
+        "authors": [
+          "Bueno Sanchez, Juan Carlos",
+          "Bastero-Gil, Mar",
+          "Berera, Arjun",
+          "Dimopoulos, Konstantinos"
+        ],
+        "doi": [
+          {
+            "value": "10.1103/PhysRevD.77.123527"
+          }
+        ],
+        "publication": [
+          {
+            "year": 2008,
+            "artid": "123527",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "77"
+          }
+        ]
+      },
+      "adjustments": [
+        "Citation key: BuenoSanchez:2008nc -> bueno"
+      ]
+    },
+    {
+      "original_number": 51,
+      "original_key": "linde",
+      "citation_key": "linde",
+      "official_key": "Yokoyama:1998ju",
+      "source": "INSPIRE",
+      "url": "https://inspirehep.net/api/arxiv/hep-ph/9809409?format=bibtex",
+      "raw_file": "work/bibliography_cache/linde_1.bib",
+      "raw_sha256": "0239718246259b07100acaea83d7dd18fe8f8532945326e7d5a15114937f3707",
+      "original_entry": "J.~Yokoyama, A.~D.~Linde, ``Is warm inflation possible?,''\n  Phys.\\ Rev.\\  {\\bf D60}, 083509 (1999).\n  [hep-ph/9809409].",
+      "match": {
+        "arxiv": "hep-ph/9809409",
+        "bibtex_url": "https://inspirehep.net/api/arxiv/hep-ph/9809409?format=bibtex",
+        "file": "linde_1.bib",
+        "titles": [
+          {
+            "title": "Is warm inflation possible?"
+          },
+          {
+            "title": "Is warm inflation possible?",
+            "source": "arXiv"
+          }
+        ],
+        "authors": [
+          "Yokoyama, Junichi",
+          "Linde, Andrei D."
+        ],
+        "doi": [
+          {
+            "value": "10.1103/PhysRevD.60.083509"
+          }
+        ],
+        "publication": [
+          {
+            "year": 1999,
+            "artid": "083509",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "60"
+          }
+        ]
+      },
+      "adjustments": [
+        "Citation key: Yokoyama:1998ju -> linde"
+      ]
+    },
+    {
+      "original_number": 52,
+      "original_key": "hall",
+      "citation_key": "hall",
+      "official_key": "Hall:2004zr",
+      "source": "INSPIRE",
+      "url": "https://inspirehep.net/api/arxiv/hep-ph/0408323?format=bibtex",
+      "raw_file": "work/bibliography_cache/hall_1.bib",
+      "raw_sha256": "b1611ca99b5b00a0da1ed9a626811811586e9cc5ae9f2adb723e92f11f9c9215",
+      "original_entry": "L.~M.~H.~Hall and I.~G.~Moss,\n  ``Thermal effects on pure and hybrid inflation,''\n  Phys.\\ Rev.\\  D {\\bf 71}, 023514 (2005)\n  [arXiv:hep-ph/0408323].",
+      "match": {
+        "arxiv": "hep-ph/0408323",
+        "bibtex_url": "https://inspirehep.net/api/arxiv/hep-ph/0408323?format=bibtex",
+        "file": "hall_1.bib",
+        "titles": [
+          {
+            "title": "Thermal effects on pure and hybrid inflation"
+          },
+          {
+            "title": "Thermal effects on pure and hybrid inflation.",
+            "source": "arXiv"
+          }
+        ],
+        "authors": [
+          "Hall, Lisa M H",
+          "Moss, Ian G"
+        ],
+        "doi": [
+          {
+            "value": "10.1103/PhysRevD.71.023514"
+          }
+        ],
+        "publication": [
+          {
+            "year": 2005,
+            "artid": "023514",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "71"
+          }
+        ]
+      },
+      "adjustments": [
+        "Citation key: Hall:2004zr -> hall"
+      ]
+    },
+    {
+      "original_number": 53,
+      "original_key": "warmf1",
+      "citation_key": "warmf1",
+      "official_key": "Gupta:2002kn",
+      "source": "INSPIRE",
+      "url": "https://inspirehep.net/api/arxiv/astro-ph/0205152?format=bibtex",
+      "raw_file": "work/bibliography_cache/warmf1_1.bib",
+      "raw_sha256": "84048e339aec964ed7bc6bc086e9638382f8332ac3fe40263a3f7faee372ec53",
+      "original_entry": "S.~Gupta, A.~Berera, A.~F.~Heavens and S.~Matarrese,\n  ``Non-Gaussian signatures in the cosmic background radiation from warm\n  inflation,''\n  Phys.\\ Rev.\\  D {\\bf 66}, 043510 (2002)\n  [arXiv:astro-ph/0205152].",
+      "match": {
+        "arxiv": "astro-ph/0205152",
+        "bibtex_url": "https://inspirehep.net/api/arxiv/astro-ph/0205152?format=bibtex",
+        "file": "warmf1_1.bib",
+        "titles": [
+          {
+            "title": "Non-Gaussian signatures in the cosmic background radiation from warm inflation"
+          },
+          {
+            "title": "NONGAUSSIAN"
+          },
+          {
+            "title": "Non-Gaussian signatures in the cosmic background radiation from warm inflation.",
+            "source": "arXiv"
+          }
+        ],
+        "authors": [
+          "Gupta, Sujata",
+          "Berera, A.",
+          "Heavens, A.F.",
+          "Matarrese, S."
+        ],
+        "doi": [
+          {
+            "value": "10.1103/PhysRevD.66.043510"
+          }
+        ],
+        "publication": [
+          {
+            "year": 2002,
+            "artid": "043510",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "66"
+          }
+        ]
+      },
+      "adjustments": [
+        "Citation key: Gupta:2002kn -> warmf1"
+      ]
+    },
+    {
+      "original_number": 54,
+      "original_key": "gwssz",
+      "citation_key": "gwssz",
+      "official_key": "Senatore:2011sp",
+      "source": "INSPIRE",
+      "url": "https://inspirehep.net/api/arxiv/1109.0542?format=bibtex",
+      "raw_file": "work/bibliography_cache/gwssz_1.bib",
+      "raw_sha256": "e2080fd188313e381a8040b733097403f129d13539a69cfd032bab9ac09b733d",
+      "original_entry": "L.~Senatore, E.~Silverstein, M.~Zaldarriaga, ``New Sources of Gravitational Waves during Inflation,''  [arXiv:1109.0542 [hep-th]].",
+      "match": {
+        "arxiv": "1109.0542",
+        "bibtex_url": "https://inspirehep.net/api/arxiv/1109.0542?format=bibtex",
+        "file": "gwssz_1.bib",
+        "titles": [
+          {
+            "title": "New Sources of Gravitational Waves during Inflation"
+          },
+          {
+            "title": "New Sources of Gravitational Waves during Inflation",
+            "source": "arXiv"
+          }
+        ],
+        "authors": [
+          "Senatore, Leonardo",
+          "Silverstein, Eva",
+          "Zaldarriaga, Matias"
+        ],
+        "doi": [
+          {
+            "value": "10.1088/1475-7516/2014/08/016",
+            "source": "bibmatch"
+          }
+        ],
+        "publication": [
+          {
+            "year": 2014,
+            "artid": "016",
+            "page_start": "016",
+            "journal_title": "JCAP",
+            "journal_record": {
+              "$ref": "https://inspirehep.net/api/journals/1212538"
+            },
+            "journal_volume": "08"
+          }
+        ]
+      },
+      "adjustments": [
+        "Citation key: Senatore:2011sp -> gwssz"
+      ]
+    },
+    {
+      "original_number": 55,
+      "original_key": "forster",
+      "citation_key": "forster",
+      "official_key": "1971712334715945767",
+      "source": "CiNii Books",
+      "url": "https://cir.nii.ac.jp/crid/1971712334715945767.bib",
+      "raw_file": "work/bibliography_cache/forster_1975.bib",
+      "raw_sha256": "286eebb6be304f5f0aba8ba8dbe2183cbe91bcd87efd496e27ceb978cab71888",
+      "original_entry": "D. Forster, Hydrodynamics, fluctuations, broken symmetry, and correlation functions, Perseus books, 1975.",
+      "match": {
+        "file": "forster_1975.bib",
+        "bibtex_url": "https://cir.nii.ac.jp/crid/1971712334715945767.bib",
+        "source": "CiNii Books"
+      },
+      "adjustments": [
+        "Citation key: 1971712334715945767 -> forster",
+        "Exact 1975 edition from CiNii Books; original publisher Perseus Books noted; rejected Crossref 2018 reissue."
+      ]
+    },
+    {
+      "original_number": 56,
+      "original_key": "weinberg",
+      "citation_key": "weinberg",
+      "official_key": "Weinberg:2008zzc",
+      "source": "INSPIRE",
+      "url": "https://inspirehep.net/api/literature/794379?format=bibtex",
+      "raw_file": "work/bibliography_cache/weinberg_1.bib",
+      "raw_sha256": "c573f22824e9d466755b93ae871c3a9cd96c760d008c8242eaed48ab43833f8c",
+      "original_entry": "S. Weinberg, ``Cosmology,\" Oxford University Press (2008).",
+      "match": {
+        "file": "weinberg_1.bib",
+        "bibtex_url": "https://inspirehep.net/api/literature/794379?format=bibtex",
+        "source": "INSPIRE"
+      },
+      "adjustments": [
+        "Citation key: Weinberg:2008zzc -> weinberg",
+        "Publisher supplemented from original bibliography and INSPIRE pubinfo_freetext; record URL added."
+      ]
+    }
+  ]
+}

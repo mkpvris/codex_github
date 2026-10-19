@@ -1,0 +1,1127 @@
+[
+  {
+    "id": 0,
+    "kind": "text",
+    "value": "\\section{The interaction terms for {\\Large{$\\pi$}}}\\label{secpions}\n\nAs we already pointed out, in this paper we ignore the mixing with gravity and work in the decoupling limit (see appendix \\ref{appdec}). Therefore, following our previous sketching of the procedure, to construct the interacting part of the action between the ADOF and the $\\pi$'s we simply replace (see sec. \\ref{eftsup})\n"
+  },
+  {
+    "id": 1,
+    "kind": "math",
+    "value": "\\bea\ng^{00} \\to && -1 -2\\dot\\pi -\\dot\\pi^2 +\\frac{1}{a^2}(\\partial_i\\pi)^2 \\label{g00pi}\\\\\ng^{0\\mu} \\to && -\\delta^\\mu_0 (1+\\dot\\pi) + \\delta^\\mu_i \\frac{1}{a^2}\\partial_i\\pi\\label{g0mpi}.\n\\eea"
+  },
+  {
+    "id": 2,
+    "kind": "text",
+    "value": "\nAlso terms from the extrinsic curvature, that at linear order induces\n"
+  },
+  {
+    "id": 3,
+    "kind": "math",
+    "value": "\\beq\n\\label{kij}\n\\delta K_{ij} \\to a^2H\\delta_{ij} \\dot\\pi - \\partial_i\\partial_j \\pi + \\ldots.\n\\eeq"
+  },
+  {
+    "id": 4,
+    "kind": "text",
+    "value": "\n\\noindent As we anticipated, at quadratic order the Lagrangian for the $\\pi$ field takes the form in Eq. (\\ref{l2pi}). \n\nNext we include the interaction terms between the $\\calo$'s and $\\pi$ in the effective action. Let us start at quadratic level in the fluctuations. There are many operators that contribution at linear order in $\\pi$. However, from Eqs. (\\ref{g00pi},~\\ref{g0mpi}, \\ref{kij}) we note that all the terms at leading order in derivatives can be re-grouped basically as\n"
+  },
+  {
+    "id": 5,
+    "kind": "math",
+    "value": "\\beq\n\\label{operlin}\n\\dot f_1(t) \\calo\\pi,~ f_2(t)\\tilde\\calo\\dot\\pi\n,~\\tilde f_1(t)\\calo^i \\partial_i \\pi,~\\ldots,\n \\eeq"
+  },
+  {
+    "id": 6,
+    "kind": "text",
+    "value": "\nwhere the dots include higher derivative terms. Since the non-trivial features of the non-linear realization of time-diffeomorphisms comes from the connection between terms with different powers of $\\pi$, at linear level we obtain basically all the terms allowed by rotational invariance.\nThe first term appears after expanding $f_1(t+\\pi)\\calo$ in powers of $\\pi$ to first order, whereas the second term comes from $f_2(t) \\tilde\\calo \\delta g^{00}$. Note that there is a contribution from Eq. (\\ref{extcalotr}) to the second term, however, it is suppressed by a factor of $H/M_K \\ll 1$. Terms like $\\partial_i\\pi\\calo^i$, which follow from $\\calo_\\mu \\delta g^{\\mu0}$, may also generate contributions to $c_s$ as well as  $k$-dependent friction.  \n\nFor the purpose of understanding the generation of friction, we can concentrate on the linear order. We can therefore simply use integratation by parts and study an effective operator of the form "
+  },
+  {
+    "id": 7,
+    "kind": "math",
+    "value": "\\beq \\label{gencalo} -\\int d^4x \\sqrt{-g}~\\dot f(t)\\calo(x)\\pi(x),\\eeq"
+  },
+  {
+    "id": 8,
+    "kind": "text",
+    "value": " where $\\dot f(t)$ provides an overall normalization scale which we assume remains constant protected by an approximate shift symmetry, but see secs. \\ref{appsh} and \\ref{ftcalo}. In most of the expressions below we assume $\\dot f$ is absorbed into $\\calo$ unless otherwise noted. Here $\\calo$ accounts for a series of contributions, including $\\partial_i{\\calo}^i$ etc, so that we expect its Green's function to be quite generic.\n\nWe wish to understand now under which circumstances we recover an equation equivalent to (\\ref{eom1}). The main difference, as we just mentioned, lies in the expansion of the universe. A crucial simplification will come from our assumption of a faster than a $H^{-1}$ time scale for dissipation, and therefore our analysis from sec.~\\ref{warm} remains essentially unaltered.\\footnote{This means that in practice we will work in the regime where terms like $H\\delta\\tilde\\calo$, that appear after we integrate by parts and hit the $a$'s in the volume factors, are such $H \\delta\\tilde\\calo \\ll \\delta\\dot{\\tilde\\calo}$.}\n\n\\subsection{Modified dynamics \\& local approximations}\\label{localapp}\n\nIn sec. \\ref{storyo} we started our discussion of the effect of terms such as $\\calo\\pi$ in the dynamics of $\\pi$ in a flat background. The main difference now is the explicit time dependence introduced by the scale factor. For that reason, instead of working in frequency space, we find convenient to work in mixed Fourier space $(t,{\\bf k})$, keeping time as usual.\nAgain we split the operator into pieces,\n"
+  },
+  {
+    "id": 9,
+    "kind": "math",
+    "value": "\\beq\n\\label{calotxsr}\n\\calo (t,{\\bf x})= \\bar\\calo(t)+ \\delta\\calo_S(t,{\\bf x}) + \\delta\\calo_R (t,{\\bf x}),\n\\eeq"
+  },
+  {
+    "id": 10,
+    "kind": "text",
+    "value": "\nwith $ \\bar\\calo(t)$ the background expectation value, $ \\delta\\calo_S(t,{\\bf x})$ the stochastic fluctuations, and $ \\delta\\calo_R (t,{\\bf x})$ the those induced by $\\pi$.\nIn what follows we omit the background piece $\\bar\\calo(t)$, which as explained in sec. \\ref{scaladof}, we assume is absorbed in $H,\\dot H, N_c$, and its time-dependence is  suppressed in the slow roll approximation $(\\epsilon, \\eta, \\epsilon_f, \\epsilon_{\\calo}) \\ll 1$. \\\\\n\nRecall the first variation in Eq. (\\ref{calotxsr}) represents the noise, whereas the second one is the response to the perturbation induced by the $\\pi$ field, and is given as the integral of a Green's function as in Eqs.~(\\ref{dret0},~\\ref{dret}).  Varying the action we obtain the EOM\n"
+  },
+  {
+    "id": 11,
+    "kind": "math",
+    "value": "\\beq\n\\label{gnoa0}\n\\ddot\\pi_k(t) + 3H \\dot\\pi_k(t)+ \\frac{c_s^2{\\bf k}^2}{a^2} \\pi_k -\n\\frac{1}{N_c}\\int dt'a^3(t') G_{\\rm ret}^\\calo(t,t',{\\bf k}) \\pi_{k}(t') =- \\frac{1}{N_c} \\delta\\calo_S(t,{\\bf k}),\n\\eeq"
+  },
+  {
+    "id": 12,
+    "kind": "text",
+    "value": "\nwith\n"
+  },
+  {
+    "id": 13,
+    "kind": "math",
+    "value": "\\beq\n\\label{gnoa1}\nG_{\\rm ret}^\\calo(t,t',{\\bf k})  = i \\int \\frac{d^3 {\\bf y}}{(2\\pi)^3} e^{-i{\\bf k}\\cdot {\\bf y}} [\\delta\\calo(t,{\\bf y}),\\delta\\calo(t',{\\bf 0})]\\theta(t-t').\n\\eeq"
+  },
+  {
+    "id": 14,
+    "kind": "text",
+    "value": "\n(The overall normalization is given by $N_c$ as in Eq. (\\ref{l2pi}).)\\\\\n\nOur first approximation entails locality in space, and so we take the Green's function to be of the form\n"
+  },
+  {
+    "id": 15,
+    "kind": "math",
+    "value": "\\beq\n\\label{gnoa2}\nG_{\\rm ret}^\\calo(t,t',{\\bf k}) = \\frac{G_{\\rm ret}^\\calo (t,t')}{a^{3/2}(t)a^{3/2}(t')} + O(|{\\bf k}|/M_\\calo),\n\\eeq"
+  },
+  {
+    "id": 16,
+    "kind": "text",
+    "value": "\nwith $M_{\\calo}\\gg k_\\star$. (The factors of $a^{-3/2}$ account for the fact that we work in co-moving coordinates.) In other words, there is a `gap' in momentum space determined by the `mean free path' $l_\\calo \\sim 1/M_\\calo \\ll 1/k_\\star$. We perform the same approximation for the correlation functions of the noise. For example for the two-point function we have\n"
+  },
+  {
+    "id": 17,
+    "kind": "math",
+    "value": "\\beq\n\\label{twop1}\n\\langle \\delta\\calo_S(t,{\\bf k})\\delta\\calo_S(t',{\\bf q})\\rangle \\simeq \\frac{\\tilde{\\nu}_{\\calo}(t,t')}{a^{3/2}(t)a^{3/2}(t')} (2\\pi)^3\\delta^{(3)}({\\bf q+\\bf k}).\n\\eeq"
+  },
+  {
+    "id": 18,
+    "kind": "text",
+    "value": "\n\nTo obtain a local approximation in time we assume that the characteristic time scale for the variation of the kernels, $\\Gamma_\\calo^{-1} \\ll 1/H$, is much\n smaller than the one of the sources, i.e. the $\\pi$ field. (Notice that, at least in principle, $\\Gamma_{\\calo}$ is not necessarily related to $l_{\\calo}$.) Then by changing the integration variable $t'=t-\\tau$ in the above EOM we can approximate\n"
+  },
+  {
+    "id": 19,
+    "kind": "math",
+    "value": "\\beq\n\\label{pikap}\n \\pi_k(t-\\tau)\\simeq \\pi_k(t)-\\dot\\pi_k(t) \\tau + \\ldots,\n\\eeq"
+  },
+  {
+    "id": 20,
+    "kind": "text",
+    "value": "\n\nThe first term would introduce a mass for $\\pi$, as can be seen after using this approximation in Eq. (\\ref{gnoa0}). However, as we mentioned in sec. \\ref{warm}, in this paper we concentrate in models where $\\zeta_k$  is not affected by the ADOF after horizon exit.  This requires that the equations for the $\\zeta$ modes do not have a mass term.\\footnote{This is guaranteed if we have a (softly broken) shift symmetry.} This imposes the condition that for a constant $\\zeta$ the response from the $\\calo$'s should vanish. More specifically we impose $\\delta\\calo^R_k \\to 0$ as $k/a \\to 0$, such that we do not generate a mass term for $\\pi$. We enforce this at the level of the Green's function, imposing an emergent shift symmetry such that the effect of the first term vanishes, i.e.\n"
+  },
+  {
+    "id": 21,
+    "kind": "math",
+    "value": "\\be\n\\int \\frac{a^{3/2}(t-\\tau)}{a^{3/2}(t)}G_{\\rm ret}^\\calo(t,t-\\tau)d\\tau = 0 .\n\\ee"
+  },
+  {
+    "id": 22,
+    "kind": "text",
+    "value": "\n\nOn the other hand, the second term of Eq. (\\ref{pikap}) produces our desired result, where the friction part is given by (see Eqs. (\\ref{gnoa0}) and (\\ref{gnoa2}))\n"
+  },
+  {
+    "id": 23,
+    "kind": "math",
+    "value": "\\beq\n\\label{gamkap}\nN_c \\gamma \\simeq- \\int \\frac{a^{3/2}(t-\\tau)}{a^{3/2}(t)}\\cdot\\tau\\cdot G_{\\rm ret}^\\calo(t,t-\\tau)d\\tau.\n\\eeq"
+  },
+  {
+    "id": 24,
+    "kind": "text",
+    "value": "\nIn the flat space limit this corresponds to the condition\n"
+  },
+  {
+    "id": 25,
+    "kind": "math",
+    "value": "\\beq\n\\label{gretto}\nG_{\\rm ret}^\\calo(t,t') \\simeq -\\gamma N_c \\partial_t\\delta(t-t')+\\ldots,\n\\eeq"
+  },
+  {
+    "id": 26,
+    "kind": "text",
+    "value": "\nor Eq. (\\ref{expG}) in Fourier space, after re-introducing the factors of $N_c$.\\\\\n\n The noise part  will affect $\\pi$ only through integrals of the Green's function whose variation time scale is assumed to be much longer than the characteristic scale corresponding to the noise. This means that $\\pi$ will be sensitive only to the integral in cosmic time of $\\nu_{\\calo}(t,t')$, and therefore we can approximate\n"
+  },
+  {
+    "id": 27,
+    "kind": "math",
+    "value": "\\beq\n\\label{twop2}\n\\tilde \\nu_{\\calo}(t,t') \\simeq \\nu_{\\calo} \\delta(t-t').\n\\eeq"
+  },
+  {
+    "id": 28,
+    "kind": "text",
+    "value": "\n\nIf for example we would assume $\\calo$ is in thermal equilibrium, at high temperature $T$ we could use the FD theorem which relates "
+  },
+  {
+    "id": 29,
+    "kind": "math",
+    "value": "\\beq \\label{fdthg}\\gamma \\simeq \\frac{\\nu_{\\calo}}{N_c T}.\\eeq"
+  },
+  {
+    "id": 30,
+    "kind": "text",
+    "value": "\\\\\n\nNotice that the expansion of the universe, i.e. the factors of $e^{-\\frac{3H}{2}\\tau}$, helps to improve the locality of the expression in Eq. (\\ref{gamkap}). That is to say, there is no significant influence between different Hubble times. In this paper we thus take $\\gamma, \\nu_{\\calo}$ to be essentially constant up to slow roll effects, i.e. $\\left(\\frac{\\dot\\gamma}{\\gamma H},\\frac{\\dot\\nu_{\\calo}}{\\nu_{\\calo} H}\\right) \\sim O(\\epsilon)$. \\\\\n\nAt the end of the day the EOM becomes\n"
+  },
+  {
+    "id": 31,
+    "kind": "math",
+    "value": "\\beq\n\\label{fineom}\n\\ddot\\pi_k(t) + (3H+\\gamma) \\dot\\pi_k(t)+ \\frac{c_s^2{\\bf k}^2}{a^2} \\pi_k = -\\frac{1}{N_c} \\delta\\calo_S(t,{\\bf k}),\n\\eeq"
+  },
+  {
+    "id": 32,
+    "kind": "text",
+    "value": "\nplus the behavior of the noise dictated by Eqs. (\\ref{twop1}, \\ref{twop2}).\n\n\\subsection{The homogenous solution}\\label{homog}\n\nHere we show that the homogenous part of Eq. (\\ref{fineom}) becomes negligible at horizon crossing for $\\gamma \\gg H$, which is the domain we are interested in this paper. To solve the equation we first make the change of variables $\\pi = z^{\\lambda/2} \\varphi$, with $\\lambda = 2 + \\gamma/H \\gg 1$. The equation for the perturbation reads\n"
+  },
+  {
+    "id": 33,
+    "kind": "math",
+    "value": "\\beq\n\\label{phik}\n\\left(\\frac{d^2}{dz^2}+ 1 - \\frac{\\lambda}{2z^2}(1+\\lambda/2)\\right)\\varphi_k=0,\n\\eeq"
+  },
+  {
+    "id": 34,
+    "kind": "text",
+    "value": "\nwith $z=-kc_s\\eta$, and $\\eta$ the conformal time. Naively, as in the case with $\\lambda=2$, it appears as if the mode freezes out when $\\lambda^2/z^2 \\sim 1$, namely $z^2 \\sim \\gamma^2/H^2$, or $c_s k_\\star \\sim \\gamma$. However, as we mentioned already, this expectation is incorrect. In fact, we can solve Eq. (\\ref{phik}) exactly and the solution for $\\pi$ looks like\n"
+  },
+  {
+    "id": 35,
+    "kind": "math",
+    "value": "\\beq\n\\pi_k(z) = A^k_1 y_1(z) + A^k_2 y_2(z),\n\\eeq"
+  },
+  {
+    "id": 36,
+    "kind": "text",
+    "value": "\nwhere\n"
+  },
+  {
+    "id": 37,
+    "kind": "math",
+    "value": "\\beq\n\\label{soleq}\ny_1(z,\\nu) = z^{\\nu}J_\\nu(z);~y_2(z,\\nu) = z^\\nu Y_\\nu(z),\n\\eeq"
+  },
+  {
+    "id": 38,
+    "kind": "text",
+    "value": "\n$\\nu=\\frac{3}{2} + \\frac{\\gamma}{2H}$, and $J_\\nu,Y_\\nu$ are Bessel functions. By studying the asymptotic behavior we notice only $y_2$ tends to a finite value as $z\\to 0$,\n"
+  },
+  {
+    "id": 39,
+    "kind": "math",
+    "value": "\\beq\ny_2(z \\to 0 ,\\nu) \\to -\\frac{2^\\nu}{\\pi} \\Gamma[\\nu] \\simeq - 2^\\nu \\sqrt{\\frac{2\\nu}{\\pi}} e^{\\nu(\\log\\nu-1)}  ~~{\\rm for}~\\nu \\gg 1,\n\\eeq"
+  },
+  {
+    "id": 40,
+    "kind": "text",
+    "value": "\nusing Stirling's approximation. In order to estimate $\\pi(z \\to 0)$, and consequently its contribution to the two-point function, we need to specify the initial conditions to extract the value of $A_2^k$. The most conservative approach is to assume that at some given $z_0$ the mode is in the Bunch-Davies vacuum. (More precisely: $\\langle \\pi(z_0)\\pi(z_0)\\rangle \\sim \\langle \\pi(z_0)\\pi(z_0)\\rangle_{\\rm BD}$.) This requires\\footnote{Note that the solutions in Eq. (\\ref{soleq}) tend to $\\cos z_0$ and $\\sin z_0$, and therefore both are required to match into the Bunch-Davies vaccum, i.e. $e^{iz_0}$. This is slightly different than the analysis in sec. \\ref{hompart}, however, notice that the factor of $z_0^{-\\nu}$ resembles the exponential suppression $e^{-\\frac{\\gamma|t_0|}{2}}$ in Eq. (\\ref{anormp}).}\n"
+  },
+  {
+    "id": 41,
+    "kind": "math",
+    "value": "\\beq A^k_2 \\sim z_0^{-\\nu}~~{\\rm for}~~ \\nu \\gg 1.\\eeq"
+  },
+  {
+    "id": 42,
+    "kind": "text",
+    "value": " \n\nThe origin of the early time scale $z_0$ can be understood by taking our dissipative system to be characterized by a typically high energy scale, so that it decouples from fluctuations above this threshold. This implies that we can put $\\pi$ in the Bunch-Davies vacuum above some this scale. Then as it approaches freeze out we have\n"
+  },
+  {
+    "id": 43,
+    "kind": "math",
+    "value": "\\beq\n\\label{f2z0nu}\ny_2(z \\to 0,\\nu) \\simeq 2^\\nu z_0^{-\\nu}\\sqrt{2\\nu} e^{\\nu(\\log\\nu-1)} \\to \\left(\\frac{2\\nu}{z_0}\\right)^\\nu\\sqrt{2\\nu} e^{-\\nu},\n\\eeq"
+  },
+  {
+    "id": 44,
+    "kind": "text",
+    "value": "\nwhich is exponentially small for $z_0> 2\\nu \\gg 1$. Notice that even performing the matching at $z_0=2\\nu \\sim \\lambda \\gg 1$,  as $\\eta \\to 0$ the suppression is still exponential. In other words, the mode does not immediately freeze out, as naively suggested by Eq. (\\ref{phik}), in fact it continues decreasing as it approaches $z \\to \\sqrt{\\nu}$.\\footnote{To show this more explicitly we can take the ratio $\\frac{d\\pi/dz}{\\pi/z}$ which, using\n"
+  },
+  {
+    "id": 45,
+    "kind": "math",
+    "value": "\\beq\n\\frac{d (z^\\nu Y_\\nu)}{dz} =  z^\\nu Y_{\\nu-1}, ~~ Y_\\nu \\sim -\\frac{2^\\nu\\Gamma[\\nu]}{\\pi z^\\nu}~~({\\rm for}~z\\sim 0,~\\nu\\gg 1),\n\\eeq"
+  },
+  {
+    "id": 46,
+    "kind": "text",
+    "value": "\nwe see goes like\n"
+  },
+  {
+    "id": 47,
+    "kind": "math",
+    "value": "\\beq\n\\frac{d\\pi/dz}{\\pi/z} \\simeq \\frac{z^2}{\\nu}.\n\\eeq"
+  },
+  {
+    "id": 48,
+    "kind": "text",
+    "value": "\nThis suggests the solution starts to deviate from the asymptotic value near $z\\sim \\sqrt{\\nu}$, or $c_sk_\\star \\sim \\sqrt{\\gamma H}$, as we anticipated in sec. \\ref{hompart}. }\n\nHence we conclude that the homogenous part effectively becomes unimportant for $\\gamma \\gg H$ which means that the two-point function can be easily dominated by the noise, as we will assume from now on.\n\n\\section{The power spectrum}\\label{power}\n\nThe computation of the power spectrum follows the same step as in sec. \\ref{noise}, except that we have to deal with a somewhat more elaborate Green's function. The particular solution of Eq. (\\ref{fineom}) is given by\n"
+  },
+  {
+    "id": 49,
+    "kind": "math",
+    "value": "\\beq \\pi_k(\\eta)=\\frac{ k c_s}{N_cH^2}\\int^{\\eta}_{\\eta_0} d\\eta' G_{\\gamma}(k c_s|\\eta|,k c_s|\\eta'|)\\frac{\\delta{ \\calo}_S}{(k c_s{\\eta'})^2 },\\ee"
+  },
+  {
+    "id": 50,
+    "kind": "text",
+    "value": "\nwhere\n"
+  },
+  {
+    "id": 51,
+    "kind": "math",
+    "value": "\\beq\n\\label{greengamma}\nG_{\\gamma}(z,z')=\\frac{\\pi}{2} z\\left(\\frac{z}{z'}\\right)^{\\nu-1} \\left[Y_\\nu(z) J_\\nu (z')-J_\\nu (z) Y_\\nu(z')\\right],\n\\eeq"
+  },
+  {
+    "id": 52,
+    "kind": "text",
+    "value": " \nwith $z=-k c_s\\eta$ and  $z'=-k c_s\\eta'$. Then with the use of Eq.~(\\ref{twop1}, \\ref{twop2}) we obtain\n"
+  },
+  {
+    "id": 53,
+    "kind": "math",
+    "value": "\\beq \\nonumber  P_{\\pi}(k)\\equiv \\langle\\pi_k\\pi_k\\rangle_\\calo=\\frac{\\nu_{\\calo}}{N_c^2(kc_s)^3}\\int^{z_0}_z dz' (G_{\\gamma}(z,z'))^2.\n\\eeq"
+  },
+  {
+    "id": 54,
+    "kind": "text",
+    "value": "\n\nFor $kc_s\\eta\\to 0$ and $k c_s \\eta_0 \\to -\\infty$ we find\n"
+  },
+  {
+    "id": 55,
+    "kind": "math",
+    "value": "\\beq\\label{pow1gamma}P_{\\pi}(k)=\\frac{\\nu_{\\calo}}{N_c^2(kc_s)^3}\\frac{16^{\\frac{\\gamma}{H} } (\\frac{\\gamma}{H} +1)^3\n \\Gamma \\left(\\frac{\\gamma +H}{2H}\\right)^4}{\\pi  \\Gamma ( \\frac{2\\gamma}{H} +4)}\\quad \\to\\quad  \\sqrt{\\pi/4}\\frac{ \\nu_{\\calo}^\\star\\sqrt{H_\\star/\\gamma_\\star}}{N^2_c (k_\\star c^\\star_s)^3}\\quad{\\rm for}\\quad \\gamma \\gg H,\\eeq"
+  },
+  {
+    "id": 56,
+    "kind": "text",
+    "value": "\nor ($P_\\zeta = H^2 P_\\pi$)\n"
+  },
+  {
+    "id": 57,
+    "kind": "math",
+    "value": "\\beq\n\\label{zeta2nu}\n\\Delta_{\\zeta} \\equiv k^3P_{\\zeta}(k)\\simeq \\nu_{\\calo}^\\star \\sqrt{\\pi H_\\star/\\gamma_\\star} \\frac{H_\\star^2}{2c_s^\\star\\left({c^\\star_s}N_c\\right)^2}.\n\\eeq"
+  },
+  {
+    "id": 58,
+    "kind": "text",
+    "value": "\n(Recall the $\\star$ means that the quantity is evaluated at freeze out $c_s k/a(t_\\star)\\sim \\sqrt{\\gamma_\\star H_\\star}$.)\n\nIn Fig.~\\ref{casom} the power spectrum is shown as a function of $\\gamma$ and also $|k c_s \\eta_0|$. Notice that the dependence on $\\eta_0$ drops out once we take $|k c_s \\eta_0|\\gg 1$.\\footnote{Note that even in the case where  $\\gamma \\ll H$, this contribution is still larger than the result for the Bunch-Davies vacuum, provided $\\nu_{\\calo}> \\frac{3}{\\pi} N_c{H}^2$. Hence, as long as $N_c<\\epsilon H^2M_p^2$, it is enough to have $\\nu_{\\calo}\\gtrsim\\epsilon H^4M_p^2$.} \n\n\\begin{figure}[htp]\n\\includegraphics[width=8.5cm]{PowvsGamma}\n\\includegraphics[width=8.5cm]{Powvsz0CG}\n\\caption{Top:  Dependence on  $\\gamma$ of power spectrum  given in Eq.~(\\ref{pow1gamma}) normalized as  $p_{\\pi}(\\gamma)=6 N_c^2(kc_s)^3P_{\\pi}(k)/(\\pi \\nu_{\\calo})$, for  $z_0\\to+\\infty$; Bottom: The power spectrum $P_{\\pi}(k)$ for  $|kc_s\\eta|\\to 0$ as a function of $z_0$, for $\\gamma/H=0$ (solid), $\\gamma/H=3$ (Dashed), and $\\gamma/H=9$ (Dotted).}\\label{casom}\n\\end{figure}\n\nIf we were to assume the ADOF are in thermal equilibrium at a (high) temperature $T$, using the FD theorem we would obtain\n"
+  },
+  {
+    "id": 59,
+    "kind": "math",
+    "value": "\\beq\n\\label{tempz}\nk^3\\langle\\zeta_k\\zeta_k\\rangle_T \\simeq  \\sqrt{\\pi\\gamma_\\star H_\\star} \\frac{TH_\\star^2}{2c_s^\\star\\left({c^\\star_s}^2N_c\\right)}.\n\\eeq"
+  },
+  {
+    "id": 60,
+    "kind": "text",
+    "value": "\n\nThese are exactly (up to numerical factors) the results in Eq. (\\ref{tpnuo}, \\ref{tpwarm}). We note that an expression similar to Eq. (\\ref{tempz}) was first introduced in \\cite{berera1,berera2}, and plays a key role in warm inflation models \\cite{warm}.\\\\\n\nA few comments are in order. First of all, since we lump a series of operators into a single one, i.e. $\\calo\\pi$, the local approximations look significantly different depending on the type of terms we are dealing with.  However, once our assumptions are enforced the analysis is quite robust, and does not depend on the very details of the models. The only constraint we need to ensure is the scale invariance of the two-point function, which is guaranteed as long as $\\gamma,\\nu_{\\calo}$ remain relatively constant during inflation (more below).\\\\\n\nThe distinction between models starts to play a role when we move to the non-linear level. For example, the friction term could derive exclusively from the operator $\\calo_\\mu \\delta g^{\\mu0}$, which does not lead to non-linear couplings between $\\calo$ and $\\pi$; or it may be produced by the scalar couplings $f(t)\\calo$ or $\\calo \\delta g^{00}$, in which case we do generate quite distinct non-linear interactions. As we discussed before, $\\calo \\delta g^{00}$ appears to be the cleanest, for which the value of $f_{\\rm NL}$ is tied up with the friction coefficient. This is not always the case for $f(t)\\calo$, where the level of non-Gaussianities depends on the details of the model. However, as we argued before, in cases where there is only one preferred clock and the (non-linear) response $\\delta\\calo_R$ has an emergent shift symmetry and $f_{\\rm NL}$ is equally enhanced. We make this analysis more precise in what follows.\n\n\\section{Non-Gaussianities}\\label{nongaus}\n\nThe non-Gaussian features of the models we discussed in this paper are perhaps the most interesting results from the point of view of observational signatures. Indeed, while the two point function is essentially fixed by the symmetries of the quasi de Sitter space, and characterized just by two parameters, namely the overall amplitude and the tilt, higher order correlation functions enjoy a functional freedom that, if observed, it would allow us to decode a much larger amount of information about the physical mechanisms that produces them.\n\nStudying the full spectrum of non-Gaussian signatures for the vast class of possible operators we introduced is difficult, mainly because of its generality, and thus lies beyond the scope of the present paper. Therefore we will concentrate on the leading (scalar) operators $\\calo \\delta g^{00}$ and $f(t)\\calo$. Very interestingly, we will show that enforcement of the symmetries allows us to relate the linear and (some of) the non-linear contributions in the EOM, such that large dissipation will be linked to large non-Gaussianities. In the next sections we assume dissipation takes on the form $\\gamma\\dot\\pi$. We will study the case of higher derivative dissipation in sec. \\ref{localo2}.\n\n\n%--------------------------------------------------------------\n\\subsection{$\\calo \\delta g^{00}$}\\label{Nolocalo2}\n\nHere we analyze a situation in which the dominant interaction term has one time derivative of $\\pi$, and it is produced by scalar operators of the form $-\\calo\\delta g^{00}$. This term has a piece which is linear in $\\dot\\pi$, more precisely $2\\calo \\dot\\pi$. (In what follows we absorb the factor of 2 induced from Eq. (\\ref{g00pi}) into the operator $\\calo$, i.e. $\\calo \\to \\calo/2$.) \n\nNotice that now we have a choice about the local approximation described in sec. \\ref{localapp}, namely it may apply to $\\langle\\delta{\\calo}_S\\delta{\\calo}_S\\rangle$ and $G^{\\calo}_{\\rm ret}$, or  $\\langle\\delta\\dot{{\\calo}}_S\\delta\\dot{{\\calo}}_S\\rangle$ and $G^{\\dot{\\calo}}_{\\rm ret}$. For the first case we will not obtain the usual dissipative term $\\gamma\\dot\\pi$, but higher derivative terms (as in the ADL force). Here we analyze the second possibility and discuss the former in sec. \\ref{localo2}.\\\\\n\nSince we take the scale of time variation for $\\delta\\calo_S$ to be much shorter than $1/H$, the main contribution to the noise comes from $\\delta\\dot{\\calo}_S \\gg H\\delta\\calo_S$. We can then basically follow the same steps as in sec. \\ref{localapp} to show that to linear order the equation for $\\pi$ reduces to\nEq.~(\\ref{fineom}) with ${\\delta\\calo_S}$ replaced by $\\delta\\dot{\\calo}_S$. Then the power spectrum is  given in Eq.~(\\ref{pow1gamma}), with  the\nreplacement $\\nu_{\\calo}\\to\\nu_{\\dot{\\calo}}$. More explicitly, to second order the equation for $\\pi$ is given by\n"
+  },
+  {
+    "id": 61,
+    "kind": "math",
+    "value": "\\beq\n\\ddot\\pi + 3H\\dot\\pi  - \\frac{c_s^2\\nabla^2}{a^2}\\pi = -N^{-1}_c\\left(\\delta\\dot{\\calo} (1+\\dot{\\pi})+\\delta\\calo\\ddot\\pi -\\frac{1}{a^2}\\partial_i(\\delta\\calo\\partial_i\\pi)\\right),\\label{pieqnlprev}\n\\eeq"
+  },
+  {
+    "id": 62,
+    "kind": "text",
+    "value": " where $\\delta\\calo=\\delta\\calo_S+\\delta\\calo_R$. From Eq.~(\\ref{g00pi}) we see that the force disturbing $\\delta \\calo$ is given by\n$F=\\dot{\\pi}+\\dot{\\pi}^2/2-(\\partial_i\\pi)^2/2$. Using however the local approximation for the time derivative of the response part, $\\delta\\dot{\\calo}_R$ as in  sec. \\ref{localapp}, we obtain\n"
+  },
+  {
+    "id": 63,
+    "kind": "math",
+    "value": "\\beq\n\\label{ocaldot}\n\\delta\\dot\\calo_R\\simeq N_c\\gamma\\left(\\dot{\\pi} +\\frac{\\dot{\\pi}^2}{2}-\\frac{\\partial_i\\pi\\partial_i\\pi}{2 a^2}\\right).\n\\eeq"
+  },
+  {
+    "id": 64,
+    "kind": "text",
+    "value": "\n\nAs we already noted in sec. \\ref{nonlineff}, working within this local approximation (and without making additional assumptions) we\nare not able to compute all the contributions to non-Gaussianities, since in Eq.~(\\ref{pieqnlprev}) there appear  not only\n $\\delta\\dot{\\calo}$ but also ${\\delta\\calo}$. In general, in the perspective of EFT we do not foresee any fine cancellations and,\nas we estimated in Eq. (\\ref{ratiogk}), we expect  the contributions to the level of non-Gaussianities of the non-local terms\nto be about the same as the local ones. Therefore, in what follows we concentrate on the terms involving only $\\dot{\\calo}$ and reduce Eq.~(\\ref{pieqnlprev}) to\n"
+  },
+  {
+    "id": 65,
+    "kind": "math",
+    "value": "\\beq\n\\ddot\\pi + (3H+\\gamma)\\dot\\pi  - \\frac{c_s^2\\nabla^2}{a^2}\\pi =\\frac{\\gamma}{2}\\frac{\\partial_i\\pi\\partial_i\\pi}{a^2}-\\frac{3\\gamma}{2}\\dot{\\pi}^2 -N^{-1}_c\\delta\\dot{\\calo}_S (1+\\dot{\\pi}).\\label{pieqnl}\n\\eeq"
+  },
+  {
+    "id": 66,
+    "kind": "text",
+    "value": "\nLet us start by focusing on the contribution of the first term on the RHS: $\\gamma (\\partial_i\\pi)^2$. To analyze the non-Gaussianities we  decompose $\\pi=\\pi_1+\\pi_2$, where the subscripts represent as usual the order of the solution for the fluctuations. Then\n"
+  },
+  {
+    "id": 67,
+    "kind": "math",
+    "value": "\\be\\label{pi1nl}\\pi_1(k,\\eta)=\\frac{ k c_s}{N_cH^2}\\int^{\\eta}_{\\eta_0} d\\eta' g_{\\gamma}(k c_s|\\eta|,k c_s|\\eta'|) \\delta\\dot{ \\calo}_S,\\ee"
+  },
+  {
+    "id": 68,
+    "kind": "text",
+    "value": " where\n$g_{\\gamma}(k c_s|\\eta|,k c_s|\\eta'|)=G_{\\gamma}(k c_s|\\eta|,k c_s|\\eta'|)/(k c_s{\\eta'})^2$ with $G_{\\gamma}$ defined in Eq. (\\ref{greengamma}),\nand (using Eq. (\\ref{pi1nl}))\n"
+  },
+  {
+    "id": 69,
+    "kind": "math",
+    "value": "\\begin{eqnarray}\n\\pi_2(k_3,0)&=&\\frac{\\gamma k_3 c_s^3}{2 N_c^2H^4} \\int^0_{\\eta_0} d\\eta' {\\eta'}^2  g_{\\gamma}(0,k_3c_s|\\eta'|)\\int\\frac{d^3{\\bf q}}{(2\\pi)^3} |{\\bf q}|  |{\\bf k}_3-{\\bf q}| ({\\bf q}\\cdot({\\bf k}_3-{\\bf q}))\\nonumber\\\\\n&\\times&\\int^{\\eta'}_{\\eta_0} d\\eta'' g_{\\gamma}(qc_s|\\eta'|,qc_s|\\eta''|) \\int^{\\eta'}_{\\eta_0} d\\eta''' g_{\\gamma}(|{\\bf k}_3-{\\bf q}| c_s|\\eta'|,|{\\bf k}_3-{\\bf q}| c_s|\\eta'''|) \\nonumber\\\\&\\times&\\delta\\dot{\\calo}_S({\\bf q},\\eta'')\\delta\\dot{\\calo}_S({\\bf k}_3-{\\bf q},\\eta''').\\label{pi2nl}\n\\end{eqnarray}"
+  },
+  {
+    "id": 70,
+    "kind": "text",
+    "value": "\n(Notice $\\pi_2$ is sourced by terms quadratic in the perturbations: $\\delta\\dot{\\calo}_S$, $\\pi_1$.) \\\\\n\nWe want to compute the 3-point function for $\\zeta\\simeq -H\\pi$ in the limit $\\eta\\to 0$:\n"
+  },
+  {
+    "id": 71,
+    "kind": "math",
+    "value": "\\begin{eqnarray}\\langle\\zeta({\\bf k}_1,0)\\zeta({\\bf k}_2,0)\\zeta({\\bf k}_3,0)\\rangle&=&\\langle\\zeta_1({\\bf k}_1,0)\\zeta_1({\\bf k}_2,0)\\zeta_2({\\bf k}_3,0)\n\\rangle+ \\mbox{cyclic sum in $k_i$'s}\\nonumber\\\\\n&\\equiv&(2\\pi)^3 \\delta^{(3)}({\\bf k}_1+{\\bf k}_2+{\\bf k}_3) F(k_1,k_2,k_3). \\end{eqnarray}"
+  },
+  {
+    "id": 72,
+    "kind": "text",
+    "value": "\nThen, after Eqs. (\\ref{twop1}) and (\\ref{twop2}) plus the condition that the noise is Gaussian (we will consider non-Gaussian noise later), i.e.\n"
+  },
+  {
+    "id": 73,
+    "kind": "math",
+    "value": "\\begin{eqnarray}\\label{os}&&\\langle\\delta\\dot{ \\calo}_S({\\bf k}_2,\\tilde{\\eta'}) \\delta\\dot{\\calo}_S({\\bf k}_1,\\tilde{\\eta})  \\delta\\dot{\\calo}_S({\\bf q},\\eta'')\n\\delta\\dot{\\calo}_S({\\bf k}_3-{\\bf q},\\eta''')\\rangle=(2\\pi)^6\\nu_{\\dot{\\calo}}^2\\frac{\\delta^{(3)}({\\bf k}_1+{\\bf k}_2+{\\bf k}_3)}{a^4(\\eta'')a^4(\\eta''')}\\\\\n&&\\times \\left\\{\\delta(\\tilde{\\eta'}-\\eta'')\\delta(\\tilde{\\eta}-\\eta''')\\delta^{(3)}({\\bf k}_2+{\\bf q})+\n\\delta(\\tilde{\\eta}-\\eta'')\\delta(\\tilde{\\eta'}-\\eta''')\\delta^{(3)}({\\bf k}_1+{\\bf q})\\right\\}\\,\\,\\,(\\mbox{for} \\,\\,\\,k_3\\neq 0)\\nn,\n\\end{eqnarray}"
+  },
+  {
+    "id": 74,
+    "kind": "text",
+    "value": "\ndefining $x_i=k_i/k$, with $k$ an arbitrary scale with units of momentum, we obtain (for $\\eta_0\\to -\\infty$):\n"
+  },
+  {
+    "id": 75,
+    "kind": "math",
+    "value": "\\begin{eqnarray}\\label{fdeltagooshape}\n&&F(x_1,x_2,x_3)= k^6 F(k_1,k_2,k_3)=-\\frac{\\gamma H^3\\nu_{\\dot{\\calo}}^2}{2N_c^4c_s^8}x_1^2x_2^2x_3(x_3^2-x_2^2-x_1^2)\\int_{0}^{+\\infty} dy y^2  g_{\\gamma}(0,x_3 y)\\\\\n&&\\times\\int_{y}^{+\\infty} dz\\,{z}^4 \\,g_{\\gamma}(x_2 y,x_2 z)  g_{\\gamma}(0,x_2 z)\\int_{y}^{+\\infty} dw\\,{w}^4 \\,g_{\\gamma}(x_1 y,x_1 w) g_{\\gamma}(0,x_1 w)+\\mbox{cyclic sum in  $x_i$'s}\\nn\n\\end{eqnarray}"
+  },
+  {
+    "id": 76,
+    "kind": "text",
+    "value": " (we performed a change of variables: $y'=-kc_s\\eta'$, $z=-kc_s\\eta''$, $w=-kc_s\\eta''$).\\\\\n\nThe associated parameter $f_{\\rm NL}^{\\rm eq}$ (defined for equilateral configurations) is given by\n"
+  },
+  {
+    "id": 77,
+    "kind": "math",
+    "value": "\\be F(1,1,1)=\\frac{18}{5}f_{\\rm NL}^{\\rm eq}\\Delta^2_{\\zeta},\\ee"
+  },
+  {
+    "id": 78,
+    "kind": "text",
+    "value": "\n(with $\\Delta_{\\zeta}=k^3 P_{\\zeta}$), and in terms of the Green's functions:\n"
+  },
+  {
+    "id": 79,
+    "kind": "math",
+    "value": "\\begin{eqnarray}\nf_{\\rm NL}^{\\rm eq}&=&\\frac{5}{12}\\left(\\frac{\\gamma}{Hc_s^2}\\frac{2^{-8\\gamma/H}\\pi^2 {\\Gamma\\left(\\frac{2\\gamma}{H}+4\\right)}^2}{\\lp\\frac{\\gamma}{H}+1\\rp^6{\\Gamma\\lp\\frac{\\gamma+H}{2 H}\\rp}^8}\\right)\n \\int_{0}^{+\\infty} dy {y}^2 g_{\\gamma}(0, y)\\int_{y}^{+\\infty} dz z^4  g_{\\gamma}( y,z)g_{\\gamma}(0, z) \\nonumber\\\\\n&\\times&\\int_{y}^{+\\infty} dw w^4  g_{\\gamma}( y,w)g_{\\gamma}(0, w),\\label{fnlgoonoloc}\n\\end{eqnarray}"
+  },
+  {
+    "id": 80,
+    "kind": "text",
+    "value": " where we have used the power spectrum given in Eq.~(\\ref{pow1gamma}) (with $\\nu_{\\calo}\\to\\nu_{\\dot{\\calo}}$).\nPerforming a numerical integration we extract\n"
+  },
+  {
+    "id": 81,
+    "kind": "math",
+    "value": "\\beq\n\\label{fnlNL}\nf_{\\rm NL}^{\\rm eq}\\simeq-\\frac{\\gamma}{4H c_s^2},\\eeq"
+  },
+  {
+    "id": 82,
+    "kind": "text",
+    "value": "\nin the strong dissipative regime $\\gamma\\gg H$. Notice this can be large even when $c_s\\simeq 1$. Using the analysis from Ref. \\cite{Senatore:2009gt} we can also quote a bound at order of magnitude level:\n"
+  },
+  {
+    "id": 83,
+    "kind": "math",
+    "value": "\\beq\n\\label{boundfnl}\n\\frac{\\gamma}{H c_s^2} \\lesssim 500.\n\\eeq"
+  },
+  {
+    "id": 84,
+    "kind": "text",
+    "value": "\n\nIn Fig. \\ref{shapegoonoloc} we plot the shape for two values of $\\gamma$ ($\\gamma=4H$ and $40H$). Notice there is a peak on equilateral configurations, and another peak around $x_2\\simeq x_3\\simeq 1/2$. The latter is one of the main features in the bispectrum, and it is due to the fact that the fluctuations are dominated by the noise.\n\nFor moderate values of $\\gamma\\gg H$, the shape resembles the orthogonal one described in \\cite{Senatore:2009gt}, which is currently at $2\\sigma$ level in the WMAP 7-yr data~\\cite{Komatsu:2010fb}.\\\\\n\n\\begin{figure}[htp]\n\\includegraphics[width=8.5cm]{deltag00Noloc4}\n\\includegraphics[width=8.5cm]{deltag00Noloc40}\n\\caption{The shape $F(x_2,x_3)=x_2^2x_3^2 \\frac{F(1,x_2,x_3)}{F(1,1,1)}$ given by Eq. (\\ref{fdeltagooshape}) for $\\gamma= 4 H$ (top) and $\\gamma=40 H$ (bottom). To avoid showing equivalent configurations twice, the function is set to zero outside the  region $1-x_2\\leq x_3\\leq x_2$.}\\label{shapegoonoloc}\n\\end{figure}\n\n\nSimilarly, for the second source term on the RHS of Eq.~(\\ref{pieqnl}) we obtain\n"
+  },
+  {
+    "id": 85,
+    "kind": "math",
+    "value": "\\begin{eqnarray}\nf_{\\rm NL}^{\\rm eq}&=&-\\frac{5}{2}\\frac{\\gamma}{H}\\left(\\frac{2^{-8\\gamma/H}\\pi^2 {\\Gamma\\left(\\frac{2\\gamma}{H}+4\\right)}^2}{\\lp\\frac{\\gamma}{H}+1\\rp^6{\\Gamma\\lp\\frac{\\gamma+H}{2 H}\\rp}^8}\\right)\n \\int_{0}^{+\\infty} dy  g_{\\gamma}(0, y)\\int_{y}^{+\\infty} dz z^4  y\\frac{d g_{\\gamma}}{dy}( y,z)g_{\\gamma}(0, z) \\nonumber\\\\\n&\\times&\\int_{y}^{+\\infty} dw w^4  y\\frac{dg_{\\gamma}}{dy}(y,w)g_{\\gamma}(0, w).\\label{fnlgoonolocdot1}\n\\end{eqnarray}"
+  },
+  {
+    "id": 86,
+    "kind": "text",
+    "value": " Despite appearances, the contribution from this term\nto $f_{\\rm NL}^{\\rm eq}$ does not increase with $\\gamma$ and becomes an order one sub-dominant effect. This follows from the properties of the Green's functions, and in particular because time derivatives scale as powers of $H$ (rather than $\\sqrt{\\gamma H}$), since this is the time dependence of the Green function at freeze out. This is indeed what we expected judging from our results in flat space of sec. \\ref{noise} (``$\\tau_{\\rm eq}$'' $\\sim 1/H$). See appendix \\ref{greenf} for some collective details on these Green's functions.\\\\\n\nFor the last term in Eq.~(\\ref{pieqnl}) we find\n"
+  },
+  {
+    "id": 87,
+    "kind": "math",
+    "value": "\\begin{eqnarray}\\label{fnlOdotpi}\nf_{\\rm NL}^{\\rm eq}&=&\\frac{5}{3}\\left(\\frac{2^{-8\\gamma/H}\\pi^2 {\\Gamma\\left(\\frac{2\\gamma}{H}+4\\right)}^2}{\\lp\\frac{\\gamma}{H}+1\\rp^6{\\Gamma\\lp\\frac{\\gamma+H}{2 H}\\rp}^8}\\right)\n \\int_{0}^{+\\infty} dy  y^4\\, (g_{\\gamma}(0, y))^2\\int_{y}^{+\\infty} dz z^4  y\\frac{d g_{\\gamma}}{dy}(y,z)g_{\\gamma}(0, z),\\label{fnlgoonolocdot2}\n\\end{eqnarray}"
+  },
+  {
+    "id": 88,
+    "kind": "text",
+    "value": " which is also a contribution of order one that does not increase with $\\gamma$. The shape corresponding to this term\nis shown in Fig.~\\ref{ngg10} for $\\gamma=10 H$.\n\nAs expected (because the contributions involve time derivatives of $\\pi$, and also because $\\delta{\\cal O}$ is local) all of these shapes are suppressed as we approach the squeezed limit. That is when one of the momenta, say $k_1\\equiv k_L$ (long mode), is much smaller than the other two (short modes), i.e. $k_L \\ll k_S$ (with $k_S=|{\\bf k}_2-{\\bf k}_3|/2$). However an interesting question remains, and that is whether the suppression entails one (or more) power(s) of $k_L$ compared with the local shape, since this particular scaling could potentially distinguish signatures from single field models in measurements of the scale-dependent bias \\cite{creminelli11}. We return to this point in the following section. (Let us point out that from Fig.~\\ref{ngg10} the shape itself approaches zero in the squeezed limit $k_L/k_S\\to 0$, thus  $F(x_1,x_2,x_3)$ cannot scale like $1/x_L^2\\equiv (k_S/k_L)^2$, but rather as a softer power.)\n\n\\begin{figure}[htp]\n\\includegraphics[width=8.5cm]{NGGamaOdotpigamma10}\n\\caption{The shape  $F(x_2,x_3)=x_2^2x_3^2 \\frac{F(1,x_2,x_3)}{F(1,1,1)}$ for $\\gamma= 10 H$ corresponding to the last term in Eq. (\\ref{pieqnl}).}\\label{ngg10}\n\\end{figure}\n\n%------------------------------------------------------\n\n\\subsection{$f(t)\\calo$~I: linear response}\\label{ftcalo}\n\nLet us now consider the contribution from an interaction of the form $f(t)\\calo$ as in Eq.~(\\ref{inter1n}). We divide the possibilities in two: linear and non-linear response. We treat the latter in the next section.\n\nTo compute non-linear effects in linear response theory we use the force affecting the ADOF to second order in $\\pi$. This is given by $F=\\dot{f}\\pi+\\ddot{f}\\pi^2/2+\\ldots$, where the dots stand for terms with higher powers of $\\pi$ proportional to higher temporal derivatives of $f(t)$. As we mentioned in sec \\ref{appsh}, in general we neglect these terms in the slow roll approximation. Therefore in what follows we will treat $\\dot f$ as essentially constant.\\\\\n\nWorking within the local approximation for $G_{\\rm ret}^\\calo$, the response part $\\delta\\calo_R$ can be written as\n"
+  },
+  {
+    "id": 89,
+    "kind": "math",
+    "value": "\\be\n\\label{ddff}\n\\delta\\calo_R\\simeq \\frac{\\gamma N_c}{\\dot{f}}\\left(\\dot{\\pi}+\\frac{\\ddot{f}}{\\dot{f}}\\dot{\\pi}\\pi\\right),\n\\ee"
+  },
+  {
+    "id": 90,
+    "kind": "text",
+    "value": "\nup to terms suppressed by higher powers of the slow roll parameter(s). (Recall we assume the presence of an emergent shift symmetry to neglect terms which do not involve derivatives.) Thus the equation for $\\pi$ to second order reads\n"
+  },
+  {
+    "id": 91,
+    "kind": "math",
+    "value": "\\be\\label{pia}\n\\ddot{\\pi}+(3H+\\gamma)\\dot{\\pi}+\\frac{k^2c_s^2}{a^2}\\pi+2\\gamma\\frac{\\ddot{f}}{\\dot{f}}[\\pi\\dot{\\pi}]_k=-N_c^{-1}\\left(\\dot f\\delta \\calo_S+\\ddot{f}[\\pi\\delta \\calo_S]_k\\right),\n\\ee"
+  },
+  {
+    "id": 92,
+    "kind": "text",
+    "value": " where  the noise part $\\delta\\calo_S$ satisfies Eqs.~(\\ref{twop1}, \\ref{twop2}). By comparing this equation\nwith Eq.~(\\ref{fineom}), it follows that the power spectrum is the same as the one given in Eq.~(\\ref{pow1gamma}), up to an overall factor of $\\dot{f}^2$,\nnamely $\\nu_{\\calo} \\to \\nu_{f\\calo}=\\dot f^2\\nu_{\\calo}$. Therefore, to guarantee the scale invariance of the power spectrum we require $\\dot \\nu_{f\\calo}/(\\nu_{f\\calo}H) \\simeq O(\\epsilon)$ (more on this below).\\\\\n\n As we stressed in sec. \\ref{appsh}, the contribution to $f_{\\rm NL}$ from the non-linear terms above will be suppressed by $\\ddot f/(\\dot f H) \\simeq O(\\epsilon)$. Notice that at this order we can no longer ignore other effects, such as the mixing with gravity. Moreover, we show in the next section that non-Gaussianities will be dominated by the non-linear response. Nevertheless, we include here the computation for the terms in Eq. (\\ref{pia}) for two reasons. First of all we explicitly show that even though the non-linear terms are proportional to $\\gamma$, it factors out in the final answer; but more importantly because it appears to give us a contribution in the squeezed limit which could be non-negligible in cases where $\\dot f$ is not a constant.\n\nLet us start analyzing the last source term in Eq.~(\\ref{pia}): $\\ddot{f}\\pi\\delta \\calo_S$. Since this term does not involve enough derivatives of $\\pi$, it\n is easy to see that the shape, given by $F(x_2,x_3)=x_2^2x_3^2 \\frac{F(1,x_2,x_3)}{F(1,1,1)}$, will have its maximum contribution in the squeezed limit. In  such limit the parameter $f_{\\rm NL}$ is given by\n"
+  },
+  {
+    "id": 93,
+    "kind": "math",
+    "value": "\\begin{equation}\\label{squ}\nf_{\\rm NL}^{\\rm sq} =\\lim_{x_3\\to 0,\\,\\ x_2\\to 1}\\frac{5}{6} \\frac{F(1,x_2,x_3)}{(P_{\\zeta}(1)P_{\\zeta}(x_2)+P_{\\zeta}(1)P_{\\zeta}(x_3)+P_{\\zeta}(x_2)P_{\\zeta}(x_3))}.\n\\end{equation}"
+  },
+  {
+    "id": 94,
+    "kind": "text",
+    "value": "\nThen following a procedure similar to that of the previous sections we find "
+  },
+  {
+    "id": 95,
+    "kind": "math",
+    "value": "\\beq f_{\\rm NL}^{\\rm sq}\\simeq-\\frac{5 }{6}\\frac{\\ddot{f}}{H\\dot{f}} \\label{fnlddf},\\eeq"
+  },
+  {
+    "id": 96,
+    "kind": "text",
+    "value": "\nwhatever the value for $\\gamma$. This agrees with our previous estimation in Eq. (\\ref{estfto}). Similarly, one can compute the contribution of the last term on the LHS of Eq. (\\ref{pia}). Even though this term is proportional to $\\gamma$, the parameter $f_{\\rm NL}$ does not result in a significant increase compared to the one above. This follows from our heuristic arguments in sec. \\ref{appsh}, but can also be seen directly from the properties of the Green's function, see appendix \\ref{greenf}. Since the approximate shift symmetry requires $\\ddot{f}/(H\\dot{f})\\simeq O(\\epsilon)$, this leads to very small $f_{\\rm NL}^{\\rm sq}$ in Eq. (\\ref{fnlddf}), as we mentioned before.\\\\\n\nOne may nonetheless worry about the result in Eq. (\\ref{fnlddf})\nhad we assumed $\\dot f, \\nu_{\\calo}$ were not approximately constant, while keeping constant the product $\\nu_{f\\calo}=\\dot f^2\\nu_{\\calo}$, which is the combination that appears in the power spectrum. However, notice that the above computation is incomplete since at non-linear level there are contributions that arise from the fact that  $\\pi$ also affects the probability density functional for the noise. (These are suppressed in the limit $\\dot\\nu_{\\calo} \\ll H\\nu_{\\calo}.$) If all the contributions are taken into account, at the end of the day we should have $f_{\\rm NL}^{\\rm sq}$ proportional to $(n_s-1)$ to be consistent with the fact that we did not include any type of perturbation outside of the horizon other than the clock \\cite{consist,Cheung:2007sv}. \n\nTo better understand the properties in the squeezed limit, let us compare the contributions from $\\delta{\\calo}\\dot{\\pi}$ and $\\delta{\\calo}\\pi$ type of non-linearities, which appear commonly in our study. It is not difficult to see that if we fix the $\\calo$ operators to be the same in both cases, the relevant difference between the two is that while the shape for the latter contains $g_{\\gamma}(x_L y, z)$, the former involves $ y \\partial_{y}g_{\\gamma}(x_L y, z)$ (where $z$ and $y$ are integration variables). Using  "
+  },
+  {
+    "id": 97,
+    "kind": "math",
+    "value": "\\beq\n\\frac{y\\partial_{y}g_{\\gamma}(x_L y, z)}{  g_{\\gamma}(x_L y, z)}\\sim \\frac{x_L^2y^2}{(1+\\gamma/H)},\n\\eeq"
+  },
+  {
+    "id": 98,
+    "kind": "text",
+    "value": "  for $y x_L \\ll 1$, and taking into account that the integrals are dominated by values of $y$ and $z$ near $\\sqrt{\\gamma/H}$ (see appendix \\ref{greenf}), we conclude that the squeezed limit for $\\delta{\\calo}\\dot{\\pi}$ is suppressed by a factor of $x_L^2 = (k_L/k_S)^2$ with respect to the contribution from $\\delta{\\calo}\\pi$, in the region $x^2_L \\ll H/\\gamma$. This agrees with the findings in \\cite{creminelli11}. We will discuss the squeezed limit and consistency conditions in more detail elsewhere.\\\\\n\nWe study next the non-linear response for a $f(t)\\calo$ coupling, which turn out to provide the largest contributions to non-Gaussianities.\n\n\\subsection{$f(t)\\calo$~II: non-linear response}\\label{nonlrep}\n\nSo far we considered the response $\\delta\\calo_R$ to linear order in $\\pi$. This entails the knowledge of only the two point function $G_{\\rm ret}^\\calo$ (see Eq. (\\ref{gnoa1})). However, we can also induce non-linearities by going to higher $n$-point functions of the $\\delta\\calo$'s, for instance including their three point function\n"
+  },
+  {
+    "id": 99,
+    "kind": "math",
+    "value": "\\beq\nC^{\\calo}_{\\rm ret} (x,y,z) \\equiv \\langle [\\delta\\calo(z),[\\delta\\calo(y),\\delta\\calo(x)]]\\rangle \\theta(t_y-t_z)\\theta(t_x-t_y),\n\\eeq"
+  },
+  {
+    "id": 100,
+    "kind": "text",
+    "value": "\nwhile keeping the leading order force $F(\\pi) = \\dot f \\pi$ (in what follows we treat $\\dot f$ as constant). Then we have\n"
+  },
+  {
+    "id": 101,
+    "kind": "math",
+    "value": "\\beq\n\\label{calo12}\n\\dot f \\delta\\calo_R(x) = -\\dot f^2 \\int G^\\calo_{\\rm ret}\\pi(y) dy + \\dot f^3 \\int dydz~C^{\\calo}_{\\rm ret}(x,y,z)\\pi(y)\\pi(z) + \\ldots\n\\eeq"
+  },
+  {
+    "id": 102,
+    "kind": "text",
+    "value": "\nwhere the ellipses represent higher order corrections.\n\nA priori, even assuming both are local in space and time, we would not expect any relationship between $G^{\\calo}_{\\rm ret}$ and $C^{\\calo}_{\\rm ret}$.\nHowever, as we argue below, we will have a connection in cases where the response of the ADOF is governed by a single (preferred) clock.\\\\\n\nAs we emphasized throughout the paper to obtain a dissipative term from an operator $f(t)\\calo$ we require (assuming a local Green's function)\n"
+  },
+  {
+    "id": 103,
+    "kind": "math",
+    "value": "\\beq\n\\dot f  \\delta^{(1)}\\calo_R = N_c \\gamma \\dot\\pi.\n\\eeq"
+  },
+  {
+    "id": 104,
+    "kind": "text",
+    "value": "\nNotice that this expression can be suggestively re-written as\n"
+  },
+  {
+    "id": 105,
+    "kind": "math",
+    "value": "\\beq\n\\label{onecalR}\n\\dot f  \\delta^{(1)}\\calo_R = N_c \\gamma~\\delta^{(1)}\\left\\{n^\\mu\\partial_\\mu(t+\\pi)\\right\\},\n\\eeq"
+  },
+  {
+    "id": 106,
+    "kind": "text",
+    "value": "\nwhere (note $n^0= 1$ up to $O(\\pi^2)$)\n"
+  },
+  {
+    "id": 107,
+    "kind": "math",
+    "value": "\\beq\n\\label{nmu2} n^{\\mu}=\\frac{-g^{\\mu\\nu}\\partial_{\\nu}{\\tilde t}}{\\sqrt{-g^{\\nu\\rho}\\partial_{\\nu}{\\tilde t}\\partial_{\\rho}{\\tilde t}}},\n~~\\tilde t = t+\\pi, \\eeq"
+  },
+  {
+    "id": 108,
+    "kind": "text",
+    "value": "   \nsuch that Eq. (\\ref{onecalR}) makes the symmetries manifest: $\\calo$ is a scalar operator. This allows us now to extrapolate the response to all orders in $\\pi$, that is\\footnote{In principle this can be generalized to $F_\\calo\\left(\\sqrt{-g^{\\nu\\rho}\\partial_{\\nu}{\\tilde t}\\partial_{\\rho}{\\tilde t}}\\right)$. For simplicity we restrict to $F_\\calo(x)=x$.}\n"
+  },
+  {
+    "id": 109,
+    "kind": "math",
+    "value": "\\beq\n\\label{gretto2p}\n\\dot f  \\delta^{(n)}\\calo_R = N_c \\gamma~\\delta^{(n)}\\left\\{n^\\mu\\partial_\\mu(t+\\pi)\\right\\} = N_c\\gamma~\\delta^{(n)}\\left(\\sqrt{-g^{\\nu\\rho}\\partial_{\\nu}{\\tilde t}\\partial_{\\rho}{\\tilde t}}\\right).\n\\eeq"
+  },
+  {
+    "id": 110,
+    "kind": "text",
+    "value": "\n\nIt is then straightforward to show the above equation implies a relationship between linear and non-linear terms in the EOM. For example in the unitary gauge, i.e. $\\tilde t=t$, \n"
+  },
+  {
+    "id": 111,
+    "kind": "math",
+    "value": "\\beq\n\\label{dpcalfn}\n\\dot f  \\delta^{(n)}\\calo_R = N_c \\gamma~\\delta^{(n)}\\sqrt{-g^{00}},\n\\eeq"
+  },
+  {
+    "id": 112,
+    "kind": "text",
+    "value": "\nwhich allows us to read off the $\\pi$ interactions using $g^{00}(\\pi) = -1-2\\dot\\pi -\\dot\\pi^2 + (\\partial_i\\pi)^2$. Hence\n"
+  },
+  {
+    "id": 113,
+    "kind": "math",
+    "value": "\\bea\n-\\dot f \\delta^{(1)}\\calo_R &=& -N_c \\gamma \\dot\\pi,\\\\\n-\\dot f \\delta^{(2)}\\calo_R &=& \\frac{1}{2} N_c \\gamma (\\partial_i\\pi)^2 \n\\label{dpcalo2}.\n\\eea"
+  },
+  {
+    "id": 114,
+    "kind": "text",
+    "value": "\nWe thus get a non-linear term that resembles the one we obtained for the case of an exact shift symmetry. (See the first term on the RHS of Eq. (\\ref{pieqnl}), compare also with Eq. (\\ref{ocaldot}).\\footnote{Notice that for the type of non-linear response in Eq. (\\ref{dpcalfn}) we did not obtain a $\\dot\\pi^2$ term. However, these can be generated if we allow for a generic function $F_\\calo(\\sqrt{-g^{00}})$.}) Then the analysis of the non-Gaussianities follows as in sec. \\ref{Nolocalo2} (see also sec. \\ref{shsym}), so that\n"
+  },
+  {
+    "id": 115,
+    "kind": "math",
+    "value": "\\beq\nf_{\\rm NL} \\simeq -\\frac{\\gamma}{c_s^2 H},\n\\eeq"
+  },
+  {
+    "id": 116,
+    "kind": "text",
+    "value": "\nas anticipated in sec. \\ref{nlrep}. The shape will also resemble Fig.~\\ref{shapegoonoloc}.\\\\\n\nThe previous argument is perhaps better illustrated if we particularize to the traditional model of scalar field inflation. The crucial point is that the response to the perturbation must be compatible with diffeomorphism invariance. Then in order to induce dissipation we need factors of $\\dot\\phi$ which in turn lead to large non-Gaussianities (for $\\gamma \\gg H$) as sketched in \\ref{nlrep}. \n\nThe reasoning goes as follows. Let us consider an interaction Hamiltonian that takes the form (with $\\calo$ a scalar operator)\n"
+  },
+  {
+    "id": 117,
+    "kind": "math",
+    "value": "\\beq\nH_{\\rm int} = \\phi\\; \\calo \\label{hint}.\n\\eeq"
+  },
+  {
+    "id": 118,
+    "kind": "text",
+    "value": "\nThe EOM for the inflaton thus becomes\n"
+  },
+  {
+    "id": 119,
+    "kind": "math",
+    "value": "\\beq\n\\label{eomphi}\nD_\\phi \\phi = \\calo,\n\\eeq"
+  },
+  {
+    "id": 120,
+    "kind": "text",
+    "value": "\nwhere $D_\\phi \\phi=0$ represents the EOM in the absence of $\\calo$. There is certainly a dynamical system behind $\\calo$, with its own $\\calL_\\calo$. Nevertheless, in the spirit of EFT we do not make any assumption other than the coupling in Eq. (\\ref{hint}). We start now by solving for the background, i.e. $\\bphi(t)$.  Assuming a local response we have\n"
+  },
+  {
+    "id": 121,
+    "kind": "math",
+    "value": "\\beq\n\\label{gcalo}\n\\langle \\bphi|\\calo |\\bphi\\rangle = F_\\calo(\\bphi, \\dot{\\bphi}),\n\\eeq"
+  },
+  {
+    "id": 122,
+    "kind": "text",
+    "value": "\nwhere the brackets emphasize we are computing the response in the background given by $\\bphi$. Plugging into Eq. (\\ref{eomphi}) we get\n"
+  },
+  {
+    "id": 123,
+    "kind": "math",
+    "value": "\\beq\n\\label{dphibpi}\nD_\\phi \\bphi = F_\\calo(\\bphi, \\dot{\\bphi}).\n\\eeq"
+  },
+  {
+    "id": 124,
+    "kind": "text",
+    "value": "\nIn order to have the type of (velocity dependent) dissipation we study in this paper we will impose\n"
+  },
+  {
+    "id": 125,
+    "kind": "math",
+    "value": "\\beq\n\\label{fphip}\n F_\\calo(\\bphi, \\dot{\\bphi})\\simeq |\\dot\\bphi|.\n\\eeq"
+  },
+  {
+    "id": 126,
+    "kind": "text",
+    "value": "\nWe discuss a specific example of this behavior in sec. \\ref{matching} (albeit with a more elaborate response function). The next step is to perturb $\\bphi \\to \\bphi +\\delta\\phi$. The crucial piece of the argument is what replaces Eq. (\\ref{gcalo}). There are several ways to attack this question. Perhaps the simplest is the following. Since $\\calo$ is a scalar operator (by construction) the expression in Eq. (\\ref{gcalo}) must be covariantized. (Notice Lorentz invariance is only broken by the presence of a preferred frame, i.e. $n^\\mu$ in Eq. (\\ref{nmu2}) with $\\tilde t$ replaced by $\\phi$.) Therefore, as we argued, we should rewrite Eq. (\\ref{gcalo}) as\n"
+  },
+  {
+    "id": 127,
+    "kind": "math",
+    "value": "\\beq\n\\label{gcalo2}\n\\langle \\phi|\\calo |\\phi\\rangle = F_\\calo\\left(\\phi, n^\\mu \\partial_\\mu \\phi = -g^{\\mu\\nu}\\partial_\\nu\\phi\\partial_\\mu\\phi/\\sqrt{-g^{\\mu\\nu}\\partial_\\nu\\phi\\partial_\\mu\\phi}\\right),\n\\eeq"
+  },
+  {
+    "id": 128,
+    "kind": "text",
+    "value": "\nwhere we assumed the function $F_\\calo$ is not essentially modified, which is a valid (local) approximation provided $\\delta\\phi$ is a {\\it smooth} long wavelength perturbation.\\footnote{In other words, we need the scale of variation of the extrinsic curvature of constant time surfaces (recall $K^{ij} \\simeq \\nabla^i_{(3)} n^j$) to be much larger\nthan the typical length scale $M^{-1}_\\calo$, which controls the local approximation for the interaction between $\\phi$ and $\\calo$, such that we have a well defined derivative expansion. For instance if we take the perturbations at horizon crossing, namely $\\delta\\phi_{k_\\star}$, and say $M^2_\\calo \\simeq g |\\dot\\bphi|$ with $g$ some coupling constant, then we require $k_\\star^2 \\ll M_\\calo^2$, or $\\gamma < g |\\dot\\bphi|/H$. (In all generality, even if suppressed, we should in principle include also corrections induced by $\\delta K_{\\mu\\nu}$.) See sec. \\ref{localtrap} for more details.}\n\nOnce again we go to the unitary gauge, and choose coordinates such that $\\phi = \\bphi$, i.e. $\\delta\\phi=0$. This means\n"
+  },
+  {
+    "id": 129,
+    "kind": "math",
+    "value": "\\beq\n\\label{gcalo3}\n\\langle \\phi| \\calo |\\phi \\rangle = F_\\calo\\left(\\bphi,\\dot\\bphi\\sqrt{-g^{00}}\\right).\n\\eeq"
+  },
+  {
+    "id": 130,
+    "kind": "text",
+    "value": "\nWe then introduce the perturbation $\\delta\\phi$ (our $\\pi$) using Eq. (\\ref{dphibpi}) and the St\\\"uckelberg trick. On the LHS of we get the usual term, whereas on the RHS we use the requirement of Eq. (\\ref{fphip}), then\n"
+  },
+  {
+    "id": 131,
+    "kind": "math",
+    "value": "\\beq\nD_\\phi \\delta\\phi  \\simeq \\delta \\left(|\\dot\\bphi| \\sqrt{-g^{00}(\\pi)}\\right),\n\\eeq"
+  },
+  {
+    "id": 132,
+    "kind": "text",
+    "value": "\nsimilarly to what we obtained from Eq. (\\ref{dpcalfn}),  with $\\pi = \\delta\\phi/\\dot\\bphi$. Then, as advertised, we get a dissipative term $\\gamma \\dot\\pi$ and also $\\gamma (\\partial_i\\pi)^2$ with its subsequent enhancement of non-Gaussianities as shown in sec. \\ref{Nolocalo2}.\\\\\n\nThere are some subtleties in the previous discussion that must be stressed out. Strictly speaking, the presence of dissipation requires\n only a linear coupling to $\\pi$. In our discussion the non-linear term obtained from $n^\\mu\\partial_\\mu \\pi$ in Eq. (\\ref{gretto2p}) was intrinsically related to $n^\\mu$ being the time-like vector orthogonal to the uniform slices of the physical clock that controls the end of inflation. However, in general the presence of ADOF may also include time-like vector operators, let us collectively denote them as $u_\\calo^\\mu$, that might have non-zero expectation values in the background. Hence,\nrather than $n^\\mu \\partial_\\mu \\pi$ we may have $u_\\calo^\\nu \\partial_\\nu \\pi$  in Eq. (\\ref{gretto2p}).\\footnote{This may happen if the response of $\\calo$ is controlled\nby $u^\\mu_\\calo$.} In this case there will not be a guaranteed relationship between the linear term $\\gamma\\dot\\pi$ (now derived from $\\langle u_\\calo^\\mu\\rangle = (1,0,0,0)$)\n and the non-linear counterparts. In this situation large dissipation may not necessarily lead to strong non-Gaussianity.\\\\\n\nIt is worth pointing out that had we chosen to work directly with the Goldstone boson $\\tilde\\pi$ that we introduced in sec.~\\ref{newdof}, we would have had no vector-like operator taking a non-zero expectation value. This means that (up to normalization) the only vector taking a background expectation value is\n $n^\\mu~\\sim~g^{\\mu\\nu}\\partial_\\nu(t+\\tilde\\pi)$, which appears to induce the type of term in Eq. (\\ref{dpcalo2}). However the two descriptions are equivalent, and in fact, upon noticing (schematically) $\\tilde \\pi \\sim \\pi + \\delta O$, even in this case we cannot in general prevent an interplay between $\\tilde \\pi$ and fluctuations of vector operators $\\delta u^\\calo_\\mu$ such that the term in Eq. (\\ref{dpcalo2}) does not get generated at the non-linear level. Therefore, in order to ensure a connection between dissipation and non-Gaussianities, we will demand that there are no such cancellations. \n \n There is no simple way to implement this condition, although in practice this amounts to requiring that the $\\delta\\calo$'s are sensitive mostly to the field $\\pi$ whose fluctuations control the end of inflation. In this paper we referred to this condition as having a preferred clock.\n\nHence we conclude that the existence of such clock inevitably entails large non-Gaussianities in the strong dissipative regime, either from $\\calo g^{00}$, as explicitly shown in sec. \\ref{Nolocalo2}, or via non-linear response for $f(t)\\calo$ as we just described. We will study relaxing this assumption in future work.\n\n\\subsection{Non-Gaussian noise}\\label{ngaussnoise}\n\nAs a final source of non-Gaussianities, we have to consider the effect of the intrinsic non-Gaussianity of the noise fluctuations.\nLet us consider, as in Eq. (\\ref{ngnoise}), a non-Gaussian noise $\\delta\\calo_S$ that is local, that is\n"
+  },
+  {
+    "id": 133,
+    "kind": "math",
+    "value": "\\beq\n\\langle\\delta\\calo_S(t_1, {\\bf k}_1)\\delta\\calo_S(t_2, {\\bf k}_2)\\delta\\calo_S(t_3, {\\bf k}_3)\\rangle\\simeq (2\\pi)^3\\delta^{(3)}({ \\bf k}_1+ {\\bf k}_2+ {\\bf k}_3)\\nu_{{\\calo}^3}\\frac{\\delta(t_1-t_2)}{a^{3}(t_1)}\\frac{\\delta(t_2-t_3)}{a^3(t_2)}.\n\\eeq"
+  },
+  {
+    "id": 134,
+    "kind": "text",
+    "value": "\nThen using\n"
+  },
+  {
+    "id": 135,
+    "kind": "math",
+    "value": "\\beq \\pi(t, {\\bf k})=\\frac{\\dot{f} k c_s}{N_c H^2}\\int^{\\eta}_{\\eta_0} d\\eta' g_{\\gamma}(kc_s |\\eta|, k c_s|\\eta'|)\\delta\\calo_S(\\eta',{\\bf k})\n\\eeq"
+  },
+  {
+    "id": 136,
+    "kind": "text",
+    "value": " we find (for $\\eta\\to 0$ and  $\\eta_0\\to -\\infty$)\n"
+  },
+  {
+    "id": 137,
+    "kind": "math",
+    "value": "\\beq\\label{NGNoise}\nF(x_1,x_2,x_3)=-\\frac{\\dot{f}^3 H^5\\nu_{{\\calo}^3}}{N_c^3c_s^6}x_1x_2x_3\\int_0^{+\\infty} dz z^8 g_{\\gamma}(0,x_1 z)g_{\\gamma}(0,x_2 z)g_{\\gamma}(0,x_3 z).\\eeq"
+  },
+  {
+    "id": 138,
+    "kind": "text",
+    "value": "\n\n\n\\begin{figure}[h!]\n\\includegraphics[width=8.5cm]{NGCG10Noise}\n\\caption{The shape $F(x_2,x_3)=x_2^2x_3^2 \\frac{F(1,x_2,x_3)}{F(1,1,1)}$ obtained from Eq. (\\ref{NGNoise}) for $\\gamma\\simeq 10 H$. To avoid showing equivalent configurations twice, the function is set to zero outside the  region $1-x_2\\leq x_3\\leq x_2$.}\\label{nonGausNoise}\n\\end{figure}\n\nThe shape is plotted in Fig.~\\ref{nonGausNoise}. As expected there is a peak on equilateral configurations, and\n"
+  },
+  {
+    "id": 139,
+    "kind": "math",
+    "value": "\\beq\nf_{\\rm NL}^{\\rm eq}\\simeq \\frac{\\gamma N_c\\nu_{{\\calo}^3} }{\\dot{f} \\nu_{\\calo}^2},\n\\eeq"
+  },
+  {
+    "id": 140,
+    "kind": "text",
+    "value": "\nas we anticipated in Eq. (\\ref{fnlnoise}).\n\n\n\n\\subsection{Higher-derivative dissipation}\\label{localo2}\n\nLet us consider now the same situation as in sec.~\\ref{Nolocalo2}, where the dominant interaction has one derivative of $\\pi$: $\\delta g^{00}\\calo$. However, unlike before, we will now assume a local approximation for the two-point functions of $\\calo$ (or ${\\rm Im}G_{\\rm ret}^\\calo \\sim \\omega$), such that we get\n"
+  },
+  {
+    "id": 141,
+    "kind": "math",
+    "value": "\\beq\\label{eq:help}\\delta\\calo_R\\simeq-\\frac{N_c}{a^3\\Gamma_\\calo}\\partial_t(a^3\\dot{\\pi}),\\ee"
+  },
+  {
+    "id": 142,
+    "kind": "text",
+    "value": "\nwhere $\\Gamma_\\calo$ (with units of mass) depends on the specific details of the model. Given that the interaction term goes like $\\pi\\delta\\dot\\calo$, the EOM\nbecomes\\footnote{We also generate corrections to the speed of sound of order $H/\\Gamma_\\calo$ that we neglect here.}\n"
+  },
+  {
+    "id": 143,
+    "kind": "math",
+    "value": "\\beq \\ddot{\\pi}+\\frac{c_s^2k^2}{a^2}\\pi+3H\\dot\\pi- \\frac{1}{\\Gamma_\\calo a^3}\\partial_t^2(a^3\\dot\\pi)=-\\frac{\\partial_t(a^3\\delta\\calo_S)}{a^3N_c},\\eeq"
+  },
+  {
+    "id": 144,
+    "kind": "text",
+    "value": "\nNote this equation is now reminiscent of the ADL force. The presence of higher derivative terms forces us to restrict $\\omega \\simeq H \\ll \\Gamma_\\calo$,\nand treat the higher derivate term as a small perturbation. In this case freeze out occurs at $\\omega \\sim H$ and the leading effect is not on the two-point\nfunction, that here is dominated by the vacuum solution, but on the three-point function. This can be estimated by comparing the non-linear term in the EOM to the linear term. The second order equation can be written as\n"
+  },
+  {
+    "id": 145,
+    "kind": "math",
+    "value": "\\be\\ddot{\\pi}_2+\\frac{{c}_s^2k^2}{a^2}\\pi_2+H\\lp3+\\frac{ k^2c_s^2 \\delta}{a^2H^2}\\rp\\dot{\\pi}_2=J_k,\\ee"
+  },
+  {
+    "id": 146,
+    "kind": "text",
+    "value": "\nwhere the term $J_k$ contains the quadratic sources. From the  coupling between $\\pi$ and $\\delta \\calo$ we have\n"
+  },
+  {
+    "id": 147,
+    "kind": "math",
+    "value": "\\be \\label{source}J_k=-\\frac{1}{N_c}\\left\\{\\frac{\\partial_t(a^3{\\delta}_2\\calo)}{a^3}+\\frac{\\partial_t(a^3\\dot{\\pi}_1{\\delta}_1\\calo)}{a^3}-\\frac{\\partial_i({\\delta}_1\\calo\\partial_i\\pi)}{a^2}\\right\\},\\ee"
+  },
+  {
+    "id": 148,
+    "kind": "text",
+    "value": "\nwhere ${\\delta}\\calo=\\delta\\calo_S+\\delta\\calo_R$, and the subscripts represent to what order in $\\pi$ the contributions are to be computed. For estimating purposes we consider the last one, which dominates for small speed of sound models. \nAfter using (\\ref{eq:help}) the resulting level of non-Gaussianity is given by\n"
+  },
+  {
+    "id": 149,
+    "kind": "math",
+    "value": "\\be\nf_{\\rm NL}\\zeta\\sim\\left.\\frac{\\frac{1}{N_c}\\partial_i({\\delta}_1\\calo\\partial_i\\pi)}{\\ddot\\pi}\\right|_{\\omega\\sim H}\\sim\\frac{H^4 \\pi^2}{c_s^2 \\Gamma_\\calo}\\cdot \\frac{1}{ H^2\\pi}\\sim\\frac{H}{\\Gamma_\\calo}\\cdot\\frac{1}{c_s^2}\\zeta\\ll \\frac{1}{c_s^2}\\zeta,\n\\ee"
+  },
+  {
+    "id": 150,
+    "kind": "text",
+    "value": "\nwhich tells us that this can be at most a subleading signal.\n\n\n\n\n \\section{Matching dissipative effects during inflation}\\label{matching}\n\nEven though from the EFT standpoint the conditions on $G^{\\calo}_{\\rm ret}$ and noise kernels may be taken as a given, it is still desirable to be able to identify those situations where we can be assured these conditions hold within certain degree of approximation. For instance we expect such description to be valid in cases where the memory effects decays sufficiently fast, as in Drude's model of Eq.~(\\ref{drude}). This would be the case provided the dynamics of the $\\calo$'s is such that the back reaction on the $\\pi$ field becomes negligible after a (short) interaction time. In this section we study a specific realization in the spirit of the trapped inflation model of \\cite{trapped}, and also briefly discuss the warm inflation paradigm \\cite{berera1,berera2,warm}. See appendix \\ref{mag00} for a class of models with $\\gamma\\dot\\pi$ dissipation with a $\\calo\\dot\\pi$ coupling.\n\n\\subsection{Local trapped inflation: $f(t)\\calo \\to \\sum_i(\\phi-\\phi_i)^2\\chi^2_i + \\calL(\\chi_i)$}\\label{localtrap}\n\nWe are after an example in which we can apply the local approximation in time. In trapped inflation the energy of the inflaton is being transferred into the ADOF both because the particles are created and also due to the increase of their mass with time. In the original model this is important until the particles have diluted enough due to the expansion of the universe. The characteristic time scale for this to happen is given by $H^{-1}$, which does not allow us to use the local response functions that we used so far. However, this characteristic time scale can be significantly reduced if the produced particles decay into yet other degrees of freedom, with decay rate much faster than Hubble. With this in mind let us consider the trapped inflation action\n"
+  },
+  {
+    "id": 151,
+    "kind": "math",
+    "value": "\\beq \\label{seftrap} S_{\\rm trap}=\\int d^4x\\sqrt{-g} \\left\\{\\sum_i\\left[-\\frac{1}{2}\\partial_{\\mu}\\chi_i\\partial^{\\mu}\\chi_i-\\frac{ g^2(\\phi-\\phi_i)^2}{2}\\chi_i^2\\right]-\\frac{1}{2}\\partial_{\\mu}\\phi\\partial^{\\mu}\\phi-V(\\phi)\\right\\},\\eeq"
+  },
+  {
+    "id": 152,
+    "kind": "text",
+    "value": "\nwhere $\\phi$ is the inflaton and $V(\\phi)$ is its potential, and we add an interaction term, $S_{\\rm int}(\\chi_i,\\varphi)$, that characterizes the coupling between $\\chi_i$'s and some additional degrees of freedom $\\varphi$ that leads to a decay rate for the $\\chi_i$'s satisfying $\\Gamma_{\\chi_i} \\gg H$. The only condition we need to impose is the requirement that $S_{\\rm int}$ does not modify the leading order picture from $S_{\\rm trap}$. In particular we need to ensure it does not generate a large mass for $\\chi_i$ when $\\phi \\simeq \\phi_i$. For example we can have\n"
+  },
+  {
+    "id": 153,
+    "kind": "math",
+    "value": "\\beq\n\\label{decayr}\nS_{\\rm int} =  \\sum_i \\frac{1}{\\Lambda_\\varphi} \\partial^2\\chi_i \\varphi^2,\n\\eeq"
+  },
+  {
+    "id": 154,
+    "kind": "text",
+    "value": "\nwith $\\varphi$ some scalar field which we assume has some small mass, $m_\\varphi \\lesssim \\sqrt{g |\\dot\\phi|}$, and does not couple directly to $\\phi$. In what follows we show that this model admits a local approximation. (To simplify notation in this section we drop the bar for the unperturbed values of $\\phi$.)\\\\\n\nAs in the original trapped inflation scenario, particles associated to the field $\\chi_i$ are created when $\\phi$ approaches $\\phi_i$.\nThe computation of the production of particles follows the same line as in \\cite{trapped,beauty}. The time interval $\\delta t_c=t-t_i$  during which modes\n of a given $\\chi_i$ field do not behave adiabatically (so that the corresponding particles are produced) can be estimated as\n"
+  },
+  {
+    "id": 155,
+    "kind": "math",
+    "value": "\\be \\delta t_c\\sim 1/\\sqrt{g|\\dot{\\phi}|},\\ee"
+  },
+  {
+    "id": 156,
+    "kind": "text",
+    "value": "\nwhich we want to be shorter than a Hubble time, $\\delta t_c \\ll H^{-1}$, hence \\cite{trapped}\n"
+  },
+  {
+    "id": 157,
+    "kind": "math",
+    "value": "\\be\\label{c1}\nH^2\\ll{g|\\dot{\\phi}|}.\n\\ee"
+  },
+  {
+    "id": 158,
+    "kind": "text",
+    "value": "\nNote this condition implies that after particles are produced the mass  satisfies\n"
+  },
+  {
+    "id": 159,
+    "kind": "math",
+    "value": "\\be M_{\\chi_i}(t_i+\\delta t_c)=g|\\phi-\\phi_i|\\simeq g|\\dot{\\phi}|\\delta t_c\\gg H.\n\\ee"
+  },
+  {
+    "id": 160,
+    "kind": "text",
+    "value": "\nMoving to the decay rate, using Eq. (\\ref{decayr}) we can estimate\n"
+  },
+  {
+    "id": 161,
+    "kind": "math",
+    "value": "\\beq\n\\Gamma_{\\chi_i} \\simeq  \\frac{M_{\\chi_i}^3}{\\Lambda_\\varphi^2}. \\label{gammab}\n\\eeq"
+  },
+  {
+    "id": 162,
+    "kind": "text",
+    "value": "\nTo ensure the decay time scale is longer than the time it takes to create the particles  we need\n"
+  },
+  {
+    "id": 163,
+    "kind": "math",
+    "value": "\\beq\n\\label{c2n}\n \\frac{1}{\\delta t_c}\\simeq \\sqrt{g|\\dot\\phi|}\\gtrsim \\Gamma_{\\chi_i}\\simeq\\frac{(g|\\dot{\\phi}|)^{3/4}}{ \\Lambda_\\varphi^{1/2}} \\quad\\to\\quad  \\Lambda_\\varphi \\gtrsim \\sqrt{g|\\dot\\phi|},\n\\eeq"
+  },
+  {
+    "id": 164,
+    "kind": "text",
+    "value": "\nwhere we have approximated $M_{\\chi_i}\\simeq g |\\dot{\\phi}|\\tau_{\\chi_i}\\equiv M_{\\chi_i}(\\tau_{\\chi_i})$, with $\\tau_{\\chi_i}$ the lifetime of the $\\chi_i$-particles, while at the same time $\\Gamma_{\\chi_i} \\gg H$, which is necessary for our local approximation.\\footnote{Notice that $\\tau_{\\chi_i} > \\delta t_c$ requires $\\Gamma_{\\chi_i} < M_{\\chi_i}(\\tau_{\\chi_i})$, which also consistent with the particle interpretation.}  \nAfter the particles are produced, the occupation number for each species is given by\n"
+  },
+  {
+    "id": 165,
+    "kind": "math",
+    "value": "\\beq\n\\label{ocupnum}\n|\\beta_k|^2=e^{-\\frac{\\pi k^2}{a^2(t_i)\\kappa^2(t_i)}},\n\\eeq"
+  },
+  {
+    "id": 166,
+    "kind": "text",
+    "value": " where $\\kappa(t_i)=\\sqrt{g|\\dot{\\phi}(t_i)|}$, and the number density\n"
+  },
+  {
+    "id": 167,
+    "kind": "math",
+    "value": "\\be\\label{nchim} n_{\\chi_i}(t_i+\\delta t_c)=M_{\\chi_i}\\bar\\chi^2_i\\simeq \\frac{\\kappa^3(t_i)}{(2\\pi)^3}.\\ee"
+  },
+  {
+    "id": 168,
+    "kind": "text",
+    "value": "\nThen, taking into account the decay rate of the particles for later times, we have\n"
+  },
+  {
+    "id": 169,
+    "kind": "math",
+    "value": "\\be n_{\\chi_i}(t,t_i)\\simeq \\frac{\\kappa^3(t_i)}{(2\\pi)^3}\\lp\\frac{a(t_i)}{a(t)}\\rp^3 e^{-\\Gamma_{\\chi}(t-t_i)} \\; \\Theta(t-t_i),\\ee"
+  },
+  {
+    "id": 170,
+    "kind": "text",
+    "value": "\nwhere in order to obtain an estimation we have approximated $\\Gamma_{\\chi_i}$ by a constant $\\Gamma_{\\chi}$.\nThe EOM for the unperturbed inflaton becomes\n"
+  },
+  {
+    "id": 171,
+    "kind": "math",
+    "value": "\\be\\label{infeqLTI}\\ddot{\\phi}+3H\\dot{\\phi}+V'(\\phi)+g\\sum_in_{\\chi_i}(t,t_i)=0.\\ee"
+  },
+  {
+    "id": 172,
+    "kind": "text",
+    "value": "\n\nAs the sum over the particle production events is difficult to deal with, we will replace it by an integral. Defining $\\Delta=\\phi_{i+1}-\\phi_i$, the last term on the LHS of Eq. (\\ref{infeqLTI}) can be thus approximated by\n"
+  },
+  {
+    "id": 173,
+    "kind": "math",
+    "value": "\\beq\n\\sum_in_{\\chi_i}(t,t_i)\\simeq~\\int^t dt'\\frac{|\\dot{\\phi}(t')|}{\\Delta}\\frac{\\kappa^3(t')}{(2\\pi)^3}e^{-(3H+\\Gamma_{\\chi})(t-t')}.\n\\eeq"
+  },
+  {
+    "id": 174,
+    "kind": "text",
+    "value": "\n\nThis is a good approximation only if the variation of the integrand is small between production events. This is quantified by the conditions\n"
+  },
+  {
+    "id": 175,
+    "kind": "math",
+    "value": "\\be\\label{c3c4} \\frac{ (3H+\\Gamma_{\\chi})|\\Delta|}{|\\dot{\\phi}|}\\ll1,\\,\\,\\,\\frac{|\\ddot{\\phi}\\Delta|}{\\dot{\\phi}^2}\\ll1.\\ee"
+  },
+  {
+    "id": 176,
+    "kind": "text",
+    "value": "\nHence, for $\\Gamma_{\\chi} \\gg H$ and $|\\ddot{\\phi}|\\ll\\Gamma_{\\chi} |\\dot{\\phi}|$ we can approximate the integral as\n"
+  },
+  {
+    "id": 177,
+    "kind": "math",
+    "value": "\\beq\n\\label{gnchi}\ng \\sum_i n_{\\chi_i}(t,t_i)\\simeq \\frac{g|\\dot{\\phi}(t)|}{\\Gamma_{\\chi}\\Delta }\\frac{\\kappa^3(t)}{(2\\pi)^3} \\simeq \\frac{(g |\\dot{\\phi}|)^{5/2}}{\\Gamma_{\\chi}|\\Delta|(2\\pi)^3}.\n\\eeq"
+  },
+  {
+    "id": 178,
+    "kind": "text",
+    "value": "\nWe discuss the consistency of our approximations in more detail in appendix \\ref{consistency}.\\\\\n\nWe now define the (composite) operator $f(t){\\calo}\\equiv \\sum_i f_i(t)\\calo_i$, where\\footnote{We chose to work with $f(t)\\calo$, rather than each individual $f_i\\calo_i$, in order make direct contact with our analysis of the EFT in previous sections.} \n"
+  },
+  {
+    "id": 179,
+    "kind": "math",
+    "value": "\\beq\nf_i(t) = \\frac{g^2}{2}(\\phi(t)-\\phi_i)^2,~~\\calo_i =  \\chi^2_i, \\eeq"
+  },
+  {
+    "id": 180,
+    "kind": "text",
+    "value": "\nwhose background expectation values are given by (see Eq. (\\ref{nchim}))\n"
+  },
+  {
+    "id": 181,
+    "kind": "math",
+    "value": "\\beq\n\\sum_i f_i(t)\\bar\\calo_i = \\frac{g^2}{2} \\sum_i (\\phi(t)-\\phi_i)^2\\bar\\chi_i^2 =  \\frac{1}{2}\\sum_i M_{\\chi_i} n_{\\chi_i}.\n\\eeq"
+  },
+  {
+    "id": 182,
+    "kind": "text",
+    "value": "\n\nThen, using Eq. (\\ref{gnchi}), the expression in Eq. (\\ref{infeqLTI}) becomes (where we add the gradient piece, that vanishes in the background, for later convenience) \n"
+  },
+  {
+    "id": 183,
+    "kind": "math",
+    "value": "\\beq\n\\label{inflocal}\\ddot{\\phi}+3H\\dot{\\phi}-\\frac{c_s^2}{a^2}\\partial_i^2\\phi+V'(\\phi)+\\frac{(g |\\dot{\\phi}|)^{5/2}}{\\Gamma_{\\chi}|\\Delta|(2\\pi)^3}=0,\n\\eeq"
+  },
+  {
+    "id": 184,
+    "kind": "text",
+    "value": "\nwhich is local in time as we advertised. (The same applies for the EOM of the perturbations we study in the next section.)\\\\ \n\nTo wrap up this section let us comment on the emergence of the shift symmetry, which plays an essential role in our analysis. Even though the EOM has a term $\\sum_i g^2(\\phi-\\phi_i)\\bar\\chi_i^2$ which is apparently not invariant under $\\phi \\to \\phi+c$, secretly it is, since we end up with Eq.~(\\ref{inflocal}) which is manifestly invariant (ignoring the shift in $V(\\phi)$ which we assume is small).  \n\nNotice, first of all, the non-perturbative result\n"
+  },
+  {
+    "id": 185,
+    "kind": "math",
+    "value": "\\beq\n\\bar\\chi_i^2\\simeq {n_{\\chi_i}(\\dot\\phi(t_i))\\over g|\\phi-\\phi_i|},\n\\eeq"
+  },
+  {
+    "id": 186,
+    "kind": "text",
+    "value": "\nwhich cancels the explicit factors of $\\phi-\\phi_i$. However this is not enough, since $n_{\\chi_i}$ depends on $t_i$ (the time defined as $\\phi(t_i)=\\phi_i$), which in turn depends explicitly on $\\phi$. Nevertheless, this dependence is ultimately removed by the presence of the sum, which is the key feature. At this point the EOM becomes invariant under $\\phi \\to \\phi + c$. (This is the case because we can absorb the shift in $\\phi$ into a redefinition of $\\phi_i$, which is summed over a large number of periods.) We call this an emergent shift symmetry.\n\n\\subsubsection{Perturbations}\n\nIn order to obtain the equation for the perturbations at linear order we expand $\\phi \\to \\phi+\\delta\\phi$ in Eq. (\\ref{inflocal}). Taking into account the contribution of the noise we obtain\n"
+  },
+  {
+    "id": 187,
+    "kind": "math",
+    "value": "\\be\n\\label{pertinflocal}\n\\ddot{\\delta\\phi}+\\frac{c_s^2k^2}{a^2}\\delta\\phi+3H\\dot{\\delta\\phi}+V''(\\phi)\\delta\\phi+\\frac{5}{2}\\frac{g^{5/2} |\\dot{\\phi}|^{3/2}}{\\Gamma_\\chi|\\Delta|(2\\pi)^3}\\dot{\\delta\\phi}=-g \\Delta n_{\\chi},\\ee"
+  },
+  {
+    "id": 188,
+    "kind": "text",
+    "value": "\nwith "
+  },
+  {
+    "id": 189,
+    "kind": "math",
+    "value": "\\beq \\label{Dnoise} \\Delta n_{\\chi} = g \\sum_i M_{\\chi_i} \\Delta \\bar \\chi_i^2, \\eeq"
+  },
+  {
+    "id": 190,
+    "kind": "text",
+    "value": " the variance of the number of particles produced.\\footnote{Notice\nthat in generalizing the result derived for the background into the one for the perturbations, we are assuming that effects due to the extrinsic curvature\n of the surfaces of constant $\\phi$ are suppressed by powers of $k_\\star/\\kappa\\ll 1$  i.e. $\\gamma \\ll g|\\dot\\bphi|/H$, at the time of freeze-out with\n$\\kappa\\sim (g|\\dot\\phi|)^{1/2}$.} Hence we arrive at an equation as in (\\ref{eom1}), with an effective damping rate $\\gamma$ given by\n"
+  },
+  {
+    "id": 191,
+    "kind": "math",
+    "value": "\\be\n\\gamma=\\frac{5}{2}\\frac{g^{5/2} |\\dot{\\phi}|^{3/2}}{\\Gamma_\\chi|\\Delta|(2\\pi)^3}.\n\\ee"
+  },
+  {
+    "id": 192,
+    "kind": "text",
+    "value": "\nIn this expression we ignored the spatial variation of the field in $\\Delta n_\\chi$ at linear order, provided the physical wave vector $k_{\\rm ph}=k/a$ satisfies $k_\\star\\ll \\kappa$, and also $k_{\\rm ph}\\Delta\\ll|\\dot{\\phi}|$, in order to be able to replace sum into integrals.\\\\\n\nNotice that while each individual $\\dot f_i$ is not a constant the power spectrum still obeys scale invariance. This can be seen by redefining $\\hat \\calo_i \\to n_{\\chi_i}$, in which case the new $\\hat f_i(t) \\simeq g M_{\\chi_i}(\\phi)$ does obey $\\ddot {\\hat f}_i/(\\dot{\\hat f}_iH) \\ll 1$ in\n the slow roll approximation. Indeed, the response at linear order in $\\delta\\phi$ becomes\n"
+  },
+  {
+    "id": 193,
+    "kind": "math",
+    "value": "\\beq\ng \\sum_i \\delta n_{\\chi_i} \\simeq \\frac{5}{2}\\frac{g^{5/2} |\\dot{\\phi}|^{3/2}}{\\Gamma_\\chi|\\Delta|(2\\pi)^3} \\dot{\\delta\\phi} +\\ldots \\quad\\to\\quad \\sum_i \\dot f_i \\delta\\calo_i^R =\\dot{\\hat f}  \\sum_i \\delta n_{\\chi_i} \\simeq N_c \\gamma \\dot\\pi +\\ldots,\n\\eeq"
+  },
+  {
+    "id": 194,
+    "kind": "text",
+    "value": "\nwhere we used $\\delta\\phi/\\sqrt{N_c} \\simeq \\pi$ and defined $\\dot {\\hat f} = g\\dot\\phi$, with the normalization $N_c \\simeq \\dot\\phi^2$ as explained in sec. \\ref{newdof}. Likewise, for the noise (see Eq. (\\ref{Dnoise}))\n"
+  },
+  {
+    "id": 195,
+    "kind": "math",
+    "value": "\\beq \\label{noiseng} \\frac{1}{N_c}\\sum_i \\dot f_i \\delta\\calo_i^S\\quad \\to\\quad \\frac{1}{N_c} \\dot{\\hat f} \\Delta n_{\\chi}.\n\\eeq"
+  },
+  {
+    "id": 196,
+    "kind": "text",
+    "value": "\n\nSo far so good. What we need now is a local approximation for the two point function of $\\Delta n_{\\chi_i}$, the noise, which should also include the effects of the decay rate of the particles. The expression is given by~\\cite{trapped}\n"
+  },
+  {
+    "id": 197,
+    "kind": "math",
+    "value": "\\be\\langle\\Delta n_{\\chi_i}(t,{\\bf k})\\Delta n_{\\chi_j}(t',{\\bf k}')\\rangle\\simeq(2\\pi)^3\\delta^{(3)}({\\bf k}+{\\bf k}')\\frac{\\delta_{ij}\\kappa^3 e^{-2\\Gamma_\\chi|t-t'|}}{a^{3/2}(t) a^{3/2}(t')}\\theta(t-t_i)\\frac{a^3(t_i)}{a^3(t)}\\theta(t'-t_j)\\frac{a^3(t_j)}{a^3(t')}.\\ee"
+  },
+  {
+    "id": 198,
+    "kind": "text",
+    "value": "\nThis kernel sources $\\delta\\phi$ only through the integral in cosmic time of the Green's function. We can then approximate this equation by (see Eq. 3.20 in \\cite{trapped})\n"
+  },
+  {
+    "id": 199,
+    "kind": "math",
+    "value": "\\be  \\langle\\Delta n_\\chi(t,{\\bf k})\\Delta n_\\chi(t',{\\bf k}')\\rangle\\simeq  (2\\pi)^3\\delta^{(3)}({\\bf k}+{\\bf k}')\\frac{\\delta(t-t')}{a^{3}(t)}\\frac{\\kappa^3 N_{\\rm hits}}{2\\Gamma_\\chi}\\equiv \\nu_{\\chi}(2\\pi)^3\\delta^{(3)}({\\bf k}+{\\bf k}')\\frac{\\delta(t-t')}{a^{3}(t)},\n\\ee"
+  },
+  {
+    "id": 200,
+    "kind": "text",
+    "value": "\nwith\n"
+  },
+  {
+    "id": 201,
+    "kind": "math",
+    "value": "\\beq\n\\label{nunhits}\n\\nu_{\\chi} \\equiv \\frac{\\kappa^3 N_{\\rm hits}}{2\\Gamma_\\chi},\n\\eeq"
+  },
+  {
+    "id": 202,
+    "kind": "text",
+    "value": "\nand $N_{\\rm hits}\\sim\\dot{\\phi}/(H\\Delta)$. The computation of the power spectrum then follows as in sec. \\ref{power}.\\\\\n\nFinally let us add a few words on our assumption that $\\varphi$ is a light field. If they were too light one might wonder whether they could contribute\nto the density fluctuations. Notice that  since we require $H \\ll \\Gamma_{\\chi_i} < M_{\\chi_i}(\\tau_{\\chi_i})$,\nwe do not necessarily need $m_\\varphi$ to be as light as Hubble, in fact $m_\\varphi \\lesssim M_{\\chi_i}(\\tau_{\\chi_i})/2$ would be just fine. In this case they quickly  redshift away. (Let us stress that even if they were effectively massless they could still be irrelevant for the late time curvature perturbations.)\n\n\\subsubsection{Non-Gaussianities}\n\nTo compute non-Gaussianities we follow \\cite{trapped} and replace $\\phi$ by $\\phi+\\delta\\phi_1+\\delta\\phi_2$ in Eq. (\\ref{inflocal}), and expand to linear and quadratic order in $\\delta\\phi_2$ and $\\delta\\phi_1$ respectively. To this purpose we need to compute particle creation in a time dependent background to second order in the perturbation, namely $\\delta^{(2)} n_\\chi$. In Eq. (\\ref{pertinflocal}) we neglected the space variation of the field in the computation of $\\delta n_\\chi$, but at the non-linear level those gradient terms will provide us with the largest non-Gaussianities. (Recall the term proportional to $\\gamma (\\partial_i \\pi)^2$ in Eq. (\\ref{ocaldot}) is the one that induces the largest effects since $k_\\star \\sim \\sqrt{\\gamma H}$.)\n\nGiven that the $\\calo_i \\equiv \\chi_i^2$ are scalars, as we argued in sec. \\ref{nonlrep}, we are then able to extend the result in Eq. (\\ref{gnchi}) to a spatially varying field, namely $\\dot\\phi \\to n^\\mu \\partial_\\mu \\phi$ with $n_\\mu \\sim \\partial_\\mu \\phi$, hence\n"
+  },
+  {
+    "id": 203,
+    "kind": "math",
+    "value": "\\beq\n\\label{gdotp}\n\\frac{(g |\\dot{\\phi}|)^{5/2}}{\\Gamma_{\\chi}|\\Delta|(2\\pi)^3} \\to \\frac{g^{5/2}\\left( \\sqrt{-(\\partial\\phi)^2}\\right)^{5/2}}{\\Gamma_{\\chi}|\\Delta|(2\\pi)^3}.\n\\eeq"
+  },
+  {
+    "id": 204,
+    "kind": "text",
+    "value": "\n(This is analogous to the covariant version of Schwinger pair production in an electromagnetic field with a purely electric background  $E \\sim \\dot\\phi$, which turns out to be a scalar function of ${\\cal F} = F_{\\mu\\nu}F^{\\mu\\nu}$ and ${\\cal B} = F_{\\mu\\nu} F^\\star_{\\mu\\nu}$.) \n\nOne might worry about the validity of this procedure once we add inhomogeneities. In our example the particles are created in the state given by Eq. (\\ref{ocupnum}), where (momentum) gradients\n of the unperturbed distribution are suppressed by factors of $1/(g|\\dot\\phi|)^{1/2} = 1/\\kappa$. In fact, $\\kappa$ is the scale that controls the validity of the local approximation. If we ignore these higher derivative (extrinsic curvature) terms, which are suppressed by $k_\\star/\\kappa$, we can then choose coordinates such that $\\tilde t = t+\\pi$. Hence for equal $\\tilde t$ surfaces we get $n_\\chi\\left(\\partial_{\\tilde t}\\phi(\\tilde t)\\right)$ given by Eq. (\\ref{nchim}). Then we just replace $\\partial_{\\tilde t} \\to n^\\mu \\partial_\\mu$ for any coordinate system, with $n^\\mu \\sim g^{\\mu\\nu}\\partial_\\nu \\tilde t$. To incorporate all type of corrections we also need to include terms involving the extrinsic curvature, $\\delta K_{\\mu\\nu}$, and so on.\\\\\n \nFrom the expression in (\\ref{gdotp}) we already obtain the terms (with $\\pi = \\delta\\phi/\\dot\\phi$)\n"
+  },
+  {
+    "id": 205,
+    "kind": "math",
+    "value": "\\beq\\label{pertlocal}\\ddot{\\pi}_2 - c_s^2 \\partial_i^2\\pi_2+(3H+\\gamma)\\dot{\\pi}_2+ \\gamma \\left(\\alpha \\dot{\\pi}_1^2 -\\frac{1}{2}(\\partial_i \\pi_1)^2\\right)+\\ldots ={\\rm Noise},\\eeq"
+  },
+  {
+    "id": 206,
+    "kind": "text",
+    "value": "\nwith $\\alpha$ some numerical coefficients (which may vanish). In particular we get $\\gamma(\\partial_i \\pi_1)^2$ at the non-linear level as advertised\\footnote{Notice that for the model at hand we also need to include the perturbations in $\\Gamma_\\chi (\\dot\\phi)$. This will slightly modify the form of the function of $\\sqrt{-\\partial\\phi^2}$ in Eq. (\\ref{gdotp}), and ultimately the coefficient $\\alpha$ in Eq. (\\ref{pertlocal}).}, leading to $|f_{\\rm NL}| \\simeq \\frac{\\gamma}{c_s^2H} \\gg  1$ for $\\gamma \\gg H$, similarly to the calculation in sec. \\ref{Nolocalo2}.\\\\\n\nThere are yet other sources of non-linearities which can be induced and we have not incorporated (represented by the ellipses). Since $\\ddot f_i \\simeq \\dot\\phi^2$, one may worry about terms like  $\\ddot f_i \\pi \\delta\\bar\\calo_i$, which do not respect the shift symmetry. (Moreover, they could induce non-negligible non-Gaussianities in the squeezed limit). However it turns out these terms actually cancel out, and the theory has an approximate shift symmetry, as we found already at linear order. To show this let us return to the interacting part of the effective action in Eq. (\\ref{seftrap})\n"
+  },
+  {
+    "id": 207,
+    "kind": "math",
+    "value": "\\beq\nS^{\\rm int}_{\\rm trap}=\\int d^4x\\sqrt{-g} \\sum_i\\frac{ g^2(\\phi-\\phi_i)^2}{2}\\chi_i^2 - V(\\phi),\\eeq"
+  },
+  {
+    "id": 208,
+    "kind": "text",
+    "value": "\nand perform the shift $\\phi \\to \\phi+ c$. Assuming $V(\\phi)$ obeys the slow roll conditions, the action will remain invariant provided we shift at the same time $\\phi_j \\to \\tilde\\phi_j \\equiv \\phi_j - c$. The new action then has the same form as the original one, with $\\phi_j \\to \\tilde\\phi_j$. Since, as we saw previously, the strength of the trapping mechanism depends on the velocity as it passes through the sweet spot, the physics stays essentially unchanged as long as we sum over a large number of periods. Hence the EOM will be (approximately) shift invariant. The crucial point is that the change $\\phi \\to \\phi+c$ is compensated by a concurrent shift in $t_i$, i.e. $t_i \\to t_i +\\delta t_i$ with $\\delta t_i \\simeq c/\\dot\\phi$, which is ultimately summed over a large number of periods \\cite{trapped}. Although this is not entirely obvious, the would-be breaking terms already canceled out at linear order. \n\nSomething similar occurs in the model of \\cite{trapped} before making the local approximation. In that case the contribution to the EOM from particle production reads \\cite{trapped}\n"
+  },
+  {
+    "id": 209,
+    "kind": "math",
+    "value": "\\beq\n\\hat m^2 \\delta\\phi + \\int^t dt' \\hat m^2 \\left(\\frac{5}{2} \\dot{\\delta\\phi}(t')-3 H \\delta\\phi(t')\\right) \\frac{a^3(t')}{a^3(t)},\n\\eeq"
+  },
+  {
+    "id": 210,
+    "kind": "text",
+    "value": "\nwhich appears to have a `mass' term and violate the shift symmetry. However, that is not the case since the change in that term cancels against the shift in the second term in the integral, using $a(t) \\sim e^{Ht}$. In the local approximations these pieces do not even show up, since they explicitly cancel each other out. To include these effects to all orders we need to be careful with the  sum over $f_i\\calo_i$. At the end of the day the same cancellation occurs at second order and so on, such that we restore the shift symmetry as we argued before.\n\nFinally let us stress that our results here apply for the case of a local response. In principle, as in the trapped inflation scenario of \\cite{trapped}, large non-Gaussianities may also be produced via the non-locality in time of the response.\n\n\\subsection{Warm inflation}\\label{secwarm}\n\nAnother example where we have dissipation/fluctuation is warm inflation \\cite{berera1,berera2,warm}. In this case $\\calo$ represents ADOF in thermal equilibrium at a given temperature $T$ mutually interacting with the inflaton $\\phi$. Even though $\\bar T^{\\mu\\nu}_\\calo$ may be large enough to modify the dynamics of $\\phi$, it remains sub-dominant with respect to the potential energy, $V \\sim M_p^2H^2$, and one could hope inflation might not be drastically perturbed as long as $T \\ll V^{1/4}$. The interesting aspect of this approach is the possibility of having $T \\gg H$, which implies that thermal fluctuations dominate over vacuum effects. In warm inflation the evolution of the inflaton is governed by an equation of the type \\cite{warm}\n"
+  },
+  {
+    "id": 211,
+    "kind": "math",
+    "value": "\\beq\n\\label{warmd1}\n\\ddot \\phi + (3 H+ \\gamma) \\dot\\phi + V'(\\phi) = K \\xi,\n\\eeq"
+  },
+  {
+    "id": 212,
+    "kind": "text",
+    "value": "\nwhere $\\xi$ represents the (Gaussian) noise with $\\langle \\xi\\rangle=0$ and $K \\simeq \\sqrt{\\gamma T}$. Provided $\\gamma$ does not depend significantly on the temperature, the computation of the power spectrum follows the same steps as in sec. \\ref{power}. The case $\\partial_T \\gamma \\neq 0$ is more elaborate since one has to include perturbations in $T$ already at first order (see \\cite{warmf33,berera11} for more details).\n\nThe dependence of $\\gamma$ on the temperature varies with the different realizations of warm inflation. The most promising example is given by the so called two-stage decay model \\cite{warm}. Similarly to the trapped inflationary case (although due to different mechanisms) the rolling inflaton produces some (ultimately heavy) particles ($m_\\chi \\gg T$) through a $g^2\\phi^2\\chi^2$ coupling, which subsequently decay into lighter degrees of freedom, $\\varphi$'s. As we discussed before, this `catalyzing' mechanism may allow us to approximate the evolution equations by local dynamics. However, contrary to the model in \\cite{trapped}, in warm inflation the decaying product is assumed to have thermalized. The friction coefficient can be then computed and scales like \\cite{warm}\n"
+  },
+  {
+    "id": 213,
+    "kind": "math",
+    "value": "\\beq\n\\label{chitcube}\n\\gamma(T) \\simeq g^2 h^4 \\left(\\frac{m}{m_\\chi}\\right)^4 \\frac{T^3}{m_\\chi^2},\n\\eeq"
+  },
+  {
+    "id": 214,
+    "kind": "text",
+    "value": "\nwhere $h$ and $m=g\\bphi$ enter in the coupling between $\\chi$ and $\\varphi$, e.g. $\\calL_{\\chi\\varphi} = hm\\chi\\varphi^2$.\\footnote{In \\cite{reheating} it was argued that {\\it assuming} warm inflation occurs and the potential obeys a series of slow roll conditions~\\cite{warm}, the thermal hypothesis becomes plausible and $\\rho_{\\rm rad} \\simeq (\\gamma/H) \\dot\\phi^2$ has a stable equilibrium provided $\\gamma(T) \\simeq T^3$, as in Eq. (\\ref{chitcube}).}\nClearly this effect is rather inefficient, since $m_\\chi \\gg T$. One possibility is to increase the number of $\\chi$ particles such that more than one field is excited, or equivalently the number of decaying channels. Unfortunately, if we denote by $\\cal N$ this `enhancement factor', the assumption that warm inflation occurs for sufficient e-foldings ($N_e \\gtrsim 50-60$) with $\\gamma(T) \\gg H$ requires ${\\cal N} \\gtrsim 10^6$\\cite{bastero,bueno}.\\footnote{Even though one may be able to relax the condition on the curvature of the potential (the so called $\\eta$-problem), some sort of tuning reappears in the form of very peculiar conditions on the matter content of the theory. Moreover, another important challenge for warm inflation model building is to keep under control the radiative and thermal corrections to the effective potential which could potentially ruin the slow roll conditions. (More so if one is going to assume $\\gamma$ becomes sufficiently large \\cite{linde}, in view of the previous requirement.) Supersymmetry may be invoked to tame the radiative corrections \\cite{hall}. However, Supersymmetry is broken at finite temperature (and for non-zero vacuum energy), therefore some extra tuning may be required. A detailed account of the tuning of thermal inflation models lies beyond the scope our present paper.}\\\\\n\nNon-Gaussianities in the warm inflationary scenario have been also computed in the literature. In most cases the contributions are small, i.e. slow roll\nsuppressed \\cite{warmf1} (since they stem off the non-linearities induced by the potential). Following the reasoning of our previous section, to include\n other type of non-linearities in warm inflation one needs to generalize the $\\gamma \\dot\\phi$ coupling to the case where $\\phi \\to \\phi + \\delta\\phi$, which\nwe would now write as $\\gamma u^\\mu \\partial_\\mu \\phi$ with $u^\\mu$ some four vector. In principle there are different possibilities for $u^\\mu$ depending\n on the model. For the two-stage case we can have either $n^\\mu$ (as before) or $u^\\mu_\\chi$, the four velocity of the $\\chi$ particles. The latter indeed would enter through the computation of the $\\gamma$ factor in Eq. (\\ref{chitcube}). However, in the limit $T \\ll m_\\chi$, the $\\chi$ particles are non-relativistic (namely they are created essentially at rest) hence $u^\\mu_\\chi \\simeq n^\\mu$.\\footnote{This is a consequence of the validity of a derivative expansion for heavy $m_\\chi$'s, which also supports the local approximations. The replacement $u^\\mu \\to n^\\mu$ agrees with the expressions in \\cite{berera11}.} This suggests a coupling of the form $\\gamma(T) n^\\mu \\partial_\\mu \\phi$ with $\\gamma(T)$ given by Eq. (\\ref{chitcube}), which following our previous arguments, would lead to non-linear effects of order $|f_{\\rm NL}| \\simeq \\gamma(T)/H.$\n\n\\section{Conclusions}\n\nIn this paper we generalized the EFT for single field inflation \\cite{eft1, Cheung:2007sv, Senatore:2009gt, Senatore:2009cf, Senatore:2010jy, Creminelli:2006xe, Bartolo:2010bj, Bartolo:2010di,dan2,strongc,dan2new} to include dissipative effects. Following \\cite{dis1,dis2} we introduced ADOF described by composite operators in the effective action compatible with the symmetries of the long distance physics. Our general assumptions were: {\\it i}) the existence of a preferred clock, {\\it ii}) negligible (or vanishing) contribution from the ADOF to the curvature perturbations at late time, {\\it iii})  the time scale for dissipation and fluctuation induced by the ADOF is much smaller than a Hubble time with negligible memory effects, and iv) the validity of an expansion in spatial derivatives. The last two allow us to use a local approximation for the dynamics of the perturbations. Under these conditions then we showed that in the strong dissipative regime the two point function is dominated by the noise, and that it can be significantly larger than the standard result for slow roll single field inflation. In particular\n"
+  },
+  {
+    "id": 215,
+    "kind": "math",
+    "value": "\\beq\nk^3\\langle\\zeta\\zeta\\rangle_{\\calo} \\simeq  {\\nu_{\\calo}}_\\star \\sqrt{\\pi H_\\star/\\gamma_\\star} \\frac{H_\\star^2}{2c_s^\\star\\left({c^\\star_s}N_c\\right)^2},\n\\eeq"
+  },
+  {
+    "id": 216,
+    "kind": "text",
+    "value": "\nwhich departs considerably from the Bunch-Davies result. The reason is twofold. First of all the size of the perturbations for the canonically normalized\n $\\pi$ field ($\\pi_c = \\sqrt{N_c} \\pi$) is larger than in the Bunch-Davies vacuum, but moreover because the normalization scale $N_c$ can be smaller than the\n value it takes in single field inflation without ADOF for fixed $\\dot H$ and $c_s$, namely $c_s^2 N_c \\leq  2M^2_p|\\dot H|$.\\footnote{Notice this implies\nthat the cutoff scale for higher dimensional operators in the EFT, $\\Lambda_U$, (such as those obtained from $(1+g^{00})^n$ type of terms) may be lower than\n in the case of single field inflation without ADOF (for a given value of $\\dot H, c_s$), where $\\Lambda_U \\sim M_p|\\dot H| c_s^5$ for $c_s \\ll 1$ \\cite{eft1,dan2}.\nHowever, keep in mind the our EFT description breaks down when $E \\gtrsim \\Gamma_\\calo$, hence the `lowering' of $\\Lambda_U$ is only meaningful in cases where\n$\\Lambda_U \\lesssim \\Gamma_\\calo$.} This is even more transparent if we assume the FD theorem applies, or formally define $T_\\calo$ as $\\frac{\\nu_{\\calo}}{N_c \\gamma}$, in which case\n"
+  },
+  {
+    "id": 217,
+    "kind": "math",
+    "value": "\\beq\n\\label{pzetaw}\nk^3\\langle\\zeta\\zeta\\rangle_T \\simeq  \\sqrt{\\pi\\gamma_\\star H_\\star} \\frac{T_\\calo H_\\star^2}{2c_s^\\star\\left({c^\\star_s}^2N_c\\right)} \\simeq \\frac{c_s k_\\star T_\\calo H_\\star^2}{\\Lambda_c^4},\n\\eeq"
+  },
+  {
+    "id": 218,
+    "kind": "text",
+    "value": "\nwith $\\Lambda_c^4 \\equiv c_s^3 N_c$, similarly to what happens in warm inflation \\cite{berera1,berera2,warm}. Then, introducing $\\Lambda_b^4\\equiv 2M_p^2|\\dot H| c_s \\geq \\Lambda_c^4$, we get\\footnote{One might be tempted to identify  $c_s^3 N_c$ with the symmetry breaking scale $\\Lambda_b^4$ \\cite{dan2}, but this would not be correct. The reason is that in order to define the scale at which time translations are broken one has to properly account for the contributions to $\\bar T^{\\mu\\nu}$\n stemming from all degrees of freedom, including the $\\calo$'s. Following the procedure outlined in \\cite{dan2}, one can easily show that $\\Lambda^4_b$ remains at $2M^2_p|\\dot H|c_s$. (This is actually not that surprising, since the normalization of the Goldstone boson $\\tilde \\pi$ did not change, as show in Eq. (\\ref{orunit}).)} \n"
+  },
+  {
+    "id": 219,
+    "kind": "math",
+    "value": "\\beq\n\\frac{\\langle\\zeta\\zeta\\rangle_T}{\\langle \\zeta\\zeta \\rangle_{\\rm BD}} \\simeq \\left(\\frac{c_s k_\\star T_\\calo}{H_\\star^2}\\right)\\left(\\frac{\\Lambda_b}{\\Lambda_c}\\right)^4 \\gg 1,\n\\eeq"
+  },
+  {
+    "id": 220,
+    "kind": "text",
+    "value": "\nalready for $T_\\calo \\geq H$ when $\\gamma \\gg H$. The factor of $c_s k_\\star T_\\calo$ in the numerator can be understood as follows. The energy density for $\\pi$ is given by $(\\tilde\\partial \\pi_c)^2 \\simeq {\\tilde k}_\\star^2\\pi_c^2$ (where $\\tilde\\partial$ represents the derivative with respect to $\\tilde x^i = x^i/c_s$), which goes like ${\\tilde k}^3_\\star T_\\calo$ (a.k.a. Rayleigh-Jeans law). Hence $\\pi_c^2 \\simeq  {\\tilde k}_\\star T_\\calo = c_s k_\\star T_\\calo$, which we compare with the quantum noise in the Bunch-Davies vaccum given by $H_\\star^2$.\n\nAs a result it is no longer the case that the power spectrum provides us the values of $H_\\star$ and $\\epsilon_\\star$ as in the standard scenario,\n but rather with a set of new parameters: $\\gamma, \\nu_{\\calo}, N_c$ (or $T_\\calo = \\nu_{\\calo}/(N_c \\gamma)$). Therefore, the tensor/scalar ratio would no longer give us a {\\it clean} measurement of the energy scale of inflation. (Also because the ADOF might significantly contribute to gravitational wave production \\cite{gwssz}.)\\\\\n\nWe were also able to identify some specific signatures for non-Gaussianities. In particular, we showed that the level of non-Gaussianities can potentially be much larger than in the case of single field inflation without ADOF by a factor of $\\gamma/H \\gg 1$. Our main observation was the following:\n in order to dissipate we require $\\dot\\phi$'s in the EOM, however, we need not only perturbe $\\phi$ but also `the dot', since the equal time surfaces are fluctuating. Hence, the non-linear realization of time diffeomorphisms requires the following combination\n "
+  },
+  {
+    "id": 221,
+    "kind": "math",
+    "value": "\\beq F(\\partial_t\\phi) \\to  F(n^\\mu \\partial_\\mu \\phi) \\to F(\\dot\\phi \\sqrt{-g^{00}}),\\eeq"
+  },
+  {
+    "id": 222,
+    "kind": "text",
+    "value": "\nwhich not only induces $\\gamma \\dot\\pi$ dissipation, but also (among others) a non-linear term: $-\\gamma(\\partial_i \\pi)^2$. (Notice the relative sign is dictated by the non-linear realization of the symmetry.) Since horizon crossing happens at $c_s k_\\star \\simeq \\sqrt{\\gamma H}$, this type of non-linear coupling leads to "
+  },
+  {
+    "id": 223,
+    "kind": "math",
+    "value": "\\beq  \\label{fnlconc} \\frac{\\gamma(\\partial_i \\pi)^2}{c_s^2\\partial_i^2\\pi} \\sim f_{\\rm NL}\\zeta \\to |f_{\\rm NL}| \\simeq \\frac{\\gamma}{c_s^2 H} .\\eeq"
+  },
+  {
+    "id": 224,
+    "kind": "text",
+    "value": "\nThe shape is plotted in Fig.~\\ref{shapegoonoloc}, and peaks at the equilateral configuration. (This is not surprising given the fact that the\nnon-linearities involve derivatives of $\\zeta$.) However, there is also a significant contribution at folded triangles  $x_1=1, x_2\\simeq x_3\\simeq 1/2$. Other non-linear terms may depend explicitly on the noise, such as $\\delta\\dot{\\calo}_S \\dot\\pi$, and are plotted in Fig. \\ref{ngg10}. Despite the fact that it scales with a single power of $\\dot\\pi$ one can show that its contribution in the limit $k_L \\ll k_S$ is suppressed by $(k_L/k_S)^2$ with respect to the local shape, in agreement with the results in \\cite{creminelli11}. We will analyze the squeezed limit and consistency conditions in the presence of dissipation in future work.\\\\\n\nIn this paper we also studied specific realizations of the type of operators introduced in the EFT and the matching procedure. In particular we analyzed a local version of trapped inflation where the produced particles decay after they are created, which leads to (approximately) localized response functions.  We showed how the term $\\gamma (\\partial_i \\pi)^2$ gets generated, with the subsequent $\\gamma/(c_s^2H)$ imprint on $|f_{\\rm NL}|$. Crucial aspects of the model include: {\\it i}) The ADOF responsible for dissipation do not contribute to the density perturbations at late time, {\\it ii}) The emergence of a shift symmetry at the level of the perturbations, and {\\it iii}) The response functions were predominately sensitive to the preferred clock $\\phi$, whose fluctuations uniquely control the end of inflation, via $n_\\mu \\simeq \\partial_\\mu (t+\\pi)$.\n\nIntuitively, the necessary gradients of $\\pi$ appear as a result of the fluctuations of the clock, the field $\\phi$ itself, which sets the equal time surfaces where the unperturbed computation is assumed to hold to a good approximation. The derivative expansion remains valid as long as the typical length scale for the variation of the extrinsic curvature (of equal time surfaces) is larger than the typical wavelength of the produced particles, namely $1/\\kappa \\ll 1/k_\\star$. (Our conclusions also apply to the two-stage model of warm inflation, provided one succeeds in producing sufficient e-foldings while having $\\gamma \\gg H$ in a consistent fashion.)\n\nOne might wonder about the possibility of having a `second clock' controlling the response functions for the ADOF. As long as we are only concerned about effects on the dynamics of the one clock driving inflation (assuming this second clock produces negligible direct contributions to $\\zeta$), one can incorporate its presence in the $\\calo$-system by replacing $n^\\mu\\partial_\\mu \\to u^\\alpha_\\calo \\partial_\\alpha$. We will study this in more detail in future work.\\\\\n\n\nIn a nutshell, departing from the vanilla single field scenario opens new possibilities which may well be realized in nature. Once again, the EFT machinery is a wonderful tool to reduce the plethora of conceivable realizations to a theory of low energy degrees of freedom coupled to a set of composite operators whose correlation function encode all the information about the dissipation/fluctuation properties of each specific model. In our case we reduced the number of additional parameters to three: $\\gamma, \\nu_{\\calo}, N_c$. (Also $\\Gamma_\\calo$ and $M_\\calo$, controlling the validity of local approximations.) By taking the ratio between $\\zeta$-correlation functions, such as the two and three point functions, we manage to cancel out most of our ignorance on the underlying dissipative mechanism, thanks to the link between different $n$-point functions induced by the symmetries. In this fashion we were able to show (assuming the noise is Gaussian) that the bispectrum peaks at equilateral configurations and moreover $|f^{\\rm eq}_{\\rm NL}| \\sim \\frac{\\gamma}{c_s^2H}$ for a vast class of models. \n \n A detection of the generic type of signatures we discussed in this paper, as a result of incorporating dissipative effects during inflation, would increase our understanding of the dynamics of the early universe and also lead us towards a more precise description of the inflationary epoch.\n \n\\begin{center}\n{\\bf Acknowledgements}\n\\end{center}\nIt is our pleasure to thank Daniel Baumann, Esteban Calzetta, Paolo Creminelli, Raphael Flauger, Dan Green, Sean Hartnoll, Lam Hui, Fernando Lombardo, Diego Mazzitelli, Alberto Nicolis and Eva Silverstein for helpful discussions. This work was supported by: Universidad de Buenos Aires, CONICET and ANPCyT (DLN); NSF grant AST-0807444, DOE grant DE-FG02-90ER40542 and NASA grant NNX10AH14G (RAP); NSF grant PHY-0503584 (LS);  NSF grants PHY-0855425, AST-0506556 \\& AST-0907969, and by the David \\& Lucile Packard and the John D. \\& Catherine T. MacArthur Foundations (MZ). DLN is grateful to the Institute for Advanced Study and Stanford Institute for Theoretical Physics for hospitality over the course of\nthis project. RAP, LS and MZ appreciate the hospitality of the CERN theory group during the final stages of this work.\n\n"
+  }
+]

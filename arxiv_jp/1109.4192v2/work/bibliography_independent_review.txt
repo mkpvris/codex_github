@@ -1,0 +1,60 @@
+参考文献の独立ダブルチェック
+確認日：2026-10-19（Asia/Tokyo）
+確認担当：付録翻訳担当（書誌作成とは別担当）
+このレビューではref.bib・書誌生成プログラム・bibliography_report.jsonを編集していない。
+
+結論
+原文56番号・65文献の欠落、引用番号の取り違え、arXiv番号の誤対応は見つからなかった。
+公式取得の書誌フィールドはすべて保持されており、内容差分は記録済みのcalzettaの出版社と年だけである。
+初回に指摘した軽微な引用符・ハッシュ記録上の2点は、統合担当の修正後に再確認し、解消した。最終PDFのリンク確認はこのレビューの対象外であり、統合担当が別途実行する必要がある。
+
+機械照合
+・原文DeftfinArxiv2.texのbibitem：56個。
+・bibliography_report.jsonのrecords：65件。ref.bib：65項目。
+・取得元はINSPIRE 61、Crossref 2、CiNii Books 1、原文からの完全な@book転記1。@miscへの置換は0件。
+・原文番号順とbibliography_groups.jsonは一致。ref.bibのキー順と取得報告書も一致。
+・原文に明記されたarXiv番号57件をすべて保持。追加はhydroの後年公刊論文1211.6461だけ。
+・保存済み公式BibTeXのフィールドが削除された項目は0件。
+・calzettaのpublisher/year以外の取得済みフィールドの変更は0件（空白・月表記の引用形式・ハイフンのTeX正規化を除く）。
+・複数論文をまとめた原文番号は[8]4件、[11]2件、[33]2件、[34]2件、[36]3件、[40]2件で、計9個の継続項目を保持している。
+・実際の生成済み1109.4192v2_jp.bblでbibitemは56個、原文キー順と一致。
+・実際のaux内のbibciteは[1]–[56]を原文通りのキーに割り当てている。
+・ungrouped.bblとgrouped.bblを比較し、後続bibitemの削除と継続区切り以外の書誌本文が保持されていることを確認した。
+詳細はbibliography_independent_checks.jsonに保存。
+
+指定重点項目
+1. calzetta [29]
+INSPIREの公式エクスポートは実際にpublisher=Oxford University Press、year=2009となっている。一方、原文はCambridge University Press (2008)。出版社の初版front matterはCambridge University Press、First published 2008、ISBN 978-0-521-64168-5を明記しており、現行ref.bibの修正は根拠がある。
+DOI 10.1017/9781009290036は後年のOpen Access再刊版を指す。現行noteはこの違いを明示し、INSPIREの全ISBNも保持しているため、版を混同していない。
+確認URL：
+https://assets.cambridge.org/97805216/41685/frontmatter/9780521641685_frontmatter.pdf
+https://www.cambridge.org/core/books/nonequilibrium-quantum-field-theory/8C6D7E585852342B43C9C9EF778EDA74
+
+2. hydro [32]
+原文はEndlich、Nicolis、Porto、WangによるDissipative effects in the Effective Field Theory for hydrodynamics（in progress）。採用された後年論文1211.6461は著者4人が全員一致し、散逸を流体EFTへ導入する主題も一致する。arXivの題名、著者、Phys. Rev. D 88, 105001 (2013)、DOIはref.bibと一致する。
+原文の仮題と「執筆中」の状態がnoteに保存されており、後年公刊情報の追補として扱っている。ただし「同一研究である」という対応付けは著者と主題に基づく推定であり、一次資料における明示的な改題宣言を今回確認したわけではない。
+初回指摘と解消確認：noteの題名は開き引用符 `` だけで閉じていなかったが、統合担当が日本語の「Dissipative effects in the Effective Field Theory for hydrodynamics」に修正したことを再確認した。任意の明確化として「同一著者・主題から対応すると判断した後年の公刊情報」と書くと判断根拠がさらに明確。
+確認URL：https://arxiv.org/abs/1211.6461
+
+3. Zhang [38]
+APS出版社ページで題名、著者Yuhong Zhang、Phys. Rev. E 47, 3745、1993年5月1日、DOI 10.1103/PhysRevE.47.3745を確認した。原文のDをEに訂正する判断は正しい。Crossrefのページ範囲3745–3748も保持している。
+確認URL：https://journals.aps.org/pre/abstract/10.1103/PhysRevE.47.3745
+
+4. Forster [55]
+CiNiiの1975年版はDieter Forster、Hydrodynamic fluctuations, broken symmetry, and correlation functions、W. A. Benjamin, Advanced Book Program、1975であり、ref.bibの内容と一致する。2018年再版との取り違えはない。原文の出版社Perseus Booksはnoteに残しており、修正の出所を追跡できる。
+任意の補足：CiNiiのページにはシリーズ巻47、ISBN 0805325611、出版地Reading, Mass.もある。公式BibTeX自体はこれらを含まないので現状は「取得フィールドの省略」ではないが、正確な版の識別を強めたい場合は同じ出所から補足可能。
+確認URL：https://cir.nii.ac.jp/crid/1971712334715945767?lang=en
+https://ci.nii.ac.jp/ncid/BA0114737X
+
+5. Fetter [39]
+原文にある著者2人、題名、McGraw-Hill、San Francisco、1971をすべて@bookで保持している。KAIST図書館はAlexander L. Fetter / John Dirk Walecka、San Francisco : McGraw-Hill, [c1971]を確認できる。2003年以降のDover再版への置換はしていない。INSPIREで取得できなかった経緯も報告されている。欠落や取り違えは見つからなかった。
+確認URL：https://library.kaist.ac.kr/search/ctlgSearch/posesn/view.do?bibctrlno=11584&ty=B
+
+6. Weiss [37]
+保存済みCrossref JSONの先頭レコードでDOI 10.1142/6738、2008年3月、edition-number=3、著者Ulrich Weiss、出版社World Scientificを確認。2012年第4版、2021年第5版とは区別されている。ref.bibの第3版・2008は妥当。
+
+検証記録の初回指摘と解消確認
+初回のbibliography_report.jsonのraw_sha256は、Windowsの実ファイルバイトでは58件で不一致となった。しかし、UTF-8で読み込み改行をLFへ正規化した本文のSHA-256では65件すべて一致し、内容破損ではなくCRLF/LFの扱いの差であった。統合担当が実ファイルのバイト列に対するSHA-256へ修正した後、65件すべてが実バイトのハッシュと一致することを再確認した。
+
+留保
+このレビューは書誌原稿、取得記録、取得済み公式エクスポート、生成済みbbl/auxの独立点検である。最終PDFにおける内部リンク・外部リンクのクリック先および視覚的表示の確認を代替しない。

@@ -1,0 +1,31 @@
+付録A–Iの翻訳と照合記録
+
+AGENTS.mdのダブルチェック
+作業開始時と担当翻訳の完了時に、作業フォルダのAGENTS.mdおよびC:\codex\AGENTS.mdを再読した。
+原文、元のtemplate、本文以外の担当ファイルは編集していない。書誌取得・BibTeX処理・最終PDFリンク確認は統合担当に委ねる。
+人名由来の表記はOhmic、Rubin、Langevin、Lagrangian、Feynman、Green、Kramers-Kronig、Kubo、Drude、Newtonian、de Sitter、Hubble、Goldstone、Gaussianを維持。
+
+担当範囲
+原文DeftfinArxiv2.texの\appendixから\begin{thebibliography}直前まで。
+付録A–I（9節）、3小節、5キャプション、6脚注を省略せず翻訳。
+sections/appendices.texに保存。見出しはsectionlink/subsectionlinkを使用。
+図のうち2列で並ぶ計6点の指定幅だけを8.5cmから.48\linewidthに変更した。
+
+機械照合（work/check_appendices.py、work/appendices_check.json）
+label 67個、ref 79個、cite 22個、includegraphics 9個は内容・順序とも一致。
+別行数式98個は空白を除いて内容・順序とも一致。
+インライン数式389個は空白を除いた多重集合が一致（自然な日本語の構文に伴う順序変更のみ）。
+節数9、小節数3、脚注数6、caption数5が一致。
+
+原文の誤植または内部不整合の疑い（以下は独断で修正せず原文通り維持）
+1. 付録G.2、tilde N_cの定義の末尾が「(Gamma_21-Gamma_12))」と閉じ丸括弧が1個多い。
+2. 付録G.3、式label sumaの左辺第3項はO_3^{00}だが、直前の展開およびfamilyではO_3^{000}である。
+3. 付録G.3、式label oeffの部分積分では通常は符号の反転が必要だが、原文には負号がない。
+4. 付録H、式label imsigmの虚部はgamma_Psi*omega/(omega+Lambda_psi)と書かれている。一方、後続のresigm/imGsは同じgamma_Psiを用いて異なる次元・低周波係数を仮定しているように見え、Kramers-Kronig対応も要確認。Psi/psiの大文字・小文字の混在も維持した。
+5. 付録H、muの選択についての本文参照はmutuned2だが、具体的な微調整式のlabelはmutunedである。
+6. 付録H、J_Psi=J_Psi^S+...をddsigに代入した次のgamma_Psi dot sigma_k式の雑音項は原文で-J_Psi^Sとなっている。直前の式からの代数的符号と一致しない可能性がある。
+7. 付録I、図RRのキャプションは「Top/Bottom」だが、本文は「left/right」であり、原文内で説明が不一致。図を横に並べ、両方の文章は原文の意味を保持した。
+8. 付録I、最後の段落の条件はk_star <= M_starと書かれているが、直前の量はM_chiであり、M_starが誤植の可能性がある。
+
+内容上の追加確認
+付録Fの「空間微分の追加によりgamma/c_s^2倍」の記述、および付録CのRe G_ret^j ≃ sigma omega_Dの表記も、係数の次元や微分次数に曖昧さがあるが、原文のまま翻訳・保持した。
