@@ -1,0 +1,49 @@
+                                                                    A.1                      Bosonic              ﬁelds                                                    337
+
+                                                         Diagrams              and              determinants
+
+The                   diagrammatic                   expansion                   is                   easily                   obtained                   from                   the                   path                   integral.
+This                   subject                   is                   well                   treated                   in                   modern                   ﬁeld                   theory                   texts.                   We                   will                   only
+derive            here             a            few            results             used             in            the             text.            For             notational            clarity            we            switch
+to              ﬁeld             theory,              replacingq(t)             with             a             real             scalar             ﬁeldφ(t,x).            Begin            with            the
+free             action
+                                                                  1   ∫
+                                                                            ddxφ         (x)(       φ(x)         ,                                              (A.1.38)
+                                                                  2
+where            (                is                some                diﬀerential                operator.                Consider                the                path                integral                with                a
+source           J(x),             taking             the             Euclidean             case             to             be             speciﬁc,
+                          ⟨            [    ∫                                    ]⟩
+      Z[J]=                    exp        i       ddxJ(x)φ(x)
+                          ∫                         [       1∫                                                    ∫                                   ]
+                   =           [dφ      ]exp           −              ddxφ         (x)(       φ(x)+             i       ddxJ(x)φ(x)                        .    (A.1.39)
+                                                            2
+This        is        the        generating        functional        for        Euclidean        Green’s        functions.        Taking
+functional       derivatives       with       respect       toJ(x)pullsdownfactorsof                                                                        iφ(x)     into
+the      integral.      Shiftingφto                             φ    +     i(−1J           completes             the             square,             leaving
+                                                      [      1    ∫                                                                 ]
+             Z[J]=               Z[0]      exp          −               ddxddyJ(x)(                     −1(x,      y)J(y)
+                                                             2
+                                                      [1     ∫                                                         δ2               ]
+                          =      Z[0]      exp                     ddxddy(−1(x,      y)
+                                                         2                                      [     ∫     δφ(x)δφ(y)                    ]
+                                                                                                               d                              
+                                                                                   ×exp            i        d    xJ(x)φ(x)                               .     (A.1.40)
+                                                                                                                                              φ=0
+
+In              the              second              line,              eachφderivative              becomes      iJ.              Any              functional   F       of     φ
+can             be             written
+                                                 ∫                        [     ∫                                   ]
+                            F[φ]=                     [dJ]exp                i        ddxJ(x)φ(x)                      f[J]        ,                            (A.1.41)
+
+where           f[J]                 is                 the                 (functional)                 Fourier                 transform                 ofF.                 By                 linearity                 one
+obtains
+                                             [      ∫                                                            2             ]               
+                                                1            d        d          −1                           δ                                
+    ⟨  F      ⟩   =     Z[0]      exp                     d     xd       y(           (x,      y)                                 F[φ]                    .    (A.1.42)
+                                                2                                                  δφ(x)δφ(y)                                  φ=0
+
+Expanding         the         exponential         generates         the         diagrammatic         expansion,         all         ways
+of             contracting             pairs             of             ﬁelds             inF.             Also,             whenFis             a             product             of             factors,
+F1F2            ...     ,wecanseparate
+                                                       δ          =            δ          +            δ           +    ...        ,                            (A.1.43)
+                                                  δφ(x)                 δφ1(x)                   δφ2(x)

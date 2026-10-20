@@ -1,0 +1,49 @@
+288                           9 Higher order amplitudes
+
+QB to the left until it annihilates %% V̂1 |. The BRST operator commutes
+with L0 , L̃0 and with the vertex operators, but not with b0 and b̃0 . The
+nonzero commutators involve
+   '                             (            !                "          !                "
+    b0 b̃0 z ±L0 −1 z̄ ±L̃0 −1 , QB = ±b0 ∂z̄ z ±L0 −1 z̄ ±L̃0 ∓ b̃0 ∂z z ±L0 z̄ ±L̃0 −1 .
+                                                                                      (9.1.23)
+These are total derivatives, illustrating the general principle (5.4.6) that
+the couplings of null states are proportional to total derivatives on moduli
+space. We have already seen an example of this for the massless vertex
+operators in section 6.6. As in that example, the integral vanishes by
+the canceled propagator argument. The integral at z → 0 is defined by
+analytic continuation from large positive (k1 + k2 )2 . The surface term
+vanishes identically there, and so by analyticity must vanish everywhere.
+The same argument applies to the other limits of moduli space.
+  For the four-particle amplitude on the sphere, the unitarity condition is
+       TS2 (1; 2; 3; 4) − TS2 (−1; −2; −3; −4)∗
+               &#      dd−1 k5
+          =i                    TS (1; 2; 5)TS2 (−5; 3; 4)
+                j5
+                     2E5 (2π)d−1 2
+                                                   + 2 permutations
+                     &#        dd−1 k5
+          = −ie−4λ                       %% V̂1 |V̂2 (1, 1)|V̂5 &%% V̂−5 |V̂3 (1, 1)|V̂4 &
+                      j5
+                             2E5 (2π)d−1
+                                                         + 2 permutations . (9.1.24)
+The intermediate particle is on-shell, the sum j5 is over a complete set of
+physical states, and the right-hand side is summed over all ways to break
+1234 into pairs: 12–34, 13–24, and 14–23.
+   Eq. (9.1.24) is what we wish to show. Using the reality condition (9.1.13)
+in the matrix element (9.1.20), the left-hand side of eq. (9.1.24) vanishes in
+the region where the z integral converges. The nonzero part comes from
+the i. introduced in the analytic continuation,
+                     1             1
+                            −              = 2πiδ(k 2 + m2 ) .                          (9.1.25)
+               k 2 + m2 − i. k 2 + m2 + i.
+Thus,
+  TS2 (1; 2; 3; 4) − TS2 (−1; −2; −3; −4)∗
+        16π 2 i &                                                       !
+    = ! 2λ          δm2 ,m̃2 δ(ki2 + m2i )%
+                                          % V̂1 |V̂2 (1, 1)b0 b̃0 |i&Gii %% i! |V̂3 (1, 1)|V̂4 &
+         α e i,i!     i    i
+
+                                                      + 2 permutations .                  (9.1.26)
+The resemblance to the desired unitarity relation (9.1.24) is obvious, and a
+little bookkeeping and definition-chasing established the result. The index
+i in the sum (9.1.26), running over a complete set of string states, labels

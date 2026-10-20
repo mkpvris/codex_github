@@ -1,0 +1,49 @@
+                                                                                           9.5                      General              amplitudes                                                                                                         305
+
+        All          the          considerations          of          this          section          extend          to          world-sheets          with          bound-
+ary,            where            in            addition            to            degenerating            handles            there            may            be            degenerating
+strips.             The             consistency             conditions             have             been             generalized             to             this             case.
+
+                                                                                        9.5                                             General               amplitudes
+
+We                            n  o w                            h  a  v  e                            a  s  s  e  m  b  l  e  d                            a  l  l                            t  h  e                            i  n  g  r  e  d  i  e  n  t  s                            t  h  a  t                            w  e                            n  e  e  d                            i  n                            o  r  d  e  r                             t o
+understand                the                consistency                of                g eneral                string                amplitudes.
+        Having                 given                 a                 graphical                 decomposition                 of                 moduli                 space,                 the                 sewing
+formalism                  allows                  us                  to                  give                  a                  diagrammatic                  expression                  for                  the                  general
+string           amplitude.           Consider           ﬁrst           the           propagator,           from           the           plumbing           ﬁxture.
+The             ghost             insertion             for             the             modulus                                      q       is
+                                                                                                    dz                           ∂z                              b
+                                                                                                                b                         1             =             0      ,                                                                    (9.5.1)
+                                                                                                   2πi              z1z1           ∂q                               q
+                                                                                                                                                 z2
+                                                                                            ˜
+and                  similarly                  for               q¯      it                  isb0/q¯.                  Including                  these                  insertions,                  and                  using                  the
+sewing             expression             (9.4.6),             the             factors             associated             with             the             propagator             are
+                 ∫                         2                                                                                                                                                             ij          ˜
+                                      d       q             ′      2           2                  ′     2           2                                                 8πδm2,m˜2G                             b0b0
+                                                         α    (ki     +mi         )/4¯α            (ki     +m˜i)/4                   ij           ˜                                    i        i
+                                        qq¯          q                                    q                                    G          b0b0              =        α′(k2              +       m2          −       i.    )      .                 (9.5.2)
+                     |q|<1                                                                                                                                                        i                   i
+The               n-string                       coupling                       is                       given                       by                       inserting                       vertex                       operators                       into                       the
+surfaces             appearing             in             the             vertices             of             the             sewing             construction,⟨                                      ⟩
+                                                                                                     ∑           ∫                                    m                    n
+                                                    g(i1,...,i                      n)=                                          dmt                              Bk                   Vˆ       i                 .                                (9.5.3)
+                                                                                                                      V                                                                          l
+                                                                                                         g                  g,n                       k=1                   l=1                           g
+where                   m        =6g+2n−6        is        the        number        of        moduli.        The        Feynman        graphs
+constructed            from            the            couplings            (9.5.3)            and            propagators            (9.5.2)            then            repro-
+duce               the               full               string               amplitude.               The               label                         i    again               stands               for               the               state               and
+momentum           of           each           string.           The           tree           amplitude           in           section           9.1           illustrates           this
+structure.
+        The                    ﬁrst                    issue                    is                    the                    ﬁniteness                    of                    the                    amplitude.                    We                    assert                    that                    di-
+vergences                 can                 arise                 only                 from                 the                 boundary                 of                 moduli                 space,                 as                 in                 the
+various                  low                  order                  examples.                  At                  ﬁnite                  values                  of                  the                  moduli,                  the                  sewing
+formula            gives            a            sum            over            an            inﬁnite            number            of            string            states,            but            this            sum
+converges               because               it               is               ultimately               just               the               expansion               of               a               quantum               state
+in                a                complete                set.                Actually,                convergence                is                guaranteed                only                in                a                unitary
+CFT,              but              the              nonunitary              parts              of              the              string              CFT              are              quite              tame.              The                               X0
+CFT                 is                 deﬁned                 by                 analytic                 continuation                 from                 a                 unitary                 CFT,                 while                 the
+ghost                CFT                just                generates                a                Faddeev–Popov                determinant                and                so                is                ﬁnite
+if                 we                 have                 made                 a                 good                 choice                 of                 gauge.                 Now,                 the                 boundary                 has                 been
+made                    explicit                    as                    the   q       →           0                    limit                    of                    the                    various                    propagators,                    and                    the
+integral             (9.5.2)             is             one             that             we             have             encountered             several             times             before.             It             is

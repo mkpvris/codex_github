@@ -1,0 +1,48 @@
+238                                   8                    Toroidal              compactiﬁcation              and   T-duality
+
+modular            transformations            on            the            periodicities            is            then            simply            to            change            the
+summation             variables                     m    and        w.
+
+                                                                     Ve    r    t   e  x                         o    p    e    r   a    t   o    r    s
+In               order               to               create               a               winding               state,               which               hasα0̸=˜α0,weneedindependent
+variablesxL                    andxR,with
+                                                          [xL,pL]=[                      xR,pR]=                  i.                                            (8.2.14)
+The             ﬁeld   X     then             splits             into             holomorphic             and             antiholomorphic             parts,
+                                                          X(z,¯z)=               XL(z)+               XR(¯z),                                                   (8.2.15)
+with
+                                                                      α′                          (α′1/2∑∞                         α
+                                 X      (z)=           x      −i           p      lnz+i                                                m      ,              (8.2.16a)
+                                     L                    L            2      L                        2                          mzm
+                                                                                                                      m=−∞
+                                                                                                                        m̸=0
+                                                                      α′                           (α′1/2∑∞                        ˜α
+                                XR(¯z)=                xR−i                pRln¯z+i                                                    m       .             (8.2.16b)
+                                                                       2                                2                         m¯zm
+                                                                                                                      m=−∞
+                                                                                                                        m̸=0
+If          we          restrict          attention          to          states          withkL=     kR     and          to          operators          constructed
+only         from         the         sum   XL(z)+XR(¯z),         this         reduces         to         the         CFT         for         a         noncompact
+dimension.
+     Let                  us                  now                  discuss                  the                  OPE                  and                  vertex                  operators,                  ﬁrst                  in                  a                  slightly
+heuristic                     way                     and                     then                     ﬁlling                     in                     the                     details.                     It                     is                     easy                     to                     guess                     what
+the                  operator                  products                  should                  be,                  since                  the                  usualXXop erator                   product
+−(α′/2)      ln(z12¯z12)             separates             into             a             sum             of             holomorphic             plus             antiholomor-
+phic             functions.             Thus,
+                                                         α′                                                                       α′
+             XL(z1)XL(z2)                     ∼−          2    lnz12         ,XR(¯z1)XR(¯z2)∼−                                    2ln¯z12             ,      (8.2.17a)
+             XL(z1)XR(¯z2)                     ∼     0   .                                                                                                   (8.2.17b)
+The             operator             corresponding             to             the             state|0;    kL,kR⟩           would        be
+                                                   Vk       k    (z,¯z)= :eikLXL(z)+ikRXR(¯z)                               :(8.2.18)
+                                                          L   R
+with             OPE
+                                                                                α′k     k′  /2     α′k    k′   /2
+                                  ¯             ′   ′          ¯                     L    L     ¯       R   R                    ′             ′             ¯
+          VkLkR(z1,               z1)VkLkR(z2,                  z2)     ∼     z12               z12                V(k+k           )L(k+k       )R(z2,       z2)     .
+                                                                                                                                                                (8.2.19)
+One          encounters          branch          cuts          in          various          expressions,          which          is          not          surprising
+because              the              ﬁeld X      is               no               longer               single-valued.               It               is               important,               however,
+that            the            full            vertex            operator            OPE            is            single-valued:            the            net            phase            whenz1
+circles         z2     is
+                   exp[π iα          ′(k      k′     −    k     k′    )]           =           exp[2πi(nw′    +     wn′)]           =           1.              (8.2.20)
+                                           L    L            R     R
+This             is             as             it             must             be             in             order             for             the             string             amplitudes             to             be             well             deﬁned.

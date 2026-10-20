@@ -1,0 +1,51 @@
+58                                                   2                     Conformal              ﬁeld              theory
+
+                                                       2.7                                             Mode               expansions
+
+                                                                  Free              scalars
+
+In                    free                   ﬁeld                    theory,                    the                    ﬁelds                    break                    up                    into                   harmonic                    oscillators,                    and
+the              spectrum              and              energy-momentum              tensor              can              be              given              in              terms              of              the
+                                                                                                         µ                                      ¯
+modes.             We             start             with             the             closed             string.             In             theXtheory,∂Xand∂Xare
+(anti)holomorphic             and             so             have             Laurent             expansions             like             that             forT,
+                                  (α′1/2           ∞           αµ                                           (α′1/2            ∞          ˜αµ
+             µ                                                      m             ¯      µ                                                      m
+      ∂X       (z)=        −i         2                        zm+1        ,      ∂X       (¯z)=        −i        2                        ¯zm+1       .
+                                                  m=−∞                                                                        m=−∞
+                                                                                                                                                  (2.7.1)
+Equivalently,
+                                                        (    2  1/2      ∮      dz
+                                           αµ      =                                   zm∂X        µ(z)      ,                                 (2.7.2a)
+                                              m             α′                  2π
+                                                             (2      1/2      ∮     d¯z
+                                           ˜αµ     =    −                                   ¯zm∂X¯      µ(¯z)     .                            (2.7.2b)
+                                              m                  α′                  2π
+
+Single-valuedness                     of       Xµ       implies                     thatαµ  =      ˜αµ.Moreover,theNoether
+                                                                                       µ0     ′      0
+current   for   spacetime   translations   isi∂aX/α                                             ,sothespacetimemomentum
+is
+                              1     ∮                                         (21/2                      (21/2
+               pµ=                       (dz        jµ−    d¯z   ˜µ)=                        αµ=                         ˜αµ    .                (2.7.3)
+                           2πi        C                                           α′             0            α′             0
+
+Integrating             the             expansions             (2.7.1)             gives
+                                                ′                          (      ′1/2        ∞           (      µ           µ   
+             µ                     µ         α      µ            2             α                       1      αm           ˜αm
+         X     (z,   ¯z)=       x     −i2p             ln|z|        +i          2                      m       zm     +     ¯zm        .          (2.7.4)
+                                                                                            m=−∞
+                                                                                              m̸=0
+     Either                      from                      standard                      canonical                      commutation,                      or                      from                      the                      contour
+argument             and             theXX        OPE,             one             derives
+                                                 [αµ    ,α   ν]=[        ˜αµ,˜αν]=           mδ    m,−nηµν          ,                          (2.7.5a)
+                                                     m       n             m       n
+                                                 [xµ,pν]=              iηµν    ,                                                               (2.7.5b)
+
+with           other           commutators           vanishing.           The           spectrum           is           given           by           starting           with
+astate           |0;    k⟩     that                    has                    momentumkµand                    is                    annihilated                    by                    all                    of                    the
+lowering                 modes,      αµ     for      n>        0,       and       acting       in       all       possible       ways       with       the
+                                        n
+raising             (n<    0)      modes.
+     We       now       wish       to       expand       the       Virasoro       generators       in       terms       of       the       mode
+operators.     Insert     the     Laurent     expansion     forXµinto     the     energy-momentum

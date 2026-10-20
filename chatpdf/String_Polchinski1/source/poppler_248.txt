@@ -1,0 +1,49 @@
+226                            7 One-loop amplitudes
+
+curious that the mechanism that removes the UV divergence is di!erent in
+the closed and open string cases. In the closed string it is an e!ective cuto!
+on the modular integration; in the open string it is a reinterpretation of
+the dangerous limit of moduli space in terms of long distances.
+   In eq. (7.4.1) the path integral on the cylinder has been related to a
+trace over the open string spectrum by cutting open the path integral with
+, 2 treated as time. It can also be obtained in terms of the closed string
+Hilbert space by treating , 1 as time. Let , 2 be periodic with period 2π
+and the boundaries be at , 1 = 0, s. The closed string appears in some state
+|B* at , 1 = 0 and then disappears in the same way at , 1 = s. Including
+the measure insertions, the path integral is then proportional to
+                            -B|c0 b0 exp[−s(L0 + L̃0 )]|B*.                       (7.4.11)
+The boundary state |B* is determined by the condition that ∂1 X µ , c1 ,
+and b12 vanish on the boundary. In the Hamiltonian form these must
+annihilate |B*, which in terms of the Laurent coefficients is
+      (αµn + α̃µ−n )|B* = (cn + c̃−n )|B* = (bn − b̃−n )|B* = 0 ,      all n .    (7.4.12)
+This determines
+                           ∞
+                            (                                           
+ |B* ∝ (c0 + c̃0 ) exp −          (n−1 α−n · α̃−n + b−n c̃−n + b̃−n c−n ) |0; 0* . (7.4.13)
+                            n=1
+Using this in (7.4.11) gives the result (7.4.3), except that the normalization
+of |B* is undetermined. This representation is useful in analyzing the t → 0
+limit and the closed string poles.
+   By comparing the string and field theory calculations we can determine
+the disk tadpole &, but it will be more convenient to do this in the next
+chapter as a special case of a more general result.
+
+                                     The Klein bottle
+The vacuum amplitude from the Klein bottle is
+                $ ∞
+                    dt % 9                           :
+       ZK 2 =          Trc Ω exp[−2πt(L0 + L̃0 )]
+                0 4t
+                   $ ∞                    (
+                       dt
+             = iVd        (4π 2 α% t)−d/2    Ωi exp[−2πt(hi + h̃i − 2)] ,         (7.4.14)
+                    0 4t                   ⊥
+                                          i∈Hc
+
+where the notation follows the cylinder (7.4.1). Relative to the torus in the
+oriented theory there is an extra factor of 12 from the projection operator
+1                                                  1
+2 (1 + Ω). For the same reason there is an extra 2 in both the torus and
+cylinder amplitudes in the unoriented theory. One can also think of this
+as coming from the extra gauge invariance w → w̄. To evaluate the trace
+for 26 flat dimensions, note that the only diagonal elements of Ω are those

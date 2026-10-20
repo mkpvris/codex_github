@@ -1,0 +1,45 @@
+                                                                   2.9                      More              on              states              and              operators                                                               71
+
+To                       r   e   l   a   t   e                      t  o                       t   h   e                       e   a   r   l   i   e   r                       n   o   t   a   t   i   o  n                       (   2   .   4   .   1   1   )   ,A(n)=Ln−1·Aforn≥0,               and
+the             conformal             transformation             of                                           A         is
+                                                              ∞            1                                                                                               
+             δA(z,¯z)=                             −.                                ∂nv(z)Ln−1                           +(∂nv(z))∗L˜n−1                                         ·A(z,                ¯z)     .               (2.9.6)
+                                                              n=0         n!
+Us   i   n   g                     t   h   e                     g    e   n   e   r   a   l                     f  o   r   m                     (   2   .   4   .   1   4   )                     f  o   r                     t   h   eTAOPE,            we            have            the            very            useful
+result
+                                                                                                                                     ˜                                  ¯
+                                                                       L−1           ·A            =∂A,                             L−1·A                       =∂A,                                                       (2.9.7a)
+                                                                                                                                ˜                              ˜
+                                                                       L0·A                    =hA                   ,          L0·A                   =hA.                                                                (2.9.7b)
+                                                                                                                                                                                                                      ˜
+       The                OPE                (2.9.5)                implies                that                a                primary                ﬁeld       O       of                weight                (h, h)                corre-
+sponds             to             a             state             satisfying
+                                                                                                                                     ˜                           ˜
+                                                                            L0|O⟩                =       h|O⟩             ,         L0|O⟩                =       h|O⟩            ,                                         (2.9.8a)
+                                                                            Lm|O⟩                 =       L˜m|O⟩                =0             ,m>                       0.                                                (2.9.8b)
+
+Such                 a                 state                 is                 conventionally                 known                 as                 ahighest                 weight                 state.Forthe
+CFTs            of            interest                  L0         and           L˜0        are            bounded            below.            By            acting            repeatedly            with
+lowering                 operators                 on                 any                 state                 we                 eventually                 reach                 a                 state                 annihilated
+by             further             lowering             operators,             a             highest             weight             state.
+       An                interesting                special                case                is                the                unit                operator.                The                operator                product
+T      1             is             nonsingular,             so             it             follows             in             any             CFT             that
+                                                                     Lm|1⟩                =       L˜m|1⟩              =0             ,m                ≥−1.                                                                    (2.9.9)
+
+As              noted              in              section              2.6,              the              operators˜˜          L0         and            L±1            form              a              closed              algebra,
+as             do   L0         and            L±1.             The             full             algebra             is
+                                                                                                          SL(2,              C)        .                                                                                   (2.9.10)
+Thus              |1⟩        is           also           called           the         SL(2,              C)-invariant           state.           It           is           the           only           such           state
+because              the              relations              (2.9.7)              imply              that              the              operator                                A          corresponding              to
+any           SL(2,              C)-invariant             state             is             independent             of             position.             It             must             then             be             a
+c-number,             as             explained             after             eq.             (2.4.24).
+
+                                                                                                   Un  i  t a   ry                     C  F  T  s
+Highest                  weight                  states                  play                  a                  sp ecial                  role                  in                  string                  theory,                  and                  also                  in                  the
+theory                   of                   representations                   of                   the                   Virasoro                   alg ebra.                   We                   will                   return                   to                   this
+at                  various                  points,                  but                  for                  now                  we                  derive                  a                  few                  important                  g eneral                  results
+that               hold               in unitary                  CFTs.            A            unitary            CFT            is            one            that            has            a            positive            inner
+product                     ⟨|⟩            such             that
+                                                                               L†          =       L               ,          L˜†        =        L˜              .                                                        (2.9.11)
+                                                                                    m                   −m                         m                   −m
+Recall                 that                 the                 inner                 product                 deﬁnes                 the                 adjoint                 via   ⟨α|Aβ             ⟩     =         ⟨A†α|β⟩.

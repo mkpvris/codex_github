@@ -1,0 +1,29 @@
+{
+  "audit_time_utc": "2026-10-20T19:16:43.253257+00:00",
+  "changed_pages": [
+    321,
+    322
+  ],
+  "old_page_count": 367,
+  "new_page_count": 367,
+  "unchanged_text_and_bbox_pages": 365,
+  "changed_pages_combined_text_ignoring_whitespace_and_footer_numbers_identical": true,
+  "combined_old_character_count": 2907,
+  "combined_new_character_count": 2907,
+  "images_reviewed": [
+    "old-321.png",
+    "old-322.png",
+    "new-321.png",
+    "new-322.png"
+  ],
+  "render_dpi": 140,
+  "visual_result": "PASS",
+  "visual_notes_ja": [
+    "修正前はDirac量子化条件の式の左辺と等号が321ページ末尾、右辺2πnが322ページ先頭へ分断されていた。",
+    "修正後は式μ_e μ_m′−μ_m μ_e′=2πn全体が322ページ先頭の同じ行に収まり、数式のページ分断が解消している。",
+    "321・322ページを全体画像で新旧照合した。数式の欠落、はみ出し、文字の重なり、不自然な余白は認めない。",
+    "組版の変化はDirac量子化条件の段落に限られ、322ページのDirac spinor以後の本文配置は同じである。",
+    "TeXおよびPDFには変更を加えていない。"
+  ],
+  "comparison_scope": "文字列、語の座標、ページ寸法。リンクと非テキスト図形の全ページ同一性はこの比較の対象外。"
+}

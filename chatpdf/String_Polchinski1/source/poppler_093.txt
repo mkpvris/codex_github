@@ -1,0 +1,41 @@
+                      2.9 More on states and operators                             71
+
+To relate to the earlier notation (2.4.11), A(n) = Ln−1 · A for n ≥ 0, and
+the conformal transformation of A is
+                     ∞
+                      1                                     
+    δA(z, z̄) = −.              ∂n v(z)Ln−1 + (∂n v(z))∗ L̃n−1 · A(z, z̄) .    (2.9.6)
+                     n=0
+                           n!
+Using the general form (2.4.14) for the T A OPE, we have the very useful
+result
+                                                  ¯ ,
+                       L−1 · A = ∂A , L̃−1 · A = ∂A                           (2.9.7a)
+                       L0 · A = hA , L̃0 · A = h̃A .                          (2.9.7b)
+  The OPE (2.9.5) implies that a primary field O of weight (h, h̃) corre-
+sponds to a state satisfying
+                           L0 |O, = h|O, ,      L̃0 |O, = h̃|O, ,             (2.9.8a)
+                           Lm |O, = L̃m |O, = 0 ,      m>0.                   (2.9.8b)
+Such a state is conventionally known as a highest weight state. For the
+CFTs of interest L0 and L̃0 are bounded below. By acting repeatedly with
+lowering operators on any state we eventually reach a state annihilated
+by further lowering operators, a highest weight state.
+  An interesting special case is the unit operator. The operator product
+T 1 is nonsingular, so it follows in any CFT that
+                       Lm |1, = L̃m |1, = 0 ,        m ≥ −1 .                  (2.9.9)
+As noted in section 2.6, the operators L0 and L±1 form a closed algebra,
+as do L̃0 and L̃±1 . The full algebra is
+                                       S L(2, C) .                            (2.9.10)
+Thus |1, is also called the S L(2, C)-invariant state. It is the only such state
+because the relations (2.9.7) imply that the operator A corresponding to
+any S L(2, C)-invariant state is independent of position. It must then be a
+c-number, as explained after eq. (2.4.24).
+
+                                    Unitary CFTs
+Highest weight states play a special role in string theory, and also in the
+theory of representations of the Virasoro algebra. We will return to this
+at various points, but for now we derive a few important general results
+that hold in unitary CFTs. A unitary CFT is one that has a positive inner
+product / | , such that
+                            L†m = L−m ,       L̃†m = L̃−m .                   (2.9.11)
+Recall that the inner product defines the adjoint via /α|Aβ, = /A† α|β,.

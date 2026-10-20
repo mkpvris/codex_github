@@ -1,0 +1,48 @@
+                                    A.1 Bosonic fields                                             335
+
+                                 Euclidean path integrals
+In Schrödinger language, the time-ordered product (A.1.17) is
+   %qf | exp[−iĤ(T − t> )] q̂ exp[−iĤ(t> − t< )] q̂ exp[−iĤt< ]|qi & ,                     (A.1.27)
+where t> is the greater of t and t! , and t< is the lesser. By the nature
+of the path integral, which builds amplitudes from successive time steps,
+the time differences multiplying H are always positive in amplitudes such
+as (A.1.27): one only encounters exp(−iH(t) for positive (t. Now continue
+analytically by uniformly rotating all times in the complex plane, t → e−iθ t
+for any phase 0 ≤ θ ≤ π. The real part of the exponent is −E sin θ(t,
+where E is the energy of the intermediate state. Because the Hamiltonian
+is bounded below for a stable system, the sum over intermediate states is
+safely convergent and no singularities are encountered — the continued
+amplitude is well defined.
+   Taking the times to be purely imaginary, t = −iu for real u, defines the
+Euclidean amplitudes, as opposed to the Minkowski amplitudes studied
+above:
+                                            .             /
+                                %qf , u|T         q̂(ua ) |qi , 0&E                           (A.1.28)
+                                             a
+is defined to be the continuation of
+                                            .             /
+                                 %qf , t|T        q̂(ta ) |qi , 0&                            (A.1.29)
+                                              a
+to t = −iu. One can repeat the derivation of the path integral representa-
+tion for the Euclidean case, but the result is extremely simple: just replace
+t in the action with −iu,
+            .          /               #                       .# U                    /
+                                                  qf ,U
+  %qf , U|T       q̂(ua ) |qi , 0&E =       [dq]q ,0 exp               du L(q, i∂u q)        q(ua ) .
+                                                   i
+              a                                                   0                      a
+                                                                 (A.1.30)
+The weight in the Euclidean path integral is conventionally defined to be
+exp(−SE ), so the Euclidean action contains a minus sign,
+                            #                               #
+                   SE =         du LE (q, ∂u q) = −             du L(q, i∂u q) .              (A.1.31)
+
+Euclidean path integrals are usually the more well-defined, because the ex-
+ponential of the action is damped rather than oscillatory. The Minkowski
+matrix elements can then be obtained by analytic continuation. In the
+text our main concern is the Euclidean path integral, which we use to
+represent the string S-matrix.
+  One is often interested in traces, such as
+                                                   &
+                         Tr exp(−ĤU) =                    exp(−Ei U) ,                       (A.1.32)
+                                                       i

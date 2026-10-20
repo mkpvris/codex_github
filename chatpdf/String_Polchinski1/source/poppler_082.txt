@@ -1,0 +1,47 @@
+60                                          2 Conformal field theory
+
+transformation properties are simple. The latter, which is probably more
+familiar to the reader, is useful for working out the matrix elements of the
+operators. Let us work out the relation between them. We start by com-
+paring the time-ordered and creation–annihilation-ordered products. For
+the product X µ (z, z̄)X ν (z " , z̄ " ) with |z| > |z " |, insert the mode expansions
+and move the lowering operators in X µ (z, z̄) to the right. Keeping track
+of the commutators gives
+      X µ (z, z̄)X ν (z " , z̄ " ) = ◦◦ X µ (z, z̄)X ν (z " , z̄ " )◦◦
+                                                               -        ∞                    %           &/
+                                                     α"                   1 z "m z̄ "m
+                                                    + η µν − ln |z|2 +           + m
+                                                     2                 m=1
+                                                                           m zm   z̄
+                                                                             α" µν
+                                     = ◦◦ X µ (z, z̄)X ν (z " , z̄ " )◦◦ −     η ln |z − z " |2 .        (2.7.11)
+                                                                             2
+Since |z| > |z " |, the left-hand side here is time-ordered and the sum
+converges. The definition (2.1.21) gave the relation between the time-
+ordered product and the conformal-normal-ordered product (eq. (2.1.21)
+was in path integral language, so the product on its right becomes time-
+ordered in operator formalism). It is the same as the relation (2.7.11), so
+that
+                          ◦
+                          ◦   X µ (z, z̄)X ν (z " , z̄ " )◦◦ = : X µ (z, z̄)X ν (z " , z̄ " ) : .        (2.7.12)
+Such a relation does not hold in general CFTs, and in fact the somewhat
+arbitrary grouping of pµ with the lowering operators was done in part
+to give this simple result. It also does not hold for operators conformal-
+normal-ordered in terms of w rather than z, for example. From eq. (2.7.12)
+one can write the mode expansion (2.7.10) at once, giving a second
+derivation of aX = 0.
+   Creation–annihilation normal-ordered products of more than two X µ s
+have the same combinatoric properties as for : : ordering. That is, they are
+obtained from the time-ordered product by summing over all subtractions
+— this is Wick’s theorem from field theory. Also, to convert operators
+normal-ordered in one form into a di!erent normal ordering, one sums
+over all subtractions using the difference of the two-point functions. That
+is, if we have two kinds of ordering,
+      [X µ (z, z̄)X ν (z " , z̄ " )]1 = [X µ (z, z̄)X ν (z " , z̄ " )]2 + η µν ∆(z, z̄, z " , z̄ " ) ,   (2.7.13)
+then for a general operator F,
+                          0 !                                                                       1
+                  1                     2     2 "    δ         " δ  "
+       [F]1 = exp        d z d z ∆(z, z̄, z , z̄ ) µ                           [F]2 .
+                  2                               δX (z, z̄) δXµ (z " , z̄ " )
+                                                                                 (2.7.14)
+     For the linear dilaton CFT, the Laurent expansion and commutators

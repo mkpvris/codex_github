@@ -1,0 +1,48 @@
+40                                                              2                     Conformal              ﬁeld              theory
+
+where              the              functional              derivatives              act              only              on              the              ﬁelds              inForGrespec-
+tively.             This             follows             readily             from             eq.             (2.2.7).
+      As             an             example,
+             :∂X        µ(z)∂X            µ(z):      :∂′Xν(z′)∂′Xν(z′):
+                                                 =:∂X             µ(z)∂X            µ(z)∂′Xν(z′)∂′Xν(z′):
+                                                                                       α′            ′                      ′  2                µ            ′             ′
+                                                                         −4·            2   (∂∂        ln|z        −     z    |   ):    ∂X         (z)∂        Xµ(z          ):
+                                                                                              (        α′                                       2
+                                                                         +2        ·ηµµ           −          ∂∂′      ln|z        −     z′|2
+                                                                                                        2
+                                                              Dα      ′2                        2α′                    ′     µ       ′      ′             ′
+                                                 ∼      2(z      −     z′)4       −      (z    −     z′)2        :∂     X       (z    )∂     Xµ(z          ):
+                                                                                  2α′                 ′2      µ       ′      ′             ′
+                                                                         −z        −z′          :∂       X       (z     )∂    Xµ(z          ):       .                        (2.2.11)
+
+The          second          term          in          the          equality          comes          from          the          four          ways          of          forming          a
+single          pair          and          the          third          from          the          two          ways          of          forming          two          pairs.          In          the
+ﬁnal            line            we            have            put            the            OPE            in            standard            form            by            Taylor            expanding
+inside      the      normal      ordering      to      express      everything      in      terms      of      local      operators
+at     z′    and             putting             the             most             singular             terms             ﬁrst.
+      Another             important             example             is
+                                                                                      ¯
+                                                      F       =      eik1·X(z,z)            ,       G     =      eik2·X(0,0)            .                                     (2.2.12)
+The          variations                δ/δX           µ   and         δ/δX          µ    give         factors         ofik1µ               and        ik2µ       respectively,
+                                                     F                              G
+so           the           general           result           (2.2.10)           becomes
+                                                                                     (α′                                      
+           :eik1·X(z,¯z)::                eik2·X(0,0):=exp                                     k1·k2ln|z|2                         :eik1·X(z,¯z)eik2·X(0,0)                      :
+                                                                                          2
+                                                                                    ′                                ¯
+                                                                     =      |z|α     k1·k2       : eik1·X(z,z)eik2·X(0,0):                          .                         (2.2.13)
+
+To             derive             the             OPE,             Taylor             expand             inside             the             normal             ordering             to             give
+        :eik1·X(z,¯z)            ::     eik2·X(0,0):=                   |z|α′k1·k2           :ei(k1+k2)·X(0,0)[1        +                   O(z,        ¯z)]    :    .        (2.2.14)
+
+The            exercises            give            further            practice            with            normal            ordering            and            the            free-ﬁeld
+OPE.
+      Note              that              the              OPEs              (2.2.2),              (2.2.4),              and              so              on              have              been              written              asym-
+metrically                    in     σ1       and          σ2,                    expanding                    around                    the                    latter                    point.                    They                    can
+also              be              cast              in              symmetric              form              by              Taylor              expanding              the              right-hand              sides
+around                      (σ1+      σ2)/2.                      The                      coeﬃcient                      functions                      for                      the                      symmetric                      form
+behave             simply             under             interchange             of             the             two             operators,
+                                                ck    (σ1      −      σ2)sym             =        ±ck       (σ2       −     σ1)sym            ,                               (2.2.15)
+                                                   ij                                                    ji
+where            the            minus            sign            appears            ifAi      and         Aj        are            both            anticommuting.            The
+asymmetric              form              is              usually              more              convenient              for              calculation,              so              when              the

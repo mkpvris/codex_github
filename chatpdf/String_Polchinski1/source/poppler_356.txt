@@ -1,0 +1,60 @@
+334                                               Appendix A
+
+to the ordinary notion that an operator equation is one that should hold
+for general matrix elements.
+     When additional insertions are present at t, operator equations inside
+the path integral hold only up to additional delta-function source terms.
+For example, let F = q(t! ) . . . , where t! is near t and the other fields in
+‘. . .’ are far away. Then eq. (A.1.19) becomes
+                            :                          ;
+                                   !   δS                                          -
+                                q(t )       ...            = i δ(t − t! ) . . .         .    (A.1.20)
+                                      δq(t)
+This is an example of the Schwinger–Dyson equation, the equation of
+motion for the expectation value of a product of fields. The same result
+written as an operator equation is
+                                                  δS
+                                       q(t! )          = iδ(t − t! ) .                       (A.1.21)
+                                                 δq(t)
+  As an explicit example, take the harmonic oscillator,
+                                                      #
+                                                  1
+                                       S =                 dt (q̇ 2 − / 2 q 2 ) ,           (A.1.22a)
+                                                  2
+                      δS
+                           = −q̈(t) − / 2 q(t) .                                            (A.1.22b)
+                     δq(t)
+Then the operator equations we have derived are
+                                        3 2                     4
+                                         ∂                  2
+                                                     +/             q(t) = 0                 (A.1.23)
+                                             ∂t2
+and
+                              3 2                4
+                               ∂
+                                       +/    2
+                                                   q(t)q(t! ) = −iδ(t − t! ) .               (A.1.24)
+                                ∂t2
+In Hilbert space language these become
+                                       3 2                 4
+                                        ∂
+                                             2
+                                               + / 2 q̂(t) = 0 ,
+                                        ∂t
+                           3 2               4
+                            ∂
+                         + / T[q̂(t)q̂(t! )] = −iδ(t − t! ) .
+                                         2
+                                                                   (A.1.25a)
+                     ∂t2
+The first is the Heisenberg equation for the field operator, while the delta
+function in the second comes from the time derivative acting on the step
+functions in the time-ordered product,
+ 3 2               4                             <'                       (    =
+  ∂                                                   ¨ + / 2 q̂(t) q̂(t! ) + δ(t − t! )[q̂(t),
+                                                                                         ˙ q̂(t)]
+        2
+          +/   2
+                       T [q̂(t)q̂(t! )] = T           q̂(t)
+   ∂t
+                                       = 0 − iδ(t − t! ) .                                   (A.1.26)

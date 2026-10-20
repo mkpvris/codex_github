@@ -1,0 +1,955 @@
+% 原文 PDF 143--166（印刷頁121--144）。第4章全文。
+\sectionlink{弦のスペクトル}\label{ch:4}
+
+\subsectionlink{旧共変量子化}\label{sec:4.1}
+
+共形ゲージでは、世界面の場は $X^\mu$ と Faddeev--Popov ゴースト $b_{ab}$ および $c^a$ である。Hilbert 空間は、弦の実際の物理的スペクトルよりも大きい。$D$ 組の $\alpha^\mu$ 振動子には座標系の非物理的な振動が含まれ、さらにゴースト振動子もある。共変ゲージでは一般にそうであるように、時間的振動子から負ノルム状態が生じる（交換子が時空計量 $\eta_{\mu\nu}$ に比例するためである）。ゴーストからも負ノルム状態が生じる。
+
+実際の物理的空間は、これより小さい。この小さい空間をどう特定するかを見るため、無限円筒上で、ある始状態 $|i\rangle$ がある終状態 $|f\rangle$ へ伝播する振幅を考えよう。最初に局所対称性を用いて、計量を $g_{ab}(\sigma)$ という形に固定したとする。今度は、計量が $g_{ab}(\sigma)+\delta g_{ab}(\sigma)$ である別のゲージを考える。物理的振幅はこの選択に依存してはならない。もちろん、計量を変えたときに経路積分がどう変化するかは分かっている。$T^{ab}$ の定義\eqref{eq:3.4.4}より、
+\begin{equation}
+\delta\langle f|i\rangle
+=-\frac1{4\pi}\int d^2\sigma\,g(\sigma)^{1/2}\delta g_{ab}(\sigma)
+\langle f|T^{ab}(\sigma)|i\rangle .
+\tag{4.1.1}\label{eq:4.1.1}
+\end{equation}
+計量の任意の変化に対して変分が消えるためには、任意の物理的状態 $|\psi\rangle,|\psi'\rangle$ に対して
+\begin{equation}
+\langle\psi|T^{ab}(\sigma)|\psi'\rangle=0
+\tag{4.1.2}\label{eq:4.1.2}
+\end{equation}
+であることが必要である。
+
+これは別の見方もできる。$g_{ab}$ の変分から得られた元の運動方程式は $T^{ab}=0$ であった。ゲージ固定後には、これは演算子方程式としては成り立たない。ゲージ固定した理論では $g_{ab}$ を変分しないので、運動方程式が一つ失われている。条件\eqref{eq:4.1.2}は、この失われた運動方程式が、物理的状態の間の行列要素では成り立たなければならないということである。ゲージを変えるときには Faddeev--Popov 行列式の変化も考慮しなければならないので、行列要素中のエネルギー運動量テンソルは $X^\mu$ とゴーストの寄与の和である。
+\begin{equation}
+T_{ab}=T^X_{ab}+T^{\mathrm g}_{ab}.
+\tag{4.1.3}\label{eq:4.1.3}
+\end{equation}
+$X^\mu$ を、より一般の CFT（これを物質 CFT と呼ぶ）で置き換えてもよく、その場合には
+\begin{equation}
+T_{ab}=T^{\mathrm m}_{ab}+T^{\mathrm g}_{ab}.
+\tag{4.1.4}\label{eq:4.1.4}
+\end{equation}
+
+本節の残りでは、単純だがやや場当たり的な方法で条件\eqref{eq:4.1.2}を課す。この方法は旧共変量子化（OCQ）として知られ、多くの目的には十分である。次節では、より系統的な方法である BRST 量子化を扱う。第4.4節で示すように、これらは実際には等価である。
+
+この場当たり的な方法では、単にゴーストを無視し、失われた運動方程式 $T^{\mathrm m}_{ab}=0$ が行列要素で成り立つように、物質 Hilbert 空間を制限しようとする。Laurent 係数で書けば、これは $L^{\mathrm m}_n=0$ であり、閉弦ではさらに $\widetilde L^{\mathrm m}_n=0$ である。まず、すべての $n$ について $L^{\mathrm m}_n|\psi\rangle=0$ を物理的状態に要求することが考えられるが、これは強すぎる。この式に $L^{\mathrm m}_m$ を作用させて交換子を作ると、Virasoro 代数の中心電荷による矛盾に突き当たる。しかし、Virasoro の下降演算子とゼロ演算子だけが物理的状態を消滅させれば十分である。
+\begin{equation}
+(L^{\mathrm m}_n+A\delta_{n,0})|\psi\rangle=0
+\qquad(n\geq0).
+\tag{4.1.5}\label{eq:4.1.5}
+\end{equation}
+すると $n<0$ については
+\begin{equation}
+\langle\psi|L^{\mathrm m}_n|\psi'\rangle
+=\langle L^{\mathrm m}_{-n}\psi|\psi'\rangle=0
+\tag{4.1.6}\label{eq:4.1.6}
+\end{equation}
+となる。ここでは、エネルギー運動量テンソルの Hermite 性から従う
+\begin{equation}
+L^{\mathrm m\dagger}_n=L^{\mathrm m}_{-n}
+\tag{4.1.7}\label{eq:4.1.7}
+\end{equation}
+を用いた。条件\eqref{eq:4.1.5}は Virasoro 代数と整合する。$n=0$ には、いつものように順序付け定数の可能性を含めた。\eqref{eq:4.1.5}を満たす状態を物理的状態と呼ぶ。式\hyperref[eq:2.9.8a]{(2.9.8)}の用語では、物理的状態はウェイト $-A$ の最高ウェイト状態である。条件\eqref{eq:4.1.5}は電気力学の Gupta--Bleuler 量子化と似ている。
+
+随伴\eqref{eq:4.1.7}を用いると、
+\begin{equation}
+|\chi\rangle=\sum_{n=1}^{\infty}L^{\mathrm m}_{-n}|\chi_n\rangle
+\tag{4.1.8}\label{eq:4.1.8}
+\end{equation}
+の形の状態は、任意の $|\chi_n\rangle$ に対して、すべての物理的状態と直交することが分かる。このような状態をスプリアス状態と呼ぶ。物理的であると同時にスプリアスでもある状態をヌル状態と呼ぶ。$|\psi\rangle$ が物理的で、$|\chi\rangle$ がヌルならば、$|\psi\rangle+|\chi\rangle$ も物理的であり、任意の物理的状態との内積は $|\psi\rangle$ の内積と同じである。したがって、この二つの状態は物理的に区別できず、
+\begin{equation}
+|\psi\rangle\cong|\psi\rangle+|\chi\rangle
+\tag{4.1.9}\label{eq:4.1.9}
+\end{equation}
+と同一視する。すると真の物理的 Hilbert 空間は同値類の集合、
+\begin{equation}
+\mathcal H_{\mathrm{OCQ}}=
+\frac{\mathcal H_{\mathrm{phys}}}{\mathcal H_{\mathrm{null}}}
+\tag{4.1.10}\label{eq:4.1.10}
+\end{equation}
+となる。
+
+必ずしも $D=26$ と仮定せず、平坦な時空中の開弦の最初の二つの準位で、これがどう働くかを見よう。関係する項は
+\begin{align}
+L^{\mathrm m}_0&=\alpha'p^2+\alpha_{-1}\cdot\alpha_1+\cdots,
+\tag{4.1.11a}\label{eq:4.1.11a}\\
+L^{\mathrm m}_{\pm1}&=(2\alpha')^{1/2}p\cdot\alpha_{\pm1}+\cdots
+\tag{4.1.11b}\label{eq:4.1.11b}
+\end{align}
+だけである。
+
+最も低い質量準位での唯一の状態は $|0;k\rangle$ である。この準位での唯一の非自明な条件は $(L^{\mathrm m}_0+A)|\psi\rangle=0$ であり、$m^2=A/\alpha'$ を与える。この準位にはヌル状態はない。スプリアス状態\eqref{eq:4.1.8}中の Virasoro 生成子は、すべて上昇演算子を含んでいるからである。したがって、一つの同値類があり、スカラー粒子に対応する。
+
+次の準位には $D$ 個の状態
+\begin{equation}
+|e;k\rangle=e\cdot\alpha_{-1}|0;k\rangle
+\tag{4.1.12}\label{eq:4.1.12}
+\end{equation}
+がある。ノルムは
+\begin{equation}
+\begin{aligned}
+\langle e;k|e;k'\rangle
+&=\langle0;k|e^*\cdot\alpha_1\,e\cdot\alpha_{-1}|0;k'\rangle\\
+&=\langle0;k|(e^*\cdot e+e^*\cdot\alpha_{-1}\,e\cdot\alpha_1)|0;k'\rangle\\
+&=e^{\mu*}e_\mu(2\pi)^D\delta^D(k-k')
+\end{aligned}
+\tag{4.1.13}\label{eq:4.1.13}
+\end{equation}
+である。ここでは $X^\mu$ の Hermite 性から従う
+\begin{equation}
+\alpha^{\mu\dagger}_n=\alpha^\mu_{-n},
+\tag{4.1.14}\label{eq:4.1.14}
+\end{equation}
+および運動量保存から従う
+\begin{equation}
+\langle0;k|0;k'\rangle=(2\pi)^D\delta^D(k-k')
+\tag{4.1.15}\label{eq:4.1.15}
+\end{equation}
+を用いた。時間的励起は負のノルムをもつ。
+
+$L^{\mathrm m}_0$ の条件から
+\begin{equation}
+m^2=\frac{1+A}{\alpha'}
+\tag{4.1.16}\label{eq:4.1.16}
+\end{equation}
+を得る。もう一つの非自明な物理的状態条件は
+\begin{equation}
+L^{\mathrm m}_1|e;k\rangle
+\propto p\cdot\alpha_1\,e\cdot\alpha_{-1}|0;k\rangle
+=e\cdot k|0;k\rangle=0
+\tag{4.1.17}\label{eq:4.1.17}
+\end{equation}
+なので、$k\cdot e=0$ である。この準位にはスプリアス状態
+\begin{equation}
+L^{\mathrm m}_{-1}|0;k\rangle=(2\alpha')^{1/2}k\cdot\alpha_{-1}|0;k\rangle
+\tag{4.1.18}\label{eq:4.1.18}
+\end{equation}
+がある。すなわち、$e^\mu\propto k^\mu$ はスプリアスである。ここで三つの場合がある。
+\begin{enumerate}
+\item[(i)] $A>-1$ ならば、質量二乗は正である。静止系に移ると、物理的状態条件が負ノルムの時間的偏極を取り除く。スプリアス状態\eqref{eq:4.1.18}は $k\cdot k\neq0$ のため物理的ではないので、ヌル状態は存在せず、スペクトルは質量をもつベクトル粒子の $D-1$ 個の正ノルム状態からなる。
+\item[(ii)] $A=-1$ ならば、質量二乗はゼロである。今度は $k\cdot k=0$ なので、スプリアス状態は物理的でありヌルである。したがって、
+\begin{equation}
+k\cdot e=0,\qquad e_\mu\cong e_\mu+\gamma k_\mu.
+\tag{4.1.19}\label{eq:4.1.19}
+\end{equation}
+これは、質量のないベクトル粒子の $D-2$ 個の正ノルム状態を記述する。
+\item[(iii)] $A<-1$ ならば、質量二乗は負である。運動量は空間的なので、物理的状態条件は正ノルムの空間的偏極を取り除く。スプリアス状態は物理的ではないので、$D-2$ 個の正ノルム状態と一つの負ノルム状態をもつタキオン的ベクトル粒子が残る。
+\end{enumerate}
+場合 (iii) は受け入れられない。場合 (ii) は光円錐量子化と同じである。場合 (i) は、質量が異なり、第1準位に余分な状態があるので、光円錐スペクトルとは同じではないが、明白な不整合はない。難点は、そのような理論に整合的な相互作用を与える方法が知られていないことである。弦理論で関心があるのは場合 (ii) であり、次節のより一般的な方法からこれを再び得る。
+
+次の準位の結果は、かなり興味深い。定数 $A$ だけでなく時空次元 $D$ にも依存するからである。第1励起準位で得た値 $A=-1$ に制限すると、スペクトルが光円錐スペクトルと一致するのは、さらに $D=26$ の場合だけである。$D>26$ では負ノルム状態が存在する。$D<26$ では OCQ スペクトルは正のノルムをもつが、光円錐量子化よりも状態が多い。導出は読者に委ねる。第4.4節で示すように、$A=-1$、$D=26$ での OCQ は実際、すべての質量準位で光円錐量子化と同じであり、
+\begin{equation}
+\mathcal H_{\mathrm{OCQ}}=\mathcal H_{\text{light-cone}}
+\tag{4.1.20}\label{eq:4.1.20}
+\end{equation}
+である。整合的な相互作用が知られているのは、この場合だけである。
+
+閉弦への拡張は容易である。二組の振動子と二組の Virasoro 生成子があるので、各準位でのスペクトルは、開弦スペクトル二つのコピーの積となる（ただし、$L^{\mathrm m}_0$ 中の $p^2$ の規格化は異なる）。最初の二つの準位は、
+\begin{align}
+&|0;k\rangle,\qquad m^2=-\frac4{\alpha'};\tag{4.1.21a}\label{eq:4.1.21a}\\
+&e_{\mu\nu}\alpha^\mu_{-1}\widetilde\alpha^\nu_{-1}|0;k\rangle,
+\qquad m^2=0,\qquad k^\mu e_{\mu\nu}=k^\nu e_{\mu\nu}=0,
+\tag{4.1.21b}\label{eq:4.1.21b}\\
+&e_{\mu\nu}\cong e_{\mu\nu}+a_\mu k_\nu+k_\mu b_\nu,
+\qquad a\cdot k=b\cdot k=0.
+\tag{4.1.21c}\label{eq:4.1.21c}
+\end{align}
+ここでも適切な値は $A=-1$、$D=26$ である。光円錐量子化と同様に、トレースのない対称テンソル、反対称テンソル、スカラーを構成する $(D-2)^2$ 個の質量のない状態がある。
+
+\subsubsection*{覚え方}
+
+より一般の弦理論では、零点定数を求める簡便な覚え方があると便利である。以下の節で導くように、$L^{\mathrm m}_0$ の条件は
+\begin{equation}
+(L^{\mathrm m}_0+L^{\mathrm g}_0)|\psi,\downarrow\rangle=0
+\tag{4.1.22}\label{eq:4.1.22}
+\end{equation}
+と理解できる。すなわち、$L^{\mathrm g}_0=-1$ である基底状態 $|\downarrow\rangle$ にゴーストを置き、その寄与を含める。$L_0$ 生成子は Hamiltonian と、中心電荷に比例するずれ\eqref{eq:2.6.10}だけ異なる。しかし弦理論では全中心電荷がゼロなので、この条件を
+\begin{equation}
+(H^{\mathrm m}+H^{\mathrm g})|\psi,\downarrow\rangle=0
+\tag{4.1.23}\label{eq:4.1.23}
+\end{equation}
+と書いてもよい。ここで、第2章末に示した零点エネルギーの覚え方を適用しよう。とくに、ゴーストは $\mu=0,1$ の振動子と同じ周期性をもち、逆の統計に従うため、それらを常に打ち消す。したがって規則は、横方向の振動子の零点エネルギーの和として $A$ が与えられる、というものである。これは光円錐の場合と同じ規則で、ここでは $A=24(-\tfrac1{24})=-1$ を与える。
+
+ちなみに、物理的状態の数を数える目的ならば（その正確な形を求めるのでなければ）、ゴーストと $\mu=0,1$ の振動子を単に無視し、光円錐の場合と同じように横方向の励起を数えればよい。
+
+条件\eqref{eq:4.1.22}は物質状態のウェイトが1であることを要求する。物理的状態条件は、物質状態が最高ウェイト状態であることを要求するので、頂点演算子はウェイト1または $(1,1)$ のテンソルでなければならない。これは、第3.6節で得た、積分された頂点演算子は共形不変でなければならないという条件と一致し、条件 $A=-1$ のもう一つの理解を与える。
+
+\subsectionlink{BRST量子化}\label{sec:4.2}
+
+ここで、スペクトルのより系統的な研究に戻ろう。条件\eqref{eq:4.1.2}は、ゲージ不変性を保証するには十分でない。この条件は、$g_{ab}$ を任意の固定した形に選んだ場合の不変性を意味するが、それは最も一般的なゲージではない。たとえば光円錐ゲージでは、いくつかの条件を $X^\mu$ に、いくつかの条件を $g_{ab}$ に課した。ゲージ条件の最も一般的な変分を考えるには、$\delta g_{ab}$ が演算子であること、すなわち経路積分中の場に依存することを許さなければならない。
+
+完全な不変性条件を導くには、より一般的で抽象的な観点をとると便利である。局所対称性をもつ経路積分を考えよう。経路積分の場を $\phi_i$ と表す。今の場合、これらは $X^\mu(\sigma)$ と $g_{ab}(\sigma)$ である。ここでは非常に圧縮した記法を用い、$i$ は場を区別するとともに座標 $\sigma$ も表す。ゲージ不変性は $\epsilon^\alpha\delta_\alpha$ であり、ここでも $\alpha$ は座標を含む。複素パラメーターは常に実部と虚部に分けられるので、ゲージパラメーター $\epsilon^\alpha$ は実数と仮定する。ゲージ変換は代数
+\begin{equation}
+[\delta_\alpha,\delta_\beta]=f^\gamma{}_{\alpha\beta}\delta_\gamma
+\tag{4.2.1}\label{eq:4.2.1}
+\end{equation}
+を満たす。
+
+今度は条件
+\begin{equation}
+F^A(\phi)=0
+\tag{4.2.2}\label{eq:4.2.2}
+\end{equation}
+によってゲージを固定する。ここでも $A$ は座標を含む。第3.3節と同じ Faddeev--Popov の手続きに従うと、経路積分は
+\begin{equation}
+\int\frac{[d\phi_i]}{V_{\text{gauge}}}\exp(-S_1)
+\ \longrightarrow\
+\int[d\phi_i\,dB_A\,db_A\,dc^\alpha]\exp(-S_1-S_2-S_3)
+\tag{4.2.3}\label{eq:4.2.3}
+\end{equation}
+となる。ここで、$S_1$ は元のゲージ不変な作用、$S_2$ はゲージ固定作用
+\begin{equation}
+S_2=-iB_AF^A(\phi),
+\tag{4.2.4}\label{eq:4.2.4}
+\end{equation}
+$S_3$ は Faddeev--Popov 作用
+\begin{equation}
+S_3=b_Ac^\alpha\delta_\alpha F^A(\phi)
+\tag{4.2.5}\label{eq:4.2.5}
+\end{equation}
+である。ゲージ固定の $\delta(F^A)$ を積分表示するため、場 $B_A$ を導入した。
+
+この作用には、注目すべきことが二つある。第一に、Becchi--Rouet--Stora--Tyutin（BRST）変換
+\begin{align}
+\delta_{\mathrm B}\phi_i&=-i\epsilon c^\alpha\delta_\alpha\phi_i,
+\tag{4.2.6a}\label{eq:4.2.6a}\\
+\delta_{\mathrm B}B_A&=0,
+\tag{4.2.6b}\label{eq:4.2.6b}\\
+\delta_{\mathrm B}b_A&=\epsilon B_A,
+\tag{4.2.6c}\label{eq:4.2.6c}\\
+\delta_{\mathrm B}c^\alpha&=\frac i2\epsilon f^\alpha{}_{\beta\gamma}c^\beta c^\gamma
+\tag{4.2.6d}\label{eq:4.2.6d}
+\end{align}
+の下で不変である。この変換は可換なものと反可換なものを混ぜるので、$\epsilon$ は反可換としなければならない。保存するゴースト数があり、$c^\alpha$ には $+1$、$b_A$ と $\epsilon$ には $-1$、それ以外のすべての場には0を割り当てる。$\phi_i$ に対する $\delta_{\mathrm B}$ の作用は、パラメーター $i\epsilon c^\alpha$ のゲージ変換にすぎないので、元の作用 $S_1$ はそれだけで不変である。$S_2$ の変分は $S_3$ 中の $b_A$ の変分を打ち消し、$S_3$ 中の $\delta_\alpha F^A$ と $c^\alpha$ の変分は互いに打ち消す。
+
+第二の重要な性質は、
+\begin{equation}
+\delta_{\mathrm B}(b_AF^A)=i\epsilon(S_2+S_3)
+\tag{4.2.7}\label{eq:4.2.7}
+\end{equation}
+である。ここで、ゲージ固定条件の微小変化 $\delta F$ を考えよう。ゲージ固定作用とゴースト作用の変化から
+\begin{equation}
+\begin{aligned}
+\epsilon\delta\langle f|i\rangle
+&=i\langle f|\delta_{\mathrm B}(b_A\delta F^A)|i\rangle\\
+&=-\epsilon\langle f|\{Q_{\mathrm B},b_A\delta F^A\}|i\rangle
+\end{aligned}
+\tag{4.2.8}\label{eq:4.2.8}
+\end{equation}
+を得る。ここでは BRST 変分を、対応する保存電荷 $Q_{\mathrm B}$ との反交換子として書いた。
+
+したがって、物理的状態は
+\begin{equation}
+\langle\psi|\{Q_{\mathrm B},b_A\delta F^A\}|\psi'\rangle=0
+\tag{4.2.9}\label{eq:4.2.9}
+\end{equation}
+を満たさなければならない。任意の $\delta F$ についてこれが成り立つには、
+\begin{equation}
+Q_{\mathrm B}|\psi\rangle=Q_{\mathrm B}|\psi'\rangle=0
+\tag{4.2.10}\label{eq:4.2.10}
+\end{equation}
+でなければならない。これが本質的な条件であり、物理的状態は BRST 不変でなければならない。ここでは $Q_{\mathrm B}^\dagger=Q_{\mathrm B}$ と仮定した。これが実際に成り立つべきことを見る方法はいくつかある。一つは、もし $Q_{\mathrm B}^\dagger$ が異なるものならば、それは別の対称性でなければならないが、その候補がないというものである。よりよい議論は、場 $c^\alpha$ と $b_A$ はゲージパラメーター $\epsilon^\alpha$ と Lagrange 乗数 $B_A$ の反可換な版のようなものなので、それらの実性を受け継ぐというものである。
+
+余談として、任意の定数行列 $M^{AB}$ に対して、
+\begin{equation}
+\epsilon^{-1}\delta_{\mathrm B}(b_AB_BM^{AB})=-B_AB_BM^{AB}
+\tag{4.2.11}\label{eq:4.2.11}
+\end{equation}
+に比例する項を作用に加えてもよい。上の議論により、物理的状態の間の振幅は変わらない。このとき $B_A$ の積分はデルタ関数ではなく Gauss 関数を生む。これらが Gauss 平均したゲージであり、たとえばゲージ理論の共変な $\alpha$ ゲージが含まれる。
+
+もう一つ重要な考え方がある。ゲージの選択の空間を移動するためには、BRST 電荷が保存され続けなければならない。したがって、Hamiltonian の変化と可換でなければならず、
+\begin{equation}
+\begin{aligned}
+0&=[Q_{\mathrm B},\{Q_{\mathrm B},b_A\delta F^A\}]\\
+&=Q_{\mathrm B}^2b_A\delta F^A-Q_{\mathrm B}b_A\delta F^AQ_{\mathrm B}
++Q_{\mathrm B}b_A\delta F^AQ_{\mathrm B}-b_A\delta F^AQ_{\mathrm B}^2\\
+&=[Q_{\mathrm B}^2,b_A\delta F^A].
+\end{aligned}
+\tag{4.2.12}\label{eq:4.2.12}
+\end{equation}
+一般のゲージ変化に対してこれが消えるためには、
+\begin{equation}
+Q_{\mathrm B}^2=0
+\tag{4.2.13}\label{eq:4.2.13}
+\end{equation}
+が必要である。すなわち、BRST 電荷は冪零である。$Q_{\mathrm B}^2$ のゴースト数は2なので、$Q_{\mathrm B}^2=\text{定数}$ という可能性は除かれる。BRST 変換\eqref{eq:4.2.6a}--\eqref{eq:4.2.6d}を二度作用させると、すべての場が不変に保たれることを読者は確認できる。とくに、
+\begin{equation}
+\delta_{\mathrm B}(\delta'_{\mathrm B}c^\alpha)
+=-\frac12\epsilon\epsilon'f^\alpha{}_{\beta\gamma}
+f^\gamma{}_{\delta\varepsilon}c^\beta c^\delta c^\varepsilon=0.
+\tag{4.2.14}\label{eq:4.2.14}
+\end{equation}
+ゴーストの積は添字 $\beta,\delta,\varepsilon$ に関して反対称であり、構造関数の積は Jacobi 恒等式によって消える。
+
+ここで、ゲージ代数\eqref{eq:4.2.1}について二つの単純化の仮定をしたことに触れておこう。第一に、構造定数 $f^\alpha{}_{\beta\gamma}$ は場に依存しない定数であるとした。第二に、代数の右辺には、運動方程式に比例する付加的な項がないとした。より一般には、この二つの仮定はいずれも破れる。その場合、ここで述べた形の BRST 形式は冪零な変換を与えず、その一般化である Batalin--Vilkovisky（BV）形式が必要になる。BV 形式は弦理論でさまざまに応用されているが、本書では必要としない。
+
+$Q_{\mathrm B}$ の冪零性には重要な帰結がある。
+\begin{equation}
+Q_{\mathrm B}|\chi\rangle
+\tag{4.2.15}\label{eq:4.2.15}
+\end{equation}
+の形の状態は、任意の $\chi$ に対して $Q_{\mathrm B}$ で消滅させられ、したがって物理的である。しかし、この状態は自分自身を含むすべての物理的状態と直交する。$Q_{\mathrm B}|\psi\rangle=0$ ならば、
+\begin{equation}
+\langle\psi|(Q_{\mathrm B}|\chi\rangle)
+=(\langle\psi|Q_{\mathrm B})|\chi\rangle=0
+\tag{4.2.16}\label{eq:4.2.16}
+\end{equation}
+だからである。したがって、このようなヌル状態を含むすべての物理的振幅は消える。ヌル状態だけ異なる二つの物理的状態、
+\begin{equation}
+|\psi'\rangle=|\psi\rangle+Q_{\mathrm B}|\chi\rangle
+\tag{4.2.17}\label{eq:4.2.17}
+\end{equation}
+は、すべての物理的状態と同じ内積をもち、したがって物理的に等価である。そこで OCQ の場合とまったく同じく、ヌル状態だけ異なる状態を同値とし、真の物理的空間を同値類の集合と同一視する。これは冪零演算子に対する自然な構成であり、$Q_{\mathrm B}$ のコホモロジーとして知られる。冪零演算子のほかの例には、微分幾何の外微分や位相幾何の境界演算子がある。コホモロジーでは、$Q_{\mathrm B}$ によって消滅させられる状態を閉じた状態、\eqref{eq:4.2.15}の形の状態を完全状態と呼ぶことが多い。したがって、本書の処方は
+\begin{equation}
+\mathcal H_{\mathrm{BRST}}
+=\frac{\mathcal H_{\mathrm{closed}}}{\mathcal H_{\mathrm{exact}}}.
+\tag{4.2.18}\label{eq:4.2.18}
+\end{equation}
+本章の残りでは、弦理論においてこの空間が期待される形をもつことを具体的に見る。本質的には、不変性条件が非物理的な $X^\mu$ 振動子を一組とゴースト振動子を一組取り除き、同値関係が残り一組の非物理的な $X^\mu$ 振動子と残り一組のゴースト振動子を取り除く。
+
+\subsubsection*{点粒子の例}
+
+点粒子を例として考えよう。上の圧縮した記法を展開すると、局所対称性は座標の再パラメーター化 $\delta\tau(\tau)$ なので、添字 $\alpha$ は単に $\tau$ となり、無限小変換の基底は $\delta_{\tau_1}\tau(\tau)=\delta(\tau-\tau_1)$ である。これらは場に
+\begin{equation}
+\delta_{\tau_1}X^\mu(\tau)=-\delta(\tau-\tau_1)\partial_\tau X^\mu(\tau),
+\qquad
+\delta_{\tau_1}e(\tau)=-\partial_\tau[\delta(\tau-\tau_1)e(\tau)]
+\tag{4.2.19}\label{eq:4.2.19}
+\end{equation}
+と作用する。第二の変換を作用させて交換子を作ると、
+\begin{equation}
+\begin{aligned}
+[\delta_{\tau_1},\delta_{\tau_2}]X^\mu(\tau)
+&=-\bigl[\delta(\tau-\tau_1)\partial_\tau\delta(\tau-\tau_2)
+-\delta(\tau-\tau_2)\partial_\tau\delta(\tau-\tau_1)\bigr]\partial_\tau X^\mu(\tau)\\
+&\equiv\int d\tau_3\,f^{\tau_3}{}_{\tau_1\tau_2}\delta_{\tau_3}X^\mu(\tau).
+\end{aligned}
+\tag{4.2.20}\label{eq:4.2.20}
+\end{equation}
+この交換子から構造関数が
+\begin{equation}
+f^{\tau_3}{}_{\tau_1\tau_2}
+=\delta(\tau_3-\tau_1)\partial_{\tau_3}\delta(\tau_3-\tau_2)
+-\delta(\tau_3-\tau_2)\partial_{\tau_3}\delta(\tau_3-\tau_1)
+\tag{4.2.21}\label{eq:4.2.21}
+\end{equation}
+と決まる。すると BRST 変換は
+\begin{align}
+\delta_{\mathrm B}X^\mu&=i\epsilon c\dot X^\mu,
+\tag{4.2.22a}\label{eq:4.2.22a}\\
+\delta_{\mathrm B}e&=i\epsilon\dot{(ce)},
+\tag{4.2.22b}\label{eq:4.2.22b}\\
+\delta_{\mathrm B}B&=0,
+\tag{4.2.22c}\label{eq:4.2.22c}\\
+\delta_{\mathrm B}b&=\epsilon B,
+\tag{4.2.22d}\label{eq:4.2.22d}\\
+\delta_{\mathrm B}c&=i\epsilon c\dot c.
+\tag{4.2.22e}\label{eq:4.2.22e}
+\end{align}
+
+ゲージ $e(\tau)=1$ は弦の単位ゲージに類似しており、一つの座標自由度を用いて四脚場の一つの成分を固定するので、$F(\tau)=1-e(\tau)$ である。ゲージ固定した作用は
+\begin{equation}
+S=\int d\tau\left(
+\frac12e^{-1}\dot X^\mu\dot X_\mu+\frac12em^2+iB(e-1)-e\dot b c
+\right)
+\tag{4.2.23}\label{eq:4.2.23}
+\end{equation}
+となる。$B$ を積分して消去し、それによって $e=1$ に固定すると便利である。残るのは場 $X^\mu,b,c$ だけで、作用は
+\begin{equation}
+S=\int d\tau\left(\frac12\dot X^\mu\dot X_\mu+\frac12m^2-\dot b c\right),
+\tag{4.2.24}\label{eq:4.2.24}
+\end{equation}
+BRST 変換は
+\begin{align}
+\delta_{\mathrm B}X^\mu&=i\epsilon c\dot X^\mu,
+\tag{4.2.25a}\label{eq:4.2.25a}\\
+\delta_{\mathrm B}b&=i\epsilon\left(-\frac12\dot X^\mu\dot X_\mu+\frac12m^2-\dot b c\right),
+\tag{4.2.25b}\label{eq:4.2.25b}\\
+\delta_{\mathrm B}c&=i\epsilon c\dot c
+\tag{4.2.25c}\label{eq:4.2.25c}
+\end{align}
+となる。$B$ はもはや存在しないので、$e$ から得られる運動方程式を使い、$b$ の変換則の $B$ を置き換えた。新しい変換\eqref{eq:4.2.25a}--\eqref{eq:4.2.25c}が作用の対称性であり、冪零であることを読者は確認できる。場 $B^A$ を積分して消去すれば、これは常にうまくいく。ただし $\delta_{\mathrm B}\delta'_{\mathrm B}b$ は、もはや恒等的にゼロではなく、運動方程式に比例する。これはまったく問題ない。$Q_{\mathrm B}^2=0$ は演算子方程式として成立し、それこそが必要だからである。
+
+正準交換関係は
+\begin{equation}
+[p^\mu,X^\nu]=-i\eta^{\mu\nu},\qquad\{b,c\}=1
+\tag{4.2.26}\label{eq:4.2.26}
+\end{equation}
+である。ここで $p^\mu=i\dot X^\mu$ で、$i$ は Euclid 符号から生じる。Hamiltonian は $H=\tfrac12(p^2+m^2)$ であり、Noether の手続きから BRST 演算子
+\begin{equation}
+Q_{\mathrm B}=cH
+\tag{4.2.27}\label{eq:4.2.27}
+\end{equation}
+が得られる。ここでの構造は、弦について見いだす構造に類似している。拘束条件（失われた運動方程式）は $H=0$ であり、BRST 演算子はこれに $c$ を掛けたものである。
+
+ゴーストは二状態系を生成するので、状態の完全系は $|k,\downarrow\rangle,|k,\uparrow\rangle$ であり、
+\begin{align}
+p^\mu|k,\downarrow\rangle&=k^\mu|k,\downarrow\rangle,
+&p^\mu|k,\uparrow\rangle&=k^\mu|k,\uparrow\rangle,
+\tag{4.2.28a}\label{eq:4.2.28a}\\
+b|k,\downarrow\rangle&=0,
+&b|k,\uparrow\rangle&=|k,\downarrow\rangle,
+\tag{4.2.28b}\label{eq:4.2.28b}\\
+c|k,\downarrow\rangle&=|k,\uparrow\rangle,
+&c|k,\uparrow\rangle&=0.
+\tag{4.2.28c}\label{eq:4.2.28c}
+\end{align}
+これらへの BRST 演算子の作用は
+\begin{equation}
+Q_{\mathrm B}|k,\downarrow\rangle=\tfrac12(k^2+m^2)|k,\uparrow\rangle,
+\qquad Q_{\mathrm B}|k,\uparrow\rangle=0
+\tag{4.2.29}\label{eq:4.2.29}
+\end{equation}
+である。したがって、閉じた状態は
+\begin{align}
+&|k,\downarrow\rangle,\qquad k^2+m^2=0,
+\tag{4.2.30a}\label{eq:4.2.30a}\\
+&|k,\uparrow\rangle,\qquad \text{すべての }k^\mu,
+\tag{4.2.30b}\label{eq:4.2.30b}
+\end{align}
+完全状態は
+\begin{equation}
+|k,\uparrow\rangle,\qquad k^2+m^2\neq0
+\tag{4.2.31}\label{eq:4.2.31}
+\end{equation}
+である。閉じているが完全でない状態は
+\begin{equation}
+|k,\downarrow\rangle,\quad k^2+m^2=0;
+\qquad |k,\uparrow\rangle,\quad k^2+m^2=0.
+\tag{4.2.32}\label{eq:4.2.32}
+\end{equation}
+すなわち、物理的状態は質量殻条件を満たさなければならないが、期待されるスペクトルのコピーが二つある。実際には、付加的な条件
+\begin{equation}
+b|\psi\rangle=0
+\tag{4.2.33}\label{eq:4.2.33}
+\end{equation}
+を満たす状態 $|k,\downarrow\rangle$ だけが物理的振幅に現れる。この付加条件の起源は運動学的である。$k^2+m^2\neq0$ では、状態 $|k,\uparrow\rangle$ は完全である。これらはすべての物理的状態と直交し、その振幅は恒等的に消えなければならない。したがって、振幅は $\delta(k^2+m^2)$ に比例することしかできない。しかし、場の理論と弦理論の振幅には、極や切断はありうるものの、デルタ関数は決して現れない（運動学が特殊になる $D=2$ を除く）。ゆえに、その振幅は恒等的に消えなければならない。
+
+\subsectionlink{弦のBRST量子化}\label{sec:4.3}
+
+弦理論では、BRST 変換は
+\begin{align}
+\delta_{\mathrm B}X^\mu&=i\epsilon(c\partial+\widetilde c\bar\partial)X^\mu,
+\tag{4.3.1a}\label{eq:4.3.1a}\\
+\delta_{\mathrm B}b&=i\epsilon(T^X+T^{\mathrm g}),
+\qquad \delta_{\mathrm B}\widetilde b=i\epsilon(\widetilde T^X+\widetilde T^{\mathrm g}),
+\tag{4.3.1b}\label{eq:4.3.1b}\\
+\delta_{\mathrm B}c&=i\epsilon c\partial c,
+\qquad \delta_{\mathrm B}\widetilde c=i\epsilon\widetilde c\bar\partial\widetilde c.
+\tag{4.3.1c}\label{eq:4.3.1c}
+\end{align}
+読者は、点粒子の例にならってこれを導くことができる。Polyakov 作用とゴースト作用の和に、ゲージ固定項
+\begin{equation}
+\frac i{4\pi}\int d^2\sigma\,g^{1/2}B^{ab}(\delta_{ab}-g_{ab})
+\tag{4.3.2}\label{eq:4.3.2}
+\end{equation}
+を加える。変換 $\delta_{\mathrm B}b_{ab}=\epsilon B_{ab}$ は、$B_{ab}$ を積分し、$g_{ab}$ の運動方程式を用いて変換中の $B_{ab}$ を置き換えると、\eqref{eq:4.3.1a}--\eqref{eq:4.3.1c}となる。Weyl ゴーストは単なる Lagrange 乗数であり、$b_{ab}$ のトレースをゼロにする。ここでも、運動方程式に比例する項を除けば冪零性が成り立つことを読者は確認できる。弦の BRST 変換\eqref{eq:4.3.1a}--\eqref{eq:4.3.1c}と、粒子の場合\eqref{eq:4.2.25a}--\eqref{eq:4.2.25c}の類似性は明らかである。$X^\mu$ を一般の物質 CFT で置き換えると、物質場の BRST 変換は $v(z)=c(z)$ とした共形変換であり、$b$ の変換では $T^X$ が $T^{\mathrm m}$ に置き換わる。
+
+Noether の定理は BRST カレント
+\begin{equation}
+\begin{aligned}
+j_{\mathrm B}&=cT^{\mathrm m}+\frac12:cT^{\mathrm g}:+\frac32\partial^2c\\
+&=cT^{\mathrm m}+:bc\partial c:+\frac32\partial^2c
+\end{aligned}
+\tag{4.3.3}\label{eq:4.3.3}
+\end{equation}
+を与え、$\widetilde{\jmath}_{\mathrm B}$ についても対応する式が得られる。カレントの最後の項は全微分であり、BRST 電荷には寄与しない。この項は、BRST カレントをテンソルにするために手で加えたものである。BRST カレントとゴースト場、および一般の物質テンソル場との OPE は
+\begin{align}
+j_{\mathrm B}(z)b(0)&\sim\frac3{z^3}+\frac1{z^2}j^{\mathrm g}(0)
++\frac1zT^{\mathrm{m+g}}(0),
+\tag{4.3.4a}\label{eq:4.3.4a}\\
+j_{\mathrm B}(z)c(0)&\sim\frac1z c\partial c(0),
+\tag{4.3.4b}\label{eq:4.3.4b}\\
+j_{\mathrm B}(z)\mathcal O^{\mathrm m}(0,0)
+&\sim\frac h{z^2}c\mathcal O^{\mathrm m}(0,0)
++\frac1z\bigl[h(\partial c)\mathcal O^{\mathrm m}(0,0)
++c\partial\mathcal O^{\mathrm m}(0,0)\bigr].
+\tag{4.3.4c}\label{eq:4.3.4c}
+\end{align}
+単純極は、これらの場の BRST 変換\eqref{eq:4.3.1a}--\eqref{eq:4.3.1c}を反映している。
+
+BRST 演算子は
+\begin{equation}
+Q_{\mathrm B}=\frac1{2\pi i}\oint
+(dz\,j_{\mathrm B}-d\bar z\,\widetilde{\jmath}_{\mathrm B})
+\tag{4.3.5}\label{eq:4.3.5}
+\end{equation}
+である。通常の積分路の議論により、この OPE は
+\begin{equation}
+\{Q_{\mathrm B},b_m\}=L^{\mathrm m}_m+L^{\mathrm g}_m
+\tag{4.3.6}\label{eq:4.3.6}
+\end{equation}
+を意味する。ゴーストのモードで書くと、
+\begin{equation}
+\begin{aligned}
+Q_{\mathrm B}
+={}&\sum_{n=-\infty}^{\infty}
+(c_nL^{\mathrm m}_{-n}+\widetilde c_n\widetilde L^{\mathrm m}_{-n})\\
+&+\sum_{m,n=-\infty}^{\infty}\frac{m-n}{2}\,
+{}^\circ_\circ
+(c_mc_nb_{-m-n}+\widetilde c_m\widetilde c_n\widetilde b_{-m-n})
+{}^\circ_\circ
++a^{\mathrm B}(c_0+\widetilde c_0).
+\end{aligned}
+\tag{4.3.7}\label{eq:4.3.7}
+\end{equation}
+順序付け定数は $a^{\mathrm B}=a^{\mathrm g}=-1$ であり、これは反交換子
+\begin{equation}
+\{Q_{\mathrm B},b_0\}=L^{\mathrm m}_0+L^{\mathrm g}_0
+\tag{4.3.8}\label{eq:4.3.8}
+\end{equation}
+から従う。
+
+$c^{\mathrm m}\neq26$ のときにはゲージ対称性にアノマリーがあるので、BRST 形式にも何らかの破綻が起こると予想される。BRST カレントは依然として保存される。カレント\eqref{eq:4.3.3}中のすべての項は、中心電荷がどの値でも正則だからである。しかし、もはや冪零ではなく、
+\begin{equation}
+\{Q_{\mathrm B},Q_{\mathrm B}\}=0
+\qquad\text{となるのは }c^{\mathrm m}=26\text{ のときだけである。}
+\tag{4.3.9}\label{eq:4.3.9}
+\end{equation}
+最も短い導出には Jacobi 恒等式を用いる（演習4.3）。より直接には、OPE
+\begin{equation}
+j_{\mathrm B}(z)j_{\mathrm B}(0)\sim
+-\frac{c^{\mathrm m}-18}{2z^3}c\partial c(0)
+-\frac{c^{\mathrm m}-18}{4z^2}c\partial^2c(0)
+-\frac{c^{\mathrm m}-26}{12z}c\partial^3c(0)
+\tag{4.3.10}\label{eq:4.3.10}
+\end{equation}
+から従う。この計算には少し手間がかかり、反交換による負号に注意しなければならない。単純極から、$c^{\mathrm m}=26$ のとき $\{Q_{\mathrm B},Q_{\mathrm B}\}=0$ が従う。また、OPE
+\begin{equation}
+T(z)j_{\mathrm B}(0)\sim
+\frac{c^{\mathrm m}-26}{2z^4}c(0)
++\frac1{z^2}j_{\mathrm B}(0)+\frac1z\partial j_{\mathrm B}(0)
+\tag{4.3.11}\label{eq:4.3.11}
+\end{equation}
+にも注目しよう。これは $j_{\mathrm B}$ がテンソルとなるのは $c^{\mathrm m}=26$ のときだけであることを意味する。
+
+いくつかの重要な特徴を指摘しよう。失われた運動方程式は、ゲージの選択によって固定されていない局所対称群の部分、すなわち共形変換の生成子 $T_{ab}$ がゼロになるということにほかならない。これは一般的な結果である。ゲージ条件が対称性を完全に固定する場合には、失われた運動方程式は作用のゲージ不変性によって自明になることを示せる。そうでなく残留対称群がある場合には、失われた運動方程式はその生成子がゼロになることを要求する。それらは行列要素という\eqref{eq:4.1.2}の意味、あるいはより一般には BRST の意味でゼロにならなければならない。残留対称群の生成子を $G_I$ と表そう。$G_I$ は拘束と呼ばれる。弦の場合には $L_m$ と $\widetilde L_m$ である。これらは代数
+\begin{equation}
+[G_I,G_J]=ig^K{}_{IJ}G_K
+\tag{4.3.12}\label{eq:4.3.12}
+\end{equation}
+をなす。各生成子には一対のゴースト $b_I,c^I$ が対応し、
+\begin{equation}
+\{c^I,b_J\}=\delta^I_J,\qquad
+\{c^I,c^J\}=\{b_I,b_J\}=0
+\tag{4.3.13}\label{eq:4.3.13}
+\end{equation}
+である。弦の場合\eqref{eq:4.3.7}に見られるように、BRST 演算子の一般形は
+\begin{equation}
+\begin{aligned}
+Q_{\mathrm B}
+&=c^IG^{\mathrm m}_I-\frac i2g^K{}_{IJ}c^Ic^Jb_K\\
+&=c^I\left(G^{\mathrm m}_I+\frac12G^{\mathrm g}_I\right)
+\end{aligned}
+\tag{4.3.14}\label{eq:4.3.14}
+\end{equation}
+である。ここで $G^{\mathrm m}_I$ は $G_I$ の物質部分、
+\begin{equation}
+G^{\mathrm g}_I=-ig^K{}_{IJ}c^Jb_K
+\tag{4.3.15}\label{eq:4.3.15}
+\end{equation}
+はゴースト部分である。$G^{\mathrm m}_I$ と $G^{\mathrm g}_I$ は $G_I$ と同じ代数\eqref{eq:4.3.12}を満たす。交換関係\eqref{eq:4.3.12}と\eqref{eq:4.3.13}を用いると、
+\begin{equation}
+Q_{\mathrm B}^2=\frac12\{Q_{\mathrm B},Q_{\mathrm B}\}
+=-\frac12g^K{}_{IJ}g^M{}_{KL}c^Ic^Jc^Lb_M=0
+\tag{4.3.16}\label{eq:4.3.16}
+\end{equation}
+を得る。最後の等号は、$IJL$ について反対称化したとき $g^K{}_{IJ}g^M{}_{KL}$ がゼロになることを要求する、$GGG$ の Jacobi 恒等式から従う。ここでは中心電荷の項を無視した。それらは個別に確認しなければならない。
+
+繰り返すと、拘束代数とは、物理的行列要素でゼロになることを要求される世界面の対称性代数である。第II巻でボソン弦理論を一般化するときには、拘束代数を用いて直接行うのが最も容易であり、BRST 電荷を直接\eqref{eq:4.3.14}の形に書く。
+
+\subsubsection*{弦のBRSTコホモロジー}
+
+ここで、弦の最も低い準位での BRST コホモロジーを調べよう。内積は
+\begin{align}
+(\alpha^\mu_m)^\dagger&=\alpha^\mu_{-m},
+&(\widetilde\alpha^\mu_m)^\dagger&=\widetilde\alpha^\mu_{-m},
+\tag{4.3.17a}\label{eq:4.3.17a}\\
+(b_m)^\dagger&=b_{-m},
+&(\widetilde b_m)^\dagger&=\widetilde b_{-m},
+\tag{4.3.17b}\label{eq:4.3.17b}\\
+(c_m)^\dagger&=c_{-m},
+&(\widetilde c_m)^\dagger&=\widetilde c_{-m}
+\tag{4.3.17c}\label{eq:4.3.17c}
+\end{align}
+と指定することで定義する。とくに、BRST 電荷の Hermite 性はゴースト場も Hermite 的であることを要求する。ゴーストのゼロモードの Hermite 性により、基底状態の内積は
+\begin{align}
+\text{開弦：}\quad
+&\langle0;k|c_0|0;k'\rangle=(2\pi)^{26}\delta^{26}(k-k'),
+\tag{4.3.18a}\label{eq:4.3.18a}\\
+\text{閉弦：}\quad
+&\langle0;k|\widetilde c_0c_0|0;k'\rangle=i(2\pi)^{26}\delta^{26}(k-k')
+\tag{4.3.18b}\label{eq:4.3.18b}
+\end{align}
+という形をとらなければならない。ここで $|0;k\rangle$ は、運動量 $k$ をもち、物質の基底状態にゴーストの基底状態 $|\downarrow\rangle$ を掛けたものを表す。ゼロでない結果を得るには、$c_0$ と $\widetilde c_0$ の挿入が必要である。たとえば、
+$\langle0;k|0;k'\rangle
+=\langle0;k|(c_0b_0+b_0c_0)|0;k'\rangle=0$
+であり、最後の等号は $b_0$ がブラとケットの両方を消滅させることによる。ゴーストのゼロモードの内積では、Hermite 性のために $i$ の因子が必要である。一般の状態の内積は、先ほどの計算\eqref{eq:4.1.13}と同じように、交換関係と随伴\eqref{eq:4.3.17a}--\eqref{eq:4.3.17c}を用いて求められる。
+
+以下では開弦に注目する。閉弦の議論はまったく並行して進むが、書く量が二倍になる。点粒子の場合\eqref{eq:4.2.33}と同様に、物理的状態は付加条件
+\begin{equation}
+b_0|\psi\rangle=0
+\tag{4.3.19}\label{eq:4.3.19}
+\end{equation}
+を満たさなければならないと主張する（後でこれを示す）。$Q_{\mathrm B}$ と $b_0$ はともに $|\psi\rangle$ を消滅させるので、これは
+\begin{equation}
+L_0|\psi\rangle=\{Q_{\mathrm B},b_0\}|\psi\rangle=0
+\tag{4.3.20}\label{eq:4.3.20}
+\end{equation}
+も意味する。演算子 $L_0$ は
+\begin{equation}
+L_0=\alpha'(p^\mu p_\mu+m^2),
+\tag{4.3.21}\label{eq:4.3.21}
+\end{equation}
+ただし
+\begin{equation}
+\alpha'm^2=\sum_{n=1}^{\infty}n
+\left(N_{bn}+N_{cn}+\sum_{\mu=0}^{25}N_{\mu n}\right)-1
+\tag{4.3.22}\label{eq:4.3.22}
+\end{equation}
+である。したがって、$L_0$ の条件\eqref{eq:4.3.20}が弦の質量を決める。BRST 不変性と付加条件\eqref{eq:4.3.19}により、すべての弦状態は質量殻上にある。条件\eqref{eq:4.3.19}と\eqref{eq:4.3.20}を満たす状態の空間を $\widehat{\mathcal H}$ と表す。交換関係 $\{Q_{\mathrm B},b_0\}=L_0$ と $[Q_{\mathrm B},L_0]=0$ より、$Q_{\mathrm B}$ は $\widehat{\mathcal H}$ をそれ自身へ写す。
+
+内積\eqref{eq:4.3.18a}は、$\widehat{\mathcal H}$ で使うには適切なものではない。これはうまく定義されていない。ゴーストのゼロモードがゼロを与える一方で、運動量の台が質量殻に制限されているため、$\delta^{26}(k-k')$ は因子 $\delta(0)$ を含むからである。そこで $\widehat{\mathcal H}$ では、$X^0$ とゴーストのゼロモードを単に無視した縮約内積 $\langle\,\Vert\,\rangle$ を用いる。確率解釈に関係するのは、この内積である。空間 $\widehat{\mathcal H}$ では、この縮約内積に対しても $Q_{\mathrm B}$ が依然として Hermite 的であることを確認できる。質量殻条件は空間運動量 $\mathbf k$ から $k^0$ を決めること（ここでは入射の場合 $k^0>0$ に注目する）、また状態には共変な規格化を用いていることに注意しよう。
+
+ここで、$D=26$ の平坦な時空中の弦の最初のいくつかの準位を求めよう。最も低い準位 $N=0$ では、
+\begin{equation}
+|0;k\rangle,\qquad -k^2=-\frac1{\alpha'}.
+\tag{4.3.23}\label{eq:4.3.23}
+\end{equation}
+$Q_{\mathrm B}$ の各項は、下降演算子か $L_0$ のいずれかを含むので、この状態は不変であり、
+\begin{equation}
+Q_{\mathrm B}|0;k\rangle=0.
+\tag{4.3.24}\label{eq:4.3.24}
+\end{equation}
+これはまた、この準位には完全状態がないことを示すので、各不変状態が一つのコホモロジー類に対応する。これらはまさにタキオンの状態である。質量殻条件は、第1.3節の光円錐量子化、および第3.6節の開弦の頂点演算子から得たものと同じである。第1章では発見的な方法で決めたタキオンの質量二乗が、ここでは $Q_{\mathrm B}$ の正規順序定数によって固定され、その定数は冪零性の要求によって決まる。
+
+次の準位 $N=1$ には、26次元ベクトル $e_\mu$ と二つの定数 $\beta,\gamma$ に依存する $26+2$ 個の状態、
+\begin{equation}
+|\psi_1\rangle=(e\cdot\alpha_{-1}+\beta b_{-1}+\gamma c_{-1})|0;k\rangle,
+\qquad -k^2=0
+\tag{4.3.25}\label{eq:4.3.25}
+\end{equation}
+がある。この状態のノルムは
+\begin{equation}
+\begin{aligned}
+\langle\psi_1\Vert\psi_1\rangle
+&=\langle0;k\Vert
+(e^*\cdot\alpha_1+\beta^*b_1+\gamma^*c_1)
+(e\cdot\alpha_{-1}+\beta b_{-1}+\gamma c_{-1})|0;k'\rangle\\
+&=(e^*\cdot e+\beta^*\gamma+\gamma^*\beta)
+\langle0;k\Vert0;k'\rangle .
+\end{aligned}
+\tag{4.3.26}\label{eq:4.3.26}
+\end{equation}
+直交基底に移ると、26個の正ノルム状態と2個の負ノルム状態がある。BRST 条件は
+\begin{equation}
+\begin{aligned}
+0=Q_{\mathrm B}|\psi_1\rangle
+&=(2\alpha')^{1/2}(c_{-1}k\cdot\alpha_1+c_1k\cdot\alpha_{-1})|\psi_1\rangle\\
+&=(2\alpha')^{1/2}(k\cdot e\,c_{-1}+\beta k\cdot\alpha_{-1})|0;k\rangle .
+\end{aligned}
+\tag{4.3.27}\label{eq:4.3.27}
+\end{equation}
+$c_0$ に比例する項の和は質量殻条件によってゼロになるため、省略した。したがって不変状態は $k\cdot e=\beta=0$ を満たす。線形独立な状態が26個残り、そのうち24個は正のノルムをもち、2個は自分自身を含むすべての物理的状態に直交してノルムがゼロである。ノルムがゼロの不変状態は、$c_{-1}$ と $k\cdot\alpha_{-1}$ によって生成される。一般の $|\chi\rangle$ は、定数 $e'_\mu,\beta',\gamma'$ をもつ同じ形\eqref{eq:4.3.25}なので、この準位での一般の BRST 完全状態は
+\begin{equation}
+Q_{\mathrm B}|\chi\rangle=(2\alpha')^{1/2}
+(k\cdot e'\,c_{-1}+\beta'k\cdot\alpha_{-1})|0;k\rangle .
+\tag{4.3.28}\label{eq:4.3.28}
+\end{equation}
+したがって、ゴースト状態 $c_{-1}|0;k\rangle$ は BRST 完全であり、一方、偏極は横方向で、同値関係
+$e_\mu\cong e_\mu+(2\alpha')^{1/2}\beta'k_\mu$
+をもつ。これにより、質量のないベクトル粒子に期待される24個の正ノルム状態が残り、光円錐量子化および $A=-1$ での OCQ と一致する。
+
+このパターンは一般的である。光円錐量子化と比べると、余分な正ノルムの振動子の系列が二つ、余分な負ノルムの系列が二つある。物理的状態条件はそのうち二つを取り除き、内積が消える二つの組合せを残す。これらのヌル振動子は BRST 完全であり、同値関係によって取り除かれる。
+
+余談として、状態 $b_{-1}|0;k\rangle$ と $c_{-1}|0;k\rangle$ は、場の理論で質量のないベクトル場を BRST 不変に量子化するときに現れる二つの Faddeev--Popov ゴーストと同一視できる。世界面の BRST 演算子は、ゲージ場理論における対応する時空の BRST 演算子と同じように、これらの状態に作用する。したがって、弦の全 Hilbert 空間に作用する開弦の BRST 演算子は、自由極限では時空のゲージ理論の BRST 不変性を何らかの無限次元の形に一般化したものであり、閉弦の BRST 演算子は、時空の一般座標変換の BRST 不変性を一般化したものである。
+
+閉弦への一般化は容易である。注意を、次の条件を満たす状態の空間 $\widehat{\mathcal H}$ に制限する。\footnote[1]{S. Weinberg は、第4.2節末の簡単な議論から導かれるのは、より弱い条件 $(b_0+\widetilde b_0)|\psi\rangle=0$ だけであると指摘した。それでも、第9章で弦の振幅の詳しい形を調べると、条件\eqref{eq:4.3.29}を満たす状態への射影が存在することが分かる。}
+\begin{equation}
+b_0|\psi\rangle=\widetilde b_0|\psi\rangle=0.
+\tag{4.3.29}\label{eq:4.3.29}
+\end{equation}
+これは
+\begin{equation}
+L_0|\psi\rangle=\widetilde L_0|\psi\rangle=0
+\tag{4.3.30}\label{eq:4.3.30}
+\end{equation}
+も意味する。閉弦では、
+\begin{equation}
+L_0=\frac{\alpha'}4(p^2+m^2),\qquad
+\widetilde L_0=\frac{\alpha'}4(p^2+\widetilde m^2),
+\tag{4.3.31}\label{eq:4.3.31}
+\end{equation}
+ただし、
+\begin{align}
+\frac{\alpha'}4m^2
+&=\sum_{n=1}^{\infty}n
+\left(N_{bn}+N_{cn}+\sum_{\mu=0}^{25}N_{\mu n}\right)-1,
+\tag{4.3.32a}\label{eq:4.3.32a}\\
+\frac{\alpha'}4\widetilde m^2
+&=\sum_{n=1}^{\infty}n
+\left(\widetilde N_{bn}+\widetilde N_{cn}
++\sum_{\mu=0}^{25}\widetilde N_{\mu n}\right)-1.
+\tag{4.3.32b}\label{eq:4.3.32b}
+\end{align}
+先ほどと同じ計算を繰り返すと、$m^2=-4/\alpha'$ にタキオン、$m^2=0$ に重力子、ディラトン、反対称テンソルの $24\times24$ 個の状態が見いだされる。
+
+\subsectionlink{無ゴースト定理}\label{sec:4.4}
+
+本節では、弦の BRST コホモロジーが正の内積をもち、光円錐スペクトルおよび OCQ スペクトルと同型であることを証明する。ここでは BRST コホモロジーを物理的 Hilbert 空間と同一視している。弦の振幅を調べる際には、振幅がコホモロジー上でうまく定義されていること（すなわち、同値な状態が等しい振幅をもつこと）と、物理的状態の空間内で S 行列がユニタリーであることも確認しなければならない。
+
+第3章末で述べた一般的な枠組みで議論する。すなわち、世界面の理論は、$\mu=0$ を含む $d$ 個の自由な $X^\mu$ 場に、中心電荷 $26-d$ の何らかのコンパクトでユニタリーな CFT $K$ と、ゴーストを加えたものからなる。Virasoro 生成子は和
+\begin{equation}
+L_m=L^X_m+L^K_m+L^{\mathrm g}_m
+\tag{4.4.1}\label{eq:4.4.1}
+\end{equation}
+である。コンパクトとは、$L^K_0$ が離散スペクトルをもつことを意味する。たとえば、$K$ がコンパクト多様体上の弦に対応する場合には、$L_0$ の項 $\alpha'p^2$ は Laplace 演算子 $-\alpha'\nabla^2$ に置き換わり、これはコンパクト空間上では離散スペクトルをもつ。
+
+一般の状態は、開弦と閉弦でそれぞれ
+\begin{equation}
+|N,I;k\rangle,\qquad|N,\widetilde N,I;k\rangle
+\tag{4.4.2}\label{eq:4.4.2}
+\end{equation}
+と表示される。ここで $N$（および $\widetilde N$）は $d$ 次元の振動子とゴースト振動子の両方を指し、$k$ は $d$ 次元運動量、$I$ は与えられた境界条件の下でのコンパクト CFT の状態を区別する。上と同じように $b_0$ 条件\eqref{eq:4.3.19}または\eqref{eq:4.3.29}を課すと、質量殻条件は開弦について
+\begin{align}
+-\sum_{\mu=0}^{d-1}k_\mu k^\mu&=m^2,
+\tag{4.4.3a}\label{eq:4.4.3a}\\
+\alpha'm^2&=\sum_{n=1}^{\infty}n
+\left(N_{bn}+N_{cn}+\sum_{\mu=0}^{d-1}N_{\mu n}\right)+L^K_0-1,
+\tag{4.4.3b}\label{eq:4.4.3b}
+\end{align}
+閉弦について
+\begin{align}
+-\sum_{\mu=0}^{d-1}k_\mu k^\mu&=m^2=\widetilde m^2,
+\tag{4.4.4a}\label{eq:4.4.4a}\\
+\frac{\alpha'}4m^2&=\sum_{n=1}^{\infty}n
+\left(N_{bn}+N_{cn}+\sum_{\mu=0}^{d-1}N_{\mu n}\right)+L^K_0-1,
+\tag{4.4.4b}\label{eq:4.4.4b}\\
+\frac{\alpha'}4\widetilde m^2&=\sum_{n=1}^{\infty}n
+\left(\widetilde N_{bn}+\widetilde N_{cn}
++\sum_{\mu=0}^{d-1}\widetilde N_{\mu n}\right)+\widetilde L^K_0-1
+\tag{4.4.4c}\label{eq:4.4.4c}
+\end{align}
+となる。すなわち、$d\leq\mu\leq25$ の振動子の寄与は、コンパクト CFT からの $L^K_0$ または $\widetilde L^K_0$ の固有値に置き換わる。コンパクト CFT について用いる情報は、適切な中心電荷をもつ共形不変な理論であり、したがって冪零な BRST 演算子が存在することと、正の内積をもつことだけである。基底 $I$ は正規直交系に選べるので、縮約内積は
+\begin{equation}
+\begin{aligned}
+\langle0,I;k\Vert0,I';k'\rangle
+&=\langle0,0,I;k\Vert0,0,I';k'\rangle\\
+&=2k^0(2\pi)^{d-1}\delta^{d-1}(\mathbf k-\mathbf k')\delta_{I,I'}.
+\end{aligned}
+\tag{4.4.5}\label{eq:4.4.5}
+\end{equation}
+
+ここで、物理的 Hilbert 空間に何が期待されるかを見よう。横方向の Hilbert 空間 $\mathcal H^\perp$ を、$\widehat{\mathcal H}$ のうち縦方向（$X^0,X^1,b,c$）の励起をもたない状態からなる空間と定義する。これらの振動子が不定値の内積の原因なので、$\mathcal H^\perp$ は正の内積をもつ。光円錐ゲージ固定は縦方向の振動子を直接取り除く。第1章の平坦な時空の場合に具体的に分かるように、光円錐 Hilbert 空間は $\mathcal H^\perp$ と同型である。一般の場合に、BRST コホモロジーが $\mathcal H^\perp$ と同型であることを示す。すなわち、各質量準位で同じ数の状態をもち、正の内積をもつ。これが無ゴースト定理である。
+
+\subsubsection*{証明}
+
+証明は二つの部分からなる。第一に、振動子について二次である簡略化した BRST 演算子 $Q_1$ のコホモロジーを求める。第二に、完全な $Q_{\mathrm B}$ のコホモロジーが $Q_1$ のものと同じであることを示す。
+
+光円錐振動子を
+\begin{equation}
+\alpha^\pm_m=2^{-1/2}(\alpha^0_m\pm\alpha^1_m)
+\tag{4.4.6}\label{eq:4.4.6}
+\end{equation}
+と定義する。これらは
+\begin{equation}
+[\alpha^+_m,\alpha^-_n]=-m\delta_{m,-n},
+\qquad
+[\alpha^+_m,\alpha^+_n]=[\alpha^-_m,\alpha^-_n]=0
+\tag{4.4.7}\label{eq:4.4.7}
+\end{equation}
+を満たす。量子数
+\begin{equation}
+N^{\mathrm{lc}}=\sum_{\substack{m=-\infty\\m\neq0}}^{\infty}
+\frac1m\,{}^\circ_\circ\alpha^+_{-m}\alpha^-_m{}^\circ_\circ
+\tag{4.4.8}\label{eq:4.4.8}
+\end{equation}
+を大いに用いる。数 $N^{\mathrm{lc}}$ は、$-$ 励起の数から $+$ 励起の数を引いたものを数える。重心の部分を省いているので、これは Lorentz 生成子ではない。運動量成分 $k^+$ がゼロでない Lorentz 系を選ぶ。
+
+今度は、量子数 $N^{\mathrm{lc}}$ を用いて BRST 生成子を
+\begin{equation}
+Q_{\mathrm B}=Q_1+Q_0+Q_{-1}
+\tag{4.4.9}\label{eq:4.4.9}
+\end{equation}
+と分解する。ここで $Q_j$ は $N^{\mathrm{lc}}$ を $j$ だけ変える。
+\begin{equation}
+[N^{\mathrm{lc}},Q_j]=jQ_j.
+\tag{4.4.10}\label{eq:4.4.10}
+\end{equation}
+また、各 $Q_j$ はゴースト数 $N^{\mathrm g}$ を1だけ増やす。
+\begin{equation}
+[N^{\mathrm g},Q_j]=Q_j.
+\tag{4.4.11}\label{eq:4.4.11}
+\end{equation}
+$Q_{\mathrm B}^2=0$ を展開すると、
+\begin{equation}
+\bigl(Q_1^2\bigr)+\bigl(\{Q_1,Q_0\}\bigr)
++\bigl(\{Q_1,Q_{-1}\}+Q_0^2\bigr)
++\bigl(\{Q_0,Q_{-1}\}\bigr)+\bigl(Q_{-1}^2\bigr)=0.
+\tag{4.4.12}\label{eq:4.4.12}
+\end{equation}
+括弧でまとめた各部分は異なる $N^{\mathrm{lc}}$ をもつので、それぞれ別々に消えなければならない。とくに、$Q_1$ 自身が冪零であり、したがってコホモロジーをもつ。
+
+具体的には、
+\begin{equation}
+Q_1=-(2\alpha')^{1/2}k^+
+\sum_{\substack{m=-\infty\\m\neq0}}^\infty\alpha^-_{-m}c_m.
+\tag{4.4.13}\label{eq:4.4.13}
+\end{equation}
+$m<0$ では、これは $+$ モードを消滅させて $c$ を生成し、$m>0$ では $-$ モードを生成して $b$ を消滅させる。占有数基底での $Q_1$ の作用を考えることにより、コホモロジーを直接求められる。これは演習に残し、代わりに、$Q_{\mathrm B}$ へ一般化する際にも役立つ標準的な方策を用いる。
+\begin{equation}
+R=\frac1{(2\alpha')^{1/2}k^+}
+\sum_{\substack{m=-\infty\\m\neq0}}^\infty\alpha^+_{-m}b_m
+\tag{4.4.14}\label{eq:4.4.14}
+\end{equation}
+および
+\begin{equation}
+\begin{aligned}
+S\equiv\{Q_1,R\}
+&=\sum_{m=1}^{\infty}
+\left(mb_{-m}c_m+mc_{-m}b_m-\alpha^+_{-m}\alpha^-_m-\alpha^-_{-m}\alpha^+_m\right)\\
+&=\sum_{m=1}^{\infty}m(N_{bm}+N_{cm}+N^+_m+N^-_m)
+\end{aligned}
+\tag{4.4.15}\label{eq:4.4.15}
+\end{equation}
+と定義する。正規順序定数は、$Q_1$ と $R$ がともに基底状態を消滅させることに注目すれば決まる。$Q_1$ が $S$ と可換であることに注意しよう。すると、$S$ の各固有空間内でコホモロジーを計算でき、全体のコホモロジーはその結果の合併である。$|\psi\rangle$ が $Q_1$ 不変で $S|\psi\rangle=s|\psi\rangle$ を満たすならば、ゼロでない $s$ に対して
+\begin{equation}
+|\psi\rangle=\frac1s\{Q_1,R\}|\psi\rangle
+=\frac1sQ_1R|\psi\rangle
+\tag{4.4.16}\label{eq:4.4.16}
+\end{equation}
+であるから、$|\psi\rangle$ は実は $Q_1$ 完全である。したがって、$Q_1$ コホモロジーがゼロでないのは $s=0$ のときに限られる。$S$ の定義\eqref{eq:4.4.15}より、$s=0$ の状態は縦方向の励起をもたない。$s=0$ の空間はまさに $\mathcal H^\perp$ である。演算子 $Q_1$ は $\mathcal H^\perp$ 内のすべての状態を消滅させるので、これらはすべて $Q_1$ 閉であり、この空間には $Q_1$ 完全な状態はない。したがって、コホモロジーは $\mathcal H^\perp$ 自身である。これで無ゴースト定理を証明したが、演算子 $Q_{\mathrm B}$ についてではなく $Q_1$ についてである。
+
+証明は二段階であった。第一に、コホモロジーが $s=0$ の状態（$S$ の核）だけから来ることを示し、第二に、$s=0$ の状態が $Q_1$ 不変であることを示した。第二段階は、$s=0$ のすべての状態が同じゴースト数、今の場合は $-\tfrac12$ をもつという性質を用いて、より抽象的に証明すると便利である。$S|\psi\rangle=0$ とする。$S$ と $Q_1$ は可換なので、
+\begin{equation}
+0=Q_1S|\psi\rangle=SQ_1|\psi\rangle .
+\tag{4.4.17}\label{eq:4.4.17}
+\end{equation}
+状態 $|\psi\rangle$ のゴースト数は $-\tfrac12$ なので、$Q_1|\psi\rangle$ のゴースト数は $+\tfrac12$ である。このゴースト数では $S$ は可逆なので、示したかったように $Q_1|\psi\rangle=0$ でなければならない。
+
+残るのは、$Q_{\mathrm B}$ のコホモロジーが $Q_1$ のコホモロジーと同じであることを示すことである。ここでの考え方は、$S$ の代わりに演算子
+\begin{equation}
+S+U\equiv\{Q_{\mathrm B},R\}
+\tag{4.4.18}\label{eq:4.4.18}
+\end{equation}
+を使うことである。さて、$U=\{Q_0+Q_{-1},R\}$ は $N^{\mathrm{lc}}$ を1または2だけ下げる。$N^{\mathrm{lc}}$ に関して、$S$ は対角であり、$U$ は下三角である。下三角行列の一般的な性質によれば、$S+U$ の核は、その対角部分 $S$ の核より大きくはなれない。実際、両者は同型である。$|\psi_0\rangle$ が $S$ によって消滅させられるならば、
+\begin{equation}
+|\psi\rangle=(1-S^{-1}U+S^{-1}US^{-1}U-\cdots)|\psi_0\rangle
+\tag{4.4.19}\label{eq:4.4.19}
+\end{equation}
+は $S+U$ によって消滅させられる。因子 $S^{-1}$ は、常に $N^{\mathrm{lc}}<0$ の状態に作用し、そこでは $S$ が可逆なので意味をもつ。同じ理由から、ゴースト数が $-\tfrac12$ の場合を除けば $S+U$ は可逆である。式\eqref{eq:4.4.16}と\eqref{eq:4.4.17}を、$S$ を $S+U$ に置き換えて、今度は $Q_{\mathrm B}$ に適用できる。それらは、$Q_{\mathrm B}$ コホモロジーが $S+U$ の核と同型であり、その核は $S$ の核と同型であり、さらにそれは $Q_1$ のコホモロジーと同型であることを意味する。これが示したかったことである。
+
+内積が正であることを、まだ確認しなければならない。式\eqref{eq:4.4.19}の右辺の第1項より後の項は、すべて厳密に負の $N^{\mathrm{lc}}$ をもつ。交換関係により、内積がゼロでないのは、$N^{\mathrm{lc}}$ の和がゼロになる状態の間だけである。すると、$S+U$ の核に属する二つの状態\eqref{eq:4.4.19}について、
+\begin{equation}
+\langle\psi\Vert\psi'\rangle=\langle\psi_0\Vert\psi'_0\rangle .
+\tag{4.4.20}\label{eq:4.4.20}
+\end{equation}
+したがって、$S+U$ の核の内積の正値性は、$S$ の核における正値性から従い、証明は完了する。
+
+$Q_{\mathrm B}$、$N^{\mathrm{lc}}$、$R$ などにチルダ付きの演算子を加えれば、閉弦の場合の証明も同じである。
+
+\subsubsection*{BRSTとOCQの等価性}
+
+今度は等価性
+\begin{equation}
+\mathcal H_{\mathrm{OCQ}}=\mathcal H_{\mathrm{BRST}}
+=\mathcal H_{\text{light-cone}}
+\tag{4.4.21}\label{eq:4.4.21}
+\end{equation}
+を証明する。物質 Hilbert 空間の状態 $|\psi\rangle$ に、物質とゴーストを合わせた理論の状態
+\begin{equation}
+|\psi,\downarrow\rangle
+\tag{4.4.22}\label{eq:4.4.22}
+\end{equation}
+を対応させる。ここでも、ゴースト真空 $|\downarrow\rangle$ は、すべてのゴースト下降演算子、すなわち $n\geq0$ の $b_n$ と $n>0$ の $c_n$ によって消滅させられる。$Q_{\mathrm B}$ を作用させると、
+\begin{equation}
+Q_{\mathrm B}|\psi,\downarrow\rangle
+=\sum_{n=0}^{\infty}c_{-n}(L^{\mathrm m}_n-\delta_{n,0})|\psi,\downarrow\rangle=0.
+\tag{4.4.23}\label{eq:4.4.23}
+\end{equation}
+$Q_{\mathrm B}$ 中のゴースト下降演算子を含む項はすべて消え、$n=0$ の項の定数は $Q_{\mathrm B}$ のモード展開、式\eqref{eq:4.3.7}から分かっている。このように、各 OCQ 物理的状態は BRST 閉状態に写される。順序付け定数 $A=-1$ は、ここではゴースト真空の $L_0$ 固有値から生じる。
+
+等価性\eqref{eq:4.4.21}を確立するには、さらに示すべきことがある。まず、同値類の間の写像がうまく定義されていること、すなわち $\psi$ と $\psi'$ が同値な OCQ 物理的状態であれば、同じ BRST 類に写されることを示す必要がある。
+\begin{equation}
+|\psi,\downarrow\rangle-|\psi',\downarrow\rangle
+\tag{4.4.24}\label{eq:4.4.24}
+\end{equation}
+は BRST 完全でなければならない。\eqref{eq:4.4.23}により、この状態は BRST 閉である。さらに、$|\psi'\rangle-|\psi\rangle$ は OCQ ヌルなので、状態\eqref{eq:4.4.24}はゼロノルムをもつ。BRST の無ゴースト定理により、コホモロジー上の内積は正であるから、ノルムがゼロの閉状態は BRST 完全であり、必要なことが示された。
+
+同型であると結論するには、写像が単射かつ全射であることを示す必要がある。単射とは、同じ BRST 類に写される OCQ 物理的状態 $\psi$ と $\psi'$ が、同じ OCQ 類に属さなければならないという意味である。すなわち、
+\begin{equation}
+|\psi,\downarrow\rangle-|\psi',\downarrow\rangle=Q_{\mathrm B}|\chi\rangle
+\tag{4.4.25}\label{eq:4.4.25}
+\end{equation}
+ならば、$|\psi\rangle-|\psi'\rangle$ は OCQ ヌルでなければならない。これを見るため、
+\begin{equation}
+|\chi\rangle=\sum_{n=1}^{\infty}b_{-n}|\chi_n,\downarrow\rangle+\cdots
+\tag{4.4.26}\label{eq:4.4.26}
+\end{equation}
+と展開する。$|\chi\rangle$ のゴースト数は $-\tfrac32$ なので、省略記号は少なくとも一つの $c$ 励起と二つの $b$ 励起を含む項を表す。これを\eqref{eq:4.4.25}に代入し、両辺でゴースト基底状態をもつ項だけを残す。すると、
+\begin{equation}
+\begin{aligned}
+|\psi,\downarrow\rangle-|\psi',\downarrow\rangle
+&=\sum_{m,n=1}^{\infty}c_mL^{\mathrm m}_{-m}b_{-n}|\chi_n,\downarrow\rangle\\
+&=\sum_{n=1}^{\infty}L^{\mathrm m}_{-n}|\chi_n,\downarrow\rangle .
+\end{aligned}
+\tag{4.4.27}\label{eq:4.4.27}
+\end{equation}
+ゴースト励起を含む項は別々に消えなければならないので、省略した。したがって、
+$|\psi\rangle-|\psi'\rangle
+=\sum_{n=1}^{\infty}L^{\mathrm m}_{-n}|\chi_n\rangle$
+は OCQ ヌルであり、写像は単射である。
+
+最後に、写像が全射であること、すなわち、すべての $Q_{\mathrm B}$ 類が\eqref{eq:4.4.22}の形の状態を少なくとも一つ含むことを示さなければならない。実際、特定の代表元\eqref{eq:4.4.19}、すなわち $S+U$ によって消滅させられる状態は、この形をしている。これを見るため、$-$、$b$、$c$ 励起の総数を含む量子数 $N'=2N^-+N_b+N_c$ を考えよう。演算子 $R$ は $N'=-1$ をもつ。$R$ の $m>0$ の項は $N_c$ を1だけ減らし、$m<0$ の項は $N^-$ を1だけ減らして $N_b$ を1だけ増やすからである。$Q_0+Q_{-1}$ を調べると、$N'=1$ の項はいろいろあるが、それより大きいものはない。したがって、$U=\{R,Q_0+Q_{-1}\}$ は $N'$ を増やすことができない。状態\eqref{eq:4.4.19}を調べ、$S$ と $|\psi_0\rangle$ が $N'=0$ をもつことに注目すると、右辺のすべての項で $N'\leq0$ であることが分かる。定義により $N'$ は非負なので、$N'|\psi\rangle=0$ でなければならない。これは $-$、$b$、$c$ の励起がないことを意味し、したがってこの状態は\eqref{eq:4.4.22}の形である。こうして等価性\eqref{eq:4.4.21}が示された。
+
+弦の振幅の一般的な構造を理解するには、BRST 法の全力が必要である。しかし多くの実用的な目的では、$|\psi,\downarrow\rangle$ という形の特別な状態を扱うと大幅に簡単になるので、すべての BRST 類が、ゴーストのモードが励起されていない状態を少なくとも一つ含むと知っておくことは有用である。これらを OCQ 型状態と呼ぶことにする。
+
+OCQ の物理的状態条件\eqref{eq:4.1.5}は、物質状態が $L_0=1$ の最高ウェイト状態であることを要求する。対応する頂点演算子は、物質場から作られたウェイト1のテンソル場 $\mathcal V^{\mathrm m}$ である。ゴースト状態 $|\downarrow\rangle$ を含めると、完全な頂点演算子は $c\mathcal V^{\mathrm m}$ である。閉弦では、完全な頂点演算子は $\widetilde c c\mathcal V^{\mathrm m}$ であり、$\mathcal V^{\mathrm m}$ は $(1,1)$ テンソルである。頂点演算子の物質部分は、第3.6節の Polyakov 形式で得たものと同じであり、ゴースト部分には、次章で出会う簡単な解釈がある。
+
+式\eqref{eq:4.4.19}は、各コホモロジー類に一つの OCQ 物理的状態を定義する。平坦な時空という特別な場合には、Del Giudice--Di Vecchia--Fubini（DDF）演算子を用いて、この状態をより具体的に構成できる。その説明には、頂点演算子の技法をもう少し展開する必要があるので、第8章に譲る。
+
+\subsection*{演習問題}
+\addcontentsline{toc}{subsection}{演習問題}
+
+\paragraph{4.1}\label{ex:4.1}
+$A=-1$、一般の $D$ について、OCQ を開弦の第2励起準位へ拡張せよ。余分な正ノルム状態と負ノルム状態について本文で述べた主張を確認せよ。
+
+\paragraph{4.2}\label{ex:4.2}
+(a) OCQ において、$|\chi\rangle$ が $L^{\mathrm m}_0=0$ の最高ウェイト状態ならば、状態 $L^{\mathrm m}_{-1}|\chi\rangle$ が物理的（したがってヌル）であることを示せ。
+
+(b) $|\chi\rangle$ が $L^{\mathrm m}_0=-1$ の最高ウェイト状態ならば、状態
+$(L^{\mathrm m}_{-2}+\tfrac32L^{\mathrm m}_{-1}L^{\mathrm m}_{-1})|\chi\rangle$
+が物理的かつヌルであることを示せ。
+
+\paragraph{4.3}\label{ex:4.3}
+各項を書き出すことにより、Jacobi 恒等式
+\[
+\{[Q_{\mathrm B},L_m],b_n\}
+-\{[L_m,b_n],Q_{\mathrm B}\}
+-[\{b_n,Q_{\mathrm B}\},L_m]=0
+\]
+を示せ。これは、適切に交換子または反交換子を用い、反交換による負号を含めた巡回置換の和である。Jacobi 恒等式と、$b_n$ と $L_n,Q_{\mathrm B}$ の間の（反）交換関係\eqref{eq:2.6.24}および\eqref{eq:4.3.6}を用いて、全中心電荷がゼロのとき $\{[Q_{\mathrm B},L_m],b_n\}$ が消えることを示せ。これは、$[Q_{\mathrm B},L_m]$ が $c$ モードを含まないことを意味する。しかし、この交換子は $N^{\mathrm g}=1$ をもつので、ゼロでなければならない。すなわち、電荷 $Q_{\mathrm B}$ は共形不変である。今度は、$Q_{\mathrm B}Q_{\mathrm B}b_n$ の Jacobi 恒等式を同様に用いて、全中心電荷がゼロのとき $Q_{\mathrm B}$ が冪零であることを示せ。
+
+\paragraph{4.4}\label{ex:4.4}
+より一般的な場合には、ボソン的な生成子（フェルミオン数 $F_I$ が偶数）とフェルミオン的な生成子（$F_I$ が奇数）をもつ、次数付き Lie 代数が現れる。拘束の代数は
+\[
+G_IG_J-(-1)^{F_IF_J}G_JG_I=ig^K{}_{IJ}G_K
+\]
+である。冪零な BRST 演算子を構成せよ。フェルミオン的な拘束にはボソン的なゴーストが必要になる。
+
+\paragraph{4.5}\label{ex:4.5}
+(a) 閉弦の最初の二つの準位について、BRST 量子化を具体的に実行せよ。
+
+(b) 開弦の第3準位、$m^2=1/\alpha'$ について BRST 量子化を実行せよ。
+
+\paragraph{4.6}\label{ex:4.6}
+(a) $Q_1$ を $m=\pm1$ の振動子だけに切り詰めて得られる演算子
+$Q'=\alpha^-_{-1}c_1+\alpha^-_1c_{-1}$
+を考えよ。状態
+\[
+(b_{-1})^{N_b}(c_{-1})^{N_c}
+(\alpha^+_{-1})^{N^+}(\alpha^-_{-1})^{N^-}|0\rangle
+\]
+の一般の線形結合に対する作用を考えることにより、$Q'$ のコホモロジーを直接計算せよ。
+
+(b) これを完全な $Q_1$ に一般化せよ。

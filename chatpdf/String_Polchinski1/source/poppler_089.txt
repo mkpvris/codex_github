@@ -1,0 +1,55 @@
+                                  2.8 Vertex operators                                                   67
+
+   To go the other way, start with some state ([/b ]. Consider a path
+integral over the annular region 1 ≥ |z| ≥ r, with the fields /b on the
+outer circle fixed and the fields /"b integrated over the inner circle as
+follows:
+           !
+               [d/"b ][d/i ]/b ,/"b exp(−S [/i ]) r−L0 −L̃0 ([/"b ] .                               (2.8.18)
+
+That is, the integral is weighted by the state (functional) r−L0 −L̃0 ([/"b ].
+Now, the path integral over the annulus just corresponds to propagating
+from |z| = r to |z| = 1, which is equivalent to acting with the operator
+r+L0 +L̃0 . This undoes the operator acting on (, so the path integral (2.8.18)
+is again ([/b ]. Now take the limit as r → 0. The annulus becomes a disk,
+and the limit of the path integral over the inner circle can be thought of
+as defining some local operator at the origin. By construction the path
+integral on the disk with this operator reproduces ([/b ] on the boundary.
+   Let us work this out explicitly for a single free scalar field X. On the
+unit circle expand
+                                    ∞
+                                    
+                      Xb (θ) =            Xn einθ ,          Xn∗ = X−n .                            (2.8.19)
+                                   n=−∞
+
+The boundary state ([Xb ] can thus be regarded as a function of all of
+the Xn . Let us first identify the state corresponding to the unit operator,
+given by the path integral without insertion,
+                       !                  %              !                   &
+                                           1                   2     ¯
+         (1 [Xb ] =        [dXi ]Xb exp −                     d z ∂X ∂X          .                  (2.8.20)
+                                          2πα"
+Evaluate this by the usual Gaussian method. Separate Xi into a classical
+part and a fluctuation,
+                                Xi = Xcl + Xi" ,                                                   (2.8.21a)
+                                              ∞
+                                              
+                     Xcl (z, z̄) = X0 +             (z n Xn + z̄ n X−n ) .                         (2.8.21b)
+                                              n=1
+With this definition, Xcl satisfies the equation of motion and Xi" vanishes
+on the boundary. The path integral then separates,
+                            !                       %              !                       &
+                                                           1                     "¯
+  (1 [Xb ] = exp(−Scl )         [dXi" ]Xb =0 exp        −               2
+                                                                       d z ∂X ∂X       "
+                                                                                               ,    (2.8.22)
+                                                          2πα"
+with
+                               ∞                        !
+                         1 
+                Scl =              mnXm X−n                        d2 z z m−1 z̄ n−1
+                        2πα" m,n=1                       |z|<1
+                            ∞
+                        1 
+                    =          mXm X−m .                                                            (2.8.23)
+                        α" m=1

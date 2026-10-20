@@ -1,0 +1,45 @@
+44                         2 Conformal field theory
+
+are respectively holomorphic and antiholomorphic. For the free massless
+scalar,
+                   1                          1 ¯ µ¯
+        T (z) = − " : ∂X µ ∂Xµ : , T̃ (z̄) = − " : ∂X ∂Xµ : ,    (2.4.4)
+                  α                           α
+which are indeed holomorphic and antiholomorphic as a consequence of
+the equation of motion.
+  The tracelessness of Tab implies a much larger symmetry. The currents
+                   j(z) = iv(z)T (z) ,           ̃(z̄) = iv(z)∗ T̃ (z̄)    (2.4.5)
+are conserved for any holomorphic v(z). For the free scalar theory, one
+finds the OPE
+                        1                           1¯ µ
+         T (z)X µ (0) ∼ ∂X µ (0) , T̃ (z̄)X µ (0) ∼ ∂X   (0) .   (2.4.6)
+                        z                           z̄
+The Ward identity then gives the transformation
+                                                   ¯ µ.
+                       δX µ = −.v(z)∂X µ − .v(z)∗ ∂X             (2.4.7)
+This is an infinitesimal coordinate transformation z " = z + .v(z). The finite
+transformation is
+                     X "µ (z " , z̄ " ) = X µ (z, z̄) ,   z " = f(z)        (2.4.8)
+for any holomorphic f(z). This is known as a conformal transformation.
+  The conformal symmetry we have found should not be confused with
+the di! invariance of general relativity. We are in the flat space theory,
+with no independent metric field to vary, so the transformation z → z "
+actually changes the distances between points. We would not ordinarily
+have such an invariance; it is a nontrivial statement about the dynamics.
+For the scalar action (2.1.10), the conformal transformation of ∂ and ∂¯
+just balances that of d2 z. A mass term m2 X µ Xµ would not be invariant.
+Obviously there will in the end be a close relation with the di!×Weyl
+symmetry of the Polyakov string, but we leave that for the next chapter.
+  Consider the special case
+                                         z " = ζz                           (2.4.9)
+for complex ζ. The phase of ζ is a rotation of the system, while its
+magnitude is a rescaling of the size of the system. Such a scale invariance
+has occasionally been considered as an approximate symmetry in particle
+physics, and statistical systems at a critical point are described by scale-
+invariant field theories.
+   To get some insight into the general conformal transformation, consider
+its e!ect on infinitesimal distances ds2 = dσ a dσ a = dzdz̄. Conformal
+transformations rescale this by a position-dependent factor,
+                                                 ∂z " ∂z̄ "
+                        ds"2 = dz " dz̄ " =                 dzdz̄ .        (2.4.10)
+                                                 ∂z ∂z̄

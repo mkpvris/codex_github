@@ -1,0 +1,44 @@
+82                                                                       3                     The              Polyakov              path              integral
+
+a               pair               of               strings.               So               if               any               open               string               interaction               is               allowed,               then               so               is
+some             process             in             which             closed             strings             are             produced             from             open             strings.
+
+
+                                                                   3.2                                              The               Polyakov               path               integral
+
+We             now             begin             to             develop             the             sum             over             world-sheets,             integrating             over             the
+ﬁelds          of          the          Polyakov          formalism.          We          make          one          change          from          chapter          1:          the
+Minkowskian               world-sheet               metric                                                     γab         is               replaced               with               a               Euclidean               world-
+sheet                    metric             gab(σ1,σ                    2),                    of                    signature                    (+,+).                    The                    integral                    runs                    over                    all
+Euclidean               metrics                and               over                all                emb eddings                               Xµ(σ1,σ                    2)         of         the         world-sheet
+in             Minkowski             spacetime:
+                                                                                        ∫
+                                                                                               [dX        dg]exp(−S).                                                                                                         (3.2.1)
+
+The             Euclidean             action             is
+                                                                                                 S      =       SX         +       λχ            ,                                                                            (3.2.2)
+with                                                                                            ∫
+                                                          S           =              1                     d2σg             1/2gab∂                  Xµ∂              X           ,                                       (3.2.3a)
+                                                              X                4πα′                M                                              a                b        µ
+                                                                                  1       ∫                                                      1       ∫
+                                                               χ      =                              d2σg             1/2R+                                            ds      k              .                           (3.2.3b)
+                                                                               4π             M                                               2π             ∂M
+The           geodesic           curvature                                   k     was           deﬁned           in           exercise           1.3;           note           that           the           bound-
+ary             now             is             always             spacelike.
+       The               advantage               of               the               Euclidean               path               integral               is               that               the               integral               over
+metrics                     is                     better                     deﬁned.                     The                     topologically                     nontrivial                     world-sheets                     we
+have                    been                    describing                    can                    have                    nonsingular                    Euclidean                    metrics                    but                    not
+Minkowskian                       ones.                       We                      will                       take                      the                      Euclidean                      theory                       (3.2.1)                       as                      our
+starting                point,                and                we                will                show                how                to                give                it                a                precise                deﬁnition                and
+that          it          deﬁnes          a          consistent          spacetime          theory          with          the          advertised          properties.
+However,               let               us               give               a               brief               formal               argument               that               it               is               equivalent               to               the
+Minkowski             theory             with             which             we             began.
+       We               start               again               with               the               example               of               the               point               particle,               where               the               path
+integral
+                                                     ∫                                           [i        ∫                 (                                                        ]
+                                                            [dη       dX          ]exp                             dτ            η−1X˙             µX˙µ           −      ηm        2                                          (3.2.4)
+                                                                                                     2
+is                oscillatory.                The                path                integral                over            η      and            Xµ           is                a                product                of                ordinary
+integrals,              and              so              we              can              deform              contours              just              as              in              ordinary              integration.
+If             we             take
+                                                         η(τ)           →         e−iθ        η(τ)           ,X0(τ)→e−iθX0(τ),                                                                                                (3.2.5)

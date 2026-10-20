@@ -1,0 +1,48 @@
+                                                            6.2                      Scalar              expectation              values                                                      173
+
+behave          as          z−2h         at          inﬁnity.          Focusing          on           thez1-dependence          in           eq.          (6.2.22)          at
+ﬁxed          z2,           this           implies           that  g(z1,z2)fallsas                            z1−2at     inﬁnity     and     so     vanishes     by
+holomorphicity.        This        determines        the        expectation        value        up        to        normaliza-
+tion.      Comparing      with      the      path      integral      result      (6.2.19),      there      is      agreement,
+though             the             normalization                       ⟨  1    ⟩S2      is             seen             to             diverge             as,(0).             This             is             just             the
+zero-mode             divergence             from             the             inﬁnite             volume             of             spacetime.
+      To             obtain             the             expectation             value             of             the             product             of             vertex             operators
+                                                                                        ⟨∏n                                         ⟩
+                                                         An       (k,     σ)=                          :eiki·X(zi,¯zi)           :                                                 (6.2.24)
+                                                             S2
+                                                                                              i=1                                        S2
+
+by               this               method               is               less               direct,               because               the               exponentials               are               not               holomor-
+phic.             In             fact             they             can             be             factored             into             holomorphic             and             antiholomorphic
+parts,            but            this            is            subtle            and            is            best            introduced            in            operator            language            as            we
+will           do           in           chapter           8.           We           use           the           holomorphicity           of           the           translation           current.
+Consider             the             expectation             value             with             one             current              ∂X       µ(z)            added.            The            OPE
+of            the            current            with            the            vertex            operators            determines            the            singularities            inz,
+              ⟨                         ∏n                                    ⟩                            ′                        ∑n                µ
+                    ∂X      µ(z)                 : eiki·X(zi,¯zi)          :             =      −iα          An       (k,     σ)                   ki
+                                                                                                       2         S2                           z    −     zi
+                                        i=1                                        S2                                                i=1
+                                                                                                    +           terms             holomorphic             in           z.          (6.2.25)
+Now             look             atz      →∞.      The      condition      that∂uXµ                                               be             holomorphic             at             u    =0
+again     requires     that     the     expectation     value     vanish     asz−2when                                                                                 z    →∞.The
+holomorphic     term     in     eq.     (6.2.25)     must     then     vanish,    and     from     the     vanishing
+of             the             orderz−1       term             we             recover             momentum             conservation,
+
+                                                                                                 ∑n          µ
+                                                                         An       (k,     σ)              k       =0.                                                              (6.2.26)
+                                                                              S2                             i
+                                                                                                 i=1
+
+Let          us          also          say          this          in          a          slightly          di!erent          way.          Consider          the          contour
+integral      of      the      spacetime      translation      current
+                                                                                 1      ∮
+                                                               pµ=                             (dz        jµ    −     d¯zjµ)          ,                                            (6.2.27)
+                                                                              2πi           C              z                   ¯z
+
+where           the           contour             C      encircles           all           the           exponential           operators.           There           are           two
+ways                to                evaluate                this.                The                ﬁrst                is                to                contractCuntil                it                is                a                small                circle
+around                  each                  vertex                  operator,                  which                  picks                  out                  the                  (∑z−zi)−1term                  from
+each            OPE            and            gives           n       kµ.            The            second            is            to            expand            it            until            it            is            a            small
+                                                              i=1        i
+circle            in            theu-patch:            by            holomorphicity            at                   u    =           0            it            must            vanish.            This            sort
+of             ‘contour-pulling’             argument             is             commonly             used             in             CFT.

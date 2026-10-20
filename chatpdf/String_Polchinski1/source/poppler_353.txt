@@ -1,0 +1,54 @@
+                                        A.1 Bosonic fields                                  331
+
+left of p̂; drop these. Then to this order %qm+1 , tm+1 |qm , tm & becomes
+     #
+         dpm exp[−iH(pm , qm )./h̄]%qm+1 |pm &%pm |qm &
+         #            6                                                         7
+             dpm       i'                             (
+    =             exp − H(pm , qm ). − pm (qm+1 − qm ) + O(.2 )                     .   (A.1.11)
+             2πh̄      h̄
+Thus
+                        #
+                            dpN−1             dp1      dp0
+   %qf , T |qi , 0& ≈             dqN−1 . . .      dq1
+                             2πh̄             2πh̄     2πh̄
+                                          8                                               9
+                                          &'
+                                       i N−1                                 (
+                               × exp −        H(pm , qm ). − pm (qm+1 − qm )
+                                       h̄ m=0
+                        #                 6 # T                             7
+                                           i
+                   →        [dpdq] exp   dt [ pq̇ − H(p, q) ] .       (A.1.12)
+                                    h̄ 0
+In the last line we have taken a formal . → 0 limit, so the integral runs over
+all paths p(t), q(t) with given q(T ) and q(0). This is the Hamiltonian path
+integral (or functional integral), the sum over phase space paths weighted
+by exp(iS /h̄) with S the action in Hamiltonian form.
+   Let us integrate over p(t), making first the approximation that the
+integral is dominated by the point of stationary phase,
+                            ∂                          ∂
+                     0=        [ pq̇ − H(p, q) ] = q̇ − H(p, q) .                       (A.1.13)
+                            ∂p                         ∂p
+Solving for p in terms of q and q̇ and recalling that L = pq̇ − H, the
+stationary phase approximation gives
+                                    #          . # T                  /
+                                                i
+               %qf , T |qi , 0& =       [dq] exp            dt L(q, q̇) .               (A.1.14)
+                                                   h̄   0
+
+Often the momentum integral is Gaussian, Ĥ = 12 p̂2 + V (q̂), so that the
+stationary phase approximation is exact up to a normalization that can be
+absorbed in the measure [dq]. In fact, we can do this generally: because the
+relation (A.1.13) between p and q̇ is local, the corrections to the stationary
+phase approximation are local and so can be absorbed into the definition
+of [dq] without spoiling the essential property that [dq] is a product over
+independent integrals at each intermediate time. The result (A.1.14) is the
+Lagrangian path integral, the integral over all paths in configuration space
+weighted by exp(iS /h̄), where now S is the Lagrangian action.
+   We have kept h̄ so as to discuss the classical limit. As h̄ → 0, the
+integral is dominated by the paths of stationary phase, δS /δq(t) = 0,
+which is indeed the classical equation of motion. Henceforth, h̄ = 1.
+   The derivation above clearly generalizes to a multicomponent q i . One
+can always write a quantum field theory in terms of an infinite number of
+qs, either by making the spatial coordinate x discrete and taking a limit,

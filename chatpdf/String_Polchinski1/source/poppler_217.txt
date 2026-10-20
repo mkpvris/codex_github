@@ -1,0 +1,47 @@
+                             6.6 Closed string tree amplitudes                                     195
+
+The order k 2 terms in this amplitude correspond to the spacetime ac-
+tion (3.7.25), while the k 4 and k 6 terms come from a variety of higher
+derivative interactions, including terms quadratic and cubic in the space-
+time curvature. These higher corrections to the action can also be de-
+termined by calculating higher loop corrections to the world-sheet beta
+functions (3.7.14).
+   The tensor structure of the closed string amplitude (6.6.19) is just two
+copies of that in the open string amplitude (6.5.15), if one sets α% = 2 in
+the closed string and α% = 12 in the open. The same holds for the ampli-
+tude (6.6.14). This is a consequence of the factorization of free-field expec-
+tation values on the sphere into holomorphic and antiholomorphic parts.
+A similar factorization holds for four or more closed strings before integra-
+tion over the vertex operator positions. Further, by careful treatment of the
+contour of integration it is possible to find relations between the integrated
+amplitudes. For the four-tachyon amplitudes the integrals above are related
+               J(s, t, u, α% ) = −2 sin παc (t) I(s, t, 4α% ) I(t, u, 4α% ) ,                 (6.6.21)
+after use of the gamma function identity Γ(x)Γ(1 − x) sin(πx) = π; we
+now indicate the explicit dependence of the integrals on α% . For the general
+integral appearing in four-point closed string amplitudes there is a relation
+  $
+       d2 z z a−1+m1 z̄ a−1+n1 (1 − z)b−1+m2 (1 − z̄)b−1+n2
+   C
+          = 2 sin[π(b + n2 )]B(a + m1 , b + m2 )B(b + n2 , 1 − a − b − n1 − n2 ) .
+                        m1 − n1 ∈ Z , m2 − n2 ∈ Z                         (6.6.22)
+This implies a corresponding relation between four-point open and closed
+string amplitudes
+                       πigc2 α%
+       Ac (s, t, u, α% , gc ) = sin[παc (t)]Ao (s, t, 14 α% , go )Ao (t, u, 14 α% , go )∗ ,
+                         go4
+                                                                                        (6.6.23)
+where the open string amplitudes include just one of the six cyclic permu-
+tations, with poles in the indicated channels.
+
+                                            Consistency
+In chapter 9 we will discuss the convergence and gauge invariance of
+tree-level amplitudes in a general way, but as an introduction we will now
+use the OPE to see how these work for the lowest levels. Consider the
+operator product
+                                                           %
+                                                            0
+                                                                                                  ¯
+      : eik1 ·X(z1 ,z̄1 ) : : eik4 ·X(z4 ,z̄4 ) : = |z14 |α k1 ·k4 : 1 + iz14 k1 ·∂X + iz̄14 k1 · ∂X
+                                                      1
+                                        ¯ + . . . ei(k1 +k4 )·X (z4 , z̄4 ) : .
+                 − z14 z̄14 k1 ·∂X k1 · ∂X                                                    (6.6.24)

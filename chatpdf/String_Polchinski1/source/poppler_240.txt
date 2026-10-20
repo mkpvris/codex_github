@@ -1,0 +1,58 @@
+218                              7 One-loop amplitudes
+
+Here H⊥ is the closed string Hilbert space excluding the ghosts, the
+µ = 0, 1 oscillators, and the noncompact momenta.
+  In order to understand the physics of these amplitudes it is useful to
+compare with the corresponding quantity in field theory, the sum over all
+particle paths with the topology of a circle. This is given by
+                             $           $
+                 2                 dd k      ∞ dl
+           ZS1 (m ) = Vd                          exp[−(k 2 + m2 )l/2]
+                                  (2π)d 0 2l
+                              $ ∞
+                                     dl
+                      = iVd             (2πl)−d/2 exp(−m2 l/2) .         (7.3.9)
+                                0    2l
+This can be derived by gauge-fixing the point-particle path integral, which
+was given as exercise 5.2. The result is intuitive: l is the modulus for
+the circle, 12 (k 2 + m2 ) is the world-line Hamiltonian, and the 2l in the
+denominator removes the overcounting from translation and reversal of
+the world-line coordinate.
+   Let us now take this point-particle result, which is for a particle of given
+  2
+m , and sum over the actual spectrum of the string. As shown in chapter 4,
+the physical spectrum is in one-to-one correspondence with H⊥ , where
+the mass is related to the transverse weights by
+                                           2
+                                   m2 = % (h + h̃ − 2)                  (7.3.10)
+                                           α
+and with the constraint h = h̃. It is useful to write the latter constraint in
+integral form,
+                                    $ π                    
+                                          dθ
+                          δh,h̃ =             exp i(h − h̃)θ .          (7.3.11)
+                                     −π 2π
+
+In writing this we are assuming that the di!erence h − h̃ is an integer. This
+is true in 26 flat dimensions, and as we have discussed in the previous
+section it is necessary in general for modular invariance. Then
+      (                   $ ∞    $
+                              dl π dθ
+                 2
+          ZS1 (mi ) = iVd               (2πl)−d/2
+        ⊥                  0  2l  −π 2π
+      i∈H
+                                      (                                               
+                                  ×          exp −(hi + h̃i − 2)l/α% + i(hi − h̃i )θ
+                                      i∈H⊥
+                             $                         (
+                               dτdτ̄
+                     = iVd           (4π 2 α% τ2 )−d/2    q hi −1 q̄ h̃i −1 ,    (7.3.12)
+                             R  4τ2                     ⊥i∈H
+
+where θ + il/α% = 2πτ. Here the region of integration R is
+                                                1
+                             R:       τ2 > 0 ,    . |τ1 | <           (7.3.13)
+                                                2
+  Now let us interpret these results. The amplitude (7.3.9) for a single point
+particle diverges as l → 0. This is the usual UV divergence of quantum

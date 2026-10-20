@@ -1,0 +1,45 @@
+140                        4 The string spectrum
+
+and
+                         ∞
+                         ( =                            −    − +     >
+        S ≡ {Q1 , R} =         mb−m cm + mc−m bm − α+
+                                                    −m αm − α−m αm
+                         m=1
+                         (∞
+                     =         m(Nbm + Ncm + Nm+ + Nm− ) .               (4.4.15)
+                         m=1
+
+The normal ordering constant is determined by noting that Q1 and R
+both annihilate the ground state. Note that Q1 commutes with S . We
+can then calculate the cohomology within each eigenspace of S , and the
+full cohomology is the union of the results. If |ψ+ is Q1 -invariant with
+S |ψ+ = s|ψ+, then for nonzero s
+                          1             1
+                     |ψ+ = {Q1 , R}|ψ+ = Q1 R|ψ+ ,                       (4.4.16)
+                          s             s
+and so |ψ+ is actually Q1 -exact. Therefore the Q1 cohomology can be
+nonzero only at s = 0. By the definition (4.4.15) of S , the s = 0 states have
+no longitudinal excitations — the s = 0 space is just H⊥ . The operator
+Q1 annihilates all states in H⊥ , so they are all Q1 -closed and there are no
+Q1 -exact states in this space. Therefore the cohomology is H⊥ itself. We
+have proven the no-ghost theorem, but for the operator Q1 , not QB .
+   The proof had two steps, the first being to show that the cohomology
+could only come from s = 0 states (the kernel of S ), and the second to
+show that s = 0 states were Q1 -invariant. It is useful to prove the second
+step in a more abstract way, using the property that all s = 0 states have
+the same ghost number, in this case − 12 . Suppose S |ψ+ = 0. Since S and
+Q1 commute we have
+                           0 = Q1 S |ψ+ = S Q1 |ψ+ .                     (4.4.17)
+The state |ψ+ has ghost number − 12 , so Q1 |ψ+ has ghost number + 12 . Since
+S is invertible at this ghost number, it must be that Q1 |ψ+ = 0 as we
+wished to show.
+  It remains to show that the cohomology of QB is the same as the
+cohomology of Q1 . The idea here is to use in place of S the operator
+                                S + U ≡ {QB , R} .                       (4.4.18)
+Now, U = {Q0 + Q−1 , R} lowers N lc by one or two units. In terms of N lc y,
+S is diagonal and U is lower triangular. By general properties of lower
+triangular matrices, the kernel of S + U can be no larger than the kernel
+of its diagonal part S . In fact they are isomorphic: if |ψ0 + is annihilated
+by S , then
+                 |ψ+ = (1 − S −1 U + S −1 US −1 U − . . .)|ψ0 +          (4.4.19)

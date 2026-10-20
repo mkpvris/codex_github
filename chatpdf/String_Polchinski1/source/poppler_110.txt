@@ -1,0 +1,48 @@
+88                              3 The Polyakov path integral
+
+leaving
+                                     !
+                        Z[ĝ] =          [dX] ∆FP (ĝ) exp(−S [X, ĝ]) .                   (3.3.15)
+
+Thus, ∆FP (ĝ) is the correct measure on the slice.
+  To evaluate the expression (3.3.11) for the Faddeev–Popov measure, let
+us pretend that the gauge choice precisely fixes the gauge symmetry, so
+that for exactly one value of . the delta function ,(g − ĝ . ) is nonzero; for
+,(ĝ − ĝ . ) this would be the identity. As noted above, there is a small global
+mismatch, but we will deal with this when the time comes — it does not
+a!ect the local properties of the world-sheet. For . near the identity, we
+can expand
+                       ,gab = 2,ω gab − ∇a ,σb − ∇b ,σa
+                            = (2,ω − ∇c ,σ c )gab − 2(P1 ,σ)ab .                           (3.3.16)
+We have defined a di!erential operator P1 that takes vectors into traceless
+symmetric 2-tensors,
+                                1
+                     (P1 ,σ)ab = (∇a ,σb + ∇b ,σa − gab ∇c ,σ c ) .                        (3.3.17)
+                                2
+Near the identity, the inverse determinant (3.3.11) becomes
+∆FP (ĝ)−1
+         !                                                           
+     =                           ˆ
+             [d,ω d,σ] , −(2,ω − ∇·,σ) ĝ + 2P̂1 ,σ
+         !                       -        !                                                   .
+     =       [d,ω d/ d,σ] exp 2πi              2
+                                              d σ ĝ   1/2 ab
+                                                            /               ˆ
+                                                                    −(2,ω − ∇·,σ) ĝ + 2P̂1 ,σ ab
+         !                  -     !                                       .
+                $                         2       1/2 $ab
+     =       [d/ d,σ] exp 4πi            d σ ĝ     /       (P̂1 ,σ)ab        .            (3.3.18)
+
+A hat on a di!erential operator indicates that it contains the fiducial
+metric ĝ. In the second equality we have used the integral representation
+for the functional delta function, introducing the symmetric tensor field
+/ ab . In the third equality we have integrated over ,ω, which produces a
+delta functional forcing / ab to be traceless; the functional integral [d/ $ ]
+is then over traceless symmetric tensors. We now have a representation
+for ∆FP (ĝ)−1 as a functional integral over a vector field ,σ a and over a
+traceless symmetric tensor / $ab .
+   As discussed in the appendix, we can invert this path integral by
+replacing each bosonic field with a corresponding Grassmann ghost field.
+                                              ,σ a → ca ,                                 (3.3.19a)
+                                                $
+                                              /ab  → bab ,                                (3.3.19b)

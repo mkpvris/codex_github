@@ -1,0 +1,59 @@
+172                                       6 Tree-level amplitudes
+
+anomaly in the vertex operator. It will cancel the variation of g 1/2 for
+an on-shell operator.2 We can take a metric that is flat in a large region
+containing all the vertex operators (‘pushing the curvature to infinity’) and
+the term in ω(σi ) drops out.
+   Higher vertex operators are exponentials times derivatives of X µ , so we
+also need
+              D n                           p                            q                          E
+               6                          6                            6
+                      eiki ·X(zi ,z̄i )
+                                                     ∂X    µj
+                                                                (zj$ )         ¯ νk (z̄ $$ )
+                                                                               ∂X                            .               (6.2.18)
+                                           r                                           k
+                i=1                            j=1                       k=1                           S2
+
+This is given by summing over all contractions, where every ∂X or ∂X    ¯
+must be contracted either with an exponential or with another ∂X or ∂X.¯
+The XX contraction is simply − 12 α$ ln |z|2 , the fs again dropping out in
+the final expression. The result can be summarized as
+                                    n
+                                    6
+                        ?                             $
+       iCSX2 (2π)d , d ( i ki )                |zij |α ki ·kj
+                                    i,j=1
+                                     i<j
+                      D p                                           q                                                   E
+                       6                                          6                                                
+                 ×              v   µj
+                                         (zj$ ) + q µj (zj$ )                  ṽ   νk
+                                                                                         (z̄k$$ ) + q̃ νk (z̄k$$ )           (6.2.19)
+                          j=1                                        k=1
+
+Here
+                              n
+                           α$ (    kiµ                                                       n
+                                                                                          α$ (     kiµ
+           v µ (z) = −i                 ,                       ṽ µ (z̄) = −i                                               (6.2.20)
+                           2 i=1 z − zi                                                   2 i=1 z̄ − z̄i
+come from the contractions with the exponentials. The expectation values
+of q µ = ∂X µ − v µ are given by the sum over all contractions using
+−η µν (z − z $ )−2 α$ /2, and those of q̃ ν by the conjugate.
+  Now we repeat the calculation in a di!erent way, using holomorphicity.
+As an example consider
+                                            * ∂X µ (z1 )∂X ν (z2 ) +S2 .                                                     (6.2.21)
+The OPE determines this to be
+                         α$ η µν
+                      −      2
+                                 * 1 +S2 + g(z1 , z2 ) ,                                                                     (6.2.22)
+                         2z12
+where g(z1 , z2 ) is holomorphic in both variables. In the u-patch,
+                                                ∂u X µ = −z 2 ∂z X µ ,                                                       (6.2.23)
+so the condition of holomorphicity at u = 0 is that expectation values of
+∂z X µ fall as z −2 at infinity. More generally, a tensor of weight (h, 0) must
+
+2 The constant C X  also depends on the conformal factor, because the X µ CFT by itself has
+                S2
+ nonzero central charge, but in the full string theory this will cancel.

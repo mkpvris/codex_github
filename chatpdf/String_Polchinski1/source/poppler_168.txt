@@ -1,0 +1,41 @@
+146                          5 The string S-matrix
+
+  The complication is that in general τ$ (1) -= 1, so the periodicity is not
+preserved. In fact,
+                                        ! 1
+                             τ$ (1) =         dτ e(τ) = l                   (5.1.4)
+                                         0
+is the invariant length of the circle. So we cannot simultaneously set e$ = 1
+and keep the coordinate region fixed. We can hold the coordinate region
+fixed and set e$ to the constant value e$ = l, or set e$ = 1 and let the
+coordinate region vary:
+                             e$ = l ,        0≤τ≤1,                       (5.1.5a)
+or
+                             e$ = 1 ,         0≤τ≤l .                     (5.1.5b)
+In either case, after fixing the gauge invariance we are left with an
+ordinary integral over l. In other words, not all tetrads on the circle are
+di!-equivalent. There is a one-parameter family of inequivalent tetrads,
+parameterized by l.
+  Both descriptions (5.1.5) will have analogs in the string. In practice,
+we will define the path integral using a description like (5.1.5a), where
+the fields are functions on a fixed coordinate region, and then convert to
+a description like (5.1.5b) where the metric is fixed and the moduli are
+encoded in the coordinate range.
+  There is a second complication with the gauge-fixing. The condition
+e = constant is preserved by the rigid translation
+                               τ → τ + v mod 1 .                            (5.1.6)
+That is, we have not said where on the circle to put the origin of the
+coordinate system. Fixing the metric thus leaves a small part of the local
+symmetry unfixed. So there is a small mismatch in both directions, metrics
+that are not gauge-equivalent to one another and gauge transformations
+that are not fixed by the choice of metric.
+  Moving on to the string we take as an example the torus, where the
+same complications arise. Start with the coordinate region
+                        0 ≤ σ 1 ≤ 2π ,        0 ≤ σ 2 ≤ 2π ,                (5.1.7)
+with X µ (σ 1 , σ 2 ) and gab (σ1 , σ2 ) periodic in both directions. Equivalently
+we can think of this as the σ plane with the identification of points,
+                            (σ 1 , σ 2 ) ∼
+                                         = (σ 1 , σ 2 ) + 2π(m, n)          (5.1.8)
+for integer m and n.
+   To what extent is the field space di!×Weyl redundant? The theorem
+is that it is not possible to bring a general metric to unit form by a

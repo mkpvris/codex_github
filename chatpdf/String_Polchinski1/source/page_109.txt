@@ -1,0 +1,52 @@
+                                                                                        3.3                      Gauge              ﬁxing                                                                                     87
+
+
+
+                            field space
+
+
+                                                                                                                                                                        gauge slice
+
+
+
+
+
+
+
+                                                                                    gauge orbits
+
+Fig.             3.7.                                   Schematic             picture             of             the             Faddeev–Popov             procedure.             The             gauge             orbits
+are              families              of              gauge-equivalent              conﬁgurations.              Integrating              over              the              whole              ﬁeld
+space              and              dividing              by              the              orbit              volume              is              equivalent              to              integrating              over              a              slice
+that            intersects            each            orbit            once,            with            appropriate            Jacobian.
+
+       Inserting             (3.3.11)             into             the             functional             integral             (3.3.1),             the             latter             becomes
+                                             ∫        [d.        dX        dg      ]
+                     Z[gˆ]=                                                             ∆FP(g),(g                       −       gˆ.)exp(−S[X,   g])                                     .                      (3.3.12)
+                                                       Vdi!         ×We y l
+For          later          reference,          we          denote          explicitly          the          dependence          of                                                  Z      on           the           choice
+of             ﬁducial             metric.             Carry             out             the             integration             over                    gab,            and            also            rename            the
+dummy             variable                           X       →        X.,             to             obtain
+                                                         ∫         [d.        dX        .]
+                                 Z[gˆ]=                                                        ∆FP(gˆ.)exp(−S[X.,gˆ.])                                                      .                                  (3.3.13)
+                                                                  Vdi!         ×We y l
+Now            use            the            gauge            invariance2                          of         ∆FP,             of             the            functional             integral            measure
+[dX],             and             of             the             action             to             obtain
+                                                                        ∫           [d.        dX       ]
+                                                Z[gˆ]=                           V                              ∆FP(gˆ)exp(−S[X,                                        gˆ])       .                           (3.3.14)
+                                                                                      di!    ×We y l
+Finally,             nothing             in             the             integrand             depends             on                          .,             so             the             integral             over.    just
+produces                  the                  volume                  of                  the                  gauge                  group                  and                  cancels                  the                  denominator,
+
+
+
+ 2   To               s  h  o w               t  h  i  s               i  n  v  a  r  i  a  n  c  e  :
+                                                                                  ∫                                                ∫
+                                                  ∆       (g.)−1           =             [d.    ′]  ,(g.       −    gˆ.′)=                [d.    ′]  ,(g      −    gˆ.−1·.′)
+                                                     FP
+                                                                                  ∫
+                                                                           =             [d.    ′′]  ,(g      −    gˆ.′′)=∆                 (g)−1        ,
+                                                                                                                                       FP
+
+     where           .′′    =      .−1      ·  .′.              In              the              second              equality              we              have              used              the              gauge              invariance              of              the              delta
+     function,         and         in         the         third         the         invariance         of         the         measure.

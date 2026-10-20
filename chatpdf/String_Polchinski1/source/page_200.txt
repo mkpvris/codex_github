@@ -1,0 +1,47 @@
+178                                                                     6Tree-levelamplitudes
+
+      We                 h  a  v  e                 c  o  n  s  i  d  e  r  e  d                  t  h  eλ=2               theory               that               is               relevant               to               the               ghosts               of               the
+bosonic                string,                but                either                method                g eneralizes                readily                to                anyλ.
+
+                                                                                             The                  disk
+The                        simplest                        way                        to                       obtain                       thebcamplitudes                   on                   the                   disk                   is                   with                   the
+doubling             trick.             As             in             eq.             (2.7.30),             we             can             represent             both             the             holomorphic
+and             antiholomorphic             ﬁelds             in             the             upper             half-plane             by             holomorphic             ﬁelds
+in             the             whole             plane,             using
+                                   ˜                            ′                                          ′                 ′
+                                   b(¯z)=              b(z),                   ˜c(¯z)=            c(z),z                         =¯z,             Im       z>          0.                        (6.3.9)
+The             expectation             value             of             the             holomorphic             ﬁelds             follows             as             on             the             sphere,
+                                                         ⟨   c(z1)c(z2)c(z3)                         ⟩         =      Cg         z12z13z23                                                   (6.3.10)
+                                                                                                        D2                 D2
+for             allz.Thenforexample
+                                       ⟨c(z)c(z)˜c(¯z)⟩                                      =⟨c(z)c(z)c(z′)⟩
+                                                  1            2            3        D2                          1            2            3        D2
+                                                                                             =Cg               z12(z1            −     ¯z3)(z2           −     ¯z3)      .                   (6.3.11)
+                                                                                                         D2
+More             general             correlators             are             obtained             in             the             same             way.
+
+                                                                            The              projective              plane
+The               doubling               trick               again               can               be               used.               The               involutionz′=     −¯z−1             implies
+that
+                               (∂z         ′ 2                                                                              (    ∂z     ′ −1
+           ˜                                                 ′               ′4           ′                                                                    ′               ′−2             ′
+           b(¯z)=                       ¯            b(z       )=         z      b(z),                   ˜c(¯z)=                      ¯               c(z       )=         z          c(z).
+                                     ∂z                                                                                            ∂z                                                        (6.3.12)
+
+Again
+                                                      ⟨   c(z1)c(z2)c(z3)                         ⟩            =      Cg            z12z13z23                                                (6.3.13)
+                                                                                                     RP2                   RP2
+and             so
+                                                                                                     ′−2      ⟨                                     ′     ⟩
+                                ⟨   c(z1)c(z2)˜c(¯z3)                       ⟩RP2          =       z3              c(z1)c(z2)c(z3)                            RP2
+                                                                                          =       Cg           z12(1        +        z1¯z3)(1        +          z2¯z3)          .            (6.3.14)
+                                                                                                      RP2
+
+                                                             6.4                                              The               Veneziano               amplitude
+
+Open            string            amplitudes            are            slightly            simpler            than            closed            string            amplitudes,
+so             we             begin             with             these.
+      We                 represent                 the                 disk                 as                 the                 upper                 half-plane                 so                 the                 boundary                 coor-
+dinate              y     is                real.                There                are                no                moduli.                After                ﬁxing                the                metric,                the                CKG
+PSL(2,               R)                can                be                used                to                ﬁx                the                three                vertex                operators                to                arbitrary                po-
+sitions             y1,y2,y3                  on               the               boundary,               except               that               this               group               does               not               chang e

@@ -1,0 +1,59 @@
+                        2.1 Massless scalars in two dimensions                                              35
+
+with Grassmann variables. Then
+                                   !
+                                         δ
+                            0=         [dX]       exp(−S )
+                                      δXµ (z, z̄)
+                                  !
+                                                      δS
+                               = − [dX] exp(−S )
+                                                   δXµ (z, z̄)
+                                       5                  6
+                                              δS
+                               =−
+                                            δXµ (z, z̄)
+                                    1 7 ¯ µ         8
+                               =       ∂ ∂X (z, z̄)   .                                          (2.1.15)
+                                   πα"
+The same calculation goes through if we have arbitrary additional inser-
+tions ‘. . .’ in the path integral, as long as none of these additional insertions
+is at z. Thus
+                                   7                          8
+                                        ¯ µ (z, z̄) . . .
+                                       ∂∂X                        =0.                            (2.1.16)
+
+We can regard the additional insertions as preparing arbitrary initial and
+final states (or we could do the same thing with boundary conditions).
+The path integral statement (2.1.16) is thus the same as the statement in
+the Hilbert space formalism that
+                                            ∂∂¯X̂ µ (z, z̄) = 0                                  (2.1.17)
+holds for all matrix elements of the operator X̂ µ (z, z̄). Thus we refer
+to relations that hold in the sense (2.1.16) as operator equations. The
+statement (2.1.17) is Ehrenfest’s theorem that the classical equations of
+motion translate into operator equations.
+   The notation ‘. . .’ in the path integral (2.1.16) implicitly stands for
+insertions that are located away from z, but it is interesting to consider
+also the case in which there is an insertion that might be coincident with
+z:
+         !                                                
+                       δ
+  0=         [dX]                exp(−S )X ν (z " , z̄ " )
+                    δXµ (z, z̄)
+         !                                                                                             
+                                                                    1
+     =       [dX] exp(−S ) η µν δ 2 (z − z " , z̄ − z̄ " ) +           ∂ z ∂ z̄ X µ
+                                                                                    (z, z̄)X ν " "
+                                                                                              (z , z̄ )
+                                                                   πα"
+              7                         8       1         9                            :
+     = η µν δ 2 (z − z " , z̄ − z̄ " ) +          "
+                                                    ∂z ∂z̄ X µ (z, z̄)X ν (z " , z̄ " ) .        (2.1.18)
+                                               πα
+That is, the equation of motion holds except at coincident points. Again
+this goes through with arbitrary additional insertions ‘. . .’ in the path
+integral, as long as none of these additional fields is at (z, z̄) or (z " , z̄ " ):
+   1           9 µ                           :         7                                  8
+                            ν " "                   µν     2        "           "
+      ∂ z ∂ z̄  X  (z, z̄)X  (z , z̄ ) . . .   = −η      δ   (z − z   , z̄ − z̄   ) . . .   . (2.1.19)
+  πα"

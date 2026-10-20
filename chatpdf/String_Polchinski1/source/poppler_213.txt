@@ -1,0 +1,44 @@
+              6.5 Chan–Paton factors and gauge interactions                         191
+
+For the massless gauge bosons the Chan–Paton factors are the n × n
+antisymmetric matrices and so the gauge group is S O(n). The states at
+even mass levels transform as the adjoint representation of the orthogonal
+group S O(n), and the states at odd mass levels transform as the traceless
+symmetric tensor plus singlet representations.
+  The oriented theory has a larger set of orientation-reversing symmetries,
+obtained as a combination of Ω and a U(n) rotation,
+                      Ωγ |N; k; ij* = ωN γjj % |N; k; j % i% *γi−1
+                                                                %i .            (6.5.25)
+We can form more general unoriented theories by restricting the spectrum
+to ωγ = +1, which is again consistent with the interactions. Acting twice
+with Ωγ gives
+          Ω2γ |N; k; ij* = [(γ T )−1 γ]ii% |N; k; i% j % *(γ −1 γ T )j % j .    (6.5.26)
+We will insist that Ω2γ = 1 for reasons to be explained below. This then
+implies that
+                                         γ T = ±γ .                             (6.5.27)
+That is, γ is symmetric or antisymmetric.
+  A general change of Chan–Paton basis,
+                         |N; k; ij*% = Uii−1         % %
+                                           % |N; k; i j *Uj % j ,               (6.5.28)
+transforms γ to
+                                       γ % = U T γU .                           (6.5.29)
+In the symmetric case, it is always possible to find a basis such that γ = 1,
+giving the theory already considered above. In the antisymmetric case
+there is a basis in which
+                                              
+                                        0 I
+                           γ=M≡i                  .                  (6.5.30)
+                                       −I 0
+Here I is the k × k identity matrix and n = 2k must be even because
+γ is an invertible antisymmetric matrix. We take a basis for the Chan–
+                                               %         %
+Paton wavefunctions such that M(λa )T M = sa λa with sa = ±1. Then the
+                                           %
+world-sheet parity eigenvalue is ωγ = ωN sa , and the unoriented spectrum
+is
+                            α% m2 even: M(λa )T M = −λa ,                      (6.5.31a)
+                            α% m2 odd: M(λa )T M = +λa .                       (6.5.31b)
+At the even mass levels, including the gauge bosons, this defines the
+adjoint representation of the symplectic group S p(k).
+  The argument that we must have Ω2γ = 1 to construct the unoriented
+theory is as follows. Since Ω2 = 1, it must be that Ω2γ acts only on the

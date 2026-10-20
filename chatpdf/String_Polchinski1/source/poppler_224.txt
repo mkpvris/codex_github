@@ -1,0 +1,44 @@
+202                                 6 Tree-level amplitudes
+
+To evaluate this use the Campbell–Baker–Hausdor! (CBH) formula
+                   eik1 ·X1A eik2 ·X2C = eik2 ·X2C eik1 ·X1A e−[ k1 ·X1A , k2 ·X2C ]
+                                                                    %
+                                       = eik2 ·X2C eik1 ·X1A |z12 |α k1 ·k2 .                                    (6.7.23)
+The expectation value (6.7.22) becomes
+               %
+        |z12 |α k1 ·k2 -- 0; k4 |eik1 ·X1C +ik2 ·X2C eik1 ·X1A +ik2 ·X2A |0; k3 *
+                           %                                           %
+               = |z12 |α k1 ·k2 -- 0; k4 |ei(k1 +k2 )·x eα (k1 ln |z1 |+k2 ln |z2 |)·p |0; k3 *
+                           %            %              %
+               = |z12 |α k1 ·k2 |z1 |α k1 ·k3 |z2 |α k2 ·k3 -- 0; k1 + k2 + k4 |0; k3 *
+                                       #                   α% k1 ·k2         %             %
+               = iCSX2 (2π)d δ d (          i ki )|z12 |               |z1 |α k1 ·k3 |z2 |α k2 ·k3 ,             (6.7.24)
+where we have used the two-point expectation value to normalize the last
+line. This is the familiar result (6.2.31), obtained by two other methods in
+                                                             % 2
+section 6.2, after one includes in the latter a factor |z4 |α k4 from the change
+of frame and takes z4 → ∞. All other free-field results can be obtained by
+this same oscillator method.
+
+                               Relation between inner products
+Nondegenerate bilinear and Hermitean inner products can always be
+related to one another by an appropriate antilinear operation on the bra.
+Let us consider an example. From the free-field expectation values, we
+have
+                               -- 0; k|0; l* = iCSX2 (2π)d δ d (k + l) ,                                         (6.7.25)
+using the fact that |0; k* maps to eik·X . Compare this with the inner product
+from the X µ CFT,
+                                  -0; k|0; l* = (2π)d δ d (l − k) .                                              (6.7.26)
+These di!er only by k → −k from conjugating eik·X , and normalization,
+                                      -- 0; k| = iCSX2 -0; −k| .                                                 (6.7.27)
+   For more general operators, there is a natural notion of conjugation
+in CFT. In Euclidean quantum mechanics, Hermitean conjugation inverts
+Euclidean time, eq. (A.1.37), so the natural operation of Euclidean con-
+jugation is conjugation × time-reversal: an operator that is Hermitean in
+Minkowski space is also Hermitean under this combined operation. In
+CFT, we make the same definition, but also must include a time-reversal
+on the conformal frame,
+                                         A(p) = A% (p% )† .                                                      (6.7.28)
+Here p and         p%
+              are related by radial time-reversal,   =       and the                           z%      z̄ −1 ,
+unprimed operator is in the z-frame and the primed operator in the u-

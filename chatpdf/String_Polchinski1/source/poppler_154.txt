@@ -1,0 +1,55 @@
+132                           4 The string spectrum
+
+current with the ghost fields and with a general matter tensor field are
+                     3     1         1
+        jB (z)b(0) ∼    + j g (0) + T m+g (0) ,                    (4.3.4a)
+                    z3 z2            z
+                    1
+        jB (z)c(0) ∼ c∂c(0) ,                                      (4.3.4b)
+                     z
+                     h             1:                           ;
+   jB (z)Om (0, 0) ∼ 2 cOm (0, 0) + h(∂c)Om (0, 0) + c∂Om (0, 0) . (4.3.4c)
+                    z              z
+The simple poles reflect the BRST transformations (4.3.1) of these fields.
+  The BRST operator is
+                                          <
+                                 1
+                           QB =               (dz jB − dz̄ ̃B ) .                   (4.3.5)
+                                2πi
+By the usual contour argument, the OPE implies
+
+                              {QB , bm } = Lm    g
+                                            m + Lm .                                 (4.3.6)
+
+In terms of the ghost modes,
+             ∞
+             (
+      QB =       (cn Lm          m
+                      −n + c̃n L̃−n )
+             n=−∞
+                 ∞
+                 ( (m − n) ◦
+             +                  ◦   (cm cn b−m−n + c̃m c̃n b̃−m−n )◦◦ + aB (c0 + c̃0 ) .
+               m,n=−∞     2
+                                                                                     (4.3.7)
+
+The ordering constant is aB = ag = −1, as follows from the anticommu-
+tator
+                                                 g
+                              {QB , b0 } = Lm
+                                            0 + L0 .                                 (4.3.8)
+
+   There is an anomaly in the gauge symmetry when cm -= 26, so we
+expect some breakdown in the BRST formalism. The BRST current is
+still conserved: all of the terms in the current (4.3.3) are analytic for any
+value of the central charge. However, it is no longer nilpotent,
+
+                         {QB , QB } = 0 only if cm = 26 .                            (4.3.9)
+
+The shortest derivation of this uses the Jacobi identity, exercise 4.3. More
+directly it follows from the OPE
+                    cm − 18         cm − 18 2       cm − 26 3
+ jB (z)jB (0) ∼ −           c∂c(0)−        c∂ c(0)−        c∂ c(0) . (4.3.10)
+                      2z 3            4z 2            12z
+This requires a bit of calculation, being careful about minus signs from
+anticommutation. The single pole implies that {QB , QB } = 0 when cm = 26.

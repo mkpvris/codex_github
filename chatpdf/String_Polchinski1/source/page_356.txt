@@ -1,0 +1,47 @@
+334                                                                              Appendix              A
+
+to              the              ordinary              notion              that              an              operator              equation              is              one              that              should              hold
+for             general             matrix             elements.
+      When                additional                insertions                are                present                att,                operator                equations                inside
+the                path                integral                hold                only                up                to                additional                delta-functionsource                terms.
+Fo  r                        e   x   a   m   p   l   e   ,                        l   e   tF=q(t′)...,wheret′is      neartand                the                other                ﬁelds                in
+‘...   ’arefaraway.Theneq.(A.1.19)becomes
+                                                 ⟨                  δS                   ⟩                                                ⟩
+                                                      q(t′)                      ...           =     i      δ(t−t′)               ...           .                            (A.1.20)
+                                                                 δq     (t)
+This             is             an             example             of             theSchwinger–Dyson            equation,the                      equation                      of
+motion               for               the               expectation               value               of               a               product               of               ﬁelds.               The               same               result
+written             as             an             operator             equation             is
+                                                                   q(t′)          δS          =     iδ   (t−t′)              .                                               (A.1.21)
+                                                                               δq    (t)
+      As           an           explicit           example,           take           the           harmonic           oscillator,
+                                                                                  1    ∫
+                                                                     S    =                   dt    (q˙2      −     /2q2)            ,                                    (A.1.22a)
+                                                                                  2
+                                                              δS          =       −q¨(t)         −     /2q(t)             .                                               (A.1.22b)
+                                                           δq    (t)
+Then             the             operator             equations             we             have             derived             are
+                                                                      (     ∂2                    
+                                                                                     +     /2         q(t)=0                                                                                                                                                             (A.1.23)
+                                                                           ∂t   2
+
+and
+                                                   (∂2                         
+                                                                  +     /2         q(t)q(t′)=                   −iδ(t−t′).                                                   (A.1.24)
+                                                        ∂t   2
+
+In      Hilbert      space      language      these      become
+                                                                  (∂2                         
+                                                                                +     /2          qˆ(t)=0                ,
+                                                                      ∂t    2
+                                              (∂2                         
+                                                             +     /2          T[qˆ(t)qˆ(t′)]              =        −iδ       (t    −     t′)    .                        (A.1.25a)
+                                                   ∂t    2
+The             ﬁrst             is             the             Heisenberg             equation             for             the             ﬁeld             operator,             while             the             delta
+function              in              the              second              comes              from              the              time              derivative              acting              on              the              step
+functions             in             the             time-ordered             product,
+    (     ∂2                                                                  {[                                      ]            }
+                             2                              ′                        ¨                     2                     ′                               ′    ˙
+              2   +      /          T[qˆ(t)qˆ(t)]              =              T      qˆ(t)+           /      qˆ(t)       qˆ(t)           +δ(t−t)[qˆ(t),                           qˆ(t)]
+         ∂t
+                                                                    =0           −       iδ(t−t′).                                                                           (A.1.26)

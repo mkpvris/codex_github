@@ -1,0 +1,51 @@
+18                                                                   1Aﬁrstlookatstrings
+
+three    local    symmetries    (the    choice    of    two    world-sheet    coordinates    plus    the
+We  y  l                   s  c  a  l  i  n  g  )  .
+      Let                        us                        see                        how                        to                        reach                        the                        gaug e                        (1.3.8).                        First                        chooseτaccording
+to             (1.3.8a).             Now             notice             that   f    =      γσσ(−det                   γab)−1/2               transforms             as
+                                                                                      f′dσ        ′  =      fdσ                                                                             (1.3.9)
+
+under                 reparameterizations                 of                         σ     where               τ    is                 left                 ﬁxed.                 Thus                 we                 deﬁne                 an
+invariant          length                    fdσ          =      dl.Deﬁn∫ethe                          σcoordinate     of     a     point     to     be     propor-
+tional      to      its      invariant      distancedl                                            from            the       σ     =           0            endpoint;            the            constant
+of                proportionality                is                determined                by                requiring                that                the                coordinate                of                the
+right-hand            endpoint            remain            at                        σ     =      ℓ.Inthiscoordinatesystem                                                      f=dl /dσ
+is                 independent                 of   σ.                 It                 still                 depends                 onτ;                 we                 would                 like                 the                 parameter
+region               0   ≤      σ     ≤       ℓ    to                  remain                  unchang ed,                  so                  there                  is                  not                  enough                  freedom
+to               remove               theτ-dependence.              Finally,              make              a              Weyl              transformation               to              sat-
+isfy               condition               (1.3.8c).               Since         f     is               Weyl-invariant,                    ∂σf          still               vanishes.               With
+condition              (1.3.8c)              this              implies              that          ∂σγσσ            =          0,            and            so            condition            (1.3.8b)            is
+satisﬁed           as           well.4
+      We            can            solve            the            gauge            condition            (1.3.8c)            forγττ(τ,       σ             ),              andγσσ        is              inde-
+pendent               of         σ,sotheindependentdegreesoffreedominthemetricare
+now          γσσ(τ)and                      γστ(τ,       σ     ).             In             terms             of             these,             the             inverse             metric             is
+                      [     γττ            γτσ                   [     −γ            (τ)                          γ       (τ,       σ )                    
+                               στ            σσ            =                    σσ                    −1              τσ             2                            .                      (1.3.10)
+                            γ             γ                             γτσ(τ,       σ     )       γσσ       (τ)(1         −     γτσ(τ,       σ      ))
+The             Polyakov             Lagrangian             then             becomes
+                                       1         ∫    ℓ           
+               L      =      −                            dσ         γσσ(2∂τx−                    −      ∂τXi∂τXi)
+                                   4πα′             0                                                                                                                                   
+                                              −2γστ(∂σY                     −     −     ∂τXi∂σXi)+                          γ−1(1           −      γ2      )∂σXi∂σXi                         .
+                                                                                                                               σσ                     τσ
+                                                                                                                                                                                         (1.3.11)
+Here               we               have               separated      X−(τ,       σ       )              into              two              piecesx−(τ)and                Y−(τ,       σ        ),              the
+ﬁrst           being           the           mean           value           of   X−         at           given      τ    and           the           second           having           a           mean
+value             of             zero.             That             is,
+                                                                                               1∫         ℓ
+                                                                     x−(τ)=                                  dσ X         −(τ,       σ   )   ,                                        (1.3.12a)
+                                                                                               ℓ       0
+                                                             Y     −(τ,       σ   )=          X−(τ,       σ        )  −      x−(τ)            .                                       (1.3.12b)
+
+
+
+
+ 4  We            h a v e            s h ow n            h ow            t o            a s s i g n            a            d e ﬁ n i t e            (τ,     σ)valuetoeachpointontheworld-sheet,butwehave
+    not     shown     that     this     is     a     good     gauge     —     that     di!erent     points     have     di!erent     coordinates.     Already
+    for      the      point      particle      this      is      an      issue:τis      a      good      coordinate      only      if      the      world-line      does      not
+    double           back           through           anx+-hyperplane.           For           the           string           we           need           this           and           also           thatfis           positive
+    everywhere.        It        is        not        hard        to        show        that        for        allowed        classical        motions,        in        which        all        points        travel        at
+    less          than          the          speed          of          light,          these          conditions          are          met.          In          the          quantum          theory,          one          can          show          for
+    the            point            particle            that            the            doubled-back            world-lines            give            no            net            contribution.            Presumably            this
+    can         be         generalized         to         the         string,         but         this         is         one         of         those         ﬁne         points         not         to         dwell         on.

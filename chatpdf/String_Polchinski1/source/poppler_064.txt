@@ -1,0 +1,51 @@
+42                              2 Conformal field theory
+
+we have
+                                         ∇a j a = 0                           (2.3.6)
+as an operator equation. This is Noether’s theorem, which is developed
+further in exercise 2.5.
+  To derive the Ward identity, let ρ(σ) be 1 in some region R and 0 outside
+R. Also, include in the path integral some general local operator A(σ0 )
+at a point σ0 inside R, and the usual arbitrary insertions ‘. . .’ outside.
+Proceeding as above we obtain the operator relation
+                             !
+                          .
+               δA(σ0 ) +         dd σ g 1/2 ∇a j a (σ)A(σ0 ) = 0 .   (2.3.7)
+                         2πi R
+Equivalently,
+                                            2π
+  ∇a j a (σ)A(σ0 ) = g −1/2 δ d (σ − σ0 )      δA(σ0 ) + total σ-derivative . (2.3.8)
+                                            i.
+The divergence theorem gives
+                            !
+                                           2π
+                                dA na j a A(σ0 ) =
+                                               δA(σ0 )                (2.3.9)
+                         ∂R                 i.
+with dA the area element and na the outward normal. This relates the
+integral of the current around the operator to the variation of the operator.
+Going to two flat dimensions this becomes
+                      4
+                                                 2π
+                          (jdz − ̃dz̄)A(z0 , z̄0 ) =δA(z0 , z̄0 ) .        (2.3.10)
+                     ∂R                           .
+Again we drop indices, j ≡ jz , ̃ ≡ jz̄ ; notice that on a current the
+omitted indices are implicitly lower. We use a tilde rather than a bar on ̃
+because this is not the adjoint of j. The Minkowski density j0 is in general
+Hermitean, so the Euclidean j2 with an extra factor of i is anti-Hermitean,
+and (jz )† = 12 (j1 − ij2 )† = jz .
+   It is important that Noether’s theorem and the Ward identity are local
+properties, which do not depend on whatever boundary conditions we
+might have far away, nor even on whether these are invariant under the
+symmetry. In particular, since the function ρ(σ) is nonzero only inside R,
+the symmetry transformation need only be defined there.
+   In conformally invariant theories it is usually the case that jz is holo-
+morphic and jz̄ antiholomorphic (except for singularities at the other
+fields). In this case the currents (jz , 0) and (0, jz̄ ) are separately conserved.
+The integral (2.3.10) then picks out the residues in the OPE,
+                                                 1
+     Resz→z0 j(z)A(z0 , z̄0 ) + Resz̄→z̄0 ̃(z̄)A(z0 , z̄0 ) =
+                                                    δA(z0 , z̄0 ) . (2.3.11)
+                                                 i.
+Here ‘Res’ and ‘Res’ are the coefficients of (z − z0 )−1 and (z̄ − z̄0 )−1
+respectively. This form of the Ward identity is particularly convenient.

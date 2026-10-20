@@ -1,0 +1,49 @@
+336                                Appendix A
+
+where the sum runs over all eigenvectors of Ĥ and the Ei are the corre-
+sponding eigenvalues. In the q basis the trace becomes
+             #                               #
+                 dq %q| exp(−ĤU)|q& =            dq %q, U|q, 0&E
+                                             #         #
+                                                                  q,U
+                                         =        dq       [dq]q,0 exp(−SE )
+                                             #
+                                         =        [dq]P exp(−SE ) .            (A.1.33)
+
+In the last line, [dq]P denotes the integral over all periodic paths on [0, U].
+An interesting variation on this is the integral over all antiperiodic paths:
+                 #                       #        #
+                                                            q,U
+                     [dq]A exp(−SE ) =       dq       [dq]−q,0 exp(−SE )
+                                         #
+                                    =        dq %q, U| −q, 0&E
+                                         #
+                                    =        dq %q, U|R̂|q, 0&E
+                                             '                     (
+                                    = Tr exp(−ĤU)R̂ .                         (A.1.34)
+
+Here R̂ is the reflection operator, taking q to −q. We see that twisting the
+boundary conditions — for example, replacing periodic with antiperiodic
+— is equivalent to inserting an operator into the trace. Since R̂ 2 = 1, its
+eigenvalues are ±1. If we take the average of the periodic and antiperiodic
+path integrals, this inserts 12 (1 + R̂), which projects onto the R̂ = +1 space:
+
+          1                              &
+            (periodic + antiperiodic) =       exp(−Ei U) .                     (A.1.35)
+          2                             R =+1     i
+
+
+In the same way, 12 (periodic − antiperiodic) gives the trace on the R̂ = −1
+space.
+  A minor but sometimes confusing point: if Â is a Hermitean operator,
+the Euclidean Heisenberg operator Â(u) = exp(Ĥu)Â exp(−Ĥu) satisfies
+
+                                 Â(u)† = Â(−u)                               (A.1.36)
+
+and so is not in general Hermitean. For this reason it is useful to define a
+Euclidean adjoint,
+
+                                 Â(u) = Â(−u)† .                             (A.1.37)
+
+A Hermitean operator in the Schrödinger picture becomes Euclidean
+self-adjoint in the Euclidean Heisenberg picture.

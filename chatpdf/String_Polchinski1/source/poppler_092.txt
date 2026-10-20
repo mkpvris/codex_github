@@ -1,0 +1,48 @@
+70                         2 Conformal field theory
+
+
+                                                            i        m
+                   i                    m
+
+              Σl            l
+                                                =     Σl        l
+                   k                    j
+                                                           k         j
+
+                Fig. 2.8. Schematic picture of OPE associativity.
+
+
+     For three operators
+                           Ai (0, 0)Aj (1, 1)Ak (z, z̄) ,                (2.9.3)
+the regions of convergence of the z → 0 and z → 1 OPEs, |z| < 1
+and |1 − z| < 1, overlap. The coefficient of Am in the triple product
+can then be written as a sum involving clik cmlj or as a sum involving
+cljk cmli . Associativity requires these sums to be equal. This is represented
+schematically in figure 2.8.
+
+                The Virasoro algebra and highest weight states
+Consider now the argument of figure 2.6 for the Virasoro generators:
+                                  4
+                                     dz m+1
+                       Lm |A, ∼
+                              =         z    T (z)A(0, 0)
+                                    2πi
+                                ∼
+                                = Lm · A(0, 0) .                         (2.9.4)
+Here we have introduced a new idea and notation. Given the state–
+operator isomorphism, every operator acting on the Hilbert space has
+an image acting on the space of local operators. In other words, form
+the corresponding contour around the operator and evaluate the resulting
+local operator using the OPE. Corresponding to the Lm that map states to
+states are the Lm · that map local operators to local operators. In general
+there will be local operators at various positions zi , and there will be a
+di!erent copy of the Virasoro algebra for each one, obtained by a Laurent
+expansion centered on the position of the operator. In some geometries
+there may also be a standard set of generators, such as the ones centered
+on z = 0 for the cylinder. The ‘·’ serves as a reminder that we are talking
+about the Laurent coefficients around that particular operator.
+   In this notation the T A OPE is
+                                      ∞
+                                      
+                   T (z)A(0, 0) =            z −m−2 Lm · A(0, 0) .       (2.9.5)
+                                      m=−∞

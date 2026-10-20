@@ -1,0 +1,43 @@
+56                        2 Conformal field theory
+         c 3 m+1 n+1
+      =    (∂ z2 )z2 + 2(∂z2m+1 )z2n+1 T (z2 ) + z2m+n+2 ∂T (z2 )
+        12
+         c 3
+      =    (m − m)z2m+n−1 + (m − n)z2m+n+1 T (z2 ) + total derivative .
+        12
+                                                                    (2.6.18)
+The z2 contour integral of the right-hand side then gives the Virasoro
+algebra,
+                                            c
+                [Lm , Ln ] = (m − n)Lm+n + (m3 − m)δm,−n .          (2.6.19)
+                                           12
+The L̃m satisfy the same algebra with central charge c̃.
+  Any CFT thus has an infinite set of conserved charges, the Virasoro
+generators, which act in the Hilbert space and which satisfy the alge-
+bra (2.6.19). Let us for now notice just a few simple properties. Generally
+we work with eigenstates of L0 and L̃0 . The generator L0 satisfies
+                              [L0 , Ln ] = −nLn .                       (2.6.20)
+If |ψ, is an eigenstate of L0 with eigenvalue h, then
+                L0 Ln |ψ, = Ln (L0 − n)|ψ, = (h − n)Ln |ψ, ,            (2.6.21)
+so that Ln |ψ, is an eigenstate with eigenvalue h − n. The generators with
+n < 0 raise the L0 eigenvalue and those with n > 0 lower it.
+  The three generators L0 and L±1 form a closed algebra without central
+charge,
+     [L0 , L1 ] = −L1 ,   [L0 , L−1 ] = L−1 ,     [L1 , L−1 ] = 2L0 .   (2.6.22)
+This is the algebra S L(2, R), which di!ers from S U(2) by signs. For the
+Laurent coefficients of a holomorphic tensor field O of weight (h, 0),
+                                       ∞
+                                           Om
+                             O(z) =          m+h
+                                                 ,                      (2.6.23)
+                                      m=−∞ z
+one finds from the OPE (2.4.16) the commutator
+                      [Lm , On ] = [(h − 1)m − n]Om+n .                 (2.6.24)
+Again modes with n > 0 reduce L0 , while modes with n < 0 increase it.
+ In the open string, let
+                      0 ≤ Re w ≤ π       ⇔      Im z ≥ 0 ,              (2.6.25)
+where z = − exp(−iw). These coordinate regions are shown in figure 2.5.
+At a boundary, the energy-momentum tensor satisfies
+                                Tab na tb = 0 ,                         (2.6.26)
+where na and tb are again normal and tangent vectors. To see this, consider
+a coordinate system in which the boundary is straight. The presence of

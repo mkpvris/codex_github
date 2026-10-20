@@ -1,0 +1,46 @@
+330                                           Appendix A
+
+
+                                                            qf
+                      T
+
+
+                    ...
+
+
+
+
+                      t2
+                      t1
+                      0                       qi
+
+Fig. A.1. Transition amplitude broken down into time steps. The dashed line
+suggests a piecewise linear path, which is one of many ways to define path
+integration.
+
+
+  By inserting a complete set of states, we can write the transition ampli-
+tude as a coherent sum over all states q through which the system might
+pass at some intermediate time t:
+                                              #
+                     %qf , T |qi , 0& =            dq %qf , T |q, t&%q, t|qi , 0& .       (A.1.6)
+
+Divide the time interval further into N steps as in figure A.1,
+                                      tm = m. ,         . = T /N ,                        (A.1.7)
+and corresponding to each intermediate time insert a complete set of states
+                              #                        N−1
+                                                       
+         %qf , T |qi , 0& =       dqN−1 . . . dq1            %qm+1 , tm+1 |qm , tm & .    (A.1.8)
+                                                       m=0
+
+Translate back to Schrödinger formalism and introduce an integral over
+intermediate momenta,
+      %qm+1 , tm+1 |qm , tm & = %qm+1 | exp(−iĤ./h̄)|qm &
+                                      #
+                                  =       dpm %qm+1 |pm &%pm | exp(−iĤ./h̄)|qm & .       (A.1.9)
+
+By commuting, we can always write Ĥ with all p̂ to the left and all q̂ to
+the right, so that
+                           %pm |Ĥ(p̂, q̂)|qm & = H(pm , qm )%pm |qm & .                 (A.1.10)
+Use this to evaluate the matrix element in eq. (A.1.9). From expanding the
+exponential there will be terms of order .2 and higher that have q̂ to the

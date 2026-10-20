@@ -1,0 +1,50 @@
+                                                       6.4                      The              Veneziano              amplitude                                           179
+
+the                     cyclic                     ordering                     of                     the                     vertex                     operators                     so                     we                     must                     sum                     over                     the
+two                  orderings.                  For                  three                  open                  string                  tachyons                  on                  the                  disk,                  the                  general
+expression             (5.3.9)             for             the             string             S-matrix             thus             reduces             to
+                                                       3    −λ⣨           1    ik·X                      1    ik·X                       1    ik·X                ⟩
+            S       (k    ;  k    ;  k    )=        g    e           ⋆c     e     1      (y     )⋆⋆c        e    2      (y     )⋆⋆c        e     3     (y     )⋆
+              D2        1       2       3              o             ⋆                       1    ⋆⋆                         2   ⋆⋆                         3   ⋆     D
+                                                                                                                                                                         2
+                                                                                                                 +(k2          ↔k3),                                  (6.4.1)
+each                    ﬁxed                    coordinate                    integration                    being                    replaced                    by                    the                    corresponding
+c-ghost.                    Each                    vertex                    operator                    includes                    a                    factor                    ofgo,                    the                    open                    string
+coupling.             The             factor        e−λ       is             from             the             Euler             number             term             in             the             action.             Of
+course           go      and        eλ     are              related,     g2     ∝     eλ,butwewilldeterminetheconstant
+                                                                           o
+of             proportionality             as             we             go             along.
+      The                 expectation                 values                 in                 (6.4.1)                 were                 found                 in                 the                 previous                 sections
+(again,             we             take             the             absolute             value             for             the             ghosts),             giving
+                                            3                     26    26     ∑
+SD2(k1;          k2;     k3)=           igoCD2(2π)                   δ       (      i ki)
+                                      ×|    y      |1+2α′k1·k2|y                 |1+2α′k1·k3|y                |1+2α′k2·k3            +(k           ↔k          ),     (6.4.2)
+                                              12                            13                            23                                   2             3
+where            CD          =       e−λCX            Cg       .                     Momentum                     conservation                     and                     the                     mass-shell
+                        2                        D2       D2
+condition                ki2    =1/α          ′   imply             that
+                                                2α′k1·k2              =      α′(k2        −     k2    −     k2)=             −1(6.4.3)
+                                                                                      3           1            2
+andthesamefortheotherki·kj,sothisreducesto
+                                                                                        3                     26    26     ∑
+                                         SD2(k1;k2;k3)=2                            igoCD2(2π)                   δ       (      i  ki)    .                           (6.4.4)
+This               is               independent               of               the               gauge               choiceyi,               which               is               of               course               a               general
+property            of            the            Faddeev–Popov            procedure.            The            Weyl            invariance            is            crucial
+here           —           if           the           vertex           operators           were           taken           o!           the           mass           shell,           the           amplitude
+would               dep end               on               the               choice               ofyi.
+      We                   c  o  u  l  d                   h  a  v  e                   u  s  e  d                   i  n  d  e  p   e  n  d  e  n  c  e                   o  f                   t  h  eyito               determine               the               Faddeev–
+Popov                     determinant                     without                     calculation.                     Using                     the                     mass-shell                     condition
+and            momentum            conservation,            the                     Xµ       expectation            value            is            proportional            to
+|y12y13y23|−1,                 and                 so                 the                 measure                 must                 be                 reciprocal                 to                 this.                 This                 same
+measure            then            applies            for     n>        3      vertex      operators,      because      in      all      cases      three
+positions      are      ﬁxed.
+      The      four-tachyon      amplitude      is      obtained      in      the      same      way,
+             SD2(k1;k2;k3;k4)                                 ⟨                                                                     ⟩
+                                         ∫    ∞                   ∏3
+                     =g4e−λ                         dy                    ⋆c1(y        )eiki·X(yi)⋆          ⋆eik4·X(y4)⋆                   +(k↔k)
+                              o             −∞            4               ⋆          i                    ⋆  ⋆                    ⋆                     2             3
+                                                                  i=1                                    ∫
+                               4                     26    26     ∑                                           ∞               ∏                2α′k    ·k
+                     =igoCD2(2π)                        δ       (      i ki)|y12y13y23|                             dy4               |yij|           i   j
+                                                                                                            −∞                i<j
+                                                                                                                             +(k2↔k3).                                (6.4.5)

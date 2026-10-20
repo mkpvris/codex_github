@@ -1,0 +1,41 @@
+                            9.5 General amplitudes                           307
+
+
+
+
+     (a)                            (c)
+
+
+
+
+           (b)
+
+Fig. 9.8. (a) Torus with n vertex operators, in the limit that m of the operators
+come together. (b) Conformally equivalent picture: the m vertex operators at the
+end of a long cylinder. (c) Sewing construction, in terms of the product of a
+sphere with m + 1 vertex operators and a torus with n − m + 1.
+
+
+distances. Conformal invariance once again changes short distances on
+the world-sheet into long distances in spacetime.
+   The cases m = n and m = n − 1 present special problems. When m = n,
+meaning that all the vertex operators are coming together, momentum
+conservation forces k µ to vanish. For massless states, the pole is then 1/0
+and the usual analytic continuation does not help because momentum
+conservation forces the amplitude to sit right on the massless pole. This is
+a tadpole, just as in section 7.4, and the resolution is the same, a correction
+to the background fields. The divergence here is proportional to the torus
+amplitude with one vertex operator.
+   In the other problematic case, m = n − 1, all the vertex operators but
+one, say Vn , come together. Momentum conservation requires that the
+momentum flowing through the cylinder be k µ = −knµ . However, conformal
+invariance requires that kn2 = −m2n , so the intermediate momentum is fixed
+on top of a pole for those intermediate states with m2j = m2n . Once again,
+there is an analogous divergence in field theory, shown in figure 9.9: the
+internal propagator is 1/0. This divergence occurs whenever the mass of
+the internal line j is the same as that of the on-shell external particle n. The
+interpretation here is simple. The loop represents a radiative correction
+to the mass of the particle n. The S-matrix is defined with the external
+momentum taken on the true mass shell, including radiative corrections,
+and it is again free of this IR divergence. Note that the issue here is not
+some UV divergence internal to the loop, but the IR divergence on the

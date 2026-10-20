@@ -1,0 +1,47 @@
+318                      9 Higher order amplitudes
+
+with solution z4 = −u/s; recall that s + t + u = O(1). The saddle point
+approximation then gives an amplitude
+                   S ≈ exp[−α! (s ln s + t ln t + u ln u)/2] ,          (9.8.3)
+as given in eq. (6.6.13).
+   Let us also back up one step, from the integral over z4 to the path
+integral over X µ . This is dominated by the saddle point
+                                         & µ
+                          Xclµ (σ) = i    ki G! (σ, σi ) ,              (9.8.4)
+                                          i
+where the σi are the vertex operator positions. Recall that the Green’s
+function is proportional to α! . At high energy the size of the scattering
+region grows linearly with energy, δX ≈ α! k. In field theory, higher energy
+hard scattering probes shorter distances, δX ≈ 1/k by the uncertainty
+principle. In string theory this is not the case beyond the string scale. It
+appears to be impossible in string perturbation theory to probe distances
+below this scale, giving rise to the idea that it is a limiting distance in
+spacetime. The effective lower limit on compactification R ≈ α!1/2 also
+supports this. However, we will see in chapter 13 that recent advances in
+nonperturbative string theory reveal the existence of shorter length scales.
+  At general orders in the string loop expansion, the dominant term in
+the amplitude will be
+                             .   &                       /
+                                                !
+                         exp −         ki · kj G (σi , σj ) .           (9.8.5)
+                                 i<j
+
+We need to find the saddle points of the exponent, with respect to both the
+vertex operator positions and the moduli of the Riemann surface. This is
+like an electrostatics problem: the exponent is the energy of n point charges
+kiµ on a Riemann surface, where µ labels d different electrostatic fields and
+µ = 0 has the opposite sign in the energy. The background charge density
+vanishes by momentum conservation, and the renormalized self-energy is
+negligible because ki2 remains on-shell and small. Remarkably, one can
+find what is probably the dominant saddle point at each genus. Consider
+the Riemann surface
+                                 (z1 − a1 )(z1 − a2 )
+                           z2N =                      .                 (9.8.6)
+                                 (z1 − a3 )(z1 − a4 )
+Like the hypergeometric curve (9.2.9), it is a subspace of S2 × S2 . It can be
+regarded as N sheets glued together at branch cuts, and has genus N − 1.
+For the four-point amplitude, if the charges are placed at the branch
+cuts ai then the amplitude is stationary with respect to their positions —
+the surface is ‘vertical’ at these points, ∂z2 /∂z1 = ∞, and the symmetry
+z2 → exp(2πi/N)z2 requires the vertical component of the gradient to
+vanish. It remains to extremize with respect to the positions ai , but this

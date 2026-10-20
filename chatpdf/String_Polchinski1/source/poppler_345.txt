@@ -1,0 +1,47 @@
+                 9.9 Low dimensions and noncritical strings                       323
+
+                9.9     Low dimensions and noncritical strings
+
+Field theories often simplify as the number of spacetime dimensions is
+reduced, and these low-dimensional theories have been useful models for
+understanding dynamics. We might try to do the same in string theory,
+but string theory requires a critical dimension. We could compactify, but
+this does not reduce the number of degrees of freedom: the string still
+oscillates in the compact directions. We have, however, encountered a
+consistent background in which the string actually does move in fewer
+dimensions. This is the linear dilaton background (3.7.18),
+               Gµν (x) = ηµν ,           Bµν (x) = 0 ,       Φ(x) = Vµ xµ ,   (9.9.1a)
+                                 3            41/2
+                              26 − D
+                      Vµ = δµ1             .                            (9.9.1b)
+                                6α!
+For D < 26 the dilaton gradient is spacelike and we have taken it to lie in
+the 1-direction.
+   The effective string coupling eΦ is a function of x1 , diverging at large x1 .
+This makes it hard to use string perturbation theory, but fortunately there
+is a slightly different background for which perturbation theory is good.
+Inserting the background (9.9.1) into the tachyon action (6.6.16) leads to
+the linearized tachyon field equation,
+                                              4
+                  − ∂µ ∂µ T (x) + 2V µ ∂µ T (x) −T (x) = 0 .    (9.9.2)
+                                              α!
+This is the condition for the exponential vertex operator to be Weyl-
+invariant, with the linear dilaton energy-momentum tensor (2.5.1). The
+solutions are
+                                                    2−D
+                 T (x) = exp(q · x) , (q − V )2 =         .     (9.9.3)
+                                                     6α!
+If we look for solutions which, like the dilaton, depend only on x1 , then
+                                     3         4         3        4
+                                         26 − D 1/2          2 − D 1/2
+                   q1 = α ± =                      ±                   .       (9.9.4)
+                                           6α!                 6α!
+For D > 2 this is complex, so the tachyon oscillates, but for D ≤ 2 one gets
+a real exponential (times a linear function at the critical value D = 2). Of
+course, the tachyon field equation will have nonlinear corrections. It can
+be shown that this does not affect the qualitative form of the background,
+except that for rather subtle reasons only the solution α− leads to a
+nonsingular background.
+  For D ≤ 2 the term ‘tachyon’ for the string ground state is actually a
+misnomer, because this field is stable (exercise 9.8). Also for D ≤ 2, the
+real exponential T (x) = T0 exp(α− x1 ) prevents propagation to the region

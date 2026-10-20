@@ -1,0 +1,50 @@
+20                          1 A first look at strings
+
+with velocity c = +/2πα" p+ . We will not develop the interactions in the
+light-cone formalism, but for these it is useful to choose the coordinate
+length + for each string to be proportional to p+ , so that c = 1. Since p+
+is positive and conserved, the total string length is then also conserved.
+   The transverse coordinates satisfy a free wave equation so it is useful to
+expand in normal modes. In fact X ± also satisfy the free wave equation.
+For X + this is trivial, while for X − it requires a short calculation. The
+general solution to the wave equation with boundary condition (1.3.15) is
+                                  ∞
+                                                    %              &
+                 pi                   1 i        πincτ     πnσ
+  X (τ, σ) = x + + τ + i(2α" )1/2
+     i         i
+                                        αn exp −       cos     . (1.3.22)
+                p                n=−∞ n            +        +
+                                      n-=0
+
+
+Reality of X i requires αi−n = (αin )† . We have defined the center-of-mass
+variables
+                          !
+                       1 +
+              xi (τ) =        dσ X i (τ, σ) ,                          (1.3.23a)
+                       + 0
+                       ! +                       !
+                                              p+ +
+              pi (τ) =      dσ Πi (τ, σ) =          dσ ∂τ X i (τ, σ) , (1.3.23b)
+                        0                      +  0
+which are the average position and the total momentum. These are the
+Heisenberg operators; the Schrödinger operators xi ≡ xi (0) and pi ≡ pi (0)
+appear in the expansion (1.3.22).
+  To quantize, impose the equal time canonical commutation relations
+                               [x− , p+ ] = iη −+ = −i ,                (1.3.24a)
+                       [X i (σ), Πj (σ " )] = iδ ij δ(σ − σ " ) ,       (1.3.24b)
+with all other commutators between the independent variables vanishing.
+In terms of the Fourier components,
+                               [xi , pj ] = iδ ij ,                     (1.3.25a)
+                              [αim , αjn ] = mδ ij δm,−n .              (1.3.25b)
+For each m and i the modes satisfy a harmonic oscillator algebra with
+nonstandard normalization
+                   αim ∼ m1/2 a ,    αi−m ∼ m1/2 a† ,        m>0,        (1.3.26)
+where [a, a† ] = 1. The oscillators are labeled by the direction of oscillation
+i and the harmonic m.
+   The state |0; k,, where k = (k + , k i ), is defined to be annihilated by
+the lowering operators and to be an eigenstate of the center-of-mass
+momenta,
+                    p+ |0; k, = k + |0; k, , pi |0; k, = k i |0; k, ,   (1.3.27a)
+                    αim |0; k, = 0 , m > 0 .                            (1.3.27b)

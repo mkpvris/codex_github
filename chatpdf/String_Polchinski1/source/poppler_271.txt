@@ -1,0 +1,46 @@
+                 8.4 Compactification of several dimensions                249
+
+               8.4       Compactification of several dimensions
+
+It is useful to generalize the analysis to k periodic dimensions,
+                   Xm ∼= X m + 2πR , 26 − k ≤ m ≤ 25 .                  (8.4.1)
+Let d = 26 − k be the number of noncompact dimensions. Spacetime is
+now M d ×T k . The coordinate periodicity (8.4.1) is being held fixed, but the
+actual geometry of the k-torus depends on internal metric Gmn . With more
+than one compact dimension, the antisymmetric tensor also has scalar
+components Bmn . The total number of scalars from both sources is k 2 .
+There are also Kaluza–Klein gauge bosons Am     µ and antisymmetric tensor
+gauge bosons Bmµ . The low energy action, obtained as in section 8.1, is
+                     $                         
+         (2πR)k
+     S =          dd x (−Gd )1/2 e−2Φd Rd + 4∂µ Φd ∂µ Φd
+           2/20
+                1
+            − Gmn Gpq (∂µ Gmp ∂µ Gnq + ∂µ Bmp ∂µ Bnq )
+                4                                            
+                1    m nµν     1 mn        µν     1      µνλ
+            − Gmn Fµν F − G Hmµν Hn − Hµνλ H                   ,        (8.4.2)
+                4              4                 12
+where Φd = Φ − 14 ln det Gmn .
+
+                                The string spectrum
+The main new issue is the antisymmetric tensor background Bmn . The
+contribution of this term to the world-sheet Lagrangian density is propor-
+tional to
+                             Bmn ∂a (g 1/2 &ab X m ∂b X n ) ,           (8.4.3)
+which is a total derivative for constant Bmn . It thus has no e!ect locally and
+the world-sheet theory is still a CFT, a good string background. It does,
+however, change the spectrum. We will see this in two ways, canonically
+and via the path integral.
+  In the canonical approach, focus on the zero-mode contribution to the
+world-sheet action. Inserting
+                          X m (, 1 , , 2 ) = xm (, 2 ) + w m R, 1       (8.4.4)
+into the world-sheet action gives
+                   1                               i
+              L = % Gmn (ẋm ẋn + w m w n R 2 ) − % Bmn ẋm w n R . (8.4.5)
+                  2α                              α
+A dot indicates a derivative with respect to world-sheet time , 2 . The
+canonical momenta are
+                           ∂L     1
+                  pm = − m = % (Gmn v n + Bmn w n R) ,               (8.4.6)
+                          ∂v      α

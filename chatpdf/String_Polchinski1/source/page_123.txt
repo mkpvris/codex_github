@@ -1,0 +1,45 @@
+                                                                                           3.6                      Vertex              operators                                                                                               101
+
+are                  somewhat                  redundant:                  in                  either                  the                  case                  with                  boundary                  or                  the                  case
+without,           one           obtains           every           topology           exactly           once           by           restricting           the           sum           to
+let              only              one              ofg     and             c     be            nonzero.            For            example,            (g,    b,    c)=(0                                             ,0,1)              is              the
+projective                plane,                (g,    b,    c)=(0                                   ,1,1)                is                the                Mobius                strip,                (¨g,    b,    c)=(0             ,0,2)
+is               the               Klein               bottle,               and               a               torus               with               cross-cap               can               be               obtained               either               as
+(g,    b,    c)=(0                         ,0,3)                   or                   as                   (g,    b,    c)=(1  ,0,1),                   trading                   two                   cross-caps                   for                   a
+handle.             The             Euler             number             is             given             by
+
+                                                                                            χ     =2            −2g−b−c.                                                                                                               (3.5.6)
+
+       The          number          of          distinct          topologies          is          very          small          compared          to          the          number
+of             distinct             Feynman             graphs             at             a             given             order             in             ﬁeld             theory.             For             example,
+in              the              closed              oriented              theory,              there              is              exactly              one              topology              at              each              order
+of                   perturbation                   theory.                   In                   a                   ﬁeld                   theory,                   the                   number                   of                   graphs                   grows
+factorially                 with                 the                 order.                 The                 single                 string                 graph                 contains                 all                 the                 ﬁeld
+theory                  graphs.                  In                  various                  limits,                  where                  handles                  become                  long                  compared
+to               their               circumferences,               we               can               approximate               the               handles               by               lines               and                the
+string              graph              in             that              limit              is              approximated             by              the             corresponding              Feynman
+graph.
+
+
+                                                                                        3.6                                              Vertex               operators
+
+Using          the          state–operator          mapping,          the          vertex          operator          for          the          closed          string
+tachyon             is
+                                                                                                                     ∫
+                                                                                   V0          =2gc                           d2σg              1/2eik·X
+                                                                                                                 ∫
+                                                                                              →          gc               d2z            :eik·X:                   .                                                                   (3.6.1)
+
+We           have           now           included           a           factor                            gc       in           the           mapping.           This           is           the           closed           string
+coupling             constant,             from             adding             an             extra             string             to             the             process:             we             use             the
+normalization              of              the              vertex              operator              as              the              deﬁnition              of              the              coupling.              In
+the             second             line             we             have             gone             to             the             ﬂat             world-sheet.             The             vertex             operator
+must                   be                   (di!×Weyl)-invariant,                   so                   in                   particular                   it                   must                   be                   conformally
+invariant             on             the             ﬂat             world-sheet.             To             o!set             the             transformation             of                                                      d2z,the
+operator        must        be        a        tensor        of        weight        (1,1).                   By                   a                   straightforward                   OPE
+                                             ik·X                                                                                                 ˜                  ′     2
+calculation,                             e                 is             a             tensor             of             weight    h     =       h     =        α     k      /4,             so             the             condition             is
+                                                                                               m2         =       −k2             =        −       4       .                                                                           (3.6.2)
+                                                                                                                                                  α′
+This             is             precisely             the             mass             found             in             the             light-cone             quantization.
+       Similarly,              the              tensor              states              at              the              ﬁrst              excited              level              of              the              closed              string

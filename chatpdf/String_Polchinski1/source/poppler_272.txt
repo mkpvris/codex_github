@@ -1,0 +1,44 @@
+250              8 Toroidal compactification and T -duality
+
+where v m = iẋm . Some unfamiliar signs and is appear because we are
+using Euclidean world-sheet time. Continuing to Minkowski time, v m
+becomes the velocity ∂0 xm . The periodicity of the wavefunction implies
+the quantization of the canonical momenta, pm = nm /R, and so
+                                   nm
+                          vm = α%        − Bmn w n R .            (8.4.7)
+                                    R
+The zero-mode contribution to the world-sheet Hamiltonian is
+                          1
+                             Gmn (v m v n + w m w n R 2 ) ,       (8.4.8)
+                         2α%
+and the closed string mass is
+                      1                               2
+               m2 =     %2
+                           Gmn (vLm vLn + vRm vRn ) + % (N + Ñ − 2) ,   (8.4.9a)
+                     2α                              α
+               m
+              vL,R = vm ± wmR .                                          (8.4.9b)
+The Bmn background thus shifts the masses of the winding states through
+the dependence of v m on Bmn . The L0 − L̃0 constraint is
+                    0 = Gmn (vLm vLn − vRm vRn ) + 4α% (N − Ñ)
+                      = 4α% (nm w m + N − Ñ) .                          (8.4.10)
+  Alternatively, consider the torus path integral for the partition function.
+The antisymmetric tensor term is locally a total derivative and so depends
+only on the topology of the configuration. Consider the configuration
+                           X m = (w1m , 1 + w2m , 2 )R .                 (8.4.11)
+The spatial direction on the torus winds w1m times around each periodic
+spacetime dimension xm , and the timelike dimension w2m times. The Bmn
+world-sheet action is
+                                  2πibmn w1m w2n ,                       (8.4.12)
+where bmn = Bmn R 2 /α% . One can check that the sum over path integral
+sectors with phase (8.4.12) is related by Poisson resummation to the
+partition function for the shifted spectrum (8.4.9).
+  In the description above the metric Gmn appears in the action for the
+world-sheet fields. For vertex operator calculations it is more convenient
+to keep the usual action. Write the metric in terms of a tetrad emr ,
+                                  Gmn = emr enr ,                        (8.4.13)
+with tangent space indices r, s, . . . . The coordinates X r = emr X m then have
+the standard OPEs. The vertex operator momenta are
+                                 vmL                vmR
+                     krL = erm % , krR = erm % ,                         (8.4.14)
+                                   α                 α

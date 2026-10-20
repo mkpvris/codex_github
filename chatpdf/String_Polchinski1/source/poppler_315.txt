@@ -1,0 +1,45 @@
+                     9.2 Higher genus Riemann surfaces                         293
+
+minus three more because overall conjugation by P S L(2, R) gives an
+equivalent surface, for 6g − 6 in all.
+   Although the Schottky and Fuchsian parameterizations are similar,
+they have rather different properties. In particular, the complex structure
+is much less evident in the latter, and the extension to the superstring
+correspondingly less simple.
+
+
+                               The period matrix
+
+The modulus τ of the torus has a natural g × g matrix generalization at
+genus g. To see this, we need first the Abelian differentials or holomorphic
+one-forms. These are world-sheet fields /a with the property that in
+complex coordinates
+                             ∂z̄ /z = 0 ,       /z̄ = 0 .                   (9.2.5)
+There are precisely g such fields, and g more satisfying the conjugate
+relation. This follows from the Riemann–Roch theorem (5.3.22). The
+Abelian differentials (9.2.5) and their conjugates are just the kernel of
+the operator P0T , for which the Riemann–Roch theorem is
+                  dim ker P0T − dim ker P0 = −χ = 2g − 2 .                  (9.2.6)
+The operator P0 acts on scalar fields c and c̃ with h = 0, and so reduces
+to the ordinary gradient. This always has two zero modes (c = constant
+or c̃ = constant), and so dim ker P0T = 2g.
+  The line integral of a one-form is a coordinate-invariant quantity. A
+natural basis for the Abelian differentials is then /zi , i = 1, . . . , g, defined
+by
+                                
+                                      dz /zj = δij .                        (9.2.7)
+                                 Ai
+
+Then the period matrix
+                                         
+                                 τij =         dz /zj                       (9.2.8)
+                                          Bi
+
+characterizes the complex structure of the surface. At genus one, where
+/z is constant, this is the usual τ.
+   It can be shown that τij is symmetric, so it has 12 g(g + 1) complex
+parameters. For g = 1, 2, 3 this is equal to the number of complex mod-
+uli, but for g ≥ 4 it is greater, so not all period matrices correspond
+to Riemann surfaces. The theta function (7.2.36) has a natural genus-g
+generalization, where τ becomes the period matrix and ν, n, a, b become
+g-component vectors.

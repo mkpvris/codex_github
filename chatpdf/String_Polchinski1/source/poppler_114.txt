@@ -1,0 +1,46 @@
+92                      3 The Polyakov path integral
+
+It also reduces to the earlier definition in the limit of a flat world-sheet. If
+one takes ,gab to have the form of a coordinate transformation, the di!
+invariance of the path integral implies the conservation of T ab .
+   In the following analysis, we will at first neglect possible boundary
+terms. For a Weyl transformation, the definition (3.4.4) of T ab means that
+                           !
+                           1
+       ,W * . . . + g = −    d2 σ g(σ)1/2 ,ω(σ) * T aa (σ) . . . +g , (3.4.6)
+                          2π
+so Weyl invariance with the general insertions ‘. . .’ can be phrased as the
+operator statement that the energy-momentum tensor is traceless:
+                                        ?
+                                   T aa = 0 .                            (3.4.7)
+The classical action is Weyl-invariant, but in the quantum theory the
+trace might be nonzero because we have not managed to find a fully
+gauge-invariant regulator. The trace must be di!- and Poincaré-invariant,
+because we have preserved these symmetries, and it must vanish in the
+flat case because we know from the previous chapter that that theory is
+conformally invariant. This leaves only one possibility,
+                                  T aa = a1 R                            (3.4.8)
+for some constant a1 , with R again the world-sheet Ricci scalar. Terms
+with more than two derivatives are forbidden for dimensional reasons.
+In units of world-sheet length, gab and X µ are both dimensionless, so
+the constant a1 in eq. (3.4.8) is dimensionless as well. Terms with more
+derivatives would have a coefficient with positive powers of the cuto!
+length used to define the path integral, and so vanish in the limit where
+the cuto! is taken to zero.
+
+                      Calculation of the Weyl anomaly
+The possible obstruction to a gauge-invariant theory has been reduced to
+the single number a1 . In fact, this number is proportional to something
+we have already calculated, the central charge c of the CFT on a flat
+world-sheet. Both a1 and c are related to the two-point function of the
+energy-momentum tensor, though to di!erent components. To get the
+precise relation between them we will need to use the di! invariance, as
+follows.
+   In conformal gauge,
+                                     a1
+                               Tzz̄ = gzz̄ R .                    (3.4.9)
+                                      2
+Taking the covariant derivative,
+                                a1             a1
+                     ∇z̄ Tz̄z = ∇z̄ (gzz̄ R) = ∂z R ,            (3.4.10)
+                                2              2

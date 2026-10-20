@@ -1,0 +1,46 @@
+254                8 Toroidal compactification and T -duality
+
+the periodicity,
+
+                                  x%m = Lmn xn                         (8.4.32)
+
+with Lmn integers and det L = 1 for invertibility. This is the group S L(k, Z).
+Finally there are shifts of the antisymmetric tensor background,
+
+                               bmn → bmn + Nmn                         (8.4.33)
+
+with Nmn integers. From either the canonical result (8.4.7) or the path
+integral phase (8.4.12) it follows that this leaves the spectrum invariant.
+Together these generate the whole T -duality group.
+   Identifying first by the left-multiplication produces the space (8.4.28),
+and one can think of the discrete right-multiplication as acting on this
+covering space. For generic &, there are no &1,2 in the respective denom-
+inator groups such that &1 &&2 = &, so that there are no T -dualities
+that leave this point on the covering space fixed. At special & there are
+solutions to &1 &&2 = &, and these will be fixed points of the T -duality
+element &2 . In the one-dimensional case we had such a fixed point, which
+was also a point of enhanced gauge symmetry. In the higher-dimensional
+case, besides products of S U(2)s, larger gauge groups arise at various
+points. We will defer further discussion of this to chapter 11.
+   When there is a moduli space parameterized by scalar fields φi , the
+kinetic term
+                               1
+                              − gij (φ)∂µ φi ∂µ φj                     (8.4.34)
+                               2
+defines a natural metric on moduli space. To be precise, an unambiguous
+definition requires that one first perform a spacetime Weyl transformation
+as in eq. (3.7.25) so as to make the coefficient of the gravitational action
+moduli-independent and eliminate mixing between the moduli and the
+spacetime metric. In the low energy action (8.4.2), the resulting scalar
+kinetic terms are proportional to
+        16
+           ∂µ Φ∂µ Φ + Gmn Gpq (∂µ Gmp ∂µ Gnq + ∂µ Bmp ∂µ Bnq ) .       (8.4.35)
+       d−2
+The coset space (8.4.31) has a unique O(k, k, R)-invariant metric, which
+is just the second term in eq. (8.4.35). This O(k, k, R) is not a symmetry
+of the full theory; only its discrete T -duality subgroup O(k, k, Z) is. The
+di!erence between the two is not visible at low energy — it comes from the
+quantization of the string zero modes and so a!ects the massive spectrum.
+Thus O(k, k, R) is an accidental symmetry of the low energy theory. In this
+example the moduli space is a product of the dilaton moduli space and
+the moduli space of compactifications.

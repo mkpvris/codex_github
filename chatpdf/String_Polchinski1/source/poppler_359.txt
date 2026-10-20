@@ -1,0 +1,57 @@
+                                          A.1 Bosonic fields                                       337
+
+                                 Diagrams and determinants
+
+The diagrammatic expansion is easily obtained from the path integral.
+This subject is well treated in modern field theory texts. We will only
+derive here a few results used in the text. For notational clarity we switch
+to field theory, replacing q(t) with a real scalar field φ(t, x). Begin with the
+free action
+                                           #
+                                      1
+                                               dd x φ(x)(φ(x) ,                                (A.1.38)
+                                      2
+where ( is some differential operator. Consider the path integral with a
+source J(x), taking the Euclidean case to be specific,
+            :      . #                           /;
+  Z[J] =        exp i    dd x J(x)φ(x)
+            #                .        #                            #                     /
+                                  1
+        =       [dφ] exp −                 dd x φ(x)(φ(x) + i           dd x J(x)φ(x) . (A.1.39)
+                                  2
+This is the generating functional for Euclidean Green’s functions. Taking
+functional derivatives with respect to J(x) pulls down factors of iφ(x) into
+the integral. Shifting φ to φ + i(−1 J completes the square, leaving
+                             .        #                                       /
+                        1
+     Z[J] = Z[0] exp −      dd x dd y J(x)(−1 (x, y)J(y)
+                        2
+                     . #                                  /
+                      1                            δ2
+          = Z[0] exp      dd x dd y (−1 (x, y)
+                      2                        δφ(x)δφ(y)
+                                                           . #                    /
+                                                                                   
+                                                     × exp i     dd x J(x)φ(x)             . (A.1.40)
+                                                                                       φ=0
+
+In the second line, each φ derivative becomes iJ. Any functional F of φ
+can be written
+                         #                     . #                  /
+                                                       d
+            F[φ] =           [dJ] exp i               d x J(x)φ(x) f[J] ,                      (A.1.41)
+
+where f[J] is the (functional) Fourier transform of F. By linearity one
+obtains
+                        . #                                               /        
+                   1                             −1   δ2          
+  % F & = Z[0] exp                d        d
+                                 d x d y ( (x, y)            F[φ]    . (A.1.42)
+                   2                              δφ(x)δφ(y)       φ=0
+
+Expanding the exponential generates the diagrammatic expansion, all ways
+of contracting pairs of fields in F. Also, when F is a product of factors,
+F1 F2 . . . , we can separate
+                           δ       δ       δ
+                               =        +        + ... ,                                       (A.1.43)
+                         δφ(x)   δφ1 (x) δφ2 (x)

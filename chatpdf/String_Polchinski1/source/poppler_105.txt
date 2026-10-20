@@ -1,0 +1,48 @@
+                           3.2 The Polyakov path integral                                     83
+
+for infinitesimal θ, all terms in the exponent acquire a negative real part
+and so this acts as a convergence factor. Now we can perform a contour
+rotation in field space, all the way to η = −ie, X 0 = −iX D . The integral
+becomes
+               !                 &      !     '        D
+                                                                              
+                                 1                     (
+                                                  −1          µ   µ       2
+                   [de dX] exp −            dτ e             Ẋ Ẋ + em            .     (3.2.6)
+                                 2                     µ=1
+
+This is the Euclidean point-particle analog of the path integral (3.2.1). We
+have just made a contour rotation, so the Euclidean path integral gives
+the same amplitude as the Minkowski one.
+    The same procedure works for the Polyakov action if we write the metric
+in terms of a tetrad, γab = −e0a e0b + e1a e1b , and make the same rotation on e0a .
+This provides a formal justification for the equivalence of the Minkowski
+and Euclidean path integrals.1 It has been shown by explicit calculation
+that they define the same amplitudes, respectively in the light-cone and
+conformal gauges. We have in the action (3.2.3a) left the rotation of X 0
+implicit, as in the previous chapter, so as to emphasize the Minkowski
+nature of spacetime. Written in terms of X 0 , the equations of motion and
+the OPE are covariant, with metric η µν .
+    We have noted that χ is locally a total derivative in two dimensions
+and therefore depends only on the topology of the world-sheet — it is the
+Euler number of the world-sheet. Thus, the e−λχ factor in the path integral
+a!ects only the relative weighting of di!erent topologies in the sum over
+world-sheets. In particular, if one adds an extra strip to a world-sheet, as
+we have done in going from figure 3.1(a) to figure 3.2(a), the Euler number
+decreases by one and the path integral is weighted by an extra factor of
+eλ . Since adding a strip corresponds to emitting and reabsorbing a virtual
+open string, the amplitude for emitting an open string from any process is
+proportional to eλ/2 . Adding a handle to any world-sheet reduces the Euler
+number by 2 and adds a factor e2λ . Since this corresponds to emitting and
+reabsorbing a closed string, the amplitude for emitting a closed string is
+proportional to eλ . The Euler term in the action thus controls the coupling
+constants in the string theory, with
+                                      go2 ∼ gc ∼ eλ .                                    (3.2.7)
+By the way, λ might seem to be a free parameter in the theory, contradict-
+ing the statement in the introduction that there are no such parameters
+
+
+1 In more than two dimensions, things are not so simple because the Hilbert action behaves
+ in a more complicated way under the rotation. No simple rotation damps the path integral.
+ In particular, the meaning of the Euclidean path integral for four-dimensional gravity is very
+ uncertain.

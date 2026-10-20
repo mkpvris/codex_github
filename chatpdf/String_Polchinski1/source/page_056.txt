@@ -1,0 +1,48 @@
+34                                                         2                     Conformal              ﬁeld              theory
+
+theorem             in             complex             coordinates,
+                                       ∫                                                        ∮
+                                              d2z      (∂zvz        +     ∂¯zv¯z)=           i          (vzd¯z       −     v¯zdz)        ,                         (2.1.9)
+                                          R                                                       ∂R
+where             the             contour             integral             circles             the             regionRcounterclockwise.
+     In             this             notation             the             action             is
+                                                                           1       ∫
+                                                            S    =                       d2z∂X            µ∂X¯     µ                                             (2.1.10)
+                                                                       2πα′
+and            the            classical            equation            of            motion            is
+                                                                         ¯      µ
+                                                                      ∂∂X          (z,    ¯z)=0            .                                                     (2.1.11)
+The     notationXµ(z,                         ¯z)         may         seem         redundant,         since         the         value         ofz       determines
+the                     value                     of¯z,                     but                     it                     is                     useful                     to                     reserve                     the                     notationf(z)forﬁelds
+whose    equation    of    motion    makes    themanalytic                                                         (equivalently                    holomorphic)
+functions             of       z.Writingtheequationofmotionas
+                                                                  ¯       µ           ¯           µ
+                                                             ∂(∂X           )=        ∂(∂X           )=0           ,                                             (2.1.12)
+
+                                               µ                                                                      ¯      µ
+it          follows          that∂X                 is                   holomorphic                   and                   that∂Xis                   antiholomorphic
+                                                                                                          µ                     ¯      µ
+(holomorphic            in               ¯z),            hence            the            notations∂X        (z)and             ∂X         (¯z).
+     Under                the                Minkowski                continuation             σ2     =      iσ   0,aholomorphicﬁeldbe-
+comes            a            function            only            ofσ0−   σ1     and            an            antiholomorphic            ﬁeld            a            function
+only             ofσ0     +    σ1.             We             thus             use             as             synonyms
+
+                                                         holomorphic              =              left-moving                 ,                                (2.1.13a)
+                                               antiholomorphic              =              right-moving                          .                           (2.1.13b)
+
+This           terminology           is           chosen           to           have           maximal           agreement           with           the           literature,
+though              for              it              to              hold              literally              we              would              need              to              drawσ1increasing              from
+right            to            left.            We            will            tend            to            use            the            Euclidean            terms            early            on            and            shift            to
+the             Minkowski             terms             as             we             discuss             more             of             the             spacetime             physics.
+     Expectation             values             are             deﬁned             by             the             path             integral,
+                                                                           ∫
+                                                ⟨  F[X]           ⟩  =           [dX]exp(−S)F[X],                                                                (2.1.14)
+
+where           F[X]             is             any             functional             ofX,             such             as             a             product             of             local             operators.
+The                     path                     integral                     overX0is                     a                     wrong-sign                     Gaussian,                     so                     it                     should                     be
+understood               to               be               deﬁned               by               the               analytic               continuationX0→−iXD.The
+reader      should      not      be      distracted      by      this;      we      will      discuss      it      further      in      the
+next     chapter.     We     do     not     normalize⟨F[X]⟩by     dividing     by⟨1⟩.
+     The     path     integral     of     a     total     derivative     is     zero.     This     is     true     for     ordinary
+bosonic      path      integrals,      which      can      be      regarded      as      the      limit      of      an      inﬁnite
+number     of     ordinary     integrals,     as     well     as     for     more     formal     path     integrals     as

@@ -1,0 +1,48 @@
+                                                                     2.7                      Mode              expansions                                                                59
+
+tensor             (2.4.4)             and             collect             terms             with             a             given             power             ofz,             giving
+                                                                                   1      ∞             µ
+                                                                   Lm       ∼      2                  αm−nαµn               .                                                   (2.7.6)
+                                                                                        n=−∞
+The          ∼       indicates                     that                     we                     have                     ignored                     the                     ordering                     of                     operators.                     For
+m     ̸=0,theexpansion(2.7.6)iswelldeﬁnedandcorrectasitstands—
+the      mode      operators      in      each      term      commute      and      so      the      ordering      does      not
+matter.             For        m      =           0,             put             the             lowering             operators             on             the             right             and             introduce
+a             normal             ordering             constant,
+                                                                       α′p2              ∞
+                                                        L       =                  +             (αµ        α       )+        aX       .                                        (2.7.7)
+                                                            0              4                          −n       µn
+                                                                                         n=1
+We                    encountered                    this                    same                    issue                    in                    section                    1.3,                    where                    we                    treated                    it                    in
+a                   heuristic                   way.                   Now                   the                   left-hand                   side                   has                   a                   ﬁnite                   and                   unambiguous
+deﬁnition                in                terms                of                the                Laurent                coeﬃcients                of                the                :                  :-ordered                energy-
+momentum         tensor,         so         the         normal         ordering          constant         is         ﬁnite         and         calculable.
+There                  are                  several                  ways                  to                  determine                  it.                  The                  simplest                  uses                  the                  Virasoro
+algebra,
+                                            2L0|0;      0⟩          =(L1L−1−L−1L1)|0;      0⟩                                         =0          ,                             (2.7.8)
+and             so
+                                                                                     aX       =0         .                                                                      (2.7.9)
+
+Here                we                have                used                the                known                form                ofL1andL−1:everytermofeach
+contains     either     a     lowering     operator     orpµand     so     annihilates|0;      0⟩.
+      We          determined          the          central          charge          in          the          Virasoro          algebra          from          the          OPE.
+It                 can                 also                 be                 determined                 directly                 from                 the                 expression                 for                 the                 Virasoro
+generators               in               terms               of               the               mode               operators,               though               some               care               is               needed.
+This             is             left             as             exercise             2.11.
+                                                                                                                                 ◦   ◦
+      Let               us               introduce               a               new               notation.               The               symbol◦◦will               denotecreation–
+annihilation              normal              ordering,            placing            all            lowering            operators            to            the            right            of
+all         raising         operators,         with         a         minus         sign         whenever         anticommuting         operators
+are               switched.               For               the               purposes               of               this               deﬁnition,               we               will               includepµwith
+the             lowering             operators             and          xµ      with             the             raising             operators.             In             this             notation
+we             can             write
+                                                                                  1       ∞              µ
+                                                                                                     ◦                      ◦
+                                                                  Lm       =      2                  ◦αm−nαµn◦                                                               (2.7.10)
+                                                                                       n=−∞
+since         aX       =0.
+      We          have          now          introduced          two          forms          of          normal          ordering,conformal
+normal                     ordering          ::(whichiswhatwewillmeanifwejustreferto
+                                                                                                                                                                  ◦◦
+‘normal   ordering’)   and   creation–annihilation   normal   ordering◦◦.Thefor-
+mer       is       useful       because       it       produces       operators       whose       OPEs       and       conformal

@@ -1,0 +1,53 @@
+96                            3 The Polyakov path integral
+                                                                                      /
+  No such local counterterm can remove a1 . For example, d2 σ g 1/2 R is
+Weyl-invariant, as we have already noted. So if a1 is nonzero, there is a
+real anomaly in the Weyl symmetry.
+  We now consider the e!ects of boundaries. Including boundary terms,
+the most general possible variation is3
+                            !
+                          1
+       ,W ln*. . .+g = −        d2 σ g 1/2 (a1 R + a2 ),ω
+                         2π M
+                                   !
+                                1
+                             −           ds (a3 + a4 k + a5 na ∂a ),ω , (3.4.27)
+                               2π ∂M
+where again k = −ta nb ∇a tb is the geodesic curvature of the boundary. The
+possible counterterms are
+                              !                         !
+                                    2      1/2
+                      Sct =         d σg         b1 +          ds (b2 + b3 k) .           (3.4.28)
+                                M                       ∂M
+The b3 term is in addition to the geodesic curvature term in the Euler
+number, in eq. (3.2.3b). The Weyl variation of Sct , being careful to include
+the dependence of ds and of the unit vectors t and n on the metric, is
+                      !                           !
+        ,W Sct = 2         d2 σ g 1/2 b1 ,ω +               ds (b2 + b3 na ∂a ),ω .       (3.4.29)
+                       M                           ∂M
+We see that b1 , b2 , and b3 can be chosen to set a2 , a3 , and a5 to zero, leaving
+a1 and a4 as potential anomalies. There is one more tool at our disposal, the
+Wess–Zumino consistency condition. Take the second functional variation
+  ,W1 (,W2 ln * . . . +g )
+             !                              !
+         a1           2    1/2   2       a4
+       =           d σ g ,ω2 ∇ ,ω1 −            ds ,ω2 na ∂a ,ω1
+          π M                            2π ∂M
+                !                                    !
+            a1          2    1/2     a      2a1 − a4
+       =−              d σ g ∂a ,ω2 ∂ ,ω1 +              ds na ,ω2 ∂a ,ω1 .
+            π M                                2π     ∂M
+                                                                        (3.4.30)
+This is a second (functional) derivative and so by definition must be
+symmetric in ,ω1 and ,ω2 . The first term is symmetric but the second
+one is not, and so a4 = 2a1 . It follows that boundaries, with open string
+boundary conditions, give rise to no new Weyl anomalies. Weyl invariance
+holds in the quantum theory if and only if a1 = −c/12 vanishes. This is
+determined by the local physics in the interior of the world-sheet.
+  The Wess–Zumino consistency condition is a very powerful restriction
+on the form of possible anomalies. A second application enables us to
+show that the central charge is a constant. This followed above from
+
+3 We require all terms to be independent of the fields X µ , as can be shown to hold in free field
+ theory. When we consider the interacting case in section 3.7, the Weyl anomaly will take a more
+ general form.

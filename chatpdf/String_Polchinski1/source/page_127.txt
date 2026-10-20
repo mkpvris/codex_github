@@ -1,0 +1,50 @@
+                                                                            3.6                      Vertex              operators                                                                      105
+
+where              sµν     ,    aµν      ,and              φare      respectively      a      symmetric      matrix,      an      antisym-
+metric            matrix,            and            a            constant.            The            antisymmetric                             tensor             ϵab       is            normalized
+                                                           ¯
+g1/2ϵ12              =1,or                g1/2ϵzz=−i.The                                      iaccompanying     the     antisymmetric     tensor
+in        the        vertex        operator        can        be        understood        as        arising        from        the        Euclidean
+continuation,        because        this        term        necessarily        has        an        odd        number        of        time
+derivatives       (one)       .       This       result       applies       generally       to       Euclidean       actions       and
+vertex      operators.
+      To         extend         the         analysis         of         Weyl         invariance         we         need         to         work         out         the
+We  y  l                        d  e  p   e  n  d  e  n  c  e                        (  3  .  6  .  1  1  )                        o  f                        t  h  e                        g   e  o  d  e  s  i  c                        d  i  s  t  a  n  c  e                        t o                        h  i  g  h  e  r                        o  r  d  e  r  .                        O  n  e
+ﬁnds
+                                                                                       ⏐                       1
+                                                                                   ′   ⏐                              ′
+                                                   ∂a,W∆(               σ,    σ     )⏐σ′=σ            =        2α       ∂a,ω(σ)                  ,                                        (3.6.15a)
+                                                                                       ⏐                       1+         γ
+                                                       ′                           ′   ⏐                                         ′
+                                             ∂a∂b,W∆(                   σ,    σ     )⏐σ′=σ            =             2         α∇a∂b,ω(σ)                           ,                      (3.6.15b)
+                                                                                       ⏐                            γ
+                                            ∇      ∂     ,        ∆(    σ,    σ    ′)⏐                =       −         α′∇         ∂     ,ω(σ)              .                             (3.6.15c)
+                                                a      b     W                         ⏐σ′=σ                        2            a     b
+Here,            γ     =      −2       ,               but               we               have               left               it               as               a               parameter               for               later               reference;               the
+                                    3
+third               equation               can               be               obtained               from               the               second               and               the               gradient               of               the
+ﬁrst.                Using                eq.                (3.3.5)                for                the                variation                of                the                curvature                and                eqs.                (3.6.7)
+and             (3.6.15)             for             the             variation             of             the             renormalization             gives∫
+                                     gc                2          1/2             {         ab                         ab                              µ              ν     ik·X
+           ,WV1              =        2            d     σg               ,ω          (g         Sµν        +     iϵ        Aµν       )[    ∂aX           ∂bX            e            ]r
+                                                                                                                                    ′                  ik·X          }
+                                                                                                                            +α        FR        [e               ]r         ,                 (3.6.16)
+where
+               Sµν         =      −k2sµν               +      kνkωsµω                +      kµkωsνω                 −      (1        +  γ)kµkνsωω                    +4kµkνφ,
+                                                                                                                                                                                          (3.6.17a)
+              Aµν          =      −k2aµν                +     kνkωaµω                  −      kµkωaνω                  ,                                                                  (3.6.17b)
+
+                                                         2               1         µ      ν                  1                             2    ν
+                    F      =(γ−1)k                         φ     +       2γk          k     sµν       −      4γ(1        +        γ)k         s   ν    .                                   (3.6.17c)
+      In             deriving             the             Weyl             variation             (3.6.16)             we             have             integrated             by             parts             and
+also             used             the             relation
+                                                                  2       µ                               α′γ         µ
+                                                          [  ∇      X        eik·X        ]r     =      i          k     R     [   eik·X        ]r     .                                      (3.6.18)
+                                                                                                             4
+The                  left-hand                  side                  would                  vanish                  by                  the                  naive                  equation                  of                  motion,                  but
+here                     the                     equation                     of                     motion                     multiplies                     another                     operator                     at                     the                     same
+point.                 The                 general                 principle                 that                 holds                 in                 this                 case                 is                 that                 the                 operator
+need             not             vanish             but             it             is             not             independent             —             it             can             be             expanded             in             terms
+of                 the                 other                 local                 operators                 in                 the                 theory.                 In                 general                 the                 coeﬃcients                 of
+these             operators             depend             on             the             renormalization             scheme;             the             result             (3.6.18)
+can             be             obtained             by             taking             the             Weyl             variation             of             each             side.

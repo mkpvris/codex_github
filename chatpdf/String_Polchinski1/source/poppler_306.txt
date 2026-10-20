@@ -1,0 +1,45 @@
+284                          9 Higher order amplitudes
+
+vertex operator is normalized
+                                       gc,d : eik·X : .                                (9.1.1)
+For example, with toroidal compactification of one dimension we would
+have gc,25 = gc (2πR)−1/2 as in the previous chapter. Then for the matter
+part of a general OCQ vertex operator, the correct normalization can be
+fixed by the most singular term in the OPE
+                                                2
+                                             gc,d
+                      Vj (k; z, z̄)Vj ! (k; 0, 0) =   + ... .          (9.1.2)
+                                             z 2 z̄ 2
+A bar denotes the Euclidean adjoint (6.7.28). The singularity is |z|−4
+because the vertex operator is of weight (1, 1). A repetition of the tachyon
+pole calculation (6.6.7) then determines the normalization
+                 $                                                                %
+           e−2λ c̃(z̄1 )c(z1 ) c̃(z̄2 )c(z2 ) c̃(z̄3 )c(z3 ) : eik·X (z, z̄) :
+                                              8πi
+                                         =       2
+                                                     |z12 z13 z23 |2 (2π)d δ d (k) .   (9.1.3)
+                                             α! gc,d
+So all normalization constants in the S-matrix are known in terms of
+gc,d = ,d /2π.
+
+                               Three-point amplitudes
+Let us first express the tree amplitude in several useful forms. The gauge-
+fixed expression (5.3.9) for the string S-matrix reduces, for the general
+tree-level, three-point amplitude, to a path integral with three fixed vertex
+operators:
+                                 $                                       %
+         SS2 (1; 2; 3) = e−2λ V̂!1 (∞, ∞)V̂2 (1, 1)V̂3 (0, 0)                     ,    (9.1.4)
+                                                                             S2
+where each numeral ‘n’ is an abbreviation for string momentum and state,
+(kn , jn ). A ˆ is used to designate a vertex operator in the ‘fixed’ picture —
+that is, not including the b-ghost insertions for the integral over position.
+As we have discussed in section 5.4, this is the form that comes naturally
+out of the state–operator mapping, and in the OCQ case takes the form
+                                      V̂j = c̃cVj .                                    (9.1.5)
+Using the results from section 6.7 for translating between path integrals
+on the sphere and matrix elements, this amplitude can also be represented
+as a matrix element or as an operator product coefficient:
+              SS2 (1; 2; 3) = e−2λ%% V̂1 |V̂2 (1, 1)|V̂3 & = e−2λ c123 .               (9.1.6)
+This relates the three-point amplitude in spacetime to a matrix element
+on the world-sheet, and further to the operator product coefficients which
+encode the local properties of the CFT.

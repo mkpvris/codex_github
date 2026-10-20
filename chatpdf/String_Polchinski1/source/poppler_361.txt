@@ -1,0 +1,50 @@
+                                   A.1 Bosonic fields                                       339
+
+This is a functional version of the delta-function integral
+        # ∞        # ∞                                 # ∞
+                                                                             2π
+              dx         dy exp(iλxy) = 2π                   dx δ(λx) =         .       (A.1.51)
+         −∞        −∞                                  −∞                     λ
+
+                                        An example
+
+As an example, we study the Euclidean transition amplitude for the
+harmonic oscillator,
+                                    #
+                                              qf ,U
+              %qf , U|qi , 0&E =        [dq]q ,0 exp(−SE ) ,                           (A.1.52a)
+                                               i
+                                        # U
+                                         '                (
+                               1
+                            SE =      du (∂u q)2 + / 2 q 2 + Sct , (A.1.52b)
+                               2 0
+where Sct is a cutoff-dependent piece to be determined later. To evaluate
+this, separate out the ‘classical’ part of q,
+                                 q(u) = qcl (u) + q ! (u) ,                             (A.1.53)
+where
+                                 −q̈cl (u) + / 2 qcl (u) = 0 ,                         (A.1.54a)
+                                 qcl (0) = qi , qcl (U) = qf .                         (A.1.54b)
+
+The boundary conditions on q ! are then
+                                   q ! (0) = q ! (U) = 0                                (A.1.55)
+and the action separates
+                             SE = Scl (qi , qf ) + S ! + Sct .                          (A.1.56)
+Here
+                                        # U        '                      (
+                                    1
+                   Scl (qi , qf ) =           du (∂u qcl )2 + / 2 qcl2
+                                    2    0
+                                    (qi2 + qf2 ) cosh /U − 2qi qf
+                                 =/                               ,                    (A.1.57a)
+                                               2 sinh /U
+                                        # U        '                     (
+                        1    !
+                    S =                       du (∂u q ! )2 + / 2 q !2 .               (A.1.57b)
+                        2                0
+The amplitude becomes
+                                                         #
+                                                                  0,U
+    %qf , U|qi , 0& = exp[−Scl (qi , qf ) − Sct ]            [dq ! ]0,0 exp(−S ! ) .    (A.1.58)
+
+Expand in a complete set of eigenfunctions of ( = −∂u2 + / 2 subject to

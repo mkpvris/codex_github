@@ -1,0 +1,55 @@
+170                                                      6Tree-levelamplitudes
+
+which      has      vanishing      action      and      so      gives      a      delta      function.      Carrying      out
+the    integrations    leaves
+                                                             ∏      (         2    ′ d/2               (             ′              
+               Z[J]=             i(2π)d,d(J               )             4π      α              exp          −πα         JI    · JI
+                                                        0                  ω2                                           ω2
+                                                            I̸=0               I                                            I
+                                                            (                      2  −d/2
+                           =     i(2π)d,d(J               )     det′       −∇
+                                                        0                 4π2α′
+                                                             (       1   ∫                                                                 
+                                               ×    exp         −             d2σd        2σ′J(σ)·J(σ′)G′(σ,    σ                       ′)       .      (6.2.6)
+                                                                     2
+As          discussed          in          section          2.1          and          further          in          section          3.2,          the          timelike          modesx0
+                                                                                                                                                                    I
+give          rise          to          wrong-sign          Gaussians          and          are          deﬁned          by          the          contour          rotation1
+x0    →−ixd,I                   ̸=0.TheprimedGreen’sfunctionexcludesthezeromode
+  I                   I
+contribution,
+
+                                                ′                       ∑       2πα′
+                                            G(σ1,σ           2)=                  ω2       XI(σ1)XI(σ2)                 .                               (6.2.7)
+                                                                        I̸=0          I
+It             satisﬁes             the             di!erential             equation
+                                −       1      ∇2G′(σ           ,σ     )=        ∑       X    (σ     )X     (σ     )
+                                     2πα′                     1      2                      I      1      I      2
+                                                                                 I̸=0
+                                                                           =     g−1/2,2(σ1               −    σ2)     −     X2     ,                   (6.2.8)
+                                                                                                                                0
+where                 the                 completeness                 of                 theXIhas                 been                 used.                 The                 ordinary                 Green’s
+function             with             a             delta             function             source             does             not             exist.             It             would             correspond
+to             the             electrostatic             potential             of             a             single             charge,             but             on             a             compact             surface
+the               ﬁeld               lines               from               the               source               have               no               place               to               go.               TheX2term               can               be
+                                                                                                                                      0
+thought             of             as             a             neutralizing             background             charge             distribution.
+
+
+                                                                       The              sphere
+
+Specializing              to              the              sphere,              the              solution              to              the              di!erential              equation              (6.2.8)
+is
+                                  ′                            α′                  2
+                              G    (σ1,σ       2)=        −2ln|z12|                   +    f(z1,¯z1)+              f(z2,¯z2)          ,                 (6.2.9)
+
+
+
+
+
+ 1 Acuriousfactorof                    ihas     been     inserted     into     eq.     (6.2.6)     by     hand     because     it     is     needed     in     the
+   S-matrix,         but         it         can         be         understood         formally         as         arising         from         the         same         rotation.         If         we         rotated         the
+   entire          ﬁeldX0   →−iXd,    the    Jacobian    should    be    1,    by    the    usual    argument    about    rescaling    ﬁelds
+   (footnote        1         of         the         appendix).        However,         we        do         not         want         to        rotatex0,becausethismodeproduces
+                                                                                                                 0
+   the    energy    delta    function.    So    we    have    to    rotate    it    back,    giving    a    factor    ofi.

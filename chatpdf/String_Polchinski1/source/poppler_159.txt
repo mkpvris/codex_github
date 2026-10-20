@@ -1,0 +1,52 @@
+                         4.4 The no-ghost theorem                         137
+
+where
+                     ∞
+                           '           25
+                                                     
+              α$ 2 (                  (
+                m =     n Nbn + Ncn +     Nµn             − 1,       (4.3.32a)
+              4     n=1               µ=0
+                      ∞
+                           '              25
+                                                     
+              α$ 2 (                     (
+                m̃ =     n Ñbn + Ñcn +     Ñµn         − 1.      (4.3.32b)
+              4      n=1                 µ=0
+
+Repeating the earlier exercise, we find at m2 = −4/α$ the tachyon, and
+at m2 = 0 the 24 × 24 states of the graviton, dilaton, and antisymmetric
+tensor.
+
+
+
+                        4.4    The no-ghost theorem
+
+
+In this section we prove that the BRST cohomology of the string has
+a positive inner product and is isomorphic to the light-cone and OCQ
+spectra. We are identifying the BRST cohomology as the physical Hilbert
+space. We will also need to verify, in our study of string amplitudes, that
+the amplitudes are well defined on the cohomology (that is, that equivalent
+states have equal amplitudes) and that the S-matrix is unitary within the
+space of physical states.
+  We will work in the general framework described at the end of chapter 3.
+That is, the world-sheet theory consists of d free X µ fields including µ = 0,
+plus some compact unitary CFT K of central charge 26 − d, plus the
+ghosts. The Virasoro generators are a sum
+                                           g
+                           Lm = LX    K
+                                 m + Lm + Lm .                         (4.4.1)
+
+By compact we mean that LK 0 has a discrete spectrum. For example, in the
+case that K corresponds to strings on a compact manifold, the term α$ p2
+in L0 is replaced by the Laplacian −α$ ∇2 , which has a discrete spectrum
+on a compact space.
+  The general state is labeled
+
+                          |N, I; k+ ,   |N, Ñ, I; k+ ,                (4.4.2)
+
+in the open and closed strings respectively, where N (and Ñ) refer to both
+the d-dimensional and ghost oscillators, k is the d-momentum, and I labels
+the states of the compact CFT with given boundary conditions. The b0
+condition (4.3.19) or (4.3.29) is imposed as above, implying the mass-shell

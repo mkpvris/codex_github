@@ -1,0 +1,49 @@
+176                                                     6Tree-levelamplitudes
+
+                                                           The              projective              plane
+The             method             of             images             gives             the             Green’s             function             as
+                         ′                           α′                          2        α′                            2
+                     G    (σ1,σ      2)=        −2        ln|z1−z2|                 −2ln|1+                   z1¯z2|        .                      (6.2.38)
+
+Now            ⟨                                   ⟩
+                   ∏n                                                                              ∑            ∏n                         ′  2
+                           :eiki·X(zi,¯zi)       :              =     iCX        (2π)d,d(                ki)           |1+       zi¯zi|αki/2
+                                                                           RP2                          i
+                   i=1                                 RP2                                                      i=1
+                                                                     ∏n
+                                                               ×            |z    −    z   |α′ki·kj|1+           z¯z|α′ki·kj         ,             (6.2.39)
+                                                                                i         j                        i   j
+                                                                     i,j=1
+                                                                      i<j
+and          so          on          for          more          general          expectation          values.          There          is          no          boundary
+because       the       involution       has       no       ﬁxed       points       —       there       is       no       way       for       a       point
+                                                          ¯−1
+zto       approach       its       image−z                        .
+
+                                                             6.3                                              ThebcCFT
+
+                                                                     The              sphere
+The                path                integral                for                the                ghosts                 has                 already                been                set                up                in                section                5.3.
+According              to              the              Riemann–Roch              theorem,              the              simplest              nonvanishing              ex-
+pectation             value             will             be
+                                             ⟨  c(z1)c(z2)c(z3)˜c(¯z4)˜c(¯z5)˜c(¯z6)                         ⟩S2     .                               (6.3.1)
+Up                  to                  normalization                  (a                  functional                  determinant),                  the                  result                  (5.3.18)                  was
+just             the             zero-mode             determinant,
+                                                                     det     Ca     (σi)     .                                                       (6.3.2)
+                                                                                0j
+The             six             CKVs             were             found             in             section             6.1.             In             a             complex             basis             they             are
+                                                           Cz     =1,z,z           2   ,      C¯z    =0        ,                                   (6.3.3a)
+                                                           Cz     =0        ,      C¯z=1,¯z,            ¯z2    .                                   (6.3.3b)
+
+In              this              basis              the              determinant              splits              into              two              3×3blocks,andtheexpec-
+tation     value     becomes⏐                    ⏐         ⏐                             ⏐
+                    ⏐    111                     ⏐         ⏐    111                      ⏐
+        g           ⏐                            ⏐         ⏐                             ⏐           g
+    C       det     ⏐   z1z2z3⏐det                         ⏐   ¯z4¯z5¯z6⏐=Cz12z13z23¯z45¯z46¯z56                                                .    (6.3.4)
+       S2           ⏐                            ⏐         ⏐                             ⏐           S2
+                    ⏐   z2z2z2⏐                            ⏐   ¯z2¯z2¯z2⏐
+                          1        2         3                    4        5        6
+The                 constant   Cg        includes                 the                 functional                 determinant                 and                 also                 a                 ﬁnite-
+                                   S2
+dimensional                Jacobian                (independent                of                the                positions)                that                arises                because
+the             basis             (6.3.3)             is             not             orthonormal.

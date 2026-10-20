@@ -1,0 +1,32 @@
+                          Appendix A
+               A short course on path integrals
+
+
+
+
+Path integrals are a powerful means of representing quantum theories,
+especially on surfaces of nontrivial topology. The introduction we present
+here is similar to that which the reader will find in any modern field
+theory text. We include it in order to emphasize certain ideas that we will
+need, such as the relation between the path integral and Hilbert space
+formalisms and the use of operator equations inside the path integral.
+
+                              A.1     Bosonic fields
+
+Consider first a quantum mechanics problem, one degree of freedom with
+Hamiltonian Ĥ(p̂, q̂), where
+                                    [q̂, p̂] = ih̄ .                     (A.1.1)
+Throughout the appendix operators are indicated by hats. A basic quantity
+of interest is the amplitude to evolve from one q eigenstate to another in
+a time T ,
+                            %qf | exp(−iĤT /h̄)|qi & .                  (A.1.2)
+  In field theory it is generally convenient to use the Heisenberg repre-
+sentation, where operators have the time dependence
+                      Â(t) = exp(iĤt/h̄) Â exp(−iĤt/h̄) .            (A.1.3)
+The state |q, t& is an eigenstate of q̂(t),
+                               q̂(t)|q, t& = |q, t&q .                   (A.1.4)
+In terms of the t = 0 Schrödinger eigenstates this is
+                            |q, t& = exp(iĤt/h̄)|q& .                   (A.1.5)
+In this notation the transition amplitude (A.1.2) is %qf , T |qi , 0&.
+
+                                         329

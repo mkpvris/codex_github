@@ -1,0 +1,46 @@
+338                                                                       Appendix              A
+
+where           δ/δφ        i  acts           only           onFi.The               self-contractions                       are             then             the             terms
+                                                                 δ2
+                                                    δφ      (x)δφ          (y)          (no           sum           oni)   .                                  (A.1.44)
+                                                           i              i
+     Consider              now              the              overall              factorZ[0].              We              assume              that          (              is              self-adjoint
+and             so             we             expandφ(x)             in             a             complete             set             of             eigenfunctionsΦi(x):
+                                                                                   ∑
+                                                                φ(x)=                      φiΦi(x),                                                           (A.1.45)
+                                                                                      i
+where
+
+                                                     ∫                        (Φi(x)=                  λiΦi(x),                                            (A.1.46a)
+                                                           ddxΦi(x)Φj(x)=                              δij.                                                (A.1.46b)
+
+Deﬁne             the             path             integral             measure             by
+                                                                                        
+                                                                      [dφ     ]=               dφ     i  .                                                    (A.1.47)
+                                                                                           i
+Then                                                                    [∫                         (                     ]
+                                                                                                           1      2
+                                               ⟨   1  ⟩   =                      dφ     i  exp         −2φi          λi
+                                                                    i
+                                                                      (    2π    1/2
+                                                          =                  λ
+                                                                    i           i
+                                                                 (             (    −1/2
+                                                          =          det      2π                   .                                                          (A.1.48)
+
+The                    product                    of                    eigenvalues                    must                    be                    suitably                    regulated                    and                    renormal-
+ized.                 The                 value                 of⟨1⟩is                 usually                 given                 simply                 as                 (det     ()−1/2,becausea
+rescaling      of     (      is      equivalent      to      a      rescaling      ofφ,theJacobianforwhich
+can      be      absorbed      into      the      bare      couplings.      (In      free      ﬁeld      theory,      the      only
+‘coupling’               that               would               be               renormalized               would               be               ac-number               constant               in
+the             Lagrangian             density;             we             will             see             this             appearing             in             the             example.)
+     All                  of                  the                  above                  discussion                  extends                  readily                  to                  multicomponentqior
+φi.                One                case                of                interest                is                a                complex                scalar                ﬁeld.                One                can                break                this                up
+into              two              real              scalars,φ=2−1/2(φ1+iφ2),      and      the      measure      is      [dφ      dφ                                  ∗]   ≡
+[dφ     1  dφ     2].             For             complex             ﬁelds,             (A.1.48)             becomes
+                         ∫                                   (       ∫                            
+                               [dφ      dφ     ∗]exp            −          ddxφ         ∗(φ           =(det()−1                     .                         (A.1.49)
+
+One      similarly      ﬁnds      for      two      real      ﬁelds
+                         ∫                                    (∫                                   
+                              [dφ     1  dφ     2]exp            i        ddxφ         1(φ2            =(det()−1.                                             (A.1.50)

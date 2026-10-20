@@ -1,0 +1,42 @@
+130                                                        4Thestringspectrum
+
+and             BRST             transformation
+                                         ,BXµ          =     iϵc   X˙   µ   ,                                                                        (4.2.25a)
+                                                                  (       1                       1                    
+                                                                              ˙   µ  ˙                   2        ˙
+                                             ,Bb       =     iϵ      −2X            Xµ      +     2m        −     bc         ,                       (4.2.25b)
+                                             ,Bc       =     iϵc   ˙c.                                                                               (4.2.25c)
+Since        B     is            no            longer            present,            we            have            used            the            equation            of            motion            frome
+to          replace    B    in          the          transformation          law          for   b.          The          reader          can          check          that          the
+new              transformation              (4.2.25)              is              a              symmetry              of              the              action              and              is              nilpotent.
+This            always            works            when            the            ﬁeldsBAare            integrated            out,            though ,B,B′      b    is
+no             longer             identically             zero             but             is             proportional             to             the             equations             of             motion.
+This           is           perfectly           satisfactory:     Q2      =           0           holds           as           an           operator           equation,           which
+                                                                      B
+is             what             we             need.
+     The             canonical             commutators             are
+                                                [pµ,Xν]=                 −iηµν         ,       {b,      c}  =1        ,                                 (4.2.26)
+with       pµ     =    iX˙µ,the            ibeing     from     the     Euclidean     signature.     The     Hamiltonian
+isH=1(p2+m2),      and      the      Noether      procedure      gives      the      BRST      operator
+                 2
+                                                                        QB=cH                .                                                          (4.2.27)
+The                structure                here                is                analogous                to                what                we                will                ﬁnd                for                the                string.                The
+constraint                    (the                    missing                    equation                    of                    motion)                    isH=0,andtheBRST
+operator     isctimes    this.
+     The                ghosts                generate                a                two-state                system,                so                a                complete                set                of                states                is
+|k,   ↓⟩,    |k,↑⟩,where
+                                           pµ|k,↓⟩           =    kµ|k,      ↓⟩     ,pµ|k,            ↑⟩     =    kµ|k,      ↑⟩     ,                (4.2.28a)
+                                           b|k,     ↓⟩    =0        ,b|k,           ↑⟩     =    |k,   ↓⟩     ,                                       (4.2.28b)
+                                           c|k,     ↓⟩    =     |k,   ↑⟩    ,c|k,           ↑⟩    =0        .                                        (4.2.28c)
+The             action             of             the             BRST             operator             on             these             is
+                                  QB|k,↓⟩            =      1(k2      +    m2)|k,        ↑⟩     ,QB|k,              ↑⟩    =0        .                   (4.2.29)
+                                                            2
+From      this      it      follows      that      the      closed      states      are
+                                                               |k,   ↓⟩     ,k2+m2=0                            ,                                    (4.2.30a)
+                                                               |k,   ↑⟩     ,      all    kµ     ,                                                   (4.2.30b)
+
+and             that             the             exact             states             are
+                                                           |k,   ↑⟩    ,k2+m2̸=0                            .                                           (4.2.31)
+
+The      closed      states      that      are      not      exact      are
+                                  |k,   ↓⟩    ,k2+m2=0 ;                               |k,↑⟩        ,k2+m2=0                         .                  (4.2.32)

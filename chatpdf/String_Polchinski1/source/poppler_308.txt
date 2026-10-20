@@ -1,0 +1,43 @@
+286                              9 Higher order amplitudes
+
+condition (9.1.13) is satisfied if the incoming and outgoing vertex operators
+are related
+                                            V̂−i = −V̂i .                                 (9.1.14)
+This is a natural definition: conjugation takes eik·X into e−ik·X , turning a
+vertex operator that injects momentum k µ into the world-sheet into one
+that absorbs it, and similarly for other quantum numbers. The minus sign
+is included to undo the reversal of the order of c̃c by the adjoint, so that
+V̂−i is obtained simply by conjugating all explicit factors of i in the vertex
+operators. Complex conjugation of the path integral then gives
+$                                       %          $                                          %∗
+    V̂!1 (∞, ∞)V̂2 (1, 1)V̂3 (0, 0)= − V̂!−1 (∞, ∞)V̂−2 (1, 1)V̂−3 (0, 0)     ,
+                                S2                                         S2
+                                                                       (9.1.15)
+implying the unitarity relation (9.1.13). Naively, the path integral is mani-
+festly real and so the relation (9.1.15) should hold without the minus sign.
+However, we must remember that the path integral has to be defined by
+specific analytic continuations, and the explicit result (6.2.6) acquired an
+overall factor of i in this way.
+
+
+                    Four-point amplitudes and world-sheet duality
+
+The connected four-point amplitude is
+                                 #          $                                             %
+                           −2λ
+     SS2 (1; 2; 3; 4) = e             d2 z V̂!1 (∞, ∞) V̂2 (1, 1) V̂3 (0, 0) V4 (z, z̄)         .
+                                  C                                                        S2
+                                                                                          (9.1.16)
+Writing the expectation value as a matrix element gives
+                             %% V̂1 |T[ V̂2 (1, 1) V4 (z, z̄) ]|V̂3 & .                   (9.1.17)
+The ghost expectation value is just a constant for OCQ vertex operators,
+but to make the connection with the more general case it is useful to
+move the ghosts around a bit. Using a contour argument one can write
+the ghost insertion for the d2 z integration as
+                         V4 (z, z̄) = (zz̄)−1 {b0 , [ b̃0 , V̂4 (z, z̄) ] } .             (9.1.18)
+Using this and the condition (4.3.29) that b0 and b̃0 annihilate the physical
+states, the matrix element becomes
+
+      θ(1 − |z|) %% V̂1 |V̂2 (1, 1)b0 b̃0 z L0 −1 z̄ L̃0 −1 V̂4 (1, 1)|V̂3 &
+             + θ(|z| − 1) %% V̂1 |V̂4 (1, 1)b0 b̃0 z −L0 −1 z̄ −L̃0 −1 V̂2 (1, 1)|V̂3 & . (9.1.19)
+Let us also write the matrix element after insertion of a complete set of

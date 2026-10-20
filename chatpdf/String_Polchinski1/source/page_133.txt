@@ -1,0 +1,47 @@
+                                                            3.7                      Strings              in              curved              spacetime                                                111
+
+We                   could                   of                   course                   take                   linear                   combinations                   of                   vertex                   operators                   with
+di!erent                     momenta.                     To                     ﬁrst                     order                     the                     Weyl                     variation                     is                     then                     given                     in
+eq.               (3.6.16);               we               take               for               convenience               a               renormalization               scheme               in               which
+γ   =           0.             Relating             this             Weyl             transformation             to           Taa         as             in             eq.             (3.4.6)             gives
+        Ta         =      −        1     /G       gab∂           Xµ∂           Xν        −          i    /B       ϵab∂          Xµ∂            Xν       −       1/ΦR,                       (3.7.12)
+               a                2α′          µν               a              b                  2α′          µν               a             b                   2
+where,             to             linear             order             inχµν    ,  Bµν         and          Φ,
+                G                    α′(          2                            ω                              ω                                     ω                       ′
+            /µν         ≈−            2       ∂χµν             −     ∂ν∂           χµω        −      ∂µ∂          χων        +      ∂µ∂νχ              ω        +2α∂µ∂νΦ,
+                                                                                                                                                                                         (3.7.13a)
+                B                    α′       ω
+            /µν         ≈−            2∂          Hωµν            ,                                                                                                                      (3.7.13b)
+
+                 Φ              D     −      26              α′       2
+             /          ≈               6             −       2    ∂     Φ      .                                                                                                        (3.7.13c)
+We              have              included              in   /Φ        the              ﬂat              spacetime              anomaly              found              in              section              3.4,
+including                the                contribution                proportional                to                26                from                the                ghost                ﬁelds.                The
+symbol                /      is               used               for               the               coeﬃcients               inTaabecause               these               are               essentially
+the                  renormalization                  group                  beta                  functions,                  governing                  the                  dependence                  of
+the              physics              on              world-sheet              scale.              We              will              discuss              this              connection              further,
+though             it             does             not             come             up             in             detail             until             chapter             15.
+      The                    Weyl                    anomalies                    (3.7.13)                    have                    further                    contributions                    from                    higher
+orders                in                the                ﬁelds.                For                example,                expanding                the                path                integral                to                second
+order                 in                 the                 cubic                 interaction                 from                 the                 expansion                 (3.7.10)                 will                 give                 rise
+to                 divergences                 when                 the                 two                 interaction                 vertices                 approach                 one                 another.
+                                                                                                                                                    −2             µ¯          ν
+Their                     OPE                     includes                     a                     singularity                     of                      the                      form|z|∂X∂Xtimes                   the
+square                 of                 the                 derivative                 ofGα/.Integrating                        d2zproduces      a      logarithmic
+divergence.      Di!      invariance      requires      that      the      integral      be      cut      o!      in      terms
+of      the      invariant      distance,|z|exp(ω)                                                       >a0.       This       introduces       a       dependence
+on      the      scale      of      the      metric,      lnzmin                                  =       −ω          +          lna0.TheWeylvariation                                                  /µνG
+thus                gets                a                contribution                proportional                to    O(Gα/ ,γ             )2      which                combines                with
+the             linear             second             derivative             term             to             form             the             spacetime             Ricci             tensor.
+      We                  will                  not                  work                  this                  out                  in                  detail,                  but                  quote                  the                  result                  keeping                  all
+terms             with             up             to             two             spacetime             derivatives
+                    G                 ′                          ′                            α′                          λω                       ′2
+                /µν        =       α    Rµν        +2α∇µ∇νΦ−                                   4Hµλω              Hν              +     O(α            )   ,                             (3.7.14a)
+
+                    B                    α′        ω                            ′     ω                                         ′2
+                /µν        =       −     2    ∇        Hωµν           +      α    ∇       ΦHωµν                +     O(α            )   ,                                                (3.7.14b)
+
+                     Φ              D     −      26              α′        2                  ′                  ω                 α′                       µν λ                       ′2
+                 /         =                6            −        2   ∇      Φ+           α∇ωΦ∇                      Φ−24Hµν λ                         H              +     O(α            )   .
+                                                                                                                                                                                         (3.7.14c)
+Several            terms            in            (3.7.14)            can            be            recognized            from            the            linear            approximation

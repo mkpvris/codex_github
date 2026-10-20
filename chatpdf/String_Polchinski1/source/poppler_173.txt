@@ -1,0 +1,42 @@
+                        5.2 Moduli and Riemann surfaces                            151
+
+path integral includes an integral over Gr and integrals of the n vertex
+operator positions over the world-sheet M. The moduli space at topology
+r with n vertex operators is then
+                                           Gr × Mn
+                               Mr,n =                 .                         (5.2.2)
+                                        (di! × Weyl)r
+  As we have seen for the torus, di!r is not in general connected. Picking
+out the connected component di!r0 that contains the identity, the quotient
+                                          di! r
+                                                                                (5.2.3)
+                                          di! r0
+is the modular group.
+   It is interesting to study the di!×Weyl redundancy of the metric at
+the infinitesimal level. That is, we are looking for small variations of
+the metric that are not equivalent to di!×Weyl transformations and so
+correspond to changes in the moduli. We are also looking for small
+di!×Weyl transformations that do not change the metric; these would
+be infinitesimal elements of the CKG, called conformal Killing vectors
+(CKVs). This will give further insight into the origin of the moduli and
+the CKG.
+   An infinitesimal di!×Weyl transformation changes the metric by
+                   ,gab = −2(P1 ,σ)ab + (2,ω − ∇ · ,σ)gab ,                     (5.2.4)
+where P1 is the traceless symmetric linear combination of derivatives
+(3.3.17). Moduli correspond to variations , $gab of the metric that are
+orthogonal to all variations (5.2.4):
+              !                                                       
+       0=         d2 σ g 1/2 , $gab −2(P1 ,σ)ab + (2,ω − ∇ · ,σ)g ab
+              !                                                           
+          =       d2 σ g 1/2 −2(P1T , $g)a ,σ a + , $gab g ab (2,ω − ∇ · ,σ) . (5.2.5)
+
+The transpose (P1T u)a = −∇b uab is defined as in exercise 3.2. In order for
+the overlap (5.2.5) to vanish for general ,ω and ,σ we need
+                                     g ab , $gab = 0 ,                         (5.2.6a)
+                                    (P1T , $g)a = 0 .                          (5.2.6b)
+The first condition requires that , $gab be traceless, and it is on traceless
+symmetric tensors that P1T acts. For each solution of these equations there
+will be a modulus.
+  CKVs are transformations (5.2.4) such that ,gab = 0. The trace of this
+equation fixes ,ω uniquely, leaving the conformal Killing equation
+                                    (P1 ,σ)ab = 0 .                             (5.2.7)

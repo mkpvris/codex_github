@@ -1,0 +1,50 @@
+                     2.9 More on states and operators                     73
+
+   This also provides one physical interpretation of the central charge. In
+a unitary CFT the ground state is |1, with L0 = L̃0 = 0. The conformal
+transformation (2.6.10) between the radial and time-translation generators
+then implies that
+                                           c + c̃
+                                  E=−                                (2.9.17)
+                                             24
+for the ground state. This is a Casimir energy, coming from the finite size
+of the system, and it depends only on the central charge. On dimensional
+grounds this energy is inverse to the size + of the system, which is 2π here,
+so the general result would be
+                                      π(c + c̃)
+                                E=−             .                    (2.9.18)
+                                        12+
+   We have now given three honest ways of calculating normal ordering
+constants: from the Virasoro algebra as in eq. (2.7.8), by relating the two
+forms of normal ordering as in eq. (2.7.11), and from the state–operator
+mapping above. Nevertheless the idea of adding up zero-point energies is
+intuitive and a useful mnemonic, so we give a prescription that can be
+checked by one of the more honest methods:
+
+  1. Add the zero-point energies, 12 ω for each bosonic mode and − 12 ω
+     for each fermionic (anticommuting) mode.
+                                                    @
+  2. One encounters divergent sums of the form ∞ n=1 (n−θ), the θ arising
+     when one considers nontrivial periodicity conditions. Define this to
+     be
+                         ∞
+                                          1  1
+                               (n − θ) =     − (2θ − 1)2 .           (2.9.19)
+                         n=1
+                                           24 8
+
+     This is the value one obtains as in eq. (1.3.32) by regulating and
+     discarding the quadratically divergent part.
+
+  3. The above gives the normal ordering constant for the w-frame gen-
+     erator T0 , eq. (2.6.8). For L0 we must add the nontensor correction
+      1
+     24 c.
+
+For the free boson, the modes are integer-valued so we get one-half of
+                                                     1
+the sum (2.9.19) for θ = 0 after step 2, which is − 24 . This is just o!set
+                                     X
+by the correction in step 3, giving a = 0. For the ghosts we similarly get
+ 2   26
+24 − 24 = −1.

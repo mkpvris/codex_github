@@ -1,0 +1,46 @@
+140                                                        4Thestringspectrum
+
+and
+                                                    ∑∞       (                                                                                      
+                 S≡{          Q1,R}           =                mb−mcm             +    mc−mbm              −    α+       α−     −    α−       α+
+                                                                                                                   −m      m            −m       m
+                                                    m=1
+                                                    ∑∞
+                                              =              m(Nbm           +    Ncm       +     Nm+     +     Nm−)       .                            (4.4.15)
+
+                                                    m=1
+The                   normal                   ordering                   constant                   is                   determined                   by                   noting                   thatQ1andR
+both                   annihilate                   the                   ground                    state.                   Note                   thatQ1commutes                   withS.We
+can     then     calculate     the     cohomology     within     each     eigenspace     ofS,andthe
+full       cohomology       is       the       union       of       the       results.       If|ψ⟩isQ1-invariant                  with
+S|ψ⟩       =     s|ψ⟩,thenfornonzero                                  s
+                                               |ψ⟩=1{Q,R}|ψ⟩                               =     1Q       R|ψ⟩         ,                                (4.4.16)
+                                                              s         1                        s      1
+
+and                    so|ψ⟩is                    actuallyQ1-exact.                    Therefore                    theQ1 cohomology                    can                    be
+nonzero           only           at  s   =           0.           By           the           deﬁnition           (4.4.15)           ofS,thes=0stateshave
+no       longitudinal       excitations       —       thes=      0       space       is       justH⊥.Theoperator
+Q1annihilates     all     states     inH⊥,     so     they     are     allQ1-closed     and     there     are     no
+Q1-exact     states     in     this     space.     Therefore     the     cohomology     isH⊥                                                       itself.              We
+have             proven             the             no-ghost             theorem,             but             for             the             operatorQ1,notQB.
+     The      proof      had      two      steps,      the      ﬁrst      being      to      show      that      the      cohomology
+could       only       come       froms=0states(thekernelof                                                           S),       and       the       second       to
+show              that  s   =            0              states              wereQ1-invariant.              It              is              useful              to              prove              the              second
+step             in             a             more             abstract             way,             using             the             property             that             alls=0 states have
+the       same       ghost       number,       in       this       case−1.       SupposeS|ψ⟩=      0.       SinceS                                              and
+                                                                                          2
+Q1     commute      we      have
+                                                          0=       Q1S|ψ⟩=SQ1|ψ⟩                             .                                          (4.4.17)
+The           state   |ψ⟩      has           ghost           number      −1,so            Q1|ψ⟩has           ghost           number           +1.           Since
+                                                                              2                                                                        2
+S    is                  invertible                  at                  this                  ghost                  number,                  it                  must                  be                  thatQ1|ψ⟩=0aswe
+wished             to             show.
+     It                     remains                    to                    show                     that                    the                    cohomology                     ofQBis                    the                    same                    as                    the
+cohomology             of           Q1.             The             idea             here             is             to             use             in             place             ofSthe             operator
+                                                               S    +    U     ≡{      QB,R}            .                                               (4.4.18)
+Now,         U     =     {Q0      +    Q−1,R}             lowers          Nlc      by            one            or            two           units.            In           terms            ofNlcy,
+S    is                  diagonal                  andUis                  lower                  triangular.                  By                  general                  properties                  of                  lower
+triangular              matrices,              the              kernel              ofS+U     can              be              no              larger              than              the              kernel
+of               its               diagonal               partS.               In               fact               they               are               isomorphic:               if|ψ0⟩is               annihilated
+by     S,then
+                                     |ψ⟩=(1              −S−1U+S−1US−1U                                      −     ...)|ψ0⟩                             (4.4.19)

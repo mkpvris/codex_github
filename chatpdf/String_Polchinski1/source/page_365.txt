@@ -1,0 +1,44 @@
+                                                                        A.2                      Fermionic              ﬁelds                                                              343
+
+Using             the             further             property             that      |ψ⟩        is             an             eigenstate             ofψˆ,             one             obtains
+                                                                           ∫
+                         −⟨ψ|f(χ,ˆ                 ψˆ  )|ψ′⟩         =            dχ      f  (χ,      ψ  ′)exp[χ(ψ′                  −ψ)]             .                        (A.2.16)
+
+This             holds             for             any             function f    with             the             prescription             that             it             is             written             with
+the       ψˆ    on              the              right.
+      We                    can                    now                    emulate                    the                    bosonic                    discussion,                    using                    the                    completeness
+relation              (A.2.12)              to              join              together              successive              time              steps,              with              the              result
+                                                            ∫
+            ⟨ψf,T           |ψi,0⟩≈−                               dχ    0dψ       1dχ      1  ...dψ          N−1dχ           N−1
+
+                                                                                      N∑−1[                                                                                           ]
+                                                                      ×exp                         −iH(χm,ψ                   m).−χm(ψm+1                             −     ψm)
+                                                                                       m{=0                                                                 }
+                                                      ∫                                      ∫    T          [                                           ]
+                                              →             [dχdψ           ]exp                       dt       −χψ˙          −     iH(χ,      ψ       )          .            (A.2.17)
+                                                                                                0
+The                  inconvenient                  sign                  in                  the                  integral                  representation                  has                  been                  oﬀset                  by
+reversing          the          order          of          Grassmann          integrations.          A          typical          fermionic          Hamil-ˆ
+tonian               is  H       =      mχˆψ.ˆ         The             corresponding             Lagrangian             isL                               =      iχ   ψ˙   −      H.For
+such       ﬁrst       order       Lagrangians       the       Hamiltonian       and       Lagrangian       formula-
+tions    coincide,    and    the    result    (A.2.17)    is    also    the    Lagrangian    path    integral.
+      There     are     two     useful     inner     products     for     this     system,
+                               (A)           :      ⟨↑  |    ↑  ⟩   =      ⟨↓  |    ↓  ⟩   =1          ,       ⟨↑  |    ↓  ⟩    =     ⟨↓  |    ↑  ⟩    =0          ,        (A.2.18a)
+                                (B)           :     ⟨↑  |    ↓  ⟩   =      ⟨↓  |    ↑  ⟩   =1          ,       ⟨↑  |    ↑  ⟩    =     ⟨↓  |    ↓  ⟩    =0          .        (A.2.18b)
+Inner                  product                  (A)                  is                  positive                  deﬁnite                  and                  givesψˆ†=χˆ.                  It                  is                  the                  inner
+product                      for                      an                      ordinary                      physical                      oscillator.                      Inner                      product                      (B)                      is                      not
+positive,                   and                   it                   makesψˆand   χˆ    Hermitean.                   It                   is                   the                   appropriate                   inner
+product                for                the                Faddeev–Popov                ghost                system,                as                discussed                in                chapter                4.
+The           derivation           of           the           path           integral           was           independent           of           the           choice           of           inner
+product,            but            the            relations            (A.2.14)            determine            the            expansion            of                ⟨ψ|       in            basis
+states             in             terms             of             the             inner             product.
+      All              of              the              discussion              of              the              bosonic              case              applies              to              the              fermionic              path
+integral                     as                     well.                     The                     derivation                     is                     readily                     extended                     to                     multiple                     Fermi
+oscillators             and             to             ﬁeld             theory.             Renormalization             theory             works             in             the             same
+way                      as                      for                      the                      bosonic                      path                      integral.                      Fermionic                      path                      integrals                      again
+satisfy          cutting          relations,          which          simply          amount          to          taking          one          of          the          iterated
+integrals               (A.2.17)               and               saving               it               for               the               end.               Insertion               ofψ(t)andχ(t)      in
+the       path       integral       again       gives       the       corresponding       operator       in       the       matrix
+element,     and     multiple     insertions     are     again     time-ordered.     The     path     integral
+insertion
+                                                                     ψ(t)ψ(t′)=                     −ψ(t′)ψ(t)(A.2.19)

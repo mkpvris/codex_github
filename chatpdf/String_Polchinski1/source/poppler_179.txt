@@ -1,0 +1,46 @@
+                            5.3 The measure for moduli                          157
+
+elegant result. The complications caused by the moduli and the CKVs are
+taken into account by the c and b insertions in the path integral. For each
+fixed coordinate, dσia is replaced by cai , while each metric modulus gives
+rise to a b insertion.
+
+                       Expression in terms of determinants
+In eq. (5.3.8) we have represented the Faddeev–Popov determinant as an
+integral over Grassmann parameters and fields. We now reduce it to a
+product of finite-dimensional and functional determinants. When we go
+on to study the string S-matrix in coming chapters, this direct path integral
+approach is just one of the methods we will use.
+   Expand the ghost fields in suitable complete sets,
+                     (                                (
+          ca (σ) =        cJ CaJ (σ) ,    bab (σ) =        bK BKab (σ) .    (5.3.10)
+                      J                                K
+
+The complete sets CaJ and BKab are defined as follows. The derivative
+P1 appearing in the ghost action takes vectors into traceless symmetric
+tensors. Its transpose does the reverse. The ghost action can be written
+with either,
+                             1              1 T
+                          Sg = (b, P1 c) =   (P b, c) .             (5.3.11)
+                            2π             2π 1
+We cannot diagonalize P1 in a di!-invariant way because it turns one
+kind of field into another, but we can diagonalize P1T P1 and P1 P1T :
+                P1T P1 CaJ = νJ$2 CaJ ,                      2
+                                              P1 P1T BKab = νK BKab .       (5.3.12)
+The eigenfunctions can be chosen real, and are normalized in the respective
+inner products
+                                     !
+                     (CJ , C ) =
+                             J$          d2 σ g 1/2 CaJ CJ $ a = ,JJ $ ,   (5.3.13a)
+                                     !
+                 (BK , BK $ ) =          d2 σ g 1/2 BKab Bab
+                                                          K $ = ,KK $ .    (5.3.13b)
+  Now note that
+                     (P1 P1T )P1 CJ = P1 (P1T P1 )CJ = νJ$2 P1 CJ ,         (5.3.14)
+so P1 CJ is an eigenfunction of P1 P1T . In the same way, P1T BK is an
+eigenfunction of P1T P1 . Thus there is a one-to-one correspondence between
+the eigenfunctions, except when P1 CJ = 0 or P1T BK = 0. The latter
+correspond to zero eigenvalues of P1T P1 or P1 P1T . These are just the
+CKVs and holomorphic quadratic di!erentials, and so their numbers are
+respectively κ and µ. Let us label the eigenfunctions with zero eigenvalue
+as C0j or B0k , while the nonzero eigenvalues are labeled with J, K = 1, . . ..

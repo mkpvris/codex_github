@@ -1,0 +1,50 @@
+286                                                               9                    Higher              order              amplitudes
+
+condition          (9.1.13)          is          satisﬁed         if          the         incoming          and          outgoing          vertex          operators
+are             related
+                                                                                   Vˆ     −i     =      −Vˆ        i   .                                                                (9.1.14)
+This               is               a               natural               deﬁnition:               conjugation               takes eik·X          into         e−ik·X,               turning               a
+vertex                operator                that                injects                momentum                kµ       into                the                world-sheet                into                one
+that            absorbs            it,            and            similarly            for            other            quantum            numbers.            The            minus            sign
+is             included             to             undo             the             reversal             of             the             order             ofˆ˜ccby             the             adjoint,             so             that
+V−i          is           obtained           simply           by           conjugating           all           explicit           factors           of                i   in           the           vertex
+operators.             Complex             conjugation             of             the             path             integral             then             gives
+ ⣨      ˆ   ′                      ˆ                     ˆ                    ⟩                      ⣨      ˆ    ′                         ˆ                         ˆ                        ⟩∗
+     V1(∞,               ∞)V2(1,                 1)V3(0,                0)        S     =      −          V−1(∞,                 ∞)V−2(1,                    1)V−3(0,                   0)        S       ,
+                                                                                    2                                                                                                               2
+                                                                                                                                                                                        (9.1.15)
+implying            the            unitarity            relation            (9.1.13).            Naively,            the            path            integral            is            mani-
+festly            real            and            so            the            relation            (9.1.15)            should            hold            without            the            minus            sign.
+However,              we              must               remember              that              the              path              integral              has              to              be              deﬁned              by
+speciﬁc               analytic               continuations,               and               the               explicit               result               (6.2.6)               acquired               an
+overall             factor             of      i  in             this             way.
+
+
+                                        Fo    u    r    -    p    o    i    n    t                         a    m    p    l    i    t    u    d    e    s                         a    n    d                         w    o    r    l    d    -    s    h    e    e    t                         d    u    a    l    i    t y
+
+The             connected             four-point             amplitude             is
+                                                                ∫                 ⣨                                                                                                      ⟩
+        SS      (1;      2;      3;      4)           =e−2λ             d2z            Vˆ    ′  (∞,       ∞)       Vˆ    2(1,       1)    Vˆ     3(0,0)V4(z,                       ¯z)             .
+              2                                                                              1                                                                                               S
+                                                                   C                                                                                                                           2
+                                                                                                                                                                                        (9.1.16)
+Writing           the           expectation           value           as           a           matrix           element           gives
+                                                          ⟨⟨Vˆ      1|T[        Vˆ    2(1,       1)    V4(z,¯z)]|Vˆ                      3⟩     .                                       (9.1.17)
+
+The        ghost        expectation        value        is        just        a        constant        for        OCQ        vertex        operators,
+but           to           make           the           connection           with           the           more           general           case           it           is           useful           to
+move          the          ghosts          around          a          bit.          Using          a          contour          argument          one          can          write
+the        ghost        insertion        for        thed2z                            integration             as
+
+                                                                                            −1                  ˜          ˆ
+                                                  V4(z,            ¯z)=(           z¯z)           {b0,[b0,V4(z,¯z)]                                }    .                               (9.1.18)
+                                                                                                                                      ˜
+Using       this       and       the       condition       (4.3.29)       thatb0                                          andb0               annihilate       the       physical
+states,        the        matrix        element        becomes
+                                           ˆ         ˆ                         ˜        L0−1           L˜0−1         ˆ                       ˆ
+           θ(1       −|       z|)⟨⟨V1|V2(1,                         1)b0b0z                         ¯z             V4(1,            1)|V3⟩
+                                                                                                                                    ˜
+                                                                ˆ          ˆ                         ˜        −L0−1             −L0−1             ˆ                       ˆ
+                          +θ(|z|−                    1)⟨⟨V1|V4(1,                         1)b0b0z                            ¯z                V2(1,            1)|V3⟩               .  (9.1.19)
+
+Let               us               also               write               the               matrix               element               after               insertion               of               a               complete               set               of

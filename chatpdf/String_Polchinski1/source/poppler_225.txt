@@ -1,0 +1,52 @@
+                                  6.7 General results                                    203
+
+frame. To see how this works, consider a holomorphic operator of weight
+h, whose Laurent expansion is
+                                              ∞
+                                              (    On
+                                 O(z) = ih          n+h
+                                                        .                           (6.7.29)
+                                             n=−∞ z
+Its simple adjoint is
+                                               ∞
+                                               (     O†n
+                               O(z)† = i−h            n+h
+                                                          .                         (6.7.30)
+                                              n=−∞ z̄
+Then the Euclidean adjoint is
+                                    ∞
+                                    (        O†n         ∞
+                                                         ( O†−n
+            O(z) = i−h (−z −2 )h            −n−h
+                                                 = ih            n+h
+                                                                       .            (6.7.31)
+                                   n=−∞ z               n=−∞ z
+
+For an operator that is Hermitean in Minkowski time, O†−n = On , and so
+this operator is also Hermitean3 under O. The Euclidean adjoint (6.7.28)
+conjugates all explicit factors of i, but leaves z and z̄ indices unchanged.
+This is its whole e!ect, other than an overall factor (−1)Na (Na −1)/2 from
+reversing the order of anticommuting fields; here Na is the total number
+of anticommuting fields in the operator.
+   This is the natural conformally invariant operation of conjugation, so
+it must be that
+                               -- Ai | = K-Ai |                      (6.7.32)
+for some constant K. For a direct demonstration, the best we have come
+up with is
+              -- i | j * ≡ -- 1|A%i (∞, ∞)|j* = K-1|A%i (∞, ∞)|j*
+                          = K-1|Ai (0, 0)† |j* = K-j|Ai (0, 0)|1*∗
+                          = K-j|i*∗ = K-i|j* .                                      (6.7.33)
+The only step here that is not either a definition or obvious is the
+assumption of proportionality, -- 1| = K-1|. This must hold because |1* is
+the unique S L(2,C)-invariant state.
+   For the X CFT we have seen that K X = iCSX2 . For the ghost CFT, the
+Laurent expansion of the amplitude (6.3.4) gives -- 0|c̃0 c0 |0* = −CSg2 , where
+|0* = c̃1 c1 |1*. The Hermitean inner product was defined in eq. (4.3.18) as
+-0|c̃0 c0 |0* = i, so K g = iCSg2 .
+   Except for the is, which are absent in a unitary CFT, one can set K = 1
+by adding an Euler number term to the action. In a Hermitean basis of
+operators, the two inner products are then identical, and the distinction
+
+3 Because its Laurent expansion has no factor of i, the Faddeev–Popov c ghost is actually
+ anti-Hermitean under the Euclidean adjoint. This is due to an inconvenient conflict between
+ conventions, and has no significance.

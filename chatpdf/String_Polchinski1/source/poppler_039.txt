@@ -1,0 +1,43 @@
+                       1.3 The open string spectrum                      17
+
+p+ are then like spatial coordinates and momenta, as are the transverse
+xi and pi .
+   We start by illustrating the procedure in the case of the point particle,
+                   " . Fix the parameterization of the world-line by
+using the action Spp
+                                   X + (τ) = τ .                     (1.3.3)
+The action then becomes
+                      !   "                                  #
+               "    1
+              Spp =     dτ −2η −1 Ẋ − + η −1 Ẋ i Ẋ i − ηm2 .      (1.3.4)
+                    2
+The canonical momenta pµ = ∂L/∂Ẋ µ are
+                        p− = −η −1 ,         pi = η −1 Ẋ i .        (1.3.5)
+Also recall the metric pi = pi and p+ = −p− . The Hamiltonian is
+                           H = p− Ẋ − + pi Ẋ i − L
+                               pi pi + m2
+                             =             .                         (1.3.6)
+                                   2p+
+Note that there is no term p+ Ẋ + because X + is not a dynamical variable
+in the gauge-fixed theory. Also, η̇ does not appear in the action and so
+the momentum pη vanishes. Since η = −1/p− it is clear that we should
+not treat η as an independent canonical coordinate; in a more complete
+treatment we would justify this by appealing to the theory of systems with
+constraints.
+   To quantize, impose canonical commutators on the dynamical fields,
+                    [pi , X j ] = −iδi j ,   [p− , X − ] = −i .      (1.3.7)
+The momentum eigenstates |k− , k i , form a complete set. The remaining
+momentum component p+ is determined in terms of the others as follows.
+The gauge choice relates τ and X + translations, so H = −p+ = p− .
+The relative sign between H and p+ arises because the former is active
+and the latter passive. Then eq. (1.3.6) becomes the relativistic mass-shell
+condition, and we have obtained the spectrum of a relativistic scalar.
+  Now turn to the open string, taking again the coordinate region −∞ <
+τ < ∞ and 0 ≤ σ ≤ +. Again we must make a gauge choice to fix the
+redundancies in the Polyakov action, and by a good choice we can also
+make the equations of motion simple. Set
+                                    X+ = τ ,                        (1.3.8a)
+                                    ∂σ γσσ = 0 ,                    (1.3.8b)
+                                    det γab = −1 .                  (1.3.8c)
+That is, we choose light-cone gauge for the world-sheet time coordinate
+and impose two conditions on the metric. This is three conditions for

@@ -1,0 +1,47 @@
+330                                                                                       Appendix              A
+
+
+                                                 T                                                                  qf
+
+
+
+
+
+
+
+
+
+                                                  t2
+                                                  t1
+                                                 0                                        q
+                                                                                             i
+
+Fig.                A.1.                                      Transition                amplitude                broken                down                into                time                steps.                The                dashed                line
+suggests                   a                   piecewise                   linear                   path,                   which                   is                   one                   of                   many                   ways                   to                   deﬁne                   path
+integration.
+
+
+      By            inserting            a            complete            set            of            states,            we            can            write            the            transition            ampli-
+tude              as              a              coherent              sum              over              all              statesqthrough              which              the              system              might
+pass             at             some             intermediate             time∫t:
+
+                                                ⟨qf,T            |qi,0⟩           =              dq      ⟨qf,T|q,    t⟩⟨q,    t|qi,0⟩                               .                             (A.1.6)
+
+Divide             the             time             interval             further             into          N       steps             as             in             ﬁgure             A.1,
+                                                                          tm      =      m.            ,                                                .=T/N      ,                              (A.1.7)
+and          corresponding          to          each          intermediate          time          insert          a          complete          set          of          states
+                                                              ∫                                           N−1
+                    ⟨qf,T|qi,0⟩=                                     dqN−1              ...dq         1               ⟨qm+1,tm+1|qm,tm⟩.                                                          (A.1.8)
+                                                                                                           m=0
+                                                                   ¨
+Tr a n s l a t e                   b a ck                   to                   S ch rodinger                 formalism                 and                 introduce                 an                 integral                 over
+intermediate               momenta,
+            ⟨qm+1,tm+1|qm,tm⟩                                     =∫⟨qm+1|                  exp(−iH./ˆ                      ¯h)|qm⟩
+                                                                  =           dpm         ⟨qm+1|pm⟩⟨pm|                           exp(−iH./ˆ                      ¯h)|qm⟩             .           (A.1.9)
+
+By              commuting,              we              can              always              write          Hˆ       with              all   pˆ    to              the              left              and              allqˆto
+the             right,             so             that
+                                                      ⟨pm|Hˆ           (p,ˆ     qˆ)|qm⟩            =      H(pm,qm)⟨pm|qm⟩                                    .                                 (A.1.10)
+
+Use       this       to       evaluate       the       matrix       element       in       eq.       (A.1.9).       From       expanding       the
+exponential        there        will        be        terms        of        order.2                                           and        higher        that        haveqˆ                          to                the

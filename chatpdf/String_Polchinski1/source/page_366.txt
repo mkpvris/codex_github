@@ -1,0 +1,45 @@
+344                                                                 Appendix              A
+
+becomes           the           operator
+              T[ψˆ    (t)ψˆ    (t′)]      ≡      θ(t     −    t′)ψˆ   (t)ψˆ    (t′)   −    θ(t′     −    t)ψˆ   (t′)ψˆ    (t)    .              (A.2.20)
+
+Note                  that                  a                  minus                  sign                  appears                  in                  the                  deﬁnition                  of                  time-ordering.                  The
+equations         of         motion         and         the         Euclidean         continuation         work         as         in         the         bosonicˆ
+case,             but             there             is             one             important             change.             Consider             a             general             operatorA,
+                                                                  Aˆ  |i⟩   =     |j⟩Aji,                                                       (A.2.21)
+
+where         i,      jrun             over↓  and      ↑.Thenbyexpanding                                 Aˆ|ψ⟩in     terms     of     the     basis
+states      one      ﬁnds                      ∫
+                                                     dψ     ⟨ψ|Aˆ     |ψ⟩      =     A↓↓      −    A↑↑
+                                                                                          [           Fˆ  ˆ  ]
+                                                                               =Tr          (−1)         A       ,                              (A.2.22)
+
+where            the            fermion            number   Fˆ   has            been            deﬁned            to            be            even            for|↓⟩and            odd
+for     |↑⟩    .        In        particular,
+                          ∫                                               [            ˆ                          ]
+                                dψ     ⟨ψ,    U   |ψ,    0⟩    =Tr          (−1)F         exp(−HUˆ              )    .                          (A.2.23)
+
+In          contrast          to          the          bosonic          results          (A.1.33)          and          (A.1.34),          theperiodic  path
+integral         gives         the         trace         weighted         by         (−1)Fˆand         the  antiperiodic              path         integral
+gives             the             simple             trace.
+     Feynman                   diagrams                   are                   as                   in                   the                   bosonic                   case,                   but                   the                   determinants
+work             out             diﬀerently.             Consider
+                                                         ∫                             (∫                         
+                                          ⟨  1  ⟩   =         [dψ       dχ  ]exp                ddxχ       (ψ          ,                        (A.2.24)
+
+where         we         have         again         switched         to         the         notation         of         ﬁeld         theory.         Expandψ
+in             eigenfunctions             of          (,             andχin             eigenfunctions             of          (T,
+                                                       ∑                                               ∑
+                                     ψ(x)=                    ψiΨi(x),χ                   (x)=                 χiΥi(x),                       (A.2.25a)
+                                                          i                                               i
+                                (Ψi(x)=                λiΨi(x),                (TΥi(x)=                 λiΥi(x),                             (A.2.25b)
+                                                          ∫
+                                                               ddxΥi(x)Ψj(x)=                        δij     .                                (A.2.25c)
+Deﬁne             [dψ dχ     ]=      ∏      dψ     dχ    .Then
+                                          i       i     i
+                                                                  [∫                                            ]
+                                            ⟨1⟩=                           dψ    idχ   i  exp(λiχiψi)
+                                                            i
+                                                      =            λi
+                                                               i
+                                                      =det(              .                                                                      (A.2.26)

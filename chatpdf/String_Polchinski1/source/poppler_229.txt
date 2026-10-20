@@ -1,0 +1,42 @@
+                             7.1 Riemann surfaces                            207
+
+The torus is formed by rotating the outer circle by 2πτ1 and then sewing
+the inner and outer circles together. We will use the w-coordinate unless
+otherwise noted.
+
+
+                            The cylinder (annulus)
+The cylinder C2 is the region
+                      0 ≤ Re w ≤ π ,         w∼
+                                              = w + 2πit .                (7.1.5)
+That is, it is a strip of width π and length 2πt, with the ends joined. There
+is a single modulus t, which runs over the whole range 0 < t < ∞. Unlike
+the torus there is no modular group, the long-cylinder limit t → 0 being
+quite di!erent from the long-strip limit t → ∞. There is a single CKV, the
+translation parallel to the boundary.
+   The cylinder can be obtained from the torus with imaginary τ = it by
+identifying under the involution
+                                    w % = −w̄ ,                           (7.1.6)
+which is a reflection through the imaginary axis. The lines , 1 = 0, π are
+fixed by this reflection and so become boundaries. The other coordinate
+is periodically identified,
+                               (, 1 , 0) ∼
+                                         = (, 1 , 2πt) .                  (7.1.7)
+
+
+                                The Klein bottle
+The Klein bottle K2 can be regarded as the complex plane with identifi-
+cation
+                           = w + 2π ∼
+                          w∼        = −w̄ + 2πit                          (7.1.8)
+or
+                             = (, 1 + 2π, , 2 ) ∼
+                (, 1 , , 2 ) ∼                  = (−, 1 , , 2 + 2πt) .    (7.1.9)
+This is a cylinder of circumference 2π and length 2πt, with the ends
+sewn together after a parity-reversal Ω. The single modulus t runs over
+0 < t < ∞, and there is no modular group. Translation in the , 2 direction
+is the only CKV. The Klein bottle can be obtained from the torus with
+modulus τ = 2it by identifying under
+                                w % = −w̄ + 2πit .                       (7.1.10)
+The Klein bottle can be thought of as a sphere with two cross-caps, but
+we postpone this description until section 7.4.

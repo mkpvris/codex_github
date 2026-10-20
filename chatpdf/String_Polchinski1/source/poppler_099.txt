@@ -1,0 +1,36 @@
+                                     3
+                 The Polyakov path integral
+
+
+
+
+We now begin a systematic study of string theory using the Polyakov path
+integral and conformal field theory. After an introduction to the path
+integral picture, we discuss gauge fixing, the Weyl anomaly, and vertex
+operators. We then generalize to strings propagating in curved spacetime.
+
+                       3.1   Sums over world-sheets
+
+The Feynman path integral is one way to represent a quantum theory,
+and it is a very natural method for describing interactions in string theory.
+In path integral quantization, amplitudes are given by summing over all
+possible histories interpolating between the initial and final states. Each
+history is weighted by
+                                exp(iScl /h̄) ,                       (3.1.1)
+with Scl the classical action for the given history. Thus, one would define
+an amplitude in string theory by summing over all world-sheets connecting
+given initial and final curves, as in figure 3.1(a) for the open string and
+figure 3.1(b) for the closed string. The analogous sum for the relativistic
+point particle produces the free propagator (exercise 5.1).
+   One can imagine a number of ways in which strings might interact.
+One would be a contact interaction, an energy when two strings intersect.
+Another would be a long-range force mediated by some quantum field.
+However, it is not possible to add such interactions to string theory in
+a way that is consistent with the symmetries; we will get some idea
+later of why this is so. Rather, the only interactions that are allowed are
+those that are already implicit in the sum over world-sheets. Consider, for
+example, the world-sheets shown in figure 3.2. Figure 3.2(a) looks like a
+quantum correction to the open string amplitude of figure 3.1(a), involving
+intermediate states with two open strings. Figure 3.2(b) has three external
+
+                                     77

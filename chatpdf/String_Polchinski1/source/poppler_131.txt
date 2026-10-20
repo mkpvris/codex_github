@@ -1,0 +1,42 @@
+                      3.7 Strings in curved spacetime                            109
+
+The field Bµν (X) is the antisymmetric tensor, and the dilaton involves
+both Φ and the diagonal part of Gµν , as implied by the equation of
+motion (3.6.22c).
+   As a check, let us see that the spacetime gauge invariances are respected.
+Under a change of variables in the path integral corresponding to a
+field redefinition X $µ (X), the action (3.7.6) is invariant with Gµν and Bµν
+transforming as tensors and Φ as a scalar. From the spacetime point of
+view, this is a coordinate transformation. The action is also invariant
+under
+                      ,Bµν (X) = ∂µ .ν (X) − ∂ν .µ (X) ,                      (3.7.7)
+which adds a total derivative to the Lagrangian density. This is a gener-
+alization of the electromagnetic gauge transformation to a potential with
+two antisymmetric indices. The three-index field strength
+                      Hωµν = ∂ω Bµν + ∂µ Bνω + ∂ν Bωµ                         (3.7.8)
+is invariant. There is a similar generalization to an antisymmetric n-tensor
+potential, which plays an important role in the superstring and will be
+developed in volume two.
+   The theory thus depends only on gauge-invariant objects built out of
+the metric and other fields. One can think of the fields X µ as being
+coordinates on a manifold. This is called the target space, because the X µ
+define an embedding,
+                          world-sheet → target .                              (3.7.9)
+In string theory, the target space is spacetime itself. A field theory such
+as (3.7.2), in which the kinetic term is field-dependent and so field space is
+e!ectively a curved manifold, is known for historic reasons as a nonlinear
+sigma model. Nonlinear sigma models have had many applications in
+particle physics and quantum field theory. For example, the neutral and
+charged pion fields can be regarded to good approximation as coordinates
+on the group manifold S U(2).
+   The nonlinear sigma model action is no longer quadratic in X µ , so the
+path integral is now an interacting two-dimensional quantum field theory.
+Expand the path integral around the classical solution X µ (σ) = xµ0 for any
+chosen point xµ0 . With X µ (σ) = xµ0 + Y µ (σ),
+                               
+         Gµν (X)∂a X µ ∂b X ν = Gµν (x0 ) + Gµν,ω (x0 )Y ω
+                                                          
+                          + 12 Gµν,ωρ (x0 )Y ω Y ρ + . . . ∂a Y µ ∂b Y ν .   (3.7.10)
+The first term in this expansion is a quadratic kinetic term for the field
+Y µ . The next term is a cubic interaction, and so forth. The coupling
+constants in the expansion, Gµν,ω (x0 ) and so on, involve derivatives of

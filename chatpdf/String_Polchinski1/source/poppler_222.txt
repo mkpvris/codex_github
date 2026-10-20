@@ -1,0 +1,48 @@
+200                                    6 Tree-level amplitudes
+
+also replace the disk |z| > 1 (|u| < 1) containing Ai at u = 0 by the state
+ΨAi on the circle |z| = 1. All that is left is the integral over the fields φb
+on the circle, so the expectation value (6.7.8) becomes
+                                   $
+                                       [dφb ]ΨAi [φΩ
+                                                   b ]ΨAj [φb ] ;                                 (6.7.9)
+
+here φΩb (,) = φb (2π − ,), arising from the mapping zu = 1.
+  This convolution of wavefunctions resembles an inner product, so we
+define
+                                            4                               5
+                                -- i|j* =       A%i (∞, ∞)Aj (0, 0) S2 .                         (6.7.10)
+This is essentially the inner product introduced by Zamolodchikov. For
+tensor operators in unitary theories, a Möbius transformation shows that
+this is the same as the coefficient of 1 in the OPE,
+                                                             -- i|j*
+                       Oi (z, z̄)Oj (0, 0) =                                         + ... .     (6.7.11)
+                                                   z hi +hj z̄ h̃i +h̃j - 1 *   S2
+
+We have abbreviated |Ai * to |i*. The -- | * product is not the same as
+the quantum mechanical inner product - | * introduced in chapter 4. The
+latter is Hermitean, whereas the former includes no complex conjugation
+and so is bilinear, up to a sign if i and j are anticommuting. That is,
+                                                       - j|i* ,
+                                            -- i|j* = ±-                                         (6.7.12)
+since all we have done is to interchange the two operators and rename
+z ↔ u. There is a simple relation between the two inner products, which
+we will develop later.
+   We will sometimes write Gij for -- i|j*, and Gij for the inverse matrix,
+where i, j run over a complete set. The matrices Gij and Gij will be used
+to raise and lower indices, Ai = Gij Aj , Ai = Gij Aj .
+   Operators in the path integral translate in the usual way into operators
+in Hilbert space. For example,
+             4                                          5
+                 A%i (∞, ∞)Ak (1, 1)Aj (0, 0) S2 = -- i|Âk (1, 1)|j* ,                          (6.7.13)
+where we reintroduce the hat to emphasize that we are in a Hilbert space
+formalism. Using the OPE, the left-hand side becomes
+                          (            4                               5
+                                  clkj A%i (∞, ∞)Al (0, 0) S2 = cikj .                           (6.7.14)
+                            l
+Thus the three-point expectation values on the sphere, the OPE coefficients
+with all indices lowered, and the matrix elements of general local operators
+are all the same thing. By a Möbius transformation (rescaling of z) we
+have also
+      4                                             5           h −hk −hj h̃i −h̃k −h̃j
+          A%i (∞, ∞)Ak (z1 , z̄1 )Aj (0, 0) S2 = z1 i                    z̄1            cikj .   (6.7.15)

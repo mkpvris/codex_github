@@ -1,0 +1,44 @@
+                                                            2.7                      Mode              expansions                                                  61
+
+are             unchanged,             while             the             Virasoro             generators             contain             the             extra             term
+                                 1      ∞                                      (α′      1/2
+                   L       =                      ◦αµ         α      ◦  +     i                    (m    +1)Vµα                    .                    (2.7.15)
+                       m         2                ◦   m−n        µn◦                 2                                      µm
+                                     n=−∞
+
+                                                                           bc     CFT
+The             ﬁelds   b   and       c    have             the             Laurent             expansions
+                                                     ∞            bm                                  ∞              cm
+                                   b(z)=                         zm+λ        ,c(z)=                               zm+1−λ            .                   (2.7.16)
+                                                   m=−∞                                              m=−∞
+To             be             precise,             these             are             only             Laurent             expansions             ifλis             an             integer,             which
+we              will              assume              for              now.              The              half-integer              case              is              also              of              interest,              but              will
+be            dealt            with            in            detail            in            chapter            10.            The            OPE            gives            the            anticommutators
+                                                                 {bm,cn}=                δm,−n        .                                                 (2.7.17)
+Consider            ﬁrst            the            states            that            are            annihilated            by            all            of            then>0operators.
+The       b0,c0        oscillator       algebra       generates       two       such       ground       states|↓⟩                                     and        |↑⟩   ,
+with             the             properties
+                                      b0|↓⟩        =0        ,b0|↑⟩               =    |↓⟩      ,                                                    (2.7.18a)
+                                      c0|↓⟩        =|↑⟩          ,c0|↑⟩              =0        ,                                                     (2.7.18b)
+                                      bn|↓⟩        =     bn|↑⟩        =     cn|↓⟩        =    cn|↑⟩        =0        ,n>              0.              (2.7.18c)
+The                  general                  state                  is                  obtained                  by                  acting                  on                  these                  states                  with                  then<0
+modes       at       most       once       each       (because       these       anticommute).       For       reasons       to
+appear       later       it       is       conventional       to       groupb0                         with       the       lowering       operators
+andc0with      the      raising      operators,      so      we      will      single      out|↓⟩                                           as                the                ghost
+vacuum             |0⟩.           In           string           theory           we           will           have           a           holomorphic˜bctheory           and           an
+antiholomorphic                         b˜c    theory,               each               withλ =             2.               The               closed               string               spectrum
+thus             includes             a             product             of             two             copies             of             the             above.
+     The             Virasoro             generators             are
+                                                        ∞
+                                                                                    ◦                 ◦                    g
+                                        Lm      =                (mλ       −    n)◦bncm−n◦                +     δm,0a          .                        (2.7.19)
+                                                      n=−∞
+The             ordering             constant             can             be             determined             as             in             eq.             (2.7.8),             which             gives
+                            2L0|↓⟩           =(L1L−1−L−1L1)|↓⟩
+                                             =(λb         0c1)[(1         −     λ)b−1c0]|↓⟩                =    λ(1      −    λ)|↓⟩        .            (2.7.20)
+Thus,         ag    =      1λ(1      −     λ)and
+                           2
+                                                 ∞                                                      λ(1      −    λ)
+                                 L       =                (mλ      −     n)◦b       c         ◦   +                         δ         .                 (2.7.21)
+                                    m                                        ◦    n   m−n◦                       2             m,0
+                                               n=−∞

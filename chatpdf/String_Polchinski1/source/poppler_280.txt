@@ -1,0 +1,51 @@
+258                8 Toroidal compactification and T -duality
+
+sectors are then
+                                 2          3
+                          2          4         15
+                            m = % N−                , N = Ñ .              (8.5.8)
+                                     α         16
+Also, the 25-oscillators make half-integral contributions to the level N. The
+r-projection again requires the total number of 25-excitations to be even,
+which can also be deduced from the level-matching condition N = Ñ. In
+the twisted sectors the ground states are |T1,2 *, the subscript referring to
+the two fixed points. They are tachyonic, as are the first excited states
+α25       25
+   −1/2 α̃−1/2 |T1,2 *. There are no massless twisted states. The extension to the
+more general case (8.5.2) is straightforward. The quantization is perfectly
+consistent in spite of the singularities in spacetime.
+     The one complication with orbifolds is that the twisted state vertex
+operators are not as simple as those for winding states; there is no
+such explicit formula as the exponential of a free field. For two twisted
+strings and any number of untwisted ones, the tree-level amplitude can
+be written in operator form -T |VU VU . . . |T *, which uses only untwisted
+vertex operators. For four or more twisted vertex operators (the number
+must be even for the path integral to make sense) two methods have been
+used. One is the stress tensor method, which we used in section 7.2 to
+get the partition function on the torus. The other is to go to the covering
+space on which X 25 is single-valued (this is a genus g surface for 2g + 2
+twisted vertex operators on the sphere) and evaluate the path integral.
+     There is a simple result for the tree-level couplings of untwisted states.
+On the sphere, with all external states untwisted, the twists and projections
+do not enter into the calculation at all and the amplitudes are the same
+as in the untwisted theory. For example, the low energy e!ective action
+for the massless untwisted fields is the same as we found for toroidal
+compactification, with the omission of the vector fields. This property is
+often useful in analyzing the physics of orbifold theories; it is called the
+inheritance principle.
+     Consider now the partition function of the X 25 CFT. In the untwisted
+sector, one is to project the spectrum onto r = +1 states,
+                                              2              3
+                                    −1/24       1 + r L0 L̃0
+                              (qq̄)       TrU        q q̄      .            (8.5.9)
+                                                  2
+The first term in the projection operator just gives half the partition
+function (8.2.9) for toroidal compactification. In the term with r in the
+trace, the diagonal elements of r must have n = w = 0, as one sees from
+                            25    25
+eq. (8.5.5). The (−1)N +Ñ changes the oscillator sum to 1 − q + q 2 − q 3 +
+. . . = (1 + q)−1 . The partition function for the untwisted states is then
+                                               &∞
+                    1              1
+                      Ztor (R, τ) + (qq̄)−1/24     |1 + q m |−2 .         (8.5.10)
+                    2              2           m=1

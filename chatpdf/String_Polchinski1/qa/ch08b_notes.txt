@@ -1,0 +1,46 @@
+担当範囲: 第8.5--8.8節、全演習8.1--8.12。
+原文: PDF278--304（原書256--282ページ）。
+出力: sections/ch08b.tex。章見出しは前半担当が挿入。
+
+原文の全27ページを150dpiでqa/source-278.png--source-304.pngにレンダリングし、全ページを画像で確認した。poppler_278.txt--poppler_304.txtを併用。
+番号付き数式83件:
+  8.5: 25件（8.5.1--23、3と13はa/b）
+  8.6: 20件（8.6.1--20）
+  8.7: 30件（8.7.1--28、1と23はa/b）
+  8.8: 8件（8.8.1--5、2はa/b、3はa/b/c）
+全式に原番号tagとeq:8.X.Yラベルを付与。
+脚注は原書の脚注3が1件、微分形式の表示数式も保持。
+演習12題の全小問を翻訳。演習8.3(d)のBuscher (1987,1988)、Roček & Verlinde (1992)は原文の著者年形式を保持。親担当のBibTeX照合対象。
+
+図6点の本文参照、和訳キャプション、includegraphics、ラベルを用意:
+  図8.2 PDF284: figures/fig_8_2.pdf, fig:8.2
+  図8.3 PDF288: figures/fig_8_3.pdf, fig:8.3
+  図8.4 PDF289: figures/fig_8_4.pdf, fig:8.4
+  図8.5 PDF296: figures/fig_8_5.pdf, fig:8.5
+  図8.6 PDF300: figures/fig_8_6.pdf, fig:8.6
+  図8.7 PDF301: figures/fig_8_7.pdf, fig:8.7
+図の切り出し・章内図カウンターは親担当。
+
+画像で特に確認した表記:
+  8.5.12のtheta比は絶対値の1乗（2乗ではない）。
+  8.5.13の反周期性の指数はa+1,b+1。
+  8.6.1のゲージ関数はLambda。8.6.4のp25=-dL/dv25の負号は原文通り。
+  8.6.16--19のDelta X'25の負号およびWilson線の端点i,jの順序は原文通り。
+  8.7.10のscript Fはmathcal F。
+  8.7.17のtの冪は(21-p)/2、8.7.18の2の冪12と10を確認。
+  時空作用はboldsymbol S、Ricci scalarはtilde{boldsymbol R}。世界線作用8.6.3は通常のS。
+  8.7.21--22のハット付き添字は平坦計量による上げ下げを表すので保持。
+  8.7.24のh_aa係数は-1/2。原書はxi座標の計量をdelta_abと明記しているので保持。
+  8.7.28右辺は2^18 pi^(25/2) alpha'^6。
+  8.8.5は正号、係数2^(12-k)、ディラトンe^-Phi、像はDブレーンの枚数に数えない。
+
+原書内の表記の注意（本文は勝手に修正しない）:
+  PDF292/原書270、8.7のDブレーン一致時の説明は「n=0」と記載される。
+  直前の巻き付き数はlであったが、原文のnをそのまま保存した。
+  PDF294/原書272の“space of flat dimensions”は文脈に沿い「平坦方向の空間」と訳した。
+  演習8.3(a)の周期はR（2pi Rではない）。原文を保持。
+  演習8.3(c)の項は原文通りi phi F_ab。添字縮約を追加していない。
+  c=1 CFTの「知られているすべて」等の記述は刊行当時の原文の主張として保持し、現代の知見へ更新していない。
+
+用語: weight=ウェイト。Neumann, Dirichlet, Wilson, Chan--Paton, Yang--Mills, Nambu--Goto, Born--Infeld, Einstein, Green, Feynman, Regge, Klein, Möbius, Buscher, Roček, Verlindeは英語綴りを保持。
+静的チェック: equation70組、align6組、split8組、figure6組のbegin/endが一致。重複labelなし、波括弧数一致。ビルド・完成PDFレイアウト・リンク確認は親担当に委ね、実施済みとはしない。

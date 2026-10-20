@@ -1,0 +1,48 @@
+142                                                              4Thestringspectrum
+
+must    be    BRST-exact.    By    (4.4.23),    this    state    is    BRST-closed.    Further,    since′
+|ψ⟩−|             ψ⟩is       OCQ       null,       the       state       (4.4.24)       has       zero       norm.       From       the       BRST
+no-ghost       theorem,       the       inner       product       on       the       cohomology       is       positive,       so       a
+zero-norm       closed       state       is       BRST-exact,       as       we       needed       to       show.
+     To        conclude        that        we        have        an        isomorphism,        we        need        to        show        that        the
+map       is       one-to-one       and       onto.       One-to-one       means       that       OCQ       physical       states
+ψ     and        ψ′      that       map       into       the       same       BRST       class       must       be       in       the       same       OCQ
+class       —       if
+                                                              |ψ,     ↓⟩       −       |ψ′, ↓⟩     =     QB|χ⟩           ,                                             (4.4.25)
+then        |ψ⟩−|            ψ⟩′       must             be             OCQ             null.             To             see             this,             expand
+
+                                                                           ∑∞
+                                                            |χ⟩      =              b−n|χn,           ↓⟩    +     ...      ;(4.4.26)
+                                                                           n=1
+|χ⟩has                 ghost                  number      −3,                 so                 the                 ellipsis                 stands                  for                 terms                 with                 at                 least
+                                                                2
+one       c    and             two   b    excitations.             Insert             this             into             the             form             (4.4.25)             and             keep             on
+both              sides              only              terms              with              the              ghost              ground              state.             This              gives
+                                                                                         ∑∞
+                                              |ψ,    ↓⟩       −       |ψ′, ↓⟩      =                c     Lm         b       |χ     , ↓⟩
+                                                                                                       m      −m       −n         n
+                                                                                       m,n=1
+                                                                                         ∑∞
+                                                                                   =              Lm        |χ     , ↓⟩     .                                          (4.4.27)
+                                                                                                      −n        n
+                                                                                         n=1
+Terms                 with                 ghost                 excitations                 must                 vanish                 separately,                 and                 so                 have                 been∑
+omitted.                 Thus,         |ψ⟩−|             ψ′⟩=                  ∞        Lm        |χ     ⟩    is                 OCQ                 null,                 and                 the                 map                 is
+                                                                               n=1          −n        n
+one-to-one.
+     Finally,           we           must           show           that           the           map           is           onto,           that           everyQBclass          contains
+at                   least                   one                   state                   of                   the                   form                   (4.4.22).                   In                   fact,                   the                   speciﬁc                   representa-
+tives            (4.4.19),            the            states            annihilated            by S    +    U,            are            of            this            form.            To            see            this,
+consider               the               quantum               number           N′      =2N−+Nb+Nc,      involving      the      total
+numbers               of       −,      b,and             cexcitations.               The               operator                 R      has       N′      =      −1:               terms
+in    R      with         m>          0reduce                Nc       by      one      unit      and      terms      withm<                               0reduce                N−
+by      one      unit      and      increaseNbby      one      unit.      ExaminingQ0+Q−1,oneﬁnds
+various             terms             with       N′      =           1,             but             no             greater.             SoU={R,    Q0+    Q−1}          cannot
+increase             N′.            Examining            the            state            (4.4.19),            and            noting            thatS   and        |ψ0⟩        have
+N′      =                0,                  we                  see                  that                  all                  terms                  on                  the                  right-hand                  side                  haveN′≤0.                  By
+deﬁnition                N′      is            nonnegative,            so            it            must            be            thatN′|ψ⟩=           0.            This            implies            no
+−,      b,or          cexcitations,                and                so                this                state                is                of                the                form                (4.4.22).                Thus                the
+equivalence             (4.4.21)             is             shown.
+     The                full                power                of                the                BRST                method                is                needed                for                understanding                the
+general               structure               of               string               amplitudes.               However,               for               many               practical               pur-
+poses                  it                  is                  a                  great                  simpliﬁcation                  to                  work                  with                  the                  special                  states                  of                  the

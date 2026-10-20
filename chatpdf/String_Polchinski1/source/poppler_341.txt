@@ -1,0 +1,45 @@
+                   9.8 High energy and high temperature                   319
+
+is easy: the electric field is the same as on the sphere with charges at
+z = ai , except that it is divided between N sheets. Thus the energy is
+N · N −2 = N −1 times that on the sphere. Three of the positions can be
+fixed by Möbius invariance, for example to 0, 1, ∞, and the fourth is given
+by the same condition (9.8.2) as on the sphere. Thus at genus g,
+
+              Sg ≈ exp[−α! (s ln s + t ln t + u ln u)/2(g + 1)] .      (9.8.7)
+
+With additional effort one can include the Gaussian fluctuations around
+the saddle, which determine the coefficient of Sg . For the N-sheeted saddle
+points, Xclµ is simply divided by N = g + 1.
+  There is a check that this result makes sense. In the small-angle region
+−t/s - 1 it becomes
+
+                           exp[α! t ln s/2(g + 1)] .                   (9.8.8)
+
+Now, t1/2 is the total momentum transferred from the incoming particle
+1 to the final particle 3. At small angles it is plausible that the genus-g
+scattering process can be decomposed into g + 1 successive scatterings.
+Each separate scattering has the same center of mass s, while the ti are
+constrained so that the total momentum transfer is t1/2 . The individual
+scatterings go as exp(α! ti ln s/2). It is then easy to check that it is most
+                                                           1/2   1/2
+efficient to take the momentum transfers to be equal, ti = t /(g + 1),
+leading to the result (9.8.8) for the product of the amplitudes. This is
+different from particle scattering, where it is most efficient to transfer
+momentum in a small number of hard scatterings.
+   For excited string states, the exponential part of the vertex operator
+is the same as for the tachyon. The same saddle point then dominates,
+with Xclµ inserted in the vertex operators. Since this same saddle point
+dominates for all states and, up to the factor g + 1, all orders, there are
+linear relations between the amplitudes for different states that hold for
+all genus and therefore plausibly for the exact amplitudes. In quantum
+field theory, high energy scattering often reveals symmetries that are not
+obvious at low energy. It has been suggested that the relations that emerge
+here are of the same sort.
+   It is not clear to what extent it makes sense to sum the series (9.8.7). It
+is interesting to contrast the result here with that in the previous section.
+In both cases it is the interior of moduli space that is producing the
+interesting physics (in contrast to the field-theoretic behavior found near
+the boundary). However, the large order behavior came from the whole
+of moduli space, dominated in particular by its large volume. The high
+energy behavior at fixed genus is dominated by a single point.

@@ -1,0 +1,53 @@
+162                                                                 5ThestringS-matrix
+
+and       holomorphic       transition       functions,       where       the       metricgˆ(t0)       is       Weyl-
+                                               ¯
+equivalent           to            dzmdzm              in           each           patch.           Consider            now           a           change           in           the           moduli.
+We              will              ﬁrst              describe               this              as              a              change               in              the              metric              with              ﬁxed               transition
+functions,                 and                 then                 convert                 this                 to                 a                 change                 in                 the                 transition                 functions
+with             ﬁxed             metric.             In             the             ﬁrst             description,             deﬁne             theBeltrami              diﬀerential
+
+                                                                                b          1      bc
+                                                                         µka        =      2gˆ         ∂kgˆac         .                                                          (5.4.7)
+The         b    insertion             for         ,t   k    becomes
+                                           1                               1     ∫                 (                                           
+                                                 (b,      µk)=                          d2z           bzzµk¯zz          +     b¯z¯zµkz¯z              .                          (5.4.8)
+                                          2π                             2π
+In               the               second               description,               after               a               change,tkin            the            moduli            there            will            be
+new           coordinates           in           each           patch
+
+                                                                  ′                             k     zm             ¯
+                                                               zm      =     zm      +     ,t      vkm(zm,zm)                   .                                                (5.4.9)
+The              superscript              on        va        is              a              vector              index;              note              thatvais             deﬁned             only             in
+               th                                     km                                                                                   km               ′        ′
+the       m          patch.                 By                 the                 deﬁnition                 of                 a                 Riemann                 surface,dzmd¯zmis                 Weyl-
+equivalent             to             the             metric             att0+     ,t    ,
+                     ′        ′                                          k  (           ¯z                                     z                       
+               dz       d¯z        ∝      dz       d¯z       +      ,t          µ         mdz         dz         +     µ    ¯    md¯z        d¯z             .                (5.4.10)
+                    m         m                m         m                         kzm             m        m             kzm             m        m
+The             coordinate             change                 va        is            thus            related            to            the            Beltrami            di!erential            by
+                                                                km
+                                                   µkz      ¯zm   =      ∂       v¯zm      ,µk¯zzm=∂vzm.                                                                      (5.4.11)
+                                                           m                zm     km                      m                ¯zmkm
+This         is         the         inﬁnitesimal         version         ofBeltrami’s          equation.         It         implies         thatvzm                                          is
+                                                                                                                                                                                     km
+not          holomorphic          —          otherwise,          it          would          not          correspond          to          a          change          in          thez
+moduli.              Also,            vkmm      has                a                holomorphic                part                not                determined                by                Beltrami’s
+equation,               and           v¯zm      an             antiholomorphic             part;             these             just             correspond             to             the
+                                        km
+freedom            to            make            holomorphic            reparameterizations            within            each            patch.
+      Integrating             by             parts,             the     b    insertion             (5.4.8)             becomes
+                   1                               1      ∑        ∮         (                                                                      
+                                                                                             zm                          ¯        ¯zm
+                 2π     (b,      µk)=           2πi                              dzmvkmbzmzm                    −     dzmvkmb¯zm¯zm                        ,                  (5.4.12)
+                                                             m        Cm
+the           contourCm                  circling            the        mth        patch            counterclockwise.            By            eq.            (5.4.9),            the
+derivative            of            the            coordinate            with            respect            to            the            moduli            at            a            given            point            is
+                                                                                  dzm        =      vzm       .                                                               (5.4.13)
+                                                                                  dtk                 km
+The                    change                    in                    the                    transition                    functions                    under                    a                    change                    in                    moduli                    is
+therefore                                                 ⏐                                        ⏐
+                                                ∂z    m   ⏐                zm            ∂z    m   ⏐     zn              zm             zm
+                                                          ⏐       =     v         −                ⏐  v        =      v        −     v         .                              (5.4.14)
+                                                 ∂t   k   ⏐z               km            ∂z    n   ⏐t    kn             km              kn
+                                                              n

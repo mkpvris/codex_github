@@ -1,0 +1,47 @@
+                                                        9.2                      Higher              genus              Riemann              surfaces                                                       291
+
+way                 is                 a                 torus.                 Repeatinggtimes,                 with                 a                 total                 of                 2gholes,                 produces                 a
+genus             g     surface.
+      We            can            make            this            more            precise            as            follows.            Regarding            the            sphere            as            the
+complex                   z-plane             plus             point             at             inﬁnity,             consider             the             mapping
+                                                                                      z′     −      U                     z   −      U
+                                                                      γ    :          z′     −      V       =      K      z    −     V        ,                                                      (9.2.1)
+
+which                     depends                     on                     three                     complex                     parametersU,        V     ,and               K.       This       is       a
+Mobius    transformation,    and    in    particular    is    holomorphic    and    one-to-one.¨
+The   pointsUandVare          ﬁxed          under                                                       γ.          Taking           |K|        >      1,          the          surface          expands
+away             from            U       and             contracts             toward                     V.             A             fundamental             region             for            γ     is             the
+annular             region
+                                                                                                                    
+                                                                           −1/2                 z     −      U                         1/2
+                                                                  |K|                   <                           <         |K|                .                                                 (9.2.2)
+                                                                                                z     −      V      
+
+Identifying              points              under                       γ     glues              together              the              inner              and              outer              boundaries
+of              the              annulus              (9.2.2),              producing              a              torus.              The              group              generated              by g     such
+elements                    (9.2.1)                    produces                    the                    genusg      surface,                    with                    restrictions                    on                    the
+parameters             so             that             the             sewn             circles             do             not             overlap.
+      Every                  closed                  oriented                  Riemann                  surface                  can                  be                  obtained                  in                  this                  way.
+The                range                of                the                parameters                is                not                simple,                in                part                because                some                of                the
+modular                     transformations                     act                     in                     a                     complicated                     way.                     Riemann                     surfaces
+with                boundary                and                unoriented                Riemann                surfaces                can                be                constructed                by
+dividing            by            one            or            two            reﬂections            of            a            closed            oriented            surface,            as            we            have
+illustrated             in             the             lower             genus             examples.
+      Let          us          see          that          the          Schottky          construction           produces          the          expected          number
+of              moduli.              Each              transformation              (9.2.1)              has              three              complex              parameters              for
+atotalof3                       g.     One      can     think      of      the     six      real      parameters      for      each     handle      as
+being      two      for      the      position      of      each      hole,      one      for      the      product      of      the      radii
+of       the       holes       (only       the       product,       because       if       one       hole       is       made       smaller       and
+the     other     larger     we     get     the     same     surface),     and     one     for     the     relative     angle     at
+which     the     holes     are     sewn.     There     is     redundancy,     because     an     overall     Mobius¨
+transformation              of              the              sphere              gives              an              equivalent              surface.              Subtracting              the
+six                 real                 parameters                 for                 this                 group                 leaves                 6g−6,                 the                 correct                 number                 of
+moduli             for              genus           g     ≥      2             surfaces.             For      g     =1, two Mobius              transformations¨
+leave             the             mapping             invariant,             so             two             real             parameters             remain.
+      The                 Schottky                 parameterization                 shows                 that                 the                 moduli                 space                 has                 nat-
+ural                 complex                 coordinates.                 The                 path                 integral                 has                 certain                 holomorphicity
+properties           with           respect           to           these           coordinates,           though           we           will           not           emphasize
+this.             Having             constructed             the             general             surface             as             a             coset             of             the             sphere,             it             is
+evident                that                Green’s                functions                can                be                constructed                by                use                of                the                method
+of             images,             summing             over             all             images             of             a             source.             Functional             determinants
+and             other             objects             of             interest             can             be             expressed             similarly.

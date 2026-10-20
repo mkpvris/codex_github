@@ -1,0 +1,47 @@
+                                A.2 Fermionic fields                           341
+
+Thus
+                                         .# U       /
+                                     1                    1 !
+                          Sct =                 du ! −     ln              (A.1.65)
+                                     2     0              2 π
+and
+                                3                  41/2
+                                         /
+            %qf , U|qi , 0& =                             exp(−Scl ) ,     (A.1.66)
+                                    2π sinh /U
+which is the correct result.
+
+                                A.2       Fermionic fields
+
+Consider the basic fermionic quantum system, two states | ↑& and | ↓& with
+raising operator χ̂ and lowering operator ψ̂:
+                           ψ̂| ↓& = 0 , χ̂| ↓& = | ↑& ,                    (A.2.1a)
+                           ψ̂| ↑& = | ↓& , χ̂| ↑& = 0 ,                    (A.2.1b)
+                          {ψ̂, χ̂} = 1 , ψ̂ 2 = χ̂2 = 0 .                  (A.2.1c)
+Amplitudes will be expressed as path integrals over the classical analogs
+of χ̂ and ψ̂. These are anticommuting c-numbers or Grassmann variables,
+elements χm and ψm of a Grassmann algebra
+                     {χm , ψn } = {χm , χn } = {ψm , ψn } = 0 .             (A.2.2)
+  There is a natural notion of integration over Grassmann variables, the
+Berezin integral. Notice that if θ is a Grassmann variable then θ2 = 0,
+and so the most general function of θ is of the form a + θb. Define
+                    #                     #               #
+                        dθ = 0 ,               dθ θ = −       θ dθ = 1 .    (A.2.3)
+
+Integrals of more general expressions are determined by requiring the
+integral to be linear and by defining dθ to anticommute with all Grassmann
+variables. The significance of the definition (A.2.3) is that the integral of
+a total derivative is zero:
+                       #                    #
+                              d
+                          dθ (a + θb) = dθ b = 0 .                    (A.2.4)
+                             dθ
+For multiple Grassmann variables the integral is
+                                #
+                                    dθ1 . . . dθn f(θ) = c ,                (A.2.5)
+
+where c is the coefficient of the highest term in the Taylor expansion of f,
+                         f(θ) = . . . + θn θn−1 . . . θ1 c .                (A.2.6)
+Looking back on the discussion of the bosonic path integral, one sees that
+all of the properties of ordinary integrals that were used are also true for

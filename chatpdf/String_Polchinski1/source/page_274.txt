@@ -1,0 +1,46 @@
+252                                            8                    Toroidal              compactiﬁcation              and                     T-duality
+
+To           determine           the           transformation           property           of                                        ZΓ         use           again           Poisson           resum-
+mation.             Write
+                                                     ∑                             ′                 −1        ∑                                   ′′
+                                                                δ(l       −      l  )=          VΓ                         exp(2π il                    ◦    l)     .                               (8.4.22)
+                                                     l′∈Γ                                                    l′′∈Γ∗
+Here,              VΓ          is                    the                    volume                    of                    a                    unit                    cell                    of                    the                    lattice               Γ.                    Eq.                    (8.4.22)                    is
+familiar                     from                     Fourier                     series:                     the                     phase                     averages                     to                     zero                     except                     when
+l   ∈     Γ,            and            the            normalization            is            ﬁxed            by            integrating            over            a            unit            cell.            Using
+the             representation             (8.4.22),             the             sum             (8.4.21)             can             be             written
+                                                                                   ∑∫
+                 ZΓ(τ)=                     VΓ−1|.(τ)|−2k                                             d2klexp(2πil′′◦l+πiτlL2−πi                                                             ¯τl  R2  )
+                                                                                 l′′∈Γ∗
+                                                 −1               −k/2                       −2k         ∑                                      ′′2                         ′′2
+                                    =       VΓ          (τ¯τ)                 |.(τ)|                                 exp(−π ilL                      /τ      +      π ilR         /¯τ)
+                                                                                                       l′′∈Γ∗
+                                    =       VΓ−1ZΓ∗(−1/τ                            )    ,                                                                                                          (8.4.23)
+
+where                in                the                last                line                we                have                used                the                modular                transformation                (7.2.44)
+of             the             eta             function.             Then             the             condition
+                                                                                                  Γ=Γ               ∗                                                                               (8.4.24)
+
+is             suﬃcient             for             modular             invariance,             because                              VΓ        =      VΓ−∗1          and             so             is             equal             to
+unity             if             (8.4.24)             holds.             A             little             thought             shows             that             this             is             also             necessary             if
+modular             invariance             is             to             hold             for             all  τ.
+      The             consistency             conditions             can             be             summarized             as             the             requirement             that
+Γ                    be                    an                    even                    self-dual                    lattice                    of                    signature                    (k,    k),evenreferring                    to                    the
+property             (8.4.19)             and                   self-dual                  to             the             property             (8.4.24).
+      All               such               lattices               have               been               classiﬁed.               Note               that               the               consistency               condi-
+tions                (8.4.19)                and                (8.4.24)                depend                on                the                momenta  l    only                through                the       ◦
+product,                which                is                invariant                under                Lorentz                boosts                of                the                2k-dimensional
+space,              O(k,    k,         R)             transformations.             If          Γ             is             an             even             self-dual             lattice             then             so
+is
+                                                                                              Γ′      =&Γ                ,                                                                          (8.4.25)
+
+which        is       obtained       by       rotating       all       the       points       of       the       lattice       by       a       common
+O(k,    k,         R)              transformation           &.              Now,              it              is              important              thatO(k,    k,                      R)              isnot        a
+symmetry              of              the              theory.              The              mass-shell              condition              and              operator              products
+involve                the                separate                dot                products          l       ·  l′       and          l       ·   l′      and                so                are                invariant
+                                                                                                         L          L                     R          R
+only                under                the  O(k,R)                 ×      O(k,         R)thatactson                                     lL      andlR                 separately.      Thus,
+mostO(k,    k,                      R)            transformations            produce            inequivalent            theories.
+      Consider             for             example                       k    =1, where
+                                                                                       l            =       n    ±       mr                                                                         (8.4.26)
+                                                                                         L,R                r              2

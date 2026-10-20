@@ -1,0 +1,46 @@
+                            9.6 String field theory                          311
+
+to be invariant under reparameterization of the curve, and should it also
+depend on the Polyakov metric gab ? Things seem to work much more
+nicely if one starts with the BRST-invariant form of the theory, including
+the Faddeev–Popov ghosts, and then second quantizes. From the commu-
+tation relations, b and c are conjugate to one another (as are b̃ and c̃),
+so if for example we treat c and c̃ as coordinates the wavefunctional is
+&[X, c, c̃ ]. We then have a path integral running over all such functionals,
+                               #
+                                   [d&] exp(iS [&]) .                     (9.6.1)
+
+We will consider first the open string, describing one particular approach.
+  What symmetry principle will restrict the string action? From our study
+of the string vertex operators and null states, we might guess the symmetry
+
+                                    δ& = QB Λ                             (9.6.2)
+
+for any functional Λ. There is an extremely simple action with this invari-
+ance,
+
+                                       1
+                               S0 =      %% &|QB |&& .                    (9.6.3)
+                                       2
+The equation of motion is just
+
+                                     QB & = 0 .                           (9.6.4)
+
+   One way to see that this is reasonable is by expanding the string field
+& in terms of an infinite number of ordinary fields, one for each internal
+state of the string. Let &i [X ! , c, c̃ ] be a complete set of wavefunctions for
+the internal modes — all but the center-of-mass xµ . Then a general state
+can be expanded:
+                                       &
+                      &[X, c, c̃ ] =        Φi (x)&i [X ! , c, c̃ ] ,     (9.6.5)
+                                        i
+
+the expansion coefficients being functions of the remaining variables xµ .
+The string field path integral becomes an infinite product of path integrals
+over the component functions,
+                           #                 #
+                               [d&] →               [dΦi ] .              (9.6.6)
+                                              i
+
+As usual, we can start with the ground state functional &0 and build
+the remaining states with the raising operators. For example, keeping all

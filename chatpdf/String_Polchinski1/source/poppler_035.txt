@@ -1,0 +1,48 @@
+                               1.2 Action principles                        13
+
+  The action SP has the following symmetries:
+  1. D-dimensional Poincaré invariance:
+                                µ
+                           X " (τ, σ) = Λµν X ν (τ, σ) + aµ ,
+                            "
+                           γab (τ, σ) = γab (τ, σ) .                   (1.2.19)
+
+  2. Di! invariance:
+                                       µ
+                                    X " (τ" , σ " ) = X µ (τ, σ) ,
+                       ∂σ " c ∂σ " d " " "
+                                    γ (τ , σ ) = γab (τ, σ) ,          (1.2.20)
+                       ∂σ a ∂σ b cd
+     for new coordinates σ " a (τ, σ).
+  3. Two-dimensional Weyl invariance:
+                           µ
+                        X " (τ, σ) = X µ (τ, σ) ,
+                         "
+                        γab (τ, σ) = exp(2ω(τ, σ)) γab (τ, σ) ,        (1.2.21)
+     for arbitrary ω(τ, σ) .
+The Weyl invariance, a local rescaling of the world-sheet metric, has no
+analog in the Nambu–Goto form. We can understand its appearance by
+looking back at the equation of motion (1.2.17) used to relate the Polyakov
+and Nambu–Goto actions. This does not determine γab completely but
+only up to a local rescaling, so Weyl-equivalent metrics correspond to the
+same embedding in spacetime. This is an extra redundancy of the Polyakov
+formulation, in addition to the obvious di! invariance.
+  The variation of the action with respect to the metric defines the energy-
+momentum tensor,
+                                             δ
+              T ab (τ, σ) = −4π(−γ)−1/2          SP
+                                            δγab
+                              1
+                        = − " (∂a X µ ∂b Xµ − 12 γ ab ∂c X µ ∂c Xµ ) . (1.2.22)
+                             α
+This has an extra factor of −2π relative to the usual definition in field
+theory; this is a standard and convenient convention in string theory. It is
+conserved, ∇a T ab = 0, as a consequence of di! invariance. The invariance
+of SP under arbitrary Weyl transformations further implies that
+                                δ
+                         γab        SP = 0 ⇒ Taa = 0 .                 (1.2.23)
+                               δγab
+   The actions SNG and SP define two-dimensional field theories on the
+string world-sheet. In string theory, we will see that amplitudes for space-
+time processes are given by matrix elements in the two-dimensional quan-
+tum field theory on the world-sheet. While our interest is four-dimensional

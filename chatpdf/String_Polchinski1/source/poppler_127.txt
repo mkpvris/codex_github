@@ -1,0 +1,53 @@
+                                 3.6 Vertex operators                                  105
+
+where sµν , aµν , and φ are respectively a symmetric matrix, an antisym-
+metric matrix, and a constant. The antisymmetric tensor 1ab is normalized
+g 1/2 112 = 1, or g 1/2 1zz̄ = −i. The i accompanying the antisymmetric tensor
+in the vertex operator can be understood as arising from the Euclidean
+continuation, because this term necessarily has an odd number of time
+derivatives (one) . This result applies generally to Euclidean actions and
+vertex operators.
+   To extend the analysis of Weyl invariance we need to work out the
+Weyl dependence (3.6.11) of the geodesic distance to higher order. One
+finds
+                                       9       1
+                                       9
+                      ∂a ,W ∆(σ, σ $ )9 $ = α$ ∂a ,ω(σ) ,                          (3.6.15a)
+                                         σ =σ  2
+                                       9       1+γ $
+                                       9
+                   ∂a ∂b$ ,W ∆(σ, σ $ )9 $ =         α ∇a ∂b ,ω(σ) ,              (3.6.15b)
+                                       9
+                                         σ =σ    2
+                                       9         γ
+                   ∇a ∂b ,W ∆(σ, σ $ )9 $ = − α$ ∇a ∂b ,ω(σ) .                     (3.6.15c)
+                                         σ =σ    2
+Here, γ = − 23 , but we have left it as a parameter for later reference; the
+third equation can be obtained from the second and the gradient of the
+first. Using eq. (3.3.5) for the variation of the curvature and eqs. (3.6.7)
+and (3.6.15) for the variation of the renormalization gives
+                   !               7
+                gc
+      ,W V1 =         d2 σ g 1/2 ,ω (g ab Sµν + i1ab Aµν )[ ∂a X µ ∂b X ν eik·X ]r
+                2                                                      8
+                                                      +α$ FR [ eik·X ]r ,         (3.6.16)
+where
+      Sµν = −k 2 sµν + kν k ω sµω + kµ k ω sνω − (1 + γ)kµ kν sωω + 4kµ kν φ ,
+                                                                           (3.6.17a)
+                2           ω             ω
+      Aµν = −k aµν + kν k aµω − kµ k aνω ,                                (3.6.17b)
+                             1              1
+       F = (γ − 1)k 2 φ + γk µ k ν sµν − γ(1 + γ)k 2 sνν .                 (3.6.17c)
+                             2              4
+   In deriving the Weyl variation (3.6.16) we have integrated by parts and
+also used the relation
+                                           α$ γ
+                      [ ∇2 X µ eik·X ]r = i k µ R [ eik·X ]r .              (3.6.18)
+                                            4
+The left-hand side would vanish by the naive equation of motion, but
+here the equation of motion multiplies another operator at the same
+point. The general principle that holds in this case is that the operator
+need not vanish but it is not independent — it can be expanded in terms
+of the other local operators in the theory. In general the coefficients of
+these operators depend on the renormalization scheme; the result (3.6.18)
+can be obtained by taking the Weyl variation of each side.

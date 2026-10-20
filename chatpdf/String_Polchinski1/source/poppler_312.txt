@@ -1,0 +1,44 @@
+290                       9 Higher order amplitudes
+
+invariant and unitary. The numerator of the covariant photon propagator
+                                    η µν
+                                      −i ,                       (9.1.32)
+                                     k2
+has a negative eigenvalue, corresponding to a negative norm intermediate
+state. Choose any null vector nµ such that n · k = 1, and decompose
+                 η µν = (η µν − k µ nν − nµ k ν ) + k µ nν + nµ k ν .    (9.1.33)
+At k 2 = 0, the first term has d − 2 positive eigenvalues and no negative
+eigenvalues. If the photon is coupled to conserved currents at both ends,
+the last two terms vanish, so the unitarity relation is satisfied with just
+the d − 2 positive norm states expected for a photon in d dimensions. The
+decomposition (9.1.31) is the generalization of eq. (9.1.33), with k µ → |a&N
+and nµ → |a&U .
+   To conclude, let us review how various general principles are illustrated
+by this example. BRST null states decouple, but only after integration
+on moduli space. The potential surface terms from the latter vanish by
+the canceled propagator argument. The ghost manipulations leading to
+eq. (9.1.19) have a natural interpretation in terms of the Riemann surface
+picture from chapter 5. Consider the sphere with vertex operators at
+0, 1, z, ∞. To be specific take |z| > 1 as in the second term of eq. (9.1.19). We
+can think of this sphere as being formed from two disks, with coordinates
+z1 and z2 . Put vertex operators at z1 = 0, 1 and at z2 = 0, 1, and join the
+disks by the identification z1 = z/z2 . For the modulus z, we have
+                                       
+                                   ∂z1    z1
+                                         =    .                         (9.1.34)
+                                   ∂z z2    z
+The ghost insertion (5.4.15) for dz is then b0 /z, and similarly for dz̄, as
+illustrated by eq. (9.1.19).
+
+                    9.2   Higher genus Riemann surfaces
+
+There are many different representations of higher genus Riemann sur-
+faces. The one that will be most useful for our purposes is based on the
+idea of building higher genus surfaces by sewing together lower genus
+surfaces. This will be described in the next section, but first for com-
+pleteness we describe some other common constructions. The treatment
+is necessarily rather brief.
+
+                                 Schottky groups
+Imagine removing two disks from a sphere and joining the edges of the
+resulting holes. This produces a handle, so the surface obtained in this

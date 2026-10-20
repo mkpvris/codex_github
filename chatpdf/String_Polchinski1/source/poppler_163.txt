@@ -1,0 +1,43 @@
+                         4.4 The no-ghost theorem                         141
+
+is annihilated by S + U. The factors of S −1 make sense because they
+always act on states of N lc < 0, where S is invertible. For the same reason,
+S + U is invertible except at ghost number − 12 . Eqs. (4.4.16) and (4.4.17)
+can now be applied to QB , with S + U replacing S . They imply that the
+QB cohomology is isomorphic to the kernel of S + U, which is isomorphic
+to the kernel of S , which is isomorphic to the cohomology of Q1 , as we
+wished to show.
+   We must still check that the inner product is positive. All terms after
+the first on the right-hand side of eq. (4.4.19) have strictly negative N lc .
+By the commutation relations, the inner product is nonzero only between
+states whose N lc adds to zero. Then for two states (4.4.19) in the kernel
+of S + U,
+                            *ψ5ψ $ + = *ψ0 5ψ0$ + .                   (4.4.20)
+The positivity of the inner product on the kernel of S + U then follows
+from that for the kernel of S , and we are done.
+   After adding the tilded operators to QB , N lc , R, etc., the closed string
+proof is identical.
+
+                          BRST–OCQ equivalence
+We now prove the equivalence
+                       HOCQ = HBRST = Hlight-cone .                   (4.4.21)
+To a state |ψ+ in the matter Hilbert space, associate the state
+                                        |ψ, ↓+                        (4.4.22)
+from the full matter plus ghost theory. Again the ghost vacuum | ↓+ is
+annihilated by all of the ghost lowering operators, bn for n ≥ 0 and cn for
+n > 0. Acting with QB ,
+                                ∞
+                                (
+                  QB |ψ, ↓+ =         c−n (Lm
+                                            n − ,n,0 )|ψ, ↓+ = 0 .    (4.4.23)
+                                n=0
+All terms in QB that contain ghost lowering operators drop out, and the
+constant in the n = 0 term is known from the mode expansion of QB ,
+eq. (4.3.7). Each OCQ physical state thus maps to a BRST-closed state.
+The ordering constant A = −1 arises here from the L0 eigenvalue of the
+ghost vacuum.
+   To establish the equivalence (4.4.21), we need to show more. First, we
+need to show that we have a well-defined map of equivalence classes: that
+if ψ and ψ $ are equivalent OCQ physical states, they map into the same
+BRST class:
+                                 |ψ, ↓+ − |ψ $ , ↓+                   (4.4.24)

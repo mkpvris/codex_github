@@ -1,0 +1,47 @@
+316                      9 Higher order amplitudes
+
+  When considering field theory, the propagator and vertices become
+more complicated. However, the dominant behavior at large orders usually
+comes from simple counting of graphs — the propagators and vertices
+only contribute factors of order bk , unless there is unusual IR or UV
+behavior. The series is of the form
+                                 ∞
+                                 &
+                                       λ2k k!f2k ,                     (9.7.5)
+                                 k=0
+
+where f2k ≈ k a bk varies more slowly than k!. This diverges unless f2k
+has unexpected cancellations. For small λ the terms become smaller for a
+while and then grow as the k! dominates. The smallest terms in the sum
+are of order
+                               exp[−O(1/λ2 )] .                        (9.7.6)
+This is then an indication of the accuracy of perturbation theory as an
+asymptotic series. Indeed, effects like instantons and dynamical symmetry
+breaking, which vanish to all orders of perturbation theory, are typically
+of this order. For example, the large order behavior of the series (9.7.2) is
+related to the ‘instanton’ (stationary point) at z = −2, with action 2/3λ2 .
+   In string theory, the Feynman graph decomposition of moduli space
+makes it possible to establish the same bounds. It has been shown explicitly
+that the series is of the form (9.7.5) with f2k positive and bounded below
+by bk . Thus the series is divergent, and is not even Borel summable. Borel
+summation rewrites the series (9.7.5) as the Laplace transform of a more
+convergent series
+                        # ∞                ∞
+                                           &
+                              dt exp(−t)         (tλ2 )k f2k .         (9.7.7)
+                         0                 k=0
+
+However, the positivity of the f2k implies that this new sum, even if it
+converges, has poles on the positive t-axis, so that the integral is am-
+biguous. Thus, we should expect that string theories will have interesting
+nonperturbative phenomena. This is not surprising because even in the
+low energy limit they reduce to nontrivial field theories.
+   The estimate (9.7.4) for closed string theory is a lower bound, which can
+be obtained even keeping only the tree-level cubic vertex V0,3 . Because
+the closed string vertex receives corrections from Riemann surfaces of all
+genus, one might wonder whether perturbation theory grows even more
+rapidly. One way to see that in fact it does is to recall that the open string
+field theory contains all open plus closed string Riemann surfaces with at
+least one boundary. Let us consider the surfaces with one boundary, in
+the region where the boundary has shrunk to a point. This limit of open
+string moduli space is equivalent to the moduli space for closed surfaces

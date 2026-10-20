@@ -1,0 +1,50 @@
+180                     6Tree-levelamplitudes
+
+
+           3         2          3         2           3        4
+
+
+
+      (a)                        (b)                       (c)411412
+
+
+
+          2          3          2         3          2         4
+
+
+
+      (d)                        (e)                       (f)411413
+
+Fig. 6.2.  The six cyclically inequivalent orderings of four open string vertex
+operators onthedisk.Thecoordinateyincreasesinthedirectionofthearrow,
+exceptthatatpoint3itjumpsfrom+∞to      −∞.
+
+                                                                   ¨
+This              is              again              independent              ofy1,2,3after              a              change              of              variables              (a              Mobius
+transformation)              ony4.              It              is              convenient              to              takey1=0,y2=1,andy3→
+∞.       The       amplitude       is       conventionally       written       in       terms       of       theMandelstam
+variables
+      s= −(k1  + k2)2,t   =−(k1+k3)2,u       =−(k1+k4)2.          (6.4.6)
+
+These                are                not                independent:                momentum                conservation                and                the                mass-shell
+condition             imply             that
+                       s+ t + u = ∑   m2 = −  4 .                 (6.4.7)
+                                       i     α′
+                                    i
+Using             2α′ki·kj=−2+α′(ki+kj)2,theamplitudebecomes
+
+                             4        2626 ∑
+        SD2(k1;k2;k3∫;k4)=igoCD2(2π)  δ  (  iki)           
+                      ∞        −α′u−2       −α′t−2
+                 ×      dy4 |y4|     |1− y4|       +(t→s)     .   (6.4.8)
+                     −∞
+  The                 integral                 splits                 into                 three                 ranges,−∞<y4<0,                 0<y4<1,                 and
+1<y4  <∞.      For      these      three      ranges      the      vertex      operators      are      ordered      as      in
+                                        ¨
+ﬁgures       6.2(a),       (b),       and       (c)       respectively.       Mobius       invariance       can       be       used       to
+take       each       of       these       ranges       into       any       other,       so       they       give       contributions       that
+are        equal        up        to        interchange        of        vertex        operators.        The        (t↔s)termgives
+ﬁgures             6.2(d),             (e),             and             (f  ).             In             all,
+                        4        26 26∑                          
+  SD2(k1;k2; k3;k4)=2  igoCD2(2π) δ  (  iki) I(s,      t)+I(t,      u)+I(u,      s),
+                                                                  (6.4.9)

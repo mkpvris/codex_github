@@ -1,0 +1,44 @@
+                                                                     4.2                      BRST              quantization                                                                    129
+
+We              will              see              explicitly              in              the              remainder              of              the              chapter              that              this              space              has
+the                 expected                 form                 in                 string                 theory.                 Essentially,                 the                 invariance                 condition
+removes             one             set             of             unphysical       Xµ        oscillators             and             one             set             of             ghost             oscilla-
+tors,               and               the               equivalence               relation               removes               the               other               set               of               unphysicalXµ
+oscillators              and              the              other              set              of              ghost              oscillators.
+
+                                                                      Point-particle                example
+Let                 us                 consider                 an                 example,                 the                 point                 particle.                 Expanding                 out                 the                 con-
+densed                   notation                   above,                   the                   local                   symmetry                   is                   coordinate                   reparameteri-
+zation             ,τ(τ),              so              the              indexα  just                 becomes           τ    and                 a                 basis                 of                 inﬁnitesimal
+transformations             is                     ,τ1τ(τ)=                  ,(τ−τ1).      These      act      on      the      ﬁelds      as
+      ,τ     Xµ(τ)=                  −,(τ−τ1)∂τXµ(τ),,                                              τe(τ)=                 −∂τ[,(τ−τ1)e(τ)]                                   .      (4.2.19)
+           1                                                                                           1
+Acting                  with                  a                  second                  transformation                  and                  forming                  the                  commutator,                  we
+have
+               [,τ       ,,    τ   ]Xµ(τ)
+                       1         2                                                                                                                               
+                                 =      −       ,(τ−τ1)∂τ,(τ−τ2)−,(τ−τ2)∂τ,(τ−τ1)                                                                                   ∂τXµ(τ)
+                                        ∫
+                                 ≡             dτ    3   fτ3τ       τ   ,τ     Xµ(τ)             .                                                                                   (4.2.20)
+                                                                  1   2      3
+From             the             commutator             we             have             determined             the             structure             function
+             fτ3τ      τ      =     ,(τ3         −     τ1)∂τ          ,(τ3         −     τ2)      −     ,(τ3         −     τ2)∂τ          ,(τ3         −     τ1)       .             (4.2.21)
+                     1    2                                         3                                                                   3
+The             BRST             transformation             is             then
+                                                                              ,BXµ             =      iϵc     X˙   µ    ,                                                         (4.2.22a)
+                                                                                   ,Be         =      iϵ   (ce˙    )   ,                                                          (4.2.22b)
+                                                                                  ,BB          =0           ,                                                                      (4.2.22c)
+                                                                                   ,Bb         =      ϵB              ,                                                           (4.2.22d)
+                                                                                   ,Bc         =      iϵc     ˙c.                                                                  (4.2.22e)
+      The              gauge         e(τ)           =           1              is              analogous              to              the              unit              gauge              for              the              string,              using
+the                single                coordinate                freedom                to                ﬁx                the                single                component                of                the                tetrad,
+so      F(τ)=1                  −e(τ).      The      gauge-ﬁxed      action      is      then
+                                 ∫             (    1                                    1                                                             
+                                                          −1      ˙   µ   ˙                         2                                             ˙
+                    S=                  dτ          2e           X       Xµ       +      2em            +      iB(e        −      1)    −      ebc             .                     (4.2.23)
+
+We                 w  i  l  l                 ﬁ  n  d                 i  t                 c  o  n  v  e  n  i  e  n  t                 t o                 i  n  t  e  g  r  a  t  eBout,            thus            ﬁxinge=           1.            This            leaves
+only              the              ﬁeldsXµ,         b,and              c,withaction
+                                                                    ∫             (    1                           1                        
+                                                                                            ˙   µ   ˙                       2         ˙
+                                                        S=                 dτ          2X          Xµ       +      2   m        −     bc                                             (4.2.24)

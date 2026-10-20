@@ -1,0 +1,40 @@
+36                                     2                     Conformal              ﬁeld              theory
+
+Thus,
+                1   ∂  ∂   Xµ(z,    ¯z)Xν(z′,¯z′)=        −ηµν    δ2(z    −   z′, ¯z −  ¯z′)(2.1.20)
+               πα′    z  ¯z
+holdsasanoperatorequation.IntheHilbertspaceformalism,theproduct
+inthepathintegralbecomesatime-orderedproduct,andthedeltafunction
+comes from the derivatives acting on the time-ordering. This connection
+isdevelopedfurtherintheappendix.
+   In free ﬁeld theory, it is useful to introduce the operation ofnormal
+ordering.         Normal         ordered         operators,         denoted         :A:,         are         deﬁned         as         follows,
+                            :Xµ(z,¯z):       =   Xµ(z,    ¯z)  ,                                         (2.1.21a)
+               µ              ν                     µ              ν                 α′   µν            2
+          :X    (z1,  ¯z1)X    (z2,¯z2):       = X    (z1,¯z1)X      (z2,¯z2)+       2η       ln  |z12|    ,
+                                                                                                         (2.1.21b)
+where
+                                                 zij =   zi  −   zj  .                                     (2.1.22)
+The                   reader                   may                   be                   familiar                   with                   normal                   ordering                   deﬁned                   in                   terms                   of
+raising             and             lowering             operators;             these             two             deﬁnitions             will             be             related             later.
+The             point             of             this             deﬁnition             is             the             property
+                                     ¯         µ              ν
+                                  ∂1∂1    :X    (z1,  ¯z1)X    (z2,  ¯z2):      =    0.                    (2.1.23)
+This        follows        from        the        operator        equation        (2.1.20)        and        the        di!erential        equa-
+tion
+                                           ¯         2            2
+                                         ∂∂   ln |z|    =2πδ       (z,¯z)   .                              (2.1.24)
+Eq.                   (2.1.24)                   is                   obvious                   forz̸=                  0                   because                   ln|z|2=                  lnz+           ln¯z,andthe
+normalization     of     the     delta     function     is     easily     checked     by     integrating     both
+sides             using             eq.             (2.1.9).
+
+                             2.2                                             The               operator               product               expansion
+
+The             basic             object             of             interest             in             string             perturbation             theory             will             be             the             path
+integral             expectation             value             of             a             product             of             local             operators,
+                           ⟨  Ai1(z1,¯z1)      Ai2(z2,¯z2)      ...  Ain(zn,¯zn)       ⟩  ,                  (2.2.1)
+where      Ai    is                 some                 basis                 for                 the                 set                 of                 local                 operators.                 It                 is                 particularly
+important                   to                   understand                   the                   behavior                   of                   this                   expectation                   value                   in                   the
+limit                that                two                of                the                operators                are                taken                to                approach                one                another.                The
+tool           that           gives           a           systematic           description           of           this           limit           is           theoperator             product
+expansion           (OPE),   illustrated          in          ﬁgure          2.1.          This          states          that          a          product          of          two

@@ -1,0 +1,45 @@
+                      3.7 Strings in curved spacetime                    115
+
+Commonly, Gµν is called the sigma model metric or string metric, and G̃µν
+the Einstein metric. Because of the force from dilaton exchange, there is no
+equivalence principle and so no way to single out a preferred definition of
+the metric. Looking ahead, there are higher order e!ects in string theory
+that can give the dilaton a mass and so a finite range — a good thing,
+because the equivalence principle does of course hold to good accuracy.
+   Note that the dilaton appears in the action (3.7.20) in an overall fac-
+tor e−2Φ and otherwise is always di!erentiated. This is consistent with
+the fact that adding an overall constant to the dilaton has no e!ect on
+the Weyl anomaly. From the spacetime point of view this multiplies the
+action by a constant, which does not change the equations of motion. It
+also reflects the fact that in quantum field theory it is possible to rescale
+the fields in such a way that the coupling g appears only as an overall
+factor of g −2 , which in string theory is e−2Φ . For example, the Yang–Mills
+action is usually introduced in the form
+                                 !
+                             1
+                       S =−       dD x Tr (Fµν F µν ) ,             (3.7.27a)
+                             4
+                     Fµν = ∂µ Aν − ∂ν Aµ − ig[Aµ , Aν ]             (3.7.27b)
+(matrix notation). By defining
+                        gAµ = A$µ ,            $
+                                       gFµν = Fµν ,                  (3.7.28)
+g is removed from the field strength, covariant derivative, and gauge
+transformation and appears only in an overall g −2 in the action. In string
+theory this holds when the action is written in terms of the fields appearing
+on the string world-sheet. If we make a dilaton-dependent field redefinition
+as in going to the form (3.7.25) then it no longer holds.
+   When g appears only in the normalization of the action, every propa-
+gator contains a factor of g 2 and every interaction a factor of g −2 . It is
+not hard to show that an L-loop contribution to the e!ective action has
+exactly L − 1 more propagators than vertices and so scales as g 2(L−1) . In
+string theory this is e−χΦ , as we would expect.
+   The discussion of backgrounds extends to open strings. We have seen
+that open string vertex operators are integrated along the boundary, so
+open string fields appear as boundary terms in the sigma model action.
+
+                        Compactification and CFT
+The four string theories studied thus far (with or without boundaries,
+oriented or unoriented) have a number of features in common. One good
+feature is the automatic inclusion of general relativity. There are also
+several bad features: the need for 26 dimensions, the existence of the
+tachyon, and the absence of fermions in the spectrum. The elimination

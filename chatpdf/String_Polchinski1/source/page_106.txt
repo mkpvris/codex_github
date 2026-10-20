@@ -1,0 +1,44 @@
+84                                                                               3                     The              Polyakov              path              integral
+
+in                   string                   theory.                   This                   is                   an                   important                    point,                   and                   we                   will                   resolve                   it                   in
+section             3.7.
+        As                    an                    aside,                    the                    counting                    of                    couplings                    extends                    in                    a                    simple                    way                    to
+world-sheets           with           stringy           sources.           The           sources           for           closed           strings           are           closed
+boundary           loops,           while           the           open           string           sources           are           boundary           segments.           For
+convenience           we           will           require            the           open            string            source            boundaries            to           meet            the
+endpoint            boundaries            at            right            angles            in            the            world-sheet            metric.            We            have            to
+be            careful            because            the            boundary            curvature                                                                k       diverges             at             the             corners:             the
+Euler              numb er              is
+                                                                                                              χ      =        ˜χ    +        1    n          ,                                                                                         (3.2.8)
+                                                                                                                                             4         c
+where                   ˜χ     includes            only            the            integral            over            the            smooth            segments            of            boundary
+and             nc        is             the             number             of             corners.             The             correct             weight             for             the             path             integral
+is
+                                                                                                         ˜
+                                                                              exp(−λχ)=exp(                                                −λχ              +       λn       c/4)             .                                                        (3.2.9)
+This                follows                from                unitarity:                the                             λ-dependence                must                be                unchanged                if                we
+cut              through              a              world-sheet,              leaving              fewer              internal              lines              and              more              external
+sources.                 This                 will                 be                 the                 case                 for                 the                 weight                 (3.2.9)                 because                 the                 surface
+integral                     in            ˜χ       cancels                     on                     the                     cut                     edges.                     Adding                     a                     closed                     string                     source
+amounts           to           cutting           a           hole           in           the           world-sheet           and           decreases                                                                   χ      by           1.           Adding
+an                  open                  string                  source                  leaves               χ       unchanged                  and                  increases                                         nc         by                   2.                   Thus
+we             reach             the             same             conclusion             (3.2.7)             about             the             amplitude             for             emission             of
+closed             or             open             strings.
+
+                                                                                                     3.3                                              Gauge               ﬁxing
+
+The                      path                      integral                      (3.2.1)                      is                      not                      quite                      right.                      It                      contains                      an                      enormous
+overcounting,            because            conﬁgurations            (X,   g)and(                                                                                                  X′,g′)thatarerelatedto
+one             another             by             the             local             di!×Weyl            symmetry            represent            the            same            physical
+conﬁguration.                   We                   need,                   in                   e!ect,                   to                   divide                   by                   the                   volume                   of                   this                   local
+symmetry              group,
+                                                                                     ∫            [dX        dg]
+                                                                                               V                                    exp(−S)                          ≡        Z.                                                                       (3.3.1)
+                                                                                                    di!       ×We y l
+We                will                carry                this                out                by                gauge-ﬁxing,                integrating                over                a                slice                that                cuts
+through                      each                      gauge                      equivalence                      class                      once                      and                      obtaining                      the                      correct
+measure             on             the             slice             by             the             Faddeev–Popov             method.
+        In                     chapter                     1                     we                     imposed                     light-cone                     gauge.                     This                     is                     useful                     for                     some
+purposes                      but                      hides                      some                      of                      the                      symmetry                      of                      the                      theory,                      so                      we                      now
+make             a             di!erent             choice.             Note             that             the             metric,             being             symmetric,             has             three
+independent                  components,                  and                  that                  there                  are                  three                  gauge                  functions,                  the

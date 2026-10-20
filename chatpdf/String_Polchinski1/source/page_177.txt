@@ -1,0 +1,51 @@
+                                                         5.3                      The              measure              for              moduli                              155
+
+ﬁxing,               the               integral               over               metrics               and               positions               is               converted               to               an               integral
+over             the             gauge             group,             the             moduli,             and             the             unﬁxed             positions,
+                                                        [dg]       d2nσ        →       [d.    ]dµtd2n−κσ.                                                             (5.3.2)
+
+After          factoring          out          the          gauge          volume,          the          Jacobian          for          this          transformation
+becomes           the           measure           on           moduli           space.
+     The                 steps                 are                 the                 same                 as                 in                 section                 3.3,                 now                 taking                 account                 of                 the
+moduli          and          the          CKVs.          In          particular,          the          gauge          choice          will          now          ﬁxκ   of          the
+vertex              operator              coordinates,                  σa      →      σˆa.Labelthesetofﬁxedcoordinates
+                                                                           i               i
+(a,      i)by       f.Deﬁnet∫heFad∫deev–Popovmeasureonmodulispaceby
+                                                 µ                                                             .       ∏                  a           .a
+      1=∆           FP(g,    σ)               d     t                       [d.     ]  ,(g      −     gˆ(t)      )               ,(σi        −     σˆi     )   .      (5.3.3)
+                                          F               di!   ×We y l                                             (a,i)∈f
+By          deﬁnition,          every          metric          is          (di!  ×Weyl)-equivalent          to                         gˆ(t)          for          at          least          one
+value               oft   and        ..Thedeltafunctionfortheﬁxedcoordinatesthenpicks
+out      a      unique      value      of..Actually,asdiscussedattheendofsection5.1,
+there      may      be      a      residual      discrete      group      of      symmetries      of      ﬁnite      ordernR,
+so     the     delta     functions     are     nonzero     atnR                                      points.
+     Inserting            the            expression            (5.3.3)            into            the            path            integral            (5.3.1)            and            follow-
+ing             the             same             steps             as             before             leads             to
+                                                                 ∑           ∫                                           ∫               ∫       ∏
+                  Sj    ...j   (k1,...,k            n)=                             dµt     ∆FP(gˆ(t),            σˆ  )       [dφ     ]                   dσ    a
+                       1     n                                                                                                                                  i
+                                                               compact          F                                                              (a,i)̸∈f
+                                                              topologies
+                                                      (                                             ∏n                                                    
+                                        ×     exp        −Sm[φ,             gˆ(t)]      −     λχ                  gˆ(σi)1/2Vj                (ki;     σi)         .   (5.3.4)
+                                                                                                                                           i
+                                                                                                        i=1
+The             integral            over             metrics             and             vertex            operator             coordinates             is             now             reduced
+to           an           integral           over            the           moduli            spaceFfor             the             metric             and             over             the             unﬁxed
+coordinates,              with              the              measure              given              by           ∆FP.             In             the             vertex             operators,κof
+the             positions             are             ﬁxed.
+     Now             we             evaluate             the             Faddeev–Popov             measure.             The             delta             functions             are
+nonzero                 at   nR       points                 that                 are                 related                 by                 symmetry,                 so                 we                 consider                 one
+such            point            and            divide            bynR.            Expand            the            deﬁnition            (5.3.3)            of         ∆FPnear            the
+point.            The            general            metric            variation            is            equal            to            a            local            symmetry            variation
+plus             a             change             in             the             modulitk,
+                                   ∑µ
+                 ,g    ab    =              ,t   k∂tkgˆab         −     2(Pˆ1,σ)ab               +(2,ω              −     ∇·ˆ     ,σ)gˆab           .                 (5.3.5)
+
+                                   k=1
+The             inverse             Faddeev–Popov             determinant             is             then
+           ∆FP(g,ˆ          σˆ)−1
+                               ∫                                                               ∏
+                 =      nR           dµ,t       [d,  ω       d,  σ     ]  ,(,g       ab)               ,(,σa(σˆi))
+
+                                                                                            (a,i)∈f

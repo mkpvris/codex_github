@@ -1,0 +1,40 @@
+36                                 2 Conformal field theory
+
+Thus,
+           1
+              ∂z ∂z̄ X µ (z, z̄)X ν (z " , z̄ " ) = −η µν δ 2 (z − z " , z̄ − z̄ " ) (2.1.20)
+          πα"
+holds as an operator equation. In the Hilbert space formalism, the product
+in the path integral becomes a time-ordered product, and the delta function
+comes from the derivatives acting on the time-ordering. This connection
+is developed further in the appendix.
+   In free field theory, it is useful to introduce the operation of normal
+ordering. Normal ordered operators, denoted : A :, are defined as follows,
+                       : X µ (z, z̄) : = X µ (z, z̄) ,                                       (2.1.21a)
+                                                                             α "
+        : X µ (z1 , z̄1 )X ν (z2 , z̄2 ) : = X µ (z1 , z̄1 )X ν (z2 , z̄2 ) + η µν ln |z12 |2 ,
+                                                                             2
+                                                                                             (2.1.21b)
+where
+                                           zij = zi − zj .                                 (2.1.22)
+The reader may be familiar with normal ordering defined in terms of
+raising and lowering operators; these two definitions will be related later.
+The point of this definition is the property
+                              ∂1 ∂¯1 : X µ (z1 , z̄1 )X ν (z2 , z̄2 ) : = 0 .              (2.1.23)
+This follows from the operator equation (2.1.20) and the di!erential equa-
+tion
+                                    ∂∂¯ ln |z|2 = 2πδ 2 (z, z̄) .                          (2.1.24)
+Eq. (2.1.24) is obvious for z -= 0 because ln |z|2 = ln z + ln z̄, and the
+normalization of the delta function is easily checked by integrating both
+sides using eq. (2.1.9).
+
+                        2.2      The operator product expansion
+
+The basic object of interest in string perturbation theory will be the path
+integral expectation value of a product of local operators,
+                      / Ai1 (z1 , z̄1 ) Ai2 (z2 , z̄2 ) . . . Ain (zn , z̄n ) , ,            (2.2.1)
+where Ai is some basis for the set of local operators. It is particularly
+important to understand the behavior of this expectation value in the
+limit that two of the operators are taken to approach one another. The
+tool that gives a systematic description of this limit is the operator product
+expansion (OPE), illustrated in figure 2.1. This states that a product of two

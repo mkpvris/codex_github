@@ -1,0 +1,41 @@
+                                                                         Ap p en d ix                                     A
+                                          A             short             course             on             path             integrals
+
+
+
+
+
+
+
+
+
+
+Path                    integrals                    are                    a                    powerful                    means                    of                    representing                    quantum                    theories,
+especially             on             surfaces             of             nontrivial             topology.             The             introduction             we             present
+here                     is                     similar                     to                     that                     which                     the                     reader                     will                     ﬁnd                     in                     any                     modern                     ﬁeld
+theory             text.             We             include             it             in             order             to             emphasize             certain             ideas             that             we             will
+need,                   such                   as                   the                   relation                   between                   the                   path                   integral                   and                   Hilbert                   space
+formalisms              and              the              use              of              operator              equations              inside              the              path              integral.
+
+                                                                                     A.1                                               Bosonic               ﬁelds
+
+Consider            ﬁrst            a            quantum            mechanics            problem,            one            degree            of            freedom            withˆ
+Hamiltonian                               H(p,ˆ          qˆ),             where
+                                                                                                  [q,ˆ     pˆ]=            i¯h.                                                                                   (A.1.1)
+Throughout          the         appendix         operators          are         indicated         by         hats.         A         basic         quantity
+of              interest              is             the             amplitude             to             evolve             from              one    q     eigenstate             to             another             in
+atime                 T,
+                                                                                ⟨qf|exp(−iHT /ˆ                                   ¯h)|qi⟩            .                                                            (A.1.2)
+
+       In                ﬁeld                theory                it                is                generally                convenient                to                use                the                Heisenberg                repre-
+sentation,             where             operators             have             the             time             dependence
+                                                             Aˆ   (t)=exp(                       iHt/ˆ         ¯h)Aˆ          exp(−iHt/ˆ                       ¯h)      .                                         (A.1.3)
+
+The             state          |q,    t⟩       is             an             eigenstate             of     qˆ(t),
+                                                                                       qˆ(t)|q,    t⟩             =       |q,    t⟩q.                                                                             (A.1.4)
+In             terms             of             thet  =0 Schrodinger      eigenstates      this      is¨
+                                                                                |q,    t⟩       =exp(iHt/ˆ                          ¯h)|q⟩           .                                                            (A.1.5)
+
+In             this             notation             the             transition             amplitude             (A.1.2)             is                         ⟨qf,T             |qi,0⟩.
+
+                                                                                                              329

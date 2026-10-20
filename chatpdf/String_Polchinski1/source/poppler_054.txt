@@ -1,0 +1,39 @@
+                                             2
+                        Conformal field theory
+
+
+
+
+In this chapter we develop a number of necessary ideas and techniques
+from the world-sheet quantum field theory, including the operator prod-
+uct expansion, conformal invariance, the Virasoro algebra, and vertex
+operators. The focus is on conformally invariant field theory in two flat
+dimensions; as we will see in the next chapter, this is what we are left with
+after fixing the local symmetries of the string world-sheet.
+
+
+                  2.1    Massless scalars in two dimensions
+
+We will start with the example of D free scalar fields in two dimensions,
+X µ (σ 1 , σ 2 ). We will refer to these two dimensions as the world-sheet,
+anticipating the application to string theory. The action is
+                               !        "                              #
+                         1
+                S=                 d 2 σ ∂ 1 X µ ∂ 1 X µ + ∂2 X µ ∂ 2 X µ .   (2.1.1)
+                        4πα"
+This is the Polyakov action (1.2.13), except that the world-sheet metric
+γab has been replaced with a flat Euclidean metric δab , signature (+, +).
+The overall sign change of the action is a result of the Euclidean con-
+vention (A.1.31). As we will see, most string calculations are carried out
+on a Euclidean world-sheet. At least for flat metrics, the relation between
+Euclidean and Minkowski amplitudes is given by a standard analytic con-
+tinuation, explained in the appendix. In fact, the results of the present
+chapter apply equally to a Minkowski world-sheet, and in the first seven
+sections all equations make sense if σ 2 is replaced with iσ 0 . For the index
+µ we still take the flat Minkowski metric.
+   It is straightforward to quantize the action (2.1.1) canonically, finding the
+spectrum, vacuum expectation values, and so on. We have done essentially
+this in chapter 1, after having gone to light-cone gauge. Here we will take
+a somewhat di!erent route, developing first various local properties such
+
+                                             32

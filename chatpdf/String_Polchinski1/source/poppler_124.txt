@@ -1,0 +1,49 @@
+102                       3 The Polyakov path integral
+
+have the flat world-sheet vertex operators
+                               !
+                       2gc               ¯ ν eik·X : .
+                             d2 z : ∂X µ ∂X                      (3.6.3)
+                        α$
+The normalization relative to the tachyon vertex operator follows from
+the state–operator mapping, and we will see in chapter 6 that the same
+relative normalization is obtained from unitarity of the S-matrix. The
+weight is
+                                         α$ k 2
+                                h = h̃ = 1 +    ,                     (3.6.4)
+                                           4
+so these are massless, again agreeing with the light-cone quantization.
+There are further conditions in order that this be a tensor, as we will work
+out below.
+
+                 Vertex operators in the Polyakov approach
+We have in the state–operator mapping a systematic means of writing the
+flat world-sheet vertex operator for any state. Since the world-sheet can
+always be made locally flat, this is in principle all we need. For perspective,
+however, it is useful to study the curved world-sheet vertex operators in
+the Polyakov formalism. We will do this in the remainder of the section.
+The method we use will be somewhat clumsy and not as systematic as
+the state–operator mapping, but some of the results are useful. The reader
+need not work out all the details.
+   Any operator to be included in the Polyakov path integral (3.5.5) must
+respect the local di!×Weyl symmetry of the theory. We have not been
+specific in the first line of eq. (3.6.1) as to how the operator is to be
+defined on the curved world-sheet. As in the earlier discussion of the Weyl
+anomaly, it is convenient to use a method that preserves di! invariance
+automatically, and to check the Weyl transformation by hand. For most
+purposes dimensional regularization is used in the literature. However,
+we will not have extensive need for this and so will not introduce it;
+rather, we will generalize the normal ordering introduced earlier. Define
+a renormalized operator [ F ]r by
+                    2 !                                           3
+                      1                               ,      ,
+       [ F ]r = exp         d2 σd2 σ $ ∆(σ, σ $ )                     F.   (3.6.5)
+                      2                             ,X (σ) ,Xµ (σ $ )
+                                                      µ
+
+Here
+                                      α$
+                            ∆(σ, σ $ ) = ln d2 (σ, σ $ ) ,            (3.6.6)
+                                      2
+where d(σ, σ $ ) is the geodesic distance between points σ and σ $ . As with
+normal ordering, the expression (3.6.5) instructs us to sum over all ways of

@@ -1,0 +1,45 @@
+68                                                                             2                     Conformal              ﬁeld              theory
+
+The            X′        integral             is             a             constant,             independent             of             the             boundary             condition,             so
+                    i
+                                                                                                          (            1       ∞                                       
+                                                             (1[Xb]                   ∝        exp              −     α′                  mXmX−m                                .                                      (2.8.24)
+                                                                                                                              m=1
+This              is              a              Gaussian,              and              is              in              fact              the              ground              state.              To              see              this,              write              the
+raising             and             lowering             operators             in             the             Schrodinger             basis,¨
+                                                                                              in                                       (α′1/2                      ∂
+                                                            αn        =       −      (2α′)1/2X−n                            −       i         2                ∂X              ,                                    (2.8.25a)
+                                                                                                                                                                         n
+                                                                                              in                                   (α′         1/2              ∂
+                                                            ˜αn       =       −(2α′)1/2Xn                               −      i         2                 ∂X                  ,                                   (2.8.25b)
+                                                                                                                                                                     −n
+as               follows               from               the               Laurent               expansion               at                |z|       =             1               and               the               mode               algebra.
+Acting             on             (2.8.24),             we             ﬁnd
+                                                                                                    ˜
+                                                           αn(1[Xb]=                                αn(1[Xb]=0                                     ,n              ≥0,                                                 (2.8.26)
+so  this  is  indeed  the  ground  state.  Thus,
+                                                                                                   |1⟩∝|                 0;      0⟩      .                                                                             (2.8.27)
+Rather                 than                 try                 to                 keep                 track                 of                 the                 overall                 normalization                 of                 the                 path
+integral             at             this             point,             we             deﬁne            |1⟩        =       |0;      0⟩.
+       Another                  easy                  calculation                  is                  the                  state                  corresponding                  to             ∂kX;                  this                  just
+adds             a             factor             of  ∂kXcl(0)           =                k!Xk              to               the               result,               so
+                                                                                                       (α′1/2
+                               |∂kX⟩               =       k!Xk(1                     =       −i                                (k      −      1)!α−k|0;      0⟩                       ,                               (2.8.28)
+                                                                                                              2
+                                                          ¯k
+and                similarly                for           ∂      X.                This                extends                 to                all                products                 of                exponentials                 and
+derivatives            of                    X.            The            conformal            normal            ordering            just            cancels            the            e!ect            of
+the         Xi′        path             integral.
+
+
+                                                              2.9                                             More               on               states               and               operators
+
+                                                                                                        The              OPE
+In                     this                     section                     we                     make                     additional                     applications                     of                     the                     state–operator
+correspondence.               The              ﬁrst               is              a              simple              and              general              derivation              of              the              OPE,
+as             shown             in             ﬁgure             2.7.             Consider             the             product
+                                                                                            Ai(z,             ¯z)Aj(0,                  0)       ,                                                                         (2.9.1)
+where                |z|       <       1.             We             can             divide             the             path             integral             into             an             integral             over             ﬁelds
+/i       on               the               interior               of               the               unit               disk,               an               integral               over               ﬁelds/bon               the               unit
+circle,                    and                    an                    integral                    over                    ﬁelds/eon                    the                    exterior                    of                    the                    unit                    disk.
+This                 sort                 of                 cutting                 open                 of                 path                 integrals                 is                 discussed                 in                 detail                 in                 the

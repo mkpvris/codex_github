@@ -1,0 +1,50 @@
+                                   7.2 CFT on the torus                                          213
+
+Again, we do not try to keep track of the overall sign, setting it to be
+positive.
+
+
+                                           General CFTs
+
+For general CFTs,
+                                      (
+                           Z(τ) =           q hi −c/24 q̄ h̃i −c̃/24 (−1)Fi ,               (7.2.28)
+                                       i
+
+where i runs over all states of the CFT, and Fi is again the world-sheet
+                                                                    1
+fermion number. Invariance under τ → τ + 1 requires hi − h̃i − 24     (c − c̃)
+to be an integer. Looking at the unit operator, this requires c − c̃ to be a
+multiple of 24. For general operators one then has the requirement that
+the spin be an integer,
+
+                                           hi − h̃i ∈ Z .                                   (7.2.29)
+
+Incidentally, CFTs for which c − c̃ is not a multiple of 24 are certainly
+of interest. These cannot be separately modular-invariant, but with
+appropriate projections can be combined into a modular-invariant
+theory.
+   Invariance under τ → −1/τ puts a further constraint on the spectrum.
+Let us here note just one general consequence, which relates the states of
+large h to those of lowest h. Consider the partition function for τ = i6
+as 6 → 0. The convergence factor q = exp(−2π6) is approaching unity,
+so the partition function is determined by the density of states at high
+weight. Using modular invariance, this is equal to the partition function at
+τ = i/6. In the latter case, q = exp(−2π/6) is going to zero, so the state of
+lowest weight dominates the sum. This is the unit state, with L0 = L̃0 = 0,
+giving
+                                                                  
+                                             π(c + c̃)
+                                           6→0
+                                 Z(i6) ≈ exp           .                                    (7.2.30)
+                                               126
+The density of states at high weight is thus determined by the central
+charge. This generalizes the free-boson result, where c = c̃ = d counts the
+number of free bosons.1
+
+
+1 To be precise, the result (7.2.30) holds in compact unitary CFTs. In nonunitary theories there are
+ usually operators of negative weight, whose contribution will dominate that of the unit operator.
+ In the linear dilaton theory, the central charge depends on V µ but the density of states does not:
+ here the exception occurs because of complications due to the noncompactness of X µ combined
+ with lack of translation invariance.

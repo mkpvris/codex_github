@@ -1,0 +1,57 @@
+                       3.7 Strings in curved spacetime                        111
+
+We could of course take linear combinations of vertex operators with
+di!erent momenta. To first order the Weyl variation is then given in
+eq. (3.6.16); we take for convenience a renormalization scheme in which
+γ = 0. Relating this Weyl transformation to T aa as in eq. (3.4.6) gives
+             1 G ab                    i B ab                 1
+   T aa = −    $
+                 /µν g ∂a X µ ∂b X ν − $ /µν 1 ∂a X µ ∂b X ν − / Φ R ,    (3.7.12)
+            2α                        2α                      2
+where, to linear order in χµν , Bµν and Φ,
+              α$ # 2                                       $
+     G
+    /µν ≈−        ∂ χµν − ∂ν ∂ω χµω − ∂µ ∂ω χων + ∂µ ∂ν χωω + 2α$ ∂µ ∂ν Φ ,
+              2
+                                                                      (3.7.13a)
+              α $
+       B
+     /µν ≈ − ∂ω Hωµν ,                                                (3.7.13b)
+              2
+            D − 26 α$ 2
+      /Φ ≈           − ∂ Φ.                                            (3.7.13c)
+               6        2
+We have included in / Φ the flat spacetime anomaly found in section 3.4,
+including the contribution proportional to 26 from the ghost fields. The
+symbol / is used for the coefficients in T aa because these are essentially
+the renormalization group beta functions, governing the dependence of
+the physics on world-sheet scale. We will discuss this connection further,
+though it does not come up in detail until chapter 15.
+   The Weyl anomalies (3.7.13) have further contributions from higher
+orders in the fields. For example, expanding the path integral to second
+order in the cubic interaction from the expansion (3.7.10) will give rise
+to divergences when the two interaction vertices approach one another.
+Their OPE includes a singularity of the form |z|−2 ∂X µ ∂X    ¯ ν times the
+                                                  2
+square of the derivative of Gα/ . Integrating d z produces a logarithmic
+divergence. Di! invariance requires that the integral be cut o! in terms
+of the invariant distance, |z| exp(ω) > a0 . This introduces a dependence
+on the scale of the metric, ln zmin = −ω + ln a0 . The Weyl variation /µν     G
+
+thus gets a contribution proportional to O(Gα/,γ )2 which combines with
+the linear second derivative term to form the spacetime Ricci tensor.
+   We will not work this out in detail, but quote the result keeping all
+terms with up to two spacetime derivatives
+                                     α$
+       G
+      /µν = α$ Rµν + 2α$ ∇µ ∇ν Φ −      Hµλω Hν λω + O(α$2 ) ,           (3.7.14a)
+                                     4
+             α$
+       B
+      /µν = − ∇ω Hωµν + α$ ∇ω ΦHωµν + O(α$2 ) ,          (3.7.14b)
+              2
+            D − 26 α$ 2                    α$
+      /Φ =        − ∇ Φ + α$ ∇ω Φ∇ω Φ − Hµνλ H µνλ + O(α$2 ) .
+               6    2                      24
+                                                          (3.7.14c)
+Several terms in (3.7.14) can be recognized from the linear approximation

@@ -1,0 +1,45 @@
+                          3.5 Scattering amplitudes                         97
+
+Lorentz invariance and dimensional analysis, but in more general CFTs
+one might imagine that
+                                        C(σ)
+                           T aa (σ) = −      R(σ) ,                    (3.4.31)
+                                         12
+where C(σ) is some local operator. In particular, the trace would still vanish
+on a flat world-sheet. Repeating the calculation (3.4.30) with −C(σ)/12 in
+place of a1 , there is an additional asymmetric term proportional to ∂a C(σ)
+from the integration by parts. The consistency condition thus implies that
+expectation values involving C(σ) are position-independent, implying that
+C(σ) itself is just a numerical constant c.
+
+
+                         3.5   Scattering amplitudes
+
+The idea of a sum over all world-sheets bounded by given initial and
+final curves seems like a natural one. However, it is difficult to define this
+in a way that is consistent with the local world-sheet symmetries, and
+the resulting amplitudes are rather complicated. There is one special case
+where the amplitudes simplify. This is the limit where the string sources are
+taken to infinity. This corresponds to a scattering amplitude, an S-matrix
+element, with the incoming and outgoing strings specified. For most of
+this book we will confine ourselves to the S-matrix and similar ‘on-shell’
+questions. This is not completely satisfying, because one would like to be
+able to discuss the state of the system at finite times, not just asymptotic
+processes. For now we focus on the S-matrix because it is well understood,
+while it is not clear what is the correct way to think about string theory
+o!-shell. We will return to this issue briefly in the next section, and again
+in chapter 9.
+   So we are now considering a process like that shown in figure 3.8(a),
+where the sources are pulled o! to infinity. We will give a heuristic
+argument for how these sources should be represented in the path integral.
+Away from the scattering process the strings propagate freely. Each of
+the incoming and outgoing legs is a long cylinder, which can be described
+with a complex coordinate w,
+                     − 2πt ≤ Im w ≤ 0 ,     w∼
+                                             = w + 2π .                 (3.5.1)
+The lower end of the cylinder, Im w = −2πt, is the end with the external
+source, the upper end fits onto the rest of the world-sheet, and the
+circumference is the periodic Re w direction. The limit corresponding to
+the scattering process is t → ∞. It may seem that we are confusing a long
+distance in spacetime with a long cylinder in the world-sheet coordinate,
+but this will turn out to be correct: we will see later that propagation

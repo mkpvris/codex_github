@@ -1,0 +1,48 @@
+                               3.6 Vertex operators                                          107
+
+Lorentz-invariant with a positive Hilbert space norm. These relations
+are the signatures of local spacetime symmetries. In particular, ξµ is
+an infinitesimal spacetime coordinate transformation, and .µ is the local
+spacetime symmetry of the antisymmetric tensor field. We now see in the
+interacting theory the existence of local spacetime symmetries, which we
+argued in section 1.4 had to be present because of the existence of massless
+spin-1 and spin-2 fields.
+   There is a technical point we should mention. Di!erent renormaliza-
+tion schemes assign di!erent names to the renormalized operators. The
+most common scheme is dimensional regularization; the operators in this
+scheme are related to those in the scheme above by
+                 [ eik·X ]DR = [ eik·X ]r ,                                             (3.6.24a)
+           [ ∂a X µ eik·X ]DR = [ ∂a X µ eik·X ]r ,                                     (3.6.24b)
+                                                               α$
+     [ ∂a X µ ∂b X ν eik·X ]DR = [ ∂a X µ ∂b X ν eik·X ]r −       gab η µν R[ eik·X ]r ,
+                                                               12
+                                                                                    (3.6.24c)
+                                                             α$
+        [ ∇a ∂b X µ eik·X ]DR = [ ∇a ∂b X µ eik·X ]r + i        gab k µ R[ eik·X ]r .
+                                                             12
+                                                                                        (3.6.24d)
+Comparing with eq. (3.6.18), we see that in dimensional regularization
+γ = 0, so the equations of motion hold inside the regulated operator.
+This is a convenience — many equations simplify. In particular, in the
+spacetime gauge transformation (3.6.20), φ is invariant.
+
+                           Open string vertex operators
+The extension to the open string is straightforward. We leave the details
+for the reader as exercise 3.9, giving only some results. The tachyon vertex
+operator is
+                                       !
+                                  go        ds [ eik·X ]r                                (3.6.25)
+                                       ∂M
+
+and is Weyl-invariant for k 2 = 1/α$ . The photon vertex operator is
+                                           !
+                              go
+                         − i $ 1/2 eµ            ds [ Ẋ µ eik·X ]r ,                    (3.6.26)
+                            (2α )           ∂M
+
+where the normalization relative to the tachyon is obtained either from
+the state–operator mapping or unitarity, the i is as discussed for the closed
+string vertex operator (3.6.14), and the sign is a matter of convention. This
+operator is Weyl-invariant if k 2 = 0 and k · e = 0. There is an equivalence
+eµ ∼= eµ + λkµ , which is a spacetime gauge transformation. This leaves
+D − 2 transverse polarizations.

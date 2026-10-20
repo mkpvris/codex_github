@@ -1,0 +1,53 @@
+                                                   6.7 General results                                                 201
+
+    The four-point function translates into an operator expression
+4                                                                5
+    A%i (∞, ∞)Ak (z1 , z̄1 )Al (z2 , z̄2 )Aj (0, 0) S2 = -- i|T[ Âk (z1 , z̄1 )Âl (z2 , z̄2 ) ]|j* ,
+                                                                                            (6.7.16)
+where T denotes radial ordering. Let |z1 | > |z2 | and insert a complete set
+of states,
+                                                     1 = |m*Gmn-- n| .                                             (6.7.17)
+The four-point amplitude (6.7.16) becomes
+                 ( h −h −h h̃ −h̃ −h̃ hm −hl −hj h̃m −h̃l −h̃j
+                    i  k
+                      z1  m  i   k   m
+                                     z̄1               z2            z̄2             cikm cmlj .                   (6.7.18)
+                  m
+Thus, the operator product coefficients determine not only the three-point
+expectation values on the sphere, but also the four-point and, by the
+same construction, arbitrary n-point amplitudes. For |z1 − z2 | > |z1 |, which
+overlaps the region |z1 | > |z2 | where the expansion (6.7.18) is valid, we
+can translate Ak to the origin and give a similar expansion in terms of
+cilm cmkj . The equality of these two expansions is associativity of the OPE,
+figure 2.8.
+
+                                               Operator calculations
+The Hilbert space expressions give us one more way to calculate ex-
+pectations values. We take as an example the case of four exponential
+operators
+          !                                                                                          "
+              : eik4 ·X(∞,∞) :% : eik1 ·X(z1 ,z̄1 ) : : eik2 ·X(z2 ,z̄2 ) : : eik3 ·X(0,0) :
+                                                                                                       S2
+                                                                           ik1 ·X1 ◦ ◦ ik2 ·X2 ◦
+                                                    = -- 0; k4 |T[ e ◦
+                                                                     ◦            ◦ ◦   e       ◦   ]|0; k3 * .    (6.7.19)
+We have used the result (2.7.11) that : : ordered operators are the same
+as ◦◦ ◦◦ ordered operators for this CFT. We have abbreviated X µ (zi , z̄i ) as
+Xiµ and to avoid clutter are omitting the hats on operators. By definition
+                                               ◦
+                                               ◦   eik·X ◦◦ = eik·XC eik·XA ,                                      (6.7.20)
+where
+                                     2 % 31/2 (
+                                              ∞
+                                           α                1 µ m
+         XCµ (z, z̄) = xµ − i                                 (α−m z + α̃µ−m z̄ m ) ,                             (6.7.21a)
+                                           2            m=1
+                                                            m
+                                      2 % 31/2 (∞
+                                                                                    6                    7
+          µ             α% µ     2     α           1                                        αµm α̃µm
+         XA (z, z̄) = −i p ln |z| + i                                                          + m           .    (6.7.21b)
+                        2              2       m=1
+                                                   m                                        zm  z̄
+For |z1 | > |z2 | the matrix element (6.7.19) becomes
+                           -- 0; k4 |eik1 ·X1C eik1 ·X1A eik2 ·X2C eik2 ·X2A |0; k3 * .                            (6.7.22)

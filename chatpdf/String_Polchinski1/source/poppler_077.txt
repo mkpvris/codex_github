@@ -1,0 +1,50 @@
+                               2.6 The Virasoro algebra                             55
+
+
+
+
+                         z=0
+                              C3       C2    C1                                C2
+                                                                z2
+                                                                C1 C3
+    (a)                                                (b)
+
+Fig. 2.4. (a) Contours centered on z = 0. (b) For given z2 on contour C2 , contour
+C1 − C3 is contracted.
+
+
+is given by the residue of the OPE,
+                                        4
+                                            dz2
+                  [Q1 , Q2 ]{C2 } =             Resz1 →z2 j1 (z1 )j2 (z2 ) .   (2.6.14)
+                                         C2 2πi
+This contour argument allows us to pass back and forth between OPEs
+and commutation relations. Let us emphasize this: for conserved currents,
+knowing the singular terms in the OPE is equivalent to knowing the
+commutator algebra of the corresponding charges. The calculation of
+figure 2.4 also applies with the conserved charge Q2 {C2 } replaced by any
+operator,
+                                              1
+      [Q, A(z2 , z̄2 )] = Resz1 →z2 j(z1 )A(z2 , z̄2 ) =
+                                                 δA(z2 , z̄2 ) . (2.6.15)
+                                              i.
+This is just the familiar statement that a charge Q generates the cor-
+responding transformation δ. Similarly for the contour integral of an
+antiholomorphic current
+                                                  4
+                                      dz̄
+                                   Q̃{C} = −
+                                          ̃ ,                                 (2.6.16)
+                                    C 2πi
+the Ward identity and contour argument imply
+                                                1
+      [Q̃, A(z2 , z̄2 )] = Resz̄1 →z̄2 ̃(z̄1 )A(z2 , z̄2 ) =
+                                                   δA(z2 , z̄2 ) .  (2.6.17)
+                                                i.
+  Apply this to the Virasoro generators (2.6.6), where jm (z) = z m+1 T (z):
+   Resz1 →z2 z1m+1 T (z1 ) z2n+1 T (z2 )
+                                   0                                       1
+                                        c     2            1
+       = Resz1 →z2 z1m+1 z2n+1           4
+                                            + 2 T (z2 ) +     ∂T (z2 )
+                                       2z12  z12          z12

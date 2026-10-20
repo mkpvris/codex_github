@@ -1,0 +1,49 @@
+114                                               3                     The              Polyakov              path              integral
+
+                                                           The              spacetime              action
+The             ﬁeld             equations             (3.7.15)             can             be             derived             from             the             spacetime             action
+                                 1     ∫                                          [      2(D      −     26)                       1
+                   S    =                    dDx(−G)1/2e−2Φ                         −                           +    R    −           Hµν λ     Hµν λ
+                              2κ2                                                               3α′                             12
+                                    0                                                                                            ]
+                                                                                      +4∂µΦ∂µΦ+                       O(α′)          .               (3.7.20)
+
+The         normalization         constantκ0                            is         not         determined         by         the         ﬁeld         equations
+and       has       no       physical       signiﬁcance       since       it       can       be       changed       by       a       redeﬁnition
+of      Φ.       One       can       verify       that
+                                                1       ∫                                          
+                         ,S      =−                           dDx(−G)1/2e−2Φ                         ,G    µν   /Gµν       +    ,B     µν  /Bµν
+                                           2κ2α′
+                                                 0         (                                                                       
+                                                     +        2,Φ       −     1Gµν       ,G    µν     (/Gω      ω   −     4/Φ)          .            (3.7.21)
+                                                                              2
+The            action            is            written            in            bold            as            a            reminder            that            this            is            the            e!ective            action
+governing              the              low              energy              spacetime              ﬁelds,              unlike              the              world-sheet              actions
+that             have             appeared             everywhere             previously             in             this             book.
+     It             is             often             useful             to             make             a             ﬁeld             redeﬁnition             of             the             form
+                                                   G˜µν    (x)=exp(2                ω(x))Gµν            (x)     ,                                    (3.7.22)
+
+which                is                a                spacetime                Weyl                transformation.                The                Ricci                scalar                constructed˜
+from        Gµν       is
+       ˜                                                                 2                                                        µ     
+      R    =exp(−2ω)                     R−2(D               −    1)∇       ω    −    (D     −    2)(D       −     1)∂µω∂            ω       .       (3.7.23)
+
+For               the               special               caseD=             2,               this               is               the               Weyl               transformation               (3.3.5).               Let
+ω    =2(Φ0−Φ)                    /(D      −    2)             and             deﬁne
+                                                                   Φ=Φ˜            −Φ0          ,                                                    (3.7.24)
+
+which      has      vanishing      expectation      value.      The      action      becomes
+                       1     ∫                                 [      2(D       −    26)
+         S=                        dDX(−G˜)1/2                   −                          e4Φ˜/(D−2)           +    R˜
+                    2κ2                                                       3α′                                                     ]
+                               1     −8Φ˜/(D−2)                      ˜  µν λ              4             ˜˜µ      ˜                 ′
+                       −     12e                         Hµν λ      H          −     D    −     2  ∂µΦ∂          Φ+        O(α)           ,          (3.7.25)
+
+where       tildes       have       been       inserted       as       a       reminder       that       indices       here       are       raised
+with        G˜  µν  .Intermsof                        G˜µν    ,                    the                    gravitational                    Lagrangian                    density                    takes
+the                standard                Hilbert                form                (−G˜)1/2R˜/2κ2.                The                constantκ=κ0eΦ0 is                the
+gravitational             coupling,             which             in             four-dimensional             gravity             has             the             value
+
+                                             1/2          (8π)1/2                                      18                −1
+                   κ   =(8πG            N)          =         M            =(2.43            ×    10         GeV )              .                    (3.7.26)
+                                                                   P

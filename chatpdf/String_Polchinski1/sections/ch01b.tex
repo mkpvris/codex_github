@@ -1,0 +1,595 @@
+\subsectionlink{開弦のスペクトル}
+\label{sec:1.3}
+
+この節では開弦のスペクトルを、次の節では閉弦のスペクトルを論じる。その際、光円錐ゲージを用いて $\mathrm{diff}\times\mathrm{Weyl}$ の冗長性を除く。このゲージは理論の共変性を見えなくするが、スペクトルへ至る最短の方法であり、臨界次元や質量ゼロのゲージ粒子の存在といった重要な特徴を明らかにする。ここでは方法よりも結果に重点を置くので、読者は細部にこだわる必要はない。共変な共形ゲージを用いた系統的な取り扱いは次章から始める。
+
+時空に光円錐座標を定義する：
+\begin{equation}
+x^\pm=2^{-1/2}(x^0\pm x^1),\qquad x^i,\quad i=2,\ldots,D-1.
+\tag{1.3.1}\label{eq:1.3.1}
+\end{equation}
+時空座標 $x^\mu$ には小文字を、それに対応する世界面上の場 $X^\mu(\sigma,\tau)$ には大文字を用いている。この座標での計量は
+\begin{align}
+a^\mu b_\mu&=-a^+b^- -a^-b^+ +a^ib^i,
+\tag{1.3.2a}\label{eq:1.3.2a}\\
+a_-&=-a^+,\qquad a_+=-a^-,\qquad a_i=a^i.
+\tag{1.3.2b}\label{eq:1.3.2b}
+\end{align}
+世界面の各点で、世界面のパラメーター $\tau$ を時空座標 $x^+$ に等しく取る。$\tau=x^0$ を試そうと思うかもしれないが、それでは同じような簡単化は得られない。したがって、$x^+$ が時間の役割を、$p^-$ がエネルギーの役割を果たす。縦方向の変数 $x^-$ と $p^+$ は、横方向の $x^i$ と $p^i$ と同じく、空間座標と運動量のようなものになる。
+
+まず作用 $S'_{\mathrm{pp}}$ を用いて、点粒子の場合に手順を説明する。世界線のパラメーター表示を
+\begin{equation}
+X^+(\tau)=\tau
+\tag{1.3.3}\label{eq:1.3.3}
+\end{equation}
+によって固定する。すると作用は
+\begin{equation}
+S'_{\mathrm{pp}}=\frac12\int d\tau
+\left(-2\eta^{-1}\dot X^-+\eta^{-1}\dot X^i\dot X^i-\eta m^2\right)
+\tag{1.3.4}\label{eq:1.3.4}
+\end{equation}
+となる。正準運動量 $p_\mu=\partial L/\partial\dot X^\mu$ は
+\begin{equation}
+p_-=-\eta^{-1},\qquad p_i=\eta^{-1}\dot X^i.
+\tag{1.3.5}\label{eq:1.3.5}
+\end{equation}
+計量の関係 $p^i=p_i$ および $p^+=-p_-$ も思い出そう。Hamiltonian は
+\begin{equation}
+\begin{aligned}
+H&=p_-\dot X^-+p_i\dot X^i-L\\
+ &=\frac{p^ip^i+m^2}{2p^+}.
+\end{aligned}
+\tag{1.3.6}\label{eq:1.3.6}
+\end{equation}
+ゲージを固定した理論では $X^+$ は力学変数ではないので、$p_+\dot X^+$ という項がないことに注意しよう。また、作用に $\dot\eta$ は現れないため、運動量 $p_\eta$ はゼロとなる。$\eta=-1/p_-$ であるから、$\eta$ を独立な正準座標として扱うべきでないことは明らかである。より完全な取り扱いでは、拘束のある系の理論を用いてこれを正当化することになる。
+
+量子化するには、力学的な場に正準交換関係を課す：
+\begin{equation}
+[p_i,X^j]=-i\delta_i{}^j,\qquad [p_-,X^-]=-i.
+\tag{1.3.7}\label{eq:1.3.7}
+\end{equation}
+運動量固有状態 $\lvert k_-,k^i\rangle$ は完全系をなす。残る運動量成分 $p_+$ は、次のように他の成分から決まる。ゲージの選択は $\tau$ の並進と $X^+$ の並進を結びつけるので、$H=-p_+=p^-$ である。$H$ と $p_+$ の相対符号は、前者が能動的で後者が受動的であることから生じる。すると式 \hyperref[eq:1.3.6]{(1.3.6)} は相対論的な質量殻条件となり、相対論的スカラーのスペクトルが得られた。
+
+次に開弦へ移り、座標領域を再び $-\infty<\tau<\infty$、$0\leq\sigma\leq\ell$ と取る。ここでも Polyakov 作用の冗長性を固定するためにゲージを選ぶ必要があるが、適切に選べば運動方程式も簡単になる。そこで
+\begin{align}
+X^+&=\tau,
+\tag{1.3.8a}\label{eq:1.3.8a}\\
+\partial_\sigma\gamma_{\sigma\sigma}&=0,
+\tag{1.3.8b}\label{eq:1.3.8b}\\
+\det\gamma_{ab}&=-1
+\tag{1.3.8c}\label{eq:1.3.8c}
+\end{align}
+とする。すなわち、世界面の時間座標には光円錐ゲージを選び、計量には二つの条件を課す。これは三つの局所対称性（二つの世界面座標の選択と Weyl スケーリング）に対する三つの条件である。
+
+ゲージ \hyperref[eq:1.3.8a]{(1.3.8)} に至る方法を見よう。まず \hyperref[eq:1.3.8a]{(1.3.8a)} に従って $\tau$ を選ぶ。ここで、$\tau$ を固定したまま $\sigma$ を再パラメーター化すると、$f=\gamma_{\sigma\sigma}(-\det\gamma_{ab})^{-1/2}$ は
+\begin{equation}
+f'\,d\sigma'=f\,d\sigma
+\tag{1.3.9}\label{eq:1.3.9}
+\end{equation}
+と変換することに注意する。そこで不変な長さを $f\,d\sigma=dl$ と定義する。各点の $\sigma$ 座標を、$\sigma=0$ の端点から測った不変距離 $\int dl$ に比例するように定義する。比例定数は、右端点の座標が $\sigma=\ell$ のままであるという条件で決める。この座標系では $f=dl/d\sigma$ は $\sigma$ に依存しない。ただし $\tau$ にはまだ依存する。パラメーター領域 $0\leq\sigma\leq\ell$ を変えずに保ちたいので、$\tau$ 依存性を除くほどの自由度はない。最後に Weyl 変換を行い、条件 \hyperref[eq:1.3.8c]{(1.3.8c)} を満たすようにする。$f$ は Weyl 不変なので、$\partial_\sigma f$ は引き続きゼロである。条件 \hyperref[eq:1.3.8c]{(1.3.8c)} と合わせると $\partial_\sigma\gamma_{\sigma\sigma}=0$ が従い、条件 \hyperref[eq:1.3.8b]{(1.3.8b)} も満たされる。\footnote[4]{世界面上の各点に一定の $(\tau,\sigma)$ 値を割り当てる方法は示したが、これがよいゲージであること、すなわち異なる点には異なる座標が割り当てられることは示していない。この問題は点粒子においてすでに生じる。$\tau$ がよい座標となるのは、世界線が $x^+$ 超平面を横切って折り返さない場合に限られる。弦ではこれに加え、$f$ が至る所で正であることも必要である。すべての点が光速未満で運動する、許される古典的運動では、これらの条件が満たされることを示すのは難しくない。量子論では、点粒子について、折り返す世界線の正味の寄与がゼロであることを示せる。おそらく弦にも一般化できるが、これはここでこだわるべきではない細かな点の一つである。}
+
+ゲージ条件 \hyperref[eq:1.3.8c]{(1.3.8c)} を $\gamma_{\tau\tau}(\tau,\sigma)$ について解ける。また $\gamma_{\sigma\sigma}$ は $\sigma$ に依存しないので、計量の独立な自由度は今や $\gamma_{\sigma\sigma}(\tau)$ と $\gamma_{\sigma\tau}(\tau,\sigma)$ である。これらを用いると逆計量は
+\begin{equation}
+\begin{pmatrix}
+\gamma^{\tau\tau}&\gamma^{\tau\sigma}\\
+\gamma^{\sigma\tau}&\gamma^{\sigma\sigma}
+\end{pmatrix}
+=
+\begin{pmatrix}
+-\gamma_{\sigma\sigma}(\tau)&\gamma_{\tau\sigma}(\tau,\sigma)\\
+\gamma_{\tau\sigma}(\tau,\sigma)&
+\gamma_{\sigma\sigma}^{-1}(\tau)\bigl(1-\gamma_{\tau\sigma}^2(\tau,\sigma)\bigr)
+\end{pmatrix}.
+\tag{1.3.10}\label{eq:1.3.10}
+\end{equation}
+Polyakov の Lagrangian は
+\begin{equation}
+\begin{aligned}
+L=-\frac{1}{4\pi\alpha'}\int_0^\ell d\sigma\,
+\Bigl[&\gamma_{\sigma\sigma}
+\bigl(2\partial_\tau x^--\partial_\tau X^i\partial_\tau X^i\bigr)\\
+&-2\gamma_{\sigma\tau}
+\bigl(\partial_\sigma Y^--\partial_\tau X^i\partial_\sigma X^i\bigr)
++\gamma_{\sigma\sigma}^{-1}(1-\gamma_{\tau\sigma}^2)
+\partial_\sigma X^i\partial_\sigma X^i\Bigr].
+\end{aligned}
+\tag{1.3.11}\label{eq:1.3.11}
+\end{equation}
+ここでは $X^-(\tau,\sigma)$ を二つの部分 $x^-(\tau)$ と $Y^-(\tau,\sigma)$ に分けた。前者は与えられた $\tau$ での $X^-$ の平均値であり、後者の平均値はゼロである。すなわち、
+\begin{align}
+x^-(\tau)&=\frac{1}{\ell}\int_0^\ell d\sigma\,X^-(\tau,\sigma),
+\tag{1.3.12a}\label{eq:1.3.12a}\\
+Y^-(\tau,\sigma)&=X^-(\tau,\sigma)-x^-(\tau).
+\tag{1.3.12b}\label{eq:1.3.12b}
+\end{align}
+場 $Y^-$ は時間微分を含むどの項にも現れないため、非力学的である。これは Lagrange 乗数として働き、$\partial_\sigma^2\gamma_{\tau\sigma}$ がゼロとなるよう拘束する（$Y^-$ の平均値がゼロなので $\partial_\sigma$ が一つ余分に付く）。さらに、ゲージ \hyperref[eq:1.3.8a]{(1.3.8)} では開弦の境界条件 \hyperref[eq:1.2.28]{(1.2.28)} は
+\begin{equation}
+\gamma_{\tau\sigma}\partial_\tau X^\mu
+-\gamma_{\tau\tau}\partial_\sigma X^\mu=0
+\qquad (\sigma=0,\ell)
+\tag{1.3.13}\label{eq:1.3.13}
+\end{equation}
+となることに注意する。$\mu=+$ では、
+\begin{equation}
+\gamma_{\tau\sigma}=0\qquad (\sigma=0,\ell)
+\tag{1.3.14}\label{eq:1.3.14}
+\end{equation}
+が得られる。$\partial_\sigma^2\gamma_{\tau\sigma}=0$ でもあるので、$\gamma_{\tau\sigma}$ は至る所でゼロになる。$\mu=i$ では、境界条件は
+\begin{equation}
+\partial_\sigma X^i=0\qquad (\sigma=0,\ell).
+\tag{1.3.15}\label{eq:1.3.15}
+\end{equation}
+
+ゲージ条件を課し、Lagrange 乗数 $Y^-$ を考慮した後は、通常の正準的な方法で進められる。系は変数 $x^-(\tau)$、$\gamma_{\sigma\sigma}(\tau)$ および場 $X^i(\tau,\sigma)$ に帰着する。Lagrangian は
+\begin{equation}
+L=-\frac{\ell}{2\pi\alpha'}\gamma_{\sigma\sigma}\partial_\tau x^-
++\frac{1}{4\pi\alpha'}\int_0^\ell d\sigma\,
+\left(\gamma_{\sigma\sigma}\partial_\tau X^i\partial_\tau X^i
+-\gamma_{\sigma\sigma}^{-1}\partial_\sigma X^i\partial_\sigma X^i\right).
+\tag{1.3.16}\label{eq:1.3.16}
+\end{equation}
+$x^-$ に共役な運動量は
+\begin{equation}
+p_-=-p^+=\frac{\partial L}{\partial(\partial_\tau x^-)}
+=-\frac{\ell}{2\pi\alpha'}\gamma_{\sigma\sigma}.
+\tag{1.3.17}\label{eq:1.3.17}
+\end{equation}
+粒子の例の $\eta$ と同様に、$\gamma_{\sigma\sigma}$ は座標ではなく運動量である。$X^i(\tau,\sigma)$ に共役な運動量密度は
+\begin{equation}
+\Pi^i=\frac{\delta L}{\delta(\partial_\tau X^i)}
+=\frac{1}{2\pi\alpha'}\gamma_{\sigma\sigma}\partial_\tau X^i
+=\frac{p^+}{\ell}\partial_\tau X^i.
+\tag{1.3.18}\label{eq:1.3.18}
+\end{equation}
+したがって Hamiltonian は
+\begin{equation}
+\begin{aligned}
+H&=p_-\partial_\tau x^- -L+\int_0^\ell d\sigma\,\Pi_i\partial_\tau X^i\\
+ &=\frac{\ell}{4\pi\alpha'p^+}\int_0^\ell d\sigma
+\left(2\pi\alpha'\Pi^i\Pi^i
++\frac{1}{2\pi\alpha'}\partial_\sigma X^i\partial_\sigma X^i\right).
+\end{aligned}
+\tag{1.3.19}\label{eq:1.3.19}
+\end{equation}
+これはちょうど $D-2$ 個の自由場 $X^i$ の Hamiltonian であり、$p^+$ は保存量である。運動方程式は
+\begin{align}
+\partial_\tau x^-&=\frac{\partial H}{\partial p_-}=\frac{H}{p^+},
+&\partial_\tau p^+&=\frac{\partial H}{\partial x^-}=0,
+\tag{1.3.20a}\label{eq:1.3.20a}\\
+\partial_\tau X^i&=\frac{\delta H}{\delta\Pi^i}=2\pi\alpha'c\Pi^i,
+&\partial_\tau\Pi^i&=-\frac{\delta H}{\delta X^i}
+=\frac{c}{2\pi\alpha'}\partial_\sigma^2X^i,
+\tag{1.3.20b}\label{eq:1.3.20b}
+\end{align}
+これより波動方程式
+\begin{equation}
+\partial_\tau^2X^i=c^2\partial_\sigma^2X^i
+\tag{1.3.21}\label{eq:1.3.21}
+\end{equation}
+が従い、その速度は $c=\ell/2\pi\alpha'p^+$ である。光円錐形式での相互作用はここでは展開しないが、相互作用を扱う際には、各弦の座標長 $\ell$ を $p^+$ に比例するように選び、$c=1$ とすると便利である。$p^+$ は正で保存されるので、全弦長も保存される。
+
+横方向の座標は自由な波動方程式を満たすので、基準モードで展開すると便利である。実際には $X^\pm$ も自由な波動方程式を満たす。$X^+$ については自明であり、$X^-$ については短い計算を要する。境界条件 \hyperref[eq:1.3.15]{(1.3.15)} を満たす波動方程式の一般解は
+\begin{equation}
+X^i(\tau,\sigma)=x^i+\frac{p^i}{p^+}\tau
++i(2\alpha')^{1/2}
+\sum_{\substack{n=-\infty\\n\ne0}}^\infty
+\frac{\alpha_n^i}{n}\exp\left(-\frac{\pi inc\tau}{\ell}\right)
+\cos\frac{\pi n\sigma}{\ell}.
+\tag{1.3.22}\label{eq:1.3.22}
+\end{equation}
+$X^i$ の実性から $\alpha_{-n}^i=(\alpha_n^i)^\dagger$ が必要となる。重心変数を
+\begin{align}
+x^i(\tau)&=\frac1\ell\int_0^\ell d\sigma\,X^i(\tau,\sigma),
+\tag{1.3.23a}\label{eq:1.3.23a}\\
+p^i(\tau)&=\int_0^\ell d\sigma\,\Pi^i(\tau,\sigma)
+=\frac{p^+}{\ell}\int_0^\ell d\sigma\,\partial_\tau X^i(\tau,\sigma)
+\tag{1.3.23b}\label{eq:1.3.23b}
+\end{align}
+と定義した。これらは平均位置と全運動量である。ここでの演算子は Heisenberg 演算子であり、展開 \hyperref[eq:1.3.22]{(1.3.22)} に現れるのは Schrödinger 演算子 $x^i\equiv x^i(0)$ および $p^i\equiv p^i(0)$ である。
+
+量子化するには、等時刻の正準交換関係
+\begin{align}
+[x^-,p^+]&=i\eta^{-+}=-i,
+\tag{1.3.24a}\label{eq:1.3.24a}\\
+[X^i(\sigma),\Pi^j(\sigma')]&=i\delta^{ij}\delta(\sigma-\sigma')
+\tag{1.3.24b}\label{eq:1.3.24b}
+\end{align}
+を課し、独立変数間の他のすべての交換子はゼロとする。Fourier 成分で書けば、
+\begin{align}
+[x^i,p^j]&=i\delta^{ij},
+\tag{1.3.25a}\label{eq:1.3.25a}\\
+[\alpha_m^i,\alpha_n^j]&=m\delta^{ij}\delta_{m,-n}.
+\tag{1.3.25b}\label{eq:1.3.25b}
+\end{align}
+各 $m$ と $i$ について、モードは通常とは異なる規格化の調和振動子代数を満たす：
+\begin{equation}
+\alpha_m^i\sim m^{1/2}a,\qquad
+\alpha_{-m}^i\sim m^{1/2}a^\dagger,\qquad m>0,
+\tag{1.3.26}\label{eq:1.3.26}
+\end{equation}
+ここで $[a,a^\dagger]=1$ である。振動子には、振動方向 $i$ と倍音番号 $m$ によってラベルが付く。
+
+状態 $\lvert0;k\rangle$（$k=(k^+,k^i)$）を、下降演算子によって消滅し、重心運動量の固有状態であるものとして定義する：
+\begin{align}
+p^+\lvert0;k\rangle&=k^+\lvert0;k\rangle,\qquad
+p^i\lvert0;k\rangle=k^i\lvert0;k\rangle,
+\tag{1.3.27a}\label{eq:1.3.27a}\\
+\alpha_m^i\lvert0;k\rangle&=0,\qquad m>0.
+\tag{1.3.27b}\label{eq:1.3.27b}
+\end{align}
+一般の状態は $\lvert0;k\rangle$ に上昇演算子を作用させて構成できる：
+\begin{equation}
+\lvert N;k\rangle=
+\left[\prod_{i=2}^{D-1}\prod_{n=1}^\infty
+\frac{(\alpha_{-n}^i)^{N_{in}}}
+{(n^{N_{in}}N_{in}!)^{1/2}}\right]\lvert0;k\rangle.
+\tag{1.3.28}\label{eq:1.3.28}
+\end{equation}
+すなわち、独立な状態は、重心運動量 $k^+$ と $k^i$、および各モード $(i,n)$ の占有数 $N_{in}$ によってラベル付けできる。ここで $i=2,\ldots,D-1$、$n=1,\ldots,\infty$ である。重心運動量は点粒子の自由度そのものであり、振動子は無限個の内部自由度を表す。これらの占有数の選び方は、それぞれ時空の観点からは異なる粒子またはスピン状態に対応する。
+
+状態 \hyperref[eq:1.3.28]{(1.3.28)} は一本の開弦の Hilbert 空間 $\mathcal H_1$ をなし、とくに状態 $\lvert0;0\rangle$ は運動量ゼロの一本の弦の基底状態であって、弦が一本もない真空状態ではないことに注意しよう。この区別を明確にするため、後者を $\lvert\mathrm{vacuum}\rangle$ と呼ぶ。上に現れたさまざまな演算子は弦を生成・消滅するのではなく、一本の弦の状態空間の内部で作用する。$n$ 本の弦の Hilbert 空間 $\mathcal H_n$ は、空間 \hyperref[eq:1.3.28]{(1.3.28)} を $n$ 個複製して積を取ることで構成される。後に見るように、これらの状態はすべて整数スピンを持つので、波動関数は対称化しなければならない。したがって、少なくともここで考えている自由な極限では、弦理論の全 Hilbert 空間は和
+\begin{equation}
+\mathcal H=\lvert\mathrm{vacuum}\rangle\oplus\mathcal H_1\oplus
+\mathcal H_2\oplus\cdots
+\tag{1.3.29}\label{eq:1.3.29}
+\end{equation}
+である。
+
+モード展開 \hyperref[eq:1.3.22]{(1.3.22)} を Hamiltonian \hyperref[eq:1.3.19]{(1.3.19)} に代入すると、
+\begin{equation}
+H=\frac{p^ip^i}{2p^+}+
+\frac{1}{2p^+\alpha'}\left(\sum_{n=1}^\infty\alpha_{-n}^i\alpha_n^i+A\right).
+\tag{1.3.30}\label{eq:1.3.30}
+\end{equation}
+Hamiltonian $H$ では演算子の順序に曖昧さがある。ここでは下降演算子を右に、上昇演算子を左に置き、交換子から生じる未知の定数 $A$ を含めた。光円錐量子化を慎重に扱うと、この定数は次のように決まる。光円錐ゲージの選択によって理論の Lorentz 不変性が見えなくなっている。Lorentz 変換を生成する演算子 $M^{\mu\nu}$ を求め、これらが $p^\mu$ との間、および互いの間で正しい代数を満たすことを確かめて、Lorentz 不変性を検証する必要がある。この条件が成立するのは、特定の値 $A=-1$ の場合だけであり、かつ時空次元が厳密に $D=26$ である場合だけだと分かる。
+
+光円錐量子化にそこまで多くの時間を費やしたくはないので、系統的な取り扱いは行わずに、この結果がもっともらしいことを示そう。$A$ と $D$ の値は共形ゲージによる方法で正当に導くことを、読者に約束しておく。その方法は、誤った $A$ や $D$ の値を取ると光円錐による方法でなぜ Lorentz 不変性が失われるのかについても、理解を与えてくれる。
+
+まず、自由場の Hamiltonian に現れる演算子順序定数は、各振動子モードの零点エネルギーを足し合わせることから生じる、と主張する。$X^\mu$ のようなボース場では、それは $\frac12\omega$ である。同じことだが、自然な演算子順序はつねに平均を取った $\frac12\omega(aa^\dagger+a^\dagger a)$ となり、これは $\omega(a^\dagger a+\frac12)$ に等しい。$H$ では、これにより
+\begin{equation}
+A=\frac{D-2}{2}\sum_{n=1}^\infty n
+\tag{1.3.31}\label{eq:1.3.31}
+\end{equation}
+となる。因子 $D-2$ は横方向についての和から生じる。零点エネルギーの和は発散する。理論を正則化し、その後の繰り込みで Lorentz 不変性を注意深く保てば、これを評価できる。その結果、奇妙な値
+\begin{equation}
+\sum_{n=1}^\infty n\ \longrightarrow\ -\frac1{12}
+\tag{1.3.32}\label{eq:1.3.32}
+\end{equation}
+が得られる。
+
+この結果の理由を見るため、滑らかなカットオフ因子
+\begin{equation}
+\exp\left(-\epsilon\gamma_{\sigma\sigma}^{-1/2}|k_\sigma|\right)
+\tag{1.3.33}\label{eq:1.3.33}
+\end{equation}
+を和に挿入する。ここで $k_\sigma=n\pi/\ell$ であり、$\sigma$ の再パラメーター化に対して不変にするため、因子 $\gamma_{\sigma\sigma}^{-1/2}$ を含めた。すると零点定数は
+\begin{equation}
+\begin{aligned}
+A&\longrightarrow
+\frac{D-2}{2}\sum_{n=1}^\infty n
+\exp\left[-\epsilon n\left(\frac{\pi}{2p^+\alpha'\ell}\right)^{1/2}\right]\\
+&=\frac{D-2}{2}\left(\frac{2\ell p^+\alpha'}{\epsilon^2\pi}
+-\frac1{12}+O(\epsilon)\right).
+\end{aligned}
+\tag{1.3.34}\label{eq:1.3.34}
+\end{equation}
+カットオフに依存する第1項は弦の長さ $\ell$ に比例し、作用に $\int d^2\sigma\,(-\gamma)^{1/2}$ に比例する相殺項を加えれば打ち消せる。実際、Weyl 不変性はこの項が打ち消されることを要求し、カットオフに依存しない第2項だけが残る：
+\begin{equation}
+A=\frac{2-D}{24}.
+\tag{1.3.35}\label{eq:1.3.35}
+\end{equation}
+この有限な残余は Casimir エネルギーの一例であり、弦の長さが有限であることから生じる。
+
+点粒子と同じく $p^-=H$ なので、
+\begin{equation}
+m^2=2p^+H-p^ip^i
+=\frac1{\alpha'}\left(N+\frac{2-D}{24}\right),
+\tag{1.3.36}\label{eq:1.3.36}
+\end{equation}
+ここで $N$ はレベルである：
+\begin{equation}
+N=\sum_{i=2}^{D-1}\sum_{n=1}^\infty nN_{in}.
+\tag{1.3.37}\label{eq:1.3.37}
+\end{equation}
+したがって各状態の質量は励起のレベルから決まる。
+
+では、軽い弦状態のいくつかを見よう。最も軽い状態は
+\begin{equation}
+\lvert0;k\rangle,\qquad m^2=\frac{2-D}{24\alpha'}.
+\tag{1.3.38}\label{eq:1.3.38}
+\end{equation}
+$D>2$ ならば質量の二乗は負であり、この状態はタキオンである。場の理論では、スカラー場のポテンシャルエネルギーは $\frac12m^2\phi^2$ なので、質量の二乗が負であることは、弦が存在しない「真空」が、自発的に対称性の破れた理論の対称な状態のように、実は不安定であることを意味する。ボース弦に安定な真空が存在するかどうかは複雑な問題であり、答えは分かっていない。第2巻で超弦の研究を始めると、タキオンを持たない弦理論が存在することを見る。今のところ最も簡単な進め方は、この不安定性を無視し、弦を扱う技法を発展させるための模型としてボース弦理論を用いることである。ときどきタキオンによる発散に遭遇するが、それがわれわれの目的を妨げることはない。
+
+弦の最も低い励起状態は、$n=1$ のモードの一つを一度励起して得られる：
+\begin{equation}
+\alpha_{-1}^i\lvert0;k\rangle,\qquad
+m^2=\frac{26-D}{24\alpha'}.
+\tag{1.3.39}\label{eq:1.3.39}
+\end{equation}
+ここで Lorentz 不変性は、次のように $D$ の特定の値を要求する。スピンの解析は、質量を持つ粒子と質量ゼロの粒子では異なる。質量を持つ粒子では、静止系 $p^\mu=(m,0,\ldots,0)$ に移る。このとき内部状態は空間回転群 $SO(D-1)$ の表現をなす。質量ゼロの粒子には静止系がないので、$p^\mu=(E,E,0,\ldots,0)$ となる系を選ぶ。横方向に作用する $SO(D-2)$ は $p^\mu$ を不変に保ち、内部状態はこの小さい方の群の表現をなす。これは $D=4$ ではよく知られたことである。質量を持つ粒子は $SO(3)$ の表現であるスピン $j$ でラベル付けされ、したがって $2j+1$ 個の状態を持つ。質量ゼロの粒子はヘリシティー $\lambda$ でラベル付けされ、これは $SO(2)$ のただ一つの生成子に対する固有値である。したがって Lorentz 不変性だけなら必要な状態は一つにすぎないが、$CPT$ 対称性は $\lambda$ を $-\lambda$ へ移すため、$\lambda\ne0$ では二つの状態が必要になる。
+
+したがって $D$ 次元では、質量を持つベクトル粒子は $D-1$ 個のスピン状態を持つが、質量ゼロのベクトル粒子には $D-2$ 個の状態だけあればよい。第1レベルで得られたのは $D-2$ 個の状態 $\alpha_{-1}^i\lvert0;k\rangle$ だけなので、これらは質量ゼロでなければならず、
+\begin{equation}
+A=-1,\qquad D=26.
+\tag{1.3.40}\label{eq:1.3.40}
+\end{equation}
+これは驚くべき重要な結果である。スペクトルが Lorentz 不変になるのは、時空次元数が $D=26$ の場合に限られる。古典論はどの $D$ でも Lorentz 不変だが、量子異常が存在し、$D=26$ 以外では量子化によって対称性が保たれない。後の章では、これがどのように生じ、何を意味するかについて、より深い理解を得る。
+
+この節の終わりに、スピンについてもう少し述べておこう。光円錐量子化は二つの方向を特別扱いし、横方向に作用する $SO(D-2)$ だけを顕在的に残す。横方向のスピン生成子は
+\begin{equation}
+S^{ij}=-i\sum_{n=1}^\infty\frac1n
+\left(\alpha_{-n}^i\alpha_n^j-\alpha_{-n}^j\alpha_n^i\right);
+\tag{1.3.41}\label{eq:1.3.41}
+\end{equation}
+$ij$ についての反対称性と Lorentz 不変性により、零点定数は許されない。質量ゼロの粒子では、量子化の際に特別扱いした第1方向に運動量を向ければ、スピン対称性 $SO(D-2)$ の全体が顕在的になる。
+
+質量を持つ粒子では、光円錐量子化で顕在的になるのは、スピン対称性 $SO(D-1)$ の部分群 $SO(D-2)$ だけだが、それでも十分に有用である。たとえば、$SO(D-1)$ の $(D-1)$ 次元ベクトル表現は、横方向に作用する $SO(D-2)$ の下では、不変な成分と $(D-2)$ 次元ベクトルに分かれる：
+\begin{equation}
+\bm v=(v^1,0,\ldots,0)+(0,v^2,\ldots,v^{D-1}).
+\tag{1.3.42}\label{eq:1.3.42}
+\end{equation}
+したがって、質量を持つ粒子が $SO(D-1)$ のベクトル表現に属する場合、$SO(D-2)$ の下での変換性を見ると、スカラーとベクトルが現れる。この考え方は任意の表現に拡張できる。$SO(D-2)$ の下での振る舞いから、スピンの $SO(D-1)$ 表現全体をつねに再構成できる。
+
+弦のさらに高い励起状態は質量を持ち、実際に $SO(D-1)$ の完全な表現をなす。いくつかのレベルについては手計算で確かめられるし、より完全な解析では Lorentz 生成子の完全な組の存在から従う。続く章では、整合的な共変量子化を求めることで、これを間接的に示す。
+
+レベル $N$ では、あるスピン成分、たとえば $S^{23}$ の固有値の最大値は $N$ であり、$\alpha_{-1}^2+i\alpha_{-1}^3$ を $N$ 回作用させると得られる。したがって、
+\begin{equation}
+S^{23}\leq1+\alpha'm^2.
+\tag{1.3.43}\label{eq:1.3.43}
+\end{equation}
+この不等式の傾きは Regge 傾斜として知られている。中間子共鳴はこの形の線形関係に従い、$\alpha'\sim(1\ \mathrm{GeV})^{-2}$ である。このことや他の理由から、弦理論はもともと1970年に強い相互作用の理論として提案された。しかし数年のうちに、$SU(3)$ ゲージ理論である QCD が正しい理論であり、弦のような振る舞いは特定の極限でのみ現れることが分かった。
+
+今では弦を素粒子物理、重力、量子力学の統一理論として考えているので、$\alpha'$ は重力と量子力学の基本定数が定める自然なスケール $M_{\mathrm P}^{-2}$ 程度になる。とくに、弦理論でゼロではない質量は $M_{\mathrm P}$ 程度である。これは実験で到達できるエネルギースケールに比べて非常に大きいため、これらの粒子は仮想状態としてしか現れない。したがって、われわれは弦の質量ゼロのスペクトルにとりわけ関心を持つ。この中に標準模型のすべての粒子が含まれなければならないからである。もちろん、知られている粒子の大部分には質量があるが、それらの質量は $M_{\mathrm P}$ に比べて非常に小さいので、第1近似ではゼロであり、小さな対称性の破れの効果によってゼロでなくなる。
+
+弦理論への関心の一部は、強い相互作用の理論 QCD が、少なくとも何らかの近似では弦理論と等価である可能性によって促されてきた。この考え方と、弦を基礎理論とみなす考え方は、相互に刺激を与えてきた。QCD と弦理論の関係は本書の中心的な話題ではないが、第14章で述べる最近の進展は、この方向にも新たな理解をもたらしている。
+
+\subsectionlink{閉弦と向きのない弦}
+\label{sec:1.4}
+
+閉弦の光円錐量子化は、開弦の場合とよく似ている。ここでもゲージ条件 \hyperref[eq:1.3.8a]{(1.3.8)} を課す。開弦では、これらによってゲージが完全に決まった。閉弦では、$\sigma=0$ の点を弦上のどこにでも選べるため、座標の自由度
+\begin{equation}
+\sigma'=\sigma+s(\tau)\pmod{\ell}
+\tag{1.4.1}\label{eq:1.4.1}
+\end{equation}
+がまだ余分に残る。この残された自由度の大部分は、追加のゲージ条件
+\begin{equation}
+\gamma_{\tau\sigma}(\tau,0)=0
+\tag{1.4.2}\label{eq:1.4.2}
+\end{equation}
+で固定できる。すなわち、$\sigma=0$ の線は $\tau$ が一定の線に直交する。これによって、$\sigma$ の全体的な並進を除き、$\sigma=0$ の線が決まる。したがって、条件 \hyperref[eq:1.3.8a]{(1.3.8)} と \hyperref[eq:1.4.2]{(1.4.2)} は、$\tau$ に依存しない $\sigma$ の並進
+\begin{equation}
+\sigma'=\sigma+s\pmod{\ell}
+\tag{1.4.3}\label{eq:1.4.3}
+\end{equation}
+を除くすべてのゲージ自由度を固定する。この余分なゲージ自由度は後で扱う。
+
+ここからの解析は開弦の場合と並行する。Lagrangian、正準運動量、Hamiltonian、運動方程式は、開弦の場合の式 \hyperref[eq:1.3.16]{(1.3.16)}--\hyperref[eq:1.3.21]{(1.3.21)} と同じである。運動方程式の一般の周期的な解は
+\begin{equation}
+\begin{aligned}
+X^i(\tau,\sigma)&=x^i+\frac{p^i}{p^+}\tau
++i\left(\frac{\alpha'}2\right)^{1/2}\\
+&\quad{}\times\sum_{\substack{n=-\infty\\n\ne0}}^\infty
+\left\{
+\frac{\alpha_n^i}{n}\exp\left[-\frac{2\pi in(\sigma+c\tau)}{\ell}\right]
++\frac{\widetilde\alpha_n^i}{n}
+\exp\left[\frac{2\pi in(\sigma-c\tau)}{\ell}\right]
+\right\}.
+\end{aligned}
+\tag{1.4.4}\label{eq:1.4.4}
+\end{equation}
+閉弦には、弦に沿って左へ進む波と右へ進む波に対応する、二組の独立な振動子 $\alpha_n^i$ と $\widetilde\alpha_n^i$ がある。開弦では、端点での境界条件がこれらを結びつけていた。独立な自由度はここでも、横方向の振動子と、横方向および縦方向の重心変数
+\begin{equation}
+\alpha_n^i,\ \widetilde\alpha_n^i,\ x^i,\ p^i,\ x^-,\ p^+
+\tag{1.4.5}\label{eq:1.4.5}
+\end{equation}
+であり、正準交換関係は
+\begin{align}
+[x^-,p^+]&=-i,
+\tag{1.4.6a}\label{eq:1.4.6a}\\
+[x^i,p^j]&=i\delta^{ij},
+\tag{1.4.6b}\label{eq:1.4.6b}\\
+[\alpha_m^i,\alpha_n^j]&=m\delta^{ij}\delta_{m,-n},
+\tag{1.4.6c}\label{eq:1.4.6c}\\
+[\widetilde\alpha_m^i,\widetilde\alpha_n^j]&=m\delta^{ij}\delta_{m,-n}.
+\tag{1.4.6d}\label{eq:1.4.6d}
+\end{align}
+
+重心運動量 $k^\mu$ を持ち、$m>0$ の $\alpha_m^i$ と $\widetilde\alpha_m^i$ によって消滅する状態 $\lvert0,0;k\rangle$ から出発すると、一般の状態は
+\begin{equation}
+\lvert N,\widetilde N;k\rangle
+=\left[
+\prod_{i=2}^{D-1}\prod_{n=1}^\infty
+\frac{(\alpha_{-n}^i)^{N_{in}}
+(\widetilde\alpha_{-n}^i)^{\widetilde N_{in}}}
+{\left(n^{N_{in}}N_{in}!\,
+n^{\widetilde N_{in}}\widetilde N_{in}!\right)^{1/2}}
+\right]\lvert0,0;k\rangle.
+\tag{1.4.7}\label{eq:1.4.7}
+\end{equation}
+質量公式は
+\begin{equation}
+\begin{aligned}
+m^2&=2p^+H-p^ip^i\\
+&=\frac2{\alpha'}\left[
+\sum_{n=1}^\infty\left(\alpha_{-n}^i\alpha_n^i+
+\widetilde\alpha_{-n}^i\widetilde\alpha_n^i\right)
++A+\widetilde A\right]\\
+&=\frac2{\alpha'}(N+\widetilde N+A+\widetilde A).
+\end{aligned}
+\tag{1.4.8}\label{eq:1.4.8}
+\end{equation}
+レベルと零点定数を、右へ進むモードからの部分と左へ進むモードからの部分に分けた。零点エネルギーを足し合わせると、ここでも
+\begin{equation}
+A=\widetilde A=\frac{2-D}{24}
+\tag{1.4.9}\label{eq:1.4.9}
+\end{equation}
+が得られる。
+
+残されたゲージ自由度である $\sigma$ の並進 \hyperref[eq:1.4.3]{(1.4.3)} により、状態にはもう一つ制限がある。物理的スペクトルは、ゲージ不変な状態に制限して得られる。$\sigma$ の並進を生成する演算子は
+\begin{equation}
+\begin{aligned}
+P&=-\int_0^\ell d\sigma\,\Pi^i\partial_\sigma X^i\\
+&=-\frac{2\pi}{\ell}\left[
+\sum_{n=1}^\infty\left(\alpha_{-n}^i\alpha_n^i
+-\widetilde\alpha_{-n}^i\widetilde\alpha_n^i\right)
++A-\widetilde A\right]\\
+&=-\frac{2\pi}{\ell}(N-\widetilde N).
+\end{aligned}
+\tag{1.4.10}\label{eq:1.4.10}
+\end{equation}
+したがって状態は
+\begin{equation}
+N=\widetilde N
+\tag{1.4.11}\label{eq:1.4.11}
+\end{equation}
+を満たさなければならない。
+
+最も軽い閉弦状態は
+\begin{equation}
+\lvert0,0;k\rangle,\qquad m^2=\frac{2-D}{6\alpha'},
+\tag{1.4.12}\label{eq:1.4.12}
+\end{equation}
+であり、これもタキオンである。最初の励起状態は
+\begin{equation}
+\alpha_{-1}^i\widetilde\alpha_{-1}^j\lvert0,0;k\rangle,
+\qquad m^2=\frac{26-D}{6\alpha'}.
+\tag{1.4.13}\label{eq:1.4.13}
+\end{equation}
+開弦と同じく、これらの状態だけでは $SO(D-1)$ の完全な表現を構成しないため、このレベルは質量ゼロでなければならない。したがって、
+\begin{equation}
+A=\widetilde A=-1,\qquad D=26.
+\tag{1.4.14}\label{eq:1.4.14}
+\end{equation}
+状態 \hyperref[eq:1.4.13]{(1.4.13)} は $SO(D-2)$ の下で2階テンソルとして変換する。これは可約表現であり、対称トレースレステンソル、反対称テンソル、スカラーへと分解される。すなわち、任意のテンソル $e^{ij}$ は
+\begin{equation}
+e^{ij}=
+\frac12\left(e^{ij}+e^{ji}-\frac{2}{D-2}\delta^{ij}e^{kk}\right)
++\frac12\left(e^{ij}-e^{ji}\right)
++\frac1{D-2}\delta^{ij}e^{kk}
+\tag{1.4.15}\label{eq:1.4.15}
+\end{equation}
+と分解でき、三つの項は回転によって互いに混ざらない。
+
+どの質量レベルでも、$N_{in}$ と $\widetilde N_{in}$ は $N=\widetilde N$ という拘束を除けば独立である。したがって、$m^2=4(N-1)/\alpha'$ における閉弦のスペクトルは、開弦の $m^2=(N-1)/\alpha'$ のレベルを二つ複製して積を取ったものである。
+
+ここでいくつかの一般的な問題を論じよう。2次元の diff 不変性は、基準モードの二つの系列をスペクトルから除いた。この不変性なしに共変な理論を作ろうとすれば、横方向の交換関係 \hyperref[eq:1.3.25a]{(1.3.25)} を
+\begin{equation}
+[\alpha_m^\mu,\alpha_n^\nu]=m\eta^{\mu\nu}\delta_{m,-n}
+\tag{1.4.16}\label{eq:1.4.16}
+\end{equation}
+へ一般化しなければならない。Lorentz 不変性は、時間的な振動子の交換子が逆の符号を持つことを強制する。すると、時間的な励起を奇数個含む状態のノルムは負になる。ノルムは確率なので、これは量子力学と整合しない。実際、\hyperref[eq:1.4.16]{(1.4.16)} に基づく理論は、ここで述べた弦理論より先に登場した。後者は、物理的過程で負ノルム状態が決して生成されないことを要求することによって発見された。交換関係 \hyperref[eq:1.4.16]{(1.4.16)} は弦理論の共変量子化（次章から用いる）で現れ、座標不変性は、非物理的な状態を除くためのスペクトルへの拘束という形で現れる。
+
+開弦理論に質量ゼロのベクトルが存在し、閉弦理論に質量ゼロの対称テンソルと反対称テンソルが存在することは、注目すべきことである。一般原理によれば、質量ゼロのベクトルは保存カレントと結合しなければならず、したがって理論はゲージ不変性を持たなければならない。これは、あらゆる基礎的な弦理論に存在する質量ゼロのゲージ粒子の、最初の例である。実際には、この特定のゲージボソンを光子と呼ぶことにすると、それほど興味深いものではない。ゲージ群が $U(1)$ にすぎず（光子が一つしかない）、さらに理論中のすべての粒子が中性だと分かるからである。第6章では、弦の端点に Chan--Paton 自由度を加えるという、開弦理論の簡単な一般化を論じる。これにより、ゲージ群 $U(n)$、$SO(n)$、$Sp(n)$ が得られる。同様に、質量ゼロの対称テンソル粒子は、保存する対称テンソル源と結合しなければならない。そのような源はエネルギー運動量テンソルしかない。特殊な場合にはほかにもいくつか可能性が生じるが、ここでは関係しない。これと整合的に結合するには、理論が時空の座標不変性を持つ必要がある。したがって質量ゼロの対称テンソルは重力子であり、一般相対論は閉弦理論の小さな一部分として含まれている。質量ゼロの反対称テンソルは、2形式ゲージボソンとして知られている。第3.7節で見るように、これにも時空の局所対称性が対応している。
+
+こうした時空のゲージ不変性や座標不変性は、出発点とした Nambu--Goto 理論や Polyakov 理論では明白ではなかった。確かにわれわれは、零点エネルギーを足し合わせ、Lorentz 不変なスペクトルを要求し、質量ゼロの粒子の相互作用についての一般的な結果を引用するという、逆向きの手順でこれらを発見した。ゲージ理論や一般相対論では、時空の対称性原理から出発する。弦理論でも同じく、まず時空の対称性の全体が何であるかを解明し、それを使って理論を定義すべきだと思われる。この方向にはさまざまな試みがあるが、全体像はいまだ明らかになっていない。今のところ、一つのことに注意しておこう。世界面の局所対称性 diff は、負ノルムの弦状態を生じさせる非物理的な時間的および縦方向の基準モードを取り除くことを見た。たとえば、この対称性がなければ開弦の光子は $D-2$ 個ではなく $D$ 個の状態を持つ。時空の観点では、まさに同じ非物理的状態を取り除くのは時空の局所不変性である。したがって、世界面の局所対称性と時空の局所対称性の間には、少なくとも何らかの関係がある。
+
+4次元への関心を先取りして、第2方向と第3方向の振動子だけを励起して得られる、質量ゼロの弦状態を見てみよう。これらをヘリシティー $\lambda=S^{23}$ で分類する。光子は $\lambda=\pm1$、重力子は $\lambda=\pm2$ を持つことが分かり、それぞれの名称が正当化される。閉弦のスカラーと反対称テンソルは、それぞれ $\lambda=0$ の状態を一つずつ与える。これらはそれぞれディラトンとアクシオンと呼ばれ、その物理については各所で論じる。
+
+この節の最後に、もう一つの一般化である、向きのない弦理論を論じる。これまで論じてきた理論は、向きのある弦理論である。世界面の向き（左右の区別）を変える座標変換
+\begin{equation}
+\sigma'=\ell-\sigma,\qquad\tau'=\tau
+\tag{1.4.17}\label{eq:1.4.17}
+\end{equation}
+は、これまで考えていなかった。この対称性は、世界面のパリティー演算子 $\Omega$ によって生成される。\hyperref[eq:1.4.17]{(1.4.17)} を2回行うと恒等変換になるので、$\Omega^2=1$ であり、$\Omega$ の固有値は $\pm1$ である。モード展開 \hyperref[eq:1.3.22]{(1.3.22)} と \hyperref[eq:1.4.4]{(1.4.4)} から、開弦では
+\begin{equation}
+\Omega\alpha_n^i\Omega^{-1}=(-1)^n\alpha_n^i
+\tag{1.4.18}\label{eq:1.4.18}
+\end{equation}
+であり、閉弦では
+\begin{align}
+\Omega\alpha_n^i\Omega^{-1}&=\widetilde\alpha_n^i,
+\tag{1.4.19a}\label{eq:1.4.19a}\\
+\Omega\widetilde\alpha_n^i\Omega^{-1}&=\alpha_n^i
+\tag{1.4.19b}\label{eq:1.4.19b}
+\end{align}
+であることが分かる。基底状態 $\lvert0;k\rangle$ および $\lvert0,0;k\rangle$ について $\Omega=+1$ と固定して、$\Omega$ の位相を定義する。相互作用によって $\Omega$ が保存されるためには、この選択が必要であることを後に見る。すると、
+\begin{align}
+\Omega\lvert N;k\rangle&=(-1)^N\lvert N;k\rangle,
+\tag{1.4.20a}\label{eq:1.4.20a}\\
+\Omega\lvert N,\widetilde N;k\rangle&=\lvert\widetilde N,N;k\rangle.
+\tag{1.4.20b}\label{eq:1.4.20b}
+\end{align}
+
+$\Omega=+1$ の状態だけを残した、整合的な相互作用する弦理論が存在し、これが向きのない理論である。質量ゼロの状態に注目すると、開弦の光子は $\Omega=-1$ であり、向きのない理論には存在しない。閉弦の質量ゼロのテンソル状態に作用すると、パリティー演算子 $\Omega$ は $e^{ij}$ を $e^{ji}$ に移す。そのため、向きのない理論には重力子とディラトンは存在するが、反対称テンソルは存在しない。開弦と閉弦の両方のタキオンが、向きのない理論でも生き残ることに注意しよう。これらを取り除くには、さらに工夫が必要である。
+
+相互作用の研究から現れる、ほかの二つの制約にも触れておこう。第1に、閉弦だけからなる整合的な理論、あるいは閉弦と開弦からなる整合的な理論は可能だが、開弦だけの理論は不可能である。開弦の散乱では、つねに閉弦を生成できるからである。第2に、向きのある開弦、あるいは向きのない開弦は、それぞれ同じ種類の閉弦としか結合できない。可能な組み合わせとその質量ゼロのスペクトルを列挙する。ここで $G_{\mu\nu}$ は重力子、$B_{\mu\nu}$ は反対称テンソル、$\Phi$ はディラトン、$A_\mu$ は光子を表す：
+\begin{enumerate}
+\item 向きのあるボース閉弦：$G_{\mu\nu},\,B_{\mu\nu},\,\Phi$。
+\item 向きのないボース閉弦：$G_{\mu\nu},\,\Phi$。
+\item 閉弦と開弦からなる、向きのあるボース弦：$G_{\mu\nu},\,B_{\mu\nu},\,\Phi,\,A_\mu$。
+\item 閉弦と開弦からなる、向きのないボース弦：$G_{\mu\nu},\,\Phi$。
+\end{enumerate}
+これらはすべて、タキオンに加え、重力子とディラトンを持つ。第6章では、端点に Chan--Paton 自由度を持つ、より一般的な開弦理論を論じる。その場合、向きのある質量ゼロの開弦は $U(n)$ ゲージボソンとなり、向きのない質量ゼロの開弦は $SO(n)$ または $Sp(n)$ ゲージボソンとなる。
+
+\subsection*{演習}
+\addcontentsline{toc}{subsection}{第1章の演習}
+\label{sec:1.exercises}
+
+\noindent\textbf{1.1}\label{ex:1.1}\quad
+(a) 非相対論的極限において、作用 $S_{\mathrm{pp}}$ が、運動エネルギーからポテンシャルエネルギーを引いた通常の非相対論的な形となり、ポテンシャルエネルギーが静止質量になることを示せ。
+
+\noindent
+(b) 非相対論的に運動する弦について、Nambu--Goto 作用が、運動項から弦の長さに比例するポテンシャル項を引いたものに帰着することを示せ。運動エネルギーは弦の横方向の速度だけから生じることを示せ。ポテンシャル項から、また運動項からも、単位長さ当たりの質量を計算せよ。
+
+\medskip
+\noindent\textbf{1.2}\label{ex:1.2}\quad
+古典的な運動方程式から、開弦の端点が光速で運動することが従うことを示せ。
+
+\medskip
+\noindent\textbf{1.3}\label{ex:1.3}\quad
+境界を持つ世界面について、
+\[
+\chi=\frac1{4\pi}\int_M d\tau\,d\sigma\,(-\gamma)^{1/2}R
++\frac1{2\pi}\int_{\partial M}ds\,k
+\]
+が Weyl 不変であることを示せ。ここで $ds$ は計量 $\gamma_{ab}$ における境界に沿った固有時間であり、$k$ は境界の測地的曲率、
+\[
+k=\pm t^a n_b\nabla_a t^b
+\]
+である。$t^a$ は境界に接する単位ベクトル、$n^a$ は $t^a$ に直交して外向きの単位ベクトルである。上の符号は Lorentz 型の世界面、下の符号は Euclid 型の世界面に対応する。
+
+\medskip
+\noindent\textbf{1.4}\label{ex:1.4}\quad
+レベル $m^2=1/\alpha'$ および $2/\alpha'$ の開弦状態が、$SO(D-1)$ の完全な表現をなすことを示せ。そのためには、$SO(D-1)$ のさまざまな対称および反対称テンソル表現を、$SO(D-2)$ に関する表現へ分解する必要がある。望むなら、さらに高いレベルまで進めてもよいが、混合対称性を持つテンソルと Young 図が必要になる。
+
+\medskip
+\noindent\textbf{1.5}\label{ex:1.5}\quad
+和 \hyperref[eq:1.3.32]{(1.3.32)} を、$\theta$ を定数とする「ねじれた」場合
+\[
+\sum_{n=1}^\infty(n-\theta)
+\]
+へ拡張せよ。すなわち、$k_\sigma=(n-\theta)\pi/\ell$ である。答えは式 (2.9.19) に示されている。カットオフに依存する項は $\theta$ に依存しないはずである。
+
+以下の演習では、$\mu=0,\ldots,24$ の $X^\mu$ には通常の開弦または閉弦の境界条件（Neumann 境界条件または周期的境界条件）を課すが、$X^{25}$ には別の境界条件を課す。これらはどれも重要な物理的解釈を持ち、第8章で詳しく展開する。モード展開、質量スペクトル、および（閉弦については）$\sigma$ 並進不変性からの拘束を、占有数で表して求めよ。場合によっては演習1.5の結果が必要になる。
+
+\medskip
+\noindent\textbf{1.6}\label{ex:1.6}\quad
+境界条件
+\[
+X^{25}(\tau,0)=0,\qquad X^{25}(\tau,\ell)=y
+\]
+を持つ開弦。ここで $y$ は定数である。これは、両端が D ブレーン上にある開弦である。
+
+\medskip
+\noindent\textbf{1.7}\label{ex:1.7}\quad
+境界条件
+\[
+X^{25}(\tau,0)=0,\qquad \partial^\sigma X^{25}(\tau,\ell)=0
+\]
+を持つ開弦。これは、一端が D ブレーン上にあり、他端が自由な開弦である。
+
+\medskip
+\noindent\textbf{1.8}\label{ex:1.8}\quad
+境界条件
+\[
+X^{25}(\tau,\sigma+\ell)=X^{25}(\tau,\sigma)+2\pi R
+\]
+を持つ閉弦。ここで $R$ は定数である。これは、トーラス型（周期的）コンパクト化における巻き付き弦である。この場合、$p^{25}$ は $1/R$ の整数倍でなければならない。
+
+\medskip
+\noindent\textbf{1.9}\label{ex:1.9}\quad
+境界条件
+\[
+X^{25}(\tau,\sigma+\ell)=-X^{25}(\tau,\sigma)
+\]
+を持つ閉弦。これは、オービフォールド・コンパクト化におけるねじれた弦である。

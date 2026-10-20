@@ -1,0 +1,46 @@
+132                                                            4Thestringspectrum
+
+current    with    the    ghost    ﬁelds    and    with    a    general    matter    tensor    ﬁeld    are
+                   j(z)b(0)               ∼        3    +       1    jg(0)        +     1T      m+g(0)            ,                                                (4.3.4a)
+                     B                           z3            z2                       z
+                   j    (z)c(0)           ∼      1   c∂ c    (0)      ,                                                                                            (4.3.4b)
+                     B                           z
+
+                         m                         h         m                       1   [                 m                               m               ]
+         jB(z)O             (0,    0)     ∼      z2    cO        (0,0)        +      z     h(∂c       )O       (0,    0)        + c∂   O       (0,    0)        .  (4.3.4c)
+
+The             simple             poles             reﬂect             the             BRST             transformations             (4.3.1)             of             these             ﬁelds.
+     The             BRST             operator             is
+                                                                          1      ∮
+                                                        QB       =      2πi           (dz        jB  −     d¯z˜B)         .                                          (4.3.5)
+
+By             the             usual             contour             argument,             the             OPE             implies
+                                                                {QB,bm}=Lm                           +Lg           .                                                  (4.3.6)
+                                                                                                m             m
+In             terms             of             the             ghost             modes,
+                           ∑∞
+         QB       =                  (cnLm             +    ˜cnL˜m         )
+                                                −n                   −n
+                         n=−∞
+                                    ∑∞          (m      −    n)
+                                                                   ◦                                              ˜               ◦             B
+                           +                            2          ◦(cmcnb−m−n                   +     ˜cm˜cnb−m−n)◦                   +      a    (c0     +     ˜c0)     .
+                                m,n=−∞
+                                                                                                                                                                      (4.3.7)
+The              ordering              constant              isaB      =     ag     =     −1,              as              follows              from              the              anticommu-
+tator
+                                                                 {QB,b0}=Lm                          +Lg           .                                                  (4.3.8)
+                                                                                                0             0
+     There                    is                    an                    anomaly                    in                    the                    gauge                    symmetry                    whencm̸=                  26,                    so                    we
+expect                  some                  breakdown                  in                  the                  BRST                  formalism.                  The                  BRST                  current                  is
+still              conserved:              all              of              the              terms              in              the              current              (4.3.3)              are              analytic              for              any
+value             of             the             central             charge.             However,             it             is             no             longernilpotent,
+                                                    {QB,QB}=      0                only        ifcm               =26 .                                                                                                                            (4.3.9)
+
+The      shortest      derivation      of      this      uses      the      Jacobi      identity,      exercise      4.3.      More
+directly      it      follows      from      the      OPE
+                                       cm−18                                   cm     −     18          2                cm     −     26          3
+  jB(z)jB(0)                ∼−              2z3           c∂ c    (0)−              4z2           c∂      c(0)−               12z           c∂      c(0)       .   (4.3.10)
+
+This                requires                a                bit                of                calculation,                being                careful                about                minus                signs                from
+anticommutation.         The         single         pole         implies         that                           {QB,QB}=0when                                   cm=26.

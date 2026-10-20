@@ -1,0 +1,49 @@
+180                              6 Tree-level amplitudes
+
+
+              3            2                  3               2                    3          4
+
+
+
+        (a) 4              1          (b) 1                  4                 (c) 1          2
+
+
+
+              2            3                  2               3                   2           4
+
+
+
+        (d) 4              1          (e) 1                  4                 (f) 1          3
+
+Fig. 6.2. The six cyclically inequivalent orderings of four open string vertex
+operators on the disk. The coordinate y increases in the direction of the arrow,
+except that at point 3 it jumps from +∞ to −∞.
+
+
+This is again independent of y1,2,3 after a change of variables (a Möbius
+transformation) on y4 . It is convenient to take y1 = 0, y2 = 1, and y3 →
+∞. The amplitude is conventionally written in terms of the Mandelstam
+variables
+       s = −(k1 + k2 )2 ,        t = −(k1 + k3 )2 ,              u = −(k1 + k4 )2 .               (6.4.6)
+These are not independent: momentum conservation and the mass-shell
+condition imply that
+                               (         4
+                      s+t+u=      m2i = − % .               (6.4.7)
+                                i
+                                         α
+Using 2α% ki · kj = −2 + α% (ki + kj )2 , the amplitude becomes
+                                                               #
+          SD2 (k1 ; k2 ; k3 ; k4 ) = igo4 CD2 (2π)26δ 26 (            i ki )
+                         $ ∞                                                           
+                                             −α% u−2               −α% t−2
+                       ×         dy4 |y4 |             |1 − y4 |                + (t → s) .       (6.4.8)
+                            −∞
+   The integral splits into three ranges, −∞ < y4 < 0, 0 < y4 < 1, and
+1 < y4 < ∞. For these three ranges the vertex operators are ordered as in
+figures 6.2(a), (b), and (c) respectively. Möbius invariance can be used to
+take each of these ranges into any other, so they give contributions that
+are equal up to interchange of vertex operators. The (t ↔ s) term gives
+figures 6.2(d), (e), and (f). In all,
+                                                        #                                        
+   SD2 (k1 ; k2 ; k3 ; k4 ) = 2igo4 CD2 (2π)26δ 26 (        i ki ) I(s, t) + I(t, u) + I(u, s) ,
+                                                                                             (6.4.9)

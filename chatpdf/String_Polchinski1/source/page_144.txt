@@ -1,0 +1,48 @@
+122                                                                     4Thestringspectrum
+
+account      the      change      in      the      Faddeev–Popov      determinant,      so      the      energy-
+momentum     tensor     in     the     matrix     element     is     the     sum     of     theXµand     ghost
+contributions,
+                                                                               T          =      TX         +      T    g     .                                                               (4.1.3)
+                                                                                   ab                ab                ab
+The          Xµ        may              be              replaced              by              a              more              general              CFT              (which              we              will              refer              to
+as             thematter              CFT),             in             which             case
+                                                                               T          =      Tm         +      T    g     .                                                               (4.1.4)
+                                                                                   ab                ab                ab
+      In             the             remainder             of             this             section             we             will             impose             the             condition             (4.1.2)             in
+asimplebutsomewhat                                                    ad                 hocway.                 This                 is                 known                 as                 theold                 covariant
+quantization                 (OCQ),                          and                 it                 is                 suﬃcient                 for                 many                 purposes.                 In                 the                 next
+section                    we                    will                    take                    a                    more                    systematic                    approach,                    BRST                    quantization.
+These             are             in             fact             equivalent,             as             will             be             shown             in             section             4.4.
+      In                  thead                 hocapproach,                  we                  will                  simply                  ignore                  the                  ghosts                  and                  try                  to
+restrict               the               matter               Hilbert               space               so               that               the               missing               equation               of               motion
+Tabm        =               0                 holds                 for                 matrix                 elements.                 In                 terms                 of                 the                 Laurent                 coeﬃcients
+this               isLm       =             0,               and               in               the               closed               string               alsoL˜m=0.Onemightﬁrsttry
+                       n                                                                                    m                       n
+to                   require                   physical                   states                   to                   satisfyLn|ψ⟩=                 0                  for                  alln,                  but                  this                  is                  too
+strong;                   acting                   on                   this                   equation                   withLmand                   forming                   the                   commutator,
+                                                                                                                 m
+one            encounters            an            inconsistency            due            to            the            central            charge            in            the            Virasoro
+algebra.             However,            it             is             suﬃcient             that             only             the             Virasoro             lowering             and             zero
+op erator              annihilate              physical              states,
+                                                         (Lm          +     A,      n,0)|ψ⟩            =0              for        n≥0.                                                        (4.1.5)
+                                                                n
+Fo  r       n<          0      we      then      have
+                                                               ⟨ψ|Lm|ψ′⟩=⟨Lm                                     ψ|ψ′⟩=0                      .                                               (4.1.6)
+                                                                            n                             −n
+We             have             used
+                                                                                        Lm†          =      Lm                                                                                (4.1.7)
+                                                                                            n                   −n
+as                     follows                     from                     the                     Hermiticity                     of                     the                     energy-momentum                     tensor.                     The
+conditions                (4.1.5)                are                consistent                with                the                Virasoro                algebra.                Atn  =0we
+have        as        usual        included        the        possibility        of        an        ordering        constant.        A        state
+satisfying        (4.1.5)        is        calledphysical.Intheterminologyofeq.(2.9.8),a
+physical    state    is    a    highest    weight    state    of    weight−A.Thecondition(4.1.5)
+is      similar      to      the      Gupta–Bleuler      quantization      of      electrodynamics.
+      Using      the      adjoint      (4.1.7),      one      sees      that      a      state      of      the      form
+                                                                                                ∑∞
+                                                                                |χ⟩=                      Lm        |χ      ⟩                                                                 (4.1.8)
+                                                                                                              −n         n
+                                                                                                n=1
+is                   orthogonal                   to                   all                   physical                   states                   for                   any|χn⟩.                   Such                   a                   state                   is                   called
+spurious.                A                state                that                is                both                physical                and                spurious                is                callednull.If|ψ⟩

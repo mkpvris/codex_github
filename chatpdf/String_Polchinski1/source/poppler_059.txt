@@ -1,0 +1,49 @@
+                      2.2 The operator product expansion                             37
+
+
+                                       z3
+
+
+                              z1
+                             z2
+
+                                                                            z4
+
+
+
+Fig. 2.1. Expectation value of a product of four local operators. The OPE gives
+the asymptotics as z1 → z2 as a series where the pair of operators at z1 and z2 is
+replaced by a single operator at z2 . The radius of convergence is the distance to
+the nearest other operator, indicated by the dashed circle.
+
+
+local operators close together can be approximated to arbitrary accuracy
+by a sum of local operators,
+                                           
+                  Ai (σ1 )Aj (σ2 ) =            ckij (σ1 − σ2 )Ak (σ2 ) .        (2.2.2)
+                                            k
+
+Again this is an operator statement, meaning that it holds inside a general
+expectation value
+                                       
+        / Ai (σ1 )Aj (σ2 ) . . . , =        ckij (σ1 − σ2 ) / Ak (σ2 ) . . . ,   (2.2.3)
+                                       k
+
+as long as the separation between σ1 and σ2 is small compared to the
+distance to any other operator. The coefficient functions ckij (σ1 − σ2 ), which
+govern the dependence on the separation, depend on i, j, and k but not
+on the other operators in the expectation value; the dependence on the
+latter comes only through the expectation value on the right-hand side of
+eq. (2.2.3). The terms are conventionally arranged in order of decreasing
+size in the limit as σ1 → σ2 . This is analogous to an ordinary Taylor series,
+except that the coefficient functions need not be simple powers and can in
+fact be singular as σ1 → σ2 , as we will see even in the simplest example.
+Just as the Taylor series plays a central role in calculus, the OPE plays a
+central role in quantum field theory.
+   We will give now a derivation of the OPE for the X µ theory, using
+the special properties of free field theory. In section 2.9 we will give a
+derivation for any conformally invariant field theory.
+   We have seen that the normal ordered product satisfies the naive equa-
+tion of motion. Eq. (2.1.23) states that the operator product is a harmonic
+function of (z1 , z̄1 ). A simple result from the theory of complex variables
+is that a harmonic function is locally the sum of a holomorphic and an

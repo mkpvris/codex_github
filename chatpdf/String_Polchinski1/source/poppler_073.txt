@@ -1,0 +1,49 @@
+                                     2.5 Free CFTs                               51
+
+One can also verify (2.5.11) by working out the OPE of T with b and c;
+it has the standard tensor form (2.4.16) with the given weights. The T T
+OPE is of standard form (2.4.25) with
+                         c = −3(2λ − 1)2 + 1 ,                c̃ = 0 .      (2.5.12)
+This is a purely holomorphic CFT, and is an example where c -= c̃. There
+is of course a corresponding antiholomorphic theory
+                                              !
+                                1
+                           S=        d2 z b̃∂c̃ ,            (2.5.13)
+                               2π
+which is the same as the above with z ↔ z̄.
+  The bc theory has a ghost number symmetry δb = −i.b, δc = i.c. The
+corresponding Noether current is
+                                      j = − : bc : .                        (2.5.14)
+Again the components are separately holomorphic and antiholomorphic,
+the latter vanishing. When there are both holomorphic and antiholomor-
+phic bc fields, the ghost numbers are separately conserved.
+  This current is not a tensor,
+                             1 − 2λ   1       1
+                   T (z)j(0) ∼   3
+                                    + 2 j(0) + ∂j(0) .                      (2.5.15)
+                               z     z        z
+This implies the transformation law
+                                                          2λ − 1 2
+                     .−1 δj = −v∂j − j∂v +                      ∂ v,        (2.5.16)
+                                                             2
+whose finite form is
+                                                         2λ − 1 ∂z2 z "
+                       (∂z z " )jz " (z " ) = jz (z) +                  .   (2.5.17)
+                                                            2 ∂z z "
+  The one case where b and c have equal weight is hb = hc = 12 , for which
+the central charge c = 1. Here we will often use the notation b → ψ,
+c → ψ. For this case the bc CFT can be split in two in a conformally
+invariant way,
+              ψ = 2−1/2 (ψ1 + iψ2 ) , ψ = 2−1/2 (ψ1 − iψ2 ) ,           (2.5.18a)
+                       !     "                    #
+                    1            ¯ 1 + ψ2 ∂ψ  ¯ 2 ,
+               S =       d2 z ψ1 ∂ψ                                    (2.5.18b)
+                   4π
+                     1          1
+              T = − ψ1 ∂ψ1 − ψ2 ∂ψ2 .                                   (2.5.18c)
+                     2          2
+Each ψ theory has central charge 12 .
+   The bc theory for λ = 2, weights (hb , hc ) = (2, −1), will arise in the next
+chapter as the Faddeev–Popov ghosts from gauge-fixing the Polyakov
+string. The ψ theory will appear extensively in the more general string
+theories of volume two.

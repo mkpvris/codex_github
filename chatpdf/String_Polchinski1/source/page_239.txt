@@ -1,0 +1,50 @@
+                                                                              7.3                      The              torus              amplitude                                                                        217
+
+the               denominator               being               the               area               of               the               torus,               which               is               the               volume               of               the
+CKG.             Using             eqs.             (7.3.2)             and             (7.3.3),             the             amplitude             becomes
+             ST2(1;      2;              ...     ;n)⟨                                                                                                                                   ⟩
+                             ∫           dτd       ¯τ                                                            ∏n        ∫
+                                                                            ˜
+                     =                     4τ                   b(0)b(0)˜c(0)c(0)                                                  dwidw¯i               Vi(wi,w¯i)                                     .           (7.3.4)
+                                 F0              2                                                               i=1                                                                         T    2
+
+All             vertex             operators             are             now             on             an             equal             footing.
+       The                    form                    (7.3.4)                    could                    also                    have                    been                    derived                    directly,                    without                    the
+intermediate                 step                 of                 ﬁxing                 a                 vertex                 operator,                 and                 is                 valid                 even                 without
+vertex             operators,
+                                                                             ∫                     ¯    ⣨                                                      ⟩
+                                                                                         dτd       τ                      ˜
+                                                       ZT2           =                     4τ                 b(0)b(0)˜c(0)c(0)                                    T2        .                                      (7.3.5)
+                                                                                 F0              2
+This                 vacuum                 amplitude                 is                 quite                 interesting                 and                 will                 be                 our                 main                 focus.
+Not                   only                   does                   it                   reveal                   the                   essential                   di!erence                   between                   the                   ultraviolet
+behaviors                       of                       string                       theory                       and                      ﬁeld                       theory,                      but                       it                       has                       an                       important
+physical             interpretation             of             its             own.
+       For            26            ﬂat            dimensions,            the            matter            and            ghost            path            integrals            (7.3.5)            were
+evaluated             in             the             previous             section,             with             the             result
+                                                                                      ∫          dτd        ¯τ
+                                                  ZT2           =       iV26                                     (4π2α′τ2)−13|.(τ)|−48                                            .                                 (7.3.6)
+                                                                                          F0       4τ2
+The                  amplitude                  has                  the                  important                  property                  of                  modular                  invariance.                  The
+product                   τ2|.(τ)|4                   is             invariant             by             eq.             (7.2.44),             and             it             is             easy             to             check             that
+
+                                                                                                            dτd        ¯τ                                                                                           (7.3.7)
+                                                                                                                τ2
+                                                                                                                   2
+is                 modular-invariant                 as                 well.                 Note                 the                 exponent                −48,                 from                 the                 24                 left-
+and               right-moving               oscillators.               The               contribution               of               the               ghosts               cancels               two
+sets              of              oscillators,              leaving              only              the              contribution              of              the              transverse              modes.
+The              amplitude              with                     n     tachyons              is              given              by              including              the              vertex              operator
+expectation             value             (7.2.4)             and             integrating             over             positions.
+       For           a           general           CFT           the           path           integral           on           the           torus           is           expressed           as           a           trace
+in                 eq.                 (7.2.28).                 As                 long                 as                 there                 ared≥2noncompactﬂatdimensions
+the       ghosts       still       cancel       two       sets       of       bosonic       operators,       and       the       vacuum
+amplitude     is
+                                                       ∫                    ¯      ∫              d                                                          ∑
+                                                                  dτd        τ                 d     k                                                                                       ˜
+                      Z         2    =Vd                                                                      exp(−πτ2α′k2)                                               qhi−1q¯hi−1                           (7.3.8a)
+                           T                              F         4τ2                     (2π)d
+                                                             0                                                                                             i∈H        ⊥
+                                                         ∫          dτd       ¯τ                                               ∑                               ˜
+                                     =        iVd                                   (4π2α′τ2)−d/2                                           qhi−1q¯hi−1                      .                                  (7.3.8b)
+                                                            F0        4τ2                                                    i∈H        ⊥

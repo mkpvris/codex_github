@@ -1,0 +1,39 @@
+72                         2 Conformal field theory
+
+For example, the X µ CFT is unitary for spacelike µ if we take the inner
+product
+                           /0; k|0; k " , = 2πδ(k − k " )                (2.9.12)
+for the ground state and define
+                           α†m = α−m ,     α̃†m = α̃−m .                 (2.9.13)
+This implicitly defines the inner products of all higher states. This CFT
+is not unitary for µ = 0 because of the opposite sign in the commutator
+there.
+   The first constraint is that any state in a unitary CFT must have h, h̃ ≥ 0.
+If this is true for highest weight states it is true for all states. For a highest
+weight state the Virasoro algebra gives
+     2hO /O|O, = 2/O|L0 |O, = /O|[L1 , L−1 ]|O, = 7L−1 |O,72 ≥ 0 ,       (2.9.14)
+so hO ≥ 0. It also follows that if hO = h̃O = 0 then
+                            L−1 · O = L̃−1 · O = 0 ,                     (2.9.15)
+and so O is independent of position. As noted before, O must then be a
+c-number. That is, the unit operator is the only (0,0) operator in a unitary
+CFT. Curiously, X µ itself is the one notable exception: the corresponding
+state xµ |0; 0, is nonnormalizable because of the infinite range of X µ , and
+equation (2.9.14) no longer holds. The general theorems are of the most
+use for the CFTs corresponding to compactified dimensions, where this
+kind of exception cannot occur.
+   In a similar way, one finds that an operator in a unitary CFT is
+holomorphic if and only if h̃ = 0, and antiholomorphic if and only if
+h = 0; this is an important result so we repeat it,
+                 ∂A = 0 ⇔ h = 0 ,          ¯ = 0 ⇔ h̃ = 0 .
+                                           ∂A                            (2.9.16)
+Finally, using the above argument with the commutator [Ln , L−n ], one can
+show that c, c̃ ≥ 0 in a unitary CFT. In fact, the only unitary CFT with
+c = 0 is the trivial one, Ln = 0.
+
+                              Zero-point energies
+The state–operator mapping gives a simple alternative derivation of the
+various normal ordering constants. In any CFT, we know that L0 |1, = 0,
+and this determines the additive normalization of L0 . In the X CFT, |1, is
+the ground state |0; 0,, so aX vanishes. In the bc theory, |1, is the excited
+state b−1 | ↓,, so the weight of | ↓, is −1 in agreement with the earlier
+result (2.7.21) for λ = 2.

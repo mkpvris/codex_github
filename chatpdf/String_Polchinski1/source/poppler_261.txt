@@ -1,0 +1,46 @@
+                       8.2 Toroidal compactification in CFT                                         239
+
+                                                   A technicality
+
+The above is essentially correct, but we have been cavalier with the
+location of the branch cut in the logarithm. One can see a problem in the
+OPE (8.2.19) if one interchanges the points z1 and z2 and the momenta k
+and k % . The left-hand side is symmetric, but the right-hand side changes
+by exp[πi(nw % + wn% )] and so changes sign if nw % + wn% is odd. One can also
+see the problem as follows. From the mode expansion one may derive the
+equal time (|z1 | = |z2 |) commutator
+                                                                πiα%
+                      [ XL (z1 ), XL (z2 ) ] =                       sign(,11 − ,21 ) .         (8.2.21)
+                                                                 2
+The CBH formula then shows that if we define the operators simply
+as creation–annihilation ordered, then for nw % + wn% odd the operators
+VkL kR and VkL% kR% anticommute rather than commute; the invisible branch
+cut (8.2.20) is separated into two visible ones. A correct oscillator ex-
+pression for the vertex operator (there is some arbitrariness in the phase)
+is
+  VkL kR (z, z̄) = exp[πi(kL − kR )(pL + pR )α% /4] ◦◦ eikL XL (z)+ikR XR (z̄) ◦◦ ,             (8.2.22)
+where as usual the ps are momentum operators and the ks are numbers
+(the momenta carried by the given vertex operator). When VkL kR and
+VkL% kR% are commuted past each other, the additional factors, known as
+cocycles, give an additional phase
+           9                                                                             :
+      exp πi (kL − kR )(kL% + kR% ) − (kL% − kR% )(kL + kR ) α% /4
+                                                                     = exp[πi(nw % − wn% )] ,   (8.2.23)
+removing the branch cuts. For most purposes one can ignore this compli-
+cation and work with the simpler expressions of the previous paragraph;
+the cocycle a!ects only the relative signs of certain amplitudes.
+  The general X µ path integral (6.2.18) factorizes in an obvious way into
+holomorphic times antiholomorphic, so that one can simply replace
+                       n
+                       &                               n
+                                                       &
+                                        α% ki kj         α% kLi kLj /2 α% kRi kRj /2
+                               |zij |              →           zij         z̄ij        ,        (8.2.24)
+                       i,j=1                           i,j=1
+                        i<j                             i<j
+                                        #
+and also replace the 2πδ(                    k) from the noncompact integral over x0 by
+                                              2πRδ)i ni ,0 δ)i wi ,0 .                          (8.2.25)
+Again this is naive; the precise expression (8.2.22) gives some additional
+signs. The reader can readily calculate an amplitude with four vertex
+operators, which is similar to the Virasoro–Shapiro amplitude.

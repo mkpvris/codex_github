@@ -1,0 +1,48 @@
+214                                                     7                    One-loop              amplitudes
+
+                                                                Theta              functions
+The             basic theta              function     is
+                                                                 ∑∞
+                                           ϑ(ν,   τ   )=                  exp(π in2τ            +2πinν).                                         (7.2.31)
+
+                                                               n=−∞
+It       has       the       periodicity       properties
+                                      ϑ(ν+1,τ              )=       ϑ(ν,   τ   )   ,                                                          (7.2.32a)
+                                       ϑ(ν     +    τ,       τ)=exp(         −πiτ−2πiν)ϑ(ν,   τ                     )   ,                     (7.2.32b)
+and          these          in          fact          determine          it          up          to          normalization.          Under          modular          trans-
+formations,
+                                       ϑ(ν,   τ    +1)   =          ϑ(ν+1/2,τ                )   ,                                            (7.2.33a)
+                                  ϑ(ν/τ,        −1/τ       )=(        −iτ)1/2exp(π iν                 2/τ    )ϑ(ν,   τ    )  .                (7.2.33b)
+
+The              theta              function              has              a              unique              zero,              up              to              the              periodicity              (7.2.32),              at
+ν  =     1(1        + τ).             It             can             also             be             written             as             an             inﬁnite             product,
+         2
+                                      ∏∞
+                 ϑ(ν,   τ   )=              (1    −    qm)(1        +    zqm−1/2)(1        +         z−1qm−1/2)               ,                  (7.2.34)
+
+                                     m=1
+in             terms             of
+                                           q   =exp(2πiτ),z                              =exp(2πiν).                                             (7.2.35)
+     We      often       need       the       asymptotic      behavior       of       the       theta       function       asq→0
+or             asq→   1.            Theq  →     0            behavior            can            be            read            immediately            from            either            the
+inﬁnite             sum             or             inﬁnite             product             form.             Theq→1             behavior             is             not             manifest
+in               either               form,               because               an               inﬁnite               number               of               terms               contribute.               It               can               be
+obtained               from               theτ→−1/τ             modular             transformation,             which             relates             these
+two              limits              byq→exp(4π2/            ln   q).
+     It             is             also             useful             to             deﬁne             thetheta              function              with              characteristics,
+                 a                                                                          
+              ϑ           (ν,   τ )=exp              πia2τ+2πia(ν+b)                             ϑ(ν+aτ             +    b,       τ)
+                    b
+                                             ∑∞                                                                                   
+                                      =                exp       πi  (n    +    a)2τ     +2πi        (n    +    a)(ν      +    b)      .         (7.2.36)
+
+                                           n=−∞
+Other             common             notations             are
+                                                                                          ∑∞
+               ϑ      (ν,   τ )=       ϑ    (ν|τ)=           ϑ     0     (ν,   τ )=                  qn2/2zn          ,                       (7.2.37a)
+                  00                      3                        0
+                                                                                         n=−∞
+                                                                                               ∑∞
+               ϑ      (ν,   τ )=       ϑ    (ν|τ)=           ϑ       0        (ν,   τ )=                 (−1)nqn2/2zn                 ,       (7.2.37b)
+                  01                      4                        1/2
+                                                                                               n=−∞

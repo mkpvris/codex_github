@@ -1,0 +1,44 @@
+                  2.3 Ward identities and Noether’s theorem                                  41
+
+symmetry properties of the coefficient functions are needed one can work
+them out in the symmetric form and then convert to the asymmetric form.
+
+
+                 2.3       Ward identities and Noether’s theorem
+
+World-sheet symmetries of course play an important role in string theory.
+In this section we first derive some general consequences of symmetry in
+field theory.
+   Consider a general field theory with action S [/] in d spacetime dimen-
+sions, with /α (σ) denoting general fields. Let there be a symmetry
+                               /"α (σ) = /α (σ) + δ/α (σ) ,                              (2.3.1)
+where δ/α is proportional to an infinitesimal parameter .. The product of
+the path integral measure and the weight exp(−S ) is invariant,
+                     [d/" ] exp(−S [/" ]) = [d/] exp(−S [/]) .                           (2.3.2)
+   A continuous symmetry in field theory implies the existence of a con-
+served current (Noether’s theorem) and also Ward identities, which con-
+strain the operator products of the current. To derive these results consider
+the change of variables,
+                             /"α (σ) = /α (σ) + ρ(σ)δ/α (σ) .                            (2.3.3)
+This is not a symmetry, the transformation law being altered by the
+inclusion of an arbitrary function ρ(σ). The path integral measure times
+exp(−S ) would be invariant if ρ were a constant, so its variation must be
+proportional to the gradient ∂a ρ,
+   [d/" ] exp(−S [/" ])
+                                  (          !                                       
+                              i.                  d     1/2 a                   2
+       = [d/] exp(−S [/]) 1 +                    d σg       j (σ)∂a ρ(σ) + O(. ) . (2.3.4)
+                              2π
+The unknown coefficient j a (σ) comes from the variation of the measure
+and the action, both of which are local, and so it must be a local function
+of the fields and their derivatives. Take the function ρ to be nonzero only
+in a small region, and consider a path integral with general insertions
+‘. . .’ outside this region; the insertions are therefore invariant under (2.3.3).
+Invariance of the path integral under change of variables gives
+                 !                                      !
+           0=        [d/" ] exp(−S [/" ]) . . . −           [d/] exp(−S [/]) . . .
+                       !
+                  .
+             =              dd σ g 1/2 ρ(σ) / ∇a j a (σ) . . . , ,                       (2.3.5)
+                 2πi
+where the limited support of ρ has allowed us to integrate by parts. Thus

@@ -1,0 +1,44 @@
+                                                                         9.1                      General              tree-level              amplitudes                                                                                                 285
+
+        The                  ﬁrst                  issue                  is                  the                  decoupling                  of                  BRST-null                  states,                  so                  that                  BRST-ˆ
+equivalent                 states                 have                 equal                 amplitudes.                 Suppose                 that                 the                 state                                            |V3⟩                 in
+the             three-point             amplitude             is             null,
+                                                                                                         |Vˆ       3⟩       =        QB|χ⟩                  .                                                                                    (9.1.7)
+
+Then
+                        e2λ        SS        (1;      2;      3)              =    ⟨⟨Vˆ         1|     [Vˆ        2(1,          1),QB]|χ⟩+⟨⟨Vˆ                                          1|QBVˆ                   2(1,         1)|χ⟩
+                                          2
+                                                                           =0              ,                                                                                                                                                     (9.1.8)
+the               terms               vanishing               respectively               by               the               BRST               invariance               of               states               2               andˆˆ
+1.            Similarly,            if              V2            =       {QB,χ                 }or             |V1⟩                =       QB|χ⟩                  the            amplitude            also            vanishes.
+We                 have                 used                 the                 Hilbert                 space                 formalism                 here,                 but                 it                 is                 worthwhile                 to
+phrase             this             same             argument             in             path             integral             language.             Suppose                                                                     V3            is             null,
+                                                                                                          Vˆ      3     =        QB          ·X            .                                                                                     (9.1.9)
+Expand             the             contour             integral             on             the             sphere             away             fromˆ                                    ˆ           X        until             it             becomes
+a             small             loop             around                    V1            plus             a             small             loop             aroundˆˆ                   V2.             These             then             vanish
+by              BRST              invariance,                                QB          ·   V1            =        QB          ·    V2            =0.
+        To                     t   h   i   s                     o  r   d   e   r                     t   h   e   n   ,                     a   m   p   l   i   t  u   d   e   s                     a   r   e                     w   e   l   l                     d   e   ﬁ   n   e   d                     o  n                     t   h   e                     p   h   y   s   i   c   a   l                     H   i   l   b    e   r   t
+space,                  the                  BRST                  cohomology.                  The                  decoupling                  of                  the                  null                  graviton,                  as-
+sociated                    with                    spacetime                    coordinate                    invariance,                    is                    a                    special                    case                    of                    the
+decoupling                    of                    BRST-null                    states.                    It                    is                    then                    natural                    to                    wonder                    whether
+spacetime            coordinate            invariance            is            a            piece            of            some            much            larger            symmetry
+in            string            theory.            We            will            discuss            some            ideas            in            this            direction            in            section            9.6.
+        We             now             consider             the             unitarity             of             the             S-matrix,
+                                                                                                    ∑            S           S∗           =?       δ             ,                                                                           (9.1.10)
+                                                                                                                     mn          pn                    mp
+                                                                                                        n
+which            is            equivalent           to           the           conservation            of           probability.           It           is            useful            to           break
+up                the                S-matrix                into                a                term                in                which                nothing                happens                and                a                scattering
+term,
+                                                                                                  Smn            =       δmn           +       iTmn               .                                                                          (9.1.11)
+Fo  r                     t   h   e                     s   c   a   t   t   e   r   i   n   g                     m   a   t   r   i   xT,                 unitarity                 implies∑
+                                                                                    Tmp            −        Tpm∗           =        i               TmnTpn∗                     .                                                            (9.1.12)
+
+                                                                                                                                            n
+        The                T-matrix                by                deﬁnition                involves                a                total                of                at                least                three                particles,
+so                      for                      three-particle                      amplitudes                      on                      the                      sphere                      the                      right-hand                      side                      of
+eq.             (9.1.12)             vanishes.             Unitarity             then             requires
+                                                                         TS          (1;      2;      3)           =      TS          (−1;              −2;−3)∗                           ,                                                  (9.1.13)
+                                                                                  2                                                2
+where          a          minus          sign          is          shorthand          for          replacing          an          incoming          vertex          operator
+by                    an                    outgoing                    vertex                    operator                    for                    the                   same                   state,                   or                    vice                   versa.                    The

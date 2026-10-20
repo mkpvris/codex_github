@@ -1,0 +1,47 @@
+186                              6Tree-levelamplitudes
+
+associated     with     aU(n)     gauge     symmetry;     we     will     soon     see     that     this     is     the
+case.
+   Deﬁne             the             basis
+                                             ∑n
+                              |N;  k; a⟩  =        |N;k;ij⟩λa     .                      (6.5.3)
+                                                                ij
+                                             i,j=1
+Now            consider            the            four-tachyon            amplitude            shown            in            ﬁgure            6.2(a),            in            which
+the                 vertex                 operators                 are                 arranged                 in                 the                 cyclic                 order                 1234.                 Because                 the
+Chan–Paton              degrees              of              freedom              do              not              appear              in              the              Hamiltonian,              their
+state                does                not                evolve                between                the                vertex                operators:                the                right-hand                end-
+point            of            tachyon            1            must            be            in            the            same            state            as            the            left-hand            endpoint            of
+tachyon               2,               and               so               forth.               Thus,               the               amplitude               6.2(a)               will               now               contain               an
+additional             factor             of
+                                      Tr         (λa1λa2λa3λa4)(6.5.4)
+
+fromtheoverlapoftheChan–Patonwavefunctionsforeachtachyon.
+Thisrulegeneralizestoanarbitraryamplitude:eachvertexoperatornow
+contains               aChan–Paton               factorλafrom               the               wavefunction               of               the               endpoint
+                                          ij
+degrees              of              freedom,              and              the              amplitude              for              each              world-sheet              is              multiplied
+by             a             trace             of             the             Chan–Paton             factors             around             each             boundary.
+   The             three-tachyon             amplitude             becomes
+               SD2(k1,a1;    k2,a2;  k3,a3)=
+                         igo(2π)26δ26(∑k        )Tr      (λa1λa2λa3+ λa1λa3λa2)    ,     (6.5.5)
+                          α′                 i  i
+the                    two                    cyclic                    orderings                    now                    having                    di!erent                    Chan–Paton                    traces.                    The
+four-tachyon             amplitude             is
+                                                     igo2      26 26  ∑
+         SD2(k1,a1;k2,a2;       k3,a3;   k4,a4)=      α′ (2π)    δ   (   iki)
+                     a   a   a   a      a   a   a   a
+            ×   Tr         (λ1λ2λ4λ3 +  λ 1λ  3λ  4λ  2)B(−αo(s),    −αo(t))
+               +Tr(λa1λa3λa2λa4        +λa1λa4λa2λa3)B(−αo(t),−αo(u))
+                        a   a   a   a       a  a   a   a                         
+               +Tr(λ      1λ 2λ  3λ  4 +λ    1λ 4λ  3λ  2)B(−αo(s),−αo(u))          .    (6.5.6)
+
+Considering                  again                  the                  unitarity                  relation                  (6.4.13),                  the                  pole                  ats=−1/α′
+acquires             a             factor             of
+                                 1    (    a    a     a    a   
+                                   Tr   {λ  1,λ  2}{λ   3,λ  4}                          (6.5.7)
+                                 4
+on             the             left             and             a             factor             of
+                       1 ∑       (    a    a    a     (    a    a    a
+                              Tr   {λ  1,λ  2}λ     Tr   {λ  3,λ  4}λ     ,              (6.5.8)
+                       4   a

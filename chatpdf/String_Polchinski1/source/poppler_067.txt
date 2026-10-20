@@ -1,0 +1,43 @@
+                          2.4 Conformal invariance                          45
+
+
+
+
+  (a)                         (b)                      (c)
+
+Fig. 2.2. (a) Two-dimensional region. (b) E!ect of the special conformal trans-
+formation (2.4.9). (c) E!ect of a more general conformal transformation.
+
+
+Thus, as indicated in figure 2.2, a conformal transformation takes infinites-
+imal squares into infinitesimal squares, but rescales them by a position-
+dependent factor. An antiholomorphic function z " = f(z)∗ has the same
+property, but changes the orientation. Most systems that are invariant
+under the rigid scaling (2.4.9) are actually invariant under the much larger
+conformal symmetry. A theory with this invariance is called a conformal
+field theory (CFT). Conformal invariance in more than two dimensions is
+developed in exercise 2.6.
+
+
+                    Conformal invariance and the OPE
+
+Conformal invariance puts strong constraints on the form of the OPE,
+and in particular on the OPEs of the energy-momentum tensor. Consider
+the OPE of T with the general operator A. Because T (z) and T̃ (z̄)
+are (anti)holomorphic except at insertions, the corresponding coefficient
+functions must also have this property. The OPE of T with a general A
+is therefore a Laurent expansion, in integer but possibly negative powers
+of z. Further, all the singular terms are determined by the conformal
+transformation of A. To see this, let us write a general expansion of the
+singular terms,
+                                       ∞
+                                            1
+                      T (z)A(0, 0) ∼         n+1
+                                                 A(n) (0, 0)           (2.4.11)
+                                       n=0
+                                           z
+
+and similarly for T̃ ; the operator coefficients A(n) remain to be determined.
+Under an infinitesimal conformal transformation z " = z + .v(z), a single
+pole in v(z)T (z)A(0, 0) arises when the z −n−1 term of the T A OPE
+multiplies the term of order z n in v(z). Thus, the Ward identity in the

@@ -1,0 +1,48 @@
+178                                       6 Tree-level amplitudes
+
+  We have considered the λ=2 theory that is relevant to the ghosts of the
+bosonic string, but either method generalizes readily to any λ.
+
+                                                     The disk
+The simplest way to obtain the bc amplitudes on the disk is with the
+doubling trick. As in eq. (2.7.30), we can represent both the holomorphic
+and antiholomorphic fields in the upper half-plane by holomorphic fields
+in the whole plane, using
+                  b̃(z̄) = b(z $ ) ,        c̃(z̄) = c(z $ ) ,     z $ = z̄ , Im z > 0 .                      (6.3.9)
+The expectation value of the holomorphic fields follows as on the sphere,
+                                  * c(z1 )c(z2 )c(z3 ) +D2 = CDg 2 z12 z13 z23                              (6.3.10)
+for all z. Then for example
+                                                        4                          5
+                      * c(z1 )c(z2 )c̃(z̄3 ) +D2 = c(z1 )c(z2 )c(z3$ ) D2
+                                                     = CDg 2 z12 (z1 − z̄3 )(z2 − z̄3 ) .                   (6.3.11)
+More general correlators are obtained in the same way.
+
+                                           The projective plane
+The doubling trick again can be used. The involution z $ = −z̄ −1 implies
+that
+                 2          32                                         2          3−1
+                     ∂z $           $      $4    $                         ∂z $
+      b̃(z̄) =                   b(z ) = z b(z ) ,          c̃(z̄) =                    c(z $ ) = z $−2 c(z $ ) .
+                     ∂z̄                                                   ∂z̄
+                                                                                                            (6.3.12)
+Again
+                                                              g
+                                 * c(z1 )c(z2 )c(z3 ) +RP2 = CRP z z z
+                                                                2 12 13 23
+                                                                                                            (6.3.13)
+and so
+                                                             4                           5
+                 * c(z1 )c(z2 )c̃(z̄3 ) +RP2 = z3$−2 c(z1 )c(z2 )c(z3$ ) RP2
+                                                    g
+                                                 = CRP z (1 + z1 z̄3 )(1 + z2 z̄3 ) .
+                                                      2 12
+                                                                                                            (6.3.14)
+
+                                    6.4    The Veneziano amplitude
+
+Open string amplitudes are slightly simpler than closed string amplitudes,
+so we begin with these.
+   We represent the disk as the upper half-plane so the boundary coor-
+dinate y is real. There are no moduli. After fixing the metric, the CKG
+P S L(2, R) can be used to fix the three vertex operators to arbitrary po-
+sitions y1 , y2 , y3 on the boundary, except that this group does not change

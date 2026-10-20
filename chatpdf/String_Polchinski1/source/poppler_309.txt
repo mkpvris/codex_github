@@ -1,0 +1,52 @@
+                                  9.1 General tree-level amplitudes                                               287
+
+intermediate states,
+                           &            !       2       2               !   2           2
+          θ(1 − |z|)              z α (ki +mi )/4−1 z̄ α (ki +m̃i )/4−1
+                           i,i!                                                                 !
+                                         % V̂1 |V̂2 (1, 1)b0 b̃0 |i&Gii %% i! |V̂4 (1, 1)|V̂3 &
+                                        ×%
+                           &                !       2       2                   !   2       2
+      + θ(|z| − 1)                z −α (ki +mi )/4−1 z̄ −α (ki +m̃i )/4−1
+                           i,i!                                                                 !
+                                         % V̂1 |V̂4 (1, 1)b0 b̃0 |i&Gii %% i! |V̂2 (1, 1)|V̂3 & . (9.1.20)
+                                        ×%
+   In this last form the behavior of the integral at z → 0 is evident, and it
+is the same as for the tachyon amplitudes studied in chapter 6. If ki2 + m2i
+and ki2 + m̃2i are positive for all i, that is,
+                                              4
+                                                 ,  ki2 = (k1 + k2 )2 >
+                                                                      (9.1.21)
+                                             α!
+then the integral converges. Elsewhere it is defined as in eq. (6.6.7),
+      #
+                       !    2       2                       !   2   2                       8π   δm2 ,m̃2
+                d2 z z α (k +m )/4−1 z̄ α (k +m̃ )/4−1 =                                     !
+                                                                                                          .   (9.1.22)
+        |z|<1
+                                                                                               2
+                                                                                            α k + m2 − i.
+One can think of this as analytic continuation from large positive values
+of m2 , keeping m2 slightly below the real axis. Similarly, the integral as
+z → ∞ converges for (k1 + k4 )2 > 4/α! and is defined elsewhere by analytic
+continuation. The form (9.1.20) is not useful for studying the z → 1 limit.
+Instead use the symmetry of the amplitude to interchange vertex operators
+2 and 3. The integral for z → 1 is then defined by analytic continuation
+from the convergent region (k1 + k3 )2 > 4/α! . The need to decompose the
+range of integration and to make possibly different analytic continuations
+for the different regions poses no difficulty.
+   After the expansion (9.1.20) is integrated as in (9.1.22), the amplitude is
+expressed as a series of poles in s and u. We know from chapter 6 that the
+amplitude also has poles in t, but these are not explicit: they come from
+the divergences of the infinite sums. Similarly the open string amplitude
+I(s, t) has poles in s and t, but can be written as an infinite sum of terms
+having poles only in s, or only in t. This property is known as duality,
+or world-sheet duality to distinguish it from T - and other dualities. We
+can think of this as arising because the world-sheet can be cut open on
+different curves and so written as sums over intermediate states in different
+ways. Another example is the sum over open string states giving closed
+string poles on the cylinder.
+
+                           Unitarity of the four-point amplitude
+Now let us check that four-point amplitudes are equal for equivalent
+states. Let |V̂3 & = QB |χ& be null. Using the form (9.1.19), we can commute

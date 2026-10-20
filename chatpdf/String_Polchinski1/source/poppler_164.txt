@@ -1,0 +1,50 @@
+142                         4 The string spectrum
+
+must be BRST-exact. By (4.4.23), this state is BRST-closed. Further, since
+|ψ+$ − |ψ+ is OCQ null, the state (4.4.24) has zero norm. From the BRST
+no-ghost theorem, the inner product on the cohomology is positive, so a
+zero-norm closed state is BRST-exact, as we needed to show.
+   To conclude that we have an isomorphism, we need to show that the
+map is one-to-one and onto. One-to-one means that OCQ physical states
+ψ and ψ $ that map into the same BRST class must be in the same OCQ
+class — if
+                          |ψ, ↓+ − |ψ $ , ↓+ = QB |χ+ ,                 (4.4.25)
+then |ψ+ − |ψ+$ must be OCQ null. To see this, expand
+                                  ∞
+                                  (
+                          |χ+ =         b−n |χn , ↓+ + . . . ;          (4.4.26)
+                                  n=1
+
+|χ+ has ghost number − 32 , so the ellipsis stands for terms with at least
+one c and two b excitations. Insert this into the form (4.4.25) and keep on
+both sides only terms with the ghost ground state. This gives
+                                           ∞
+                                           (
+                   |ψ, ↓+ − |ψ $ , ↓+ =           cm Lm
+                                                      −m b−n |χn , ↓+
+                                          m,n=1
+                                           (∞
+                                    =            Lm
+                                                  −n |χn , ↓+ .         (4.4.27)
+                                           n=1
+
+Terms with ghost excitations?must vanish separately, and so have been
+omitted. Thus, |ψ+ − |ψ $ + = ∞         m
+                                   n=1 L−n |χn + is OCQ null, and the map is
+one-to-one.
+   Finally, we must show that the map is onto, that every QB class contains
+at least one state of the form (4.4.22). In fact, the specific representa-
+tives (4.4.19), the states annihilated by S + U, are of this form. To see this,
+consider the quantum number N $ = 2N − + Nb + Nc , involving the total
+numbers of −, b, and c excitations. The operator R has N $ = −1: terms
+in R with m > 0 reduce Nc by one unit and terms with m < 0 reduce N −
+by one unit and increase Nb by one unit. Examining Q0 + Q−1 , one finds
+various terms with N $ = 1, but no greater. So U = {R, Q0 + Q−1 } cannot
+increase N $ . Examining the state (4.4.19), and noting that S and |ψ0 + have
+N $ = 0, we see that all terms on the right-hand side have N $ ≤ 0. By
+definition N $ is nonnegative, so it must be that N $ |ψ+ = 0. This implies no
+−, b, or c excitations, and so this state is of the form (4.4.22). Thus the
+equivalence (4.4.21) is shown.
+   The full power of the BRST method is needed for understanding the
+general structure of string amplitudes. However, for many practical pur-
+poses it is a great simplification to work with the special states of the

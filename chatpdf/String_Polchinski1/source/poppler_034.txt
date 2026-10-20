@@ -1,0 +1,45 @@
+12                              1 A first look at strings
+
+     1. The isometry group of flat spacetime, the D-dimensional Poincaré
+        group,
+                                X "µ (τ, σ) = Λµν X ν (τ, σ) + aµ            (1.2.11)
+        with Λµν a Lorentz transformation and aµ a translation.
+     2. Two-dimensional coordinate invariance, often called di!eomorphism
+        (diff) invariance. For new coordinates (τ" (τ, σ), σ " (τ, σ)), the transfor-
+        mation is
+                                     X "µ (τ" , σ " ) = X µ (τ, σ) .         (1.2.12)
+
+  The Nambu–Goto action is analogous to the point particle action Spp ,
+with derivatives in the square root. Again we can simplify it by introducing
+an independent world-sheet metric γab (τ, σ). Henceforth ‘metric’ will always
+mean γab (unless we specify ‘induced’), and indices will always be raised
+and lowered with this metric. We will take γab to have Lorentzian signature
+(−, +). The action is
+                                 !
+                        1
+            SP [X, γ] = −       dτ dσ (−γ)1/2 γ ab ∂a X µ ∂b Xµ ,   (1.2.13)
+                       4πα" M
+where γ = det γab . This is the Brink–Di Vecchia–Howe–Deser–Zumino
+action, or Polyakov action for short. It was found by Brink, Di Vecchia, and
+Howe and by Deser and Zumino, in the course of deriving a generalization
+with local world-sheet supersymmetry. Its virtues, especially for path
+integral quantization, were emphasized by Polyakov.
+   To see the equivalence to SNG , use the equation of motion obtained by
+varying the metric,
+                            !                    "                        #
+                      1                1/2    ab          1       cd
+    δγ SP [X, γ] = −        dτ dσ (−γ)     δγ      h ab − 2 γab γ    h cd   , (1.2.14)
+                     4πα" M
+where hab is again the induced metric (1.2.8). We have used the general
+relation for the variation of a determinant,
+                            δγ = γγ ab δγab = −γγab δγ ab .                  (1.2.15)
+Then δγ SP = 0 implies
+                                     hab = 12 γab γ cd hcd .                 (1.2.16)
+Dividing this equation by the square root of minus its determinant gives
+                            hab (−h)−1/2 = γab (−γ)−1/2 ,                    (1.2.17)
+so that γab is proportional to the induced metric. This in turn can be used
+to eliminate γab from the action,
+                                     !
+                              1
+            SP [X, γ] → −                dτ dσ (−h)1/2 = SNG [X] .           (1.2.18)
+                             2πα"

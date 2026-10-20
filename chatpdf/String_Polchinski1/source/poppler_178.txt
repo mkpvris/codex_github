@@ -1,0 +1,60 @@
+156                                         5 The string S-matrix
+                  !
+         = nR         dµ ,t dκ x [d/ $ d,σ]
+                           &                                                                         
+                                                                               (
+                                       $                  k                                   a
+                × exp 2πi(/ , 2P̂1 ,σ − ,t ∂k ĝ) + 2πi                               xai ,σ (σ̂i ) ,          (5.3.6)
+                                                                            (a,i)∈f
+
+the inner product in the second line having been defined in exercise 3.2.
+We have followed the same steps as in the local discussion in section 3.3,
+writing the delta functions and functionals as integrals over x and /ab and
+then integrating out ,ω to obtain the constraint that /ab$ be traceless.
+
+  As before, invert the integral (5.3.6) by replacing all bosonic variables
+with Grassmann variables:
+                                                     ,σ a → ca ,                                             (5.3.7a)
+                                                       $
+                                                     /ab  → bab ,                                            (5.3.7b)
+                                                      xai → ηai ,                                            (5.3.7c)
+                                                     ,tk → ξ k .                                             (5.3.7d)
+Then with a convenient normalization of the fields,
+                                 !
+                            1
+      ∆FP (ĝ, σ̂) =                  [db dc] dµ ξ dκ η
+                           nR
+                                                 &                                                             
+                                               1                          (
+                                       × exp − (b, 2P̂1 c − ξ k ∂k ĝ) +         ηai ca (σ̂i )
+                                              4π                         (a,i)∈f
+                                 !                                µ
+                                                                  6                       6
+                            1                                       1
+                      =               [db dc] exp(−Sg )                     (b, ∂k ĝ)         ca (σ̂i ) .     (5.3.8)
+                           nR                                     k=1
+                                                                      4π                 (a,i)∈f
+
+In the final line we have integrated over the Grassmann parameters ηai
+and ξ k .
+  The appropriate measure for integration on moduli space is generated
+by this ghost path integral with insertions. We will not try to keep track
+of the overall sign at intermediate steps; since this is supposed to be a
+Jacobian, we implicitly choose the overall sign to give a positive result.
+The full expression for the S-matrix is then
+                                      ( ! dµ t !
+   Sj1 ...jn (k1 , . . . , kn ) =                             [dφ db dc] exp(−Sm − Sg − λχ)
+                                     compact     F nR
+                                    topologies
+
+                  6 !                 µ
+                                      6 1                      6               n
+                                                                               6
+             ×                 dσia              (b, ∂k ĝ)             a
+                                                                    c (σ̂i )         ĝ(σi )1/2 Vji (ki , σi ) .
+                (a,i)-∈f              k=1
+                                          4π                  (a,i)∈f          i=1
+                                                                                                               (5.3.9)
+This result extends readily to all bosonic string theories — closed and open,
+oriented and unoriented — the only di!erence being which topologies are
+included and which vertex operators allowed. Eq. (5.3.9) is a useful and

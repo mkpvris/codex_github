@@ -1,0 +1,43 @@
+50                                                                2                     Conformal              ﬁeld              theory
+
+                                                                                        bc      CFT
+The             second             family             of             CFTs             hasanticommuting∫                        ﬁelds           b    and          c   with             action
+                                                                         S     =        1             d2zb∂c          .¯                                                             (2.5.4)
+                                                                                      2π
+This                      is                      conformally                      invariant                      forbandc transforming                      as                      tensors                      of
+weights             (hb,        0)             and             (hc,0)             such             that
+                                                                       hb     =      λ,              hc=1            −λ                                                              (2.5.5)
+for                any                given               constantλ.ThuswehaveanotherfamilyofCFTs(which
+is         secretly         the         same         as         the         linear         dilaton         family,         as         we         will         learn         in
+chapter        10).        The        operator        equations        of        motion,        obtained        by        the        same
+method     (2.1.15),     (2.1.18)     as     before,     are
+                                                                          ¯                     ¯
+                                                                          ∂c    (z)=           ∂b     (z)=0                ,                                                      (2.5.6a)
+                                                                          ∂b¯   (z)c(0)           =           2πδ2(z,         ¯z)    .                                            (2.5.6b)
+
+The         bb       and         cc      OPEs               satisfy               the               equation               of               motion               without               source.               The
+normal             ordered                  bc      product             is
+                                                        :b(z          )c(z        ):      =       b(z       )c(z        )−           1       .                                       (2.5.7)
+                                                                   1           2                          1           2            z12
+This             satisﬁes             the             naive             equations             of             motion             as             a             consequence             of
+                                                                   ∂¯1       =      ∂   1    =2πδ2(z,¯z)                       ,                                                     (2.5.8)
+                                                                        z               ¯z
+which                can                be                veriﬁed                by                integrating                over                a                region                containing                the                origin
+and                    integrating                    the                    derivative                    by                    parts.                    Normal                    ordering                    of                    a                    general
+product                of                ﬁelds                is                combinatorially                the                same                as                for                theXµCFT,                a                sum
+over                contractions                or                subtractions.                One                must                be                careful                becauseband         c
+are             anticommuting             so             that             interchange             of             ﬁelds             ﬂips             the             sign:             one             should
+anticommute                    the                    ﬁelds                    being                    paired                    until                    they                    are                    next                    to                    each                    other
+before             replacing             them             with             the             subtraction             (2.5.7).
+      The             operator             products             are
+                                                 b(z        )c(z        )   ∼        1        ,c(z)b(z)∼1,                                                                           (2.5.9)
+                                                         1            2            z                          1           2             z
+                                                                                      12                                                   12
+where          in          the         second          OPE         there          have         been          two          sign          ﬂips,          one          from          anticom-
+mutation           and           one           from            z1     ↔       z2.           Other           operator           products           are           nonsingular:
+                                          b(z1)b(z2)=                      O(z12)             ,c(z1)c(z2)=                             O(z12)             .                       (2.5.10)
+These             are             not             only             holomorphic             but             have             a             zero             due             to             antisymmetry.
+      No e t h e r ’ s                t h e or e m                g i v e s                t h e                e n e r gy - m o m e n tu m                t e n s or
+                                                              T    (z)=:(               ∂b     )c:      −λ∂(:bc:)                    ,                                         (2.5.11a)
+                                                               ˜     ¯
+                                                              T(z)=0                     .                                                                                     (2.5.11b)

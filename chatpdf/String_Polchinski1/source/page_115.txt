@@ -1,0 +1,47 @@
+                                                              3.4                      The              Weyl              anomaly                                           93
+
+where             we             have             used             the             fact             that             the             metric             is             covariantly             constant.             Then
+by             conservation             of    Tab,
+                                                         z                         ¯z                     a1
+                                                     ∇     T         =     −∇        T¯        =     −          ∂    R.                                         (3.4.11)
+                                                               zz                        zz                2      z
+To                   ﬁ   xa1we                compare                the                Weyl                transformations                on                the                left                and                right.                The
+Weyl                 transformation                 (3.3.5)                 of                 the                 right                 is
+                                                          a1∂z      ∇2,ω           ≈     4a1∂2∂            ,ω          ,                                        (3.4.12)
+                                                                                                    z    ¯z
+where                  we                  have                  expanded                  around                  a                  ﬂat                  world-sheet.                  To                  get                  the                  Weyl
+transformation             of               Tzz       we             use             ﬁrst             the             conformal             transformation             (2.4.24),
+           −1                                   c       3    z                         z                                z
+         ϵ       ,T     zz(z)=            −12∂zv               (z)     −     2∂zv        (z)Tzz(z)             −     v    (z)∂zTzz(z)                 .         (3.4.13)
+
+From          the          discussion          in          section          3.3,          this          conformal          transformation          consists
+of                       a                       coordinate                       transformation,z=ϵv      plus                       a                       Weyl                       transformation
+2,ω        =     ϵ∂ v     +    ϵ(∂v      )∗.          The          last          two          terms          in          the          variation          are          the          coordinate
+transformation          of          the          tensor,          so          the          Weyl          transformation,          to          leading          order
+around             ﬂat             space,             is
+                                                                 ,      T         =     −c∂2,ω          .                                                       (3.4.14)
+                                                                    W       zz               6     z
+Acting                with      ∂z      =2∂¯z            and       comparing       with       the       transformation       (3.4.12)
+gives
+                                                      c=−12a                     ,Ta=−cR.                                                                       (3.4.15)
+                                                                             1                 a              12
+
+     Let        us        derive        this        again        by        a        slightly        longer        route,        along        which        we
+obtain     a     useful     intermediate     result.     In     conformal     gauge,
+                                                          R=−2exp(−2ω)∂a∂aω,                                                                                 (3.4.16a)
+                                                        ∇2      =exp(−2ω)∂a∂a                             .                                                  (3.4.16b)
+
+By      the      contraction      with      two      lowered      indices      we      mean,ab∂a∂b.TheWeyl
+variation     (3.4.6)     ofZ[g]becomes
+                                                               a                                     ∫
+                  ,WZ[exp(2ω),]=                                  1Z[exp(2ω),]                             d2σ,ω∂a∂aω,                                          (3.4.17)
+                                                                π
+where           ‘exp(2ω),’           denotes           conformal           gauge.           This           integrates           immediately           to
+                                                                                (         a      ∫                                 
+                      Z[exp(2ω),]=                          Z[,]exp                 −        1         d2σ∂          ω∂        ω         .                      (3.4.18)
+                                                                                         2π                        a        a
+
+Since                   every                   metric                   is                   di!-equivalent                   to                   a                   conformal                   metric,                   eq.                   (3.4.18)
+actually              determines              the              complete              metric-dependence              of                 Z[g].              We              need              to
+ﬁnd             the             di!-invariant             expression             that             reduces             to             eq.             (3.4.18)             in             conformal
+gauge.            Using            the            relations            (3.4.16),            one            veriﬁes            that            the            desired            expression

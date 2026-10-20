@@ -1,0 +1,44 @@
+272              8 Toroidal compactification and T -duality
+
+is invariant under both symmetries, and it is this combination that must
+appear in the action. Thus the form (8.7.2) of the action is fully determined.
+   As a check, it is natural that the combination Gµν + Bµν should appear,
+since this same combination appears in the world-sheet action in conformal
+gauge. Incidentally, the action (8.7.2) can also be determined by taking the
+low energy limit of various open and open plus closed string amplitudes,
+but this is rather more laborious.
+   For n separated D-branes, the action is n copies of the action for a single
+D-brane. We have seen, however, that when the D-branes are coincident
+there are n2 rather than n massless vectors and scalars on the brane, and
+we would like to write down the e!ective action governing these. The
+fields X µ (ξ) and Aa (ξ) will now be n × n matrices. For the gauge field
+the meaning is obvious — it becomes a non-Abelian U(n) gauge field.
+For the collective coordinate X µ , however, the meaning is mysterious:
+the collective coordinates for the embedding of n D-branes in spacetime
+are now enlarged to n × n matrices. This ‘noncommutative geometry’ has
+proven to play a key role in the dynamics of D-branes, and there are
+conjectures that it is an important hint about the nature of spacetime.
+   We can gain more insight by considering the e!ective action. There
+is now a nonderivative term in the action, a potential for the collective
+coordinates, which can be deduced by T -duality from a constant Am
+field. For such a vector potential, the field strength is just [Am , An ], which
+becomes (2πα% )−2 [Xm , Xn ] in the T -dual picture. Expanding in the field
+strength, the leading term in the action is roughly
+                         V ∝ Tr ([Xm , Xn ][X m , X n ]) .                (8.7.11)
+This potential has the property that at the point            Xm = 0its second
+derivative vanishes, so that all kn2 scalars are massless; again k = 25 − p is
+the number of dualized dimensions. However, the space of flat dimensions
+is smaller. The potential is the sum of squares and so vanishes only if all
+of the [X m , X n ] vanish. We can then use the U(n) gauge symmetry to go to
+a gauge in which the X m are all diagonal. There are thus kn flat directions,
+just the number of diagonal elements. These kn diagonal elements can
+then be interpreted as the collective coordinates of the n Dp-branes. Thus
+the potential (8.7.11) correctly interpolates the physics of separated and
+coincident D-branes.
+   When the X m do commute, the action should reduce to that of n
+separate D-branes, so we must have
+                    $           9
+        S p = −Tp       dp+1 ξ Tr e−Φ [− det(Gab + Bab + 2πα% Fab )]1/2
+                                                 :
+                                +O([X m , X n ]2 ) .                      (8.7.12)
+The determinant is on the world-volume indices ab, while the trace is over

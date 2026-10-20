@@ -1,0 +1,47 @@
+192                            6 Tree-level amplitudes
+
+Chan–Paton states, not the oscillators. In fact, from eq. (6.5.26), it acts on
+the Chan–Paton wavefunction as
+                             λ → (γ T )−1 γλγ −1 γ T = λ ,                                         (6.5.32)
+where the last equality must hold in the unoriented theory, since all states
+in this theory are invariant under Ωγ and so also under Ω2γ . Now we assert
+that the allowed Chan–Paton wavefunctions must form a complete set.
+The point is that two open strings, by the splitting–joining interaction
+of figure 3.4(c), can exchange endpoints. In this way one can get to
+a complete set, that is, to any Chan–Paton state |ij* (this argument is
+slightly heuristic, but true). By Schur’s lemma, if eq. (6.5.32) holds for a
+complete set, then γ −1 γ T = 1 and so Ω2γ = 1.
+   We might try to obtain other gauge groups by taking di!erent sets
+of λa . In fact, the oriented U(n) and unoriented S O(n) and S p(k) the-
+ories constructed above are the only possibilities. Generalization of the
+completeness argument in eqs. (6.5.7)–(6.5.9) shows these to be the most
+general solutions of the unitarity conditions. In particular, exceptional Lie
+algebras, which are of interest in grand unification and which will play a
+major role in volume two, cannot be obtained with Chan–Paton factors (in
+perturbation theory). In closed string theory there is another mechanism
+that gives rise to gauge bosons, and it allows other groups.
+
+
+                       6.6     Closed string tree amplitudes
+
+The discussion of closed string amplitudes is parallel to the above. The
+amplitude for three closed string tachyons is
+                                                % 3                                      '
+                                                 &
+               SS2 (k1 ; k2 ; k3 ) = gc3 e−2λ           :c̃ce   iki ·X
+                                                                         (zi , z̄i ) :        .         (6.6.1)
+                                                 i=1                                     S2
+
+In this case the CKG P S L(2, C) (the Möbius group) can be used to fix the
+three vertex operators to arbitrary positions z1,2,3 . Taking the expectation
+values from section 6.2, the result is again independent of the vertex
+operator positions,
+                                                                         #
+                    SS2 (k1 ; k2 ; k3 ) = igc3 CS2 (2π)26δ 26 (              i ki ) ,                   (6.6.2)
+where CS2 = e−2λ CSX2 CSg2 .
+  For four closed string tachyons,
+                                  $           % 3                                                       '
+                                               &
+  SS2 (k1 ; k2 ; k3 ; k4 ) = gc4 e−2λ d2 z4           :c̃ceiki ·X(zi , z̄i ) : : eik4 ·X(z4 , z̄4 ) :         ,
+                                    C           i=1                                                      S2
+                                                                                                        (6.6.3)

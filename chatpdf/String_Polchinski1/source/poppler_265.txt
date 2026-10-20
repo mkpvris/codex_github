@@ -1,0 +1,55 @@
+                      8.3 Closed strings and T -duality                         243
+
+and
+      n = ±2, w = N = Ñ = 0 ,             w = ±2, n = N = Ñ = 0 .         (8.3.10)
+  The states (8.3.9) include four new gauge bosons, with vertex operators
+   ¯ µ eik·X exp[±2iα%−1/2 X 25 ] : , : ∂X µ eik·X exp[±2iα%−1/2 X 25 ] : . (8.3.11)
+ : ∂X                          L                                       R
+
+The precise definition of the exponential operators is as discussed in
+the previous section. These states have internal momentum and winding
+number, so they carry the Kaluza–Klein and antisymmetric tensor gauge
+charges. The only consistent theory of charged massless vectors is non-
+Abelian gauge theory, so the new gauge bosons must combine with the
+old into a non-Abelian theory. It is now useful to work with the basis
+                   ¯ 25 for the earlier vectors. The first of these couples to
+      ¯ µ and ∂X µ ∂X
+∂X 25 ∂X
+ 25
+kL , under which the first pair of states in (8.3.11) carries charges ±1 and
+the second pair is neutral. The second similarly couples to kR25 and so to
+the other pair. This identifies the gauge group as S U(2) × S U(2), with the
+                         ¯ µ forming one S U(2) and the three involving
+three vectors involving ∂X
+    µ
+∂X forming the other.
+  To exhibit the S U(2) × S U(2) define the three (1, 0) currents
+                        j 1 (z) = : cos[2α%−1/2 XL25 (z)] : ,              (8.3.12a)
+                         2                   %−1/2
+                        j (z) = : sin[2α               XL25 (z)] : ,       (8.3.12b)
+                                                      %1/2
+                        j 3 (z) = i∂XL25 (z)/α              .              (8.3.12c)
+These have been normalized to have the OPE
+                                   δ ij     &ijk k
+                        j i (z)j j (0) ∼+ i     j (0) .                (8.3.13)
+                                   2z 2      z
+There is of course also a similar OPE of (0, 1) currents ̃ i . The single pole
+term implies that the corresponding charges form an S U(2) algebra. In
+fact, since the currents are holomorphic there is an infinite-dimensional
+algebra formed by the Laurent coefficients
+                                       ∞
+                                       (        jmi
+                         j i (z) =              m+1
+                                                        ,                  (8.3.14a)
+                                       m=−∞ z
+                                 m
+                     [ jmi , jnj ] =                    k
+                                    δm,−n δ ij + i&ijk jm+n ,        (8.3.14b)
+                                  2
+known variously as a current algebra, affine Lie algebra, or Kac–Moody
+algebra. We will encounter such algebras extensively beginning in chap-
+ter 11. It will be shown that the coefficient of the z −2 term is quantized,
+with the value in (8.3.13) being the minimum, so this is known as a level
+one S U(2) current algebra.
+   The existence of this S U(2) × S U(2) symmetry is the first indication that
+string theory sees spacetime geometry di!erently from what we are used

@@ -1,0 +1,47 @@
+                 8.4 Compactification of several dimensions                  255
+
+                                  An example
+The case of two compact dimensions is a good example. The four moduli
+G24,24 , G24,25 , G25,25 , and B24,25 are usefully joined into two complex fields
+τ = τ1 + iτ2 and ρ = ρ1 + iρ2 . Define
+                           R2 0                 1/2
+                                                        1
+                        ρ=      B 24,25 + i det     Gmn
+                           α%
+                                        V
+                        = b24,25 + i 2 % ,                        (8.4.36)
+                                      4π α
+where V is the volume of the compact two-torus. Parameterize the compact
+metric as
+                             α% ρ2 88                82
+                                                     8
+                      ds2 = 2 8dX 24 + τdX 25 8 .                 (8.4.37)
+                             R τ2
+The coordinate transformations (8.4.32) act on the spacetime two-torus
+just as the modular group acts on the world-sheet two-torus, generating
+a P S L(2, Z) on τ and leaving ρ invariant. The antisymmetric tensor
+shift (8.4.33) is ρ → ρ + N24,25 with τ invariant. A simultaneous T -duality
+on X 24,25 acts as ρ → −1/ρ with τ invariant. Together the last two
+transformations generate a second P S L(2, Z), acting on ρ. In addition,
+duality on X 24 alone takes (τ, ρ) → (ρ, τ) and spacetime parity X 24 → −X 24
+takes (τ, ρ) → (−τ̄, −ρ̄). The full T -duality group is then
+                        P S L(2, Z) × P S L(2, Z)× Z22 .                 (8.4.38)
+A further equivalence comes from world-sheet parity, which takes (τ, ρ) →
+(τ, −ρ̄). It reverses the sign of the ◦ product.
+   The moduli space is therefore two copies of the moduli space of the
+torus, together with some discrete identifications. The kinetic terms are
+proportional to
+                              ∂µ τ∂µ τ̄ ∂µ ρ∂µ ρ̄
+                                       +          .                      (8.4.39)
+                                 τ22       ρ22
+The modular-invariant combination d2 τ/τ22 was encountered in the dis-
+cussion of the genus-zero amplitude. The continuous group P S L(2, R)
+carries any τ in the upper half-plane into any other, and a U(1) subgroup
+leaves each τ invariant. Thus the upper half-plane can be regarded as
+P S L(2, R)/U(1), and the full moduli space is
+                    P S L(2, R) × P S L(2, R)
+                                                         .               (8.4.40)
+           U(1) × U(1) × P S L(2, Z) × P S L(2, Z) × Z22
+This is the same as the earlier (8.4.31). In particular, P S L(2, R)×P S L(2, R)
+is locally the same as O(2, 2, R), in parallel to the fact that S U(2) × S U(2)
+is locally the same as O(4, R).

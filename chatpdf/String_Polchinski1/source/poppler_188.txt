@@ -1,0 +1,35 @@
+                                    6
+                     Tree-level amplitudes
+
+
+
+
+We are now ready to study string interactions. In this chapter we consider
+the lowest order amplitudes, coming from surfaces with positive Euler
+number. We first describe the relevant Riemann surfaces and calculate
+the CFT expectation values that will be needed. We next study scattering
+amplitudes, first for open strings and then for closed. Along the way
+we introduce an important generalization in the open string theory, the
+Chan–Paton factors. At the end of the section we return to CFT, and
+discuss some general properties of expectation values.
+
+                         6.1   Riemann surfaces
+
+There are three Riemann surfaces of positive Euler number: the sphere,
+the disk, and the projective plane.
+
+                               The sphere
+The sphere S2 can be covered by two coordinate patches as shown in
+figure 6.1. Take the disks |z| < ρ and |u| < ρ for ρ > 1 and join them by
+identifying points such that
+                                u = 1/z .                          (6.1.1)
+In fact, we may as well take ρ → ∞. The coordinate z is then good
+everywhere except at the ‘north pole,’ u = 0. We can work mainly in the
+z patch except to check that things are well behaved at the north pole.
+  We can think of the sphere as a Riemann surface, taking the flat metric
+in both patches and connecting them by a conformal (coordinate plus
+Weyl) transformation. Or, we can think of it as a Riemannian manifold,
+with a globally defined metric. A general conformal gauge metric is
+                        ds2 = exp(2ω(z, z̄))dzdz̄ .                (6.1.2)
+
+                                   166

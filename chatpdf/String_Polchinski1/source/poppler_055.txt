@@ -1,0 +1,44 @@
+                         2.1 Massless scalars in two dimensions                                         33
+
+as equations of motion, operator products, Ward identities, and conformal
+invariance, before working our way around to the spectrum. It will be
+efficient for us to use the path integral formalism. This is reviewed in the
+appendix. We will be using the path integral representation primarily to
+derive operator equations (to be defined below); these can also be derived
+in a Hilbert space formalism.
+   It is very useful to adopt complex coordinates
+                               z = σ 1 + iσ 2 ,        z̄ = σ 1 − iσ 2 .                          (2.1.2)
+We will use a bar for the complex conjugates of z and other simple
+variables, and a star for the complex conjugates of longer expressions.
+Define also
+                             1                              1
+                         ∂z = (∂1 − i∂2 ) ,            ∂z̄ = (∂1 + i∂2 ) .                        (2.1.3)
+                             2                              2
+These derivatives have the properties
+                     ∂z z = 1 ,       ∂z z̄ = 0 ,      ∂z̄ z = 0 ,      ∂z̄ z̄ = 1 .              (2.1.4)
+It is conventional to abbreviate ∂z to ∂ and ∂z̄ to ∂¯ when this is not
+ambiguous. For a general vector v a , define in the same way
+                                                  1                           1
+ v z = v 1 +iv 2 ,     v z̄ = v 1 −iv 2 ,     vz = (v 1 −iv 2 ) ,        vz̄ = (v 1 +iv 2 ) . (2.1.5)
+                                                  2                           2
+For the indices 1, 2 the metric is the identity and we do not distinguish
+between upper and lower, while the complex indices are raised and lowered
+with
+                      1
+    gzz̄ = gz̄z =       ,     gzz = gz̄z̄ = 0 ,        g zz̄ = g z̄z = 2 ,      g zz = g z̄z̄ = 0 .
+                      2
+                                                                                                (2.1.6)
+Note also that
+                                            d2 z = 2dσ 1 dσ 2                                     (2.1.7)
+
+with the factor of 2 from the Jacobian,1 and that d2 z | det g|1/2 = dσ 1 dσ 2 .
+We define
+                                        !
+                                             d2 z δ 2 (z, z̄) = 1                                 (2.1.8)
+
+so that δ 2 (z, z̄) = 12 δ(σ 1 )δ(σ 2 ). Another useful result is the divergence
+
+
+1 This di!ers from much of the literature, where d2 z is defined as dσ 1 dσ 2 . Correlated with this, the
+  1                                    2
+  2 is omitted from the definition of δ (z, z̄).

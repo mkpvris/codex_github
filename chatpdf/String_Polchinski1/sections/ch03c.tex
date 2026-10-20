@@ -1,0 +1,642 @@
+\subsectionlink{頂点演算子}
+\label{sec:3.6}
+
+状態と演算子の写像を用いると、閉弦のタキオンの頂点演算子は
+\begin{equation}
+\begin{aligned}
+V_0&=2g_{\mathrm c}\int d^2\sigma\,g^{1/2}e^{ik\cdot X}\\
+&\longrightarrow g_{\mathrm c}\int d^2z\,:e^{ik\cdot X}:.
+\end{aligned}
+\tag{3.6.1}\label{eq:3.6.1}
+\end{equation}
+ここでは、写像に因子 $g_{\mathrm c}$ を含めた。これは過程に弦をもう一本加えることから生じる閉弦の結合定数であり、頂点演算子の規格化を結合の定義として用いる。第2行では平坦な世界面へ移った。頂点演算子は $(\mathrm{diff}\times\mathrm{Weyl})$ 不変でなければならず、とくに平坦な世界面上で共形不変でなければならない。$d^2z$ の変換を相殺するため、演算子は共形ウェイト $(1,1)$ のテンソルでなければならない。直接的な OPE の計算により、$e^{ik\cdot X}$ は共形ウェイト $h=\widetilde h=\alpha'k^2/4$ のテンソルなので、条件は
+\begin{equation}
+m^2=-k^2=-\frac4{\alpha'}.
+\tag{3.6.2}\label{eq:3.6.2}
+\end{equation}
+これは光円錐量子化で得られた質量と正確に一致する。
+
+同様に、閉弦の最初の励起レベルにあるテンソル状態は、平坦な世界面上の頂点演算子
+\begin{equation}
+\frac{2g_{\mathrm c}}{\alpha'}\int d^2z\,
+:\partial X^\mu\bar\partial X^\nu e^{ik\cdot X}:
+\tag{3.6.3}\label{eq:3.6.3}
+\end{equation}
+を持つ。タキオンの頂点演算子に対する相対的な規格化は、状態と演算子の写像から従う。第6章では、S 行列のユニタリー性からも同じ相対規格化が得られることを見る。共形ウェイトは
+\begin{equation}
+h=\widetilde h=1+\frac{\alpha'k^2}{4}
+\tag{3.6.4}\label{eq:3.6.4}
+\end{equation}
+なので、これらは質量ゼロであり、再び光円錐量子化と一致する。これがテンソルとなるにはさらに条件があり、以下で求める。
+
+\subsubsection*{Polyakov の方法における頂点演算子}
+
+状態と演算子の写像は、任意の状態の平坦な世界面上の頂点演算子を書くための系統的な手段を与える。世界面はつねに局所的に平坦にできるので、原理的にはこれだけで十分である。しかし見通しを得るためには、Polyakov 形式における曲がった世界面上の頂点演算子を調べると有用である。この節の残りではそれを行う。用いる方法はやや煩雑で、状態と演算子の写像ほど系統的ではないが、結果の一部は役立つ。読者はすべての詳細を計算する必要はない。
+
+Polyakov 経路積分 \hyperref[eq:3.5.5]{(3.5.5)} に含める演算子は、理論の局所的な $\mathrm{diff}\times\mathrm{Weyl}$ 対称性を保たなければならない。式 \hyperref[eq:3.6.1]{(3.6.1)} の第1行では、曲がった世界面上で演算子をどう定義するかを具体的には述べなかった。先の Weyl 異常の議論と同様に、diff 不変性を自動的に保つ方法を用い、Weyl 変換は直接調べるのが便利である。文献では多くの目的に次元正則化が使われる。しかし、ここではそれを広く使う必要はないので導入せず、以前に導入した正規順序を一般化する。繰り込まれた演算子 $[\mathcal F]_{\mathrm r}$ を
+\begin{equation}
+[\mathcal F]_{\mathrm r}=
+\exp\left(\frac12\int d^2\sigma\,d^2\sigma'\,
+\Delta(\sigma,\sigma')
+\frac{\delta}{\delta X^\mu(\sigma)}
+\frac{\delta}{\delta X_\mu(\sigma')}\right)\mathcal F
+\tag{3.6.5}\label{eq:3.6.5}
+\end{equation}
+によって定義する。ここで
+\begin{equation}
+\Delta(\sigma,\sigma')=\frac{\alpha'}2\ln d^2(\sigma,\sigma')
+\tag{3.6.6}\label{eq:3.6.6}
+\end{equation}
+であり、$d(\sigma,\sigma')$ は点 $\sigma$ と $\sigma'$ の間の測地距離である。正規順序と同様に、式 \hyperref[eq:3.6.5]{(3.6.5)} は、$\Delta(\sigma,\sigma')$ を用いて $\mathcal F$ 内の対を縮約するすべての方法について和を取ることを指示している。平坦な世界面では $d^2(\sigma,\sigma')=|z-z'|^2$ なので、詳しく調べた共形正規順序へ帰着する。曲がった世界面では、$\mathcal F$ 内の場の自己縮約の特異部分を相殺する。diff 不変性は明らかだが、縮約は計量に依存するため、Weyl 依存性
+\begin{equation}
+\begin{aligned}
+\delta_{\mathrm W}[\mathcal F]_{\mathrm r}
+&=[\delta_{\mathrm W}\mathcal F]_{\mathrm r}\\
+&\quad+\frac12\int d^2\sigma\,d^2\sigma'\,
+\delta_{\mathrm W}\Delta(\sigma,\sigma')
+\frac{\delta}{\delta X^\mu(\sigma)}
+\frac{\delta}{\delta X_\mu(\sigma')}[\mathcal F]_{\mathrm r}
+\end{aligned}
+\tag{3.6.7}\label{eq:3.6.7}
+\end{equation}
+が導入される。第1項は演算子に明示的に含まれる Weyl 依存性である。
+
+運動量 $k^\mu$ の状態の頂点演算子は、並進の下でその状態と同じように変換しなければならないので、$e^{ik\cdot X}$ に $X^\mu$ の微分を掛けた形になる。微分の数が異なる演算子は Weyl 変換で混ざらないので、まず微分がゼロ個の場合、すなわち演算子 \hyperref[eq:3.6.1]{(3.6.1)} から考えられる。Weyl 変分は、明示的な因子 $g^{1/2}$ と、式 \hyperref[eq:3.6.7]{(3.6.7)} に示した繰り込みの両方から生じる：
+\begin{equation}
+\delta_{\mathrm W}V_0
+=2g_{\mathrm c}\int d^2\sigma\,g^{1/2}
+\left(2\delta\omega(\sigma)
+-\frac{k^2}{2}\delta_{\mathrm W}\Delta(\sigma,\sigma)\right)
+[e^{ik\cdot X(\sigma)}]_{\mathrm r}.
+\tag{3.6.8}\label{eq:3.6.8}
+\end{equation}
+短距離では
+\begin{equation}
+d^2(\sigma,\sigma')\approx
+(\sigma-\sigma')^2\exp(2\omega(\sigma))
+\tag{3.6.9}\label{eq:3.6.9}
+\end{equation}
+であり、したがって
+\begin{equation}
+\Delta(\sigma,\sigma')\approx
+\alpha'\omega(\sigma)+\frac{\alpha'}2\ln(\sigma-\sigma')^2.
+\tag{3.6.10}\label{eq:3.6.10}
+\end{equation}
+Weyl 変分は $\sigma'\to\sigma$ の極限で非特異であり、
+\begin{equation}
+\delta_{\mathrm W}\Delta(\sigma,\sigma)=\alpha'\delta\omega(\sigma).
+\tag{3.6.11}\label{eq:3.6.11}
+\end{equation}
+すると Weyl 変分 \hyperref[eq:3.6.8]{(3.6.8)} がゼロとなる条件は、上ですでに導いたように $k^2=4/\alpha'$ となる。
+
+\subsubsection*{オフシェル振幅？}
+
+$k^\mu$ を質量殻から外してオフシェル振幅を定義しようとする素朴な試みは、世界面の局所対称性と整合しないことに注意しよう。位置空間では、これは経路積分に
+\begin{equation}
+\delta^D(X(\sigma)-x_0)=
+\int\frac{d^Dk}{(2\pi)^D}
+\exp[ik\cdot(X(\sigma)-x_0)]
+\tag{3.6.12}\label{eq:3.6.12}
+\end{equation}
+を挿入して与えられる、弦の世界面の局所的な探査が、あらゆる運動量を含むため整合しないことを意味する。
+
+いくつかの観点から、これは驚くべきことではない。第1に、弦状態に点状の源（頂点演算子）を使えるとした上の議論には、実質的にオンシェルの問題へ制限する極限操作が必要であった。第2に、弦理論は重力を含み、一般相対論には単純なオフシェル振幅は存在しない。探査を行う位置を指定しなければならないが、座標は物理的なものではなく、座標不変なオフシェル量ははるかに複雑だからである。第3に、弦理論では、局所的な観測量を測定するために追加の場を導入する自由はない（強く相互作用する系を探るために電弱過程を使うのと同様のことはできない）。弦そのものか、これから論じる、理論に内在するほかの物体（D ブレーンやソリトン）を用いなければならない。
+
+ゲージを固定し（この目的には光円錐ゲージが最も簡単である）、弦状の源を用いれば、少なくとも摂動論ではオフシェル振幅を定義できる。その場合、S 行列の公式 \hyperref[eq:3.5.5]{(3.5.5)} は、場の量子論の還元公式により近い形で導ける。有限時間の遷移振幅を定義した後、無限時間の極限を取ることが可能だからである。なお、現在の議論と場の理論の関係を理解しようとしている読者は、経路積分の式 \hyperref[eq:3.5.5]{(3.5.5)} が Green 関数に対応するのではなく、実際には S 行列要素の性質を持つことに注意してほしい。場の理論で対応するのは、外線の伝播関数を切断し、外部運動量を質量殻上に制限した Green 関数である。
+
+局所的探査 \hyperref[eq:3.6.12]{(3.6.12)} の議論は、弦同士の接触相互作用の問題点も示している。そのような相互作用の最も簡単な形は
+\begin{equation}
+\int_M d^2\sigma\,g(\sigma)^{1/2}
+\int_M d^2\sigma'\,g(\sigma')^{1/2}
+\delta^D(X(\sigma)-X(\sigma'))
+\tag{3.6.13}\label{eq:3.6.13}
+\end{equation}
+であり、世界面が自己交差するたびにゼロでない値を取る。しかし、デルタ関数は式 \hyperref[eq:3.6.12]{(3.6.12)} と同じくあらゆる運動量を含むので、これは Weyl 不変ではない。弦理論の構造はかなり強く制約されている。弦と弦が結合できるのは、この章の初めに述べた方法によってだけである。
+
+\subsubsection*{質量ゼロの閉弦の頂点演算子}
+
+頂点演算子の Polyakov による取り扱いをもう一つ上のレベルへ進めることは、少し煩雑ではあるが興味深い。微分をちょうど一つ含む世界面スカラーを作ることはできないので、次の場合は微分が二つである。diff 不変な可能性は
+\begin{equation}
+\begin{aligned}
+V_1=\frac{g_{\mathrm c}}{\alpha'}\int d^2\sigma\,g^{1/2}
+\Bigl\{&(g^{ab}s_{\mu\nu}+i\epsilon^{ab}a_{\mu\nu})
+[\partial_aX^\mu\partial_bX^\nu e^{ik\cdot X}]_{\mathrm r}\\
+&+\alpha'\phi R[e^{ik\cdot X}]_{\mathrm r}\Bigr\},
+\end{aligned}
+\tag{3.6.14}\label{eq:3.6.14}
+\end{equation}
+である。ここで $s_{\mu\nu}$、$a_{\mu\nu}$、$\phi$ はそれぞれ対称行列、反対称行列、定数である。反対称テンソル $\epsilon^{ab}$ は $g^{1/2}\epsilon^{12}=1$、あるいは $g^{1/2}\epsilon^{z\bar z}=-i$ と規格化する。頂点演算子で反対称テンソルに付く $i$ は、Euclid 化から生じると理解できる。この項は必ず奇数個（一つ）の時間微分を含むからである。この結果は、Euclid 作用と頂点演算子に一般的に当てはまる。
+
+Weyl 不変性の解析を拡張するには、測地距離の Weyl 依存性 \hyperref[eq:3.6.11]{(3.6.11)} を高次まで求める必要がある。結果は
+\begin{align}
+\left.\partial_a\delta_{\mathrm W}\Delta(\sigma,\sigma')
+\right|_{\sigma'=\sigma}
+&=\frac12\alpha'\partial_a\delta\omega(\sigma),
+\tag{3.6.15a}\label{eq:3.6.15a}\\
+\left.\partial_a\partial'_b\delta_{\mathrm W}\Delta(\sigma,\sigma')
+\right|_{\sigma'=\sigma}
+&=\frac{1+\gamma}{2}\alpha'\nabla_a\partial_b\delta\omega(\sigma),
+\tag{3.6.15b}\label{eq:3.6.15b}\\
+\left.\nabla_a\partial_b\delta_{\mathrm W}\Delta(\sigma,\sigma')
+\right|_{\sigma'=\sigma}
+&=-\frac{\gamma}{2}\alpha'\nabla_a\partial_b\delta\omega(\sigma).
+\tag{3.6.15c}\label{eq:3.6.15c}
+\end{align}
+ここで $\gamma=-\frac23$ だが、後で参照するためにパラメーターとして残しておいた。第3式は、第2式と第1式の勾配から得られる。曲率の変分には式 \hyperref[eq:3.3.5]{(3.3.5)} を、繰り込みの変分には式 \hyperref[eq:3.6.7]{(3.6.7)} と \hyperref[eq:3.6.15a]{(3.6.15)} を用いると、
+\begin{equation}
+\begin{aligned}
+\delta_{\mathrm W}V_1
+=\frac{g_{\mathrm c}}2\int d^2\sigma\,g^{1/2}\delta\omega\,
+\Bigl\{&(g^{ab}S_{\mu\nu}+i\epsilon^{ab}A_{\mu\nu})
+[\partial_aX^\mu\partial_bX^\nu e^{ik\cdot X}]_{\mathrm r}\\
+&+\alpha'FR[e^{ik\cdot X}]_{\mathrm r}\Bigr\},
+\end{aligned}
+\tag{3.6.16}\label{eq:3.6.16}
+\end{equation}
+ここで
+\begin{align}
+S_{\mu\nu}
+&=-k^2s_{\mu\nu}+k_\nu k^\omega s_{\mu\omega}
++k_\mu k^\omega s_{\nu\omega}
+-(1+\gamma)k_\mu k_\nu s^\omega{}_\omega
++4k_\mu k_\nu\phi,
+\tag{3.6.17a}\label{eq:3.6.17a}\\
+A_{\mu\nu}
+&=-k^2a_{\mu\nu}+k_\nu k^\omega a_{\mu\omega}
+-k_\mu k^\omega a_{\nu\omega},
+\tag{3.6.17b}\label{eq:3.6.17b}\\
+F&=(\gamma-1)k^2\phi+\frac12\gamma k^\mu k^\nu s_{\mu\nu}
+-\frac14\gamma(1+\gamma)k^2s^\nu{}_\nu.
+\tag{3.6.17c}\label{eq:3.6.17c}
+\end{align}
+
+Weyl 変分 \hyperref[eq:3.6.16]{(3.6.16)} の導出では部分積分を行い、さらに関係
+\begin{equation}
+[\nabla^2X^\mu e^{ik\cdot X}]_{\mathrm r}
+=i\frac{\alpha'\gamma}{4}k^\mu R[e^{ik\cdot X}]_{\mathrm r}
+\tag{3.6.18}\label{eq:3.6.18}
+\end{equation}
+を用いた。素朴な運動方程式によれば左辺はゼロになるはずだが、ここでは運動方程式に同じ点の別の演算子が掛かっている。この場合に成り立つ一般原理は、この演算子は必ずしもゼロではないが独立ではなく、理論のほかの局所演算子によって展開できる、というものである。一般に、これらの演算子の係数は繰り込み方式に依存する。結果 \hyperref[eq:3.6.18]{(3.6.18)} は、両辺の Weyl 変分を取って求められる。
+
+$S_{\mu\nu}$、$A_{\mu\nu}$、$F$ は独立な演算子に掛かっているので、Weyl 不変性の条件は
+\begin{equation}
+S_{\mu\nu}=A_{\mu\nu}=F=0.
+\tag{3.6.19}\label{eq:3.6.19}
+\end{equation}
+演算子の数を正しく数えるには、形 \hyperref[eq:3.6.14]{(3.6.14)} のすべての $V_1$ が独立ではないことに注意しなければならない。実際、
+\begin{align}
+s_{\mu\nu}&\longrightarrow s_{\mu\nu}+\xi_\mu k_\nu+k_\mu\xi_\nu,
+\tag{3.6.20a}\label{eq:3.6.20a}\\
+a_{\mu\nu}&\longrightarrow a_{\mu\nu}+\zeta_\mu k_\nu-k_\mu\zeta_\nu,
+\tag{3.6.20b}\label{eq:3.6.20b}\\
+\phi&\longrightarrow\phi+\frac{\gamma}{2}k\cdot\xi
+\tag{3.6.20c}\label{eq:3.6.20c}
+\end{align}
+の下で、$V_1$ の変化は、運動方程式 \hyperref[eq:3.6.18]{(3.6.18)} を用いると積分してゼロになる。ここで $n\cdot k=1$、$n^2=0$ を満たすベクトル $n^\mu$ を選ぶ。独立な演算子の完全な組は、
+\begin{equation}
+n^\mu s_{\mu\nu}=n^\mu a_{\mu\nu}=0
+\tag{3.6.21}\label{eq:3.6.21}
+\end{equation}
+に制限して得られる。これは $2D$ 個のパラメーター $\xi_\mu$ と $\zeta_\mu$ に対する $2D$ 本の方程式である。一つの方程式と一つのパラメーターは自明だが、それ以外について式 \hyperref[eq:3.6.21]{(3.6.21)} は非退化であり、独立な頂点演算子の組を定義することを示せる。
+
+条件 \hyperref[eq:3.6.21]{(3.6.21)} を用いて、まず $S_{\mu\nu}n^\mu n^\nu=0$、次に $S_{\mu\nu}n^\mu=A_{\mu\nu}n^\mu=0$、最後に完全な条件 $S_{\mu\nu}=A_{\mu\nu}=F=0$ を解くと、
+\begin{align}
+k^2&=0,
+\tag{3.6.22a}\label{eq:3.6.22a}\\
+k^\nu s_{\mu\nu}&=k^\mu a_{\mu\nu}=0,
+\tag{3.6.22b}\label{eq:3.6.22b}\\
+\phi&=\frac{1+\gamma}{4}s^\mu{}_\mu
+\tag{3.6.22c}\label{eq:3.6.22c}
+\end{align}
+が得られる。再び質量殻条件 \hyperref[eq:3.6.22a]{(3.6.22a)} が得られ、今度は閉弦の最初の励起状態に対応している。また、質量ゼロのテンソル場の物理的な偏極に必要な、偏極が運動量に対して横向きであるという条件 \hyperref[eq:3.6.22b]{(3.6.22b)} もある。
+\begin{equation}
+k^\mu=(1,1,0,0,\ldots,0),\qquad
+n^\mu=\frac12(-1,1,0,0,\ldots,0)
+\tag{3.6.23}\label{eq:3.6.23}
+\end{equation}
+となる系では、条件 \hyperref[eq:3.6.21]{(3.6.21)} と \hyperref[eq:3.6.22b]{(3.6.22b)} から0成分と1成分がすべてゼロとなり、式 \hyperref[eq:3.6.22c]{(3.6.22c)} が $\phi$ を固定する。残る独立な演算子は正確に $(D-2)^2$ 個であり、光円錐ゲージで得られた質量ゼロの閉弦状態の数と同じである。
+
+条件 $n^\mu s_{\mu\nu}=n^\mu a_{\mu\nu}=0$ は、ノルムがゼロの光的な偏極を除くために必要である。しかし、ベクトル $n^\mu$ の導入は顕在的な Lorentz 不変性を損なう。理論が Lorentz 不変であるのは、\hyperref[eq:3.6.20a]{(3.6.20)} により $n^\mu$ の異なる選択が等価であるからにほかならない。したがって、同値関係 \hyperref[eq:3.6.20a]{(3.6.20)} は、正の Hilbert 空間ノルムを持つ Lorentz 不変な理論を得るために不可欠である。これらの関係は、時空の局所対称性が存在するしるしである。とくに $\xi_\mu$ は時空の無限小座標変換であり、$\zeta_\mu$ は反対称テンソル場の時空の局所対称性である。第1.4節では、質量ゼロのスピン1場とスピン2場があるために時空の局所対称性が存在しなければならないと論じたが、今や相互作用する理論でその存在が見えた。
+
+触れておくべき技術的な点がある。異なる繰り込み方式では、繰り込まれた演算子に異なる名前を付ける。最もよく使われる方式は次元正則化であり、この方式での演算子と上の方式での演算子の関係は
+\begin{align}
+[e^{ik\cdot X}]_{\mathrm{DR}}
+&=[e^{ik\cdot X}]_{\mathrm r},
+\tag{3.6.24a}\label{eq:3.6.24a}\\
+[\partial_aX^\mu e^{ik\cdot X}]_{\mathrm{DR}}
+&=[\partial_aX^\mu e^{ik\cdot X}]_{\mathrm r},
+\tag{3.6.24b}\label{eq:3.6.24b}\\
+[\partial_aX^\mu\partial_bX^\nu e^{ik\cdot X}]_{\mathrm{DR}}
+&=[\partial_aX^\mu\partial_bX^\nu e^{ik\cdot X}]_{\mathrm r}
+-\frac{\alpha'}{12}g_{ab}\eta^{\mu\nu}R[e^{ik\cdot X}]_{\mathrm r},
+\tag{3.6.24c}\label{eq:3.6.24c}\\
+[\nabla_a\partial_bX^\mu e^{ik\cdot X}]_{\mathrm{DR}}
+&=[\nabla_a\partial_bX^\mu e^{ik\cdot X}]_{\mathrm r}
++i\frac{\alpha'}{12}g_{ab}k^\mu R[e^{ik\cdot X}]_{\mathrm r}.
+\tag{3.6.24d}\label{eq:3.6.24d}
+\end{align}
+式 \hyperref[eq:3.6.18]{(3.6.18)} と比較すると、次元正則化では $\gamma=0$ であり、正則化された演算子の内部で運動方程式が成り立つと分かる。これは便利で、多くの式が簡単になる。とくに、時空のゲージ変換 \hyperref[eq:3.6.20a]{(3.6.20)} では $\phi$ は不変である。
+
+\subsubsection*{開弦の頂点演算子}
+
+開弦への拡張は直接的である。詳細は演習3.9として読者に任せ、いくつかの結果だけを示す。タキオンの頂点演算子は
+\begin{equation}
+g_{\mathrm o}\int_{\partial M}ds\,[e^{ik\cdot X}]_{\mathrm r}
+\tag{3.6.25}\label{eq:3.6.25}
+\end{equation}
+であり、$k^2=1/\alpha'$ で Weyl 不変となる。光子の頂点演算子は
+\begin{equation}
+-i\frac{g_{\mathrm o}}{(2\alpha')^{1/2}}e_\mu
+\int_{\partial M}ds\,[\dot X^\mu e^{ik\cdot X}]_{\mathrm r}.
+\tag{3.6.26}\label{eq:3.6.26}
+\end{equation}
+タキオンに対する相対規格化は状態と演算子の写像またはユニタリー性から得られ、$i$ は閉弦の頂点演算子 \hyperref[eq:3.6.14]{(3.6.14)} について論じたとおりであり、符号は規約の問題である。この演算子は $k^2=0$、$k\cdot e=0$ ならば Weyl 不変である。同値関係 $e_\mu\cong e_\mu+\lambda k_\mu$ があり、これは時空のゲージ変換である。これにより $D-2$ 個の横方向の偏極が残る。
+
+\subsectionlink{曲がった時空の中の弦}
+\label{sec:3.7}
+
+これで、新しい重要な問題、すなわち曲がった時空の中を運動する弦を考える準備ができた。まず、点粒子の作用には曲がった時空への自然な拡張があることを思い出そう。平坦な計量 $\eta_{\mu\nu}$ を一般の計量 $G_{\mu\nu}(x)$ に置き換えると、作用
+\begin{equation}
+S_{\mathrm{pp}}=\frac12\int d\tau
+\left(\eta^{-1}G_{\mu\nu}(X)\dot X^\mu\dot X^\nu-\eta m^2\right)
+\tag{3.7.1}\label{eq:3.7.1}
+\end{equation}
+を得る。$\eta$ を消去すると、これは粒子の世界線に沿った不変な固有時間となる。その変分が測地線方程式を与え、重力場の中の粒子の運動を表すことはよく知られている。
+
+Polyakov 作用で同じ置き換えを行うと、
+\begin{equation}
+S_\sigma=\frac1{4\pi\alpha'}\int_M d^2\sigma\,g^{1/2}g^{ab}
+G_{\mu\nu}(X)\partial_aX^\mu\partial_bX^\nu.
+\tag{3.7.2}\label{eq:3.7.2}
+\end{equation}
+これは自然な推測だが、読者は次のように反論するかもしれない。重力子自身が弦の一状態であることを学んだ。曲がった時空は、大まかにいえば重力子のコヒーレントな背景であり、したがって弦理論では弦のコヒーレント状態である。曲がった計量を作用 \hyperref[eq:3.7.2]{(3.7.2)} に入れるだけでは、弦の性質を十分に反映していないように見える。これが正当化される理由を見るため、平坦に近い時空
+\begin{equation}
+G_{\mu\nu}(X)=\eta_{\mu\nu}+\chi_{\mu\nu}(X)
+\tag{3.7.3}\label{eq:3.7.3}
+\end{equation}
+を、$\chi_{\mu\nu}$ が小さいとして考える。世界面の経路積分の被積分関数は
+\begin{equation}
+\begin{aligned}
+\exp(-S_\sigma)=\exp(-S_{\mathrm P})
+\Bigl[1-\frac1{4\pi\alpha'}\int_M d^2\sigma\,
+g^{1/2}g^{ab}\chi_{\mu\nu}(X)
+\partial_aX^\mu\partial_bX^\nu+\cdots\Bigr].
+\end{aligned}
+\tag{3.7.4}\label{eq:3.7.4}
+\end{equation}
+$\chi$ の1次の項は、まさに弦の重力子状態の頂点演算子、式 \hyperref[eq:3.6.14]{(3.6.14)} で
+\begin{equation}
+\chi_{\mu\nu}(X)=-4\pi g_{\mathrm c}e^{ik\cdot X}s_{\mu\nu}
+\tag{3.7.5}\label{eq:3.7.5}
+\end{equation}
+としたものである。したがって、曲がった計量を挿入することは、確かに既知の結果と結びついているようである。作用 \hyperref[eq:3.7.2]{(3.7.2)} は、重力子の頂点演算子を指数化することによって、重力子のコヒーレント状態を記述していると考えられる。
+
+これは自然な一般化を示唆する。ほかの質量ゼロの弦状態の背景も含めればよい。頂点演算子の形、式 \hyperref[eq:3.6.14]{(3.6.14)}、から
+\begin{equation}
+\begin{aligned}
+S_\sigma=\frac1{4\pi\alpha'}\int_M d^2\sigma\,g^{1/2}
+\Bigl[&(g^{ab}G_{\mu\nu}(X)+i\epsilon^{ab}B_{\mu\nu}(X))
+\partial_aX^\mu\partial_bX^\nu\\
+&+\alpha'R\Phi(X)\Bigr].
+\end{aligned}
+\tag{3.7.6}\label{eq:3.7.6}
+\end{equation}
+場 $B_{\mu\nu}(X)$ は反対称テンソルであり、ディラトンには、運動方程式 \hyperref[eq:3.6.22c]{(3.6.22c)} が示すように、$\Phi$ と $G_{\mu\nu}$ の対角部分の両方が関わる。
+
+確認のため、時空のゲージ不変性が保たれることを見よう。場の再定義 $X'^\mu(X)$ に対応する経路積分の変数変換の下で、$G_{\mu\nu}$ と $B_{\mu\nu}$ がテンソル、$\Phi$ がスカラーとして変換すれば、作用 \hyperref[eq:3.7.6]{(3.7.6)} は不変である。時空の観点では、これは座標変換である。作用はまた、
+\begin{equation}
+\delta B_{\mu\nu}(X)=\partial_\mu\zeta_\nu(X)-\partial_\nu\zeta_\mu(X)
+\tag{3.7.7}\label{eq:3.7.7}
+\end{equation}
+の下でも不変であり、この変換は Lagrangian 密度に全微分を加える。これは、電磁ゲージ変換を、二つの反対称な添字を持つポテンシャルへ一般化したものである。三つの添字を持つ場の強さ
+\begin{equation}
+H_{\omega\mu\nu}=
+\partial_\omega B_{\mu\nu}+\partial_\mu B_{\nu\omega}
++\partial_\nu B_{\omega\mu}
+\tag{3.7.8}\label{eq:3.7.8}
+\end{equation}
+は不変である。反対称な $n$ 階テンソルポテンシャルへの同様の一般化もあり、超弦で重要な役割を果たすので第2巻で展開する。
+
+したがって理論は、計量とほかの場から作られるゲージ不変な量だけに依存する。場 $X^\mu$ は多様体上の座標であると考えられる。この多様体を標的空間と呼ぶのは、$X^\mu$ が埋め込み
+\begin{equation}
+\text{世界面}\ \longrightarrow\ \text{標的空間}
+\tag{3.7.9}\label{eq:3.7.9}
+\end{equation}
+を定義するからである。弦理論では、標的空間は時空そのものである。\hyperref[eq:3.7.2]{(3.7.2)} のように、運動項が場に依存し、そのため場の空間が実質的に曲がった多様体となる場の理論は、歴史的な理由から非線形シグマ模型として知られている。非線形シグマ模型には、素粒子物理や場の量子論で多くの応用がある。たとえば、中性および荷電パイ中間子の場は、よい近似で群多様体 $SU(2)$ 上の座標とみなせる。
+
+非線形シグマ模型の作用は、もはや $X^\mu$ の2次式ではないため、経路積分は今や相互作用する2次元の場の量子論である。任意に選んだ点 $x_0^\mu$ に対する古典解 $X^\mu(\sigma)=x_0^\mu$ の周りで経路積分を展開する。$X^\mu(\sigma)=x_0^\mu+Y^\mu(\sigma)$ とすると、
+\begin{equation}
+\begin{aligned}
+G_{\mu\nu}(X)\partial_aX^\mu\partial_bX^\nu
+=\Bigl[&G_{\mu\nu}(x_0)+G_{\mu\nu,\omega}(x_0)Y^\omega\\
+&+\frac12G_{\mu\nu,\omega\rho}(x_0)Y^\omega Y^\rho+\cdots\Bigr]
+\partial_aY^\mu\partial_bY^\nu.
+\end{aligned}
+\tag{3.7.10}\label{eq:3.7.10}
+\end{equation}
+この展開の第1項は、場 $Y^\mu$ の2次の運動項である。次の項は3次の相互作用であり、以下同様である。展開の結合定数 $G_{\mu\nu,\omega}(x_0)$ などは、$x_0$ における計量の微分を含む。特徴的な曲率半径が $R_{\mathrm c}$ の標的空間では、計量の微分は $R_{\mathrm c}^{-1}$ 程度である。したがって、理論の有効な無次元結合は $\alpha'^{1/2}R_{\mathrm c}^{-1}$ となる。曲率半径 $R_{\mathrm c}$ が弦の特徴的な長さスケールよりはるかに大きければ、この結合は小さく、2次元場の理論の摂動論が有用な道具になる。同じ領域では、もう一つの道具も使えることに注意しよう。特徴的な長さスケールが弦に比べて長いので、弦の内部構造を無視し、低エネルギー有効場理論を用いられる。弦理論は、まもなく見るように、場の低エネルギー有効作用を決定する際に登場する。また、質量ゼロの背景だけに注目したときにも、$\alpha'^{1/2}R_{\mathrm c}^{-1}\ll1$ を暗黙に使っていた。波長が弦のスケールより長ければ、質量を持つ弦状態は生成されないからである。
+
+非線形シグマ模型 \hyperref[eq:3.7.2]{(3.7.2)} は繰り込み可能な理論である。場 $Y^\mu$ は次元ゼロなので、相互作用はすべて次元2を持つ。それでも、計量の展開係数である結合は、何らかの対称性が計量の形を制限しない限り、無限個存在する。実際には、展開係数よりも計量関数そのものが理論の結合を定義すると考える方が有用である。
+
+\subsubsection*{Weyl 不変性}
+
+Weyl 不変性が弦理論の整合性に不可欠であることを強調してきた。作用 \hyperref[eq:3.7.6]{(3.7.6)} が整合的な弦理論を定義するのは、2次元の場の量子論が Weyl 不変である場合に限られる。この作用は、$\delta\omega$ が $\sigma$ に依存しない大域的な Weyl 変換の下で、古典的に不変な最も一般的な作用になっている。これは容易に分かる。大域的 Weyl 変換の下で、微分を $n$ 個含む項のスケーリングは $2-n$ に比例するからである。もちろん局所的な Weyl 変換も考える必要があり、その下では作用 \hyperref[eq:3.7.6]{(3.7.6)} の $G_{\mu\nu}$ 項と $B_{\mu\nu}$ 項は古典的に不変だが、$\Phi$ 項は不変ではない。さらに、Weyl 変換性に対する量子的寄与も含める必要がある。$B_{\mu\nu}$ と $\Phi$ が小さく、$G_{\mu\nu}$ が $\eta_{\mu\nu}$ に近い極限では、前節の結果を使って Weyl 変換を求められる。$S_\sigma=S_{\mathrm P}-V_1+\cdots$ と書く。ここで $S_{\mathrm P}$ は平坦な時空の作用、$V_1$ は頂点演算子 \hyperref[eq:3.6.14]{(3.6.14)} である。すると、
+\begin{align}
+G_{\mu\nu}(X)&=\eta_{\mu\nu}-4\pi g_{\mathrm c}s_{\mu\nu}e^{ik\cdot X},
+\tag{3.7.11a}\label{eq:3.7.11a}\\
+B_{\mu\nu}(X)&=-4\pi g_{\mathrm c}a_{\mu\nu}e^{ik\cdot X},
+\tag{3.7.11b}\label{eq:3.7.11b}\\
+\Phi(X)&=-4\pi g_{\mathrm c}\phi e^{ik\cdot X}.
+\tag{3.7.11c}\label{eq:3.7.11c}
+\end{align}
+もちろん、運動量が異なる頂点演算子の線形結合を取ってもよい。このとき1次までの Weyl 変分は式 \hyperref[eq:3.6.16]{(3.6.16)} で与えられる。便宜上、$\gamma=0$ となる繰り込み方式を取る。この Weyl 変換を式 \hyperref[eq:3.4.6]{(3.4.6)} のように $T^a{}_a$ と関係付けると、
+\begin{equation}
+T^a{}_a=
+-\frac1{2\alpha'}\beta^G_{\mu\nu}g^{ab}\partial_aX^\mu\partial_bX^\nu
+-\frac{i}{2\alpha'}\beta^B_{\mu\nu}\epsilon^{ab}\partial_aX^\mu\partial_bX^\nu
+-\frac12\beta^\Phi R,
+\tag{3.7.12}\label{eq:3.7.12}
+\end{equation}
+ここで $\chi_{\mu\nu}$、$B_{\mu\nu}$、$\Phi$ の線形次数では、
+\begin{align}
+\beta^G_{\mu\nu}
+&\approx-\frac{\alpha'}2
+\left(\partial^2\chi_{\mu\nu}
+-\partial_\nu\partial^\omega\chi_{\mu\omega}
+-\partial_\mu\partial^\omega\chi_{\omega\nu}
++\partial_\mu\partial_\nu\chi^\omega{}_\omega\right)
++2\alpha'\partial_\mu\partial_\nu\Phi,
+\tag{3.7.13a}\label{eq:3.7.13a}\\
+\beta^B_{\mu\nu}&\approx-\frac{\alpha'}2\partial^\omega H_{\omega\mu\nu},
+\tag{3.7.13b}\label{eq:3.7.13b}\\
+\beta^\Phi&\approx\frac{D-26}{6}-\frac{\alpha'}2\partial^2\Phi.
+\tag{3.7.13c}\label{eq:3.7.13c}
+\end{align}
+$\beta^\Phi$ には、第3.4節で得た平坦な時空での異常を含めており、ゴースト場からの26に比例する寄与も入っている。$T^a{}_a$ の係数に記号 $\beta$ を用いるのは、これらが本質的に、物理の世界面スケール依存性を支配する繰り込み群のベータ関数だからである。この関係はさらに論じるが、詳細に扱うのは第15章になる。
+
+Weyl 異常 \hyperref[eq:3.7.13a]{(3.7.13)} には、場の高次の項からも寄与がある。たとえば、展開 \hyperref[eq:3.7.10]{(3.7.10)} の3次の相互作用について経路積分を2次まで展開すると、二つの相互作用頂点が互いに近づくときに発散が生じる。それらの OPE には、$|z|^{-2}\partial X^\mu\bar\partial X^\nu$ に $G_{\alpha\beta}$ の微分の二乗を掛けた形の特異性が含まれる。$d^2z$ を積分すると対数発散が生じる。diff 不変性は、不変距離を使った $|z|\exp(\omega)>a_0$ というカットオフを積分に課すことを要求する。これによって、$\ln z_{\min}=-\omega+\ln a_0$ という計量のスケール依存性が導入される。したがって、Weyl 変分 $\beta^G_{\mu\nu}$ は $O(G_{\alpha\beta,\gamma})^2$ に比例する寄与を受け、それが線形の2階微分項と組み合わさって時空の Ricci テンソルを作る。
+
+これを詳しく計算することはせず、時空微分を二つまで含むすべての項を残した結果を引用する：
+\begin{align}
+\beta^G_{\mu\nu}
+&=\alpha'\bm R_{\mu\nu}
++2\alpha'\nabla_\mu\nabla_\nu\Phi
+-\frac{\alpha'}4H_{\mu\lambda\omega}H_\nu{}^{\lambda\omega}
++O(\alpha'^2),
+\tag{3.7.14a}\label{eq:3.7.14a}\\
+\beta^B_{\mu\nu}
+&=-\frac{\alpha'}2\nabla^\omega H_{\omega\mu\nu}
++\alpha'\nabla^\omega\Phi H_{\omega\mu\nu}
++O(\alpha'^2),
+\tag{3.7.14b}\label{eq:3.7.14b}\\
+\beta^\Phi
+&=\frac{D-26}{6}-\frac{\alpha'}2\nabla^2\Phi
++\alpha'\nabla_\omega\Phi\nabla^\omega\Phi
+-\frac{\alpha'}{24}H_{\mu\nu\lambda}H^{\mu\nu\lambda}
++O(\alpha'^2).
+\tag{3.7.14c}\label{eq:3.7.14c}
+\end{align}
+\hyperref[eq:3.7.14a]{(3.7.14)} のいくつかの項は線形近似 \hyperref[eq:3.7.13a]{(3.7.13)} から見て取れるが、今は時空座標の変換に対して共変な形になっている。時空の Ricci テンソルは $\bm R_{\mu\nu}$ と書き、世界面の Ricci テンソル $R_{ab}$ と区別する。より多くの微分を含む項は、世界面の $\alpha'^{1/2}R_{\mathrm c}^{-1}$ 展開で高次となる。なお、Weyl 異常の計算を高次へ進める最も効率的な方法は、ここで述べた方法ではなく次元正則化である。
+
+したがって、世界面の理論が Weyl 不変であるための条件は
+\begin{equation}
+\beta^G_{\mu\nu}=\beta^B_{\mu\nu}=\beta^\Phi=0.
+\tag{3.7.15}\label{eq:3.7.15}
+\end{equation}
+これらは妥当な運動方程式の形をしている。方程式 $\beta^G_{\mu\nu}=0$ は、反対称テンソル場とディラトンからの源項を持つ Einstein 方程式に似ている。方程式 $\beta^B_{\mu\nu}=0$ は Maxwell 方程式を反対称テンソルへ一般化したもので、場の強さの発散を決める。
+
+\subsubsection*{背景}
+
+場の方程式のもう一つの定性的な特徴も容易に理解できる。場 $\Phi$ はつねに微分された形で現れるので、$X^\mu$ に依存しない $\Phi$ のシフトに対する不変性がある。そのようなシフトは、世界面作用 \hyperref[eq:3.7.6]{(3.7.6)} を Euler 数に比例する項だけ変化させるため、Weyl 不変性のような局所的性質に影響しないからである。とくに、背景
+\begin{equation}
+G_{\mu\nu}(X)=\eta_{\mu\nu},\qquad
+B_{\mu\nu}(X)=0,\qquad \Phi(X)=\Phi_0
+\tag{3.7.16}\label{eq:3.7.16}
+\end{equation}
+は任意の定数 $\Phi_0$ に対して厳密に Weyl 不変である。これは平坦な時空の作用 \hyperref[eq:3.2.2]{(3.2.2)} そのものであり、
+\begin{equation}
+\lambda=\Phi_0.
+\tag{3.7.17}\label{eq:3.7.17}
+\end{equation}
+$\lambda$ の値は弦同士の結合の強さを決めるが、これが、このパラメーターの値が異なる別々の弦理論の存在を意味するわけではないことが分かった。$\lambda$ の異なる値は、異なる理論ではなく、一つの理論の異なる背景に対応する。Nambu--Goto 作用と Polyakov 作用に現れるもう一つのパラメーター、Regge 傾斜 $\alpha'$ も、次元を持つため実際には自由パラメーターではない。それは単に長さの単位を定義し、$X^\mu$ の定義に吸収できる。
+
+世界面作用の場 $G_{\mu\nu}$、$B_{\mu\nu}$、$\Phi$ を変えると、2次元の観点からは新しい理論が得られるように見える。弦理論全体の観点からは、同じ理論の異なる背景、すなわち異なる状態を見ているにすぎない。これは弦理論を魅力的にする特徴の一つである。標準模型や、場の量子論の枠内で標準模型を統一しようとする大部分の試みには、理論によって決まらない定数が多数存在し、それらの定数がどのような値でも整合的な理論になる。弦理論にはそのような自由パラメーターがない。結合定数は状態に依存し、原理的には動力学によって決まる。もちろん現時点では、背景場の値が分かるほど十分に動力学を理解していないため、困難を別の場所へ移しているにすぎない。
+
+Einstein 方程式が、2次元場の理論の Weyl 不変性の条件という、一見かなり意外な場所に現れることは驚くべきことである。弦理論は、この二つの考え方を物理的に結びつける。また、Weyl 不変性が必要であるため、弦が整合的に伝播できるのは適切な場の方程式を満たす背景の中だけだということも注目に値する。これは、オンシェルの頂点演算子だけが意味を持つという以前の発見と並行している。
+
+もう一つ注意しよう。条件 $D=26$ は、$T^a{}_a$ の $R$ 項から生じた。非線形シグマ模型では、これは $\beta^\Phi=0$ へ一般化される。式 \hyperref[eq:3.7.14c]{(3.7.14c)} では、$\beta^\Phi$ の主要項は $D-26$ に比例するが、場の勾配を含む補正がある。場が定数でなければ、明らかにほかの $D$ の値も可能と思われる。これは正しいが、式 \hyperref[eq:3.7.14c]{(3.7.14c)} から実際にそう結論することはできない。この式は、$\beta^\Phi$ の補正項が小さい近似 $\alpha'^{1/2}R_{\mathrm c}^{-1}\ll1$ で導かれたからである。実際には $D\ne26$ の厳密解が知られている。ここでは簡単な例を一つ示し、ほかは後に譲る。それは
+\begin{equation}
+G_{\mu\nu}(X)=\eta_{\mu\nu},\qquad
+B_{\mu\nu}(X)=0,\qquad
+\Phi(X)=V_\mu X^\mu
+\tag{3.7.18}\label{eq:3.7.18}
+\end{equation}
+である。ベータ関数 \hyperref[eq:3.7.14a]{(3.7.14)} は、
+\begin{equation}
+V_\mu V^\mu=\frac{26-D}{6\alpha'}
+\tag{3.7.19}\label{eq:3.7.19}
+\end{equation}
+ならばゼロになる。この結果は実際に厳密である。場 \hyperref[eq:3.7.18]{(3.7.18)} は $X^\mu$ について定数または線形なので、世界面の経路積分は Gauss 型のままだからである。$g_{ab}$ を変分してこの理論の $T_{ab}$ を求めると、これは線形ディラトン CFT にほかならないことが分かる（名称もこれに由来する）。その中心電荷 $c=D+6\alpha'V_\mu V^\mu$ は、条件 \hyperref[eq:3.7.19]{(3.7.19)} の下で確かに26となる。$D$ を変えるには $\Phi$ が大きな勾配を持つ必要があるので、この CFT は、おおむね静的で一様なわれわれの4次元時空を記述しないが、宇宙論への応用はあり得る。この CFT が重要なのは、$D=1$ と $D=2$ の場合は弦理論を厳密に解けるほど簡単であることにもよる。この点は第9.9節で論じる。
+
+\subsubsection*{時空の作用}
+
+場の方程式 \hyperref[eq:3.7.15]{(3.7.15)} は、時空の作用
+\begin{equation}
+\begin{aligned}
+\bm S=\frac1{2\kappa_0^2}\int d^Dx\,(-G)^{1/2}e^{-2\Phi}
+\Bigl[&-\frac{2(D-26)}{3\alpha'}+\bm R
+-\frac1{12}H_{\mu\nu\lambda}H^{\mu\nu\lambda}\\
+&+4\partial_\mu\Phi\partial^\mu\Phi+O(\alpha')\Bigr]
+\end{aligned}
+\tag{3.7.20}\label{eq:3.7.20}
+\end{equation}
+から導ける。規格化定数 $\kappa_0$ は場の方程式では決まらず、$\Phi$ の再定義で変えられるので物理的意味を持たない。
+\begin{equation}
+\begin{aligned}
+\delta\bm S=-\frac1{2\kappa_0^2\alpha'}\int d^Dx\,
+(-G)^{1/2}e^{-2\Phi}
+\Bigl[&\delta G_{\mu\nu}\beta^{G\mu\nu}
++\delta B_{\mu\nu}\beta^{B\mu\nu}\\
+&+\left(2\delta\Phi-\frac12G^{\mu\nu}\delta G_{\mu\nu}\right)
+(\beta^{G\omega}{}_\omega-4\beta^\Phi)\Bigr]
+\end{aligned}
+\tag{3.7.21}\label{eq:3.7.21}
+\end{equation}
+を確認できる。作用を太字で書いたのは、これが低エネルギーの時空の場を支配する有効作用であり、本書のこれまでの至る所に登場した世界面作用とは異なることを示すためである。
+
+しばしば、次の形の場の再定義を行うと便利である：
+\begin{equation}
+\widetilde G_{\mu\nu}(x)=\exp(2\omega(x))G_{\mu\nu}(x).
+\tag{3.7.22}\label{eq:3.7.22}
+\end{equation}
+これは時空の Weyl 変換である。$\widetilde G_{\mu\nu}$ から作った Ricci スカラーは
+\begin{equation}
+\widetilde{\bm R}=\exp(-2\omega)
+\left[\bm R-2(D-1)\nabla^2\omega
+-(D-2)(D-1)\partial_\mu\omega\partial^\mu\omega\right].
+\tag{3.7.23}\label{eq:3.7.23}
+\end{equation}
+特別な場合 $D=2$ には、これは Weyl 変換 \hyperref[eq:3.3.5]{(3.3.5)} である。$\omega=2(\Phi_0-\Phi)/(D-2)$ と置き、
+\begin{equation}
+\widetilde\Phi=\Phi-\Phi_0
+\tag{3.7.24}\label{eq:3.7.24}
+\end{equation}
+と定義する。これは期待値がゼロである。作用は
+\begin{equation}
+\begin{aligned}
+\bm S=\frac1{2\kappa^2}\int d^DX\,(-\widetilde G)^{1/2}
+\Bigl[&-\frac{2(D-26)}{3\alpha'}
+e^{4\widetilde\Phi/(D-2)}+\widetilde{\bm R}\\
+&-\frac1{12}e^{-8\widetilde\Phi/(D-2)}
+H_{\mu\nu\lambda}\widetilde H^{\mu\nu\lambda}
+-\frac4{D-2}\partial_\mu\widetilde\Phi
+\widetilde\partial^\mu\widetilde\Phi+O(\alpha')\Bigr],
+\end{aligned}
+\tag{3.7.25}\label{eq:3.7.25}
+\end{equation}
+となる。ここでチルダを付けたのは、添字を $\widetilde G^{\mu\nu}$ で上げていることを示すためである。$\widetilde G_{\mu\nu}$ で書くと、重力の Lagrangian 密度は標準的な Hilbert 形 $(-\widetilde G)^{1/2}\widetilde{\bm R}/2\kappa^2$ となる。定数 $\kappa=\kappa_0e^{\Phi_0}$ は重力結合であり、4次元重力では
+\begin{equation}
+\kappa=(8\pi G_{\mathrm N})^{1/2}
+=\frac{(8\pi)^{1/2}}{M_{\mathrm P}}
+=(2.43\times10^{18}\ \mathrm{GeV})^{-1}
+\tag{3.7.26}\label{eq:3.7.26}
+\end{equation}
+という値を持つ。
+
+通常、$G_{\mu\nu}$ はシグマ模型計量または弦計量、$\widetilde G_{\mu\nu}$ は Einstein 計量と呼ばれる。ディラトン交換による力があるため等価原理がなく、計量の特別な定義を一つ選び出す方法もない。先を見越すと、弦理論にはディラトンに質量を与え、その到達距離を有限にできる高次の効果がある。これは望ましいことである。もちろん、等価原理はよい精度で成り立っているからである。
+
+ディラトンが作用 \hyperref[eq:3.7.20]{(3.7.20)} に全体の因子 $e^{-2\Phi}$ として現れ、それ以外ではつねに微分された形で現れることに注意しよう。これは、ディラトン全体に定数を加えても Weyl 異常に影響しないという事実と整合する。時空の観点では、これは作用全体に定数を掛けることであり、運動方程式を変えない。また、場の量子論では、結合 $g$ が全体の因子 $g^{-2}$ としてのみ現れるように場を再スケールできるという事実も反映している。弦理論ではその因子が $e^{-2\Phi}$ である。たとえば、Yang--Mills 作用は通常
+\begin{align}
+\bm S&=-\frac14\int d^Dx\,\operatorname{Tr}(F_{\mu\nu}F^{\mu\nu}),
+\tag{3.7.27a}\label{eq:3.7.27a}\\
+F_{\mu\nu}&=\partial_\mu A_\nu-\partial_\nu A_\mu-ig[A_\mu,A_\nu]
+\tag{3.7.27b}\label{eq:3.7.27b}
+\end{align}
+という形で導入される（行列記法）。
+\begin{equation}
+gA_\mu=A'_\mu,\qquad gF_{\mu\nu}=F'_{\mu\nu}
+\tag{3.7.28}\label{eq:3.7.28}
+\end{equation}
+と定義すると、$g$ は場の強さ、共変微分、ゲージ変換から取り除かれ、作用の全体の $g^{-2}$ にのみ現れる。弦理論では、弦の世界面上に現れる場を用いて作用を書いたときにこれが成り立つ。形 \hyperref[eq:3.7.25]{(3.7.25)} へ移る際のように、ディラトンに依存する場の再定義を行うと、もはや成り立たない。
+
+$g$ が作用の規格化だけに現れるとき、各伝播関数は因子 $g^2$ を、各相互作用は因子 $g^{-2}$ を含む。有効作用への $L$ ループの寄与では、伝播関数が頂点より正確に $L-1$ 個多く、したがって $g^{2(L-1)}$ とスケールすることを示すのは難しくない。弦理論では、これは予想どおり $e^{-\chi\Phi}$ である。
+
+背景についての議論は開弦にも拡張される。開弦の頂点演算子は境界に沿って積分されることを見たので、開弦の場はシグマ模型作用の境界項として現れる。
+
+\subsubsection*{コンパクト化と CFT}
+
+これまで調べた四つの弦理論（境界を持つか持たないか、向きがあるかないか）には、いくつか共通の特徴がある。よい特徴の一つは、一般相対論が自動的に含まれることである。一方、悪い特徴もいくつかある。26次元が必要であること、タキオンが存在すること、スペクトルにフェルミオンが存在しないことである。タキオンの除去とフェルミオンの導入は第2巻まで待たなければならない。しかし、一般相対論が存在することで、余剰次元を説明する自然な方法が得られる。一般相対論では、時空の幾何は固定されず、動力学的である。平坦な時空は場の方程式の多数の解の一つにすぎない。いくつかの次元は大きく平坦であり、ほかの次元は小さく強く曲がっているような解が存在してもよい。その計量は
+\begin{equation}
+g_{MN}=
+\begin{pmatrix}
+\eta_{\mu\nu}&0\\
+0&g_{mn}(x^p)
+\end{pmatrix}.
+\tag{3.7.29}\label{eq:3.7.29}
+\end{equation}
+26個の座標 $M,N=0,\ldots,25$ を、四つの「時空」座標 $\mu,\nu=0,\ldots,3$ と22個の「内部」座標 $m,n,p=4,\ldots,25$ に分けた。計量 \hyperref[eq:3.7.29]{(3.7.29)} は、四つの時空次元では平坦であり、22個の内部次元では曲がっている。内部次元はコンパクトであると仮定する。一例として、ディラトン場が定数、反対称テンソルがゼロ、内部空間の計量が Ricci 平坦、$\bm R_{mn}=0$、ならば、背景場の方程式 \hyperref[eq:3.7.15]{(3.7.15)} は $\alpha'$ の次数まで満たされる。
+
+言い換えれば、時空は $M^d\times K$ の形であり、$M^d$ は $d$ 次元 Minkowski 空間、$K$ はある $(26-d)$ 次元のコンパクトな Riemann 空間である。\footnote[4]{一般に、弦理論の全次元を表すには $D$ を用い、世界面の場の一部分について論じている可能性がある場合には $d$ を用いる。}
+そのような時空では、$K$ の大きさよりはるかに長い長さスケールの物理は、$d$ 次元 Minkowski 空間の場合と同じになる。$26-d$ 個の次元がコンパクト化されたという。ただし宇宙論的には、大きい次元が脱コンパクト化したという方が適切に思われる。序論で簡単に述べたように、弦理論とは独立に、われわれの時空がこの形である可能性を考える十分な理由がある。コンパクトな次元は、これまで観測されていないほど小さくなければならない。実際、第8章で、さらに詳しくは第18章で見るように、どの余剰次元の大きさも Planck 長 $1.6\times10^{-33}\ \mathrm{cm}$ から数桁以内になければならない。
+
+この考えをさらに一般化することも考えられる。基本的な物理的整合性条件は少数である。Lorentz 不変性を要求し、量子力学的な確率が正で保存されることを要求する。今のところ、弦理論の中に標準的な量子力学の枠組みの修正を要求するものは見当たらないが、そうでないと分かれば興味深い。これらの条件は簡単だが、ゲージ理論や重力、そして弦理論においても、条件同士には緊張関係がある。顕在的に共変なゲージでは、物理的振幅から分離しなければならない負ノルムの時間的励起が存在する。光円錐ゲージでは内積は正だが、共変性はもはや顕在的ではない。
+
+したがって必要条件の一つは2次元の diff 不変性であり、これによって非物理的な振動は単なる座標系の振動となる。Weyl 不変性は、より技術的な要請である。Weyl 不変性が失われると現れる余分な自由度は、座標系の振動ほど直観的ではないが、第3.4節で Lorentz 不変性と両立しないことを論じた。
+
+さらに、技術的な仮定を一つ追加する。埋め込みの時間 $X^0$ は、世界面作用において
+\begin{equation}
+-\frac1{4\pi\alpha'}\int_M d^2\sigma\,g^{1/2}g^{ab}
+\partial_aX^0\partial_bX^0
+\tag{3.7.30}\label{eq:3.7.30}
+\end{equation}
+という項だけに現れるものとする。たとえばシグマ模型では、これは場が静的で、$G_{0\mu}=\eta_{0\mu}$、$B_{0\mu}=0$ であることを意味する。この仮定はそれほど大きな制限ではない。静的な状態に関心があれば、形 \hyperref[eq:3.7.30]{(3.7.30)} で十分である。時間に依存する背景は、宇宙論などの理由で確かに興味深いが、時間スケールが弦のスケール程度になる極端な場合を除けば、低エネルギー有効場理論で解析できる。仮定 \hyperref[eq:3.7.30]{(3.7.30)} を置く理由は、主要な問題である $X^0$ の逆符号の性質を、かなり明示的な形にするためである。
+
+局所不変性を保つという要請から、より一般的な弦理論について次の提案が導かれる。25個の空間的な $X^\mu$ 場を、$c=\widetilde c=25$ を持つ任意のユニタリーな CFT で置き換える。これによって、$X^0$ とゴーストを含む2次元理論全体を、$(\mathrm{diff}\times\mathrm{Weyl})$ 不変な仕方で曲がった計量に結合できることが保証される。ユニタリー性（正の内積）の条件が必要なのは、局所対称性が、非物理的な $X^0$ の励起を取り除くのにちょうど十分なだけしか存在しないからである。ここで世界面の内積が関係するのは、それが一粒子セクターで時空の内積になるからである。第2巻では、局所対称群と非物理的励起の集合を同時に拡大することで、さらに一般化が可能であることを見る。
+
+低エネルギーの物理が4次元に見えるボース弦理論に関心があるなら、$\mu=0,1,2,3$ の自由場 $X^\mu$ は残し、残りの $X^\mu$ を $c=\widetilde c=22$ のコンパクトでユニタリーな CFT に置き換える。コンパクトとは、有限体積の場の量子論と同様に、スペクトルが離散的であることを意味する。すべての CFT、あるいはさまざまな追加の性質を持つすべての CFT を構成しようとする試みがなされている。その一部を第15章で述べる。なお、これらの理論はすべてタキオンを持つ。それは、内部 CFT の単位状態 $\lvert1\rangle$ と4次元 CFT の基底状態 $\lvert0;k\rangle$ の積である。
+
+いま行った一般化は、どれほど大きなものだろうか。局所対称性だけが本質的な制約なら、世界面および時空についてさまざまな量子数を持つ場を、世界面上に自由に導入できる。これは26個の $X^\mu$ 場からなるもとの理論を大きく超えるように見える。しかし2次元では、一見異なる場の量子論同士の間に多くの等価関係があるので、状況は明確ではない。
+
+異なる CFT に基づいていても、世界面のゲージ対称性とトポロジーが同じ弦理論は、すべて同一理論の異なる基底状態であると一般には考えられている。これが言葉の使い方に問題を生じさせる。世界面の Lagrangian が異なる弦を、しばしば異なる理論と呼ぶが、おそらくそれらは一つの理論の異なる真空にすぎない。第14章ではさらに進めて、あらゆる弦理論が単一の理論の真空に見えることを調べる。
+
+第1巻で弦理論の技法を展開する際、具体例では通常、最も簡単な平坦な26次元時空の場合を取る。しかし多くの結果は、上で述べたきわめて一般的な弦理論にも適用できる形で展開する。
+
+\subsection*{演習}
+\addcontentsline{toc}{subsection}{第3章の演習}
+\label{sec:3.exercises}
+
+\noindent\textbf{3.1}\label{ex:3.1}\quad
+(a) 平坦な円板と、半球の計量を持つ円板について、Euler 数 $\chi$ を評価せよ。
+
+(b) $b$ 個の穴を持つ球面の Euler 数が $2-b$ であることを示せ。球面上には都合のよい任意の計量を取ってよい。
+
+(c) この結果を拡張し、$b$ 個の穴と $g$ 個の柄を持つ球面について $2-b-2g$ を得よ。
+
+\medskip
+\noindent\textbf{3.2}\label{ex:3.2}\quad
+(a) 2次元の $n$ 階のトレースレス対称テンソルが、ちょうど二つの独立な成分を持つことを示せ。トレースレスという条件は、任意の一対の添字を $g^{ab}$ と縮約するとテンソルがゼロになることを意味する。
+
+(b) $n$ 階のトレースレス対称テンソルを $(n+1)$ 階のトレースレス対称テンソルに写す微分演算子 $P_n$ を求めよ。
+
+(c) 逆の写像を与える微分演算子 $P_n^T$ を求めよ。
+
+(d) $u$ を $(n+1)$ 階のトレースレス対称テンソル、$v$ を $n$ 階のトレースレス対称テンソルとする。適切な規格化のもとで $(u,P_nv)=(P_n^Tu,v)$ が成り立つことを示せ。任意の階数のトレースレス対称テンソルの内積は
+\[
+(t,t')=\int d^2\sigma\,g^{1/2}t\cdot t'
+\]
+であり、点はすべての添字の縮約を表す。
+
+\medskip
+\noindent\textbf{3.3}\label{ex:3.3}\quad
+(a) 共形ゲージにおける共変微分の形を求めよ。特に、すべての添字が $\bar z$ であるテンソル成分に作用するとき、$\nabla_z$ は $\partial_z$ に帰着し、その逆も成り立つことを示せ。添字の上げ下げは $z$ と $\bar z$ の添字を入れ替えるので、これは添字の位置を適切に選べば、常に単純な微分を用いて計算できることを意味する。
+
+(b) これを用いて、$P_n$ と $P_n^T$ の簡単な表式を与えよ。
+
+\medskip
+\noindent\textbf{3.4}\label{ex:3.4}\quad
+Faddeev--Popov の手続きに習熟するには、より一般的で抽象的な状況で考えてみるとよい。これは第4.2節の最初のページで述べられている（この部分は第4.1節から独立している）。一般的な結果 (4.2.3) を導け。
+
+\medskip
+\noindent\textbf{3.5}\label{ex:3.5}\quad
+（前問の続き。）異なる二つのゲージの選択 $F^A(\phi)=0$ と $G^A(\phi)=0$ を考える。Faddeev--Popov の手続きによれば、ゲージ固定された経路積分 (4.2.3) は、いずれも元のゲージ不変な経路積分に等しく、したがって互いに等しい。しかし、この議論は、やや発見法的に定義されたゲージ不変な経路積分を経由している。Faddeev--Popov の手続きを応用して、二つのゲージ固定された経路積分の等価性を直接示せ。実際に重要なのはこの等価性であり、たとえば、共変性が明白なゲージとユニタリー性が明白なゲージが同一の理論を定義すること、したがってその理論が両方の性質を持つことを示せる。第4章では、より抽象的な方法である BRST 対称性を用いて、この等価性を示す。
+
+\medskip
+\noindent\textbf{3.6}\label{ex:3.6}\quad
+次元解析によれば、平坦な世界面上で保存するカレントには
+\[
+\nabla_a j^a=aR
+\]
+というアノマリーがありうる。両辺の Weyl 変換を比較することにより、$Tj$ における $z^{-3}$ の係数と $\widetilde T\widetilde j$ における $\bar z^{-3}$ の係数の和が $4a$ であることを示せ。
+
+\medskip
+\noindent\textbf{3.7}\label{ex:3.7}\quad
+Weyl アノマリーの2番目の計算では、スカラーまたはゴーストのループと二つの外部重力場を持つ Feynman 図を、回り道をして計算したことになる。スカラーの場合を、運動量空間で直接計算せよ。次元正則化、Pauli--Villars 正則化、あるいはゼータ関数正則化など、好みの不変な正則化を用いる必要がある。結果が式 \hyperref[eq:3.4.19]{(3.4.19)} と一致することを示せ。曲率の線形化された表式は、式 \hyperref[eq:3.7.13a]{(3.7.13a)} と \hyperref[eq:3.7.14a]{(3.7.14a)} から読み取ると便利である。（注意：計算をすべて行うと少々長くなる。）
+
+\medskip
+\noindent\textbf{3.8}\label{ex:3.8}\quad
+頂点演算子 $V_1$ の Weyl 変換 \hyperref[eq:3.6.16]{(3.6.16)} を確かめよ。
+
+\medskip
+\noindent\textbf{3.9}\label{ex:3.9}\quad
+開弦のタキオンと光子の頂点演算子に対する Weyl 不変性の条件を求めよ。境界が直線になる座標系を取ると最も簡単である。演習 \hyperref[ex:2.10]{2.10} で見たように、伝播関数には鏡像電荷の項が含まれるため、ちょうど境界上にある場に対しては実質的に2倍になることを思い出せ。
+
+\medskip
+\noindent\textbf{3.10}\label{ex:3.10}\quad
+開弦の $m^2=1/\alpha'$ のレベルにおける一般的な頂点演算子と、Weyl 不変性の条件を求めよ。独立な Weyl 不変演算子の完全な集合を求め、光円錐量子化で得られた状態と比較せよ。［答：演算子が一つ余分にあるように見える。実際にはその振幅は消えるが、それがヌル状態に対応しているという理由を理解するには、次章の形式が必要である。］
+
+\medskip
+\noindent\textbf{3.11}\label{ex:3.11}\quad
+式 \hyperref[eq:3.7.14a]{(3.7.14)} の直前で示唆した方法により、$\beta^G_{\mu\nu}$ の $H^2$ の次数の項を計算せよ。必要なのは OPE のうち、ちょうど $(z\bar z)^{-1}$ の項である。これより特異な項はタキオン背景のシフトを必要とするが、これはボース弦に特有のものである。
+
+\medskip
+\noindent\textbf{3.12}\label{ex:3.12}\quad
+$\beta^G_{\mu\nu}=\beta^B_{\mu\nu}=0$ ならば、非線形シグマ模型は平坦な世界面上で共形不変になる。第3.4節の終わりの議論によれば、この場合 $\beta^\Phi$ は $X$ に依存してはならない。形 \hyperref[eq:3.7.14a]{(3.7.14)} について、これを示せ。Bianchi 恒等式が必要になる。
+
+\medskip
+\noindent\textbf{3.13}\label{ex:3.13}\quad
+$d$ 個の平坦な次元と、3次元球面の形をした3次元を持つ時空を考える。$H$ は3次元球面上の完全反対称テンソルに比例し、ディラトンは定数であるとする。運動方程式の形 \hyperref[eq:3.7.14a]{(3.7.14)} を用いて、$d+3\ne26$ となる解が存在することを示せ。これらの解は式 \hyperref[eq:3.7.14a]{(3.7.14)} の適用範囲の外にあるが、第15章では、$H$ が特定の量子化された値に限られるものの、この形の厳密解が存在することを見る。
+
+\medskip
+\noindent\textbf{3.14}\label{ex:3.14}\quad
+背景 \hyperref[eq:3.7.18]{(3.7.18)} が、線形ディラトンのエネルギー運動量テンソル \hyperref[eq:2.5.1a]{(2.5.1)} を与えることを確かめよ。
+

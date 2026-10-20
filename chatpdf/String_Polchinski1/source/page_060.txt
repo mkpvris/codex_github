@@ -1,0 +1,49 @@
+38                                                                                  2                     Conformal              ﬁeld              theory
+
+antiholomorphic             function.             In             particular,             this             means             that             it             is             nonsingular
+                                                                                                                                                                                                     ¯
+as       z1       →         z2        and             can             be             freely             Taylor             expanded             in                       z12         and             z12.             Thus,
+
+                     µ                               ν                                          α′         µν                           2                     ν         µ
+              X         (z1,         ¯z1)X              (z2,¯z2)=                        −2η                      ln      |z12|            +:          X         X         (z2,¯z2):
+                                              ∞             1                                                                                                                                                                           
+                                                                                     k               ν      k         µ                                                      k              ν¯k              µ
+                                       +                   k!         (z12)                :X           ∂       X         (z2,        ¯z2):    +    (¯z12)                        :X           ∂       X         (z2,        ¯z2):              .
+                                               k=1
+                                                                                                                                                                                                                                      (2.2.4)
+
+                                                                     ¯
+Terms              with              mixed                       ∂∂         derivatives              vanish              by              the              equation              of              motion.              This
+equation                   and                   many                   others                   simplify                   in                   units                   in                   whichα′      =                  2,                   which                   is
+the                   most                   common                   convention                   in                   the                   literature.                   However,                   several                   other
+conventions              are              also              used,              so              it              is              useful              to              keep  α′       explicit.              For              example,
+in       open              string             theory             equations             simplify             when                                              α′       =        1   .
+                                                                                                                                                                                2
+       Eq.           (2.2.4)           has           the           form           of           an           OPE.           Like           the           equation           of           motion           (2.1.23)
+from                which                it                was                derived,                it                is                an                operator                statement.                For                an                arbitrary
+expectation             value            involving            the             product                                                     Xµ(z1,                ¯z1)Xν(z2,                      ¯z2)timesﬁeldsat
+other       points,       it       gives       the       behavior       forz1                                                                   →z2                 as                an                inﬁnite                series,                each
+term           being           a           known           function           of                             z12         and/or                    ¯z12        times           the           expectation           value
+with             a             local             operator             replacing             the             pair.
+       OPEs                  are                  usually                  used                  as                  asymptotic                  expansions,                  the                  ﬁrst                  few                  terms
+giving                the                dominant                behavior                at                small                separation.                Most                of                our                applica-
+tions           will           be           of           this           type,           and           we           will           often           write           OPEs           as           explicit           singular
+terms             plus             unspeciﬁed             nonsingular             remainders.             The             use             of             ‘∼’             in             place             of
+‘=’              will              mean              ‘equal              up              to              nonsingular              terms.’              In              fact,              OPEs              are              actually
+convergent                in                conformally                invariant                ﬁeld                theories.                This                will                be                very                im-
+portant                to                us                in                certain                applications:                it                makes                it                possible                to                reconstruct
+the               entire               theory               from               the               coeﬃcient               functions.               As               an               example,               the               free-
+ﬁeld                  OPE                  (2.2.4)                  has                  a                  radius                  of                  convergence                  in                  any                  given                  expectation
+value               which               is               equal               to               the               distance               to               the               nearest other               insertion               in               the
+path                integral.                The                operator                product                is                harmonic                except                at                the                positions
+of               operators,               and               in               particular               inside               the               dashed               circle               of               ﬁgure               2.1,               and
+convergence             can             then             be             shown             by             a             standard             argument             from             the             theory
+of             complex             variables.
+       The            various            operators            on            the            right-hand            side            of            the            OPE            (2.2.4)            involve
+products            of            ﬁelds            at            the            same            point.            Usually            in            quantum            ﬁeld            theory            such
+a          product          is          divergent          and          must          be          appropriately          cut          o!          and          renormalized,
+but           here           the           normal           ordering           renders           it           well-deﬁned.           Normal           ordering           is           a
+convenient             way             to             deﬁne             composite             operators             in             free             ﬁeld             theory.             It             is             of
+little              use              in              most              interacting              ﬁeld              theories,              because              these              have              additional
+divergences            from            interaction            vertices            approaching            the            composite            operator
+or                       one                       another.                       However,                       many                       of                       the                       ﬁeld                       theories                       that                       we                       will                       b e

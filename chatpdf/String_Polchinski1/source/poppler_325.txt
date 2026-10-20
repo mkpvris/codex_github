@@ -1,0 +1,55 @@
+                              9.4 Sewing and cutting CFTs                                        303
+
+of view of M1 , there is a tiny copy of M2 glued in near z1 = 0. This -can
+be expanded in local operators Ai , with coefficient functions Ai . . .2 M2 .
+From the point of view of M2 , there is a tiny copy of M1 glued in near
+z2 = 0, which is expanded in local operators Ai , with coefficient functions
+% . . .1 A i & M 1 .
+   We have argued that every Riemann surface can be reduced to thrice-
+punctured spheres. The sewing construction thus relates all amplitudes
+to the three-point amplitudes on the sphere, which are essentially the
+operator product coefficients: these are the data that define the CFT. We
+will encounter many equivalences between CFTs — we have already
+seen T -duality, and bosonization (chapter 10) will be another notable
+example. The sewing construction provides the criteria for two theories to
+be the same: a one-to-one correspondence between their states (or local
+operators) and identical OPEs.1 In fact, as we will show in chapter 15, the
+operator products of the primary fields alone determine those of all the
+others.
+   Let us explore this point of view further. One can cut a surface along
+many different sets of curves, so there must be consistency conditions to
+guarantee that the sewing relation always gives the same result for the
+expectation values on M. Consider first an infinitesimal change in the
+cutting curve C. A general infinitesimal change leaving M invariant can
+be obtained by an infinitesimal change in the coordinates used for the
+sewing,
+                                              ∞
+                                              &
+                              z1! = z1 +            .n z1n+1 ,                              (9.4.8a)
+                                             n=−∞
+                                              &∞
+                              z2! = z2 −            .−n q −n z2n+1 .                        (9.4.8b)
+                                             n=−∞
+The difference of the sewn expressions is then proportional to
+                                                  ∞
+                                                  &        '
+    (z ! )     (z ! )
+ Ai 1 Gij Aj 2 − Ai(z1 ) Gij Aj(z2 ) = −                .n Ln ·A(z1 ) ij
+                                                                i G Aj
+                                                                         (z2 )
+
+                                               n=−∞
+                                                                      (
+                                              −Ai(z1 ) Gij L−n ·A(z
+                                                                 j
+                                                                   2)
+                                                                            + (anti) , (9.4.9)
+where we have used the conformal transformation (2.9.6), and ‘anti’ de-
+notes the same form with .n → .∗n and Ln → L̃n . The vanishing of the
+quantity in braces can be shown by an argument parallel to that used to
+derive eq. (9.4.4). This is just the statement that one can pull the contour
+
+1 We should note that when there is more than one (2, 0) plus (0, 2) field that could play the
+ role of Tab , as in the free-field examples of section 2.5, it is necessary to specify which is the
+ energy-momentum tensor. This choice determines the conformal transformations of operators,
+ which enter implicitly into the sewing relation.

@@ -1,0 +1,46 @@
+68                       2 Conformal field theory
+
+The Xi" integral is a constant, independent of the boundary condition, so
+                                  0   ∞
+                                                            1
+                                   1 
+                   (1 [Xb ] ∝ exp − "    mXm X−m                .    (2.8.24)
+                                   α m=1
+This is a Gaussian, and is in fact the ground state. To see this, write the
+raising and lowering operators in the Schrödinger basis,
+                                             %       &1/2
+                            in          α"               ∂
+                   αn = − " 1/2 X−n − i                     ,       (2.8.25a)
+                         (2α )          2               ∂Xn
+                                            %    &
+                              in             α" 1/2 ∂
+                   α̃n = −           X n − i            ,    (2.8.25b)
+                           (2α" )1/2         2     ∂X−n
+as follows from the Laurent expansion at |z| = 1 and the mode algebra.
+Acting on (2.8.24), we find
+                  αn (1 [Xb ] = α̃n (1 [Xb ] = 0 ,      n≥0,         (2.8.26)
+so this is indeed the ground state. Thus,
+                                |1, ∝ |0; 0, .                       (2.8.27)
+Rather than try to keep track of the overall normalization of the path
+integral at this point, we define |1, = |0; 0,.
+   Another easy calculation is the state corresponding to ∂k X; this just
+adds a factor of ∂k Xcl (0) = k!Xk to the result, so
+                                 % " &1/2
+                                   α
+         |∂k X, = k!Xk (1 = −i            (k − 1)!α−k |0; 0, ,       (2.8.28)
+                                   2
+and similarly for ∂¯k X. This extends to all products of exponentials and
+derivatives of X. The conformal normal ordering just cancels the e!ect of
+the Xi" path integral.
+
+                   2.9   More on states and operators
+
+                                  The OPE
+In this section we make additional applications of the state–operator
+correspondence. The first is a simple and general derivation of the OPE,
+as shown in figure 2.7. Consider the product
+                             Ai (z, z̄)Aj (0, 0) ,                    (2.9.1)
+where |z| < 1. We can divide the path integral into an integral over fields
+/i on the interior of the unit disk, an integral over fields /b on the unit
+circle, and an integral over fields /e on the exterior of the unit disk.
+This sort of cutting open of path integrals is discussed in detail in the

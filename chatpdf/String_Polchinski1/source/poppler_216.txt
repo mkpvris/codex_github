@@ -1,0 +1,53 @@
+194                                6 Tree-level amplitudes
+
+and exponential behavior in the hard scattering limit,
+                                                                                      
+                                     α%
+     SS2 (k1 ; k2 ; k3 ; k4 ) ∝ exp − (s ln sα% + t ln tα% + u ln uα% ) . (6.6.13)
+                                     2
+   On the sphere, the amplitude for a massless closed string and two closed
+string tachyons is
+                                                  !
+                                                            ¯ ν eik1 ·X (z1 , z̄1 ) :
+      SS2 (k1 , e1 ; k2 ; k3 ) = gc2 gc% e−2λ e1µν :c̃c∂X µ ∂X
+                                                                                                      "
+                                                :c̃ceik2 ·X (z2 , z̄2 ) : :c̃ceik3 ·X (z3 , z̄3 ) :
+                                                                                                          S2
+                                    πiα%  µ ν                            #
+                             =− g % e1µν k23 k23 (2π)26δ 26 ( i ki ) , (6.6.14)
+                             2 c
+where e1µν eµν
+            1 = 1. Expanding the Virasoro–Shapiro amplitude (6.6.10) on
+the s = 0 pole and using unitarity determines
+                                          2
+                                   gc% = % gc ,                        (6.6.15)
+                                          α
+again in agreement with the state–operator mapping with overall constant
+gc . The amplitude (6.6.14) would be obtained in field theory from the
+spacetime action S + S T , where S is the action (3.7.20) for the massless
+fields, and where
+                  $                      2                           3
+                1                                             4
+        ST = −      d26 x (−G)1/2 e−2Φ̃ Gµν ∂µ T ∂ν T − % T 2 ,        (6.6.16)
+                2                                             α
+is the action for the closed string tachyon T . For example, the amplitude
+for a graviton of polarization eµν is obtained from this action by expanding
+                                   G̃µν = .µν − 2/eµν eik·x .                                         (6.6.17)
+Note that this is the Einstein metric, whose action (3.7.25) is independent
+of the dilaton. The normalization of the fluctuation is determined by that
+of the graviton kinetic term in the spacetime action. Specifically, if one
+takes G̃µν − .µν = −2/eµν f(x) with eµν eµν = 1, the e!ective action for
+f has the canonical normalization 12 for a real scalar. The field theory
+amplitude matches the string result (6.6.14) and relates the normalization
+of the vertex operators to the gravitational coupling,
+                                      / = πα% gc% = 2πgc .                                            (6.6.18)
+  The amplitude for three massless closed strings is
+                                        i/          #
+   SS2 (k1 , e1 ; k2 , e2 ; k3 , e3 ) = (2π)26δ 26 ( i ki )e1µν e2αβ e3γδ T µαγ T νβδ ,
+                                         2
+                                                                                    (6.6.19)
+where
+                         µ αγ               γ µα       α% µ α γ
+           T µαγ = k23      . + k31   α γµ
+                                       . + k12 . + k23       k31 k12 .              (6.6.20)
+                                                       8

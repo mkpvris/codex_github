@@ -1,0 +1,43 @@
+294                      9 Higher order amplitudes
+
+                            Hyperelliptic surfaces
+Here is another description which is sometimes useful. Consider the space
+S2 × S2 , with coordinates z and y. Consider the two-dimensional subman-
+ifold given by the equation
+                                      2k
+                                      
+                                2
+                               y =          (z − Zi )                  (9.2.9)
+                                      i=1
+
+for complex parameters Zi . Projecting down to the z-coordinate, there
+are two sheets joined across k branch cuts. This produces a surface with
+g = k − 1 handles. The branch points are singular when projected down
+to z, but the full surface (9.2.9) is nonsingular there: y is locally a good
+coordinate.
+  The surface depends on the 2k complex Zi , but three of these are again
+redundant under a Möbius transformation, leaving 2k−3 = 2g−1 complex
+parameters. For g = 1, 2 this is the same as the number of moduli, but for
+g ≥ 3 the number of moduli is greater and only special surfaces have the
+form (9.2.9). These are known as hyperelliptic surfaces.
+
+                   9.3   Sewing and cutting world-sheets
+
+A useful concept for analyzing string amplitudes is the relation between
+higher and lower genus amplitudes. A key ingredient is the plumbing
+fixture, for building up higher genus surfaces from lower ones. Consider
+two world-sheets, M1 with coordinate z1 in some patch, and M2 with
+coordinate z2 in some patch. We can join these to form a new world-
+sheet M as follows. Let q be a complex parameter. Cut out from M1
+the disk |z1 | < (1 − .)|q|1/2 for some small ., and from M2 the disk
+|z2 | < (1 − .)|q|1/2 . Now form a single surface by identifying pairs of
+points such that
+                                    z1 z2 = q .                        (9.3.1)
+This is shown in figure 9.2. The annular region
+                    (1 − .)−1 |q|1/2 > |z1 | > (1 − .)|q|1/2           (9.3.2)
+is sewn as indicated. One notation for this construction is
+                          M = M1 ∞M2 (z1 , z2 , q) .                   (9.3.3)
+The notation emphasizes that the resulting surface depends on the choice
+of local coordinates. With different local coordinates z1! and z2! , one would
+be cutting out different circles and the joined surface will in general be
+different. The two patches might also be in different parts of a single

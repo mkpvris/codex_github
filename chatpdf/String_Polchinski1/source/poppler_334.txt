@@ -1,0 +1,45 @@
+312                         9 Higher order amplitudes
+
+
+
+
+           (a)                                                  (b)
+                        1              2
+
+Fig. 9.10. (a) &1 ∗ &2 , convoluting the right half of &1 with the left half of &2 .
+One can think of this as defined 2by a path integral over the shaded region, whose
+width is then taken to zero. (b) &, convoluting the right and left halves of &.
+
+
+states at the first two levels,
+            '
+      & = ϕ(x) + Aµ (x)αµ−1 + B(x)b−1 + C(x)c−1 + ϕ! (x)c0
+                                                                      (
+                 + A!µ (x)αµ−1 c0 + B ! (x)b−1 c0 + C ! (x)c−1 c0 + . . . &0 . (9.6.7)
+
+Here, ϕ is the tachyon field and Aµ the gauge field, while B and C
+are the Faddeev–Popov ghost fields associated with the spacetime gauge
+symmetry. The primed fields can all be gauged away or are auxiliary
+(that is, they satisfy algebraic rather than differential equations and can
+be eliminated). One can then check that the symmetry (9.6.2) includes the
+ordinary gauge transformation on Aµ , while the action is of Klein–Gordon
+form for ϕ and of Maxwell form for Aµ . The BRST string field formalism
+thus gives a very compact generalization of spacetime gauge invariance.
+   Interactions also work out rather nicely. Define a product operation
+&1 ∗&2 on string fields by the functional integral depicted in figure 9.10(a),
+forming the overlap2of the right half of &1 with the left half of &2 . Define
+also an operation , giving the overlap of the right and left halves of
+the single string wavefunctional as shown in figure 9.10(b). To make an
+interacting theory, add a nonlinear term to the gauge transformation,
+
+                       δ& = QB Λ + g& ∗ Λ − gΛ ∗ & .                          (9.6.8)
+
+The ∗ product is associative, and one can show by a contour argument
+that QB acts as a derivation,
+
+                 QB (&1 ∗ &2 ) = (QB &1 ) ∗ &2 + &1 ∗ (QB &2 ) .              (9.6.9)
+
+From these it follows that the symmetry (9.6.8) closes. Using the cyclic
+property,
+                            #               #
+                                &1 ∗ &2 =       &2 ∗ &1 ,                    (9.6.10)

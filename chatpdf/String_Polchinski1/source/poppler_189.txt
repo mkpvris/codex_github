@@ -1,0 +1,43 @@
+                           6.1 Riemann surfaces                            167
+
+
+                                         0
+                                                      u
+
+
+
+
+                                                       z
+                                          0
+
+         Fig. 6.1. The sphere built from z and u coordinate patches.
+
+
+Since dzdz̄ = |z|4 dudū, the condition for the metric to be nonsingular at
+u = 0 is that exp(2ω(z, z̄)) fall as |z|−4 for z → ∞. For example,
+                                 4r2 dzdz̄    4r2 dudū
+                        ds2 =              =                            (6.1.3)
+                                (1 + zz̄)2   (1 + uū)2
+describes a sphere of radius r and curvature R = 2/r2 .
+   According to the general discussion in section 5.2, the sphere has no
+moduli and six CKVs, so that in particular every metric is (di!×Weyl)-
+equivalent to the round metric (6.1.3). Let us see this at the infinitesimal
+level. As in eq. (5.2.8) one is looking for holomorphic tensor fields ,gzz (z)
+and holomorphic vector fields ,z(z). These must be defined on the whole
+sphere, so we need to consider the transformation to the u-patch,
+                              ∂u
+                        ,u =     ,z = −z −2 ,z ,                   (6.1.4a)
+                              ∂z
+                              2 3−2
+                                ∂u
+                     ,guu =            ,gzz = z 4 ,gzz .           (6.1.4b)
+                                ∂z
+Any holomorphic quadratic di!erential ,gzz would have to be holomor-
+phic in z but vanish as z −4 at infinity, and so must vanish identically. A
+CKV ,z, on the other hand, is holomorphic at u = 0 provided it grows
+no more rapidly than z 2 as z → ∞. The general CKV is then
+                             ,z = a0 + a1 z + a2 z 2 ,                 (6.1.5a)
+                             ,z̄ = a∗0 + a∗1 z̄ + a∗2 z̄ 2 ,           (6.1.5b)
+with three complex or six real parameters as expected from the Riemann–
+Roch theorem.
+  These infinitesimal transformations exponentiate to give the Möbius

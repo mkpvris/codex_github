@@ -1,0 +1,45 @@
+126                                                                   4Thestringspectrum
+
+                                                                   4.2                BRST     quantization
+
+We      now      return      to      a      more      systematic      study      of      the      spectrum.      The      con-
+dition      (4.1.2)      is      not      suﬃcient      to      guarantee      gauge      invariance.      It      implies
+invariance    for    arbitrary    ﬁxed    choices    ofgab,             but             this             is             not             the             most             gen-
+eral               gauge.               In               light-cone               gauge,               for               example,               we               placed               some               conditions
+on      Xµ         and            some            conditions            on            gab.            To            consider            the            most            general            possible
+variation                of                the                gauge                condition,                we                must                allow,gabto                  b e                  anoperator,
+that              is,              to              depend              on              the              ﬁelds              in              the              path              integral.
+      In          order          to          derive          the          full          invariance          condition,          it          is          useful          to          take          a          more
+general               and               abstract               point               of               view.               Consider               a               path               integral               with               a               local
+symmetry.                  The                  path                  integral                  ﬁelds                  are                  denotedφi,                  which                  in                  the                  present
+case               would               beXµ(σ)and                      gab(σ).             Here              we             use              a              very             condensed              notation,
+where             i   labels                the                ﬁeld                andalso  represents                the                coordinate                 σ.                The                gauge
+invariance              is          ϵα,α,              where              again        α    includes              the              coordinate.              By              assumption
+the            gauge            parameters                  ϵα      are            real,            since            we            can            always            separate            a            complex
+parameter                 into                its                 real                and                 imaginary                parts.                 The                gauge                transformations
+satisfy             an             algebra
+                                                                             [,α,,        /]=           fγα/,γ            .                                                             (4.2.1)
+
+      Now             ﬁx             the             gauge             by             conditions
+                                                                                    FA(φ)=0                       ,                                                                     (4.2.2)
+
+where           once           again            A     includes           the           coordinate.           Following           the           same           Faddeev–
+Popov             procedure             as             in             section             3.3,             the             path             integral             becomes
+       ∫        [dφ         ]                                      ∫
+                          i      exp(−S1)                  →             [dφ       i dBA         dbA        dcα]exp(−S1−S2−S3),                                                         (4.2.3)
+               Vgauge
+where            S1     is         the         original         gauge-invariant         action,                               S2      is         the         gauge-ﬁxing         action
+                                                                            S2     =      −iBAFA(φ)                        ,                                                            (4.2.4)
+
+and         S3      is             the             Faddeev–Popov             action
+                                                                          S3      =     bAcα,αFA(φ)                          .                                                          (4.2.5)
+
+We             have             introduced             the             ﬁeld      BA        to             produce             an             integral             representation             of
+the             gauge-ﬁxing                  ,(FA).
+      There               are               two               things               to               notice               about               this               action.               The               ﬁrst               is               that               it               is
+invariant           under           the               Becchi–Rouet–Stora–Tyutin            (BRST)             transformation
+                                                                          ,Bφi           =      −iϵc        α,αφi            ,                                                       (4.2.6a)
+                                                                        ,BBA             =0          ,                                                                               (4.2.6b)
+                                                                         ,BbA            =      ϵB     A     ,                                                                       (4.2.6c)
+                                                                                    α            i         α        /     γ
+                                                                          ,Bc            =       2ϵf        /γc         c      .                                                     (4.2.6d)

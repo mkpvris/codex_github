@@ -1,0 +1,45 @@
+106                      3 The Polyakov path integral
+
+ Since Sµν , Aµν , and F multiply independent operators, the condition for
+Weyl invariance is
+                              Sµν = Aµν = F = 0 .                         (3.6.19)
+In order to get an accurate count of the number of operators, we must
+note that not all V1 of the form (3.6.14) are independent. Rather, under
+                        sµν → sµν + ξµ kν + kµ ξν ,             (3.6.20a)
+                        aµν → aµν + .µ kν − kµ .ν ,             (3.6.20b)
+                                    γ
+                         φ → φ+ k·ξ ,                           (3.6.20c)
+                                    2
+the change in V1 integrates to zero using the equation of motion (3.6.18).
+Choose now a vector nµ satisfying n · k = 1 and n2 = 0. A complete set of
+independent operators is obtained by restricting to
+                              nµ sµν = nµ aµν = 0 .                       (3.6.21)
+This is 2D equations for the 2D parameters ξµ and .µ ; one can show
+that one equation and one parameter are trivial, but that eqs. (3.6.21)
+are otherwise nondegenerate and so define an independent set of vertex
+operators.
+  By using condition (3.6.21) and solving first Sµν nµ nν = 0, then Sµν nµ =
+Aµν nµ = 0, and finally the full Sµν = Aµν = F = 0, one finds that
+                                        k2 = 0 ,                          (3.6.22a)
+                                      ν       µ
+                                    k sµν = k aµν = 0 ,                   (3.6.22b)
+                                             1+γ µ
+                                         φ=        sµ .                   (3.6.22c)
+                                                4
+Again we find a mass-shell condition (3.6.22a), this time corresponding
+to the first excited states of the closed string. There is also the condi-
+tion (3.6.22b) that the polarization be transverse to the momentum, as
+required for a physical polarization of a massless tensor field. In the frame
+in which
+                                                 1
+          k µ = (1, 1, 0, 0, . . . , 0) , nµ = (−1, 1, 0, 0, . . . , 0) ,  (3.6.23)
+                                                 2
+conditions (3.6.21) and (3.6.22b) imply that all 0- and 1-components vanish,
+while eq. (3.6.22c) fixes φ. This leaves precisely (D − 2)2 independent
+operators, the same number of massless closed string states as found in
+the light-cone gauge.
+   The condition nµ sµν = nµ aµν = 0 is needed to remove zero-norm light-
+like polarizations. However, the introduction of the vector nµ spoils man-
+ifest Lorentz invariance, and the theory is Lorentz-invariant only because
+di!erent choices of nµ are equivalent due to (3.6.20). The equivalence
+relations (3.6.20) are therefore essential in order for the theory to be

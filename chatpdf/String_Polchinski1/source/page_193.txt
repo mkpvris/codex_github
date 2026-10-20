@@ -1,0 +1,53 @@
+                                           6.2                      Scalar              expectation              values                 171
+
+where                                     ∫
+                                 α′X2
+               f(z,¯z)=                0       d2z′     exp[2ω(z′,           ¯z′)]      ln|z −   z′|2    +   k.                  (6.2.10)
+                                    4
+The                  constantk  is                  determined                  by                  the                  property                  thatG′is                  orthogonal                  to
+X0,                     but                     in                     any                     case                     we                     will                     see                     that                     the                     functionfdrops                     out                     of                     all
+expectation                values.                It                comes                from                the                background                charge,                but                the                delta
+function             from             the             zero-mode             integration             forces             overall             neutrality,Jµ=0,
+                                                                                                                                   0
+and      the      background      makes      no      net      contribution.
+    Now      consider      the      path      integral      with      a      product      of      tachyon      vertex      oper-
+ators,                              ⣨                                                                 ⟩
+              An    (k,     σ)=          eik1·X(σ1)           eik2·X(σ2)         ...    eikn·X(σn)                .              (6.2.11)
+                 S2                                       r                    r                         r    S
+                                                                                                                2
+This             corresponds             to
+                                                               ∑n
+                                                J(σ)=                ki,2(σ       −    σi)   .                                   (6.2.12)
+
+                                                               i=1
+The             amplitude             (6.2.6)             then             becomes
+               n                        X          d   d  ∑
+            AS2(k,     σ)=         iC(S2(2π)         ,   (     iki)                                                 
+                                              ∑n                                     1  ∑n
+                           ×   exp        −          ki·kjG′(σi,σ           j)−                k2G′(σi,σ         i)      .       (6.2.13)
+                                                                                     2           i    r
+                                              i,j=1                                      i=1
+                                               i<j
+The        constant        here        is                       (                     
+                                                                            −∇2          −d/2
+                                            CX      =X−d            det′                          .                              (6.2.14)
+                                               S2          0               4π2α′
+                                                                                         S2
+The              determinant              can              be              regularized              and              computed,              but              we              will              not              need
+to                 do                 this                 explicitly.                 We                 are                 employing                 here                 the                 simple                 renormalization
+used             in             section             3.6,             so             that             the             self-contractions             involve
+                                       ′         ′           ′         ′        α′         2          ′
+                                    Gr(σ,    σ    )=      G(σ,    σ     )+      2   lnd      (σ,    σ  )  .                      (6.2.15)
+
+No t e                t h a t
+                                           G′(σ,    σ    )=2      f(z,    ¯z)+      α′ω(z,      ¯z)(6.2.16)
+                                              r
+isﬁnitebydesign.Thepathintegralonthesphereisthen(                                                        
+                                                      ∑                        α′   ∑                        ∏n              ′
+        An(k,     σ)=          iCX(2π)d,d(                  ki)exp         −               k2ω(σi)                  |zij|α   ki·kj   .
+            S2                     S2                      i                    2            i
+                                                                                      i                      i,j=1
+                                                                                                              i<j
+                                                                                                                                 (6.2.17)
+The                   functionf has                   dropped                   out                   as                   promised.                   The                   dependence                   on                   the
+conformal            factor       ω(σ)            is            precisely            that            found            in            section            3.6            from            the            Weyl

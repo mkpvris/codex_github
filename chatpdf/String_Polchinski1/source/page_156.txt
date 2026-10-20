@@ -1,0 +1,45 @@
+134                                                             4Thestringspectrum
+
+                                                     BRST     cohomology     of     the     string
+Let      us      now      look      at      the      BRST      cohomology      at      the      lowest      levels      of      the
+string.    The    inner    product    is    deﬁned    by    specifying
+                                                      (αµ)†=αµ                         ,       (˜αµ)†=˜αµ                      ,                                   (4.3.17a)
+                                                           m                  −m                    m                 −m
+                                                                †                                ˜       †         ˜
+                                                      (bm)           =b−m,                     (bm)          =b−m,                                                (4.3.17b)
+                                                       (cm)†         =     c−m         ,       (˜cm)†       =     ˜c−m        .                                    (4.3.17c)
+
+In             particular,             the             Hermiticity             of             the             BRST             charge             requires             that             the             ghost
+ﬁelds                    be                    Hermitean                    as                    well.                    The                    Hermiticity                    of                    the                    ghost                    zero                    modes
+forces             the             inner             products             of             the             ground             state             to             take             the             form
+                              open             string:             ⟨0;     k|c0|0;          k′⟩     =(2π)26,26(k                       −     k′)     ,             (4.3.18a)
+                          closed             string:               ⟨0;     k|˜c0c0|0;            k′⟩     =     i(2π)26,26(k                  −     k′)     .      (4.3.18b)
+
+Here          |0;    k⟩     denotes              the              matter              ground              state              times              the              ghost              ground              state
+|↓⟩    ,withmomentum                                     k.The               c0      and˜c0               insertions       are       necessary       for       a
+nonzero                   result.                   For                   example,⟨0;k|0;k′⟩            =      ⟨0;     k|(c0b0           +     b0c0)|0;            k′⟩      =0;
+the        last        equality        follows        becauseb0                                 annihilates        both        the        bra        and        the
+ket.                 The                 factor                  ofiis                needed                in                the                ghost                zero-mode                inner                product                for
+Hermiticity.              Inner              products              of              general              states              are              then              obtained,              as              in              the
+earlier                calculation                (4.1.13),                by                use                of                the                commutation                relations                and                the
+adjoints             (4.3.17).
+     We                  will                  focus                  on                  the                  open                  string;                  the                  closed                  string                  discussion                  is                  en-
+tirely             parallel             but             requires             twice             as             much             writing.             As             in             the             point-particle
+case                   (4.2.33),                   we                   will                   assert                   (and                   later                   show)                   that                   physical                   states                   must
+satisfy             the             additional             condition
+                                                                              b0|ψ⟩          =0         .                                                             (4.3.19)
+This      also      implies
+                                                           L0|ψ⟩={QB,b0}|ψ⟩                                    =0         ,                                           (4.3.20)
+since         QB       and        b0     both             annihilate             |ψ⟩.Theoperator                               L0       is
+                                                                  L0=α′(pµpµ+m2),                                                                                     (4.3.21)
+
+where                                                                (                                                     
+                                                          ∑∞                                              ∑25
+                                       α′m2         =             n      Nbn        +     Ncn       +             Nµn              −      1    .                      (4.3.22)
+
+                                                          n=1                                            µ=0
+Thus                the L0       condition                (4.3.20)                determines                the                mass                of                the                string.                BRST
+invariance,           with           the           extra           condition           (4.3.19),           implies           that           every           string           state
+is               on               the               mass               shell.               We               will               denote               byHˆthe               space               of               states               satisfying
+the             conditions             (4.3.19)             and             (4.3.20).             From             the             commutators        {QB,b0}=L0
+and        [QB,L0]      =      0,        it        follows        thatQB                   takes         Hˆ       into             itself.

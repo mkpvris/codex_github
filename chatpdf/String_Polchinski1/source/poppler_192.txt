@@ -1,0 +1,52 @@
+170                              6 Tree-level amplitudes
+
+which has vanishing action and so gives a delta function. Carrying out
+the integrations leaves
+                                          '             d/2       '               
+                                    6         4π 2 α$                πα$ JI · JI
+        Z[J] = i(2π)d , d (J0 )                                exp −
+                                   I-=0
+                                               ωI2                       ωI2
+                                   '                    −d/2
+                                        −∇2
+               = i(2π)d , d (J0 ) det $ 2 $
+                                       4π α
+                                 2     !                                       3
+                                    1
+                        × exp −          d2 σ d2 σ $ J(σ) · J(σ $ )G$ (σ, σ $ ) .          (6.2.6)
+                                    2
+As discussed in section 2.1 and further in section 3.2, the timelike modes x0I
+give rise to wrong-sign Gaussians and are defined by the contour rotation1
+x0I → −ixdI , I -= 0. The primed Green’s function excludes the zero mode
+contribution,
+                                              ( 2πα$
+                          G$ (σ1 , σ2 ) =                  XI (σ1 )XI (σ2 ) .              (6.2.7)
+                                              I-=0
+                                                     ωI2
+
+It satisfies the di!erential equation
+                       1 2 $                (
+                  −        ∇ G (σ1 , σ2 ) =      XI (σ1 )XI (σ2 )
+                      2πα$                  I-=0
+
+                                               = g −1/2 , 2 (σ1 − σ2 ) − X20 ,             (6.2.8)
+where the completeness of the XI has been used. The ordinary Green’s
+function with a delta function source does not exist. It would correspond
+to the electrostatic potential of a single charge, but on a compact surface
+the field lines from the source have no place to go. The X20 term can be
+thought of as a neutralizing background charge distribution.
+
+
+                                            The sphere
+
+Specializing to the sphere, the solution to the di!erential equation (6.2.8)
+is
+                                     α$
+                 G$ (σ1 , σ2 ) = −      ln |z12 |2 + f(z1 , z̄1 ) + f(z2 , z̄2 ) ,         (6.2.9)
+                                     2
+
+1 A curious factor of i has been inserted into eq. (6.2.6) by hand because it is needed in the
+ S-matrix, but it can be understood formally as arising from the same rotation. If we rotated the
+ entire field X 0 → −iX d , the Jacobian should be 1, by the usual argument about rescaling fields
+ (footnote 1 of the appendix). However, we do not want to rotate x00 , because this mode produces
+ the energy delta function. So we have to rotate it back, giving a factor of i.

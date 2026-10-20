@@ -1,0 +1,47 @@
+110                    3 The Polyakov path integral
+
+the metric at x0 . In a target space with characteristic radius of curvature
+Rc , derivatives of the metric are of order Rc−1 . The e!ective dimensionless
+coupling in the theory is therefore α$1/2 Rc−1 . If the radius of curvature Rc
+is much greater than the characteristic length scale of the string, then this
+coupling is small and perturbation theory in the two-dimensional field
+theory is a useful tool. Notice that in this same regime we can employ
+another tool as well. Since the characteristic length scale is long compared
+to the string, we can ignore the internal structure of the string and use
+low energy effective field theory. String theory enters in determining the
+e!ective low energy action for the fields, as we will soon see. We have also
+implicitly used α$1/2 Rc−1 0 1 when restricting our attention to massless
+backgrounds: when wavelengths are long compared to the string scale,
+massive string states are not created.
+   The nonlinear sigma model (3.7.2) is a renormalizable theory: the fields
+   µ
+Y have dimension zero and so the interactions all have dimension two.
+Nevertheless the couplings, which are the coefficients in the expansion of
+the metric, are infinite in number (unless some symmetry restricts the form
+of the metric). In fact it is more useful to think of the metric function
+itself, rather than its expansion coefficients, as defining the couplings of
+the theory.
+
+
+                               Weyl invariance
+
+We have emphasized that Weyl invariance is essential to the consistency
+of string theory. The action (3.7.6) will define a consistent string theory
+only if the two-dimensional quantum field theory is Weyl-invariant. This
+action happens to be the most general action that is classically invariant
+under a rigid Weyl transformation, with ,ω independent of σ. This is easy
+to see: under a rigid Weyl transformation, the scaling of a term with n
+derivatives will be proportional to 2 − n. Of course, it is necessary also to
+consider local Weyl transformations, under which the Gµν and Bµν terms
+in the action (3.7.6) are classically invariant while the Φ term is not, and to
+include the quantum contributions to the Weyl transformation properties.
+In the limit that Bµν and Φ are small, and Gµν is close to ηµν , we can
+use the results of the previous section to find the Weyl transformation.
+Write Sσ = SP − V1 + . . ., with SP the flat-space action and V1 the vertex
+operator (3.6.14). Then
+
+                       Gµν (X) = ηµν − 4πgc sµν eik·X ,              (3.7.11a)
+                                              ik·X
+                       Bµν (X) = −4πgc aµν e           ,             (3.7.11b)
+                                            ik·X
+                         Φ(X) = −4πgc φe           .                  (3.7.11c)

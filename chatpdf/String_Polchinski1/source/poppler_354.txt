@@ -1,0 +1,50 @@
+332                                           Appendix A
+
+or by expanding the x-dependence in terms of Fourier modes. Thus the
+above derivation of the path integral representation applies to bosonic
+field theory as well.
+   The derivation of the path integral formula treated the continuum
+limit . → 0 rather heuristically. Renormalization theory is the study
+of this limiting process, and is rather well understood. The limit exists
+provided the Lagrangian satisfies certain conditions (renormalizability)
+and provided the coefficients in the Lagrangian (bare couplings) are taken
+to vary appropriately as the limit is taken. The result is independent of
+various choices that must be made, including the operator ordering in
+the Hamiltonian, the precise definition of the measure, and the differences
+between regulators (the limit of piecewise linear paths suggested by the
+figure versus a frequency cutoff on the Fourier modes, for example).1 Being
+local effects these can all be absorbed into the bare couplings. Actually,
+we will evaluate explicitly only a few Gaussian path integrals. We use the
+path integral primarily to derive some general results, such as operator
+equations and sewing relations.
+
+
+                              Relation to the Hilbert space formalism
+
+Starting from the path integral one may cut it open to recover the Hilbert
+space of the theory. In equation (A.1.6), if one writes each of the amplitudes
+as a path integral one finds
+   #                         3 # T      4
+            qf ,T
+       [dq]q ,0 exp i                dtL
+                i
+                                 0
+            #            #                 3 # T     4#                3 # t        4
+                                qf ,T                         q,t
+        =           dq       [dq]q,t exp i         dtL    [dq]q ,0 exp i        dtL     . (A.1.15)
+                                              t                i            0
+
+That is, the path integral on [0, T ] breaks up into separate path integrals
+on [0, t] and [t, T ], plus an ordinary integral over q(t). The boundary
+conditions on paths are denoted by super/subscripts. Note the restriction
+that T ≥ t ≥ 0. One can also replace the intermediate integral with a sum
+over any complete set of states. This cutting (or, inversely, sewing) principle
+is particularly useful on the surfaces of nontrivial topology that arise in
+string theory. There one may cut the surface open along many different
+closed curves; different choices give different Hilbert space representations
+of a given amplitude. This is known as world-sheet duality.
+   Consider now a path integral with the additional insertion of a factor
+
+1 As another example, one can freely rescale fields. The Jacobian is formally a product of separate
+ Jacobians at each point; its logarithm is therefore a sum of a local expression at each point.
+ Regulated, this is just a shift of the bare couplings.

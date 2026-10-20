@@ -1,0 +1,43 @@
+                           5.2 Moduli and Riemann surfaces                                       153
+
+form (5.1.11), where the metric dwdw̄ is fixed and the moduli are encoded
+in the coordinate region. We can formalize this idea as follows.
+   Let us first recall how differentiable manifolds are defined. One covers
+the manifold with a set of overlapping patches, with coordinates σma in the
+mth patch, with a running from 1 to the dimension of the manifold. When
+patches m and n overlap, the coordinates in the two patches are related by
+                                               a
+                                        σma = fmn (σn ) ,                                   (5.2.12)
+where the transition functions fmn are required to be di!erentiable a given
+number of times. For a Riemannian manifold a metric gm,ab (σm ) is also
+given in each patch, with the usual tensor transformation law relating the
+values in the overlaps.
+  For a complex manifold, there are complex coordinates zma in each
+patch, where now a runs from 1 to half the dimension of the manifold.
+The transition functions are required to be holomorphic,
+                                                a
+                                         zma = fmn (zn ) .                                  (5.2.13)
+One can now define holomorphic functions on the manifold, since the
+holomorphicity will not depend on which coordinates zma are used. Just
+as two di!erentiable manifolds are equivalent if there is a one-to-one
+di!erentiable map between them, two complex manifolds are equivalent
+if there is a one-to-one holomorphic map between them. In particular,
+making a holomorphic change of coordinates within each patch gives an
+equivalent surface.
+   In the two-dimensional case (one complex coordinate), a complex man-
+ifold is known as a Riemann surface. In this case there is a one-to-one
+correspondence
+     Riemann surfaces ↔ Riemannian manifolds mod Weyl .                                     (5.2.14)
+On the right we put only ‘mod Weyl’ because ‘mod di!’ is already implicit
+in the definition of a Riemannian manifold. To see this isomorphism, start
+with a Riemannian manifold. We know from our discussion of conformal
+gauge that we can find in each coordinate patch a coordinate zm such that
+                                        ds2 ∝ dzm dz̄m .                                    (5.2.15)
+In neighboring patches the coordinate need not be the same, but because
+ds2 ∝ dzm dz̄m ∝ dzn dz̄n , the transition functions will be holomorphic.1
+This is the map from Riemannian manifolds to complex manifolds in two
+real dimensions. For the inverse map, one can take the metric dzm dz̄m in
+
+1 To be precise, an antiholomorphic transition function is also possible. For the oriented string we
+ forbid this by choosing a standard orientation; for the unoriented string it is allowed. The term
+ Riemann surface in the strict sense refers to an oriented manifold without boundary.

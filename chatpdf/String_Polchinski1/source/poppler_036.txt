@@ -1,0 +1,43 @@
+14                           1 A first look at strings
+
+spacetime, most of the machinery we use in string perturbation theory is
+two-dimensional. From the point of view of the world-sheet, the coordinate
+transformation law (1.2.12) defines X µ (τ, σ) as a scalar field, with µ going
+along for the ride as an internal index. From the two-dimensional point
+of view the Polyakov action describes massless Klein–Gordon scalars X µ
+covariantly coupled to the metric γab . Also from this point of view, the
+Poincaré invariance is an internal symmetry, meaning that it acts on fields
+at fixed τ, σ.
+   Varying γab in the action gives the equation of motion
+                                          Tab = 0 .                               (1.2.24)
+Varying X µ gives the equation of motion
+                 ∂a [(−γ)1/2 γ ab ∂b X µ ] = (−γ)1/2 ∇2 X µ = 0 .                 (1.2.25)
+For world-sheets with boundary there is also a surface term in the variation
+of the action. To be specific, take the coordinate region to be
+                          −∞<τ<∞ ,                   0≤σ≤+.                       (1.2.26)
+We will think of τ as a time variable and σ as spatial, so this is a single
+string propagating without sources. Then
+                          ! ∞     ! +
+                    1
+           δSP =                 dτ       dσ (−γ)1/2 δX µ ∇2 Xµ
+                   2πα"     −∞        0
+                                   ∞       !                 $σ=+
+                               1              1/2    µ σ     $
+                              −       dτ (−γ)     δX  ∂  X µ $     . (1.2.27)
+                             2πα" −∞                           σ=0
+
+In the interior, the equation of motion is as above. The boundary term
+vanishes if
+                          ∂σ X µ (τ, 0) = ∂σ X µ (τ, +) = 0 .                     (1.2.28)
+These are Neumann boundary conditions on X µ . Stated more covariantly,
+                             na ∂a X µ = 0         on ∂M ,                        (1.2.29)
+where na is normal to the boundary ∂M. The ends of the open string
+move freely in spacetime.
+  The surface term in the equation of motion will also vanish if we
+impose
+             X µ (τ, +) = X µ (τ, 0) ,         ∂σ X µ (τ, +) = ∂σ X µ (τ, 0) ,   (1.2.30a)
+             γab (τ, +) = γab (τ, 0) .                                           (1.2.30b)
+That is, the fields are periodic. There is no boundary; the endpoints are
+joined to form a closed loop.
+   The open string boundary condition (1.2.28) and closed string boundary
+condition (1.2.30) are the only possibilities consistent with D-dimensional

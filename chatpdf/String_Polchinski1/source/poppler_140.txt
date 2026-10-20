@@ -1,0 +1,44 @@
+118                    3 The Polyakov path integral
+
+ever, in two dimensions there are many equivalences between seemingly
+di!erent quantum field theories, so that the situation is not clear.
+  It is generally assumed that all string theories based on di!erent CFTs
+but the same world-sheet gauge symmetries and topology are di!erent
+ground states of the same theory. This causes a semantic problem: we
+often refer to strings with di!erent world-sheet Lagrangians as di!erent
+theories, though they are most likely just di!erent vacua in one theory.
+We will take this even further in chapter 14, seeing that all string theories
+appear to be vacua of a single theory.
+  As we develop the techniques of string theory in volume one, we will
+usually take the simplest case of flat 26-dimensional spacetime in explicit
+examples. However, many results will be developed in such a way as to
+apply to the very general string theory we have described above.
+
+                                   Exercises
+3.1 (a) Evaluate the Euler number χ for a flat disk and for a disk with the
+metric of a hemisphere.
+(b) Show that the Euler number of a sphere with b holes is 2 − b. You
+may take any convenient metric on the sphere.
+(c) Extend this to the result 2 − b − 2g for the sphere with b holes and g
+handles.
+3.2 (a) Show that an n-index traceless symmetric tensor in two dimensions
+has exactly two independent components. The traceless condition means
+that the tensor vanishes when any pair of indices is contracted with g ab .
+(b) Find a di!erential operator Pn that takes n-index traceless symmetric
+tensors into (n + 1)-index traceless symmetric tensors.
+(c) Find a di!erential operator PnT that does the reverse.
+(d) For u an (n + 1)-index traceless symmetric tensor and v an n-index
+traceless symmetric tensor, show that with appropriate normalization
+(u, Pn v) = (PnT u, v). The inner product of traceless symmetric tensors of
+any rank is
+                                       !
+                          (t, t$ ) =       d2 σ g 1/2 t · t$ ,
+
+the dot denoting contraction of all indices.
+3.3 (a) Work out the form of the covariant derivative in conformal gauge.
+Show in particular that ∇z reduces to ∂z when acting on a tensor compo-
+nent with all z̄ indices, and vice versa. Since raising or lowering reverses
+z and z̄ indices, this means that it is always possible to work with simple
+derivatives by appropriately positioning the indices.
+(b) Use this to give simple expressions for Pn and PnT .
+3.4 To gain familiarity with the Faddeev–Popov procedure, it is useful to

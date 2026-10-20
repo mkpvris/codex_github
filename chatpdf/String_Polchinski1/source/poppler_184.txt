@@ -1,0 +1,58 @@
+162                           5 The string S-matrix
+
+and holomorphic transition functions, where the metric ĝ(t0 ) is Weyl-
+equivalent to dzm dz̄m in each patch. Consider now a change in the moduli.
+We will first describe this as a change in the metric with fixed transition
+functions, and then convert this to a change in the transition functions
+with fixed metric. In the first description, define the Beltrami differential
+                                        1
+                                  µkab = ĝ bc ∂k ĝac .                         (5.4.7)
+                                        2
+The b insertion for ,tk becomes
+                                 !     #                       $
+                 1             1
+                   (b, µk ) =      d2 z bzz µkz̄z + bz̄z̄ µkzz̄ .                (5.4.8)
+                2π            2π
+In the second description, after a change ,tk in the moduli there will be
+new coordinates in each patch
+                            zm$ = zm + ,tk vkm
+                                            zm
+                                               (zm , z̄m ) .                     (5.4.9)
+                    a is a vector index; note that v a is defined only in
+The superscript on vkm                              km
+the m patch. By the definition of a Riemann surface, dzm$ dz̄m$ is Weyl-
+     th
+
+equivalent to the metric at t0 + ,t,
+                                   #                                    $
+      dzm$ dz̄m$ ∝ dzm dz̄m + ,tk µkzmz̄m dzm dzm + µkz̄mzm dz̄m dz̄m       .   (5.4.10)
+                       a is thus related to the Beltrami di!erential by
+The coordinate change vkm
+                                      z̄m                     zm
+                       µkzmz̄m = ∂zm vkm  ,   µkz̄mzm = ∂z̄m vkm .              (5.4.11)
+                                                                           zm
+This is the infinitesimal version of Beltrami’s equation. It implies that vkm is
+not holomorphic — otherwise, it would not correspond to a change in the
+                 zm
+moduli. Also, vkm     has a holomorphic part not determined by Beltrami’s
+                  z̄m
+equation, and vkm an antiholomorphic part; these just correspond to the
+freedom to make holomorphic reparameterizations within each patch.
+   Integrating by parts, the b insertion (5.4.8) becomes
+                              <
+                              #                                    $
+        1             1 (            zm                z̄m
+          (b, µk ) =            dzm vkm bzm zm − dz̄m vkm  bz̄m z̄m ,           (5.4.12)
+       2π            2πi m Cm
+
+the contour Cm circling the mth patch counterclockwise. By eq. (5.4.9), the
+derivative of the coordinate with respect to the moduli at a given point is
+                              dzm       zm
+                                  = vkm    .               (5.4.13)
+                              dtk
+The change in the transition functions under a change in moduli is
+therefore
+                     9                9
+                ∂zm 99     zm    ∂zm 99 zn   zm    zm
+                        = vkm −         v = vkm − vkn .    (5.4.14)
+                ∂tk 9zn          ∂zn 9t kn

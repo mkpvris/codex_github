@@ -1,0 +1,50 @@
+                   4.3 BRST quantization of the string                     133
+
+Note also the OPE
+                        cm − 26        1         1
+          T (z)jB (0) ∼      4
+                                c(0) + 2 jB (0) + ∂jB (0) ,        (4.3.11)
+                          2z           z         z
+which implies that jB is a tensor only when cm = 26.
+   Let us point out some important features. The missing equation of
+motion is just the vanishing of the generator Tab of the conformal trans-
+formations, the part of the local symmetry group not fixed by the gauge
+choice. This is a general result. When the gauge conditions fix the sym-
+metry completely, one can show that the missing equations of motion are
+trivial due to the gauge invariance of the action. When they do not, so
+that there is a residual symmetry group, the missing equations of motion
+require its generators to vanish. They must vanish in the sense (4.1.2) of
+matrix elements, or more generally in the BRST sense. Denote the gener-
+ators of the residual symmetry group by GI . The GI are called constraints;
+for the string these are Lm and L̃m . They form an algebra
+                             [GI , GJ ] = ig KIJ GK .                  (4.3.12)
+Associated with each generator is a pair of ghosts, bI and cI , where
+                 {cI , bJ } = , IJ ,   {cI , cJ } = {bI , bJ } = 0 .   (4.3.13)
+The general form of the BRST operator, as illustrated by the string
+case (4.3.7), is
+                                       i K I J
+                          QB = cI Gm
+                                   I − g IJ c c bK
+                                  2    2     3
+                                I    m   1 g
+                             = c GI + GI ,                             (4.3.14)
+                                         2
+where Gm
+       I is the matter part of GI and
+
+                               GgI = −ig KIJ cJ bK                     (4.3.15)
+                                g
+is the ghost part. The Gm
+                        I and GI satisfy the same algebra (4.3.12) as the
+GI . Using the commutators (4.3.12) and (4.3.13), one finds
+                 1              1
+           Q2B = {QB , QB } = − g KIJ g MKL cI cJ cL bM = 0 .        (4.3.16)
+                 2              2
+The last equality follows from the GGG Jacobi identity, which requires
+g KIJ g MKL to vanish when antisymmetrized on IJL. We have neglected
+central charge terms; these need to be checked by hand.
+   To reiterate, a constraint algebra is a world-sheet symmetry algebra
+that is required to vanish in physical matrix elements. When we go on to
+generalize the bosonic string theory in volume two, it will be easiest to do
+so directly in terms of the constraint algebra, and we will write the BRST
+charge directly in the form (4.3.14).

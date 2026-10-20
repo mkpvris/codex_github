@@ -1,0 +1,46 @@
+                                                                              3.4                      The              Weyl              anomaly                                                                        91
+
+theory                    there                    is                    a                    nonzero                    renormalization                    groupbeta                   function         in                    each
+theory,              implying              that              the              e!ective              coupling              constant              is              in              fact              a              function
+of               the               length               scale.               Correspondingly,               the               trace               of               the               energy-momentum
+tensor             vanishes             in             the             classical             theory             but             is             nonzero             and             proportional             to
+the             beta             function             when             quantum             e!ects             are             taken             into             account.
+       In          the          previous          section,          we          ignored          the          possibility          of          anomalies.          We          need
+to              check              this:              is              the              gauge-ﬁxed              path              integral     Z[g]reallyindependentof
+the             choice             of             ﬁducial             metric,
+                                                                                        Z     [g.]=                Z[g]?                                                                                                                                                                              (3.4.1)
+
+In              section              4.2              we              will              extend              this              to              more              general              changes               of              gauge.              For
+convenience,              we              omit              the              hat              on      g     henceforth.              We              will              also              be              interested
+in             path             integrals             with             additional             insertions,∫
+
+                                           ⟨    ...       ⟩g     ≡             [dX        db      dc]exp(−S[X,   b,   c,   g])                                           ...        .                        (3.4.2)
+
+Then             we             also             require
+                                                                                    ⟨    ...      ⟩g.       =⟨           ...      ⟩g       .                                                                 (3.4.3)
+We               are               not               at               the               present               time               interested               in               the               details               of               the               insertions
+themselves          —          that          will          be          the          subject          of          the          next          two          sections          —          so          we          will
+restrict             attention             to             gauge             transformations                                         .     vanishing             near             the             positions
+of                the                ﬁelds                in                ‘...’.         That         is,         we         are         asking         that         Weyl         invariance         hold         as
+an        operator        equation.
+       It           is           easy           to           preserve           the           di!           and           Poincare           invariances           in           the           quan-´
+tum           theory.           For           example,           one           may           deﬁne           the           gauge-ﬁxed           path           integral
+using          a          Pauli–Villars          regulator          as          is          done          for          the          harmonic          oscillator          in
+section           A.1,           dividing           by           the           path           integral           for           a           massive           regulator           ﬁeld.
+The          massive          regulator          ﬁeld          can          be          coupled          to          the          metric          in          a          di!-          and
+Po   i   n   c   a   re-invariant                       way.                       However,                       the                       di´∫!-                       and                       Poincare-invariant                       mass´
+term            µ2           d2σg            1/2YµYµ                     for       a       regulator       ﬁeldYµ                                 is            not            Weyl-invariant.            We
+must            therefore            check            Weyl           invariance            by            hand:            does            the            invariance            (3.4.3)
+hold          for          Weyl          transformations?          Any          Weyl          transformation          can          be          obtained
+as            the            result            of            repeated            inﬁnitesimal            transformations,            so            it            is            suﬃcient            to
+study             the             latter.
+       The               energy-momentum               tensor                                         Tab           is               the               inﬁnitesimal               variation               of               the
+path             integral             with             respect             to             the             metric,
+                                                                 1      ∫                                                              ⣨                                   ⟩
+                     ,    ⟨     ...      ⟩       =−                             d2σg           (σ)1/2,g                 ab(σ)                T    ab(σ)           ...                 .                      (3.4.4)
+                                            g                  4π                                                                                                              g
+Classically,                        Tab          comes              entirely              from              the              variation              of              the              action,              and              this
+coincides             with             the             Noether             deﬁnition
+                                                                      ab              classical                  4π                       ,
+                                                                T          (σ)              =              g(σ)1/2               ,g           (σ)S.                                                          (3.4.5)
+                                                                                                                                        ab

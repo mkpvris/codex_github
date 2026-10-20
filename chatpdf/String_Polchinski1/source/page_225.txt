@@ -1,0 +1,52 @@
+                                                                  6.7                      General              results                                                   203
+
+frame.            To            see            how            this            works,            consider            a            holomorphic            operator            of            weight
+h,             whose             Laurent             expansion             is
+                                                                                         ∑∞           On
+                                                                O(z)=             ih                             .                                               (6.7.29)
+                                                                                      n=−∞          zn+h
+
+Its             simple             adjoint             is
+                                                                                           ∑∞            O†
+                                                              O(z)†         =     i−h                       n      .                                             (6.7.30)
+                                                                                         n=−∞          ¯zn+h
+
+Then             the             Euclidean             adjoint             is
+                                                                       ∑∞             O†                      ∑∞          O†
+                         O(z)=             i−h(−z−2)h                                     n       =     ih                    −n      .                          (6.7.31)
+                                                                     n=−∞         z−n−h                     n=−∞          zn+h
+For              an              operator              that              is              Hermitean              in              Minkowski              time,O†=O,andso
+                                                                             3                                                              −n               n
+this      operator      is      also      Hermiteanunder                                         O.TheEuclideanadjoint(6.7.28)
+conjugates               all       explicit            factors               of i,butleaves                     zand¯zindices               unchanged.
+This                is                its                whole                e!ect,                other                than                an                overall                factor                (−1)Na(Na−1)/2from
+reversing              the              order              of              anticommuting              ﬁelds;              hereNa    is              the              total              number
+of             anticommuting             ﬁelds             in             the             operator.
+     This               is               the               natural               conformally               invariant               operation               of               conjugation,               so
+it             must             be             that
+                                                                       ⟨⟨Ai|         =     K⟨A         i|                                                        (6.7.32)
+for              some             constant    K.             For              a             direct             demonstration,              the             best              we             have             come
+up             with             is
+                                   ⟨⟨  i  | j  ⟩≡⟨⟨1|A′(∞,∞)|j⟩=K⟨1|A′(∞,∞)|j⟩
+                                                                       i                                              i
+                                                    =K⟨1|Ai(0,                     0)†|j⟩         =     K⟨j|Ai(0,                0)|1⟩∗
+                                                    =     K⟨j|i⟩∗            =     K⟨i|j⟩          .                                                             (6.7.33)
+
+The                       only                       step                       here                       that                       is                       not                       either                       a                       deﬁnition                       or                       obvious                       is                       the
+assumption              of              proportionality,                    ⟨⟨1|     =     K⟨1|.Thismustholdbecause                                                    |1⟩is
+the     uniqueSL(2,C)-invariant             state.
+     Fo  r                      t   h   eXCFT                   we                   have                   seen                   thatKX=iCX.                   For                   the                   ghost                   CFT,                   the
+                                                                                                                  S2                                          g
+Laurent               expansion               of               the               amplitude               (6.3.4)               gives⟨⟨0|˜c0c0|0⟩=    −CS2         ,where
+|0⟩=˜c1c1|1⟩.      The      Hermitean      inner      product      was      deﬁned      in      eq.      (4.3.18)      as
+⟨0|˜c0c0|0⟩=i,so                          Kg=iCg.
+                                                              S2
+     Except            for            theis,            which            are            absent            in            a            unitary            CFT,            one            can            setK=1
+by       adding       an       Euler       number       term       to       the       action.       In       a       Hermitean       basis       of
+operators,        the        two        inner        products        are        then        identical,        and        the        distinction
+
+
+
+ 3Because        its        Laurent        expansion        has        no        factor        ofi,        the        Faddeev–Popovc            ghost        is        actually
+    anti-Hermitean      under      the      Euclidean      adjoint.      This      is      due      to      an      inconvenient      conﬂict      between
+    conventions,         and         has         no         signiﬁcance.

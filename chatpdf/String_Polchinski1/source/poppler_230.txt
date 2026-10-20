@@ -1,0 +1,47 @@
+208                              7 One-loop amplitudes
+
+                                        The Möbius strip
+The Möbius strip M2 is sewn from a strip with a twist by Ω,
+                         0 ≤ Re w ≤ π ,           w∼
+                                                   = −w̄ + π + 2πit .      (7.1.11)
+Again the modulus t runs over 0 < t < ∞ and the only CKV is the , 2 -
+translation. It can be obtained from the torus with τ = 2it by identifying
+under the two involutions
+                         w % = −w̄          and   w % = w + π(2it + 1) .   (7.1.12)
+The Möbius strip can be thought of as a disk with a cross-cap, but again
+we defer this description.
+
+
+                                7.2          CFT on the torus
+
+                                        Scalar correlators
+As in the case of the sphere, we start with the Green’s function (6.2.7),
+satisfying
+                2¯ %                                               1
+                   ∂∂G (w, w̄; w % , w̄ % ) = −2πδ 2 (w − w % ) +      .    (7.2.1)
+                α%                                                4πτ2
+The Green’s function is periodic in both directions on the torus, and aside
+from the source and the background charge term it would be the sum of
+holomorphic and antiholomorphic functions. These properties identify it
+as being associated with the theta functions, whose properties are given
+at the end of this section. In particular we guess
+                                                      8     2        38
+                     %          %      α% 8
+                                        %       w − w % 88 882
+                 G (w, w̄; w , w̄ ) ∼ − ln 88ϑ1          8τ 8 .             (7.2.2)
+                                       2          2π
+The function ϑ1 vanishes linearly when its first argument goes to zero,
+giving the correct behavior as w → w % . Elsewhere the logarithm is the
+sum of holomorphic and antiholomorphic functions and so is annihilated
+    ¯ However, this function is not quite doubly periodic owing to the
+by ∂∂.
+quasiperiodicity (7.2.32b) — it changes by −α% [Im(w − w % ) + πτ2 ] under
+w → w + 2πτ. Also, the background charge is missing. Both properties are
+easily corrected:
+                                    8       2          38
+      %     %    %      α% 88   w − w % 88 882      [Im(w − w % )]2
+  G (w, w̄; w , w̄ ) = − ln 8ϑ1          8 τ 8 + α%                 + k(τ, τ̄) .
+                        2         2π                    4πτ2
+                                                                         (7.2.3)
+The function k(τ, τ̄) is determined by orthogonality to X0 , but as in the
+case of the sphere it drops out due to spacetime momentum conservation.

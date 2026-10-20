@@ -1,0 +1,47 @@
+                                             7.2                      CFT              on              the              torus215
+                                                  1/2                     ∑∞                  2
+            ϑ10(ν,   τ  )=    ϑ2(ν|τ)=          ϑ            (ν,   τ)=             q(n−1/2)      /2zn−1/2       ,
+                                                      0                   n=−∞
+                                                                                                              (7.2.37c)
+         ϑ    (ν,   τ)=    −ϑ     (ν|τ)=        ϑ   1/2      (ν,   τ)
+           11                    1                  1/2
+                                                      ∑∞
+                                           =    −i           (−1)nq(n−1/2)2/2zn−1/2                .            (7.2.37d)
+
+                                                     n=−∞
+These             have             the             product             representations
+                           ∏∞
+       ϑ00(ν,   τ  )=           (1   −   qm)(1        +zqm−1/2)(1        +   z−1qm−1/2)          ,              (7.2.38a)
+
+                           m=1
+                           ∏∞
+       ϑ01(ν,   τ  )=           (1   −   qm)(1     −   zqm−1/2)(1        −   z−1qm−1/2)          ,              (7.2.38b)
+
+                           m=1
+                                                            ∏∞
+       ϑ10(ν,   τ  )=2exp(           πiτ/4)      cos  πν         (1  −   qm)(1        +zqm)(1        + z−1qm)       ,
+
+                                                           m=1                                                  (7.2.38c)
+                                                              ∏∞
+       ϑ11(ν,   τ  )=      −2exp(πiτ/4)      sin        πν         (1  −   qm)(1     −   zqm)(1      −   z−1qm)       .
+
+                                                             m=1                                                (7.2.38d)
+
+Their             modular             transformations             are
+                                  ϑ00(ν,   τ  +1)   =       ϑ01(ν,   τ  )  ,                                    (7.2.39a)
+                                  ϑ01(ν,   τ  +1)   =       ϑ00(ν,   τ  )  ,                                    (7.2.39b)
+                                  ϑ10(ν,   τ  +1)   =   exp(πi/4)ϑ10(ν,   τ             )  ,                    (7.2.39c)
+                                  ϑ11(ν,   τ  +1)   =   exp(πi/4)ϑ11(ν,   τ             )  ,                    (7.2.39d)
+and
+                     ϑ00(ν/τ,      −1/τ     )=(      −iτ)1/2exp(π iν          2/τ  )ϑ00(ν,   τ   ) ,            (7.2.40a)
+                     ϑ01(ν/τ,      −1/τ     )=(      −iτ)1/2exp(π iν          2/τ  )ϑ10(ν,   τ   ) ,            (7.2.40b)
+                     ϑ10(ν/τ,      −1/τ     )=(      −iτ)1/2exp(π iν          2/τ  )ϑ01(ν,   τ   ) ,            (7.2.40c)
+                     ϑ11(ν/τ,      −1/τ     )=     −i(−iτ)1/2exp(π iν             2/τ   )ϑ11(ν,   τ  )  .       (7.2.40d)
+
+We             will             encounter             these             functions             more             extensively             in             the             superstring.
+    The             theta             function             satisﬁes             Jacobi’s             ‘abstruse             identity,’             a             special             case             of
+a             quartic             identity             of             Riemann,
+                                 ϑ4    (0,τ  )−ϑ4        (0,τ  )−ϑ4        (0,τ   )=0       .                     (7.2.41)
+                                   00                 01                10
+No t e                a l s o                t h a t
+                                                   ϑ11(0,τ     )=0       .                                        (7.2.42)

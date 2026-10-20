@@ -1,0 +1,44 @@
+270               8 Toroidal compactification and T -duality
+
+massless states because strings that are stretched between these branes can
+have vanishing length: the *X %25 in the mass formula (8.6.20) vanishes
+for n = 0 if both i and j are in this set of r. Thus, there are r2 vectors,
+forming the adjoint of a U(r) gauge group. This is just as found in the
+dual Wilson line picture. It is striking, however, that there will also be
+r2 massless scalars from the components normal to the D-brane. We will
+discuss the significance of this below.
+
+                              The D-brane action
+The massless fields on the world-volume of a Dp-brane are a U(1) vector
+plus 25 − p world-brane scalars describing the fluctuations. The low energy
+e!ective action for this system is as always a very useful thing to consider.
+We now take the dual radius R % to infinity, focusing on one D-brane
+in the resulting 26-dimensional spacetime. The world-brane fields are in
+interaction with the massless closed string fields, whose action has already
+been discussed in section 3.7. Introduce coordinates ξ a , a = 0, . . . p on the
+brane. The fields on the brane are the embedding X µ (ξ) and the gauge
+field Aa (ξ). We claim that the action is
+                  $
+      S p = −Tp       dp+1 ξ e−Φ [− det(Gab + Bab + 2πα% Fab )]1/2 ,       (8.7.2)
+
+with Tp a constant to be determined later. Here
+               ∂X µ ∂X ν                            ∂X µ ∂X ν
+   Gab (ξ) =             Gµν (X(ξ)) ,   Bab (ξ) =             Bµν (X(ξ))   (8.7.3)
+               ∂ξ a ∂ξ b                            ∂ξ a ∂ξ b
+are the induced metric and antisymmetric tensor on the brane.
+   All features of the action (8.7.2) can be understood from general rea-
+soning. Considering first just the spacetime metric and the embedding, the
+simplest and lowest-derivative coordinate-invariant action is the integral
+of (− det Gab )1/2 , the world-volume. Note that this term has an implicit
+dependence on X µ (ξ) through the induced fields (8.7.3). Expanded around
+a flat D-brane it gives the action for the fluctuations, just as the Nambu–
+Goto action describes the fluctuations of a string.
+   The dilaton dependence e−Φ ∝ gc−1 arises because this is an open string
+tree-level action. The self-interactions of the open string fields, and their
+couplings to the closed string fields, arise first from the disk.
+   The dependence on Fab can be understood by using T -duality. Consider
+a D-brane that is extended in the X 1 - and X 2 -directions, with the other
+dimensions unspecified, and let there be a constant gauge field F12 on it. Go
+to the gauge A2 = X 1 F12 . Now take the T -dual along the 2-direction. The
+Neumann condition in this direction is replaced by a Dirichlet condition,
+so the D-brane loses a dimension. However, the T -duality relation (8.6.18)

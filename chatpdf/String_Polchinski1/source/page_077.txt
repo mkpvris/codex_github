@@ -1,0 +1,46 @@
+                                                                               2.6                      The              Virasoro              algebra                                                                                  55
+
+
+
+
+
+
+
+
+                                                                  z=0
+                                                                              C                                                                                                                                                                         C 3C 21C 2
+                                                                                                                                                             z2
+                                                                                                                                                          C 1        C 3
+             (a)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                (b)
+
+Fig.          2.4.                                (a)          Contours          centered          on   z    =0.(b)Forgiven                                         z2     on     contourC2,     contour
+C1−C3                    is            contracted.
+
+is             given             by             the             residue             of             the             OPE,
+                                                                                                  ∮            dz
+                                                [Q         ,Q          ]{C           }    =                           2    Res                          j     (z       )j      (z       )    .                          (2.6.14)
+                                                        1           2             2                   C        2πi                     z1→z2               1        1       2        2
+                                                                                                          2
+This                contour                argument                allows                us                to                pass                back                and                forth                between                OPEs
+and           commutation           relations.           Let           us           emphasize           this:           for           conserved           currents,
+knowing                     the                     singular                     terms                     in                     the                     OPE                     is                     equivalent                     to                     knowing                     the
+commutator                     algebra                     of                     the                     corresponding                     charges.                     The                     calculation                     of
+ﬁgure              2.4              also              applies              with              the              conserved              charge                      Q2{C2}                     replaced              by              any
+op erator,
+                   [Q,        A(z             ,  ¯z    )]           =           Res                 j(z         )A(z               ,¯z      )=             1δA(z,¯z                           ).                        (2.6.15)
+                                           2        2                              z1→z2                     1                  2        2                i.                      2        2
+This         is         just         the         familiar         statement         that         a         chargeQ                                                                 generates         the         cor-
+responding                     transformation                                               δ.                     Similarly                     for                     the                     contour                     integral                     of                     an
+antiholomorphic             current
+                                                                                                                          ∮           d¯z
+                                                                                       Q˜{C}               =       −                2πi          ˜,                                                                    (2.6.16)
+                                                                                                                              C
+the     Ward     identity     and     contour     argument     imply
+                   [Q,˜A(z                    ,  ¯z    )]           =  Res                         ˜(¯z        )A(z               ,¯z      )=             1δA(z,¯z                           ).                        (2.6.17)
+                                           2        2                              ¯z1→¯z2                   1                  2        2                i.                      2        2
+       Apply      this      to      the      Virasoro      generators      (2.6.6),      wherejm(z)=                                                                                                        zm+1T                (z):
+          Resz             →z          zm+1T                (z1)         zn+1T(z2)
+                        1          2      1                                 2            (                                                                                                   
+                     =Res                                  zm+1zn+1                                 c          +          2      T     (z       )+              1      ∂T        (z       )
+                                          z1→z2               1              2                 2z4                     z2                    2               z12                       2
+                                                                                                      12                  12

@@ -1,0 +1,48 @@
+156                                                                      5ThestringS-matrix
+                                   ∫
+                    =nR                   dµ,t   d         κx[d/            ′  d,  σ      ]
+                                              [                                                                                      ∑                                       
+                               ×     exp         2πi      (/′,2Pˆ1,σ                    −     ,t    k∂kgˆ)+2                  πi                  xai,σa(σˆi)                      ,            (5.3.6)
+
+                                                                                                                                   (a,i)∈f
+the               inner               product               in               the               second               line               having               been               deﬁned               in               exercise               3.2.
+We             have             followed             the             same             steps             as             in             the             local             discussion             in             section             3.3,
+writing           the           delta           functions           and           functionals           as           integrals           over                             x    and          /ab       and
+then             integrating             out               ,ω         to               obtain               the               constraint               that/′       be             traceless.
+                                                                                                                                                             ab
+      As               before,               invert               the               integral               (5.3.6)               by               replacing               all               bosonic               variables
+with             Grassmann             variables:
+                                                                                       ,σa         →        ca      ,                                                                       (5.3.7a)
+                                                                                        /ab′       →        bab        ,                                                                    (5.3.7b)
+                                                                                         xai       →        ηai       ,                                                                      (5.3.7c)
+                                                                                        ,t    k    →        ξk       .                                                                      (5.3.7d)
+
+Then             with             a             convenient             normalization             of             the             ﬁelds,
+                                                   1      ∫
+             ∆FP(g,ˆ            σˆ)=                            [db      dc]        dµξd          κη
+                                                 nR                              [                                                                                                              
+                                                                 ×exp                −       1     (b,     2Pˆ       c   −      ξk∂         gˆ)+             ∑           η      ca(σˆ         )
+                                                                                           4π                     1                       k                                 ai              i
+                                                                                                                                                          (a,i)∈f
+                                                   1      ∫                                                     ∏µ          1                            ∏
+                                         =                      [db      dc]exp(−Sg)                                              (b,       ∂kgˆ)                 ca(σˆi)           .           (5.3.8)
+                                                 nR                                                            k=1        4π                          (a,i)∈f
+
+In                the                ﬁnal                line                we                have                integrated                over                the                Grassmann                parametersηai
+and         ξk.
+      The              appropriate              measure              for              integration              on              moduli              space              is              generated
+by              this              ghost              path              integral              with              insertions.              We              will              not              try              to              keep              track
+of                 the                 overall                 sign                 at                 intermediate                 steps;                 since                 this                 is                 supposed                 to                 be                 a
+Jacobian,                 we                 implicitly                 choose                 the                 overall                 sign                 to                 give                 a                 positive                 result.
+The             full             expression             for             the             S-matrix             is             then
+                                                               ∑             ∫        dµt       ∫
+         Sj1...jn(k1,...,k                     n)=                                     n              [dφ      db      dc      ]exp(−Sm−Sg−λχ)
+                                                             compact             F        R
+                                                            topologies
+                                   ∏           ∫                ∏µ          1                             ∏                          ∏n
+                           ×                         dσ     ia                    (b,       ∂kgˆ)                   ca(σˆi)                   gˆ(σi)1/2Vji(ki,σ                           i).
+                                (a,i)̸∈f                        k=1       4π                           (a,i)∈f                        i=1
+                                                                                                                                                                                                (5.3.9)
+This         result         extends         readily         to         all         bosonic         string         theories         —         closed         and         open,
+oriented            and            unoriented            —            the            only            di!erence            being            which            topologies            are
+included                and                which                vertex                operators                allowed.                Eq.                (5.3.9)                is                a                useful                and

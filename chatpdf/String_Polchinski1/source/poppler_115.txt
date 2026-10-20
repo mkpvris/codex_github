@@ -1,0 +1,47 @@
+                             3.4 The Weyl anomaly                                93
+
+where we have used the fact that the metric is covariantly constant. Then
+by conservation of Tab ,
+                                            a1
+                     ∇z Tzz = −∇z̄ Tz̄z = − ∂z R .                (3.4.11)
+                                            2
+To fix a1 we compare the Weyl transformations on the left and right. The
+Weyl transformation (3.3.5) of the right is
+                           a1 ∂z ∇2 ,ω ≈ 4a1 ∂z2 ∂z̄ ,ω ,                  (3.4.12)
+where we have expanded around a flat world-sheet. To get the Weyl
+transformation of Tzz we use first the conformal transformation (2.4.24),
+                      c
+    1−1 ,Tzz (z) = − ∂z3 v z (z) − 2∂z v z (z)Tzz (z) − v z (z)∂z Tzz (z) . (3.4.13)
+                    12
+From the discussion in section 3.3, this conformal transformation consists
+of a coordinate transformation ,z = 1v plus a Weyl transformation
+2,ω = 1∂v + 1(∂v)∗ . The last two terms in the variation are the coordinate
+transformation of the tensor, so the Weyl transformation, to leading order
+around flat space, is
+                                             c
+                              ,W Tzz = − ∂z2 ,ω .                           (3.4.14)
+                                             6
+Acting with ∂z = 2∂z̄ and comparing with the transformation (3.4.12)
+gives
+                                                      c
+                        c = −12a1 , T aa = − R .                            (3.4.15)
+                                                     12
+   Let us derive this again by a slightly longer route, along which we
+obtain a useful intermediate result. In conformal gauge,
+                           R = −2 exp(−2ω)∂a ∂a ω ,                       (3.4.16a)
+                          ∇2 = exp(−2ω)∂a ∂a .                            (3.4.16b)
+By the contraction with two lowered indices we mean , ab ∂a ∂b . The Weyl
+variation (3.4.6) of Z[g] becomes
+                                                  !
+                          a1
+       ,W Z[exp(2ω),] = Z[exp(2ω),] d2 σ ,ω∂a ∂a ω ,            (3.4.17)
+                          π
+where ‘exp(2ω),’ denotes conformal gauge. This integrates immediately to
+                                      2       !                  3
+                                   a1                 2
+          Z[exp(2ω),] = Z[,] exp −                d σ ∂a ω∂a ω       .     (3.4.18)
+                                   2π
+Since every metric is di!-equivalent to a conformal metric, eq. (3.4.18)
+actually determines the complete metric-dependence of Z[g]. We need to
+find the di!-invariant expression that reduces to eq. (3.4.18) in conformal
+gauge. Using the relations (3.4.16), one verifies that the desired expression

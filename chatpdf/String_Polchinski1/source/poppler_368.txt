@@ -1,0 +1,31 @@
+346                                 Appendix A
+
+integral on [0, U] by using a suitable mode expansion:
+                             #
+                                 [dq dq ∗ ]θ exp(−SE ) ,
+
+where the integral is to run over all paths such that q(U) = q(0)eiθ . Again
+compare with the answer obtained by summing over states: it is useful
+here to form complex combinations of oscillators, a1 ± ia2 . This is a more
+exotic version of exercise A.1, and arises in various string theories such as
+orbifolds.
+A.3 Consider a free scalar field X in two dimensions, with action
+                         #     !                                "
+                   1       2                                2 2
+             S=          d   σ   ∂ 1 X∂ 1 X + ∂ 2 X∂ 2 X + m X    .
+                 4πα!
+Evaluate the path integral with both coordinates periodic,
+                        0 ≤ σ1 ≤ 2π ,        0 ≤ σ2 ≤ T .
+[Expanding the spatial dependence in Fourier modes, the answer takes
+the form of an infinite product of harmonic oscillator traces.]
+A.4 Consider a free particle on a circle,
+                                           1 ∂2
+                                   H=−           .
+                                           2 ∂φ2
+By means of path integrals, evaluate %φf , T |φi , 0&. Be careful: there are
+topologically inequivalent paths, distinguished by the number of times
+they wind around the circle.
+A.5 The fermionic version of exercise A.1: evaluate the fermionic path
+integral (A.2.23) and the corresponding antiperiodic path integral by using
+a complete set of periodic or antiperiodic functions, and compare with
+the sum over states.

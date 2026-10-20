@@ -1,0 +1,45 @@
+                                      Exercises                                   143
+
+form |ψ, ↓+, and so it is useful to know that every BRST class contains at
+least one state in which the ghost modes are unexcited. We will call these
+OCQ-type states.
+   The OCQ physical state condition (4.1.5) requires that the matter state
+be a highest weight state with L0 = 1. The corresponding vertex operator
+is a weight-1 tensor field Vm constructed from the matter fields. Including
+the ghost state | ↓+, the full vertex operator is cVm . For the closed string
+the full vertex operator is c̃cVm with Vm a (1, 1) tensor. The matter part
+of the vertex operator is the same as found in the Polyakov formalism in
+section 3.6, while the ghost part has a simple interpretation that we will
+encounter in the next chapter.
+   Eq. (4.4.19) defines an OCQ-physical state in each cohomology class.
+For the special case of flat spacetime this state can be constructed more
+explicitly by using the Del Giudice–Di Vecchia–Fubini (DDF) operators.
+To explain these we will need to develop some more vertex operator
+technology, so this is deferred to chapter 8.
+
+
+                                      Exercises
+4.1 Extend the OCQ, for A = −1 and general D, to the second excited
+level of the open string. Verify the assertions made in the text about extra
+positive- and negative-norm states.
+4.2 (a) In the OCQ, show that the state Lm    −1 |χ+ is physical (and therefore
+null) if |χ+ is a highest weight state with Lm0 = 0.
+                                  3 m m
+(b) Show that the state (Lm  −2 +  L   L
+                                  2 −1 −1  )|χ+ is physical and null if |χ+ is a
+                              m
+highest weight state with L0 = −1.
+4.3 By writing out terms, demonstrate the Jacobi identity
+          { [QB , Lm ] , bn } − { [Lm , bn ] , QB } − [ {bn , QB } , Lm ] = 0 .
+This is the sum of cyclic permutations, with commutators or anticom-
+mutators as appropriate, and minus signs from anticommutation. Use the
+Jacobi identity and the (anti)commutators (2.6.24) and (4.3.6) of bn with
+Ln and QB to show that { [QB , Lm ] , bn } vanishes when the total central
+charge is zero. This implies that [QB , Lm ] contains no c modes. However,
+this commutator has N g = 1, and so it must vanish: the charge QB is
+conformally invariant. Now use the QB QB bn Jacobi identity in the same
+way to show that QB is nilpotent when the total central charge is zero.
+4.4 In more general situations, one encounters graded Lie algebras, with
+bosonic generators (fermion number FI even) and fermionic generators
+(FI odd). The algebra of constraints is
+                      GI GJ − (−1)FI FJ GJ GI = ig KIJ GK .

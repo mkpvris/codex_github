@@ -1,0 +1,46 @@
+                    4.3 BRST quantization of the string                   131
+
+That is, physical states must satisfy the mass-shell condition, but we have
+two copies of the expected spectrum. In fact, only states |k, ↓+ satisfying
+the additional condition
+                                   b|ψ+ = 0                           (4.2.33)
+appear in physical amplitudes. The origin of this additional condition is
+kinematic. For k 2 +m2 -= 0, the states |k, ↑+ are exact — they are orthogonal
+to all physical states and their amplitudes must vanish identically. So the
+amplitudes can only be proportional to ,(k 2 + m2 ). But amplitudes in field
+theory and in string theory, while they may have poles and cuts, never
+have delta functions (except in D = 2 where the kinematics is special). So
+they must vanish identically.
+
+                   4.3    BRST quantization of the string
+
+In string theory, the BRST transformation is
+                                 ¯ µ,
+              ,B X µ = i1(c∂ + c̃∂)X                                  (4.3.1a)
+                ,B b = i1(T X + T g ) , ,B b̃ = i1(T̃ X + T̃ g ) ,    (4.3.1b)
+                                           ¯ .
+                ,B c = i1c∂c , ,B c̃ = i1c̃∂c̃                        (4.3.1c)
+The reader can derive this following the point-particle example. To the
+sum of the Polyakov and ghost actions, add the gauge-fixing term
+                            !
+                          i
+                              d2 σ g 1/2 B ab (,ab − gab ) .         (4.3.2)
+                        4π
+The transformation ,B bab = 1Bab becomes (4.3.1) after integrating over Bab
+and using the gab equation of motion to replace Bab in the transformation.
+The Weyl ghost is just a Lagrange multiplier, making bab traceless. Again,
+the reader can check nilpotence up to the equations of motion. The
+similarity between the string BRST transformation (4.3.1) and the particle
+case (4.2.25) is evident. Replacing the X µ with a general matter CFT, the
+BRST transformation of the matter fields is a conformal transformation
+with v(z) = c(z), while T m replaces T X in the transformation of b.
+  Noether’s theorem gives the BRST current
+                                   1            3
+                         jB = cT m + : cT g : + ∂2 c ,
+                                   2            2
+                              m               3 2
+                         = cT + : bc∂c : + ∂ c ,                   (4.3.3)
+                                              2
+and correspondingly for ̃B . The final term in the current is a total
+derivative and does not contribute to the BRST charge; it has been added
+by hand to make the BRST current a tensor. The OPEs of the BRST

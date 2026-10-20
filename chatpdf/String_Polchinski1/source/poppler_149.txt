@@ -1,0 +1,39 @@
+                            4.2 BRST quantization                           127
+
+This transformation mixes commuting and anticommuting objects, so that
+1 must be taken to be anticommuting. There is a conserved ghost number,
+which is +1 for cα , −1 for bA and 1, and 0 for all other fields. The original
+action S1 is invariant by itself, because the action of ,B on φi is just a
+gauge transformation with parameter i1cα . The variation of S2 cancels the
+variation of bA in S3 , while the variations of ,α F A and cα in S3 cancel.
+  The second key property is that
+                           ,B (bA F A ) = i1(S2 + S3 ) .                 (4.2.7)
+Now consider a small change ,F in the gauge-fixing condition. The change
+in the gauge-fixing and ghost actions gives
+                     1,*f|i+ = i*f|,B (bA ,F A )|i+
+                              = −1*f| { QB , bA ,F A } |i+ ,             (4.2.8)
+where we have written the BRST variation as an anticommutator with
+the corresponding conserved charge QB .
+  Therefore, physical states must satisfy
+                          *ψ|{ QB , bA ,F A }|ψ $ + = 0 .                (4.2.9)
+In order for this to hold for arbitrary ,F, it must be that
+                             QB |ψ+ = QB |ψ $ + = 0 .                   (4.2.10)
+This is the essential condition: physical states must be BRST-invariant. We
+have assumed that Q†B = QB . There are several ways to see that this must
+indeed be the case. One is that if Q†B were di!erent, it would have to be
+some other symmetry, and there is no candidate. A better argument is
+that the fields cα and bA are like anticommuting versions of the gauge
+parameter 1α and Lagrange multiplier BA , and so inherit their reality
+properties.
+  As an aside, we may also add to the action a term proportional to
+                      1−1 ,B (bA BB M AB ) = −BA BB M AB                (4.2.11)
+for any constant matrix M AB . By the above argument, amplitudes between
+physical states are una!ected. The integral over BA now produces a
+Gaussian rather than a delta function: these are the Gaussian-averaged
+gauges, which include for example the covariant α-gauges of gauge theory.
+  There is one more key idea. In order to move around in the space of
+gauge choices, the BRST charge must remain conserved. Thus it must
+commute with the change in the Hamiltonian,
+        0 = [ QB , { QB , bA ,F A } ]
+          = Q2B bA ,F A − QB bA ,F A QB + QB bA ,F A QB − bA ,F A Q2B
+          = [ Q2B , bA ,F A ] .                                         (4.2.12)

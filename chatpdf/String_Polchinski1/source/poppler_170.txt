@@ -1,0 +1,46 @@
+148                          5 The string S-matrix
+
+conjugation of τ and degenerate for τ real, so we can restrict attention to
+Im τ > 0. As in the case (5.1.5) of the circle, we can put these parameters
+either in the metric (5.1.9) or the periodicity (5.1.11). The parameter τ
+is known as a Teichmüller parameter or more commonly a modulus. A
+di!erence from the point-particle case is that there is no simple invariant
+expression for τ analogous to the invariant length of the circle.
+   There is some additional redundancy, which does not have an analog
+in the point-particle case. The value τ + 1 generates the same set of
+identifications (5.1.11) as τ, replacing (m, n) → (m−n, n). So also does −1/τ,
+defining w $ = τw and replacing (m, n) → (n, −m). Repeated application of
+these two transformations,
+                    T : τ$ = τ + 1 ,            S : τ$ = −1/τ ,          (5.1.12)
+generates
+                                              aτ + b
+                                      τ$ =                               (5.1.13)
+                                              cτ + d
+for all integer a, b, c, d such that ad − bc = 1.
+  We can also think about this as follows. The transformation
+                         &               "         %&          
+                             σ1               d b        σ $1
+                                      =                                  (5.1.14)
+                             σ2               c a        σ $2
+
+takes the metric (5.1.9) for σ into a metric of the same form in σ $ but with
+the modulus τ$ . This is a di!eomorphism of the torus. It is one-to-one
+as a consequence of ad − bc = 1 and it preserves the periodicity (5.1.8).
+However, it cannot be obtained from the identity by successive infinitesimal
+transformations — it is a so-called large coordinate transformation. The
+curve A in the coordinate σ maps to a curve in the σ $ coordinate that runs
+a times in the A$ direction and −c times in the B $ direction. These large
+coordinate transformations form the group S L(2, Z), integer-valued 2 × 2
+matrices with unit determinant. The group on the τ-plane is S L(2, Z)/Z2 =
+P S L(2, Z), because τ$ is unchanged if all the signs of a, b, c, d are reversed.
+The group of transformations (5.1.14) is known as the modular group.
+   Using the modular transformations (5.1.13), it can be shown that every
+τ is equivalent to exactly one point in the region F0 shown in figure 5.2,
+                         1           1
+                         − ≤ Re τ ≤ , |τ| ≥ 1 ,                   (5.1.15)
+                         2           2
+except on the boundaries which are identified as shown in the figure. This
+is called a fundamental region for the upper half-plane mod P S L(2, Z).
+Because of the identifications one should think of F0 as being rolled
+up, and open only at Im τ → ∞. The fundamental region F0 is one
+representation of the moduli space of (di!×Weyl)-inequivalent metrics.

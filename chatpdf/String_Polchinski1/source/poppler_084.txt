@@ -1,0 +1,52 @@
+62                              2 Conformal field theory
+
+The constant can also be obtained by working out the relation between
+: : and ◦◦ ◦◦ for the CFT (exercises 2.13, 2.14).
+   For the ghost number current (2.5.14), j = − : bc :, the charge is
+                                           ! 2π
+                                   1
+                      Ng = −                      dw jw
+                                  2πi       0
+                                ∞
+                                                                          1
+                           =          (c−n bn − b−n cn ) + c0 b0 −           .        (2.7.22)
+                                n=1
+                                                                           2
+It satisfies
+                        [N g , bm ] = −bm ,            [N g , cm ] = cm ,             (2.7.23)
+and so counts the number of c minus the number of b excitations. The
+ground states have ghost number ± 12 :
+                               1                 1
+                   N g | ↓, = − | ↓, , N g | ↑, = | ↑, .         (2.7.24)
+                               2                 2
+This depends on the value of the ordering constant, determined in exer-
+cise 2.13, but one might guess it on the grounds that the average ghost
+number of the ground states should be zero: the ghost number changes
+sign under b ↔ c.
+   The βγ theory is similar; we leave the details until we need them in
+chapter 10.
+
+                                           Open strings
+In the open string, the Neumann boundary condition becomes ∂z X µ =
+∂z̄ X µ on the real axis. There is only one set of modes, the boundary
+condition requiring αµm = α̃µm in the expansions (2.7.1). The spacetime mo-
+mentum integral (2.7.3) runs only over a semi-circle, so the normalization
+is now
+                                       αµ0 = (2α" )1/2 pµ .                           (2.7.25)
+The expansion for X µ is then
+                                                % " &1/2 
+                                                         ∞
+                          " µ                     α               αµm −m
+        µ        µ
+     X (z, z̄) = x − iα p ln |z| + i   2
+                                                                     (z + z̄ −m ) .   (2.7.26)
+                                                  2          m=−∞ m
+                                                              m-=0
+
+Also,
+                                                      ∞
+                                                       µ
+                                L0 = α" p2 +                α−n αµn .                 (2.7.27)
+                                                      n=1
+The commutators are as before,
+                     [αµm , ανn ] = mδm,−n η µν ,           [xµ , pν ] = iη µν .      (2.7.28)

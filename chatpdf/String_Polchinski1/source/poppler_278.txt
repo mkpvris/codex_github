@@ -1,0 +1,43 @@
+256              8 Toroidal compactification and T -duality
+
+                                 8.5   Orbifolds
+
+Rather than the periodic identification of X 25 , consider instead identifying
+points under the reflection
+                                 X 25 ∼
+                                      = −X 25 .                         (8.5.1)
+Now a fundamental region is the half-line X 25 ≥ 0, and the hyperplane
+X 25 = 0 becomes a boundary. This hyperplane is distinguished by the fact
+that its points are fixed under the reflection (8.5.1). More generally we
+could identify spacetime under the simultaneous reflection of k coordinates
+                     X m → −X m ,      26 − k ≤ m ≤ 25 .                (8.5.2)
+Again there is a space of fixed points, at X 26−k = . . . = X 25 = 0. For k ≥ 2
+this space is a singularity. In particular, for k = 2 it is a conic singularity
+with deficit angle π.
+   One can form a compact space by combining the reflection (8.5.1) with
+the periodic identification X 25 ∼ = X 25 + 2πR; we will call these r and t
+respectively. One can think of first identifying by t to form the circle S 1 ,
+and then identifying points on the circle under r. The resulting compact
+space is a line segment, with 0 ≤ X 25 ≤ πR as a fundamental region. There
+are fixed points at both ends of the segment, the point πR being fixed by
+tr. In all, one is identifying the real line under the group
+                         tm :    X 25 ∼
+                                      = X 25 + 2πRm ,                  (8.5.3a)
+                        tm r :   X 25 ∼
+                                      = 2πRm − X 25 ,                  (8.5.3b)
+for any integer m.
+  Similarly one could identify the k-torus under the reflection (8.5.2). In
+that case there are 2k distinct fixed points, with each of the X m being either
+0 or πR. The singular spaces obtained in this way are known as orbifolds.
+The space obtained by the identification (8.5.2) in noncompact space is
+Rk /Z2 , while the compact space obtained by the same identification on
+the k-torus is T k /Z2 .
+  It is not obvious that string theory on such singular spaces should
+make sense, but we will see that it does. It is not so di!erent from
+toroidal compactification, but it breaks more symmetry (and, later on,
+supersymmetry) and so will be of interest in constructing string models.
+  The identification (8.5.1) or (8.5.2) has two e!ects. The first is that
+the string wavefunction must be invariant under the reflection, equal
+at identified points. Second, there is a new sector in the closed string
+spectrum, in which
+                        X 25 (, 1 + 2π) = −X 25 (, 1 ) ,                (8.5.4)

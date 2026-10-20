@@ -1,0 +1,49 @@
+224                          7 One-loop amplitudes
+
+modular transformation (7.2.44)
+                                  .(it) = t−1/2 .(i/t)                  (7.4.2)
+and change variables to s = π/t, with the result
+                                               $ ∞
+                               V26 n2
+                   ZC2 = i                            ds .(is/π)−24 .   (7.4.3)
+                             2π(8π 2 α% )13     0
+
+Scaling down the metric by 1/t so that the cylinder has the usual closed
+string circumference 2π, the length of the cylinder is s. Expanding
+                                              ∞
+                                              &
+                .(is/π)−24 = exp(2s)              [1 − exp(−2ns)]−24
+                                              n=1
+                             = exp(2s) + 24 + O(exp(−2s)) ,             (7.4.4)
+one sees the expected asymptotics from expanding in a complete set of
+closed string states. In other words, if we think of , 2 as world-sheet time
+and , 1 as world-sheet space, figure 7.1(a) is a very short open string loop.
+If we reverse the roles of world-sheet space and time, it is a very long
+closed string world-line beginning and ending on boundary loops. In the
+Euclidean path integral, either description can be used, and each is useful
+in a di!erent limit of moduli space.
+   The leading divergence in the vacuum amplitude is from the closed string
+tachyon. This is uninteresting and can be defined by analytic continuation,
+                             $ ∞
+                                                         1
+                                    ds exp(βs) ≡ −         .            (7.4.5)
+                              0                          β
+The second term, from the massless closed string states, gives a divergence
+of the form 1/0 even with the continuation. To see the origin of this
+divergence, imagine separating the process as shown in figure 7.1(b).
+As we have discussed in section 6.6, there is a nonzero amplitude with
+one closed string vertex operator on the disk. This tadpole corresponds
+to a closed string appearing from or disappearing into the vacuum. In
+between the two tadpoles is the closed string propagator. In momentum
+space the massless propagator is proportional to 1/k 2 . Here, momentum
+conservation requires that the closed string appear from the vacuum with
+zero momentum, so the propagator diverges.
+  This same kind of divergence occurs in quantum field theory. Consider
+a massless scalar field φ with a term linear in φ in the Lagrangian.
+There is then a vertex which connects to just a single propagator, and the
+graph shown in figure 7.1(c) exists. This diverges because the intermediate
+propagator is
+                                          8
+                                       1 88
+                                                  .                     (7.4.6)
+                                       k 2 8kµ =0

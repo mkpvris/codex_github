@@ -1,0 +1,50 @@
+                                                                           6.7                      General              results                                                                 201
+
+      The             four-point             function             translates             into             an             operator             expression
+⟨   A′(∞,∞)A                           (z      , ¯z   )A         (z     ,  ¯z   )A         (0,     0)    ⟩        =     ⟨⟨i|T[        Aˆ        (z     ,¯z     )Aˆ        (z      ,¯z     )]|j⟩,
+           i                        k       1       1          l      2       2          j                  S2                               k      1       1           l      2       2
+                                                                                                                                                                                       (6.7.16)
+where              T              denotes              radial              ordering.              Let   |z1|       >      |z2|       and              insert              a              complete              set
+of             states,
+                                                                                1=          |m⟩G         mn⟨⟨n|          .                                                             (6.7.17)
+
+The             four-point             amplitude             (6.7.16)             becomes
+                            ∑                                   ˜       ˜       ˜                               ˜        ˜      ˜
+                                     zhi−hk−hm¯zhi−hk−hmzhm−hl−hj¯zhm−hl−hjc                                                                   cm         .                            (6.7.18)
+                                        1                       1                       2                       2                      ikm          lj
+                               m
+Thus,           the           operator           product           coeﬃcients           determine           not           only           the           three-point
+expectation                    values                    on                    the                    sphere,                    but                    also                    the                    four-point                    and,                    by                    the
+same           construction,           arbitrary                               n-point           amplitudes.           For                       |z1−z2|                >     |z1|,           which
+overlaps                 the                 region     |z1|        >      |z2|        where                 the                 expansion                 (6.7.18)                 is                 valid,                 we
+can                translate          Ak          to                the                origin                and                give                a                similar                expansion                in                terms                of
+cil mcmkj.            The            equality            of            these            two            expansions            is            associativity            of            the            OPE,
+ﬁgure             2.8.
+
+                                                                        Operator              calculations
+The                     Hilbert                     space                     expressions                     give                     us                     one                     more                     way                     to                     calculate                     ex-
+pectations                  values.                  We                  take                  as                  an                  example                  the                  case                  of                  four                  exponential
+op erators
+                  ⣨         ik    ·X(∞,∞)             ′        ik    ·X(z       ,¯z  )           ik·X(z,¯z)                        ik·X(0,0)               ⟩
+                       : e      4                   :     :e       1          1    1   ::      e     2          2    2   ::e           3                :
+                                                                                                                                                              S2
+                                                                              =     ⟨⟨0;      k     |T[      ◦eik1·X1◦             ◦eik2·X2◦            ]|0;       k    ⟩    .         (6.7.19)
+                                                                                                 4           ◦                 ◦   ◦                 ◦                3
+We               have               used               the               result               (2.7.11)               that               :                 :               ordered               operators               are               the               same
+        ◦    ◦                                                                                                                                                                  µ           ¯
+asµ◦         ◦   ordered               operators               for               this               CFT.               We               have               abbreviated     X       (zi,     zi)as
+Xi        and             to             avoid             clutter             are             omitting             the             hats             on             operators.             By             deﬁnition
+
+                                                                         ◦    ik·X◦                  ik·XC         ik·XA
+                                                                         ◦e            ◦   =      e             e               ,                                                      (6.7.20)
+where
+                                                               (α′1/2∑∞                          1
+              Xµ       (z,     ¯z)=           xµ−i                                                    (αµ          zm      +      ˜αµ       ¯zm)       ,                           (6.7.21a)
+                   C                                                 2                           m          −m                       −m
+                                                                                      m=1                                          (                            
+                                                        ′                                   (       ′1/2∑∞                                 µ            ˜µ
+               Xµ(z,           ¯z)=           −iαpµln|z|2+i                                      α                             1         αm       +      αm            .           (6.7.21b)
+                    A                                 2                                           2                           m          zm              ¯zm
+                                                                                                                   m=1
+Fo  r      |z1|       >      |z2|       the                 matrix                 element                 (6.7.19)                 b ecomes
+                                             ⟨⟨ 0;k4|eik1·X1C                    eik1·X1A           eik2·X2C           eik2·X2A|0;               k3⟩       .                           (6.7.22)

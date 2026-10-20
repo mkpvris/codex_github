@@ -1,0 +1,48 @@
+108                       3 The Polyakov path integral
+
+                        3.7         Strings in curved spacetime
+
+Now we are ready to consider an important new issue, strings moving in
+a curved spacetime. Let us recall first that the point-particle action has a
+natural extension to curved spacetime. Replacing the flat metric ηµν with
+a general metric Gµν (x) gives the action
+                                  !        #                                $
+                         1
+                   Spp =               dτ η −1 Gµν (X)Ẋ µ Ẋ ν − ηm2 .                       (3.7.1)
+                         2
+After eliminating η this becomes the invariant proper time along the par-
+ticle world-line. Its variation is well known to give the geodesic equation,
+representing the motion of a particle in a gravitational field.
+   Making the same replacement in the Polyakov action gives
+                                   !
+                         1
+                 Sσ =                     d2 σ g 1/2 g ab Gµν (X)∂a X µ ∂b X ν .              (3.7.2)
+                        4πα$          M
+
+This is a natural guess, but the reader might make the following objection.
+We have learned that the graviton itself is one state of the string. A curved
+spacetime is, roughly speaking, a coherent background of gravitons, and
+therefore in string theory it is a coherent state of strings. Merely putting
+a curved metric in the action (3.7.2) doesn’t seem stringy enough. To see
+why it is justified, consider a spacetime that is close to flat,
+                                   Gµν (X) = ηµν + χµν (X)                                    (3.7.3)
+with χµν small. The integrand in the world-sheet path integral is
+                              2                  !                                                  3
+                                           1
+ exp(−Sσ ) = exp(−SP ) 1 −                           d2 σ g 1/2 g ab χµν (X)∂a X µ ∂b X ν + . . .       .
+                                          4πα$   M
+                                                                    (3.7.4)
+The term of order χ is precisely the vertex operator for the graviton state
+of the string, eq. (3.6.14) with
+                                   χµν (X) = −4πgc eik·X sµν .                                (3.7.5)
+So indeed, inserting the curved metric does seem to make contact with
+what we already know. The action (3.7.2) can be thought of as describing a
+coherent state of gravitons by exponentiating the graviton vertex operator.
+  This suggests a natural generalization: include backgrounds of the
+other massless string states as well. From the form of the vertex operators,
+eq. (3.6.14), one has
+             !                #                                    $                               
+       1
+ Sσ =            d2 σ g 1/2        g ab Gµν (X) + i1ab Bµν (X) ∂a X µ ∂b X ν + α$ RΦ(X) .
+      4πα$   M
+                                                                                              (3.7.6)

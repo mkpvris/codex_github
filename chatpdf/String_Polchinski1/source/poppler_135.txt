@@ -1,0 +1,44 @@
+                       3.7 Strings in curved spacetime                       113
+
+quantum field theory, there are many constants that are not determined
+by the theory; any values for these constants give a consistent theory. In
+string theory there are no such free parameters — the coupling constants
+depend on the state and are determined in principle by the dynamics.
+Of course, for now this only moves the difficulty elsewhere, because we
+do not understand the dynamics well enough to know the values of the
+background fields.
+  It is striking that Einstein’s equation turns up in what seems to be
+a rather out-of-the-way place, as the condition for Weyl invariance of
+a two-dimensional field theory. String theory provides the physical con-
+nection between these two ideas. It is also notable that, because of the
+need for Weyl invariance, strings can propagate consistently only in a
+background that satisfies appropriate field equations. This parallels our
+earlier discovery that only on-shell vertex operators make sense.
+   Another observation: the condition D = 26 came from the R term in
+T aa . In the nonlinear sigma model this is generalized to / Φ = 0. We see
+in eq. (3.7.14c) that the leading term in / Φ is proportional to D − 26 but
+that there are corrections involving the gradients of the fields. Evidently
+we can have other values of D if the fields are not constant. This is true,
+although we cannot really conclude it from eq. (3.7.14c) because this has
+been derived in the approximation α$1/2 Rc−1 0 1 where the correction
+terms in / Φ are small. In fact, exact solutions with D -= 26 are known.
+For now we give one simple example, saving others for later. This is
+
+          Gµν (X) = ηµν ,    Bµν (X) = 0 ,    Φ(X) = Vµ X µ .            (3.7.18)
+
+The beta functions (3.7.14) vanish if
+
+                                         26 − D
+                              Vµ V µ =          .                        (3.7.19)
+                                           6α$
+
+This result is actually exact, because the fields (3.7.18) are constant or linear
+in X µ , so the world-sheet path integral remains Gaussian. Varying gab to
+determine Tab for this theory, one finds that it is none other than the linear
+dilaton CFT (hence the name), whose central charge c = D + 6α$ Vµ V µ
+is indeed 26 under the condition (3.7.19). Because Φ must have a large
+gradient in order to change D, this CFT does not describe our roughly
+static and homogeneous four-dimensional spacetime, but it may have
+cosmological applications. This CFT is also important because the cases
+D = 1 and D = 2 are simple enough for the string theory to be exactly
+solvable, as we will discuss in section 9.9.

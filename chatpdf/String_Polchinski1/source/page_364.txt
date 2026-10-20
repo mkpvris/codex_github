@@ -1,0 +1,47 @@
+342                                                                   Appendix              A
+
+the            Berezin            integral:            linearity,            invariance            (except            for            a            sign)            under            change
+of             order             of             integration,             and             integration             by             parts.3
+     In                  order                  to                  follow                  the                  bosonic                  discussion                  as                  closely                  as                  possible,                  it                  is
+useful             to             deﬁne             states             that             are             formally             eigenstates             ofψˆ:
+                                                              |ψ⟩       =     |↓⟩      +     |↑⟩    ψ,                                               (A.2.7a)
+                                                           ψˆ|ψ⟩=|ψ⟩ψ.                                                                               (A.2.7b)
+Deﬁne           ⟨ψ|      to               satisfy
+                                                                ⟨ψ|ψ′⟩         =     ψ    −    ψ′     .                                                 (A.2.8)
+
+The            right-hand            side            is            the            Grassmann            version            of            the            Dirac            delta            function.
+It             has             the             same             properties             as             the             ordinary             delta             function,
+                                                  (ψ     −    ψ′)f(ψ)=(                 ψ−ψ′)f(ψ′)(A.2.9)
+
+and                                                   ∫
+                                                           dψ      (ψ    −     ψ′)f(ψ)=                f(ψ′)(A.2.10)
+
+for               arbitrary   f(ψ).             The             state⟨ψ|   is             a             left             eigenstate             with             opposite             sign,
+                                                                 ⟨ψ|ψˆ       =     −ψ⟨ψ|            ,                                                (A.2.11)
+as                one                veriﬁes                by                taking                the                inner                product                of                both                sides                with                a                general
+state       |ψ′⟩.Notealsothat
+                                                               ∫
+                                                                     |ψ⟩dψ          ⟨ψ|      =1        .                                             (A.2.12)
+
+One      can      verify      this      by      taking      the      matrix      element      between      arbitrary      states
+⟨ψ′|and|ψ′′⟩and      evaluating      the      Grassmann      integral.
+     The      delta      function      has      an      integral      representation
+                                ∫
+                          −          dχ     exp[χ(ψ′             −    ψ)]           =ψ   −     ψ′    =     ⟨ψ|ψ′⟩          .                         (A.2.13)
+
+By             expanding             the             inner             product             (A.2.8)             in             powers             ofψ′one             obtains
+
+                                                   ⟨ψ|↓⟩          =     ψ,          ⟨ψ|↑⟩          =     −1      ,                                   (A.2.14)
+and        therefore
+                                          ⟨ψ|χˆ|ψ′⟩           =     ⟨ψ|↑⟩
+                                                                         ∫
+                                                              =     −          dχ      χ exp[χ(ψ′            −    ψ)]      .                         (A.2.15)
+
+
+
+
+
+ 3                                                   ∫
+   It              is              not              useful              to              think              ofdθas              an              integral              in              any              ordinary              sense:              it              is              simply              a              linear
+   mapping         from         functions         ofθto         the         complex         numbers.         Since         it         shares         so         many         of         the         properties
+   of         ordinary         integrals,         the         integral         notation         is         a         useful         mnemonic.

@@ -1,0 +1,57 @@
+                           4.4 The no-ghost theorem                             139
+
+Define the light-cone oscillators
+                             α±
+                              m =2
+                                   −1/2 0
+                                       (αm ± α1m ) ,                         (4.4.6)
+which satisfy
+                       −                                   − −
+                [α+
+                  m , αn ] = −m,m,−n ,      [α+    +
+                                              m , αn ] = [αm , αn ] = 0 .    (4.4.7)
+We will use extensively the quantum number
+                                    ∞
+                                    ( 1 ◦ + − ◦
+                           N lc =       ◦ α α ◦ .                            (4.4.8)
+                                      m −m m
+                                    m=−∞
+                                     m-=0
+
+
+The number N lc counts the number of − excitations minus the number
+of + excitations; it is not a Lorentz generator because the center-of-
+mass piece has been omitted. We choose a Lorentz frame in which the
+momentum component k + is nonzero.
+  Now decompose the BRST generator using the quantum number N lc :
+                             QB = Q1 + Q0 + Q−1 ,                            (4.4.9)
+where Qj changes N lc by j units,
+                                [N lc , Qj ] = jQj .                        (4.4.10)
+Also, each of the Qj increases the ghost number N g by one unit:
+                                 [N g , Qj ] = Qj .                         (4.4.11)
+Expanding out Q2B = 0 gives
+ #     $ #          $ #                     $ #               $ #     $
+     Q21 + {Q1 , Q0 } + {Q1 , Q−1 }+Q20 + {Q0 , Q−1 } + Q2−1 = 0 . (4.4.12)
+
+Each group in parentheses has a di!erent N lc and so must vanish sepa-
+rately. In particular, Q1 itself is nilpotent, and so has a cohomology.
+  Explicitly,
+                                                ∞
+                                                (
+                                      $ 1/2 +
+                         Q1 = −(2α )        k           α−
+                                                         −m cm .            (4.4.13)
+                                                m=−∞
+                                                 m-=0
+
+For m < 0 this destroys a + mode and creates a c, and for m > 0 it creates
+a − mode and destroys a b. One can find the cohomology directly by
+considering the action of Q1 in the occupation basis. We will leave this as
+an exercise, and instead use a standard strategy which will also be useful
+in generalizing to QB . Define
+                                               ∞
+                                               (
+                                      1
+                           R=                     α+ b                      (4.4.14)
+                                (2α$ )1/2 k + m=−∞ −m m
+                                                m-=0

@@ -1,0 +1,48 @@
+                                                       2.2                      The              operator              product              expansion                                                          39
+
+interested           in           are           free,           and           many           others           can           be           related           to           free           ﬁeld           theories,
+so             it             will             be             worthwhile             to             develop             normal             ordering             somewhat             further.
+      The                deﬁnition                of                normal                ordering                for                arbitrary                numbers                of                ﬁelds                can
+be             given             recursively             as
+                               :Xµ1(z1,¯z1)                     ...X          µn(zn,¯zn):
+                                                                   µ                                     µ                               
+                                                    =        X       1(z1,¯z1)...X                          n(zn,¯zn)+                             subtractions                          ,          (2.2.5)
+
+where              the              sum              runs              over              all              ways              of              choosing              one,              two,              or              more              pairs              of
+ﬁelds              from              the              product              and              replacing              each              pair              with   1  α′ηµiµj           ln     |zij|2.For
+                                                                                                                                                              2
+example,
+            :Xµ1(z1,                 ¯z1)Xµ2(z2,                  ¯z2)Xµ3(z3,                  ¯z3):      =         Xµ1(z1,¯z1)Xµ2(z2,¯z2)Xµ3(z3,¯z3)
+                                     (α′                                                                                                                             
+                              +                 ηµ1µ2          ln|z12|2Xµ3(z3,¯z3)         +         2             permutations                                              .                      (2.2.6)
+                                           2
+We            leave            it            to            the            reader            to            show            that            the            deﬁnition            (2.2.5)            retains            the            de-
+sired          property          that          the          normal          ordered          product          satisﬁes          the          naive          equation
+of             motion.
+      The             deﬁnition             can             be             compactly             summarized             as
+                                         (α′         ∫                                                                  δ                                δ                
+           :F        :=           exp                       d2z1d2z2                 ln     |z12|2                                                                             F        ,           (2.2.7)
+                                               4                                                           δX       µ(z1,         ¯z1)     δX       µ(z2,¯z2)
+where               F         is                   any                   functional                   ofX.                   This                   is                   equivalent                   to                   eq.                   (2.2.5):                   the
+double                 derivative                 in                 the                 exponent                 contracts                 each                 pair                 of                 ﬁelds,                 and                 the
+exponential                sums                over                any                number                of                pairs                with                the                factorial                canceling
+the              number              of              ways              the              derivatives              can              act.              As              an              example              of              the              use              of
+this               formal               expression,               act               on               both               sides               with               the               inverse               exponential               to
+obtain                                    (                ∫                                                                                                                     
+                                                     α′               2           2                           2                δ                               δ
+               F        =exp                  −4                   dz1dz2ln|z12|                                 δX        µ(z        ,¯z     )   δX          (z      ,¯z     )        :F:
+                                                                                                                                  1       1               µ       2       2
+                        =:F:+                                  contractions,                                                                                                                        (2.2.8)
+where            a            contraction            is            the            opposite            of            a            subtraction:            sum            over            all            ways            of
+choosing               one,               two,               or               more               pairs               of               ﬁelds               from               :F:               and               replacing               each
+pair             with       −1α′ηµiµj                   ln     |zij|2.
+                                  2
+      The             OPE             for             any             pair             of             operators             can             be             generated             from
+                                           :F::              G:=:                 FG:+                                 cross-contractions                                            (2.2.9)
+for               arbitrary               functionals                   F        and          G      of      X.             The             sum             now             runs             over             all             ways
+of               contracting               pairs               with               one               ﬁeld               inFand               one               inG.Thiscanalsobe
+written                                         (               ∫                                                                                                                         
+                                                           α′              2           2                           2                δ                                 δ
+   :F        ::      G:=exp                         −2                  dz1dz2ln|z12|                                 δX        µ(z        ,¯z     )   δX             (z      ,  ¯z    )       :  FG          :   ,
+                                                                                                                               F        1       1               Gµ          2       2
+                                                                                                                                                                                                (2.2.10)

@@ -1,0 +1,50 @@
+94                             3 The Polyakov path integral
+
+is
+                          "        !          !                                                 %
+                              a1
+     Z[g] = Z[,] exp                   d2 σ        d2 σ $ g 1/2 R(σ)G(σ, σ $ )g 1/2 R(σ $ ) ,           (3.4.19)
+                              8π
+where
+                               g(σ)1/2 ∇2 G(σ, σ $ ) = , 2 (σ − σ $ )                                   (3.4.20)
+defines the scalar Green’s function. This is an interesting result: the path
+integral is completely determined by the anomaly equation.
+    Now expand Z[g] around a flat background, gab = ,ab + hab , and keep
+terms of second order in hz̄z̄ . The Ricci scalar is 4∂z2 hz̄z̄ to first order in
+hz̄z̄ , so (ignoring contact terms, where z = z $ )
+                                   !          !
+            Z[, + h]    a1
+       ln            ≈ 2 d2 z d2 z $ (∂z2 ln |z − z $ |2 )hz̄z̄ (z, z̄)∂z2$ hz̄z̄ (z $ , z̄ $ )
+             Z[,]      8π
+                             !   !
+                         3a1            hz̄z̄ (z, z̄)hz̄z̄ (z $ , z̄ $ )
+                     = − 2 d z d2 z $
+                               2
+                                                                         .              (3.4.21)
+                         4π                    (z − z $ )4
+We can also calculate this by using second order perturbation theory in
+the metric, which by eq. (3.4.4) gives
+                                   !          !
+           Z[, + h]   1                                                           4                      5
+      ln            ≈ 2                d2 z       d2 z $ hz̄z̄ (z, z̄)hz̄z̄ (z $ , z̄ $ ) Tzz (z)Tzz (z $ ) , .
+            Z[,]     8π
+                                                                             (3.4.22)
+Now use the standard T T OPE (2.4.25). All terms except the first involve
+operators of nonzero spin and so vanish by rotational invariance, leaving
+* Tzz (z)Tzz (z $ ) +, = 12 c(z − z $ )−4 . Comparison with the result (3.4.21) from
+the Weyl anomaly gives again eq. (3.4.15).
+
+                                                  Discussion
+The world-sheet theory consists of the X µ , with central charge D, and the
+ghosts, whose central charge (2.5.12) is −26 for λ = 2, giving
+                                       c = cX + cg = D − 26 .                                           (3.4.23)
+The theory is Weyl-invariant only for D = 26, the same as the condition
+for Lorentz invariance found in chapter 1. When the Weyl anomaly
+is nonvanishing, di!erent gauge choices are inequivalent, and as with
+anomalous gauge theories any choice leads to a pathology such as loss of
+covariance or loss of unitarity. In light-cone gauge, for example, choosing
+di!erent spacetime axes requires a change of gauge, so the underlying
+Weyl anomaly is translated into a Lorentz anomaly.
+   There is another thing that one might try: ignore the Weyl invariance
+and treat only the di! invariance as a gauge symmetry. The metric would
+then have one real degree of freedom ω(σ), to be integrated over rather

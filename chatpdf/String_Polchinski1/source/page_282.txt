@@ -1,0 +1,47 @@
+260                            8                    Toroidal              compactiﬁcation              andT-duality
+
+    In             the             partition             function,             we             sum             over             twistsh1in             the             spatial             direction
+and             include             a             projection             operator             onto             invariant             states,
+                                                P      =           1            ∑      hˆ    .                                  (8.5.15)
+                                                  H         order(H)                      2
+                                                                              h2∈H
+The          operator     hˆ2  in          the          trace          makes          the          ﬁelds          in          the          time          direction          aperiodic
+by    h2,               so               in               the               end               we               are               summing               over               twists               in               both               the               spatial               and
+time             directions              on              the             torus,
+                                            Z    =           1             ∑         Z           .                              (8.5.16)
+                                                      order(H)                          h1,h2
+                                                                        h1,h2∈H
+The                sum                over                boundary                conditions                is                modular-invariant                after                a                shift                of
+summation          variables.          The          modular          transformation               τ  →−1/τ            takes          (h1,h2)
+to                 (h,h−1),               andτ→τ+1  takes  (h1,h2)to(                  h1,h1h2).         Thus,         if         we         project
+         2     1
+onto       H-invariant                      states                      by                      summing                      overh2,wemustalsosumover
+the       twisted       sectors.       In       more       general       situations,       in       particular       right–left
+asymmetric    theories,    there    will    be    an    issue    of    phases    possibly    spoiling    the
+naive     modular     invariance     of     the     sum     over     boundary     conditions,     but     we
+will    deal    with    that    in    chapters    10,    11,    and    16.
+    In     the     case     of     toroidal     compactiﬁcation,     the     original     CFT     is     the     non-
+compact          theory          and   H    consists          of tm    =exp(2πiRmp)     for     all     integerm.     This
+happens        to        have        inﬁnite        order,        but        we        can        regulate        the        sum        by        putting
+the      system      in      a      large      box.      For      the      orbifold,      we      can      think      of      starting      from
+the      toroidal      theory      and      twisting      byr,orfromthenoncompacttheoryand
+twisting      byrandt.
+    When          H     is                    non-Abelian,                    the                    path                    integral                    boundary                    conditions                    are
+inconsistent              for  h1    and     h2    noncommuting              and              the              path              integral              vanishes.
+This               also               follows               from               the               canonical               expression               (8.5.15).               Ifφhas               spatial
+twist     h1,then
+                                                     φ′(,1)=           h2·φ(,1)(8.5.17)
+
+hasadi!erentspatialtwist
+                                              φ′(,1+2π)=                  h′   ·φ′(,1),                                         (8.5.18)
+                                                                            1
+where
+                                                          h′    =   h   h    h−1                                                (8.5.19)
+                                                             1         2   1   2
+and              so              the              diagonal              matrix              elements              ofhˆ2are              zero.              We              also              see              that              the
+sectors           twisted          byh1 and     h′    are          not           independent           —          they           are          related          by           the
+                                                   1
+projection               onto  h2-invariant               states.               Thus               the               independent               twisted               sectors
+are             in             one-to-one             correspondence             with             theconjugacy               classesofH.
+    Twisting           can           also           be           thought           of           asgaugingthe           discrete           groupH.Itmay
+not      be      obvious      that      this      makes      sense,      as      the      discreteness      forces      the      gauge

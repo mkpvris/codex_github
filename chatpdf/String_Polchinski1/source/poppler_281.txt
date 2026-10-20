@@ -1,0 +1,49 @@
+                                       8.5 Orbifolds                                259
+
+The contribution of the twisted sectors is from the sum over half-integer
+moded oscillations,
+                     2              3
+            1/48       1 + r L0 L̃0
+      (qq̄)      TrT        q q̄
+                         2
+                              > ∞                                     ?
+                               & 88            8−2 ∞ 8
+                                                   &              8−2
+                       1/48              m−1/2 8     8      m−1/2 8
+             = (qq̄)              81 − q       8 +   81 + q       8     ,       (8.5.11)
+                               m=1                     m=1
+
+the factor of 2 from the number of twisted sectors o!setting the 12 in the
+projection operator.
+  In all, the partition function can be written as
+                               8            8 8            8 8            8
+                1              8 .(τ) 8 8 .(τ) 8 8 .(τ) 8
+  Zorb (R, τ) = Ztor (R, τ) + 88            8+8            8+8            8 . (8.5.12)
+                2                ϑ10 (0, τ) 8 8 ϑ01 (0, τ) 8 8 ϑ00 (0, τ) 8
+The first term is already known to be modular-invariant, and it follows
+from the modular transformation properties given in section 7.2 that the
+sum of the final three is invariant as well. In terms of the path integral on
+the torus, Ztor (R, τ) is from fields that are periodic up to translations. The
+term with ϑab is from the path integral with
+                         X 25 (, 1 + 2π, , 2 ) = (−1)a+1 X 25 (, 1 , , 2 ) ,   (8.5.13a)
+              X 25 (, 1 + 2πτ1 , , 2 + 2πτ2 ) = (−1)b+1 X 25 (, 1 , , 2 ) .    (8.5.13b)
+For example, the ϑ10 term is from the untwisted sector with r in the
+trace, that is, from fields that are periodic in the spatial direction and
+antiperiodic in the time direction. The ϑ01 term, from the twisted sector
+with 1 in the trace, has the opposite boundary conditions. These are
+interchanged by τ → −1/τ. Thus, the twisted sectors are necessary for
+modular invariance.
+
+                                         Twisting
+Toroidal and orbifold compactifications are two examples of a useful
+construction, known as twisting, for constructing new string theories from
+old. In a given CFT whose symmetries include some discrete group H, we
+can form a new CFT in two steps. First add twisted sectors, in which the
+closed string world-sheet fields are periodic only up to some transforma-
+tion h ∈ H,
+                                 φ(, 1 + 2π) = h · φ(, 1 ) ,                    (8.5.14)
+where φ denotes a generic world-sheet field. Then, restrict the spectrum to
+H-invariant states. Although the fields (8.5.14) are no longer periodic, the
+vertex operators are periodic because of the projection. So the OPE is still
+well defined, and it closes because the product of H-invariant operators
+is H-invariant.

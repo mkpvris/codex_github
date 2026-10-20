@@ -1,0 +1,50 @@
+158                                                                5ThestringS-matrix
+
+For    the    latter,    the    normalized    eigenfunctions    are    related
+                                                 B            =       1    (P      C      )        ,ν             =ν′̸=0                   .                               (5.3.15)
+                                                     Jab             νJ          1     J    ab                J            J
+
+      In      terms      of      modes,      the      ghost      path      integral     ∆FP                                       becomes
+     ∫      ∏µ                  ∏κ                 ∏                                     (         ν    b     c          ∏µ         1                          ∏
+                    db0k                dc0j               dbJ       dcJ       exp           −       J     J     J                         (b,       ∂k′gˆ)             ca(σi)          .
+           k=1                  j=1                   J                                                 2π               k′=1       4π                       (a,i)∈f
+                                                                                                                                                                           (5.3.16)
+From                      section                      A.2,                      a                      Grassmann                      integral                      vanishes                      unless                      the                      variable
+appears            in            the            integrand.            The     c0j      and        b0k       do            not            appear            in            the            action            but
+only           in           the           insertions.           In           fact,           the           number           of           insertions           of           each           type           in           the
+integral               (5.3.16),            κ    and         µ     respectively,               just               matches               the               number               of               ghost
+zero           modes.           We           have           just           enough           insertions           to           give           a           nonzero           answer,           and
+only               the               zero-mode               part               of               the               ghost               ﬁelds               contributes               in               the               insertions.
+Thus,
+                                                    ∫      ∏µ                    ∏µ       [   ∑µ                                               
+                                 ∆           =                     db                                    b0k′′      (B        ′′,∂      ′gˆ)
+                                     FP                                  0k                               4π              0k          k
+                                                           k=1                  k′=1         k′′=1
+                                                                         ∫                                                                            
+                                                                                ∏κ                   ∏              ∑κ
+                                                                   ×                    dc0j                                c0j′Ca          ′(σi)
+                                                                                                                                         0j
+                                                                                j=1               (a,i)∈f          j′=1
+                                                                         ∫      ∏                                     (        ν    b     c     
+                                                                   ×                    dbJ      dcJ        exp           −       J     J    J         .                   (5.3.17)
+                                                                                  J                                                 2π
+Summing                   over                   all                   ways                   of                   saturating                   the                   zero-mode                   integrals                   with                   the
+Grassmann                variables                generates                a                ﬁnite-dimensional                determinant                in                each
+case,                while                the                nonzero                modes                produce                an                inﬁnite                product,                a                functional
+determinant.             In             all,
+                                                                                                                  (         T         1/2
+                     ∆          =det            (B0k,∂          k′gˆ)       det      Ca      (σ     )det         ′     P1       P1                   .                     (5.3.18)
+                         FP                              4π                              0j       i                       4π2
+
+No t e                  t h a tCa  (σi)                 is                 a                 square                 matrix,                 in                 that                 (a,      i)∈fruns                overκvalues
+                               0j
+as               doesj.               The               prime               on               the               functional               determinant               denotes               omission               of
+zero             eigenvalues.
+
+                                                           The              Riemann–Roch              theorem
+We         can         now         give         a         path         integral         derivation         of         the         Riemann–Roch         theorem.˜
+                                                                                                                                                          ˜
+For         the         ghost         current         of         a         holomorphic              bc     system         (without                   b,    c),         the         current
+conservation             anomaly             derived             in             exercise             3.6             is
+                                                                        ∇      ja    =      1    −     2λR.                                                                (5.3.19)
+                                                                            a                      4

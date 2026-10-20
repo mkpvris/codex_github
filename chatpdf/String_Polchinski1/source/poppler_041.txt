@@ -1,0 +1,50 @@
+                             1.3 The open string spectrum                                             19
+
+The field Y − does not appear in any terms with time derivatives and
+so is nondynamical. It acts as a Lagrange multiplier, constraining ∂σ2 γτσ
+to vanish (extra ∂σ because Y − has zero mean). Note further that in the
+gauge (1.3.8) the open string boundary condition (1.2.28) becomes
+                       γτσ ∂τ X µ − γττ ∂σ X µ = 0            at σ = 0, + .                      (1.3.13)
+For µ = + this gives
+                                      γτσ = 0        at σ = 0, +                                 (1.3.14)
+and since ∂σ2 γτσ = 0, then γτσ vanishes everywhere. For µ = i, the boundary
+condition is
+                                 ∂σ X i = 0          at σ = 0, + .                               (1.3.15)
+  After imposing the gauge conditions and taking into account the La-
+grange multiplier Y − , we can proceed by ordinary canonical methods.
+The system is reduced to the variables x− (τ), γσσ (τ) and the fields X i (τ, σ).
+The Lagrangian is
+                               +    " !                                          #
+       +            −    1                      i       i     −1       i       i
+ L=−       γσσ ∂ τ x  +          dσ   γσσ ∂ τ X   ∂ τ X   − γσσ  ∂ σ X   ∂ σ X     . (1.3.16)
+      2πα"              4πα" 0
+The momentum conjugate to x− is
+                                                ∂L          +
+                        p− = −p+ =                      =−      γσσ .                            (1.3.17)
+                                              ∂(∂τ x− )    2πα"
+As with η in the particle example, γσσ is a momentum and not a coordinate.
+The momentum density conjugate to X i (τ, σ) is
+                               δL          1               p+
+                      Πi =              =      γ  ∂
+                                                σσ τ X i
+                                                         =    ∂τ X i .                           (1.3.18)
+                             δ(∂τ X i )   2πα"              +
+The Hamiltonian is then
+                                            ! +
+                             −
+              H = p− ∂τ x − L +                     dσ Πi ∂τ X i
+                                                0
+                                 ! +        %                                           &
+                        +                                           1
+                  =                    dσ 2πα" Πi Πi +                  ∂σ X i ∂σ X i       .    (1.3.19)
+                      4πα" p+     0                                2πα"
+This is just the Hamiltonian for D − 2 free fields X i , with p+ a conserved
+quantity. The equations of motion are
+               ∂H      H             ∂H
+        ∂τ x− =     = + , ∂ τ p+ = − = 0 ,                                                      (1.3.20a)
+               ∂p−    p              ∂x
+               δH                         δH    c 2 i
+      ∂τ X i =      = 2πα" cΠi , ∂τ Πi = − i =     ∂ X ,                                        (1.3.20b)
+               δΠ i                       δX   2πα" σ
+implying the wave equation
+                                          ∂τ2 X i = c2 ∂σ2 X i                                   (1.3.21)

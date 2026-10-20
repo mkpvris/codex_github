@@ -1,0 +1,44 @@
+336                                           Appendix              A
+
+where               the               sum               runs               over               all               eigenvectors               ofHˆand               theEiare               the               corre-
+sponding             eigenvalues.             In             theqbasis             the             trace             becomes
+                  ∫                                    ∫
+                     dq  ⟨q|exp(−HUˆ         )|q⟩  =       dq  ⟨q,    U|q, 0⟩E
+                                                       ∫       ∫        q,U
+                                                   =       dq     [dq]q,0    exp(−SE)
+                                                       ∫
+                                                   =      [dq]P    exp(−SE)      .               (A.1.33)
+
+In            the            last            line,            [dq]Pdenotes            the            integral            over            allperiodicpaths            on            [0,U].
+An             interesting             variation             on             this             is             the             integral             over             allantiperiodicpaths:
+                     ∫                             ∫       ∫        q,U
+                        [dq]A   exp(−SE)=              dq     [dq]−q,0    exp(−SE)
+                                                   ∫
+                                               =       dq  ⟨q,    U|−  q, 0⟩E
+                                                   ∫
+                                               =       dq  ⟨q,    U|Rˆ|q, 0⟩E
+                                                       [          ˆ      ˆ]
+                                               =Tr      exp(−HU)R            .                   (A.1.34)
+
+Here    Rˆ is         the         reﬂection         operator,          takingqto−q.Weseethattwistingthe
+boundary             conditions             —             for             example,             replacing             periodic             with             antiperiodic
+—               is               equivalent               to               inserting               an               operator               into               the               trace.               SinceRˆ2=             1,               its
+eigenvalues          are±1.          If          we          take          the          average          of          the          periodic          and          antiperiodic
+path           integrals,           this           inserts1(1    +Rˆ),           which           projects           onto           theRˆ=           +1           space:
+                                       2
+             1  (periodic             +             antiperiodic)           =∑exp(−EU).          (A.1.35)
+             2                                                               i
+                                                         Ri=+1
+In           the           same           way,1(periodic−antiperiodic)           gives           the           trace           on           theRˆ=−1
+                          2
+space.
+   A              minor              but              sometimes              confusing              point:              ifAˆis              a              Hermitean              operator,
+the             Euclidean             Heisenberg             operatorAˆ(u)=exp(Huˆ)Aˆexp(−Huˆ)satisﬁes
+                                           Aˆ(u)†=Aˆ(−u)(A.1.36)
+
+andsoisnotingeneralHermitean.Forthisreasonitisusefultodeﬁnea
+Euclideanadjoint,
+                                          Aˆ(u)=     Aˆ(−u)†     .                               (A.1.37)
+
+A           Hermitean           operator           in           the           Schrodinger                      picture                      becomes                      Euclidean¨
+self-adjoint             in             the             Euclidean             Heisenberg             picture.

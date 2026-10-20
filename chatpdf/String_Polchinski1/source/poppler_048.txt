@@ -1,0 +1,52 @@
+26                              1 A first look at strings
+
+equation of motion is
+                                   %     &
+       i             ipi        α" 1/2
+     X (τ, σ) = x + + τ + i
+                      p         2
+                ∞
+                    2        (                          (              /3
+                     αni       2πin(σ + cτ)     α̃in      2πin(σ − cτ)
+             ×            exp −                +      exp                  .
+               n=−∞    n             +            n             +
+                   n-=0
+
+                                                                            (1.4.4)
+In the closed string there are two independent sets of oscillators, αin and
+α̃in , corresponding to left-moving and right-moving waves along the string.
+In the open string the boundary condition at the endpoints tied these
+together. The independent degrees of freedom are again the transverse
+oscillators and the transverse and longitudinal center-of-mass variables,
+                                 αin , α̃in , xi , pi , x− , p+ ,           (1.4.5)
+with canonical commutators
+                                 [x− , p+ ] = −i ,                         (1.4.6a)
+                                   [xi , pj ] = iδ ij ,                    (1.4.6b)
+                                  [αim , αjn ] = mδ ij δm,−n ,             (1.4.6c)
+                                 [α̃im , α̃jn ] = mδ ij δm,−n .            (1.4.6d)
+   Starting from the state |0, 0; k,, which has center-of-mass momentum
+k µ and is annihilated by αim s and α̃im s for m > 0, the general state is
+                           -D−1 ∞                                   /
+                            . .   (αi−n )Nin (α̃i−n )Ñin
+           |N, Ñ; k, =                                      |0, 0; k, .    (1.4.7)
+                                  Nin       Ñin         1/2
+                        i=2 n=1 (n Nin !n Ñin !)
+
+The mass formula is
+                         m2 = 2p+ H − pi pi
+                                -∞                            /
+                              2      i     i i   i
+                            = "     (α α + α̃−n α̃n ) + A + Ã
+                              α n=1 −n n
+                      2
+                        (N + Ñ + A + Ã) .
+                            =                                    (1.4.8)
+                     α"
+We have broken up the level and zero-point constant into the part from
+the right-moving modes and the part from the left. Summing zero-point
+energies again gives
+                                        2−D
+                                    A = Ã =   .                      (1.4.9)
+                                          24
+   There is one further restriction on the state due to the remaining gauge
+freedom, the σ-translations (1.4.3). The physical spectrum is obtained

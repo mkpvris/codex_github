@@ -1,0 +1,55 @@
+340                                      Appendix A
+
+the boundary condition (A.1.55),
+                             3       4
+                           2 1/2     jπu          j 2π2
+                 fj (u) =        sin     , λj =         + /2 ,      (A.1.59a)
+                           U          U            U2
+                         ∞ 2 2
+                   (         j π + /2U 2
+               det    =                   .                         (A.1.59b)
+                   2π    j=1
+                                2πU 2
+The infinite product diverges. The Pauli–Villars regulator is a simple way
+to define it. Divide by the amplitude for a regulator oscillator of very high
+frequency !,
+                                           ∞ 2 2
+                               ( regulate    j π + /2U 2
+                           det     →                           .       (A.1.60)
+                               2π         j=1
+                                              j 2 π 2 + !2 U 2
+For j small, the terms in (A.1.60) are the same as those in (A.1.59b) up
+to a multiplicative constant, while for j large the product converges. The
+value of the product (A.1.60) is
+                               ! sinh /U
+                                          .                        (A.1.61)
+                               / sinh !U
+This follows from a standard infinite product representation for the sinh.
+One can guess the result (A.1.61) by noting that it has the right poles and
+zeros in U, and the right value as U goes to zero.
+  Keeping only terms that are nonvanishing as ! → ∞,
+                     3               41/2    .                            /
+                              /                         1
+ %qf , U|qi , 0& →                 exp −Scl (qi , qf ) + (!U − ln !) − Sct .
+                         2 sinh /U                      2
+                                                                      (A.1.62)
+To get a finite answer as ! → ∞, we need first to include a term 12 ! in
+the Lagrangian Lct , canceling the linear divergence in (A.1.62). That is,
+there is a linearly divergent bare coupling for the operator ‘1’. It may seem
+strange that we need to renormalize in a quantum mechanics problem, but
+the power counting is completely uniform with quantum field theory. The
+logarithmic divergence is a wavefunction renormalization. To determine
+the finite normalization, compare the path integral expression (A.1.62) to
+the canonical result as U → ∞. The U → ∞ amplitude is easily evaluated
+by inserting a complete set of states, since only the ground state |0&
+contributes in the limit:
+              %qf , U|qi , 0& → %qf |0&%0|qi & exp(−E0 U)
+                                     3   4       .                 /
+                                / 1/2          /
+                                 =      exp − (qf2 + qi2 + U) .      (A.1.63)
+                                π              2
+On the other hand, the path integral expression (A.1.62) becomes
+                            .                                     /
+                              /                  1
+ %qf , U|qi , 0& → / 1/2 exp − (qf2 + qi2 + U) + (!U − ln !) − Sct . (A.1.64)
+                              2                  2

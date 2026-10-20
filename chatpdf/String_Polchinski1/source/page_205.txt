@@ -1,0 +1,47 @@
+                                                       6.4                      The              Veneziano              amplitude                                           183
+
+These                 are                 precisely                 the                 positions                 of                 the                 open                 string                 states.                 The                 integral
+I(s,      t)          also          has          poles          in          the          variabletat          the          same          positions           (6.4.18),          coming
+from           the           endpoint        y    =           1.           These           are           due           to           the           process           of           ﬁgure           6.3(b).           The
+other              two              terms              in              the              amplitude              (6.4.9)              give              further              contributions              to              the
+s-and            t-channel      poles,      and      also      give      poles      in      theu-channel,      ﬁgure      6.3(c).
+Because      the      residue      ats=     0      in      (6.4.17)      is      odd      inu−t,thispoleactually
+cancels           that           from       I(s,      u),           as           do           all           poles           at           even           multiples           of           1/α′.           This           will
+not             be             true             for             the             more             general             open             string             theories             to             be             introduced             in
+the             next             section.
+     Deﬁne             the             Euler             beta             function∫
+                                                                                1            a−1                      b−1
+                                                    B(a,      b)=                   dy         y     (1    −     y)             ,                                  (6.4.19)
+                                                                              0
+so             that
+                         I(s,      t)=        B(−αo(s),−αo(t))                           ,α         o(x)=1+                    α′x.                                (6.4.20)
+
+This     can     be     expressed     in     terms     of     gamma     functions.     Deﬁningy=v/w                                                                           for
+ﬁxed         w     gives                                                           ∫
+                                               a+b−1                                    w             a−1                      b−1
+                                           w                B(a,      b)=                    dv       v      (w      −    v)            .                          (6.4.21)
+                                                                                      0                   ∫
+Multiplying             both             sides             by    e−w,             integrating                ∞    dw,             and             regrouping             gives
+                                                           ∫                                  ∫             0
+                                                                ∞             a−1       −v         ∞                                          b−1       −(w−v)
+              Γ(   a    +    b)B(a,      b)=                         dv       v      e                  d(w       −     v)(w        −    v)           e
+                                                              0                                  0
+                                                    =Γ(         a)Γ(       b)     .                                                                                (6.4.22)
+The             four-tachyon             amplitude             is             then
+                                                       2ig2                             ∑
+      SD      (k1;      k2;k3;k4)=                            o(2π)26δ26(                       ki)
+            2                                             α′                                  i
+                                                                                                                                                                      
+                   ×      B(−αo(s),               −αo(t))        +         B(−αo(s),               −αo(u))        +          B(−αo(t),              −αo(u))              ,
+                                                                                                                                                                   (6.4.23)
+where
+                                                                            Γ(    −α′x         −     1)Γ(      −α′y         −     1)
+                        B(−αo(x),                −αo(y))           =                Γ(   −α′x         −     α′y      −     2)            .                         (6.4.24)
+
+This         is         theVeneziano           amplitude,         originally         written         to         model         certain         features
+of             strong             interaction             phenomenology.
+     The                    high                    energy                    behavior                    of                    the                    Veneziano                    amplitude                    is                    important.
+There             are             two             regions             of             interest,             theRegge              limit,
+                                                                    s   →∞            ,t          ﬁxed         ,                                                   (6.4.25)
+and             the hard              scattering              limit,
+                                                                 s   →∞            ,t/s             ﬁxed          .                                                (6.4.26)

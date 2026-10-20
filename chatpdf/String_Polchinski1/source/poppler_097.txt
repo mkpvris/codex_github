@@ -1,0 +1,52 @@
+                                               Exercises                            75
+
+conventional string normalization, is
+                                         0                             1
+                           a       ∂L −1
+                          j = 2πi       . δ/α − Ka                         .
+                                  ∂/α,a
+
+Derive the Lagrangian equations of motion and show that they imply that
+this current is conserved. Show that it agrees with eq. (2.3.4).
+
+
+
+
+{
+2.6 Consider the flat Euclidean metric δab , in d dimensions. An infinitesimal
+coordinate transformation δσ a = v a (σ) changes the metric by δgab =
+−∂a vb − ∂b va . Determine the most general v a (σ) that leaves the metric
+invariant up to a local rescaling. There are 12 (d + 1)(d + 2) independent
+solutions in d > 2, and an infinite number in d = 2. [Although the result is
+given in many places in the literature, the author has not found a simple
+derivation.]
+2.7 (a) By computing the relevant OPEs, confirm the weights stated in
+eq. (2.4.17) and determine which operators are tensors.
+(b) Do this for the same operators in the linear dilaton theory.
+                                     ¯ ν eik·X : ? What are the conditions on
+2.8 What is the weight of fµν : ∂X µ ∂X
+fµν and kµ in order for it to be a tensor?
+2.9 Derive the central charges for the linear dilaton, bc, and βγ CFTs by
+working out the T T OPEs.
+2.10 Consider now a patch of world-sheet with boundary. For convenience
+suppose that the patch lies in the upper half-z-plane, with the real axis
+being the boundary. Show that expectation values of a normal-ordered
+                         ¯ µ (z̄) :, although finite in the interior, diverge as
+operator, say : ∂X µ (z)∂X
+z approaches the boundary (represent the e!ect of the boundary by an
+image charge). Define boundary normal ordering 66 66 , which is the same as
+: : except that the contraction includes the image charge piece as well.
+Operators on the boundary are finite if they are boundary normal ordered.
+   In a general CFT on a manifold with boundary, the interior operators
+and the boundary operators are independent. Label the bases Ai and Br
+respectively, and define the former by : : and the latter by 66 66 . Each set
+has its own closed OPE: AA → A and BB → B. In addition, the sets
+are related: Ai , as it approaches the boundary, can be expanded in terms
+of the Br . Find the leading behaviors of
+                    6
+                    6   eik1 ·X(y1 ) 66 66 eik2 ·X(y2 ) 66 ,   y1 → y2 (y real) ,
+                          ik·X(z,z̄)
+                    :e                 :,      Im(z) → 0 .
+
+The identity (2.7.14) is useful for the latter.
+2.11 Evaluate the central charge in the Virasoro algebra for X µ by calcu-

@@ -1,0 +1,44 @@
+                   8.4 Compactification of several dimensions                                    251
+
+with the inverse tetrad erm . The mass-shell conditions become
+                      1                       2
+               m2 = (krL krL + krR krR ) + % (N + Ñ − 2) ,                                 (8.4.15a)
+                      2                       α
+                       %
+                 0 = α (krL krL − krR krR ) + 4(N − Ñ) .                                   (8.4.15b)
+We use the coordinates X r implicitly in any discussion of vertex operators,
+such as the one that now follows.
+
+                                 Narain compactification
+There is an elegant description of the general toroidal compactification.
+Consider the winding state vertex operators eikL ·XL +ikR ·XR . For any given
+compactification, the spectrum of momenta (krL , krR ) forms a lattice in a
+2k-dimensional momentum space R2k . That is, the momentum spectrum
+consists of all integer linear combinations of 2k linearly independent basis
+vectors. Let us work with the dimensionless momenta lL,R = kL,R (α% /2)1/2
+and call the corresponding lattice Γ. The OPE of two vertex operators is
+                                            %             %
+           : eikL ·XL (z)+ikR ·XR (z̄) : : eikL ·XL (0)+ikR ·XR (0) :
+                                    %        %           %                 %
+                          ∼ z lL ·lL z̄ lR ·lR : ei(kL +kL )·XL (0)+i(kR +kR )·XR (0) : .    (8.4.16)
+As one vertex operator circles the other, the product picks up the phase
+exp[2πi(lL · lL% − lR · lR% )]. Single-valuedness of the operator product thus
+requires
+                             lL · lL% − lR · lR% ≡ l ◦ l % ∈ Z                               (8.4.17)
+for all l and l % in Γ. We have defined the product ◦, which has signature
+(k, k) in R2k . The dual lattice Γ∗ is defined to be the set of points in R2k
+that have integer ◦ product with all points in Γ. The single-valuedness
+condition (8.4.17) is then the statement that
+                                            Γ ⊂ Γ∗ .                                         (8.4.18)
+   Modular invariance also constrains Γ. In section 7.2 it was shown that
+invariance under τ → τ + 1 requires that L0 − L̃0 be an integer for all
+states in the string CFT. Then
+                               l ◦ l ∈ 2Z for all l ∈ Γ .                                    (8.4.19)
+The condition (8.4.19) actually implies condition (8.4.17), given closure of
+the OPE
+         2l ◦ l % = (l + l % ) ◦ (l + l % ) − l ◦ l − l % ◦ l % ∈ 2Z .                       (8.4.20)
+Modular invariance under τ → −1/τ requires a more detailed calculation.
+The partition function for the compact dimensions is
+                                                (
+                    ZΓ (τ) = |.(τ)|−2k                exp(πiτlL2 − πiτ̄lR2 ) .               (8.4.21)
+                                                l∈Γ

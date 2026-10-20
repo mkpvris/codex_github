@@ -1,0 +1,47 @@
+232              8 Toroidal compactification and T -duality
+
+Indices M, N run over all dimensions 0, . . . , d and indices µ, ν run only over
+noncompact dimensions 0, . . . , d − 1. We designate the full D-dimensional
+metric by GD                                       D
+            MN . One should note that Gµν 5= Gµν ; in d-dimensional actions
+we raise and lower indices with Gµν . For now the fields Gµν , Gdd , and
+Aµ are allowed to depend only on the noncompact coordinates xµ . The
+form (8.1.2) is the most general metric invariant under translations of xd .
+This form still allows d-dimensional reparameterizations x%µ (xν ) and also
+reparameterizations
+                              x%d = xd + λ(xµ ) .                        (8.1.3)
+Under the latter,
+                                A%µ = Aµ − ∂µ λ ,                        (8.1.4)
+so gauge transformations arise as part of the higher-dimensional coordi-
+nate group. This is the Kaluza–Klein mechanism.
+  To see the e!ect of xd -dependence, consider a massless scalar φ in D
+dimensions, where for simplicity the metric in the compact direction is
+Gdd = 1. The momentum in the periodic dimension is quantized, pd = n/R.
+Expand the xd -dependence of φ in a complete set,
+                                 ∞
+                                 (
+                     φ(xM ) =          φn (xµ ) exp(inxd /R) .           (8.1.5)
+                                n=−∞
+
+The D-dimensional wave equation ∂M ∂M φ = 0 becomes
+                                        n2
+                          ∂µ ∂µ φn (xµ ) = φn (xµ ) .              (8.1.6)
+                                        R2
+The modes φn of the D-dimensional field thus become an infinite tower
+of d-dimensional fields, labeled by n. The d-dimensional mass-squared
+                                           n2
+                                  − p µ pµ =                          (8.1.7)
+                                           R2
+is nonzero for all fields with nonvanishing pd . At energies small com-
+pared to R −1 , only the xd -independent fields remain and the physics is
+d-dimensional. At energies above R −1 , one sees the tower of Kaluza–Klein
+states.
+   The charge corresponding to the Kaluza–Klein gauge invariance (8.1.3)
+is the pd -momentum. In this simple example, all fields carrying the Kaluza–
+Klein charge are massive. More generally, with higher spin fields and
+curved backgrounds, there can be massless charged fields.
+   The e!ective action for the massless fields is always an important object
+to consider. Define Gdd = e2, . The Ricci scalar for the metric (8.1.2) is
+                                         1
+                    R = Rd − 2e−, ∇2 e, − e2, Fµν F µν ,                 (8.1.8)
+                                         4

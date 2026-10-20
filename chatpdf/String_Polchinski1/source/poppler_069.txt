@@ -1,0 +1,72 @@
+                                     2.4 Conformal invariance                                              47
+
+    All transform as tensors except ∂2 X µ . More generally, an exponential
+    times a general product of derivatives,
+                                    "?              #"?               #
+                                :          m i µi          ¯nj νj eik·X : ,                           (2.4.18)
+                                         i∂ X             j∂ X
+                                                                                                      があるのに
+    has weight                                                                 Scale sym
+                                                                                                  .
+
+
+
+
+                                                                                                                 例 :
+
+                               % " 2                                          &              にならなく
+                                    αk  @          @   α" k 2                            CET
+                                     4
+                                       + i mi ,
+                                                4
+                                                  + j nj                          .      Makwell
+                                                                                         欠云
+                                                                                               (2.4.19)
+                                                                                  25 (   -
+
+
+
+
+       For any pair of operators, applying rigid translations, scale transforma-
+    tions, and rotations to both sides of the OPE determines the z-dependence
+    of the coefficient functions completely, 2 次元 では scale変 +Poircae変
+                                                                  =
+
+
+
+                                           hk −hi −hj h̃k −h̃i −h̃j                                   =   CET
+                                                                     k
+         Ai (z1 , z̄1 )Aj (z2 , z̄2 ) =        z12         z̄12           c ij Ak (z2 , z̄2 ) ,       (2.4.20)
+                                           k
+
+    where the ckij are now constants. In all cases of interest the weights
+    appearing on the right-hand side of the OPE (2.4.20) are bounded below,
+    and so the degree of singularity in the operator product is bounded. More
+    general conformal transformations put further constraints on the OPE:
+    they determine the OPEs of all fields in terms of those of the primary
+    fields. We will develop this in chapter 15.
+       Notice that the conformal transformation properties of normal ordered
+    products are not in general given by the naive transformations of the
+    product. For example, the transformation law (2.4.7) for X µ would naively
+    imply
+                                                   ¯ ik·X (naive)
+                    δeik·X = −.v(z)∂eik·X − .v(z)∗ ∂e                  (2.4.21)
+    for the exponential, making it a tensor of weight (0, 0). The modification is
+    a quantum e!ect, due to the renormalization needed to define the product
+    of operators at a point. Specifically it enters here because the subtraction
+    ln |z12 |2 in : : makes explicit reference to the coordinate frame.
+
+                 Conformal properties of the energy-momentum tensor
+    The OPE of the energy-momentum tensor with itself was obtained in
+    eq. (2.2.11),
+                              η µµ    2
+               T (z)T (0) =      4
+                                   − " 2 : ∂X µ (z)∂Xµ (0) : + : T (z)T (0) :
+                              2z    αz
+                               D     2          1
+                             ∼ 4 + 2 T (0) + ∂T (0) .                                                 (2.4.22)
+                              2z    z           z
+    A similar result holds for T̃ . The T (z)T̃ (z̄ " ) OPE must be nonsingular.
+    It cannot have poles in (z − z " ) because it is antiholomorphic in z " at
+    nonzero separation; similarly it cannot have poles in (z̄ − z̄ " ) because it is
+、

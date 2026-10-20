@@ -1,0 +1,50 @@
+188                                 6 Tree-level amplitudes
+
+  For the three-gauge-boson coupling, a similar calculation gives
+      SD2 (k1 , a1 , e1 ; k2 , a2 , e2 ; k3 , a3 , e3 )
+                                          2
+                             #
+          = igo% (2π)26δ 26 ( i ki )        e1 ·k23 e2 ·e3 + e2 ·k31 e3 ·e1 + e3 ·k12 e1 ·e2
+                                                          3   0               1
+                          α%
+                           + e1 ·k23 e2 ·k31 e3 ·k12 Tr λa1 [λa2 , λa3 ] .              (6.5.15)
+                            2
+  Up to first order in the momenta, the amplitudes we have found are
+reproduced by the spacetime action
+                      $        
+                1                1                1            21/2
+       S=                 d26 x − Tr (Dµ ϕDµ ϕ) + % Tr (ϕ2 ) + %1/2 Tr (ϕ3 )
+               go%2              2               2α           3α
+                                                                     
+                                                        1         µν
+                                                     − Tr (Fµν F ) , (6.5.16)
+                                                        4
+where the tachyon field ϕ and the Yang–Mills vector potential Aµ are
+written as n × n matrices, e. g. Aµ = Aaµ λa . Also, Dµ ϕ = ∂µ ϕ − i[Aµ , ϕ] and
+Fµν = ∂µ Aν − ∂ν Aµ − i[Aµ , Aν ].
+    This is the action for a U(n) gauge field coupled to a scalar in the
+adjoint representation. Adding in the Chan–Paton factors has produced
+just the gauge-invariant expressions needed. The gauge invariance is auto-
+matic because the decoupling of unphysical states is guaranteed in string
+perturbation theory, as we will develop further.
+    At momenta k small compared to the string scale, the only open string
+states are the massless gauge bosons. As discussed in section 3.7, it is in
+this limit that the physics should reduce to an e!ective field theory of the
+massless states. We have therefore been somewhat illogical in including
+the tachyon in the action (6.5.16); we did so for illustration, but now
+let us focus on the gauge bosons. The four-gauge-boson amplitude has a
+form analogous to the Veneziano amplitude but with additional structure
+from the polarization tensors. Expanding it in powers of α% k 2 , the first
+term, which survives in the zero-slope limit α% → 0, is the sum of pole
+terms in s, t, and u plus a constant. Consistency guarantees that it is
+precisely the four-gauge-boson amplitude obtained in field theory from
+the Yang–Mills Lagrangian Fµν F µν . Note, however, the term of order
+α% k 3 in the three-gauge-boson amplitude (6.5.15). This implies a higher
+derivative term
+                               2iα%
+                            − %2 Tr (Fµ ν Fν ω Fω µ )                    (6.5.17)
+                               3go
+in the Lagrangian. Similarly, expanding the four-point amplitude reveals
+an infinite sum of higher order interactions (beyond (6.5.17), these do
+not contribute to the three-gauge-boson amplitude for kinematic reasons).
+String loop amplitudes also reduce, in the low energy region, to the loops

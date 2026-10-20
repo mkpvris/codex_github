@@ -1,0 +1,51 @@
+186                              6 Tree-level amplitudes
+
+associated with a U(n) gauge symmetry; we will soon see that this is the
+case.
+  Define the basis
+                                               n
+                                               (
+                              |N; k; a* =             |N; k; ij*λaij .           (6.5.3)
+                                              i,j=1
+
+Now consider the four-tachyon amplitude shown in figure 6.2(a), in which
+the vertex operators are arranged in the cyclic order 1234. Because the
+Chan–Paton degrees of freedom do not appear in the Hamiltonian, their
+state does not evolve between the vertex operators: the right-hand end-
+point of tachyon 1 must be in the same state as the left-hand endpoint of
+tachyon 2, and so forth. Thus, the amplitude 6.2(a) will now contain an
+additional factor of
+                                       Tr (λa1 λa2 λa3 λa4 )                     (6.5.4)
+from the overlap of the Chan–Paton wavefunctions for each tachyon.
+This rule generalizes to an arbitrary amplitude: each vertex operator now
+contains a Chan–Paton factor λaij from the wavefunction of the endpoint
+degrees of freedom, and the amplitude for each world-sheet is multiplied
+by a trace of the Chan–Paton factors around each boundary.
+   The three-tachyon amplitude becomes
+           SD2 (k1 , a1 ; k2 , a2 ; k3 , a3 ) =
+                      igo                #
+                         %
+                           (2π)26δ 26 ( i ki )Tr (λa1 λa2 λa3 + λa1 λa3 λa2 ) , (6.5.5)
+                       α
+the two cyclic orderings now having di!erent Chan–Paton traces. The
+four-tachyon amplitude is
+                                       igo2             #
+                                            (2π)26δ 26 ( i ki )
+        SD2 (k1 , a1 ; k2 , a2 ; k3 , a3 ; k4 , a4 ) =
+                                          %
+                                       α
+                  a1 a2 a4 a3 a1 a3 a4 a2
+           × Tr (λ λ λ λ + λ λ λ λ )B(−αo (s), −αo (t))
+              + Tr (λa1 λa3 λa2 λa4 + λa1 λa4 λa2 λa3 )B(−αo (t), −αo (u))
+                                                                             
+              + Tr (λa1 λa2 λa3 λa4 + λa1 λa4 λa3 λa2 )B(−αo (s), −αo (u)) .     (6.5.6)
+
+Considering again the unitarity relation (6.4.13), the pole at s = −1/α%
+acquires a factor of
+                          1 0 a1 a2 a3 a4 1
+                            Tr {λ , λ }{λ , λ }                                  (6.5.7)
+                          4
+on the left and a factor of
+                  1 ( 0 a1 a2 a 1 0 a3 a4 a 1
+                       Tr {λ , λ }λ Tr {λ , λ }λ ,                               (6.5.8)
+                  4 a

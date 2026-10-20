@@ -1,0 +1,51 @@
+                                                                           7.2                      CFT              on              the              torus                                               209
+
+      The                    expectation                    value                    of                    a                    product                    of                    vertex                    operators                    is                    given,                    in
+parallel             to             the             earlier             result             (6.2.13)             on             the             sphere,             by
+                          ⟨     ∏n                                       ⟩                                                               ∑
+                                         :  eiki·X(zi,¯zi)            :               =      iCX          (τ)(2π)dδd(                            k    )
+                                                                                                    T2                                         i    i
+                                i=1                                           T2
+                                                           ⏐                                  (                                                                  ⏐α′ki·kj
+                                                  ∏        ⏐           2π                          w        ⏐                             (Im         w       )2       ⏐
+                                                           ⏐                                            ij  ⏐                                             ij           ⏐
+                                            ×              ⏐                            ϑ1                  ⏐τ         exp          −                                  ⏐               .          (7.2.4)
+                                                   i<j     ⏐∂νϑ1(0|τ)                               2π                                          4πτ2                   ⏐
+
+The             factor             2π/∂       νϑ1        comes           from           the           renormalized           self-contractions.
+
+
+                                                                 The            scalar            partition            function
+The                  overall                  normalization                  of                  the                  sphere                  was                  absorbed                  into                  the                  string
+coupling                   constant,                   but                   we                   cannot                   do                   this                   for                   the                   torus,                   in                   particular
+because            there            is            a            nontrivialτ-dependence.            In            fact,            we            will            see            that            there
+is           a           great           deal           of           physics           in           the           amplitude           with           no           vertex           operators           at           all.
+Consider            the            path            integral            with            no            vertex            operators,⟨1⟩T2(τ)                                          ≡      Z(τ).              We
+can             think             of             the             torus             with             modulusτ     as             formed             by             taking             a             ﬁeld             theory
+on                 a                 circle,                 evolving                 for                 Euclidean                 time                 2πτ2,translatingin       ,1        by                 2πτ1,
+and           then           identifying           the           ends.           In           operator           language           this           gives           a           trace,
+                                                                                                                                                      
+                                                         Z(τ)=Tr                          exp(2πiτ1P−2πτ2H)
+                                                                                            −d/24                 (      L        L˜    
+                                                                                      ¯                                     0¯       0
+                                                                        =(qq)                             Tr         q         q               .                                                  (7.2.5)
+Here           q     =exp(2πiτ),     the     momentumP                                                         =L0−L˜0generates          translations          of
+,1,              and              the              Hamiltonian            H       =      L0       +      L˜0      −        1   (c     +      ˜c)               generates               translations
+            2                                                                                                             24
+of      ,        as               in               eq.               (2.6.10).               Such               a               trace,               weighted               by               the               exponential               of               the
+Hamiltonian           and           other           conserved           quantities,           is           termed           a                                      partition             function
+as             in             statistical             mechanics.
+      The                    trace                    breaks                    up                    into                    a                    sum                    over                    occupation                    numbersNµnand
+N˜µn         for                 each  µ      and          n     and                 an                 integral                 over                 momentum     kµ.                 The                 Virasoro
+generators              similarly              break              up              into              a              sum,              andZ   (τ)becomes
+                                                ∫          ddk                                                    ∏               ∑∞                                    ˜
+              Vd(qq¯)−d/24                                              exp(−πτ2α′k2)                                                              qnNµnq¯nNµn                    .               (7.2.6)
+                                                        (2π)d                                                      µ,n
+                                                                                                                           Nµn,N˜µn=0
+The           factor           of            spacetime           volume∑                    Vd       comes            from           the           continuum           normaliza-∫
+tion                 of                 the                 momentum,         k    becoming                       Vd(2π)−d                        ddk.                 The                 various                 sums
+are             geometric,
+                                                                           ∑∞
+                                                                                      qnN         =(1           −qn)−1                  ,                                                         (7.2.7)
+
+                                                                          N=0

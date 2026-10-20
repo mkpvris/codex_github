@@ -1,0 +1,47 @@
+72                                  2                     Conformal              ﬁeld              theory
+
+For               example,               theXµCFT               is               unitary               forspacelikeµif               we               take               the               inner
+product
+                                    ⟨0;  k|0;k′⟩    =2πδ(k      −   k′)(2.9.12)
+
+forthegroundstateanddeﬁne
+
+                                      †˜†˜
+                                    αm=α−m,αm=α−m.(2.9.13)
+Thisimplicitlydeﬁnestheinnerproductsofallhigherstates.ThisCFT
+isnotunitaryforµ=0becauseoftheoppositesigninthecommutator
+there.
+                                                                                                   ˜
+   The         ﬁrst         constraint         is         that         any         state         in         a         unitary         CFT         must         haveh,h≥0.
+If           this           is           true           for           highest           weight           states           it           is           true           for           all           states.           For           a           highest
+weight             state             the             Virasoro             algebra             gives
+     2hO⟨O|O⟩      =2⟨O|L0|O⟩         =   ⟨O| [L1,L−1]|O⟩        =  ∥L−1|O⟩∥      2 ≥   0  ,     (2.9.14)
+
+                                                        ˜
+so  hO  ≥   0.             It             also             follows             that             ifhO=hO=0 then
+                                     L−1·O      =L˜−1     ·O   =0     ,                          (2.9.15)
+
+and       soOis       independent       of       position.       As       noted       before,Omust               then               be               a
+c-number.            That            is,            the            unit            operator            is            the            only            (0,0)            operator            in            a            unitary
+CFT.            Curiously,Xµ  itself            is            the            one            notable            exception:            the            corresponding
+state   xµ|0;      0⟩is             nonnormalizable             because             of             the             inﬁnite             range             ofXµ,and
+equation      (2.9.14)      no      longer      holds.      The      general      theorems      are      of      the      most
+use       for       the       CFTs       corresponding       to       compactiﬁed       dimensions,       where       this
+kind             of             exception             cannot             occur.
+   In                      a                      similar                      way,                      one                      ﬁnds                      that                      an                      operator                      in                      a                      unitary                      CFT                      is˜
+holomorphic                   if                   and                   only                   ifh=                 0,                   and                   antiholomorphic                   if                   and                   only                   if
+h =           0;             this             is             an             important             result             so             we             repeat             it,
+                                                        ¯                  ˜
+                       ∂A    =0     ⇔     h=0      ,    ∂A=0         ⇔     h=0      .            (2.9.16)
+Finally,     using     the     above     argument     with     the     commutator     [Ln,L−n],           one           can
+show               thatc,˜c≥0               in               a               unitary               CFT.               In               fact,               the               only               unitary               CFT               with
+c =           0             is             the             trivial             one,Ln=0.
+
+                                        Zero-point       energies
+
+The        state–operator        mapping        gives        a        simple        alternative        derivation        of        the
+various      normal      ordering      constants.      In      any      CFT,      we      know      thatL0|1⟩=0,
+and     this     determines     the     additive     normalization     ofL0.Inthe       XCFT,        |1⟩  is
+the             ground             state|0;      0⟩,soaXvanishes.             In             thebctheory,|1⟩is             the             excited
+state   b−1|↓⟩   ,sotheweightof                |↓⟩   is  −1             in             agreement             with             the             earlier
+result        (2.7.21)        forλ=2.

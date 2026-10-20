@@ -1,0 +1,47 @@
+                                                                  A.1                      Bosonic              ﬁelds                                                 339
+
+This             is             a             functional             version             of             the             delta-function             integral
+                   ∫    ∞           ∫    ∞                                                ∫    ∞                                2π
+                             dx               dy      exp(iλxy            )=2         π             dx       δ(λx     )=         λ      .                  (A.1.51)
+                     −∞                −∞                                                    −∞
+
+                                                                         An              example
+
+As                       an                       example,                       we                       study                       the                       Euclidean                       transition                       amplitude                       for                       the
+harmonic             oscillator,
+                                                                   ∫              q   ,U
+                                                                                    f
+                              ⟨qf,U|qi,0⟩E                   =          [dq]q        ,0     exp(−SE)                ,                                    (A.1.52a)
+                                                                                    i
+                                                                    1   ∫    U          [                                  ]
+                                                     SE      =                    du       (∂uq)2         +    /2q2            +      Sct     ,         (A.1.52b)
+                                                                    2      0
+where          Sct      is              a              cutoﬀ-dependent              piece              to              be              determined              later.              To              evaluate
+this,             separate             out             the             ‘classical’             part             ofq,
+                                                              q(u)=            qcl(u)+            q′(u)       ,                                            (A.1.53)
+
+where
+                                                            −q¨cl(u)+               /2qcl(u)=0                    ,                                      (A.1.54a)
+                                                            qcl(0)           =  qi    ,qcl(U)=                     qf     .                             (A.1.54b)
+The             boundary             conditions             on       q′    are             then
+                                                                  q′(0)           = q′(U)=0                                                                                                                                                                         (A.1.55)
+
+and      the      action      separates
+                                                        SE=Scl(qi,qf)+                           S′+Sct             .                                      (A.1.56)
+
+Here
+                                                                   1∫       U          [                                     ]
+                                     Scl(qi,qf)=                                 du       (∂uqcl)2          +    /2qcl2
+                                                                   2      0
+                                                                       (q2     +     q2)cosh            /U        −     2qiqf
+                                                            =     /         i           f                                             ,                  (A.1.57a)
+                                                                                          2sinh         /U
+                                                                   1   ∫    U          [                                    ]
+                                                     S′     =                    du       (∂uq′)2         +     /2q′2           .                       (A.1.57b)
+                                                                   2      0
+The             amplitude             becomes
+                                                                                                ∫               0,U
+           ⟨qf,U|qi,0⟩=exp[−Scl(qi,qf)−Sct]                                                          [dq′]              exp(−S′)               .           (A.1.58)
+                                                                                                                0,0
+Expand                in                a                complete               set                of                eigenfunctions                of            (             =−∂2+/2subject                to
+                                                                                                                                     u

@@ -1,0 +1,52 @@
+                        6.5 Chan–Paton factors and gauge interactions                                                       187
+
+on the right, the sum being over the Chan–Paton wavefunction of the
+intermediate state. The completeness of the λaij and the normalization
+(6.5.2) imply that
+                                        Tr (Aλa ) Tr (Bλa ) = Tr (AB)                                                    (6.5.9)
+for any matrices A and B, and so the amplitudes are still unitary.
+
+
+                                                 Gauge interactions
+
+The amplitude for a gauge boson and two tachyons is
+    SD2 (k1 , a1 , e1 ; k2 , a2 ; k3 , a3 ) = −igo% go2 e−λ e1µ
+               !                                                                                  "
+          ×        "
+                   "   c1 Ẋ µ eik1 ·X (y1 )"" "" c1 eik2 ·X (y2 )"" "" c1 eik3 ·X (y3 )""                  Tr (λa1 λa2 λa3 )
+                                                                                                       D2
+                                                                                + (k2 , a2 ) ↔ (k3 , a3 ) . (6.5.10)
+We have used the gauge boson vertex operator (3.6.26), but for now are
+allowing an independent normalization constant go% . Using the results of
+section 6.2, the X path integral is
+      !                                                                        "                       2 µ             3
+               µ ik1 ·X                 ik2 ·X             ik3 ·X                                  %    k2   kµ
+          "
+          "   Ẋ e           (y ) e
+                                  " "
+                                1 ""             (y ) e
+                                                     " "
+                                                   2 ""             (y )  "
+                                                                        3 "           = −2iα               + 3
+                                                                                 D2                     y12 y13
+                                            #                   2α% k1 ·k2            %                     %
+               ×iCDX2 (2π)26δ 26 (               i ki )|y12 |                |y13 |2α k1 ·k3 |y23 |2α k2 ·k3 .          (6.5.11)
+Using momentum conservation, the mass-shell conditions, and the physical
+state condition k1 ·e1 = 0, the amplitude becomes
+          SD2 (k1 , a1 , e1 ; k2 , a2 ; k3 , a3 )
+                                                                         #                0                      1
+                                = −igo% e1 ·k23 (2π)26δ 26 (                   i ki )Tr       λa1 [λa2 , λa3 ] ,        (6.5.12)
+
+where kij ≡ ki − kj . This is again independent of the vertex operator
+positions.
+   The s = 0 pole in the four-tachyon amplitude no longer vanishes. The
+terms that canceled now have the Chan–Paton factors in di!erent orders,
+so the pole is proportional to
+                                                 0                                  1
+                                            Tr [λa1 , λa2 ] [λa3 , λa4 ] .                                              (6.5.13)
+
+Relating the coefficient of this pole to the amplitude (6.5.12) by unitarity,
+one obtains
+                                                 go% = (2α% )−1/2 go .                                                  (6.5.14)
+This is the same relative normalization as from the state–operator map-
+ping: there is only one independent coupling constant.

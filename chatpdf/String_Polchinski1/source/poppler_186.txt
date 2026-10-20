@@ -1,0 +1,49 @@
+164                                 5 The string S-matrix
+
+by the form (5.4.15), where
+                                                    9
+                                               ∂z $ 99
+                                                       = −1 .                                 (5.4.17)
+                                               ∂zv 9z
+Thus the ghost insertion is
+                       !                       !
+                           dz $                  dz̄m$
+                                bz $ z $               bz̄ $ z̄ $ = b−1 b̃−1 · ,              (5.4.18)
+                         C 2πi                 C −2πi
+where C is any contour encircling the vertex operator as shown in the
+figure. The full expression for the S-matrix is then compactly written as
+                                                   !          D m         n
+                                                                                      E
+                                (                      dm t    6          6
+                                           −λχ
+         S (1; . . . ; n) =                e                         Bk         V̂i       .   (5.4.19)
+                               compact               F nR      k=1        i=1
+                              topologies
+
+
+Here Bk is the abbreviation for the b ghost insertion (5.4.15), and V̂
+denotes c̃cVm for a closed string or ta ca Vm for an open string. That
+is, we are now treating all vertex operators as fixed, having traded their
+coordinates for extra parameters in the transition functions. The number
+m of moduli is
+                   m = µ + 2nc + no − κ = −3χ + 2nc + no ,                                    (5.4.20)
+where nc and no are the number of closed and open string vertex operators
+respectively.
+  The expression (5.4.19) shows that the hatted vertex operator, with c̃c
+or ta ca , is the basic one. This is what comes out of the state–operator cor-
+respondence, and it is BRST-invariant. If the vertex operator is integrated,
+the ghost insertions (5.4.18) simply remove the c̃c or ta ca . For example,
+                                   b−1 b̃−1 · c̃cVm = Vm ,                                    (5.4.21)
+leaving the integrated form of the vertex operator. We derived the re-
+sult (5.4.19) from the Polyakov path integral, so the vertex operators come
+out in OCQ form, but we may now use arbitrary BRST-invariant vertex
+operators.
+
+                                                   Exercises
+5.1 Consider the sum (5.1.1), but now over all particle paths beginning and
+ending at given points in spacetime. In this case fixing the tetrad leaves
+no coordinate freedom.
+(a) Derive the analog of the gauge-fixed path integral (5.3.9).
+(b) Reduce the ghost path integral to determinants as in eq. (5.3.18).
+(c) Reduce the X µ path integral to determinants (as will be done in
+section 6.2 for the string).

@@ -1,0 +1,57 @@
+                               6.2 Scalar expectation values                                      173
+
+behave as z −2h at infinity. Focusing on the z1 -dependence in eq. (6.2.22) at
+fixed z2 , this implies that g(z1 , z2 ) falls as z1−2 at infinity and so vanishes by
+holomorphicity. This determines the expectation value up to normaliza-
+tion. Comparing with the path integral result (6.2.19), there is agreement,
+though the normalization * 1 +S2 is seen to diverge as ,(0). This is just the
+zero-mode divergence from the infinite volume of spacetime.
+  To obtain the expectation value of the product of vertex operators
+                                                      D n                                E
+                                                       6
+                                                                  iki ·X(zi ,z̄i )
+                              AnS2 (k, σ) =                     :e                   :        (6.2.24)
+                                                          i=1                            S2
+
+by this method is less direct, because the exponentials are not holomor-
+phic. In fact they can be factored into holomorphic and antiholomorphic
+parts, but this is subtle and is best introduced in operator language as we
+will do in chapter 8. We use the holomorphicity of the translation current.
+Consider the expectation value with one current ∂X µ (z) added. The OPE
+of the current with the vertex operators determines the singularities in z,
+      D                                          E
+            µ
+                   n
+                   6
+                          iki ·X(zi ,z̄i )               iα$ n       (n
+                                                                           kiµ
+          ∂X (z)         :e                  :        = − AS2 (k, σ)
+                   i=1
+                                                          2          i=1
+                                                                         z − zi
+                                                 S2
+                                                             + terms holomorphic in z.        (6.2.25)
+
+Now look at z → ∞. The condition that ∂u X µ be holomorphic at u = 0
+again requires that the expectation value vanish as z −2 when z → ∞. The
+holomorphic term in eq. (6.2.25) must then vanish, and from the vanishing
+of the order z −1 term we recover momentum conservation,
+                                                           n
+                                                           ( µ
+                                         AnS2 (k, σ)              ki = 0.                     (6.2.26)
+                                                            i=1
+
+Let us also say this in a slightly di!erent way. Consider the contour
+integral of the spacetime translation current
+                                                      <
+                                      1
+                                   µ
+                                 p =                       (dz jzµ − dz̄jz̄µ ) ,              (6.2.27)
+                                     2πi               C
+
+where the contour C encircles all the exponential operators. There are two
+ways to evaluate this. The first is to contract C until it is a small circle
+around each vertex ?  operator, which picks out the (z − zi )−1 term from
+each OPE and gives ni=1 kiµ . The second is to expand it until it is a small
+circle in the u-patch: by holomorphicity at u = 0 it must vanish. This sort
+of ‘contour-pulling’ argument is commonly used in CFT.

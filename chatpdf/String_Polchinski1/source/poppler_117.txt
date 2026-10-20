@@ -1,0 +1,42 @@
+                           3.4 The Weyl anomaly                            95
+
+than gauge-fixed. This is particularly plausible because the quantum e!ects
+in eq. (3.4.18) have generated an action for ω which looks just like that
+for one of the X µ ; for D < 26 the sign is that of a spacelike dimension.
+However, the physics is a little exotic because the di! transformation
+(and therefore the energy-momentum tensor) of ω is di!erent from that
+of the X µ . In fact the theory is the linear dilaton CFT. So there is no
+(D + 1)-dimensional Lorentz invariance and this theory is not useful for
+our immediate purpose, which is to understand physics in our part of the
+universe. It is an interesting model, however, and we will return to this
+point briefly in section 9.9.
+  We have found above that a flat world-sheet CFT can be coupled to
+a curved metric in a Weyl-invariant way if and only if the total central
+charge c is zero. There is a paradox here, however, because the same
+argument applies to the antiholomorphic central charge c̃, and we have
+seen from the example of the bc CFT that c need not equal c̃. The point is
+that we have implicitly assumed world-sheet di! invariance in eqs. (3.4.11)
+and (3.4.19). If c -= c̃ there is no di!-invariant expression that agrees with
+both the O(h2zz ) and O(h2z̄z̄ ) calculations. The CFT then cannot be coupled
+to a curved metric in a di!-invariant way; there is a diff or gravitational
+anomaly. The paradox shows that c = c̃ is necessary for a CFT to be free
+of gravitational anomalies, and it can also be shown that this is sufficient.
+
+                          Inclusion of boundaries
+Let us first return to eq. (3.4.8) and consider the more general possibility
+                              T aa = a1 R + a2 .                      (3.4.24)
+This is allowed by di! invariance but would be nonvanishing in the flat
+limit. Earlier we set a2 to zero by the choice (2.3.15b) of Tab , explained
+in the footnote below that equation. Equivalently, the existence of more
+than one conserved Tab on the flat world-sheet means that there is some
+freedom in how we couple to a curved metric. In particular, we can add
+to the action
+                                       !
+                             Sct = b       d2 σ g 1/2 ,               (3.4.25)
+
+which is a two-dimensional cosmological constant. This is not Weyl-
+invariant. It adds 2πbgab to Tab and so the trace (3.4.24) becomes
+                         T aa = a1 R + (a2 + 4πb) .                   (3.4.26)
+We can therefore make the second term vanish by setting b = −a2 /4π;
+this is what we have done implicitly in eq. (2.3.15b). The separate values
+of a2 and b depend on definitions and are uninteresting.

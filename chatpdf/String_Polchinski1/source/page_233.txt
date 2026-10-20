@@ -1,0 +1,46 @@
+                                                                         7.2                      CFT              on              the              torus                                            211
+
+In                the                second                line                we                have                used                translation                invariance                to                carry                out                the
+integral             over            w.             All             expectation             values             are             understood              to             be             on             the             torus
+with                 modulus              τ.                 To                 get                 the                 expectation                 value                 of                 the                 energy-momentum
+tensor,             we             use             the             OPE
+
+                                        µ                                                  α′d                  ′
+                            ∂wX            (w)∂wXµ(0)           =                   −    2w2          −      α    Tww(0)        +            O(w)            .                             (7.2.15)
+
+Now,
+   Z     (τ)−1         ⟨   ∂wXµ(w)∂wXµ(0)⟩                                      =      d∂     w∂w′G′(w,                  w¯;w′,           w¯′)|w′=0
+                                                                                        α′d       ϑ1∂w2        ϑ1      −     ∂wϑ1∂wϑ1                              α′d
+                                                                                =         2                               ϑ2                              +      8πτ             ,         (7.2.16)
+                                                                                                                             1                                             2
+where               the               arguments               of               all               the               theta               functions               are               (w/2π,    τ).               This               does
+indeed            have            a            double            pole            atw      =           0.            Carefully            expanding            both            numerator
+and           denominator           to           order                    w2        (this           is           simpliﬁed           by           the           fact           thatϑ1     is           odd),
+the             order       w0       term             in             the             expectation             value             (7.2.16)             is
+                                                                               α′d       ∂3     ϑ1                α′d
+                                                                                            w           +                      .                                                           (7.2.17)
+                                                                                 6       ∂wϑ1                  8πτ2
+The           OPE           (7.2.15)           then           gives
+                                                                               (                 3                                            
+                                           ⟨T              (0)     ⟩    =          −d         ∂wϑ1(0|τ)                   −           d             Z(τ)           ,                       (7.2.18)
+                                                    ww                                   6    ∂wϑ1(0|τ)                          8πτ2
+
+and           the           variation           (7.2.14)           gives           the           di!erential           equation
+                                                                                            πid∂w3ϑ1(0|τ)                                  id
+                                                        ∂τ     ln     Z(τ)=                    3      ∂      ϑ     (0|τ)          +      4τ          .                                     (7.2.19)
+                                                                                                         w       1                             2
+To                    proceed                    further,                    we                    use                    the                    fact,                    which                    is                    easily                    veriﬁed                    from                    the
+inﬁnite             sum,             that             the             theta             functions             satisfy
+                                                                        (      w     ⏐                  i                (     w      ⏐    
+                                                             2                       ⏐                                                 ⏐
+                                                          ∂wϑ1               2π      ⏐τ         =       π    ∂τϑ1              2π⏐τ                .                                       (7.2.20)
+
+Rewrite             (7.2.19)             as
+                                                   ∂      ln    Z(τ)=                −d∂              ln∂          ϑ(0|τ)+                       id       .                                (7.2.21)
+                                                      τ                                    3      τ             w      1                       4τ
+                                                                                                                                                     2
+Together       with       the       conjugate       equation,       this       determines
+                                                                Z(τ)=                 |∂wϑ1(0|τ)|−2d/3τ−d/2                                                                                (7.2.22)
+                                                                                                                                   2
+up               to               a               numerical               coeﬃcient               that               must               be               ﬁxed               by               other               means.               Noting
+the             relation             (7.2.43),             this             is             the             same             as             the             earlier             result             (7.2.8).

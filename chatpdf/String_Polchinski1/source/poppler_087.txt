@@ -1,0 +1,45 @@
+                                   2.8 Vertex operators                      65
+
+for m > 0 because the contour integral of the contractions will never
+have a single pole. One can then carry out the same manipulation (2.8.3)
+inside the normal ordering, and so the state with several α oscillators
+excited comes out as the : : normal-ordered product of the corresponding
+operators,
+                          %        &1/2
+                              2            1
+              αµ−m → i                           ∂m X µ (0) ,    m≥1,   (2.8.7a)
+                              α"        (m − 1)!
+                          %        &1/2
+                              2            1
+              α̃µ−m → i                          ∂¯m X µ (0) ,   m≥1.   (2.8.7b)
+                              α"        (m − 1)!
+Similarly,
+                                      xµ0 → X µ (0, 0) .                 (2.8.8)
+Any state can be obtained from |1, by acting with the operators on
+the left-hand sides of eqs. (2.8.7) and (2.8.8). The operator corresponding
+to this state is then given by the : : normal-ordered product of the
+corresponding local operators on the right-hand sides. For example,
+                                   |0; k, ∼
+                                          = : eik·X(0,0) : .             (2.8.9)
+This is easy to understand: under the translation X µ → X µ + aµ , both
+the state and the corresponding operator have the same transformation,
+being multiplied by exp(ik · a).
+  The same method applies to the bc theory. For clarity we specialize to
+the case λ = 2 which is of interest for bosonic string theory, leaving the
+generalization to the reader. From the Laurent expansions (2.7.16) and
+the contour argument it follows that
+         bm |1, = 0 ,   m ≥ −1 ,               cm |1, = 0 ,      m≥2.   (2.8.10)
+Note that due to the shifts in the exponents of the Laurent expansion
+coming from the conformal weights of b and c, the unit operator no longer
+maps to a ground state. Rather, relations (2.8.10) determine that
+                                     |1, = b−1 | ↓, .                   (2.8.11)
+The translation of the raising operators is straightforward,
+                          1
+                  b−m →         ∂m−2 b(0) , m ≥ 2 ,         (2.8.12a)
+                       (m − 2)!
+                          1
+                c−m →           ∂m+1 c(0) , m ≥ −1 .        (2.8.12b)
+                       (m + 1)!
+  Notice that the ghost number − 32 state b−1 | ↓, maps to the ghost
+number 0 unit operator, and the ghost number − 12 state | ↓, to the
+ghost number 1 operator c. The di!erence arises from the nontensor

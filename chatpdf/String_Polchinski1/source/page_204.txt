@@ -1,0 +1,44 @@
+182                                                                   6Tree-levelamplitudes
+
+string     divergence     is     of     this     same     basic     form,     so     this     one     kind     of     analytic
+continuation                  removes                  all                  divergences                  —                  except                  of                  course                  for                  the                  poles
+themselves.                  The                  pole                  is                  on                  the                  real                  axis,                  so                  we                  need                  to                  deﬁne                  it                  more
+precisely.             The             correct               ϵ     prescription             for             a             Minkowski             process             is
+                                                              1             ≡                     1
+                                                       α′s     +1                   α′s+1+                     iϵ
+                                                                            ≡P                  1            −iπδ(α′s+1)                              ,                                  (6.4.12)
+                                                                                        α′s+1
+where                   P                   denotes                   the                   principal                   value.                   Unitarity                   (which                   we                   will                   develop
+more                   systematically                   in                   chapter                   9)                   requires                   this                   pole                   to                   be                   present                   and
+determines                its                coeﬃcient                in                terms                of                the                amplitude                for                two                tachyons                to
+scatter             into             one:                                         ∫
+                                                                                            d26k           SD       (k1;       k2;      k)SD           (−k;k3;                k4)
+                       SD       (k1;       k2;      k3;      k4)=              i                                  2                                  2
+                              2                                                          (2π)26                            −k2          +     α′−1        +      iϵ
+                                                                                               +             terms             analytic             at  k2      =1/α            ′   .    (6.4.13)
+
+      Gathering            together            the            factors            in            the            four-tachyon            amplitude,            including
+an           equal           contribution           to           the           pole           from           I(u,      s),           and           using           the           three-tachyon
+result             (6.4.4),             the             condition             (6.4.13)             gives
+                                                                  C           =      e−λCX              Cg          =           1         .                                              (6.4.14)
+                                                                      D2                           D2        D2             α′g2
+                                                                                                                                    o
+The             three-tachyon             amplitude             is             then
+                                                   S        (k      ;  k     ;  k     )=         2igo(2π)26δ26(∑k                                    )   .                               (6.4.15)
+                                                      D2         1        2        3                α′                                        i    i
+The          various          functional          determinants          have          dropped          out.          Using          unitarity,          all
+normalizations             can             be             expressed             in             terms             of             the             constant          go      appearing             in
+the           vertex           operators.           The           determinants           can           in           fact           be           computed           by           careful
+regularization                     and                     renormalization,                     and                     the                     relative                     normalizations                     of
+di!erent             topologies             agree             with             those             from             unitarity.
+      Continuing                     past                     the                    pole,                    we                    encounter                     further                     singularities.                    Taylor
+expanding             the             integrand             at∫               y    =           0             gives
+                                                      r                −α′s−2                       ′                   −α′s−1                           
+                         I(s,      t)=                    dy        y                    +(αt+2)y                                         +...                .                          (6.4.16)
+                                                    0
+The             second             term             gives             a             pole             atα′s=0,
+                                         I(s,      t)=           u−t               +           terms      analytic      atα′s=0                                    .                     (6.4.17)
+                                                                     2s
+From       the       further       terms       in       the       Taylor       expansion,       the       amplitude       has       poles
+at
+                                                                           α′s      =      −1,        0,    1,   2,...        .                                                          (6.4.18)

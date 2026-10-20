@@ -1,0 +1,45 @@
+                                                                    9.7                      Large              order              behavior                                                         315
+
+      The                      derivation                      of                      string                      theory                      from                      spacetime                      gauge                      symmetry                      is
+extremely            elegant,            particularly            for            the            open            string.            The            inclusion            of            closed
+strings            in            the            open            string            ﬁeld            theory            is            intriguing.            However,            it            remains            to
+be                seen                whether                string                ﬁeld                theory                is                a                useful                tool                beyond                perturbation
+theory.                  It                  has                  not                  played                  a                  role                  in                  the                  recent                  nonperturbative                  progress
+based           on           spacetime           supersymmetry,           which           will           be           described           in           chapter           14.
+It             is             quite             possible             that             strings,             or             string             ﬁelds,             are             simply             not             the             correct
+degrees             of             freedom             for             a             nonperturbative             formulation             of             ‘string’             theory.
+
+                                                                  9.7                                             Large               order               behavior
+
+There                   is                   an                   interesting                   result                   about                   the                   large                   order                   behavior                   of                   string
+perturbation             theory.             Let             us             start             with             ﬁeld             theory.             Consider             the             integral
+         ∫    ∞                        [        y2                 y3     ]                      ∫    ∞                        [         1     (z2                 z3     ]
+                     dy       exp          −             −     λ               =      λ−1                    dz       exp         −                         +                      ,         (9.7.1)
+            −∞                                   2!                3!                               −∞                                  λ2          2!             3!
+where             z    =      yλ     .           This           integral           diverges           forλ            ̸=          0,           but           for           now           we           can           ignore
+that           and           calculate           it           as           a           formal           expansion           in           powers            ofλ,
+                    ∑∞        (−λ)n            ∫     ∞                                                                                   ∑∞
+                                                            dy         y3n   exp(−y2/2)           =           (2π)1/2                              λ2kC2k              ,                     (9.7.2)
+                                6nn!              −∞
+                    n=0                                                                                                                  k=0
+with
+                                                                                          2k     Γ(3       k   +1/2)
+                                                                       C2k        =          π1/2        32k(2k)!                    .                                                       (9.7.3)
+
+This              integral              is              the              zero-dimensional              limit              of              a              scalar              ﬁeld              theory,              with              a
+mass              term              and              cubic              coupling.              The              expansion              in  λ     can              be              represented              in
+terms                 of                Feynman                graphs,                 with                propagator                 1                and                cubic                vertex−λ.The
+constantC2kthen     simply    counts     the    total    number     of     vacuum    graphs     with
+2kcubic    vertices,    or    equivalentlyk+  1    loops,    weighted    by    the    appropriate
+symmetry      factor.      For      example,      the      reader      can      check      that      there      are      two
+vacuum      graphs      with      two      vertices,      with      symmetry      groups      of      order      8      and
+12,     and     indeedC2=                                   5     =       1   +        1   .             To             get             the             large             order             behavior,             we             use
+                                                           24             8           12n+1/2          −n
+Stirling’s             approximation                                 n!      ≈     n                e        .Then
+                                                                             C2k          ≈        kk        ≈        k!,                                                                    (9.7.4)
+where             the             approximation             holds             up             to             factors             of             the             formka     and         bk.
+      One              can              also              include              a              quartic              termλ2y4/4!,              which              makes              the              integral
+converge.             The             power             of          λ    is             determined             by             requiring             that             all             terms             in             the
+action               for      z    be               proportional               to         λ−2;               equivalently,               all           k    +1   loop  vacuum
+graphs        are        weighted        byλ2k.        This        additional        term        does        not        substantially
+change       the       result;       the       estimate       (9.7.4)       still       holds       to       the       given       accuracy.

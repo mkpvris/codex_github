@@ -1,0 +1,48 @@
+                                                        9.3                      Sewing              and              cutting              world-sheets                                                       299
+
+2π)               is−     ln    |q|.               Integrating               over             |q|       <       1andsummingovertheothertwo
+channels     gives     only     part     of     the     integration     region     for     the     sphere     with     four
+points,     as     shown     in     ﬁgure     9.6(b).     The     shaded     regions     are     included     but     the
+unshaded     interior     region     is     missed.
+      Let    us    make    this    more    explicit.    For    the    trilinear    vertex,    put    the    points    on
+the              sphere              at              the              standard              0,1,∞    and              choose              coordinate              frames                        z(0),         z(1),
+and          z(∞)          at               each,               so               the               three               sewing               circles               are|z(0,1,∞)|=1.Thechoice
+should      be      invariant      (up      to      phase)      under      the      six      Mobius               transformations¨
+that              permute              the              vertex              operators,              so              that              the              vertex              is              symmetric.              There
+are             many             possible             choices,             for             example
+
+                             (0)                 az                         (1)             a(z       −      1)                    (∞)                      a
+                         z           =       z    −     2      ,z                   =           z    +1               ,z                     =2z−1,                                                    (9.3.6)
+
+for          any          constant               a.For              a≥3,          the          sewing          circles          do          not          overlap,          guarantee-
+ing           that           the           plumbing           ﬁxture           produces           a           good           surface           for           all                  q     ≤      1.           As           the
+reader             can             verify,             sewing             the         z(∞)          and          z′(0)        patches             from             two             spheres             with
+parameter                       q     produces             a             sphere             with             vertex             operators             at             0,             1,1(1         +     a2/q),
+               1                    2                                                                                                                                                 2
+                                                                                                                                                ¨
+and            2(1       −       a     /q).                   This                   is                   equivalent                   under                   a                   Mobius                   transformation                   to
+vertex             operators             at             0,      1,    ∞,        and
+                                                                             z4      =(q−a2)2/4a2q.                                                                                                    (9.3.7)
+
+As        q      runs                   over                   the                   unit                   disk,z4covers                  the                  outer                  shaded                  region                  of                  ﬁg-
+ure                   9.6(b).                   Permuting                   the                   external                   vertex                   operators                   gives                   the                   other                   two
+regions.               We               could               try               to               takeasmaller,               so               the               shaded               regions               grow,               but
+they               will               eventually               overlap               and               double-count               some               surfaces               while               other
+surfaces             will             still             not             be             produced.             They             will             never             precisely             ﬁll             the             plane,
+so                  we                  need                  to                  add                  in                  an                  explicit                  four-point                  vertexV0,4which                  is                  given
+by            the            sphere            with            four            marked            points,            integrated            over            the            unshaded            part
+of                    thez-plane.                    This                    does                    not                    deﬁneV0,4completely                    because                    there                    is
+also                 a                 choice                 of                 coordinate                 at                 each                 puncture                 for                 each                 value                 ofz4.                 It                 is
+always            possible            to            make            this            choice            in            such            a            way            as            to            connect            smoothly
+at                   the                   boundary                   between                   the                   shaded                   and                   unshaded                   regions.                   Note                   that
+the                  Feynman                  graph                  of                  ﬁgure                  9.6(a)                  includes                  all                  the                  asymptotic                  regions
+z4     →        0,    1,    ∞,        while             the             four-point             vertex             includes             only             nondegenerate             sur-
+faces.            The            behavior            in            the            limits            is            then            given            explicitly           by            theq   →        0            limit
+of             the             plumbing             ﬁxture:             this             is             why             this             construction             is             useful.
+      As              another              example,              sewing              two              of              the              circles              of              a              single              vertex              to              the
+ends             of             a             cylinder             produces             a             torus             with             one             vertex             operator.             This             covers
+the           limit           Im   τ    →∞               of     the     moduli     space     of     the     torus,     but     an     interior     region
+is      missed      and      must      be      added      by      hand      as      a      vertex      regionV1,1.
+      This         construction         can         be         extended         inductively.         The         sewing         operation
+always      increases      the      parameter
+                                                                                     r=3g+n−2.                                                                                                         (9.3.8)

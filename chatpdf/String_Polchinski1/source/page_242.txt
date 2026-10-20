@@ -1,0 +1,46 @@
+220                                                                           7                    One-loop              amplitudes
+
+       One                      might                      try                      to                      remove                      the                      UV                      divergence                      from                      ﬁeld                      theory                      by
+cutting               o!               the    l    integral.               Similarly,               one               might               try               to               make               an               analogous
+modiﬁcation          of          string          theory,          for          example          replacing          the          usual          fundamental
+region               F0        with               the               region       |τ1|≤                1,        τ2>1      whose      lower      edge      is      straight.
+                                                                                                      2
+However,        in        either        case        this        would        spoil        the        consistency        of        the        theory:
+unphysical             negative             norm             states             would             no             longer             decouple.             We             have             seen
+in                    the                    general                   discussion                    in                    section                    5.4                    that                    the                    coupling                    of                    a                   BRST-
+null                state                is                proportional                to                a                total                derivative                on                moduli                space.                For                the
+fundamental                region                              F0,theapparentboundariesIandI                                                                                    ′   and                II                and                II′
+respectively            (shown            in            ﬁg.            5.2)            are            identiﬁed            and            the            surface            terms            cancel.
+Modifying                 the                 region                 of                 integration                 introduces                 real                 boundaries.                 Surface
+terms                   on                   the                   modiﬁed                   moduli                   space                   will                   no                   longer                   cancel,                   so                   there                   is
+nonzero                  amplitude                  for                  null                  states                  and                  an                  inconsistent                  quantum                  theory.
+This               is               directly               analogous               to               what               happens               in               gravity               if               we               try               to               make
+the            theory             ﬁnite            by            some            brute            force            cuto!            on            the            short-distance            physics:
+it                is                exceedingly                diﬃcult                to                do                this                without                spoiling                the                local                spacetime
+symmetry                     and                     making                     the                     theory                     inconsistent.                     String                     theory                     manages
+in                 a                 subtle                 way                 to                 soften                 the                 short-distance                 behavior                 and                 eliminate                 the
+divergences             without             loss             of             spacetime             gauge             invariance.
+
+                                                               Physics              of              the              vacuum              amplitude
+Besides         serving         as         a         simple         illustration         of         the         behavior         of         string         amplitudes,
+the           one-loop            vacuum            amplitude           has            an            interesting            physical            interpretation.
+In                       point-particle                       theory,                       ‘vacuum’                       paths                       consist                       of                       any                       numbernof
+disconnected            circles.            Including            a            factor            of            1/n!forpermutationsymmetry
+and             summing             in              n     leads             to                                                                   
+                                                                         Zvac(m2)=exp                                      ZS(m2)                    .                                                    (7.3.17)
+                                                                                                                                   1
+Translating      into      canonical      ﬁeld      theory,
+                                                                   Zvac(m2)=                            ⟨0|exp(−iH   T)|0⟩
+                                                                                                =exp(−iρ0Vd),                                                                                             (7.3.18)
+where               ρ0       is             the             vacuum             energy             density:
+                                                                                      ρ        =          i    Z         (m2)            .                                                                (7.3.19)
+                                                                                          0            V            S1
+                                                                                                            d
+       The            l     integral                   in       ZS        (m2)                   diverges                   as  l     →         0.                   In                   renormalizable                   ﬁeld
+                                                                       1
+theory              this              divergence             is              canceled             by              counterterms              or              supersymmetry.              To
+get                a               rough                insight                into               the               physics                we               will               cut                o!                the               integral               atl≥ϵ
+and             then             take       ϵ    →         0,             but             drop             divergent             terms.             With             this             prescription,
+                                  ∫     ∞      dl                                                                                 1
+                                                       exp[−(k2                     +      m2)l/2]                 →−                   ln(k2           +      m2)(7.3.20)
+                                     0         2l                                                                                 2

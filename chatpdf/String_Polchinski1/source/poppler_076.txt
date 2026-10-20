@@ -1,0 +1,46 @@
+54                           2 Conformal field theory
+
+where
+                                 c                     c̃
+                 Tm = Lm − δm,0    , T̃m = L̃m − δm,0     .        (2.6.8)
+                                24                    24
+The additive shift of T0 is from the nontensor transformation (2.4.26),
+                                               c
+                          Tww = (∂w z)2 Tzz +    .                 (2.6.9)
+                                              24
+The Hamiltonian H of time translation in the w = σ 1 + iσ 2 frame is
+                        ! 2π
+                               dσ 1                  c + c̃
+                  H=                T22 = L0 + L̃0 −        .           (2.6.10)
+                         0     2π                      24
+Notice that the +2s from the Laurent expansions (2.6.5) have canceled
+in the Fourier expansions (2.6.7) due to the conformal transformation of
+T . Similarly the Laurent expansion for a holomorphic field of weight h
+would include +h in the exponent.
+   Cutting open the path integral on circles of constant time Im w =
+ln |z|, the Virasoro generators become operators in the ordinary sense.
+(This idea of cutting open a path integral is developed in the appendix.)
+By holomorphicity the integrals (2.6.6) are independent of C and so in
+particular are invariant under time translation (radial rescaling). That is,
+they are conserved charges, the charges associated with the conformal
+transformations.
+   It is an important fact that the OPE of currents determines the algebra
+of the corresponding charges. Consider general charges Qi , i = 1, 2, given
+as contour integrals of holomorphic currents,
+                                          4
+                                             dz
+                               Qi {C} =          ji .                   (2.6.11)
+                                           C 2πi
+Consider the combination
+                     Q1 {C1 }Q2 {C2 } − Q1 {C3 }Q2 {C2 } ,              (2.6.12)
+where the contours are shown in figure 2.4(a). The order in which the
+factors are written is irrelevant, as these are just variables of integration in
+a path integral (unless both charges are anticommuting, in which case there
+is an additional sign and all the commutators become anticommutators).
+As discussed in the appendix, when we slice open the path integral to
+make an operator interpretation, what determines the operator ordering
+is the time ordering, which here is t1 > t2 > t3 . The path integral with the
+combination (2.6.12) thus corresponds to a matrix element of
+                         Q̂1 Q̂2 − Q̂2 Q̂1 ≡ [Q̂1 , Q̂2 ] .             (2.6.13)
+Now, for a given point z2 on the contour C2 , we can deform the di!erence
+of the C1 and C3 contours as shown in figure 2.4(b), so the commutator

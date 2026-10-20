@@ -1,0 +1,47 @@
+202                                                        6Tree-levelamplitudes
+
+To    evaluate    this    use    the    Campbell–Baker–Hausdor!    (CBH)    formula
+                                 eik1·X1Aeik2·X2C                  =eik2·X2Ceik1·X1Ae−[k1·X1A,k2·X2C                                      ]
+                                                                   =     eik2·X2Ceik1·X1A|z                     |α′k1·k2       .                            (6.7.23)
+                                                                                                            12
+The             expectation             value             (6.7.22)             becomes
+                           α′k1·k2                      ik1·X1C+ik2·X2C                 ik1·X1A+ik2·X2A
+                 |z12|                ⟨⟨0;k4|e                                       e                              |0;    k3⟩
+                             =     |z      |α′k1·k2      ⟨⟨0;    k    |ei(k1+k2)·x          eα′(k1     ln|z1|+k2        ln|z2|)·p|0;         k    ⟩
+                                       12                           4                                                                           3
+                                             α′k1·k2            α′k1·k3            α′k2·k3
+                             =     |z12|                |z1|                |z2|               ⟨⟨0;    k1    +     k2    +    k4|0;       k3⟩
+                                         X            d    d    ∑                    α′k1·k2            α′k1·k3             α′k2·k3
+                             =     iCS2(2π)             δ     (      iki)|z12|                   |z1|               |z2|                 ,                  (6.7.24)
+where            we            have            used            the            two-point            expectation            value            to            normalize            the            last
+line.             This             is             the             familiar             result             (6.2.31),             obtained             by             two             other             methods             in
+                                                                                                                              α′k2
+section           6.2,           after           one           includes           in           the           latter           a           factor|z4|4from           the           change
+of             frame             and             takesz4→∞.         All         other         free-ﬁeld         results         can         be         obtained         by
+this         same         oscillator         method.
+
+                                                 Relation          between          inner          products
+Nondegenerate               bilinear               and               Hermitean               inner               products               can               always               be
+related         to         one         another         by         an         appropriate         antilinear         operation         on         the         bra.
+Let            us            consider             an            example.            From            the            free-ﬁeld            expectation            values,            we
+have
+                                                 ⟨⟨0;    k|0;      l⟩   =     iCSX(2π)dδd(k                   +     l)   ,                                  (6.7.25)
+                                                                                     2
+using         the         fact         that|0;    k⟩    maps         to     eik·X.         Compare         this         with         the         inner         product
+from             the  Xµ       CFT,
+                                                      ⟨0;     k|0;      l⟩   =(2π)dδd(l−k).                                                                 (6.7.26)
+These             di!er             only             byk→−kfrom      conjugatingeik·X,      and      normalization,
+                                                              ⟨⟨0;    k|    =     iCSX⟨0;          −k|       .                                              (6.7.27)
+                                                                                         2
+     For                 more                 general                 operators,                 there                 is                 a                 natural                 notion                 of                 conjugation
+in            CFT.            In            Euclidean            quantum            mechanics,            Hermitean            conjugation            inverts
+Euclidean                 time,                 eq.                 (A.1.37),                 so                 the                 natural                 op eration                 of                 Euclidean                 con-
+jugation              is              conjugation      ×     time-reversal:              an              operator              that              is              Hermitean              in
+Minkowski                   space                   is                   also                   Hermitean                   under                   this                   combined                   operation.                   In
+CFT,               we               make               the               same               deﬁnition,               but               also               must               include               a               time-reversal
+on              the              conformal              frame,
+                                                                   A(p)=              A′(p′)†.                                                              (6.7.28)
+
+                                  ′                                                                                               ′           ¯−1
+Here          p     and         p      are           related           by           radial           time-reversal,z                  =       z       ,andthe
+unprimed     operator     is     in     thez-frame     and     the     primed     operator     in     theu-

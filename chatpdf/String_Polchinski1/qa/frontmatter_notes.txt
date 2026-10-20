@@ -1,0 +1,52 @@
+前付翻訳・照合メモ
+
+対象原資料:
+source/String_Polchinski1_original.pdf
+対象ページ: PDF 1, 3, 5, 6, 7, 8, 9, 14, 15, 17, 18, 19, 20, 21.
+翻訳: sections/frontmatter.tex
+
+収録内容:
+- PDF 1: 表紙画像内の題名、副題、巻、著者、Cambridge、URL。原資料の副題の不一致を訳注で明示。
+- PDF 3: 書籍紹介の全段落、両巻内容の説明、演習・用語集・参考文献の説明、著者紹介2段落。
+- PDF 5: 第1巻の書評5件、第2巻の書評3件、各出典と執筆者。
+- PDF 6: シリーズ名、総編集者3名、全書目59件、ペーパーバックを表すdaggerの凡例。
+- PDF 7: 題名/巻/副題/著者/所属は親原稿のタイトルへ組み込むため、このファイルでは重複収録しない。
+  原書表記: STRING THEORY / VOLUME I / An Introduction to the Bosonic String /
+  JOSEPH POLCHINSKI / Institute for Theoretical Physics / University of California at Santa Barbara.
+- PDF 8: 全刊行情報、著作権文、初版年、6種のISBN、URL免責文。
+- PDF 9: 献辞。
+- PDF 14: 第II巻の概要、全10章(10--19)と付録B。
+- PDF 15: Steven Weinbergの序文全3段落、署名/役職/シリーズ/年。
+- PDF 17--19: まえがき全段落、受講順序/節番号、謝辞、正誤URL、署名/場所/年。
+- PDF 20--21: 記法の全段落、測度/デルタ関数の規約、等号類4種。
+原書PDF 11--13の目次は、完成した日本語本文の見出しから親原稿で生成する。
+白紙PDF 2,4,10,16,22は翻訳本文なし。
+
+視覚確認:
+qa/source-001.png, source-006.png, source-008.png, source-014.png,
+source-019.png, source-020.png, source-021.pngを確認。
+原書PDF 20の時空作用Sおよび第I巻の時空Ricci Rは太字の数学斜体。
+世界面のS/Rと、第II巻の時空Rは通常の数学斜体。mathcalではない。
+使用TeXはboldsymbol{S} / boldsymbol{R}_{mu nu}。
+等価の記号(PDF21)はcong。
+d^2 z = 2 dx dy と delta^2(z,bar z)=1/2 delta(x)delta(y)を確認。
+
+原資料自身の相違・表記:
+1. PDF1画像表紙は「VOLUME I / SUPERSTRING THEORY AND BEYOND」、
+   PDF7扉は「VOLUME I / An Introduction to the Bosonic String」。
+   表紙画像と本文扉で副題が一致しない。推測で訂正せず注記した。
+2. PDF6書目の人名・題名はPDFテキスト抽出と画像に基づき原書表記を保存:
+   J. A. de Azcárrage、V. Belinkski、V. I. Orievetsky、
+   N. M. Boguliubov、L. O' Raifeartaigh、
+   An Introduction to the Bosonic, String（Bosonicの後にコンマあり）。
+   一般に知られた綴りとの差がありうるが、原書の書誌カタログなので無断修正しない。
+3. 作者の「現在」、近年の研究、書評の「4年間」、URL等は原書の歴史的記述を保持。
+
+親原稿への統合作業:
+- PDF7の所属を必ずタイトルに含める。
+- まえがきの「Green、Schwarz、Witten（1987）の第2巻」は最終確定BibTeXキーで引用リンク追加。
+- 記法の「Misner、Thorne、Wheeler（1973）」も最終確定BibTeXキーで引用リンク追加。
+  未確定キーの推測を避け、現時点では本文中に著者・年のみ保持。
+- このTeX断片単体はまだコンパイルしていない。親原稿に統合後、
+  文献リンク、目次リンク、欧文アクセント文字、カタログの改ページを検証する。
+- 前付は原書と同じ順序（生成目次を除く）であり、各内容を省略・要約していない。

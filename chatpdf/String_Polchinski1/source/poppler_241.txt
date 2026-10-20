@@ -1,0 +1,49 @@
+                                7.3 The torus amplitude                        219
+
+field theory (note that l has units of spacetime length-squared). Summing
+this over the string spectrum as in eq. (7.3.12) only makes things worse,
+as all the states of the string contribute with the same sign. However,
+compare the sum (7.3.12) to the actual string amplitude (7.3.8). There is
+great similarity but also one remarkable di!erence. The integrands are
+identical but the regions of integration are di!erent: in the string it is the
+fundamental region
+                                            1
+                       F0 :      |τ| > 1 ,   |τ1 | <
+                                              , τ2 > 0            (7.3.14)
+                                            2
+and in field theory the larger region R. In the string amplitude, the UV
+divergent region is simply absent. We can also see this from the point of
+view of the momentum integral (7.3.8a). Since τ2 is bounded below, this
+integral (after contour rotation) is a convergent Gaussian.
+   Another possible divergence comes from the limit τ2 → ∞, where the
+torus becomes very long. In this region, the string amplitude in 26 flat
+dimensions has the expansion
+                $ ∞                                               
+                      dτ2
+         iV26             (4π 2 α% τ2 )−13 exp(4πτ2 ) + 242 + . . . ,      (7.3.15)
+                      2τ2
+the asymptotic behavior being controlled by the lightest string states.
+The first term in the series diverges, and the interpretation is clear from
+the field theory point of view. The series is in order of increasing mass-
+squared. The first term is from the tachyon and diverges due to the
+positive exponential in the path sum (7.3.9). This divergence is therefore
+an artifact of a theory with a tachyon, and will not a(ict more realistic
+string theories. Incidentally, this path sum can be defined by analytic
+continuation from positive mass-squared, but there is still a pathology
+— the continued energy density is complex. This signifies an instability,
+the tachyon field rolling down its inverted potential. With a general CFT,
+eq. (7.3.12) becomes
+                       $ ∞                          (
+                              dτ2
+                 iVd              (4π 2 α% τ2 )−d/2   exp(−πα% m2i τ2 ).   (7.3.16)
+                              2τ2                   i
+
+Because the tachyon is always present in bosonic string theory this again
+diverges; in the absence of tachyons it will converge.
+   The torus illustrates a general principle, which holds for all string
+amplitudes: there is no UV region of moduli space that might give rise to
+high energy divergences. All limits are controlled by the lightest states, the
+long-distance physics. For the torus with vertex operators the τ-integration
+is still cut o! as above, but there are more limits to consider as vertex
+operators approach one another. The same general principle applies to
+these as well, as we will develop further in chapter 9.

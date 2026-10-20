@@ -1,0 +1,48 @@
+                                         2.1                      Massless              scalars              in              two              dimensions             35
+
+with             Grassmann             variables.             Then
+                                                           ∫                         δ
+                                                0=              [dX]        δX       (z,    ¯z)   exp(−S)
+                                                                ∫                  µ
+                                                     =     −         [dX]exp(−S)                            δS
+                                                                ⟨                          ⟩         δX     µ(z,     ¯z)
+                                                     =     −                δS
+                                                                     δX     µ(z,¯z)
+                                                              1     ⣨      ¯      µ             ⟩
+                                                     =     πα′          ∂∂X         (z,    ¯z)        .                                                   (2.1.15)
+
+The            same            calculation            goes            through            if            we            have            arbitrary            additional            inser-
+tions          ‘...’      in      the      path      integral,      as      long      as      none      of      these      additional      insertions
+is             atz.Thus                                    ⣨                                    ⟩
+                                                                  ¯      µ
+                                                               ∂∂X         (z,¯z)        ...         =0        .                                          (2.1.16)
+
+We      can      regard      the      additional      insertions      as      preparing      arbitrary      initial      and
+ﬁnal        states        (or        we        could        do        the        same        thing        with        boundary        conditions).
+The       path       integral       statement       (2.1.16)       is       thus       the       same       as       the       statement       in
+the      Hilbert      space      formalism      that
+                                                                       ¯ˆµ
+                                                                    ∂∂X          (z,   ¯z)=0                                                                                                                                                                                          (2.1.17)
+holds          for          all          matrix          elements          of          the          operatorXˆµ(z,¯z).                  Thus                  we                  refer
+to                  relations                  that                  hold                  in                  the                  sense                  (2.1.16)                  asoperator                   equations.The
+statement      (2.1.17)      is      Ehrenfest’s      theorem      that      the      classical      equations      of
+motion             translate             into             operator             equations.
+     The                      notation                      ‘...’             in             the             path             integral             (2.1.16)             implicitly             stands             for
+insertions          that          are          located          away          fromz,          but          it          is          interesting          to          consider
+also        the        case        in        which        there        is        an        insertion        that        might        be        coincident        with
+z:
+                ∫                         δ                                                    
+     0=              [dX]                                exp(−S)Xν(z′,                    ¯z′)
+                ∫                δX     µ(z,     ¯z)
+                                                     µν         2               ′               ′           1                   µ                ν      ′     ′  
+          =          [dX]exp(−S)                       η      δ     (z   −     z   , ¯z −     ¯z  )+       πα′∂z∂¯zX               (z,    ¯z)X       (z   ,¯z   )
+
+                   µν   ⣨     2               ′              ′   ⟩           1               ⟨       µ                 ν     ′     ′   ⟩
+          =     η          δ     (z   −     z   , ¯z −     ¯z  )     +     πα′∂z∂¯z             X      (z,    ¯z)X       (z   ,¯z   )       .             (2.1.18)
+
+That            is,            the            equation            of            motion            holds            except            at            coincident            points.            Again
+this                     goes                     through                     with                     arbitrary                     additional                     insertions                     ‘...’             in             the             path
+integral,        as        long        as        none        of        these        additional        ﬁelds        is        at        (z,¯z)or(      z′,¯z′):
+      1               ⟨       µ                 ν      ′     ′          ⟩               µν    ⣨     2               ′               ′          ⟩
+          ′ ∂z∂¯z         X      (z,   ¯z)X       (z    ,¯z   )...          =−η                   δ    (z   −     z   ,¯z   −    ¯z  )  ...         .     (2.1.19)
+    πα

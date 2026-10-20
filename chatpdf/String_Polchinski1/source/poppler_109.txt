@@ -1,0 +1,51 @@
+                                            3.3 Gauge fixing                                                       87
+
+
+
+           field space
+
+
+                                                                                            gauge slice
+
+
+
+
+                                         gauge orbits
+
+Fig. 3.7. Schematic picture of the Faddeev–Popov procedure. The gauge orbits
+are families of gauge-equivalent configurations. Integrating over the whole field
+space and dividing by the orbit volume is equivalent to integrating over a slice
+that intersects each orbit once, with appropriate Jacobian.
+
+
+  Inserting (3.3.11) into the functional integral (3.3.1), the latter becomes
+                   !
+                        [d. dX dg]
+        Z[ĝ] =                    ∆FP (g),(g − ĝ . ) exp(−S [X, g]) .                                       (3.3.12)
+                         Vdi!×Weyl
+For later reference, we denote explicitly the dependence of Z on the choice
+of fiducial metric. Carry out the integration over gab , and also rename the
+dummy variable X → X . , to obtain
+                          !
+                              [d. dX . ]
+             Z[ĝ] =                     ∆FP (ĝ . ) exp(−S [X . , ĝ . ]) .                                  (3.3.13)
+                              Vdi!×Weyl
+Now use the gauge invariance2 of ∆FP , of the functional integral measure
+[dX], and of the action to obtain
+                                 !
+                                         [d. dX]
+                    Z[ĝ] =                       ∆FP (ĝ) exp(−S [X, ĝ]) .                                  (3.3.14)
+                                        Vdi!×Weyl
+Finally, nothing in the integrand depends on ., so the integral over . just
+produces the volume of the gauge group and cancels the denominator,
+
+2 To show this invariance:
+                                        !                              !
+                                                               $                                −1 ·. $
+                       ∆FP (g . )−1 =       [d. $ ] ,(g . − ĝ . ) =       [d. $ ] ,(g − ĝ .             )
+                                        !
+                                                              $$
+                                   =        [d. $$ ] ,(g − ĝ . ) = ∆FP (g)−1 ,
+
+ where . $$ = . −1 · . $ . In the second equality we have used the gauge invariance of the delta
+ function, and in the third the invariance of the measure.

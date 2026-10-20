@@ -1,0 +1,49 @@
+                                                                 A.1                      Bosonic              ﬁelds                                                 331
+
+                ˆ
+left             of∫p;dropthese.Thentothisorder                                                ⟨qm+1,tm+1|qm,tm⟩                           becomes
+
+                dpm        exp[−iH(pm,qm)./                           ¯h]⟨qm+1|pm⟩⟨pm|qm⟩
+              ∫      dp                 {        i  [                                                                  ]                    }
+         =                m     exp         −         H(pm,qm).−pm(qm+1                                   −    qm)        +     O(.2)             .        (A.1.11)
+                    2π¯h                        ¯h
+Thus                                       ∫
+       ⟨q      ,T    |q,0⟩≈                       dpN−1         dq              ...    dp1      dq       dp0
+            f            i                          2π¯h              N−1              2π¯h          12π¯h
+                                                                      {             N∑−1[                                                                      ]}
+                                                         ×    exp          −    i             H(p          ,q      ).−p             (q            −    q     )
+                                                                               ¯h                       m       m                m      m+1               m
+                                           ∫                            {        ∫m=0                                             }
+                                                                             i        T
+                                    →           [dpdq]exp                   ¯h            dt[     pq˙    −     H(p,      q)]           .                   (A.1.12)
+                                                                                   0
+In      the      last      line      we      have      taken      a      formal.→0      limit,      so      the      integral      runs      over
+all              pathsp(t),q(t)         with         givenq(T)and                            q(0).              This              is              theHa m i l to n i a n                  p a t h
+integral           (or      functional               integral),              the              sum              over              phase              space              paths              weighted
+by              exp(iS   /¯h)with          Sthe      action      in      Hamiltonian      form.
+     Let         us         integrate         overp(t),         making         ﬁrst         the         approximation         that         the
+integral      is      dominated      by      the      point      of      stationary      phase,
+                                                   ∂          ˙                                   ˙          ∂
+                                       0=         ∂p    [pq       −    H(p,      q)]  =           q−        ∂p    H(p,      q)      .                      (A.1.13)
+
+Solving                  for p    in                  terms                  ofqandq˙ and                  recalling                  thatL=    pq˙     −    H,the
+stationary     phase     approximation     gives
+                                                             ∫                      [i     ∫    T                         ]
+                           ⟨qf,T         |qi,0⟩        =          [dq]exp              ¯h            dt      L(q,    q˙)      .                            (A.1.14)
+                                                                                              0
+Often              the              momentum              integral              is              Gaussian,Hˆ    =      1pˆ2     +     V(qˆ),                so                that                the
+                                                                                                                      2
+stationary           phase           approximation           is           exact           up           to           a           normalization           that           can           be
+absorbed          in          the          measure          [dq].          In          fact,          we          can          do          this          generally:          because          the
+relation           (A.1.13)           between               p   and        q˙  is           local,           the           corrections           to           the           stationary
+phase             approximation             are             local             and             so             can             be             absorbed             into             the             deﬁnition
+of             [dq]             without             spoiling             the             essential             property             that             [dq]             is             a             product             over
+independent             integrals             at             each             intermediate             time.             The             result             (A.1.14)             is             the
+Lagrangian             path             integral,            the            integral            over            all            paths            in            conﬁguration            space
+weighted             by             exp(iS   /¯h),             where             nowS   is             the             Lagrangian             action.
+     We                    have                    kept                    ¯hso                    as                    to                    discuss                    the                    classical                    limit.                    As                    ¯h→0,                    the
+integral                    is                    dominated                    by                    the                    paths                    of                    stationary                    phase,δS /δq(t)=0,
+which     is     indeed    the     classical    equation     of     motion.     Henceforth,     ¯h=1.
+     The                derivation                above                clearly                generalizes                to                a                multicomponentqi.One
+can     always     write     a     quantum     ﬁeld     theory     in     terms     of     an     inﬁnite     number     of
+qs,      either      by      making      the      spatial      coordinatexdiscrete      and      taking      a      limit,

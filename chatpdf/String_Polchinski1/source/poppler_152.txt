@@ -1,0 +1,38 @@
+130                         4 The string spectrum
+
+and BRST transformation
+                  ,B X µ = i1cẊ µ ,                                   (4.2.25a)
+                             2                  3
+                                   1 µ  1 2
+                    ,B b = i1 − Ẋ Ẋµ + m − ḃc ,                     (4.2.25b)
+                                   2    2
+                    ,B c = i1cċ .                                     (4.2.25c)
+Since B is no longer present, we have used the equation of motion from e
+to replace B in the transformation law for b. The reader can check that the
+new transformation (4.2.25) is a symmetry of the action and is nilpotent.
+This always works when the fields B A are integrated out, though ,B ,B$ b is
+no longer identically zero but is proportional to the equations of motion.
+This is perfectly satisfactory: Q2B = 0 holds as an operator equation, which
+is what we need.
+   The canonical commutators are
+                      [pµ , X ν ] = −iη µν ,    {b, c} = 1 ,            (4.2.26)
+with pµ = iẊ µ , the i being from the Euclidean signature. The Hamiltonian
+is H = 12 (p2 + m2 ), and the Noether procedure gives the BRST operator
+                                   QB = cH .                            (4.2.27)
+The structure here is analogous to what we will find for the string. The
+constraint (the missing equation of motion) is H = 0, and the BRST
+operator is c times this.
+   The ghosts generate a two-state system, so a complete set of states is
+|k, ↓+, |k, ↑+, where
+                   pµ |k, ↓+ = k µ |k, ↓+ , pµ |k, ↑+ = k µ |k, ↑+ ,   (4.2.28a)
+                   b|k, ↓+ = 0 , b|k, ↑+ = |k, ↓+ ,                    (4.2.28b)
+                   c|k, ↓+ = |k, ↑+ , c|k, ↑+ = 0 .                    (4.2.28c)
+The action of the BRST operator on these is
+               QB |k, ↓+ = 12 (k 2 + m2 )|k, ↑+ ,    QB |k, ↑+ = 0 .    (4.2.29)
+From this it follows that the closed states are
+                              |k, ↓+ ,     k 2 + m2 = 0 ,              (4.2.30a)
+                              |k, ↑+ ,     all k µ ,                   (4.2.30b)
+and that the exact states are
+                            |k, ↑+ ,     k 2 + m2 -= 0 .                (4.2.31)
+The closed states that are not exact are
+               |k, ↓+ , k 2 + m2 = 0 ;       |k, ↑+ , k 2 + m2 = 0 .    (4.2.32)

@@ -1,0 +1,47 @@
+                      8.3 Closed strings and T -duality                    247
+
+                                   T -duality
+From the mass formula
+                         n2    w2R2      2
+                   m2 =    2
+                             +    %2
+                                     + % (N + Ñ − 2) ,              (8.3.25)
+                         R      α       α
+we see that as R → ∞ winding states become infinitely massive, while
+the compact momenta go over to a continuous spectrum. This is as
+would be expected with a noncompact dimension. Looking at the opposite
+limit R → 0, however, one gets a surprise. The states with compact
+momentum become infinitely massive, but the spectrum of winding states
+now approaches a continuum — it does not cost much energy to wrap
+a string around a small circle. Thus as the radius goes to zero the
+spectrum again seems to approach that of a noncompact dimension. This
+is quite di!erent from the behavior in field theory, where there is compact
+momentum n but no winding number w, and no states become light as
+R → 0.
+   In fact, the R → 0 and R → ∞ limits are physically identical. The
+spectrum (8.3.25) is invariant under
+                                    α%
+                          R → R% =     , n↔w .                      (8.3.26)
+                                    R
+This equivalence extends to the interactions as well. Notice that reversing
+n and w is the same as
+                          p25   25
+                           L → pL ,       p25    25
+                                           R → −pR .                   (8.3.27)
+Consider the theory at radius R. Recalling the separation         X 25 (z, z̄) =
+XL25 (z) + XR25 (z̄), define
+                       X %25 (z, z̄) = XL25 (z) − XR25 (z̄) .          (8.3.28)
+The field X %25 has the same OPEs and energy momentum tensor as X 25 ,
+the minus signs always entering in pairs. The only change in the CFT
+from using X %25 in place of X 25 is that it includes the sign change (8.3.27),
+which changes the spectrum from that of the theory with radius R to that
+of the theory with radius R % . That is, these are the same theory, one written
+in terms of X 25 and one in terms of X %25 . It should be noted that the
+relation between X 25 (z, z̄) and X %25 (z, z̄) is nonlocal on the world-sheet,
+because the separate left- and right-moving fields are nonlocal operators.
+   This equivalence is known as T -duality. That the R → 0 limit is phys-
+ically the same as the R → ∞ limit is completely unlike the behavior
+of point particles, and is one more sign that strings see geometry very
+di!erently at short distances. The space of inequivalent theories is the
+half-line R ≥ α%1/2 . We could take instead the range 0 ≤ R ≤ α%1/2 but it is
+more natural to think in terms of the larger of the two equivalent radii:

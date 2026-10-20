@@ -1,0 +1,44 @@
+                          5.1 The circle and the torus                        147
+
+
+                                                       2 π (τ +1)
+
+                                              B
+
+
+                            A
+                                                                    w
+                      0                        2π
+
+Fig. 5.1. Torus with modulus τ, in gauge ds2 = dwdw̄. The upper and lower
+edges are identified, as are the right- and left-hand edges. Closed curves A and B
+are marked for later reference.
+
+
+di!×Weyl transformation that leaves invariant the periodicity (5.1.7), but
+it is possible to bring it to the form
+                              ds2 = |dσ 1 + τdσ 2 |2                       (5.1.9)
+where τ is a complex constant. For τ = i this would be the unit metric ,ab .
+  To see this, repeat the steps used in the local discussion in section 3.3.
+We can first make the metric flat by a Weyl transformation satisfying
+2∇2 ω = R. By expanding in eigenmodes of ∇2 , one sees that with the
+periodic boundary conditions this has a solution  / unique up to addition
+of a constant to ω. It is important here that d2 σ g 1/2 R, which is 4π
+times the Euler number, vanishes for the torus. A transformation to new
+coordinates σ̃ a then brings the metric to unit form. However, as in the
+point-particle case, there is no guarantee that this respects the original
+periodicity. Rather, we may now have
+                          σ̃ a ∼
+                               = σ̃ a + 2π(mua + nv a )                  (5.1.10)
+with general translations ua and v a . By rotating and rescaling the coordi-
+nate system, accompanied by a shift in ω to keep the metric normalized,
+we can always set u = (1, 0). This leaves two parameters, the components
+of v. Defining w = σ̃ 1 + iσ̃ 2 , the metric is dwdw̄ and the periodicity is
+                            w∼
+                             = w + 2π(m + nτ) ,                          (5.1.11)
+where τ = v 1 + iv 2 . The torus is a parallelogram in the w-plane with
+periodic boundary conditions, as shown in figure 5.1.
+   Alternatively, define σ a by w = σ 1 + τσ 2 . The original periodicity (5.1.8)
+is preserved but the metric now takes the more general form (5.1.9). The
+integration over metrics reduces to two ordinary integrals, over the real
+and imaginary parts of τ. The metric (5.1.9) is invariant under complex

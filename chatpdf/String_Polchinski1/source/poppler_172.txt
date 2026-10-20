@@ -1,0 +1,44 @@
+150                       5 The string S-matrix
+
+to fix one vertex operator position, leaving an integral over τ and the
+n − 1 other positions. The Z2 from σ a → −σ a can be fixed by restricting a
+second vertex operator to half the torus. Actually, for finite overcounting
+it is often more convenient to leave some symmetry unfixed and divide by
+an appropriate factor. Also, if there are too few vertex operators, some
+conformal Killing invariance remains unfixed and we must allow explicitly
+for the overcounting.
+
+                           A note to the reader
+In the remainder of this chapter we discuss moduli in more generality,
+and obtain the measure for the gauge-fixed integral. The principal goal is
+the gauge-fixed expression (5.3.9) for the string S-matrix. In fact, most of
+the interesting string physics can be seen in the tree-level and one-loop
+amplitudes. For these the measure can be obtained by shortcuts. For the
+tree-level amplitudes there are no metric moduli but some vertex operator
+positions must be fixed. The measure can be deduced as explained below
+eq. (6.4.4). For one-loop amplitudes the measure can be understood in
+a fairly intuitive way, by analogy to the discussion of the point particle
+measure below eq. (7.3.9). Thus it is possible for the reader to skip the
+remainder of this chapter (or to skim as far as eq. (5.3.9)), and over all
+sections dealing with the Faddeev–Popov ghosts.
+
+                   5.2   Moduli and Riemann surfaces
+
+Now let us repeat the preceding discussion in a more general and abstract
+way. We start with the integral over all metrics on some given topology r.
+Call the space of metrics Gr . For closed oriented surfaces we can label r
+simply by the number g of handles, also known as the genus. After taking
+into account the di!×Weyl redundancy, we are left with the moduli space
+                                      Gr
+                          Mr =                 .                     (5.2.1)
+                                 (di! × Weyl)r
+As in the case of the torus, this space is parameterized by a finite number
+of moduli. For the torus, M1 is the upper half-plane mod P S L(2, Z),
+or equivalently any fundamental region, say F0 . There may also be a
+subgroup of di!×Weyl, the CKG, that leaves the metric invariant.
+   When there are vertex operators in the path integral it is useful to
+treat their positions on the same footing as the moduli from the metric,
+referring to all as moduli. We specify the metric moduli when we need to
+make the distinction. One way to deal with the CKG, which is applicable
+if there are vertex operators in the path integral, is to specify the gauge
+further by fixing the coordinates of some vertex operators. The Polyakov

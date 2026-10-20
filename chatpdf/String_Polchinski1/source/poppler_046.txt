@@ -1,0 +1,45 @@
+24                          1 A first look at strings
+
+is Lorentz-invariant for any D, but there is an anomaly — the symmetry
+is not preserved by the quantization except when D = 26. In later chapters
+we will obtain a deeper understanding of how this comes about and what
+it implies.
+   We conclude this section with a few more comments about spin. The
+light-cone quantization singles out two directions and leaves manifest only
+the S O(D − 2) that acts in the transverse directions. The spin generators
+for the transverse directions are
+                                    ∞
+                                     1
+                      S ij = −i             (αi−n αjn − αj−n αin ) ;         (1.3.41)
+                                    n=1
+                                        n
+
+antisymmetry on ij together with Lorentz invariance allows no zero-point
+constant. For a massless particle, the full S O(D −2) spin symmetry is made
+manifest by choosing the momentum to lie along the 1-direction singled
+out in the quantization.
+   For a massive particle, only an S O(D − 2) subgroup of the S O(D − 1)
+spin symmetry will be manifest in light-cone quantization, but this is still
+quite useful. For example, the (D−1)-dimensional vector representation
+of S O(D − 1) breaks up into an invariant and a (D−2)-vector under the
+S O(D − 2) acting on the transverse directions,
+                    v = (v 1 , 0, . . . , 0) + (0, v 2 , . . . , v D−1 ) .   (1.3.42)
+Thus, if a massive particle is in the vector representation of S O(D − 1),
+we will see a scalar and a vector when we look at the transformation
+properties under S O(D − 2). This idea extends to any representation: one
+can always reconstruct the full S O(D − 1) spin representation from the
+behavior under S O(D − 2).
+   The higher excited states of the string, which are massive, do form full
+representations of S O(D − 1). One can check this by hand for a few levels,
+and in a more complete analysis it follows from the existence of the full set
+of Lorentz generators. We will show this indirectly in the coming chapters,
+by finding a consistent covariant quantization.
+   At level N, the maximum eigenvalue of a given spin component, say
+S 23 , is N, obtained by acting N times with α2−1 + iα3−1 . Thus,
+                                  S 23 ≤ 1 + α" m2 .                         (1.3.43)
+The slope in this inequality is known as the Regge slope. Meson resonances
+obey a linear relation of this form, with α" ∼ (1 GeV)−2 . For this and other
+reasons, string theory was originally proposed in 1970 as a theory of the
+strong interaction. Within a few years, however, the S U(3) gauge theory
+QCD was discovered to be the correct theory, with string-like behavior
+only in certain limits.

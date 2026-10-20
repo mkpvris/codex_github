@@ -1,0 +1,132 @@
+原書参考文献の構造化・初期候補照合
+対象: source/String_Polchinski1_original.pdf, PDF374--380（印刷ページ352--358）
+
+作成ファイル
+source/bibliography/original_reference_list.json
+  原書113件の原順序、PDF/印刷ページ、元抽出行と全文、著者、年（a/bを含む）、
+  題名、掲載情報、原文に明記されたarXiv識別子を記録。
+source/bibliography/initial_selected_matches.json
+  最初の10引用候補について、8件を既存の公式INSPIREエクスポートと照合、
+  2件は正確な公式エクスポート未取得。
+source/bibliography/parse_original_references.py
+  上記を原文抽出と既存公式エクスポートだけから再生成するローカルスクリプト。
+  ネットワーク機能なし。
+source/bibliography/source376.png
+  原文PDF376の視覚確認用レンダリング（Friedan1985のepsilonを照合）。
+
+原書の引用体系
+本文は著者・年、文献一覧はアルファベット順であり、原書の引用番号は存在しない。
+JSONのoriginal_orderは今回付けた原書一覧順の管理番号である。
+原書順を保つ番号付きBibTeX表示にする場合、113件の対応確定後、
+原書順にnociteを実行してから本文のciteを処理する等の方法で順序を固定する。
+巻をまとめた原書項目（Green/Schwarz/Witten1987、Mumford1983、
+Schwarz1985）を複数の公式レコードに分ける場合は対応表で明示する。
+
+初期引用の確定キー（公式エクスポートを実際に読んだもの）
+misner1973 -> Misner:1973prb
+  INSPIRE 95654; misner1973_95654.bib
+  著者3名、題名Gravitation、1973、Freeman/San Francisco一致。
+  別候補42728は1957年のMisner/Wheeler論文なので不採用。
+  https://inspirehep.net/api/literature/95654?format=bibtex
+
+gsw1987v2 -> Green:1987mn
+  INSPIRE 252419; gsw1987v2_252419.bib
+  著者3名と第2巻副題一致。前付の「第2巻」に対応。
+  原書引用年1987。INSPIRE出版情報の自由記述にも1987とあるが、
+  imprintは1988-07、公式BibTeX年は1988。
+  原書の年を無断で置換しない。公式エクスポート原本は変更しない。
+  第1巻レコード250488、既存gsw1987v2_250488.bibは
+  前付の第2巻引用には選ばないが、全巻の原書参考文献では必要。
+  https://inspirehep.net/api/literature/252419?format=bibtex
+
+cheng1991 -> Cheng:1984vwu
+  INSPIRE 221340; cheng1991_221340.bib
+  著者2名、題名、出版社一致。原書の年1991、INSPIRE年1984。
+  再版・刷の相違かどうかはこの照合では未確定。
+  別候補527190は2000年刊Problems and solutionsなので不採用。
+  公式エクスポートのauthorにはORCIDが角括弧付きで入っている。
+  もし組版用に取り除くなら、原エクスポートを残し、表示上の修正として別に記録する。
+  https://inspirehep.net/api/literature/221340?format=bibtex
+
+weinberg1979 -> Weinberg:1980gg
+  INSPIRE 159043; weinberg1979_159043.bib
+  著者、題名、親書籍General Relativity: An Einstein Centenary Survey、
+  pp.790--831一致。原書年1979、公式BibTeX年1980。
+  https://inspirehep.net/api/literature/159043?format=bibtex
+
+goddard1973 -> Goddard:1973qh
+  INSPIRE 80965; goddard1973_80965.bib
+  題名、著者群、Nucl.Phys.B56、109、1973一致。
+  DOI 10.1016/0550-3213(73)90223-X
+  原書のRebbi,C.B./Thorn,C.というイニシャルと
+  公式データのRebbi,C./Thorn,Charles B.に差があることに留意。
+  https://inspirehep.net/api/literature/80965?format=bibtex
+
+rebbi1974 -> Rebbi:1974tc
+  INSPIRE 94478; rebbi1974_94478.bib
+  著者、題名、Phys.Rept.12、1、1974一致。
+  DOI 10.1016/0370-1573(74)90031-3
+  https://inspirehep.net/api/literature/94478?format=bibtex
+
+scherk1975 -> Scherk:1974jj
+  INSPIRE 838; scherk1975_838.bib
+  著者、題名、Rev.Mod.Phys.47、123、1975一致。
+  引用キーの1974と出版年1975を混同しない。
+  DOI 10.1103/RevModPhys.47.123
+  https://inspirehep.net/api/literature/838?format=bibtex
+
+brink1973 -> Brink:1973oxp
+  INSPIRE 228663; brink1973_228663.bib
+  著者2名、題名、Phys.Lett.B45、332、1973一致。
+  DOI 10.1016/0370-2693(73)90048-8
+  https://inspirehep.net/api/literature/228663?format=bibtex
+
+未取得の初期2件
+Quigg (1983)
+  既存154711/Quigg:1980knは1981年の講義論文、1263594/Quigg:2013ufaは
+  2013年第2版であり、ともに1983年初版の代用にしてはいけない。
+  INSPIREの公開検索結果には、他論文の参考文献欄で以下が明示される:
+  Gauge Theories Of Strong, Weak, And Electromagnetic Interactions : First Edition
+  C. Quigg; Front.Phys.56 (1983) 1--334.
+  確認ページ:
+  https://inspirehep.net/literature/894144 （参考文献[4]）
+  https://inspirehep.net/literature/572316 （参考文献[5]）
+  正確な原著レコードIDと公式BibTeXは、このタスクでは取得できていない。
+  「INSPIREにない」とは結論していない。
+
+Weinberg (1964)
+  原書の題名は短縮形Photons and gravitons in S matrix theory。
+  親agent指定の照合DOI: 10.1103/PhysRev.135.B1049。
+  INSPIREの公開検索結果には以下の完全題名とPhys.Rev.135 (1964)
+  B1049--B1056が現れる:
+  Photons and Gravitons in $S$-Matrix Theory:
+  Derivation of Charge Conservation and Equality of Gravitational and Inertial Mass.
+  確認ページ:
+  https://inspirehep.net/literature/154379
+  https://inspirehep.net/literature/130533
+  https://inspirehep.net/literature/192926
+  これらは当該論文を引用する別文献であり、原著レコードそのものではない。
+  正確な原著レコードIDと公式BibTeXは、このタスクでは未取得。
+  推測の引用キーや手書き@miscは作成していない。
+
+取得経路と制約
+- web.runとSearch Serviceの公開検索は追加承認なしで利用できた。
+- 両方ともINSPIRE REST APIの検索URLを開く操作では
+  「URL is not accessible via this tool」となった。
+- 通常のINSPIREページを開くとJavaScript有効化を求めるページのみだった。
+- cua_replでIABは利用不可、続く利用可能surface一覧はapps=[]/browsers=[]だった。
+- 親agentの指示に従い、shellによるネットワーク取得や承認要求は実行していない。
+- 従って、今回新たに公式BibTeXを取得した件数は0。上記8件は親agentが保存した
+  公式エクスポートを原文と照合したものであり、公式エクスポートの全件取得完了ではない。
+- 全113件のうち105件はこのJSONでは未確定（上記初期2件を含む）。
+  これを「入手不可」とは扱わず、照合・取得待ちとしている。
+
+原文解析上の確認
+- arXiv識別子が原文にある文献は9件。DOIを原文から採った件数は0。
+  原文にないDOIは、公式レコード照合情報として区別して保持する。
+- Friedan(1985)の題名「2 + ε」のepsilonがPoppler抽出では「.」になる。
+  source376.pngの表示でepsilonを確認し、title_originalのみ回復。
+  original_text/original_linesには取得した抽出内容をそのまま保存した。
+- Gross. D.J.という原書の句読点はそのまま保持。
+- 全項目の年・著者・題名を一括表示し、113件の区切り・連続順序を確認。
+- 主ref.bibの編集・統合、引用リンクの最終検証、アップロードは行っていない。

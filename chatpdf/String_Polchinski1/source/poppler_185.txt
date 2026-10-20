@@ -1,0 +1,46 @@
+                          5.4 More about the measure                            163
+
+
+                      z
+
+
+
+
+                                    z'
+                                             0
+
+
+                                                 C
+
+
+
+
+Fig. 5.3. Coordinate patches z $ (diagonal hatching) and z (horizontal hatching)
+with vertex operator at z $ = 0. In the annular region, z = z $ + zv .
+
+
+The contour integrals (5.4.12) around adjacent patches then combine to
+give
+                       !     '           9               9          
+   1             1 (            ∂zm 9              ∂z̄m 9
+     (b, µk ) =              dzm k 99 bzm zm − dz̄m k 99 bz̄m z̄m       ,   (5.4.15)
+  2π            2πi (mn) Cmn    ∂t zn              ∂t zn
+
+which is proportional to the derivatives of the transition functions. The
+sum runs over all pairs of overlapping patches. The contour Cmn runs
+between patches m and n, counterclockwise from the point of view of m.
+The (mn) term is symmetric in m and n, though this is not manifest. Each
+contour either closes or ends in a triple overlap of patches m, n, and p,
+where the contours Cmn , Cnp , and Cpm meet at a point. The b insertion is
+now expressed entirely in terms of the data defining the Riemann surface,
+the transition functions modulo holomorphic equivalence.
+   As an illustration, we can use this to put the moduli for the metric
+and for the vertex operator positions on a more equal footing. Consider
+a vertex operator at position zv in a coordinate system z. Let us make a
+small new coordinate patch z $ centered on the vertex operator, as shown
+in figure 5.3. We keep the vertex operator at coordinate point z $ = 0, and
+encode its position in the transition functions
+
+                                  z = z $ + zv                              (5.4.16)
+
+for the annular overlap region. The measure for the moduli zv , z̄v is given

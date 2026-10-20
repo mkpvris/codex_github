@@ -1,0 +1,47 @@
+344                                     Appendix A
+
+becomes the operator
+      T[ψ̂(t)ψ̂(t! )] ≡ θ(t − t! )ψ̂(t)ψ̂(t! ) − θ(t! − t)ψ̂(t! )ψ̂(t) .           (A.2.20)
+Note that a minus sign appears in the definition of time-ordering. The
+equations of motion and the Euclidean continuation work as in the bosonic
+case, but there is one important change. Consider a general operator Â,
+                                        Â|i& = |j&Aji ,                           (A.2.21)
+
+where i, j run over ↓ and ↑. Then by expanding Â|ψ& in terms of the basis
+states one finds
+                          #
+                              dψ %ψ|Â|ψ& = A↓↓ − A↑↑
+                                                       '            (
+                                                 = Tr (−1)F̂ Â ,                  (A.2.22)
+
+where the fermion number F̂ has been defined to be even for | ↓& and odd
+for | ↑&. In particular,
+             #                               '                          (
+                 dψ %ψ, U|ψ, 0& = Tr (−1)F̂ exp(−ĤU) .                            (A.2.23)
+
+In contrast to the bosonic results (A.1.33) and (A.1.34), the periodic path
+integral gives the trace weighted by (−1)F̂ and the antiperiodic path integral
+gives the simple trace.
+   Feynman diagrams are as in the bosonic case, but the determinants
+work out differently. Consider
+                               #                     3#                 4
+                                                            d
+                       %1& =        [dψ dχ] exp            d x χ(ψ          ,      (A.2.24)
+
+where we have again switched to the notation of field theory. Expand ψ
+in eigenfunctions of (, and χ in eigenfunctions of (T ,
+                              &                                 &
+                   ψ(x) =           ψi Ψi (x) ,      χ(x) =         χi Υi (x) ,   (A.2.25a)
+                                i                               i
+                 (Ψi (x) = λi Ψi (x) ,           (T Υi (x) = λi Υi (x) ,          (A.2.25b)
+                                #
+                                     dd x Υi (x)Ψj (x) = δij .                    (A.2.25c)
+                   >
+Define [dψdχ] =        i dψi dχi . Then
+                                     .#                                /
+                        %1& =                dψi dχi exp(λi χi ψi )
+                                    i
+                                    
+                              =         λi
+                                    i
+                              = det ( .                                            (A.2.26)

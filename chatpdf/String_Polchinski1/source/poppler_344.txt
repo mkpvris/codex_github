@@ -1,0 +1,48 @@
+322                     9 Higher order amplitudes
+
+The integral runs over the full region
+                                      1
+                        R:     τ1 ≤     ,    |τ2 | > 0 .            (9.8.16)
+                                      2
+The derivation from a modular-invariant path integral is given as exer-
+cise 9.7. There is a possible divergence as τ2 → 0; the integrand is largest
+when the real part of τ is zero, so let τ = iτ2 . From the modular transfor-
+mation (7.2.44), the asymptotic behavior of the eta function in this limit
+is
+                                      −1/2
+                    η(iτ2 ) = η(i/τ2 )τ2
+                            ≈ exp(−π/12τ2 ) as τ2 → 0 .             (9.8.17)
+
+The τ integral thus converges for T < TH and diverges for T > TH .
+  The following curious observation has been made. In field theory the
+partition function is given by a Euclidean path integral, with time having
+period 1/T . The same is true in string theory (exercise 9.7). T -duality
+should then relate the high and low temperature behaviors, and in fact
+the Hagedorn temperature is half the self-dual value. Define
+
+                           F̃(T ) = F(T ) + ρ0 ,                    (9.8.18)
+
+the thermal part (9.8.15) of the free energy plus the vacuum part (7.3.6).
+The logarithm of the path integral is −F̃(T )/T , so T -duality implies
+                        1           T
+                          F̃(T ) =    2
+                                        F̃(4TH2 /T ) .              (9.8.19)
+                        T          4TH
+
+This relates the partition function below the Hagedorn temperature to
+that above it. The Hagedorn divergence for T > TH is a reflection
+of the tachyon divergence in the low temperature theory, but a similar
+formal result holds for the supersymmetric string, which has no tachyonic
+divergence. If we take this relation seriously, we obtain
+
+                                          T2
+                              F̃(T ) →        ρ0                    (9.8.20)
+                                         4TH2
+
+as T → ∞. If this is a measure of the number of high energy degrees
+of freedom, they are very few. A single quantum field in d spacetime
+dimensions has a free energy of order T d , so it is as though the high
+energy limit of string theory looks like a field theory in two spacetime
+dimensions. This is entirely unlike the exponentially growing spectrum
+below the Hagedorn transition, and may be a clue to the nature of the
+phase transition.

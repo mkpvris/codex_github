@@ -1,0 +1,43 @@
+                        9.1 General tree-level amplitudes                              285
+
+  The first issue is the decoupling of BRST-null states, so that BRST-
+equivalent states have equal amplitudes. Suppose that the state |V̂3 & in
+the three-point amplitude is null,
+                                   |V̂3 & = QB |χ& .                                (9.1.7)
+Then
+       e2λ SS2 (1; 2; 3) = %% V̂1 | [V̂2 (1, 1), QB ] |χ& + %% V̂1 |QB V̂2 (1, 1)|χ&
+                         =0,                                                         (9.1.8)
+the terms vanishing respectively by the BRST invariance of states 2 and
+1. Similarly, if V̂2 = {QB , χ} or |V̂1 & = QB |χ& the amplitude also vanishes.
+We have used the Hilbert space formalism here, but it is worthwhile to
+phrase this same argument in path integral language. Suppose V3 is null,
+                                    V̂3 = QB · X .                                  (9.1.9)
+Expand the contour integral on the sphere away from X until it becomes
+a small loop around V̂1 plus a small loop around V̂2 . These then vanish
+by BRST invariance, QB · V̂1 = QB · V̂2 = 0.
+   To this order then, amplitudes are well defined on the physical Hilbert
+space, the BRST cohomology. The decoupling of the null graviton, as-
+sociated with spacetime coordinate invariance, is a special case of the
+decoupling of BRST-null states. It is then natural to wonder whether
+spacetime coordinate invariance is a piece of some much larger symmetry
+in string theory. We will discuss some ideas in this direction in section 9.6.
+   We now consider the unitarity of the S-matrix,
+                                  &             ?
+                                            ∗
+                                       Smn Spn = δmp ,                            (9.1.10)
+                                   n
+which is equivalent to the conservation of probability. It is useful to break
+up the S-matrix into a term in which nothing happens and a scattering
+term,
+                                 Smn = δmn + iTmn .                               (9.1.11)
+For the scattering matrix T , unitarity implies
+                                              &
+                                   ∗                     ∗
+                            Tmp − Tpm =i            Tmn Tpn .                     (9.1.12)
+                                                n
+  The T-matrix by definition involves a total of at least three particles,
+so for three-particle amplitudes on the sphere the right-hand side of
+eq. (9.1.12) vanishes. Unitarity then requires
+                        TS2 (1; 2; 3) = TS2 (−1; −2; −3)∗ ,                       (9.1.13)
+where a minus sign is shorthand for replacing an incoming vertex operator
+by an outgoing vertex operator for the same state, or vice versa. The

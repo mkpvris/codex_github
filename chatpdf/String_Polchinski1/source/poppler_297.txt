@@ -1,0 +1,55 @@
+                                   8.7 D-branes                                    275
+
+have
+                      $ ∞
+                            dt
+         A = iVp+1             (8π 2 α% t)−(p+1)/2 exp(−ty 2 /2πα% ).(it)−24
+                       0     t
+                                 $ ∞
+                  iVp+1
+             =                         dt t(21−p)/2 exp(−ty 2 /2πα% )
+               (8π α% )(p+1)/2
+                  2
+                                  0
+                                          ×[exp(2π/t) + 24 + . . . ] ,         (8.7.17)
+where the asymptotics have been obtained just as in section 7.4. The first
+term is from tachyon exchange and so is again an uninteresting bosonic
+artifact. The integral over the second term gives
+                                                       2         3
+                       24                            23 − p
+           A = iVp+1 12 (4π 2 α% )11−p π (p−23)/2 Γ         |y|p−23
+                      2                                 2
+                      24π
+               = iVp+1 10 (4π 2 α% )11−p G25−p (y) ,                (8.7.18)
+                       2
+where Gd (y) is the massless scalar Green’s function in d dimensions, the
+inverse of −∇2 .
+  We now need to compare this with a field theory calculation of the
+same amplitude. Since the antisymmetric tensor does not couple to the
+D-branes, the relevant terms from the spacetime action (3.7.25) are
+                           $                   2                  3
+                      1                           1     ˜ µ Φ̃
+                S=             d26 X (−G̃)1/2 R̃ − ∇µ Φ̃∇               .      (8.7.19)
+                     2/2                          6
+Recall that the tilde denotes the Einstein metric; this is the convenient
+form to use because its action decouples from that of the dilaton. The
+tilded dilaton has been shifted so that its expectation value is zero. In terms
+of the same variables, the relevant terms from the D-brane action (8.7.2)
+are
+                    $            2           3
+                                   p − 11
+                       p+1
+          S p = −τp d ξ exp                Φ̃ (− det G̃ab )1/2 .        (8.7.20)
+                                     12
+We have defined τp = Tp e−Φ0 ; this is the actual physical tension of the
+Dp-brane when the background value of the dilaton is Φ0 .
+  The field theory graph analogous to figure 8.5 is the exchange of a single
+graviton or dilaton between the D-branes. To obtain the propagator we
+expand the spacetime action to second order in hµν = G̃µν − .µν and to
+second order in Φ̃. Also, we need to choose a gauge for the gravitational
+calculation. The simplest gauge for perturbative calculation is
+                                      1
+                        Fν ≡ ∂µ̂ hµν − ∂ν hµ̂µ = 0 ,            (8.7.21)
+                                      2
+where a hat indicates that an index has been raised with the flat space
+metric . µν . Expanding the action to second order and adding a gauge-

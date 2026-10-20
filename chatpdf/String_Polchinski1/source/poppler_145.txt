@@ -1,0 +1,47 @@
+                        4.1 Old covariant quantization                            123
+
+is physical and |χ+ is null, then |ψ+ + |χ+ is also physical and its inner
+product with any physical state is the same as that of |ψ+. Therefore these
+two states are physically indistinguishable, and we identify
+                              |ψ+ ∼
+                                  = |ψ+ + |χ+ .                      (4.1.9)
+The real physical Hilbert space is then the set of equivalence classes,
+                                              Hphys
+                                HOCQ =              .                         (4.1.10)
+                                              Hnull
+   Let us see how this works for the first two levels of the open string in
+flat spacetime, not necessarily assuming D = 26. The only relevant terms
+are
+                                $ 2
+                          Lm
+                           0 = α p + α−1 · α1 + . . . ,                      (4.1.11a)
+                                  $ 1/2
+                         Lm
+                          ±1 = (2α )    p · α±1 + . . . .                    (4.1.11b)
+   At the lowest mass level, the only state is |0; k+. The only nontrivial
+condition at this level is (Lm                         2       $
+                              0 + A)|ψ+ = 0, giving m = A/α . There are
+no null states at this level — the Virasoro generators in the spurious
+state (4.1.8) all contain raising operators. Thus there is one equivalence
+class, corresponding to a scalar particle.
+   At the next level there are D states
+                               |e; k+ = e · α−1 |0; k+ .                      (4.1.12)
+The norm is
+               *e; k|e; k $ + = *0; k|e∗ · α1 e · α−1 |0; k $ +
+                              = *0; k|(e∗ · e + e∗ · α−1 e · α1 )|0; k $ +
+                              = eµ∗ eµ (2π)D , D (k − k $ ) .                 (4.1.13)
+We have used
+                                           µ
+                                     αµ†
+                                      n = α−n ,                               (4.1.14)
+as follows from the Hermiticity of X µ , and also
+                        *0; k|0; k $ + = (2π)D , D (k − k $ ) ,               (4.1.15)
+as follows from momentum conservation. The timelike excitation has a
+negative norm.
+  The Lm 0 condition gives
+                                     1+A
+                                   m2 =    .                                  (4.1.16)
+                                      α$
+The other nontrivial physical state condition is
+               Lm
+                1 |e; k+ ∝ p · α1 e · α−1 |0; k+ = e · k|0; k+ = 0            (4.1.17)

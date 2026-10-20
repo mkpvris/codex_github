@@ -1,0 +1,53 @@
+                                                     6.3 The bc CFT                                                    177
+
+   This is the only bc path integral that we will actually need for the
+tree-level amplitudes, but for completeness we give
+   D p+3             p                                E
+     6               6                                                      zp+1,p+2 zp+1,p+3 zp+2,p+3
+            c(zi )         b(zj$ ) · (anti)                       = CSg2                                    · (anti)
+      i=1            j=1
+                                                                              (z1 − z1$ ) . . . (zp − zp$ )
+                                                           S2
+                                                                                     ± permutations ,           (6.3.5)
+obtained by contracting the bs with cs. The antiholomorphic part ‘anti’
+has the same form. We are being a little careless with the overall sign;
+again, for the Faddeev–Popov determinant we will in any case take an
+absolute value.
+   To give an alternative derivation using holomorphicity, we again con-
+sider first the conservation law, derived Hby inserting into the amplitude
+(6.3.5) the ghost number contour integral C dz j(z)/2πi, where C encircles
+all the vertex operators and j = − : bc : is again the ghost number current.
+From the OPE with b and c, this just counts the number of c minus the
+number of b fields, giving nc − nb times the original amplitude. Now pull
+the contour into the u-patch using the conformal transformation (2.5.17),
+                               <                                  <
+                                    dz           du
+                                        jz = −       ju + 3 → 3 .                                               (6.3.6)
+                                  C 2πi        C 2πi
+
+The shift +3 comes about because j is not a tensor, having a z −3 term in
+its OPE with T . In the last step we use holomorphicity in the u-patch. The
+nonzero amplitudes therefore have nc − nb = 3 and similarly nc̃ − nb̃ = 3,
+in agreement with the Riemann–Roch theorem.
+   From the OPE, the ghost expectation value (6.3.1) is holomorphic in
+each variable, and it must have a zero when two identical anticommuting
+fields come together. Thus it must be of the form
+                         z12 z13 z23 z̄45 z̄46 z̄56 F(z1 , z2 , z3 )F̃(z̄4 , z̄5 , z̄6 ) ,                      (6.3.7)
+with F holomorphic and F̃ antiholomorphic functions of the positions.
+As z1 → ∞ this goes as z12 F. However, c is a tensor of weight −1, so
+the amplitude can be no larger than z12 at infinity. Thus F(zi ) must be
+independent of z1 , and so also of z2 and z3 ; arguing similarly for F̃ we
+obtain again the result (6.3.4). The same argument gives for the general
+case (6.3.5) the result
+                              p+3
+                              6                p
+                                               6                  p+3
+                                                                  66  p
+                      CSg2              zii$               $
+                                                          zjj $             (zi − zj$ )−1 · (anti) ,            (6.3.8)
+                              i,i$ =1          j,j $ =1           i=1 j=1
+                               i<i$             j<j $
+
+
+which has the correct poles, zeros, and behavior at infinity. The permuta-
+tions (6.3.5) evidently sum up to give this single term.

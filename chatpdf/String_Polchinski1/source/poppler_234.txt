@@ -1,0 +1,48 @@
+212                          7 One-loop amplitudes
+
+                                    The bc CFT
+For the ghost CFT, the partition function is again determined easily in
+terms of a trace over states. There are two sets of raising operators b−n
+and c−n on both the right and left, but now these are anticommuting so
+the occupation numbers can only be zero or one — a single oscillator at
+mode n thus gives (1 + q n ). In addition there are four ground states, giving
+                                                                  0           1
+           Tr exp(2πiτ1 P − 2πτ2 H) = (qq̄)13/12 Tr q L0 q̄ L̃0
+                                                                ∞
+                                                                &
+                                                = 4(qq̄)1/12            |1 + q n |4 .   (7.2.23)
+                                                                n=1
+
+  Recall, however, that for anticommuting fields the simple trace corre-
+sponds to a path integral with antiperiodic boundary conditions in the
+time direction. In order to calculate the Faddeev–Popov determinant, the
+ghosts must have the same periodicity as the original coordinate transfor-
+mations, which were periodic. Thus we need
+                                                                           
+                  Z(τ) = Tr (−1)F exp(2πiτ1 P − 2πτ2 H)
+                       =0,                                                              (7.2.24)
+where (−1)F anticommutes with all the ghost fields. The trace vanishes
+because the states | ↓↓* and | ↑↑* have opposite ghost number mod 2 from
+| ↑↓* and | ↓↑*. From the path integral point of view, Z(τ) vanishes due to
+ghost zero modes from the moduli and CKVs. These must be saturated
+with appropriate insertions, the simplest nonvanishing amplitude (and the
+one we will need) being
+                         !                                  "
+                             c(w1 )b(w2 )c̃(w̄3 )b̃(w̄4 )       .                       (7.2.25)
+
+In the operator calculation we write each field in terms of its mode
+expansion. Only the n = 0 terms contribute, the expectation values of the
+others vanishing as above. Then (7.2.25) becomes
+                                                                       
+              Tr (−1)F c0 b0 c̃0 b̃0 exp(2πiτ1 P − 2πτ2 H) .                            (7.2.26)
+
+The operator c0 b0 c̃0 b̃0 projects onto the single ground state | ↑↑*, so the
+result is
+                                   ∞
+                                   &
+                       (qq̄)1/12         |1 − q n |4 = |.(τ)|4 .                        (7.2.27)
+                                   n=1
+
+Note the sign change in the infinite product, from the (−1)F in the trace.
+The result (7.2.27) is independent of the positions of the ghost fields
+because the CKV and quadratic di!erentials on the torus are constants.

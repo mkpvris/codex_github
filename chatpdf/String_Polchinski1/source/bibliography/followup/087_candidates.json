@@ -1,0 +1,63 @@
+{
+  "original_order": 87,
+  "queries": [
+    "https://inspirehep.net/api/literature?q=a+Quigg+and+date+1983+and+t+%22Gauge%22&size=50",
+    "https://inspirehep.net/api/literature?q=isbn%3A0805360204&size=50"
+  ],
+  "candidates": [
+    {
+      "id": "195708",
+      "titles": [
+        "Gauge Theories Of Strong, Weak, And Electromagnetic Interactions"
+      ],
+      "authors": [
+        "Quigg, C."
+      ],
+      "publication_info": [
+        {
+          "journal_volume": "56",
+          "page_end": "334",
+          "year": 1983,
+          "journal_record": {
+            "$ref": "https://inspirehep.net/api/journals/1212686"
+          },
+          "page_start": "1",
+          "journal_title": "Front.Phys."
+        }
+      ],
+      "imprints": [
+        {
+          "date": "1983-09",
+          "publisher": "Benjamin-Cummings",
+          "place": "USA"
+        },
+        {
+          "date": "1997-11",
+          "publisher": "Addison-Wesley/Basic Books",
+          "place": "USA"
+        }
+      ],
+      "dois": null,
+      "isbns": [
+        {
+          "medium": "hardcover",
+          "value": "9780805360202"
+        },
+        {
+          "medium": "hardcover",
+          "value": "0805360204"
+        },
+        {
+          "medium": "softcover",
+          "value": "0805360212"
+        },
+        {
+          "medium": "softcover",
+          "value": "0201328321"
+        }
+      ],
+      "bib_file": "087_195708.bib",
+      "bibtex_url": "https://inspirehep.net/api/literature/195708?format=bibtex"
+    }
+  ]
+}

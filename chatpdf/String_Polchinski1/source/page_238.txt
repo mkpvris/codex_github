@@ -1,0 +1,47 @@
+216                                                                                 7                    One-loop              amplitudes
+
+       Finally,             the             Dedekind             eta             function             is
+                                                                                          ∏∞                                             ∂ϑ                   (0,τ        )1/3
+                                                 .(τ)=                  q1/24                       (1      −       qm)=                         ν       11                                    .                          (7.2.43)
+                                                                                         m=1                                                          −2π
+It             has             the             modular             transformations
+                                                                           .(τ         +1)   =   exp(iπ/12)                                          .(τ)           ,                                                 (7.2.44a)
+                                                                           .(−1/τ                  )=(             −iτ)1/2.(τ).                                                                                       (7.2.44b)
+
+
+                                                                               7.3                                                The                torus                amplitude
+
+We              now              apply              to              the              torus              the              general              result              (5.3.9)              expressing              the              string
+amplitude                as                an                integral                with                ghost                and                vertex                operator                insertions.                The
+two             CKVs             require             one             vertex             operator             to             be             ﬁxed,             so
+           ST2(1;      2;               ...      ;n)⟨                                                                                                                                                 ⟩
+                             1     ∫                                                                                        ∏n        ∫
+                   =         2                dτd        ¯τ         BB˜         ˜ccV1(w1,                       w¯1)                          dwidw¯i                Vi(wi,                w¯i)                     .         (7.3.1)
+                                      F0                                                                                    i=2                                                                             T2
+The                     fundamental                     region                        F0          and                     the                     factor                     of1from           w        →−wwere
+                                                                                                                                                                   2
+                                                                                                                                                                                                         ¯
+discussed               in               section               5.1.               As               usual               for               complex               variables,                     dτd        τ     =2dτ                1dτ       2,
+where                τ     =       τ1      +       iτ   2.             The             ghost             insertion             for∫            dτ       is
+                                                     B      =           1      (b,       ∂     g)=                    1               d2wb                      (w)∂             g
+                                                                     4π                     τ                      2π                                  ww                     τ      w¯w¯
+                                                                                                                          i         ∫
+                                                                                                         =                                  d2wbww(w)
+                                                                                                                   4πτ2
+                                                                                                        →         2π ibww(0)                        .                                                                         (7.3.2)
+We                    have                    used                    the                    result                    (7.2.13)                    for                    theτ-derivative                    of                    the                    metric.                    In
+the                ﬁnal                line                we                have                used                the                fact                that                the                ghost                path                integral                (7.2.27)
+is                   independent                   of                   position                   to                   carry                   out                   thew-integration.                   (Recall                   that
+d2w           =2d,                1d,         2    and             that           g       ¯     =        1   .)
+                                                                                      ww                 2
+       The                   CKG                   consists                   of                   the                   translations                   of                   the                   torus.                   Since                   this                   group
+has                  ﬁnite                  volume,                  we                  need                  not                  ﬁx                  it:                  we                  can                  rewrite                  the                  amplitude                  so
+that                  all                  vertex                  operators                  are                  integrated                  and                  the                  volume                  of                  the                  CKG                  is
+divided            out.            It            is            easy            to            do            this            by            hand            here.            The            CKVs            are            constant,            so
+the               expectation               value               in               eq.               (7.3.1)               is               independent               of               where               the           c     ghosts
+are                     placed:                     we                     can                     move                     them                     away                     fromw1,                     putting                     them                     at                     some
+ﬁxed                    position.                    For                    the                    vertex                    operators,                    translation                    invariance                    implies
+that             the             amplitude             is             unchanged             if             we             replace                         wi       →        wi       +       w.Averageover
+translations                                                                                        ∫
+                                                                                                                  dw dw¯                    ,                                                                                 (7.3.3)
+                                                                                                             2(2π)2τ2

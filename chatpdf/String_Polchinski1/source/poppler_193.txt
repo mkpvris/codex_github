@@ -1,0 +1,57 @@
+                               6.2 Scalar expectation values                                                           171
+
+where
+                               !
+                 α$ X20
+         f(z, z̄) =      d2 z $ exp[2ω(z $ , z̄ $ )] ln |z − z $ |2 + k . (6.2.10)
+                   4
+The constant k is determined by the property that G$ is orthogonal to
+X0 , but in any case we will see that the function f drops out of all
+expectation values. It comes from the background charge, but the delta
+function from the zero-mode integration forces overall neutrality, J0µ = 0,
+and the background makes no net contribution.
+  Now consider the path integral with a product of tachyon vertex oper-
+ators,
+                         0                                                       1
+         AnS2 (k, σ) =        eik1 ·X(σ1 )        eik2 ·X(σ2 ) . . . eikn ·X(σn )               .               (6.2.11)
+                                             r                      r                 r    S2
+This corresponds to
+                                                  n
+                                                  (
+                                   J(σ) =                  ki , 2 (σ − σi ) .                                   (6.2.12)
+                                                   i=1
+The amplitude (6.2.6) then becomes
+                                             ?
+        AnS2 (k, σ) = iCSX2 (2π)d , d (           i ki )
+                          '        n                     n
+                                                                                                    
+                                   (                  1(
+                                                    $
+                  × exp −       ki ·kj G (σi , σj ) −       ki2 G$r (σi , σi )                          .       (6.2.13)
+                          i,j=1
+                                                      2 i=1
+                                   i<j
+
+The constant here is
+                                                    '                   −d/2
+                                                            −∇2
+                                CSX2 = X−d
+                                        0               det$ 2 $                 .                              (6.2.14)
+                                                            4π α            S2
+The determinant can be regularized and computed, but we will not need
+to do this explicitly. We are employing here the simple renormalization
+used in section 3.6, so that the self-contractions involve
+                                                                    α$
+                         G$r (σ, σ $ ) = G$ (σ, σ $ ) +                ln d2 (σ, σ $ ) .                        (6.2.15)
+                                                                    2
+Note that
+                               G$r (σ, σ) = 2f(z, z̄) + α$ ω(z, z̄)                                             (6.2.16)
+is finite by design. The path integral on the sphere is then
+                                                            '                          n
+                                    ?                            α$ ( 2                6                    $
+     AnS2 (k, σ) = iCSX2 (2π)d , d ( i ki ) exp                −     k ω(σi )                       |zij |α ki ·kj .
+                                                                 2 i i                     i,j=1
+                                                                                            i<j
+                                                                    (6.2.17)
+The function f has dropped out as promised. The dependence on the
+conformal factor ω(σ) is precisely that found in section 3.6 from the Weyl

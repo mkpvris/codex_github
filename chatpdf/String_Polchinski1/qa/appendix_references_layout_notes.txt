@@ -1,0 +1,7 @@
+277頁版のPDF248--277（付録A・参考文献）を1400px PNG化し、30頁全体をcontact sheetで目視確認。
+249、251、261、272頁を原寸画像で確認。数式、添字、脚注、図、参考文献本文に欠け・重なりなし。
+図A.1のキャプションがltjsarticleの付録見出し表記を継承して「図付録A.1」となっていたため、
+assemble.pyで付録のthefigureをAlph(section).arabic(figure)に指定し、次回ビルドで「図A.1」に修正する。
+参考文献のDOI/arXiv/INSPIREリンクはPDF注釈のURIをaudit_pdf.pyで検査。
+277頁版：277pages、1076内部リンク、256外部リンク、1359式リンク先、未解決内部リンク0、重要TeX警告0。
+前付け8見出しの目次バックリンクと表紙の出版社リンクはcheck_title_front_links.pyで実PDFの注釈を検査し全件存在。

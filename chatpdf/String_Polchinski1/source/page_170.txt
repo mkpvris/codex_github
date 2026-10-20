@@ -1,0 +1,44 @@
+148                                                       5ThestringS-matrix
+
+conjugation    ofτand             degenerate             for                      τ   real,             so             we             can             restrict             attention             to
+Im     τ>       0.      As      in      the      case      (5.1.5)      of      the      circle,      we      can      put      these      parameters
+either         in         the         metric         (5.1.9)         or         the         periodicity         (5.1.11).         The         parameterτ
+is                   known                   as                   aTeichmuller                  parameter¨or                    more                    commonly                    amodulus.A
+di!erence    from    the    point-particle    case    is    that    there    is    no    simple    invariant
+expression    forτanalogous    to    the    invariant    length    of    the    circle.
+     There     is     some     additional     redundancy,     which     does     not     have     an     analog
+in       the       point-particle       case.       The       valueτ+    1       generates       the       same       set       of
+identiﬁcations   (5.1.11)   asτ,replacing(m,      n)                                           →      (m−n,      n).         So          also          does−1/τ     ,
+deﬁning            w′     =    τw      and              replacing             (m,      n)→  (n,   −m).              Repeated             application             of
+these             two             transformations,
+                                          T     :      τ′   =    τ   +1        ,S         :τ′=−1/τ            ,                                      (5.1.12)
+
+generates
+                                                                     τ′    =     aτ    +    b                                                        (5.1.13)
+                                                                                 cτ    +    d
+for             all             integera,      b,      c,      dsuch             thatad−bc =1.
+     We      can      also      think      about      this      as      follows.      The      transformation[[
+                                                             1             [                ]           ′1
+                                                          σ          =          db                   σ                                               (5.1.14)
+                                                          σ2                    ca                   σ′2
+
+takes  the  metric  (5.1.9)  forσinto  a  metric  of  the  same  form  inσ′but  with
+the    modulusτ′.    This    is    a    di!eomorphism    of    the    torus.    It    is    one-to-one
+as                a                consequence                ofad−bc=              1                and                it                preserves                the                periodicity                (5.1.8).
+However,         it         cannot         be         obtained         from         the         identity         by         successive         inﬁnitesimal
+transformations                 —                 it                 is                 a                 so-calledlarge                 coordinate                 transformation.The
+curve        A    in           the           coordinate   σ   maps           to           a           curve           in           theσ′coordinate           that           runs
+a   times               in               theA′direction               and−c     times               in               theB′direction.               These               large
+coordinate             transformations             form             the             group         SL(2,         Z),             integer-valued             2 ×     2
+matrices          with          unit          determinant.          The          group          on          theτ-plane          is  SL(2,         Z)/Z2          =
+PSL(2,           Z),            because     τ′   is            unchanged            if            all            the            signs            ofa,      b,      c,      dare            reversed.
+The             group             of             transformations             (5.1.14)             is             known             as             themodular              group.
+     Using             the             modular             transformations             (5.1.13),             it             can             be             shown             that             every
+τ   is             equivalent             to             exactly             one             point             in             the             regionF0shown             in             ﬁgure             5.2,
+                                                   −     1    ≤    Re     τ   ≤     1    ,      |τ|≥        1,                                       (5.1.15)
+                                                         2                          2
+except            on            the            boundaries            which            are            identiﬁed            as            shown            in            the            ﬁgure.            This
+is                  called                  afundamental                  regionfor                  the                  upper                  half-plane                  modPSL(2,Z).
+Because                     of                     the                     identiﬁcations                     one                     should                     think                     ofF0as                     being                     rolled
+up,                      and                      open                      only                      at                      Imτ→∞.       The       fundamental       regionF0is       one
+representation    of    the    moduli    space    of    (di×Weyl)-inequivalent    metrics.!

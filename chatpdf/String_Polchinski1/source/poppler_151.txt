@@ -1,0 +1,44 @@
+                                  4.2 BRST quantization                                 129
+
+We will see explicitly in the remainder of the chapter that this space has
+the expected form in string theory. Essentially, the invariance condition
+removes one set of unphysical X µ oscillators and one set of ghost oscilla-
+tors, and the equivalence relation removes the other set of unphysical X µ
+oscillators and the other set of ghost oscillators.
+
+                                   Point-particle example
+Let us consider an example, the point particle. Expanding out the con-
+densed notation above, the local symmetry is coordinate reparameteri-
+zation ,τ(τ), so the index α just becomes τ and a basis of infinitesimal
+transformations is ,τ1 τ(τ) = ,(τ − τ1 ). These act on the fields as
+  ,τ1 X µ (τ) = −,(τ − τ1 )∂τ X µ (τ) ,           ,τ1 e(τ) = −∂τ [,(τ − τ1 )e(τ)] . (4.2.19)
+Acting with a second transformation and forming the commutator, we
+have
+      [,τ1 , ,τ2 ]X µ (τ)
+                                                                              
+               = − ,(τ − τ1 )∂τ ,(τ − τ2 ) − ,(τ − τ2 )∂τ ,(τ − τ1 ) ∂τ X µ (τ)
+                   !
+               ≡       dτ3 f τ3τ1 τ2 ,τ3 X µ (τ) .                                  (4.2.20)
+
+From the commutator we have determined the structure function
+     f τ3τ1 τ2 = ,(τ3 − τ1 )∂τ3 ,(τ3 − τ2 ) − ,(τ3 − τ2 )∂τ3 ,(τ3 − τ1 ) .          (4.2.21)
+The BRST transformation is then
+                                       ,B X µ = i1cẊ µ ,                          (4.2.22a)
+                                                   ˙ ,
+                                         ,B e = i1(ce)                             (4.2.22b)
+                                        ,B B = 0 ,                                 (4.2.22c)
+                                         ,B b = 1B ,                               (4.2.22d)
+                                         ,B c = i1cċ .                            (4.2.22e)
+  The gauge e(τ) = 1 is analogous to the unit gauge for the string, using
+the single coordinate freedom to fix the single component of the tetrad,
+so F(τ) = 1 − e(τ). The gauge-fixed action is then
+              !        2                                               3
+                      1 −1 µ      1
+        S=         dτ   e Ẋ Ẋµ + em2 + iB(e − 1) − eḃc                  .        (4.2.23)
+                      2           2
+We will find it convenient to integrate B out, thus fixing e = 1. This leaves
+only the fields X µ , b, and c, with action
+                                  !        2                       3
+                                               1 µ       1
+                            S=        dτ         Ẋ Ẋµ + m2 − ḃc                  (4.2.24)
+                                               2         2

@@ -1,0 +1,46 @@
+                                                                     6.2                      Scalar              expectation              values                                                                        169
+
+PSL(2,                 C)              that              respects              the              identiﬁcation              (6.1.9);              this              is              just              the              ordinary
+rotation               group                   SO(3).
+       Both             the             disk             and             projective            plane             have            been             represented             as             the             sphere
+with                 points                 identiﬁed                 under                 a     Z2          transformation,                 or                           involution.Infact,
+every              world-sheet              can              be              obtained              from              a              closed              oriented              world-sheet              by
+identifying           under           one           or           two                      Z2s.           The           method           of           images           can           then           be           used
+to             obtain             the             Green’s             functions.
+
+
+                                                                   6.2                                              Scalar               expectation               values
+
+The              basic              quantities              that              we              need              are              the              expectation              values              of              products
+of                 vertex                 operators.                 In                 order                 to                 develop                 a                 number                 of                 useful                 techniques
+and           points           of           view           we           will           calculate           these           in           three           di!erent           ways:           by           direct
+path             integral             evaluation,             by             using             holomorphicity             properties,             and             later             in
+the             chapter             by             operator             methods.
+       The                     path                     integral                     method                     has                     already                     been                     used                     in                     section                     5.3                     for
+the                  Faddeev–Popov                  determinant                  and                  in                  the                  appendix                  for                  the                  harmonic
+oscillator.             Start             with             a             generating             functional
+                                                                                  ⟨                 (       ∫                                                  ⟩
+                                                          Z[J]=                         exp              i          d2σJ            (σ)·X(σ)                                                                     (6.2.1)
+
+for                        arbitrary        Jµ(σ).                        For                        now                        we                        work                        on                        an                       arbitrary                        compact                        two-
+dimensional          surface                                  M,          and          in          an          arbitrary          spacetime          dimension                                       d.          Expand
+Xµ(σ)              in              terms              of              a              complete              setXI(σ),
+                                                                                                      µ                      ∑              µ
+                                                                                                X        (σ)=                           xIXI(σ),                                                              (6.2.2a)
+                                                                                                                                I
+                                                                                                   ∇2XI              =−ω2X                           ,                                                       (6.2.2b)
+                                                               ∫                                                                        I      I
+                                                                          d2σg           1/2      XIXI′              =       ,II′         .                                                                   (6.2.2c)
+                                                                   M
+Then
+                                                                    ∏∫                                       (          ω2xIµx                                                 
+                                           Z[J]=                                     dxµ          exp             −           I               Iµ      +      ixµJ                      ,                         (6.2.3)
+                                                                                             I                                 4πα′                                I      Iµ
+                                                                     I,µ
+where                                                                                          ∫
+                                                                              Jµ       =              d2σJ           µ(σ)XI(σ)                      .                                                            (6.2.4)
+                                                                                 I
+
+       The             integrals             are             Gaussian             except             for             the             constant             mode
+                                                                                              (    ∫                              −1/2
+                                                                             X0       =                    d2σg          1/2                         ,                                                           (6.2.5)

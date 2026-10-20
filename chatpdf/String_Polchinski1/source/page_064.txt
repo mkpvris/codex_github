@@ -1,0 +1,48 @@
+42                                                             2                     Conformal              ﬁeld              theory
+
+we             have
+                                                                                    ∇aja         =0                                                                                                                                                                                                                             (2.3.6)
+
+as        an        operator        equation.        This        is        Noether’s        theorem,        which        is        developed
+further      in      exercise      2.5.
+      To     derive     the     Ward     identity,     letρ(σ)     be     1     in     some     regionRand          0          outside
+R.                Also,                include                in                the                path                integral                some                general                local                operatorA(σ0)
+at                   a                   pointσ0inside   R,                   and                   the                   usual                   arbitrary                   insertions                   ‘...’            outside.
+Proceeding        as        above        we        obtain        the        operator        relation∫
+                                      δA(σ             )+           .              ddσg         1/2∇         ja(σ)A(σ                   )=0            .                       (2.3.7)
+                                                     0           2πi          R                            a                         0
+Equivalently,
+    ∇      ja(σ)A(σ                  )=        g−1/2δd(σ−σ                            )2πδA(σ                    )+total                σ-derivative       .                 (2.3.8)
+        a                          0                                               0     i.                   0
+The             divergence             theorem             gives
+                                                        ∫                                                    2π
+                                                                  dA      najaA(σ0)=                                δA(σ0)(2.3.9)
+                                                           ∂R                                                 i.
+with          dA        the                  area                  element                  andnathe                  outward                  normal.                  This                  relates                  the
+integral         of         the         current         around         the         operator         to         the         variation         of         the         operator.
+Going              to              two              ﬂat              dimensions              this              b ecomes
+                                           ∮                                                                    2π
+                                                    (jdz        −     ˜d  ¯z)A(z0,¯z0)=                          .    δA(z0,¯z0).                                          (2.3.10)
+                                              ∂R
+Again          we          drop          indices,j                      ≡       jz,      ˜    ≡      j¯z;          notice          that          on          a          current          the
+omitted      indices      are      implicitly      lower.      We      use      a      tilde      rather      than      a      bar      on˜
+because     this     isnot                      the           adjoint           of   j.TheMinkowskidensity                                               j0     is     in     general
+Hermitean,     so     the     Euclideanj2with           an           extra           factor           of                                     i  is           anti-Hermitean,
+and             (jz)†   =      1(j1       −     ij2)†        =     jz.
+                               2
+      It             is             important             that             Noether’s             theorem             and             the             Ward             identity             are             local
+properties,                   which                   do                   not                   depend                   on                   whatever                   boundary                   conditions                   we
+might               have               far               away,               nor               even               on               whether               these               are               invariant               under               the
+symmetry.             In              particular,             since             the             function         ρ(σ)              is              nonzero              only              insideR,
+the             symmetry             transformation             need             only             be             deﬁned             there.
+      In               conformally               invariant               theories               it               is               usually               the               case               thatjzis               holo-
+morphic                     and      j¯      antiholomorphic                     (except                     for                     singularities                     at                     the                     other
+                                       z
+ﬁelds).             In             this             case             the             currents             (jz,0)             and             (0,j¯z)        are        separately        conserved.
+The        integral        (2.3.10)        then        picks        out        the        residues        in        the        OPE,
+      Res                  j(z)A(z                , ¯z   )+          Res                  ˜(¯z)A(z              ,¯z    )=          1δA(z,¯z                    ).          (2.3.11)
+                z→z0                            0      0                       ¯z→¯z0                          0      0            i.                 0       0
+
+                                                                                                                                              −1                      ¯           ¯      −1
+Here                     ‘Res’                     and                     ‘Res’                     are                     the                     coeﬃcients                     of                     (z−z0)and                     (z−z0)
+respectively.                   This                   form                   of                   the                   Ward                   identity                   is                   particularly                   convenient.

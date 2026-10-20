@@ -1,0 +1,48 @@
+                     1.4 Closed and unoriented strings                    27
+
+by restricting to gauge-invariant states. The operator that generates the
+σ-translations is
+                         ! +
+                 P =−           dσ Πi ∂σ X i
+                           0
+                          ∞
+                               -                              /
+                      2π 
+                   =−       (αi αi − α̃i−n α̃in ) + A − Ã
+                       + n=1 −n n
+                        2π
+                   =−      (N − Ñ) .                                (1.4.10)
+                         +
+States must therefore satisfy
+                                       N = Ñ .                      (1.4.11)
+  The lightest closed string state is
+                                          2−D
+                          |0, 0; k, ,      m2 =   ,                  (1.4.12)
+                                            6α"
+which is again a tachyon. The first excited states are
+                                             26 − D
+                     αi−1 α̃j−1 |0, 0; k, ,    m2 =  .            (1.4.13)
+                                               6α"
+As with the open string, these states do not add up to complete represen-
+tations of S O(D − 1) and so this level must be massless. Thus,
+                          A = Ã = −1 ,           D = 26 .           (1.4.14)
+The states (1.4.13) transform as a 2-tensor under S O(D − 2). This is a
+reducible representation: it decomposes into a symmetric traceless tensor,
+an antisymmetric tensor, and a scalar. That is, any tensor eij can be
+decomposed
+        %                            &
+  ij    1 ij           2              1 " ij    #     1
+ e =      e + eji −        δ ij ekk +    e − eji +        δ ij ekk , (1.4.15)
+        2            D−2              2             D−2
+and the three separate terms do not mix under rotations.
+   At any mass level, Nin and Ñin are independent except for the N = Ñ
+constraint. Thus, the closed string spectrum at m2 = 4(N − 1)/α" is the
+product of two copies of the m2 = (N − 1)/α" level of the open string.
+   Let us now discuss some general issues. The two-dimensional di! in-
+variance removed two families of normal modes from the spectrum. If we
+tried to make a covariant theory without this invariance, we would have
+to generalize the transverse commutator (1.3.25) to
+                               [αµm , ανn ] = mη µν δm,−n .          (1.4.16)
+Lorentz invariance forces the timelike oscillators to have the wrong-sign
+commutator. A state with an odd number of timelike excitations will
+then have a negative norm. This is inconsistent with quantum mechanics,

@@ -1,0 +1,51 @@
+138                                                           4Thestringspectrum
+
+condition
+                     d−1
+                     ∑               µ              2
+                −            kµk          =     m        ,                                                                                                       (4.4.3a)
+                     µ=0
+                                                  ∞         (                                  d−1              
+                                ′     2         ∑                                              ∑                                  K
+                             α    m       =              n      Nbn       +    Ncn       +             Nµn             +      L0         −      1    ,          (4.4.3b)
+                                                n=1                                            µ=0
+for             the             open             string             and
+
+                     d−1
+                     ∑               µ              2          ˜2
+                −            kµk          =     m       =     m        ,                                                                                         (4.4.4a)
+                     µ=0
+                                ′                 ∞         (                                  d−1              
+                             α    m2      =     ∑        n      N         +    N         +     ∑       N               +      LK         −      1    ,          (4.4.4b)
+                             4                                      bn              cn                      µn                    0
+                                                n=1                                            µ=0
+                                ′                 ∞         (                                  d−1              
+                             α    m˜2     =     ∑        n      N˜        +    N˜        +     ∑       N˜              +      L˜K        −      1    ,           (4.4.4c)
+                             4                                      bn              cn                      µn                    0
+                                                n=1                                            µ=0
+for         the         closed         string.         That         is,         the         contributions         of         thed ≤     µ    ≤     25         oscillators
+are              replaced              by              the              eigenvalue              ofLKorL˜K    from              the              compact              CFT.              The
+                                                                                      0                0
+only             information             we             use             about             the             compact             CFT             is             that             it             is             conformally
+invariant           with           the          appropriate           central           charge,           so           there          is           a           nilpotent           BRST
+operator,           and           that           it           has           a           positive           inner           product.           The           basisIcan          be          taken
+to             be             orthonormal,             so             the             reduced             inner             products             are
+      ⟨0,I;k∥0,I′;k′⟩=                             ⟨0,0,I;k∥0,0,I′;k′⟩=2k0(2π)d−1,d−1(k                                                             −     k′),I,I′         .
+                                                                                                                                                                    (4.4.5)
+     Now                    l e t                    u s                    s e e                    w h a t                    w e                    e x p  e c t                    for                    t h e                    p h y s i c a l                    H i l b  e r t                    s p a c e .                    D e ﬁ n e
+the             transverse             Hilbert             space     H⊥         to             consist             of             those             states             inHˆthat            have
+no            longitudinal            (X0,        X1,       b,or         c)     excitations.     Since     these     oscillators     are     the
+source       of       the       indeﬁnite       inner       product,H⊥                                     has       a       positive       inner       product.
+Light-cone      gauge-ﬁxing      eliminates      the      longitudinal      oscillators      directly      —
+the     light-cone     Hilbert      space     is     isomorphic      toH⊥,asoneseesexplicitlyin
+the      ﬂat-spacetime      case      from      chapter      1.      We      will      show,      in      the      general      case,
+that     the     BRST     cohomology     is     isomorphic     toH⊥.     That     is,     it     has     the     same
+number        of        states        at        each        mass        level,        and        has        a        positive        inner        product.
+This      is      theno-ghost              theorem.
+
+
+                                                                                  Proof
+
+The          proof          has          two          parts.          The          ﬁrst          is          to          ﬁnd          the          cohomology          of          a          simpliﬁed
+BRST               operator             Q1,               which               is               quadratic               in               the               oscillators,               and               the               second
+is               to               show               that               the               cohomology               of               the               fullQBis               identical               to               that               ofQ1.

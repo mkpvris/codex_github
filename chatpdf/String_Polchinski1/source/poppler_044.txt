@@ -1,0 +1,55 @@
+22                         1 A first look at strings
+
+into why Lorentz invariance would be lost in the light-cone approach for
+the wrong A or D.
+   First, we assert that the operator ordering constant in the Hamiltonian
+for a free field comes from summing the zero-point energies of each
+oscillator mode, 12 ω for a bosonic field like X µ . Equivalently, it always
+works out that the natural operator order is averaged, 12 ω(aa† + a† a),
+which is the same as ω(a† a + 12 ). In H this would give
+                                          ∞
+                                      D−2
+                              A=             n,                        (1.3.31)
+                                       2 n=1
+
+the factor of D − 2 coming from the sum over transverse directions. The
+zero-point sum diverges. It can be evaluated by regulating the theory and
+then being careful to preserve Lorentz invariance in the renormalization.
+This leads to the odd result
+                                ∞
+                                           1
+                                      n→−      .                       (1.3.32)
+                                n=1
+                                            12
+
+     To motivate this, insert a smooth cuto! factor
+                                      −1/2
+                               exp(−.γσσ   |kσ |)                      (1.3.33)
+                                                               −1/2
+into the sum, where kσ = nπ/+ and the factor of γσσ is included to
+make this invariant under σ reparameterizations. The zero-point constant
+is then
+                            ∞                          
+                        D−2
+                   A→          n exp −.n(π/2p+ α" +)1/2
+                         2 n=1
+                              %                        &
+                       D − 2 2+p+ α"   1
+                     =         2
+                                     −    + O(.)           .           (1.3.34)
+                         2    . π      12
+ The cuto!-dependent first term is proportional to the length + of the
+'string and can be canceled by a counterterm in the action proportional to
+   d2 σ(−γ)1/2 . In fact, Weyl invariance requires that it be canceled, leaving
+only the cuto!-independent second term,
+                                       2−D
+                                  A=       .                           (1.3.35)
+                                        24
+This finite remainder is an example of a Casimir energy, coming from the
+fact that the string has a finite length.
+  As for the point particle, p− = H, so
+                                            %                  &
+                                          1      2−D
+                   m2 = 2p+ H − pi pi =     "
+                                              N+                   ,   (1.3.36)
+                                          α       24

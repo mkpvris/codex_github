@@ -1,0 +1,41 @@
+                    8.8 T -duality of unoriented theories                  277
+
+done this more directly, as in exercise 7.9, without the excursion through
+D-branes.
+
+                   8.8    T -duality of unoriented theories
+
+The R → 0 limit in an unoriented string theory also leads to interesting
+new physics. Consider closed strings first. To form the unoriented theory
+we impose Ω = +1 on the states. Following the discussion in section 8.5,
+we can think about this as gauging Ω. In particular, the transition functions
+used to build the world-sheet may now include orientation reversal, since
+it is a gauge symmetry, and this produces unoriented world-sheets.
+   The T -dual theory is obtained by using the coordinate X %m (z, z̄) =
+   m
+XL (z) − XRm (z̄) in place of X m (z, z̄) = XLm (z) + XRm (z̄). In the original
+description we are gauging world-sheet parity Ω, which acts as
+                            Ω : XLM (z) ↔ XRM (z) .                     (8.8.1)
+In terms of the T -dual coordinates, this is
+                         Ω : X %m (z, z̄) ↔ −X %m (z̄, z) ,            (8.8.2a)
+                             X µ (z, z̄) ↔ X µ (z̄, z) ,               (8.8.2b)
+where again m indexes the coordinates on which the T -dual has been taken
+and µ those on which it has not. In the dual picture, the symmetry (8.8.2)
+is thus the product of a world-sheet parity transformation and a spacetime
+reflection. We have seen that gauging world-sheet parity alone produces
+the unoriented theory, while gauging the reflection alone produces an
+orbifold. The result of the combined projection is known as an orientifold.
+   Orientifolds are rather similar to orbifolds. Separate the string wave-
+function into its internal part and its dependence on the center of mass
+xm , and take the internal wavefunction to be an eigenstate of Ω. The
+projection onto Ω = +1 then determines the string wavefunction at −xm
+to be the same as that at xm , up to a sign. For example, the various
+components of the metric and antisymmetric tensor satisfy
+                 Gµν (x% ) = Gµν (x) , Bµν (x% ) = −Bµν (x) ,          (8.8.3a)
+                 Gµn (x% ) = −Gµn (x) , Bµn (x% ) = Bµn (x) ,          (8.8.3b)
+                 Gmn (x% ) = Gmn (x) , Bmn (x% ) = −Bmn (x) ,          (8.8.3c)
+where (xµ , xm )% = (xµ , −xm ). There is a minus sign for each m, n and an
+additional minus sign for each BMN ; the orbifold is the same except that
+the latter sign would be absent. In other words, the T -dual spacetime is the
+torus T k identified under a Z2 reflection in the k compact directions, just
+as in the orbifold construction. In the case of a single periodic dimension,

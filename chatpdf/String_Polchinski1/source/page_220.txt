@@ -1,0 +1,46 @@
+198                                                      6Tree-levelamplitudes
+
+one   has   to   divide   by   an   inﬁnite   volume.   A   nonzero   result   would   have   been
+a    logical    inconsistency,    a    zeroth    order    correction    to    the    background    ﬁelds.
+Similarly   the   amplitude   for   two   closed   strings   on   the   sphere   (a   zeroth   order
+correction   to   the   mass)   vanishes,   as   do   the   corresponding    disk   amplitudes,
+one     or     two     open     strings.     The     amplitudes     with     no     vertex     operators     at     all
+are      also      meaningful      —      they      just      calculate      the      term      of      orderΦ˜0                                          in                  the
+Taylor           expansion           of           the           action           (6.6.28).           The           disk           amplitude           with           no           vertex
+operators          is          thus          nonvanishing;          this          requires          a          somewhat          formal          treatment
+of             the             conformal             Killing             volume.
+
+                                                            6.7                                                General                results
+
+In                  this                  section                  we                  obtain                  some                  general                  results                  concerning                  CFT                  on                  the
+sphere             and             disk.
+
+                                                               Mobius              invariance¨
+We               have               seen               that               the               sphere               has               a               group               of               globally               deﬁned               conformal
+transformations,             the             Mobius             group¨            PSL(2,           C),
+                                                                      z′    =     αz    +     β                                                           (6.7.1)
+                                                                                  γz    +     δ
+for             complex     α,       β ,       γ ,       δwithαδ −βγ          =         1.          This          is          the          most          general          conformal
+transformation               that               is               one-to-one               on               all               ofS2,thecomplexz-plane      plus
+the        point        at        inﬁnity.        Expectation        values        must        be        invariant        under        any
+Mobius             transformation:¨
+            ⟨  A      (z    ,¯z    ) ...   A       (z    ,¯z    )⟩        =⟨A′(z                ,¯z   )...     A′(z          ,¯z   )⟩        .            (6.7.2)
+                    i     1     1                k     n      n      S2                 i    1      1               k      n     n      S2
+We           will           consider           the           consequences           of           this           symmetry           for           expectation           values
+with             one,             two,             three,             or             four             local             operators.
+                                                                                    ˜                                                                     ′
+     For          a          single          operator          of          weight          (hi,hi),          the          rescaling          plus          rotationz=γz
+gives
+                                                    ⟨                     ⟩                          ˜
+                  ⟨Ai(0,          0)   ⟩       =       A′(0,         0)           =    γ−hi¯γ−hi          ⟨  Ai(0,        0)   ⟩        .                 (6.7.3)
+                                         S2                  i              S2                                                   S2
+                                                                                                                                    ˜
+The                    one-point                    function                    therefore                    vanishes                    unlesshi=hi=                   0.                    This                    is
+another                way                to                see                that                the                one-point                string                amplitude                vanishes                on                the
+sphere,                      because                      the                      matter                      factor                      is                      the                      expectation                      value                      of                      a                      (1,1)
+op erator.
+     Fo  r     n    =2,wecanuseatranslationplus                                                       z′=γz              to             bring             any             pair             of
+operators           to           the           points           0           and           1,           giving
+                                                                                       ˜     ˜
+      ⟨  A      (z    ,¯z    )A       (z    ,¯z    )⟩        =    z−hi−hj¯z−hi−hj                 ⟨  A     (1,    1)A         (0,0)      ⟩        ,       (6.7.4)
+               i    1      1        j     2      2     S2            12             12                    i                 j              S2

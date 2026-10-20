@@ -1,0 +1,43 @@
+210                           7 One-loop amplitudes
+
+and so we obtain
+                                Z(τ) = iVd ZX(τ)d ,                            (7.2.8)
+where
+                         ZX(τ) = (4π 2 α% τ2 )−1/2 |.(τ)|−2 .                  (7.2.9)
+Here
+                                              ∞
+                                              &
+                              .(τ) = q 1/24         (1 − q n )                (7.2.10)
+                                              n=1
+is the Dedekind eta function, discussed further at the end of the section.
+The i comes from the rotation k 0 → ik d needed to define the divergent
+integral. Also, the earlier CTX2 (τ) is ZX(τ)d .
+   The result (7.2.8) is obviously invariant under τ → τ + 1. Invariance
+of ZX under τ → −1/τ follows from eq. (7.2.44), .(−1/τ) = (−iτ)1/2 .(τ),
+thus generating the full modular group. Similarly the expectation value
+with vertex operators is modular-covariant, taking into account the Weyl
+transformations of the operators.
+   We have evaluated the path integral by translating into an operator
+expression, but as on the sphere there are two other methods. We leave to
+the reader the direct path integral evaluation. Fourier transforming in , 1 ,
+it just breaks up into a product of harmonic oscillator path integrals.
+   The evaluation using holomorphicity is less direct. We include it for
+illustration because it is used at higher genus and for more complicated
+CFTs. The idea is to get a di!erential equation with respect to τ. Consider
+the torus with modulus τ and make a small change in the metric, δgww = &∗ .
+The new metric is
+      ds2 = dwdw̄ + &∗ dw 2 + &dw̄ 2
+          = (1 + &∗ + &) d[w + &(w̄ − w)] d[w̄ + &∗ (w − w̄)] + O(&2 ) . (7.2.11)
+That is, the metric is Weyl-equivalent to dw % dw̄ % with w % = w + &(w̄ − w).
+This has the periodicities
+                       = w % + 2π ∼
+                    w% ∼          = w % + 2π(τ − 2iτ2 &) .            (7.2.12)
+This change in the metric is therefore equivalent to a change
+                                    δτ = −2iτ2 &                              (7.2.13)
+in the modulus.
+   Under a change in the metric, the change in the path integral is
+                          $                                              
+                        1
+           δZ(τ) = −        d2 w δgw̄w̄ - Tww (w) * + δgww - Tw̄w̄ (w̄) *
+                       2π                              
+                  = −2πi δτ - Tww (0) * − δτ̄ - Tw̄w̄ (0) * .                 (7.2.14)

@@ -1,0 +1,46 @@
+                                  7.2 CFT on the torus                                 211
+
+In the second line we have used translation invariance to carry out the
+integral over w. All expectation values are understood to be on the torus
+with modulus τ. To get the expectation value of the energy-momentum
+tensor, we use the OPE
+                                          α% d
+            ∂w X µ (w)∂w Xµ (0) = −            − α% Tww (0) + O(w) .               (7.2.15)
+                                          2w 2
+Now,
+ Z(τ)−1 - ∂w X µ (w)∂w Xµ (0) * = d∂w ∂w% G% (w, w̄; w % , w̄ % )|w% =0
+                                          α% d ϑ1 ∂w2 ϑ1 − ∂w ϑ1 ∂w ϑ1    α% d
+                                      =                    2
+                                                                       +       ,   (7.2.16)
+                                           2              ϑ1             8πτ2
+where the arguments of all the theta functions are (w/2π, τ). This does
+indeed have a double pole at w = 0. Carefully expanding both numerator
+and denominator to order w 2 (this is simplified by the fact that ϑ1 is odd),
+the order w 0 term in the expectation value (7.2.16) is
+                                      α% d ∂w3 ϑ1   α% d
+                                                  +      .                         (7.2.17)
+                                       6 ∂w ϑ1 8πτ2
+The OPE (7.2.15) then gives
+                                      6                             7
+                                  d ∂3 ϑ1 (0|τ)   d
+                   - Tww (0) * = − w            −                       Z(τ) ,     (7.2.18)
+                                  6 ∂w ϑ1 (0|τ) 8πτ2
+and the variation (7.2.14) gives the di!erential equation
+                                           πid ∂w3 ϑ1 (0|τ)   id
+                        ∂τ ln Z(τ) =                        +    .                 (7.2.19)
+                                            3 ∂w ϑ1 (0|τ) 4τ2
+To proceed further, we use the fact, which is easily verified from the
+infinite sum, that the theta functions satisfy
+                                  2       3             2       3
+                                      w 88    i     w 88
+                         ∂w2 ϑ1          8τ = ∂τ ϑ1    8τ               .          (7.2.20)
+                                      2π     π      2π
+Rewrite (7.2.19) as
+                                    d                     id
+                      ∂τ ln Z(τ) = − ∂τ ln ∂w ϑ1 (0|τ) +     .                     (7.2.21)
+                                    3                    4τ2
+Together with the conjugate equation, this determines
+                                                             −d/2
+                            Z(τ) = |∂w ϑ1 (0|τ)|−2d/3 τ2                           (7.2.22)
+up to a numerical coefficient that must be fixed by other means. Noting
+the relation (7.2.43), this is the same as the earlier result (7.2.8).

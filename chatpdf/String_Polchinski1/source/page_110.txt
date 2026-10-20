@@ -1,0 +1,44 @@
+88                                                               3                     The              Polyakov              path              integral
+
+leaving
+                                                                            ∫
+                                                     Z[gˆ]=                       [dX]∆               FP(gˆ)exp(−S[X,                                  gˆ])      .                                 (3.3.15)
+
+Thus,          ∆FP(gˆ)             is             the             correct             measure             on             the             slice.
+      To             evaluate             the             expression             (3.3.11)             for             the             Faddeev–Popov             measure,             let
+us                pretend                that                the                gauge                choice                precisely                ﬁxes                the                gauge                symmetry,                so
+that            for            exactly            one            value            of .    the            delta            function               ,(g        −     gˆ.)            is            nonzero;            for
+,(gˆ      −gˆ.)           this           would           be           the           identity.           As           noted           above,           there           is           a           small           global
+mismatch,              but              we              will              deal              with              this              when              the              time              comes              —              it              does              not
+a!ect               the               local               properties               of               the               world-sheet.               For .     near               the               identity,               we
+can             expand
+
+                                                   ,g     ab      =2,ω     gab                   −∇a,σb                    −∇b,σa
+                                                                  =(2,ω                   −∇c,σc)gab                          −      2(P1,σ)ab                     .                               (3.3.16)
+
+We           have           deﬁned           a           di!erential           operator                             P1       that           takes           vectors           into           traceless
+symmetric             2-tensors,
+                                             (P       ,σ)               =       1   (∇       ,σ          +      ∇       ,σ         −      g        ∇      ,σc)           .                         (3.3.17)
+                                                    1           ab              2          a         b               b         a              ab        c
+
+Near           the           identity,           the           inverse           determinant           (3.3.11)           becomes
+∆FP(gˆ)−1
+              ∫                                                                                                                     
+       =            [d,  ω       d,  σ         ]  ,      −(2,ω                 −      ∇·ˆ    ,σ)gˆ          +2Pˆ1,σ
+              ∫                                                      {              ∫                                                                                                                            }
+       =            [d,  ω       d/        d,  σ        ]exp              2πi               d2σ        gˆ1/2/ab                −(2,ω                 −     ∇·ˆ     ,σ)gˆ          +2Pˆ1,σ                     ab
+              ∫                                            {              ∫                                                                }
+       =            [d/       ′  d,  σ      ]exp               4πi               d2σgˆ1/2/′ab(Pˆ1,σ)ab                                            .                                                (3.3.18)
+
+A                    hat                    on                    a                    di!erential                    operator                    indicates                    that                    it                    contains                    the                    ﬁducial
+metric              gˆ.              In              the              second              equality              we              have              used              the              integral              representation
+for                the                functional                delta                function,                introducing                the                symmetric                tensor                ﬁeld
+/ab.               In               the               third               equality               we               have               integrated               over,ω,whichproducesa
+delta      functional      forcing/ab                                                to                be                traceless;                the                functional                integral                [d/′]
+is                 then                 overtraceless            symmetric                 tensors.                 We                 now                 have                 a                 representation
+for              ∆FP(gˆ)−1              as                a                functional                integral                over                a                vector                ﬁeld,σaand                over                a
+traceless             symmetric             tensor                             /′ab.
+      As                       discussed                       in                       the                       appendix,                       we                       can                       invert                       this                       path                       integral                       by
+replacing         each         bosonic         ﬁeld         with         a         corresponding         Grassmann                                                                 ghost            ﬁeld.
+                                                                                          ,σa          →        ca      ,                                                                      (3.3.19a)
+                                                                                           /ab′        →        bab        ,                                                                   (3.3.19b)

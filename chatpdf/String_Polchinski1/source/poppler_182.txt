@@ -1,0 +1,43 @@
+160                                5 The string S-matrix
+
+and the two Jacobians cancel (up to a sign, which as we have noted must
+be fixed by hand to give a positive measure). In other words, due to the
+b-ghost insertions the integrand transforms as a density on moduli space.
+  Second, let us see that the measure is invariant under a Weyl transfor-
+mation of the gauge slice. Under a Weyl transformation,
+                              $
+                          , ĝab (t; σ) = 2,ω(t; σ)ĝab (t; σ) ,                         (5.4.2)
+the variation of the action and measure gives an insertion of the local
+operator T aa , which vanishes in D = 26 by the equations of motion.
+We need therefore worry only about the e!ect on the various insertions.
+The vertex operator insertions are Weyl-invariant by construction. The
+insertions ca (σi ) are Weyl-invariant as discussed below eq. (3.3.24). For the
+b insertions,
+                               !
+             (b, ∂k ĝ $ ) =                                           $
+                                   d2 σ ĝ $1/2 bab ĝ $ac ĝ $bd ∂k ĝcd
+                               !
+                         =         d2 σ ĝ 1/2 bab (ĝ ac ĝ bd ∂k ĝcd + 2ĝ ab ∂k ω)
+                         = (b, ∂k ĝ) ,                                                  (5.4.3)
+the last equality following from tracelessness of b.
+  Third, let us check invariance under an infinitesimal di! transformation,
+,σ = ξ(t; σ). The extension to a general di! transformation is straightfor-
+ward. The only terms in the amplitude (5.3.9) that are not immediately
+invariant are the b insertions and the vertex operators whose coordinates
+have been fixed. The former transform as
+                               ,(b, ∂k ĝ) = −2(b, P1 ∂k ξ)
+                                           = −2(P1T b, ∂k ξ)
+                                           =0                                            (5.4.4)
+using the b equation of motion. The b equation of motion comes from
+,S /,c = 0, so there will be source terms at the c insertions; these are
+precisely what is needed to account for the e!ect of the coordinate trans-
+formation on the fixed vertex operators.
+
+                                      BRST invariance
+We now verify the full BRST invariance of the amplitude (5.3.9). The path
+integral measure and action are known to be invariant from the local
+analysis, so we have to consider the e!ect of the BRST transformation
+on the insertions. In the gauge-fixed path integral (5.3.9), the unintegrated
+vertex operators are accompanied by a factor of c or c̃c. This is precisely
+what we described at the end of section 4.4 for the BRST-invariant vertex
+operator corresponding to an OCQ state. The integrated vertex operators,

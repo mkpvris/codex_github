@@ -1,0 +1,55 @@
+                                      A.1 Bosonic fields                                          333
+
+of q(t), where 0 < t < T . Then, using the cutting relation (A.1.15),
+             #                                    #
+                       qf ,T
+                 [dq]q ,0 exp(iS )q(t) =              dq %qf , T |q, t& q %q, t|qi , 0&
+                          i
+                                                  #
+                                              =       dq %qf , T |q̂(t)|q, t& %q, t|qi , 0&
+                                              = %qf , T |q̂(t)|qi , 0& .                      (A.1.16)
+Thus, q(t) in the functional integral translates into q̂(t) in the matrix
+element. For a product of two insertions q(t)q(t! ) (which is equal to
+q(t! )q(t), since these are simply variables of integration), where both t and
+t! are in the range [0, T ], one finds by the same method that
+         #
+                  qf ,T
+             [dq]q ,0 exp(iS )q(t)q(t! ) = %qf , T |T[q̂(t)q̂(t! )]|qi , 0&.                  (A.1.17)
+                   i
+
+Here, T denotes the time-ordered product
+          T[Â(t)B̂(t! )] = θ(t − t! )Â(t)B̂(t! ) + θ(t! − t)B̂(t! )Â(t).                   (A.1.18)
+Because of the way the path integral is built out of successive infinites-
+imal time slices, two or more insertions in the path integral will always
+correspond to the time-ordered product of operators in the matrix element.
+  The equation of motion is δS /δq(t) = 0. Let us see how this works
+inside the path integral. Consider this equation in a path integral with
+other insertions F,
+         #                                              #                 .               /
+                  qf ,T            δS                             δ
+                                                                  qf ,T
+             [dq]q ,0 exp(iS )          F = −i              [dq]q ,0   exp(iS ) F
+                   i              δq(t)                      i  δq(t)
+                                                   #
+                                                        qf ,T         δF
+                                                = i [dq]q ,0 exp(iS )       .    (A.1.19)
+                                                         i            δq(t)
+We have integrated by parts in the second line.2 If none of the fields
+in F are at time t, the right-hand side vanishes and the equation of
+motion holds in the path integral. We therefore say that the equation of
+motion holds as an operator equation. This is a technique that we will use
+extensively: an operator equation is one which holds when inserted into
+any path integral that has no other fields coincident with those involved in
+the equation. Translating to Hilbert space language, we can use the other
+insertions F to set up arbitrary initial and final states, so this corresponds
+
+2 The functional derivative is defined as
+
+                                         δ
+                                              q(t! ) = δ(t − t! ) .
+                                        δq(t)
+ It can be regarded as the limit of the ordinary derivative
+                                            1 ∂
+                                                  ,   m = t/. .
+                                            . ∂qm
+ In particular, one can integrate a functional derivative by parts, as for an ordinary derivative.

@@ -1,0 +1,57 @@
+46                                 2 Conformal field theory
+
+form (2.3.11) implies that
+                        ∞
+                         1                                                         
+       δA(z, z̄) = −.               ∂n v(z)A(n) (z, z̄) + ∂¯n v(z)∗ Ã(n) (z, z̄) .          (2.4.12)
+                        n=0
+                              n!
+
+Thus the operators A(n) are determined by the conformal transformation
+of A.
+  It is convenient to take a basis of local operators that are eigenstates
+under rigid transformation (2.4.9),
+
+                               A" (z " , z̄ " ) = ζ −h ζ̄ −h̃ A(z, z̄) .                     (2.4.13)
+The (h, h̃) are known as the weights of A. The sum h + h̃ is the dimension
+
+
+
+
+                                                                                                        ]
+of A, determining its behavior under scaling, while h − h̃ is the spin,
+determining its behavior under rotations. The derivative ∂z increases h by
+one, and the derivative ∂z̄ increases h̃ by one. The Ward identities for the
+transformation (2.4.13) and for the translation δA = −.v a ∂a A determine
+part of the OPE,
+                                        h           1
+           T (z)A(0, 0) = . . . +          A(0, 0) + ∂A(0, 0) + . . . ,                      (2.4.14)
+                                        z2          z
+and similarly for T̃ .
+  An important special case is a tensor operator or primary field 3 O, on
+which a general conformal transformation acts as
+
+                          O" (z " , z̄ " ) = (∂z z " )−h (∂z̄ z̄ " )−h̃ O(z, z̄) .           (2.4.15)
+The OPE (2.4.11) reduces to
+                                          h           1
+                    T (z)O(0, 0) =           O(0, 0) + ∂O(0, 0) + . . . ,                    (2.4.16)
+                                          z2          z
+the more singular terms in the general OPE (2.4.14) being absent.
+  Taking again the example of the free X µ CFT, the weights of some
+typical operators are
+                                                                                         
+                 Xµ        (0, 0) ,      ∂X µ (1, 0) ,                                   
+                                                                                         
+                 ¯ µ                                                                     
+                 ∂X        (0, 1) ,      ∂2 X µ (2, 0) ,
+                           % " 2 " 2&                                                        (2.4.17)
+                             αk αk                                                       
+                                                                                         
+                 : eik·X :         ,   .                                                 
+                               4     4
+
+3 In quantum field theory, one usually distinguishes the fundamental fields (the variables of
+ integration in the path integral) from more general operators which may be composite. Actually,
+ this distinction is primarily useful in weakly coupled field theories in three or more dimensions.
+ It is of little use in CFT, in particular because of equivalences between di!erent field theories,
+ and so the term field is used for any local operator.

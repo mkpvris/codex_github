@@ -1,0 +1,47 @@
+                               6.4 The Veneziano amplitude                              183
+
+These are precisely the positions of the open string states. The integral
+I(s, t) also has poles in the variable t at the same positions (6.4.18), coming
+from the endpoint y = 1. These are due to the process of figure 6.3(b). The
+other two terms in the amplitude (6.4.9) give further contributions to the
+s- and t-channel poles, and also give poles in the u-channel, figure 6.3(c).
+Because the residue at s = 0 in (6.4.17) is odd in u − t, this pole actually
+cancels that from I(s, u), as do all poles at even multiples of 1/α% . This will
+not be true for the more general open string theories to be introduced in
+the next section.
+   Define the Euler beta function
+                                         $ 1
+                           B(a, b) =           dy y a−1 (1 − y)b−1 ,                (6.4.19)
+                                          0
+so that
+            I(s, t) = B(−αo (s), −αo (t)) ,            αo (x) = 1 + α% x .          (6.4.20)
+This can be expressed in terms of gamma functions. Defining y = v/w for
+fixed w gives
+                                               $ w
+                      w a+b−1 B(a, b) =              dv v a−1 (w − v)b−1 .          (6.4.21)
+                                                0
+                                                           -∞
+Multiplying both sides by e−w , integrating                 0    dw, and regrouping gives
+                                $ ∞                  $ ∞
+      Γ(a + b)B(a, b) =               dv v a−1 e−v         d(w − v)(w − v)b−1 e−(w−v)
+                                 0                     0
+                           = Γ(a)Γ(b) .                                             (6.4.22)
+The four-tachyon amplitude is then
+                        2igo2             #
+  SD2 (k1 ; k2 ; k3 ; k4 ) =
+                           %
+                              (2π)26δ 26 ( i ki )
+                        α                                                 
+          × B(−αo (s), −αo (t)) + B(−αo (s), −αo (u)) + B(−αo (t), −αo (u)) ,
+                                                                                    (6.4.23)
+where
+                                Γ(−α% x − 1)Γ(−α% y − 1)
+            B(−αo (x), −αo (y)) =                         .           (6.4.24)
+                                    Γ(−α% x − α% y − 2)
+This is the Veneziano amplitude, originally written to model certain features
+of strong interaction phenomenology.
+  The high energy behavior of the Veneziano amplitude is important.
+There are two regions of interest, the Regge limit,
+                                      s→∞,           t fixed ,                      (6.4.25)
+and the hard scattering limit,
+                                     s→∞,           t/s fixed .                     (6.4.26)

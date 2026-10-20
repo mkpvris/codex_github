@@ -1,0 +1,48 @@
+                                   3.6 Vertex operators                          103
+
+contracting pairs in F using ∆(σ, σ $ ). On the flat world-sheet, d2 (σ, σ $ ) =
+|z − z $ |2 and this reduces to conformal normal ordering, which we have
+studied in detail. On a curved world-sheet it cancels the singular part
+of the self-contractions of fields in F. Di! invariance is obvious, but the
+contraction depends on the metric and so introduces the Weyl dependence
+                                   !
+                             1                      ,       ,
+   ,W [ F ] r = [ ,W F ] r +            d2 σd2 σ $ ,W ∆(σ, σ $ )     [ F ]r ,
+                             2                   ,X µ (σ) ,Xµ (σ $ )
+                                                                         (3.6.7)
+the first term being the explicit Weyl dependence in the operator.
+   A vertex operator for a state of momentum k µ must transform under
+translations in the same way as the state, and so will be of the form eik·X
+times derivatives of X µ . Operators with di!erent numbers of derivatives
+will not mix under Weyl transformations, so we can start by considering
+zero derivatives, the operator (3.6.1). The Weyl variation comes from the
+explicit factor of g 1/2 as well as from the renormalization as given in
+eq. (3.6.7),
+                  !                2                               3
+                      2      1/2               k2
+    ,W V0 = 2gc       d σg             2,ω(σ) − ,W ∆(σ, σ) [ eik·X(σ) ]r .    (3.6.8)
+                                               2
+At short distance,
+                          d2 (σ, σ $ ) ≈ (σ − σ $ )2 exp(2ω(σ))               (3.6.9)
+and so
+                                       α$
+                                          ln(σ − σ $ )2 .
+                      ∆(σ, σ $ ) ≈ α$ ω(σ) +                                 (3.6.10)
+                                       2
+The Weyl variation is nonsingular in the limit σ $ → σ,
+                               ,W ∆(σ, σ) = α$ ,ω(σ) .                       (3.6.11)
+The condition for the Weyl variation (3.6.8) to vanish is then k 2 = 4/α$ ,
+as already deduced above.
+
+                                Off-shell amplitudes?
+Observe that a naive attempt to define o!-shell amplitudes, by taking k µ
+o! the mass shell, is inconsistent with the local world-sheet symmetries.
+In position space this means that a local probe of the string world-sheet,
+given by inserting
+                                   !
+                                         dD k
+          , D (X(σ) − x0 ) =                  exp[ik · (X(σ) − x0 )]         (3.6.12)
+                                        (2π)D
+into the path integral, is inconsistent because it involves all momenta.
+   From several points of view this is not surprising. First, the argument
+given above that we could use pointlike sources (vertex operators) for

@@ -1,0 +1,50 @@
+238                  8 Toroidal compactification and T -duality
+
+modular transformations on the periodicities is then simply to change the
+summation variables m and w.
+
+                                      Vertex operators
+In order to create a winding state, which has α0 5= α̃0 , we need independent
+variables xL and xR , with
+                                [ xL , pL ] = [ xR , pR ] = i .                               (8.2.14)
+The field X then splits into holomorphic and antiholomorphic parts,
+                                X(z, z̄) = XL (z) + XR (z̄) ,                                 (8.2.15)
+with
+                                                        2     31/2 (
+                                                                   ∞
+                                 α%           α%                            αm
+                  XL (z) = xL − i pL ln z + i                                  m
+                                                                                 ,           (8.2.16a)
+                                 2            2                        m=−∞ mz
+                                                                       m5=0
+                                                         2 % 31/2 (
+                                                                  ∞
+                                       α%       α                           α̃m
+                  XR (z̄) = xR − i pR ln z̄ + i                                 m
+                                                                                  .          (8.2.16b)
+                                  2             2                      m=−∞ mz̄
+                                                                       m5=0
+If we restrict attention to states with kL = kR and to operators constructed
+only from the sum XL (z)+XR (z̄), this reduces to the CFT for a noncompact
+dimension.
+   Let us now discuss the OPE and vertex operators, first in a slightly
+heuristic way and then filling in the details. It is easy to guess what
+the operator products should be, since the usual XX operator product
+−(α% /2) ln(z12 z̄12 ) separates into a sum of holomorphic plus antiholomor-
+phic functions. Thus,
+                             α%                                               α%
+       XL (z1 )XL (z2 ) ∼ −     ln z12 ,        XR (z̄1 )XR (z̄2 ) ∼ −           ln z̄12 ,   (8.2.17a)
+                              2                                               2
+       XL (z1 )XR (z̄2 ) ∼ 0 .                                                               (8.2.17b)
+The operator corresponding to the state |0; kL , kR * would be
+                            VkL kR (z, z̄) = : eikL XL (z)+ikR XR (z̄) :                      (8.2.18)
+with OPE
+                                             α% k k % /2 α% k k % /2
+     VkL kR (z1 , z̄1 )VkL% kR% (z2 , z̄2 ) ∼ z12 L L z̄12 R R V(k+k% )L (k+k% )R (z2 , z̄2 ) .
+                                                                                          (8.2.19)
+One encounters branch cuts in various expressions, which is not surprising
+because the field X is no longer single-valued. It is important, however,
+that the full vertex operator OPE is single-valued: the net phase when z1
+circles z2 is
+          exp[πiα% (kL kL% − kR kR% )] = exp[2πi(nw % + wn% )] = 1 .                          (8.2.20)
+This is as it must be in order for the string amplitudes to be well defined.

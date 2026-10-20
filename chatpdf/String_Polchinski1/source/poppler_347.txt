@@ -1,0 +1,46 @@
+                     9.9 Low dimensions and noncritical strings                                  325
+
+scalar.5 Nevertheless, to solve the string theory directly is still quite hard.
+First one has to evaluate the world-sheet path integral with action (9.9.5).
+This is no longer a free theory, because of the exponential tachyon field.
+It is known as the Liouville field theory. It is classically integrable, and
+with substantial effort some quantum amplitudes have been determined.
+However, to solve the string theory one would still need to integrate the
+result at each genus over the moduli space of Riemann surfaces; we have
+seen that this is a complicated space. Remarkably, the full amplitude has
+been determined, to all orders, by very different means. To describe this,
+we must first introduce another idea.
+
+                                       Noncritical strings
+Consider a statistical mechanical system defined by a sum over two-
+dimensional surfaces in a d-dimensional Euclidean space. Let us also
+suppose that the surfaces have some internal degree of freedom that can
+be interpreted as a measure of length. The natural fields to describe the
+system are the embedding X µ (σ) and a metric gab (σ). However, there is
+no particular reason for the length to drop out of the problem — that is,
+for the theory to be Weyl-invariant. This is therefore called the noncritical
+string. The lowest-dimensional action (or Boltzmann weight, since we are
+thinking of the path integral in the context of statistical mechanics) for
+this system would then be the Polyakov action with an additional world-
+sheet cosmological constant term, which in the critical string is forbidden
+by Weyl invariance,
+                                   #               !                          "
+                             1
+                     S=                  d2 σ g 1/2 g ab ∂a X µ ∂b Xµ + µ .                    (9.9.6)
+                            4πα!     M
+
+  Without Weyl invariance, we can use diff invariance to fix the metric
+partially, but one degree of freedom remains:
+                               gab (σ) = exp(2φ(σ)) ĝab (σ) ,                                 (9.9.7)
+where ĝab is a gauge choice and the scale φ of the metric is still path-
+integrated. The Faddeev–Popov determinant for this gauge-fixing is the
+same as in eq. (3.4.19), the Weyl-fixing contribution to the latter being
+trivial. Inserting the metric (9.9.7), for which the curvature is
+                                                  !               "
+                                                       ˆ 2φ ,
+                                g 1/2 R = ĝ 1/2 R̂ − 2∇                                       (9.9.8)
+
+and dropping a field-independent term, the action plus Faddeev–Popov
+
+5 At special momenta one finds additional physical states. These can be interpreted as unbroken
+ symmetries of string field theory, and likely play a role in the solvability of the theory.

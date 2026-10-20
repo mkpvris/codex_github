@@ -1,0 +1,38 @@
+                              3.3 Gauge fixing                            85
+
+two coordinates and the local scale of the metric. Thus there is just enough
+gauge freedom to eliminate the integration over the metric, fixing it at
+some specific functional form which we will call the fiducial metric,
+                              gab (σ) → ĝab (σ) .                    (3.3.2)
+A simple choice is the flat or unit gauge metric
+                                ĝab (σ) = ,ab .                      (3.3.3)
+One sometimes wishes to consider the e!ect of the di! group alone. In this
+case, one can bring an arbitrary metric to within a Weyl transformation
+of the unit form. This is the conformal gauge,
+                         ĝab (σ) = exp[2ω(σ)],ab .                   (3.3.4)
+   Let us see explicitly that this counting of fields and gauge symmetries
+works — that any metric can be brought to the flat form at least lo-
+cally, in a given neighborhood on the world-sheet. First, make a Weyl
+transformation to set to zero the Ricci scalar built from gab . The Weyl
+transformation of the Ricci scalar is
+                        g $1/2 R $ = g 1/2 (R − 2∇2 ω) .              (3.3.5)
+To set R $ = 0 requires solving 2∇2 ω = R as an equation for ω. This is
+always possible, at least locally, by a standard argument from electrostat-
+ics. Now, in two dimensions the vanishing of the Ricci scalar implies the
+vanishing of the entire Riemann tensor, because the symmetries of the
+Riemann tensor imply that
+                                 1
+                        Rabcd = (gac gbd − gad gbc )R .               (3.3.6)
+                                 2
+So the metric is flat and coordinate-equivalent to the unit metric (3.3.3).
+   Actually, locally there is a little bit of extra gauge freedom. There are
+di!×Weyl transformations that leave the metric in unit gauge and so are
+not fixed by the choice of metric. It is convenient here to introduce a
+complex coordinate z = σ 1 + iσ 2 as in chapter 2, where the flat metric
+is ds2 = dzdz̄. Consider a coordinate transformation such that z $ is a
+holomorphic function of z,
+                          z $ ≡ σ $1 + iσ $2 = f(z) ,                 (3.3.7)
+combined with a Weyl transformation. The new metric is
+                       ds$2 = exp(2ω)|∂z f|−2 dz $ dz̄ $ .            (3.3.8)
+Then for
+                                 ω = ln |∂z f|                        (3.3.9)

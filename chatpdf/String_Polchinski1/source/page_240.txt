@@ -1,0 +1,53 @@
+218                                                                7                    One-loop              amplitudes
+
+Here           H⊥            is                     the                     closed                     string                     Hilbert                     space                     excluding                     the                     ghosts,                     the
+µ    =0,1      oscillators,      and      the      noncompact      momenta.
+      In        order        to        understand        the        physics        of        these        amplitudes        it        is        useful        to
+compare      with      the      corresponding      quantity      in      ﬁeld      theory,      the      sum      over      all
+particle      paths      with      the      topology      of      a      circle.      This      is      given      by
+                                                               ∫         ddk         ∫     ∞     dl
+                           ZS      (m2)=                Vd                                             exp[−(k2                 +     m2)l/2]
+                                 1                                    (2π)d                      2l
+                                                                                        0
+                                                                 ∫    ∞     dl
+                                                 =      iVd                       (2πl      )−d/2         exp(−m2l/2)                        .                                   (7.3.9)
+                                                                    0       2l
+This           can           be           derived           by           gauge-ﬁxing           the           point-particle           path           integral,           which
+was                   given                   as                   exercise                   5.2.                   The                   result                   is                   intuitive:lis                   the                   modulus                   for
+the                   circle,1(k2         +     m2)                   is                   the                   world-line                   Hamiltonian,                   and                   the                   2lin                   the
+                             2
+denominator                removes                the                overcounting                from                translation                and                reversal                of
+the             world-line             coordinate.
+      Let          us          now          take          this          point-particle          result,          which          is          for          a          particle          of          given
+m2,          and          sum          over          the          actual          spectrum          of          the          string.          As          shown          in          chapter          4,
+the                 physical                 spectrum                 is                 in                 one-to-one                 correspondence                 withH⊥,where
+the     mass     is     related     to     the     transverse     weights     by
+
+                                                                            2           2                ˜
+                                                                        m       =α′(h+h−2)                                                                                                                                       (7.3.10)
+                                                                           ˜
+and     with     the     constrainth=h.     It     is     useful     to     write     the     latter     constraint     in
+integral             form,
+                                                                          ∫     π     dθ                                        
+                                                                                                                         ˜
+                                                         δ      ˜   =                          exp        i(h      −     h)θ          .                                       (7.3.11)
+                                                            h,h              −π      2π
+                                                                                                                                              ˜
+In           writing           this           we           are           assuming           that           the           di!erence  h−h           is           an           integer.           This
+is                 true                 in                 26                 ﬂat                 dimensions,                 and                 as                 we                 have                 discussed                 in                 the                 previous
+section             it             is             necessary             in             general             for             modular             invariance.             Then
+             ∑                                                ∫∞dl              ∫    π     dθ
+                        ZS       (m2)=               iVd                                           (2πl       )−d/2
+                              1        i                                 2l                2π
+           i∈H      ⊥                                            0                 −π
+                                                                              ∑                                       ˜                        ′                        ˜         
+                                                                      ×                  exp        −(hi         +     hi    −     2)l/α           +i(hi           −     hi)θ
+                                                                            i∈H      ⊥
+                                                              ∫       dτd      ¯τ                                      ∑                         ˜
+                                              =      iVd                          (4π2α′τ2)−d/2                                   qhi−1q¯hi−1                ,                (7.3.12)
+                                                                 R      4τ2                                          i∈H      ⊥
+where            θ    +     il /α    ′   =2πτ.           Here           the           region           of           integrationR                    is
+                                                               R     :         τ     >      0    ,       |τ     |   <      1    .                                             (7.3.13)
+                                                                                 2                            1            2
+      Now        let        us        interpret        these        results.        The        amplitude        (7.3.9)        for        a        single        point
+particle              diverges              as       l   →        0.              This              is              the              usual              UV              divergence              of              quantum

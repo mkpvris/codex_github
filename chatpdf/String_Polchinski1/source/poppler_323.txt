@@ -1,0 +1,47 @@
+                                    9.4 Sewing and cutting CFTs                                                   301
+
+
+
+
+       Σi                                             Ai A i
+
+
+     (a)
+                                           M1                                                              M2
+
+
+
+
+             Σi                                        AiA i
+
+
+     (b)
+                                               M1                                                     M2
+
+Fig. 9.7. (a) The path integral on M is cut open by inserting a complete set of
+boundary states. (b) Each state is replaced by a disk with local operator.
+
+
+lower order amplitudes. The relation is shown pictorially in figure 9.7. For
+clarity we first discuss the case q = 1. The path integral on M is cut open
+on the circle |z1 | = |z2 | = 1, inserting a complete set of boundary states.
+Each boundary state is then replaced by a disk with the corresponding
+local operator, leaving the uncut world-sheets M1 and M2 . The precise
+form of the result is
+                                    &$                     %            $                %
+           % . . .1 . . . 2 & M =         . . .1 Ai(z1 )            Gij Aj(z2 ) . . .2            .             (9.4.1)
+                                                               M1                            M2
+                                     ij
+
+
+We are allowing arbitrary additional insertions . . .1 on M1 and . . .2 on
+M2 ; these must of course lie outside the circles |z1 | = 1 and |z2 | = 1
+that are being cut. We have not specified any particular orthonormality
+for the basis; the appropriate inverse metric Gij is to be determined. The
+insertions Ai and Aj that replace the handle are implicitly at the origin
+in the z1 and z2 frames respectively.
+  Now, let us consider the case in which M2 is a sphere, with the sewing
+coordinate z2 being u and with . . .2 being some local operator Ak at
+z = 0. We have the identifications z1 u = 1 from the plumbing fixture and
+zu = 1 from the sphere, so we can just extend z1 = z through the whole
+sewn region. The sewn surface M is the same as M1 with an additional

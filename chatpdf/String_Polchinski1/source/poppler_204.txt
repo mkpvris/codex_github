@@ -1,0 +1,52 @@
+182                                 6 Tree-level amplitudes
+
+string divergence is of this same basic form, so this one kind of analytic
+continuation removes all divergences — except of course for the poles
+themselves. The pole is on the real axis, so we need to define it more
+precisely. The correct & prescription for a Minkowski process is
+                               1                  1
+                                       ≡
+                            α% s + 1        α% s + 1 + i&
+                                          1
+                                   ≡P %         − iπδ(α% s + 1) ,                  (6.4.12)
+                                        αs+1
+where P denotes the principal value. Unitarity (which we will develop
+more systematically in chapter 9) requires this pole to be present and
+determines its coefficient in terms of the amplitude for two tachyons to
+scatter into one:
+                                      $
+                                         d26 k SD2 (k1 ; k2 ; k)SD2 (−k; k3 ; k4 )
+         SD2 (k1 ; k2 ; k3 ; k4 ) = i
+                                        (2π)26        −k 2 + α%−1 + i&
+                                                + terms analytic at k 2 = 1/α% . (6.4.13)
+  Gathering together the factors in the four-tachyon amplitude, including
+an equal contribution to the pole from I(u, s), and using the three-tachyon
+result (6.4.4), the condition (6.4.13) gives
+                                                               1
+                                   CD2 = e−λ CDX2 CDg 2 =            .            (6.4.14)
+                                                              α% go2
+The three-tachyon amplitude is then
+                                  2igo              #
+                                        (2π)26δ 26 ( i ki ) .
+                       SD2 (k1 ; k2 ; k3 ) =
+                                      %
+                                                                 (6.4.15)
+                                    α
+The various functional determinants have dropped out. Using unitarity, all
+normalizations can be expressed in terms of the constant go appearing in
+the vertex operators. The determinants can in fact be computed by careful
+regularization and renormalization, and the relative normalizations of
+di!erent topologies agree with those from unitarity.
+  Continuing past the pole, we encounter further singularities. Taylor
+expanding the integrand at y = 0 gives
+                       $ r                                              
+                                        %                       %
+           I(s, t) =         dy y −α s−2 + (α% t + 2)y −α s−1 + . . .        .    (6.4.16)
+                        0
+The second term gives a pole at α% s = 0,
+                        u−t
+              I(s, t) =      + terms analytic at α% s = 0 .     (6.4.17)
+                         2s
+From the further terms in the Taylor expansion, the amplitude has poles
+at
+                                       α% s = −1, 0, 1, 2, . . . .                (6.4.18)

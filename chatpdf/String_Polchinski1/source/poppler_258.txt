@@ -1,0 +1,61 @@
+236              8 Toroidal compactification and T -duality
+
+
+
+                      X
+
+                       Y                 +1              0          _1
+        (a)
+
+
+
+
+                      X
+
+                       Y                         0       +1         _1
+        (b)
+
+Fig. 8.1. (a) Closed oriented strings of winding number w = +1, 0, −1. For
+illustration, one compact dimension X and one noncompact dimension Y are
+shown. (b) Transition of a w = 0 string into w = +1 and w = −1 strings.
+
+
+expansions
+              2 % 31/2 (
+                       ∞                                     2   31/2 (
+                                                                      ∞
+            α                    αm           ¯           α%                 α̃m
+ ∂X(z) = −i                              ,    ∂X(z̄) = −i                          . (8.2.4)
+            2          m=−∞     z m+1                     2        m=−∞ z̄
+                                                                             m+1
+
+
+The total change in the coordinate X in going around the string is
+                  ;
+        2πRw =                     ¯ = 2π(α% /2)1/2 (α0 − α̃0 ) .
+                      (dz ∂X + dz̄ ∂X)                                               (8.2.5)
+
+The total Noether momentum is
+                          ;
+                  1                        ¯ = (2α% )−1/2 (α0 + α̃0 ) .
+              p=              (dz ∂X − dz̄ ∂X)                                       (8.2.6)
+                 2πα%
+For a noncompact dimension this would give the usual relation α0 = α̃0 =
+p(α% /2)1/2 , but for the periodic dimension we have
+                                 <       =1/2
+                                          n  wR
+                          pL ≡ 2/α%             α0 =
+                                            + % ,                                   (8.2.7a)
+                                          R   α
+                          <   = 1/2       n  wR
+                    pR ≡ 2/α%       α̃0 =   − % .                                   (8.2.7b)
+                                          R   α
+The Virasoro generators are
+                                                 ∞
+                                        α% p2L (
+                              L0 =            +     α−n αn ,                        (8.2.8a)
+                                          4     n=1
+                                                 ∞
+                                        α% p2R (
+                              L̃0 =           +     α̃−n α̃n .                      (8.2.8b)
+                                          4     n=1

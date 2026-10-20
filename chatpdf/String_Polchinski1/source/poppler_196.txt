@@ -1,0 +1,54 @@
+174                                 6 Tree-level amplitudes
+
+   We have used the OPE to determine the singularities and then used
+holomorphicity to get the full z-dependence. Now we look at the second
+term of the OPE as z → z1 . Expanding the result (6.2.25) gives
+                               '                                                        
+            iα$            k1µ   n
+                                 (    kiµ
+           − AnS2 (k, σ)       +            + O(z − z1 ) .                                  (6.2.28)
+             2           z − z1 i=2 z1 − zi
+
+Contracting this with ik1µ , the term of order (z − z1 )0 must agree with the
+OPE
+      ik1 ·∂X(z) : eik1 ·X(z1 ,z̄1 ) :
+              α$ k12
+        =              : eik1 ·X(z1 ,z̄1 ) : + ∂z1 : eik1 ·X(z1 ,z̄1 ) : + O(z − z1 ) .     (6.2.29)
+            2(z − z1 )
+This implies
+                                                             n
+                                               α$ n         (   k1 ·ki
+                           ∂z1 AnS2 (k, σ) =     AS2 (k, σ)            .                    (6.2.30)
+                                               2            i=2
+                                                                 z1i
+
+Integrating, and using the conjugate equation and momentum conserva-
+tion, determines the path integral up to normalization,
+                                                             n
+                                                             6
+                                                  ?                          $
+                            AnS2 (k, σ) ∝ , d (     i ki )           |zij |α ki ·kj ,       (6.2.31)
+                                                             i,j=1
+                                                              i<j
+
+
+in agreement with the first method. Note that to compare we must push
+the curvature to infinity (ω(σi ) = 0) so that [ ]r = : :.
+   It is worth noting that the intermediate steps in the path integral method
+depend in a detailed way on the particular choice of Riemannian metric.
+The metric is needed in order to preserve coordinate invariance in these
+steps. A di!erent, Weyl-equivalent, metric gives a di!erent Laplacian and
+di!erent eigenfunctions, though at the very end this dependence must
+drop out in string theory. The second method uses only the basic data of
+a Riemann surface, its holomorphic structure.
+
+
+                                             The disk
+
+The generalization to the disk is straightforward. We will represent the
+disk by taking the above representation of the sphere and restricting z
+to the upper half of the complex plane. The Neumann boundary term is
+accounted for by an image charge,
+                                   α$                 α$
+             G$ (σ1 , σ2 ) = −        ln |z1 − z2 |2 − ln |z1 − z̄2 |2 ,                    (6.2.32)
+                                   2                  2

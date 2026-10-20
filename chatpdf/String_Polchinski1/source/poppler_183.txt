@@ -1,0 +1,42 @@
+                        5.4 More about the measure                         161
+
+on the other hand, are not BRST-invariant, but we leave it as an exercise
+to show that they have the BRST variation
+                           ,B Vm = i1∂a (ca Vm ) ,                      (5.4.5)
+which vanishes upon integration.
+  Finally there is the variation of the b insertion,
+                           ,B (b, ∂k ĝ) = i1(T , ∂k ĝ) .              (5.4.6)
+This insertion of the energy-momentum tensor just produces a derivative
+with respect to the modulus tk , so the BRST variation vanishes up to a
+possible term from the boundary of moduli space. We will examine the
+boundaries of moduli space in the coming chapters. In most cases there is
+no surface contribution, due to what is known as the canceled propagator
+argument. In certain circumstances this argument does not apply, and we
+will see how to deal with this.
+   It is important to note that the gauge-fixed result (5.3.9) could be written
+down directly from the requirement of BRST invariance, without reference
+to the gauge-invariant form. As we saw when evaluating the ghost path
+integral, there must be at least µ b insertions and κ c insertions, or else
+the path integral vanishes. In the amplitude (5.3.9) there are precisely
+the right number of ghost insertions to give a nonzero result. Once we
+include the necessary b factors, the BRST variation brings in the energy-
+momentum tensor convoluted with the tk -derivative of the metric. This
+is proportional to a derivative with respect to the moduli, so we get an
+invariant result only by integrating over moduli space as we have done.
+The result (5.3.9) can be generalized in various ways, for example to the
+case that part of the conformal Killing invariance is left unfixed. We will
+illustrate this explicitly in chapter 7 for the example of the torus with no
+vertex operators.
+   BRST invariance implies that amplitudes for BRST-equivalent states
+are equal. If we add to any state a null piece QB |χ+, the e!ect is to
+insert in the path integral the variation ,B Vχ ; this integrates to zero.
+This is important because the physical Hilbert space is identified with the
+cohomology, so equivalent states should have equal amplitudes.
+
+                       Measure for Riemann surfaces
+We derived the Faddeev–Popov measure in the framework where the
+gauge-fixed world-sheet is described by a moduli-dependent metric. We
+now recast the result in the Riemann surface framework, where the struc-
+ture is encoded in moduli-dependent transition functions.
+  To express the measure at a given point t0 in moduli space, let us take
+a set of coordinate patches, with complex coordinate zm in the mth patch

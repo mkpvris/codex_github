@@ -1,0 +1,48 @@
+                           2.6 The Virasoro algebra                              53
+
+
+        w                                        z
+
+
+
+
+      (a) 0                     2π        (b)
+
+Fig. 2.3. Closed string coordinates. (a) Equal time contours in the w-plane. The
+dashed lines are identified. (b) The same contours in the z-plane.
+
+
+so that w ∼ w + 2π. The second is
+                      z = exp(−iw) = exp(−iσ 1 + σ 2 ) .                     (2.6.4)
+These two coordinate systems are shown in figure 2.3. In terms of the
+w coordinate, time corresponds to translation of σ 2 = Im w. In terms of
+z, time runs radially, the origin being the infinite past. These coordinates
+are related by a conformal transformation. The w coordinate is natural
+for the canonical interpretation of the theory, but the z coordinate is also
+quite useful and most expressions are written in this frame.
+   For a holomorphic or antiholomorphic operator we can make a Laurent
+expansion,
+                            ∞
+                                                            ∞
+                                                             
+                                 Lm                                L̃m
+               Tzz (z) =          m+2
+                                      ,     T̃z̄z̄ (z̄) =           m+2
+                                                                        .    (2.6.5)
+                           m=−∞ z                           m=−∞ z̄
+The Laurent coefficients, known as the Virasoro generators, are given by
+the contour integrals
+                                   4
+                                        dz m+2
+                           Lm =             z  Tzz (z) ,                     (2.6.6)
+                                     C 2πiz
+where C is any contour encircling the origin counterclockwise. The Laurent
+expansion is just the same as an ordinary Fourier transformation in the
+w frame at time σ 2 = 0:
+                                   ∞
+                                   
+                  Tww (w) = −           exp(imσ 1 − mσ 2 )Tm ,              (2.6.7a)
+                                m=−∞
+                                 ∞
+                  Tw̄w̄ (w̄) = −        exp(−imσ 1 − mσ 2 )T̃m ,            (2.6.7b)
+                                m=−∞

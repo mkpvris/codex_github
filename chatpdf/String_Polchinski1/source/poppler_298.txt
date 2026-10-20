@@ -1,0 +1,54 @@
+276                 8 Toroidal compactification and T -duality
+
+fixing term −Fν F ν̂ /4/2 , the spacetime action becomes
+                $        2                                       3
+            1                         1                2
+   S = − 2 d26 X ∂µ hνλ ∂µ̂ hν̂ λ̂ − ∂µ hν̂ν ∂µ̂ hλ̂λ + ∂µ Φ̃∂µ̂ Φ̃ . (8.7.22)
+           8/                         2                3
+Inverting the kinetic term, one obtains the momentum space propagators
+                         (D − 2)i/2
+              -Φ̃Φ̃* = −            ,                            (8.7.23a)
+                            4k 2
+                              2                               3
+                         2i/2                       2
+          -hµν h,ρ * = − 2 .µ, .νρ + .µρ .ν, −         .µν .,ρ . (8.7.23b)
+                          k                       D−2
+For later reference we have given these for general D. The D-brane action
+expanded around a flat configuration is
+                              $       2                3
+                                 p+1    p − 11     1
+                    S p = −τp d ξ              Φ̃ − haa .         (8.7.24)
+                                          12       2
+Note that hµν here is traced only over the directions tangent to the
+D-brane; we have taken ξ to be rectilinear coordinates with metric δab .
+  We can now read o! the Feynman graph,
+                           @                                      A
+          i/2 τ2p   p − 11 2 1             1
+       A = 2 Vp+1 6         +   2(p + 1) − (p + 1)2
+           k⊥         12      2           12
+              6i/2 τ2p
+          =      2
+                       Vp+1 .                                         (8.7.25)
+                k⊥
+Comparison with the string result (8.7.18) yields
+                                    π
+                           τ2p =         (4π 2 α% )11−p .            (8.7.26)
+                                  256/2
+It is a useful check that, once the dust has cleared, the recursion relation
+from T -duality is satisfied.
+   As one application, consider a state with n 25-branes, which is the same
+as an ordinary (fully Neumann) n-valued Chan–Paton factor. Expanding
+the 25-brane action (8.7.12) to second order in the gauge field gives
+                            τ25
+                                (2πα% )2 Tr(Fµν F µν ) .             (8.7.27)
+                              4
+This relates the open string gauge coupling to the gravitational coupling.
+Using eqs. (6.5.14), (6.5.16), (6.6.15), and (6.6.18), we can write it as a
+relation between the vertex operator normalizations gc and go ,
+                        go2   4πα% go%2
+                            =           = 218 π 25/2 α%6 .            (8.7.28)
+                        gc       /
+This has the right form, the square of the open string coupling being
+proportional to the closed string coupling, but now with the numerical
+coefficient included. We have essentially obtained this via unitarity, factor-
+ing on the closed string poles of the annulus diagram. We could also have

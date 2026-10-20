@@ -1,0 +1,47 @@
+                                                           4.4                      The              no-ghost              theorem                                          139
+
+Deﬁne             the             light-cone             oscillators
+                                                                α±      =2−1/2(α0                   ±α1),                                                             (4.4.6)
+                                                                   m                           m            m
+which             satisfy
+                                [α+,α        −]=           −m,        m,−n       ,       [α+,α         +]=[           α−,α       −]=0              .                  (4.4.7)
+                                     m       n                                                m        n                 m       n
+We             will             use             extensively             the             quantum             number
+                                                                             ∑∞         1
+                                                                lc                            ◦     +         −    ◦
+                                                           N         =                  m     ◦  α−mαm             ◦    .                                             (4.4.8)
+                                                                            m=−∞
+                                                                             m̸=0
+The               number         Nlc       counts                the               number                of−excitations               minus                the               number
+of                    +                    excitations;                    it                    is                    not                    a                    Lorentz                    generator                    because                    the                    center-of-
+mass                 piece                 has                 been                 omitted.                 We                 choose                 a                 Lorentz                 frame                 in                 which                 the
+momentum             component                             k+      is             nonzero.
+     Now                d e c o m p o s e                t h e                B R S T                g  e n e r a tor                u s i n g                t h e                qu a n tu m                n u m b  e rNlc:
+
+                                                               QB       =     Q1      +    Q0      +     Q−1        ,                                                 (4.4.9)
+where           Qj      changes              Nlc       by      j    units,
+                                                                      [Nlc,Qj]=                   jQj        .                                                     (4.4.10)
+Also,           each           of           theQj   increases             the             ghost             number       Ng       by              one              unit:
+                                                                        [Ng,Qj]=                   Qj      .                                                       (4.4.11)
+Expanding             out             Q2       =           0             gives
+                                          B
+  (       2        (                             (                                   2        (                                (       2    
+     Q1        +       {Q1,Q0}                +       {Q1,Q−1}+Q0                           +       {Q0,Q−1}                   +      Q−1            =0        .   (4.4.12)
+Each       group       in       parentheses       has       a       di!erentNlc                                      and       so       must       vanish       sepa-
+rately.             In             particular,     Q1      itself             is             nilpotent,             and             so             has             a             cohomology.
+     Explicitly,
+                                                                                                   ∑∞
+                                                     Q1      =      −(2α′)1/2k+                              α−       c       .                                    (4.4.13)
+                                                                                                                −m       m
+                                                                                                 m=−∞
+                                                                                                   m̸=0
+Fo  r     m<          0     this     destroys     a     +     mode     and     creates     ac,andfor                                           m>          0itcreates
+a    −      mode         and         destroys         ab.         One         can         ﬁnd         the         cohomology         directly         by
+considering            the            action            of     Q1      in            the            occupation            basis.            We            will            leave            this            as
+an             exercise,             and             instead             use             a              standard             strategy              which             will              also             be             useful
+in             generalizing             to  QB.Deﬁne
+                                                                                1                ∑∞
+                                                          R=                                               α+        b                                             (4.4.14)
+                                                                      (2α′)1/2k+                              −m        m
+                                                                                                m=−∞
+                                                                                                  m̸=0

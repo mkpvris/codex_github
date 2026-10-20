@@ -1,0 +1,50 @@
+176                                           6 Tree-level amplitudes
+
+                                               The projective plane
+The method of images gives the Green’s function as
+                                          α$                 α$
+           G$ (σ1 , σ2 ) = −                 ln |z1 − z2 |2 − ln |1 + z1 z̄2 |2 .                                       (6.2.38)
+                                          2                  2
+Now
+        D n                               E                                                   n
+         6                                                                        ?           6                   $ 2
+                   iki ·X(zi ,z̄i )                     X
+                :e                    :             = iCRP2
+                                                            (2π)d , d (              i ki )         |1 + zi z̄i |α ki /2
+          i=1                              RP2                                                i=1
+                                                         n
+                                                         6                    $                        $
+                                                   ×             |zi − zj |α ki ·kj |1 + zi z̄j |α ki ·kj ,             (6.2.39)
+                                                         i,j=1
+                                                          i<j
+
+and so on for more general expectation values. There is no boundary
+because the involution has no fixed points — there is no way for a point
+z to approach its image −z̄ −1 .
+
+                                                   6.3      The bc CFT
+
+                                                         The sphere
+The path integral for the ghosts has already been set up in section 5.3.
+According to the Riemann–Roch theorem, the simplest nonvanishing ex-
+pectation value will be
+                                * c(z1 )c(z2 )c(z3 )c̃(z̄4 )c̃(z̄5 )c̃(z̄6 ) +S2 .                                         (6.3.1)
+Up to normalization (a functional determinant), the result (5.3.18) was
+just the zero-mode determinant,
+                                                         det Ca0j (σi ) .                                                  (6.3.2)
+The six CKVs were found in section 6.1. In a complex basis they are
+                                               Cz = 1, z, z 2 , Cz̄ = 0 ,                                               (6.3.3a)
+                                               Cz = 0 , Cz̄ = 1, z̄, z̄ 2 .                                             (6.3.3b)
+In this basis the determinant splits into two 3 × 3 blocks, and the expec-
+tation value becomes
+           9                          9        9                          9
+           9 1       1 1 99       9 1 1 1 9
+            9                     9                9
+  CSg2 det 99 z1     z2 z3 9 det 99 z̄4 z̄5 z̄6 99 = CSg2 z12 z13 z23 z̄45 z̄46 z̄56 . (6.3.4)
+                             9
+            9 z2     z22 z32 9    9 z̄ 2 z̄ 2 z̄ 2 9
+               1                      4    5    6
+
+The constant CSg2 includes the functional determinant and also a finite-
+dimensional Jacobian (independent of the positions) that arises because
+the basis (6.3.3) is not orthonormal.

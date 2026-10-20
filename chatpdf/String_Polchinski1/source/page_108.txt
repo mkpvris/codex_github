@@ -1,0 +1,46 @@
+86                                                                           3                     The              Polyakov              path              integral
+
+the                metric                is                invariant.                This                extra                gauge                freedom                does                not                conﬂict                with
+our           earlier           counting           (3           =           3)           because           the           mismatch,           the           set           of           holomorphic
+reparameterizations,                is                of                measure                zero                compared                to                all                reparameteriza-
+tions.
+        When           we           consider           the           full           world-sheet,           most           or           all           of           this           extra           freedom
+will             be             eliminated             by             the             boundary             conditions.             There             are             two             issues             here.
+First,              in              the              discussion              of              Noether’s              theorem              and              the              Ward              identities,              we
+were                   careful                   to                   emphasize                   below                   eq.                   (2.3.10)                   that                    these                   results                   depend
+only                       on                       the                       symmetry                       being                       deﬁned                       locally                       on                       the                       world-sheet.                       The
+transformation          (3.3.7),          (3.3.9)          will          therefore          give          rise          to          a          conserved          current
+and             to             Ward             identities.             This             is             precisely             the             conformal             invariance             studied
+in           chapter           2.           We           see           that           it           arises           as           the           subgroup           of           di!               ×Weyl           that           leaves
+invariant             the             unit             metric.
+        The             second             issue             is             what             happens             to             our             counting             of             metric             and             gauge
+degrees                   of                   freedom                   when                   we                   do                   consider                   the                   full                   world-sheet.                   We                   will
+take              this              up              in              chapter              5,              where              we              will              see              that              globally              there              is              a              small
+mismatch             between             the             two,             a             ﬁnite             number             of             parameters.             Until             then,             we
+will             be             concerned             only             with             local             properties             of             the             world-sheet             theory.
+
+
+                                                                        The              Faddeev–Popov              determinant
+After               ﬁxing               the               metric,               the               functional               integral               runs               along               a               slice               param-
+eterized                by               Xµ            alone.                In                order                to                obtain                the                correct                measure,                we                follow
+the                 Faddeev–Popov                 procedure.                 The                 steps                 are                 the                 same                 as                 were                 used                 to
+obtain               the               gauge-ﬁxed               measure               in               Yang-Mills               theory,               but               we               will               give               a
+self-contained              discussion.              The              idea,              illustrated              in              ﬁgure              3.7,              is              to              separate
+the              path              integral              into              an              integral              over              the              gauge              group              times              an              integral
+along               the               gauge               slice,               and               to               divide               out               the               former.               The               Faddeev–Popov
+determinant             is             the             Jacobian             for             this             change             of             variables.
+        Let          .     be        shorthand        for        a        combined        coordinate        and        Weyl        transformation,
+
+                                                           .                     .            ′                                                      ∂σc             ∂σd
+                           .     :    g      →         g         ,gab(σ                         )=exp[2                          ω(σ)]∂σ′a                          ∂σ′bgcd(σ)                            .                            (3.3.10)
+
+Following                a                standard                route,                we                deﬁne                the                Faddeev–Popov                measure             ∆FP
+by
+                                                                                                                     ∫
+                                                                              1=∆                 FP(g)                      [d.       ]    ,(g          −       gˆ.)         ,                                                        (3.3.11)
+
+where            again                      gˆab         is            the            ﬁducial            metric.            In            (3.3.11),            [d.                    ]            is            a            gauge-invariant
+measure          on          the          di!                     ×Weyl          group.          We          will          not          need          the          explicit          form          of          this
+measure;              we              will              discuss              the              question              of              its              existence              in              the              next              section..
+The             delta             function             is             actually            a             delta             functional,             requiring                                                 gab(σ)=                         gˆab(σ)
+at             every             point.

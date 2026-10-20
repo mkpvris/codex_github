@@ -1,0 +1,51 @@
+                                                                                  6.7                      General              results                                                                           199
+
+so                  the                  position                  dependence                  is                  completely                  determined.                  Single-valuedness˜
+implies           that              Ji     +     Jj      ∈     Z,where                      Ji=hi−hi.     There     is     a     further     constraint     on
+the             two-point             function             from             the             conformal             transformation                                                  z′     =       z    +      ϵ(z       −
+z1)(z         −z2)+                  O(ϵ2),       which       leavesz1                                  and          z2      ﬁxed.       For       general       operators       this
+is             complicated,             but             for           tensor              ﬁelds            Op        and           Oq        it             simply             implies             that
+                                           ¯                          ¯                                                                                      ˜              ˜
+                    ⟨   Op(z1,             z1)Oq(z2,z2)                        ⟩S2       =0              unless                hp=hq,                        hp=hq                   .                    (6.7.5)
+                                                                                                                                                                                                             ¨
+      Any              three              points            z1,2,3          can              be              brought              to              given              positions              by              a              Mobius
+                                                                                            ¨
+transformation.                 For                            n     ≥       3,                 Mobius                 invariance                 therefore                 reduces                 the                 ex-
+pectation               value               from               a               function               of     n     complex               variables               to               a               function               of
+n    −      3                 complex                 variables.                 Again                 the                 result                 takes                 a                 simple                 form                 only                 for
+tensor             ﬁelds.             For             example,             for             three             tensor             ﬁelds             one             ﬁnds
+                         ⟨     ∏3                                  ⟩                                      ∏3
+                                                                                                                                                    ˜          ˜       ˜
+                                        O        (z     ,¯z    )             =       C                               zh−2(hi+hj)¯zh−2(hi+hj)                                    ,                         (6.7.6)
+                                             pi       i       i                           p1p2p3                        ij                          ij
+                               i=1                                    S2                                  i,j=1
+                                                                                                            i<j
+where               Cp1p2p3               is                independent                of                position                and       h     =       h1      +       h2      +      h3.Forfour
+primary     ﬁelds,
+ ⟨∏4                                        ⟩                                                                                                                       ∏4
+                                                                                                                                                       ˜                                                 ˜       ˜
+                 O        (z     , ¯z   )             =       C                       (z      , ¯z    )(z           z        )h(¯z           ¯z      )h     ×                 z−hi−hj¯z−hi−hj                           ,
+                     pi        i      i                           p1p2p3p4                 c       c           12      34              12       34                               ij                  ij
+        i=1                                    S2                                                                                                                   i,j=1
+                                                                                                                                                                     i<j                                  (6.7.7)
+                                ∑                  ˜            ∑˜
+where              h     =             i  hi,      h    =             i  hi,and                 zc=z12z34/z13z24                                      is            the            Mobius            invariant¨
+cross-ratio.                The                function                       Cp1p2p3p4(zc,¯zc)                is                not                determined                by                conformal
+invariance,                   so                   we                   are                   reduced                   from                   a                   function                   of                   four                   variables                   to                   an
+unknown             function             of             one             variable.
+      On                      the                      disk                      represented                      as                      the                      upper                      half-plane,                      only                      the                      Mobius¨
+transformations               with                                α,       β ,       γ ,       δreal               remain,               forming               the               group       PSL(2,                 R).
+The               extension               of               the               above               is               left               as               an               exercise.               One               learns               much               more
+by              considering              the              full              conformal              algebra.              We              will              see              in              chapter              15              that
+it             determines             all             expectation             values             in             terms             of             those             of             the             tensor             ﬁelds.
+
+                                                           Pa t h                 i n te g ra l s                 a n d                 m a t r ix                 e l e m e n t s
+The               path               integrals               we               have               considered               can               be               related               to               operator               expres-
+sions.             Consider             the             path             integral             on             the             sphere             with             two             operators,             one             at
+the               origin               and               one               at               inﬁnity:
+                                                                            ⟨   A′(∞,              ∞)A               (0,      0)     ⟩          .                                                         (6.7.8)
+                                                                                       i                           j                    S2
+The              prime              indicates              the            u-frame,              which              we              have              to              take              for              the              operator
+at            inﬁnity;            by            a            slight            abuse            of            notation            we            still            give            the            position            in            terms
+of       z.                Using                the                state–operator                mapping                we                can                replace                the                disk|z|   <       1
+containing                        Aj          at       z     =0bythestateΨAj                                                       on       the       circle|z|=1.Wecan

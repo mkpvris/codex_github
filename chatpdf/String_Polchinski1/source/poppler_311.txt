@@ -1,0 +1,49 @@
+                              9.1 General tree-level amplitudes                           289
+
+both internal state and momentum,
+                                              i ↔ (j, k) .                            (9.1.27)
+The delta functions and b0 b̃0 factor in eq. (9.1.26) project onto the space Ĥ
+annihilated by L0 , L̃0 , b0 , and b̃0 , which was introduced in the discussion
+of the BRST cohomology. Thus,
+         &                                            !
+                 δm2 ,m̃2 δ(ki2 + m2i )b0 b̃0 |i&Gii %% i! |
+                    i   i
+          i,i!
+
+                  = δL0 ,L̃0 δ(4L0 /α! )b0 b̃0
+                                        #
+                              iα!             dd−1 k   &
+                  =−                                        |V̂j (k)&%% V̂j (k)| .    (9.1.28)
+                            16π 2 e2λ       2E(2π) d−1
+                                                       j∈Ĥ
+                                                          k 0 =±/k
+
+
+The normalization of the basis |Vj (k)& follows from the OPE (9.1.2) and
+the expectation value (9.1.3), which imply
+                                  8πie2λ
+                                         δjj ! (2π)d δ d (k − k ! ) .
+         %% V̂j (k)|c̃0 c0 |V̂j ! (k ! )& =                           (9.1.29)
+                                     α!
+   Using the relation (9.1.28), the form and normalization of eq. (9.1.26)
+agree with the unitarity condition (9.1.24), leaving one important loose
+end. The sum in the unitarity relation runs only over the physical Hilbert
+space, the BRST cohomology, while the final sum in (9.1.28) runs over a
+complete basis for Ĥ. We now show that these sums are equal. Consider
+the following basis for Ĥ. First, take a complete set of ‘unphysical states’
+|a&U . That is, no linear combination of these is annihilated by QB . Second,
+take a complete set of BRST-invariant states |b&P which are independent
+in the sense that no linear combination of them is null. Finally, take the
+complete set of BRST-null states |a&N = QB |a&U to complete the basis.
+Define the operators P and U:
+                        P|b&P = |b&P , P|a&U = 0 , P|a&N = 0 ;                       (9.1.30a)
+                        U|b&P = 0 , U|a&U = 0 , U|a&N = |a&U .                       (9.1.30b)
+Then
+                                    1 = P + QB U + UQB .                              (9.1.31)
+Insert this decomposition into the factorization relation. The first term
+projects onto one state from each cohomology class, the physical spectrum
+appearing in the unitarity sum. The second and third terms each contain
+QB , and so vanish by the earlier argument that null states decouple. Thus
+unitarity is established.
+  It is worth noting that the argument just given is very similar to the
+argument that amplitudes in gauge theory are simultaneously Lorentz-

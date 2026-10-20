@@ -1,0 +1,51 @@
+228                               7 One-loop amplitudes
+
+
+                                           σ2
+                                           σ1
+
+   (a)                                                          (b)
+
+Fig. 7.3. (a) Möbius in the limit of small t as a cylinder capped by one cross-cap.
+(b) The amplitude separated into D2 and RP2 tadpole amplitudes and a closed
+string propagator.
+
+
+All the discussion of the cylinder divergence now applies, except that the
+tadpole is from the projective plane rather than the disk.
+
+                                      The Möbius strip
+For the Möbius strip,
+                      $ ∞                      (
+                            dt
+         ZM2 = iVd             (8π 2 α% t)−d/2    Ωi exp[−2πt(hi − 1)]            (7.4.20)
+                       0    4t                  ⊥
+                                                i∈Ho
+
+This di!ers from the result on the cylinder only by the Ω and the factor
+of 12 from the projection operator. In 26 flat dimensions, the e!ect of the
+operator Ω in the trace is an extra −1 at the even mass levels plus an
+appropriate accounting of the Chan–Paton factors. The oscillator trace is
+thus
+             ∞
+             &
+  exp(2πt)         [1 − (−1)n exp(−2πnt)]−24 = ϑ00 (0, 2it)−12 .(2it)−12 . (7.4.21)
+             n=1
+
+For the S O(n) theory the 12 n(n + 1) symmetric states have Ω = +1 while
+the 12 n(n − 1) antisymmetric states have Ω = −1 for a net contribution of
+n. For the S p(k) theory these degeneracies are reversed, giving −n (recall
+that in our notation S p(k) corresponds to n = 2k Chan–Paton states). The
+amplitude is then
+                            $ ∞
+                                  dt
+         ZM2 = ±inV26                (8π 2 α% t)−13 ϑ00 (0, 2it)−12 .(2it)−12 .   (7.4.22)
+                            0     4t
+  By the same construction as for the Klein bottle, the Möbius strip can
+be represented as a cylinder with a boundary at one end and a cross-cap
+on the other, as in figure 7.3(a). The length of the cylinder is now s = π/4t.
+By a modular transformation, the amplitude becomes
+                                      $ ∞
+                       213 V26
+      ZM2 = ±2in                            ds ϑ00 (0, 2is/π)−12 .(2is/π)−12 .    (7.4.23)
+                     4π(8π 2 α% )13    0

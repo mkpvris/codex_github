@@ -1,0 +1,49 @@
+                                              6.6                      Closed              string              tree              amplitudes                     193
+
+where              the              integral              runs              over              the              complex              planeC.              Evaluating              the              expec-
+tation             value             and             settingz1=0,        z2    =1,        z3=∞,thisbecomes
+                            S     (k;k;k;k)=                            ig4C          (2π)26δ26(∑k                    )J(s,      t,      u),              (6.6.4)
+                              S2      1       2      3      4               c     S2                            i    i
+where                                                    ∫
+                                                                   2              −α′u/2−4                         −α′t/2−4
+                                 J(s,      t,      u)=          dz4|z4|                            |1   −    z4|                     .                    (6.6.5)
+                                                            C
+Here         s   +    t   +     u    =     −16/α          ′,butweindicatethedependenceof                                                            Jon       all
+three      variables      to      emphasize      its      symmetry      among      them.      This      amplitude
+converges            when            s,      t,      u          <−4/α′.            It            has            poles            in            the            variableufromz4→0,
+in                the                variabletfrom   z4     →      1,                and                in                the                variablesfromz4→∞.The
+poles             are             at             the             values
+                                                 α′s,   α′t,   α′u=−4,0,4,8,...        ,                                                                  (6.6.6)
+
+which                    are                    the                    masses-squared                    of                    the                    closed                    string                    states.                    The                    pole                    at
+α′s    =     −4             is
+                                                    ∫                                                                 4
+                                         4                              2              α′s/2               8πigcCS2
+                                     igcCS2                          d    z4    |z4|             ∼−           α′s+4               .                       (6.6.7)
+                                                      |z4|>1/ϵ
+Unitarity             gives
+                                                                     C        =       8π        ,                                                         (6.6.8)
+                                                                         S2          α′g2
+                                                                                           c
+and             so
+                                        S      (k    ;  k    ; k    )=        8πigc(2π)26δ26(∑k                           )   .                           (6.6.9)
+                                           S2      1       2      3              α′                                 i    i
+     Like                     the                     Veneziano                     amplitude,                     the                     amplitude                     for                     four                     closed                     string
+tachyons             can             be             expressed             in             terms             of             gamma             functions             (exercise             6.10):
+                                                     8πig2                             ∑
+        SS     (k1;     k2;    k3;k4)=                         c(2π)26δ26(                    ki)C(−αc(t),                −αc(u))           ,          (6.6.10)
+             2                                           α′                                 i
+where          αc(x)=1+                   α′x/4and
+                                          ∫
+                   C(a,      b)=                 d2z|z|2a−2|1−z|2b−2
+                                             C
+                                    =2π                       Γ(    a)Γ(     b)Γ(      c)                  ,a          +b+c=1                      .   (6.6.11)
+                                                 Γ(   a   +    b)Γ(      a   +    c)Γ(      b  +     c)
+This        is        theVirasoro–Shapiro        amplitude.        There        is        just        a        single        term,        with
+poles                     in                    thes-,t-,                    andu-channels                     coming                    from                    the                    gamma                    functions
+in                   the                   numerator.                   Like                   the                   Veneziano                   amplitude,                   the                   Virasoro–Shapiro
+amplitude             has             Regge             behavior             in             the             Regge             limit,
+
+                                                                                       2αc(t)      Γ(    −αc(t))
+                                        SS2(k1;         k2;    k3;     k4)     ∝     s           Γ(1        +  α    (t))     ,                         (6.6.12)
+                                                                                                                  c

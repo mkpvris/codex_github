@@ -1,0 +1,48 @@
+50                        2 Conformal field theory
+
+                                    bc CFT
+The second family of CFTs has anticommuting fields b and c with action
+                                        !
+                                     1          ¯ .
+                                S=        d2 z b∂c               (2.5.4)
+                                    2π
+This is conformally invariant for b and c transforming as tensors of
+weights (hb , 0) and (hc , 0) such that
+                            hb = λ ,       hc = 1 − λ                    (2.5.5)
+for any given constant λ. Thus we have another family of CFTs (which
+is secretly the same as the linear dilaton family, as we will learn in
+chapter 10). The operator equations of motion, obtained by the same
+method (2.1.15), (2.1.18) as before, are
+                             ¯
+                             ∂c(z)   ¯
+                                   = ∂b(z) =0,                 (2.5.6a)
+                             ¯
+                             ∂b(z)c(0)      2
+                                       = 2πδ (z, z̄) .         (2.5.6b)
+The bb and cc OPEs satisfy the equation of motion without source. The
+normal ordered bc product is
+                                                          1
+                       : b(z1 )c(z2 ) : = b(z1 )c(z2 ) −      .      (2.5.7)
+                                                         z12
+This satisfies the naive equations of motion as a consequence of
+                               1       1
+                            ∂¯ = ∂ = 2πδ 2 (z, z̄) ,                 (2.5.8)
+                               z       z̄
+which can be verified by integrating over a region containing the origin
+and integrating the derivative by parts. Normal ordering of a general
+product of fields is combinatorially the same as for the X µ CFT, a sum
+over contractions or subtractions. One must be careful because b and c
+are anticommuting so that interchange of fields flips the sign: one should
+anticommute the fields being paired until they are next to each other
+before replacing them with the subtraction (2.5.7).
+  The operator products are
+                                      1                      1
+                    b(z1 )c(z2 ) ∼        , c(z1 )b(z2 ) ∼      ,    (2.5.9)
+                                     z12                   z12
+where in the second OPE there have been two sign flips, one from anticom-
+mutation and one from z1 ↔ z2 . Other operator products are nonsingular:
+                b(z1 )b(z2 ) = O(z12 ) ,    c(z1 )c(z2 ) = O(z12 ) .    (2.5.10)
+These are not only holomorphic but have a zero due to antisymmetry.
+  Noether’s theorem gives the energy-momentum tensor
+                        T (z) = : (∂b)c : −λ∂(: bc :) ,                (2.5.11a)
+                        T̃ (z̄) = 0 .                                  (2.5.11b)

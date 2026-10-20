@@ -1,0 +1,48 @@
+200                                                      6Tree-levelamplitudes
+
+also    replace    the    disk|z|>1(|u|<1)      containingAiat                                                               u    =0 by the state
+ΨAi        on      the      circle|z|=     1.      All      that      is      left      is      the      integral      over      the      ﬁeldsφb
+on      the      circle,      so      the      expectation      value      (6.7.8)      becomes
+                                                     ∫
+                                                          [dφ     b]Ψ     A     [φΩ]Ψ         A    [φ      ];                                                                                                                                   (6.7.9)
+                                                                              i      b            j      b
+hereφΩ(,)=                     φb(2π         −     ,),             arising             from             the             mappingzu=1.
+              b
+     This                convolution                of                wavefunctions                resembles                an                inner                product,                so                we
+deﬁne
+                                               ⟨⟨i|j⟩     =      ⟨   A′(∞,         ∞)A           (0,0)       ⟩       .                                (6.7.10)
+                                                                          i                    j               S2
+This                 is                 essentially                 the                 inner                 product                 introduced                 by                 Zamolodchikov.                 For
+tensor             operators             in             unitary             theories,             a             Mobius             transformation             shows             that¨
+this             is             the             same             as             the             coeﬃcient             of             1             in             the             OPE,
+                                    O    (z,¯z)O         (0,    0)           =           ⟨⟨i|j⟩                    +    ...        .                  (6.7.11)
+                                        i              j                                  ˜     ˜
+                                                                              hi+hj¯hi+hj
+                                                                            z           z            ⟨1    ⟩S2
+We           have           abbreviated|Ai⟩                     to     |i⟩.The            ⟨|⟩⟨        product      is      not      the      same      as
+the              quantum              mechanical              inner              product  ⟨|⟩        introduced      in      chapter      4.      The
+latter      is      Hermitean,      whereas      the      former      includes      no      complex      conjugation
+and      so      is      bilinear,      up      to      a      sign      ifiandjare      anticommuting.      That      is,
+                                                                ⟨⟨i|j⟩       =       ±⟨⟨j|i⟩,                                                         (6.7.12)
+since       all       we       have       done       is       to       interchange       the       two       operators       and       rename
+z↔u.Thereisasimplerelationbetweenthetwoinnerproducts,which
+we     will     develop     later.
+     We       will       sometimes       writeGij                        for     ⟨⟨i|j⟩,and              Gij      for                   the                   inverse                   matrix,
+where          i,      jrun              over              a              complete              set.              The              matricesGijandGijwill              be              used
+to             raise             and             lower             indices,Ai=GijAj,       Ai      =    GijAj.
+     Operators            in            the            path            integral            translate            in            the            usual            way            into            operators
+in             Hilbert             space.             For             example,
+                     ⟨   A′(∞,         ∞)A           (1,1)A            (0,   0)    ⟩      =    ⟨⟨i|Aˆ       (1,    1)|j⟩       ,                      (6.7.13)
+                              i                    k                 j               S2                   k
+where            we            reintroduce            the            hat            to            emphasize            that            we            are            in            a            Hilbert            space
+formalism.             Using             the             OPE,             the             left-hand             side             becomes∑
+                                                     l    ⟨       ′                                  ⟩
+                                                  ckj        Ai(∞,          ∞)Al(0,            0)      S2   =     cikj     .                          (6.7.14)
+                                             l
+Thus         the         three-point         expectation         values         on         the         sphere,         the         OPE         coeﬃcients
+with          all          indices          lowered,          and          the          matrix          elements          of          general          local          operators
+are                all                the                same                thing.                By                 a                Mobius                 transformation                 (rescaling                of¨z)we
+have             also
+            ⟨                                                                ⟩                                  ˜     ˜     ˜
+                     ′                              ¯                                        hi−hk−hj¯hi−hk−hj
+               Ai(∞,∞)Ak(z1,                        z1)Aj(0,            0)      S2   =    z1                 z1                 cikj     .            (6.7.15)

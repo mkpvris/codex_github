@@ -1,0 +1,47 @@
+104                          3 The Polyakov path integral
+
+string states required a limiting process that essentially restricts us to
+on-shell questions. Second, string theory contains gravity, and in general
+relativity simple o!-shell amplitudes do not exist. This is because we have
+to specify the location of the probe, but the coordinates are unphysical
+and coordinate-invariant o!-shell quantities are much more complicated.
+Third, in string theory we do not have the freedom to introduce additional
+fields to measure local observables (analogous to the way electroweak
+processes are used to probe strongly interacting systems): we must use
+the strings themselves, or other objects that we will discuss (D-branes and
+solitons) that are intrinsic to the theory.
+   One can define o!-shell amplitudes, at least in perturbation theory,
+if one fixes a gauge (light-cone gauge being simplest for this) and uses
+stringy sources. The S-matrix formula (3.5.5) can then be derived in a
+way more akin to the reduction formula from quantum field theory,
+where it is possible to define finite-time transition amplitudes and then
+take the infinite-time limit. Incidentally, the reader who is trying to relate
+the present discussion to field theory should note that the path integral
+expression (3.5.5) is not analogous to a Green’s function but will in fact
+have the properties of an S-matrix element. The analogous object in field
+theory is the Green’s function with its external propagators amputated
+and its external momenta restricted to the mass shell.
+   The discussion of the local probe (3.6.12) also shows the problem with
+a contact interaction between strings. The simplest form for such an
+interaction would be
+         !                     !
+              d2 σ g(σ)1/2             d2 σ $ g(σ $ )1/2 , D (X(σ) − X(σ $ )) ,       (3.6.13)
+          M                     M
+
+which is nonvanishing whenever the world-sheet self-intersects. However,
+the delta function involves all momenta, as in eq. (3.6.12), so this is not
+Weyl-invariant. The structure of string theory is quite rigid: strings can
+couple to strings only in the way we have described at the beginning of
+this chapter.
+
+
+                       Massless closed string vertex operators
+It is interesting, if a little messy, to carry the Polyakov treatment of
+vertex operators one level further. There is no way to make a world-sheet
+scalar with exactly one derivative, so the next case is two derivatives. The
+di!-invariant possibilities are
+                   !               7
+              gc
+      V1 =             d2 σ g 1/2 (g ab sµν + i1ab aµν )[ ∂a X µ ∂b X ν eik·X ]r
+              α$                                                                  8
+                                                           + α$ φR [ eik·X ]r ,       (3.6.14)

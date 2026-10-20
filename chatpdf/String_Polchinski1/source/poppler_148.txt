@@ -1,0 +1,43 @@
+126                          4 The string spectrum
+
+                            4.2     BRST quantization
+
+We now return to a more systematic study of the spectrum. The con-
+dition (4.1.2) is not sufficient to guarantee gauge invariance. It implies
+invariance for arbitrary fixed choices of gab , but this is not the most gen-
+eral gauge. In light-cone gauge, for example, we placed some conditions
+on X µ and some conditions on gab . To consider the most general possible
+variation of the gauge condition, we must allow ,gab to be an operator,
+that is, to depend on the fields in the path integral.
+   In order to derive the full invariance condition, it is useful to take a more
+general and abstract point of view. Consider a path integral with a local
+symmetry. The path integral fields are denoted φi , which in the present
+case would be X µ (σ) and gab (σ). Here we use a very condensed notation,
+where i labels the field and also represents the coordinate σ. The gauge
+invariance is 1α ,α , where again α includes the coordinate. By assumption
+the gauge parameters 1α are real, since we can always separate a complex
+parameter into its real and imaginary parts. The gauge transformations
+satisfy an algebra
+                                [,α , ,/ ] = f γα/ ,γ .                    (4.2.1)
+  Now fix the gauge by conditions
+                                     F A (φ) = 0 ,                          (4.2.2)
+where once again A includes the coordinate. Following the same Faddeev–
+Popov procedure as in section 3.3, the path integral becomes
+   !                        !
+       [dφi ]
+              exp(−S1 ) →       [dφi dBA dbA dcα ] exp(−S1 − S2 − S3 ) ,    (4.2.3)
+       Vgauge
+where S1 is the original gauge-invariant action, S2 is the gauge-fixing action
+                                  S2 = −iBA F A (φ) ,                       (4.2.4)
+and S3 is the Faddeev–Popov action
+                                S3 = bA cα ,α F A (φ) .                     (4.2.5)
+We have introduced the field BA to produce an integral representation of
+the gauge-fixing ,(F A ).
+  There are two things to notice about this action. The first is that it is
+invariant under the Becchi–Rouet–Stora–Tyutin (BRST) transformation
+                                 ,B φi = −i1cα ,α φi ,                     (4.2.6a)
+                                ,B BA = 0 ,                                (4.2.6b)
+                                ,B bA = 1BA ,                              (4.2.6c)
+                                         i
+                                 ,B cα = 1f α/γ c/ cγ .                    (4.2.6d)
+                                         2

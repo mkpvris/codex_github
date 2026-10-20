@@ -1,0 +1,47 @@
+                                                                            3.3                      Gauge              ﬁxing                                                                  89
+
+with         bab,             like  /′ab,             being             traceless.             Thus,
+                                                                                     ∫
+                                                           ∆FP(gˆ)=                        [db      dc]exp(−Sg),                                                                  (3.3.20)
+
+where     the     ghost     actionSg,     with     a     convenient     normalization     for     the     ﬁelds,
+is                                     ∫                                                                ∫
+                S      =         1            d2σgˆ1/2b                    ∇ˆ  acb       =        1            d2σ        gˆ1/2b            (Pˆ     c)ab        .                 (3.3.21)
+                   g           2π                                     ab                        2π                                     ab         1
+Locally             on             the             world-sheet,             the             Polyakov             path             integral             is             now∫
+
+                                                 Z    [gˆ]=                 [dX        db      dc]exp(−SX−Sg).                                                                    (3.3.22)
+
+The     action     is     quadratic     in     the     ﬁelds,     so     we     can     evaluate     the     path     integral
+in      terms      of      determinants      as      discussed      in      the      appendix.      This      step      will      be
+carried     out     in     more     detail     in     the     chapter     5;     the     result     here     is
+                                                              Z[gˆ]=(det                      ∇ˆ2)−D/2              det      Pˆ1      ,                                           (3.3.23)
+
+the             ﬁrst             determinant            coming             from             the        X       integration             and             the             second             from
+the             ghost             integration.
+      In            conformal            gauge,               gˆab(σ)=exp[2                          ω(σ)],ab,            the            ghost            action            (3.3.21)            is
+                                                                    1      ∫                (                                                 
+                                                  Sg      =                      d2z           bzz∇¯zcz             +     b¯z¯z∇zc¯z
+                                                                  2π       ∫                (                                               
+                                                          =         1            d2z           b       ∂    cz     +     b       ∂     c¯z       .                                (3.3.24)
+                                                                  2π                              zz      ¯z                ¯z¯z    z
+Notice         thatω(σ)doesnotappearintheﬁnalform.Thisisbecausetheco-
+variant¯z-derivative         of         a         tensor         that         has         only                        z    indices         reduces         to         the         simple
+derivative,                  and                  vice                  versa,                  as                  the                  reader                  can                  check                  by                  working                  out                  the
+connection              tensor.              We              have              positioned              the              indices,              lower              on b     and              upper
+on      c,            to            take            advantage            of            this.            Since            the            action            (3.3.24)            is            Weyl-invariant,
+it              follows              thatbab     and          ca     must             be             neutral             under             the             Weyl             transformation
+(in               contrast               tobab      and         ca,               for               example,               which               contain               additional               factors
+of              the              metric).              Since              the              conformal              transformation              is              a              combination              of              a
+coordinate                 transformation                 (3.3.7)                 and                 a                 Weyl                 transformation                 (3.3.9),                 we
+can                   immediately                   read                   o!                   the                   conformal                   transformations                   ofbaband    ca
+                                                                                                                                                                                               ˜
+from              the              tensor              indices:              this              is              a˜˜bcCFT              with              (hb,hc)=(2,−1)              and              ab˜c
+CFT             with             (hb, hc)=(2               ,−1).
+      The                derivation                that                we                have                given                of                the                gauge-ﬁxed                path                integral                is
+sometimes           referred           to           as           the           ‘heuristic’           derivation.           The           problem           is           that           the
+starting                point,                the                Polyakov                functional                integral                (3.3.1),                is                ill                deﬁned                due
+to              the              enormous              gauge              overcounting.              The              gauge-ﬁxed              functional              integral
+(3.3.22),                 on                 the                 other                 hand,                 is                 quite                 well                 deﬁned,                 and                 can                 be                 calculated
+explicitly.                   For                   practical                   purposes                   we                   should                   perhaps                   regard                   the                   gauge-
+ﬁxed             form             as             our             true             starting             point,             with             the             gauge-invariant             one             giving

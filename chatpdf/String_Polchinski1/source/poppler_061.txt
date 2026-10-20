@@ -1,0 +1,51 @@
+                            2.2 The operator product expansion                                            39
+
+interested in are free, and many others can be related to free field theories,
+so it will be worthwhile to develop normal ordering somewhat further.
+   The definition of normal ordering for arbitrary numbers of fields can
+be given recursively as
+                : X µ1 (z1 , z̄1 ) . . . X µn (zn , z̄n ) :
+                                                                      
+                          = X µ1 (z1 , z̄1 ) . . . X µn (zn , z̄n ) +   subtractions ,              (2.2.5)
+where the sum runs over all ways of choosing one, two, or more pairs of
+fields from the product and replacing each pair with 12 α" η µi µj ln |zij |2 . For
+example,
+     : X µ1 (z1 , z̄1 )X µ2 (z2 , z̄2 )X µ3 (z3 , z̄3 ) : = X µ1 (z1 , z̄1 )X µ2 (z2 , z̄2 )X µ3 (z3 , z̄3 )
+                  % "                                                                 &
+                     α µ1 µ2              2 µ3
+              +         η      ln |z12 | X (z3 , z̄3 ) + 2 permutations .                              (2.2.6)
+                      2
+We leave it to the reader to show that the definition (2.2.5) retains the de-
+sired property that the normal ordered product satisfies the naive equation
+of motion.
+   The definition can be compactly summarized as
+                     % "!                                                              &
+                α               2     2              2   δ               δ
+     : F := exp                d z1 d z2 ln |z12 |                                  F,              (2.2.7)
+                4                                  δX µ (z1 , z̄1 ) δXµ (z2 , z̄2 )
+where F is any functional of X. This is equivalent to eq. (2.2.5): the
+double derivative in the exponent contracts each pair of fields, and the
+exponential sums over any number of pairs with the factorial canceling
+the number of ways the derivatives can act. As an example of the use of
+this formal expression, act on both sides with the inverse exponential to
+obtain
+              %      !                                                        &
+                  α"    2    2             2       δ               δ
+      F = exp −        d z1 d z2 ln |z12 |                                      :F:
+                  4                          δX µ (z1 , z̄1 ) δXµ (z2 , z̄2 )
+                           
+            = :F: +             contractions ,                                                      (2.2.8)
+where a contraction is the opposite of a subtraction: sum over all ways of
+choosing one, two, or more pairs of fields from : F : and replacing each
+pair with − 12 α" η µi µj ln |zij |2 .
+  The OPE for any pair of operators can be generated from
+                                                         
+                      : F : : G : = : FG : +                 cross-contractions                     (2.2.9)
+for arbitrary functionals F and G of X. The sum now runs over all ways
+of contracting pairs with one field in F and one in G. This can also be
+written
+                  %     !                                                          &
+                     α"                                δ              δ
+ : F : : G : = exp −      d2 z1 d2 z2 ln |z12 |2                                     : FG : ,
+                     2                           δXFµ (z1 , z̄1 ) δXGµ (z2 , z̄2 )
+                                                                                      (2.2.10)

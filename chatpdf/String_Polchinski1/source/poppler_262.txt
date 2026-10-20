@@ -1,0 +1,47 @@
+240                8 Toroidal compactification and T -duality
+
+                                      DDF operators
+
+We have just seen that the exponential operator can be separated into
+holomorphic and antiholomorphic parts. This has many applications. We
+now use it to tie up a loose end from the end of chapter 4, the DDF
+operators.
+  We will work with light-cone coordinates X ± = 2−1/2 (X 0 ± X 1 ), whose
+holomorphic parts have the OPE (we drop the subscript L)
+                         α%
+      X + (z)X − (0) ∼      ln z ,    X + (z)X + (0) ∼ X − (z)X − (0) ∼ 0 .    (8.2.26)
+                         2
+It follows that the operators
+                                                          +
+                         V i (nk0 , z) = ∂X i (z)eink0 X (z) (2/α% )1/2        (8.2.27)
+with i transverse are (1, 0) primary fields with OPE
+                                                    δ ij i(n+m)k0 X + (0)
+                 V i (nk0 , z) V j (mk0 , 0) ∼ −        e
+                                                    z2
+                                         ink0 δ ij                    +
+                                     −             ∂X + (0)ei(n+m)k0 X (0) .   (8.2.28)
+                                            z
+Define the DDF operators by
+                                         ;
+                                             dz i
+                                 Ain =          V (nk0 , z) .                  (8.2.29)
+                                             2π
+The residue of the z −1 term in the OPE (8.2.28) is a total derivative except
+when n + m = 0, and so the DDF operators satisfy an oscillator algebra
+                                                          α% k0 p+
+                             [Aim , Ajn ] = mδ ij δm,−n            ,           (8.2.30)
+                                                              2
+which is an oscillator algebra, up to normalization.
+  Consider the action of the DDF operators on a state of given mo-
+mentum q. The OPE of V i (nk0 , z) with the vertex operator for this state
+             %     −
+involves z −α nk0 q /2 and so is single-valued if we fix k0 = 2/α% q − . The con-
+tour integral (8.2.29) then defines a sensible operator in this sector. The
+DDF operators, being integrals of (1, 0) tensors, commute with the Vira-
+soro generators and so take physical states into physical states. It follows
+that we can build physical states by acting with the DDF operators on the
+oscillator ground state. The states obtained in this way are in one-to-one
+correspondence with the light-cone states, and so are a complete set of
+physical states. The DDF operators do not involve X − and so these states
+have no α− −m excitations. They are therefore the same states given by the
+more general but less explicit construction (4.4.19).

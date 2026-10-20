@@ -1,0 +1,44 @@
+304                      9 Higher order amplitudes
+
+integral that defines the generator through the sewn handle; the change
+from Ln to L−n is from an inversion of coordinates. All other contour
+integrals for conserved charges can be pulled through as well.
+   There are also sets of curves that are not related by a continuous
+deformation. The four-point amplitude on the sphere can be written in
+terms of three-point functions by cutting on curves circling different pairs
+of operators. Equality between different sewings is the associativity of the
+OPE, figure 2.8.
+   Another example is given by the torus: we can reduce the torus to
+the sphere by cutting on the A-cycle, or the B-cycle, or any other non-
+self-intersecting closed curve. In terms of the plane with identifications, a
+closed curve C that begins at (σ 1 , σ 2 ) = (0, 0) must end at an identified
+point
+                                    2π(m, n) .                        (9.4.10)
+All curves with the same m and n values can be continuously deformed
+into one another, so we need to consider the relation between sewing on
+curves of different m and n. One can show that for a nontrivial non-self-
+intersecting curve, m and n must be relatively prime, which implies that
+there are integers p and q such that mp − nq = 1. There is then a modular
+transformation
+                                                 .         /
+                         1   2         !1   !2       m n
+                       (σ , σ ) = (σ , σ )                     ,      (9.4.11)
+                                                     q p
+such that the curve C comes back to
+                             (σ !1 , σ !2 ) = 2π(1, 0) ,              (9.4.12)
+which is the A-cycle. So cutting on a general nontrivial non-self-intersecting
+curve is equivalent to cutting on the A-cycle for a modular-equivalent
+value of τ. The consistency of the sewing construction is thus equivalent
+to modular invariance.
+  Every set of sewing curves may be transmuted into any other by a
+series of two moves: the four-point associativity transformation on the
+sphere and the modular transformation on the torus with a single vertex
+operator. Figure 9.4 makes this plausible. For example, figures 9.4(a)
+and 9.4(b) are related by one associativity condition. Repeated applications
+of associativity can bring the sewing to the form of figure 9.4(c), where all
+loops are expressed in terms of the one-loop, one-point function. So these
+are the conditions for an arbitrary set of operator product coefficients
+to define a sensible conformal field theory. The program of solving the
+duality constraints is known as the conformal bootstrap. It has been carried
+out only in cases where additional restrictions have been introduced, as
+we will discuss in chapter 15.

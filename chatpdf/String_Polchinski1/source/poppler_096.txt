@@ -1,0 +1,48 @@
+74                                   2 Conformal field theory
+
+                                                   Exercises
+2.1 Verify that
+                                  1       1
+                       ∂∂¯ ln |z|2 = ∂
+                                     = ∂¯   = 2πδ 2 (z, z̄)
+                                  z̄      z
+(a) by use of the divergence theorem (2.1.9);
+(b) by regulating the singularity and then taking a limit.
+2.2 Work out explicitly the expression (2.2.5) for the normal-ordered
+product of four X µ fields. Show that it is a harmonic function of each of
+the positions.
+2.3 The expectation value of a product of exponential operators on the
+plane is
+         5 n                              6                                    n
+          .                                                        @n          .              "
+                  : eiki ·X(zi ,z̄i ) :       = iC X (2π)D δ D (    i=1 ki )           |zij |α ki ·kj ,
+            i=1                                                                i,j=1
+                                                                                i<j
+
+
+with C X a constant. This can be obtained as a limit of the expectation
+value (6.2.17) on the sphere, which we will obtain by several methods in
+chapter 6.
+(a) Show that the leading behavior as one vertex operator approaches
+another is in agreement with the OPE (2.2.14).
+                                                                  "
+(b) As implied by eq. (2.2.13), the expectation value is |z12 |α k1 ·k2 times
+a function that is smooth as z1 → z2 . For n = 3, work out the explicit
+expansion of this smooth function in powers of z12 and z̄12 . From the
+ratio of the large-order terms find the radius of convergence.
+(c) Give a general proof that the free-field OPE (2.2.4) is convergent inside
+the dashed circle in figure 2.1.
+2.4 Extend the OPE (2.2.14) up to and including subleading terms of
+order z 2 , zz̄, and z̄ 2 . Show that the z, z̄-dependence of each term is in
+agreement with the general form (2.4.20). Give also the symmetric form
+as in eq. (2.2.15) and discuss the properties of the coefficients under
+interchange of the two operators.
+2.5 Derive the classical Noether theorem in the form usually found in
+textbooks. That is, assume that
+                                               !
+                               S [/] =             dd σ L(/(σ), ∂a /(σ))
+
+and ignore the variation of the measure. Invariance of the action implies
+that the variation of the Lagrangian density is a total derivative,
+                                                δL = .∂a Ka
+under a symmetry transformation (2.3.1). Then the classical result, with

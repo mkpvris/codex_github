@@ -1,0 +1,49 @@
+                       9.8 High energy and high temperature                                317
+
+with one vertex operator. One can show that this region is not vastly
+smaller than the full open string moduli space, so the same estimate holds,
+the perturbation series going as
+                             ∞
+                             &                      ∞
+                                                    &
+                                   go2k O(k!)   =         gck O(k!) .                   (9.7.8)
+                             k=0                    k=0
+
+The genus-g term, proportional to gc2g , has a coefficient of order (2g)!. This
+is larger than the g! characteristic of field theory, which was also the lower
+bound obtained from V0,3 alone. Evidently the largest part of the large
+order amplitudes is contained within the vertices Vg,n and comes from
+the interior of moduli space. One then expects nonperturbative effects of
+order
+                                        exp[−O(1/gc )] ,                                (9.7.9)
+much larger at weak coupling than the exp[−O(1/gc2 )] characteristic of
+field theory. This large order behavior was first observed in some simplified
+models to be discussed in section 9.9. As we will see in chapter 13,
+these effects are now known to be related to D-branes, at least in some
+supersymmetric string theories.
+
+                     9.8     High energy and high temperature
+
+In order to obtain a better understanding of string dynamics, one might
+look at the behavior in different limits. In this section we consider various
+high energy limits of string theory.
+
+                                        Hard scattering
+Consider again the hard scattering behavior, which we obtained from the
+Veneziano and Virasoro–Shapiro amplitudes by Stirling’s approximation.
+Go back to the integral form (6.6.5),
+                                    #
+        8πigc2             5                    !                 !
+           !
+               (2π)26δ 26 ( i ki ) d2 z4 |z4 |−α u/2−4 |1 − z4 |−α t/2−4 .              (9.8.1)
+         α                        C
+In the hard scattering region s → ∞ with t/s fixed, the exponents are large
+and the integral is dominated by the stationary points of the exponent.4
+The saddle point, for s, t, u 2 1, is given by
+          ∂ !                              "  u     t
+              u ln |z4 |2 + t ln |1 − z4 |2 =   +       = 0,                            (9.8.2)
+         ∂z4                                  z4 z4 − 1
+
+4 As usual, the integral diverges at z → ∞ and is defined by analytic continuation. The saddle
+                                      4
+ point approximation can be justified for the continuation.

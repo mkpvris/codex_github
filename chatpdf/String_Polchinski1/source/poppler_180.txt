@@ -1,0 +1,60 @@
+158                              5 The string S-matrix
+
+For the latter, the normalized eigenfunctions are related
+                                 1
+                      BJab =        (P1 CJ )ab ,         νJ = νJ$ -= 0 .                          (5.3.15)
+                                 νJ
+  In terms of modes, the ghost path integral ∆FP becomes
+  ! 6
+    µ         κ
+              6        6                      2                    36
+                                                                    µ  6
+                                        νJ bJ cJ         1
+          db0k     dc0j   dbJ dcJ exp −                    (b, ∂k$ ĝ)      ca (σi ) .
+      k=1      j=1      J
+                                          2π     k $ =1
+                                                        4π           (a,i)∈f
+                                                                             (5.3.16)
+From section A.2, a Grassmann integral vanishes unless the variable
+appears in the integrand. The c0j and b0k do not appear in the action but
+only in the insertions. In fact, the number of insertions of each type in the
+integral (5.3.16), κ and µ respectively, just matches the number of ghost
+zero modes. We have just enough insertions to give a nonzero answer, and
+only the zero-mode part of the ghost fields contributes in the insertions.
+Thus,
+                       ! 6
+                         µ              µ     & µ                                     
+                                        6      ( b0k$$
+               ∆FP =             db0k                              (B0k$$ , ∂k$ ĝ)
+                           k=1          k $ =1 k $$ =1
+                                                         4π
+                                                                                             
+                                     ! 6
+                                       κ              6            κ
+                                                                   (
+                                 ×            dc0j                     c0j $ Ca0j $ (σi )
+                                        j=1          (a,i)∈f   j $ =1
+                                     ! 6                           2                  3
+                                                         νJ bJ cJ
+                                 ×         dbJ dcJ exp −                                      .   (5.3.17)
+                                         J
+                                                           2π
+Summing over all ways of saturating the zero-mode integrals with the
+Grassmann variables generates a finite-dimensional determinant in each
+case, while the nonzero modes produce an infinite product, a functional
+determinant. In all,
+                                                               '             1/2
+                   (B0k , ∂k$ ĝ)                      PTP
+         ∆FP = det                det Ca0j (σi ) det $ 1 2 1                              .       (5.3.18)
+                      4π                                4π
+Note that Ca0j (σi ) is a square matrix, in that (a, i) ∈ f runs over κ values
+as does j. The prime on the functional determinant denotes omission of
+zero eigenvalues.
+
+                           The Riemann–Roch theorem
+We can now give a path integral derivation of the Riemann–Roch theorem.
+For the ghost current of a holomorphic bc system (without b̃, c̃), the current
+conservation anomaly derived in exercise 3.6 is
+                                                1 − 2λ
+                                     ∇a j a =          R.                                         (5.3.19)
+                                                  4

@@ -1,0 +1,49 @@
+                                    1.2 Action principles                                         15
+
+Poincaré invariance and the equations of motion. If we relax the condition
+of Poincaré invariance then there are other possibilities which will be
+important later. Some of these are explored in the exercises.
+   The Nambu–Goto and Polyakov actions may be the simplest with the
+given symmetries, but simplicity of the action is not the right criterion
+in quantum field theory. Symmetry, not simplicity, is the key idea: for
+both physical and technical reasons we must usually consider the most
+general local action consistent with all of the symmetries of the theory.
+Let us try to generalize the Polyakov action, requiring that the symmetries
+be maintained and that the action be polynomial in derivatives (else it
+is hard to make sense of the quantum theory).3 Global Weyl invariance,
+ω(τ, σ) = constant, requires that the action have one more factor of γ ab
+than γab to cancel the variation of (−γ)1/2 . The extra upper indices can only
+contract with derivatives, so each term has precisely two derivatives. The
+coordinate invariance and Poincaré invariance then allow one additional
+term beyond the original SP :
+                                         !
+                           1
+                                dτ dσ (−γ)1/2 R ,
+                                 ,=                            (1.2.31)
+                          4π M
+where R is the Ricci scalar constructed from γab . Under a local Weyl
+rescaling,
+                           (−γ " )1/2 R " = (−γ)1/2 (R − 2∇2 ω) .                          (1.2.32)
+The variation is a total derivative, because (−γ)1/2 ∇a v a = ∂a ((−γ)1/2 v a )
+for any v a . The integral (1.2.31) is therefore invariant for a world-sheet
+without boundary. With boundaries an additional surface term is needed
+(exercise 1.3).
+  Since , is allowed by the symmetries we will include it in the action:
+            SP" = SP − λ, .
+                       !                       %                                   &
+                                                    1 ab                    λ
+                =−             dτ dσ (−γ)1/2           "
+                                                         γ ∂a X µ ∂b X µ +    R        .   (1.2.33)
+                           M                       4πα                     4π
+This is the most general (di!×Weyl)-invariant and Poincaré-invariant
+action with these fields and symmetries. For the moment the discussion of
+the symmetries is classical — we are ignoring possible quantum anomalies,
+which will be considered in chapter 3.                           '
+  The action SP" looks like the Hilbert action for the metric, (−γ)1/2 R,
+minimally coupled to D massless scalar fields X µ . However, in two dimen-
+
+3 If we relax this requirement then there are various additional possibilities, such as invariants
+ constructed from the curvature of the induced metric hab . These would be expected to appear
+ for such one-dimensional objects as electric and magnetic flux tubes, and in that case the path
+ integral makes sense because the thickness of the object provides a cuto!. But for infinitely thin
+ strings, which is what we have in fundamental string theory, this is not possible.

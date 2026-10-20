@@ -1,0 +1,46 @@
+340                                                                               Appendix              A
+
+the             boundary             condition             (A.1.55),
+                                                              (21/2                         jπu                               j2π2
+                                        fj(u)=                                     sin                   ,λ         j=                       +/2,                         (A.1.59a)
+                                                                   U                           U                                 U2
+                                              (               ∞       j2π2         +     /2U2
+                                   det       2π        =                         2πU         2              .                                                             (A.1.59b)
+                                                              j=1
+The              inﬁnite             product              diverges.             The         Pa u l i – Vi l l a  r s                  re g u l a to r    is               a               simple               way
+to             deﬁne             it.             Divide             by             the             amplitude             for             aregulatoroscillator            of            very            high
+frequency          !,
+                                                                   (       regulate         ∞       j2π2         +     /2U2
+                                                        det       2π           →                     j2π2         +!         2U2          .                                   (A.1.60)
+                                                                                            j=1
+Fo  r      j    small,                    the                    terms                     in                     (A.1.60)                    are                    the                    same                    as                    those                    in                     (A.1.59b)                    up
+to                a                multiplicative                constant,                while                forjlarge               the               product               converges.               The
+value              of              the              product              (A.1.60)              is
+                                                                                  !sinh            /U           .                                                             (A.1.61)
+                                                                                  /    sinh    !U
+This            follows            from            a            standard            inﬁnite            product            representation            for            the            sinh.
+One           can           guess           the           result           (A.1.61)           by           noting           that           it           has           the           right           poles           and
+zeros             in  U,             and             the             right             value             asUgoes             to             zero.
+      Keeping             only             terms             that             are             nonvanishing             as          !  →∞,
+                                           (              /               1/2                [                                       1                                                 ]
+    ⟨qf,U|qi,0⟩→                                2sinh           /U                   exp         −Scl(qi,qf)+                         2(!       U      −     ln     !)     −     Sct         .
+                                                                                                                                                                              (A.1.62)
+To                get                a               ﬁnite                answer                as            !→∞,weneedﬁrsttoincludeaterm                                          1!      in
+                                                                                                                                                                                    2
+the                 Lagrangian             Lct,                 canceling                 the                 linear                 divergence                 in                 (A.1.62).                 That                 is,
+there           is           a           linearly           divergent           bare           coupling           for           the           operator           ‘1’.           It           may           seem
+strange           that           we           need           to           renormalize           in           a           quantum           mechanics           problem,           but
+the            power            counting            is            completely            uniform            with            quantum            ﬁeld            theory.            The
+logarithmic                 divergence                 is                 a                 wavefunction                 renormalization.                 To                 determine
+the             ﬁnite              normalization,              compare             the             path              integral              expression              (A.1.62)              to
+the             canonical             result             as  U      →∞.The                      U→∞                   amplitude      is      easily      evaluated
+by          inserting          a          complete          set          of          states,          since          only          the          ground          state|0⟩
+contributes      in      the      limit:
+                                 ⟨qf,U|qi,0⟩→⟨                              qf|0⟩⟨0|qi⟩                 exp(−E0U)
+                                                                          (/        1/2                [        /                                        ]
+                                                                  =                            exp         −          (q2      +     q2      +     U)          .              (A.1.63)
+                                                                               π                                 2         f             i
+On             the             other             hand,             the             path             integral             expression             (A.1.62)             becomes
+                                                                [       /                                            1                                              ]
+   ⟨qf,U|qi,0⟩→                           /1/2exp                  −          (q2+q2              +U)+                   (!     U    −     ln     !)    −Sct             .    (A.1.64)
+                                                                         2         f           i                     2

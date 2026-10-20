@@ -1,0 +1,60 @@
+第3章前半翻訳メモ
+
+範囲
+原書PDF99--112、本文77--90ページ。
+第3章導入、第3.1節、第3.2節、第3.3節の全内容。
+PDF112の第3.4節見出し直前「These are the boundary conditions that we used in section 2.7.」まで。
+sections/ch03a.texに収録。
+
+構造
+章: sectionlink{Polyakov経路積分}, label ch:3.
+節: 3.1 世界面についての和 / 3.2 Polyakov経路積分 / 3.3 ゲージ固定.
+節内見出し: Faddeev--Popov行列式。
+全段落、4種類の理論の列挙、脚注1/2、全図説明を収録。省略・要約なし。
+番号付き数式41件:
+  3.1.1--3.1.2 (2件)
+  3.2.1--3.2.9, 3.2.3a/b (10件)
+  3.3.1--3.3.28, 3.3.19a/b (29件)
+全式に原書のtagとeq:3.x.y形式のlabelを付与。
+脚注2内の無番号式も全等号・群積を保持。
+
+図ファイル依存（親agentが作成）
+figures/fig_3_1.pdf: 原書PDF100上段
+figures/fig_3_2.pdf: 原書PDF100中段
+figures/fig_3_3.pdf: 原書PDF101上段
+figures/fig_3_4.pdf: 原書PDF101中段
+figures/fig_3_5.pdf: 原書PDF102上段
+figures/fig_3_6.pdf: 原書PDF103上段
+figures/fig_3_7.pdf: 原書PDF109上段
+対応図labelはfig:3.1--fig:3.7。
+図3.7内のfield space/gauge slice/gauge orbitsの訳は図説明末尾に併記。
+
+数式の視覚確認
+pdftoppmで担当範囲全ページを155dpiでqa/source-099.png--source-112.pngに描画。
+14ページすべてを画像表示して確認した。
+とくに抽出で壊れた記号を原文画像で照合:
+- diff×Weyl、Kronecker delta、変分delta。
+- ゲージ変換の記号はzeta、対称テンソル積分変数はbeta。
+- 式3.2.6の和はmu=1..D、Xdotの両方の添字が上付き。
+- 式3.3.18の指数係数は2 pi i / 4 pi i、betaとbeta'の区別。
+- 式3.3.19bは下付きbeta'_ab -> b_ab。
+- 式3.3.21はb_ab nabla^a c^b、b_ab(P_1 c)^ab。
+- 式3.3.24はb_zz nabla_bar-z c^z + b_bar-z-bar-z nabla_z c^bar-z。
+- Weyl中性なのはb_ab,c^a。対比されるのはb^ab,c_a。
+- 式3.3.27はn^a b_ab delta c^b、式3.3.28はn_a t_b b^ab。
+- 脚注2の合成はzeta^{-1} dot zeta'。
+- 任意のソースを加えたEuler数の角の係数は1/4。
+
+用語
+人名・固有名詞はPolyakov, Feynman, Weyl, Lorentz, Yukawa,
+Euler, Ricci, Riemann, Noether, Ward, Faddeev--Popov,
+Yang--Mills, Grassmann, Hilbert, Minkowski, Euclid等を維持。
+fiducial metric=基準計量、gauge slice=ゲージ断面、
+source boundary=ソース境界、endpoint boundary=端点境界。
+
+統合時の確認
+この断片の単体コンパイルは未実施。
+第2章のeq:2.3.10を参照するため、第2章と合わせてコンパイルする。
+sectionとfigureのカウンターは親原稿の第1・2章から継続し、図番号3.1--3.7となることを確認。
+図ファイルの存在、式3.3.10/12/18/21の幅、脚注2の改ページ、図の配置を完成PDFで確認する。
+通常の著者年の参考文献引用は担当範囲にない。

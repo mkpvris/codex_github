@@ -1,0 +1,67 @@
+                                              6.2 Scalar expectation values                                                               175
+
+up to terms that drop out due to momentum conservation. Then
+       D n                                    E                                                          n
+        6                                                                                  ?             6                  $ 2
+                       iki ·X(zi ,z̄i )
+                   :e                     :             = iCDX2 (2π)d , d (                     i ki )         |zi − z̄i |α ki /2
+           i=1                                   D2                                                      i=1
+                                                                       n
+                                                                       6                         $                     $
+                                                                 ×             |zi − zj |α ki ·kj |zi − z̄j |α ki ·kj .               (6.2.33)
+                                                                       i,j=1
+                                                                        i<j
+
+For expectation values with ∂a X µ s one again sums over contractions,
+now using the Green’s function (6.2.32). Note that ∂X µ (z)∂X     ¯ ν (z̄ $ ) (or
+  µ    ν   $
+q (z)q̃ (z̄ )) has a nonzero contraction.
+    For two points on the boundary, the two terms in the Green’s func-
+tion (6.2.32) are equal, and the Green’s function diverges at zero separation
+even after normal ordering subtracts the first term. For this reason, bound-
+ary operators must be defined with boundary normal ordering, where the
+subtraction is doubled:
+       7
+       7   X µ (y1 )X ν (y2 )77 = X µ (y1 )X ν (y2 ) + 2α$ η µν ln |y1 − y2 | ,                                                       (6.2.34)
+with y denoting a coordinate on the real axis. The combinatorics are the
+same as for other forms of normal ordering. Boundary normal-ordered
+expectation values of boundary operators have the same good properties
+(nonsingularity) as conformal normal-ordered operators in the interior.
+    An expectation value with exponentials both in the interior and on
+the boundary, each having the appropriate normal ordering, is given by
+taking the appropriate limit of the interior result (6.2.33) and dropping the
+            $ 2
+|zi − z̄i |α ki /2 factor for the boundary operators. Explicitly, for exponentials
+all on the boundary,
+     D n                           E                                                            n
+      6                                                                           ?             6                       $
+             7
+             7   eiki ·X(yi ) 77               = iCDX2 (2π)d , d (                    i ki )            |yi − yj |2α ki ·kj .         (6.2.35)
+       i=1                           D2                                                         i,j=1
+                                                                                                 i<j
+
+More generally,
+           D n                                p                               E
+            6                                 6                                                                     ?
+                          iki ·X(yi ) 7
+                      7
+                      7   e               7           ∂y X      µj
+                                                                     (yj$ )          = iCDX2 (2π)d , d (                i ki )
+              i=1                             j=1                               D
+                                                                            D p2                                            E
+                                              n
+                                              6                              6                                        
+                                                               2α$ ki ·kj
+                                    ×                 |yij |                           v   µj
+                                                                                                (yj$ ) + q µj (yj$ )              ,   (6.2.36)
+                                              i,j=1                             j=1                                         D2
+                                               i<j
+
+where now
+                                                                                    n
+                                                                                    (     kiµ
+                                                  v µ (y) = −2iα$                                                                     (6.2.37)
+                                                                                    i=1
+                                                                                        y − yi
+
+and the qs are contracted using −2α$ (y − y $ )−2 η µν .

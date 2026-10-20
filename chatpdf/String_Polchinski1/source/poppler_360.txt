@@ -1,0 +1,51 @@
+338                                       Appendix A
+
+where δ/δφi acts only on Fi . The self-contractions are then the terms
+                              δ2
+                                                     (no sum on i) .     (A.1.44)
+                        δφi (x)δφi (y)
+  Consider now the overall factor Z[0]. We assume that ( is self-adjoint
+and so we expand φ(x) in a complete set of eigenfunctions Φi (x):
+                                                &
+                                 φ(x) =              φi Φi (x) ,         (A.1.45)
+                                                 i
+
+where
+                                           (Φi (x) = λi Φi (x) ,        (A.1.46a)
+                        #
+                            dd x Φi (x)Φj (x) = δij .                   (A.1.46b)
+Define the path integral measure by
+                                                     
+                                      [dφ] =             dφi .           (A.1.47)
+                                                     i
+
+Then
+                                  .#                    1
+                                                          3        4/
+                      %1& =                     dφi exp − φ2i λi
+                                  i
+                                                         2
+                                 3 2π 41/2
+                            =
+                                  i
+                                           λi
+                                 3               4−1/2
+                                           (
+                            =        det                  .              (A.1.48)
+                                           2π
+The product of eigenvalues must be suitably regulated and renormal-
+ized. The value of % 1 & is usually given simply as (det ()−1/2 , because a
+rescaling of ( is equivalent to a rescaling of φ, the Jacobian for which
+can be absorbed into the bare couplings. (In free field theory, the only
+‘coupling’ that would be renormalized would be a c-number constant in
+the Lagrangian density; we will see this appearing in the example.)
+   All of the above discussion extends readily to multicomponent q i or
+φi . One case of interest is a complex scalar field. One can break this up
+into two real scalars, φ = 2−1/2 (φ1 + iφ2 ), and the measure is [dφ dφ∗ ] ≡
+[dφ1 dφ2 ]. For complex fields, (A.1.48) becomes
+           #                 !        #                   "
+               [dφ dφ∗ ] exp −            dd x φ∗ (φ = (det ()−1 .       (A.1.49)
+
+One similarly finds for two real fields
+          #                  ! #                          "
+               [dφ1 dφ2 ] exp i           dd x φ1 (φ2 = (det ()−1 .      (A.1.50)

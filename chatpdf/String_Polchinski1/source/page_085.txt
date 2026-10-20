@@ -1,0 +1,46 @@
+                                                                         2.8                      Vertex              operators                                                                     63
+
+      Fo  r                     t   h   ebctheory,              the              boundary              conditions              that              will              be              relevant              to              the
+string             are
+                                                                                                          ˜
+                                               c(z)=              ˜c(¯z),b(z)=                            b(¯z),                Im      z    =0          ,                            (2.7.29)
+written           in           terms           of           thez-coordinate           where           the           boundary           is           the           real
+axis.        We        can        then        use        the        doubling        trick        to        write        the        holomorphic        and
+antiholomorphic        ﬁelds        in        the        upper        half-plane        in        terms        of        holomorphic
+ﬁelds      in      the      whole      plane,
+
+                                                 ′                                 ˜′                                                          ′
+                      c(z)≡˜c(¯z),b(z)≡b(¯z),Im(z)                                                                         ≤      0    ,z         =¯z.                                (2.7.30)
+The             open             string             thus             has             a             single             set             of             Laurent             modes             for             each             ofband
+c.
+
+
+                                                                       2.8                                             Vertex               operators
+
+In               quantum               ﬁeld               theory,               there               is               on               the               one               hand               the               space               of               states               of
+the            theory             and             on             the            other             hand             the            set             of             local            operators.             In             conformal
+ﬁeld             theory             there             is             a             simple             and             useful             isomorphism             between             these,             with
+the               CFT               quantized               on               a               circle.               Consider               the               semi-inﬁnite               cylinder               in               the
+w-coordinate,
+                                       0    ≤      Rew            ≤      2π,             w       ∼w+2π,                               Im       w     ≤      0    ,                        (2.8.1)
+which                  maps                  into                  the                  unit                  disk                  in                  the                  coordinatez=exp(−iw).       This       is
+shown      in      ﬁgure      2.6.      To      deﬁne      the      path      integral      in      thew-coordinate      one
+must    in    particular    specify    the    boundary    condition    as    Imw→   −∞.    That    is,
+one    must    specify    the    initial    state.    In    thez-coordinate,    Imw=−∞maps           to
+the              origin,              so              this              is              equivalent              to              specifying              the              behavior              of              the              ﬁelds              at
+that              point.              In              e!ect,              this              deﬁnes              a              local              operator              at              the              origin,              known              as
+the       vertex             operator                associated            with            the            state.            Going            in            the            other            direction,
+the                path                integral                on                the                disk                with                an                operatorAat                the                origin                maps                to
+the             path             integral             on             the             cylinder             with             a             speciﬁed             initial             state|A⟩.
+      For             free             ﬁeld             theories             one             can             easily             work             out             the             detailed             form             of             this
+isomorphism.               Suppose               one               has               a               conserved               charge            Q      acting               on               the               state
+|A⟩         as              in              ﬁgure              2.6(a).              One              can              ﬁnd              the              corresponding              local              operator              by
+using            the            OPE            to            evaluate            the            contour            integral            in            ﬁgure            2.6(b).            Let            us            use
+this               to               identify               the               state|1⟩corresponding               to               the               unit               operator.               With               no
+                                                                         µ                 ¯        µ
+op erator                at                the                origin,∂X       and          ∂X            are              (anti)holomorphic              inside              the                      Q
+contour             in             ﬁgure             2.6(b).             The             contour             integrals             (2.7.2)             deﬁningαµ                       and          ˜αµ
+                                                                                                                                                                                 m                     m
+for       m      ≥      0thenhavenopolesandsovanish.Thus                                                                                          |1⟩is      annihilated      by
+these     modes.     This     identiﬁes     it     as     the     ground     state,
+                                                                                    |1⟩=|0;      0⟩                 ,                                                                     (2.8.2)

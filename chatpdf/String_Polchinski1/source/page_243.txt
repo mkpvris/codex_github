@@ -1,0 +1,48 @@
+                                                                                         7.3                      The              torus              amplitude                                                                                             221
+
+and
+                                                        ∫       ∞       dl       ∫       ∞        dk0                                                                                             ω
+                                                     i                                                          exp[−(k2                          +       m2)l/2]                      →                k       ,                             (7.3.21)
+                                                             0          2l           −∞            2π                                                                                                2
+where                   ω2          =        k      ·   k      +       m2.              Using              the              latter              form,              the              vacuum              energy              density
+                              k
+becomes
+                                                                                                                  ∫            dd−1k                     ω
+                                                                                               ρ0        =                                                     k       ,                                                                      (7.3.22)
+                                                                                                                            (2π)d−1                         2
+which             is             just             the             sum             of             the             zero-point             energies             of             the             modes             of             the             ﬁeld.
+This               is               in               spacetime,              of               course               —              we               encountered               the               same               kind               of               sum
+but             on             the             world-sheet             in             section             1.3.
+        The             description             of             a             quantum             ﬁeld             theory             as             a             sum             over             particle             paths
+is             not             as             familiar             as             the             description             in             terms             of             a             sum             over             ﬁeld             histories,
+but            it            is            equivalent.            In            particular,            the            free            path            integral            in            ﬁeld            theory            can
+be             found             in             most             modern             ﬁeld             theory             textbooks:
+
+                                                                                             2                         1                                   2                   2
+                                                            ln      Zvac(m                      )=              −2Tr         l n (−∂                            +        m        )
+                                                                                                                       V          ∫             ddk
+                                                                                                      =         −            d                                    ln(k2              +        m2).                                            (7.3.23)
+                                                                                                                          2                 (2π)d
+Using             eq.             (7.3.20),             this             is             the             same             as             the             path             sum             result             (7.3.9).
+        In               older               quantum               ﬁeld               theory               texts,               one               often               reads               that               vacuum               am-
+plitudes                  such                  as                  eq.                  (7.3.18)                  are                  irrelevant                  because                  they                  give                  an                  overall
+phase                   that                   divides                   out                   of                   any                   expectation                   value.                   This                   is                   true                   if                   one                   is
+considering                   scattering                   experiments                   in                   a                   ﬁxed                   background                   and                   ignoring
+gravity,                   but                   there                   are                   at                   least                   two                   circumstances                   in                   which                   the                   vacuum
+energy                  density                  is                  quite                  important.                  The                  ﬁrst                  is                  in                  comparing                  the                  energy
+densities             of                   diﬀerent                        states             to             determine             which             is             the             true             ground             state             of
+a           theory.          It           is           very          likely,          for           example,          that           the           breaking           of           the          electroweak
+SU(2)×U(1)          symmetry          is          determined          in          part          by          such          quantum          corrections
+to           the           vacuum           energy           density.           This           was           the           original           motivation           that           led           to
+the                 Coleman–Weinberg                 formula                 (7.3.23).                 The                 generalization                 to                 a                 theory
+with             particles             of             arbitrary             spin             is
+                                                                                                             i      ∑                           F                          2
+                                                                                     ρ0        =                               (−1)                 iZS           (mi         ).                                                              (7.3.24)
+                                                                                                         Vd                                                    1
+                                                                                                                         i
+The                sum                runs                over                all                physical                particle                states.                Each                polarization                counts
+separately,                     giving                     a                     factor                     of                     2si+            1                     for                     a                     particle                     of                     spinsiin                     four
+dimensions.              Here                                    Fi        is              the              spacetime              fermion              number,              deﬁned              mod              2,              so
+fermions             contribute             with             the             opposite             sign.
+        The                second                circumstance                is                when                one                considers                the                coupling                to                grav-
+ity.                  The                  vacuum                  energy                  gives                  a                  source                  term                  in                  Einstein’s                  equation,                  the

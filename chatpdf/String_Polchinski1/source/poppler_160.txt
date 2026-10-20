@@ -1,0 +1,62 @@
+138                               4 The string spectrum
+
+condition
+            d−1
+            (
+        −         kµ k µ = m2 ,                                                     (4.4.3a)
+            µ=0
+                           ∞
+                                  '               d−1
+                                                              
+                           (                      (
+                   $   2
+                  αm =           n Nbn + Ncn +          Nµn       + LK
+                                                                     0 − 1 ,        (4.4.3b)
+                           n=1                    µ=0
+
+for the open string and
+            d−1
+            (
+        −         kµ k µ = m2 = m̃2 ,                                               (4.4.4a)
+            µ=0
+                         ∞
+                                  '       d−1
+                                                              
+                  α$ 2  (                 (
+                    m =     n Nbn + Ncn +     Nµn                 + LK
+                                                                     0 − 1 ,        (4.4.4b)
+                  4     n=1               µ=0
+                          ∞
+                                  '          d−1
+                                                              
+                  α$ 2   (                   (
+                    m̃ =     n Ñbn + Ñcn +     Ñµn             + L̃K
+                                                                      0 − 1 ,       (4.4.4c)
+                  4      n=1                 µ=0
+
+for the closed string. That is, the contributions of the d ≤ µ ≤ 25 oscillators
+are replaced by the eigenvalue of LK           K
+                                       0 or L̃0 from the compact CFT. The
+only information we use about the compact CFT is that it is conformally
+invariant with the appropriate central charge, so there is a nilpotent BRST
+operator, and that it has a positive inner product. The basis I can be taken
+to be orthonormal, so the reduced inner products are
+  *0, I; k50, I $ ; k$ + = *0, 0, I; k50, 0, I $ ; k$ + = 2k 0 (2π)d−1 , d−1 (k − k$ ),I,I $ .
+                                                                                       (4.4.5)
+  Now let us see what we expect for the physical Hilbert space. Define
+the transverse Hilbert space H⊥ to consist of those states in Ĥ that have
+no longitudinal (X 0 , X 1 , b, or c) excitations. Since these oscillators are the
+source of the indefinite inner product, H⊥ has a positive inner product.
+Light-cone gauge-fixing eliminates the longitudinal oscillators directly —
+the light-cone Hilbert space is isomorphic to H⊥ , as one sees explicitly in
+the flat-spacetime case from chapter 1. We will show, in the general case,
+that the BRST cohomology is isomorphic to H⊥ . That is, it has the same
+number of states at each mass level, and has a positive inner product.
+This is the no-ghost theorem.
+
+
+                                           Proof
+
+The proof has two parts. The first is to find the cohomology of a simplified
+BRST operator Q1 , which is quadratic in the oscillators, and the second
+is to show that the cohomology of the full QB is identical to that of Q1 .

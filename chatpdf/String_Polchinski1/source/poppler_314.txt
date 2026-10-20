@@ -1,0 +1,45 @@
+292                        9 Higher order amplitudes
+
+
+
+
+                      B1                        B2                    B3
+
+
+
+              A1                        A2                     A3
+
+         Fig. 9.1. Genus-three surface with A- and B-cycles marked.
+
+
+                               Fuchsian groups
+For this construction, consider first the world-sheet metric. It is a theorem
+that by a Weyl transformation one can always make the world-sheet
+curvature R a constant. At genus zero this gives the round sphere, at
+genus one the flat torus, and at higher genus a surface of constant
+negative curvature. The simply connected covering space for any of these
+will similarly have constant curvature. There are precisely three such
+simply connected spaces — the round sphere again, the flat plane (the
+covering space of the torus) and the upper half-plane with metric
+                                         dzdz̄
+                                ds2 =           .                       (9.2.3)
+                                        (Im z)2
+The last is the covering space for all the genus g ≥ 2 surfaces.
+   Correspondingly, all genus g ≥ 2 surfaces can be obtained from the
+upper half-plane by dividing by the action of some discrete group. The
+elements of this group must be isometries of the metric (9.2.3); these isome-
+tries are just the Möbius transformations with real coefficients, P S L(2, R).
+Figure 9.1 shows the genus-three surface with some closed curves drawn
+in, an A-cycle and B-cycle for each handle. These are nontrivial curves,
+in that they cannot be contracted to points. If we traverse one of these
+curves, on the covering space we come back not to the original point but
+to one of those identified with it. Thus to each of the cycles is associated
+an element of P S L(2, R), also denoted Ai or Bi .
+   The A- and B-cycles are complete, in that every closed path is equivalent
+(homotopic) to a succession of A- and B-cycles. In fact they are slightly
+overcomplete: the path
+              (A1 B1−1 A−1         −1 −1                −1 −1
+                        1 B1 )(A2 B2 A2 B2 ) . . . (Ag Bg Ag Bg )       (9.2.4)
+can be contracted to a point, and the corresponding product must be
+the identity. Counting moduli, there are three real parameters in each
+P S L(2, R) element, giving 6g, minus three from the constraint (9.2.4),

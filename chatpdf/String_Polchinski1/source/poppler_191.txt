@@ -1,0 +1,49 @@
+                          6.2 Scalar expectation values                                  169
+
+P S L(2, C) that respects the identification (6.1.9); this is just the ordinary
+rotation group S O(3).
+  Both the disk and projective plane have been represented as the sphere
+with points identified under a Z2 transformation, or involution. In fact,
+every world-sheet can be obtained from a closed oriented world-sheet by
+identifying under one or two Z2 s. The method of images can then be used
+to obtain the Green’s functions.
+
+
+                        6.2       Scalar expectation values
+
+The basic quantities that we need are the expectation values of products
+of vertex operators. In order to develop a number of useful techniques
+and points of view we will calculate these in three di!erent ways: by direct
+path integral evaluation, by using holomorphicity properties, and later in
+the chapter by operator methods.
+  The path integral method has already been used in section 5.3 for
+the Faddeev–Popov determinant and in the appendix for the harmonic
+oscillator. Start with a generating functional
+                                 F          2 !                       3G
+                                                    2
+                    Z[J] =           exp i         d σ J(σ)·X(σ)                      (6.2.1)
+
+for arbitrary Jµ (σ). For now we work on an arbitrary compact two-
+dimensional surface M, and in an arbitrary spacetime dimension d. Expand
+X µ (σ) in terms of a complete set XI (σ),
+                                                        ( µ
+                                        X µ (σ) =           xI XI (σ) ,              (6.2.2a)
+                                                        I
+                                            ∇2 XI = −ωI2 XI ,                        (6.2.2b)
+                      !
+                            d2 σg 1/2 XI XI $ = ,II $ .                              (6.2.2c)
+                        M
+Then
+                          6!                   2                             3
+                                                    ωI2 xIµ xIµ
+               Z[J] =             dxµI exp −                    + ixµI JIµ       ,    (6.2.3)
+                          I,µ
+                                                       4πα$
+
+where
+                                        !
+                                JIµ =        d2 σJ µ (σ)XI (σ) .                      (6.2.4)
+
+  The integrals are Gaussian except for the constant mode
+                                        2!                3−1/2
+                                X0 =          d2 σg 1/2           ,                   (6.2.5)

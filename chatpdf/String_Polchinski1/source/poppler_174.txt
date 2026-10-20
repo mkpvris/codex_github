@@ -1,0 +1,44 @@
+152                                5 The string S-matrix
+
+  Eqs. (5.2.6) and (5.2.7) become simple for variations around conformal
+gauge,
+                                   ∂z̄ , $gzz = ∂z , $gz̄z̄ = 0,                            (5.2.8a)
+                                      ∂z̄ ,z = ∂z ,z̄ = 0 ,                                 (5.2.8b)
+so variations of the moduli correspond to holomorphic quadratic differ-
+entials and CKVs to holomorphic vector fields. On the torus, the only
+holomorphic doubly periodic functions are the constants, so there are two
+real moduli and two real CKVs, in agreement with the discussion in the
+previous section.
+   The metric moduli correspond to the kernel (5.2.6) of P1T and the CKVs
+to the kernel (5.2.7) of P1 . The Riemann–Roch theorem relates the number
+of metric moduli µ = dim ker P1T and the number of CKVs κ = dim ker P1
+to the Euler number χ,
+                                             µ − κ = −3χ .                                   (5.2.9)
+We will be able to derive this later in the chapter. For a closed oriented
+surface −3χ = 6g − 6. This counting refers to real moduli, separating
+complex moduli such as τ into their real and imaginary parts.
+  Further, κ vanishes for χ < 0 and µ vanishes for χ > 0. To show this,
+we first cite the fact that it is always possible by a Weyl transformation
+to find a metric for which the scalar curvature R is constant. The sign of
+R is then the same as that of χ. Now, P1T P1 = − 12 ∇2 − 14 R, so
+ !                                              !
+      2      1/2
+      d σg         (P1 ,σ)ab (P1 ,σ)   ab
+                                            =       d2 σ g 1/2 ,σa (P1T P1 ,σ)a
+                                                !                2                             3
+                                                                     1                 R
+                                            =       d2 σ g 1/2         ∇a ,σb ∇a ,σ b − ,σa ,σ a .
+                                                                     2                 4
+                                                                                            (5.2.10)
+For negative χ the right-hand side is strictly positive, so P1 ,σ cannot
+vanish. A similar argument shows that P1T , $g cannot vanish for positive
+χ. Combining these results we have
+                                 χ > 0 : κ = 3χ , µ = 0 ,                                  (5.2.11a)
+                                 χ < 0 : κ = 0 , µ = −3χ .                                 (5.2.11b)
+
+
+                                            Riemann surfaces
+The familiar way to describe moduli space would be to choose one
+metric from each equivalence class. This would be a family of metrics
+ĝab (t; σ), depending on the moduli tk . For the torus, eq. (5.1.9) gives such
+a slice. It is often convenient to use an alternative description of the

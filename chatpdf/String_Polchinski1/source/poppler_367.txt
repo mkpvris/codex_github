@@ -1,0 +1,52 @@
+                                             Exercises                                          345
+
+Similarly, one finds for a single field ψ that
+                         #              3#                  4
+                             [dψ] exp        d x ψ(ψ = (det ()1/2 ,
+                                                 d
+                                                                                            (A.2.27)
+
+where ( must be antisymmetric. These fermionic path integrals are just
+the inverse of the corresponding bosonic integrals.
+  For finite-dimensional integrals we have to be careful about 2πs,
+  # ∞         # ∞                                      .#        #                  /−1
+                                             1
+         dx         dy exp(2πiλxy) =           =            dψ       dχ exp(λχψ)          . (A.2.28)
+    −∞        −∞                             λ
+Curiously, we can be more cavalier for functional determinants, where
+these can be eliminated by rescaling the fields. Bosonic path integrals
+actually give the absolute values of determinants, while fermionic path
+integrals give the determinant with a sign that depends on the precise
+order of Grassmann factors in the measure. We will fix the sign by hand.4
+   If ( has zero eigenvalues, the path integral vanishes in the fermionic
+case and diverges in the bosonic case. When this occurs there is always a
+good reason, as we will see in practice, and the integrals of interest will
+have appropriate insertions to give a finite result.
+   A useful result about Berezin integrals: from the definition it follows
+that if θ! = θa then dθ! = a−1 dθ. That is, the Jacobian is the inverse of the
+bosonic case. More generally, with bosonic variables xi and Grassmann
+variables θj , under a general change of variables to x!i (x, θ), θj! (x, θ) the
+infinitesimal transformation of the measure has an extra minus sign,
+                                        3&                     & ∂          4
+               m     n          m   n                 ∂
+          δ(d x d θ) = d x d θ                           δxi −       δθj        .           (A.2.29)
+                                             i
+                                                     ∂xi       j
+                                                                 ∂θj
+
+
+                                             Exercises
+A.1 (a) Evaluate the path integral (A.1.33) for the harmonic oscillator by
+expanding [dq]P in a set of periodic eigenfunctions (not by inserting the
+result already obtained for the transition function into the left-hand side).
+Compare with an explicit evaluation of the sum over states (A.1.32).
+(b) Do the same for the antiperiodic path integral (A.1.34).
+A.2 Consider two harmonic oscillators of the same frequency, and form
+the complex coordinate q = 2−1/2 (q1 + iq2 ). Evaluate the following path
+
+4 A fine point: when the world-sheet theory is parity-asymmetric, even the phase of the path
+ integral is ambiguous. The point is that ( is not Hermitian in this case, because the Euclidean
+ adjoint includes a time-reversal (which is the same as a parity flip plus Euclidean rotation). One
+ must instead take the determinant of the Hermitian operator († (, which determines that of (
+ only up to a phase. We will encounter this in section 10.7, for example, where we will have to
+ check that there is a consistent definition of the phase.

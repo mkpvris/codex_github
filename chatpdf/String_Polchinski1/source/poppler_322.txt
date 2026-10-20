@@ -1,0 +1,45 @@
+300                     9 Higher order amplitudes
+
+The vertex V0,3 , the original sphere with three punctures, has r = 1. The
+8 operation gives r = r0 + 1, while the ∞ operation gives r = r1 + r2 . Thus,
+V0,4 and V1,1 both have r = 2. It has been shown that one can construct
+Vg,n inductively in r, and so cover moduli space as claimed.
+   A more explicit construction is as follows (the proofs can be found
+in the references). On any Riemann surface there is a unique minimal
+area metric, defined as the metric of least area subject to the constraint
+that every nontrivial closed curve (those which cannot be continuously
+contracted to a point) has length at least 2π. Every point on the surface
+lies on at least one saturating geodesic, a nontrivial closed curve of length
+exactly 2π. Saturating geodesics that can be continuously deformed into
+one another (that is, are homotopically equivalent) cannot intersect. Each
+set of homotopically equivalent saturating geodesics forms a band (topo-
+logically an annulus) on the surface. The different bands cover the surface
+completely, and may overlap. The height h of such a band is defined as
+the minimum distance between its two bounding geodesics. The idea of a
+minimal area metric can be extended to surfaces with punctures, with the
+specification that a curve that circles a puncture is regarded as nontrivial.
+The minimal area metric near a puncture is of the form dzdz̄/zz̄, a semi-
+infinite cylinder of radius 2π. There are thus two kinds of bands: the finite
+ones in the interior of the surface, and the semi-infinite ones centered on
+the punctures, terminating in the interior of the surface.
+   We can now describe Vg,n in this construction. Take all Riemann
+surfaces with n punctures, with the restriction that the height of any
+internal band, in the minimal area metric, is less than 2π. Cut off the
+semi-infinite cylinders, leaving a stub of length π, and glue in the usual
+unit disk with vertex operator in the end of the stub. With these vertices,
+the Feynman graph sum covers moduli space exactly once. It can be shown
+that the sewing of these minimal area surfaces still produces a minimal
+area surface. Bands of height less than 2π are explicitly included in the
+vertices. Bands of height greater than 2π are produced by the sewing
+operation on the stubs, the resulting height being 2π from the stubs
+plus − ln |q| from the plumbing fixture; this runs from 2π to ∞ when
+q is integrated. The minimum length and maximum height restrictions
+guarantee that degenerating surfaces do not appear in the vertices, so
+they arise only from one or more qs going to zero, as claimed.
+
+
+                      9.4   Sewing and cutting CFTs
+
+We have described higher genus Riemann surfaces as built up by sewing
+together lower genus surfaces. Using the sewing properties of path inte-
+grals, the CFT on the higher genus surface can similarly be related to

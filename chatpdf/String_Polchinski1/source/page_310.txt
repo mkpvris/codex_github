@@ -1,0 +1,51 @@
+288                                                    9                    Higher              order              amplitudes
+
+QB       to                  the                  left                  until                  it                  annihilates⟨⟨Vˆ1|.TheBRSToperatorcommutes
+                      ˜                                                                                                                                   ˜
+with        L0,      L0      and                with                the                vertex                operators,                but                not                withb0andb0.The
+nonzero     commutators     involve[                       ]                       (                                              (                           
+                                        ˜                                                                  ˜                                          ˜
+              ˜      ±L0−1           ±L0−1                                              ±L0−1           ±L0              ˜              ±L0       ±L0−1
+         b0b0z                    ¯z             ,QB           =±b0∂¯z                z              ¯z            ∓b0∂z              z         ¯z                  .
+                                                                                                                                                          (9.1.23)
+These           are           total           derivatives,           illustrating           the           general           principle           (5.4.6)           that
+the       couplings       of       null       states       are       proportional       to       total       derivatives       on       moduli
+space.          We          have          already          seen          an          example          of          this          for          the          massless          vertex
+operators             in             section             6.6.             As             in             that             example,             the             integral             vanishes             by
+the          canceled          propagator          argument.          The          integral          atz                        →      0          is          deﬁned          by
+analytic                     continuation                     from                     large                     positive                     (k1+k2)2.                     The                     surface                     term
+vanishes               identically               there,               and               so               by               analyticity               must               vanish               everywhere.
+The             same             argument             applies             to             the             other             limits             of             moduli             space.
+     For            the            four-particle            amplitude            on            the            sphere,            the            unitarity            condition            is
+         TS     (1;      2;      3;      4)−  TS     (−1;        −2;       −3;      −4)∗
+              2                                    2
+                        ∑       ∫           dd−1k
+                =     i                                  5       T      (1;      2;      5)T     (−5;      3;      4)
+                                       2E5(2π)d−1                   S2                       S2
+                          j5
+                                                                                                         +2permutations
+                                      ∑       ∫           dd−1k
+                =−ie−4λ                                                5      ⟨⟨Vˆ    1|Vˆ     2(1,     1)|Vˆ       5⟩⟨⟨  Vˆ    −5|Vˆ       3(1,     1)|Vˆ      4⟩
+                                                     2E5(2π)d−1
+                                        j5
+                                                                                                         +2permutations                             .     (9.1.24)
+The      intermediate      particle      is      on-shell,      the      sumj5                                    is              over              a              complete              set              of
+physical             states,             and             the             right-hand             side             is             summed             over             all             ways             to             break
+1234             into             pairs:             12–34,             13–24,             and             14–23.
+     Eq.           (9.1.24)           is           what           we           wish           to           show.           Using           the           reality           condition           (9.1.13)
+in            the            matrix            element            (9.1.20),            the            left-hand            side            of            eq.            (9.1.24)            vanishes            in
+the               region              where               thezintegral              converges.              The              nonzero               part               comes              from
+the     i.    introduced             in             the             analytic             continuation,
+                                    1                 −                  1                =2πiδ(k2+m2).                                                   (9.1.25)
+                        k2    +    m2      −    i.          k2    +    m2      +    i.
+Thus,
+     TS     (1;      2;      3;      4)−  TS     (−1;        −2;       −3;      −4)∗
+           2                                   2
+                 16π2i         ∑                           2            2                                                    ii′
+                                                                                ˆ        ˆ                     ˜                    ′    ˆ                   ˆ
+          =          ′  2λ             δm2,m˜2δ(ki             +    mi    )⟨⟨V1|V2(1,                 1)b0b0|i⟩G                ⟨⟨i   |V3(1,1)|V4⟩
+                  α   e          i,i′        i    i
+                                                                                                  +2permutations                              .           (9.1.26)
+The     resemblance     to     the     desired     unitarity     relation     (9.1.24)     is     obvious,     and     a
+little     bookkeeping     and     deﬁnition-chasing     established     the     result.     The     index
+iin       the       sum       (9.1.26),       running       over       a       complete       set       of       string       states,       labels

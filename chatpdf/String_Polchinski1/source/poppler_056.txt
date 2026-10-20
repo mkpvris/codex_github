@@ -1,0 +1,50 @@
+34                          2 Conformal field theory
+
+theorem in complex coordinates,
+                !                               4
+                       2      z         z̄
+                      d z (∂z v + ∂z̄ v ) = i         (v z dz̄ − v z̄ dz) ,     (2.1.9)
+                  R                              ∂R
+
+where the contour integral circles the region R counterclockwise.
+  In this notation the action is
+                                         !
+                                1                      ¯ µ
+                            S=               d2 z ∂X µ ∂X                      (2.1.10)
+                               2πα"
+and the classical equation of motion is
+                                   ¯ µ (z, z̄) = 0 .
+                                  ∂∂X                                          (2.1.11)
+The notation X µ (z, z̄) may seem redundant, since the value of z determines
+the value of z̄, but it is useful to reserve the notation f(z) for fields
+whose equation of motion makes them analytic (equivalently holomorphic)
+functions of z. Writing the equation of motion as
+                                       ¯
+                               ¯ µ ) = ∂(∂X
+                             ∂(∂X           µ
+                                              )=0,                             (2.1.12)
+it follows that ∂X µ is holomorphic and that ∂X  ¯ µ is antiholomorphic
+                                            µ       ¯ µ (z̄).
+(holomorphic in z̄), hence the notations ∂X (z) and ∂X
+   Under the Minkowski continuation σ 2 = iσ 0 , a holomorphic field be-
+comes a function only of σ 0 − σ 1 and an antiholomorphic field a function
+only of σ 0 + σ 1 . We thus use as synonyms
+                          holomorphic = left-moving ,                         (2.1.13a)
+                      antiholomorphic = right-moving .                        (2.1.13b)
+
+This terminology is chosen to have maximal agreement with the literature,
+though for it to hold literally we would need to draw σ 1 increasing from
+right to left. We will tend to use the Euclidean terms early on and shift to
+the Minkowski terms as we discuss more of the spacetime physics.
+   Expectation values are defined by the path integral,
+                                    !
+                      / F[X] , =        [dX] exp(−S )F[X] ,                    (2.1.14)
+
+where F[X] is any functional of X, such as a product of local operators.
+The path integral over X 0 is a wrong-sign Gaussian, so it should be
+understood to be defined by the analytic continuation X 0 → −iX D . The
+reader should not be distracted by this; we will discuss it further in the
+next chapter. We do not normalize / F[X] , by dividing by / 1 ,.
+  The path integral of a total derivative is zero. This is true for ordinary
+bosonic path integrals, which can be regarded as the limit of an infinite
+number of ordinary integrals, as well as for more formal path integrals as

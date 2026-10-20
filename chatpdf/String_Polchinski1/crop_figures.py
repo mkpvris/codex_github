@@ -1,0 +1,75 @@
+from pathlib import Path
+from copy import deepcopy
+from pypdf import PdfReader, PdfWriter
+from pypdf.generic import RectangleObject
+import json
+
+root = Path(__file__).resolve().parent
+reader = PdfReader(root / "source" / "String_Polchinski1_original.pdf")
+items = [
+    {"figure": "1.1", "pdf_page": 25, "bbox_top_origin": [37, 54, 382, 179]},
+    {"figure": "1.2", "pdf_page": 27, "bbox_top_origin": [40, 54, 371, 240]},
+    {"figure": "1.3", "pdf_page": 32, "bbox_top_origin": [35, 56, 384, 224]},
+    {"figure": "2.1", "pdf_page": 59, "bbox_top_origin": [80, 55, 325, 174]},
+    {"figure": "2.2", "pdf_page": 67, "bbox_top_origin": [40, 54, 380, 180]},
+    {"figure": "2.3", "pdf_page": 75, "bbox_top_origin": [60, 55, 360, 205]},
+    {"figure": "2.4", "pdf_page": 77, "bbox_top_origin": [50, 55, 368, 210]},
+    {"figure": "2.5", "pdf_page": 79, "bbox_top_origin": [66, 48, 372, 195]},
+    {"figure": "2.6", "pdf_page": 86, "bbox_top_origin": [85, 55, 332, 275]},
+    {"figure": "2.7", "pdf_page": 91, "bbox_top_origin": [45, 55, 372, 350]},
+    {"figure": "2.8", "pdf_page": 92, "bbox_top_origin": [90, 45, 325, 155]},
+    {"figure": "3.1", "pdf_page": 100, "bbox_top_origin": [78, 57, 340, 209]},
+    {"figure": "3.2", "pdf_page": 100, "bbox_top_origin": [60, 274, 360, 439]},
+    {"figure": "3.3", "pdf_page": 101, "bbox_top_origin": [110, 57, 307, 163]},
+    {"figure": "3.4", "pdf_page": 101, "bbox_top_origin": [57, 219, 359, 406]},
+    {"figure": "3.5", "pdf_page": 102, "bbox_top_origin": [73, 57, 346, 224]},
+    {"figure": "3.6", "pdf_page": 103, "bbox_top_origin": [52, 57, 366, 166]},
+    {"figure": "3.7", "pdf_page": 109, "bbox_top_origin": [74, 57, 340, 209]},
+    {"figure": "3.8", "pdf_page": 120, "bbox_top_origin": [51, 55, 365, 278]},
+    {"figure": "3.9", "pdf_page": 121, "bbox_top_origin": [51, 55, 365, 279]},
+    {"figure": "3.10", "pdf_page": 122, "bbox_top_origin": [43, 56, 374, 140]},
+    {"figure": "5.1", "pdf_page": 169, "bbox_top_origin": [99, 56, 318, 182]},
+    {"figure": "5.2", "pdf_page": 171, "bbox_top_origin": [80, 56, 337, 312]},
+    {"figure": "5.3", "pdf_page": 185, "bbox_top_origin": [118, 59, 300, 238]},
+    {"figure": "6.1", "pdf_page": 189, "bbox_top_origin": [140, 59, 276, 212]},
+    {"figure": "6.2", "pdf_page": 202, "bbox_top_origin": [65, 60, 353, 223]},
+    {"figure": "6.3", "pdf_page": 203, "bbox_top_origin": [55, 61, 360, 143]},
+    {"figure": "6.4", "pdf_page": 207, "bbox_top_origin": [162, 63, 286, 82]},
+    {"figure": "7.1", "pdf_page": 245, "bbox_top_origin": [47, 57, 371, 172]},
+    {"figure": "7.2", "pdf_page": 249, "bbox_top_origin": [47, 57, 371, 119]},
+    {"figure": "7.3", "pdf_page": 250, "bbox_top_origin": [47, 57, 371, 119]},
+    {"figure": "8.1", "pdf_page": 258, "bbox_top_origin": [73, 57, 343, 198]},
+    {"figure": "8.2", "pdf_page": 284, "bbox_top_origin": [75, 57, 342, 262]},
+    {"figure": "8.3", "pdf_page": 288, "bbox_top_origin": [120, 53, 297, 242]},
+    {"figure": "8.4", "pdf_page": 289, "bbox_top_origin": [95, 53, 322, 253]},
+    {"figure": "8.5", "pdf_page": 296, "bbox_top_origin": [138, 58, 280, 245]},
+    {"figure": "8.6", "pdf_page": 300, "bbox_top_origin": [75, 58, 342, 149]},
+    {"figure": "8.7", "pdf_page": 301, "bbox_top_origin": [80, 58, 339, 259]},
+    {"figure": "9.1", "pdf_page": 314, "bbox_top_origin": [51, 56, 366, 156]},
+    {"figure": "9.2", "pdf_page": 317, "bbox_top_origin": [72, 56, 344, 286]},
+    {"figure": "9.3", "pdf_page": 318, "bbox_top_origin": [47, 55, 371, 249]},
+    {"figure": "9.4", "pdf_page": 319, "bbox_top_origin": [57, 57, 362, 236]},
+    {"figure": "9.5", "pdf_page": 320, "bbox_top_origin": [158, 56, 260, 160]},
+    {"figure": "9.6", "pdf_page": 320, "bbox_top_origin": [47, 213, 372, 371]},
+    {"figure": "9.7", "pdf_page": 323, "bbox_top_origin": [55, 56, 365, 274]},
+    {"figure": "9.8", "pdf_page": 329, "bbox_top_origin": [58, 57, 360, 226]},
+    {"figure": "9.9", "pdf_page": 330, "bbox_top_origin": [143, 59, 275, 125]},
+    {"figure": "9.10", "pdf_page": 334, "bbox_top_origin": [79, 59, 339, 138]},
+    {"figure": "9.11", "pdf_page": 335, "bbox_top_origin": [64, 56, 354, 170]},
+    {"figure": "9.12", "pdf_page": 346, "bbox_top_origin": [76, 59, 343, 267]},
+    {"figure": "A.1", "pdf_page": 352, "bbox_top_origin": [112, 61, 309, 214]},
+]
+for item in items:
+    page = deepcopy(reader.pages[item["pdf_page"] - 1])
+    x0, y0, x1, y1 = item["bbox_top_origin"]
+    height = float(page.mediabox.height)
+    rect = RectangleObject([x0, height-y1, x1, height-y0])
+    page.cropbox = rect
+    page.mediabox = rect
+    page.trimbox = rect
+    writer = PdfWriter()
+    writer.add_page(page)
+    target = root / "figures" / ("fig_" + item["figure"].replace(".", "_") + ".pdf")
+    with target.open("wb") as stream:
+        writer.write(stream)
+(root / "qa" / "figure_sources.json").write_text(json.dumps(items, indent=2), encoding="utf-8")

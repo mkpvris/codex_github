@@ -1,0 +1,44 @@
+92                                                                        3                     The              Polyakov              path              integral
+
+It            also            reduces            to            the            earlier            deﬁnition            in            the            limit            of            a            ﬂat            world-sheet.            If
+one                takes          ,g      ab       to                 have                 the                 form                 of                 a                 coordinate                 transformation,                 the                 di!
+invariance              of              the              path              integral              implies              the              conservation              of                                  Tab.
+       In                    the                    following                    analysis,                    we                    will                    at                    ﬁrst                    neglect                    possible                    boundary
+terms.            For            a            Weyl            transformation,            the            deﬁnition            (3.4.4)            of                                                T     ab      means            that
+                                                                             1       ∫
+                        ,W         ⟨     ...       ⟩       =        −                        d2σg             (σ)1/2,ω(σ)⟨Taa(σ)...                                                        ⟩         ,                           (3.4.6)
+                                                      g                   2π                                                                                                                  g
+so              Weyl              invariance              with              the              general              insertions              ‘...                         ’        can        be        phrased        as        the
+operator        statement        that        the        energy-momentum        tensor        is        traceless:
+                                                                                                           Ta            =0?            .                                                                                        (3.4.7)
+                                                                                                                    a
+The                     classical                     action                     is                     Weyl-invariant,                    but                     in                     the                     quantum                     theory                     the
+trace                   might                   be                   nonzero                   because                   we                   have                   not                   managed                   to                   ﬁnd                   a                   fully
+gauge-invariant            regulator.            The            trace            must            be            di!-            and            Poincar                                                          e-invariant,´
+because                 we                 have                 preserved                 these                 symmetries,                 and                 it                 must                 vanish                 in                 the
+ﬂat               case               because               we               know               from               the               previous               chapter               that               that               theory               is
+conformally             invariant.             This             leaves             only             one             possibility,
+                                                                                                         T     aa      =       a1R                                                                                               (3.4.8)
+
+for                 some                 constant               a1,with                       Ragain      the      world-sheet      Ricci      scalar.      Terms
+with       more       than       two       derivatives       are       forbidden       for       dimensional       reasons.
+In       units       of       world-sheet       length,gab                                                                 and              Xµ           are                   both                    dimensionless,                    so
+the                 constant                 a1        in                 eq.                 (3.4.8)                 is                 dimensionless                 as                 well.                 Terms                 with                 more
+derivatives                   would                   have                   a                   coeﬃcient                   with                   positive                   powers                   of                   the                   cuto!
+length               used               to               deﬁne               the               path               integral,               and               so               vanish               in               the               limit               where
+the             cuto!             is             taken             to             zero.
+
+                                                                     Calculation              of              the              Weyl              anomaly
+The             possible             obstruction             to             a             gauge-invariant             theory             has             been             reduced             to
+the                single                number                 a1.                In                fact,                this                number                is                proportional                to                something
+we                   have                   already                   calculated,                   the          central                    cha rge                c      of                    the                    CFT                    on                    a                    ﬂat
+world-sheet.                   Both                           a1         and            c      are                  related                  to                  the                  two-point                  function                  of                  the
+energy-momentum                      tensor,                      though                      to                      di!erent                      components.                      To                      get                      the
+precise                relation                between                them                we                will                need                to                use                the                di!                invariance,                as
+follows.
+       In              conformal              gauge,
+                                                                                                 T             =        a1g              R.                                                                                      (3.4.9)
+                                                                                                       z¯z               2          z¯z
+Taking             the             covariant             derivative,
+                                                                       ∇¯zT                 =        a1∇¯z(g                      R)=                a1∂            R,                                                       (3.4.10)
+                                                                                    ¯zz                2                    z¯z                        2         z

@@ -1,0 +1,52 @@
+                      8.2 Toroidal compactification in CFT                                           237
+
+                                  The partition function
+The partition function for X is now
+                     0            1
+      (qq̄)−1/24 Tr q L0 q̄ L̃0
+                         ∞
+                         (        % 2       % 2
+          = |.(τ)|−2         q α pL /4 q̄ α pR /4
+                      n,w=−∞
+                         ∞
+                                       >          6                   7                 ?
+                     −2
+                        (                             α% n2 w 2 R 2
+          = |.(τ)|           exp −πτ2                      +              + 2πiτ1 nw        .     (8.2.9)
+                      n,w=−∞                           R2     α%
+
+The oscillator sum is the same as in the noncompact case, while the
+momentum integration is replaced by a sum over n and w. Modular
+invariance is not manifest, but can be made so by using the Poisson
+resummation formula,
+     ∞
+     (                                                    ∞
+                                                          (                        
+                                                                      π(m − b)2
+           exp(−πan2 + 2πibn) = a−1/2                         exp −             .                (8.2.10)
+    n=−∞                                               m=−∞               a
+The partition function becomes
+                                        ∞
+                                        (             2                     3
+                                                          πR 2 |m − wτ|2
+                     2πRZX (τ)               exp −                              .                (8.2.11)
+                                      m,w=−∞                    α% τ2
+
+Here ZX (τ) is the modular-invariant expression (7.2.9) from the noncom-
+pact theory. The sum is obviously invariant under τ → τ + 1, by making a
+change of variables m → m + w. It is also invariant under τ → −1/τ with
+m → −w, w → m.
+   The expression (8.2.11) has a simple path integral interpretation. Sum-
+ming over all genus one world-sheets in a periodic spacetime, each non-
+trivial closed curve on the world-sheet can be wound around the compact
+direction,
+                         X(, 1 + 2π, , 2 ) = X(, 1 , , 2 ) + 2πwR ,                             (8.2.12a)
+                X(, 1 + 2πτ1 , , 2 + 2πτ2 ) = X(, 1 , , 2 ) + 2πmR .                            (8.2.12b)
+That is, the path integral breaks up into topologically distinct sectors
+labeled by w and m. The Gaussian path integration can be done by the
+usual strategy of writing X as a classical solution of the correct periodicity,
+                         Xcl = , 1 wR + , 2 (m − wτ1 )R/τ2 ,                                     (8.2.13)
+plus a quantum piece with periodic boundary conditions. The action
+separates into a classical piece plus a quantum piece. The path integral
+over the quantum piece is just as in the noncompact case, while the
+classical action appears as the exponent in eq. (8.2.11). The e!ect of the

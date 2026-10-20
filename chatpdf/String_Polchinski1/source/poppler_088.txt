@@ -1,0 +1,44 @@
+66                        2 Conformal field theory
+
+property (2.5.17) of the ghost number current,
+                                           ∂2 w          q0
+                 (∂z w)jw (w) = jz (z) + q0 z = jz (z) −    ,          (2.8.13)
+                                           ∂z w          z
+where q0 = λ − 12 = 32 . The ghost number of states is conventionally
+defined by the cylindrical frame expression N g , eq. (2.7.22), while the
+contour argument of figure 2.6 relates the ghost number of the vertex
+operator to the radial frame charge
+                                    4
+                                1
+                       Qg ≡          dz jz = N g + q0 .              (2.8.14)
+                               2πi
+This applies to other charges as well; for a tensor current the charges of
+a state and the corresponding operator are equal.
+   Most of the above can be extended to the βγ theory, but there are
+certain complications in the superstring so we defer this to chapter 10.
+   All the ideas of this section extend to the open string. The semi-infinite
+strip
+                        0 ≤ Re w ≤ π ,       Im w ≤ 0 ,                (2.8.15)
+maps to a half-disk, the intersection of the upper half-plane and the unit
+circle, under z = − exp(−iw). The initial state again maps to the origin,
+which is on the boundary, so there is an isomorphism
+     local operators on the boundary ↔ states on the interval .        (2.8.16)
+The details, which are parallel to the above, are left for the reader.
+Again the doubling trick, extending the fields into the lower half-plane by
+holomorphicity, is useful in making the contour arguments.
+
+                           Path integral derivation
+The state–operator isomorphism is an important but unfamiliar idea and
+so it is useful to give also a more explicit path integral derivation. Consider
+a unit disk in the z-plane, with local operator A at the origin and with
+the path integral fields / fixed to some specific boundary values /b on
+the unit circle. The path integral over the fields /i on the interior of the
+disk with /b held fixed produces some functional (A [/b ],
+                               !
+                  (A [/b ] =       [d/i ]/b exp(−S [/i ])A(0) .        (2.8.17)
+
+A functional of the fields is the Schrödinger representation of a state, so
+this is a mapping from operators to states. The Schrödinger representa-
+tion, which assigns a complex amplitude to each field configuration, has
+many uses. It is often omitted from field theory texts, the Fock space
+representation being emphasized.
