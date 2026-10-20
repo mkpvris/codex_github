@@ -1,0 +1,961 @@
+{
+  "revision_id": 130,
+  "updated": "2024-12-19T22:56:25.964339+00:00",
+  "uuid": "c7c1fa99-276e-444d-9d4c-ca994ba7d57f",
+  "id": "1720817",
+  "created": "2019-02-20T00:00:00+00:00",
+  "metadata": {
+    "citation_count_without_self_citations": 42,
+    "documents": [
+      {
+        "key": "028cc69218cdd07a507896a06c01316c",
+        "url": "https://inspirehep.net/files/028cc69218cdd07a507896a06c01316c",
+        "source": "SCOAP3",
+        "filename": "scoap3-fulltext.pdf",
+        "description": "Article from SCOAP3"
+      }
+    ],
+    "publication_info": [
+      {
+        "year": 2019,
+        "artid": "015048",
+        "material": "publication",
+        "journal_issue": "1",
+        "journal_title": "Phys.Rev.D",
+        "journal_volume": "100",
+        "pubinfo_freetext": "Phys. Rev. D 100, 015048 (2019)"
+      }
+    ],
+    "citation_count": 59,
+    "core": true,
+    "dois": [
+      {
+        "value": "10.1103/PhysRevD.100.015048"
+      },
+      {
+        "value": "10.1103/PhysRevD.100.015048",
+        "source": "arXiv",
+        "material": "publication"
+      }
+    ],
+    "titles": [
+      {
+        "title": "Relaxation of the Cosmological Constant",
+        "source": "arXiv"
+      }
+    ],
+    "$schema": "https://inspirehep.net/schemas/records/hep.json",
+    "authors": [
+      {
+        "uuid": "06bb2643-9787-4596-abd8-7292a1e55e01",
+        "record": {
+          "$ref": "https://inspirehep.net/api/authors/1034461"
+        },
+        "full_name": "Graham, Peter W.",
+        "affiliations": [
+          {
+            "value": "Stanford U., ITP",
+            "record": {
+              "$ref": "https://inspirehep.net/api/institutions/903221"
+            }
+          }
+        ],
+        "signature_block": "GRANp",
+        "curated_relation": true,
+        "raw_affiliations": [
+          {
+            "value": "Stanford Institute for Theoretical Physics, Department of Physics, Stanford University, 94305 Stanford"
+          }
+        ]
+      },
+      {
+        "uuid": "453f80da-be2c-44d6-85cd-40783716a79d",
+        "record": {
+          "$ref": "https://inspirehep.net/api/authors/1003693"
+        },
+        "full_name": "Kaplan, David E.",
+        "affiliations": [
+          {
+            "value": "Johns Hopkins U.",
+            "record": {
+              "$ref": "https://inspirehep.net/api/institutions/902901"
+            }
+          }
+        ],
+        "signature_block": "CAPLANd",
+        "curated_relation": true,
+        "raw_affiliations": [
+          {
+            "value": "Department of Physics & Astronomy, The Johns Hopkins University, 21218 Baltimore"
+          }
+        ]
+      },
+      {
+        "uuid": "cf8a15d1-f8d1-450e-8331-51dcc50ef1f5",
+        "record": {
+          "$ref": "https://inspirehep.net/api/authors/1051391"
+        },
+        "full_name": "Rajendran, Surjeet",
+        "affiliations": [
+          {
+            "value": "Johns Hopkins U.",
+            "record": {
+              "$ref": "https://inspirehep.net/api/institutions/902901"
+            }
+          },
+          {
+            "value": "UC, Berkeley",
+            "record": {
+              "$ref": "https://inspirehep.net/api/institutions/903299"
+            }
+          }
+        ],
+        "signature_block": "RAJANDRANs",
+        "curated_relation": true,
+        "raw_affiliations": [
+          {
+            "value": "Department of Physics & Astronomy, The Johns Hopkins University, 21218 Baltimore"
+          },
+          {
+            "value": "Berkeley Center for Theoretical Physics, Department of Physics, University of California, 94720 Berkeley"
+          }
+        ]
+      }
+    ],
+    "curated": true,
+    "figures": [
+      {
+        "key": "e08f6b8136fba182a2cbc47be599f1bd",
+        "url": "https://inspirehep.net/files/e08f6b8136fba182a2cbc47be599f1bd",
+        "source": "arxiv",
+        "caption": "Evolution of $\\Phi$.   In the upper figure, the field rolls from (a) where Hubble friction dominates and the background temperature grows quickly, to (b) where thermal friction dominates and the temperature grow very slowly, to (c) where $\\Phi$'s rolling is dominantly suppressed by coherent production of Abelian fields and the temperature drops.  At point (d), the temperature drops to the confinement scale of the non-Abelian group and barriers form.",
+        "filename": "CC_roll_fig2.png"
+      },
+      {
+        "key": "f671d1cb2432667041c0d405808b85fc",
+        "url": "https://inspirehep.net/files/f671d1cb2432667041c0d405808b85fc",
+        "source": "arxiv",
+        "caption": "Evolution of $\\phi$.  The field starts rolling from point 1 with vacuum energy $\\Lambda_1^4$.  At point 2, $\\phi$'s kinetic energy equals its potential energy, $\\Lambda_2^4$, a distance $\\sim M_p$ away from the origin.  At point 3, the Hubble scale passes through zero and the vacuum energy is $\\sim-\\Lambda_2^4$. The point 4 represents the position of $\\phi$ after a period of kinetic-energy dominated contraction, where the vacuum energy as decreased to $\\sim -\\Lambda_2^4 \\log{(1/a_{rh})}$ and $a_{rh}$ is the scale factor at reheating.  At point 5, the reheated universe has expanded until today and $\\phi$ has moved a negligible amount from point 4.",
+        "filename": "CC_roll_fig1.png"
+      },
+      {
+        "key": "b9d8ecd4f0cdefaf56fbf7d8549a29d5",
+        "url": "https://inspirehep.net/files/b9d8ecd4f0cdefaf56fbf7d8549a29d5",
+        "source": "arxiv",
+        "caption": "A sketch of the potential in equation \\eqref{eqn: positive CC}.  The blue line is the potential at low temperatures, the orange line is the potential at high temperatures where only the second term in equation \\eqref{eqn: positive CC} is on.  This axion begins in some random minimum in its potential and then ends up in a different one.  The vacuum energies of the minima are split by $ {\\rm meV}^4$ so this can easily raise the negative CC left after relaxation to a positive CC.",
+        "filename": "PositiveCC-fig.png"
+      }
+    ],
+    "license": [
+      {
+        "url": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+        "license": "arXiv nonexclusive-distrib 1.0",
+        "material": "preprint"
+      },
+      {
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "license": "Creative Commons Attribution 4.0 International",
+        "imposing": "APS"
+      }
+    ],
+    "texkeys": [
+      "Graham:2019bfu"
+    ],
+    "citeable": true,
+    "imprints": [
+      {
+        "date": "2019-07-31"
+      }
+    ],
+    "keywords": [
+      {
+        "value": "Beyond the standard model",
+        "source": "publisher"
+      },
+      {
+        "value": "field theory: scalar",
+        "schema": "INSPIRE"
+      },
+      {
+        "value": "dark energy: equation of state",
+        "schema": "INSPIRE"
+      },
+      {
+        "value": "violation: Lorentz",
+        "schema": "INSPIRE"
+      },
+      {
+        "value": "space-time: expansion",
+        "schema": "INSPIRE"
+      },
+      {
+        "value": "cosmological constant",
+        "schema": "INSPIRE"
+      },
+      {
+        "value": "cosmic background radiation",
+        "schema": "INSPIRE"
+      },
+      {
+        "value": "critical phenomena",
+        "schema": "INSPIRE"
+      },
+      {
+        "value": "birefringence",
+        "schema": "INSPIRE"
+      },
+      {
+        "value": "reheating",
+        "schema": "INSPIRE"
+      }
+    ],
+    "refereed": true,
+    "abstracts": [
+      {
+        "value": "We present a model that naturally tunes a large positive cosmological constant to a small cosmological constant. A slowly rolling scalar field decreases the cosmological constant to a small negative value, causing the universe to contract, thus reheating it. An expanding universe with a small positive cosmological constant can be obtained, respectively, by coupling this solution to any model of a cosmological bounce and coupling the scalar field to a sector that undergoes a technically natural phase transition at the meV scale. A robust prediction of this model is a rolling scalar field today with some coupling to the standard model. This can potentially be experimentally probed in a variety of cosmological and terrestrial experiments, such as probes of the equation of state of dark energy, birefringence in the cosmic microwave background and terrestrial tests of Lorentz violation.",
+        "source": "arXiv"
+      }
+    ],
+    "copyright": [
+      {
+        "year": 2019,
+        "holder": "authors",
+        "material": "publication"
+      }
+    ],
+    "references": [
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/15763"
+        },
+        "reference": {
+          "dois": [
+            "10.1016/0370-2693(85)90459-9"
+          ],
+          "label": "1",
+          "authors": [
+            {
+              "full_name": "Abbott, L.F."
+            }
+          ],
+          "publication_info": {
+            "year": 1985,
+            "artid": "427",
+            "page_start": "427",
+            "journal_title": "Phys.Lett.B",
+            "journal_volume": "150"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/199462"
+        },
+        "reference": {
+          "dois": [
+            "10.1103/PhysRevLett.52.1461"
+          ],
+          "label": "2",
+          "authors": [
+            {
+              "full_name": "Banks, T."
+            }
+          ],
+          "publication_info": {
+            "year": 1984,
+            "artid": "1461",
+            "page_start": "1461",
+            "journal_title": "Phys.Rev.Lett.",
+            "journal_volume": "52"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/744927"
+        },
+        "reference": {
+          "dois": [
+            "10.1088/1475-7516/2007/11/010"
+          ],
+          "label": "3",
+          "authors": [
+            {
+              "full_name": "Creminelli, P."
+            },
+            {
+              "full_name": "Senatore, L."
+            }
+          ],
+          "publication_info": {
+            "year": 2020,
+            "artid": "010",
+            "page_start": "010",
+            "journal_title": "JCAP",
+            "journal_volume": "11"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/1365106"
+        },
+        "reference": {
+          "dois": [
+            "10.1103/PhysRevLett.115.221801"
+          ],
+          "label": "4",
+          "authors": [
+            {
+              "full_name": "Graham, P.W."
+            },
+            {
+              "full_name": "Kaplan, D.E."
+            },
+            {
+              "full_name": "Rajendran, S."
+            }
+          ],
+          "publication_info": {
+            "year": 2015,
+            "artid": "221801",
+            "journal_title": "Phys.Rev.Lett.",
+            "journal_volume": "115"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/566259"
+        },
+        "reference": {
+          "dois": [
+            "10.1103/PhysRevD.65.126003"
+          ],
+          "label": "5",
+          "authors": [
+            {
+              "full_name": "Steinhardt, P.J."
+            },
+            {
+              "full_name": "Turok, N."
+            }
+          ],
+          "publication_info": {
+            "year": 2002,
+            "artid": "126003",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "65"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/565545"
+        },
+        "reference": {
+          "dois": [
+            "10.1126/science.1070462"
+          ],
+          "label": "6",
+          "authors": [
+            {
+              "full_name": "Steinhardt, P.J."
+            },
+            {
+              "full_name": "Turok, N."
+            }
+          ],
+          "publication_info": {
+            "year": 2002,
+            "artid": "1436",
+            "page_start": "1436",
+            "journal_title": "Science",
+            "journal_volume": "296"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/1622224"
+        },
+        "reference": {
+          "dois": [
+            "10.1103/PhysRevD.97.044003"
+          ],
+          "label": "7",
+          "authors": [
+            {
+              "full_name": "Graham, P.W."
+            },
+            {
+              "full_name": "Kaplan, D.E."
+            },
+            {
+              "full_name": "Rajendran, S."
+            }
+          ],
+          "publication_info": {
+            "year": 2018,
+            "artid": "044003",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "97"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/829671"
+        },
+        "reference": {
+          "dois": [
+            "10.1103/PhysRevD.81.043534"
+          ],
+          "label": "8",
+          "authors": [
+            {
+              "full_name": "Anber, M.M."
+            },
+            {
+              "full_name": "Sorbo, L."
+            }
+          ],
+          "publication_info": {
+            "year": 2010,
+            "artid": "043534",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "81"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/1474403"
+        },
+        "reference": {
+          "dois": [
+            "10.1007/JHEP12(2016)101"
+          ],
+          "label": "9",
+          "authors": [
+            {
+              "full_name": "Hook, A."
+            },
+            {
+              "full_name": "Marques-Tavares, G."
+            }
+          ],
+          "publication_info": {
+            "year": 2016,
+            "artid": "101",
+            "page_start": "101",
+            "journal_title": "JHEP",
+            "journal_volume": "12"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/342918"
+        },
+        "reference": {
+          "dois": [
+            "10.1016/0550-3213(93)90620-5"
+          ],
+          "label": "10",
+          "authors": [
+            {
+              "full_name": "Campbell, B.A."
+            },
+            {
+              "full_name": "Kaloper, N."
+            },
+            {
+              "full_name": "Madden, R."
+            },
+            {
+              "full_name": "Olive, K.A."
+            }
+          ],
+          "publication_info": {
+            "year": 1993,
+            "artid": "137",
+            "page_start": "137",
+            "journal_title": "Nucl.Phys.B",
+            "journal_volume": "399"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/1468954"
+        },
+        "reference": {
+          "dois": [
+            "10.1007/978-3-319-31933-9"
+          ],
+          "label": "11",
+          "authors": [
+            {
+              "full_name": "Laine, M."
+            },
+            {
+              "full_name": "Vuorinen, A."
+            }
+          ],
+          "publication_info": {
+            "year": 2016,
+            "artid": "1",
+            "page_start": "1",
+            "journal_title": "Lect.Notes Phys.",
+            "journal_volume": "925"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/1682902"
+        },
+        "reference": {
+          "label": "12",
+          "authors": [
+            {
+              "full_name": "Aghanim, N."
+            }
+          ],
+          "arxiv_eprint": "1807.06209",
+          "collaborations": [
+            "Planck Collaboration"
+          ]
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/1682899"
+        },
+        "reference": {
+          "label": "13",
+          "authors": [
+            {
+              "full_name": "Akrami, Y."
+            }
+          ],
+          "arxiv_eprint": "1807.06211",
+          "collaborations": [
+            "Planck Collaboration"
+          ]
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/659351"
+        },
+        "reference": {
+          "dois": [
+            "10.1063/1.1784301"
+          ],
+          "misc": [
+            "No, 40"
+          ],
+          "label": "14",
+          "authors": [
+            {
+              "full_name": "Pospelov, M."
+            },
+            {
+              "full_name": "Romalis, M."
+            }
+          ],
+          "publication_info": {
+            "year": 2004,
+            "artid": "40",
+            "page_start": "40",
+            "journal_title": "Phys.Today",
+            "journal_volume": "57"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/1698399"
+        },
+        "reference": {
+          "dois": [
+            "10.1103/PhysRevD.99.035025"
+          ],
+          "label": "15",
+          "authors": [
+            {
+              "full_name": "Benato, G."
+            },
+            {
+              "full_name": "Drobizhev, A."
+            },
+            {
+              "full_name": "Rajendran, S."
+            },
+            {
+              "full_name": "Ramani, H."
+            }
+          ],
+          "publication_info": {
+            "year": 2019,
+            "artid": "035025",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "99"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/263386"
+        },
+        "reference": {
+          "dois": [
+            "10.1103/RevModPhys.61.1"
+          ],
+          "label": "16",
+          "authors": [
+            {
+              "full_name": "Weinberg, S."
+            }
+          ],
+          "publication_info": {
+            "year": 1989,
+            "artid": "1",
+            "page_start": "1",
+            "journal_title": "Rev.Mod.Phys.",
+            "journal_volume": "61"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/1300124"
+        },
+        "reference": {
+          "dois": [
+            "10.1016/j.physrep.2014.12.004"
+          ],
+          "label": "17",
+          "authors": [
+            {
+              "full_name": "Battefeld, D."
+            },
+            {
+              "full_name": "Peter, P."
+            }
+          ],
+          "publication_info": {
+            "year": 2015,
+            "artid": "1",
+            "page_start": "1",
+            "journal_title": "Phys.Rept.",
+            "journal_volume": "571"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/719001"
+        },
+        "reference": {
+          "dois": [
+            "10.1088/1126-6708/2006/12/080"
+          ],
+          "label": "18",
+          "authors": [
+            {
+              "full_name": "Creminelli, P."
+            },
+            {
+              "full_name": "Luty, M.A."
+            },
+            {
+              "full_name": "Nicolis, A."
+            },
+            {
+              "full_name": "Senatore, L."
+            }
+          ],
+          "publication_info": {
+            "year": 2006,
+            "artid": "080",
+            "page_start": "080",
+            "journal_title": "JHEP",
+            "journal_volume": "12"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/715114"
+        },
+        "reference": {
+          "dois": [
+            "10.4213/tmf5532"
+          ],
+          "label": "19",
+          "authors": [
+            {
+              "full_name": "Rubakov, V.A."
+            }
+          ],
+          "publication_info": {
+            "year": 2006,
+            "artid": "409",
+            "page_start": "409",
+            "journal_title": "Teor.Mat.Fiz.",
+            "journal_volume": "149"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/715114"
+        },
+        "reference": {
+          "dois": [
+            "10.1007/s11232-006-0149-7"
+          ],
+          "label": "19",
+          "authors": [
+            {
+              "full_name": "Rubakov, V.A."
+            }
+          ],
+          "publication_info": {
+            "year": 2006,
+            "artid": "1651",
+            "page_start": "1651",
+            "journal_title": "Theor.Math.Phys.",
+            "journal_volume": "149"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/860059"
+        },
+        "reference": {
+          "dois": [
+            "10.1088/1475-7516/2010/11/021"
+          ],
+          "label": "20",
+          "authors": [
+            {
+              "full_name": "Creminelli, P."
+            },
+            {
+              "full_name": "Nicolis, A."
+            },
+            {
+              "full_name": "Trincherini, E."
+            }
+          ],
+          "publication_info": {
+            "year": 2020,
+            "artid": "021",
+            "page_start": "021",
+            "journal_title": "JCAP",
+            "journal_volume": "11"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/1277883"
+        },
+        "reference": {
+          "dois": [
+            "10.3367/UFNr.0184.201402b.0137"
+          ],
+          "label": "21",
+          "authors": [
+            {
+              "full_name": "Rubakov, V.A."
+            }
+          ],
+          "publication_info": {
+            "year": 2014,
+            "artid": "137",
+            "page_start": "137",
+            "journal_title": "Usp.Fiz.Nauk",
+            "journal_volume": "184"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/1277883"
+        },
+        "reference": {
+          "dois": [
+            "10.3367/UFNe.0184.201402b.0137"
+          ],
+          "label": "21",
+          "authors": [
+            {
+              "full_name": "Rubakov, V.A."
+            }
+          ],
+          "publication_info": {
+            "year": 2014,
+            "artid": "128",
+            "page_start": "128",
+            "journal_title": "Phys.Usp.",
+            "journal_volume": "57"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/1279001"
+        },
+        "reference": {
+          "label": "22",
+          "authors": [
+            {
+              "full_name": "Balasubramanian, K."
+            },
+            {
+              "full_name": "Dabholkar, S.P."
+            }
+          ],
+          "arxiv_eprint": "1401.7015"
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/1482714"
+        },
+        "reference": {
+          "dois": [
+            "10.1007/JHEP12(2016)022"
+          ],
+          "label": "23",
+          "authors": [
+            {
+              "full_name": "Alberte, L."
+            },
+            {
+              "full_name": "Creminelli, P."
+            },
+            {
+              "full_name": "Khmelnitsky, A."
+            },
+            {
+              "full_name": "Pirtskhalava, D."
+            },
+            {
+              "full_name": "Trincherini, E."
+            }
+          ],
+          "publication_info": {
+            "year": 2016,
+            "artid": "022",
+            "page_start": "022",
+            "journal_title": "JHEP",
+            "journal_volume": "12"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/1647093"
+        },
+        "reference": {
+          "label": "24",
+          "authors": [
+            {
+              "full_name": "Rangarajan, R."
+            }
+          ],
+          "arxiv_eprint": "1801.02648"
+        },
+        "curated_relation": false
+      }
+    ],
+    "public_notes": [
+      {
+        "value": "13 pages, 3 figures",
+        "source": "arXiv"
+      }
+    ],
+    "arxiv_eprints": [
+      {
+        "value": "1902.06793",
+        "categories": [
+          "hep-ph",
+          "gr-qc",
+          "hep-th"
+        ]
+      }
+    ],
+    "document_type": [
+      "article"
+    ],
+    "preprint_date": "2019-02-18",
+    "control_number": 1720817,
+    "legacy_version": "20200619225752.0",
+    "number_of_pages": 10,
+    "inspire_categories": [
+      {
+        "term": "Phenomenology-HEP",
+        "source": "arxiv"
+      },
+      {
+        "term": "Gravitation and Cosmology",
+        "source": "arxiv"
+      },
+      {
+        "term": "Theory-HEP",
+        "source": "arxiv"
+      },
+      {
+        "term": "Phenomenology-HEP"
+      },
+      {
+        "term": "Gravitation and Cosmology"
+      },
+      {
+        "term": "Theory-HEP"
+      }
+    ],
+    "legacy_creation_date": "2019-02-20"
+  },
+  "links": {
+    "bibtex": "https://inspirehep.net/api/literature/1720817?format=bibtex",
+    "latex-eu": "https://inspirehep.net/api/literature/1720817?format=latex-eu",
+    "latex-us": "https://inspirehep.net/api/literature/1720817?format=latex-us",
+    "json": "https://inspirehep.net/api/literature/1720817?format=json",
+    "json-expanded": "https://inspirehep.net/api/literature/1720817?format=json-expanded",
+    "cv": "https://inspirehep.net/api/literature/1720817?format=cv",
+    "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1720817"
+  }
+}

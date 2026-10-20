@@ -1,0 +1,296 @@
+{
+  "links": {
+    "bibtex": "https://inspirehep.net/api/literature/22604?format=bibtex",
+    "latex-eu": "https://inspirehep.net/api/literature/22604?format=latex-eu",
+    "latex-us": "https://inspirehep.net/api/literature/22604?format=latex-us",
+    "json": "https://inspirehep.net/api/literature/22604?format=json",
+    "json-expanded": "https://inspirehep.net/api/literature/22604?format=json-expanded",
+    "cv": "https://inspirehep.net/api/literature/22604?format=cv",
+    "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A22604"
+  },
+  "uuid": "5b9d147a-b2fe-47cd-9fd5-fc460cf95c56",
+  "metadata": {
+    "citation_count": 1164,
+    "citation_count_without_self_citations": 1157,
+    "publication_info": [
+      {
+        "year": 1987,
+        "artid": "2607",
+        "page_start": "2607",
+        "journal_title": "Phys.Rev.Lett.",
+        "journal_record": {
+          "$ref": "https://inspirehep.net/api/journals/1214495"
+        },
+        "journal_volume": "59"
+      }
+    ],
+    "report_numbers": [
+      {
+        "value": "UTTG-06-87"
+      }
+    ],
+    "core": true,
+    "dois": [
+      {
+        "value": "10.1103/PhysRevLett.59.2607"
+      }
+    ],
+    "titles": [
+      {
+        "title": "Anthropic Bound on the Cosmological Constant"
+      }
+    ],
+    "$schema": "https://inspirehep.net/schemas/records/hep.json",
+    "authors": [
+      {
+        "ids": [
+          {
+            "value": "INSPIRE-00135339",
+            "schema": "INSPIRE ID"
+          }
+        ],
+        "uuid": "6b777f6e-f2c5-4cd8-8d42-803179859906",
+        "record": {
+          "$ref": "https://inspirehep.net/api/authors/983868"
+        },
+        "full_name": "Weinberg, Steven",
+        "affiliations": [
+          {
+            "value": "Texas U.",
+            "record": {
+              "$ref": "https://inspirehep.net/api/institutions/903264"
+            }
+          }
+        ],
+        "signature_block": "WANBARGs",
+        "curated_relation": true
+      }
+    ],
+    "curated": true,
+    "texkeys": [
+      "Weinberg:1987dv"
+    ],
+    "citeable": true,
+    "keywords": [
+      {
+        "value": "COSMOLOGICAL CONSTANT",
+        "schema": "INSPIRE"
+      },
+      {
+        "value": "UPPER LIMIT",
+        "schema": "INSPIRE"
+      },
+      {
+        "value": "dark matter",
+        "schema": "INSPIRE"
+      },
+      {
+        "value": "ASTROPHYSICS: CRITICAL PHENOMENA",
+        "schema": "INSPIRE"
+      },
+      {
+        "value": "GRAVITATION: BOUND STATE",
+        "schema": "INSPIRE"
+      },
+      {
+        "value": "MODEL: INFLATION",
+        "schema": "INSPIRE"
+      },
+      {
+        "value": "general relativity",
+        "schema": "INSPIRE"
+      },
+      {
+        "value": "NUMERICAL CALCULATIONS",
+        "schema": "INSPIRE"
+      }
+    ],
+    "refereed": true,
+    "abstracts": [
+      {
+        "value": "In recent cosmological models, there is an \"anthropic\" upper bound on the cosmological constant Λ. It is argued here that in universes that do not recollapse, the only such bound on Λ is that it should not be so large as to prevent the formation of gravitationally bound states. It turns out that the bound is quite large. A cosmological constant that is within 1 or 2 orders of magnitude of its upper bound would help with the missing-mass and age problems, but may be ruled out by galaxy number counts. If so, we may conclude that anthropic considerations do not explain the smallness of the cosmological constant.",
+        "source": "APS"
+      }
+    ],
+    "references": [
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/51414"
+        },
+        "reference": {
+          "publication_info": {
+            "artid": "316",
+            "page_start": "316",
+            "journal_title": "JETP Lett.",
+            "journal_volume": "6"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/202556"
+        },
+        "reference": {
+          "publication_info": {
+            "artid": "332",
+            "page_start": "332",
+            "journal_title": "Nucl.Phys.B",
+            "journal_volume": "249"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/15763"
+        },
+        "reference": {
+          "publication_info": {
+            "artid": "427",
+            "page_start": "427",
+            "journal_title": "Phys.Lett.B",
+            "journal_volume": "150"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/208622"
+        },
+        "reference": {
+          "publication_info": {
+            "artid": "415",
+            "page_start": "415",
+            "journal_title": "Phys.Lett.B",
+            "journal_volume": "143"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/152347"
+        },
+        "reference": {
+          "publication_info": {
+            "artid": "3305",
+            "page_start": "3305",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "21"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "publication_info": {
+            "artid": "202",
+            "page_start": "202",
+            "journal_title": "Phys.Scripta",
+            "journal_volume": "15"
+          }
+        }
+      },
+      {
+        "reference": {
+          "publication_info": {
+            "artid": "859",
+            "page_start": "859",
+            "journal_title": "Astrophys.J.",
+            "journal_volume": "147"
+          }
+        }
+      },
+      {
+        "reference": {
+          "publication_info": {
+            "artid": "310",
+            "page_start": "310",
+            "journal_title": "Ann.Rev.Astron.Astrophys.",
+            "journal_volume": "23"
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/1758202"
+        },
+        "reference": {
+          "publication_info": {
+            "artid": "468",
+            "page_start": "468",
+            "journal_title": "Astrophys.J.",
+            "journal_volume": "268"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/211166"
+        },
+        "reference": {
+          "publication_info": {
+            "artid": "439",
+            "page_start": "439",
+            "journal_title": "Astrophys.J.",
+            "journal_volume": "284"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/244374"
+        },
+        "reference": {
+          "publication_info": {
+            "artid": "2865",
+            "page_start": "2865",
+            "journal_title": "Phys.Rev.Lett.",
+            "journal_volume": "57"
+          }
+        },
+        "curated_relation": false
+      }
+    ],
+    "document_type": [
+      "article"
+    ],
+    "preprint_date": "1987-10-27",
+    "control_number": 22604,
+    "legacy_version": "20170605233804.0",
+    "number_of_pages": 16,
+    "inspire_categories": [
+      {
+        "term": "Astrophysics",
+        "source": "curator"
+      },
+      {
+        "term": "Gravitation and Cosmology",
+        "source": "curator"
+      }
+    ],
+    "legacy_creation_date": "1987-10-27",
+    "external_system_identifiers": [
+      {
+        "value": "5716119",
+        "schema": "OSTI"
+      },
+      {
+        "value": "1987PhRvL..59.2607W",
+        "schema": "ADS"
+      },
+      {
+        "value": "SPIRES-1751964",
+        "schema": "SPIRES"
+      }
+    ]
+  },
+  "id": "22604",
+  "created": "1987-10-27T00:00:00+00:00",
+  "revision_id": 99,
+  "updated": "2023-03-07T05:27:18.755134+00:00"
+}

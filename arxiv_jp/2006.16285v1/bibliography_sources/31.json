@@ -1,0 +1,903 @@
+{
+  "created": "1998-06-02T00:00:00+00:00",
+  "revision_id": 98,
+  "links": {
+    "bibtex": "https://inspirehep.net/api/literature/430948?format=bibtex",
+    "latex-eu": "https://inspirehep.net/api/literature/430948?format=latex-eu",
+    "latex-us": "https://inspirehep.net/api/literature/430948?format=latex-us",
+    "json": "https://inspirehep.net/api/literature/430948?format=json",
+    "json-expanded": "https://inspirehep.net/api/literature/430948?format=json-expanded",
+    "cv": "https://inspirehep.net/api/literature/430948?format=cv",
+    "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A430948"
+  },
+  "id": "430948",
+  "updated": "2023-03-07T05:05:08.120556+00:00",
+  "metadata": {
+    "publication_info": [
+      {
+        "year": 2013
+      }
+    ],
+    "citation_count_without_self_citations": 593,
+    "citation_count": 593,
+    "core": true,
+    "dois": [
+      {
+        "value": "10.1017/CBO9781139644174"
+      }
+    ],
+    "isbns": [
+      {
+        "value": "9781139632478",
+        "medium": "online"
+      },
+      {
+        "value": "9780521670548",
+        "medium": "print"
+      },
+      {
+        "value": "9780521550024",
+        "medium": "print"
+      }
+    ],
+    "titles": [
+      {
+        "title": "The quantum theory of fields. Vol. 2: Modern applications"
+      }
+    ],
+    "$schema": "https://inspirehep.net/schemas/records/hep.json",
+    "authors": [
+      {
+        "ids": [
+          {
+            "value": "INSPIRE-00135339",
+            "schema": "INSPIRE ID"
+          }
+        ],
+        "uuid": "f1b9f59e-1147-43bd-a9b0-af9b2b0b7a32",
+        "record": {
+          "$ref": "https://inspirehep.net/api/authors/983868"
+        },
+        "full_name": "Weinberg, Steven",
+        "affiliations": [
+          {
+            "value": "Texas U.",
+            "record": {
+              "$ref": "https://inspirehep.net/api/institutions/903264"
+            }
+          }
+        ],
+        "signature_block": "WANBARGs",
+        "curated_relation": true,
+        "raw_affiliations": [
+          {
+            "value": "University of Texas, Austin"
+          }
+        ]
+      }
+    ],
+    "curated": true,
+    "texkeys": [
+      "Weinberg:1996kr"
+    ],
+    "imprints": [
+      {
+        "date": "2013-08-13",
+        "publisher": "Cambridge University Press"
+      }
+    ],
+    "keywords": [
+      {
+        "value": "book",
+        "schema": "INSPIRE"
+      },
+      {
+        "value": "gauge field theory: nonabelian",
+        "schema": "INSPIRE"
+      },
+      {
+        "value": "symmetry: Becchi-Rouet-Stora",
+        "schema": "INSPIRE"
+      },
+      {
+        "value": "external field",
+        "schema": "INSPIRE"
+      },
+      {
+        "value": "renormalization",
+        "schema": "INSPIRE"
+      },
+      {
+        "value": "renormalization group",
+        "schema": "INSPIRE"
+      },
+      {
+        "value": "spontaneous symmetry breaking",
+        "schema": "INSPIRE"
+      },
+      {
+        "value": "operator product expansion",
+        "schema": "INSPIRE"
+      },
+      {
+        "value": "anomaly",
+        "schema": "INSPIRE"
+      }
+    ],
+    "abstracts": [
+      {
+        "value": "The Quantum Theory of Fields, first published in 1996, is a self-contained, comprehensive introduction to quantum field theory from Nobel Laureate Steven Weinberg. Volume II gives an account of the methods of quantum field theory, and how they have led to an understanding of the weak, strong, and electromagnetic interactions of the elementary particles. The presentation of modern mathematical methods is throughout interwoven with accounts of the problems of elementary particle physics and condensed matter physics to which they have been applied. Many topics are included that are not usually found in books on quantum field theory. The book is peppered with examples and insights from the author's experience as a leader of elementary particle physics. Exercises are included at the end of each chapter.",
+        "source": "Cambridge University Press"
+      }
+    ],
+    "references": [
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/12285"
+        },
+        "reference": {
+          "publication_info": {
+            "artid": "191",
+            "page_start": "191",
+            "journal_title": "Phys.Rev.",
+            "journal_volume": "96"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/2451"
+        },
+        "reference": {
+          "publication_info": {
+            "artid": "1597",
+            "page_start": "1597",
+            "journal_title": "Phys.Rev.",
+            "journal_volume": "101"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/9148"
+        },
+        "reference": {
+          "publication_info": {
+            "artid": "697",
+            "page_start": "697",
+            "journal_title": "Acta Phys.Polon.",
+            "journal_volume": "24"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/51324"
+        },
+        "reference": {
+          "publication_info": {
+            "artid": "29",
+            "page_start": "29",
+            "journal_title": "Phys.Lett.B",
+            "journal_volume": "25"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/51322"
+        },
+        "reference": {
+          "publication_info": {
+            "artid": "1195",
+            "page_start": "1195",
+            "journal_title": "Phys.Rev.",
+            "journal_volume": "162"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/51323"
+        },
+        "reference": {
+          "publication_info": {
+            "artid": "1239",
+            "page_start": "1239",
+            "journal_title": "Phys.Rev.",
+            "journal_volume": "162"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/12288"
+        },
+        "reference": {
+          "publication_info": {
+            "artid": "437",
+            "page_start": "437",
+            "journal_title": "Annals Phys.",
+            "journal_volume": "15"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/122985"
+        },
+        "reference": {
+          "publication_info": {
+            "artid": "1",
+            "page_start": "1",
+            "journal_title": "Nucl.Phys.B",
+            "journal_volume": "139"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/121304"
+        },
+        "reference": {
+          "publication_info": {
+            "artid": "1576",
+            "page_start": "1576",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "17"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/9169"
+        },
+        "reference": {
+          "publication_info": {
+            "artid": "939",
+            "page_start": "939",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "22"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/91174"
+        },
+        "reference": {
+          "publication_info": {
+            "artid": "127",
+            "page_start": "127",
+            "journal_title": "Commun.Math.Phys.",
+            "journal_volume": "42"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/99402"
+        },
+        "reference": {
+          "publication_info": {
+            "artid": "287",
+            "page_start": "287",
+            "journal_title": "Annals Phys.",
+            "journal_volume": "98"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/1100449"
+        },
+        "reference": {
+          "publication_info": {
+            "artid": "1111",
+            "page_start": "1111",
+            "journal_title": "Prog.Theor.Phys.",
+            "journal_volume": "35"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/110799"
+        },
+        "reference": {
+          "publication_info": {
+            "artid": "273",
+            "page_start": "273",
+            "journal_title": "Nuovo Cim.A",
+            "journal_volume": "35"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/5838"
+        },
+        "reference": {
+          "publication_info": {
+            "artid": "1869",
+            "page_start": "1869",
+            "journal_title": "Prog.Theor.Phys.",
+            "journal_volume": "60"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/151326"
+        },
+        "reference": {
+          "publication_info": {
+            "artid": "2834",
+            "page_start": "2834",
+            "journal_title": "J.Math.Phys.",
+            "journal_volume": "21"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/11571"
+        },
+        "reference": {
+          "publication_info": {
+            "artid": "589",
+            "page_start": "589",
+            "journal_title": "Commun.Math.Phys.",
+            "journal_volume": "87"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/214790"
+        },
+        "reference": {
+          "publication_info": {
+            "artid": "157",
+            "page_start": "157",
+            "journal_title": "Commun.Math.Phys.",
+            "journal_volume": "102"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/334655"
+        },
+        "reference": {
+          "arxiv_eprint": "hep-th/9205088",
+          "publication_info": {
+            "artid": "249",
+            "page_start": "249",
+            "journal_title": "Commun.Math.Phys.",
+            "journal_volume": "155"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/397480"
+        },
+        "reference": {
+          "arxiv_eprint": "hep-th/9507104",
+          "publication_info": {
+            "artid": "2687",
+            "page_start": "2687",
+            "journal_title": "Mod.Phys.Lett.A",
+            "journal_volume": "10"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/397481"
+        },
+        "reference": {
+          "arxiv_eprint": "hep-th/9507105",
+          "publication_info": {
+            "artid": "160",
+            "page_start": "160",
+            "journal_title": "Phys.Lett.B",
+            "journal_volume": "366"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/152423"
+        },
+        "reference": {
+          "publication_info": {
+            "artid": "170",
+            "page_start": "170",
+            "journal_title": "Phys.Lett.B",
+            "journal_volume": "93"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/38047"
+        },
+        "reference": {
+          "arxiv_eprint": "hep-th/9405109",
+          "publication_info": {
+            "artid": "57",
+            "page_start": "57",
+            "journal_title": "Commun.Math.Phys.",
+            "journal_volume": "174"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/113732"
+        },
+        "reference": {
+          "publication_info": {
+            "artid": "151",
+            "page_start": "151",
+            "journal_title": "Nuovo Cim.A",
+            "journal_volume": "32"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/10713"
+        },
+        "reference": {
+          "publication_info": {
+            "artid": "477",
+            "page_start": "477",
+            "journal_title": "Nucl.Phys.B",
+            "journal_volume": "197"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/170872"
+        },
+        "reference": {
+          "publication_info": {
+            "artid": "27",
+            "page_start": "27",
+            "journal_title": "Phys.Lett.B",
+            "journal_volume": "102"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/203529"
+        },
+        "reference": {
+          "publication_info": {
+            "artid": "106",
+            "page_start": "106",
+            "journal_title": "Nucl.Phys.B",
+            "journal_volume": "234"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/215744"
+        },
+        "reference": {
+          "publication_info": {
+            "artid": "172",
+            "page_start": "172",
+            "journal_title": "J.Math.Phys.",
+            "journal_volume": "26"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/107083"
+        },
+        "reference": {
+          "publication_info": {
+            "artid": "224",
+            "page_start": "224",
+            "journal_title": "Phys.Lett.B",
+            "journal_volume": "55"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/101400"
+        },
+        "reference": {
+          "publication_info": {
+            "artid": "85",
+            "page_start": "85",
+            "journal_title": "Phys.Lett.B",
+            "journal_volume": "59"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/214529"
+        },
+        "reference": {
+          "publication_info": {
+            "artid": "263",
+            "page_start": "263",
+            "journal_title": "Nucl.Phys.B",
+            "journal_volume": "262"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/75929"
+        },
+        "reference": {
+          "publication_info": {
+            "artid": "1494",
+            "page_start": "1494",
+            "journal_title": "Phys.Rev.Lett.",
+            "journal_volume": "28"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "publication_info": {
+            "artid": "276",
+            "page_start": "276",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "11"
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/99980"
+        },
+        "reference": {
+          "publication_info": {
+            "artid": "819",
+            "page_start": "819",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "13"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/4677"
+        },
+        "reference": {
+          "publication_info": {
+            "artid": "60",
+            "page_start": "60",
+            "journal_title": "Proc.Roy.Soc.Lond.A",
+            "journal_volume": "133"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/1075"
+        },
+        "reference": {
+          "publication_info": {
+            "artid": "817",
+            "page_start": "817",
+            "journal_title": "Phys.Rev.",
+            "journal_volume": "74"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/154280"
+        },
+        "reference": {
+          "publication_info": {
+            "artid": "347",
+            "page_start": "347",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "23"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/168781"
+        },
+        "reference": {
+          "publication_info": {
+            "artid": "389",
+            "page_start": "389",
+            "journal_title": "Phys.Lett.B",
+            "journal_volume": "108"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/176612"
+        },
+        "reference": {
+          "publication_info": {
+            "artid": "1220",
+            "page_start": "1220",
+            "journal_title": "Phys.Rev.Lett.",
+            "journal_volume": "48"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/100444"
+        },
+        "reference": {
+          "publication_info": {
+            "artid": "3398",
+            "page_start": "3398",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "13"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/120989"
+        },
+        "reference": {
+          "publication_info": {
+            "artid": "211",
+            "page_start": "211",
+            "journal_title": "Commun.Math.Phys.",
+            "journal_volume": "58"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/8203"
+        },
+        "reference": {
+          "publication_info": {
+            "artid": "461",
+            "page_start": "461",
+            "journal_title": "Rev.Mod.Phys.",
+            "journal_volume": "51"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/5997"
+        },
+        "reference": {
+          "publication_info": {
+            "artid": "279",
+            "page_start": "279",
+            "journal_title": "Phys.Rev.Lett.",
+            "journal_volume": "40"
+          }
+        },
+        "legacy_curated": true,
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/140128"
+        },
+        "reference": {
+          "publication_info": {
+            "artid": "103",
+            "page_start": "103",
+            "journal_title": "Phys.Rev.Lett.",
+            "journal_volume": "43"
+          }
+        },
+        "legacy_curated": true,
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/142732"
+        },
+        "reference": {
+          "publication_info": {
+            "artid": "493",
+            "page_start": "493",
+            "journal_title": "Nucl.Phys.B",
+            "journal_volume": "166"
+          }
+        },
+        "legacy_curated": true,
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/157263"
+        },
+        "reference": {
+          "publication_info": {
+            "artid": "260",
+            "page_start": "260",
+            "journal_title": "Sov.J.Nucl.Phys.",
+            "journal_volume": "31"
+          }
+        },
+        "legacy_curated": true,
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/165061"
+        },
+        "reference": {
+          "publication_info": {
+            "artid": "199",
+            "page_start": "199",
+            "journal_title": "Phys.Lett.B",
+            "journal_volume": "104"
+          }
+        },
+        "legacy_curated": true,
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/122138"
+        },
+        "reference": {
+          "publication_info": {
+            "artid": "223",
+            "page_start": "223",
+            "journal_title": "Phys.Rev.Lett.",
+            "journal_volume": "40"
+          }
+        },
+        "legacy_curated": true,
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/128010"
+        },
+        "reference": {
+          "publication_info": {
+            "artid": "1791",
+            "page_start": "1791",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "16"
+          }
+        },
+        "legacy_curated": true,
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/119084"
+        },
+        "reference": {
+          "publication_info": {
+            "artid": "1440",
+            "page_start": "1440",
+            "journal_title": "Phys.Rev.Lett.",
+            "journal_volume": "38"
+          }
+        },
+        "legacy_curated": true,
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/179499"
+        },
+        "reference": {
+          "publication_info": {
+            "artid": "127",
+            "page_start": "127",
+            "journal_title": "Phys.Lett.B",
+            "journal_volume": "120"
+          }
+        },
+        "legacy_curated": true,
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/12562"
+        },
+        "reference": {
+          "publication_info": {
+            "artid": "133",
+            "page_start": "133",
+            "journal_title": "Phys.Lett.B",
+            "journal_volume": "120"
+          }
+        },
+        "legacy_curated": true,
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/179461"
+        },
+        "reference": {
+          "publication_info": {
+            "artid": "137",
+            "page_start": "137",
+            "journal_title": "Phys.Lett.B",
+            "journal_volume": "120"
+          }
+        },
+        "legacy_curated": true,
+        "curated_relation": false
+      }
+    ],
+    "document_type": [
+      "book"
+    ],
+    "preprint_date": "1996",
+    "control_number": 430948,
+    "legacy_version": "20180308191755.0",
+    "legacy_creation_date": "1998-06-02",
+    "external_system_identifiers": [
+      {
+        "value": "SPIRES-3763846",
+        "schema": "SPIRES"
+      }
+    ]
+  },
+  "uuid": "a856eb39-933c-4a5e-be03-ca7333eebd55"
+}

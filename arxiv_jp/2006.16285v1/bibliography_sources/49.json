@@ -1,0 +1,286 @@
+{
+  "updated": "2023-03-07T00:03:25.114712+00:00",
+  "revision_id": 93,
+  "links": {
+    "bibtex": "https://inspirehep.net/api/literature/441101?format=bibtex",
+    "latex-eu": "https://inspirehep.net/api/literature/441101?format=latex-eu",
+    "latex-us": "https://inspirehep.net/api/literature/441101?format=latex-us",
+    "json": "https://inspirehep.net/api/literature/441101?format=json",
+    "json-expanded": "https://inspirehep.net/api/literature/441101?format=json-expanded",
+    "cv": "https://inspirehep.net/api/literature/441101?format=cv",
+    "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A441101"
+  },
+  "uuid": "fd9441ae-d295-4bbe-add1-61f8de73ba30",
+  "created": "1997-03-12T00:00:00+00:00",
+  "id": "441101",
+  "metadata": {
+    "citation_count": 139,
+    "publication_info": [
+      {
+        "year": 1998,
+        "page_end": "82",
+        "page_start": "78",
+        "journal_title": "Phys.Rev.D",
+        "journal_volume": "57"
+      }
+    ],
+    "report_numbers": [
+      {
+        "value": "UCSD-97-06"
+      }
+    ],
+    "citation_count_without_self_citations": 111,
+    "core": true,
+    "dois": [
+      {
+        "value": "10.1103/PhysRevD.57.78"
+      }
+    ],
+    "titles": [
+      {
+        "title": "Effective field theory and matching in nonrelativistic gauge theories"
+      },
+      {
+        "title": "Effective field theory and matching in non-relativistic gauge theories.",
+        "source": "arXiv"
+      }
+    ],
+    "$schema": "https://inspirehep.net/schemas/records/hep.json",
+    "authors": [
+      {
+        "uuid": "e75d6dfa-8d28-4cdf-aef8-f53faef4b2bc",
+        "record": {
+          "$ref": "https://inspirehep.net/api/authors/1007511"
+        },
+        "full_name": "Grinstein, Benjamin",
+        "affiliations": [
+          {
+            "value": "UC, San Diego",
+            "record": {
+              "$ref": "https://inspirehep.net/api/institutions/903305"
+            }
+          }
+        ],
+        "signature_block": "GRANSTANb",
+        "curated_relation": true
+      },
+      {
+        "uuid": "a973eb2d-aa52-41aa-b5d9-66eed11af500",
+        "record": {
+          "$ref": "https://inspirehep.net/api/authors/991142"
+        },
+        "full_name": "Rothstein, Ira Z.",
+        "affiliations": [
+          {
+            "value": "UC, San Diego",
+            "record": {
+              "$ref": "https://inspirehep.net/api/institutions/903305"
+            }
+          }
+        ],
+        "signature_block": "RATHSTANi",
+        "curated_relation": true
+      }
+    ],
+    "curated": true,
+    "texkeys": [
+      "Grinstein:1997gv"
+    ],
+    "citeable": true,
+    "keywords": [
+      {
+        "value": "gauge field theory: nonrelativistic",
+        "schema": "INSPIRE"
+      },
+      {
+        "value": "effective Lagrangian",
+        "schema": "INSPIRE"
+      },
+      {
+        "value": "expansion: multipole",
+        "schema": "INSPIRE"
+      },
+      {
+        "value": "low-energy theorem",
+        "schema": "INSPIRE"
+      },
+      {
+        "value": "radiative correction",
+        "schema": "INSPIRE"
+      },
+      {
+        "value": "atom: energy levels",
+        "schema": "INSPIRE"
+      },
+      {
+        "value": "HQET model",
+        "schema": "INSPIRE"
+      },
+      {
+        "value": "confinement",
+        "schema": "INSPIRE"
+      }
+    ],
+    "refereed": true,
+    "abstracts": [
+      {
+        "value": "The effective Lagrangian and power counting rules for non-relativistic gauge theories are derived via an expansion in $1/c$. It is shown that the $1/c$ expansion leads to an effective field theory which incorporates a multipole expansion. Failure to use this expansion in the low energy theory leads to a loss of predictive power as the matching procedure becomes intractable. It is emphasized that there is not a one-to-one correspondence between operators in the modified low energy theory and those in the heavy quark effective theory.We also discuss the Lamb shift as a pedagogical example of the power counting scheme."
+      }
+    ],
+    "references": [
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/213093"
+        },
+        "reference": {
+          "publication_info": {
+            "artid": "437",
+            "page_start": "437",
+            "journal_title": "Phys.Lett.B",
+            "journal_volume": "167"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/294733"
+        },
+        "reference": {
+          "publication_info": {
+            "artid": "447",
+            "page_start": "447",
+            "journal_title": "Phys.Lett.B",
+            "journal_volume": "240"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/374999"
+        },
+        "reference": {
+          "arxiv_eprint": "hep-ph/9407339",
+          "publication_info": {
+            "artid": "1125",
+            "page_start": "1125",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "51"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/332988"
+        },
+        "reference": {
+          "arxiv_eprint": "hep-lat/9205007",
+          "publication_info": {
+            "artid": "4052",
+            "page_start": "4052",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "46"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/425215"
+        },
+        "reference": {
+          "arxiv_eprint": "hep-ph/9610534",
+          "publication_info": {
+            "artid": "4129",
+            "page_start": "4129",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "55"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/439619"
+        },
+        "reference": {
+          "arxiv_eprint": "hep-ph/9701294",
+          "publication_info": {
+            "artid": "230",
+            "page_start": "230",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "56"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/403696"
+        },
+        "reference": {
+          "arxiv_eprint": "hep-ph/9512327",
+          "publication_info": {
+            "artid": "4909",
+            "page_start": "4909",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "53"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/425855"
+        },
+        "reference": {
+          "arxiv_eprint": "hep-ph/9611313",
+          "publication_info": {
+            "artid": "267",
+            "page_start": "267",
+            "journal_title": "Can.J.Phys.",
+            "journal_volume": "77"
+          }
+        },
+        "curated_relation": false
+      }
+    ],
+    "arxiv_eprints": [
+      {
+        "value": "hep-ph/9703298",
+        "categories": [
+          "hep-ph"
+        ]
+      }
+    ],
+    "document_type": [
+      "article"
+    ],
+    "preprint_date": "1997-03",
+    "control_number": 441101,
+    "legacy_version": "20161229153346.0",
+    "number_of_pages": 12,
+    "inspire_categories": [
+      {
+        "term": "Phenomenology-HEP"
+      }
+    ],
+    "legacy_creation_date": "1997-03-12",
+    "external_system_identifiers": [
+      {
+        "value": "566068",
+        "schema": "OSTI"
+      },
+      {
+        "value": "1998PhRvD..57...78G",
+        "schema": "ADS"
+      },
+      {
+        "value": "SPIRES-3521001",
+        "schema": "SPIRES"
+      }
+    ]
+  }
+}

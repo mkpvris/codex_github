@@ -1,0 +1,5542 @@
+{
+  "links": {
+    "bibtex": "https://inspirehep.net/api/literature/1456183?format=bibtex",
+    "latex-eu": "https://inspirehep.net/api/literature/1456183?format=latex-eu",
+    "latex-us": "https://inspirehep.net/api/literature/1456183?format=latex-us",
+    "json": "https://inspirehep.net/api/literature/1456183?format=json",
+    "json-expanded": "https://inspirehep.net/api/literature/1456183?format=json-expanded",
+    "cv": "https://inspirehep.net/api/literature/1456183?format=cv",
+    "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1456183"
+  },
+  "uuid": "ffe26741-9522-4609-8027-75d678b75a94",
+  "updated": "2026-06-15T10:40:46.768054+00:00",
+  "id": "1456183",
+  "metadata": {
+    "citation_count_without_self_citations": 41,
+    "citation_count": 46,
+    "core": true,
+    "dois": [
+      {
+        "value": "10.1142/8619"
+      }
+    ],
+    "urls": [
+      {
+        "value": "http://www.worldscientific.com/worldscibooks/10.1142/8619",
+        "description": "WSP"
+      }
+    ],
+    "isbns": [
+      {
+        "value": "9789814434928",
+        "medium": "print"
+      },
+      {
+        "value": "9789814434942",
+        "medium": "online"
+      }
+    ],
+    "titles": [
+      {
+        "title": "Effective Field Theories"
+      }
+    ],
+    "$schema": "https://inspirehep.net/schemas/records/hep.json",
+    "authors": [
+      {
+        "uuid": "9fb19864-bc04-45d1-a149-dabb03cf5d1b",
+        "record": {
+          "$ref": "https://inspirehep.net/api/authors/993563"
+        },
+        "full_name": "Petrov, Alexey A.",
+        "affiliations": [
+          {
+            "value": "Wayne State U.",
+            "record": {
+              "$ref": "https://inspirehep.net/api/institutions/903341"
+            }
+          }
+        ],
+        "signature_block": "PATRAVa",
+        "curated_relation": true
+      },
+      {
+        "uuid": "a36f8fab-823c-402c-9447-4558dd987dd9",
+        "record": {
+          "$ref": "https://inspirehep.net/api/authors/1019572"
+        },
+        "full_name": "Blechman, Andrew E.",
+        "affiliations": [
+          {
+            "value": "Wayne State U.",
+            "record": {
+              "$ref": "https://inspirehep.net/api/institutions/903341"
+            }
+          }
+        ],
+        "signature_block": "BLACHNANa"
+      }
+    ],
+    "curated": true,
+    "texkeys": [
+      "Petrov:2016azi"
+    ],
+    "imprints": [
+      {
+        "date": "2016",
+        "publisher": "WSP"
+      }
+    ],
+    "abstracts": [
+      {
+        "value": "This book is a broad-based text intended to help the growing student body interested in constructing and applying methods of effective field theory to solve problems in their research. It begins with a review of using symmetries to identify the relevant degrees of freedom in a problem, and then presents a variety of methods that can be used to construct various effective theories. A detailed discussion of canonical applications of effective field theory techniques with increasing complexity is given, including Fermi's weak interaction, heavy-quark effective theory, and soft-collinear effective theory. Applications of these techniques to study physics beyond the standard model, dark matter, and quantum and classical gravity are explored. Although most examples come from questions in high-energy physics, many of the methods can also be applied in condensed-matter settings. Appendices include various factoids from group theory and other topics that are used throughout the text, in an attempt to make the book self-contained."
+      }
+    ],
+    "references": [
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/684968"
+        },
+        "reference": {
+          "misc": [
+            "X(3872): Hadronic molecules in effective field theory doi:"
+          ],
+          "authors": [
+            {
+              "full_name": "AlFiky, M.T."
+            },
+            {
+              "full_name": "Gabbiani, F."
+            },
+            {
+              "full_name": "Petrov, A.A."
+            }
+          ],
+          "publication_info": {
+            "year": 2006,
+            "page_end": "245",
+            "page_start": "238",
+            "journal_title": "Phys.Lett.B",
+            "journal_volume": "640"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/684968"
+        },
+        "reference": {
+          "dois": [
+            "10.1016/j.physletb.2006.07.069"
+          ]
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/119585"
+        },
+        "reference": {
+          "dois": [
+            "10.1016/0550-3213(77)90384-4"
+          ],
+          "misc": [
+            "Asymptotic Freedom in Parton Language"
+          ],
+          "authors": [
+            {
+              "full_name": "Altarelli, G."
+            },
+            {
+              "full_name": "Parisi, G."
+            }
+          ],
+          "publication_info": {
+            "year": 1977,
+            "artid": "298",
+            "page_start": "298",
+            "journal_title": "Nucl.Phys.B",
+            "journal_volume": "126"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "\"Quantum Gravity, or The Art of"
+          ],
+          "authors": [
+            {
+              "full_name": "Ambjorn, J."
+            },
+            {
+              "full_name": "Jurkiewicz, J."
+            },
+            {
+              "full_name": "Loll, R."
+            }
+          ]
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/715558"
+        },
+        "reference": {
+          "misc": [
+            "Building Spacetime,\" in : Approaches to Quantum Gravity, 341-359"
+          ],
+          "authors": [
+            {
+              "full_name": "Oriti, D."
+            }
+          ],
+          "arxiv_eprint": "hep-th/0604212"
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "Two loop anomalous dimension of the chromomagnetic moment of a heavy quark, Phys.Lett. B401, pp"
+          ],
+          "authors": [
+            {
+              "full_name": "Amoros, G."
+            },
+            {
+              "full_name": "Beneke, M."
+            },
+            {
+              "full_name": "Neubert, M."
+            }
+          ],
+          "publication_info": {
+            "year": 1997
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/439822"
+        },
+        "reference": {
+          "dois": [
+            "10.1016/S0370-2693(97)00345-6"
+          ],
+          "misc": [
+            "81-90"
+          ]
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "First measurement of Γ(D"
+          ],
+          "authors": [
+            {
+              "full_name": "Anastassov, A."
+            }
+          ],
+          "publication_info": {
+            "year": 2002
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/561965"
+        },
+        "reference": {
+          "dois": [
+            "10.1103/PhysRevD"
+          ],
+          "misc": [
+            "∗+) and precision measurement of mD∗+ - mD0"
+          ],
+          "publication_info": {
+            "artid": "032003",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "65"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "65.032003"
+          ]
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/14006"
+        },
+        "reference": {
+          "dois": [
+            "10.1103/PhysRev.130.439"
+          ],
+          "misc": [
+            "Plasmons, Gauge Invariance, and Mass"
+          ],
+          "authors": [
+            {
+              "full_name": "Anderson, P.W."
+            }
+          ],
+          "publication_info": {
+            "year": 1963,
+            "page_end": "442",
+            "page_start": "439",
+            "journal_title": "Phys.Rev.",
+            "journal_volume": "130"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "Infrared Singularities and Massive"
+          ],
+          "authors": [
+            {
+              "full_name": "Appelquist, T."
+            },
+            {
+              "full_name": "Carazzone, J."
+            }
+          ],
+          "publication_info": {
+            "year": 1975
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/1631"
+        },
+        "reference": {
+          "dois": [
+            "10.1103/PhysRevD.11.2856"
+          ],
+          "misc": [
+            "Fields"
+          ],
+          "publication_info": {
+            "artid": "2856",
+            "page_start": "2856",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "11"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "The Static Potential in Quantum"
+          ],
+          "authors": [
+            {
+              "full_name": "Appelquist, T."
+            },
+            {
+              "full_name": "Dine, M."
+            },
+            {
+              "full_name": "Muzinich, I."
+            }
+          ],
+          "publication_info": {
+            "year": 1977
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/5356"
+        },
+        "reference": {
+          "dois": [
+            "10.1016/0370-2693(77)"
+          ],
+          "misc": [
+            "Chromodynamics"
+          ],
+          "publication_info": {
+            "artid": "231",
+            "page_start": "231",
+            "journal_title": "Phys.Lett.B",
+            "journal_volume": "69"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "90651-7"
+          ]
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/527930"
+        },
+        "reference": {
+          "misc": [
+            "Summing Sudakov logarithms in B - Xsg in effective field theory doi:"
+          ],
+          "authors": [
+            {
+              "full_name": "Bauer, C.W."
+            },
+            {
+              "full_name": "Fleming, S."
+            },
+            {
+              "full_name": "Luke, M.E."
+            }
+          ],
+          "publication_info": {
+            "year": 2000,
+            "artid": "014006",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "63"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/527930"
+        },
+        "reference": {
+          "dois": [
+            "10.1103/PhysRevD.63.014006"
+          ]
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "(a)"
+          ],
+          "authors": [
+            {
+              "full_name": "Bauer, C.W."
+            },
+            {
+              "full_name": "Fleming, S."
+            },
+            {
+              "full_name": "Pirjol, D."
+            },
+            {
+              "full_name": "Rothstein, I.Z."
+            },
+            {
+              "full_name": "Stewart, I.W."
+            }
+          ],
+          "publication_info": {
+            "year": 2002
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/582803"
+        },
+        "reference": {
+          "dois": [
+            "10.1103/PhysRevD.66.014017"
+          ],
+          "misc": [
+            "Hard scattering factorization from effective field theory"
+          ],
+          "publication_info": {
+            "artid": "014017",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "66"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "(a). An Effective field theory for collinear and soft gluons: Heavy to light decays, Phys. Rev"
+          ],
+          "authors": [
+            {
+              "full_name": "Bauer, C.W."
+            },
+            {
+              "full_name": "Fleming, S."
+            },
+            {
+              "full_name": "Pirjol, D."
+            },
+            {
+              "full_name": "Stewart, I.W."
+            }
+          ],
+          "publication_info": {
+            "year": 2001
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/537516"
+        },
+        "reference": {
+          "dois": [
+            "10.1103/PhysRevD.63.114020"
+          ],
+          "misc": [
+            "D63, p. 114020"
+          ]
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/629046"
+        },
+        "reference": {
+          "dois": [
+            "10.1103/PhysRevD.70.034014.291"
+          ],
+          "misc": [
+            "Enhanced nonperturbative effects in Z decays to hadrons"
+          ],
+          "authors": [
+            {
+              "full_name": "Bauer, C.W."
+            },
+            {
+              "full_name": "Lee, C."
+            },
+            {
+              "full_name": "Manohar, A.V."
+            },
+            {
+              "full_name": "Wise, M.B."
+            }
+          ],
+          "publication_info": {
+            "year": 2004,
+            "artid": "034014",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "70"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/559422"
+        },
+        "reference": {
+          "dois": [
+            "10.1103/PhysRevLett.87"
+          ],
+          "misc": [
+            "(b). A Proof of factorization for B - Dp"
+          ],
+          "authors": [
+            {
+              "full_name": "Bauer, C.W."
+            },
+            {
+              "full_name": "Pirjol, D."
+            },
+            {
+              "full_name": "Stewart, I.W."
+            }
+          ],
+          "publication_info": {
+            "year": 2001,
+            "artid": "201806",
+            "journal_title": "Phys.Rev.Lett.",
+            "journal_volume": "87"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/562452"
+        },
+        "reference": {
+          "dois": [
+            "10.1103/PhysRevD"
+          ],
+          "misc": [
+            "(b). Soft collinear factorization in effective field theory"
+          ],
+          "authors": [
+            {
+              "full_name": "Bauer, C.W."
+            },
+            {
+              "full_name": "Pirjol, D."
+            },
+            {
+              "full_name": "Stewart, I.W."
+            }
+          ],
+          "publication_info": {
+            "year": 2002,
+            "artid": "054022",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "65"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "65.054022"
+          ]
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/601423"
+        },
+        "reference": {
+          "misc": [
+            "Factorization and endpoint singularities in heavy to light decays doi:10"
+          ],
+          "authors": [
+            {
+              "full_name": "Bauer, C.W."
+            },
+            {
+              "full_name": "Pirjol, D."
+            },
+            {
+              "full_name": "Stewart, I.W."
+            }
+          ],
+          "publication_info": {
+            "year": 2003,
+            "artid": "071502",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "67"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "1103/PhysRevD.67.071502"
+          ]
+        }
+      },
+      {
+        "reference": {
+          "misc": [
+            "Event Generation from Effective Field"
+          ],
+          "authors": [
+            {
+              "full_name": "Bauer, C.W."
+            },
+            {
+              "full_name": "Schwartz, M.D."
+            }
+          ],
+          "publication_info": {
+            "year": 2007
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/722530"
+        },
+        "reference": {
+          "dois": [
+            "10.1103/PhysRevD.76.074004"
+          ],
+          "misc": [
+            "Theory"
+          ],
+          "publication_info": {
+            "artid": "074004",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "76"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/559421"
+        },
+        "reference": {
+          "dois": [
+            "10.1016/S0370-2693(01)"
+          ],
+          "misc": [
+            "Invariant operators in collinear effective theory"
+          ],
+          "authors": [
+            {
+              "full_name": "Bauer, C.W."
+            },
+            {
+              "full_name": "Stewart, I.W."
+            }
+          ],
+          "publication_info": {
+            "year": 2001,
+            "page_end": "142",
+            "page_start": "134",
+            "journal_title": "Phys.Lett.B",
+            "journal_volume": "516"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "00902-9"
+          ]
+        }
+      },
+      {
+        "reference": {
+          "misc": [
+            "Introduction to Soft-Collinear"
+          ],
+          "authors": [
+            {
+              "full_name": "Becher, T."
+            },
+            {
+              "full_name": "Broggio, A."
+            },
+            {
+              "full_name": "Ferroglia, A."
+            }
+          ],
+          "publication_info": {
+            "year": 2014
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/1320996"
+        },
+        "reference": {
+          "dois": [
+            "10.1007/978-3-319-14848-9"
+          ],
+          "misc": [
+            "Effective Theory"
+          ]
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "Factorization and MomentumSpace"
+          ],
+          "authors": [
+            {
+              "full_name": "Becher, T."
+            },
+            {
+              "full_name": "Neubert, M."
+            },
+            {
+              "full_name": "Pecjak, B.D."
+            }
+          ],
+          "publication_info": {
+            "year": 2007
+          }
+        }
+      },
+      {
+        "reference": {
+          "misc": [
+            "Resummation in Deep-Inelastic Scattering doi:"
+          ],
+          "publication_info": {
+            "artid": "076",
+            "page_start": "076",
+            "journal_title": "JHEP",
+            "journal_volume": "01"
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/722046"
+        },
+        "reference": {
+          "dois": [
+            "10.1088/1126-6708/2007/01/076"
+          ]
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/538670"
+        },
+        "reference": {
+          "dois": [
+            "10.1016/S0550-3213(01)00341-8"
+          ],
+          "misc": [
+            "Two loop renormalization of heavy light currents at order 1/mQ in the heavy quark expansion"
+          ],
+          "authors": [
+            {
+              "full_name": "Becher, T."
+            },
+            {
+              "full_name": "Neubert, M."
+            },
+            {
+              "full_name": "Petrov, A.A."
+            }
+          ],
+          "publication_info": {
+            "year": 2001,
+            "page_end": "382",
+            "page_start": "367",
+            "journal_title": "Nucl.Phys.B",
+            "journal_volume": "611"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/475179"
+        },
+        "reference": {
+          "dois": [
+            "10.1016/S0370-2693(99)00684-X"
+          ],
+          "misc": [
+            "Nextto-leading order QCD corrections to the lifetime difference of Bs mesons"
+          ],
+          "authors": [
+            {
+              "full_name": "Beneke, M."
+            },
+            {
+              "full_name": "Buchalla, G."
+            },
+            {
+              "full_name": "Greub, C."
+            },
+            {
+              "full_name": "Lenz, A."
+            },
+            {
+              "full_name": "Nierste, U."
+            }
+          ],
+          "publication_info": {
+            "year": 1999,
+            "page_end": "640",
+            "page_start": "631",
+            "journal_title": "Phys.Lett.B",
+            "journal_volume": "459"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "Soft collinear effective theory and heavy to light currents beyond leading power, Nucl"
+          ],
+          "authors": [
+            {
+              "full_name": "Beneke, M."
+            },
+            {
+              "full_name": "Chapovsky, A.P."
+            },
+            {
+              "full_name": "Diehl, M."
+            },
+            {
+              "full_name": "Feldmann, T."
+            }
+          ],
+          "publication_info": {
+            "year": 2002
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/588622"
+        },
+        "reference": {
+          "dois": [
+            "10.1016/S0550-3213(02)00687-9"
+          ],
+          "misc": [
+            "Phys. B643, pp. 431-476"
+          ]
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/602846"
+        },
+        "reference": {
+          "dois": [
+            "10.1016/S0370-2693(02)03204-5"
+          ],
+          "misc": [
+            "Multipole expanded soft collinear effective theory with nonAbelian gauge symmetry"
+          ],
+          "authors": [
+            {
+              "full_name": "Beneke, M."
+            },
+            {
+              "full_name": "Feldmann, T."
+            }
+          ],
+          "publication_info": {
+            "year": 2003,
+            "page_end": "276",
+            "page_start": "267",
+            "journal_title": "Phys.Lett.B",
+            "journal_volume": "553"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/451284"
+        },
+        "reference": {
+          "misc": [
+            "Asymptotic expansion of Feynman integrals near threshold doi:10.1016/"
+          ],
+          "authors": [
+            {
+              "full_name": "Beneke, M."
+            },
+            {
+              "full_name": "Smirnov, V.A."
+            }
+          ],
+          "publication_info": {
+            "year": 1998,
+            "page_end": "344",
+            "page_start": "321",
+            "journal_title": "Nucl.Phys.B",
+            "journal_volume": "522"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "S0550-3213(98)00138-2"
+          ]
+        }
+      },
+      {
+        "reference": {
+          "misc": [
+            "\"Imprecated, yet impeccable:"
+          ],
+          "authors": [
+            {
+              "full_name": "Benson, D."
+            },
+            {
+              "full_name": "Bigi, I.I."
+            },
+            {
+              "full_name": "Mannel, T."
+            },
+            {
+              "full_name": "Uraltsev, N."
+            }
+          ]
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/614178"
+        },
+        "reference": {
+          "misc": [
+            "On the theoretical evaluation of G \""
+          ],
+          "authors": [
+            {
+              "full_name": "Xcn, B.-."
+            }
+          ],
+          "publication_info": {
+            "artid": "367",
+            "page_start": "367",
+            "journal_title": "Nucl.Phys.B",
+            "journal_volume": "665"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "Factorization at Subleading"
+          ],
+          "authors": [
+            {
+              "full_name": "Benzke, M."
+            },
+            {
+              "full_name": "Lee, S.J."
+            },
+            {
+              "full_name": "Neubert, M."
+            },
+            {
+              "full_name": "Paz, G."
+            }
+          ],
+          "publication_info": {
+            "year": 2010
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/850134"
+        },
+        "reference": {
+          "dois": [
+            "10.1007/JHEP08(2010)099"
+          ],
+          "misc": [
+            "Power and Irreducible Uncertainties in B¯ → Xsγ Decay"
+          ],
+          "publication_info": {
+            "artid": "099",
+            "page_start": "099",
+            "journal_title": "JHEP",
+            "journal_volume": "08"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/338932"
+        },
+        "reference": {
+          "dois": [
+            "10.1016/0550-3213(92)"
+          ],
+          "misc": [
+            "Chiral structure of the nucleon"
+          ],
+          "authors": [
+            {
+              "full_name": "Bernard, V."
+            },
+            {
+              "full_name": "Kaiser, N."
+            },
+            {
+              "full_name": "Kambor, J."
+            },
+            {
+              "full_name": "Meissner, U.G."
+            }
+          ],
+          "publication_info": {
+            "year": 1992,
+            "page_end": "345",
+            "page_start": "315",
+            "journal_title": "Nucl.Phys.B",
+            "journal_volume": "388"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "90615-I"
+          ]
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/648746"
+        },
+        "reference": {
+          "misc": [
+            "(2005). Particle dark matter: Evidence, candidates and constraints doi:10.1016/j. physrep..08.031"
+          ],
+          "authors": [
+            {
+              "full_name": "Bertone, G."
+            },
+            {
+              "full_name": "Hooper, D."
+            },
+            {
+              "full_name": "Silk, J."
+            }
+          ],
+          "publication_info": {
+            "year": 2004,
+            "page_end": "390",
+            "page_start": "279",
+            "journal_title": "Phys.Rept.",
+            "journal_volume": "405"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/441074"
+        },
+        "reference": {
+          "dois": [
+            "10.1146/annurev.nucl"
+          ],
+          "misc": [
+            "Aspects of heavy quark theory"
+          ],
+          "authors": [
+            {
+              "full_name": "Bigi, I.I."
+            },
+            {
+              "full_name": "Shifman, M.A."
+            },
+            {
+              "full_name": "Uraltsev, N."
+            }
+          ],
+          "publication_info": {
+            "year": 1997,
+            "page_end": "661",
+            "page_start": "591",
+            "journal_title": "Ann.Rev.Nucl.Part.Sci.",
+            "journal_volume": "47"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "47.1.591"
+          ]
+        }
+      },
+      {
+        "reference": {
+          "misc": [
+            "QCD predictions for lepton spectra in inclusive heavy flavor decays, Phys.Rev.Lett"
+          ],
+          "authors": [
+            {
+              "full_name": "Bigi, I.I."
+            },
+            {
+              "full_name": "Shifman, M.A."
+            },
+            {
+              "full_name": "Uraltsev, N."
+            },
+            {
+              "full_name": "Vainshtein, A.I."
+            }
+          ],
+          "publication_info": {
+            "year": 1993
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/353561"
+        },
+        "reference": {
+          "dois": [
+            "10.1103/PhysRevLett.71.496"
+          ],
+          "misc": [
+            "71, pp. 496-499"
+          ]
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/181166"
+        },
+        "reference": {
+          "isbn": "9780521278584",
+          "misc": [
+            "Quantum Fields in Curved Space, Cambridge Monographs on Mathematical Physics (Cambridge Univ. Press, Cambridge, UK) 9780521278584, 9780521278584"
+          ],
+          "authors": [
+            {
+              "full_name": "Birrell, N.D."
+            },
+            {
+              "full_name": "Davies, P.C.W."
+            }
+          ],
+          "publication_info": {
+            "year": 1984
+          }
+        },
+        "legacy_curated": true,
+        "curated_relation": true
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/601626"
+        },
+        "reference": {
+          "dois": [
+            "10.1103/PhysRevD.71.069903"
+          ],
+          "misc": [
+            "Quantum gravitational corrections to the nonrelativistic scattering potential of two masses 10"
+          ],
+          "authors": [
+            {
+              "full_name": "Bjerrum-Bohr, N.E.J."
+            },
+            {
+              "full_name": "Donoghue, J.F."
+            },
+            {
+              "full_name": "Holstein, B.R."
+            }
+          ],
+          "publication_info": {
+            "year": 2003,
+            "artid": "084033",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "67"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/601626"
+        },
+        "reference": {
+          "misc": [
+            "1103/PhysRevD.67.084033, [Erratum:"
+          ],
+          "publication_info": {
+            "year": 2005,
+            "artid": "069903",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "71"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "Asymptotic Sum Rules at Infinite Momentum, Phys. Rev"
+          ],
+          "authors": [
+            {
+              "full_name": "Bjorken, J.D."
+            }
+          ],
+          "publication_info": {
+            "year": 1969
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/52694"
+        },
+        "reference": {
+          "dois": [
+            "10.1103/PhysRev.179.1547"
+          ],
+          "misc": [
+            "179, pp. 1547-1553"
+          ]
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/334033"
+        },
+        "reference": {
+          "misc": [
+            "(1992). Rigorous QCD predictions for decays of P wave quarkonia doi:10"
+          ],
+          "authors": [
+            {
+              "full_name": "Bodwin, G.T."
+            },
+            {
+              "full_name": "Braaten, E."
+            },
+            {
+              "full_name": "Lepage, G.P."
+            }
+          ],
+          "publication_info": {
+            "year": 1918,
+            "artid": "1914",
+            "page_start": "1914",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "46"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "1103/PhysRevD.46.R"
+          ],
+          "publication_info": {
+            "year": 1914
+          }
+        }
+      },
+      {
+        "reference": {
+          "misc": [
+            "Rigorous QCD analysis of inclusive annihilation and production of heavy quarkonium, Phys.Rev"
+          ],
+          "authors": [
+            {
+              "full_name": "Bodwin, G.T."
+            },
+            {
+              "full_name": "Braaten, E."
+            },
+            {
+              "full_name": "Lepage, G.P."
+            }
+          ],
+          "publication_info": {
+            "year": 1995
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/374999"
+        },
+        "reference": {
+          "dois": [
+            "10.1103/PhysRevD.55.5853"
+          ],
+          "misc": [
+            "D51, pp. 1125-1171"
+          ]
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "dois": [
+            "10.1103/PhysRevD"
+          ]
+        }
+      },
+      {
+        "reference": {
+          "misc": [
+            "51.1125"
+          ]
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/416183"
+        },
+        "reference": {
+          "misc": [
+            "Production of heavy quarkonium in high-energy colliders doi:10"
+          ],
+          "authors": [
+            {
+              "full_name": "Braaten, E."
+            },
+            {
+              "full_name": "Fleming, S."
+            },
+            {
+              "full_name": "Yuan, T.C."
+            }
+          ],
+          "publication_info": {
+            "year": 1996,
+            "page_end": "235",
+            "page_start": "197",
+            "journal_title": "Ann.Rev.Nucl.Part.Sci.",
+            "journal_volume": "46"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "1146/annurev.nucl.46.1.197"
+          ]
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/662213"
+        },
+        "reference": {
+          "dois": [
+            "10.1016/j.physrep"
+          ],
+          "misc": [
+            "Universality in few-body systems with large scattering length"
+          ],
+          "authors": [
+            {
+              "full_name": "Braaten, E."
+            },
+            {
+              "full_name": "Hammer, H.-W."
+            }
+          ],
+          "publication_info": {
+            "year": 2006,
+            "page_end": "390",
+            "page_start": "259",
+            "journal_title": "Phys.Rept.",
+            "journal_volume": "428"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "03.001"
+          ],
+          "publication_info": {
+            "year": 2006
+          }
+        }
+      },
+      {
+        "reference": {
+          "misc": [
+            "Potential NRQCD:"
+          ],
+          "authors": [
+            {
+              "full_name": "Brambilla, N."
+            },
+            {
+              "full_name": "Pineda, A."
+            },
+            {
+              "full_name": "Soto, J."
+            },
+            {
+              "full_name": "Vairo, A."
+            }
+          ],
+          "publication_info": {
+            "year": 2000
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/503098"
+        },
+        "reference": {
+          "misc": [
+            "An Effective theory for heavy quarkonium doi:"
+          ],
+          "publication_info": {
+            "artid": "275",
+            "page_start": "275",
+            "journal_title": "Nucl.Phys.B",
+            "journal_volume": "566"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/503098"
+        },
+        "reference": {
+          "dois": [
+            "10.1016/S0550-3213(99)00693-8"
+          ]
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/660996"
+        },
+        "reference": {
+          "dois": [
+            "10.1103/RevModPhys"
+          ],
+          "misc": [
+            "Effective field theories for heavy quarkonium"
+          ],
+          "authors": [
+            {
+              "full_name": "Brambilla, N."
+            },
+            {
+              "full_name": "Pineda, A."
+            },
+            {
+              "full_name": "Soto, J."
+            },
+            {
+              "full_name": "Vairo, A."
+            }
+          ],
+          "publication_info": {
+            "year": 2005,
+            "artid": "1423",
+            "page_start": "1423",
+            "journal_title": "Rev.Mod.Phys.",
+            "journal_volume": "77"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "77.1423"
+          ]
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/874793"
+        },
+        "reference": {
+          "dois": [
+            "10.1140/epjc/s10052-010-1534-9"
+          ],
+          "misc": [
+            "e. a. . Heavy quarkonium: progress, puzzles, and opportunities"
+          ],
+          "authors": [
+            {
+              "full_name": "Brambilla, N."
+            }
+          ],
+          "publication_info": {
+            "year": 2011,
+            "artid": "1534",
+            "page_start": "1534",
+            "journal_title": "Eur.Phys.J.C",
+            "journal_volume": "71"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/403867"
+        },
+        "reference": {
+          "misc": [
+            "Weak decays beyond leading logarithms doi:10.1103/"
+          ],
+          "authors": [
+            {
+              "full_name": "Buchalla, G."
+            },
+            {
+              "full_name": "Buras, A.J."
+            },
+            {
+              "full_name": "Lautenbacher, M.E."
+            }
+          ],
+          "publication_info": {
+            "year": 1996,
+            "page_end": "1144",
+            "page_start": "1125",
+            "journal_title": "Rev.Mod.Phys.",
+            "journal_volume": "68"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "RevModPhys.68.1125"
+          ]
+        }
+      },
+      {
+        "reference": {
+          "misc": [
+            "Effective Lagrangian Analysis of New"
+          ],
+          "authors": [
+            {
+              "full_name": "Buchmuller, W."
+            },
+            {
+              "full_name": "Wyler, D."
+            }
+          ],
+          "publication_info": {
+            "year": 1986
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/218149"
+        },
+        "reference": {
+          "misc": [
+            "Interactions and Flavor Conservation doi:"
+          ],
+          "publication_info": {
+            "page_end": "653",
+            "page_start": "621",
+            "journal_title": "Nucl.Phys.B",
+            "journal_volume": "268"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/218149"
+        },
+        "reference": {
+          "dois": [
+            "10.1016/0550-3213(86)90262-2"
+          ]
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/472266"
+        },
+        "reference": {
+          "title": {
+            "title": "Weak Hamiltonian, CP violation and rare decays"
+          },
+          "authors": [
+            {
+              "full_name": "Buras, A.J."
+            }
+          ],
+          "arxiv_eprint": "hep-ph/9806471"
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/31950"
+        },
+        "reference": {
+          "dois": [
+            "10.1016/0370-2693(92)90068-F"
+          ],
+          "misc": [
+            "Union of chiral and heavy quark symmetries"
+          ],
+          "authors": [
+            {
+              "full_name": "Burdman, G."
+            },
+            {
+              "full_name": "Donoghue, J.F."
+            }
+          ],
+          "publication_info": {
+            "year": 1992,
+            "page_end": "291",
+            "page_start": "287",
+            "journal_title": "Phys.Lett.B",
+            "journal_volume": "280"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/633974"
+        },
+        "reference": {
+          "misc": [
+            "Quantum gravity in everyday life: General relativity as an effective field theory doi:10.12942/lrr--5"
+          ],
+          "authors": [
+            {
+              "full_name": "Burgess, C.P."
+            }
+          ],
+          "publication_info": {
+            "year": 2004,
+            "page_end": "56",
+            "page_start": "5",
+            "journal_title": "Living Rev.Rel.",
+            "journal_volume": "7"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/220438"
+        },
+        "reference": {
+          "title": {
+            "title": "SEMISIMPLE LIE ALGEBRAS AND THEIR REPRESENTATIONS"
+          },
+          "authors": [
+            {
+              "full_name": "Cahn, R."
+            }
+          ],
+          "imprint": {
+            "publisher": "Dover"
+          },
+          "publication_info": {
+            "year": 1985
+          }
+        },
+        "legacy_curated": true,
+        "curated_relation": true
+      },
+      {
+        "reference": {
+          "isbn": "9780486449999",
+          "misc": [
+            "Publications) 174 pages"
+          ]
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/54960"
+        },
+        "reference": {
+          "misc": [
+            "Structure of phenomenological Lagrangians. 2 doi:"
+          ],
+          "authors": [
+            {
+              "full_name": "Callan, J."
+            },
+            {
+              "full_name": "G., Curtis"
+            },
+            {
+              "full_name": "Coleman, S.R."
+            },
+            {
+              "full_name": "Wess, J."
+            },
+            {
+              "full_name": "Zumino, B."
+            }
+          ],
+          "publication_info": {
+            "year": 1969,
+            "page_end": "2250",
+            "page_start": "2247",
+            "journal_title": "Phys.Rev.",
+            "journal_volume": "177"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/54960"
+        },
+        "reference": {
+          "dois": [
+            "10.1103/PhysRev.177.2247"
+          ]
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/650093"
+        },
+        "reference": {
+          "isbn": "9780805387322",
+          "misc": [
+            "Spacetime and geometry: An introduction to general relativity 513 pages"
+          ],
+          "authors": [
+            {
+              "full_name": "Carroll, S.M."
+            }
+          ],
+          "imprint": {
+            "publisher": "Addison-Wesley"
+          },
+          "publication_info": {
+            "year": 2004
+          }
+        },
+        "legacy_curated": true,
+        "curated_relation": true
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/213093"
+        },
+        "reference": {
+          "dois": [
+            "10.1016/0370-2693(86)91297-9"
+          ],
+          "misc": [
+            "Effective Lagrangians for Bound State Problems in QED, QCD, and Other Field Theories"
+          ],
+          "authors": [
+            {
+              "full_name": "Caswell, W."
+            },
+            {
+              "full_name": "Lepage, G."
+            }
+          ],
+          "publication_info": {
+            "year": 1986,
+            "artid": "437",
+            "page_start": "437",
+            "journal_title": "Phys.Lett.B",
+            "journal_volume": "167"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "Principles of Condensed Matter"
+          ],
+          "authors": [
+            {
+              "full_name": "Chaikin, P.M."
+            },
+            {
+              "full_name": "Lubensky, T.C."
+            }
+          ],
+          "publication_info": {
+            "year": 2014
+          }
+        }
+      },
+      {
+        "reference": {
+          "isbn": "9781139648615",
+          "misc": [
+            "Physics (Cambridge University Press) 9781139648615, 721 pages"
+          ]
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/297280"
+        },
+        "reference": {
+          "misc": [
+            "Lepton energy distributions in heavy meson decays from QCD doi:10.1016/"
+          ],
+          "authors": [
+            {
+              "full_name": "Chay, J."
+            },
+            {
+              "full_name": "Georgi, H."
+            },
+            {
+              "full_name": "Grinstein, B."
+            }
+          ],
+          "publication_info": {
+            "year": 1990,
+            "page_end": "405",
+            "page_start": "399",
+            "journal_title": "Phys.Lett.B",
+            "journal_volume": "247"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "0370-2693(90)90916-T"
+          ]
+        }
+      },
+      {
+        "reference": {
+          "isbn": "9780471154457",
+          "misc": [
+            "Finite Groups and Quantum Theory (John and Sons) 272 pages"
+          ],
+          "authors": [
+            {
+              "full_name": "Chesnut, D."
+            }
+          ],
+          "imprint": {
+            "publisher": "Wiley"
+          },
+          "publication_info": {
+            "year": 1974
+          }
+        }
+      },
+      {
+        "reference": {
+          "misc": [
+            "R* operation corrected, Phys.Lett"
+          ],
+          "authors": [
+            {
+              "full_name": "Chetyrkin, K."
+            },
+            {
+              "full_name": "Smirnov, V.A."
+            }
+          ],
+          "publication_info": {
+            "year": 1984
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/208077"
+        },
+        "reference": {
+          "dois": [
+            "10.1016/0370-2693(84)91291-7"
+          ],
+          "misc": [
+            "B144, pp. 419-424"
+          ]
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "Integration by Parts: The Algorithm to"
+          ],
+          "authors": [
+            {
+              "full_name": "Chetyrkin, K."
+            },
+            {
+              "full_name": "Tkachov, F."
+            }
+          ],
+          "publication_info": {
+            "year": 1981
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/171845"
+        },
+        "reference": {
+          "misc": [
+            "Calculate beta Functions in 4 Loops doi:"
+          ],
+          "publication_info": {
+            "page_end": "204",
+            "page_start": "159",
+            "journal_title": "Nucl.Phys.B",
+            "journal_volume": "192"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/171845"
+        },
+        "reference": {
+          "dois": [
+            "10.1016/0550-3213(81)90199-1"
+          ]
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/182141"
+        },
+        "reference": {
+          "misc": [
+            "Infrared R operation and ultraviolet counterterms in the MS scheme doi:"
+          ],
+          "authors": [
+            {
+              "full_name": "Chetyrkin, K."
+            },
+            {
+              "full_name": "Tkachov, F."
+            }
+          ],
+          "publication_info": {
+            "year": 1982,
+            "page_end": "344",
+            "page_start": "340",
+            "journal_title": "Phys.Lett.B",
+            "journal_volume": "114"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/182141"
+        },
+        "reference": {
+          "dois": [
+            "10.1016/0370-2693(82)90358-6"
+          ]
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/833854"
+        },
+        "reference": {
+          "dois": [
+            "10.1103/PhysRevD.80"
+          ],
+          "misc": [
+            "Phase Space and Jet Definitions in SCET"
+          ],
+          "authors": [
+            {
+              "full_name": "Cheung, W.M.-Y."
+            },
+            {
+              "full_name": "Luke, M."
+            },
+            {
+              "full_name": "Zuberi, S."
+            }
+          ],
+          "publication_info": {
+            "year": 2009,
+            "artid": "114021",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "80"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "Low Energy Probes of Physics"
+          ],
+          "authors": [
+            {
+              "full_name": "Cirigliano, V."
+            },
+            {
+              "full_name": "Ramsey-Musolf, M.J."
+            }
+          ],
+          "publication_info": {
+            "year": 2013
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/1225989"
+        },
+        "reference": {
+          "misc": [
+            "Beyond the Standard Model doi:"
+          ],
+          "publication_info": {
+            "page_end": "20",
+            "page_start": "2",
+            "journal_title": "Prog.Part.Nucl.Phys.",
+            "journal_volume": "71"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/1225989"
+        },
+        "reference": {
+          "dois": [
+            "10.1016/j.ppnp.2013.03.002"
+          ]
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "Next-to-leading order"
+          ],
+          "authors": [
+            {
+              "full_name": "Ciuchini, M."
+            },
+            {
+              "full_name": "Franco, E."
+            },
+            {
+              "full_name": "Lubicz, V."
+            },
+            {
+              "full_name": "Mescia, F."
+            }
+          ],
+          "publication_info": {
+            "year": 2002
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/565176"
+        },
+        "reference": {
+          "dois": [
+            "10.1016/S0550-3213(02)00006-8"
+          ],
+          "misc": [
+            "QCD corrections to spectator effects in lifetimes of beauty hadrons"
+          ],
+          "publication_info": {
+            "page_end": "238",
+            "page_start": "211",
+            "journal_title": "Nucl.Phys.B",
+            "journal_volume": "625"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "Aspects of Symmetry: Selected Erice Lectures (Cambridge"
+          ],
+          "authors": [
+            {
+              "full_name": "Coleman, S."
+            }
+          ],
+          "publication_info": {
+            "year": 1985
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/1681171"
+        },
+        "reference": {
+          "isbn": "9780521318273",
+          "misc": [
+            "University Press) 420 pages"
+          ]
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/81406"
+        },
+        "reference": {
+          "misc": [
+            "(1973). Radiative Corrections as the Origin of Spontaneous Symmetry Breaking doi:"
+          ],
+          "authors": [
+            {
+              "full_name": "Coleman, S.R."
+            },
+            {
+              "full_name": "Weinberg, E.J."
+            }
+          ],
+          "publication_info": {
+            "year": 1910,
+            "artid": "1888",
+            "page_start": "1888",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "7"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/81406"
+        },
+        "reference": {
+          "dois": [
+            "10.1103/PhysRevD.7.1888"
+          ]
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "Structure of phenomenological"
+          ],
+          "authors": [
+            {
+              "full_name": "Coleman, S.R."
+            },
+            {
+              "full_name": "Wess, J."
+            },
+            {
+              "full_name": "Zumino, B."
+            }
+          ],
+          "publication_info": {
+            "year": 1969
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/54959"
+        },
+        "reference": {
+          "dois": [
+            "10.1103/PhysRev.177"
+          ],
+          "misc": [
+            "Lagrangians. 1"
+          ],
+          "publication_info": {
+            "page_end": "2247",
+            "page_start": "2239",
+            "journal_title": "Phys.Rev.",
+            "journal_volume": "177"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/166064"
+        },
+        "reference": {
+          "dois": [
+            "10.1016/0550-3213(82)90021-9"
+          ],
+          "misc": [
+            "(1982). Parton Distribution and Decay Functions Dokshitzer, Y. L Calculation of the Structure Functions for Deep Inelastic"
+          ],
+          "authors": [
+            {
+              "full_name": "Collins, J.C."
+            },
+            {
+              "full_name": "Soper, D.E."
+            }
+          ],
+          "publication_info": {
+            "year": 1977,
+            "artid": "445",
+            "page_start": "445",
+            "journal_title": "Nucl.Phys.B",
+            "journal_volume": "194"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "Scattering and e+ e- Annihilation by Perturbation Theory in Quantum"
+          ]
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/126153"
+        },
+        "reference": {
+          "misc": [
+            "Chromodynamics [Zh. Eksp. Teor"
+          ],
+          "publication_info": {
+            "page_end": "653",
+            "page_start": "641",
+            "journal_title": "Sov.Phys.JETP",
+            "journal_volume": "46"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "publication_info": {
+            "year": 1977,
+            "artid": "1216",
+            "page_start": "1216",
+            "journal_title": "Fizika",
+            "journal_volume": "73"
+          }
+        }
+      },
+      {
+        "reference": {
+          "misc": [
+            "Dynamics of the Standard"
+          ],
+          "authors": [
+            {
+              "full_name": "Donoghue, J."
+            },
+            {
+              "full_name": "Golowich, E."
+            },
+            {
+              "full_name": "Holstein, B.R."
+            }
+          ],
+          "publication_info": {
+            "year": 1992
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/340705"
+        },
+        "reference": {
+          "misc": [
+            "Model"
+          ],
+          "publication_info": {
+            "page_end": "540",
+            "page_start": "1",
+            "journal_title": "Camb.Monogr.Part.Phys.Nucl.Phys.Cosmol.",
+            "journal_volume": "2"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/38129"
+        },
+        "reference": {
+          "misc": [
+            "General relativity as an effective field theory: The leading quantum corrections doi:10.1103/"
+          ],
+          "authors": [
+            {
+              "full_name": "Donoghue, J.F."
+            }
+          ],
+          "publication_info": {
+            "year": 1994,
+            "page_end": "3888",
+            "page_start": "3874",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "50"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "PhysRevD.50.3874"
+          ]
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/403510"
+        },
+        "reference": {
+          "title": {
+            "title": "Introduction to the effective field theory description of gravity"
+          },
+          "authors": [
+            {
+              "full_name": "Donoghue, J.F."
+            }
+          ],
+          "arxiv_eprint": "gr-qc/9512024"
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/1374211"
+        },
+        "reference": {
+          "title": {
+            "title": "Low Energy Theorems of Quantum Gravity from Effective Field Theory"
+          },
+          "authors": [
+            {
+              "full_name": "F., Donoghue J."
+            },
+            {
+              "full_name": "Holstein, B.R."
+            }
+          ],
+          "publication_info": {
+            "year": 2015,
+            "artid": "103102",
+            "journal_title": "J.Phys.G",
+            "journal_volume": "42"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "authors": [
+            {
+              "full_name": "Duehrssen-Debling, M."
+            },
+            {
+              "full_name": "Mendes, A.T."
+            },
+            {
+              "full_name": "Falkowski, A."
+            },
+            {
+              "full_name": "Isidori, G."
+            }
+          ],
+          "publication_info": {
+            "year": 2015
+          }
+        }
+      },
+      {
+        "reference": {
+          "misc": [
+            "Higgs Basis: Proposal for an EFT basis choice for LHC HXSWG"
+          ]
+        }
+      },
+      {
+        "reference": {
+          "misc": [
+            "Spin Dependent Forces in QCD, Phys.Rev"
+          ],
+          "authors": [
+            {
+              "full_name": "Eichten, E."
+            },
+            {
+              "full_name": "Feinberg, F."
+            }
+          ],
+          "publication_info": {
+            "year": 1981
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/155782"
+        },
+        "reference": {
+          "dois": [
+            "10.1103/PhysRevD.23.2724"
+          ],
+          "misc": [
+            "D23, p. 2724"
+          ]
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/282581"
+        },
+        "reference": {
+          "misc": [
+            "An Effective Field Theory for the Calculation of Matrix Elements Involving Heavy Quarks doi:"
+          ],
+          "authors": [
+            {
+              "full_name": "Eichten, E."
+            },
+            {
+              "full_name": "Hill, B.R."
+            }
+          ],
+          "publication_info": {
+            "year": 1990,
+            "artid": "511",
+            "page_start": "511",
+            "journal_title": "Phys.Lett.B",
+            "journal_volume": "234"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/282581"
+        },
+        "reference": {
+          "dois": [
+            "10.1016/0370-2693(90)92049-O"
+          ]
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/41231"
+        },
+        "reference": {
+          "dois": [
+            "10.2307/1968714"
+          ],
+          "misc": [
+            "The Gravitational equations and the problem of motion"
+          ],
+          "authors": [
+            {
+              "full_name": "Einstein, A."
+            },
+            {
+              "full_name": "Infeld, L."
+            },
+            {
+              "full_name": "Hoffmann, B."
+            }
+          ],
+          "publication_info": {
+            "year": 1938,
+            "page_end": "100",
+            "page_start": "65",
+            "journal_title": "Annals Math.",
+            "journal_volume": "39"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "Broken Symmetry and the Mass of Gauge Vector"
+          ],
+          "authors": [
+            {
+              "full_name": "Englert, F."
+            },
+            {
+              "full_name": "Brout, R."
+            }
+          ],
+          "publication_info": {
+            "year": 1964
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/12291"
+        },
+        "reference": {
+          "dois": [
+            "10.1103/PhysRevLett.13.321"
+          ],
+          "misc": [
+            "Mesons"
+          ],
+          "publication_info": {
+            "page_end": "323",
+            "page_start": "321",
+            "journal_title": "Phys.Rev.Lett.",
+            "journal_volume": "13"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/296568"
+        },
+        "reference": {
+          "misc": [
+            "Power corrections to leading logs and their application to heavy quark decays doi:10"
+          ],
+          "authors": [
+            {
+              "full_name": "Falk, A.F."
+            },
+            {
+              "full_name": "Grinstein, B."
+            }
+          ],
+          "publication_info": {
+            "year": 1990,
+            "page_end": "411",
+            "page_start": "406",
+            "journal_title": "Phys.Lett.B",
+            "journal_volume": "247"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "1016/0370-2693(90)90917-U"
+          ]
+        }
+      },
+      {
+        "reference": {
+          "misc": [
+            "Quark - anti-Quark Potential in QCD, Nucl.Phys. B129, pp"
+          ],
+          "authors": [
+            {
+              "full_name": "Fischler, W."
+            }
+          ],
+          "publication_info": {
+            "year": 1977
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/119906"
+        },
+        "reference": {
+          "dois": [
+            "10.1016/0550-3213(77)90026-8"
+          ],
+          "misc": [
+            "157-174"
+          ]
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/746638"
+        },
+        "reference": {
+          "dois": [
+            "10.1103/PhysRevD"
+          ],
+          "misc": [
+            "Pion interactions in the X(3872)"
+          ],
+          "authors": [
+            {
+              "full_name": "Fleming, S."
+            },
+            {
+              "full_name": "Kusunoki, M."
+            },
+            {
+              "full_name": "Mehen, T."
+            },
+            {
+              "full_name": "van Kolck, U."
+            }
+          ],
+          "publication_info": {
+            "year": 2007,
+            "artid": "034006",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "76"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "76.034006"
+          ]
+        }
+      },
+      {
+        "reference": {
+          "misc": [
+            "Hadronic ψ production calculated in the"
+          ],
+          "authors": [
+            {
+              "full_name": "Fleming, S."
+            },
+            {
+              "full_name": "Maksymyk, I."
+            }
+          ],
+          "publication_info": {
+            "year": 1996
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/403614"
+        },
+        "reference": {
+          "misc": [
+            "NRQCD factorization formalism doi:10"
+          ],
+          "publication_info": {
+            "page_end": "3618",
+            "page_start": "3608",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "54"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "1103/PhysRevD.54.3608"
+          ]
+        }
+      },
+      {
+        "reference": {
+          "misc": [
+            "SCET, QCD and Wilson Lines, Phys. Rev"
+          ],
+          "authors": [
+            {
+              "full_name": "Freedman, S.M."
+            },
+            {
+              "full_name": "Luke, M."
+            }
+          ],
+          "publication_info": {
+            "year": 2012
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/921474"
+        },
+        "reference": {
+          "dois": [
+            "10.1103/PhysRevD.85.014003"
+          ],
+          "misc": [
+            "D85, p. 014003"
+          ]
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/140082"
+        },
+        "reference": {
+          "dois": [
+            "10.1103/PhysRevLett.42.1195"
+          ],
+          "misc": [
+            "Path Integral Measure for Gauge Invariant Fermion Theories"
+          ],
+          "authors": [
+            {
+              "full_name": "Fujikawa, K."
+            }
+          ],
+          "publication_info": {
+            "year": 1979,
+            "artid": "1195",
+            "page_start": "1195",
+            "journal_title": "Phys.Rev.Lett.",
+            "journal_volume": "42"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/653607"
+        },
+        "reference": {
+          "misc": [
+            "Spectator effects and lifetimes of heavy hadrons doi:10.1103/"
+          ],
+          "authors": [
+            {
+              "full_name": "Gabbiani, F."
+            },
+            {
+              "full_name": "Onishchenko, A.I."
+            },
+            {
+              "full_name": "Petrov, A.A."
+            }
+          ],
+          "publication_info": {
+            "year": 2004,
+            "artid": "094031",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "70"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "PhysRevD.70.094031"
+          ]
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/251672"
+        },
+        "reference": {
+          "dois": [
+            "10.1016/0550-3213(88)90108-3"
+          ],
+          "misc": [
+            "Nucleons with Chiral Loops"
+          ],
+          "authors": [
+            {
+              "full_name": "Gasser, J."
+            },
+            {
+              "full_name": "Sainio, M."
+            },
+            {
+              "full_name": "Svarc, A."
+            }
+          ],
+          "publication_info": {
+            "year": 1988,
+            "artid": "779",
+            "page_start": "779",
+            "journal_title": "Nucl.Phys.B",
+            "journal_volume": "307"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "Weak Interactions and Modern Particle Theory /Cummings"
+          ],
+          "authors": [
+            {
+              "full_name": "Georgi, H."
+            }
+          ],
+          "imprint": {
+            "publisher": "Benjamin"
+          },
+          "publication_info": {
+            "year": 1984
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/221553"
+        },
+        "reference": {
+          "isbn": "9780805331639",
+          "misc": [
+            "Pub. Co.) 9780805331639, 165 pages"
+          ]
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/294733"
+        },
+        "reference": {
+          "dois": [
+            "10.1016/0370-2693(90)91128-X"
+          ],
+          "misc": [
+            "An Effective Field Theory for Heavy Quarks at Low-energies"
+          ],
+          "authors": [
+            {
+              "full_name": "Georgi, H."
+            }
+          ],
+          "publication_info": {
+            "year": 1990,
+            "page_end": "450",
+            "page_start": "447",
+            "journal_title": "Phys.Lett.B",
+            "journal_volume": "240"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "Lie Algebras in Particle Physics (Westview Press) ISBN-10:"
+          ],
+          "authors": [
+            {
+              "full_name": "Georgi, H."
+            }
+          ],
+          "publication_info": {
+            "year": 1999
+          }
+        }
+      },
+      {
+        "reference": {
+          "misc": [
+            "0738202339, 344 pages"
+          ]
+        }
+      },
+      {
+        "reference": {
+          "misc": [
+            "The StronglyInteracting"
+          ],
+          "authors": [
+            {
+              "full_name": "Giudice, G.F."
+            },
+            {
+              "full_name": "Grojean, C."
+            },
+            {
+              "full_name": "Pomarol, A."
+            },
+            {
+              "full_name": "Rattazzi, R."
+            }
+          ],
+          "publication_info": {
+            "year": 2007
+          }
+        }
+      },
+      {
+        "reference": {
+          "dois": [
+            "10.1088/1126-6708/2007/"
+          ],
+          "misc": [
+            "Light Higgs"
+          ],
+          "publication_info": {
+            "artid": "045",
+            "page_start": "045",
+            "journal_title": "JHEP",
+            "journal_volume": "06"
+          }
+        }
+      },
+      {
+        "reference": {
+          "misc": [
+            "06/045"
+          ]
+        }
+      },
+      {
+        "reference": {
+          "misc": [
+            "Les Houches lectures on effective field theories and gravitational radiation, in Les Houches Summer School - Session 86: Particle"
+          ],
+          "authors": [
+            {
+              "full_name": "Goldberger, W.D."
+            }
+          ],
+          "publication_info": {
+            "year": 2007
+          }
+        }
+      },
+      {
+        "reference": {
+          "misc": [
+            "Physics and Cosmology: The Fabric of Spacetime Les Houches, France, July 31-August 25"
+          ],
+          "publication_info": {
+            "year": 2006
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/659452"
+        },
+        "reference": {
+          "misc": [
+            "(a). An Effective field theory of gravity for extended objects doi:10.1103/"
+          ],
+          "authors": [
+            {
+              "full_name": "Goldberger, W.D."
+            },
+            {
+              "full_name": "Rothstein, I.Z."
+            }
+          ],
+          "publication_info": {
+            "year": 2006,
+            "artid": "104029",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "73"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "PhysRevD.73.104029"
+          ]
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/697886"
+        },
+        "reference": {
+          "misc": [
+            "(b). Dissipative effects in the worldline approach to black hole dynamics doi:10.1103/"
+          ],
+          "authors": [
+            {
+              "full_name": "Goldberger, W.D."
+            },
+            {
+              "full_name": "Rothstein, I.Z."
+            }
+          ],
+          "publication_info": {
+            "year": 2006,
+            "artid": "104030",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "73"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "PhysRevD.73.104030"
+          ]
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/864990"
+        },
+        "reference": {
+          "dois": [
+            "10.1103/PhysRevD.82.116010"
+          ],
+          "misc": [
+            "and Yu, H.-B. . Constraints on Dark Matter from Colliders"
+          ],
+          "authors": [
+            {
+              "full_name": "Goodman, J."
+            },
+            {
+              "full_name": "Ibe, M."
+            },
+            {
+              "full_name": "Rajaraman, A."
+            },
+            {
+              "full_name": "Shepherd, W."
+            },
+            {
+              "full_name": "Tait, T.M.P."
+            }
+          ],
+          "publication_info": {
+            "year": 2010,
+            "artid": "116010",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "82"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/73449"
+        },
+        "reference": {
+          "misc": [
+            "Deep inelastic e p scattering in perturbation theory",
+            "Additional pubnote: Yad.Fiz.,15,781"
+          ],
+          "authors": [
+            {
+              "full_name": "Gribov, V.N."
+            },
+            {
+              "full_name": "Lipatov, L.N."
+            }
+          ],
+          "publication_info": {
+            "year": 1972,
+            "page_end": "450",
+            "page_start": "438",
+            "journal_title": "Sov.J.Nucl.Phys.",
+            "journal_volume": "15"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/397879"
+        },
+        "reference": {
+          "title": {
+            "title": "An Introduction to heavy mesons"
+          },
+          "authors": [
+            {
+              "full_name": "Grinstein, B."
+            }
+          ],
+          "arxiv_eprint": "hep-ph/9508227"
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "authors": [
+            {
+              "full_name": "Grinstein, B."
+            },
+            {
+              "full_name": "Jenkins, E.E."
+            },
+            {
+              "full_name": "Manohar, A.V."
+            },
+            {
+              "full_name": "Savage, M.J."
+            },
+            {
+              "full_name": "Wise, M.B"
+            }
+          ]
+        }
+      },
+      {
+        "reference": {
+          "misc": [
+            "Chiral perturbation theory for fDs /fD and BBs /BB, Nucl.Phys"
+          ],
+          "label": "1992"
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/332712"
+        },
+        "reference": {
+          "dois": [
+            "10.1016/0550-3213(92)90248-A"
+          ],
+          "misc": [
+            "B380, pp. 369-376"
+          ]
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/690548"
+        },
+        "reference": {
+          "misc": [
+            "Lectures on QED and QCD, in 1-156"
+          ],
+          "title": {
+            "title": "Grozin, Andrey: Lectures on QED and QCD"
+          },
+          "authors": [
+            {
+              "full_name": "Grozin, A."
+            }
+          ],
+          "arxiv_eprint": "hep-ph/0508242"
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "Dimension-Six"
+          ],
+          "authors": [
+            {
+              "full_name": "Grzadkowski, B."
+            },
+            {
+              "full_name": "Iskrzynski, M."
+            },
+            {
+              "full_name": "Misiak, M."
+            },
+            {
+              "full_name": "Rosiek, J."
+            }
+          ],
+          "publication_info": {
+            "year": 2010
+          }
+        }
+      },
+      {
+        "reference": {
+          "misc": [
+            "Terms in the Standard Model Lagrangian doi:10.1007/"
+          ],
+          "publication_info": {
+            "artid": "085",
+            "page_start": "085",
+            "journal_title": "JHEP",
+            "journal_volume": "10"
+          }
+        }
+      },
+      {
+        "reference": {
+          "misc": [
+            "JHEP10085"
+          ],
+          "publication_info": {
+            "year": 2010
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/46945"
+        },
+        "reference": {
+          "misc": [
+            "Gravitation and Electromagnetism"
+          ],
+          "authors": [
+            {
+              "full_name": "Gupta, S.N."
+            }
+          ],
+          "publication_info": {
+            "year": 1954,
+            "artid": "1683",
+            "page_start": "1683",
+            "journal_title": "Phys.Rev.",
+            "journal_volume": "96"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/46945"
+        },
+        "reference": {
+          "dois": [
+            "10.1103/PhysRev.96.1683"
+          ],
+          "misc": [
+            "1685"
+          ]
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/12292"
+        },
+        "reference": {
+          "misc": [
+            "Global Conservation Laws and Massless Particles doi:10.1103/"
+          ],
+          "authors": [
+            {
+              "full_name": "Guralnik, G."
+            },
+            {
+              "full_name": "Hagen, C."
+            },
+            {
+              "full_name": "Kibble, T."
+            }
+          ],
+          "publication_info": {
+            "year": 1964,
+            "page_end": "587",
+            "page_start": "585",
+            "journal_title": "Phys.Rev.Lett.",
+            "journal_volume": "13"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "PhysRevLett.13.585"
+          ]
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/1125856"
+        },
+        "reference": {
+          "dois": [
+            "10.1103/PhysRevD"
+          ],
+          "misc": [
+            "Lorentz invariance in heavy particle effective theories"
+          ],
+          "authors": [
+            {
+              "full_name": "Heinonen, J."
+            },
+            {
+              "full_name": "Hill, R.J."
+            },
+            {
+              "full_name": "Solon, M.P."
+            }
+          ],
+          "publication_info": {
+            "year": 2012,
+            "artid": "094020",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "86"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "86.094020"
+          ]
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/11883"
+        },
+        "reference": {
+          "dois": [
+            "10.1103/PhysRevLett.13.508"
+          ],
+          "misc": [
+            "Broken Symmetries and the Masses of Gauge Bosons"
+          ],
+          "authors": [
+            {
+              "full_name": "Higgs, P.W."
+            }
+          ],
+          "publication_info": {
+            "year": 1964,
+            "page_end": "509",
+            "page_start": "508",
+            "journal_title": "Phys.Rev.Lett.",
+            "journal_volume": "13"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "Weak Decays of Heavy Mesons in the"
+          ],
+          "authors": [
+            {
+              "full_name": "Isgur, N."
+            },
+            {
+              "full_name": "Wise, M.B."
+            }
+          ],
+          "publication_info": {
+            "year": 1989
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/26564"
+        },
+        "reference": {
+          "misc": [
+            "Static Quark Approximation doi:10.1016/"
+          ],
+          "publication_info": {
+            "page_end": "117",
+            "page_start": "113",
+            "journal_title": "Phys.Lett.B",
+            "journal_volume": "232"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "0370-2693(89)90566-2"
+          ]
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/159194"
+        },
+        "reference": {
+          "isbn": "9780486445687",
+          "misc": [
+            "Quantum Field Theory Publications)"
+          ],
+          "authors": [
+            {
+              "full_name": "Itzykson, C."
+            },
+            {
+              "full_name": "J., Zuber"
+            }
+          ],
+          "imprint": {
+            "publisher": "Dover"
+          },
+          "publication_info": {
+            "year": 2006
+          }
+        },
+        "legacy_curated": true,
+        "curated_relation": true
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/300913"
+        },
+        "reference": {
+          "misc": [
+            "752 pages Baryon chiral perturbation theory using a heavy fermion Lagrangian doi:10"
+          ],
+          "authors": [
+            {
+              "full_name": "Jenkins, E.E."
+            },
+            {
+              "full_name": "Manohar, A.V."
+            }
+          ],
+          "publication_info": {
+            "year": 1991,
+            "page_end": "562",
+            "page_start": "558",
+            "journal_title": "Phys.Lett.B",
+            "journal_volume": "255"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "1016/0370-2693(91)90266-S"
+          ]
+        }
+      },
+      {
+        "reference": {
+          "misc": [
+            "Renormalization Group"
+          ],
+          "authors": [
+            {
+              "full_name": "Jenkins, E.E."
+            },
+            {
+              "full_name": "Manohar, A.V."
+            },
+            {
+              "full_name": "Trott, M."
+            }
+          ],
+          "publication_info": {
+            "year": 2013
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/1247479"
+        },
+        "reference": {
+          "dois": [
+            "10.1007/JHEP10(2013)087"
+          ],
+          "misc": [
+            "Evolution of the Standard Model Dimension : Formalism and lambda Dependence"
+          ],
+          "authors": [
+            {
+              "full_name": "Operators, Six, I"
+            }
+          ],
+          "publication_info": {
+            "year": 2013,
+            "artid": "087",
+            "page_start": "087",
+            "journal_title": "JHEP",
+            "journal_volume": "10"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/324383"
+        },
+        "reference": {
+          "misc": [
+            "Ji, X.-D. and Musolf, M. . Subleading logarithmic mass dependence in heavy meson form-factors doi:10.1016/"
+          ],
+          "publication_info": {
+            "year": 1991,
+            "page_end": "413",
+            "page_start": "409",
+            "journal_title": "Phys.Lett.B",
+            "journal_volume": "257"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "0370-2693(91)91916-J"
+          ]
+        }
+      },
+      {
+        "reference": {
+          "misc": [
+            "Effective field theories, in Beyond the standard model 5"
+          ],
+          "authors": [
+            {
+              "full_name": "Kaplan, D.B."
+            }
+          ],
+          "publication_info": {
+            "year": 1995
+          }
+        }
+      },
+      {
+        "reference": {
+          "misc": [
+            "Proceedings, 5th Conference, Balholm, Norway, April 29-May 4"
+          ],
+          "publication_info": {
+            "year": 1997
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/418210"
+        },
+        "reference": {
+          "misc": [
+            "Nucleon - nucleon scattering from effective field theory doi:10.1016/"
+          ],
+          "authors": [
+            {
+              "full_name": "Kaplan, D.B."
+            },
+            {
+              "full_name": "Savage, M.J."
+            },
+            {
+              "full_name": "Wise, M.B."
+            }
+          ],
+          "publication_info": {
+            "year": 1996,
+            "page_end": "659",
+            "page_start": "629",
+            "journal_title": "Nucl.Phys.B",
+            "journal_volume": "478"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "0550-3213(96)00357-4"
+          ]
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/466387"
+        },
+        "reference": {
+          "misc": [
+            "(a). A New expansion for nucleon-nucleon interactions doi:10.1016/"
+          ],
+          "authors": [
+            {
+              "full_name": "Kaplan, D.B."
+            },
+            {
+              "full_name": "Savage, M.J."
+            },
+            {
+              "full_name": "Wise, M.B."
+            }
+          ],
+          "publication_info": {
+            "year": 1998,
+            "page_end": "396",
+            "page_start": "390",
+            "journal_title": "Phys.Lett.B",
+            "journal_volume": "424"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "S0370-2693(98)00210-X"
+          ]
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/467508"
+        },
+        "reference": {
+          "misc": [
+            "(b). Two nucleon systems from effective field theory doi:10.1016/"
+          ],
+          "authors": [
+            {
+              "full_name": "Kaplan, D.B."
+            },
+            {
+              "full_name": "Savage, M.J."
+            },
+            {
+              "full_name": "Wise, M.B."
+            }
+          ],
+          "publication_info": {
+            "year": 1998,
+            "page_end": "355",
+            "page_start": "329",
+            "journal_title": "Nucl.Phys.B",
+            "journal_volume": "534"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "S0550-3213(98)00440-4"
+          ]
+        }
+      },
+      {
+        "reference": {
+          "misc": [
+            "Uses of effective field theory in lattice QCD: Chapter 39 in"
+          ],
+          "authors": [
+            {
+              "full_name": "Kronfeld, A.S."
+            }
+          ],
+          "publication_info": {
+            "year": 2002
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/587161"
+        },
+        "reference": {
+          "misc": [
+            "At the Frontiers of Particle Physics, Handbook of QCD"
+          ],
+          "arxiv_eprint": "hep-lat/0205021"
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "Measurement of the D∗"
+          ],
+          "authors": [
+            {
+              "full_name": "Lees, J."
+            }
+          ],
+          "publication_info": {
+            "year": 2013
+          }
+        }
+      },
+      {
+        "reference": {
+          "misc": [
+            "+ meson width and the"
+          ],
+          "label": "2010"
+        }
+      },
+      {
+        "reference": {
+          "misc": [
+            "D"
+          ]
+        }
+      },
+      {
+        "reference": {
+          "misc": [
+            "∗"
+          ]
+        }
+      },
+      {
+        "reference": {
+          "misc": [
+            "+ - D"
+          ],
+          "label": "2010"
+        }
+      },
+      {
+        "reference": {
+          "misc": [
+            "mass difference p. 111801, doi:"
+          ],
+          "label": "0",
+          "publication_info": {
+            "artid": "11",
+            "page_start": "11",
+            "journal_title": "Phys.Rev.Lett.",
+            "journal_volume": "111"
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/1229331"
+        },
+        "reference": {
+          "dois": [
+            "10.1103/PhysRevLett.111.111801"
+          ]
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/98962"
+        },
+        "reference": {
+          "dois": [
+            "10.1103/RevModPhys.47.849"
+          ],
+          "misc": [
+            "Introduction to the Technique of Dimensional Regularization"
+          ],
+          "authors": [
+            {
+              "full_name": "Leibbrandt, G."
+            }
+          ],
+          "publication_info": {
+            "year": 1975,
+            "artid": "849",
+            "page_start": "849",
+            "journal_title": "Rev.Mod.Phys.",
+            "journal_volume": "47"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "Theoretical update of Bs - B¯s mixing, JHEP"
+          ],
+          "authors": [
+            {
+              "full_name": "Lenz, A."
+            },
+            {
+              "full_name": "Nierste, U."
+            }
+          ],
+          "publication_info": {
+            "year": 2007
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/734384"
+        },
+        "reference": {
+          "dois": [
+            "10.1088/1126-6708/2007/06/072"
+          ],
+          "misc": [
+            "0706, p. 072"
+          ]
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "authors": [
+            {
+              "full_name": "Lepage, G.P."
+            },
+            {
+              "full_name": "Magnea, L."
+            },
+            {
+              "full_name": "Nakhleh, C."
+            },
+            {
+              "full_name": "Magnea, U."
+            },
+            {
+              "full_name": "Hornbostel, K."
+            }
+          ],
+          "publication_info": {
+            "year": 1992
+          }
+        }
+      },
+      {
+        "reference": {
+          "misc": [
+            "Improved nonrelativistic QCD for heavy quark physics, Phys.Rev. D46, pp"
+          ]
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/332988"
+        },
+        "reference": {
+          "dois": [
+            "10.1103/PhysRevD.46.4052"
+          ],
+          "misc": [
+            "4052-4067"
+          ]
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "Chiral effective Lagrangians, Lect.Notes Phys. 396, pp"
+          ],
+          "authors": [
+            {
+              "full_name": "Leutwyler, H."
+            }
+          ],
+          "publication_info": {
+            "year": 1991
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/327377"
+        },
+        "reference": {
+          "dois": [
+            "10.1007/3-540-54978-1"
+          ],
+          "misc": [
+            "97-138 8"
+          ]
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/334483"
+        },
+        "reference": {
+          "misc": [
+            "Reparametrization invariance constraints on heavy particle effective field theories doi:"
+          ],
+          "authors": [
+            {
+              "full_name": "Luke, M.E."
+            },
+            {
+              "full_name": "Manohar, A.V."
+            }
+          ],
+          "publication_info": {
+            "year": 1992,
+            "page_end": "354",
+            "page_start": "348",
+            "journal_title": "Phys.Lett.B",
+            "journal_volume": "286"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/334483"
+        },
+        "reference": {
+          "dois": [
+            "10.1016/0370-2693(92)91786-9"
+          ]
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/425215"
+        },
+        "reference": {
+          "dois": [
+            "10.1103/PhysRevD"
+          ],
+          "misc": [
+            "Bound states and power counting in effective field theories"
+          ],
+          "authors": [
+            {
+              "full_name": "Luke, M.E."
+            },
+            {
+              "full_name": "Manohar, A.V."
+            }
+          ],
+          "publication_info": {
+            "year": 1997,
+            "page_end": "4140",
+            "page_start": "4129",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "55"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "55.4129"
+          ]
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/508088"
+        },
+        "reference": {
+          "dois": [
+            "10.1103/PhysRevD.61.074025"
+          ],
+          "misc": [
+            "Renormalization group scaling in nonrelativistic QCD"
+          ],
+          "authors": [
+            {
+              "full_name": "Luke, M.E."
+            },
+            {
+              "full_name": "Manohar, A.V."
+            },
+            {
+              "full_name": "Rothstein, I.Z."
+            }
+          ],
+          "publication_info": {
+            "year": 2000,
+            "artid": "074025",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "61"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/298543"
+        },
+        "reference": {
+          "dois": [
+            "10.1016/0550-3213(91)90301-D"
+          ],
+          "misc": [
+            "Baryons in the heavy quark effective theory"
+          ],
+          "authors": [
+            {
+              "full_name": "Mannel, T."
+            },
+            {
+              "full_name": "Roberts, W."
+            },
+            {
+              "full_name": "Ryzak, Z."
+            }
+          ],
+          "publication_info": {
+            "year": 1991,
+            "page_end": "53",
+            "page_start": "38",
+            "journal_title": "Nucl.Phys.B",
+            "journal_volume": "355"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/316639"
+        },
+        "reference": {
+          "misc": [
+            "A Derivation of the heavy quark effective Lagrangian from QCD doi:10"
+          ],
+          "authors": [
+            {
+              "full_name": "Mannel, T."
+            },
+            {
+              "full_name": "Roberts, W."
+            },
+            {
+              "full_name": "Ryzak, Z."
+            }
+          ],
+          "publication_info": {
+            "year": 1992,
+            "page_end": "220",
+            "page_start": "204",
+            "journal_title": "Nucl.Phys.B",
+            "journal_volume": "368"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "1016/0550-3213(92)90204-O"
+          ]
+        }
+      },
+      {
+        "reference": {
+          "misc": [
+            "The HQET / NRQCD Lagrangian to order α/m3"
+          ],
+          "authors": [
+            {
+              "full_name": "Manohar, A.V."
+            }
+          ],
+          "publication_info": {
+            "year": 1997
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/439619"
+        },
+        "reference": {
+          "dois": [
+            "10.1103/PhysRevD.56.230"
+          ],
+          "publication_info": {
+            "page_end": "237",
+            "page_start": "230",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "56"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/628334"
+        },
+        "reference": {
+          "dois": [
+            "10.1103/PhysRevD.68"
+          ],
+          "misc": [
+            "Deep inelastic scattering as x → 1 using soft collinear effective theory"
+          ],
+          "authors": [
+            {
+              "full_name": "Manohar, A.V."
+            }
+          ],
+          "publication_info": {
+            "year": 2003,
+            "artid": "114019",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "68"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/585625"
+        },
+        "reference": {
+          "dois": [
+            "10.1016/S0370-2693(02)02029-4"
+          ],
+          "misc": [
+            "Reparameterization invariance for collinear operators"
+          ],
+          "authors": [
+            {
+              "full_name": "Manohar, A.V."
+            },
+            {
+              "full_name": "Mehen, T."
+            },
+            {
+              "full_name": "Pirjol, D."
+            },
+            {
+              "full_name": "Stewart, I.W."
+            }
+          ],
+          "publication_info": {
+            "year": 2002,
+            "page_end": "66",
+            "page_start": "59",
+            "journal_title": "Phys.Lett.B",
+            "journal_volume": "539"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/715628"
+        },
+        "reference": {
+          "misc": [
+            "The Zero-Bin and Mode Factorization in Quantum Field Theory doi:"
+          ],
+          "authors": [
+            {
+              "full_name": "Manohar, A.V."
+            },
+            {
+              "full_name": "Stewart, I.W."
+            }
+          ],
+          "publication_info": {
+            "year": 2007,
+            "artid": "074002",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "76"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/715628"
+        },
+        "reference": {
+          "dois": [
+            "10.1103/PhysRevD.76.074002"
+          ]
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/538478"
+        },
+        "reference": {
+          "misc": [
+            "Heavy Quark Physics"
+          ],
+          "authors": [
+            {
+              "full_name": "Manohar, A.V."
+            },
+            {
+              "full_name": "Wise, M.B."
+            }
+          ],
+          "publication_info": {
+            "year": 2000,
+            "page_end": "191",
+            "page_start": "1",
+            "journal_title": "Camb.Monogr.Part.Phys.Nucl.Phys.Cosmol.",
+            "journal_volume": "10"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/622159"
+        },
+        "reference": {
+          "dois": [
+            "10.1103/PhysRevD.68.114009"
+          ],
+          "misc": [
+            "Strong phases and factorization for color suppressed decays"
+          ],
+          "authors": [
+            {
+              "full_name": "Mantry, S."
+            },
+            {
+              "full_name": "Pirjol, D."
+            },
+            {
+              "full_name": "Stewart, I.W."
+            }
+          ],
+          "publication_info": {
+            "year": 2003,
+            "artid": "114009",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "68"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/355600"
+        },
+        "reference": {
+          "misc": [
+            "(a). Heavy quark symmetry doi:"
+          ],
+          "authors": [
+            {
+              "full_name": "Neubert, M."
+            }
+          ],
+          "publication_info": {
+            "year": 1994,
+            "page_end": "396",
+            "page_start": "259",
+            "journal_title": "Phys.Rept.",
+            "journal_volume": "245"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/355600"
+        },
+        "reference": {
+          "dois": [
+            "10.1016/0370-1573(94)90091-4"
+          ]
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "(b). Short distance expansion of heavy - light currents at order"
+          ],
+          "authors": [
+            {
+              "full_name": "Neubert, M."
+            }
+          ],
+          "publication_info": {
+            "year": 1994
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/357738"
+        },
+        "reference": {
+          "dois": [
+            "10.1103/PhysRevD.49.1542"
+          ],
+          "misc": [
+            "1/mQ"
+          ],
+          "publication_info": {
+            "page_end": "1550",
+            "page_start": "1542",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "49"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/416425"
+        },
+        "reference": {
+          "misc": [
+            "Spectator effects in inclusive decays of beauty hadrons doi:10.1016/"
+          ],
+          "authors": [
+            {
+              "full_name": "Neubert, M."
+            },
+            {
+              "full_name": "Sachrajda, C.T."
+            }
+          ],
+          "publication_info": {
+            "year": 1997,
+            "page_end": "370",
+            "page_start": "339",
+            "journal_title": "Nucl.Phys.B",
+            "journal_volume": "483"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "S0550-3213(96)00559-7"
+          ]
+        }
+      },
+      {
+        "reference": {
+          "misc": [
+            "The Asymptotic Safety Scenario in Quantum"
+          ],
+          "authors": [
+            {
+              "full_name": "Niedermaier, M."
+            },
+            {
+              "full_name": "Reuter, M."
+            }
+          ],
+          "publication_info": {
+            "year": 2006
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/719313"
+        },
+        "reference": {
+          "misc": [
+            "Gravity doi:10.12942/lrr--5"
+          ],
+          "publication_info": {
+            "year": 2006,
+            "page_end": "173",
+            "page_start": "5",
+            "journal_title": "Living Rev.Rel.",
+            "journal_volume": "9"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "On How to Count Goldstone Bosons, Nucl"
+          ],
+          "authors": [
+            {
+              "full_name": "Nielsen, H.B."
+            },
+            {
+              "full_name": "Chadha, S."
+            }
+          ],
+          "publication_info": {
+            "year": 1976
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/3085"
+        },
+        "reference": {
+          "dois": [
+            "10.1016/0550-3213(76)90025-0"
+          ],
+          "misc": [
+            "Phys. B105, p. 445"
+          ]
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/1315584"
+        },
+        "reference": {
+          "dois": [
+            "10.1088/1674-1137/38/9/090001"
+          ],
+          "misc": [
+            "Review of Particle Physics"
+          ],
+          "authors": [
+            {
+              "full_name": "Olive, K."
+            }
+          ],
+          "publication_info": {
+            "year": 2014,
+            "artid": "090001",
+            "journal_title": "Chin.Phys.C",
+            "journal_volume": "38"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/266356"
+        },
+        "reference": {
+          "misc": [
+            "ISBN-10:"
+          ],
+          "title": {
+            "title": "STATISTICAL FIELD THEORY"
+          },
+          "authors": [
+            {
+              "full_name": "Parisi, G."
+            }
+          ],
+          "imprint": {
+            "publisher": "Addison-Wesley"
+          },
+          "publication_info": {
+            "year": 1988
+          }
+        },
+        "legacy_curated": true,
+        "curated_relation": true
+      },
+      {
+        "reference": {
+          "misc": [
+            "0201059851, 352 pages"
+          ]
+        }
+      },
+      {
+        "reference": {
+          "misc": [
+            "Subleading Jet Functions in Inclusive B Decays JHEP 06, p"
+          ],
+          "authors": [
+            {
+              "full_name": "Paz, G."
+            }
+          ],
+          "publication_info": {
+            "year": 2009
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/815814"
+        },
+        "reference": {
+          "dois": [
+            "10.1088/1126-6708/2009/06/083"
+          ],
+          "misc": [
+            "083"
+          ]
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/858588"
+        },
+        "reference": {
+          "dois": [
+            "10.1142/S0217732310033803"
+          ],
+          "misc": [
+            "(2010). An Effective Field Theory Look at Deep Inelastic Scattering"
+          ],
+          "authors": [
+            {
+              "full_name": "Paz, G."
+            }
+          ],
+          "publication_info": {
+            "year": 2049,
+            "artid": "2039",
+            "page_start": "2039",
+            "journal_title": "Mod.Phys.Lett.A",
+            "journal_volume": "25"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "An Introduction to Quantum Field"
+          ],
+          "authors": [
+            {
+              "full_name": "Peskin, M.E."
+            },
+            {
+              "full_name": "Schroeder, D.V."
+            }
+          ],
+          "publication_info": {
+            "year": 1995
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/407703"
+        },
+        "reference": {
+          "isbn": "9780201503975",
+          "misc": [
+            "Theory (Westview Press) 864 pages"
+          ]
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/1263665"
+        },
+        "reference": {
+          "misc": [
+            "Searching for dark matter at LHC with Mono-Higgs production doi:10.1016/ j.physletb..01.051"
+          ],
+          "authors": [
+            {
+              "full_name": "Petrov, A.A."
+            },
+            {
+              "full_name": "Shepherd, W."
+            }
+          ],
+          "publication_info": {
+            "year": 2014,
+            "page_end": "183",
+            "page_start": "178",
+            "journal_title": "Phys.Lett.B",
+            "journal_volume": "730"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/471518"
+        },
+        "reference": {
+          "title": {
+            "title": "Effective field theory: Course"
+          },
+          "authors": [
+            {
+              "full_name": "Pich, A."
+            }
+          ],
+          "arxiv_eprint": "hep-ph/9806303"
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "Effective field theory for ultrasoft momenta in"
+          ],
+          "authors": [
+            {
+              "full_name": "Pineda, A."
+            },
+            {
+              "full_name": "Soto, J."
+            }
+          ],
+          "publication_info": {
+            "year": 1998
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/446457"
+        },
+        "reference": {
+          "dois": [
+            "10.1016/S0920-5632(97)01102-X"
+          ],
+          "misc": [
+            "NRQCD and NRQED"
+          ],
+          "publication_info": {
+            "page_end": "432",
+            "page_start": "428",
+            "journal_title": "Nucl.Phys.B Proc.Suppl.",
+            "journal_volume": "64"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/602349"
+        },
+        "reference": {
+          "misc": [
+            "A Complete basis for power suppressed collinear ultrasoft operators doi:10"
+          ],
+          "authors": [
+            {
+              "full_name": "Pirjol, D."
+            },
+            {
+              "full_name": "Stewart, I.W."
+            }
+          ],
+          "publication_info": {
+            "year": 2003,
+            "artid": "094005",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "67"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/602349"
+        },
+        "reference": {
+          "dois": [
+            "10.1103/PhysRevD.67.094005"
+          ],
+          "misc": [
+            "1103/PhysRevD.69.019903 [Erratum: Phys"
+          ]
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "Rev.D69,019903]"
+          ],
+          "publication_info": {
+            "year": 2004
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/487240"
+        },
+        "reference": {
+          "misc": [
+            "(a)"
+          ],
+          "title": {
+            "title": "String theory. Vol. 1: An introduction to the bosonic string"
+          },
+          "authors": [
+            {
+              "full_name": "Polchinski, J."
+            }
+          ],
+          "publication_info": {
+            "year": 1998
+          }
+        },
+        "legacy_curated": true,
+        "curated_relation": true
+      },
+      {
+        "reference": {
+          "misc": [
+            "(Cambridge University Press)"
+          ]
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/487241"
+        },
+        "reference": {
+          "misc": [
+            "(b). (Cambridge"
+          ],
+          "title": {
+            "title": "String theory. Vol. 2: Superstring theory and beyond"
+          },
+          "authors": [
+            {
+              "full_name": "Polchinski, J."
+            }
+          ],
+          "publication_info": {
+            "year": 1998
+          }
+        },
+        "legacy_curated": true,
+        "curated_relation": true
+      },
+      {
+        "reference": {
+          "misc": [
+            "University Press)"
+          ]
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/697837"
+        },
+        "reference": {
+          "dois": [
+            "10.1103/PhysRevD.73.104031"
+          ],
+          "misc": [
+            "Post-Newtonian corrections to the motion of spinning bodies in NRGR"
+          ],
+          "authors": [
+            {
+              "full_name": "Porto, R.A."
+            }
+          ],
+          "publication_info": {
+            "year": 2006,
+            "artid": "104031",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "73"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "Field Theory: A Modern Primer"
+          ],
+          "authors": [
+            {
+              "full_name": "Ramond, P."
+            }
+          ]
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/1295000"
+        },
+        "reference": {
+          "dois": [
+            "10.1007/s10714-014-1726-y"
+          ],
+          "misc": [
+            "Progress in effective field theory approach to the binary inspiral problem"
+          ],
+          "authors": [
+            {
+              "full_name": "Rothstein, I.Z."
+            }
+          ],
+          "publication_info": {
+            "year": 2014,
+            "artid": "1726",
+            "page_start": "1726",
+            "journal_title": "Gen.Rel.Grav.",
+            "journal_volume": "46"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "Zakopane lectures on loop gravity, PoS QGQGS, p. 003"
+          ],
+          "authors": [
+            {
+              "full_name": "Rovelli, C."
+            }
+          ],
+          "publication_info": {
+            "year": 2011
+          }
+        }
+      },
+      {
+        "reference": {
+          "misc": [
+            "Quantum Field Theory (Cambridge University Press), ISBN"
+          ],
+          "authors": [
+            {
+              "full_name": "Ryder, L.H."
+            }
+          ],
+          "publication_info": {
+            "year": 1996
+          }
+        }
+      },
+      {
+        "reference": {
+          "misc": [
+            "9780521478144, 9781139632393"
+          ]
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/683679"
+        },
+        "reference": {
+          "title": {
+            "title": "A Chiral perturbation theory primer"
+          },
+          "authors": [
+            {
+              "full_name": "Scherer, S."
+            },
+            {
+              "full_name": "Schindler, M.R."
+            }
+          ],
+          "arxiv_eprint": "hep-ph/0505265"
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "Lectures on heavy quarks in quantum chromodynamics"
+          ],
+          "authors": [
+            {
+              "full_name": "Shifman, M.A."
+            }
+          ],
+          "publication_info": {
+            "year": 1995
+          }
+        }
+      },
+      {
+        "reference": {
+          "misc": [
+            "An extended version of the lectures given at Theoretical Advanced Study"
+          ]
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/401289"
+        },
+        "reference": {
+          "misc": [
+            "Institute QCD and Beyond, University of Colorado, Boulder, Colorado, June"
+          ],
+          "arxiv_eprint": "hep-ph/9510377",
+          "publication_info": {
+            "year": 1995
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "ITEP lectures on particle physics and field theory. Vol"
+          ],
+          "authors": [
+            {
+              "full_name": "Shifman, M.A."
+            }
+          ],
+          "publication_info": {
+            "year": 1999
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/510906"
+        },
+        "reference": {
+          "misc": [
+            "1, 2"
+          ],
+          "publication_info": {
+            "page_end": "875",
+            "page_start": "1",
+            "journal_title": "World Sci.Lect.Notes Phys.",
+            "journal_volume": "62"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "On Production of D and D"
+          ],
+          "authors": [
+            {
+              "full_name": "Shifman, M.A."
+            },
+            {
+              "full_name": "Voloshin, M."
+            }
+          ],
+          "publication_info": {
+            "year": 1988
+          }
+        }
+      },
+      {
+        "reference": {
+          "misc": [
+            "∗ Mesons in"
+          ]
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/247251"
+        },
+        "reference": {
+          "authors": [
+            {
+              "full_name": "Decays, B. Meson"
+            }
+          ],
+          "publication_info": {
+            "artid": "511",
+            "page_start": "511",
+            "journal_title": "Sov.J.Nucl.Phys.",
+            "journal_volume": "47"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "Group Theory for Unified Model Building, Phys.Rept. 79, pp"
+          ],
+          "authors": [
+            {
+              "full_name": "Slansky, R."
+            }
+          ],
+          "publication_info": {
+            "year": 1981
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/10204"
+        },
+        "reference": {
+          "dois": [
+            "10.1016/0370-1573(81)90092-2"
+          ],
+          "misc": [
+            "1-128"
+          ]
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "Classical Gravity with Higher Derivatives, Gen. Rel. Grav"
+          ],
+          "authors": [
+            {
+              "full_name": "Stelle, K.S."
+            }
+          ],
+          "publication_info": {
+            "year": 1978
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/119488"
+        },
+        "reference": {
+          "dois": [
+            "10.1007/BF00760427"
+          ],
+          "misc": [
+            "9, pp. 353-371"
+          ]
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/144074"
+        },
+        "reference": {
+          "misc": [
+            "’t Naturalness, chiral symmetry, and spontaneous chiral symmetry breaking"
+          ],
+          "authors": [
+            {
+              "full_name": "Hooft, G."
+            }
+          ],
+          "publication_info": {
+            "year": 1980,
+            "artid": "135",
+            "page_start": "135",
+            "journal_title": "NATO Sci.Ser.B",
+            "journal_volume": "59"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/95368"
+        },
+        "reference": {
+          "misc": [
+            "’t One loop divergencies in the theory of gravitation"
+          ],
+          "authors": [
+            {
+              "full_name": "Hooft, G."
+            },
+            {
+              "full_name": "Veltman, M.J.G."
+            }
+          ],
+          "publication_info": {
+            "year": 1974,
+            "page_end": "94",
+            "page_start": "69",
+            "journal_title": "Ann.Inst.H.Poincare Phys.Theor.A",
+            "journal_volume": "20"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "Jets in Effective Theory: Summing Phase Space Logs, Phys"
+          ],
+          "authors": [
+            {
+              "full_name": "Trott, M."
+            }
+          ],
+          "publication_info": {
+            "year": 2007
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/724853"
+        },
+        "reference": {
+          "dois": [
+            "10.1103/PhysRevD.75.054011"
+          ],
+          "misc": [
+            "Rev. D75, p. 054011"
+          ]
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/585618"
+        },
+        "reference": {
+          "dois": [
+            "10.1142/S0217732302006886"
+          ],
+          "misc": [
+            "Sakharov’s induced gravity: A Modern perspective"
+          ],
+          "authors": [
+            {
+              "full_name": "Visser, M."
+            }
+          ],
+          "publication_info": {
+            "year": 2002,
+            "page_end": "992",
+            "page_start": "977",
+            "journal_title": "Mod.Phys.Lett.A",
+            "journal_volume": "17"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "Gravitation and Cosmology: Principles and Applications of the General Theory of Relativity (Cambridge University Press), ISBN-10:"
+          ],
+          "authors": [
+            {
+              "full_name": "Weinberg, S."
+            }
+          ],
+          "publication_info": {
+            "year": 1972
+          }
+        }
+      },
+      {
+        "reference": {
+          "misc": [
+            "0471925675, 657 pages"
+          ]
+        }
+      },
+      {
+        "reference": {
+          "misc": [
+            "(a). Baryon and Lepton Nonconserving Processes, Phys. Rev"
+          ],
+          "authors": [
+            {
+              "full_name": "Weinberg, S."
+            }
+          ],
+          "publication_info": {
+            "year": 1979
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/144673"
+        },
+        "reference": {
+          "dois": [
+            "10.1103/PhysRevLett.43.1566"
+          ],
+          "misc": [
+            "Lett. 43, pp. 1566-1570"
+          ]
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/133288"
+        },
+        "reference": {
+          "misc": [
+            "(b). Phenomenological Lagrangians"
+          ],
+          "authors": [
+            {
+              "full_name": "Weinberg, S."
+            }
+          ],
+          "publication_info": {
+            "year": 1979,
+            "artid": "327",
+            "page_start": "327",
+            "journal_title": "Physica A",
+            "journal_volume": "96"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "Ultraviolet divergences in quantum theories of gravitation, in General Relativity: An Einstein Centenary Survey, pp. 790-831"
+          ],
+          "authors": [
+            {
+              "full_name": "Weinberg, S."
+            }
+          ],
+          "publication_info": {
+            "year": 1980
+          }
+        }
+      },
+      {
+        "reference": {
+          "misc": [
+            "Superconductivity for Particular Theorists, Prog. Theor"
+          ],
+          "authors": [
+            {
+              "full_name": "Weinberg, S."
+            }
+          ],
+          "publication_info": {
+            "year": 1986
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/18067"
+        },
+        "reference": {
+          "dois": [
+            "10.1143/PTPS.86.43"
+          ],
+          "misc": [
+            "Phys. Suppl. 86, p. 43"
+          ]
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/28641"
+        },
+        "reference": {
+          "dois": [
+            "10.1016/0370-2693(90)90938-3"
+          ],
+          "misc": [
+            "Nuclear forces from chiral Lagrangians"
+          ],
+          "authors": [
+            {
+              "full_name": "Weinberg, S."
+            }
+          ],
+          "publication_info": {
+            "year": 1990,
+            "page_end": "292",
+            "page_start": "288",
+            "journal_title": "Phys.Lett.B",
+            "journal_volume": "251"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/430948"
+        },
+        "reference": {
+          "title": {
+            "title": "The quantum theory of fields. Vol. 2: Modern applications"
+          },
+          "authors": [
+            {
+              "full_name": "Weinberg, S."
+            }
+          ],
+          "publication_info": {
+            "year": 1996
+          }
+        },
+        "legacy_curated": true,
+        "curated_relation": true
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/430948"
+        },
+        "reference": {
+          "isbn": "9780521670548",
+          "misc": [
+            "(Cambridge University Press) 489 pages"
+          ]
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/31475"
+        },
+        "reference": {
+          "dois": [
+            "10.1103/PhysRevD.45.R2188"
+          ],
+          "misc": [
+            "Chiral perturbation theory for hadrons containing a heavy quark"
+          ],
+          "authors": [
+            {
+              "full_name": "Wise, M.B."
+            }
+          ],
+          "publication_info": {
+            "year": 1992,
+            "page_end": "2191",
+            "page_start": "2188",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "45"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "Effective-Field-Theory Approach to TopQuark"
+          ],
+          "authors": [
+            {
+              "full_name": "Zhang, C."
+            },
+            {
+              "full_name": "Willenbrock, S."
+            }
+          ],
+          "publication_info": {
+            "year": 2011
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/865887"
+        },
+        "reference": {
+          "misc": [
+            "Production and Decay doi:10.1103/"
+          ],
+          "publication_info": {
+            "artid": "034006",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "83"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "PhysRevD.83.034006"
+          ]
+        }
+      },
+      {
+        "reference": {
+          "misc": [
+            "Quantum field theory and critical phenomena (International"
+          ],
+          "authors": [
+            {
+              "full_name": "Zinn-Justin, J."
+            }
+          ],
+          "publication_info": {
+            "year": 2002
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/290037"
+        },
+        "reference": {
+          "isbn": "9780198509233",
+          "misc": [
+            "Series of Monographs on Physics, Vol. 113) 1054 pages"
+          ]
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "isbn": "9780521880329",
+          "misc": [
+            "A first course in string theory (Cambridge University Press) 5"
+          ],
+          "authors": [
+            {
+              "full_name": "Zwiebach, B."
+            }
+          ],
+          "publication_info": {
+            "year": 2004
+          }
+        }
+      }
+    ],
+    "document_type": [
+      "book"
+    ],
+    "control_number": 1456183,
+    "legacy_version": "20200217222257.0",
+    "number_of_pages": 320,
+    "inspire_categories": [
+      {
+        "term": "Theory-HEP"
+      },
+      {
+        "term": "Math and Math Physics"
+      }
+    ],
+    "legacy_creation_date": "2016-05-09"
+  },
+  "revision_id": 110,
+  "created": "2016-05-09T00:00:00+00:00"
+}

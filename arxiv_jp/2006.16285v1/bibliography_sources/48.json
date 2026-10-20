@@ -1,0 +1,440 @@
+{
+  "links": {
+    "bibtex": "https://inspirehep.net/api/literature/422750?format=bibtex",
+    "latex-eu": "https://inspirehep.net/api/literature/422750?format=latex-eu",
+    "latex-us": "https://inspirehep.net/api/literature/422750?format=latex-us",
+    "json": "https://inspirehep.net/api/literature/422750?format=json",
+    "json-expanded": "https://inspirehep.net/api/literature/422750?format=json-expanded",
+    "cv": "https://inspirehep.net/api/literature/422750?format=cv",
+    "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A422750"
+  },
+  "metadata": {
+    "report_numbers": [
+      {
+        "value": "MCGILL-96-33"
+      }
+    ],
+    "citation_count_without_self_citations": 117,
+    "citation_count": 122,
+    "publication_info": [
+      {
+        "year": 1998,
+        "artid": "093013",
+        "journal_title": "Phys.Rev.D",
+        "journal_volume": "58"
+      }
+    ],
+    "core": true,
+    "dois": [
+      {
+        "value": "10.1103/PhysRevD.58.093013"
+      }
+    ],
+    "titles": [
+      {
+        "title": "Effective field theories for QED bound states: Extending nonrelativistic QED to study retardation effects"
+      },
+      {
+        "title": "QUANTUM ELECTRODYNAMICS"
+      },
+      {
+        "title": "Effective field theories for QED bound states: Extending nonrelativistic QED to study retardation effects.",
+        "source": "arXiv"
+      },
+      {
+        "title": "Effective field theories for QED bound states: extending Nonrelativistic QED to study retardation effects",
+        "source": "arXiv"
+      }
+    ],
+    "$schema": "https://inspirehep.net/schemas/records/hep.json",
+    "authors": [
+      {
+        "uuid": "72020e4a-2b6a-4c9a-8925-188e9ca0edcd",
+        "record": {
+          "$ref": "https://inspirehep.net/api/authors/1001342"
+        },
+        "full_name": "Labelle, Patrick",
+        "affiliations": [
+          {
+            "value": "McGill U.",
+            "record": {
+              "$ref": "https://inspirehep.net/api/institutions/902995"
+            }
+          }
+        ],
+        "signature_block": "LABALp"
+      }
+    ],
+    "curated": true,
+    "figures": [
+      {
+        "key": "098fd14dc1722ea6a249eb05239dd29e",
+        "url": "https://inspirehep.net/files/098fd14dc1722ea6a249eb05239dd29e",
+        "source": "arxiv",
+        "caption": "NRQED Feynman rules",
+        "filename": "feynmanrules1.png"
+      },
+      {
+        "key": "71c026e17d9c48fdd3072eed1f6853bd",
+        "url": "https://inspirehep.net/files/71c026e17d9c48fdd3072eed1f6853bd",
+        "source": "arxiv",
+        "caption": "\\bf D51",
+        "filename": "fig00001.png"
+      },
+      {
+        "key": "f7650255a66ddfa18baa5effb3cd05f5",
+        "url": "https://inspirehep.net/files/f7650255a66ddfa18baa5effb3cd05f5",
+        "source": "arxiv",
+        "caption": "\\bf D51\\bf 34",
+        "filename": "feynmanrules2.png"
+      },
+      {
+        "key": "4dbbeb1a5506a67563b9e74c48c5c76e",
+        "url": "https://inspirehep.net/files/4dbbeb1a5506a67563b9e74c48c5c76e",
+        "source": "arxiv",
+        "caption": "No caption",
+        "filename": "feynmanrules3.png"
+      },
+      {
+        "key": "c96f62872299baaee0ccc618a78dfd9b",
+        "url": "https://inspirehep.net/files/c96f62872299baaee0ccc618a78dfd9b",
+        "source": "arxiv",
+        "caption": "Time-ordered propagators for two fermions or two fermions plus one transverse photon.",
+        "filename": "prop2.png"
+      },
+      {
+        "key": "3cc34675d31f5e8d75b56593932bb971",
+        "url": "https://inspirehep.net/files/3cc34675d31f5e8d75b56593932bb971",
+        "source": "arxiv",
+        "caption": "The two time-ordered diagrams corresponding to the exchange of a transverse photon (the vertical lines indicate the intermediate states used for the time-ordered propagators).",
+        "filename": "2top.png"
+      },
+      {
+        "key": "08e10aee61e25b0217a294ff989d46fa",
+        "url": "https://inspirehep.net/files/08e10aee61e25b0217a294ff989d46fa",
+        "source": "arxiv",
+        "caption": "Separation of a transverse photon into a soft, instantaneous contribution (represented by a vertical line) and an ultra-soft propagator (represented by the broken wavy line).",
+        "filename": "equalsoftplusultrasoft.png"
+      },
+      {
+        "key": "d461126660bf3a39e8d17b6001b702e9",
+        "url": "https://inspirehep.net/files/d461126660bf3a39e8d17b6001b702e9",
+        "source": "arxiv",
+        "caption": "Generic bound state potential; the dependence on the charges and on the masses of each vertex is indicated.",
+        "filename": "3potexample.png"
+      },
+      {
+        "key": "bbacdafffef091ca0caea8ccc483ea70",
+        "url": "https://inspirehep.net/files/bbacdafffef091ca0caea8ccc483ea70",
+        "source": "arxiv",
+        "caption": "The two time-ordered diagrams corresponding to a transverse photon exchange with the routing necessary to apply the multipole expansion.",
+        "filename": "topformultipole.png"
+      },
+      {
+        "key": "9c552c1df328b60df8dc06b1ee143ad3",
+        "url": "https://inspirehep.net/files/9c552c1df328b60df8dc06b1ee143ad3",
+        "source": "arxiv",
+        "caption": "Self-energy diagram with an ultra-soft photon.",
+        "filename": "examplelambshift.png"
+      },
+      {
+        "key": "da8f4293efdbbd629e0582804f460290",
+        "url": "https://inspirehep.net/files/da8f4293efdbbd629e0582804f460290",
+        "source": "arxiv",
+        "caption": "Spin-spin exchange with a soft photon (vertical line) and an ultra-soft photon.",
+        "filename": "examplehfs.png"
+      },
+      {
+        "key": "2fd6e5900f6246b9fbfb68897860d285",
+        "url": "https://inspirehep.net/files/2fd6e5900f6246b9fbfb68897860d285",
+        "source": "arxiv",
+        "caption": "Ultra-soft photon spanning a Coulomb interaction. In such a diagram, one does not subtract the soft photon propagator from the intermediate state propagator because there is no corresponding soft photon diagram.",
+        "filename": "transvcoulomb.png"
+      }
+    ],
+    "texkeys": [
+      "Labelle:1996en"
+    ],
+    "citeable": true,
+    "keywords": [
+      {
+        "value": "quantum electrodynamics: bound state",
+        "schema": "INSPIRE"
+      },
+      {
+        "value": "quantum electrodynamics: nonrelativistic",
+        "schema": "INSPIRE"
+      },
+      {
+        "value": "effective Hamiltonian",
+        "schema": "INSPIRE"
+      },
+      {
+        "value": "perturbation theory",
+        "schema": "INSPIRE"
+      },
+      {
+        "value": "Feynman graph",
+        "schema": "INSPIRE"
+      },
+      {
+        "value": "radiative correction",
+        "schema": "INSPIRE"
+      },
+      {
+        "value": "vertex function",
+        "schema": "INSPIRE"
+      },
+      {
+        "value": "expansion: multipole",
+        "schema": "INSPIRE"
+      }
+    ],
+    "refereed": true,
+    "abstracts": [
+      {
+        "value": "Nonrelativistic QED bound states are difficult to study because of the presence of at least three widely different scales: the masses, three-momenta ($p_i$) and kinetic energies ($K_i$) of the constituents. Nonrelativistic QED (NRQED), an effective field theory developed by Caswell and Lepage, simplifies greatly bound state calculations by eliminating the masses as dynamical scales. As we demonstrate, NRQED diagrams involving only photons of energy $E_\\gamma \\simeq p_i$ contribute, in any calculation, to a unique order in $\\alpha$. This is not the case, however, for diagrams involving photons with energies $E_\\gamma \\simeq K_i$ (``retardation effects\"), for which no simple counting counting rules can be given. We present a new effective field theory in which the contribution of those ultra-soft photons can be isolated order by order in $\\alpha$. This is effectively accomplished by performing a multipole expansion of the NRQED vertices.",
+        "source": "arXiv"
+      }
+    ],
+    "references": [
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/8887"
+        },
+        "reference": {
+          "publication_info": {
+            "artid": "62",
+            "page_start": "62",
+            "journal_title": "Proc.Roy.Soc.Lond.A",
+            "journal_volume": "195"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "publication_info": {
+            "artid": "15",
+            "page_start": "15",
+            "journal_title": "Soryushiron Kenkyu",
+            "journal_volume": "1"
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/2560478"
+        },
+        "reference": {
+          "publication_info": {
+            "artid": "267",
+            "page_start": "267",
+            "journal_title": "Prog.Theor.Phys.",
+            "journal_volume": "6"
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/9030"
+        },
+        "reference": {
+          "publication_info": {
+            "artid": "29",
+            "page_start": "29",
+            "journal_title": "Phys.Rev.",
+            "journal_volume": "78"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/133152"
+        },
+        "reference": {
+          "publication_info": {
+            "artid": "36",
+            "page_start": "36",
+            "journal_title": "Phys.Rev.A",
+            "journal_volume": "20"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/358821"
+        },
+        "reference": {
+          "arxiv_eprint": "hep-ph/9310208",
+          "publication_info": {
+            "artid": "2006",
+            "page_start": "2006",
+            "journal_title": "Phys.Rev.Lett.",
+            "journal_volume": "72"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/403696"
+        },
+        "reference": {
+          "arxiv_eprint": "hep-ph/9512327",
+          "publication_info": {
+            "artid": "4909",
+            "page_start": "4909",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "53"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/333303"
+        },
+        "reference": {
+          "publication_info": {
+            "artid": "3428",
+            "page_start": "3428",
+            "journal_title": "Phys.Rev.Lett.",
+            "journal_volume": "69"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/33027"
+        },
+        "reference": {
+          "arxiv_eprint": "hep-ph/9209266"
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "publication_info": {
+            "artid": "109",
+            "page_start": "109",
+            "journal_title": "Phys.Rev.",
+            "journal_volume": "34"
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/374999"
+        },
+        "reference": {
+          "arxiv_eprint": "hep-ph/9407339",
+          "publication_info": {
+            "artid": "1125",
+            "page_start": "1125",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "51"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/446457"
+        },
+        "reference": {
+          "arxiv_eprint": "hep-ph/9707481",
+          "publication_info": {
+            "artid": "428",
+            "page_start": "428",
+            "journal_title": "Nucl.Phys.B Proc.Suppl.",
+            "journal_volume": "64"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/450944"
+        },
+        "reference": {
+          "arxiv_eprint": "hep-ph/9711292",
+          "publication_info": {
+            "artid": "391",
+            "page_start": "391",
+            "journal_title": "Phys.Lett.B",
+            "journal_volume": "420"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/467317"
+        },
+        "reference": {
+          "arxiv_eprint": "hep-ph/9802365",
+          "publication_info": {
+            "artid": "114011",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "58"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/470850"
+        },
+        "reference": {
+          "arxiv_eprint": "hep-ph/9805424",
+          "publication_info": {
+            "artid": "016005",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "59"
+          }
+        },
+        "curated_relation": false
+      }
+    ],
+    "arxiv_eprints": [
+      {
+        "value": "hep-ph/9608491",
+        "categories": [
+          "hep-ph"
+        ]
+      }
+    ],
+    "document_type": [
+      "article"
+    ],
+    "preprint_date": "1996-08",
+    "control_number": 422750,
+    "legacy_version": "20160617104810.0",
+    "number_of_pages": 39,
+    "inspire_categories": [
+      {
+        "term": "Phenomenology-HEP"
+      }
+    ],
+    "legacy_creation_date": "1996-08-30",
+    "external_system_identifiers": [
+      {
+        "value": "1998PhRvD..58i3013L",
+        "schema": "ADS"
+      },
+      {
+        "value": "SPIRES-3411010",
+        "schema": "SPIRES"
+      }
+    ]
+  },
+  "updated": "2023-03-07T05:01:37.308429+00:00",
+  "uuid": "ce222bd7-96c9-4faf-af62-6684064013e7",
+  "created": "1996-08-30T00:00:00+00:00",
+  "id": "422750",
+  "revision_id": 92
+}

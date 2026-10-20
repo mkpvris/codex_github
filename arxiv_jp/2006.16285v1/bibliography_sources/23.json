@@ -1,0 +1,1729 @@
+{
+  "created": "2015-01-07T00:00:00+00:00",
+  "revision_id": 93,
+  "links": {
+    "bibtex": "https://inspirehep.net/api/literature/1336631?format=bibtex",
+    "latex-eu": "https://inspirehep.net/api/literature/1336631?format=latex-eu",
+    "latex-us": "https://inspirehep.net/api/literature/1336631?format=latex-us",
+    "json": "https://inspirehep.net/api/literature/1336631?format=json",
+    "json-expanded": "https://inspirehep.net/api/literature/1336631?format=json-expanded",
+    "cv": "https://inspirehep.net/api/literature/1336631?format=cv",
+    "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1336631"
+  },
+  "id": "1336631",
+  "updated": "2023-03-07T01:42:04.396792+00:00",
+  "metadata": {
+    "publication_info": [
+      {
+        "year": 2015,
+        "page_end": "62",
+        "page_start": "43",
+        "journal_title": "Ann.Rev.Nucl.Part.Sci.",
+        "journal_record": {
+          "$ref": "https://inspirehep.net/api/journals/1214846"
+        },
+        "journal_volume": "65"
+      }
+    ],
+    "citation_count_without_self_citations": 118,
+    "citation_count": 119,
+    "report_numbers": [
+      {
+        "value": "SCIPP-14-15"
+      }
+    ],
+    "core": true,
+    "dois": [
+      {
+        "value": "10.1146/annurev-nucl-102014-022053",
+        "source": "ADS"
+      }
+    ],
+    "titles": [
+      {
+        "title": "Naturalness Under Stress",
+        "source": "arXiv"
+      }
+    ],
+    "$schema": "https://inspirehep.net/schemas/records/hep.json",
+    "authors": [
+      {
+        "uuid": "de30993a-3b24-4576-9b77-d85591b475da",
+        "record": {
+          "$ref": "https://inspirehep.net/api/authors/1011758"
+        },
+        "full_name": "Dine, Michael",
+        "affiliations": [
+          {
+            "value": "UC, Santa Cruz, Inst. Part. Phys.",
+            "record": {
+              "$ref": "https://inspirehep.net/api/institutions/1218068"
+            }
+          },
+          {
+            "value": "UC, Santa Cruz",
+            "record": {
+              "$ref": "https://inspirehep.net/api/institutions/903308"
+            }
+          }
+        ],
+        "signature_block": "DANm"
+      }
+    ],
+    "curated": true,
+    "figures": [
+      {
+        "key": "9467bfdecd37826c103ae8c3a2d7d7ec",
+        "url": "https://inspirehep.net/files/9467bfdecd37826c103ae8c3a2d7d7ec",
+        "source": "arxiv",
+        "caption": "One loop correction to Higgs mass involving top quarks.",
+        "filename": "naturalness_fig1.png"
+      },
+      {
+        "key": "f0f6c9a5ef1b8ce287ea0dd44d368246",
+        "url": "https://inspirehep.net/files/f0f6c9a5ef1b8ce287ea0dd44d368246",
+        "source": "arxiv",
+        "caption": "Additional correction to Higgs mass from stops.",
+        "filename": "naturalness_fig2.png"
+      },
+      {
+        "key": "7a106326b59bcda41af33afe9b825d08",
+        "url": "https://inspirehep.net/files/7a106326b59bcda41af33afe9b825d08",
+        "source": "arxiv",
+        "caption": "Top, stop corrections to the Higgs quartic coupling in the MSSM.",
+        "filename": "naturalness_fig3.png"
+      },
+      {
+        "key": "34a3d03fcd7235fe85a59515b1627173",
+        "url": "https://inspirehep.net/files/34a3d03fcd7235fe85a59515b1627173",
+        "source": "arxiv",
+        "caption": "Higgs mass as a function of the stop mass for large tan $\\beta$, small value of the $A$ parameter. Includes only leading log corrections. More complete and detailed results can be found, e.g,, in \\cite{draperhiggs}.",
+        "filename": "higgs_mass_simple_estimate.png"
+      }
+    ],
+    "license": [
+      {
+        "url": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+        "imposing": "arXiv"
+      }
+    ],
+    "texkeys": [
+      "Dine:2015xga"
+    ],
+    "citeable": true,
+    "imprints": [
+      {
+        "date": "2015"
+      }
+    ],
+    "keywords": [
+      {
+        "value": "review",
+        "schema": "INSPIRE"
+      },
+      {
+        "value": "new physics",
+        "schema": "INSPIRE"
+      },
+      {
+        "value": "scale: electroweak interaction",
+        "schema": "INSPIRE"
+      },
+      {
+        "value": "electroweak interaction: symmetry breaking",
+        "schema": "INSPIRE"
+      },
+      {
+        "value": "Higgs particle: mass",
+        "schema": "INSPIRE"
+      },
+      {
+        "value": "mass: scale",
+        "schema": "INSPIRE"
+      },
+      {
+        "value": "scale: hierarchy",
+        "schema": "INSPIRE"
+      }
+    ],
+    "refereed": true,
+    "abstracts": [
+      {
+        "value": "Naturalness has for many years been a guiding principle in the search for physics beyond the Standard Model, particularly for understanding the physics of electroweak symmetry breaking. However, the discovery of the Higgs particle at 125 GeV, accompanied by exclusion of many types of new physics expected in natural models has called the principle into question. In addition, apart from the scale of weak interactions, there are other quantities in nature which appear unnaturally small and for which we have no proposal for a natural explanation.We first review the principle, and then discuss some of the conjectures which it has spawned. We then turn to some of the challenges to the naturalness idea and consider alternatives.",
+        "source": "arXiv"
+      }
+    ],
+    "references": [
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/1744232"
+        },
+        "reference": {
+          "misc": [
+            "Uber die selbstenergie des elektrons"
+          ],
+          "label": "1",
+          "authors": [
+            {
+              "full_name": "Weisskopf, V.F."
+            }
+          ],
+          "publication_info": {
+            "year": 1934,
+            "artid": "27",
+            "page_start": "27",
+            "journal_title": "Z.Phys.",
+            "journal_volume": "89"
+          }
+        },
+        "legacy_curated": true,
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "Uber die selbstenergie des elektrons, Erraum"
+          ],
+          "label": "2",
+          "authors": [
+            {
+              "full_name": "Weisskopf, V.F."
+            }
+          ],
+          "publication_info": {
+            "year": 1934,
+            "artid": "53",
+            "page_start": "53",
+            "journal_title": "Z.Phys.",
+            "journal_volume": "90"
+          }
+        },
+        "legacy_curated": true
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/144074"
+        },
+        "reference": {
+          "misc": [
+            "Gerard ’t Hooft. Naturalness, chiral symmetry, and spontaneous chiral symmetry breaking"
+          ],
+          "label": "3",
+          "publication_info": {
+            "year": 1980,
+            "artid": "135",
+            "page_start": "135",
+            "journal_title": "NATO Sci.Ser.B",
+            "journal_volume": "59"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/60867"
+        },
+        "reference": {
+          "misc": [
+            "The Renormalization Group and Strong Interactions"
+          ],
+          "label": "4",
+          "authors": [
+            {
+              "full_name": "Wilson, Kenneth G."
+            }
+          ],
+          "publication_info": {
+            "year": 1971,
+            "artid": "1818",
+            "page_start": "1818",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "3"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/142191"
+        },
+        "reference": {
+          "misc": [
+            "Edward Witten. Dyons of Charge e theta/2 pi"
+          ],
+          "label": "5",
+          "publication_info": {
+            "year": 1979,
+            "page_end": "287",
+            "page_start": "283",
+            "journal_title": "Phys.Lett.B",
+            "journal_volume": "86"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/142325"
+        },
+        "reference": {
+          "misc": [
+            "and Edward Witten. Chiral Estimate of the Electric Dipole Moment of the Neutron in Quantum Chromodynamics"
+          ],
+          "label": "6",
+          "authors": [
+            {
+              "full_name": "Crewther, R.J."
+            },
+            {
+              "full_name": "Di Vecchia, P."
+            },
+            {
+              "full_name": "Veneziano, G."
+            }
+          ],
+          "publication_info": {
+            "year": 1979,
+            "artid": "123",
+            "page_start": "123",
+            "journal_title": "Phys.Lett.B",
+            "journal_volume": "88"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/2724"
+        },
+        "reference": {
+          "misc": [
+            "Steven Weinberg. Implications of Dynamical Symmetry Breaking"
+          ],
+          "label": "7",
+          "publication_info": {
+            "year": 1976,
+            "page_end": "996",
+            "page_start": "974",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "13"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/130473"
+        },
+        "reference": {
+          "misc": [
+            "Leonard Susskind. Dynamics of Spontaneous Symmetry Breaking in the WeinbergSalam Theory"
+          ],
+          "label": "8",
+          "publication_info": {
+            "year": 1979,
+            "page_end": "2625",
+            "page_start": "2619",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "20"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/296528"
+        },
+        "reference": {
+          "misc": [
+            "and Tatsu Takeuchi. A New constraint on a strongly interacting Higgs sector"
+          ],
+          "label": "9",
+          "authors": [
+            {
+              "full_name": "Peskin, Michael E."
+            }
+          ],
+          "publication_info": {
+            "year": 1990,
+            "page_end": "967",
+            "page_start": "964",
+            "journal_title": "Phys.Rev.Lett.",
+            "journal_volume": "65"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/193935"
+        },
+        "reference": {
+          "misc": [
+            "Howard Georgi, and Savas Dimopoulos. Composite Higgs Scalars"
+          ],
+          "label": "10",
+          "authors": [
+            {
+              "full_name": "Kaplan, David B."
+            }
+          ],
+          "publication_info": {
+            "year": 1984,
+            "artid": "187",
+            "page_start": "187",
+            "journal_title": "Phys.Lett.B",
+            "journal_volume": "136"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/203277"
+        },
+        "reference": {
+          "misc": [
+            "Howard Georgi and David B. Kaplan. Composite Higgs and Custodial SU(2)"
+          ],
+          "label": "11",
+          "publication_info": {
+            "year": 1984,
+            "artid": "216",
+            "page_start": "216",
+            "journal_title": "Phys.Lett.B",
+            "journal_volume": "145"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/557090"
+        },
+        "reference": {
+          "misc": [
+            "Nima Arkani-Hamed and Howard Georgi. Electroweak symmetry breaking from dimensional deconstruction"
+          ],
+          "label": "12",
+          "authors": [
+            {
+              "full_name": "Cohen, Andrew G."
+            }
+          ],
+          "publication_info": {
+            "year": 2001,
+            "page_end": "240",
+            "page_start": "232",
+            "journal_title": "Phys.Lett.B",
+            "journal_volume": "513"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/748616"
+        },
+        "reference": {
+          "misc": [
+            "Grinstein, Donal O’Connell, and Mark B. Wise. The Lee-Wick standard model"
+          ],
+          "label": "13",
+          "imprint": {
+            "publisher": "Benjamin"
+          },
+          "publication_info": {
+            "year": 2008,
+            "artid": "025012",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "77"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/468052"
+        },
+        "reference": {
+          "misc": [
+            "Nima Arkani-Hamed, Savas Dimopoulos, and G.R. Dvali. The Hierarchy problem and new dimensions at a millimeter"
+          ],
+          "label": "14",
+          "publication_info": {
+            "year": 1998,
+            "page_end": "272",
+            "page_start": "263",
+            "journal_title": "Phys.Lett.B",
+            "journal_volume": "429"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/469596"
+        },
+        "reference": {
+          "misc": [
+            "Ignatios Antoniadis, Nima Arkani-Hamed, Savas Dimopoulos, and G.R. Dvali. New dimensions at a millimeter to a Fermi and superstrings at a TeV"
+          ],
+          "label": "15",
+          "publication_info": {
+            "year": 1998,
+            "page_end": "263",
+            "page_start": "257",
+            "journal_title": "Phys.Lett.B",
+            "journal_volume": "436"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/473252"
+        },
+        "reference": {
+          "misc": [
+            "Nima Arkani-Hamed, Savas Dimopoulos, and G.R. Dvali. Phenomenology, astrophysics and cosmology of theories with submillimeter dimensions and TeV scale quantum gravity"
+          ],
+          "label": "16",
+          "publication_info": {
+            "year": 1999,
+            "artid": "086004",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "59"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/651086"
+        },
+        "reference": {
+          "misc": [
+            "Sub-millimeter tests of the gravitational inverse-square law"
+          ],
+          "label": "17",
+          "authors": [
+            {
+              "full_name": "Hoyle, C.D."
+            },
+            {
+              "full_name": "Kapner, D.J."
+            },
+            {
+              "full_name": "Heckel, Blayne R."
+            },
+            {
+              "full_name": "Adelberger, E.G."
+            },
+            {
+              "full_name": "Gundlach, J.H."
+            }
+          ],
+          "publication_info": {
+            "year": 2004,
+            "artid": "042004",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "70"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/731990"
+        },
+        "reference": {
+          "misc": [
+            "Particle Physics Implications of a Recent Test of the Gravitational Inverse Sqaure Law"
+          ],
+          "label": "18",
+          "authors": [
+            {
+              "full_name": "Adelberger, E.G."
+            },
+            {
+              "full_name": "Heckel, Blayne R."
+            },
+            {
+              "full_name": "Hoedl, Seth A."
+            },
+            {
+              "full_name": "Hoyle, C.D."
+            },
+            {
+              "full_name": "Kapner, D.J."
+            }
+          ],
+          "publication_info": {
+            "year": 2007,
+            "artid": "131104",
+            "journal_title": "Phys.Rev.Lett.",
+            "journal_volume": "98"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/499284"
+        },
+        "reference": {
+          "misc": [
+            "Lisa Randall and Raman Large mass hierarchy from a small extra dimension"
+          ],
+          "label": "19",
+          "authors": [
+            {
+              "full_name": "A, Sundrum."
+            }
+          ],
+          "publication_info": {
+            "year": 1999,
+            "page_end": "3373",
+            "page_start": "3370",
+            "journal_title": "Phys.Rev.Lett.",
+            "journal_volume": "83"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/501443"
+        },
+        "reference": {
+          "misc": [
+            "Lisa Randall and Raman Sundrum. An Alternative to compactification"
+          ],
+          "label": "20",
+          "publication_info": {
+            "year": 1999,
+            "page_end": "4693",
+            "page_start": "4690",
+            "journal_title": "Phys.Rev.Lett.",
+            "journal_volume": "83"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/10634"
+        },
+        "reference": {
+          "misc": [
+            "Edward Witten. Dynamical Breaking of Supersymmetry"
+          ],
+          "label": "21",
+          "publication_info": {
+            "year": 1981,
+            "artid": "513",
+            "page_start": "513",
+            "journal_title": "Nucl.Phys.B",
+            "journal_volume": "188"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/141168"
+        },
+        "reference": {
+          "misc": [
+            "Improved Methods for Supergraphs"
+          ],
+          "label": "22",
+          "authors": [
+            {
+              "full_name": "Grisaru, Marcus T."
+            },
+            {
+              "full_name": "Siegel, W."
+            },
+            {
+              "full_name": "Rocek, M."
+            }
+          ],
+          "publication_info": {
+            "year": 1979,
+            "artid": "429",
+            "page_start": "429",
+            "journal_title": "Nucl.Phys.B",
+            "journal_volume": "159"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "and Antoine Van Proeyen. Supergravity"
+          ],
+          "label": "23",
+          "authors": [
+            {
+              "full_name": "Freedman, Daniel Z."
+            }
+          ],
+          "publication_info": {
+            "year": 2012
+          }
+        }
+      },
+      {
+        "reference": {
+          "label": "24",
+          "title": {
+            "title": "Supersymmetry and string theory: Beyond the standard model"
+          },
+          "authors": [
+            {
+              "full_name": "Dine, M."
+            }
+          ],
+          "publication_info": {
+            "year": 2007
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/166435"
+        },
+        "reference": {
+          "misc": [
+            "Soft Breaking of Supersymmetry"
+          ],
+          "label": "25",
+          "authors": [
+            {
+              "full_name": "Girardello, L."
+            },
+            {
+              "full_name": "Grisaru, Marcus T."
+            }
+          ],
+          "publication_info": {
+            "year": 1982,
+            "artid": "65",
+            "page_start": "65",
+            "journal_title": "Nucl.Phys.B",
+            "journal_volume": "194"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/165176"
+        },
+        "reference": {
+          "misc": [
+            "Savas Dimopoulos and Howard Georgi. Softly Broken Supersymmetry and SU(5)"
+          ],
+          "label": "26",
+          "publication_info": {
+            "year": 1981,
+            "artid": "150",
+            "page_start": "150",
+            "journal_title": "Nucl.Phys.B",
+            "journal_volume": "193"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/354026"
+        },
+        "reference": {
+          "misc": [
+            "Yosef Nir and Nathan Seiberg. Should squarks be degenerate?"
+          ],
+          "label": "27",
+          "publication_info": {
+            "year": 1993,
+            "page_end": "343",
+            "page_start": "337",
+            "journal_title": "Phys.Lett.B",
+            "journal_volume": "309"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/466180"
+        },
+        "reference": {
+          "misc": [
+            "Theories with gauge-mediated supersymmetry breaking"
+          ],
+          "label": "28",
+          "authors": [
+            {
+              "full_name": "Giudice, G.F."
+            },
+            {
+              "full_name": "Rattazzi, R."
+            }
+          ],
+          "publication_info": {
+            "year": 1999,
+            "page_end": "499",
+            "page_start": "419",
+            "journal_title": "Phys.Rept.",
+            "journal_volume": "322"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/341758"
+        },
+        "reference": {
+          "misc": [
+            "Miriam Leurer, Yosef Nir, and Nathan Seiberg. Mass matrix models"
+          ],
+          "label": "29",
+          "publication_info": {
+            "year": 1993,
+            "page_end": "342",
+            "page_start": "319",
+            "journal_title": "Nucl.Phys.B",
+            "journal_volume": "398"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/301631"
+        },
+        "reference": {
+          "misc": [
+            "and Ralf Hempfling. Can the mass of the lightest Higgs boson of the minimal supersymmetric model be larger than m(Z)?"
+          ],
+          "label": "30",
+          "authors": [
+            {
+              "full_name": "Haber, Howard E."
+            }
+          ],
+          "publication_info": {
+            "year": 1991,
+            "page_end": "1818",
+            "page_start": "1815",
+            "journal_title": "Phys.Rev.Lett.",
+            "journal_volume": "66"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/1272896"
+        },
+        "reference": {
+          "misc": [
+            "Patrick Draper, Gabriel Lee, and Carlos E. M. Wagner. Precise Estimates of the Higgs Mass in Heavy SUSY"
+          ],
+          "label": "31",
+          "publication_info": {
+            "year": 2014,
+            "artid": "055023",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "89"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/1081238"
+        },
+        "reference": {
+          "misc": [
+            "David Pinner, and Joshua T. Ruderman. A Natural SUSY Higgs Near 126 GeV"
+          ],
+          "label": "32",
+          "authors": [
+            {
+              "full_name": "Hall, Lawrence J."
+            }
+          ],
+          "publication_info": {
+            "year": 2012,
+            "artid": "131",
+            "page_start": "131",
+            "journal_title": "JHEP",
+            "journal_volume": "04"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "Landskepticism or why effective potentials don’t count string models"
+          ],
+          "label": "33",
+          "authors": [
+            {
+              "full_name": "Banks, T."
+            }
+          ],
+          "publication_info": {
+            "year": 2004
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/666566"
+        },
+        "reference": {
+          "misc": [
+            "The holographic approach to cosmology"
+          ],
+          "label": "34",
+          "authors": [
+            {
+              "full_name": "Banks, T."
+            },
+            {
+              "full_name": "Fischler, W."
+            }
+          ],
+          "publication_info": {
+            "year": 2004
+          }
+        },
+        "legacy_curated": true,
+        "curated_relation": true
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/594966"
+        },
+        "reference": {
+          "misc": [
+            "Holography stabilizes the vacuum energy"
+          ],
+          "label": "35",
+          "authors": [
+            {
+              "full_name": "Thomas, Scott D."
+            }
+          ],
+          "publication_info": {
+            "year": 2002,
+            "artid": "081301",
+            "journal_title": "Phys.Rev.Lett.",
+            "journal_volume": "89"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/14086"
+        },
+        "reference": {
+          "misc": [
+            "Ryan Rohm. Spontaneous Supersymmetry Breaking in Supersymmetric String Theories"
+          ],
+          "label": "36",
+          "publication_info": {
+            "year": 1984,
+            "artid": "553",
+            "page_start": "553",
+            "journal_title": "Nucl.Phys.B",
+            "journal_volume": "237"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/22604"
+        },
+        "reference": {
+          "misc": [
+            "Steven Weinberg. Anthropic Bound on the Cosmological Constant"
+          ],
+          "label": "37",
+          "publication_info": {
+            "year": 1987,
+            "artid": "2607",
+            "page_start": "2607",
+            "journal_title": "Phys.Rev.Lett.",
+            "journal_volume": "59"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/202556"
+        },
+        "reference": {
+          "misc": [
+            "Quantum Gravity, the Cosmological Constant and All That"
+          ],
+          "label": "38",
+          "authors": [
+            {
+              "full_name": "P, Tom Banks.T.C."
+            }
+          ],
+          "publication_info": {
+            "year": 1985,
+            "artid": "332",
+            "page_start": "332",
+            "journal_title": "Nucl.Phys.B",
+            "journal_volume": "249"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/18484"
+        },
+        "reference": {
+          "misc": [
+            "Eternally Existing Selfreproducing Chaotic Inflationary Universe"
+          ],
+          "label": "39",
+          "authors": [
+            {
+              "full_name": "Linde, Andrei D."
+            }
+          ],
+          "publication_info": {
+            "year": 1986,
+            "page_end": "400",
+            "page_start": "395",
+            "journal_title": "Phys.Lett.B",
+            "journal_volume": "175"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/524175"
+        },
+        "reference": {
+          "misc": [
+            "Steven Priori probability distribution of the cosmological constant"
+          ],
+          "label": "40",
+          "authors": [
+            {
+              "full_name": "A, Weinberg."
+            }
+          ],
+          "publication_info": {
+            "year": 2000,
+            "artid": "103505",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "61"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/318572"
+        },
+        "reference": {
+          "misc": [
+            "Tom Banks, Michael Dine, and Nathan Seiberg. Irrational axions as a solution of the strong CP problem in an eternal universe"
+          ],
+          "label": "41",
+          "publication_info": {
+            "year": 1991,
+            "page_end": "110",
+            "page_start": "105",
+            "journal_title": "Phys.Lett.B",
+            "journal_volume": "273"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/526331"
+        },
+        "reference": {
+          "misc": [
+            "Raphael Bousso and Joseph Polchinski. Quantization of four form fluxes and dynamical neutralization of the cosmological constant"
+          ],
+          "label": "42",
+          "publication_info": {
+            "year": 2000,
+            "artid": "006",
+            "page_start": "006",
+            "journal_title": "JHEP",
+            "journal_volume": "06"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/612481"
+        },
+        "reference": {
+          "misc": [
+            "Shamit Kachru, Renata Kallosh De Sitter vacua in string theory"
+          ],
+          "label": "43",
+          "authors": [
+            {
+              "full_name": "Linde, Andrei D."
+            },
+            {
+              "full_name": "Trivedi, Sandip P."
+            }
+          ],
+          "publication_info": {
+            "year": 2003,
+            "artid": "046005",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "68"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/1313601"
+        },
+        "reference": {
+          "misc": [
+            "David Pinner, and Joshua T. Ruderman. The Weak Scale from BBN"
+          ],
+          "label": "44",
+          "authors": [
+            {
+              "full_name": "Hall, Lawrence J."
+            }
+          ],
+          "arxiv_eprint": "1409.0551",
+          "publication_info": {
+            "year": 2014
+          }
+        },
+        "legacy_curated": true,
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "Planckresults. XXII. Constraints on inflation"
+          ],
+          "label": "45",
+          "authors": [
+            {
+              "full_name": "Ade, P.A.R."
+            }
+          ],
+          "publication_info": {
+            "year": 2013
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/631118"
+        },
+        "reference": {
+          "misc": [
+            "Dynamics of M theory vacua"
+          ],
+          "label": "46",
+          "authors": [
+            {
+              "full_name": "Donoghue, John F."
+            }
+          ],
+          "publication_info": {
+            "year": 2004,
+            "artid": "106012",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "69"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/628523"
+        },
+        "reference": {
+          "misc": [
+            "Tom Banks, Michael Dine, and Elie Gorbatov. Is there a string theory landscape?"
+          ],
+          "label": "47",
+          "publication_info": {
+            "year": 2004,
+            "artid": "058",
+            "page_start": "058",
+            "journal_title": "JHEP",
+            "journal_volume": "08"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/802076"
+        },
+        "reference": {
+          "misc": [
+            "Lorenzo Ubaldi. Effects of theta on the deuteron binding energy and the triple-alpha process"
+          ],
+          "label": "48",
+          "publication_info": {
+            "year": 2010,
+            "artid": "025011",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "81"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "Howard Georgi and Ian N. McArthur. Instantons and the up quark mass"
+          ],
+          "label": "49",
+          "publication_info": {
+            "year": 1981
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/227087"
+        },
+        "reference": {
+          "misc": [
+            "Current Mass Ratios of the Light Quarks"
+          ],
+          "label": "50",
+          "authors": [
+            {
+              "full_name": "Kaplan, David B."
+            },
+            {
+              "full_name": "Manohar, Aneesh V."
+            }
+          ],
+          "publication_info": {
+            "year": 1986,
+            "artid": "2004",
+            "page_start": "2004",
+            "journal_title": "Phys.Rev.Lett.",
+            "journal_volume": "56"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "Tom Banks, Yosef Nir, and Nathan Seiberg. Missing (up) mass, accidental anomalous symmetries, and the strong CP problem"
+          ],
+          "label": "51",
+          "publication_info": {
+            "year": 1994
+          }
+        }
+      },
+      {
+        "reference": {
+          "misc": [
+            "QCD and Strongly Coupled Gauge Theories: Challenges and Perspectives"
+          ],
+          "label": "52",
+          "authors": [
+            {
+              "full_name": "Brambilla, N."
+            },
+            {
+              "full_name": "Eidelman, S."
+            },
+            {
+              "full_name": "Foka, P."
+            },
+            {
+              "full_name": "Gardner, S."
+            },
+            {
+              "full_name": "Kronfeld, A.S."
+            }
+          ],
+          "publication_info": {
+            "year": 2014
+          }
+        }
+      },
+      {
+        "reference": {
+          "misc": [
+            "Sinya Aoki, Yasumichi Aoki, Claude Bernard, Tom Blum, Gilberto Review of lattice results concerning low energy particle physics"
+          ],
+          "label": "53",
+          "authors": [
+            {
+              "full_name": "Colangelo"
+            }
+          ],
+          "publication_info": {
+            "year": 2013
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/876701"
+        },
+        "reference": {
+          "misc": [
+            "Lattice QCD at the physical point: light quark masses"
+          ],
+          "label": "54",
+          "authors": [
+            {
+              "full_name": "Durr, S."
+            },
+            {
+              "full_name": "Fodor, Z."
+            },
+            {
+              "full_name": "Hoelbling, C."
+            },
+            {
+              "full_name": "Katz, S.D."
+            },
+            {
+              "full_name": "Krieg, S."
+            }
+          ],
+          "publication_info": {
+            "year": 2011,
+            "page_end": "268",
+            "page_start": "265",
+            "journal_title": "Phys.Lett.B",
+            "journal_volume": "701"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/15631"
+        },
+        "reference": {
+          "misc": [
+            "Edward Witten. Some Properties of O(32) Superstrings"
+          ],
+          "label": "55",
+          "publication_info": {
+            "year": 1984,
+            "page_end": "356",
+            "page_start": "351",
+            "journal_title": "Phys.Lett.B",
+            "journal_volume": "149"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/848423"
+        },
+        "reference": {
+          "misc": [
+            "Konstantin Bobkov, Volker Braun, Piyush Kumar, and Stuart Raby. Stabilizing All Kahler Moduli in Type IIB Orientifolds"
+          ],
+          "label": "56",
+          "publication_info": {
+            "year": 2010,
+            "artid": "056",
+            "page_start": "056",
+            "journal_title": "JHEP",
+            "journal_volume": "12"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/874076"
+        },
+        "reference": {
+          "misc": [
+            "Michael Dine, Guido Festuccia, John Kehayias, and Weitao Wu. Axions in the Landscape and String Theory"
+          ],
+          "label": "57",
+          "publication_info": {
+            "year": 2011,
+            "artid": "012",
+            "page_start": "012",
+            "journal_title": "JHEP",
+            "journal_volume": "01"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/824234"
+        },
+        "reference": {
+          "misc": [
+            "Michael Dine, Guido Festuccia, and Lorenzo Ubaldi. Axions in Gauge Mediation"
+          ],
+          "label": "58",
+          "authors": [
+            {
+              "full_name": "Carpenter, Linda M."
+            }
+          ],
+          "publication_info": {
+            "year": 2009,
+            "artid": "125023",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "80"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/194054"
+        },
+        "reference": {
+          "misc": [
+            "Naturally Weak CP Violation"
+          ],
+          "label": "59",
+          "authors": [
+            {
+              "full_name": "Nelson, Ann E."
+            }
+          ],
+          "publication_info": {
+            "year": 1984,
+            "artid": "387",
+            "page_start": "387",
+            "journal_title": "Phys.Lett.B",
+            "journal_volume": "136"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/14817"
+        },
+        "reference": {
+          "misc": [
+            "Solving the Strong CP Problem Without the Peccei-Quinn Symmetry"
+          ],
+          "label": "60",
+          "authors": [
+            {
+              "full_name": "Barr, Stephen M."
+            }
+          ],
+          "publication_info": {
+            "year": 1984,
+            "artid": "329",
+            "page_start": "329",
+            "journal_title": "Phys.Rev.Lett.",
+            "journal_volume": "53"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/648462"
+        },
+        "reference": {
+          "misc": [
+            "Frederik Denef and Michael R. Douglas. Distributions of flux vacua"
+          ],
+          "label": "61",
+          "publication_info": {
+            "year": 2004,
+            "artid": "072",
+            "page_start": "072",
+            "journal_title": "JHEP",
+            "journal_volume": "05"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/1081303"
+        },
+        "reference": {
+          "misc": [
+            "David Marsh, Liam McAllister, and Timm Wrase. The Wasteland of Random Supergravities"
+          ],
+          "label": "62",
+          "publication_info": {
+            "year": 2012,
+            "artid": "102",
+            "page_start": "102",
+            "journal_title": "JHEP",
+            "journal_volume": "03"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/810636"
+        },
+        "reference": {
+          "misc": [
+            "Michael Dine, Guido Festuccia, and Alexander Morisse. The Fate of Nearly Supersymmetric Vacua"
+          ],
+          "label": "63",
+          "publication_info": {
+            "year": 2009,
+            "artid": "013",
+            "page_start": "013",
+            "journal_title": "JHEP",
+            "journal_volume": "09"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/1224322"
+        },
+        "reference": {
+          "misc": [
+            "Brian Greene, David Kagan, Ali Masoumi, Dhagash Mehta Tumbling through a landscape: Evidence of instabilities in high-dimensional moduli spaces",
+            "Additional pubnote: ,026005,2013"
+          ],
+          "label": "64",
+          "authors": [
+            {
+              "full_name": "Weinberg, Erick J."
+            }
+          ],
+          "publication_info": {
+            "year": 2013,
+            "artid": "026005",
+            "journal_title": "Phys.Rev.D",
+            "journal_volume": "88"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/664940"
+        },
+        "reference": {
+          "misc": [
+            "Frederik Denef and Michael R. Douglas. Distributions of nonsupersymmetric flux vacua"
+          ],
+          "label": "65",
+          "publication_info": {
+            "year": 2005,
+            "artid": "061",
+            "page_start": "061",
+            "journal_title": "JHEP",
+            "journal_volume": "03"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/653954"
+        },
+        "reference": {
+          "misc": [
+            "Michael Dine, Elie Gorbatov, and Scott D. Thomas. Low energy supersymmetry from the landscape"
+          ],
+          "label": "66",
+          "publication_info": {
+            "year": 2008,
+            "artid": "098",
+            "page_start": "098",
+            "journal_title": "JHEP",
+            "journal_volume": "08"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/675707"
+        },
+        "reference": {
+          "misc": [
+            "and Zheng Sun. Branches of the landscape"
+          ],
+          "label": "67",
+          "authors": [
+            {
+              "full_name": "Dine, M."
+            },
+            {
+              "full_name": "O'Neil, D."
+            }
+          ],
+          "publication_info": {
+            "year": 2005,
+            "artid": "014",
+            "page_start": "014",
+            "journal_title": "JHEP",
+            "journal_volume": "07"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/260812"
+        },
+        "reference": {
+          "misc": [
+            "Tom Banks and Lance J. Dixon. Constraints on String Vacua with Space-Time Supersymmetry"
+          ],
+          "label": "68",
+          "publication_info": {
+            "year": 1988,
+            "page_end": "108",
+            "page_start": "93",
+            "journal_title": "Nucl.Phys.B",
+            "journal_volume": "307"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/686250"
+        },
+        "reference": {
+          "misc": [
+            "and Zheng Sun. R symmetries in the landscape"
+          ],
+          "label": "69",
+          "authors": [
+            {
+              "full_name": "Dine, M."
+            }
+          ],
+          "publication_info": {
+            "year": 2006,
+            "artid": "129",
+            "page_start": "129",
+            "journal_title": "JHEP",
+            "journal_volume": "01"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/796522"
+        },
+        "reference": {
+          "misc": [
+            "Symmetric Points in the Landscape as Cosmological Attractors"
+          ],
+          "label": "70",
+          "authors": [
+            {
+              "full_name": "Dine, M."
+            },
+            {
+              "full_name": "Festuccia, G."
+            },
+            {
+              "full_name": "Morisse, A."
+            }
+          ],
+          "publication_info": {
+            "year": 2009,
+            "artid": "013",
+            "page_start": "013",
+            "journal_title": "JHEP",
+            "journal_volume": "12"
+          }
+        },
+        "curated_relation": false
+      }
+    ],
+    "public_notes": [
+      {
+        "value": "Prepared for Annual Review of Nuclear and Particle Science. 34 pages. Some comments added on effective field theories, alternative hierarch solutions",
+        "source": "arXiv"
+      }
+    ],
+    "arxiv_eprints": [
+      {
+        "value": "1501.01035",
+        "categories": [
+          "hep-ph",
+          "hep-th"
+        ]
+      }
+    ],
+    "document_type": [
+      "article"
+    ],
+    "preprint_date": "2015-01-05",
+    "control_number": 1336631,
+    "legacy_version": "20160311185051.0",
+    "number_of_pages": 20,
+    "publication_type": [
+      "review"
+    ],
+    "inspire_categories": [
+      {
+        "term": "Phenomenology-HEP"
+      },
+      {
+        "term": "Theory-HEP"
+      }
+    ],
+    "legacy_creation_date": "2015-01-07",
+    "external_system_identifiers": [
+      {
+        "value": "2015ARNPS..65...43D",
+        "schema": "ADS"
+      },
+      {
+        "value": "2015ARNPS..6518001D",
+        "schema": "ADS"
+      }
+    ]
+  },
+  "uuid": "d1eda64c-4397-4837-be13-1b7147f0d7fc"
+}

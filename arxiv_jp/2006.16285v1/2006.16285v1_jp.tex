@@ -1,0 +1,144 @@
+\documentclass[a4paper,11pt]{ltjsarticle}
+
+% ========== package ========== %
+% --- 数式環境 --- %
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+% --- 数式環境 END --- %
+% ブラケット
+\usepackage{braket}
+% ベクトルの太文字
+\usepackage{bm}
+% 添え字左右上下 \fourIdx{左上}{左下}{右上}{右下}{ベース} で使う．Iは大文字
+\usepackage{fouridx}
+% 色
+\usepackage{color}
+% 余白指定
+\usepackage{geometry}
+% --- ページ内リンク --- %
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue}
+% --- ページ内リンク END --- %
+% 花文字
+\usepackage{mathrsfs}
+% 画像
+\usepackage{graphicx}
+% tcolorbox
+\usepackage{tcolorbox}
+% appendix
+\usepackage{appendix}
+% --- 参考文献 --- %
+\usepackage{etoolbox}
+\usepackage{fontspec} % fontspecは読み込んでOKですが、設定順序に注意が必要です
+%% --- 参考文献フォント --- %%
+  \IfFontExistsTF{Times New Roman}{
+    \newfontfamily\bibfontface{Times New Roman}
+  }{
+    \newfontfamily\bibfontface{FreeSerif} % 代替フォント
+  }
+%% --- 参考文献フォント END --- %%
+%% --- 参考文献リンク位置 --- %%
+  \BeforeBeginEnvironment{thebibliography}{%
+    \phantomsection
+    \addcontentsline{toc}{section}{参考文献}
+  }
+  \AtBeginEnvironment{thebibliography}{%
+    \normalfont\bibfontface
+    \addfontfeatures{Ligatures=TeX}%
+  }
+%% --- 参考文献のリンク位置 --- %%
+% --- 参考文献 END --- %
+% ========== package END ========== %
+
+% ========== newcommand ========== %
+% --- セクションから目次へのリンク --- %
+\newcommand{\sectionlink}[1]{\section[#1]{\hyperlink{toc}{#1}}}
+\newcommand{\subsectionlink}[1]{\subsection[#1]{\hyperlink{toc}{#1}}}
+% セクション番号リンク
+\makeatletter
+\renewcommand{\@seccntformat}[1]{%
+  \protect\hyperlink{toc}{\csname the#1\endcsname}\quad
+}
+\makeatother
+
+\numberwithin{equation}{section}
+% ==========- newcommand END ========== %
+\allowdisplaybreaks
+%===========================================================
+% --- タイトル --- %
+%===========================================================
+\geometry{left=25mm, right=25mm, top=30mm, bottom=30mm}
+
+% 原文の図版・演習枠・記号を再現するための追加設定
+\usepackage{xcolor}
+\usepackage{feynmp}
+\usepackage{slashed}
+\usepackage{subfigure}
+\usepackage{booktabs}
+\usepackage[framemethod=default]{mdframed}
+\definecolor{lightgray}{gray}{0.9}
+\newmdenv[skipabove=10pt,skipbelow=10pt,
+rightline=false,leftline=false,topline=false,bottomline=false,
+backgroundcolor=gray!20,linecolor=gray,
+innerleftmargin=10pt,innerrightmargin=10pt,
+innertopmargin=10pt,innerbottommargin=10pt,
+leftmargin=0cm,rightmargin=0cm,linewidth=4pt]{eBox}
+\def\be{\begin{equation}}
+\def\ee{\end{equation}}
+\def\ba{\begin{eqnarray}}
+\def\ea{\end{eqnarray}}
+\def\bi{\begin{itemize}}
+\def\ei{\end{itemize}}
+\def\l{\left}
+\def\r{\right}
+\def\fr{\frac}
+\def\la{\label}
+\def\d{\partial}
+\def\vphi{\varphi}
+\def\pr{\prime}
+\def\mpl{M_{\rm p}}
+\def\hub{\mathcal{H}}
+\def\mbf{\mathbf}
+\newcommand{\high}[1]{\underline{\emph{#1}}}
+\DeclareGraphicsRule{*}{mps}{*}{}
+% 原文は節によらない通し式番号を採用している。
+\counterwithout{equation}{section}
+\renewcommand{\theequation}{\arabic{equation}}
+\hypersetup{pdftitle={有効場の理論入門 (arXiv:2006.16285v1 日本語訳)},
+pdfauthor={Riccardo Penco},citecolor=blue,urlcolor=blue}
+\title{\bfseries 有効場の理論入門\\[0.4em]
+\large An Introduction to Effective Field Theories\\[0.4em]
+\normalsize \href{https://arxiv.org/pdf/2006.16285v1}{arXiv:2006.16285v1}（日本語訳）}
+\author{Riccardo Penco\thanks{コメントや訂正は \texttt{rpenco@cmu.edu} までお寄せいただきたい。}}
+\date{{\small Department of Physics, Carnegie Mellon University, Pittsburgh, PA}\\[1em]
+2020年7月1日}
+% 参考文献の最初・最後の1行だけを別ページに残さない。
+\apptocmd{\thebibliography}{\clubpenalty=10000\widowpenalty=10000\interlinepenalty=10000}{}{}
+\begin{document}
+\begin{fmffile}{graphs}
+\maketitle
+\begin{abstract}
+本講義ノートは、有効場の理論（EFT）の方法を概観するものである。
+EFTのトイモデル、カイラル摂動論、Fermi液体論、非相対論的QEDを取り上げ、
+これらの例を用いて、ツリーレベルおよびループレベルでのマッチング、
+大きな対数の総和、自然性の問題、スプリオン場、剰余空間構成、
+Wess-Zumino-Witten項、カイラルアノマリーとゲージアノマリー、
+場の位相の再定義、領域展開法など、さまざまなEFTの概念を導入する。
+この講義ノートは、2020年6月22日から7月3日までBrazilのSao Pauloで開催された
+第2回Joint ICTP-Trieste/ICTP-SAIFR素粒子物理学スクールのために作成された。
+\end{abstract}
+\clearpage
+\hypertarget{toc}{}
+\tableofcontents
+\clearpage
+\nocite{Srednicki:2007ab,Wilson:1993dy,Georgi:1991ch,Weinberg:1995mt,tHooft:1979bh,Goon:2016ihr,Adams:2006sv,Vafa:2005ui,Weinberg:1987dv,Alberte:2016izw,Graham:2019bfu,Georgi:1994qn,Manohar:1996cq,Pich:1998xt,Rothstein:2003mp,Kaplan:2005es,Burgess:2007pt,Skiba:2010xn,Gripaios:2015qya,Petrov:2016azi,Manohar:2018aog,Cohen:2019wxr,Dine:2015xga,Giudice:2017pzm,Weinberg:1988cp,Weinberg:1981qq,Scherer:2002tk,Callan:1969sn,Volkov:1973vd,ogievetsky:1974ab,Weinberg:1996kr,Carroll:2004st,Witten:1983tw,Goon:2012dy,Harvey:2005it,Preskill:1990fr,Ecker:1994gg,Pich:1995bw,Burgess:1998ku,Pich:2018ltt,Bilal:2008qx,Zee:2003mt,Shankar:1993pf,Jackson:1998nia,Griesshammer:1997wz,Goldberger:2007hy,Porto:2016pyg,Labelle:1996en,Grinstein:1997gv,Polchinski:1992ed,Leggett:1975te,Caswell:1985ui}
+\input{sections/01_intro_toy}
+\input{sections/02_goldstone}
+\input{sections/03_fermions}
+\clearpage
+\renewcommand{\refname}{\hyperlink{toc}{参考文献}}
+\bibliographystyle{utphys}
+\bibliography{ref}
+\end{fmffile}
+\end{document}

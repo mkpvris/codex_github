@@ -1,0 +1,268 @@
+{
+  "updated": "2023-03-10T11:48:36.235902+00:00",
+  "revision_id": 92,
+  "links": {
+    "bibtex": "https://inspirehep.net/api/literature/315930?format=bibtex",
+    "latex-eu": "https://inspirehep.net/api/literature/315930?format=latex-eu",
+    "latex-us": "https://inspirehep.net/api/literature/315930?format=latex-us",
+    "json": "https://inspirehep.net/api/literature/315930?format=json",
+    "json-expanded": "https://inspirehep.net/api/literature/315930?format=json-expanded",
+    "cv": "https://inspirehep.net/api/literature/315930?format=cv",
+    "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A315930"
+  },
+  "uuid": "d660b91a-629c-4852-a04d-6a8f390d7cb9",
+  "metadata": {
+    "citation_count_without_self_citations": 302,
+    "report_numbers": [
+      {
+        "value": "HUTP-91-A014"
+      }
+    ],
+    "citation_count": 303,
+    "publication_info": [
+      {
+        "year": 1991,
+        "page_end": "350",
+        "page_start": "339",
+        "journal_title": "Nucl.Phys.B",
+        "journal_volume": "361"
+      }
+    ],
+    "core": true,
+    "dois": [
+      {
+        "value": "10.1016/0550-3213(91)90244-R"
+      }
+    ],
+    "titles": [
+      {
+        "title": "On-shell effective field theory"
+      }
+    ],
+    "$schema": "https://inspirehep.net/schemas/records/hep.json",
+    "authors": [
+      {
+        "ids": [
+          {
+            "value": "INSPIRE-00084328",
+            "schema": "INSPIRE ID"
+          }
+        ],
+        "uuid": "a0824a39-d4f9-4338-ad2b-8ca7c08c0246",
+        "record": {
+          "$ref": "https://inspirehep.net/api/authors/1008596"
+        },
+        "full_name": "Georgi, Howard",
+        "affiliations": [
+          {
+            "value": "Harvard U.",
+            "record": {
+              "$ref": "https://inspirehep.net/api/institutions/902835"
+            }
+          }
+        ],
+        "signature_block": "GARGh",
+        "curated_relation": true,
+        "raw_affiliations": [
+          {
+            "value": "Lyman Laboratory of Physics, Harvard University, Cambridge, MA 02138, USA"
+          }
+        ]
+      }
+    ],
+    "curated": true,
+    "texkeys": [
+      "Georgi:1991ch"
+    ],
+    "citeable": true,
+    "imprints": [
+      {
+        "date": "1991"
+      }
+    ],
+    "keywords": [
+      {
+        "value": "effective Lagrangian",
+        "schema": "INSPIRE"
+      },
+      {
+        "value": "field theory: on-shell",
+        "schema": "INSPIRE"
+      },
+      {
+        "value": "field theory: nonrenormalizable",
+        "schema": "INSPIRE"
+      },
+      {
+        "value": "perturbation theory",
+        "schema": "INSPIRE"
+      },
+      {
+        "value": "renormalization",
+        "schema": "INSPIRE"
+      }
+    ],
+    "refereed": true,
+    "abstracts": [
+      {
+        "value": "I show how to organize the coefficients in an effective field theory so that the accuracy of the effective field theory calculation is less seriously degraded when there are ratios of mass scales in the problem that are not large. I show how this new effective field theory can be obtained automatically, by doing the matching calculation on the perturbative mass shell. I also speculate about how to do even better by consistently including non-local terms in the effective lagrangian.",
+        "source": "Elsevier"
+      }
+    ],
+    "copyright": [
+      {
+        "statement": "Copyright @ unknown. Published by Elsevier B.V."
+      }
+    ],
+    "references": [
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/190331"
+        },
+        "reference": {
+          "publication_info": {
+            "artid": "189",
+            "page_start": "189",
+            "journal_title": "Nucl.Phys.B",
+            "journal_volume": "234"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/228026"
+        },
+        "reference": {
+          "publication_info": {
+            "artid": "241",
+            "page_start": "241",
+            "journal_title": "Nucl.Phys.B",
+            "journal_volume": "276"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/285491"
+        },
+        "reference": {
+          "publication_info": {
+            "artid": "22",
+            "page_start": "22",
+            "journal_title": "Nucl.Phys.B",
+            "journal_volume": "345"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/194037"
+        },
+        "reference": {
+          "publication_info": {
+            "artid": "142",
+            "page_start": "142",
+            "journal_title": "Annals Phys.",
+            "journal_volume": "158"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/200027"
+        },
+        "reference": {
+          "publication_info": {
+            "artid": "465",
+            "page_start": "465",
+            "journal_title": "Nucl.Phys.B",
+            "journal_volume": "250"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/232743"
+        },
+        "reference": {
+          "publication_info": {
+            "artid": "453",
+            "page_start": "453",
+            "journal_title": "Phys.Lett.B",
+            "journal_volume": "171"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/260763"
+        },
+        "reference": {
+          "publication_info": {
+            "artid": "1",
+            "page_start": "1",
+            "journal_title": "Nucl.Phys.B",
+            "journal_volume": "322"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/152315"
+        },
+        "reference": {
+          "publication_info": {
+            "artid": "51",
+            "page_start": "51",
+            "journal_title": "Phys.Lett.B",
+            "journal_volume": "91"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "publication_info": {
+            "artid": "175",
+            "page_start": "175",
+            "journal_title": "Nucl.Phys.B",
+            "journal_volume": "178"
+          }
+        }
+      }
+    ],
+    "document_type": [
+      "article"
+    ],
+    "preprint_date": "1991-03",
+    "control_number": 315930,
+    "legacy_version": "20160616210844.0",
+    "number_of_pages": 12,
+    "inspire_categories": [
+      {
+        "term": "Theory-HEP",
+        "source": "curator"
+      }
+    ],
+    "legacy_creation_date": "1991-06-10",
+    "external_system_identifiers": [
+      {
+        "value": "91-08-454",
+        "schema": "KEKSCAN"
+      },
+      {
+        "value": "SPIRES-2367920",
+        "schema": "SPIRES"
+      }
+    ]
+  },
+  "id": "315930",
+  "created": "1991-06-10T00:00:00+00:00"
+}
