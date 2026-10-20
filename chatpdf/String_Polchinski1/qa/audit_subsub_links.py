@@ -52,6 +52,21 @@ def contents_records(text: str) -> list[dict]:
     return records
 
 
+def exercise_label_records(text: str) -> list[dict]:
+    records = []
+    for match in re.finditer(r'\\newlabel\{ex:([1-9A]\.\d+)\}', text):
+        value, _ = tex_group(text, match.end())
+        fields, pos = [], 0
+        while pos < len(value):
+            field, pos = tex_group(value, pos)
+            fields.append(field)
+        if len(fields) < 4:
+            raise ValueError(f'Incomplete exercise label: {match.group(1)}')
+        records.append({'number':match.group(1), 'printed_page':fields[1],
+                        'title_tex':fields[2], 'destination':fields[3]})
+    return records
+
+
 def deref(value):
     return value.get_object() if hasattr(value, 'get_object') else value
 
@@ -102,11 +117,13 @@ def main() -> int:
     parser.add_argument('--pdf', type=Path, default=base/'pdf'/'String_Polchinski1_jp.pdf')
     parser.add_argument('--toc', type=Path, default=base/'build'/'String_Polchinski1_jp.toc')
     parser.add_argument('--aux', type=Path, default=base/'build'/'String_Polchinski1_jp.aux')
+    parser.add_argument('--baseline', type=Path, default=base/'qa'/'individual_exercise_removal_baseline.json')
     parser.add_argument('--output-prefix', type=Path, default=base/'qa'/'audit_subsub_links')
     args = parser.parse_args()
     pdf_bytes = args.pdf.read_bytes()
     toc_text = args.toc.read_text(encoding='utf-8')
     aux_text = args.aux.read_text(encoding='utf-8')
+    baseline = json.loads(args.baseline.read_text(encoding='utf-8'))
     reader = PdfReader(args.pdf)
     named = reader.named_destinations
     outlines = outline_records(reader)
@@ -129,19 +146,39 @@ def main() -> int:
     glossary_source = (base/'sections'/'glossary01.tex').read_text(encoding='utf-8')
     glossary_hangindent = bool(re.search(r'\\hangindent\s*=?\s*1\.5em', glossary_source))
     glossary_hangafter = bool(re.search(r'\\hangafter\s*=?\s*1\b', glossary_source))
-    if len(subsub) != 208:
-        errors.append(f'Expected 208 subsubsection TOC records, found {len(subsub)}')
+    if len(subsub) != 102:
+        errors.append(f'Expected 102 ordinary subsubsection TOC records, found {len(subsub)}')
     if len(groups) != 10:
         errors.append(f'Expected 10 exercise-group TOC records, found {len(groups)}')
     exercise_numbers = []
-    for record in subsub:
+    for record in records:
         match = re.search(r'演習([1-9A]\.\d+)', record['title_tex'])
         if match:
             exercise_numbers.append(match.group(1))
     expected_counts = {'1':9,'2':17,'3':14,'4':6,'5':3,'6':15,'7':15,'8':12,'9':10,'A':5}
     expected_numbers = {f'{chapter}.{n}' for chapter, count in expected_counts.items() for n in range(1,count+1)}
-    if len(exercise_numbers) != 106 or set(exercise_numbers) != expected_numbers:
-        errors.append('The 106 exercise headings are not represented exactly once in the TOC')
+    if exercise_numbers:
+        errors.append('Individual exercise entries remain in the TOC')
+    aux_exercise_contents = [r for r in aux_records if re.search(r'演習[1-9A]\.\d+', r['title_tex'])]
+    outline_exercises = [r for r in outlines if re.search(r'演習[1-9A]\.\d+', r['title'])]
+    if aux_exercise_contents:
+        errors.append('Individual exercise contentsline records remain in the AUX')
+    if outline_exercises:
+        errors.append('Individual exercise entries remain in the PDF outline')
+    source_files = sorted((base/'sections').glob('ch*.tex')) + [base/'sections'/'appendixA.tex']
+    source_text = '\n'.join(p.read_text(encoding='utf-8') for p in source_files)
+    source_exercises = re.findall(r'\\subsubsection\*\s*\{演習([1-9A]\.\d+)\}', source_text)
+    linked_source_exercises = re.findall(r'\\subsubsectionlink\*?\s*\{演習([1-9A]\.\d+)\}', source_text)
+    source_exercise_labels = re.findall(r'\\label\{ex:([1-9A]\.\d+)\}', source_text)
+    if Counter(source_exercises) != Counter(expected_numbers):
+        errors.append('The source does not preserve exactly one ordinary heading for each of the 106 exercises')
+    if linked_source_exercises:
+        errors.append('Individual exercise headings still use the backlink macro in source')
+    if Counter(source_exercise_labels) != Counter(expected_numbers):
+        errors.append('The source does not contain exactly one label for each of the 106 exercises')
+    exercise_labels = exercise_label_records(aux_text)
+    if Counter(r['number'] for r in exercise_labels) != Counter(expected_numbers):
+        errors.append('The AUX does not contain exactly one label for each of the 106 exercises')
     destination_counts = Counter(r['destination'] for r in selected)
     duplicates = {name:n for name,n in destination_counts.items() if n != 1}
     if duplicates:
@@ -181,6 +218,40 @@ def main() -> int:
             forward_by_destination.setdefault(ann['target'],[]).append(ann)
         if ann['target'] == 'toc':
             back_by_page.setdefault(ann['page'],[]).append(ann)
+    total_toc_backlinks = sum(len(rows) for rows in back_by_page.values())
+    if total_toc_backlinks != baseline['expected_remaining_toc_target_annotations']:
+        errors.append(f"Expected {baseline['expected_remaining_toc_target_annotations']} toc-target annotations after removing 106 exercises; found {total_toc_backlinks}")
+    exercise_details = []
+    for record in exercise_labels:
+        result = dict(record)
+        result['issues'] = []
+        name = record['destination']
+        dest = destinations.get(name)
+        result['named_destination'] = dest
+        if dest is None:
+            result['issues'].append('Missing exercise label PDF destination')
+        else:
+            printed = record['printed_page'].strip()
+            if not printed.isdecimal() or int(printed) != dest['page']:
+                result['issues'].append('Exercise label page differs from actual destination')
+            nearby = []
+            if dest['top'] is not None:
+                for ann in back_by_page.get(dest['page'], []):
+                    delta = dest['top'] - ann['rect'][3]
+                    if -6 <= delta <= 25:
+                        nearby.append(ann)
+            result['nearby_toc_backlinks'] = nearby
+            if nearby:
+                result['issues'].append('A toc backlink remains at the individual exercise heading position')
+        if forward_by_destination.get(name):
+            result['issues'].append('A TOC link remains to the individual exercise destination')
+        if outline_by_destination.get(name):
+            result['issues'].append('A PDF outline entry remains at the individual exercise destination')
+        result['passed'] = not result['issues']
+        exercise_details.append(result)
+    failed_exercises = [r for r in exercise_details if not r['passed']]
+    if failed_exercises:
+        errors.append(f'{len(failed_exercises)} individual exercises failed removal/preservation verification')
     details = []
     # Link rectangles are in PDF coordinates (origin at bottom left). The named
     # heading anchor is normally a few points above the title. Only annotations
@@ -262,7 +333,17 @@ def main() -> int:
                'toc':str(args.toc), 'aux':str(args.aux), 'pdf_pages':len(reader.pages),
                'toc_physical_pages':[toc_page,first_body_page-1 if first_body_page else None],
                'subsubsection_count':len(subsub), 'ordinary_subsubsection_count':len(subsub)-len(exercise_numbers),
-               'individual_exercises':len(exercise_numbers), 'exercise_groups':len(groups),
+               'individual_exercises_in_toc':len(exercise_numbers), 'exercise_groups':len(groups),
+               'individual_exercises_in_aux_contents':len(aux_exercise_contents),
+               'individual_exercises_in_outline':len(outline_exercises),
+               'individual_exercises_preserved_in_source':len(source_exercises),
+               'individual_exercise_labels_in_source':len(source_exercise_labels),
+               'individual_exercises_preserved_in_pdf':sum(r['passed'] for r in exercise_details),
+               'individual_exercises_failed':len(failed_exercises),
+               'baseline_pdf_sha256':baseline['pdf_sha256'],
+               'baseline_toc_target_annotations':baseline['toc_target_annotations'],
+               'toc_target_annotations':total_toc_backlinks,
+               'removed_toc_target_annotations':baseline['toc_target_annotations']-total_toc_backlinks,
                'tocdepth_returns_to_2_after_appendix_A':bool(depth_drop),
                'subsubsection_records_after_scope_boundary':len(subsub_after_depth_drop),
                'glossary_source_hangindent_1_5em':glossary_hangindent,
@@ -272,15 +353,19 @@ def main() -> int:
                'readable_math_bookmarks':sum(r['passed'] for r in math_bookmarks),
                'all_selected_headings':len(details), 'passed':sum(r['passed'] for r in details),
                'failed':len(failed), 'errors':errors, 'ok':not errors}
-    report = {'summary':summary, 'headings':details, 'mathematical_bookmarks':math_bookmarks}
+    report = {'summary':summary, 'headings':details, 'mathematical_bookmarks':math_bookmarks,
+              'individual_exercises':exercise_details}
     args.output_prefix.with_suffix('.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
     lines = ['小見出し・演習グループ PDF相互リンク監査', json.dumps(summary,ensure_ascii=False,indent=2),
              '検証: .tocと.auxのnamed destination、PDFの実移動先ページ、目次内annotation、',
              '本文見出しanchorの同一ページ・48pt以内にあるtoc行きannotation、矩形の一意な割当を確認。',
-             'さらに208小見出し・10演習グループのPDFしおりnamed targetと数式見出し10件のUnicode表記を確認。',
+             'さらに102小見出し・10演習グループのPDFしおりnamed targetと数式見出し10件のUnicode表記を確認。',
+             '個別演習106問の本文見出し・ラベル保全、目次/しおり/バックリンク削除と注釈総数106件減を確認。',
              '本文見出しの数式・日本語の文字抽出一致には依存していない。']
     for result in failed:
         lines.append(f"FAIL {result['level']} {result['title_tex']} [{result['destination']}]: {'; '.join(result['issues'])}")
+    for result in failed_exercises:
+        lines.append(f"FAIL exercise {result['number']} [{result['destination']}]: {'; '.join(result['issues'])}")
     args.output_prefix.with_suffix('.txt').write_text('\n'.join(lines)+'\n',encoding='utf-8')
     print(json.dumps(summary,ensure_ascii=False,indent=2))
     return 0 if summary['ok'] else 1

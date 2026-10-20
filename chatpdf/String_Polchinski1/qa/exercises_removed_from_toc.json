@@ -1,0 +1,822 @@
+{
+  "individual_exercises_removed_from_toc": 106,
+  "location_labels_added": 23,
+  "exercise_groups_unchanged": 10,
+  "ordinary_subsubsections_unchanged": 102,
+  "files": [
+    {
+      "file": "appendixA.tex",
+      "exercises": 5,
+      "before_sha256": "951cd273410bb4c7e9ad8216874bd31270b6a9e592505e0184599465ed1f06ee",
+      "after_sha256": "e898bb39b06fab91508d561cb15f64f28777324395c24a53006decdacc0b4c2d",
+      "body_preserved_by_inverse_substitution": true
+    },
+    {
+      "file": "ch01b.tex",
+      "exercises": 9,
+      "before_sha256": "86494ac28d491b85bed0c9a507f13a868ada3cd7fdfded59cceeecc4b7bca348",
+      "after_sha256": "fd617ce9a5571c917f7af4f491c4eb785597c905d1a5813c961b7dcdc247a2a4",
+      "body_preserved_by_inverse_substitution": true
+    },
+    {
+      "file": "ch02b.tex",
+      "exercises": 17,
+      "before_sha256": "629fa9136d947da79319a03ff6dc41cbfbf6b8249379ac3dce4969c4defafb24",
+      "after_sha256": "8e5c8aae7715623521c2351096adb5286bd5b001c43d999667d5660cc72ae658",
+      "body_preserved_by_inverse_substitution": true
+    },
+    {
+      "file": "ch03c.tex",
+      "exercises": 14,
+      "before_sha256": "9d3967b3129d19d7def6e633d74eecdb34c52c7c30c15758db3d6ab4b4e78179",
+      "after_sha256": "ce9a812579d8a3a0b9d73a04d76bbfa1b97eeca84c2969f2a148375c17a41d45",
+      "body_preserved_by_inverse_substitution": true
+    },
+    {
+      "file": "ch04.tex",
+      "exercises": 6,
+      "before_sha256": "d5fd0710c2aa3c2e72beec6adb4c26bb84dd7edc189feeb5d92c07a9a6ff5f49",
+      "after_sha256": "e14e8e8424562b03e8a812a33349a54b23d1d5c0262cc594b6fb9ec4cee93da8",
+      "body_preserved_by_inverse_substitution": true
+    },
+    {
+      "file": "ch05.tex",
+      "exercises": 3,
+      "before_sha256": "bea69461b9adbb5a5051f78638f241ffc70915d0d70185f7811cea1b25c21a6d",
+      "after_sha256": "cefea1370fc574b86e451d25f067d7e0e86f218d5eb5506db54d37a18b45a3ac",
+      "body_preserved_by_inverse_substitution": true
+    },
+    {
+      "file": "ch06b.tex",
+      "exercises": 15,
+      "before_sha256": "1d27f1c5987ac5c40d51d4fb07ea4b4d5dca0fdc6109f0a21b6208fd5d465bc7",
+      "after_sha256": "079cd659de592f27467c8ad484fc2b37380acd814c713d5ee6d6704166769346",
+      "body_preserved_by_inverse_substitution": true
+    },
+    {
+      "file": "ch07.tex",
+      "exercises": 15,
+      "before_sha256": "c2c6c1aa71266388bcb8add7c239ae275cba5373190ad923390a74bb626328f5",
+      "after_sha256": "5cafb86b5ca2ede72ca8da985d8b6a85e3c3a803512779c36ab94be233bdb9ca",
+      "body_preserved_by_inverse_substitution": true
+    },
+    {
+      "file": "ch08b.tex",
+      "exercises": 12,
+      "before_sha256": "e4c27949beb6da747348ba7fbf1a8e816966f46d9f22e546a9e40d32fec49b2a",
+      "after_sha256": "e74678db94f1ba78461950530441817da508a59a64c4e0afd1bad0c2178ec798",
+      "body_preserved_by_inverse_substitution": true
+    },
+    {
+      "file": "ch09b.tex",
+      "exercises": 10,
+      "before_sha256": "01c14abd4ce7a964c42e80d97378ad1068c27cc126225781752e3cd62201b85a",
+      "after_sha256": "9c4cbde02a9624b199fb2393b01e44ad996aac0ba5e27efbb948866e6ba35372",
+      "body_preserved_by_inverse_substitution": true
+    }
+  ],
+  "changes": [
+    {
+      "file": "appendixA.tex",
+      "number": "A.1",
+      "before": "\\subsubsectionlink*{演習A.1}",
+      "after": "\\subsubsection*{演習A.1}\\label{ex:A.1}",
+      "location_label_added": true
+    },
+    {
+      "file": "appendixA.tex",
+      "number": "A.2",
+      "before": "\\subsubsectionlink*{演習A.2}",
+      "after": "\\subsubsection*{演習A.2}\\label{ex:A.2}",
+      "location_label_added": true
+    },
+    {
+      "file": "appendixA.tex",
+      "number": "A.3",
+      "before": "\\subsubsectionlink*{演習A.3}",
+      "after": "\\subsubsection*{演習A.3}\\label{ex:A.3}",
+      "location_label_added": true
+    },
+    {
+      "file": "appendixA.tex",
+      "number": "A.4",
+      "before": "\\subsubsectionlink*{演習A.4}",
+      "after": "\\subsubsection*{演習A.4}\\label{ex:A.4}",
+      "location_label_added": true
+    },
+    {
+      "file": "appendixA.tex",
+      "number": "A.5",
+      "before": "\\subsubsectionlink*{演習A.5}",
+      "after": "\\subsubsection*{演習A.5}\\label{ex:A.5}",
+      "location_label_added": true
+    },
+    {
+      "file": "ch01b.tex",
+      "number": "1.1",
+      "before": "\\subsubsectionlink*{演習1.1}\\label{ex:1.1}",
+      "after": "\\subsubsection*{演習1.1}\\label{ex:1.1}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch01b.tex",
+      "number": "1.2",
+      "before": "\\subsubsectionlink*{演習1.2}\\label{ex:1.2}",
+      "after": "\\subsubsection*{演習1.2}\\label{ex:1.2}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch01b.tex",
+      "number": "1.3",
+      "before": "\\subsubsectionlink*{演習1.3}\\label{ex:1.3}",
+      "after": "\\subsubsection*{演習1.3}\\label{ex:1.3}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch01b.tex",
+      "number": "1.4",
+      "before": "\\subsubsectionlink*{演習1.4}\\label{ex:1.4}",
+      "after": "\\subsubsection*{演習1.4}\\label{ex:1.4}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch01b.tex",
+      "number": "1.5",
+      "before": "\\subsubsectionlink*{演習1.5}\\label{ex:1.5}",
+      "after": "\\subsubsection*{演習1.5}\\label{ex:1.5}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch01b.tex",
+      "number": "1.6",
+      "before": "\\subsubsectionlink*{演習1.6}\\label{ex:1.6}",
+      "after": "\\subsubsection*{演習1.6}\\label{ex:1.6}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch01b.tex",
+      "number": "1.7",
+      "before": "\\subsubsectionlink*{演習1.7}\\label{ex:1.7}",
+      "after": "\\subsubsection*{演習1.7}\\label{ex:1.7}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch01b.tex",
+      "number": "1.8",
+      "before": "\\subsubsectionlink*{演習1.8}\\label{ex:1.8}",
+      "after": "\\subsubsection*{演習1.8}\\label{ex:1.8}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch01b.tex",
+      "number": "1.9",
+      "before": "\\subsubsectionlink*{演習1.9}\\label{ex:1.9}",
+      "after": "\\subsubsection*{演習1.9}\\label{ex:1.9}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch02b.tex",
+      "number": "2.1",
+      "before": "\\subsubsectionlink*{演習2.1}\\label{ex:2.1}",
+      "after": "\\subsubsection*{演習2.1}\\label{ex:2.1}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch02b.tex",
+      "number": "2.2",
+      "before": "\\subsubsectionlink*{演習2.2}\\label{ex:2.2}",
+      "after": "\\subsubsection*{演習2.2}\\label{ex:2.2}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch02b.tex",
+      "number": "2.3",
+      "before": "\\subsubsectionlink*{演習2.3}\\label{ex:2.3}",
+      "after": "\\subsubsection*{演習2.3}\\label{ex:2.3}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch02b.tex",
+      "number": "2.4",
+      "before": "\\subsubsectionlink*{演習2.4}\\label{ex:2.4}",
+      "after": "\\subsubsection*{演習2.4}\\label{ex:2.4}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch02b.tex",
+      "number": "2.5",
+      "before": "\\subsubsectionlink*{演習2.5}\\label{ex:2.5}",
+      "after": "\\subsubsection*{演習2.5}\\label{ex:2.5}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch02b.tex",
+      "number": "2.6",
+      "before": "\\subsubsectionlink*{演習2.6}\\label{ex:2.6}",
+      "after": "\\subsubsection*{演習2.6}\\label{ex:2.6}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch02b.tex",
+      "number": "2.7",
+      "before": "\\subsubsectionlink*{演習2.7}\\label{ex:2.7}",
+      "after": "\\subsubsection*{演習2.7}\\label{ex:2.7}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch02b.tex",
+      "number": "2.8",
+      "before": "\\subsubsectionlink*{演習2.8}\\label{ex:2.8}",
+      "after": "\\subsubsection*{演習2.8}\\label{ex:2.8}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch02b.tex",
+      "number": "2.9",
+      "before": "\\subsubsectionlink*{演習2.9}\\label{ex:2.9}",
+      "after": "\\subsubsection*{演習2.9}\\label{ex:2.9}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch02b.tex",
+      "number": "2.10",
+      "before": "\\subsubsectionlink*{演習2.10}\\label{ex:2.10}",
+      "after": "\\subsubsection*{演習2.10}\\label{ex:2.10}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch02b.tex",
+      "number": "2.11",
+      "before": "\\subsubsectionlink*{演習2.11}\\label{ex:2.11}",
+      "after": "\\subsubsection*{演習2.11}\\label{ex:2.11}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch02b.tex",
+      "number": "2.12",
+      "before": "\\subsubsectionlink*{演習2.12}\\label{ex:2.12}",
+      "after": "\\subsubsection*{演習2.12}\\label{ex:2.12}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch02b.tex",
+      "number": "2.13",
+      "before": "\\subsubsectionlink*{演習2.13}\\label{ex:2.13}",
+      "after": "\\subsubsection*{演習2.13}\\label{ex:2.13}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch02b.tex",
+      "number": "2.14",
+      "before": "\\subsubsectionlink*{演習2.14}\\label{ex:2.14}",
+      "after": "\\subsubsection*{演習2.14}\\label{ex:2.14}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch02b.tex",
+      "number": "2.15",
+      "before": "\\subsubsectionlink*{演習2.15}\\label{ex:2.15}",
+      "after": "\\subsubsection*{演習2.15}\\label{ex:2.15}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch02b.tex",
+      "number": "2.16",
+      "before": "\\subsubsectionlink*{演習2.16}\\label{ex:2.16}",
+      "after": "\\subsubsection*{演習2.16}\\label{ex:2.16}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch02b.tex",
+      "number": "2.17",
+      "before": "\\subsubsectionlink*{演習2.17}\\label{ex:2.17}",
+      "after": "\\subsubsection*{演習2.17}\\label{ex:2.17}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch03c.tex",
+      "number": "3.1",
+      "before": "\\subsubsectionlink*{演習3.1}\\label{ex:3.1}",
+      "after": "\\subsubsection*{演習3.1}\\label{ex:3.1}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch03c.tex",
+      "number": "3.2",
+      "before": "\\subsubsectionlink*{演習3.2}\\label{ex:3.2}",
+      "after": "\\subsubsection*{演習3.2}\\label{ex:3.2}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch03c.tex",
+      "number": "3.3",
+      "before": "\\subsubsectionlink*{演習3.3}\\label{ex:3.3}",
+      "after": "\\subsubsection*{演習3.3}\\label{ex:3.3}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch03c.tex",
+      "number": "3.4",
+      "before": "\\subsubsectionlink*{演習3.4}\\label{ex:3.4}",
+      "after": "\\subsubsection*{演習3.4}\\label{ex:3.4}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch03c.tex",
+      "number": "3.5",
+      "before": "\\subsubsectionlink*{演習3.5}\\label{ex:3.5}",
+      "after": "\\subsubsection*{演習3.5}\\label{ex:3.5}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch03c.tex",
+      "number": "3.6",
+      "before": "\\subsubsectionlink*{演習3.6}\\label{ex:3.6}",
+      "after": "\\subsubsection*{演習3.6}\\label{ex:3.6}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch03c.tex",
+      "number": "3.7",
+      "before": "\\subsubsectionlink*{演習3.7}\\label{ex:3.7}",
+      "after": "\\subsubsection*{演習3.7}\\label{ex:3.7}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch03c.tex",
+      "number": "3.8",
+      "before": "\\subsubsectionlink*{演習3.8}\\label{ex:3.8}",
+      "after": "\\subsubsection*{演習3.8}\\label{ex:3.8}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch03c.tex",
+      "number": "3.9",
+      "before": "\\subsubsectionlink*{演習3.9}\\label{ex:3.9}",
+      "after": "\\subsubsection*{演習3.9}\\label{ex:3.9}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch03c.tex",
+      "number": "3.10",
+      "before": "\\subsubsectionlink*{演習3.10}\\label{ex:3.10}",
+      "after": "\\subsubsection*{演習3.10}\\label{ex:3.10}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch03c.tex",
+      "number": "3.11",
+      "before": "\\subsubsectionlink*{演習3.11}\\label{ex:3.11}",
+      "after": "\\subsubsection*{演習3.11}\\label{ex:3.11}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch03c.tex",
+      "number": "3.12",
+      "before": "\\subsubsectionlink*{演習3.12}\\label{ex:3.12}",
+      "after": "\\subsubsection*{演習3.12}\\label{ex:3.12}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch03c.tex",
+      "number": "3.13",
+      "before": "\\subsubsectionlink*{演習3.13}\\label{ex:3.13}",
+      "after": "\\subsubsection*{演習3.13}\\label{ex:3.13}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch03c.tex",
+      "number": "3.14",
+      "before": "\\subsubsectionlink*{演習3.14}\\label{ex:3.14}",
+      "after": "\\subsubsection*{演習3.14}\\label{ex:3.14}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch04.tex",
+      "number": "4.1",
+      "before": "\\subsubsectionlink*{演習4.1}\\label{ex:4.1}",
+      "after": "\\subsubsection*{演習4.1}\\label{ex:4.1}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch04.tex",
+      "number": "4.2",
+      "before": "\\subsubsectionlink*{演習4.2}\\label{ex:4.2}",
+      "after": "\\subsubsection*{演習4.2}\\label{ex:4.2}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch04.tex",
+      "number": "4.3",
+      "before": "\\subsubsectionlink*{演習4.3}\\label{ex:4.3}",
+      "after": "\\subsubsection*{演習4.3}\\label{ex:4.3}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch04.tex",
+      "number": "4.4",
+      "before": "\\subsubsectionlink*{演習4.4}\\label{ex:4.4}",
+      "after": "\\subsubsection*{演習4.4}\\label{ex:4.4}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch04.tex",
+      "number": "4.5",
+      "before": "\\subsubsectionlink*{演習4.5}\\label{ex:4.5}",
+      "after": "\\subsubsection*{演習4.5}\\label{ex:4.5}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch04.tex",
+      "number": "4.6",
+      "before": "\\subsubsectionlink*{演習4.6}\\label{ex:4.6}",
+      "after": "\\subsubsection*{演習4.6}\\label{ex:4.6}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch05.tex",
+      "number": "5.1",
+      "before": "\\subsubsectionlink*{演習5.1}",
+      "after": "\\subsubsection*{演習5.1}\\label{ex:5.1}",
+      "location_label_added": true
+    },
+    {
+      "file": "ch05.tex",
+      "number": "5.2",
+      "before": "\\subsubsectionlink*{演習5.2}",
+      "after": "\\subsubsection*{演習5.2}\\label{ex:5.2}",
+      "location_label_added": true
+    },
+    {
+      "file": "ch05.tex",
+      "number": "5.3",
+      "before": "\\subsubsectionlink*{演習5.3}",
+      "after": "\\subsubsection*{演習5.3}\\label{ex:5.3}",
+      "location_label_added": true
+    },
+    {
+      "file": "ch06b.tex",
+      "number": "6.1",
+      "before": "\\subsubsectionlink*{演習6.1}\\label{ex:6.1}",
+      "after": "\\subsubsection*{演習6.1}\\label{ex:6.1}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch06b.tex",
+      "number": "6.2",
+      "before": "\\subsubsectionlink*{演習6.2}\\label{ex:6.2}",
+      "after": "\\subsubsection*{演習6.2}\\label{ex:6.2}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch06b.tex",
+      "number": "6.3",
+      "before": "\\subsubsectionlink*{演習6.3}\\label{ex:6.3}",
+      "after": "\\subsubsection*{演習6.3}\\label{ex:6.3}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch06b.tex",
+      "number": "6.4",
+      "before": "\\subsubsectionlink*{演習6.4}\\label{ex:6.4}",
+      "after": "\\subsubsection*{演習6.4}\\label{ex:6.4}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch06b.tex",
+      "number": "6.5",
+      "before": "\\subsubsectionlink*{演習6.5}\\label{ex:6.5}",
+      "after": "\\subsubsection*{演習6.5}\\label{ex:6.5}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch06b.tex",
+      "number": "6.6",
+      "before": "\\subsubsectionlink*{演習6.6}\\label{ex:6.6}",
+      "after": "\\subsubsection*{演習6.6}\\label{ex:6.6}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch06b.tex",
+      "number": "6.7",
+      "before": "\\subsubsectionlink*{演習6.7}\\label{ex:6.7}",
+      "after": "\\subsubsection*{演習6.7}\\label{ex:6.7}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch06b.tex",
+      "number": "6.8",
+      "before": "\\subsubsectionlink*{演習6.8}\\label{ex:6.8}",
+      "after": "\\subsubsection*{演習6.8}\\label{ex:6.8}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch06b.tex",
+      "number": "6.9",
+      "before": "\\subsubsectionlink*{演習6.9}\\label{ex:6.9}",
+      "after": "\\subsubsection*{演習6.9}\\label{ex:6.9}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch06b.tex",
+      "number": "6.10",
+      "before": "\\subsubsectionlink*{演習6.10}\\label{ex:6.10}",
+      "after": "\\subsubsection*{演習6.10}\\label{ex:6.10}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch06b.tex",
+      "number": "6.11",
+      "before": "\\subsubsectionlink*{演習6.11}\\label{ex:6.11}",
+      "after": "\\subsubsection*{演習6.11}\\label{ex:6.11}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch06b.tex",
+      "number": "6.12",
+      "before": "\\subsubsectionlink*{演習6.12}\\label{ex:6.12}",
+      "after": "\\subsubsection*{演習6.12}\\label{ex:6.12}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch06b.tex",
+      "number": "6.13",
+      "before": "\\subsubsectionlink*{演習6.13}\\label{ex:6.13}",
+      "after": "\\subsubsection*{演習6.13}\\label{ex:6.13}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch06b.tex",
+      "number": "6.14",
+      "before": "\\subsubsectionlink*{演習6.14}\\label{ex:6.14}",
+      "after": "\\subsubsection*{演習6.14}\\label{ex:6.14}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch06b.tex",
+      "number": "6.15",
+      "before": "\\subsubsectionlink*{演習6.15}\\label{ex:6.15}",
+      "after": "\\subsubsection*{演習6.15}\\label{ex:6.15}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch07.tex",
+      "number": "7.1",
+      "before": "\\subsubsectionlink*{演習7.1}",
+      "after": "\\subsubsection*{演習7.1}\\label{ex:7.1}",
+      "location_label_added": true
+    },
+    {
+      "file": "ch07.tex",
+      "number": "7.2",
+      "before": "\\subsubsectionlink*{演習7.2}",
+      "after": "\\subsubsection*{演習7.2}\\label{ex:7.2}",
+      "location_label_added": true
+    },
+    {
+      "file": "ch07.tex",
+      "number": "7.3",
+      "before": "\\subsubsectionlink*{演習7.3}",
+      "after": "\\subsubsection*{演習7.3}\\label{ex:7.3}",
+      "location_label_added": true
+    },
+    {
+      "file": "ch07.tex",
+      "number": "7.4",
+      "before": "\\subsubsectionlink*{演習7.4}",
+      "after": "\\subsubsection*{演習7.4}\\label{ex:7.4}",
+      "location_label_added": true
+    },
+    {
+      "file": "ch07.tex",
+      "number": "7.5",
+      "before": "\\subsubsectionlink*{演習7.5}",
+      "after": "\\subsubsection*{演習7.5}\\label{ex:7.5}",
+      "location_label_added": true
+    },
+    {
+      "file": "ch07.tex",
+      "number": "7.6",
+      "before": "\\subsubsectionlink*{演習7.6}",
+      "after": "\\subsubsection*{演習7.6}\\label{ex:7.6}",
+      "location_label_added": true
+    },
+    {
+      "file": "ch07.tex",
+      "number": "7.7",
+      "before": "\\subsubsectionlink*{演習7.7}",
+      "after": "\\subsubsection*{演習7.7}\\label{ex:7.7}",
+      "location_label_added": true
+    },
+    {
+      "file": "ch07.tex",
+      "number": "7.8",
+      "before": "\\subsubsectionlink*{演習7.8}",
+      "after": "\\subsubsection*{演習7.8}\\label{ex:7.8}",
+      "location_label_added": true
+    },
+    {
+      "file": "ch07.tex",
+      "number": "7.9",
+      "before": "\\subsubsectionlink*{演習7.9}",
+      "after": "\\subsubsection*{演習7.9}\\label{ex:7.9}",
+      "location_label_added": true
+    },
+    {
+      "file": "ch07.tex",
+      "number": "7.10",
+      "before": "\\subsubsectionlink*{演習7.10}",
+      "after": "\\subsubsection*{演習7.10}\\label{ex:7.10}",
+      "location_label_added": true
+    },
+    {
+      "file": "ch07.tex",
+      "number": "7.11",
+      "before": "\\subsubsectionlink*{演習7.11}",
+      "after": "\\subsubsection*{演習7.11}\\label{ex:7.11}",
+      "location_label_added": true
+    },
+    {
+      "file": "ch07.tex",
+      "number": "7.12",
+      "before": "\\subsubsectionlink*{演習7.12}",
+      "after": "\\subsubsection*{演習7.12}\\label{ex:7.12}",
+      "location_label_added": true
+    },
+    {
+      "file": "ch07.tex",
+      "number": "7.13",
+      "before": "\\subsubsectionlink*{演習7.13}",
+      "after": "\\subsubsection*{演習7.13}\\label{ex:7.13}",
+      "location_label_added": true
+    },
+    {
+      "file": "ch07.tex",
+      "number": "7.14",
+      "before": "\\subsubsectionlink*{演習7.14}",
+      "after": "\\subsubsection*{演習7.14}\\label{ex:7.14}",
+      "location_label_added": true
+    },
+    {
+      "file": "ch07.tex",
+      "number": "7.15",
+      "before": "\\subsubsectionlink*{演習7.15}",
+      "after": "\\subsubsection*{演習7.15}\\label{ex:7.15}",
+      "location_label_added": true
+    },
+    {
+      "file": "ch08b.tex",
+      "number": "8.1",
+      "before": "\\subsubsectionlink*{演習8.1}\\label{ex:8.1}",
+      "after": "\\subsubsection*{演習8.1}\\label{ex:8.1}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch08b.tex",
+      "number": "8.2",
+      "before": "\\subsubsectionlink*{演習8.2}\\label{ex:8.2}",
+      "after": "\\subsubsection*{演習8.2}\\label{ex:8.2}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch08b.tex",
+      "number": "8.3",
+      "before": "\\subsubsectionlink*{演習8.3}\\label{ex:8.3}",
+      "after": "\\subsubsection*{演習8.3}\\label{ex:8.3}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch08b.tex",
+      "number": "8.4",
+      "before": "\\subsubsectionlink*{演習8.4}\\label{ex:8.4}",
+      "after": "\\subsubsection*{演習8.4}\\label{ex:8.4}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch08b.tex",
+      "number": "8.5",
+      "before": "\\subsubsectionlink*{演習8.5}\\label{ex:8.5}",
+      "after": "\\subsubsection*{演習8.5}\\label{ex:8.5}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch08b.tex",
+      "number": "8.6",
+      "before": "\\subsubsectionlink*{演習8.6}\\label{ex:8.6}",
+      "after": "\\subsubsection*{演習8.6}\\label{ex:8.6}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch08b.tex",
+      "number": "8.7",
+      "before": "\\subsubsectionlink*{演習8.7}\\label{ex:8.7}",
+      "after": "\\subsubsection*{演習8.7}\\label{ex:8.7}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch08b.tex",
+      "number": "8.8",
+      "before": "\\subsubsectionlink*{演習8.8}\\label{ex:8.8}",
+      "after": "\\subsubsection*{演習8.8}\\label{ex:8.8}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch08b.tex",
+      "number": "8.9",
+      "before": "\\subsubsectionlink*{演習8.9}\\label{ex:8.9}",
+      "after": "\\subsubsection*{演習8.9}\\label{ex:8.9}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch08b.tex",
+      "number": "8.10",
+      "before": "\\subsubsectionlink*{演習8.10}\\label{ex:8.10}",
+      "after": "\\subsubsection*{演習8.10}\\label{ex:8.10}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch08b.tex",
+      "number": "8.11",
+      "before": "\\subsubsectionlink*{演習8.11}\\label{ex:8.11}",
+      "after": "\\subsubsection*{演習8.11}\\label{ex:8.11}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch08b.tex",
+      "number": "8.12",
+      "before": "\\subsubsectionlink*{演習8.12}\\label{ex:8.12}",
+      "after": "\\subsubsection*{演習8.12}\\label{ex:8.12}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch09b.tex",
+      "number": "9.1",
+      "before": "\\subsubsectionlink*{演習9.1}\\label{ex:9.1}",
+      "after": "\\subsubsection*{演習9.1}\\label{ex:9.1}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch09b.tex",
+      "number": "9.2",
+      "before": "\\subsubsectionlink*{演習9.2}\\label{ex:9.2}",
+      "after": "\\subsubsection*{演習9.2}\\label{ex:9.2}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch09b.tex",
+      "number": "9.3",
+      "before": "\\subsubsectionlink*{演習9.3}\\label{ex:9.3}",
+      "after": "\\subsubsection*{演習9.3}\\label{ex:9.3}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch09b.tex",
+      "number": "9.4",
+      "before": "\\subsubsectionlink*{演習9.4}\\label{ex:9.4}",
+      "after": "\\subsubsection*{演習9.4}\\label{ex:9.4}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch09b.tex",
+      "number": "9.5",
+      "before": "\\subsubsectionlink*{演習9.5}\\label{ex:9.5}",
+      "after": "\\subsubsection*{演習9.5}\\label{ex:9.5}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch09b.tex",
+      "number": "9.6",
+      "before": "\\subsubsectionlink*{演習9.6}\\label{ex:9.6}",
+      "after": "\\subsubsection*{演習9.6}\\label{ex:9.6}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch09b.tex",
+      "number": "9.7",
+      "before": "\\subsubsectionlink*{演習9.7}\\label{ex:9.7}",
+      "after": "\\subsubsection*{演習9.7}\\label{ex:9.7}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch09b.tex",
+      "number": "9.8",
+      "before": "\\subsubsectionlink*{演習9.8}\\label{ex:9.8}",
+      "after": "\\subsubsection*{演習9.8}\\label{ex:9.8}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch09b.tex",
+      "number": "9.9",
+      "before": "\\subsubsectionlink*{演習9.9}\\label{ex:9.9}",
+      "after": "\\subsubsection*{演習9.9}\\label{ex:9.9}",
+      "location_label_added": false
+    },
+    {
+      "file": "ch09b.tex",
+      "number": "9.10",
+      "before": "\\subsubsectionlink*{演習9.10}\\label{ex:9.10}",
+      "after": "\\subsubsection*{演習9.10}\\label{ex:9.10}",
+      "location_label_added": false
+    }
+  ]
+}

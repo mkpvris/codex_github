@@ -1,0 +1,42 @@
+{
+  "pdf_pages": 374,
+  "sections": {
+    "第1章の演習": 42,
+    "付録Aの演習": 307,
+    "参考文献": 309,
+    "用語集": 323,
+    "索引": 351
+  },
+  "rendered_pages": [
+    2,
+    42,
+    307,
+    323,
+    351
+  ],
+  "outputs": [
+    "qa\\exercise-toc-revision-002.png",
+    "qa\\exercise-toc-revision-042.png",
+    "qa\\exercise-toc-revision-307.png",
+    "qa\\exercise-toc-revision-323.png",
+    "qa\\exercise-toc-revision-351.png"
+  ],
+  "pdf_sha256": "895d44d95beba30cdcf89e538e299c8d41c72a1a3f925656974ed65eb46d9743",
+  "visual_review": {
+    "reviewed_pages": [
+      2,
+      42,
+      307,
+      323,
+      351
+    ],
+    "status": "passed",
+    "observations": [
+      "TOC contains chapter exercise groups and ordinary subsubsections, without individual exercise entries.",
+      "Body exercise numbers remain legible in black; group heading retains blue backlink.",
+      "Glossary uses clear hanging indentation and bold terms.",
+      "Index preserves alphabetical English/Japanese entries and linked page numbers.",
+      "No clipping, overlaps, or missing glyphs observed."
+    ]
+  }
+}
