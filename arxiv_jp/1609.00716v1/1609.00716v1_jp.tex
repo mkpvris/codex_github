@@ -1,0 +1,125 @@
+\documentclass[a4paper,11pt]{ltjsarticle}
+
+% ========== package ========== %
+% --- 数式環境 --- %
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+% --- 数式環境 END --- %
+% ブラケット
+\usepackage{braket}
+% ベクトルの太文字
+\usepackage{bm}
+% 添え字左右上下 \fourIdx{左上}{左下}{右上}{右下}{ベース} で使う．Iは大文字
+\usepackage{fouridx}
+% 色
+\usepackage{color}
+% 余白指定
+\usepackage{geometry}
+% --- ページ内リンク --- %
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue}
+% --- ページ内リンク END --- %
+% 花文字
+\usepackage{mathrsfs}
+% 画像
+\usepackage{graphicx}
+% tcolorbox
+\usepackage{tcolorbox}
+% appendix
+\usepackage{appendix}
+% --- 参考文献 --- %
+\usepackage{etoolbox}
+\usepackage{fontspec} % fontspecは読み込んでOKですが、設定順序に注意が必要です
+%% --- 参考文献フォント --- %%
+  \IfFontExistsTF{Times New Roman}{
+    \newfontfamily\bibfontface[Ligatures=TeX]{Times New Roman}
+  }{
+    \newfontfamily\bibfontface[Ligatures=TeX]{FreeSerif} % 代替フォント
+  }
+%% --- 参考文献フォント END --- %%
+%% --- 参考文献リンク位置 --- %%
+  \BeforeBeginEnvironment{thebibliography}{%
+    \phantomsection
+    \addcontentsline{toc}{section}{参考文献}
+  }
+  \AtBeginEnvironment{thebibliography}{%
+    \normalfont\bibfontface
+  }
+%% --- 参考文献のリンク位置 --- %%
+% --- 参考文献 END --- %
+% ========== package END ========== %
+
+% ========== newcommand ========== %
+% --- セクションから目次へのリンク --- %
+\newcommand{\sectionlink}[1]{\section[#1]{\hyperlink{toc}{#1}}}
+\newcommand{\subsectionlink}[1]{\subsection[#1]{\hyperlink{toc}{#1}}}
+% セクション番号リンク
+\makeatletter
+\renewcommand{\@seccntformat}[1]{%
+  \protect\hyperlink{toc}{\csname the#1\endcsname}\quad
+}
+\makeatother
+
+\numberwithin{equation}{section}
+% ==========- newcommand END ========== %
+\allowdisplaybreaks
+%===========================================================
+% --- タイトル --- %
+%===========================================================
+\geometry{left=25mm, right=25mm, top=30mm, bottom=30mm}
+\usepackage{needspace}
+\widowpenalty=10000\clubpenalty=10000
+
+% Section-only translation: retain source numbers and template layout.
+\setlength{\emergencystretch}{2em}
+\hypersetup{unicode=true,pdftitle={Lectures on Inflation §3.5 日本語訳},pdfauthor={Leonardo Senatore（原著）}}
+\makeatletter
+\newcommand{\OriginalEquation}[1]{%
+  \par\addvspace{7pt}\noindent\begin{minipage}{\linewidth}%
+  \def\@currentlabel{#1}\phantomsection\label{eq:#1}%
+  \centering\csname eq#1\endcsname
+  \end{minipage}\par\addvspace{7pt}}
+\makeatother
+\newcommand{\OriginalFigure}[1]{\par\begingroup\centering\csname fig#1\endcsname\par\endgroup}
+\newcommand{\trnote}[1]{\par\noindent{\small 訳注：#1}\par}
+\input{equation_crops.tex}
+\title{\bfseries インフレーションの有効場理論\\[4pt]\large Lectures on Inflation §3.5 日本語訳\\[3pt]\normalsize\href{https://arxiv.org/pdf/1609.00716v1}{arXiv:1609.00716v1}}
+\author{Leonardo Senatore\\\small Stanford Institute for Theoretical Physics\\\small Department of Physics, Stanford University\\\small Kavli Institute for Particle Astrophysics and Cosmology, Stanford University and SLAC}
+\date{2026年10月20日}
+\begin{document}
+\nocite{Maldacena:2002vr,Cornwall:1974km,Cheung:2007st,Behbahani:2011it,Achucarro:2012sm,Seery:2006vu,Pimentel:2012tw,Senatore:2009cf,Senatore:2012ya}
+\maketitle
+\begin{abstract}
+本書は、ご提供の原文PDFの第3.5節（原文40～49ページ）に基づく非公式の日本語訳である。第3.5.1節、第3.5.2節、式(151)～(187)、図16・17、脚注9～11を省略せず収録した。原論文の要旨は翻訳対象外であり、この段落は翻訳版の編集説明である。
+
+節番号・式番号・引用番号は原文に従う。独立した数式と図は原文から生成した600dpiの高精細画像で描画を保持し、キャプションと脚注は日本語に訳した。参考文献は対象節で引用するものを原文の番号のまま収録した。原文の疑わしい表記も無断では修正していない。末尾の「原文照合について」は翻訳者による注記である。
+\end{abstract}
+\hypertarget{toc}{}
+\tableofcontents
+\clearpage
+\setcounter{section}{3}
+\setcounter{subsection}{4}
+\input{part1.tex}
+\input{part2.tex}
+\input{part3.tex}
+\clearpage
+\phantomsection
+\addcontentsline{toc}{section}{原文照合について}
+\section*{\hyperlink{toc}{原文照合について}}
+\noindent 以下は原文の本文とは別の翻訳上の注記である。
+\begin{itemize}
+\item 式(156)の添字と、式(158)直後の $\delta K_{\mu\nu}=K_{\mu\nu}-a^2Hh_{\mu\nu}$ の表記は原文のまま保持した。
+\item 式(164)直後の本文の $M_P$、式(165)の $\phi(t)$、式(173)直前の本文の $D_\mu U D^\mu U$、式(185)の分母・係数なども、原文に示された表記を保持した。
+\item 原文49ページの結論段落では、「重力との混合が支配的ではない観測量」と「標準的なスローロール・インフレーションの非Gaussian性」の例示との関係に解釈の余地がある。本文は文面に沿って訳し、例外であるとの解釈を補っていない。
+\item 参考文献[28]は原文で2件の論文をまとめた項目であるため、ここでも同じ番号に2件を収録した。
+\end{itemize}
+\noindent\textbf{出典とライセンスの確認：}
+原著は Leonardo Senatore, \textit{Lectures on Inflation}, \href{https://arxiv.org/pdf/1609.00716v1}{arXiv:1609.00716v1} である。\href{https://arxiv.org/abs/1609.00716v1}{arXiv掲載ページ}が示すライセンスは、\href{https://arxiv.org/licenses/nonexclusive-distrib/1.0/license.html}{arXivの非独占的配布ライセンス}である。このライセンスから第三者への翻訳・再配布の許諾は確認できなかった。本訳は利用者から提供されたPDFを対象として作成した。
+
+\newpage
+\renewcommand{\refname}{\hyperlink{toc}{参考文献}}
+
+\bibliographystyle{utphys}
+\bibliography{ref}
+\end{document}
