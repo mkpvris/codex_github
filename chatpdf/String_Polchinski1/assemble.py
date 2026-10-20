@@ -36,7 +36,7 @@ preamble += r"""
 \hypersetup{hypertexnames=false,pdftitle={弦理論 第I巻：ボソン弦入門 日本語訳},
 pdfauthor={Joseph Polchinski},bookmarksnumbered=true}
 \emergencystretch=2em
-\setcounter{tocdepth}{3}
+\setcounter{tocdepth}{2}
 \setcounter{secnumdepth}{3}
 \NewDocumentCommand{\subsubsectionlink}{s m}{%
   \IfBooleanTF{#1}{%
@@ -67,7 +67,7 @@ pdfauthor={Joseph Polchinski},bookmarksnumbered=true}
 """
 main = preamble + "\n\\begin{document}\n\\input{sections/reference_keys}\n"
 main += "\\input{sections/reference_order}\n\\maketitle\n"
-main += "\\hypertarget{toc}{}\n\\tableofcontents\n\\setcounter{tocdepth}{3}\n\\clearpage\n\\input{sections/frontmatter}\n"
+main += "\\hypertarget{toc}{}\n\\tableofcontents\n\\setcounter{tocdepth}{2}\n\\clearpage\n\\input{sections/frontmatter}\n"
 for group in state["chapters"]:
     main += "\\clearpage\n"
     for name in group:

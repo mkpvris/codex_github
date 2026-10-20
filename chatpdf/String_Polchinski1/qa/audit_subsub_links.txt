@@ -1,13 +1,13 @@
 小見出し・演習グループ PDF相互リンク監査
 {
   "pdf": "C:\\Users\\false\\OneDrive\\ドキュメント\\ChatGPT\\pdf翻訳系\\chatpdf\\String_Polchinski1\\pdf\\String_Polchinski1_jp.pdf",
-  "pdf_sha256": "895d44d95beba30cdcf89e538e299c8d41c72a1a3f925656974ed65eb46d9743",
+  "pdf_sha256": "55c57a0e861219db8d0ffa96a8d87f38353ddbcf6c9258f7a28964eda63753e1",
   "toc": "C:\\Users\\false\\OneDrive\\ドキュメント\\ChatGPT\\pdf翻訳系\\chatpdf\\String_Polchinski1\\build\\String_Polchinski1_jp.toc",
   "aux": "C:\\Users\\false\\OneDrive\\ドキュメント\\ChatGPT\\pdf翻訳系\\chatpdf\\String_Polchinski1\\build\\String_Polchinski1_jp.aux",
-  "pdf_pages": 374,
+  "pdf_pages": 372,
   "toc_physical_pages": [
     1,
-    6
+    4
   ],
   "subsubsection_count": 102,
   "ordinary_subsubsection_count": 102,
@@ -19,17 +19,23 @@
   "individual_exercise_labels_in_source": 106,
   "individual_exercises_preserved_in_pdf": 106,
   "individual_exercises_failed": 0,
-  "baseline_pdf_sha256": "4c88adc6a700d9ccc333557e12750fdb3da5554b4f8db7a432861038273a2e4d",
-  "baseline_toc_target_annotations": 367,
+  "baseline_pdf_sha256": "895d44d95beba30cdcf89e538e299c8d41c72a1a3f925656974ed65eb46d9743",
+  "baseline_toc_target_annotations": 261,
   "toc_target_annotations": 261,
-  "removed_toc_target_annotations": 106,
+  "change_in_toc_target_annotations": 0,
+  "baseline_printed_toc_heading_annotations": 191,
+  "printed_toc_heading_annotations": 89,
+  "suppressed_printed_toc_heading_annotations": 102,
+  "subsubsection_printed_toc_annotations": 0,
   "tocdepth_returns_to_2_after_appendix_A": true,
   "subsubsection_records_after_scope_boundary": 0,
   "glossary_source_hangindent_1_5em": true,
   "glossary_source_hangafter_1": true,
-  "pdf_outline_entry_count": 191,
-  "subsubsection_outline_count": 102,
-  "readable_math_bookmarks": 10,
+  "pdf_outline_entry_count": 89,
+  "pdf_outline_entries_deeper_than_subsection": 0,
+  "subsubsection_outline_count": 0,
+  "readable_math_bookmarks": 3,
+  "math_subsubsection_bookmarks_suppressed": 7,
   "all_selected_headings": 112,
   "passed": 112,
   "failed": 0,
@@ -38,6 +44,8 @@
 }
 検証: .tocと.auxのnamed destination、PDFの実移動先ページ、目次内annotation、
 本文見出しanchorの同一ページ・48pt以内にあるtoc行きannotation、矩形の一意な割当を確認。
-さらに102小見出し・10演習グループのPDFしおりnamed targetと数式見出し10件のUnicode表記を確認。
-個別演習106問の本文見出し・ラベル保全、目次/しおり/バックリンク削除と注釈総数106件減を確認。
+102小見出しは印刷目次/しおりの項目なし・本文の目次バックリンクあり、10演習グループは相互リンクあり。
+数式見出しは節以上3件のUnicodeしおりを確認し、小見出し7件のしおりを非掲載として確認。
+個別演習106問の本文見出し・ラベル保全、目次/しおり/バックリンク不在を引き続き確認。
+旧版から印刷目次リンク102件減、本文のtoc行き注釈261件維持を確認。
 本文見出しの数式・日本語の文字抽出一致には依存していない。

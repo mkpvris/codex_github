@@ -1,4 +1,4 @@
-"""Audit TOC/body links after the parent confirms that the final PDF is ready.
+"""Audit a subsection-depth TOC after the parent confirms the final PDF is ready.
 
 Uses named destinations from the actual .toc/.aux and PDF annotation rectangles;
 it does not depend on extracted Japanese/math heading text matching exactly.
@@ -117,7 +117,7 @@ def main() -> int:
     parser.add_argument('--pdf', type=Path, default=base/'pdf'/'String_Polchinski1_jp.pdf')
     parser.add_argument('--toc', type=Path, default=base/'build'/'String_Polchinski1_jp.toc')
     parser.add_argument('--aux', type=Path, default=base/'build'/'String_Polchinski1_jp.aux')
-    parser.add_argument('--baseline', type=Path, default=base/'qa'/'individual_exercise_removal_baseline.json')
+    parser.add_argument('--baseline', type=Path, default=base/'qa'/'tocdepth2_baseline.json')
     parser.add_argument('--output-prefix', type=Path, default=base/'qa'/'audit_subsub_links')
     args = parser.parse_args()
     pdf_bytes = args.pdf.read_bytes()
@@ -150,6 +150,17 @@ def main() -> int:
         errors.append(f'Expected 102 ordinary subsubsection TOC records, found {len(subsub)}')
     if len(groups) != 10:
         errors.append(f'Expected 10 exercise-group TOC records, found {len(groups)}')
+    baseline_subsub_titles = Counter(r['title_tex'] for r in baseline['subsubsection_headings'])
+    if Counter(r['title_tex'] for r in subsub) != baseline_subsub_titles:
+        errors.append('The 102 ordinary subsubsection titles differ from the baseline')
+    outline_deeper_than_subsection = [r for r in outlines if r['depth'] > 1]
+    if outline_deeper_than_subsection:
+        errors.append('The PDF outline contains entries deeper than subsection')
+    expected_outline_targets = Counter(r['destination'] for r in records
+                                       if r['level'] in {'section', 'subsection'})
+    actual_outline_targets = Counter(r['target'] for r in outlines)
+    if actual_outline_targets != expected_outline_targets:
+        errors.append('The PDF outline does not match the section/subsection contents records')
     exercise_numbers = []
     for record in records:
         match = re.search(r'演習([1-9A]\.\d+)', record['title_tex'])
@@ -219,8 +230,11 @@ def main() -> int:
         if ann['target'] == 'toc':
             back_by_page.setdefault(ann['page'],[]).append(ann)
     total_toc_backlinks = sum(len(rows) for rows in back_by_page.values())
-    if total_toc_backlinks != baseline['expected_remaining_toc_target_annotations']:
-        errors.append(f"Expected {baseline['expected_remaining_toc_target_annotations']} toc-target annotations after removing 106 exercises; found {total_toc_backlinks}")
+    if total_toc_backlinks != baseline['toc_target_annotations']:
+        errors.append(f"Expected all {baseline['toc_target_annotations']} existing toc-target annotations to remain; found {total_toc_backlinks}")
+    all_toc_heading_annotations = sum(len(forward_by_destination.get(r['destination'], [])) for r in records)
+    if all_toc_heading_annotations != baseline['expected_remaining_toc_heading_annotations']:
+        errors.append(f"Expected {baseline['expected_remaining_toc_heading_annotations']} printed TOC heading annotations after suppressing 102 subsubsections; found {all_toc_heading_annotations}")
     exercise_details = []
     for record in exercise_labels:
         result = dict(record)
@@ -262,10 +276,13 @@ def main() -> int:
         name = record['destination']
         result = dict(record)
         result['kind'] = 'subsubsection' if record in subsub else 'exercise_group'
+        visible_in_toc = record['level'] != 'subsubsection'
+        result['expected_in_printed_toc_and_outline'] = visible_in_toc
         result['issues'] = []
         result['pdf_outline_entries'] = outline_by_destination.get(name, [])
-        if len(result['pdf_outline_entries']) != 1:
-            result['issues'].append('Expected exactly one PDF outline entry with this named target')
+        expected_outline_count = 1 if visible_in_toc else 0
+        if len(result['pdf_outline_entries']) != expected_outline_count:
+            result['issues'].append(f'Expected {expected_outline_count} PDF outline entries with this named target')
         dest = destinations.get(name)
         result['named_destination'] = dest
         if dest is None:
@@ -277,8 +294,10 @@ def main() -> int:
             result['issues'].append('TOC/AUX destination or page disagreement')
         forward = forward_by_destination.get(name,[])
         result['toc_to_body_annotations'] = forward
-        if not forward:
+        if visible_in_toc and not forward:
             result['issues'].append('No TOC-to-body annotation with this exact named target')
+        if not visible_in_toc and forward:
+            result['issues'].append('A suppressed subsubsection still has a printed TOC link')
         if dest:
             printed = record['printed_page'].strip()
             result['printed_page_matches_physical_page'] = printed.isdecimal() and int(printed)==dest['page']
@@ -324,11 +343,13 @@ def main() -> int:
             expected = ['c=1 の CFT']
         if expected:
             entries = outline_by_destination.get(record['destination'], [])
-            ok = len(entries) == 1 and all(s in entries[0]['title'] for s in expected)
+            visible = record['level'] != 'subsubsection'
+            ok = (len(entries) == 1 and all(s in entries[0]['title'] for s in expected)) if visible else not entries
             math_bookmarks.append({'destination':record['destination'], 'title_tex':title,
-                                   'expected_strings':expected, 'outline_entries':entries, 'passed':ok})
+                                   'expected_strings':expected, 'expected_in_outline':visible,
+                                   'outline_entries':entries, 'passed':ok})
     if len(math_bookmarks) != 10 or not all(r['passed'] for r in math_bookmarks):
-        errors.append('The ten mathematical headings are not all present as readable PDF outline text')
+        errors.append('The ten mathematical headings do not follow the subsection-depth outline policy')
     summary = {'pdf':str(args.pdf), 'pdf_sha256':hashlib.sha256(pdf_bytes).hexdigest(),
                'toc':str(args.toc), 'aux':str(args.aux), 'pdf_pages':len(reader.pages),
                'toc_physical_pages':[toc_page,first_body_page-1 if first_body_page else None],
@@ -343,14 +364,20 @@ def main() -> int:
                'baseline_pdf_sha256':baseline['pdf_sha256'],
                'baseline_toc_target_annotations':baseline['toc_target_annotations'],
                'toc_target_annotations':total_toc_backlinks,
-               'removed_toc_target_annotations':baseline['toc_target_annotations']-total_toc_backlinks,
+               'change_in_toc_target_annotations':total_toc_backlinks-baseline['toc_target_annotations'],
+               'baseline_printed_toc_heading_annotations':baseline['all_toc_heading_annotations'],
+               'printed_toc_heading_annotations':all_toc_heading_annotations,
+               'suppressed_printed_toc_heading_annotations':baseline['all_toc_heading_annotations']-all_toc_heading_annotations,
+               'subsubsection_printed_toc_annotations':sum(len(forward_by_destination.get(r['destination'],[])) for r in subsub),
                'tocdepth_returns_to_2_after_appendix_A':bool(depth_drop),
                'subsubsection_records_after_scope_boundary':len(subsub_after_depth_drop),
                'glossary_source_hangindent_1_5em':glossary_hangindent,
                'glossary_source_hangafter_1':glossary_hangafter,
                'pdf_outline_entry_count':len(outlines),
+               'pdf_outline_entries_deeper_than_subsection':len(outline_deeper_than_subsection),
                'subsubsection_outline_count':sum(len(outline_by_destination.get(r['destination'],[])) for r in subsub),
-               'readable_math_bookmarks':sum(r['passed'] for r in math_bookmarks),
+               'readable_math_bookmarks':sum(r['passed'] and r['expected_in_outline'] for r in math_bookmarks),
+               'math_subsubsection_bookmarks_suppressed':sum(r['passed'] and not r['expected_in_outline'] for r in math_bookmarks),
                'all_selected_headings':len(details), 'passed':sum(r['passed'] for r in details),
                'failed':len(failed), 'errors':errors, 'ok':not errors}
     report = {'summary':summary, 'headings':details, 'mathematical_bookmarks':math_bookmarks,
@@ -359,8 +386,10 @@ def main() -> int:
     lines = ['小見出し・演習グループ PDF相互リンク監査', json.dumps(summary,ensure_ascii=False,indent=2),
              '検証: .tocと.auxのnamed destination、PDFの実移動先ページ、目次内annotation、',
              '本文見出しanchorの同一ページ・48pt以内にあるtoc行きannotation、矩形の一意な割当を確認。',
-             'さらに102小見出し・10演習グループのPDFしおりnamed targetと数式見出し10件のUnicode表記を確認。',
-             '個別演習106問の本文見出し・ラベル保全、目次/しおり/バックリンク削除と注釈総数106件減を確認。',
+             '102小見出しは印刷目次/しおりの項目なし・本文の目次バックリンクあり、10演習グループは相互リンクあり。',
+             '数式見出しは節以上3件のUnicodeしおりを確認し、小見出し7件のしおりを非掲載として確認。',
+             '個別演習106問の本文見出し・ラベル保全、目次/しおり/バックリンク不在を引き続き確認。',
+             '旧版から印刷目次リンク102件減、本文のtoc行き注釈261件維持を確認。',
              '本文見出しの数式・日本語の文字抽出一致には依存していない。']
     for result in failed:
         lines.append(f"FAIL {result['level']} {result['title_tex']} [{result['destination']}]: {'; '.join(result['issues'])}")
