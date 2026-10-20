@@ -6,7 +6,7 @@
 
 Euler 数がゼロの Riemann面は四つある。
 
-\subsubsection*{トーラス}
+\subsubsectionlink*{トーラス}
 
 第5.1節で議論したトーラス $T^2$ は、Euler 数がゼロである唯一の閉じた向き付けのある曲面である。計量 $ds^2=dw\,d\bar w$ を持つ複素平面に、同一視
 \begin{equation}
@@ -33,7 +33,7 @@ z\cong z\exp(-2\pi i\tau)
 \end{equation}
 である。外側の円を $2\pi\tau_1$ 回転させ、内側と外側の円を縫い合わせるとトーラスになる。特に断らない限り、$w$ 座標を用いる。
 
-\subsubsection*{円筒（環帯）}
+\subsubsectionlink*{円筒（環帯）}
 
 円筒 $C_2$ は領域
 \begin{equation}
@@ -53,7 +53,7 @@ w'=-\bar w
 \tag{7.1.7}\label{eq:7.1.7}
 \end{equation}
 
-\subsubsection*{Klein の壺}
+\subsubsectionlink*{Klein の壺}
 
 Klein の壺 $K_2$ は、複素平面に同一視
 \begin{equation}
@@ -73,7 +73,7 @@ w'=-\bar w+2\pi it
 \end{equation}
 による同一視を施して得られる。Klein の壺は、二つのクロスキャップを付けた球面とも考えられるが、この記述は第7.4節まで先送りする。
 
-\subsubsection*{Möbius の帯}
+\subsubsectionlink*{Möbius の帯}
 
 Möbius の帯 $M_2$ は、帯を $\Omega$ によってひねって縫い合わせたものである。
 \begin{equation}
@@ -90,7 +90,7 @@ w'=-\bar w,\qquad w'=w+\pi(2it+1)
 
 \subsectionlink{トーラス上のCFT}
 
-\subsubsection*{スカラーの相関関数}
+\subsubsectionlink*{スカラーの相関関数}
 
 球面の場合と同じく、Green 関数(6.2.7)から出発する。これは
 \begin{equation}
@@ -135,7 +135,7 @@ G'(w,\bar w;w',\bar w')
 \end{equation}
 で与えられる。因子 $2\pi/\partial_\nu\vartheta_1$ は、繰り込まれた自己縮約から生じる。
 
-\subsubsection*{スカラーの分配関数}
+\subsubsectionlink*{スカラーの分配関数}
 
 球面の全体の規格化は弦の結合定数に吸収したが、トーラスではそうすることはできない。特に、非自明な $\tau$ 依存性があるからである。実際、頂点演算子をまったく含まない振幅にも、多くの物理があることがわかる。頂点演算子のない経路積分 $\langle1\rangle_{T^2(\tau)}\equiv Z(\tau)$ を考えよう。モジュラス $\tau$ のトーラスは、円周上の場の理論をとり、Euclid 時間 $2\pi\tau_2$ だけ発展させ、$\sigma^1$ 方向に $2\pi\tau_1$ 平行移動し、それから両端を同一視することで形成されると考えられる。演算子の言葉では、これはトレース
 \begin{equation}
@@ -277,7 +277,7 @@ Z(\tau)=|\partial_w\vartheta_1(0|\tau)|^{-2d/3}\tau_2^{-d/2}
 \end{equation}
 と定まる。ただし、数値係数は別の手段で定めなければならない。関係式\hyperref[eq:7.2.43]{(7.2.43)}に注意すれば、これは先の結果\hyperref[eq:7.2.8]{(7.2.8)}と同じである。
 
-\subsubsection*{$bc$ CFT}
+\subsubsectionlink*{\texorpdfstring{$bc$}{bc} CFT}
 
 ゴースト CFT についても、分配関数は状態についてのトレースを用いて容易に決められる。左右のそれぞれに二組の上昇演算子 $b_{-n},c_{-n}$ があるが、今度は反交換するため、占有数はゼロか一だけである。したがって、モード $n$ の一つの振動子は $(1+q^n)$ を与える。さらに基底状態が四つあるので、
 \begin{equation}
@@ -316,7 +316,7 @@ Z(\tau)&=\operatorname{Tr}[(-1)^F\exp(2\pi i\tau_1P-2\pi\tau_2H)]\\
 \end{equation}
 である。トレース中の $(-1)^F$ により、無限積の符号が変わったことに注意しよう。トーラス上の CKV と二次微分は定数であるため、結果\hyperref[eq:7.2.27]{(7.2.27)}はゴースト場の位置に依存しない。ここでも全体の符号を追跡しようとはせず、正と定める。
 
-\subsubsection*{一般のCFT}
+\subsubsectionlink*{一般のCFT}
 
 一般の CFT では、
 \begin{equation}
@@ -338,7 +338,7 @@ Z(i\ell)\overset{\ell\to0}{\approx}
 \end{equation}
 を与える。このように、高い共形ウェイトでの状態密度は中心電荷によって定まる。これは、$c=\tilde c=d$ が自由ボソンの数を数える、自由ボソンの結果の一般化である。\footnote[1]{正確には、結果\hyperref[eq:7.2.30]{(7.2.30)}はコンパクトなユニタリ CFT で成立する。非ユニタリな理論には通常、負の共形ウェイトを持つ演算子があり、その寄与が単位演算子の寄与を上回る。線形ディラトン理論では、中心電荷は $V^\mu$ に依存するが、状態密度は依存しない。この場合の例外は、$X^\mu$ の非コンパクト性と平行移動不変性の欠如が組み合わさって生じる複雑さによる。}
 
-\subsubsection*{テータ関数}
+\subsubsectionlink*{テータ関数}
 
 基本的なテータ関数は
 \begin{equation}
@@ -633,7 +633,7 @@ iV_d\int^\infty\frac{d\tau_2}{2\tau_2}
 
 $l$ 積分にカットオフを入れて、場の理論の UV 発散を除こうと考えるかもしれない。同様に弦理論にも、たとえば通常の基本領域 $F_0$ を、下辺が直線である領域 $|\tau_1|\leq\tfrac12,\ \tau_2>1$ に置き換えるなどの修正を試みるかもしれない。しかし、どちらの場合も理論の整合性を損なう。非物理的な負ノルム状態がもはや脱結合しなくなるのである。第5.4節の一般論では、BRST ヌル状態の結合がモジュライ空間上の全微分に比例することを見た。基本領域 $F_0$ では、見かけ上の境界 I と I'、II と II'（図5.2参照）がそれぞれ同一視され、表面項は相殺する。積分領域を変えると、本当の境界が生じる。修正されたモジュライ空間上では表面項が相殺せず、ヌル状態に対する振幅がゼロでなくなり、量子論は整合しなくなる。これは、短距離の物理に強引なカットオフを課して重力理論を有限にしようとしたときに起きることと、直接対応している。局所的な時空の対称性を損なって理論を不整合にすることなく、これを実行するのは極めて難しい。弦理論は巧妙な仕方で短距離での挙動を穏やかにし、時空のゲージ不変性を失わずに発散を除去する。
 
-\subsubsection*{真空振幅の物理}
+\subsubsectionlink*{真空振幅の物理}
 
 1ループ真空振幅は、弦の振幅の挙動を示す簡単な例であるだけでなく、興味深い物理的解釈を持つ。点粒子の理論では、「真空」の経路は、互いにつながらない任意個数 $n$ の円周からなる。置換対称性に対する因子 $1/n!$ を含め、$n$ について和をとると、
 \begin{equation}
@@ -713,7 +713,7 @@ m_{\mathrm{ew}}^4\approx10^8\ \mathrm{GeV}^4
 
 \subsectionlink{開弦および向き付けのない1ループ図}
 
-\subsubsection*{円筒}
+\subsubsectionlink*{円筒}
 
 トーラスについての結果は、Euler 数がゼロの他の曲面へ容易に拡張できる。たとえば、向き付けのある理論における円筒からの真空振幅は
 \begin{equation}
@@ -831,7 +831,7 @@ Z_{C_2}=i\frac{V_{26}n^2}{2\pi(8\pi^2\alpha')^{13}}
 
 弦と場の理論の計算を比較することで、円板のタッドポール $\Lambda$ を決められる。ただし、次章で、より一般的な結果の特殊例として求める方が便利である。
 
-\subsubsection*{Klein の壺}
+\subsubsectionlink*{Klein の壺}
 
 Klein の壺からの真空振幅は
 \begin{equation}
@@ -886,7 +886,7 @@ Z_{K_2}=i\frac{2^{26}V_{26}}{4\pi(8\pi^2\alpha')^{13}}
 \end{equation}
 となる。タッドポールが円板ではなく射影平面から生じることを除けば、円筒の発散についての議論がすべて当てはまる。
 
-\subsubsection*{Möbius の帯}
+\subsubsectionlink*{Möbius の帯}
 
 Möbius の帯については、
 \begin{equation}
@@ -936,43 +936,44 @@ i\frac{24V_{26}}{4\pi(8\pi^2\alpha')^{13}}
 \end{equation}
 となる。すなわち、全タッドポールは $2^{13}\mp n$ に比例する。ゲージ群 $SO(2^{13})=SO(8192)$ では、円板と射影平面のタッドポールが相殺して、これはゼロになる。ボソン弦ではおそらく特別な意味を持たないが、超弦理論における $SO(32)$ の同様の相殺には特別な意味がある。
 
-\subsection*{演習}
+\subsectionlink*{演習}
+\addcontentsline{toc}{subsection}{第7章の演習}
 
-\noindent\textbf{7.1}\quad
+\subsubsectionlink*{演習7.1}
 トーラス上の指数演算子の期待値\hyperref[eq:7.2.4]{(7.2.4)}に至る手順を補え。$\tau\to-1/\tau$ のもとで正しく変換することを示せ。
 
-\noindent\textbf{7.2}\quad
+\subsubsectionlink*{演習7.2}
 付録Aで調和演算子について行うように、行列式を正則化して評価することにより、トーラスの真空振幅\hyperref[eq:7.3.6]{(7.3.6)}を導け。モジュラー変換が固有値を置換するだけであることを示せ。［演習A.3と比較せよ。］（参考文献：Polchinski (1986)。）
 
-\noindent\textbf{7.3}\quad
+\subsubsectionlink*{演習7.3}
 固有関数の和(6.2.7)を実行して、Green 関数\hyperref[eq:7.2.3]{(7.2.3)}を導け。
 
-\noindent\textbf{7.4}\quad
+\subsubsectionlink*{演習7.4}
 トーラス上の $\langle\partial_wX^\mu(w)\partial_wX_\mu(0)\rangle$ を、トレースとして表すことによって評価せよ。結果が式\hyperref[eq:7.2.16]{(7.2.16)}と一致することを示せ。
 
-\noindent\textbf{7.5}
+\subsubsectionlink*{演習7.5}
 \begin{enumerate}
 \item[(a)] $\operatorname{Im}\tau\to\infty$ におけるテータ関数(7.2.37)の主要な挙動を求めよ。
 \item[(b)] モジュラー変換を用い、虚軸に沿って $\tau\to0$ とするときについても同じことを行え。
 \item[(c)] より風変わりな問いとして、$\tau$ が虚軸に平行な経路に沿って実軸上のゼロでない点に近づくときはどうなるか。［ヒント：その点が有理数か無理数かによって、答えは本質的に異なる。］
 \end{enumerate}
 
-\noindent\textbf{7.6}
+\subsubsectionlink*{演習7.6}
 \begin{enumerate}
 \item[(a)] 式\hyperref[eq:7.3.20]{(7.3.20)}、\hyperref[eq:7.3.21]{(7.3.21)}を確かめよ。
 \item[(b)] 任意の次元 $d$ で、$l$ 積分にカットオフを課して $Z_{S_1}(m^2)$ を評価せよ。相殺項が $m^2$ に関して解析的であることを示せ。$d=4$ における非解析的な部分を与えよ。（参考文献：Coleman \& Weinberg (1973)。）
 \end{enumerate}
 
-\noindent\textbf{7.7}\quad
+\subsubsectionlink*{演習7.7}
 円筒上の $n$ 個の開弦タキオンの振幅を、トーラスの振幅（式\hyperref[eq:7.3.6]{(7.3.6)}と式\hyperref[eq:7.2.4]{(7.2.4)}を組み合わせたもの）と同様の形で求めよ。必要な Green 関数は、円筒をトーラスの対合として表す表示を用い、鏡像法によってトーラス上の Green 関数から得られる。
 
-\noindent\textbf{7.8}\quad
+\subsubsectionlink*{演習7.8}
 二つの境界のそれぞれにいくつかの頂点演算子がある場合について、前問の振幅を考えよ。前問の具体的な結果から、$t\to0$ の極限が、一方の境界から他方へ流れる運動量の関数として、閉弦の極の列を与えることを示せ。
 
-\noindent\textbf{7.9}\quad
+\subsubsectionlink*{演習7.9}
 演習6.12と7.8の両方を解いた場合、ユニタリ性が、前者の二乗を後者のタキオンの極に関係づけることを論じよ。これを用いて $g_{\mathrm c}$ と $g_{\mathrm o}^2$ の数値的な関係を求めよ。次章では、これと似たことを、より回り道をして行う。
 
-\noindent\textbf{7.10}\quad
+\subsubsectionlink*{演習7.10}
 中間状態の開弦に関する円筒振幅のユニタリ性が、Chan--Paton 因子に
 \[
 \operatorname{Tr}(\lambda^a\lambda^b)\operatorname{Tr}(\lambda^c\lambda^d)
@@ -980,19 +981,19 @@ i\frac{24V_{26}}{4\pi(8\pi^2\alpha')^{13}}
 \]
 を要求することを論じよ。ゲージ群 $U(n_1)\times U(n_2)\times\cdots\times U(n_k)$ はツリーレベルのユニタリ性と整合するが、この追加の条件は $U(n)$ を選び出すことを示せ。
 
-\noindent\textbf{7.11}\quad
+\subsubsectionlink*{演習7.11}
 この演習は、弦理論における $D=26$ の最初の出現（Lovelace, 1971）を再現する。時空の次元を $D$、正味の振動子の組の数を $D'$ と仮定し、\hyperref[eq:7.3.9]{(7.3.9)}の形の Coleman--Weinberg 公式から円筒の真空振幅を計算せよ。頂点演算子の共形不変性が要求するとおり、タキオンの質量を $m^2=-1/\alpha'$ に保つように、開弦の質量二乗の定数項を定めよ。散乱振幅を模擬するため、式\hyperref[eq:7.4.10]{(7.4.10)}のように因子 $\exp(-\alpha'k^2s/2)$ を追加せよ。$D=26$ かつ $D'=24$ でない限り、振幅が $k^2$ に関して極ではなく分岐切断を持つことを示せ。
 
-\noindent\textbf{7.12}\quad
+\subsubsectionlink*{演習7.12}
 前問をトーラスについて繰り返し、この場合には $D=26$ かつ $D'=24$ のときに限り、真空振幅がモジュラー不変であることを示せ（Shapiro, 1972）。
 
-\noindent\textbf{7.13}\quad
+\subsubsectionlink*{演習7.13}
 トーラスの振幅\hyperref[eq:7.3.6]{(7.3.6)}の導出と同様の手順を実行し、弦の経路積分から Klein の壺の真空振幅\hyperref[eq:7.4.15]{(7.4.15)}を求めよ。
 
-\noindent\textbf{7.14}\quad
+\subsubsectionlink*{演習7.14}
 境界状態\hyperref[eq:7.4.13]{(7.4.13)}を用いた振幅\hyperref[eq:7.4.11]{(7.4.11)}が、円筒の振幅\hyperref[eq:7.4.3]{(7.4.3)}を再現することを示せ。
 
-\noindent\textbf{7.15}
+\subsubsectionlink*{演習7.15}
 \begin{enumerate}
 \item[(a)] クロスキャップに対応する状態 $\lvert C\rangle$ を求めよ。
 \item[(b)] 式\hyperref[eq:7.4.11]{(7.4.11)}に類似した式によって、Klein の壺と Möbius の帯の真空振幅を求めよ。

@@ -1,0 +1,27 @@
+小見出しの目次掲載・バックリンク変更（2026-10-21、最新指定）
+既存subsubsection*: 102か所をsubsubsectionlink*へ変更。既存の非star小見出しは0か所。
+個別演習: 全106問をsubsubsectionlink*{演習N.m}へ変更。既存番号とexラベルを保持。
+章別: 1章9問、2章17問、3章14問、4章6問、5章3問、6章15問、7章15問、8章12問、9章10問、付録A 5問。
+通常の小見出しの題名は一切変更していない。個別演習は元の番号だけを見出しに用い、本文を題名へ移動していない。
+前段で変更した演習グループsubsectionlink*および手動addcontentslineはそのまま保持。
+用語集は元からsubsubsectionではないため未変更。main/assemble.py/マクロ定義も未変更。
+差分監査: 宣言した見出し置換を逆変換すると元ファイル全体の文字列（改行を含む）と完全一致。全label・全tagおよびaddcontentslineの並びも一致。
+個別変更一覧と前後SHA256は同名JSONに保存。
+
+appendixA.tex: 通常小見出し 4、演習 5、label 109件保持、tag 107件保持
+ch01a.tex: 通常小見出し 1、演習 0、label 44件保持、tag 38件保持
+ch01b.tex: 通常小見出し 0、演習 9、label 89件保持、tag 77件保持
+ch02a.tex: 通常小見出し 5、演習 0、label 123件保持、tag 115件保持
+ch02b.tex: 通常小見出し 8、演習 17、label 146件保持、tag 118件保持
+ch03a.tex: 通常小見出し 1、演習 0、label 52件保持、tag 41件保持
+ch03b.tex: 通常小見出し 3、演習 0、label 43件保持、tag 38件保持
+ch03c.tex: 通常小見出し 8、演習 14、label 91件保持、tag 74件保持
+ch04.tex: 通常小見出し 5、演習 6、label 152件保持、tag 141件保持
+ch05.tex: 通常小見出し 7、演習 3、label 90件保持、tag 83件保持
+ch06a.tex: 通常小見出し 9、演習 0、label 105件保持、tag 97件保持
+ch06b.tex: 通常小見出し 8、演習 15、label 115件保持、tag 96件保持
+ch07.tex: 通常小見出し 13、演習 15、label 127件保持、tag 123件保持
+ch08a.tex: 通常小見出し 11、演習 0、label 134件保持、tag 128件保持
+ch08b.tex: 通常小見出し 6、演習 12、label 105件保持、tag 83件保持
+ch09a.tex: 通常小見出し 8、演習 0、label 77件保持、tag 65件保持
+ch09b.tex: 通常小見出し 5、演習 10、label 81件保持、tag 61件保持

@@ -1,0 +1,34 @@
+数式見出しのPDFしおり文字列修正
+10見出し、7ファイル。TeXの数式表記・本文・TOC組版は保持。
+宣言した置換の逆変換で元ファイル全バイトに一致。
+PDFしおりだけ bc、βγ、D₂、RP₂、T、c=1 の代替文字列を使用。
+ch02a.tex:740
+  \subsubsectionlink*{$bc$ CFT}
+  \subsubsectionlink*{\texorpdfstring{$bc$}{bc} CFT}
+ch02a.tex:848
+  \subsubsectionlink*{$\beta\gamma$ CFT}
+  \subsubsectionlink*{\texorpdfstring{$\beta\gamma$}{βγ} CFT}
+ch02b.tex:373
+  \subsubsectionlink*{$bc$ CFT}
+  \subsubsectionlink*{\texorpdfstring{$bc$}{bc} CFT}
+ch06a.tex:399
+  \subsectionlink{$bc$ CFT}
+  \subsectionlink{\texorpdfstring{$bc$}{bc} CFT}
+ch06b.tex:528
+  \subsubsectionlink*{$D_2$および$RP_2$上の閉弦}
+  \subsubsectionlink*{\texorpdfstring{$D_2$}{D₂}および\texorpdfstring{$RP_2$}{RP₂}上の閉弦}
+ch07.tex:280
+  \subsubsectionlink*{$bc$ CFT}
+  \subsubsectionlink*{\texorpdfstring{$bc$}{bc} CFT}
+ch08a.tex:2
+  \sectionlink{トーラスコンパクト化と $T$ 双対性}
+  \sectionlink{トーラスコンパクト化と \texorpdfstring{$T$}{T} 双対性}
+ch08a.tex:352
+  \subsectionlink{閉弦と $T$ 双対性}
+  \subsectionlink{閉弦と \texorpdfstring{$T$}{T} 双対性}
+ch08a.tex:541
+  \subsubsectionlink*{$T$ 双対性}
+  \subsubsectionlink*{\texorpdfstring{$T$}{T} 双対性}
+ch08b.tex:164
+  \subsubsectionlink*{$c=1$ の CFT}
+  \subsubsectionlink*{\texorpdfstring{$c=1$}{c=1} の CFT}

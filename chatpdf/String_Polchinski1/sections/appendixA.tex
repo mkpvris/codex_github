@@ -122,7 +122,7 @@ $p$ を $q,\dot q$ で解き、$L=p\dot q-H$ を思い出すと、停留位相�
 
 経路積分の公式の導出では、連続極限 $\epsilon\to0$ をかなり発見的に扱った。繰り込み理論は、この極限操作を研究するものであり、かなりよく理解されている。Lagrangian が一定の条件（繰り込み可能性）を満たし、極限をとる際に Lagrangian の係数（裸の結合定数）を適切に変化させれば、極限は存在する。結果は、途中で選ばなければならないさまざまな事柄、たとえば Hamiltonian 内の演算子の順序、測度の厳密な定義、正則化の違い（たとえば図で示唆した区分的線形経路の極限と、Fourier モードの周波数カットオフとの違い）に依存しない。\footnote[1]{別の例として、場のスケールを自由に変えてよい。その Jacobian は形式的には各点での Jacobian の積であり、その対数は各点での局所的な式の和になる。正則化すると、これは裸の結合定数の移動にすぎない。}これらは局所的な効果なので、すべて裸の結合定数に吸収できる。実際に明示的に評価するのは、少数の Gaussian 経路積分だけである。経路積分は主として、演算子方程式や縫い合わせの関係など、一般的な結果を導くために用いる。
 
-\subsubsection*{Hilbert 空間形式との関係}
+\subsubsectionlink*{Hilbert 空間形式との関係}
 
 経路積分から出発し、それを切り開くことで、理論の Hilbert 空間を回復できる。式\hyperref[eq:A.1.6]{(A.1.6)}で、各振幅を経路積分として書くと、
 \begin{equation}
@@ -238,7 +238,7 @@ q(t)q(t')=-i\delta(t-t')
 \tag{A.1.26}\label{eq:A.1.26}
 \end{equation}
 
-\subsubsection*{Euclid 経路積分}
+\subsubsectionlink*{Euclid 経路積分}
 
 Schrödinger の言葉では、時間順序積\hyperref[eq:A.1.17]{(A.1.17)}は
 \begin{equation}
@@ -326,7 +326,7 @@ S_{\mathrm E}=\int du\,L_{\mathrm E}(q,\partial_uq)
 \end{equation}
 を定義すると便利である。Schrödinger 描像の Hermite 演算子は、Euclid の Heisenberg 描像では Euclid 自己随伴になる。
 
-\subsubsection*{図式と行列式}
+\subsubsectionlink*{図式と行列式}
 
 図式展開は、経路積分から容易に得られる。この話題は現代の場の理論の教科書でよく扱われている。ここでは、本文で使ういくつかの結果だけを導く。記法を明確にするために場の理論へ移り、$q(t)$ を実スカラー場 $\phi(t,\mathbf x)$ に置き換える。自由な作用
 \begin{equation}
@@ -437,7 +437,7 @@ Z[J]&=Z[0]\exp\left[
 \end{equation}
 の汎関数版である。
 
-\subsubsection*{一つの例}
+\subsubsectionlink*{一つの例}
 
 例として、調和振動子の Euclid 遷移振幅を調べる。
 \begin{align}
@@ -785,22 +785,23 @@ Berezin 積分についての有用な結果がある。定義から、$\theta'=
 \tag{A.2.29}\label{eq:A.2.29}
 \end{equation}
 
-\subsection*{演習}
+\subsectionlink*{演習}
+\addcontentsline{toc}{subsection}{付録Aの演習}
 
-\noindent\textbf{A.1}
+\subsubsectionlink*{演習A.1}
 \begin{enumerate}
 \item[(a)] 調和振動子の経路積分\hyperref[eq:A.1.33]{(A.1.33)}を、$[dq]_{\mathrm P}$ を周期的な固有関数の集合で展開して評価せよ（すでに得た遷移関数の結果を左辺に代入する方法は用いない）。状態についての和\hyperref[eq:A.1.32]{(A.1.32)}を明示的に評価した結果と比較せよ。
 \item[(b)] 反周期的な経路積分\hyperref[eq:A.1.34]{(A.1.34)}についても同じことを行え。
 \end{enumerate}
 
-\noindent\textbf{A.2}\quad
+\subsubsectionlink*{演習A.2}
 同じ周波数の調和振動子を二つ考え、複素座標 $q=2^{-1/2}(q_1+iq_2)$ を作る。適切なモード展開を用いて、$[0,U]$ 上の次の経路積分を評価せよ。
 \[
 \int[dq\,dq^*]_\theta\exp(-S_{\mathrm E}).
 \]
 ここで積分は、$q(U)=q(0)e^{i\theta}$ を満たすすべての経路にわたる。ここでも状態について和をとって得た答えと比較せよ。この際、振動子の複素結合 $a_1\pm ia_2$ を作ると便利である。これは演習A.1の、より風変わりな版であり、オービフォールドなど、さまざまな弦理論に現れる。
 
-\noindent\textbf{A.3}\quad
+\subsubsectionlink*{演習A.3}
 二次元の自由スカラー場 $X$ を、作用
 \[
 S=\frac1{4\pi\alpha'}\int d^2\sigma\,
@@ -812,12 +813,12 @@ S=\frac1{4\pi\alpha'}\int d^2\sigma\,
 \]
 ［空間依存性を Fourier モードで展開すると、答えは調和振動子のトレースの無限積の形になる。］
 
-\noindent\textbf{A.4}\quad
+\subsubsectionlink*{演習A.4}
 円周上の自由粒子
 \[
 H=-\frac12\frac{\partial^2}{\partial\phi^2}
 \]
 を考える。経路積分によって $\langle\phi_f,T|\phi_i,0\rangle$ を評価せよ。円周を巻く回数によって区別される、位相的に非同値な経路があることに注意せよ。
 
-\noindent\textbf{A.5}\quad
+\subsubsectionlink*{演習A.5}
 演習A.1のフェルミオン版を考える。周期関数または反周期関数の完全系を用いて、フェルミオンの経路積分\hyperref[eq:A.2.23]{(A.2.23)}と対応する反周期的な経路積分を評価し、状態についての和と比較せよ。

@@ -1,0 +1,1543 @@
+{
+  "source": {
+    "path": "indexing/index_legacy.tex",
+    "sha256": "7c7774f1a4712396a724cdf734c6e1074b8eabf0b720e9057669a3432b5b5909",
+    "encoding": "UTF-8",
+    "original_index_pages": [
+      389,
+      390,
+      391,
+      392,
+      393,
+      394,
+      395,
+      396,
+      397,
+      398,
+      399,
+      400,
+      401,
+      402
+    ]
+  },
+  "counts": {
+    "entries": 1050,
+    "levels": {
+      "0": 354,
+      "1": 593,
+      "2": 101,
+      "3": 2
+    },
+    "max_level": 3,
+    "named_entries": 1042,
+    "unnamed_cross_reference_continuations": 8,
+    "source_reference_tokens": 1753,
+    "range_reference_tokens": 676,
+    "italic_reference_tokens": 120,
+    "italic_tokens_by_original_index_page": {
+      "389": 7,
+      "390": 13,
+      "391": 10,
+      "392": 14,
+      "393": 5,
+      "394": 8,
+      "395": 12,
+      "396": 1,
+      "397": 11,
+      "398": 8,
+      "399": 5,
+      "400": 8,
+      "401": 15,
+      "402": 3
+    },
+    "cross_reference_rows": 29,
+    "cross_reference_targets": 39,
+    "cross_reference_types": {
+      "same_as": 2,
+      "see": 16,
+      "see_also": 7,
+      "see_complement": 1,
+      "see_under": 3
+    },
+    "entries_with_math_sort_substitutions": 92,
+    "unique_math_sort_expressions": 84,
+    "following_unspecified_references": 5
+  },
+  "validation": {
+    "all_four_arguments_preserved": true,
+    "all_argument_roundtrips_exact": true,
+    "all_sort_keys_ascii_and_safe": true,
+    "all_parent_depths_preserved": true,
+    "all_reference_tokens_parsed": true,
+    "all_original_page_ranges_valid": true,
+    "unknown_math_expressions": [],
+    "translation_page_numbers_assigned": false,
+    "source_modified": false
+  },
+  "warnings": [
+    {
+      "type": "makeindex_depth_exceeds_three",
+      "entry_id": "idx0555",
+      "level": 3,
+      "path_ids": [
+        "idx0550",
+        "idx0553",
+        "idx0554",
+        "idx0555"
+      ],
+      "action": "Preserved unchanged; generator must combine the two lowest labels."
+    },
+    {
+      "type": "makeindex_depth_exceeds_three",
+      "entry_id": "idx0556",
+      "level": 3,
+      "path_ids": [
+        "idx0550",
+        "idx0553",
+        "idx0554",
+        "idx0556"
+      ],
+      "action": "Preserved unchanged; generator must combine the two lowest labels."
+    }
+  ],
+  "same_parent_sort_key_collisions": [],
+  "cross_references": [
+    {
+      "entry_id": "idx0052",
+      "owner_id": "idx0052",
+      "source_line": 62,
+      "english_tex": "annulus",
+      "type": "see",
+      "original_english_marker": "see",
+      "raw_tex": "円筒（cylinder）を参照",
+      "targets": [
+        {
+          "raw_tex": "円筒（cylinder）",
+          "japanese_tex": "円筒",
+          "english_tex": "cylinder",
+          "english_path_tex": [
+            "cylinder"
+          ],
+          "sort_key": "cylinder",
+          "math_sort_substitutions": [],
+          "generic_reference": false
+        }
+      ],
+      "shared_qualifier": ""
+    },
+    {
+      "entry_id": "idx0056",
+      "owner_id": "idx0056",
+      "source_line": 66,
+      "english_tex": "conformal",
+      "type": "same_as",
+      "original_english_marker": "same as",
+      "raw_tex": "Weyl と同じ",
+      "targets": [
+        {
+          "raw_tex": "Weyl",
+          "japanese_tex": "",
+          "english_tex": "Weyl",
+          "english_path_tex": [
+            "Weyl"
+          ],
+          "sort_key": "weyl",
+          "math_sort_substitutions": [],
+          "generic_reference": false
+        }
+      ],
+      "shared_qualifier": ""
+    },
+    {
+      "entry_id": "idx0061",
+      "owner_id": "idx0061",
+      "source_line": 72,
+      "english_tex": "trace",
+      "type": "same_as",
+      "original_english_marker": "same as",
+      "raw_tex": "Weyl と同じ",
+      "targets": [
+        {
+          "raw_tex": "Weyl",
+          "japanese_tex": "",
+          "english_tex": "Weyl",
+          "english_path_tex": [
+            "Weyl"
+          ],
+          "sort_key": "weyl",
+          "math_sort_substitutions": [],
+          "generic_reference": false
+        }
+      ],
+      "shared_qualifier": ""
+    },
+    {
+      "entry_id": "idx0206",
+      "owner_id": "idx0203",
+      "source_line": 218,
+      "english_tex": "",
+      "type": "see_also",
+      "original_english_marker": "see also",
+      "raw_tex": "オービフォールド（orbifold）、オリエンティフォールド（orientifold）、トーラス（toroidal）も参照",
+      "targets": [
+        {
+          "raw_tex": "オービフォールド（orbifold）",
+          "japanese_tex": "オービフォールド",
+          "english_tex": "orbifold",
+          "english_path_tex": [
+            "orbifold"
+          ],
+          "sort_key": "orbifold",
+          "math_sort_substitutions": [],
+          "generic_reference": false
+        },
+        {
+          "raw_tex": "オリエンティフォールド（orientifold）",
+          "japanese_tex": "オリエンティフォールド",
+          "english_tex": "orientifold",
+          "english_path_tex": [
+            "orientifold"
+          ],
+          "sort_key": "orientifold",
+          "math_sort_substitutions": [],
+          "generic_reference": false
+        },
+        {
+          "raw_tex": "トーラス（toroidal）",
+          "japanese_tex": "トーラス",
+          "english_tex": "toroidal",
+          "english_path_tex": [
+            "toroidal"
+          ],
+          "sort_key": "toroidal",
+          "math_sort_substitutions": [],
+          "generic_reference": false
+        }
+      ],
+      "shared_qualifier": ""
+    },
+    {
+      "entry_id": "idx0229",
+      "owner_id": "idx0211",
+      "source_line": 242,
+      "english_tex": "",
+      "type": "see_also",
+      "original_english_marker": "see also",
+      "raw_tex": "$bc$、$\\beta\\gamma$、自由スカラー（free scalar）、線形ディラトン（linear dilaton）の各 CFT も参照",
+      "targets": [
+        {
+          "raw_tex": "$bc$",
+          "japanese_tex": "",
+          "english_tex": "$bc$ CFT",
+          "english_path_tex": [
+            "$bc$ CFT"
+          ],
+          "sort_key": "bc cft",
+          "math_sort_substitutions": [
+            {
+              "math_tex": "bc",
+              "english_sort_text": "bc"
+            }
+          ],
+          "generic_reference": false
+        },
+        {
+          "raw_tex": "$\\beta\\gamma$",
+          "japanese_tex": "",
+          "english_tex": "$\\beta\\gamma$ CFT",
+          "english_path_tex": [
+            "$\\beta\\gamma$ CFT"
+          ],
+          "sort_key": "beta gamma cft",
+          "math_sort_substitutions": [
+            {
+              "math_tex": "\\beta\\gamma",
+              "english_sort_text": "beta gamma"
+            }
+          ],
+          "generic_reference": false
+        },
+        {
+          "raw_tex": "自由スカラー（free scalar）",
+          "japanese_tex": "自由スカラー",
+          "english_tex": "free scalar CFT",
+          "english_path_tex": [
+            "free scalar CFT"
+          ],
+          "sort_key": "free scalar cft",
+          "math_sort_substitutions": [],
+          "generic_reference": false
+        },
+        {
+          "raw_tex": "線形ディラトン（linear dilaton）",
+          "japanese_tex": "線形ディラトン",
+          "english_tex": "linear dilaton CFT",
+          "english_path_tex": [
+            "linear dilaton CFT"
+          ],
+          "sort_key": "linear dilaton cft",
+          "math_sort_substitutions": [],
+          "generic_reference": false
+        }
+      ],
+      "shared_qualifier": "CFT"
+    },
+    {
+      "entry_id": "idx0255",
+      "owner_id": "idx0255",
+      "source_line": 268,
+      "english_tex": "large",
+      "type": "see",
+      "original_english_marker": "see",
+      "raw_tex": "モジュラー不変性（modular invariance）を参照",
+      "targets": [
+        {
+          "raw_tex": "モジュラー不変性（modular invariance）",
+          "japanese_tex": "モジュラー不変性",
+          "english_tex": "modular invariance",
+          "english_path_tex": [
+            "modular invariance"
+          ],
+          "sort_key": "modular invariance",
+          "math_sort_substitutions": [],
+          "generic_reference": false
+        }
+      ],
+      "shared_qualifier": ""
+    },
+    {
+      "entry_id": "idx0257",
+      "owner_id": "idx0257",
+      "source_line": 270,
+      "english_tex": "world-sheet",
+      "type": "see",
+      "original_english_marker": "see",
+      "raw_tex": "diff 不変性（diff invariance）を参照",
+      "targets": [
+        {
+          "raw_tex": "diff 不変性（diff invariance）",
+          "japanese_tex": "diff 不変性",
+          "english_tex": "diff invariance",
+          "english_path_tex": [
+            "diff invariance"
+          ],
+          "sort_key": "diff invariance",
+          "math_sort_substitutions": [],
+          "generic_reference": false
+        }
+      ],
+      "shared_qualifier": ""
+    },
+    {
+      "entry_id": "idx0262",
+      "owner_id": "idx0262",
+      "source_line": 275,
+      "english_tex": "covariant gauge",
+      "type": "see",
+      "original_english_marker": "see",
+      "raw_tex": "共形ゲージ（conformal gauge）を参照",
+      "targets": [
+        {
+          "raw_tex": "共形ゲージ（conformal gauge）",
+          "japanese_tex": "共形ゲージ",
+          "english_tex": "conformal gauge",
+          "english_path_tex": [
+            "conformal gauge"
+          ],
+          "sort_key": "conformal gauge",
+          "math_sort_substitutions": [],
+          "generic_reference": false
+        }
+      ],
+      "shared_qualifier": ""
+    },
+    {
+      "entry_id": "idx0281",
+      "owner_id": "idx0281",
+      "source_line": 294,
+      "english_tex": "long",
+      "type": "see",
+      "original_english_marker": "see",
+      "raw_tex": "ハンドル、退化（handle, degenerating）を参照",
+      "targets": [
+        {
+          "raw_tex": "ハンドル、退化（handle, degenerating）",
+          "japanese_tex": "ハンドル、退化（handle, degenerating）",
+          "english_tex": "handle, degenerating",
+          "english_path_tex": [
+            "handle",
+            "degenerating"
+          ],
+          "sort_key": "handle degenerating",
+          "math_sort_substitutions": [],
+          "generic_reference": false
+        }
+      ],
+      "shared_qualifier": ""
+    },
+    {
+      "entry_id": "idx0302",
+      "owner_id": "idx0297",
+      "source_line": 315,
+      "english_tex": "",
+      "type": "see_also",
+      "original_english_marker": "see also",
+      "raw_tex": "Faddeev--Popov 行列式（Faddeev--Popov determinant）も参照",
+      "targets": [
+        {
+          "raw_tex": "Faddeev--Popov 行列式（Faddeev--Popov determinant）",
+          "japanese_tex": "Faddeev--Popov 行列式",
+          "english_tex": "Faddeev--Popov determinant",
+          "english_path_tex": [
+            "Faddeev--Popov determinant"
+          ],
+          "sort_key": "faddeev popov determinant",
+          "math_sort_substitutions": [],
+          "generic_reference": false
+        }
+      ],
+      "shared_qualifier": ""
+    },
+    {
+      "entry_id": "idx0324",
+      "owner_id": "idx0324",
+      "source_line": 338,
+      "english_tex": "linear",
+      "type": "see",
+      "original_english_marker": "see",
+      "raw_tex": "線形ディラトン CFT（linear dilaton CFT）を参照",
+      "targets": [
+        {
+          "raw_tex": "線形ディラトン CFT（linear dilaton CFT）",
+          "japanese_tex": "線形ディラトン CFT",
+          "english_tex": "linear dilaton CFT",
+          "english_path_tex": [
+            "linear dilaton CFT"
+          ],
+          "sort_key": "linear dilaton cft",
+          "math_sort_substitutions": [],
+          "generic_reference": false
+        }
+      ],
+      "shared_qualifier": ""
+    },
+    {
+      "entry_id": "idx0351",
+      "owner_id": "idx0351",
+      "source_line": 365,
+      "english_tex": "duality",
+      "type": "see",
+      "original_english_marker": "see",
+      "raw_tex": "$T$双対性（$T$-duality）、世界面双対性（world-sheet duality）を参照",
+      "targets": [
+        {
+          "raw_tex": "$T$双対性（$T$-duality）",
+          "japanese_tex": "$T$双対性",
+          "english_tex": "$T$-duality",
+          "english_path_tex": [
+            "$T$-duality"
+          ],
+          "sort_key": "t duality",
+          "math_sort_substitutions": [
+            {
+              "math_tex": "T",
+              "english_sort_text": "T"
+            }
+          ],
+          "generic_reference": false
+        },
+        {
+          "raw_tex": "世界面双対性（world-sheet duality）",
+          "japanese_tex": "世界面双対性",
+          "english_tex": "world-sheet duality",
+          "english_path_tex": [
+            "world-sheet duality"
+          ],
+          "sort_key": "world sheet duality",
+          "math_sort_substitutions": [],
+          "generic_reference": false
+        }
+      ],
+      "shared_qualifier": ""
+    },
+    {
+      "entry_id": "idx0414",
+      "owner_id": "idx0414",
+      "source_line": 429,
+      "english_tex": "functional integral",
+      "type": "see",
+      "original_english_marker": "see",
+      "raw_tex": "経路積分（path integral）を参照",
+      "targets": [
+        {
+          "raw_tex": "経路積分（path integral）",
+          "japanese_tex": "経路積分",
+          "english_tex": "path integral",
+          "english_path_tex": [
+            "path integral"
+          ],
+          "sort_key": "path integral",
+          "math_sort_substitutions": [],
+          "generic_reference": false
+        }
+      ],
+      "shared_qualifier": ""
+    },
+    {
+      "entry_id": "idx0431",
+      "owner_id": "idx0427",
+      "source_line": 446,
+      "english_tex": "",
+      "type": "see_also",
+      "original_english_marker": "see also",
+      "raw_tex": "個々のゲージ（specific gauges）も参照",
+      "targets": [
+        {
+          "raw_tex": "個々のゲージ（specific gauges）",
+          "japanese_tex": "個々のゲージ",
+          "english_tex": "specific gauges",
+          "english_path_tex": [
+            "specific gauges"
+          ],
+          "sort_key": "specific gauges",
+          "math_sort_substitutions": [],
+          "generic_reference": true
+        }
+      ],
+      "shared_qualifier": ""
+    },
+    {
+      "entry_id": "idx0446",
+      "owner_id": "idx0446",
+      "source_line": 461,
+      "english_tex": "ghosts",
+      "type": "see",
+      "original_english_marker": "see",
+      "raw_tex": "Faddeev--Popov ゴースト（Faddeev--Popov ghosts）を参照",
+      "targets": [
+        {
+          "raw_tex": "Faddeev--Popov ゴースト（Faddeev--Popov ghosts）",
+          "japanese_tex": "Faddeev--Popov ゴースト",
+          "english_tex": "Faddeev--Popov ghosts",
+          "english_path_tex": [
+            "Faddeev--Popov ghosts"
+          ],
+          "sort_key": "faddeev popov ghosts",
+          "math_sort_substitutions": [],
+          "generic_reference": false
+        }
+      ],
+      "shared_qualifier": ""
+    },
+    {
+      "entry_id": "idx0482",
+      "owner_id": "idx0482",
+      "source_line": 498,
+      "english_tex": "high-energy scattering",
+      "type": "see",
+      "original_english_marker": "see",
+      "raw_tex": "硬い散乱（hard scattering）、Regge 散乱（Regge scattering）を参照",
+      "targets": [
+        {
+          "raw_tex": "硬い散乱（hard scattering）",
+          "japanese_tex": "硬い散乱",
+          "english_tex": "hard scattering",
+          "english_path_tex": [
+            "hard scattering"
+          ],
+          "sort_key": "hard scattering",
+          "math_sort_substitutions": [],
+          "generic_reference": false
+        },
+        {
+          "raw_tex": "Regge 散乱（Regge scattering）",
+          "japanese_tex": "Regge 散乱",
+          "english_tex": "Regge scattering",
+          "english_path_tex": [
+            "Regge scattering"
+          ],
+          "sort_key": "regge scattering",
+          "math_sort_substitutions": [],
+          "generic_reference": false
+        }
+      ],
+      "shared_qualifier": ""
+    },
+    {
+      "entry_id": "idx0520",
+      "owner_id": "idx0520",
+      "source_line": 536,
+      "english_tex": "Laurent expansion",
+      "type": "see",
+      "original_english_marker": "see",
+      "raw_tex": "モード展開（mode expansion）を参照",
+      "targets": [
+        {
+          "raw_tex": "モード展開（mode expansion）",
+          "japanese_tex": "モード展開",
+          "english_tex": "mode expansion",
+          "english_path_tex": [
+            "mode expansion"
+          ],
+          "sort_key": "mode expansion",
+          "math_sort_substitutions": [],
+          "generic_reference": false
+        }
+      ],
+      "shared_qualifier": ""
+    },
+    {
+      "entry_id": "idx0557",
+      "owner_id": "idx0550",
+      "source_line": 574,
+      "english_tex": "",
+      "type": "see_also",
+      "original_english_marker": "see also",
+      "raw_tex": "Faddeev--Popov も参照",
+      "targets": [
+        {
+          "raw_tex": "Faddeev--Popov",
+          "japanese_tex": "",
+          "english_tex": "Faddeev--Popov",
+          "english_path_tex": [
+            "Faddeev--Popov"
+          ],
+          "sort_key": "faddeev popov",
+          "math_sort_substitutions": [],
+          "generic_reference": false
+        }
+      ],
+      "shared_qualifier": ""
+    },
+    {
+      "entry_id": "idx0623",
+      "owner_id": "idx0623",
+      "source_line": 641,
+      "english_tex": "nilpotence",
+      "type": "see",
+      "original_english_marker": "see",
+      "raw_tex": "BRST を参照",
+      "targets": [
+        {
+          "raw_tex": "BRST",
+          "japanese_tex": "",
+          "english_tex": "BRST",
+          "english_path_tex": [
+            "BRST"
+          ],
+          "sort_key": "brst",
+          "math_sort_substitutions": [],
+          "generic_reference": false
+        }
+      ],
+      "shared_qualifier": ""
+    },
+    {
+      "entry_id": "idx0719",
+      "owner_id": "idx0718",
+      "source_line": 738,
+      "english_tex": "",
+      "type": "see_complement",
+      "original_english_marker": "see complement of",
+      "raw_tex": "向きのない弦理論（unoriented string theory）の補集合を参照",
+      "targets": [
+        {
+          "raw_tex": "向きのない弦理論（unoriented string theory）",
+          "japanese_tex": "向きのない弦理論",
+          "english_tex": "unoriented string theory",
+          "english_path_tex": [
+            "unoriented string theory"
+          ],
+          "sort_key": "unoriented string theory",
+          "math_sort_substitutions": [],
+          "generic_reference": false
+        }
+      ],
+      "shared_qualifier": ""
+    },
+    {
+      "entry_id": "idx0792",
+      "owner_id": "idx0792",
+      "source_line": 812,
+      "english_tex": "Polyakov action",
+      "type": "see",
+      "original_english_marker": "see",
+      "raw_tex": "作用（action）、Polyakov を参照",
+      "targets": [
+        {
+          "raw_tex": "作用（action）、Polyakov",
+          "japanese_tex": "作用（action）、Polyakov",
+          "english_tex": "action, Polyakov",
+          "english_path_tex": [
+            "action",
+            "Polyakov"
+          ],
+          "sort_key": "action polyakov",
+          "math_sort_substitutions": [],
+          "generic_reference": false
+        }
+      ],
+      "shared_qualifier": ""
+    },
+    {
+      "entry_id": "idx0793",
+      "owner_id": "idx0793",
+      "source_line": 813,
+      "english_tex": "Polyakov path integral",
+      "type": "see",
+      "original_english_marker": "see",
+      "raw_tex": "経路積分（path integral）、Polyakov を参照",
+      "targets": [
+        {
+          "raw_tex": "経路積分（path integral）、Polyakov",
+          "japanese_tex": "経路積分（path integral）、Polyakov",
+          "english_tex": "path integral, Polyakov",
+          "english_path_tex": [
+            "path integral",
+            "Polyakov"
+          ],
+          "sort_key": "path integral polyakov",
+          "math_sort_substitutions": [],
+          "generic_reference": false
+        }
+      ],
+      "shared_qualifier": ""
+    },
+    {
+      "entry_id": "idx0798",
+      "owner_id": "idx0798",
+      "source_line": 818,
+      "english_tex": "primary field",
+      "type": "see",
+      "original_english_marker": "see",
+      "raw_tex": "テンソル演算子（tensor operator）を参照",
+      "targets": [
+        {
+          "raw_tex": "テンソル演算子（tensor operator）",
+          "japanese_tex": "テンソル演算子",
+          "english_tex": "tensor operator",
+          "english_path_tex": [
+            "tensor operator"
+          ],
+          "sort_key": "tensor operator",
+          "math_sort_substitutions": [],
+          "generic_reference": false
+        }
+      ],
+      "shared_qualifier": ""
+    },
+    {
+      "entry_id": "idx0818",
+      "owner_id": "idx0817",
+      "source_line": 838,
+      "english_tex": "",
+      "type": "see_also",
+      "original_english_marker": "see also",
+      "raw_tex": "BRST、光円錐（light-cone）、OCQ、経路積分（path integrals）も参照",
+      "targets": [
+        {
+          "raw_tex": "BRST",
+          "japanese_tex": "",
+          "english_tex": "BRST",
+          "english_path_tex": [
+            "BRST"
+          ],
+          "sort_key": "brst",
+          "math_sort_substitutions": [],
+          "generic_reference": false
+        },
+        {
+          "raw_tex": "光円錐（light-cone）",
+          "japanese_tex": "光円錐",
+          "english_tex": "light-cone",
+          "english_path_tex": [
+            "light-cone"
+          ],
+          "sort_key": "light cone",
+          "math_sort_substitutions": [],
+          "generic_reference": false
+        },
+        {
+          "raw_tex": "OCQ",
+          "japanese_tex": "",
+          "english_tex": "OCQ",
+          "english_path_tex": [
+            "OCQ"
+          ],
+          "sort_key": "ocq",
+          "math_sort_substitutions": [],
+          "generic_reference": false
+        },
+        {
+          "raw_tex": "経路積分（path integrals）",
+          "japanese_tex": "経路積分",
+          "english_tex": "path integrals",
+          "english_path_tex": [
+            "path integrals"
+          ],
+          "sort_key": "path integrals",
+          "math_sort_substitutions": [],
+          "generic_reference": false
+        }
+      ],
+      "shared_qualifier": ""
+    },
+    {
+      "entry_id": "idx0850",
+      "owner_id": "idx0849",
+      "source_line": 871,
+      "english_tex": "",
+      "type": "see_also",
+      "original_english_marker": "see also",
+      "raw_tex": "標準模型（Standard Model）も参照",
+      "targets": [
+        {
+          "raw_tex": "標準模型（Standard Model）",
+          "japanese_tex": "標準模型",
+          "english_tex": "Standard Model",
+          "english_path_tex": [
+            "Standard Model"
+          ],
+          "sort_key": "standard model",
+          "math_sort_substitutions": [],
+          "generic_reference": false
+        }
+      ],
+      "shared_qualifier": ""
+    },
+    {
+      "entry_id": "idx0972",
+      "owner_id": "idx0972",
+      "source_line": 994,
+      "english_tex": "ultraviolet (UV) divergences",
+      "type": "see_under",
+      "original_english_marker": "see under",
+      "raw_tex": "発散（divergences）の項を参照",
+      "targets": [
+        {
+          "raw_tex": "発散（divergences）",
+          "japanese_tex": "発散",
+          "english_tex": "divergences",
+          "english_path_tex": [
+            "divergences"
+          ],
+          "sort_key": "divergences",
+          "math_sort_substitutions": [],
+          "generic_reference": false
+        }
+      ],
+      "shared_qualifier": ""
+    },
+    {
+      "entry_id": "idx0974",
+      "owner_id": "idx0974",
+      "source_line": 996,
+      "english_tex": "unitarity",
+      "type": "see_under",
+      "original_english_marker": "see under",
+      "raw_tex": "$S$ 行列（$S$-matrix）の項を参照",
+      "targets": [
+        {
+          "raw_tex": "$S$ 行列（$S$-matrix）",
+          "japanese_tex": "$S$ 行列",
+          "english_tex": "$S$-matrix",
+          "english_path_tex": [
+            "$S$-matrix"
+          ],
+          "sort_key": "s matrix",
+          "math_sort_substitutions": [
+            {
+              "math_tex": "S",
+              "english_sort_text": "S"
+            }
+          ],
+          "generic_reference": false
+        }
+      ],
+      "shared_qualifier": ""
+    },
+    {
+      "entry_id": "idx1018",
+      "owner_id": "idx1018",
+      "source_line": 1041,
+      "english_tex": "Weyl anomaly",
+      "type": "see_under",
+      "original_english_marker": "see under",
+      "raw_tex": "異常（anomaly）の項を参照",
+      "targets": [
+        {
+          "raw_tex": "異常（anomaly）",
+          "japanese_tex": "異常",
+          "english_tex": "anomaly",
+          "english_path_tex": [
+            "anomaly"
+          ],
+          "sort_key": "anomaly",
+          "math_sort_substitutions": [],
+          "generic_reference": false
+        }
+      ],
+      "shared_qualifier": ""
+    },
+    {
+      "entry_id": "idx1046",
+      "owner_id": "idx1046",
+      "source_line": 1069,
+      "english_tex": "zero-norm states",
+      "type": "see",
+      "original_english_marker": "see",
+      "raw_tex": "零状態（null states）を参照",
+      "targets": [
+        {
+          "raw_tex": "零状態（null states）",
+          "japanese_tex": "零状態",
+          "english_tex": "null states",
+          "english_path_tex": [
+            "null states"
+          ],
+          "sort_key": "null states",
+          "math_sort_substitutions": [],
+          "generic_reference": false
+        }
+      ],
+      "shared_qualifier": ""
+    }
+  ],
+  "math_sort_substitutions": [
+    {
+      "math_tex": "c=1",
+      "english_sort_text": "c equals 1",
+      "entry_ids": [
+        "idx0016",
+        "idx0213",
+        "idx0606",
+        "idx0795"
+      ]
+    },
+    {
+      "math_tex": "bc",
+      "english_sort_text": "bc",
+      "entry_ids": [
+        "idx0029",
+        "idx0087",
+        "idx0142",
+        "idx0582",
+        "idx0734"
+      ]
+    },
+    {
+      "math_tex": "\\beta\\gamma",
+      "english_sort_text": "beta gamma",
+      "entry_ids": [
+        "idx0030",
+        "idx0091",
+        "idx0143"
+      ]
+    },
+    {
+      "math_tex": "\\chi",
+      "english_sort_text": "chi",
+      "entry_ids": [
+        "idx0033"
+      ]
+    },
+    {
+      "math_tex": "T",
+      "english_sort_text": "T",
+      "entry_ids": [
+        "idx0044",
+        "idx0319",
+        "idx0331"
+      ]
+    },
+    {
+      "math_tex": "CPT",
+      "english_sort_text": "CPT",
+      "entry_ids": [
+        "idx0128"
+      ]
+    },
+    {
+      "math_tex": "[\\alpha_m^\\mu,\\alpha_n^\\nu]",
+      "english_sort_text": "alpha oscillator commutator",
+      "entry_ids": [
+        "idx0186"
+      ]
+    },
+    {
+      "math_tex": "\\{b_n,c_n\\}",
+      "english_sort_text": "b c ghost anticommutator",
+      "entry_ids": [
+        "idx0187"
+      ]
+    },
+    {
+      "math_tex": "[\\delta_{\\tau_1},\\delta_{\\tau_2}]",
+      "english_sort_text": "delta tau transformation commutator",
+      "entry_ids": [
+        "idx0188"
+      ]
+    },
+    {
+      "math_tex": "[G_I,G_J]",
+      "english_sort_text": "G constraint commutator",
+      "entry_ids": [
+        "idx0189"
+      ]
+    },
+    {
+      "math_tex": "[j_m^i,j_n^j]",
+      "english_sort_text": "j current mode commutator",
+      "entry_ids": [
+        "idx0190"
+      ]
+    },
+    {
+      "math_tex": "[L_m,L_n]",
+      "english_sort_text": "L Virasoro generator commutator",
+      "entry_ids": [
+        "idx0191"
+      ]
+    },
+    {
+      "math_tex": "[L_m,\\mathcal O_n]",
+      "english_sort_text": "L Virasoro generator O operator commutator",
+      "entry_ids": [
+        "idx0192"
+      ]
+    },
+    {
+      "math_tex": "[N^{\\mathrm g},b_m]",
+      "english_sort_text": "N ghost number b ghost commutator",
+      "entry_ids": [
+        "idx0193"
+      ]
+    },
+    {
+      "math_tex": "[N^{\\mathrm g},c_m]",
+      "english_sort_text": "N ghost number c ghost commutator",
+      "entry_ids": [
+        "idx0194"
+      ]
+    },
+    {
+      "math_tex": "[p_\\mu,x^\\nu]",
+      "english_sort_text": "p momentum x position commutator",
+      "entry_ids": [
+        "idx0195"
+      ]
+    },
+    {
+      "math_tex": "[Q,\\mathcal A]",
+      "english_sort_text": "Q charge A operator commutator",
+      "entry_ids": [
+        "idx0196"
+      ]
+    },
+    {
+      "math_tex": "[Q_1,Q_2]",
+      "english_sort_text": "Q charge Q charge commutator",
+      "entry_ids": [
+        "idx0197"
+      ]
+    },
+    {
+      "math_tex": "\\{Q_B,b_m\\}",
+      "english_sort_text": "Q BRST charge b ghost anticommutator",
+      "entry_ids": [
+        "idx0198"
+      ]
+    },
+    {
+      "math_tex": "\\{Q_B,L_m\\}",
+      "english_sort_text": "Q BRST charge L Virasoro generator anticommutator",
+      "entry_ids": [
+        "idx0199"
+      ]
+    },
+    {
+      "math_tex": "\\{Q_B,Q_B\\}",
+      "english_sort_text": "Q BRST charge Q BRST charge anticommutator",
+      "entry_ids": [
+        "idx0200"
+      ]
+    },
+    {
+      "math_tex": "[X_L(z),X_L(z')]",
+      "english_sort_text": "X left moving field commutator",
+      "entry_ids": [
+        "idx0201"
+      ]
+    },
+    {
+      "math_tex": "\\times",
+      "english_sort_text": "times",
+      "entry_ids": [
+        "idx0239",
+        "idx0429"
+      ]
+    },
+    {
+      "math_tex": "d\\geq3",
+      "english_sort_text": "d greater than or equal to 3",
+      "entry_ids": [
+        "idx0247"
+      ]
+    },
+    {
+      "math_tex": "A",
+      "english_sort_text": "A",
+      "entry_ids": [
+        "idx0279"
+      ]
+    },
+    {
+      "math_tex": "B",
+      "english_sort_text": "B",
+      "entry_ids": [
+        "idx0279"
+      ]
+    },
+    {
+      "math_tex": "SO(8192)",
+      "english_sort_text": "SO 8192",
+      "entry_ids": [
+        "idx0343",
+        "idx0844",
+        "idx0923"
+      ]
+    },
+    {
+      "math_tex": "L_0",
+      "english_sort_text": "L zero",
+      "entry_ids": [
+        "idx0475",
+        "idx0774"
+      ]
+    },
+    {
+      "math_tex": "X^\\mu",
+      "english_sort_text": "X mu",
+      "entry_ids": [
+        "idx0583",
+        "idx1045"
+      ]
+    },
+    {
+      "math_tex": "T_{ab}",
+      "english_sort_text": "T ab energy momentum tensor",
+      "entry_ids": [
+        "idx0589"
+      ]
+    },
+    {
+      "math_tex": "\\exp(-1/g_{\\mathrm c})",
+      "english_sort_text": "exponential of minus one over closed string coupling",
+      "entry_ids": [
+        "idx0635"
+      ]
+    },
+    {
+      "math_tex": "O(k,k,\\mathbb R)",
+      "english_sort_text": "O k k real",
+      "entry_ids": [
+        "idx0651"
+      ]
+    },
+    {
+      "math_tex": "O(k,k,\\mathbb Z)",
+      "english_sort_text": "O k k integer",
+      "entry_ids": [
+        "idx0652",
+        "idx0909"
+      ]
+    },
+    {
+      "math_tex": "z",
+      "english_sort_text": "z",
+      "entry_ids": [
+        "idx0685"
+      ]
+    },
+    {
+      "math_tex": "\\bar z",
+      "english_sort_text": "z bar",
+      "entry_ids": [
+        "idx0685"
+      ]
+    },
+    {
+      "math_tex": "\\mathcal A_i\\,\\mathcal A_j",
+      "english_sort_text": "A i A j operator product",
+      "entry_ids": [
+        "idx0687"
+      ]
+    },
+    {
+      "math_tex": "b\\,b",
+      "english_sort_text": "b b ghost operator product",
+      "entry_ids": [
+        "idx0688"
+      ]
+    },
+    {
+      "math_tex": "b\\,c",
+      "english_sort_text": "b c ghost operator product",
+      "entry_ids": [
+        "idx0688"
+      ]
+    },
+    {
+      "math_tex": "c\\,c",
+      "english_sort_text": "c c ghost operator product",
+      "entry_ids": [
+        "idx0688"
+      ]
+    },
+    {
+      "math_tex": "\\beta\\,\\beta",
+      "english_sort_text": "beta beta operator product",
+      "entry_ids": [
+        "idx0689"
+      ]
+    },
+    {
+      "math_tex": "\\beta\\,\\gamma",
+      "english_sort_text": "beta gamma operator product",
+      "entry_ids": [
+        "idx0689"
+      ]
+    },
+    {
+      "math_tex": "\\gamma\\,\\gamma",
+      "english_sort_text": "gamma gamma operator product",
+      "entry_ids": [
+        "idx0689"
+      ]
+    },
+    {
+      "math_tex": "\\partial X^\\mu\\,\\partial X_\\mu",
+      "english_sort_text": "partial X mu partial X mu operator product",
+      "entry_ids": [
+        "idx0691"
+      ]
+    },
+    {
+      "math_tex": ":e^{ik\\cdot X}:\\,{:e^{ik'\\cdot X}:}",
+      "english_sort_text": "exponential vertex exponential vertex operator product",
+      "entry_ids": [
+        "idx0692"
+      ]
+    },
+    {
+      "math_tex": ":\\mathcal F:\\,{:\\mathcal G:}",
+      "english_sort_text": "F G normal ordered operator product",
+      "entry_ids": [
+        "idx0693"
+      ]
+    },
+    {
+      "math_tex": "j_{\\mathrm B}\\,b",
+      "english_sort_text": "j BRST current b ghost operator product",
+      "entry_ids": [
+        "idx0694"
+      ]
+    },
+    {
+      "math_tex": "j_{\\mathrm B}\\,c",
+      "english_sort_text": "j BRST current c ghost operator product",
+      "entry_ids": [
+        "idx0694"
+      ]
+    },
+    {
+      "math_tex": "j_{\\mathrm B}\\,\\mathcal O^{\\mathrm m}",
+      "english_sort_text": "j BRST current matter operator product",
+      "entry_ids": [
+        "idx0695"
+      ]
+    },
+    {
+      "math_tex": "j_{\\mathrm B}\\,j_{\\mathrm B}",
+      "english_sort_text": "j BRST current j BRST current operator product",
+      "entry_ids": [
+        "idx0696"
+      ]
+    },
+    {
+      "math_tex": "j_{\\mathrm B}\\,\\mathcal V",
+      "english_sort_text": "j BRST current V vertex operator product",
+      "entry_ids": [
+        "idx0697"
+      ]
+    },
+    {
+      "math_tex": "j^i\\,j^j",
+      "english_sort_text": "j i j j current operator product",
+      "entry_ids": [
+        "idx0698"
+      ]
+    },
+    {
+      "math_tex": "j^\\mu\\,{:e^{ik\\cdot X}:}",
+      "english_sort_text": "j mu current exponential vertex operator product",
+      "entry_ids": [
+        "idx0699"
+      ]
+    },
+    {
+      "math_tex": "\\mathcal O_i\\,\\mathcal O_j",
+      "english_sort_text": "O i O j operator product",
+      "entry_ids": [
+        "idx0700"
+      ]
+    },
+    {
+      "math_tex": "T\\,\\mathcal A",
+      "english_sort_text": "T energy momentum tensor A operator product",
+      "entry_ids": [
+        "idx0701"
+      ]
+    },
+    {
+      "math_tex": "T\\,e^{ik\\cdot X}",
+      "english_sort_text": "T energy momentum tensor exponential vertex operator product",
+      "entry_ids": [
+        "idx0702"
+      ]
+    },
+    {
+      "math_tex": "T\\,j",
+      "english_sort_text": "T energy momentum tensor j current operator product",
+      "entry_ids": [
+        "idx0703"
+      ]
+    },
+    {
+      "math_tex": "T\\,j_{\\mathrm B}",
+      "english_sort_text": "T energy momentum tensor j BRST current operator product",
+      "entry_ids": [
+        "idx0704"
+      ]
+    },
+    {
+      "math_tex": "T\\,\\mathcal O",
+      "english_sort_text": "T energy momentum tensor O operator product",
+      "entry_ids": [
+        "idx0705"
+      ]
+    },
+    {
+      "math_tex": "T\\,T",
+      "english_sort_text": "T energy momentum tensor T energy momentum tensor operator product",
+      "entry_ids": [
+        "idx0706"
+      ]
+    },
+    {
+      "math_tex": "T\\,\\widetilde T",
+      "english_sort_text": "T energy momentum tensor T tilde operator product",
+      "entry_ids": [
+        "idx0707"
+      ]
+    },
+    {
+      "math_tex": "\\mathcal V\\,\\mathcal V'",
+      "english_sort_text": "V vertex V prime vertex operator product",
+      "entry_ids": [
+        "idx0708"
+      ]
+    },
+    {
+      "math_tex": "X_{\\mathrm L}\\,X_{\\mathrm L}",
+      "english_sort_text": "X left X left operator product",
+      "entry_ids": [
+        "idx0709"
+      ]
+    },
+    {
+      "math_tex": "X_{\\mathrm L}\\,X_{\\mathrm R}",
+      "english_sort_text": "X left X right operator product",
+      "entry_ids": [
+        "idx0709"
+      ]
+    },
+    {
+      "math_tex": "X_{\\mathrm R}\\,X_{\\mathrm R}",
+      "english_sort_text": "X right X right operator product",
+      "entry_ids": [
+        "idx0709"
+      ]
+    },
+    {
+      "math_tex": "X^\\mu\\,X^\\nu",
+      "english_sort_text": "X mu X nu operator product",
+      "entry_ids": [
+        "idx0710"
+      ]
+    },
+    {
+      "math_tex": "PSL(2,\\mathbb C)",
+      "english_sort_text": "PSL 2 complex",
+      "entry_ids": [
+        "idx0724"
+      ]
+    },
+    {
+      "math_tex": "PSL(2,\\mathbb R)",
+      "english_sort_text": "PSL 2 real",
+      "entry_ids": [
+        "idx0725"
+      ]
+    },
+    {
+      "math_tex": "PSL(2,\\mathbb Z)",
+      "english_sort_text": "PSL 2 integer",
+      "entry_ids": [
+        "idx0726"
+      ]
+    },
+    {
+      "math_tex": "b_0",
+      "english_sort_text": "b zero",
+      "entry_ids": [
+        "idx0771"
+      ]
+    },
+    {
+      "math_tex": "SL(2,\\mathbb C)",
+      "english_sort_text": "SL 2 complex",
+      "entry_ids": [
+        "idx0837"
+      ]
+    },
+    {
+      "math_tex": "SL(2,\\mathbb R)",
+      "english_sort_text": "SL 2 real",
+      "entry_ids": [
+        "idx0839"
+      ]
+    },
+    {
+      "math_tex": "SO(D-2)",
+      "english_sort_text": "SO D minus 2",
+      "entry_ids": [
+        "idx0840"
+      ]
+    },
+    {
+      "math_tex": "SO(D-1)",
+      "english_sort_text": "SO D minus 1",
+      "entry_ids": [
+        "idx0841"
+      ]
+    },
+    {
+      "math_tex": "SO(n)",
+      "english_sort_text": "SO n",
+      "entry_ids": [
+        "idx0842"
+      ]
+    },
+    {
+      "math_tex": "Sp(k)",
+      "english_sort_text": "Sp k",
+      "entry_ids": [
+        "idx0845"
+      ]
+    },
+    {
+      "math_tex": "SU(n)",
+      "english_sort_text": "SU n",
+      "entry_ids": [
+        "idx0846"
+      ]
+    },
+    {
+      "math_tex": "SU(2)\\times SU(2)",
+      "english_sort_text": "SU 2 times SU 2",
+      "entry_ids": [
+        "idx0847"
+      ]
+    },
+    {
+      "math_tex": "SU(3)\\times SU(2)\\times U(1)",
+      "english_sort_text": "SU 3 times SU 2 times U 1",
+      "entry_ids": [
+        "idx0849"
+      ]
+    },
+    {
+      "math_tex": "S",
+      "english_sort_text": "S",
+      "entry_ids": [
+        "idx0851"
+      ]
+    },
+    {
+      "math_tex": "s,t,u",
+      "english_sort_text": "s t u",
+      "entry_ids": [
+        "idx0856"
+      ]
+    },
+    {
+      "math_tex": "U(n)",
+      "english_sort_text": "U n",
+      "entry_ids": [
+        "idx0971"
+      ]
+    },
+    {
+      "math_tex": "L_{-1}\\cdot",
+      "english_sort_text": "L minus one action",
+      "entry_ids": [
+        "idx1005"
+      ]
+    },
+    {
+      "math_tex": "L_0\\cdot",
+      "english_sort_text": "L zero action",
+      "entry_ids": [
+        "idx1006"
+      ]
+    },
+    {
+      "math_tex": "R\\to0",
+      "english_sort_text": "R approaches zero",
+      "entry_ids": [
+        "idx1033"
+      ]
+    }
+  ],
+  "following_unspecified_references": [
+    {
+      "entry_id": "idx0095",
+      "raw_text": "126ff"
+    },
+    {
+      "entry_id": "idx0506",
+      "raw_text": "178ff"
+    },
+    {
+      "entry_id": "idx0561",
+      "raw_text": "249ff"
+    },
+    {
+      "entry_id": "idx0574",
+      "raw_text": "12–13ff"
+    },
+    {
+      "entry_id": "idx0821",
+      "raw_text": "32ff"
+    }
+  ],
+  "notes": [
+    "English and Japanese display labels are kept as original TeX; ASCII keys affect sorting only.",
+    "Blank-name cross-reference rows belong to their parent and must not become separate index headings.",
+    "same_as, see_under, and see_complement preserve the original semantics rather than silently becoming see.",
+    "ff references retain their explicit first page; an unspecified ending is never invented.",
+    "This parser preserves original page references; assigning translated PDF pages is a separate generation step."
+  ],
+  "entries_json_sha256": "7bf5c87bfa0cb8fd3e3715bcdca789bb6b4c2f62df74c96a3f31fa4b4d77d052"
+}

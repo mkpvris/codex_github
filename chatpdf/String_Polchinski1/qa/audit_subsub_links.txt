@@ -1,0 +1,32 @@
+小見出し・演習グループ PDF相互リンク監査
+{
+  "pdf": "C:\\Users\\false\\OneDrive\\ドキュメント\\ChatGPT\\pdf翻訳系\\chatpdf\\String_Polchinski1\\pdf\\String_Polchinski1_jp.pdf",
+  "pdf_sha256": "4c88adc6a700d9ccc333557e12750fdb3da5554b4f8db7a432861038273a2e4d",
+  "toc": "C:\\Users\\false\\OneDrive\\ドキュメント\\ChatGPT\\pdf翻訳系\\chatpdf\\String_Polchinski1\\build\\String_Polchinski1_jp.toc",
+  "aux": "C:\\Users\\false\\OneDrive\\ドキュメント\\ChatGPT\\pdf翻訳系\\chatpdf\\String_Polchinski1\\build\\String_Polchinski1_jp.aux",
+  "pdf_pages": 377,
+  "toc_physical_pages": [
+    1,
+    9
+  ],
+  "subsubsection_count": 208,
+  "ordinary_subsubsection_count": 102,
+  "individual_exercises": 106,
+  "exercise_groups": 10,
+  "tocdepth_returns_to_2_after_appendix_A": true,
+  "subsubsection_records_after_scope_boundary": 0,
+  "glossary_source_hangindent_1_5em": true,
+  "glossary_source_hangafter_1": true,
+  "pdf_outline_entry_count": 297,
+  "subsubsection_outline_count": 208,
+  "readable_math_bookmarks": 10,
+  "all_selected_headings": 218,
+  "passed": 218,
+  "failed": 0,
+  "errors": [],
+  "ok": true
+}
+検証: .tocと.auxのnamed destination、PDFの実移動先ページ、目次内annotation、
+本文見出しanchorの同一ページ・48pt以内にあるtoc行きannotation、矩形の一意な割当を確認。
+さらに208小見出し・10演習グループのPDFしおりnamed targetと数式見出し10件のUnicode表記を確認。
+本文見出しの数式・日本語の文字抽出一致には依存していない。

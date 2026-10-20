@@ -1,0 +1,505 @@
+{
+  "status": "awaiting_final_pdf_notification",
+  "created_at": "2026-10-21T05:11:36.485557+09:00",
+  "scope": "Independent body-evidence audit of 10 index references across all nine chapters and the appendix. No live PDF was opened during preparation. Page numbers below are provisional and must be refreshed from the final audit JSON.",
+  "selection_audit_sha256": "cddc3aef4bc57cce9b96e6bfeae9a22229c2a50f9c8eb6ef12eceebcb2c862df",
+  "samples": [
+    {
+      "id": "idx0618",
+      "region": "chapter1",
+      "japanese_tex": "Nambu–Goto 作用",
+      "english_tex": "Nambu–Goto action",
+      "source_pages": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "search_hints": [
+        "Nambu",
+        "Goto"
+      ],
+      "verification_plan": "作用の導入・定義式と原書10–13頁の対応区間を確認。",
+      "provisional_mapping": {
+        "id": "idx0618",
+        "original_reference": "10–13",
+        "source_pages": [
+          10,
+          11,
+          12,
+          13
+        ],
+        "candidate_pages": [
+          28,
+          29,
+          30,
+          31,
+          32
+        ],
+        "literal_matches": [
+          29,
+          30,
+          31,
+          32
+        ],
+        "translated_pages": [
+          28,
+          29,
+          30,
+          31,
+          32
+        ],
+        "method": "corresponding_passage_range",
+        "italic": false,
+        "following_unspecified": false
+      }
+    },
+    {
+      "id": "idx0135",
+      "region": "chapter2",
+      "japanese_tex": "中心電荷",
+      "english_tex": "central charge",
+      "source_pages": [
+        75,
+        76
+      ],
+      "search_hints": [
+        "中心電荷",
+        "演習2."
+      ],
+      "verification_plan": "斜体の演習参照。演習本文における中心電荷と範囲の対応を確認。",
+      "provisional_mapping": {
+        "id": "idx0135",
+        "original_reference": "\\textit{75–6}",
+        "source_pages": [
+          75,
+          76
+        ],
+        "candidate_pages": [
+          82,
+          83,
+          84
+        ],
+        "literal_matches": [
+          83,
+          84
+        ],
+        "translated_pages": [
+          82,
+          83,
+          84
+        ],
+        "method": "corresponding_passage_range",
+        "italic": true,
+        "following_unspecified": false
+      }
+    },
+    {
+      "id": "idx0374",
+      "region": "chapter3",
+      "japanese_tex": "Euler 数",
+      "english_tex": "Euler number",
+      "source_pages": [
+        101
+      ],
+      "search_hints": [
+        "Euler"
+      ],
+      "verification_plan": "本文のEuler数の記述を確認。目次や図内テキストを根拠にしない。",
+      "provisional_mapping": {
+        "id": "idx0374",
+        "original_reference": "101",
+        "source_pages": [
+          101
+        ],
+        "candidate_pages": [
+          104,
+          105
+        ],
+        "literal_matches": [
+          105
+        ],
+        "translated_pages": [
+          105
+        ],
+        "method": "literal_match_in_corresponding_passage",
+        "italic": false,
+        "following_unspecified": false
+      }
+    },
+    {
+      "id": "idx0176",
+      "region": "chapter4",
+      "japanese_tex": "コホモロジー（BRST）",
+      "english_tex": "cohomology (BRST)",
+      "source_pages": [
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143
+      ],
+      "search_hints": [
+        "BRST",
+        "コホモロジー"
+      ],
+      "verification_plan": "原書10頁にわたる長範囲。区間の両端と中間の本文を確認。",
+      "provisional_mapping": {
+        "id": "idx0176",
+        "original_reference": "134–43",
+        "source_pages": [
+          134,
+          135,
+          136,
+          137,
+          138,
+          139,
+          140,
+          141,
+          142,
+          143
+        ],
+        "candidate_pages": [
+          131,
+          132,
+          133,
+          134,
+          135,
+          136,
+          137,
+          138,
+          139,
+          140
+        ],
+        "literal_matches": [
+          131,
+          132,
+          134,
+          135,
+          136,
+          137,
+          138,
+          139,
+          140
+        ],
+        "translated_pages": [
+          131,
+          132,
+          133,
+          134,
+          135,
+          136,
+          137,
+          138,
+          139,
+          140
+        ],
+        "method": "corresponding_passage_range",
+        "italic": false,
+        "following_unspecified": false
+      }
+    },
+    {
+      "id": "idx0550",
+      "region": "chapter5",
+      "japanese_tex": "モジュライ空間上の測度",
+      "english_tex": "measure on moduli space",
+      "source_pages": [
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163,
+        164,
+        165
+      ],
+      "search_hints": [
+        "モジュライ空間上の測度",
+        "モジュライ",
+        "測度"
+      ],
+      "verification_plan": "原書12頁にわたる長範囲。見出し・式と区間の両端を確認。",
+      "provisional_mapping": {
+        "id": "idx0550",
+        "original_reference": "154–65",
+        "source_pages": [
+          154,
+          155,
+          156,
+          157,
+          158,
+          159,
+          160,
+          161,
+          162,
+          163,
+          164,
+          165
+        ],
+        "candidate_pages": [
+          148,
+          149,
+          150,
+          151,
+          152,
+          153,
+          154,
+          155,
+          156,
+          157,
+          158
+        ],
+        "literal_matches": [
+          149
+        ],
+        "translated_pages": [
+          148,
+          149,
+          150,
+          151,
+          152,
+          153,
+          154,
+          155,
+          156,
+          157,
+          158
+        ],
+        "method": "corresponding_passage_range",
+        "italic": false,
+        "following_unspecified": false
+      }
+    },
+    {
+      "id": "idx0987",
+      "region": "chapter6",
+      "japanese_tex": "Veneziano 振幅",
+      "english_tex": "Veneziano amplitude",
+      "source_pages": [
+        178,
+        179,
+        180,
+        181,
+        182,
+        183,
+        184
+      ],
+      "search_hints": [
+        "Veneziano"
+      ],
+      "verification_plan": "振幅の本文と数式を確認。",
+      "provisional_mapping": {
+        "id": "idx0987",
+        "original_reference": "178–84",
+        "source_pages": [
+          178,
+          179,
+          180,
+          181,
+          182,
+          183,
+          184
+        ],
+        "candidate_pages": [
+          168,
+          169,
+          170,
+          171,
+          172,
+          173,
+          174,
+          175
+        ],
+        "literal_matches": [
+          169,
+          173,
+          174
+        ],
+        "translated_pages": [
+          168,
+          169,
+          170,
+          171,
+          172,
+          173,
+          174,
+          175
+        ],
+        "method": "corresponding_passage_range",
+        "italic": false,
+        "following_unspecified": false
+      }
+    },
+    {
+      "id": "idx0938",
+      "region": "chapter7",
+      "japanese_tex": "テータ関数",
+      "english_tex": "theta functions",
+      "source_pages": [
+        229
+      ],
+      "search_hints": [
+        "テータ関数",
+        "演習7."
+      ],
+      "verification_plan": "斜体の演習参照。対応する演習本文を確認。",
+      "provisional_mapping": {
+        "id": "idx0938",
+        "original_reference": "\\textit{229}",
+        "source_pages": [
+          229
+        ],
+        "candidate_pages": [
+          212,
+          213
+        ],
+        "literal_matches": [
+          213
+        ],
+        "translated_pages": [
+          213
+        ],
+        "method": "literal_match_in_corresponding_passage",
+        "italic": true,
+        "following_unspecified": false
+      }
+    },
+    {
+      "id": "idx0652",
+      "region": "chapter8",
+      "japanese_tex": "$O(k,k,\\mathbb Z)$",
+      "english_tex": "$O(k,k,\\mathbb Z)$",
+      "source_pages": [
+        253
+      ],
+      "search_hints": [
+        "O(k",
+        "8.4."
+      ],
+      "verification_plan": "数式表記O(k,k,Z)を本文の実画像で確認。",
+      "provisional_mapping": {
+        "id": "idx0652",
+        "original_reference": "253",
+        "source_pages": [
+          253
+        ],
+        "candidate_pages": [
+          233
+        ],
+        "literal_matches": [
+          233
+        ],
+        "translated_pages": [
+          233
+        ],
+        "method": "literal_match_in_corresponding_passage",
+        "italic": false,
+        "following_unspecified": false
+      }
+    },
+    {
+      "id": "idx0613",
+      "region": "chapter9",
+      "japanese_tex": "図式による分解",
+      "english_tex": "graphical decomposition",
+      "source_pages": [
+        297,
+        298,
+        299,
+        300
+      ],
+      "search_hints": [
+        "グラフによる分解",
+        "図式による分解",
+        "9.4"
+      ],
+      "verification_plan": "索引の図式による分解と本文のグラフによる分解の対応を確認。原書299頁の広い候補区間を含む。",
+      "provisional_mapping": {
+        "id": "idx0613",
+        "original_reference": "297–300",
+        "source_pages": [
+          297,
+          298,
+          299,
+          300
+        ],
+        "candidate_pages": [
+          268,
+          269,
+          270,
+          271,
+          272,
+          273
+        ],
+        "literal_matches": [],
+        "translated_pages": [
+          268,
+          269,
+          270,
+          271,
+          272,
+          273
+        ],
+        "method": "corresponding_passage_range",
+        "italic": false,
+        "following_unspecified": false
+      }
+    },
+    {
+      "id": "idx0113",
+      "region": "appendix",
+      "japanese_tex": "Berezin 積分",
+      "english_tex": "Berezin integration",
+      "source_pages": [
+        341
+      ],
+      "search_hints": [
+        "Berezin",
+        "Grassmann"
+      ],
+      "verification_plan": "付録のBerezin積分の定義と数式を確認。",
+      "provisional_mapping": {
+        "id": "idx0113",
+        "original_reference": "341",
+        "source_pages": [
+          341
+        ],
+        "candidate_pages": [
+          306,
+          307
+        ],
+        "literal_matches": [
+          306,
+          307
+        ],
+        "translated_pages": [
+          306,
+          307
+        ],
+        "method": "literal_match_in_corresponding_passage",
+        "italic": false,
+        "following_unspecified": false
+      }
+    }
+  ],
+  "final_output": "qa/index_translation_samples.json",
+  "final_checks": [
+    "Reload final index_translation_page_audit.json and identify samples by id plus source_pages.",
+    "Record final PDF SHA256 and physical page count.",
+    "Confirm representative body phrases, displayed formulas, headings, or exercise headings within adopted translated pages.",
+    "Use rendered final PDF pages for formulas and exercise evidence; do not use TOC or clipped imported figure text.",
+    "For corresponding_passage_range, record conservative coverage separately from actual phrase occurrences.",
+    "Do not narrow conservative ranges merely because a term is absent from individual pages.",
+    "Keep all document and mapping implementation files unchanged."
+  ]
+}

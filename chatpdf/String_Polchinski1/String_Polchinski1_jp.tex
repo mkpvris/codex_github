@@ -89,6 +89,29 @@
 \hypersetup{hypertexnames=false,pdftitle={弦理論 第I巻：ボソン弦入門 日本語訳},
 pdfauthor={Joseph Polchinski},bookmarksnumbered=true}
 \emergencystretch=2em
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{3}
+\NewDocumentCommand{\subsubsectionlink}{s m}{%
+  \IfBooleanTF{#1}{%
+    \subsubsection*{\hyperlink{toc}{#2}}%
+    \addcontentsline{toc}{subsubsection}{#2}%
+  }{\subsubsection[#2]{\hyperlink{toc}{#2}}}%
+}
+\usepackage{makeidx}
+\makeindex
+\newcommand{\indexitalic}[1]{\textit{\hyperpage{#1}}}
+\newcommand{\indexfollowing}[1]{\hyperpage{#1}\,ff.}
+\newcommand{\indexitalicfollowing}[1]{\textit{\hyperpage{#1}\,ff.}}
+\DeclareRobustCommand{\indexcrossref}[2]{#1}
+% Keep the original one-column index layout for long bilingual entries.
+\makeatletter
+\renewenvironment{theindex}{%
+  \clearpage\sectionlink*{索引}%
+  斜体のページ番号は演習を指す。\par\medskip
+  \small\parindent\z@\parskip\z@ \@plus .3\p@\relax
+  \let\item\@idxitem
+}{\par\clearpage}
+\makeatother
 \RenewDocumentCommand{\subsectionlink}{s m}{%
   \IfBooleanTF{#1}{%
     \subsection*{\hyperlink{toc}{#2}}%
@@ -101,6 +124,7 @@ pdfauthor={Joseph Polchinski},bookmarksnumbered=true}
 \maketitle
 \hypertarget{toc}{}
 \tableofcontents
+\setcounter{tocdepth}{3}
 \clearpage
 \input{sections/frontmatter}
 \clearpage
@@ -133,6 +157,8 @@ pdfauthor={Joseph Polchinski},bookmarksnumbered=true}
 \renewcommand{\thefigure}{\Alph{section}.\arabic{figure}}
 \input{sections/appendixA}
 
+\addtocontents{toc}{\protect\setcounter{tocdepth}{2}}
+\setcounter{tocdepth}{2}
 \clearpage
 \input{sections/references_intro}
 \begingroup

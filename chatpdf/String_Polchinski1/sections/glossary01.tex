@@ -1,6 +1,11 @@
 % 原書pp.359--364、conifold transitionの項末まで。
 \sectionlink*{用語集}
-\newcommand{\gloss}[2]{\par\medskip\noindent\textbf{#1}\quad #2\par}
+\newcommand{\gloss}[2]{%
+  \par\medskip\begingroup
+  \hangindent=1.5em\hangafter=1
+  \noindent\textbf{#1}\quad #2\par
+  \endgroup
+}
 
 \gloss{$(0,2)$コンパクト化（$(0,2)$ compactification）}
 {$d=4,\ N=1$超対称性を持つ一般的なヘテロ弦の真空。世界面CFTは、右向きに伝播する$N=2$超共形不変性を持つ。}

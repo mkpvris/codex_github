@@ -1,0 +1,788 @@
+{
+  "status": "completed",
+  "created_at": "2026-10-21T05:24:50.951075+09:00",
+  "pdf": "pdf/String_Polchinski1_jp.pdf",
+  "pdf_sha256": "4c88adc6a700d9ccc333557e12750fdb3da5554b4f8db7a432861038273a2e4d",
+  "pdf_page_count": 377,
+  "inputs": {
+    "index_translation_page_audit.json_sha256": "d88452173eaa998618c2e126c3e02ce66b29c4fbbf53fb7fe9ed8095ef99ef22",
+    "page_spans.json_sha256": "3261546517d3c35a1a87fee38e528128373b463f3d0597e096e3f1db5f9db3af",
+    "visible_body_text": "build/index_text_body.txt",
+    "visible_body_text_sha256": "541806adcc1ee0c99e60ad76a4e92f439438e37b18758567ac51a7b9b88427c8"
+  },
+  "method": "Independent manual comparison of ten final index mappings with visible-body text, original-page text, and fourteen rendered final-PDF pages. The extraction excludes imported figure XObjects, so clipped invisible original English was not used as evidence. Original page numbers were not proportionally scaled.",
+  "summary": {
+    "samples": 10,
+    "verified": 10,
+    "failed": 0,
+    "unresolved": 0,
+    "italic_exercise_samples": 2,
+    "chapters_covered": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "appendix_covered": true,
+    "rendered_pages_reviewed": [
+      29,
+      83,
+      84,
+      105,
+      131,
+      149,
+      158,
+      173,
+      213,
+      233,
+      270,
+      273,
+      306,
+      307
+    ]
+  },
+  "all_required_source_pages_sanity": {
+    "count": 351,
+    "missing": [],
+    "empty_candidates": [],
+    "outside_chapter_region": [],
+    "scope": "Structural check only; the ten samples above received independent content review."
+  },
+  "samples": [
+    {
+      "id": "idx0618",
+      "region": "chapter1",
+      "japanese_tex": "Nambu–Goto 作用",
+      "english_tex": "Nambu–Goto action",
+      "status": "verified",
+      "mapping": {
+        "id": "idx0618",
+        "original_reference": "10–13",
+        "source_pages": [
+          10,
+          11,
+          12,
+          13
+        ],
+        "candidate_pages": [
+          28,
+          29,
+          30,
+          31,
+          32
+        ],
+        "literal_matches": [
+          29,
+          30,
+          31,
+          32
+        ],
+        "translated_pages": [
+          28,
+          29,
+          30,
+          31,
+          32
+        ],
+        "method": "corresponding_passage_range",
+        "italic": false,
+        "following_unspecified": false
+      },
+      "verified_body_evidence": [
+        {
+          "page": 29,
+          "kind": "body phrase and formula",
+          "phrase": "Nambu–Goto 作用は、世界面の面積に比例する。",
+          "equations": [
+            "1.2.8",
+            "1.2.9a",
+            "1.2.9b"
+          ],
+          "formula_tex": "S_{NG}=\\int_M d\\tau\\,d\\sigma\\,\\mathcal L_{NG},\\quad \\mathcal L_{NG}=-\\frac{1}{2\\pi\\alpha\\prime}(-\\det h_{ab})^{1/2}",
+          "visual": true,
+          "page_label": "29",
+          "verification": "rendered final PDF plus visible-body text",
+          "image": "qa/index_translation_sample_images/translated-029.png"
+        },
+        {
+          "page": 30,
+          "kind": "body phrase",
+          "phrase": "Nambu–Goto 作用は、平方根の中に微分を含む点で、点粒子の作用 Spp に類似している。",
+          "page_label": "30",
+          "verification": "visible-body text"
+        },
+        {
+          "page": 31,
+          "kind": "body discussion",
+          "phrase": "Weyl 不変性に相当するものは、Nambu–Goto の形式にはない。",
+          "equations": [
+            "1.2.18",
+            "1.2.19",
+            "1.2.20",
+            "1.2.21"
+          ],
+          "page_label": "31",
+          "verification": "visible-body text"
+        }
+      ],
+      "original_source_confirmation": "原書10–13頁の粒子作用からNambu–Goto/Polyakov作用・対称性へ進む箇所。翻訳29頁の1.2.9a,bが作用定義。",
+      "coverage_note": "採用28–32頁は前後のアンカーを含む保守的区間。29–32頁に名称が現れる。28頁の全内容がNambu–Goto作用を説明するという意味ではない。",
+      "issues": []
+    },
+    {
+      "id": "idx0135",
+      "region": "chapter2",
+      "japanese_tex": "中心電荷",
+      "english_tex": "central charge",
+      "status": "verified",
+      "mapping": {
+        "id": "idx0135",
+        "original_reference": "\\textit{75–6}",
+        "source_pages": [
+          75,
+          76
+        ],
+        "candidate_pages": [
+          82,
+          83,
+          84
+        ],
+        "literal_matches": [
+          83,
+          84
+        ],
+        "translated_pages": [
+          82,
+          83,
+          84
+        ],
+        "method": "corresponding_passage_range",
+        "italic": true,
+        "following_unspecified": false
+      },
+      "verified_body_evidence": [
+        {
+          "page": 83,
+          "kind": "exercise",
+          "heading": "演習 2.9",
+          "phrase": "TT の OPE を求めて、線形ディラトン、bc、βγ の各 CFT の中心電荷を導け。",
+          "visual": true,
+          "page_label": "83",
+          "verification": "rendered final PDF plus visible-body text",
+          "image": "qa/index_translation_sample_images/translated-083.png"
+        },
+        {
+          "page": 84,
+          "kind": "exercise",
+          "heading": "演習 2.11",
+          "phrase": "Virasoro 代数の中心電荷を評価せよ。",
+          "visual": true,
+          "page_label": "84",
+          "verification": "rendered final PDF plus visible-body text",
+          "image": "qa/index_translation_sample_images/translated-084.png"
+        }
+      ],
+      "original_source_confirmation": "原書75頁の2.9、75→76頁に続く2.11を確認。原索引の斜体75–6は演習参照であり、翻訳の演習2.9と2.11が83–84頁にある。",
+      "coverage_note": "原書複数頁の参照を保持するため採用82–84頁。中心電荷という語の可視出現は83・84頁。82頁は前の原書頁の末尾アンカー由来の余裕。",
+      "issues": []
+    },
+    {
+      "id": "idx0374",
+      "region": "chapter3",
+      "japanese_tex": "Euler 数",
+      "english_tex": "Euler number",
+      "status": "verified",
+      "mapping": {
+        "id": "idx0374",
+        "original_reference": "101",
+        "source_pages": [
+          101
+        ],
+        "candidate_pages": [
+          104,
+          105
+        ],
+        "literal_matches": [
+          105
+        ],
+        "translated_pages": [
+          105
+        ],
+        "method": "literal_match_in_corresponding_passage",
+        "italic": false,
+        "following_unspecified": false
+      },
+      "verified_body_evidence": [
+        {
+          "page": 105,
+          "kind": "body phrase and formula",
+          "phrase": "Euler 数は",
+          "equations": [
+            "3.5.6"
+          ],
+          "formula_tex": "\\chi=2-2g-b-c",
+          "visual": true,
+          "page_label": "105",
+          "verification": "rendered final PDF plus visible-body text",
+          "image": "qa/index_translation_sample_images/translated-105.png"
+        }
+      ],
+      "original_source_confirmation": "原書101頁のEuler numberと式3.5.6が翻訳105頁に対応。",
+      "coverage_note": "単一ページの語句一致採用。目次ではなく3.6節直前の本文・表示式。",
+      "issues": []
+    },
+    {
+      "id": "idx0176",
+      "region": "chapter4",
+      "japanese_tex": "コホモロジー（BRST）",
+      "english_tex": "cohomology (BRST)",
+      "status": "verified",
+      "mapping": {
+        "id": "idx0176",
+        "original_reference": "134–43",
+        "source_pages": [
+          134,
+          135,
+          136,
+          137,
+          138,
+          139,
+          140,
+          141,
+          142,
+          143
+        ],
+        "candidate_pages": [
+          131,
+          132,
+          133,
+          134,
+          135,
+          136,
+          137,
+          138,
+          139,
+          140
+        ],
+        "literal_matches": [
+          131,
+          132,
+          134,
+          135,
+          136,
+          137,
+          138,
+          139,
+          140
+        ],
+        "translated_pages": [
+          131,
+          132,
+          133,
+          134,
+          135,
+          136,
+          137,
+          138,
+          139,
+          140
+        ],
+        "method": "corresponding_passage_range",
+        "italic": false,
+        "following_unspecified": false
+      },
+      "verified_body_evidence": [
+        {
+          "page": 131,
+          "kind": "heading and formula",
+          "heading": "弦の BRST コホモロジー",
+          "phrase": "弦の最も低い準位での BRST コホモロジーを調べよう。",
+          "equations": [
+            "4.3.17a",
+            "4.3.17b",
+            "4.3.17c",
+            "4.3.18a"
+          ],
+          "visual": true,
+          "page_label": "131",
+          "verification": "rendered final PDF plus visible-body text",
+          "image": "qa/index_translation_sample_images/translated-131.png"
+        },
+        {
+          "page": 135,
+          "kind": "body discussion",
+          "phrase": "BRST コホモロジーが H⊥ と同型であることを示す。",
+          "page_label": "135",
+          "verification": "visible-body text"
+        },
+        {
+          "page": 139,
+          "kind": "body discussion",
+          "phrase": "各コホモロジー類に一つの OCQ 物理的状態を定義する。",
+          "equations": [
+            "4.4.19"
+          ],
+          "page_label": "139",
+          "verification": "visible-body text"
+        },
+        {
+          "page": 140,
+          "kind": "exercise",
+          "heading": "演習 4.6",
+          "phrase": "Q′ のコホモロジーを直接計算せよ。",
+          "page_label": "140",
+          "verification": "visible-body text"
+        }
+      ],
+      "original_source_confirmation": "原書134頁のBRST cohomology of the string見出しは翻訳131頁。原書143頁のOCQとの対応と演習開始は翻訳139頁。",
+      "coverage_note": "採用131–140頁は原書10頁にわたる議論全体と前後アンカーを保持する。末尾140頁は隣接演習も含み、原書134–143の本文だけの厳密な切断範囲ではない。",
+      "issues": []
+    },
+    {
+      "id": "idx0550",
+      "region": "chapter5",
+      "japanese_tex": "モジュライ空間上の測度",
+      "english_tex": "measure on moduli space",
+      "status": "verified",
+      "mapping": {
+        "id": "idx0550",
+        "original_reference": "154–65",
+        "source_pages": [
+          154,
+          155,
+          156,
+          157,
+          158,
+          159,
+          160,
+          161,
+          162,
+          163,
+          164,
+          165
+        ],
+        "candidate_pages": [
+          148,
+          149,
+          150,
+          151,
+          152,
+          153,
+          154,
+          155,
+          156,
+          157,
+          158
+        ],
+        "literal_matches": [
+          149
+        ],
+        "translated_pages": [
+          148,
+          149,
+          150,
+          151,
+          152,
+          153,
+          154,
+          155,
+          156,
+          157,
+          158
+        ],
+        "method": "corresponding_passage_range",
+        "italic": false,
+        "following_unspecified": false
+      },
+      "verified_body_evidence": [
+        {
+          "page": 148,
+          "kind": "heading",
+          "heading": "5.3 モジュライの測度",
+          "page_label": "148",
+          "verification": "visible-body text"
+        },
+        {
+          "page": 149,
+          "kind": "body phrase and formula",
+          "phrase": "この変換の Jacobian がモジュライ空間上の測度となる。",
+          "equations": [
+            "5.3.1",
+            "5.3.2",
+            "5.3.3",
+            "5.3.4",
+            "5.3.5"
+          ],
+          "visual": true,
+          "page_label": "149",
+          "verification": "rendered final PDF plus visible-body text",
+          "image": "qa/index_translation_sample_images/translated-149.png"
+        },
+        {
+          "page": 153,
+          "kind": "heading and discussion",
+          "heading": "5.4 測度についての補足",
+          "phrase": "振幅はモジュライ空間上の座標 t の選び方に依存しない。",
+          "page_label": "153",
+          "verification": "visible-body text"
+        },
+        {
+          "page": 158,
+          "kind": "exercise",
+          "heading": "演習 5.2",
+          "phrase": "モジュライの測度について得られた結果どうしの関係を論じよ。",
+          "visual": true,
+          "page_label": "158",
+          "verification": "rendered final PDF plus visible-body text",
+          "image": "qa/index_translation_sample_images/translated-158.png"
+        }
+      ],
+      "original_source_confirmation": "原書154頁で5.3節開始、原書165頁の演習5.2まで。翻訳148頁で5.3節開始し、158頁の演習5.2へ続く。",
+      "coverage_note": "原書12頁の参照154–165に対する保守的な採用148–158頁。149頁の完全一致だけに縮小せず、測度の議論全体を維持。",
+      "issues": []
+    },
+    {
+      "id": "idx0987",
+      "region": "chapter6",
+      "japanese_tex": "Veneziano 振幅",
+      "english_tex": "Veneziano amplitude",
+      "status": "verified",
+      "mapping": {
+        "id": "idx0987",
+        "original_reference": "178–84",
+        "source_pages": [
+          178,
+          179,
+          180,
+          181,
+          182,
+          183,
+          184
+        ],
+        "candidate_pages": [
+          168,
+          169,
+          170,
+          171,
+          172,
+          173,
+          174,
+          175
+        ],
+        "literal_matches": [
+          169,
+          173,
+          174
+        ],
+        "translated_pages": [
+          168,
+          169,
+          170,
+          171,
+          172,
+          173,
+          174,
+          175
+        ],
+        "method": "corresponding_passage_range",
+        "italic": false,
+        "following_unspecified": false
+      },
+      "verified_body_evidence": [
+        {
+          "page": 169,
+          "kind": "heading",
+          "heading": "6.4 Veneziano 振幅",
+          "page_label": "169",
+          "verification": "visible-body text"
+        },
+        {
+          "page": 173,
+          "kind": "body phrase and formula",
+          "phrase": "これが Veneziano 振幅であり",
+          "equations": [
+            "6.4.23",
+            "6.4.24"
+          ],
+          "visual": true,
+          "page_label": "173",
+          "verification": "rendered final PDF plus visible-body text",
+          "image": "qa/index_translation_sample_images/translated-173.png"
+        },
+        {
+          "page": 174,
+          "kind": "body phrase",
+          "phrase": "Veneziano 振幅の高エネルギーでの振る舞いは重要である。",
+          "equations": [
+            "6.4.25",
+            "6.4.26",
+            "6.4.27",
+            "6.4.28",
+            "6.4.29",
+            "6.4.30"
+          ],
+          "page_label": "174",
+          "verification": "visible-body text"
+        }
+      ],
+      "original_source_confirmation": "原書178頁からの円板bc振幅に続く6.4節と、184頁の高エネルギー極限を確認。翻訳169–174頁でVeneziano振幅が明示される。",
+      "coverage_note": "採用168–175頁は前後の式アンカーを含む。168頁は直前のbc振幅、175頁は次節Chan–Patonの内容を含むため、各頁でVenezianoという語が現れるとは主張しない。",
+      "issues": []
+    },
+    {
+      "id": "idx0938",
+      "region": "chapter7",
+      "japanese_tex": "テータ関数",
+      "english_tex": "theta functions",
+      "status": "verified",
+      "mapping": {
+        "id": "idx0938",
+        "original_reference": "\\textit{229}",
+        "source_pages": [
+          229
+        ],
+        "candidate_pages": [
+          212,
+          213
+        ],
+        "literal_matches": [
+          213
+        ],
+        "translated_pages": [
+          213
+        ],
+        "method": "literal_match_in_corresponding_passage",
+        "italic": true,
+        "following_unspecified": false
+      },
+      "verified_body_evidence": [
+        {
+          "page": 213,
+          "kind": "exercise and formula reference",
+          "heading": "演習 7.5",
+          "phrase": "Im τ → ∞ におけるテータ関数 (7.2.37) の主要な挙動を求めよ。",
+          "equations": [
+            "7.2.37"
+          ],
+          "visual": true,
+          "page_label": "213",
+          "verification": "rendered final PDF plus visible-body text",
+          "image": "qa/index_translation_sample_images/translated-213.png"
+        }
+      ],
+      "original_source_confirmation": "原書229頁の演習7.5(a)–(c)と翻訳213頁の同演習が一致。",
+      "coverage_note": "斜体の演習参照を213頁に採用。実際の演習本文にテータ関数がある。",
+      "issues": []
+    },
+    {
+      "id": "idx0652",
+      "region": "chapter8",
+      "japanese_tex": "$O(k,k,\\mathbb Z)$",
+      "english_tex": "$O(k,k,\\mathbb Z)$",
+      "status": "verified",
+      "mapping": {
+        "id": "idx0652",
+        "original_reference": "253",
+        "source_pages": [
+          253
+        ],
+        "candidate_pages": [
+          233
+        ],
+        "literal_matches": [
+          233
+        ],
+        "translated_pages": [
+          233
+        ],
+        "method": "literal_match_in_corresponding_passage",
+        "italic": false,
+        "following_unspecified": false
+      },
+      "verified_body_evidence": [
+        {
+          "page": 233,
+          "kind": "mathematical name and displayed formula",
+          "phrase": "この部分群は、慣習的には、やや不正確ながら O(k,k,Z) と表す。",
+          "equations": [
+            "8.4.30b",
+            "8.4.31"
+          ],
+          "formula_tex": "\\Lambda^{\\prime\\prime}\\in O(k,k,\\mathbb Z)",
+          "visual": true,
+          "page_label": "233",
+          "verification": "rendered final PDF plus visible-body text",
+          "image": "qa/index_translation_sample_images/translated-233.png"
+        }
+      ],
+      "original_source_confirmation": "原書253頁の離散部分群O(k,k,Z)、式8.4.30bと二重剰余8.4.31が翻訳233頁に一致。",
+      "coverage_note": "本文と表示式の双方で黒板太字Zを実画像確認。テキスト抽出のZと数式表記の違いを画像で確認した。",
+      "issues": []
+    },
+    {
+      "id": "idx0613",
+      "region": "chapter9",
+      "japanese_tex": "図式による分解",
+      "english_tex": "graphical decomposition",
+      "status": "verified",
+      "mapping": {
+        "id": "idx0613",
+        "original_reference": "297–300",
+        "source_pages": [
+          297,
+          298,
+          299,
+          300
+        ],
+        "candidate_pages": [
+          268,
+          269,
+          270,
+          271,
+          272,
+          273
+        ],
+        "literal_matches": [],
+        "translated_pages": [
+          268,
+          269,
+          270,
+          271,
+          272,
+          273
+        ],
+        "method": "corresponding_passage_range",
+        "italic": false,
+        "following_unspecified": false
+      },
+      "verified_body_evidence": [
+        {
+          "page": 270,
+          "kind": "synonymous heading and discussion",
+          "heading": "グラフによる分解",
+          "phrase": "モジュライ空間の Feynman 図に似た分解を述べる。",
+          "visual": true,
+          "page_label": "270",
+          "verification": "rendered final PDF plus visible-body text",
+          "image": "qa/index_translation_sample_images/translated-270.png"
+        },
+        {
+          "page": 271,
+          "kind": "continuing construction",
+          "phrase": "三点頂点",
+          "equations": [
+            "9.3.6"
+          ],
+          "page_label": "271",
+          "verification": "visible-body text"
+        },
+        {
+          "page": 272,
+          "kind": "continuing construction",
+          "equations": [
+            "9.3.7",
+            "9.3.8"
+          ],
+          "phrase": "モジュライ空間を覆えることが示されている。",
+          "page_label": "272",
+          "verification": "visible-body text"
+        },
+        {
+          "page": 273,
+          "kind": "ending construction and next heading",
+          "phrase": "Feynman グラフの和はモジュライ空間をちょうど 1 回覆う。",
+          "heading": "9.4 CFT の縫い合わせと切断",
+          "visual": true,
+          "page_label": "273",
+          "verification": "rendered final PDF plus visible-body text",
+          "image": "qa/index_translation_sample_images/translated-273.png"
+        }
+      ],
+      "original_source_confirmation": "原書297頁のA graphical decomposition見出しが翻訳270頁のグラフによる分解に対応。原書299頁の9.3.6–9.3.8、300頁のminimal area metric構成は翻訳271–273頁に続く。",
+      "coverage_note": "索引の図式による分解と本文のグラフによる分解は同じ原文見出しの訳語差。語句の完全一致は0件だが手動照合で対応確認。原書297–298に非float境界アンカーが少ないため268–273頁を保守的に維持。直接該当する議論は270–273頁、268–269頁は前方余裕と図。",
+      "issues": []
+    },
+    {
+      "id": "idx0113",
+      "region": "appendix",
+      "japanese_tex": "Berezin 積分",
+      "english_tex": "Berezin integration",
+      "status": "verified",
+      "mapping": {
+        "id": "idx0113",
+        "original_reference": "341",
+        "source_pages": [
+          341
+        ],
+        "candidate_pages": [
+          306,
+          307
+        ],
+        "literal_matches": [
+          306,
+          307
+        ],
+        "translated_pages": [
+          306,
+          307
+        ],
+        "method": "literal_match_in_corresponding_passage",
+        "italic": false,
+        "following_unspecified": false
+      },
+      "verified_body_evidence": [
+        {
+          "page": 306,
+          "kind": "body phrase and definition",
+          "phrase": "Grassmann 変数に対する積分には、自然な概念である Berezin 積分がある。",
+          "equations": [
+            "A.2.3"
+          ],
+          "formula_tex": "\\int d\\theta=0,\\quad\\int d\\theta\\,\\theta=-\\int\\theta\\,d\\theta=1",
+          "visual": true,
+          "page_label": "306",
+          "verification": "rendered final PDF plus visible-body text",
+          "image": "qa/index_translation_sample_images/translated-306.png"
+        },
+        {
+          "page": 307,
+          "kind": "body discussion and formula",
+          "phrase": "すべて Berezin 積分にも成り立つことがわかる。",
+          "equations": [
+            "A.2.4",
+            "A.2.5",
+            "A.2.6"
+          ],
+          "visual": true,
+          "page_label": "307",
+          "verification": "rendered final PDF plus visible-body text",
+          "image": "qa/index_translation_sample_images/translated-307.png"
+        }
+      ],
+      "original_source_confirmation": "原書341頁のBerezin integral定義とA.2.3–A.2.6が、翻訳306–307頁にまたがっている。",
+      "coverage_note": "単一原書頁が翻訳2頁にまたがる実例。両頁に名称と関連する定義・性質が可視表示されている。",
+      "issues": []
+    }
+  ],
+  "findings": [
+    {
+      "severity": "informational",
+      "id": "idx0613",
+      "description": "索引の図式による分解と本文のグラフによる分解は訳語が異なるが、原文A graphical decompositionに対応することを手動確認。"
+    },
+    {
+      "severity": "informational",
+      "description": "corresponding_passage_rangeは前後アンカーを含む保守的範囲。各採用ページに同じ索引用語があるとは限らない。本文中の実際の証拠ページはverified_body_evidenceへ別記した。"
+    }
+  ],
+  "limitations": [
+    "This is a ten-sample content audit, not a manual semantic audit of all 1753 reference tokens.",
+    "Index numeric link destinations and physical-page agreement are audited separately by the parent task."
+  ],
+  "document_files_modified": false
+}

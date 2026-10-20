@@ -1,0 +1,49 @@
+makeidx / hyperref 最小試作検証（2026-10-21）
+
+結論
+本書は表示ページ番号と物理PDFページ番号が1から完全に一致するため、hypertexnames=falseのまま、標準makeidx + makeindex + hyperpageを使用できる。独自ページアンカーやページ対応マクロは不要。
+
+公式実装・文書の確認
+・C:/texlive/2026/texmf-dist/tex/latex/hyperref/hyperref.sty
+  7616行付近のHy@EveryPageAnchor: hypertexnames=falseではHy@pagecounterを毎ページ増やし、page.Nを生成。
+  8080行付近のHyInd@pagelink / HyInd@removespaces: 索引から渡された表示番号Nに対しhyperlink{page.N}{N}を作る。
+・C:/texlive/2026/texmf-dist/doc/latex/hyperref/hyperref-doc.tex
+  pageanchor / hypertexnamesの説明は、表示番号をリセットする一般の場合にはhypertexnames=falseと標準索引の対応が失われると明記している。本件ではリセットせず表示番号＝物理ページを保つため一致する。
+・C:/texlive/2026/texmf-dist/tex/luatex/luatexja/ltjsarticle.cls
+  1485–1525行付近のtheindex: multicol未読込時はtwocolumn、footnotesize、narrowbaselines、raggedright、hangindent 4zw。multicolを追加すると条件により3段組になるため、本件では追加不要。
+
+実PDFによる検証
+1. production_page_anchor_audit.json
+   現行本番367ページPDFの全named destinationを監査。page.1～page.367が同じ番号の物理ページを指す。欠落・ずれ0件。
+2. index_prototype.pdf
+   ltjsarticle、A4、11pt、本番と同じ余白、makeidx、hypertexnames=falseを使用。
+   3本文ページ + 二段組索引1ページ、合計4ページ。
+   英語（日本語）の項目、ASCIIソートキー@日本語を含む表示、subitem、複数ページ、範囲1--3、長い固有名詞を含む項目を収録。
+   重複する明示式番号tag{1.1}も入れ、hypertexnames=falseを維持。
+   LuaLaTeX → makeindex → LuaLaTeX → LuaLaTeXで成功。
+3. link_audit.json
+   索引上の全10個のページリンクについて、表示番号と実際のPDF移動先ページが一致。
+   範囲1--3は1と3それぞれがリンクになり、正しいページへ移動する。
+   索引見出し「索引」→目次のtocアンカー（物理1ページ）を確認。
+   目次の索引項目→索引見出し（物理4ページ）も確認。
+4. index_prototype-page4.png
+   150 dpiで描画して目視確認。日本語、長い英語名、下位項目、ページ番号の折返しは紙面内に収まり、重なり・文字切れなし。
+   最終ログにOverfull、未解決参照、重複destinationの警告なし。
+
+見出しの最小変更
+試作ではetoolboxのpatchcmdを用い、theindexの有効な二段組分岐だけを
+  twocolumn[section*{indexname}]
+から
+  twocolumn[sectionlinkstar{indexname}]
+へ変更した（実際のTeXコードはindex_prototype.texを参照）。
+sectionlinkstarは本番sectionlink*と同じく、見出しをhyperlink{toc}で囲み、addcontentslineを1回実行する。
+本番に同じ方法を入れる場合、印刷箇所に別の目次項目を追加して二重登録しないこと。パッチ失敗時はPackageErrorで停止する。
+
+1050項目への助言
+・本文の1始まり連続ページ番号を維持し、最終makeindexの後にLuaLaTeXを2回実行して索引と目次を確定する。
+・ソートは英語ASCIIキーを@の左に置き、英語（日本語）表記は右に置く。日本語をソートキーに混ぜる必要はない。MakeIndexの特殊文字 ! @ | " は索引文字列を生成するときに適切に引用する。
+・既定theindexの二段組とfootnotesizeを維持する。項目数は単に索引ページ数を増やすため、1050件を理由にさらにフォントを小さくする必要はない。
+・長い項目をmboxで囲まない。英語・日本語両方の折返しを許し、下位項目は標準subitemを用いる。長い英文の自然なハイフネーションを妨げない。
+・今回は親の指示により最小サンプルだけを検証した。1050件の実データを組んだ最終PDFの全索引ページ画像確認と、全ページ数字リンクの実移動先監査は本番側で別途行う。
+
+生成物はすべてindexing/prototype内。本番main、assemble.py、元テンプレートに変更なし。

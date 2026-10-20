@@ -1,0 +1,34 @@
+\documentclass[a4paper,11pt]{ltjsarticle}
+\usepackage{amsmath,geometry,makeidx,etoolbox}
+\geometry{left=25mm,right=25mm,top=30mm,bottom=30mm}
+\makeindex
+\usepackage[colorlinks=true,linkcolor=blue,hypertexnames=false]{hyperref}
+\newcommand{\sectionlinkstar}[1]{\section*{\hyperlink{toc}{#1}}\addcontentsline{toc}{section}{#1}}
+\renewcommand{\indexname}{索引}
+\makeatletter
+\patchcmd{\theindex}{\twocolumn[\section*{\indexname}]}{\twocolumn[\sectionlinkstar{\indexname}]}{}{\PackageError{prototype}{Index heading patch failed}{}}
+\makeatother
+\begin{document}
+\hypertarget{toc}{}\tableofcontents
+\section*{Test page 1}
+物理PDFページと表示ページの両方が1である。
+\index{alpha@Alpha（アルファ）}
+\index{range@Range（範囲）|(}
+\index{Kahler@K\"ahler manifold（K\"ahler多様体）}
+\newpage
+\section*{Test page 2}
+物理PDFページと表示ページの両方が2である。
+\index{alpha@Alpha（アルファ）}
+\index{beta@Beta（ベータ）}
+\index{BRST@BRST cohomology（BRSTコホモロジー）}
+\index{BRST@BRST cohomology（BRSTコホモロジー）!physical@physical states（物理状態）}
+\begin{equation}a=b\tag{1.1}\label{eq:first}\end{equation}
+\newpage
+\section*{Test page 3}
+物理PDFページと表示ページの両方が3である。
+\index{range@Range（範囲）|)}
+\index{zeta@Zeta（ゼータ）}
+\index{Wess Zumino Novikov Witten@Wess--Zumino--Novikov--Witten model（Wess--Zumino--Novikov--Witten模型）}
+\begin{equation}c=d\tag{1.1}\label{eq:second}\end{equation}
+\clearpage\printindex
+\end{document}

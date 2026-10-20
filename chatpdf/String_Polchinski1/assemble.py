@@ -36,6 +36,29 @@ preamble += r"""
 \hypersetup{hypertexnames=false,pdftitle={弦理論 第I巻：ボソン弦入門 日本語訳},
 pdfauthor={Joseph Polchinski},bookmarksnumbered=true}
 \emergencystretch=2em
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{3}
+\NewDocumentCommand{\subsubsectionlink}{s m}{%
+  \IfBooleanTF{#1}{%
+    \subsubsection*{\hyperlink{toc}{#2}}%
+    \addcontentsline{toc}{subsubsection}{#2}%
+  }{\subsubsection[#2]{\hyperlink{toc}{#2}}}%
+}
+\usepackage{makeidx}
+\makeindex
+\newcommand{\indexitalic}[1]{\textit{\hyperpage{#1}}}
+\newcommand{\indexfollowing}[1]{\hyperpage{#1}\,ff.}
+\newcommand{\indexitalicfollowing}[1]{\textit{\hyperpage{#1}\,ff.}}
+\DeclareRobustCommand{\indexcrossref}[2]{#1}
+% Keep the original one-column index layout for long bilingual entries.
+\makeatletter
+\renewenvironment{theindex}{%
+  \clearpage\sectionlink*{索引}%
+  斜体のページ番号は演習を指す。\par\medskip
+  \small\parindent\z@\parskip\z@ \@plus .3\p@\relax
+  \let\item\@idxitem
+}{\par\clearpage}
+\makeatother
 \RenewDocumentCommand{\subsectionlink}{s m}{%
   \IfBooleanTF{#1}{%
     \subsection*{\hyperlink{toc}{#2}}%
@@ -44,7 +67,7 @@ pdfauthor={Joseph Polchinski},bookmarksnumbered=true}
 """
 main = preamble + "\n\\begin{document}\n\\input{sections/reference_keys}\n"
 main += "\\input{sections/reference_order}\n\\maketitle\n"
-main += "\\hypertarget{toc}{}\n\\tableofcontents\n\\clearpage\n\\input{sections/frontmatter}\n"
+main += "\\hypertarget{toc}{}\n\\tableofcontents\n\\setcounter{tocdepth}{3}\n\\clearpage\n\\input{sections/frontmatter}\n"
 for group in state["chapters"]:
     main += "\\clearpage\n"
     for name in group:
@@ -54,6 +77,8 @@ for group in state["chapters"]:
 if state["appendix"]:
     main += "\\clearpage\n\\appendix\n\\renewcommand{\\thefigure}{\\Alph{section}.\\arabic{figure}}\n\\input{sections/appendixA}\n"
 main += r"""
+\addtocontents{toc}{\protect\setcounter{tocdepth}{2}}
+\setcounter{tocdepth}{2}
 \clearpage
 \input{sections/references_intro}
 \begingroup
