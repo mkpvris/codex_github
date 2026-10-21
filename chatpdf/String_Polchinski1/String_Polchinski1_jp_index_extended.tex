@@ -1,0 +1,178 @@
+\documentclass[a4paper,11pt]{ltjsarticle}
+
+% ========== package ========== %
+% --- 数式環境 --- %
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+% --- 数式環境 END --- %
+% ブラケット
+\usepackage{braket}
+% ベクトルの太文字
+\usepackage{bm}
+% 添え字左右上下 \fourIdx{左上}{左下}{右上}{右下}{ベース} で使う．Iは大文字
+\usepackage{fouridx}
+% 色
+\usepackage{color}
+% 余白指定
+\usepackage{geometry}
+% --- ページ内リンク --- %
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue}
+% --- ページ内リンク END --- %
+% 花文字
+\usepackage{mathrsfs}
+% 画像
+\usepackage{graphicx}
+% tcolorbox
+\usepackage{tcolorbox}
+% appendix
+\usepackage{appendix}
+% --- 参考文献 --- %
+\usepackage{etoolbox}
+\usepackage{fontspec} % fontspecは読み込んでOKですが、設定順序に注意が必要です
+%% --- 参考文献フォント --- %%
+  \IfFontExistsTF{Times New Roman}{
+    \newfontfamily\bibfontface{Times New Roman}
+  }{
+    \newfontfamily\bibfontface{FreeSerif} % 代替フォント
+  }
+%% --- 参考文献フォント END --- %%
+%% --- 参考文献リンク位置 --- %%
+  
+  \AtBeginEnvironment{thebibliography}{%
+    \normalfont\bibfontface
+  }
+%% --- 参考文献のリンク位置 --- %%
+% --- 参考文献 END --- %
+% ========== package END ========== %
+
+% ========== newcommand ========== %
+% --- セクションから目次へのリンク --- %
+\makeatletter
+\newcommand{\sectionlink}{\@ifstar{\sectionlinkstar}{\sectionlinknumbered}}
+\makeatother
+\newcommand{\sectionlinknumbered}[1]{\section[#1]{\hyperlink{toc}{#1}}}
+\newcommand{\sectionlinkstar}[1]{%
+  \section*{\hyperlink{toc}{#1}}%
+  \addcontentsline{toc}{section}{#1}%
+}
+\newcommand{\subsectionlink}[1]{\subsection[#1]{\hyperlink{toc}{#1}}}
+% セクション番号リンク
+\makeatletter
+\renewcommand{\@seccntformat}[1]{%
+  \protect\hyperlink{toc}{\csname the#1\endcsname}\quad
+}
+\makeatother
+
+\numberwithin{equation}{section}
+% ==========- newcommand END ========== %
+\allowdisplaybreaks
+%===========================================================
+% --- タイトル --- %
+%===========================================================
+\geometry{left=25mm, right=25mm, top=30mm, bottom=30mm}
+\title{\bfseries 弦理論\\[0.4em]第I巻：ボソン弦入門\\[0.8em]
+\small\mdseries\href{https://www.cambridge.org/core/books/string-theory/30409AF2BDE27D53E275FDA395AB667A}{String Theory}\\
+\small Volume I: An Introduction to the Bosonic String}
+\author{Joseph Polchinski\\
+\small Institute for Theoretical Physics\\
+\small University of California at Santa Barbara}
+\date{2026年10月21日}
+
+%===========================================================
+% --- 以下本文 --- %
+%===========================================================
+
+% 明示的な原書式番号に対しても一意のリンク先を生成する。
+\numberwithin{figure}{section}
+\hypersetup{hypertexnames=false,pdftitle={弦理論 第I巻：ボソン弦入門 日本語訳},
+pdfauthor={Joseph Polchinski},bookmarksnumbered=true}
+\emergencystretch=2em
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{3}
+\NewDocumentCommand{\subsubsectionlink}{s m}{%
+  \IfBooleanTF{#1}{%
+    \subsubsection*{\hyperlink{toc}{#2}}%
+    \addcontentsline{toc}{subsubsection}{#2}%
+  }{\subsubsection[#2]{\hyperlink{toc}{#2}}}%
+}
+\usepackage{makeidx}
+\makeindex
+\newcommand{\indexitalic}[1]{\textit{\hyperpage{#1}}}
+\newcommand{\indexfollowing}[1]{\hyperpage{#1}\,ff.}
+\newcommand{\indexitalicfollowing}[1]{\textit{\hyperpage{#1}\,ff.}}
+\DeclareRobustCommand{\indexcrossref}[2]{#1}
+% Keep the original one-column index layout for long bilingual entries.
+\makeatletter
+\renewenvironment{theindex}{%
+  \clearpage\sectionlink*{索引}%
+  斜体のページ番号は演習を指す。\par\medskip
+  \small\parindent\z@\parskip\z@ \@plus .3\p@\relax
+  \let\item\@idxitem
+}{\par\clearpage}
+\makeatother
+\RenewDocumentCommand{\subsectionlink}{s m}{%
+  \IfBooleanTF{#1}{%
+    \subsection*{\hyperlink{toc}{#2}}%
+  }{\subsection[#2]{\hyperlink{toc}{#2}}}%
+}
+
+\begin{document}
+\input{sections/reference_keys}
+\input{sections/reference_order}
+\maketitle
+\hypertarget{toc}{}
+\tableofcontents
+\setcounter{tocdepth}{3}
+\clearpage
+\input{sections/frontmatter}
+\clearpage
+\input{sections/ch01a}
+\input{sections/ch01b}
+\clearpage
+\input{sections/ch02a}
+\input{sections/ch02b}
+\clearpage
+\input{sections/ch03a}
+\input{sections/ch03b}
+\input{sections/ch03c}
+\clearpage
+\input{sections/ch04}
+\clearpage
+\input{sections/ch05}
+\clearpage
+\input{sections/ch06a}
+\input{sections/ch06b}
+\clearpage
+\input{sections/ch07}
+\clearpage
+\input{sections/ch08a}
+\input{sections/ch08b}
+\clearpage
+\input{sections/ch09a}
+\input{sections/ch09b}
+\clearpage
+\appendix
+\renewcommand{\thefigure}{\Alph{section}.\arabic{figure}}
+\input{sections/appendixA}
+
+\addtocontents{toc}{\protect\setcounter{tocdepth}{2}}
+\setcounter{tocdepth}{2}
+\clearpage
+\input{sections/references_intro}
+\begingroup
+\RenewDocumentCommand{\section}{s o m}{}
+\bibliographystyle{utphys}
+\bibliography{ref}
+\endgroup
+\clearpage
+\input{sections/glossary01}
+\input{sections/glossary02}
+\input{sections/glossary03}
+\input{sections/glossary04}
+\input{sections/glossary05}
+\input{sections/glossary06}
+\clearpage
+\input{sections/index}
+\end{document}

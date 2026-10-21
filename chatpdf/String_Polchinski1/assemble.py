@@ -3,6 +3,11 @@ from pathlib import Path
 import json
 import shutil
 import re
+import argparse
+
+parser = argparse.ArgumentParser()
+parser.add_argument('--extended-contents', action='store_true')
+args = parser.parse_args()
 
 root = Path(__file__).resolve().parent
 state = json.loads((root / "assembly_manifest.json").read_text(encoding="utf-8-sig"))
@@ -92,6 +97,10 @@ for group in state["backmatter"]:
     for name in group:
         main += "\\input{sections/" + name + "}\n"
 main += "\\end{document}\n"
-(root / "String_Polchinski1_jp.tex").write_text(main, encoding="utf-8")
+output_name = "String_Polchinski1_jp.tex"
+if args.extended_contents:
+    main = main.replace(r"\setcounter{tocdepth}{2}", r"\setcounter{tocdepth}{3}", 2)
+    output_name = "String_Polchinski1_jp_index_extended.tex"
+(root / output_name).write_text(main, encoding="utf-8")
 shutil.copyfile(root / "ref_complete.bib", root / "ref.bib")
 print(f"Assembled {state['edition']} with all 113 original bibliography items.")
