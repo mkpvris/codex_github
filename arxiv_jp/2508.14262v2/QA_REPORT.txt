@@ -25,7 +25,8 @@ Weiss2011の2011年版のみ公式エクスポートを特定できず、原文�
 
 完成PDFをpypdfで再読込し、内部リンク212件・引用リンク120件の全解決、全49参考文献の宛先と番号順を確認。
 参考文献内DOI43件・arXiv21件が採用書誌と一致。不正URI・未解決リンク0件。
-タイトルのarXiv番号: https://arxiv.org/pdf/2508.14262v2
+タイトルのarXiv番号（abs）: https://arxiv.org/abs/2508.14262v2
+表紙のINSPIRE-HEP literatureリンク: https://inspirehep.net/literature/2962528
 英語原題の出版社リンク: https://journals.aps.org/prl/abstract/10.1103/kp9j-v4ss
 補足資料リンク: https://arxiv.org/pdf/2508.14262v2#page=7
 最終リンク検査記録: qa/link_check.json
@@ -34,4 +35,10 @@ Weiss2011の2011年版のみ公式エクスポートを特定できず、原文�
 最終画像: qa/verified-*.png、qa/verified_contact_*.png
 重なり・欠落・文字化け・数式のページ分割なし。
 
-PDF SHA256: fd00fd3a7bcb191e80e1d6931a8cfd2da8f2577fcfeb087a2e11358d16f38161
+PDF SHA256: 212299d5771110d85360e30caf8332552e245ee55edfc6a023eb32c6c532e3d0
+
+2026-10-28 表紙リンク改訂
+- ユーザー指定により arXiv リンクを同版v2のabsへ変更し、直下へINSPIRE literature/2962528を追加。
+- 表紙の表示とPDFリンク注釈の順序を確認。本文2〜21頁の抽出テキスト・外部リンクは改訂前と完全一致。
+- 改訂前PDF・TeX・ビルド生成物・QA記録はrevision_backups/20261028_before_cover_links/に保持。
+- テンプレート本体のmakeidx・表紙方針は同日の明示依頼により別途改訂。初回翻訳時のテンプレート複製は当時のまま保持。

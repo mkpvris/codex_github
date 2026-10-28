@@ -1,0 +1,131 @@
+\documentclass[a4paper,11pt]{ltjsarticle}
+
+% ========== package ========== %
+% --- 数式環境 --- %
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+% --- 数式環境 END --- %
+% ブラケット
+\usepackage{braket}
+% ベクトルの太文字
+\usepackage{bm}
+% 添え字左右上下 \fourIdx{左上}{左下}{右上}{右下}{ベース} で使う．Iは大文字
+\usepackage{fouridx}
+% 色
+\usepackage{color}
+% 余白指定
+\usepackage{geometry}
+% --- ページ内リンク --- %
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue}
+% --- ページ内リンク END --- %
+% 花文字
+\usepackage{mathrsfs}
+% 画像
+\usepackage{graphicx}
+% tcolorbox
+\usepackage{tcolorbox}
+% appendix
+\usepackage{appendix}
+% --- 参考文献 --- %
+\usepackage{etoolbox}
+\usepackage{fontspec} % fontspecは読み込んでOKですが、設定順序に注意が必要です
+%% --- 参考文献フォント --- %%
+  \IfFontExistsTF{Times New Roman}{
+    \newfontfamily\bibfontface{Times New Roman}
+  }{
+    \newfontfamily\bibfontface{FreeSerif} % 代替フォント
+  }
+%% --- 参考文献フォント END --- %%
+%% --- 参考文献リンク位置 --- %%
+  \BeforeBeginEnvironment{thebibliography}{%
+    \phantomsection
+    \addcontentsline{toc}{section}{参考文献}
+  }
+  \AtBeginEnvironment{thebibliography}{%
+    \normalfont\bibfontface
+  }
+%% --- 参考文献のリンク位置 --- %%
+% --- 参考文献 END --- %
+% ========== package END ========== %
+
+% ========== newcommand ========== %
+% --- セクションから目次へのリンク --- %
+\newcommand{\sectionlink}[1]{\section[#1]{\hyperlink{toc}{#1}}}
+\newcommand{\subsectionlink}[1]{\subsection[#1]{\hyperlink{toc}{#1}}}
+% セクション番号リンク
+\makeatletter
+\renewcommand{\@seccntformat}[1]{%
+  \protect\hyperlink{toc}{\csname the#1\endcsname}\quad
+}
+\makeatother
+
+\numberwithin{equation}{section}
+% ==========- newcommand END ========== %
+\allowdisplaybreaks
+%===========================================================
+% --- タイトル --- %
+%===========================================================
+\geometry{left=25mm, right=25mm, top=30mm, bottom=30mm}
+
+\counterwithout{equation}{section}
+\renewcommand{\theequation}{\arabic{equation}}
+\renewcommand{\thetable}{\Roman{table}}
+\interdisplaylinepenalty=10000
+\apptocmd{\thebibliography}{\setlength{\itemsep}{-1pt}\setlength{\parsep}{0pt}}{}{}
+\RenewDocumentCommand{\sectionlink}{s m}{%
+  \IfBooleanTF{#1}{%
+    \section*{\hyperlink{toc}{#2}}%
+    \phantomsection\addcontentsline{toc}{section}{#2}%
+  }{\section[#2]{\hyperlink{toc}{#2}}}%
+}
+\renewcommand{\abstractname}{\hyperlink{toc}{要旨}}
+\newcommand{\be}{\begin{equation}}
+\newcommand{\ee}{\end{equation}}
+\newcommand{\bei}{\begin{itemize}}
+\newcommand{\eei}{\end{itemize}}
+\newcommand{\hb}{\hbar}
+\newcommand{\tb}{\bar{t}}
+\newcommand{\csh}{{\rm csch}}
+\hypersetup{pdftitle={高周波量子ゆらぎを抑制する高温極限},pdfauthor={Graeme Pleasance, Erik Aurell, Francesco Petruccione},bookmarksnumbered=true}
+\title{\bfseries 高周波量子ゆらぎを抑制する高温極限\\[0.5em]
+\large\href{https://journals.aps.org/prl/abstract/10.1103/kp9j-v4ss}{High-temperature limit penalizing high-frequency quantum fluctuations}\\[0.5em]
+\normalsize\href{https://arxiv.org/pdf/2508.14262v2}{arXiv:2508.14262v2 [quant-ph]}}
+\author{%
+Graeme Pleasance\textsuperscript{1,2}\thanks{\href{mailto:gpleasance1@gmail.com}{gpleasance1@gmail.com}},
+Erik Aurell\textsuperscript{3}\thanks{\href{mailto:eaurell@kth.se}{eaurell@kth.se}},\\
+Francesco Petruccione\textsuperscript{1,2,4}\thanks{\href{mailto:petruccione@sun.ac.za}{petruccione@sun.ac.za}}\\[0.6em]
+\parbox{0.96\textwidth}{\centering\small
+\textsuperscript{1}Department of Physics, University of Stellenbosch,\\
+Stellenbosch, 7600, South Africa\\[0.25em]
+\textsuperscript{2}National Institute for Theoretical and Computational Sciences\\
+(NITheCS), Stellenbosch, South Africa\\[0.25em]
+\textsuperscript{3}KTH -- Royal Institute of Technology, AlbaNova University Center,\\
+SE-106 91 Stockholm, Sweden\\[0.25em]
+\textsuperscript{4}School of Data Science and Computational Thinking,\\
+University of Stellenbosch, Stellenbosch 7600, South Africa}}
+\date{2026年7月9日}
+\begin{document}
+\input{reference_order.tex}
+\maketitle
+\begin{abstract}
+Ohmic スペクトル密度を持つ量子 Brown 運動の Caldeira-Leggett 模型を再検討し、カットオフ周波数が任意に大きい場合にも適用できる新たな高温極限において、デコヒーレンス核への付加的な寄与を導く。この寄与は、高周波量子ゆらぎの古典化をもたらす新たな機構を明らかにする。さらに、この寄与から、Lindblad 形式であることが保証された Markov 型マスター方程式が得られることを示し、このマスター方程式が量子 Brown 運動の正しい Markov 極限を記述すると論じる。本研究の方法では、浴の記憶時間のスケールで、過程の初期時刻と終時刻の両方におけるデコヒーレンス核の振る舞いを詳しく考察する。
+\end{abstract}
+\clearpage
+\hypertarget{toc}{}
+\tableofcontents
+\clearpage
+\input{main_body_jp.tex}
+\clearpage
+\renewcommand{\refname}{\hyperlink{toc}{参考文献}}
+\bibliographystyle{utphys}
+\bibliography{ref}
+\clearpage
+\sectionlink*{「高周波量子ゆらぎを抑制する高温極限」の補足資料}
+\begin{center}
+Graeme Pleasance, Erik Aurell, Francesco Petruccione
+\end{center}
+\input{supp_i_ii_jp.tex}
+\input{supp_iii_jp.tex}
+\end{document}

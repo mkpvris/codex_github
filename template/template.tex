@@ -16,9 +16,12 @@
 \usepackage{color}
 % 余白指定
 \usepackage{geometry}
+% --- 索引（hyperref より前に読み込む） --- %
+\usepackage{makeidx}
+\makeindex
 % --- ページ内リンク --- %
 \usepackage{hyperref}
-\hypersetup{colorlinks=true,linkcolor=blue}
+\hypersetup{colorlinks=true,linkcolor=blue,hypertexnames=true,plainpages=false}
 % --- ページ内リンク END --- %
 % 花文字
 \usepackage{mathrsfs}
@@ -48,6 +51,20 @@
   }
 %% --- 参考文献のリンク位置 --- %%
 % --- 参考文献 END --- %
+% --- 索引の見出し・目次リンク --- %
+\renewcommand{\indexname}{\hyperlink{toc}{索引}}
+\BeforeBeginEnvironment{theindex}{%
+  \clearpage
+  \phantomsection
+  \addcontentsline{toc}{section}{索引}
+}
+% 項目は英語キーでアルファベット順に整列し、各ページ番号を本文へリンクする。
+% page.<表示番号> の宛先を重複させない（通し番号、または Roman 前付＋Arabic 本文）。
+% hypertexnames=false だけで重複を回避すると索引が誤ページへ飛ぶため使用しない。
+% 用語の出現箇所に記す例：
+% \index{decoherence@Decoherence(デコヒーレンス)|hyperpage}
+% 生成手順：LuaLaTeX → BibTeX（文献がある場合）→ makeindex → LuaLaTeX 2回。
+% --- 索引 END --- %
 % ========== package END ========== %
 
 % ========== newcommand ========== %
@@ -68,7 +85,22 @@
 % --- タイトル --- %
 %===========================================================
 \geometry{left=25mm, right=25mm, top=30mm, bottom=30mm}
-\title{\bfseries Write Theme Here}
+% 日本語題名 → 英語原題 → arXiv abs → INSPIRE-HEP literature の順。
+% URL が空の行は表示しない。対象文献がない場合は出版社・DOI 等で代用する。
+\newcommand{\papertitlejp}{日本語題名}
+\newcommand{\papertitleen}{English title}
+\newcommand{\paperarxivurl}{} % 例：https://arxiv.org/abs/2508.14262v2
+\newcommand{\paperarxivlabel}{} % 例：arXiv:2508.14262v2 [quant-ph]
+\newcommand{\paperinspireurl}{} % 例：https://inspirehep.net/literature/文献番号
+\newcommand{\paperinspirelabel}{} % 例：INSPIRE-HEP、または代用先の出版社・DOI
+\title{%
+  \bfseries\papertitlejp\\[0.5em]
+  {\normalfont\large\papertitleen}%
+  \ifdefempty{\paperarxivurl}{}{\\[0.4em]{\normalfont\normalsize
+    \href{\paperarxivurl}{\paperarxivlabel}}}%
+  \ifdefempty{\paperinspireurl}{}{\\[0.4em]{\normalfont\normalsize
+    \href{\paperinspireurl}{\paperinspirelabel}}}%
+}
 \author{著者}
 \date{\today}
 
@@ -107,5 +139,11 @@
 % =================================================================
 \appendix
 \renewcommand{\theequation}{\Alph{section}.\arabic{equation}}
+
+% =================================================================
+% --- 索引：原文に索引がある場合、または作成を明示依頼された場合に使用 --- %
+% =================================================================
+% \clearpage
+% \printindex
 
 \end{document}

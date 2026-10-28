@@ -1,7 +1,7 @@
 {
-  "checked_at_jst": "2026-10-28T23:32:00.557399+09:00",
+  "checked_at_jst": "2026-10-28T23:56:18.725250+09:00",
   "pdf_path": "C:\\Users\\false\\OneDrive\\ドキュメント\\ChatGPT\\pdf翻訳系\\arxiv_jp\\2508.14262v2\\pdf\\2508.14262v2_jp.pdf",
-  "pdf_sha256": "fd00fd3a7bcb191e80e1d6931a8cfd2da8f2577fcfeb087a2e11358d16f38161",
+  "pdf_sha256": "212299d5771110d85360e30caf8332552e245ee55edfc6a023eb32c6c532e3d0",
   "pdf_page_count": 21,
   "inspection_method": "pypdf reads final PDF annotations and named destinations; citation destinations are resolved to actual pages. Reference URI annotations are assigned by on-page entry coordinates and compared against ref.bib, whose sources were independently collected from INSPIRE/Crossref and audited against original BBL. No PDF mutation.",
   "reference_count_expected": 49,
@@ -17,10 +17,9 @@
   "reference_doi_count": 43,
   "reference_arxiv_eprint_count": 21,
   "references_with_external_identifiers": 45,
-  "all_external_uri_count": 105,
+  "all_external_uri_count": 106,
   "bibliography_external_uri_annotation_count": 99,
   "malformed_external_uri_count": 0,
-  "exact_version_title_pdf_link_confirmed": true,
   "original_supplement_starts_on_pdf_page7_confirmed": true,
   "expected_no_external_identifier_references": [
     "BP2002",
@@ -3032,5 +3031,74 @@
     }
   ],
   "errors": [],
-  "passed": true
+  "passed": true,
+  "exact_version_title_abs_link_confirmed": true,
+  "cover_inspire_literature_link_confirmed": true,
+  "cover_link_order_confirmed": true,
+  "body_pages_unchanged_from_prior_translation": true,
+  "cover_external_links": [
+    {
+      "uri": "https://journals.aps.org/prl/abstract/10.1103/kp9j-v4ss",
+      "rect": [
+        105.056,
+        662.24,
+        525.406,
+        676.027
+      ]
+    },
+    {
+      "uri": "https://journals.aps.org/prl/abstract/10.1103/kp9j-v4ss",
+      "rect": [
+        70.866,
+        647.243,
+        335.228,
+        656.485
+      ]
+    },
+    {
+      "uri": "https://arxiv.org/abs/2508.14262v2",
+      "rect": [
+        212.838,
+        619.598,
+        382.438,
+        632.5
+      ]
+    },
+    {
+      "uri": "https://inspirehep.net/literature/2962528",
+      "rect": [
+        179.232,
+        598.696,
+        416.043,
+        610.594
+      ]
+    },
+    {
+      "uri": "mailto:gpleasance1@gmail.com",
+      "rect": [
+        94.081,
+        104.443,
+        191.899,
+        118.436
+      ]
+    },
+    {
+      "uri": "mailto:eaurell@kth.se",
+      "rect": [
+        94.081,
+        92.443,
+        154.066,
+        106.436
+      ]
+    },
+    {
+      "uri": "mailto:petruccione@sun.ac.za",
+      "rect": [
+        94.081,
+        80.443,
+        186.505,
+        94.436
+      ]
+    }
+  ]
 }
