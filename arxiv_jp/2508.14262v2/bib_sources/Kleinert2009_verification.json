@@ -1,0 +1,66 @@
+{
+  "key": "Kleinert2009",
+  "number": 13,
+  "doi": "10.1142/7305",
+  "arxiv": "",
+  "queries": [
+    "https://inspirehep.net/api/literature?q=doi%3A10.1142%2F7305&size=5"
+  ],
+  "inspire_total": 0,
+  "crossref_url": "https://api.crossref.org/works/10.1142%2F7305",
+  "crossref_bib_url": "https://api.crossref.org/works/10.1142%2F7305/transform/application/x-bibtex",
+  "secondary_query_url": "https://inspirehep.net/api/literature?q=t+%22Path+Integrals+in+Quantum+Mechanics%22+and+a+Kleinert&size=100",
+  "secondary_candidates": [
+    {
+      "id": "656613",
+      "titles": [
+        {
+          "title": "Path Integrals in Quantum Mechanics, Statistics, Polymer Physics, and Financial Markets"
+        },
+        {
+          "source": "arXiv",
+          "title": "{\\bf PATH INTEGRALS} in Quantum Mechanics, Statistics, Polymer Physics, and Financial Markets"
+        }
+      ],
+      "authors": [
+        {
+          "full_name_unicode_normalized": "kleinert, h.",
+          "full_name": "Kleinert, H.",
+          "curated_relation": true,
+          "record": {
+            "$ref": "https://inspirehep.net/api/authors/1002666"
+          },
+          "affiliations": [
+            {
+              "record": {
+                "$ref": "https://inspirehep.net/api/institutions/902809"
+              },
+              "value": "Freie U., Berlin"
+            }
+          ],
+          "last_name": "Kleinert",
+          "ids": [
+            {
+              "schema": "INSPIRE BAI",
+              "value": "H.Kleinert.1"
+            }
+          ],
+          "signature_block": "CLANADh",
+          "uuid": "d240080c-3cce-4779-95db-422333b75cef",
+          "first_name": "H.",
+          "recid": 1002666
+        }
+      ],
+      "publication_info": [
+        {
+          "pubinfo_freetext": "World Scientific, Singapore, 2004"
+        }
+      ],
+      "imprints": null,
+      "dois": null,
+      "document_type": [
+        "article"
+      ]
+    }
+  ]
+}

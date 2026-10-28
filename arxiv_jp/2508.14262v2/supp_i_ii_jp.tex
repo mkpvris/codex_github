@@ -1,0 +1,122 @@
+\sectionlink*{I. Feynman-Vernon 核の導出}
+
+本節では、本文の式\eqref{eq:kern_func}に示した FV 核の導出を概説する。この方法は、Ohmic 浴と相互作用する相対論的粒子のデコヒーレンス汎関数を評価するために文献\cite{BP2002}で示された導出［同文献の式 (12.172) を参照］に部分的に基づいており、完全を期すため、ここにその全体を再掲する。
+
+まず、次の関数を定義する。
+\be\label{eq:F}
+    F_{\Lambda}(s) = \int^{\Lambda}_0dx\,x\coth\frac{x}{2}\cos{sx},
+\ee
+これは FV 核と次の関係にある（$\tau_B = \hb\beta$）。
+\begin{align}\label{eq:fv_kern}
+	k_r(\tau) &= \frac{2\eta}{\pi}\Big(\frac{1}{\hb\beta}\Big)^2\int^{\Omega\hb\beta}_0dx\,x\coth\frac{x}{2}\cos\frac{x\tau}{\hb\beta} \nonumber\\
+		 &= \frac{2\eta}{\pi}\frac{1}{\tau_B^2} F_{\Omega\tau_B}(\tau/\tau_B).
+\end{align}
+さらに、式\eqref{eq:F}の1階および2階の原始関数を導入する。
+\begin{align}
+	G_{\Lambda}(s) &= \int^{\Lambda}_0dx\,\coth\frac{x}{2}\sin sx, \\
+	H_{\Lambda}(s) &= \int^{\Lambda}_0dx\,\coth\frac{x}{2}\left(\frac{1-\cos sx}{x}\right),
+\end{align}
+これらは
+\be\label{eq:primatives}
+	\frac{d^2}{ds^2}H_{\Lambda}(s) = \frac{d}{ds}G_{\Lambda}(s) = F_{\Lambda}(s),
+\ee
+を満たす。また、$H_{\Lambda}(s)$ を真空部分 $H^{\rm vac}_{\Lambda}(s)$ と熱的部分 $H^{\rm th}_{\Lambda}(s)$ に分ける\cite{BP2002}。
+\begin{align}
+	H_{\Lambda}(s) &:= H^{\rm vac}_{\Lambda}(s) + H^{\rm th}_{\Lambda}(s) \nonumber\\
+    &= \int^{\Lambda}_0dx\frac{1-\cos sx}{x} + \int^{\Lambda}_0dx\left(\coth\frac{x}{2}-1\right)\frac{1-\cos sx}{x}.
+\end{align}
+ここで、真空の寄与については
+\begin{align}\label{eq:H_vac}
+	H^{\rm vac}_{\Lambda}(s) &= \int^{\Lambda s}_0dx\frac{1-\cos x}{x} \nonumber\\
+					  &= {\rm ln}\,g\Lambda s + \int^{\infty}_{\Lambda s}dx\frac{\cos x}{x} = {\rm ln}\,g\Lambda s + O\left(\frac{1}{\Lambda s}\right),
+\end{align}
+となる。2番目の等号では恒等式 $\int^{\infty}_{\Lambda s}dx\frac{\cos x}{x} = -\ln g\Lambda s + \int^{\Lambda s}_0dx\frac{1-\cos x}{x}$ を用い、$\ln g\approx 0.577$ は Euler-Mascheroni 定数である。式 (\ref{eq:H_vac}) を微分すると、真空の項としてさらに
+\begin{align}
+	G^{\rm vac}_{\Lambda}(s) &= \frac{1}{s} + \Lambda \,O\left(\frac{1}{(\Lambda s)^2}\right) \\
+	F^{\rm vac}_{\Lambda}(s) &=  -\frac{1}{s^2} + \Lambda^2\,O\left(\frac{1}{(\Lambda s)^3}\right).
+\end{align}
+を得る。$G_{\Lambda}(s)$ の熱的成分
+\be
+	G^{\rm th}_{\Lambda}(s) = \int^{\Lambda}_0dx\left(\coth\frac{x}{2} -1\right)\sin sx,
+\ee
+については、$x>1$ で $(\coth\frac{x}{2}-1)$ が指数関数的に減衰するため、積分の上限を無限大まで拡張できる。したがって、恒等式
+\[
+	\coth\frac{x}{2} -1 = 2\sum^{\infty}_{n=0}e^{-(n+1)x}
+\]
+から
+\begin{align}\label{eq:G_therm}
+	G^{\rm th}_{\Lambda}(s) &\approx 2\,{\rm Im}\int^{\infty}_0dx\sum^{\infty}_{n=0}e^{isx - (n+1)x} \nonumber\\
+    &= \pi\coth \pi s - \frac{1}{s},
+\end{align}
+となる。ここで2番目の等号は Matsubara 分解
+\[
+	\coth\frac{x}{2} = 2\left(\frac{1}{x} + 2\sum^{\infty}_{n=1}\frac{x}{x^2+(2\pi n)^2}\right).
+\]
+から得られる。次に、$G^{\rm vac}_{\Lambda}(s)$ と式\eqref{eq:G_therm}を組み合わせると
+\be\label{eq:G}
+	G_{\Lambda}(s) = \pi\coth\pi s + \Lambda O\left(\frac{1}{(\Lambda s)^2}\right).
+\ee
+を得る。$F_{\Lambda}(s)$ の熱的部分も、式 (\ref{eq:G}) を微分することによって
+\be
+	F^{\rm th}_{\Lambda}(s) = -\frac{\pi^2}{\sinh^2\pi s} + \frac{1}{s^2},
+\ee
+と求められる。したがって、$F_{\Lambda}(s)$ の真空部分と熱的部分を組み合わせると
+\be\label{eq:FL}
+	F_{\Lambda}(s) = -\pi^2\csh^2\pi s + \Lambda^2O\left(\frac{1}{(\Lambda s)^3}\right).
+\ee
+となる。式\eqref{eq:fv_kern}に戻ると、FV 核は
+\be
+	k_r(\tau) =  \frac{2\eta}{\pi}\left[-\frac{\pi^2}{\tau_B^2}\csh^2(\pi \tau/\tau_B) + \Omega^2\,O\left(\frac{1}{(\Omega \tau)^3}\right)\right].
+\ee
+と与えられる。
+
+\sectionlink*{II. デコヒーレンス汎関数の評価}\label{sec:functional}
+
+本節では、端点項の寄与を除いた、本文の式\eqref{eq:action}に示すデコヒーレンス汎関数の具体的な形を導出する。出発点として、汎関数 $T_F:\mathcal{S}(\mathbb{R})\rightarrow\mathbb{R}$ を導入する。
+\be\label{eq:functional}
+T_F[x_{\tb}] = \int^{\infty}_{-\infty}ds\,F_{\Lambda}(s)x_{\tb}(s),
+\ee
+これは、揺らぎの経路 $x_{\tb}(s)=\Delta X(\tb+\tau_Bs/2)\Delta X(\tb - \tau_Bs/2)$ の集合を含む試験関数の空間 $\mathcal{S}(\mathbb{R})$ に作用する。本文で述べたように、これらの経路は $\Omega^{-1}$ よりも短い時間スケールでは変化が無視できるものと仮定する。積分\eqref{eq:functional}を、パラメータ $q$ で定まる互いに重ならない3つの部分区間に分割する（図\ref{fig2}を参照）。
+\be\label{eq:functional_supp}
+T_F[x] = \int^{q}_{-q}ds\,F_{\Lambda}(s)x(s) + \int^{\infty}_qds\,F_{\Lambda}(s)x(s) + \int^{-q}_{-\infty}ds\,F_{\Lambda}(s)x(s),
+\ee
+ここで、表記を簡単にするため $x_{\tb}$ の添字を省略した（以後、特に断らない限り、$x_{\tb}$ の $\tb$ 依存性は明示しない）。$x(s)=x(0)+O(s)$ と展開すると、最初の積分は
+\begin{align}\label{eq:func_q}
+    \int^q_{-q}ds\,F_{\Lambda}(s)x(s) &= \int^{\Lambda}_0dy\,y\coth\frac{y}{2}\bigg(\int^{q}_{-q}ds\,x(s)\cos{sy}\bigg) \nonumber\\
+    &= x(0)\int^{\Lambda}_0dy\,y\coth\frac{y}{2}\bigg(\int^q_{-q}ds\,\cos{sy}\bigg) + ... \nonumber\\
+    &= 2G_{\Lambda}(q)x(0) + ... \, .
+\end{align}
+と書ける。ここで $\Lambda q\gg1$ と仮定すると、式\eqref{eq:G}および\eqref{eq:func_q}の主要項を用いて、十分に小さい $q$ に対し、分布 $F_{\Lambda}(s)$ が区間 $[-q,q]$ 上で Dirac のデルタ関数のように振る舞うことが分かる。
+\[
+    x\mapsto \int^q_{-q}ds\,F_{\Lambda}(s)x(s)= 2\pi\coth{(\pi q)}x(0),\qquad q\gg\Lambda^{-1}.
+\]
+そこで、式\eqref{eq:FL}を用いて次のようにも書ける。
+\be
+    T_F[x] = 2\pi\int^q_{-q}ds\,x(s)\delta(s)\coth{(\pi q)} - \pi^2\bigg[\int^{\infty}_qds\,x(s)\csh^2{(\pi s)} + \int^{-q}_{-\infty}ds\,x(s)\csh^2{(\pi s)}\bigg],
+\ee
+角括弧内の項を部分積分すると
+\begin{align}
+    T_F[x] &= 2\pi\coth{(\pi q)}\int^q_{-q}ds\,x(s)[\delta(s) - \delta(s+q) - \delta(s-q)] \nonumber\\
+    &\qquad - \pi\int^{\infty}_qds\,\coth{(\pi s)}[x'(s) - x'(-s)].
+\end{align}
+となる。さらに上式の2行目に部分積分を2回適用すると
+\be\label{eq:functional_ibp}
+    T_F[x] = 2\pi\,\coth{(\pi q)}[x(0) - x(q)] - 2\pi\int^{\infty}_qds\,\coth{(\pi s)}\,x'(s),
+\ee
+を得る。ここでは $x(s)$ が偶関数であることを用いた。残りの積分を評価するため、導関数 $x'(s)$ を
+\be\label{eq:deriv}
+    x'(s) = \frac{d}{ds}[x(s) - x(0)].
+\ee
+と書く。$x'(s)$ をこの形にする必要があるのは、そうしなければ結果に発散する項が生じるためである（$\coth{(\pi s)}$ は原点で可積分ではない）。したがって、式\eqref{eq:functional_ibp}の第2項を部分積分すると
+\be
+    T_F[x] =  2\pi\bigg(x(0) - \pi\int^{\infty}_qds\,\csh^2{(\pi s)}[x(s) - x(0)]\bigg).
+\ee
+となる。次に $q\rightarrow 0$ の極限を取る。この極限は、同時に $\Lambda\rightarrow \infty$（$\Omega\rightarrow\infty$）として $\Lambda q \gg 1$ を保証することで正当化される（例えば $q\sim \Lambda^{-\alpha}$、$0<\alpha<1$ と固定することで制御できる）。すると
+\be\label{eq:T_lim}
+    \lim_{\Lambda\rightarrow\infty}\lim_{q\rightarrow 0}T_F[x_{\tb}] =  2\pi\bigg(x_{\tb}(0) - \pi\int^{\infty}_0ds\,\csh^2(\pi s)[x_{\tb}(s) - x_{\tb}(0)]\bigg),
+\ee
+を得る。ここで $x$ に添字 $\tb$ を再び付けた。導関数\eqref{eq:deriv}が原点でゼロになるため、この極限で積分は収束することに注意されたい。最後に
+\be
+    S_r[x] = \frac{\eta}{\pi}\frac{1}{\tau_B}\int^{t_f}_{t_i}d\tb\,T_F[x_{\tb}]
+\ee
+を用い、式\eqref{eq:T_lim}を代入すると、本文の式\eqref{eq:action}が得られる。

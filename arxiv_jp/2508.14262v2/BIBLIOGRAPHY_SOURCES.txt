@@ -1,0 +1,551 @@
+参考文献取得・照合記録
+対象: arXiv:2508.14262v2 / 提供PDFに対応する原稿 main.bbl
+取得日: 2026-10-28 (Asia/Tokyo)
+
+原文49項目の順序・引用キーを保持。最初の引用より前にreference_order.texを入力する。
+書誌にINSPIRE公式BibTeXがある場合はその全フィールドを原則保持。公式BibTeXが欠落させた原文情報のみ補完し、preprint年と出版年が異なる場合はDOI一致の公式出版書誌に合わせて出典付き訂正。補完・訂正項目を下記に記録し、取得した公式export自体は別保存。Crossrefのページ範囲のen dashはBibTeX標準の--に正規化。
+原文BBLのCaldeiraLeggettAの破損DOIは10.1016/0378-4371(83)90013-4に修復。複数文献のdoi.org二重付加は正しい公式DOIに統一。
+Note1=[28]、Note2=[36]は原文の参考文献欄に置かれた注記。SuppMat=[27]は同PDFに収録された補足資料の案内。これら3項目のmisc型は論文書誌の置換ではない。
+
+集計: INSPIRE-HEP公式BibTeX 33件、Crossref公式BibTeX 12件、原文の書籍書誌1件、原文注記・補足参照3件。
+未確定: Weiss2011は原文年2011に一致する版の公式BibTeXを特定できず、原文の書誌情報を省略せず保持した。書誌項目自体の欠落は0件。
+
+
+[1] BP2002
+  採用: INSPIRE-HEP公式BibTeX
+  取得元: https://inspirehep.net/api/literature/609205?format=bibtex
+  補助取得元: なし
+  保存: bib_sources\BP2002_verified_inspire.bib
+  照合: 著者 Breuer / Petruccione、完全一致題名、2002年（pubinfo_freetextもOxford 2002）を照合。公式BibTeXにない出版社のみ原文BBLから補完。
+  検索: https://inspirehep.net/api/literature?q=t+%22The+theory+of+open+quantum+systems%22&size=5 ; https://inspirehep.net/api/literature?q=t+%22The+theory+of+open+quantum+systems%22+and+a+Breuer&size=100
+  補完・訂正: {"publisher": "Oxford University Press"}
+  不採用・未取得: 初回検索のrecord 2155295は別著者・別題名で不採用。record 2702141は2007年版のため不採用。
+  取得データSHA256: ba1c1836f79fc69474255db4354de7b323e835b091d6ba1007948ac409e8469f
+
+[2] Weiss2011
+  採用: 原論文の完全な書籍書誌（INSPIREの同名別版は不採用）
+  取得元: source/main.bbl
+  補助取得元: なし
+  保存: source\main.bbl
+  照合: 原文の著者・題名・出版社・2011年を全項目保持してbookとして復元。版の記載は原文にないため付加しない。
+  検索: https://inspirehep.net/api/literature?q=t+%22Quantum+Dissipative+Systems%22&size=5 ; https://inspirehep.net/api/literature?q=t+%22Quantum+Dissipative+Systems%22+and+a+Weiss&size=100
+  補完・訂正: {}
+  不採用・未取得: INSPIREの同名著書record 2111850は2021年版（DOI 10.1142/12402）のため不採用。2011年に一致する公式exportを特定できなかった。
+  取得データSHA256: e51d3eedf71be3d309cb60e3a5bbf9564e10d91805fed344e7d71dce2530c94e
+
+[3] Wilner2015
+  採用: Crossref公式BibTeX
+  取得元: https://api.crossref.org/works/10.1103%2FPhysRevB.92.195143/transform/application/x-bibtex
+  補助取得元: なし
+  保存: bib_sources\Wilner2015_crossref.bib
+  照合: 原文のDOI 10.1103/PhysRevB.92.195143 とCrossref公式レコードのDOIが一致。著者・雑誌・巻・年も原文BBLと照合。INSPIREはDOI・題名の両検索で該当なし。 Crossref BibTeXで欠落している論文番号195143を原文BBLから補完。
+  検索: https://inspirehep.net/api/literature?q=doi%3A10.1103%2FPhysRevB.92.195143&size=5 ; https://inspirehep.net/api/literature?q=t+%22Sub-Ohmic+to+super-Ohmic+crossover+behavior+in+nonequilibrium+quantum+systems+with+electron-phonon+interactions%22&size=100
+  補完・訂正: {"pages": "195143"}
+  不採用・未取得: なし
+  取得データSHA256: 06f433d354ce659f51624a15af95c5000c7a28ac3ed78aafe4cedd725b0cb235
+
+[4] Leppakangas2018
+  採用: INSPIRE-HEP公式BibTeX
+  取得元: https://inspirehep.net/api/literature/2933153?format=bibtex
+  補助取得元: なし
+  保存: bib_sources\Leppakangas2018_inspire.bib
+  照合: 原文のDOI 10.1103/PhysRevA.97.052321 と公式レコードのDOIが一致。著者・雑誌・巻・年も原文BBLと照合。
+  検索: https://inspirehep.net/api/literature?q=doi%3A10.1103%2FPhysRevA.97.052321&size=5 ; 
+  補完・訂正: {}
+  不採用・未取得: なし
+  取得データSHA256: 56709da3f75182ed938a32e4ec98338a9eee77758caa8f7cc9692f8b9d043010
+
+[5] CaldeiraLeggettA
+  採用: INSPIRE-HEP公式BibTeX
+  取得元: https://inspirehep.net/api/literature/176411?format=bibtex
+  補助取得元: なし
+  保存: bib_sources\CaldeiraLeggettA_inspire.bib
+  照合: 原文のDOI 10.1016/0378-4371(83)90013-4 と公式レコードのDOIが一致。著者・雑誌・巻・年も原文BBLと照合。
+  検索: https://inspirehep.net/api/literature?q=doi%3A10.1016%2F0378-4371%2883%2990013-4&size=5 ; 
+  補完・訂正: {}
+  不採用・未取得: なし
+  取得データSHA256: d21d807fe61b907b398b61926427ae3f32998c4c4c68fc652c50353b3c4b7905
+
+[6] Caldeira1981
+  採用: INSPIRE-HEP公式BibTeX
+  取得元: https://inspirehep.net/api/literature/164042?format=bibtex
+  補助取得元: なし
+  保存: bib_sources\Caldeira1981_inspire.bib
+  照合: 原文のDOI 10.1103/PhysRevLett.46.211 と公式レコードのDOIが一致。著者・雑誌・巻・年も原文BBLと照合。
+  検索: https://inspirehep.net/api/literature?q=doi%3A10.1103%2FPhysRevLett.46.211&size=5 ; 
+  補完・訂正: {}
+  不採用・未取得: なし
+  取得データSHA256: ecc58228cc1d2215d6188fcc3184b2f7f48d8d2a90cfc5d4e7f84059b1dc0ca6
+
+[7] CaldeiraLeggettB
+  採用: INSPIRE-HEP公式BibTeX
+  取得元: https://inspirehep.net/api/literature/176413?format=bibtex
+  補助取得元: なし
+  保存: bib_sources\CaldeiraLeggettB_inspire.bib
+  照合: 原文のDOI 10.1016/0003-4916(83)90202-6 と公式レコードのDOIが一致。著者・雑誌・巻・年も原文BBLと照合。
+  検索: https://inspirehep.net/api/literature?q=doi%3A10.1016%2F0003-4916%2883%2990202-6&size=5 ; 
+  補完・訂正: {}
+  不採用・未取得: なし
+  取得データSHA256: b8b443c8573241100765a206ca4aee830212f84dd6568638b245cc4ad264921b
+
+[8] SpinBoson
+  採用: INSPIRE-HEP公式BibTeX
+  取得元: https://inspirehep.net/api/literature/260239?format=bibtex
+  補助取得元: なし
+  保存: bib_sources\SpinBoson_inspire.bib
+  照合: 原文のDOI 10.1103/RevModPhys.59.1 と公式レコードのDOIが一致。著者・雑誌・巻・年も原文BBLと照合。
+  検索: https://inspirehep.net/api/literature?q=doi%3A10.1103%2FRevModPhys.59.1&size=5 ; 
+  補完・訂正: {}
+  不採用・未取得: なし
+  取得データSHA256: 8d82039b6ba4e5baad6e23146e2fc550aff2c54832fa0b5d89cf8a62a80f8877
+
+[9] Unruh1989
+  採用: INSPIRE-HEP公式BibTeX
+  取得元: https://inspirehep.net/api/literature/25029?format=bibtex
+  補助取得元: なし
+  保存: bib_sources\Unruh1989_inspire.bib
+  照合: 原文のDOI 10.1103/PhysRevD.40.1071 と公式レコードのDOIが一致。著者・雑誌・巻・年も原文BBLと照合。
+  検索: https://inspirehep.net/api/literature?q=doi%3A10.1103%2FPhysRevD.40.1071&size=5 ; 
+  補完・訂正: {}
+  不採用・未取得: なし
+  取得データSHA256: 2aabed7f1c8891025fef1a57737117e5ad8e6158c5e58f004879779d0d12f7b3
+
+[10] Zurek1993
+  採用: INSPIRE-HEP公式BibTeX
+  取得元: https://inspirehep.net/api/literature/32909?format=bibtex
+  補助取得元: なし
+  保存: bib_sources\Zurek1993_inspire.bib
+  照合: 原文のDOI 10.1103/PhysRevLett.70.1187 と公式レコードのDOIが一致。著者・雑誌・巻・年も原文BBLと照合。
+  検索: https://inspirehep.net/api/literature?q=doi%3A10.1103%2FPhysRevLett.70.1187&size=5 ; 
+  補完・訂正: {}
+  不採用・未取得: なし
+  取得データSHA256: 077a81fc9217807f279ddd18bf974937189cf4e5d3a960740bdd2c224c0237d5
+
+[11] Paz1993
+  採用: INSPIRE-HEP公式BibTeX
+  取得元: https://inspirehep.net/api/literature/32914?format=bibtex
+  補助取得元: なし
+  保存: bib_sources\Paz1993_inspire.bib
+  照合: 原文のDOI 10.1103/PhysRevD.47.488 と公式レコードのDOIが一致。著者・雑誌・巻・年も原文BBLと照合。
+  検索: https://inspirehep.net/api/literature?q=doi%3A10.1103%2FPhysRevD.47.488&size=5 ; 
+  補完・訂正: {}
+  不採用・未取得: なし
+  取得データSHA256: d2e523cf56df4bdd55c21be4f71919cbc8fb80856940817ed4dff6ea67d17e35
+
+[12] ParikhWilczekZahariade2020
+  採用: INSPIRE-HEP公式BibTeX
+  取得元: https://inspirehep.net/api/literature/1796541?format=bibtex
+  補助取得元: なし
+  保存: bib_sources\ParikhWilczekZahariade2020_inspire.bib
+  照合: 原文のDOI 10.1142/S0218271820420018 と公式レコードのDOIが一致。著者・雑誌・巻・年も原文BBLと照合。
+  検索: https://inspirehep.net/api/literature?q=doi%3A10.1142%2FS0218271820420018&size=5 ; 
+  補完・訂正: {}
+  不採用・未取得: なし
+  取得データSHA256: e246063c7abef8c166bb159e5079ed53697682664f4774e9f39e71f052a8637c
+
+[13] Kleinert2009
+  採用: Crossref公式BibTeX
+  取得元: https://api.crossref.org/works/10.1142%2F7305/transform/application/x-bibtex
+  補助取得元: なし
+  保存: bib_sources\Kleinert2009_crossref.bib
+  照合: 原文のDOI 10.1142/7305、著者Hagen Kleinert、完全一致題名、World Scientific、2009年が一致。
+  検索: https://inspirehep.net/api/literature?q=doi%3A10.1142%2F7305&size=5 ; https://inspirehep.net/api/literature?q=t+%22Path+Integrals+in+Quantum+Mechanics%22+and+a+Kleinert&size=100
+  補完・訂正: {}
+  不採用・未取得: INSPIRE record 656613は2004年版のため不採用。2009年版の公式exportは特定できなかった。
+  取得データSHA256: 5c0cb298b97d0217f3be0232816d52ee6ba892d7a2e38898a27bc77c0074e5ef
+
+[14] Breuer2001
+  採用: INSPIRE-HEP公式BibTeX
+  取得元: https://inspirehep.net/api/literature/2948600?format=bibtex
+  補助取得元: なし
+  保存: bib_sources\Breuer2001_inspire.bib
+  照合: 原文のDOI 10.1103/PhysRevA.63.032102 と公式レコードのDOIが一致。著者・雑誌・巻・年も原文BBLと照合。
+  検索: https://inspirehep.net/api/literature?q=doi%3A10.1103%2FPhysRevA.63.032102&size=5 ; 
+  補完・訂正: {}
+  不採用・未取得: なし
+  取得データSHA256: ec1dc02b24530b8f375dfa132b78306705a86761c21e210340b660d982c0dfd2
+
+[15] Baym2009
+  採用: INSPIRE-HEP公式BibTeX
+  取得元: https://inspirehep.net/api/literature/813440?format=bibtex
+  補助取得元: なし
+  保存: bib_sources\Baym2009_inspire.bib
+  照合: 原文のDOI 10.1073/pnas.0813239106 と公式レコードのDOIが一致。著者・雑誌・巻・年も原文BBLと照合。
+  検索: https://inspirehep.net/api/literature?q=doi%3A10.1073%2Fpnas.0813239106&size=5 ; 
+  補完・訂正: {}
+  不採用・未取得: なし
+  取得データSHA256: 8c4acc99d7910ff0d79477616a559523ad4d7a2a8021ca707a40b2289320e3b1
+
+[16] FeynmanVernon
+  採用: INSPIRE-HEP公式BibTeX
+  取得元: https://inspirehep.net/api/literature/9391?format=bibtex
+  補助取得元: なし
+  保存: bib_sources\FeynmanVernon_inspire.bib
+  照合: 原文のDOI 10.1016/0003-4916(63)90068-X と公式レコードのDOIが一致。著者・雑誌・巻・年も原文BBLと照合。
+  検索: https://inspirehep.net/api/literature?q=doi%3A10.1016%2F0003-4916%2863%2990068-X&size=5 ; 
+  補完・訂正: {}
+  不採用・未取得: なし
+  取得データSHA256: 072b9d296c6dfb612ea0db0437bb2a6b87775c1cbb9c759ca5b239c03cb265e0
+
+[17] StockburgerMak1999
+  採用: Crossref公式BibTeX
+  取得元: https://api.crossref.org/works/10.1063%2F1.478396/transform/application/x-bibtex
+  補助取得元: なし
+  保存: bib_sources\StockburgerMak1999_crossref.bib
+  照合: 原文のDOI 10.1063/1.478396 とCrossref公式レコードのDOIが一致。著者・雑誌・巻・年も原文BBLと照合。INSPIREはDOI・題名の両検索で該当なし。
+  検索: https://inspirehep.net/api/literature?q=doi%3A10.1063%2F1.478396&size=5 ; https://inspirehep.net/api/literature?q=t+%22Stochastic+Liouvillian+algorithm+to+simulate+dissipative+quantum+dynamics+with+arbitrary+precision%22&size=100
+  補完・訂正: {}
+  不採用・未取得: なし
+  取得データSHA256: 35c31244d12dabaeca1df9f82217b2ad6b2a5cf2d464f569aa83c47fafb1b618
+
+[18] Stockburger1998
+  採用: Crossref公式BibTeX
+  取得元: https://api.crossref.org/works/10.1103%2FPhysRevLett.80.2657/transform/application/x-bibtex
+  補助取得元: なし
+  保存: bib_sources\Stockburger1998_crossref.bib
+  照合: 原文のDOI 10.1103/PhysRevLett.80.2657 とCrossref公式レコードのDOIが一致。著者・雑誌・巻・年も原文BBLと照合。INSPIREはDOI・題名の両検索で該当なし。
+  検索: https://inspirehep.net/api/literature?q=doi%3A10.1103%2FPhysRevLett.80.2657&size=5 ; https://inspirehep.net/api/literature?q=t+%22Dynamical+Simulation+of+Current+Fluctuations+in+a+Dissipative+Two-State+System%22&size=100
+  補完・訂正: {}
+  不採用・未取得: なし
+  取得データSHA256: dae9f917a5faeda0d231ff9f74c459008030d5bdf146b520d936e1fa6c707c39
+
+[19] Stockburger2002
+  採用: INSPIRE-HEP公式BibTeX
+  取得元: https://inspirehep.net/api/literature/2974880?format=bibtex
+  補助取得元: なし
+  保存: bib_sources\Stockburger2002_inspire.bib
+  照合: 原文のDOI 10.1103/PhysRevLett.88.170407 と公式レコードのDOIが一致。著者・雑誌・巻・年も原文BBLと照合。
+  検索: https://inspirehep.net/api/literature?q=doi%3A10.1103%2FPhysRevLett.88.170407&size=5 ; 
+  補完・訂正: {}
+  不採用・未取得: なし
+  取得データSHA256: ea7524e3ea39ae484a0caa2f2340ff1adf9de98476c29739ba593aef7c3c0f2b
+
+[20] Diosi1993
+  採用: Crossref公式BibTeX
+  取得元: https://api.crossref.org/works/10.1016%2F0378-4371%2893%2990065-C/transform/application/x-bibtex
+  補助取得元: なし
+  保存: bib_sources\Diosi1993_crossref.bib
+  照合: 原文のDOI 10.1016/0378-4371(93)90065-C とCrossref公式レコードのDOIが一致。著者・雑誌・巻・年も原文BBLと照合。INSPIREはDOI・題名の両検索で該当なし。
+  検索: https://inspirehep.net/api/literature?q=doi%3A10.1016%2F0378-4371%2893%2990065-C&size=5 ; https://inspirehep.net/api/literature?q=t+%22Calderia-Leggett+master+equation+and+medium+temperatures%22&size=100
+  補完・訂正: {}
+  不採用・未取得: なし
+  取得データSHA256: ea991d550cb5df5957d1d3c575ce4fc4f898962269b6816207e087cb20056420
+
+[21] Diosi1993a
+  採用: Crossref公式BibTeX
+  取得元: https://api.crossref.org/works/10.1209%2F0295-5075%2F22%2F1%2F001/transform/application/x-bibtex
+  補助取得元: なし
+  保存: bib_sources\Diosi1993a_crossref.bib
+  照合: 原文のDOI 10.1209/0295-5075/22/1/001 とCrossref公式レコードのDOIが一致。著者・雑誌・巻・年も原文BBLと照合。INSPIREはDOI・題名の両検索で該当なし。
+  検索: https://inspirehep.net/api/literature?q=doi%3A10.1209%2F0295-5075%2F22%2F1%2F001&size=5 ; https://inspirehep.net/api/literature?q=t+%22On+High-Temperature+Markovian+Equation+for+Quantum+Brownian+Motion%22&size=100
+  補完・訂正: {}
+  不採用・未取得: なし
+  取得データSHA256: 5f633d277e11faa99efa6839aaa7271f8ed6f8fdfa8363747e26067997e5b235
+
+[22] Halliwell1995
+  採用: INSPIRE-HEP公式BibTeX
+  取得元: https://inspirehep.net/api/literature/393314?format=bibtex
+  補助取得元: なし
+  保存: bib_sources\Halliwell1995_inspire.bib
+  照合: 原文のDOI 10.1103/PhysRevD.52.7294 と公式レコードのDOIが一致。著者・雑誌・巻・年も原文BBLと照合。
+  検索: https://inspirehep.net/api/literature?q=doi%3A10.1103%2FPhysRevD.52.7294&size=5 ; 
+  補完・訂正: {}
+  不採用・未取得: なし
+  取得データSHA256: 43a2103277b1027140602ae4b6a50b1af3a915e1ccac8312a046ce022ca564f9
+
+[23] Gao1997
+  採用: Crossref公式BibTeX
+  取得元: https://api.crossref.org/works/10.1103%2FPhysRevLett.79.3101/transform/application/x-bibtex
+  補助取得元: なし
+  保存: bib_sources\Gao1997_crossref.bib
+  照合: 原文のDOI 10.1103/PhysRevLett.79.3101 とCrossref公式レコードのDOIが一致。著者・雑誌・巻・年も原文BBLと照合。INSPIREはDOI・題名の両検索で該当なし。
+  検索: https://inspirehep.net/api/literature?q=doi%3A10.1103%2FPhysRevLett.79.3101&size=5 ; https://inspirehep.net/api/literature?q=t+%22Dissipative+Quantum+Dynamics+with+a+Lindblad+Functional%22&size=100
+  補完・訂正: {}
+  不採用・未取得: なし
+  取得データSHA256: 9475e2a6c5029ef5bb11c0baa4ee30a4cb91ff8dc90535728a4cf4d03b9f41f6
+
+[24] Ford1999
+  採用: Crossref公式BibTeX
+  取得元: https://api.crossref.org/works/10.1103%2FPhysRevLett.82.3376/transform/application/x-bibtex
+  補助取得元: なし
+  保存: bib_sources\Ford1999_crossref.bib
+  照合: 原文のDOI 10.1103/PhysRevLett.82.3376 とCrossref公式レコードのDOIが一致。著者・雑誌・巻・年も原文BBLと照合。INSPIREはDOI・題名の両検索で該当なし。
+  検索: https://inspirehep.net/api/literature?q=doi%3A10.1103%2FPhysRevLett.82.3376&size=5 ; https://inspirehep.net/api/literature?q=t+%22Comment+on++Dissipative+Quantum+Dynamics+with+a+Lindblad+Functional+%22&size=100
+  補完・訂正: {}
+  不採用・未取得: なし
+  取得データSHA256: b10590e22e4b8c20f0323133228d6b8ae83a45adb6f7e4d34f0afd934cf3ba2a
+
+[25] Vacchini2000
+  採用: INSPIRE-HEP公式BibTeX
+  取得元: https://inspirehep.net/api/literature/2988218?format=bibtex
+  補助取得元: なし
+  保存: bib_sources\Vacchini2000_inspire.bib
+  照合: 原文のDOI 10.1103/PhysRevLett.84.1374 と公式レコードのDOIが一致。著者・雑誌・巻・年も原文BBLと照合。
+  検索: https://inspirehep.net/api/literature?q=doi%3A10.1103%2FPhysRevLett.84.1374&size=5 ; 
+  補完・訂正: {}
+  不採用・未取得: なし
+  取得データSHA256: eede010ac7e00fbde097589b1b8a873cbde729538a822feaeeddaafee98d61d9
+
+[26] Petruccione2005
+  採用: INSPIRE-HEP公式BibTeX
+  取得元: https://inspirehep.net/api/literature/2979003?format=bibtex
+  補助取得元: なし
+  保存: bib_sources\Petruccione2005_inspire.bib
+  照合: 原文のDOI 10.1103/PhysRevE.71.046134 と公式レコードのDOIが一致。著者・雑誌・巻・年も原文BBLと照合。
+  検索: https://inspirehep.net/api/literature?q=doi%3A10.1103%2FPhysRevE.71.046134&size=5 ; 
+  補完・訂正: {}
+  不採用・未取得: なし
+  取得データSHA256: 5460022d0870beed9f3b8704b082fb9bc1a483476d2cbc429f5fb0404ceead85
+
+[27] SuppMat
+  採用: 原論文の注記・同梱補足資料の参照
+  取得元: source/main.bbl
+  補助取得元: なし
+  保存: source\main.bbl
+  照合: 書誌論文ではなく原文の注記なのでmisc型を使用し、注記全文を日本語化。引用順・キーを保持。 補足資料の開始は原文PDFの7ページ目であることを確認し、同じv2のPDFの#page=7へリンク。
+  検索: 
+  補完・訂正: {}
+  不採用・未取得: なし
+  取得データSHA256: e51d3eedf71be3d309cb60e3a5bbf9564e10d91805fed344e7d71dce2530c94e
+
+[28] Note1
+  採用: 原論文の注記・同梱補足資料の参照
+  取得元: source/main.bbl
+  補助取得元: なし
+  保存: source\main.bbl
+  照合: 書誌論文ではなく原文の注記なのでmisc型を使用し、注記全文を日本語化。引用順・キーを保持。
+  検索: 
+  補完・訂正: {}
+  不採用・未取得: なし
+  取得データSHA256: e51d3eedf71be3d309cb60e3a5bbf9564e10d91805fed344e7d71dce2530c94e
+
+[29] Homa2019
+  採用: INSPIRE-HEP公式BibTeX
+  取得元: https://inspirehep.net/api/literature/3047998?format=bibtex
+  補助取得元: なし
+  保存: bib_sources\Homa2019_inspire.bib
+  照合: 著者 Homa / Bernád / Lisztes、Eur. Phys. J. D 73, 53 (2019) が一致。公式レコードでDOIとarXiv番号も確認。
+  検索: https://inspirehep.net/api/literature?q=a+Homa+and+date+2019+and+j+%22Eur.Phys.J.D%22&size=5 ; 
+  補完・訂正: {}
+  不採用・未取得: なし
+  取得データSHA256: 45c76a39456b09e2f89734a04abc2bc47146df9142168ad50b11148cec8f6fb6
+
+[30] Xu2023
+  採用: INSPIRE-HEP公式BibTeX
+  取得元: https://inspirehep.net/api/literature/2683835?format=bibtex
+  補助取得元: なし
+  保存: bib_sources\Xu2023_inspire.bib
+  照合: 原文のarXiv番号 2307.16790 が一致。Xu / Vadimov / Krug / Stockburger / Ankerhold、2023年と照合。
+  検索: https://inspirehep.net/api/literature?q=arxiv%3A2307.16790&size=5 ; 
+  補完・訂正: {}
+  不採用・未取得: なし
+  取得データSHA256: b78a873b375a4de9db0550d2d513cb52689594ef32bd404b5fe18b14ba65c7a1
+
+[31] Xu2025
+  採用: Crossref公式BibTeX
+  取得元: https://api.crossref.org/works/10.1140%2Fepjs%2Fs11734-025-01925-0/transform/application/x-bibtex
+  補助取得元: なし
+  保存: bib_sources\Xu2025_crossref.bib
+  照合: 原文のDOI 10.1140/epjs/s11734-025-01925-0 とCrossref公式レコードのDOIが一致。著者・雑誌・巻・年も原文BBLと照合。INSPIREはDOI・題名の両検索で該当なし。
+  検索: https://inspirehep.net/api/literature?q=doi%3A10.1140%2Fepjs%2Fs11734-025-01925-0&size=5 ; https://inspirehep.net/api/literature?q=t+%22Quantum+Brownian+motion+for+embedded+system%22&size=100
+  補完・訂正: {}
+  不採用・未取得: なし
+  取得データSHA256: 964c0b874b5f1d66184410c8790ac47c65968241b7aa3b78a58f2da4e3fe5bd8
+
+[32] Dekker1977
+  採用: Crossref公式BibTeX
+  取得元: https://api.crossref.org/works/10.1103%2FPhysRevA.16.2126/transform/application/x-bibtex
+  補助取得元: なし
+  保存: bib_sources\Dekker1977_crossref.bib
+  照合: 原文のDOI 10.1103/PhysRevA.16.2126 とCrossref公式レコードのDOIが一致。著者・雑誌・巻・年も原文BBLと照合。INSPIREはDOI・題名の両検索で該当なし。
+  検索: https://inspirehep.net/api/literature?q=doi%3A10.1103%2FPhysRevA.16.2126&size=5 ; https://inspirehep.net/api/literature?q=t+%22Quantization+of+the+linearly+damped+harmonic+oscillator%22&size=100
+  補完・訂正: {}
+  不採用・未取得: なし
+  取得データSHA256: 0da10cea9f10879705df2d51644351b713e9567353f1acf477a9fd457ca2609d
+
+[33] Dekker1981
+  採用: Crossref公式BibTeX
+  取得元: https://api.crossref.org/works/10.1016%2F0370-1573%2881%2990033-8/transform/application/x-bibtex
+  補助取得元: なし
+  保存: bib_sources\Dekker1981_crossref.bib
+  照合: 原文のDOI 10.1016/0370-1573(81)90033-8 とCrossref公式レコードのDOIが一致。著者・雑誌・巻・年も原文BBLと照合。INSPIREはDOI・題名の両検索で該当なし。
+  検索: https://inspirehep.net/api/literature?q=doi%3A10.1016%2F0370-1573%2881%2990033-8&size=5 ; https://inspirehep.net/api/literature?q=t+%22Classical+and+quantum+mechanics+of+the+damped+harmonic+oscillator%22&size=100
+  補完・訂正: {}
+  不採用・未取得: なし
+  取得データSHA256: aacdfd076c168d2091a0e3667a81540a40bfdea01e3733fa39bf3fe15d4b5960
+
+[34] Gorini1976
+  採用: INSPIRE-HEP公式BibTeX
+  取得元: https://inspirehep.net/api/literature/2064?format=bibtex
+  補助取得元: なし
+  保存: bib_sources\Gorini1976_inspire.bib
+  照合: 原文のDOI 10.1063/1.522979 と公式レコードのDOIが一致。著者・雑誌・巻・年も原文BBLと照合。
+  検索: https://inspirehep.net/api/literature?q=doi%3A10.1063%2F1.522979&size=5 ; 
+  補完・訂正: {}
+  不採用・未取得: なし
+  取得データSHA256: 0fe1180bb437bf2791060ee03ab9de1597beb62f9a6126bd14965d0b5ae292ed
+
+[35] Lindblad1976
+  採用: INSPIRE-HEP公式BibTeX
+  取得元: https://inspirehep.net/api/literature/98305?format=bibtex
+  補助取得元: なし
+  保存: bib_sources\Lindblad1976_inspire.bib
+  照合: 原文のDOI 10.1007/BF01608499 と公式レコードのDOIが一致。著者・雑誌・巻・年も原文BBLと照合。
+  検索: https://inspirehep.net/api/literature?q=doi%3A10.1007%2FBF01608499&size=5 ; 
+  補完・訂正: {}
+  不採用・未取得: なし
+  取得データSHA256: ee416076dd0c94628dd0bbcecfd2a4e28c78ad739fdbd0bdacabe4b61ad17082
+
+[36] Note2
+  採用: 原論文の注記・同梱補足資料の参照
+  取得元: source/main.bbl
+  補助取得元: なし
+  保存: source\main.bbl
+  照合: 書誌論文ではなく原文の注記なのでmisc型を使用し、注記全文を日本語化。引用順・キーを保持。
+  検索: 
+  補完・訂正: {}
+  不採用・未取得: なし
+  取得データSHA256: e51d3eedf71be3d309cb60e3a5bbf9564e10d91805fed344e7d71dce2530c94e
+
+[37] Aurell2020
+  採用: INSPIRE-HEP公式BibTeX
+  取得元: https://inspirehep.net/api/literature/3055038?format=bibtex
+  補助取得元: https://api.crossref.org/works/10.1088%2F1751-8121%2Fab9274
+  保存: bib_sources\Aurell2020_inspire.bib
+  照合: 原文のDOI 10.1088/1751-8121/ab9274 と公式レコードのDOIが一致。著者・雑誌・巻・年も原文BBLと照合。 INSPIRE exportはpreprint書誌で雑誌・巻・論文番号が欠落し、year=2019/month=12だった。原文BBLの出版書誌とDOI一致Crossref公式レコードを照合し、journal/volume/number/pagesを補完、出版年2020・オンライン出版月6に訂正。公式export自体は変更せず別保存。
+  検索: https://inspirehep.net/api/literature?q=doi%3A10.1088%2F1751-8121%2Fab9274&size=5 ; 
+  補完・訂正: {"journal": "Journal of Physics A: Mathematical and Theoretical", "volume": "53", "number": "27", "pages": "275303", "year": "2020", "month": "6"}
+  不採用・未取得: なし
+  取得データSHA256: f99044ae2fa78ffae9185657c60af870c9d652c7e56713ff840c59bc9a683f42
+
+[38] AlickiLendi2007
+  採用: Crossref公式BibTeX
+  取得元: https://api.crossref.org/works/10.1007%2F3-540-70861-8/transform/application/x-bibtex
+  補助取得元: なし
+  保存: bib_sources\AlickiLendi2007_crossref.bib
+  照合: 原文のDOI 10.1007/3-540-70861-8 とCrossref公式レコードのDOIが一致。著者・雑誌・巻・年も原文BBLと照合。INSPIREはDOI・題名の両検索で該当なし。 Crossref JSONには完全一致題名があるがBibTeXのtitle/authorが欠落するため、題名を公式JSON、著者を原文BBLから補完。
+  検索: https://inspirehep.net/api/literature?q=doi%3A10.1007%2F3-540-70861-8&size=5 ; https://inspirehep.net/api/literature?q=t+%22Quantum+Dynamical+Semigroups%22+and+a+Alicki&size=100
+  補完・訂正: {"title": "Quantum Dynamical Semigroups and Applications", "author": "Alicki, R. and Lendi, K."}
+  不採用・未取得: 題名の二次INSPIRE検索で得たrecord 2976737は別著作のため不採用。Springerページはanti-bot画面となったため独立の著者照合根拠には使用しない。
+  取得データSHA256: c5d3d82048789087ce91826b7a06a34212f87b2dab7a2b1e4a78c2965d2c0486
+
+[39] Dvali2011
+  採用: INSPIRE-HEP公式BibTeX
+  取得元: https://inspirehep.net/api/literature/872211?format=bibtex
+  補助取得元: なし
+  保存: bib_sources\Dvali2011_inspire.bib
+  照合: 原文のDOI 10.1007/JHEP08(2011)108 と公式レコードのDOIが一致。著者・雑誌・巻・年も原文BBLと照合。
+  検索: https://inspirehep.net/api/literature?q=doi%3A10.1007%2FJHEP08%282011%29108&size=5 ; 
+  補完・訂正: {}
+  不採用・未取得: なし
+  取得データSHA256: a8f1ce430afcaec05b2bd5d5635c4b47318e582b585593ed9dd31449f1a20fac
+
+[40] Hu1992
+  採用: INSPIRE-HEP公式BibTeX
+  取得元: https://inspirehep.net/api/literature/31077?format=bibtex
+  補助取得元: なし
+  保存: bib_sources\Hu1992_inspire.bib
+  照合: 原文のDOI 10.1103/PhysRevD.45.2843 と公式レコードのDOIが一致。著者・雑誌・巻・年も原文BBLと照合。
+  検索: https://inspirehep.net/api/literature?q=doi%3A10.1103%2FPhysRevD.45.2843&size=5 ; 
+  補完・訂正: {}
+  不採用・未取得: なし
+  取得データSHA256: b54a7510d58ec0a9590d65723662ddf47c021b7858833cd80ab53f63167f5078
+
+[41] Strunz1996
+  採用: INSPIRE-HEP公式BibTeX
+  取得元: https://inspirehep.net/api/literature/424929?format=bibtex
+  補助取得元: なし
+  保存: bib_sources\Strunz1996_inspire.bib
+  照合: 原文のDOI 10.1016/S0375-9601(96)00805-5 と公式レコードのDOIが一致。著者・雑誌・巻・年も原文BBLと照合。
+  検索: https://inspirehep.net/api/literature?q=doi%3A10.1016%2FS0375-9601%2896%2900805-5&size=5 ; 
+  補完・訂正: {}
+  不採用・未取得: なし
+  取得データSHA256: 887b43a800ed694e10040c51beeebdb7afae310c7487ae3a288bcdd4ba8148e1
+
+[42] DiosiStrunz1997
+  採用: INSPIRE-HEP公式BibTeX
+  取得元: https://inspirehep.net/api/literature/444677?format=bibtex
+  補助取得元: なし
+  保存: bib_sources\DiosiStrunz1997_inspire.bib
+  照合: 原文のDOI 10.1016/S0375-9601(97)00717-2 と公式レコードのDOIが一致。著者・雑誌・巻・年も原文BBLと照合。
+  検索: https://inspirehep.net/api/literature?q=doi%3A10.1016%2FS0375-9601%2897%2900717-2&size=5 ; 
+  補完・訂正: {}
+  不採用・未取得: なし
+  取得データSHA256: 3334c96ce25eb43a7772e4b8bab9b9926d1a56c3d26be76704e01ea40244b9af
+
+[43] DiosiGisinStrunz1998
+  採用: INSPIRE-HEP公式BibTeX
+  取得元: https://inspirehep.net/api/literature/468491?format=bibtex
+  補助取得元: なし
+  保存: bib_sources\DiosiGisinStrunz1998_inspire.bib
+  照合: 原文のDOI 10.1103/PhysRevA.58.1699 と公式レコードのDOIが一致。著者・雑誌・巻・年も原文BBLと照合。
+  検索: https://inspirehep.net/api/literature?q=doi%3A10.1103%2FPhysRevA.58.1699&size=5 ; 
+  補完・訂正: {}
+  不採用・未取得: なし
+  取得データSHA256: b30ad6a106f2e4cda488494224bb986cda89a16d268519c9983c80505a2957ec
+
+[44] Yu2004
+  採用: INSPIRE-HEP公式BibTeX
+  取得元: https://inspirehep.net/api/literature/2980106?format=bibtex
+  補助取得元: なし
+  保存: bib_sources\Yu2004_inspire.bib
+  照合: 原文のDOI 10.1103/PhysRevA.69.062107 と公式レコードのDOIが一致。著者・雑誌・巻・年も原文BBLと照合。
+  検索: https://inspirehep.net/api/literature?q=doi%3A10.1103%2FPhysRevA.69.062107&size=5 ; 
+  補完・訂正: {}
+  不採用・未取得: なし
+  取得データSHA256: 6b7550cde645d2dddd8c44f9be41dd1778bf1e9160ee2a8c7f48321cb43afb4a
+
+[45] StrunzYu2004
+  採用: INSPIRE-HEP公式BibTeX
+  取得元: https://inspirehep.net/api/literature/2991402?format=bibtex
+  補助取得元: なし
+  保存: bib_sources\StrunzYu2004_inspire.bib
+  照合: 原文のDOI 10.1103/PhysRevA.69.052115 と公式レコードのDOIが一致。著者・雑誌・巻・年も原文BBLと照合。
+  検索: https://inspirehep.net/api/literature?q=doi%3A10.1103%2FPhysRevA.69.052115&size=5 ; 
+  補完・訂正: {}
+  不採用・未取得: なし
+  取得データSHA256: 92993a11fe3fe2a03e946c0bee24e8ebfd7debbde4aa75dd8958666ed7780df7
+
+[46] DiosiFerialdi2014
+  採用: INSPIRE-HEP公式BibTeX
+  取得元: https://inspirehep.net/api/literature/3014671?format=bibtex
+  補助取得元: なし
+  保存: bib_sources\DiosiFerialdi2014_inspire.bib
+  照合: 原文のDOI 10.1103/PhysRevLett.113.200403 と公式レコードのDOIが一致。著者・雑誌・巻・年も原文BBLと照合。
+  検索: https://inspirehep.net/api/literature?q=doi%3A10.1103%2FPhysRevLett.113.200403&size=5 ; 
+  補完・訂正: {}
+  不採用・未取得: なし
+  取得データSHA256: f3c055c6501b0f517ba210fec480f2663b6b08808e6e2ebbcb12ec6552a155df
+
+[47] Ferialdi2016
+  採用: INSPIRE-HEP公式BibTeX
+  取得元: https://inspirehep.net/api/literature/3028675?format=bibtex
+  補助取得元: なし
+  保存: bib_sources\Ferialdi2016_inspire.bib
+  照合: 原文のDOI 10.1103/PhysRevLett.116.120402 と公式レコードのDOIが一致。著者・雑誌・巻・年も原文BBLと照合。
+  検索: https://inspirehep.net/api/literature?q=doi%3A10.1103%2FPhysRevLett.116.120402&size=5 ; 
+  補完・訂正: {}
+  不採用・未取得: なし
+  取得データSHA256: 28e26a1bc08ad2ccb58f180eaa31be52c4bf08dc887bd2e4f5af47744dd7300b
+
+[48] Ferialdi2017
+  採用: INSPIRE-HEP公式BibTeX
+  取得元: https://inspirehep.net/api/literature/3036317?format=bibtex
+  補助取得元: なし
+  保存: bib_sources\Ferialdi2017_inspire.bib
+  照合: 原文のDOI 10.1103/PhysRevA.95.052109 と公式レコードのDOIが一致。著者・雑誌・巻・年も原文BBLと照合。
+  検索: https://inspirehep.net/api/literature?q=doi%3A10.1103%2FPhysRevA.95.052109&size=5 ; 
+  補完・訂正: {}
+  不採用・未取得: なし
+  取得データSHA256: b23498e503f8aceac03432062efb8667f620ae1b56509abeb76835f05dbce04c
+
+[49] Diosi1995
+  採用: INSPIRE-HEP公式BibTeX
+  取得元: https://inspirehep.net/api/literature/37617?format=bibtex
+  補助取得元: なし
+  保存: bib_sources\Diosi1995_inspire.bib
+  照合: 原文のDOI 10.1209/0295-5075/30/2/001 と公式レコードのDOIが一致。著者・雑誌・巻・年も原文BBLと照合。
+  検索: https://inspirehep.net/api/literature?q=doi%3A10.1209%2F0295-5075%2F30%2F2%2F001&size=5 ; 
+  補完・訂正: {}
+  不採用・未取得: なし
+  取得データSHA256: e72ae3617314eccfc5fbebc896baad8441b27712d63b473ad57572c11e3a24dc

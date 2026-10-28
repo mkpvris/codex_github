@@ -1,0 +1,938 @@
+                                                     High-temperature limit penalizing high-frequency quantum fluctuations
+
+                                                                    Graeme Pleasance,1, 2, ∗ Erik Aurell,3, † and Francesco Petruccione1, 2, 4, ‡
+                                                                 1
+                                                                   Department of Physics, University of Stellenbosch, Stellenbosch, 7600, South Africa
+                                                      2
+                                                          National Institute for Theoretical and Computational Sciences (NITheCS), Stellenbosch, South Africa
+                                                          3
+                                                            KTH – Royal Institute of Technology, AlbaNova University Center, SE-106 91 Stockholm, Sweden
+                                                                                 4
+                                                                                   School of Data Science and Computational Thinking,
+                                                                               University of Stellenbosch, Stellenbosch 7600, South Africa
+                                                                                                   (Dated: July 9, 2026)
+                                                              We revisit the Caldeira-Leggett model of quantum Brownian motion with Ohmic spectral density,
+                                                           and derive an additional contribution to the decoherence kernel in a new high-temperature limit at
+                                                           arbitrarily large cut-off frequency. This contribution reveals a novel mechanism for the classicaliza-
+                                                           tion of high-frequency quantum fluctuations. We further demonstrate that it leads to a Markovian
+                                                           master equation that is in guaranteed Lindblad form, and argue that this master equation describes
+                                                           the correct Markovian limit of quantum Brownian motion. Our approach considers in detail the
+                                                           behavior of the decoherence kernel at both the initial and final times of the process on the time
+                                                           scale of the bath memory.
+
+
+                                              Introduction.—The time evolution of a quantum sys-                sipation and decoherence as outlined above are the in-
+                                           tem interacting with an Ohmic bath of harmonic os-                   gredients of the stochastic Liouville simulations method
+                                           cillators is one of the most widely studied models of                of Stockburger and Mak [17] (see also [18, 19]). The
+arXiv:2508.14262v2 [quant-ph] 7 Jul 2026
+
+
+
+
+                                           open quantum systems theory [1]. It is applicable in nu-             decoherence memory kernel kr is therefore of great im-
+                                           merous physical situations where the damping becomes                 portance both in fundamental understanding of the in-
+                                           friction-like in the semiclassical limit [2], such as for pho-       fluence of harmonic baths, and in practical simulation
+                                           ton and phonon baths [3], as well as superconducting                 tools applied to quantum technologies. Similarly, its role
+                                           qubits coupled to resistive elements in quantum circuits             in characterizing thermal fluctuations is particularly rel-
+                                           [4]. Caldeira and Leggett famously used this model to                evant to semiclassical descriptions of quantum Brownian
+                                           investigate the classical limit of quantum Brownian mo-              motion at high temperatures.
+                                           tion [5] and macroscopic tunnelling [6, 7]. It also played               In the standard high-temperature limit [5], the ker-
+                                           a central role in later investigations of the spin-boson             nel kr has no memory and produces Lindblad terms de-
+                                           problem [8] and decoherence [9–11], as well as recently              rived from ordered pairings of the position operator X̂
+                                           being used to study gravitational noise effects in the arm           with itself, i.e. (X̂, X̂). The classical random force ξ is
+                                           lengths of the LIGO interferometer arising from interac-             then delta-correlated in time. In this Letter, we show
+                                           tions with a quantized bath of gravitons [12].                       that if correctly carried out, there is an additional (P̂ , P̂ )
+                                              Under a path integral treatment [13], the influence of            term in the master equation that serves to both (i) damp
+                                           the bath splits into dissipation, where the memory is lim-           high-frequency quantum fluctuations, and (ii) maintain
+                                           ited by the spectral cut-off Ω of the interactions, and de-          the positivity of the reduced system density operator for
+                                           coherence, which is also limited by the inverse thermal              parameters consistent with the Born-Markov approxima-
+                                           time kB T /ℏ. For phenomenological models and interac-               tions, similar to what has been identified in previous
+                                           tions with phonon baths, Ω is a real physical parame-                works [1, 20–26]. However, our derivation considers a
+                                           ter while for interactions with photons it is a regularizer          new high-temperature limit which applies to an arbitrar-
+                                           that can eventually be taken to infinity in renormaliza-             ily large (ultraviolet) cut-off Ω at fixed T , and in fact
+                                           tion [14, 15]. In either case, dissipation is memoryless.            leads to a master equation that is completely indepen-
+                                           In the Caldeira-Leggett (CL) master equation [5] this                dent of Ω. Our result is therefore valid over a broader
+                                           dissipation accounts for a renormalization of the system             temperature range than for analogous master equations
+                                           Hamiltonian and two Lindblad terms, both of which are                derived in [1, 20, 21], and offers new insights into the
+                                           formed of ordered pairs of position and momentum op-                 study of quantum Brownian motion at medium to low
+                                           erators (X̂, P̂ ) and (P̂ , X̂).                                     temperatures in the Markovian limit.
+                                              Decoherence is different, in that it has memory. Pro-                 Feynman-Vernon theory.—We focus on the CL model
+                                           vided that the thermal time ℏ/kB T is much longer than               [5] describing a quantum particle of mass M , momentum
+                                           Ω−1 , the cut-off Ω plays a negligible role, and can be              P̂ , and position X̂, moving in a potential V (X̂). The
+                                           directly taken to infinity. As described in the pioneer-             particle interacts with a thermal bath of harmonic oscil-
+                                           ing paper by Feynman and Vernon [16], decoherence is                 lators at (inverse) temperature T (β = 1/kB T ). As such,
+                                           indistinguishable from averaging over a classical Gaus-              the total Hamiltonian reads
+                                           sian field ξ with the same force-force correlations as the
+                                           memory kernel of the bath. The combined effects of dis-                              Ĥ = ĤS + ĤB + ĤI + ĤC ,                (1)
+                                                                                                                                   2
+
+where ĤS= P̂ 2 /2M + V (X̂) and ĤB = k p̂2k /2mk +
+                                              P
+1      2 2
+2 mk ωk x̂k are the system and bath Hamiltonians, re-
+spectively. The interaction part is taken P to have a con-
+ventional bilinear form ĤI = −X̂ ⊗ k ck x̂k , with ck
+denoting the system-bath coupling strength. The fi-
+nal Ppart represents an additional counter term ĤC =
+X̂ 2 k (c2k /2mk ωk2 ) that ensures the translational invari-
+ance of the Hamiltonian (1).
+   After integrating out the bath degrees of freedom, the
+time evolution of the reduced system density operator
+⟨Xf |ρ̂S (t)|Xf′ ⟩ is captured by the propagator J (tf , ti )
+connecting the initial Xi and final Xf positions of the
+particle at times ti and tf . The propagator is expressed
+as a double path integral over the forward path X from
+Xi to Xf and backward path X ′ from Xi′ to Xf′ [2],
+                Z
+                                            ′
+  J (tf , ti ) = DXDX ′ e(i/ℏ)(SS [X]−SS [X ]) F[X, X ′ ]. (2)
+                                                                     FIG. 1. Schematic depicting the full domain of integration
+                   R tf                                              and sub-domains RI = RIl ∪ RIr and RII of Eq. (10). Since
+Here, SS [X] = ti dt [ 21 M Ẋ 2 − V (X)] is the free par-           the kernel is essentially zero outside the red-shaded area where
+ticle action along the path X(t), and F[X, X ′ ] is the              τ ≫ τB , the τ -integration limits of the blue-shaded area may
+                                                                     be extended to ±∞ assuming |tf − ti | ≫ τB . The green-
+Feynman-Vernon (FV) influence functional. Since the
+                                                                     shaded areas indicate the support of the end contributions
+bath obeys Gaussian statistics, the influence functional             where the integration limits cannot be taken to infinity. A
+can be written in the exponential form F [X, X ′ ] =                 more detailed figure illustrating the boundaries of all three
+    i        ′  1        ′
+e− ℏ Si [X,X ]− ℏ Sr [X,X ] . The quantities Sr [X, X ′ ] and        sub-domains is provided in [27].
+Si [X, X ′ ], which couple forward and backward paths,
+define the real (decoherence) and imaginary (dissipa-
+tion) parts of the FV action. In terms of the quasi-                 By approximating coth (ℏβω/2) ≈ 2/ℏβω in the limit
+                                                                                                                      (0)
+classical path X̄(t) = X(t) + X ′ (t) and fluctuation path           τB → 0, one obtains the the singular kernel kr (τ ) =
+∆X(t) = X(t) − X ′ (t) [2], they are written as                      (4η/τB )δ(τ ), provided that the particle evolves on time
+                    Z tf Z t                                         scales much longer than Ω−1 .
+      Sr [∆X] =          dt   ds kr (t − s)∆X(t)∆X(s), (3)              Feynman-Vernon kernel and decoherence action.—We
+                   ti           ti                                   proceed to now derive a new high-temperature limit for
+                  Z tf         Z t                                   which the FV kernel provides a nonsingular contribution
+  Si [X̄, ∆X] =           dt         ds ki (t − s)∆X(t)X̄(s)         to the decoherence action. As we will show, this leads to
+                   ti        ti
+                           Z tf                                      an additional diffusion-type term in the CL master equa-
+                    +µ               dt ∆X(t)X̄(t),            (4)   tion that serves to damp high-frequency quantum fluctu-
+                               ti                                    ations. Our approach throughout this Letter is to treat
+              P 2            2
+                                                                     the FV kernel as a tempered distribution, kr ∈ S ′ (R)
+with µ =         k ck /(2mk ωk ) the bath reorganization en-         [28], where the corresponding test functions belong to
+ergy (µ ∼ Ω). The kernels kr and ki denote the real and              S(R) and are a priori assumed to exhibit negligible vari-
+imaginary
+P 2           parts of the bath correlation function k(τ ) =         ation on time scales shorter than Ω−1 . For this purpose,
+   k (ck /2mk ωk )[coth(ℏωk /2kB T ) cos (ωk τ ) − i sin (ωk τ )].   it is convenient to employ the following representation of
+The real part—the FV kernel [16]—governs the decay                   the FV kernel [27]
+of quantum fluctuations along the off-diagonal paths
+∆X(t). In the FV influence functional, it plays the role of                       2η
+                                                                                     
+                                                                                       π2
+                                                                                                                 
+                                                                                                                     1
+                                                                                                                          
+a force-force correlation function for a Gaussian stochas-            kr (τ ) =       − 2 csch2 (πτ /τB ) + Ω2 O             . (6)
+                                                                                  π    τB                          (Ωτ )3
+tic force with memory time τB [see Eq. (16) below]. For
+a bath with Ohmic    P spectral density J(ω) = 2ηωθ(Ω − ω),          From this expression it is clear that kr exhibits two
+where J(ω) = π2 k (c2k /mk ωk )δ(ω − ωk ), the FV kernel             regimes of behavior:
+reads
+                                                                       (i) Vacuum regime Ω−1 ≪ τ ≪ τB : using the asymp-
+                    2η Ω
+                        Z                   
+         kr (τ ) =         dω ω coth
+                                        ℏω
+                                                cos ωτ .     (5)           totic expansion csch2 x = x12 − 13 + O(x2 ), Eq. (6)
+                    π 0                2kB T                               may be approximated as
+It is well known that the white-noise limit of kr is realized                                             2η 1
+at high-temperature [5]. In particular, let τB = ℏ/kB T .                                   kr (τ ) ≈ −        ,                 (7)
+                                                                                                          π τ2
+                                                                                                                                 3
+
+                                                                                              (0)
+       implying that the short-time behavior of kr (τ ) is        The first functional Sr [∆X] is equivalent to the stan-
+       dominated by the vacuum contribution krvac (τ ) =          dard high-temperature result obtained for the decoher-
+       2η Ω                                                                                                     (0)
+          R
+        π 0 dω ω cos ωτ . In particular,                          ence action using the memoryless kernel kr . More in-
+                                                                                                         (m)
+                                                              terestingly, the second functional Sr [∆X] depending
+            vac     2η      1     2      1                              (m)
+          kr (τ ) =     − 2 +Ω O                 .     (8)        on kr is valid beyond the white-noise limit, and there-
+                    π      τ           (Ωτ )3
+                                                                  fore represents a contribution to the decoherence action
+  (ii) Exponential regime τ ≫ τB ≫ Ω−1 : using that               accounting for short-time memory effects. This is exem-
+                                                                                            (m)
+       csch2 x ∼ e−2x for x ≫ 1, we get                           plified by the fact that Sr [∆X] vanishes when τB → 0,
+                               2η 1 −2|τ |/τB                     which is directly seen from expanding the path differences
+                 kr (τ ) ≈ −         e        .            (9)    inside the inner brackets to lowest order in τ . Hence, by
+                               π τB2
+                                                                  including higher order terms within the expansion of the
+These relations indicate the kernel (5) to converge in the        fluctuations paths, we are able to systematically derive
+                                                                                                           (0)
+scaling limit Ω → ∞ for τ > 0 and to vanish beyond times          corrections to the white-noise action Sr [∆X].
+|τ | ≳ τB determined by the inverse bath temperature.                New high-temperature limit.—We proceed to expand
+    With the goal of evaluating the decoherence functional        xt (s) to next leading order in τB s (or τ ),
+(3), we first choose to rewrite the double integral in terms                                  (0)           (1)
+of the new variables t̄ = 12 (t + s) and τ = t − s:                                xt (s) = xt + (τB s)2 xt + ...,             (13)
+
+              1
+                ZZ
+                                                                          (0)
+ Sr [∆X] =           dt̄ dτ kr (τ )∆X(t̄ + τ /2)∆X(t̄ − τ /2).    with xt       = ∆Xt2 , such that Eq. (12) becomes
+              2    R
+                                                           (10)                 Sr [∆X] = Sr(0) [∆X] + Sr(1) [∆X] + ...,       (14)
+The integration region R in the (t̄, τ )-plane is depicted
+in Fig. 1. It comprises three subregions RIl (left), RIr          where
+(right), and RII , where the first two subregions represent                                 Z tf
+                                                                                                              ∂2
+                                                                                                                  
+                                                                                  ητB
+the end term contributions to the decoherence action. To            Sr(1) [∆X] :=                   dt ∆X(t) − 2       ∆X(t)   (15)
+simplify the analysis, we choose here to evaluate Sr [∆X]                               6    ti               ∂t
+without the end terms, which can be shown to play a neg-                          + (boundary terms).
+ligible role at high temperature. A more detailed analysis                                       R∞              (m)
+that explicitly treats these end contributions is provided        Note that here we have used 0 dτ /τB τ 2 kr (τ ) = π/6.
+in Sec. III of the Supplemental Material [27]. Henceforth,        Equation (15) is the first result of this Letter and provides
+the decoherence action shall be approximated by                   the leading high-temperature correction to the white-
+                      Z tf Z ∞                                    noise action. We may elucidate its role within the func-
+                η 1
+       Sr [x] ≈            dt̄      ds FΩτB (s)xt̄ (s),    (11)   tional (10) by rewriting exp(−Sr [∆X]/ℏ) as the average
+                π τB ti         −∞                                over an auxiliary Gaussian field ξ(t), where E[ξ(t)] = 0
+where xt̄ (s) = ∆X(t̄ + τB s/2)∆X(t̄ − τB s/2), and               and E[ξ(t)ξ(s)] = kreff (t − s). For this, let us introduce
+                                                                                                             ∂2
+                                                                  the differential operator K(t) = σ12 − ∂t         2
+          RΛ                                                                                                          
+FΛ (s) = 0 ds x coth x2 cos sx.                                                                               2 +λ      with λ =
+                                                                   √                  p
+   By repeatedly integrating Eq. (11) by parts, which is          2 3/τB and σ = 3/ητB , such that up to the leading
+permissible since FΛ is tempered, we are able to separate         order correction of Eq. (14) we have exp(−Sr [∆X]/ℏ) =
+                                                                          1
+                                                                            R tf
+the inner integral above into two sets of terms: those            exp(− 2ℏ   ti
+                                                                                 dt ∆X(t)K[∆X](t)). This exponential can
+depending on the leading contribution to the FV kernel            then be recast using a Hubbard-Stratonovich transfor-
+given in Eq. (6), and boundary terms depending on the             mation as [17, 30, 31]
+higher order contributions. In particular, the latter are
+shown to vanish in the scaling limit Ω → ∞ (see Sec.                  exp (−Sr [∆X]/ℏ) = (trivial)
+II of the Supplemental Material [27]). By then retaining                   Z            
+                                                                                            i tf
+                                                                                              Z                
+only the leading terms, and defining the memory kernel                  × Dξ P [ξ] exp −           dt ξ(t)∆X(t) ,              (16)
+  (m)
+                                                                                            ℏ ti
+kr (τ ) = (π 2 /τB2 )csch2 (πτ /τB ), the decoherence action
+                                                                                                     R tf
+can be expressed as the sum of the following two func-            where P [ξ] = N −1 exp(− 2ℏ     1
+                                                                                                          dt ξ(t)K −1 [ξ](t)) is a
+                                                                                                      ti
+tionals:                                                          Gaussian probability functional. The trivial prefactor
+Sr [∆X] := Sr(0) [∆X] + Sr(m) [∆X]                                in this expression stems from the R t boundary terms of Eq.
+                                                                  (15). Additionally, K −1 [ξ] = tif ds G(t − s)ξ(s), where
+           2η tf
+                      
+                         π
+               Z
+        =           dt     ∆X 2 (t)                               G(t − s) is the (symmetric) Green’s function of the oper-
+            π ti        τB                                        ator K(t).
+  Z ∞                                                    
+                                                                      Since this kernel must be positive definite and satisfy
+      dτ kr(m) (τ ) ∆X 2 (t) − ∆X(t + τ /2)∆X(t − τ /2) .
+                                                       
++                                                                  1       ∂2     2
+                                                                                    
+   0                                                              σ 2   − ∂t 2 + λ    G(t − s) = δ(t − s), it is straightforward
+                                                          (12)    to deduce that kreff (t − s) = K(t − s)δ(t − s). Notably,
+                                                                                                                                                4
+
+  Master equation                      Parameters                 Lindblad form               DXX                  DP P                  DXP
+                                                                                                γ                2γM kB T
+     This work                      ℏγ ≪ kB T ≪ ℏΩ                     Yes                   6M kB T                ℏ2
+                                                                                                                                          0
+                                                                                                γ                2γM kB T                 Ωγ
+    Diósi [20, 21]                 ℏγ ≪ ℏΩ ≤ kB T                     Yes                   6M kB T                ℏ2                  6πkB T
+                                                                                                γ                2γM kB T                γkB T
+Breuer-Petruccione [1]              ℏγ ≪ ℏΩ ≤ kB T                     Yes                   8M kB T                ℏ2
+                                                                                                                                        − ℏ2 Ω
+                                                                                                                 2γM kB T
+ Caldeira-Leggett [5]               ℏγ ≪ ℏΩ ≤ kB T                     No                       0                   ℏ2
+                                                                                                                                            0
+
+
+TABLE I. Comparison between different Markovian master equations derived in the high-temperature limit with corresponding
+diffusion coefficients [29]. In [20, 21], the CL master equation is rederived in Lindblad form for certain parameter limits. Note
+also that the cross diffusion term DP X derived in [1] (Eq. (3.409) therein) is treated as negligible compared to DP P when the
+system evolution is slow compared to Ω−1 .
+
+
+this force-force correlation function is equivalent to the              where
+FV kernel expanded to its next leading term in the high-                                γ                       2γM kB T
+temperature limit, i.e. kr (τ ) ≈ τ4η δ(τ ) − ητ3B δ ′′ (τ ). This         DXX =              ,        DP P =            ,       DXP = 0,
+                                    B                                                 6M kB T                     ℏ2
+                                    (1)                                                                                           (20)
+implies the correction term Sr [∆X] to be valid at the
+same level of approximation made by Diósi [20, 21], where              are phenomenological Dekker coefficients [32, 33]. We
+an analogous correction was derived by treating the FV                  remark that (19) holds for any form of potential V (X̂)
+kernel to O(ℏβ). The correction there was shown to lead                 contained in ĤS , which solely influences the particle’s
+to an additional diffusion term in the CL master equation               free evolution and not the diffusion timescales (20) [38].
+rendering it in Lindblad form [20, 21]. In parallel, we                 By setting L̂1 = X̂, L̂2 = P̂ , it is straightforward to
+demonstrate that our result also gives rise to a Lindblad               show that the Kossakowski matrix obtained from the Li-
+form master equation but with Dekker coefficients [32, 33]              ouvillian (19) satisfies the positivity constraint through
+                                                                                                      2
+that are independent of the cut-off Ω.                                  det a = 4DXX DP P − γℏ2 ≥ 0. As such, the position
+   Derivation of the Lindblad master equation from the                  diffusion coefficient DXX is sufficiently large to always
+Feynman-Vernon kernel.—For a Liouvillian L that gen-                    render the master equation in Lindblad form. We fur-
+erates a completely positive and uniformly continuous                   ther remark that since the additional (P̂ , P̂ ) term damps
+dynamical semigroup, its most general representation is                 high-frequency quantum fluctuations, at sufficiently high
+in Lindblad form [34, 35]                                               frequency the quantum system interacting with the bath
+                                                                        behaves classically—a new open quantum system avenue
+ ∂ ρ̂S (t)
+           = Lρ̂S (t)                                                   to classicalization [39].
+    ∂t                                                                     Table I summarizes the key differences between the
+        i             X                    1                 
+ = − [Ĥeff , ρ̂S ] +     aij L̂i ρ̂S L̂†j − {ρ̂S , L̂†j L̂i } , (17)   Markovian master equation derived in this work [Eqs.
+       ℏ              i,j
+                                            2                           (19)-(20)] and those derived in Refs. [1, 5, 20, 21].
+                                                                           Connection to exact master equations.—Finally, we
+where L̂i are Lindblad operators, and Ĥeff is a Hamilto-               note that Eq. (17) with L̂1 = X̂, L̂2 = P̂ , and
+nian [36]. The positivity of the solution obtained from                 Ĥeff = P̂ 2 /2M + 12 M ω02 X̂ 2 , has an inherently different
+this equation is guaranteed given the matrix a is nec-                  structure to the exact Hu-Paz-Zhang (HPZ) master equa-
+essarily positive semidefinite, a ⪰ 0. In [1, 5], the CL                tion [40] describing non-Markovian quantum Brownian
+master equation derived under the Born-Markov approx-                   motion (see also [41–47] for similar exact results). This
+imations has the same form as Eq. (17) with Lindblad                    is due to the (P̂ , P̂ ) term which has no direct counterpart
+operators L̂1 = X̂, L̂2 = P̂ , and Kossakowski matrix                   in the HPZ master equation. In Refs. [47, 48], it was ar-
+             4γM kB T /ℏ2 −iγ/ℏ                                         gued that this discrepancy stems from dissipation being
+                                  
+     a0 =                            , γ = η/M       (18)               an inherently non-Markovian feature of the CL model,
+                 iγ/ℏ           0
+                                                                        and that dissipation in the Markovian limit can only be
+whose spectrum always possesses a negative eigenvalue                   accounted for by introducing a momentum-mediated cou-
+(det a0 < 0). The reason for this discrepancy is a miss-                pling to the bath [22, 23, 25, 49]. In particular, a phe-
+ing (P̂ , P̂ ) term which emerges from the next leading                 nomenological approach including both a position and
+contribution in the high-temperature expansion of the                   momentum coupling to an external noise was shown to
+FV kernel [1, 20, 21, 23–25]. In our case, rewriting the                unravel the time-local master equation [47]
+FV influence functional in superoperator representation
+[37] gives the Liouvillian                                              Lt ρ̂S = −i[Ĥeff (t), ρ̂S ] + Γ(t)[X̂, [X̂, ρ̂S ]] + Θ(t)[X̂, [P̂ , ρ̂S ]]
+         i                 γ                                                  + Ξ(t)[X̂ 2 , ρ̂S ] + Υ(t)[X̂, {P̂ , ρ̂S }] + γ(t)[P̂ , [P̂ , ρ̂S ]]
+Lρ̂S = − [ĤS , ρ̂S ] − i [X̂, {P̂ , ρ̂S }] − DP P [X̂, [X̂, ρ̂S ]]                                                                        (21)
+         ℏ                 ℏ
+       − DXX [P̂ , [P̂ , ρ̂S ]] − 2DXP [X̂, [P̂ , ρ̂S ]],     (19)      where a (P̂ , P̂ ) term does appear. Since Eq. (21) reduces
+                                                                                                                                     5
+
+to (19) in the white-noise limit, it was concluded that                 the fluctuation paths (13), which is a task left to future
+a P̂ -coupling is required to correctly describe quantum                work.
+Brownian motion in the Markovian regime.
+   Alternatively, we argue that Markovian quantum
+Brownian motion is best described within the new high-
+temperature limit introduced in this Letter. This is based                ∗
+                                                                             gpleasance1@gmail.com
+on the fact that for the other master equations listed in                 †
+                                                                             eaurell@kth.se
+Table I, taking the Markovian limit Ω → ∞ also requires                    ‡
+                                                                             petruccione@sun.ac.za
+T → ∞, which amounts to retaining only the leading                       [1] H.-P. Breuer and F. Petruccione, The theory of open
+contribution to the FV kernel, i.e. kr ∼ δ(τ ). This type                    quantum systems (Oxford University Press, 2002).
+of kernel leads to an unphysical description where the                   [2] U. Weiss, Quantum Dissipative Systems (World Scien-
+complete positivity of the dynamics is lost. In our ap-                      tific, 2011).
+proach, however, the next-leading contribution to kr can                 [3] E. Y. Wilner, H. Wang, M. Thoss, and E. Rabani, Phys.
+                                                                             Rev. B 92, 195143 (2015).
+be retained while also enforcing a truly memoryless bath
+                                                                         [4] J. Leppäkangas, J. Braumüller, M. Hauck, J.-M. Reiner,
+Ω → ∞, suggesting that this provides the correct imple-                      I. Schwenk, S. Zanker, L. Fritz, A. V. Ustinov, M. Weides,
+mentation of the Markovian limit. Ultimately, Eq. (19)                       and M. Marthaler, Phys. Rev. A 97, 052321 (2018).
+with a harmonic potential V (X̂) = 12 M ω02 X̂ 2 cannot be               [5] A. Caldeira and A. Leggett, Physica A 121, 587 (1983).
+recovered as limiting case of the HPZ master equation                    [6] A. O. Caldeira and A. J. Leggett, Phys. Rev. Lett. 46,
+[1], thereby distinguishing our result from [40, 44, 45].                    211 (1981).
+   It is also worth noting that Eq. (19) admits an unrav-                [7] A. Caldeira and A. Leggett, Ann. Phys. (N.Y.) 149, 374
+                                                                             (1983).
+eling into the stochastic Schrödinger equation [45]
+                                                                         [8] A. J. Leggett, S. Chakravarty, A. T. Dorsey, M. P. A.
+                                                                             Fisher, A. Garg, and W. Zwerger, Rev. Mod. Phys. 59,
+                 i                      1X                
+                                               aij L̂†j L̂i ψt , (22)
+                          X
+  ψ̇t =       −     ĤS +   L̂i ϕi (t) −                                     1 (1987).
+                  ℏ       i
+                                         2 i,j                           [9] W. G. Unruh and W. H. Zurek, Phys. Rev. D 40, 1071
+                                                                             (1989).
+with ϕi (t) zero-mean Gaussian white noise, and                         [10] W. H. Zurek, S. Habib, and J. P. Paz, Phys. Rev. Lett.
+                                                                             70, 1187 (1993).
+E[ϕi (t)ϕ∗j (s)] = aij δ(t − s), E[ϕi (t)ϕj (s)] = 0. This
+                                                                        [11] J. P. Paz, S. Habib, and W. H. Zurek, Phys. Rev. D 47,
+equation contains a momentum-noise coupling term                             488 (1993).
+P̂ ϕ(t) akin to that phenomenologically introduced in [47]              [12] M. Parikh, F. Wilczek, and G. Zahariade, Int. J. Mod.
+As such, the inclusion of the next-leading term of the FV                    Phys. D 29, 2042001 (2020).
+kernel ∼ δ ′′ (τ ) is sufficient to introduce the effective P̂ -        [13] H. Kleinert, Path Integrals in Quantum Mechanics,
+coupling required to maintain complete positivity in line                    Statistics, Polymer Physics, and Financial Markets
+with Refs. [22–26, 49].                                                      (World Scientific, 2009).
+                                                                        [14] H.-P. Breuer and F. Petruccione, Phys. Rev. A 63,
+   Conclusions.—In this Letter, we have derived a new
+                                                                             032102 (2001).
+high-temperature limit of the CL model describing a                     [15] G. Baym and T. Ozawa, Proc. Natl. Acad. Sci. U.S.A.
+quantum particle interacting with an Ohmic bath of har-                      106, 3035 (2009).
+monic oscillators. The reduced system dynamics in this                  [16] R. Feynman and F. Vernon, Ann. Phys. (N.Y.) 24, 118
+limit has shown to be captured by a Markovian master                         (1963).
+equation in Lindblad form, in contrast to the CL master                 [17] J. T. Stockburger and C. H. Mak, J. Chem. Phys. 110,
+equation used in the conventional white-noise treatment                      4983 (1999).
+                                                                        [18] J. T. Stockburger and C. H. Mak, Phys. Rev. Lett. 80,
+of quantum Brownian motion [5], among other similar
+                                                                             2657 (1998).
+works [20–26]. Furthermore, the master equation (19)                    [19] J. T. Stockburger and H. Grabert, Phys. Rev. Lett. 88,
+applies to any form of potential V (X̂), and does not re-                    170407 (2002).
+quire an additional momentum coupling to the bath to                    [20] L. Diósi, Physica A 199, 517 (1993).
+describe completely positive quantum Brownian motion.                   [21] L. Diósi, Europhys. Lett. 22, 1 (1993).
+Since our result also applies to baths with an ultraviolet              [22] J. Halliwell and A. Zoupas, Phys. Rev. D 52, 7294 (1995).
+cutoff Ω, it is likely to be applicable outside the temper-             [23] S. Gao, Phys. Rev. Lett. 79, 3101 (1997).
+                                                                        [24] G. W. Ford and R. F. O’Connell, Phys. Rev. Lett. 82,
+ature regime stipulated in Refs. [1, 5, 20] (c.f. Table I),
+                                                                             3376 (1999).
+provided that the temperature is still large enough for                 [25] B. Vacchini, Phys. Rev. Lett. 84, 1374 (2000).
+the Born-Markov approximation ℏγ ≪ kB T to be sat-                      [26] F. Petruccione and B. Vacchini, Phys. Rev. E 71, 046134
+isfied. A more formal comparison between these master                        (2005).
+equations could be explored for a harmonic oscillator sys-              [27] See Supplemental Material [url] for further details on the
+tem by benchmarking their predictions against the exact                      derivation of Eq. (6), and evaluation of the end terms of
+HPZ master equation [40]. Furthermore, our result may                        the decoherence functional Sr [∆X].
+                                                                        [28] Here we denote by S ′ (R) the space of tempered dis-
+be systematically extended to lower temperature regimes
+                                                                             tributions over R—the continuous dual of the space of
+by including higher order terms within the expansion of
+                                                                                                                           6
+
+     Schwartz functions S(R).                                    [38] R. Alicki and K. Lendi, Quantum Dynamical Semigroups
+[29] G. Homa, J. Z. Bernád, and L. Lisztes, Eur. Phys. J. D          and Applications (Springer Berlin, Heidelberg, 2007).
+     73, 53 (2019).                                              [39] G. Dvali, G. F. Giudice, C. Gomez, and A. Kehagias, J.
+[30] M. Xu, V. Vadimov, M. Krug, J. T. Stockburger, and               High Energy Phys. 2011, 108.
+     J. Ankerhold, arXiv:2307.16790 [quant-ph] (2023).           [40] B. L. Hu, J. P. Paz, and Y. Zhang, Phys. Rev. D 45,
+[31] M. Xu and J. Ankerhold, Eur. Phys. J. Special Topics             2843 (1992).
+     10.1140/epjs/s11734-025-01925-0 (2025).                     [41] W. T. Strunz, Phys. Lett. A 224, 25 (1996).
+[32] H. Dekker, Phys. Rev. A 16, 2126 (1977).                    [42] L. Diósi and W. T. Strunz, Physics Letters A 235, 569
+[33] H. Dekker, Phys. Rep. 80, 1 (1981).                              (1997).
+[34] V. Gorini, A. Kossakowski, and E. C. G. Sudarshan, J.       [43] L. Diósi, N. Gisin, and W. T. Strunz, Phys. Rev. A 58,
+     Math. Phys. 17, 821 (1976).                                      1699 (1998).
+[35] G. Lindblad, Commun. Math. Phys. 48, 119 (1976).            [44] T. Yu, Phys. Rev. A 69, 062107 (2004).
+[36] The “eff” subscript on Heff indicates that under a micro-   [45] W. T. Strunz and T. Yu, Phys. Rev. A 69, 052115 (2004).
+     scopic derivation of Eq. (17), the Hamiltonian contribu-    [46] L. Diósi and L. Ferialdi, Phys. Rev. Lett. 113, 200403
+     tion can contain additional Lamb shifts and/or frequency         (2014).
+     renormalization terms not contained in ĤS .                [47] L. Ferialdi, Phys. Rev. Lett. 116, 120402 (2016).
+[37] E. Aurell, R. Kawai, and K. Goyal, J. Phys. Math. Theor.    [48] L. Ferialdi, Phys. Rev. A 95, 052109 (2017).
+     53, 275303 (2020).                                          [49] L. Diósi, Europhys. Lett. 30, 63 (1995).
+                                                                                                                     7
+
+    Supplemental Material for “A high-temperature limit penalizing high-frequency
+                               quantum fluctuations”
+                             Graeme Pleasance, Erik Aurell, and Francesco Petruccione
+
+
+
+
+                       I. DERIVATION OF THE FEYNMAN-VERNON KERNEL
+
+   In this section we outline the derivation of the FV kernel given in Eq. (6) of the main text. Our approach is
+based partly on the derivation presented in Ref. [1] to evaluate the decoherence functional for a relativistic particle
+interacting with an Ohmic bath—see Eq. (12.172) therein—which for the sake of completeness, is reproduced here in
+full.
+   We start by defining the function
+                                                     Z Λ
+                                                                  x
+                                            FΛ (s) =     dx x coth cos sx,                                        (23)
+                                                      0           2
+which is related to the FV kernel according to (τB = ℏβ)
+
+                                               2η  1 2 Ωℏβ             x    xτ
+                                                         Z
+                                     kr (τ ) =                  dx x coth cos
+                                               π ℏβ       0              2    ℏβ
+                                               2η 1
+                                             =       FΩτB (τ /τB ).                                               (24)
+                                               π τB2
+
+We further introduce the first and second primitives of Eq. (23),
+                                                Z Λ
+                                                             x
+                                       GΛ (s) =     dx coth sin sx,                                               (25)
+                                                 0           2
+                                                Z Λ
+                                                             x 1 − cos sx
+                                                                         
+                                       HΛ (s) =     dx coth                 ,                                     (26)
+                                                 0           2     x
+with
+                                           d2           d
+                                             2
+                                               HΛ (s) =    GΛ (s) = FΛ (s),                                       (27)
+                                           ds           ds
+and divide HΛ (s) into a vacuum and thermal part HΛvac (s) and HΛth (s) [1]:
+
+                            HΛ (s) := HΛvac (s) + HΛth (s)
+                                     Z Λ                   Z Λ 
+                                             1 − cos sx              x     1 − cos sx
+                                   =     dx              +    dx coth − 1              .                          (28)
+                                      0           x         0        2          x
+Now, for the vacuum contribution it follows that
+                                          Z Λs
+                                 vac               1 − cos x
+                               HΛ (s) =         dx
+                                           0           x
+                                                    Z ∞                          
+                                                             cos x               1
+                                       = ln gΛs +         dx       = ln gΛs + O     ,                           (29)
+                                                     Λs        x                 Λs
+                                                                      R∞                   R Λs
+where the second equality has been obtained through the identity Λs dx cosx x = − ln gΛs + 0 dx 1−cos
+                                                                                                   x
+                                                                                                      x
+                                                                                                        , and ln g ≈
+0.577 is the Euler-Mascheroni constant. Upon differentiating Eq. (29), we also obtain the vacuum terms
+                                                                       
+                                           vac        1             1
+                                         GΛ (s) = + Λ O                                                         (30)
+                                                      s           (Λs)2
+                                                                           
+                                                        1               1
+                                         FΛvac (s) = − 2 + Λ2 O               .                                 (31)
+                                                        s             (Λs)3
+                                                                                                                      8
+
+For the thermal component of GΛ (s),
+                                                    Z Λ         x   
+                                         Gth
+                                          Λ (s) =         dx coth − 1 sin sx,                                      (32)
+                                                     0           2
+we may extend the upper limit of the integration to infinity, since (coth x2 − 1) falls off exponentially for x > 1. It
+therefore follows from the identity
+                                                            ∞
+                                                    x      X
+                                             coth     −1=2     e−(n+1)x
+                                                    2      n=0
+
+that
+                                                          Z ∞           ∞
+                                                                        X
+                                         Gth
+                                          Λ (s) ≈ 2 Im             dx         eisx−(n+1)x
+                                                              0         n=0
+                                                             1
+                                                = π coth πs − ,                                                    (33)
+                                                             s
+where the second equality is obtained from the Matsubara decomposition
+                                                               ∞
+                                                                                          !
+                                             x           1    X       x
+                                         coth = 2          +2                                     .
+                                             2           x    n=1
+                                                                   2
+                                                                  x + (2πn)2
+
+Next we may combine Gvac
+                     Λ (s) with Eq. (33), yielding
+                                                                                         
+                                                                                    1
+                                          GΛ (s) = π coth πs + ΛO                             .                    (34)
+                                                                                  (Λs)2
+
+The thermal part of FΛ (s) may also be obtained by means of differentiating Eq. (34),
+
+                                                                     π2    1
+                                              FΛth (s) = −            2  + 2,                                      (35)
+                                                                  sinh πs s
+so that by combining both vacuum and thermal parts of FΛ (s), we get
+                                                                         
+                                                                      1
+                                    FΛ (s) = −π 2 csch2 πs + Λ2 O           .                                      (36)
+                                                                    (Λs)3
+
+Returning to Eq. (24), the FV kernel is then given as
+
+                                               π2
+                                                                             
+                                         2η           2            2      1
+                               kr (τ ) =     − 2 csch (πτ /τB ) + Ω O             .                                (37)
+                                         π     τB                       (Ωτ )3
+
+
+                      II. EVALUATION OF THE DECOHERENCE FUNCTIONAL
+
+  In this section we derive the explicit form of the decoherence functional given in Eq. (12) of the main text which
+excludes the end term contributions. Our starting point is to introduce the functional TF : S(R) → R,
+                                                         Z ∞
+                                             TF [xt̄ ] =     ds FΛ (s)xt̄ (s),                                  (38)
+                                                           −∞
+
+which acts on the space of test functions S(R) that includes the set of fluctuation paths xt̄ (s) = ∆X(t̄+τB s/2)∆X(t̄−
+τB s/2). As stated in the main text, these paths are assumed to also exhibit negligible variation on time scales shorter
+than Ω−1 . We proceed to partition the integral (38) into three disjoint subintervals set by the parameter q (see Fig.
+2),
+                                   Z q                 Z ∞                   Z −q
+                          TF [x] =     ds FΛ (s)x(s) +     ds FΛ (s)x(s) +        ds FΛ (s)x(s),                    (39)
+                                    −q                    q                               −∞
+                                                                                                                                       9
+
+where the subscript on xt̄ has been dropped for ease of notation (the t̄-dependence of xt̄ will be implicit hereon unless
+stated). By expanding x(s) = x(0) + O(s), the first integral may be written as
+                              Z q                         Z Λ        Z q                 
+                                                                   y
+                                     ds FΛ (s)x(s) =     dy y coth         ds x(s) cos sy
+                                  −q                  0            2    −q
+                                                          Z Λ             Z q            
+                                                                        y
+                                                   = x(0)     dy y coth         ds cos sy + ...
+                                                           0            2    −q
+                                                      = 2GΛ (q)x(0) + ... .                                                          (40)
+
+Now assuming Λq ≫ 1, we can use the leading term of Eqs. (34) and (40) to infer that the distribution FΛ (s) behaves
+as a Dirac delta on the interval [−q, q] for sufficiently small q:
+                                          Z q
+                                   x 7→         ds FΛ (s)x(s) = 2π coth (πq)x(0),                      q ≫ Λ−1 .
+                                           −q
+
+As such, we may also use Eq. (36) to write
+                            Z q                                     Z ∞                                 Z −q                   
+                                                                2                                  2                      2
+              TF [x] = 2π         ds x(s)δ(s) coth (πq) − π                     ds x(s)csch (πs) +              ds x(s)csch (πs) ,   (41)
+                             −q                                         q                                  −∞
+
+where integrating by parts terms in the square brackets yields
+                                                   Z q
+                             TF [x] = 2π coth (πq)     ds x(s)[δ(s) − δ(s + q) − δ(s − q)]
+                                                              −q
+                                                     Z ∞
+                                                −π         ds coth (πs)[x′ (s) − x′ (−s)].                                           (42)
+                                                     q
+
+Applying integration by parts twice again to the second line of the above then leads to
+                                                                   Z ∞
+                           TF [x] = 2π coth (πq)[x(0) − x(q)] − 2π     ds coth (πs) x′ (s),                                          (43)
+                                                                                          q
+
+having used that x(s) is an even function. To evaluate the remaining integral the derivative x′ (s) can be written as
+
+                                                                    d
+                                                         x′ (s) =      [x(s) − x(0)].                                                (44)
+                                                                    ds
+This form of x′ (s) is needed else we end up with a diverging term in the result (since coth (πs) is not integrable at
+the origin). Accordingly, by integrating the second term of Eq. (43) by parts, we get
+                                                        Z ∞                           
+                                    TF [x] = 2π x(0) − π     ds csch2 (πs)[x(s) − x(0)] .                                            (45)
+                                                                    q
+
+Now taking the limit q → 0, which is justified by simultaneously taking Λ → ∞ (Ω → ∞) to ensure Λq ≫ 1, (this
+can be controlled by e.g. fixing q ∼ Λ−α , 0 < α < 1), one obtains
+                                                               Z ∞                                
+                                                                           2
+                             lim lim TF [xt̄ ] = 2π xt̄ (0) − π     ds csch (πs)[xt̄ (s) − xt̄ (0)] ,                                (46)
+                            Λ→∞ q→0                                         0
+
+having reintroduced the t̄ subscript on x. It should be noted that the integral converges in this limit since the
+derivative (44) vanishes at the origin. Finally using
+                                                                            Z tf
+                                                                η 1
+                                                     Sr [x] =                      dt̄ TF [xt̄ ]                                     (47)
+                                                                π τB         ti
+
+and inserting (46) yields Eq. (12) of the main text.
+                                                                                                                             10
+
+                                               τ                          tf +ti
+                                                                             2
+                                  (tf − ti )
+
+
+
+
+                                         2a
+
+                                                   q        RIl                RII           RIr
+                                                                                                     ∼ τB
+                                                                                                              t̄
+                                                   ti                                                  tf
+
+
+
+                                      −2a
+                                                             ti + a                     tf − a
+
+
+                                −(tf − ti )
+
+FIG. 2. A more detailed schematic of the integration region presented in Fig. 1 of the main text. Each of the subregions RI
+and RII are colored green and blue, respectively. The red region indicates the part of the (t̄, τ )-plane where the FV kernel
+kr (τ ) has nonvanishing support. In subregion RII , the integration domain in τ can extended to infinity and treated as per the
+main text. Section III concerns the treatment of the corner regions RIl and RIr parameterized by a. It is assumed that the
+test functions xt̄ have negligible variation on time scales less than a.
+
+
+        III. EVALUATION OF THE END TERMS OF THE DECOHERENCE FUNCTIONAL
+
+  Here we seek to properly treat the end term contributions to the decoherence action given in Eq. (10) of the main
+text. In terms of the integration variables t̄ and τ , the functional reads
+                                        1
+                                           ZZ
+                             Sr [∆X] =                 dt̄ dτ kr (τ )∆X(t̄ + τ /2)∆X(t̄ − τ /2),               (48)
+                                        2      RI +RII
+
+where RI/II define the green and blue colored regions shown in Fig. 2:
+
+                          RI = RIl ∪ RIr
+                               RIl = {(t̄, τ ) : ti ≤ t̄ ≤ ti + a, −2(t̄ − ti ) ≤ τ ≤ 2(t̄ − ti )}
+                               RIr = {(t̄, τ ) : tf − a ≤ t̄ ≤ tf , −2(tf − t̄) ≤ τ ≤ 2(tf − t̄)}
+                      and
+                          RII = RIIl ∪ RIIr
+                                                                      1
+                               RIIl = {(t̄, τ ) : ti + a ≤ t̄ ≤         (tf + ti ), −2(t̄ − ti ) ≤ τ ≤ 2(t̄ − ti )}
+                                                                      2
+                                                        1
+                               RIIr = {(t̄, τ ) :         (tf + ti ) ≤ t̄ ≤ tf − a, −2(tf − t̄) ≤ τ ≤ 2(tf − t̄)}.
+                                                        2
+The parameter a defines the boundary of the region RII in relation to the end points ti and tf . If a is fixed such
+that a ≳ τB , the τ -integration limits in RII can be extended to the full real line since we are not picking up any
+contributions that are significant compared to the red region. The parameter q in this region can also be made
+arbitrarily small as per Sec. II. Hence, the corresponding decoherence functional takes the same form as Eq. (12) of
+the main text with modified t̄-limits,
+
+                        1 tf −a
+                          Z           Z ∞
+            SrII [∆X] =           dt̄       dτ kr (τ )∆X(t̄ + τ /2)∆X(t̄ − τ /2)
+                        2 ti +a        −∞
+                        2η tf −a
+                                                       Z ∞                                                       
+                                          π
+                           Z
+                      =            dt̄      ∆X 2 (t̄) +      dτ kr(m) (τ )(∆X 2 (t̄) − ∆X(t̄ + τ /2)∆X(t̄ − τ /2)) , (49)
+                        π ti +a          τB              0
+                                                                                                                                             11
+
+which in the high-temperature limit becomes
+
+                                2η tf −a               ητB tf −a 
+                                  Z                        Z                                      
+                    SrII [∆X] ≈          dt̄ ∆X(t̄)2 +           dt̄ ∆X ′ (t̄)2 − ∆X(t̄)∆X ′′ (t̄) .                                        (50)
+                                τB ti +a                12 ti +a
+
+Now considering the subregion RI , the decoherence action within each corner segment RIl and RIr is given by
+                                                 Z ti +a            Z 2(t̄−ti )
+                                       1
+                           SrIl [∆X] =                        dt̄                 dτ kr (τ )∆X(t̄ + τ /2)∆X(t̄ − τ /2),                    (51a)
+                                             2       ti              −2(t̄−ti )
+                                                 Z tf              Z 2(tf −t̄)
+                                             1
+                          SrIr [∆X] =                        dt̄                  dτ kr (τ )∆X(t̄ + τ /2)∆X(t̄ − τ /2).                    (51b)
+                                             2       tf −a          −2(tf −t̄)
+
+We proceed by isolating the contributions to each of the t̄-integrals from around the end points ti and tf :
+
+                                                               SrIl [x] = S̄rIl [x] + RrIl [x],                                            (52a)
+                                                               SrIr [x] = S̄rIr [x] + RrIr [x],                                            (52b)
+
+where
+                                                                       Z t+         Z 2(t̄−ti)
+                                                               η          i              τ    B
+                                            RrIl [x] :=                       dt̄                       ds FΛ (s)xt̄ (s),                  (53a)
+                                                              πτB        ti
+                                                                                      −2(t̄−ti )
+                                                                                        τB
+
+                                                                       Z tf         Z 2(tτf −t̄)
+                                                               η                              B
+                                           RrIr [x] :=                        dt̄                       ds FΛ (s)xt̄ (s),                  (53b)
+                                                              πτB        t−
+                                                                          f
+                                                                                      −2(tf −t̄)
+                                                                                         τB
+
+
+define the remainder terms. The remainder for the left corner region can be estimated from
+                            Z t+
+                               i
+                                         Z 2(t̄−t
+                                              τ
+                                                 i)                                    Z t+
+                                                                                          i
+                                                                                                        Z 2(t̄−t
+                                                                                                             τ
+                                                                                                                i)
+                                                 B                                                               B
+                                   dt̄                    ds FΛ (s)xt̄ (s) ≤                      dt̄                 ds |FΛ (s)xt̄ (s)|
+                                           2(t̄−t )                                                        2(t̄−t )
+                             ti           − τ i                                          ti               − τ i
+                                               B                                                               B
+                                                                                                  Z t+
+                                                                                                     i
+                                                                                                                Z 2(t̄−t
+                                                                                                                     τ
+                                                                                                                        i)
+                                                                                                                      B
+                                                                                    ≤ MΛ                  dt̄                ds
+                                                                                                                  2(t̄−t )
+                                                                                                   ti            − τ i
+                                                                                                                      B
+
+                                                                                                  δt2
+                                                                                    = 2MΛ             ,                                     (54)
+                                                                                                  τB
+
+with MΛ := supt̄,s∈RI |FΛ (s)xt̄ (s)| and δt := t+
+                                                 i − ti . This implies
+                      l
+
+
+                                                                                  2ηMΛ δt2
+                                                                     |RrIl | ≤             ,                                                (55)
+                                                                                    π τB2
+                                                            p
+such that RrIl [x] can be made small as long as δt ≪ πτB2 /2ηMΛ . A similar analysis also applies to RrIr [x].
+                                                 I
+   Focusing now on the action functionals S̄rl/r [∆X], the inner integrals of Eqs. (51a) and (51b) can be evaluated
+following the same procedure outlined in Sec. II. In doing so, we get
+
+                            2η ti +a                2π(t̄ − ti )
+                               Z                                
+                   Il
+                 S̄r [∆X] =           dt̄ coth                     ∆X(t̄)2
+                            τB t+i
+                                                        τ B
+
+                                2η ti +a
+                                   Z            Z 2(t̄−ti )
+                                                            dτ kr(m) (τ ) ∆X 2 (t̄) − ∆X(t̄ + τ /2)∆X(t̄ − τ /2) ,
+                                                                                                                
+                              +             dt̄                                                                    (56a)
+                                 π t+i           q
+                               Z −
+                            2η tf                  2π(tf − t̄)
+                                                                
+                   Ir
+                 S̄r [∆X] =          dt̄ coth                      ∆X(t̄)2
+                            τB tf −a                   τB
+                                   Z −
+                                2η tf
+                                               Z 2(tf −t̄)
+                                                            dτ kr(m) (τ ) ∆X 2 (t̄) − ∆X(t̄ + τ /2)∆X(t̄ − τ /2) .
+                                                                                                                
+                              +            dt̄                                                                     (56b)
+                                 π tf −a        q
+                                                                                                                           12
+
+
+
+
+                                                                                                                    2
+FIG. 3. Plot of the integral (58) with varying upper limit set by t. As t → ∞ it asymptotically reaches the value π6 ; see Eq.
+(59).
+
+
+Note that unlike Eq. (46), the limit q → 0 of the τ -integrals cannot be formally taken since limΛ→∞ MΛ = ∞, and
+                               I
+hence the remainder terms Rrl/r [x] will not be properly bounded. We can, however, assume q to be sufficiently small
+(or Λ sufficiently large) so that the lower limit of these integrals can be approximately taken to zero.
+  Let us now consider the high-temperature limit. Expanding the inner terms of Eqs. (56a) and (56b) to leading
+order in τ yields
+                                     2τ η Z ti +a           
+                                                                2π(t̄ − ti )
+                                                                             
+                       Il                   B
+                                                                               ∆X ′ (t̄)2 − ∆X(t̄)∆X ′′ (t̄) ,
+                                                                                                            
+                     S̄r [∆X] ≈ . . . + 2               dt̄ B                                                  (57a)
+                                           π      +
+                                                 ti                τ B
+                                     2τ η Z t−    f
+                                                             
+                                                               2π(tf − t̄)
+                                                                             
+                       Ir                   B
+                                                                               ∆X ′ (t̄)2 − ∆X(t̄)∆X ′′ (t̄) ,
+                                                                                                            
+                    S̄r [∆X] ≈ . . . + 2               dt̄ B                                                   (57b)
+                                           π     tf −a             τB
+                                                              (m)
+where B(t) is defined as the antiderivative of the kernel kr (τ ),
+                                     πt         Z t                 Z τπt
+                                               π                          B
+                                  B        :=         dτ kr(m) (τ ) =       dx x2 csch2 x.                               (58)
+                                      τB      τB 0                     0
+
+An analytic result for this integral is found to be
+                                                                                         π2
+                                 B(t) = t t − t coth t + 2 ln(1 − e−2t ) − Li2 (e−2t ) +
+                                                                       
+                                                                                            ,                            (59)
+                                                                                         6
+                P∞ k
+where Lis (t) = k=1 kt s is the polylogarithm function.
+  In Fig. 3, the integral B(πt/τB ) is shown for several values of τB . The inverse time τB−1 determines the rate at
+which the asymptotic value of the integral is reached. Therefore, when τB is sufficiently small, the inner integral of
+Eq. (56a) will be constant for almost all t̄-values except for those close to the boundary ti . The same also applies to
+the inner integral of Eq. (56b) when t̄ approaches the upper limit tf .
+  We may formalize this behavior as follows. Let µ(t̄) define a measure in the piecewise sense
+                                        
+                                        
+                                         dt̄                  t̄ ∈ (ti + m, tf − mτB ),
+                                        
+                                            6     t̄−ti
+                                dµ(t̄) = π2 B τB dt̄             t̄ ∈ [ti , ti + mτB ],                             (60)
+                                                         
+                                                  t  − t̄
+                                        
+                                        6B f
+                                        
+                                                            dt̄  t̄ ∈ [t − mτ , t ],
+                                             π2       τB                 f      B   f
+
+                                                  2                                                                         2
+with m ∈ R+ chosen such that B(mτB /π) ∼ π6 . Then as τB → 0, the regions for which B(πt/τB ) deviates from π6
+will be confined to the end points of the interval [ti , tf ]. Since these points have zero measure, this implies
+                                                               (
+                                                                dt̄ t̄ ∈ (ti , tf ),
+                                             lim dµ(t̄) =                                                         (61)
+                                            τB →0               0, t̄ ∈ {ti , tf },
+                                                                                                                         13
+
+                                        1
+
+                         0                                                                             t̄
+                                            ti                                        tf
+
+              FIG. 4. Integration measure dµ(t̄) acting on the interval [ti , tf ] in the high-temperature limit.
+
+
+where the limiting behavior of µ(t̄) is illustrated in Fig. 4.
+  Because Eqs. (57a) and (57b) are already expanded in the limit of small τB , we may write
+
+             Sr [∆X] = SrI [∆X] + SrII [∆X]
+                             Z tf −a
+                       2η
+                     ≈                dt̄ ∆X(t̄)2
+                       τB ti +a
+                             Z ti +a                                       Z t−
+                                                 2π(t̄ − ti )                                 2π(tf − t̄)
+                                                                                                                
+                                                                                f
+                          +          dt̄ coth                   ∆X(t̄)2 +          dt̄ coth                 ∆X(t̄)2
+                               t+
+                                i
+                                                    τB                       tf −a               τB
+                                   Z tf
+                              ητB
+                                         dµ(t̄) ∆X ′ (t̄)2 − ∆X(t̄)X ′′ (t̄) + RrIl [∆X] + RrIr [∆X].
+                                                                            
+                          +                                                                                             (62)
+                               12 ti
+
+By further noting in the same limit that
+
+                                                 2π(t̄ − ti )
+                                                             
+                                      lim coth                  =1        t̄ ∈ (ti , ti + a),
+                                     τB →0          τB
+                                                 2π(tf − t̄)
+                                                             
+                                      lim coth                  =1         t̄ ∈ (tf − a, tf ),
+                                     τB →0           τB
+
+the first and second lines of Eq. (62) may also be written in terms of the measure dµ(t̄):
+                        Z tf                                                    
+                                      2η   2       ητB    ′   2            ′′
+                                                       ∆X (t̄) − ∆X(t̄)∆X (t̄) + RrIl [∆X] + RrIr [∆X].
+                                                                               
+             Sr [∆X] ≈       dµ(t̄)      ∆X (t̄) +                                                                      (63)
+                          ti          τB            12
+
+Hence, having explicitly treated the end terms of the decoherence functional Sr [∆X], we recover an analogous result
+to Eqs. (12)-(15) of the main text provided the remainder terms can be made negligibly small.
+
