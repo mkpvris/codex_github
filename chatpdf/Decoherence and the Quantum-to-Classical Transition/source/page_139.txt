@@ -1,0 +1,75 @@
+124      3 Localization Due to Environmental Scattering
+
+          q  constitute an orthonormal basis over the volume V in the sense
+The kets |
+that                           
+                                   |   q | = IˆV .
+                                    q                              (3.25)
+                                     q∈QV
+
+Here QV is the set of all momenta corresponding to the space of wave func-
+tions that fulﬁll periodic boundary conditions in the volume V , and IˆV de-
+notes the identity operator in this space.
+     We can then expand the initial density matrix ρ̂E (0) of the environmental
+particle in terms of an ensemble of the normalized momentum eigenstates
+ q ,
+|
+                                 (2π)3 
+                       ρ̂E (0) =                      q |,
+                                                  q 
+                                             μ(q)|                      (3.26)
+                                   V
+                                                 q∈QV
+
+where μ(q) is the momentum-space density. The great advantage of using this
+expansion is that the operator T̂ , see (3.17) and (3.18), is diagonal in the full-
+space momentum basis {|q} and therefore also in the properly normalized
+V -volume basis {|q }.
+    This feature enables us to evaluate the overlap χ(x )|χ(x), see (3.23),
+in a fairly straightforward manner. Using the expansion (3.26) for the state
+of the environment in (3.23), we ﬁrst get
+
+                      (2π)3 
+ χ(x )|χ(x) =                     q | Ŝx†  Ŝx |
+                               μ(q)                q
+                        V
+                                 q∈QV
+
+                      (2π)  3                                            
+                  =                           q | e−iq̂·x / Ŝ0† e−iq̂·(x−x )/ Ŝ0 eiq̂·x/ |
+                                        μ(q)                                                 q
+                        V
+                                 q∈QV
+
+                    (2π)3                                      
+                  =                            q | Ŝ0† e−iq̂·(x−x )/ Ŝ0 |
+                             μ(q)eiq·(x−x )/                             q .
+                      V
+                                 q∈QV
+                                                                                           (3.27)
+
+Now using that Ŝ0 = Iˆ + iT̂ [see (3.17)] and noting the relation (3.21), this
+expression becomes
+
+χ(x )|χ(x)
+   (2π)3                
+                                                       
+                                                                     
+ =                              q | Iˆ − iT̂ † e−iq̂·(x−x )/ Iˆ + iT̂ |
+              μ(q)eiq·(x−x )/                                        q
+      V
+              q∈QV
+          3
+      (2π)             &                                                        
+                                                                                              '
+=                                                               q | T̂ † e−iq̂·(x−x )/ T̂ |
+                                            q  + eiq·(x−x )/ 
+                               q | T̂ T̂ † |
+                     μ(q) 1 −                                                             q .
+        V
+              q∈QV
+                                                                                           (3.28)
+
+Here, any exponentials associated with the second term within the square
+brackets in the last line have dropped out, because the operator T̂ commutes
+with the momentum operator [see (3.18)].

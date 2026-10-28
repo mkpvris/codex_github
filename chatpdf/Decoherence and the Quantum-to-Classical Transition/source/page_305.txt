@@ -1,0 +1,39 @@
+7 Decoherence and Quantum Computing
+
+
+
+
+Quantum information theory and quantum computing have received rapidly
+growing attention over the past decade and have become one of the focal
+points of theoretical and experimental research. Quantum information theory
+views many fundamental concepts of quantum mechanics through a new lens.
+It has also inspired proposals for quantum technologies and applications,
+including the possibility of constructing a quantum computer in the future.
+Quantum computers that would implement useful algorithms are still far
+from any experimental realization, but many ideas have been worked out and
+some components that could serve as the basic building blocks of quantum
+computers have already been developed in the laboratory.
+    At the same time, research on quantum information theory and quantum
+computing has enormously increased the interest in studying and control-
+ling decoherence eﬀects. From a fundamental point of view, the basic for-
+mal description of decoherence as a von Neumann measurement interaction
+with the environment (see Sects. 2.5.1 and 2.6.3) can be recast in quan-
+tum information–theoretical terms using the formalism of conditional quan-
+tum dynamics [16, 323] (see also Sect. 7.4.1 below). Furthermore, in previous
+chapters of this book we have already alluded to the connection between
+decoherence and a (rather vague) notion of “information.” Speciﬁcally, we
+have made this link in discussing how environmental entanglement carries
+away which-state information, leading to decoherence (see Sect. 2.6). From
+a practical point of view, the functioning of any quantum computer is cru-
+cially dependent on the ability to maintain quantum coherence. Decoherence
+induces errors into the computation and is therefore the key obstacle to im-
+plementations of quantum computers.
+    In this chapter, we shall outline the role played by decoherence in quantum
+computing. In Sect. 7.1, we will review basic aspects of quantum computa-
+tion, including the key diﬀerences between quantum and classical compu-
+tation and the historical development of the core ideas on which quantum
+computation is based. In Sect. 7.2, we will discuss the trade-oﬀ between de-
+coherence and controllability that is at the heart of any implementation of
+quantum computers. Next, in Sect. 7.3, we will make some further remarks
+on the diﬀerences between decoherence and noise (see also Sect. 2.12), tai-
+lored to the topic of quantum computation. Sect. 7.4 will describe methods of

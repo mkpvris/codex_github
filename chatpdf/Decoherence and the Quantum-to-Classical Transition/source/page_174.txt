@@ -1,0 +1,52 @@
+160     4 Master-Equation Formulations of Decoherence
+
+(P1) We would like to express our master equation entirely in terms of the
+                                  (I)
+     reduced density operator ρ̂S (t) and the initial state of the environment,
+     i.e., we would like to eliminate any terms pertaining to a time-dependent
+     state of the environment. A master equation that fulﬁlls this property
+     is called an integro-diﬀerential equation, since the diﬀerential change of
+     the quantity of interest at a certain time t depends on an integral of a
+     function of this quantity over all times t ≤ t.
+                                                                          (I)
+(P2) We would like to eliminate any dependences of the change of ρ̂S at
+     time t on ρ̂S evaluated at times t < t.
+                 (I)
+
+
+    The trick to accomplish these goals lies in the application of the Born and
+Markov approximations mentioned above. Imposing the Born approximation
+will eliminate the dependence on the full density operator ρ̂(I) on the right-
+hand side of (4.22) and thus take care of (P1). The Markov approximation will
+then transform the resulting integro-diﬀerential master equation into a time-
+local diﬀerential equation, thereby achieving the goal stated in (P2). As we
+will discuss below, both approximations can be motivated from assumptions
+of weak system–environment couplings and of an environment that is large
+compared to the size of the system.
+    Before proceeding, let us note that in the following we will assume the
+absence of initial correlations between the system and the environment, i.e.,
+
+                         ρ̂(0) = ρ̂(I) (0) = ρ̂S (0) ⊗ ρ̂E (0).                (4.23)
+
+This is a reasonable assumption for the case of weak system–environment
+coupling considered here.
+
+Imposing the Born Approximation
+
+As already mentioned in Sect. 4.2.1 [see (4.6)], the Born approximation as-
+sumes that the density operator ρ̂ of the system–environment combination
+remains at all times in an approximate product form and that temporal
+changes in the density matrix ρ̂E of the environment can be neglected,
+
+                            ρ̂(t) ≈ ρ̂S (t) ⊗ ρ̂E   ∀t ≥ 0,                    (4.24)
+
+with ρ̂E = ρ̂E (0). The equivalent condition then also holds in the interaction
+picture,
+                                       (I)
+                         ρ̂(I) (t) ≈ ρ̂S (t) ⊗ ρ̂E ∀t ≥ 0.               (4.25)
+
+This is easily seen from the fact that ρ̂(I) (t) = eiĤ0 t ρ̂(t)e−iĤ0 t [see (4.15)].
+Since Ĥ0 = ĤS + ĤE acts separately on the system and the environment, it
+cannot establish any entanglement between the two partners.
+    The physical intuition behind the Born approximation is that the in-
+teraction between the system and the environment is suﬃciently weak (the

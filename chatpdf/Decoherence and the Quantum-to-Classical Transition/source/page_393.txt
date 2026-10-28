@@ -1,0 +1,52 @@
+                                             Appendix: The Interaction Picture      381
+
+    Up to now, we have considered the case of a single system S subject to
+some perturbation V̂ whose origin we have not speciﬁed further. Let us now
+enter the setting relevant to decoherence: We suppose that the perturbation is
+due to the interaction with some external environment E described by an in-
+teraction Hamiltonian Ĥint , i.e., V̂ ≡ Ĥint . If we denote the self-Hamiltonians
+of the system and the environment by ĤS and ĤE , respectively, we may write
+the total Hamiltonian of the composite system SE in the form
+
+                       Ĥ = Ĥ0 + V̂ ≡ ĤS + ĤE + Ĥint .                       (A.10)
+                                       / 01 2 /012
+                                                ≡Ĥ0        ≡V̂
+
+Following the usual strategy, we are interested in determining the time evo-
+lution of the reduced density operator ρ̂S (t). In our case, we would like to
+obtain the reduced interaction-picture density operator
+                                        &         '
+                             (I)
+                           ρ̂S (t) ≡ TrE ρ̂(I) (t) .                  (A.11)
+
+We will now address the following two questions:
+ 1. Given the reduced density operator ρ̂S (t) in the Schrödinger picture, what
+                                    (I)
+    is the corresponding operator ρ̂S (t) in the interaction picture?
+                                                              (I)
+ 2. What is the appropriate time-evolution equation for ρ̂S (t)?
+Let us answer the ﬁrst question. Evaluating the trace in (A.11) gives
+              &        ' (A.5)     &                   '
+          TrE ρ̂(I) (t) = TrE eiĤ0 t ρ̂(t)e−iĤ0 t
+                         (A.10) iĤS t
+                                       $   &                     '%
+                           = e          TrE eiĤE t ρ̂(t)e−iĤE t e−iĤS t
+
+                         = eiĤS t {TrE [ρ̂(t)]} e−iĤS t
+                         = eiĤS t ρ̂S (t)e−iĤS t
+                         (A.11)    (I)
+                           ≡      ρ̂S (t),                                       (A.12)
+
+where in the second-to-last line we have again used the invariance of the
+trace operation under cyclic permutations of the arguments (or, put slightly
+diﬀerently, the invariance of the trace under unitary transformations of the
+argument).
+    Equation (A.12) shows that the reduced density operator in the interac-
+tion picture is obtained by a unitary transformation of the reduced density
+operator in the Schrödinger picture involving the free system Hamiltonian
+ĤS only, i.e.,
+                         ρ̂S (t) = eiĤS t ρ̂S (t)e−iĤS t .
+                           (I)
+                                                                     (A.13)
+The analogy of (A.13) to the corresponding transformation for the total
+interaction-picture density operator ρ̂(I) (t), see (A.5), should now be clear. In

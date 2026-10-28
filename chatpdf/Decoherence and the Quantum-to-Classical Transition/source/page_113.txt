@@ -1,0 +1,46 @@
+98     2 The Basic Formalism and Interpretation of Decoherence
+
+to precess at a slightly diﬀerent frequency. However, by application of a suit-
+ably chosen control pulse the spin ensemble can be “refocused” (this is the
+so-called spin-echo technique).
+    Noise—the addition of random ﬂuctuations to the Hamiltonian of the
+system—does not create any system–environment entanglement and can be
+completely undone (at least in principle) by local operations. By contrast,
+decoherence means that the system becomes entangled with environmental
+degrees of freedom such that phase relations are for all practical purposes
+irreversibly lost from the system and can no longer be accessed by local mea-
+surements performed on the system. In turn, information about the system
+becomes imprinted in the environment. Thus, while in the case of classical
+noise the system is perturbed by the environment, (2.115) shows that deco-
+herence describes a situation in which the system perturbs the environment
+(see also Sect. IV.C of [16]). The nonlocal nature of quantum states then
+implies that this “distortion” of the environment by the system in turn inﬂu-
+ences what can be observed at the level of the system (as formally described
+by the reduced density matrix). However, as discussed in Sect. 2.11, this inﬂu-
+ence takes place on typically much shorter timescales than the perturbation
+of the system due to classical noise imparted by the environment.
+    Stochastic ﬂuctuations (i.e., classical-noise processes) have often also been
+used to simulate the inﬂuence of the environment on the system. Decoher-
+ence is then modeled through stochastic “kicks” applied to the system (see,
+e.g., [121, 123–125]). Of course, the same issues as discussed above apply
+here as well. The application of classical noise to a system corresponds to
+the unitary evolution of a closed system governed by a randomly ﬂuctuating
+Hamiltonian, while decoherence is represented by an open quantum system
+becoming deterministically entangled with another quantum system (i.e., the
+environment). In general, the quantum states of the system resulting from
+these two situations will have diﬀerent observable properties [121]. Only in
+certain cases the simulation of decoherence by classical noise will lead to
+formally similar results at the level of a density-matrix description. How-
+ever, the fundamental conceptual diﬀerences between noise and decoherence
+remain even in such cases. In Sect. 7.3, we will further discuss these diﬀer-
+ences in the context of quantum computing, in particular with respect to the
+experimental and theoretical simulation of decoherence by noise.
+
+
+2.13 Virtual Decoherence and Quantum “Erasure”
+As discussed in Sect. 2.7, the eﬀective irreversibility of the delocalization of
+local phase relations—induced by our inability to control the large number
+of degrees of freedom interacting with the system—is a hallmark of decoher-
+ence. We may distinguish such “real” decoherence from a (truly or eﬀectively)
+reversible delocalization of phases, which we shall refer to as virtual decoher-
+ence.

@@ -1,0 +1,59 @@
+230     5 Canonical Models For Decoherence
+
+Here Ê(τ ) = eiĤE τ Êe−iĤE τ denotes the collective environment operator Ê
+[deﬁned in (5.169)] in the interaction picture.
+    Since the environmental spins do not interact with each other and thus
+ (i) (j) 
+ σ̂x , σ̂z = 0 for i = j, the exponential eiĤE τ factors into single-spin terms,
+                                                               (i)                        (i)
+                              eiĤE τ ≡ ei                  i ĤE τ      =          eiĤE τ .                              (5.171)
+                                                                               i
+
+Therefore we can write the environment self-correlation function (5.170) as
+                  3 (i)                (i)
+                                                   4         3                  4
+   C(τ ) =    gi gj eiĤE τ σ̂z(i) e−iĤE τ σ̂z(j)   ≡   gi gj σ̂z(i) (τ )σ̂z(j)   .
+                                                                             ρ̂E                                           ρ̂E
+               ij                                                                         ij
+                                                                     (5.172)
+We now use again the fact that the environmental spins do not directly inter-
+act with each other and are therefore uncorrelated, which implies [compare
+(5.7) for the analogous argument in the model for quantum Brownian motion]
+                    3                  4  3           4 3        4
+                     σ̂z(i) (τ )σ̂z(j)   = σ̂z(i) (τ )    σ̂z(j)     (5.173)
+                                                  ρ̂E                               ρ̂E              ρ̂E
+
+for i = j. We may therefore decompose the sum in (5.172) as
+            3              4  3        4    3                     4
+  C(τ ) =     gi σ̂z(i) (τ )   gj σ̂z(j)   +   gi2 σ̂z(i) (τ )σ̂z(i)                                                     . (5.174)
+                                 ρ̂E                                   ρ̂E                                         ρ̂E
+           i                           j=i                                        i
+
+We now make the nonrestrictive assumption that the average of the “quantum
+force” due to the spin bath vanishes at t = 0 (if this is not the case, we can
+always add a constant to achieve this goal), that is,
+                        3 4       3           4
+                         Ê   =      gi σ̂z(i)   = 0.                   (5.175)
+                                        ρ̂E                                        ρ̂E
+                                                            i
+
+                                                     3        4
+                                                           (j)
+This implies that the term                    j=i gj   σ̂ z                       appearing in the ﬁrst sum on
+                                                                             ρ̂E
+the right-hand side of (5.174) is also (approximately) zero. This allows us to
+greatly simplify (5.172) by neglecting the crossterms i = j,
+                   3                      4
+          C(τ ) =    gi2 σ̂z(i) (τ )σ̂z(i)
+                                                                ρ̂E
+                        i
+                                                                                                         !
+                                             1                     −ĤE /kB T
+                    =       gi2 TrE                             e                      σ̂z(i) (τ )σ̂z(i)       .           (5.176)
+                        i
+                                              Z         i
+
+In the last line we have explicitly written out the expression for the thermal
+average over the initial state ρ̂E of the bath, with Z = TrE e−ĤE /kB T . First of
+all, since the bath spins are uncorrelated, the thermal average over the initial
+state ρ̂E involving all bath spins reduces to single-spin averages,

@@ -1,0 +1,45 @@
+222    5 Canonical Models For Decoherence
+
+    In summary, we have seen how the Born–Markov master equation for the
+spin–boson model can be obtained in a manner quite analogous to the deriva-
+tion of the master equation for quantum Brownian motion. The next step
+would consist of studying the spin–boson model beyond the Born–Markov ap-
+proximations, which often break down in physical situations where the central
+two-level system and its environment are at very low temperatures (see the
+discussion in Sect. 4.4). Prominent examples for such low-temperature sys-
+tems are the superconducting qubit systems operated at temperatures close
+to absolute zero (see Sect. 6.3).
+    As mentioned above, the rich non-Markovian dynamics of the spin–boson
+model have been analyzed in great detail by Leggett et al. [209]. As expected,
+the dynamics are found to exhibit strong dependences on the various param-
+eters in the model, such as the temperature of the environment, the form
+of the spectral density (subohmic vs. ohmic vs. supraohmic), and the overall
+system–environment coupling strength. For each parameter regime, a charac-
+teristic dynamical behavior emerges: Localization, exponential or incoherent
+relaxation, exponential decay, and strongly or weakly damped coherent oscil-
+lations (see Table I of [209] for an overview of the diﬀerent parameter regimes
+and the resulting dynamics).
+    We shall here refrain from discussing these rather complex dynamics
+and instead consider ourselves satisﬁed with the two models studied above,
+namely, the simpliﬁed spin–boson model and the spin–boson model in the
+framework of the Born–Markov approximations. These models already ex-
+hibit the main features relevant to a study of decoherence in models of
+the spin–boson type. Readers interested in an in-depth analysis of the non-
+Markovian dynamics of dissipation and decoherence in the spin–boson model
+will ﬁnd a vast amount of information in the article by Leggett et al. [209]
+and the book by Weiss [218].
+
+
+5.4 Spin-Environment Models
+Let us now switch our focus from the study of environments composed of
+harmonic oscillators to the analysis of models in which the environment is
+represented by a collection of spin- 12 particles (i.e., quantum two-level sys-
+tems). In Sect. 5.1.2, we already discussed the physical motivation for the
+consideration of such spin environments and mentioned some key diﬀerences
+between spin and oscillator environments.
+    A central system represented by a spin particle linearly coupled to a col-
+lection of other spins comprises the physically most relevant (and most stud-
+ied) spin-environment model. The typical physical situation for which such
+a “spin–spin model” is appropriate is that of a single two-level system, such
+as a superconducting qubit, strongly coupled to a low-temperature environ-
+ment (see our discussion in Sect. 5.1). The other “canonical” possibility of a

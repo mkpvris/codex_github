@@ -1,0 +1,54 @@
+212    5 Canonical Models For Decoherence
+
+                                |ΦE  =           |E0 i ,                (5.104)
+                                              i
+
+where the index i runs over all environmental oscillators. For a quantum
+harmonic oscillator, a coherent state |λ of amplitude λ is deﬁned via the
+relation [238–241]                           
+                        |λ ≡ exp λâ† − λ∗ â |E0  .             (5.105)
+Comparing this deﬁnition with the expression for the operator D̂ (λi (t)),
+see (5.103), we immediately see that D̂ (λi (t)) is simply the generator of a
+coherent state of amplitude λi (t) for the ith environmental oscillator. Thus
+the two ﬁnal states |E± (t) are products of coherent states with amplitudes
+±λi (t)/2,
+                           |E± (t) =   |±λi (t)/2 .                 (5.106)
+                                          i
+Therefore we deal with a measurement-like process. If the system is in the
+state |0 (|1), the state of the environment gets shifted into the state |E+ (t)
+(|E− (t)). If the states |E± (t) are suﬃciently distinguishable, i.e., if their
+overlap E− (t)|E+ (t) is small, they act as “pointers” capable of discriminat-
+ing between the states |0 and |1. In this case quantum coherence between
+|0 and |1 will be lost (or, rather, delocalized) from the system, and the
+oﬀ-diagonal elements in the reduced density matrix of the system expressed
+in the {|0 , |1} basis will decay.
+    To quantify this decoherence process, let us compute the time evolution
+of the overlap r(t) ≡ E− (t)|E+ (t) (which plays the role of a decoherence
+factor). For two coherent states |λ and |μ we have
+                                   "                      #
+                                      1 2 1 2
+                      λ|μ = exp − |λ| − |μ| + λ∗ μ .                    (5.107)
+                                      2       2
+Thus the decoherence factor r(t) is given by
+                                      "            #
+                                          1      2
+      r(t) = E− (t)|E+ (t) =    exp − |λi (t)|
+                                i
+                                          2
+                                   
+                                       |gi |2
+                             = exp −       4 2 (1 − cos ωi t) .           (5.108)
+                                        i
+                                            ωi
+
+For times t much smaller than the dynamical timescales ωi−1 of the envi-
+ronmental modes, i.e., ωi t  1, we can approximate the cosine in (5.108)
+by
+                                            1
+                              cos ωi t ≈ 1 − ωi2 t2 .              (5.109)
+                                            2
+In this case the decoherence factor is
+                                             
+                                                            2
+                 r(t) = E− (t)|E+ (t) ≈ exp −       2 |gi | t2 , (5.110)
+                                                             i

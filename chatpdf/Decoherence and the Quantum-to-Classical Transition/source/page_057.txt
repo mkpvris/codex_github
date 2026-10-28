@@ -1,0 +1,50 @@
+42        2 The Basic Formalism and Interpretation of Decoherence
+
+density matrix (2.20) represents an ignorance-interpretable (proper) mixture
+of pure states [47–49],12 in order to express the fact that a mixed-state density
+matrix of the form (2.20) can, to some extent, be interpreted as a classical
+probability distribution of pure quantum states |ψi . However, this is only
+true if we actually know that the system has indeed been prepared in one
+of the states |ψi , but we simply do not possess more speciﬁc information
+about which of these states has been prepared. On the other hand, if we are
+simply confronted with the density matrix (2.20) but are given no further
+information (e.g., about the preparation procedure), we cannot infer that the
+system actually is in one of the states |ψi . This is so because any nonpure
+density matrix can be written in many diﬀerent ways, which shows that
+any partition into a particular ensemble of quantum states is arbitrary. In
+other words, the mixed-state density matrix alone does not suﬃce to uniquely
+reconstruct a classical probability distribution of pure states.
+    To illustrate this fact, let us consider the mixed-state density matrix
+                                   1             1
+                            ρ̂ =     |0z 0z | + |1z 1z |.                  (2.34)
+                                   2             2
+We would use such a density matrix to describe a system that has been pre-
+pared in either one of the eigenstates |0z  and |1z  of the Pauli spin operator
+σ̂z (with equal likelihoods), but we simply do not know in which and must
+therefore resort to a description in terms of a classical probability distribution
+of these states.
+    On the other hand, the states |0z  and |1z  can also be rewritten in terms
+of the eigenstates |0x  and |1x  of the Pauli spin operator σ̂x for spin along
+along the x axis,
+                                     1
+                             |0z  = √ (|0x  + |1x ) ,
+                                      2
+                                                                               (2.35)
+                                     1
+                             |1z  = √ (|0x  − |1x ) .
+                                      2
+Using these expressions, the density matrix (2.34) can be equivalently written
+as
+                                 1            1
+                            ρ̂ = |0x 0x | + |1x 1x |.                     (2.36)
+                                 2            2
+In fact, ρ̂ can be rewritten in this form in inﬁnitely many ways in terms of spin
+eigenstates along any axis. Therefore, unless we know the physical axis along
+which the spin state of the system has been prepared, the density matrix alone
+provides us only with information about the probabilities of diﬀerent sets of
+pure states (here these sets would be represented by {|0z  , |1z }, {|0x  , |1x },
+etc.), but not about which particular set of states has been prepared.
+
+     12
+    This classiﬁcation will become important when introducing reduced density
+matrices (see Sect. 2.4.6), which will turn out to be not ignorance-interpretable.

@@ -1,0 +1,49 @@
+                                   4.2 The Born–Markov Master Equation       157
+                              ∞                    (I)
+                     B̂α ≡         dτ       Cαβ (τ )Ŝβ (−τ ),            (4.9a)
+                             0          β
+                              ∞                      (I)
+                     Ĉα ≡         dτ       Cβα (−τ )Ŝβ (−τ ).           (4.9b)
+                             0          β
+
+       (I)
+Here Ŝα (−τ ) denotes the system operator Ŝα in the so-called interaction pic-
+ture. The interaction-picture formalism will be used heavily in the derivation
+of the Born–Markov master equation below and is reviewed in the Appendix.
+From now on, we shall simplify our notation by omitting the superscript
+“(I)” for indicating operators in the interaction picture. Instead we shall in-
+troduce the convention that all operators bearing explicit time arguments
+are meant to be understood as interaction-picture operators. For the density
+operator, however, we will uphold the superscript notation to make clear the
+distinction from the Schrödinger-picture density operator, which also car-
+ries a time argument (since in the Schrödinger picture quantum states are
+explicitly time-dependent).
+    The quantity Cαβ (τ ) appearing in (4.9) is given by
+                                     3            4
+                           Cαβ (τ ) ≡ Êα (τ )Êβ   ,                     (4.10)
+                                                      ρ̂E
+
+where the average is taken over the initial state ρ̂E of the environment (recall
+that the Born approximation (4.6) means that ρ̂E remains approximately
+constant at all times). The Cαβ (τ ) will be referred to as the environment
+self-correlation functions in the following. The reason for this terminology is
+easy to understand. The operators Êα (provided they are Hermitian) can be
+thought of as observables “measured” on the environment by the interaction
+between the system and the environment. The environment self-correlation
+functions then tell us to what extent the result of such a “measurement”
+of a particular Êα is correlated with the result of a “measurement” of the
+same observable carried out a time τ later. Broadly speaking, these functions
+thus quantify to what degree the environment retains information over time
+about its interaction with the system. In fact, the Markov approximation
+corresponds to the assumption of a rapid decay of these environment self-
+correlation functions relative to the timescale set by the evolution of the
+system.
+    The form (4.8) of the Born–Markov master equation may look fairly
+daunting and diﬃcult to apply to concrete cases. To explicitly determine
+the quantities B̂α and Ĉα [see (4.9)] for a given model, we would need to
+calculate (i) the interaction-picture operators Ŝα (τ ) and Êα (τ ) (whose time
+evolution is given by the system and environment Hamiltonians ĤS and ĤE ,
+respectively; see Appendix), and (ii) the environment self-correlation func-
+tions Cαβ (τ ), see (4.10).
+    However, in many situations of interest, the master equation (4.8) simpli-
+ﬁes considerably. For example, in most cases we have to consider only a single

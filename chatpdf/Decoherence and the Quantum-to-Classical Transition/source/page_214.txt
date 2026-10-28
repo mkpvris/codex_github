@@ -1,0 +1,49 @@
+200    5 Canonical Models For Decoherence
+
+anomalous-diﬀusion coeﬃcient f may switch its role from aiding the suppres-
+sion of interference to a counteracting of this suppression.
+    A crucial feature of the time evolution of Aint as given by (5.77) is the
+direct dependence on the initial conditions, in particular, on the initial sep-
+arations X0 and P0 . The dependence enters via the coeﬃcients κx and κp ,
+which at time t = 0 take the values κx = P0 and κp = X0 [see (5.73b)].
+As we shall see now, this dependence is responsible for the very diﬀerent
+timescales for decoherence in position and momentum as mentioned above
+(see also Fig. 5.4).
+    First, let us focus on the limiting case (5.66) in which the initial state
+corresponds to a superposition of two Gaussians separated in position space
+only. Since κp = X0 at t = 0, we see that the contribution from the normal-
+diﬀusion term 4Dκ2p in the evolution equation (5.77) for Aint immediately
+plays a role in damping interference.
+    Let us study the time dependence of Aint as given by (5.77) for the simple
+Caldeira–Leggett case of a high-temperature ohmic environment discussed in
+Sect. 5.2.4 above. Here, the anomalous-diﬀusion coeﬃcient f becomes neg-
+ligible in comparison with the normal-diﬀusion coeﬃcient D, and D can be
+approximated by the value 2M γ0 kB T [see (5.51)]. Furthermore, let us make
+the simplifying assumption that the interference fringes do not move much
+over time, i.e., that we can neglect the time dependence of κp and replace it
+by its initial value of X0 . With these assumptions, (5.77) is readily solved to
+give
+                              Aint = 8M γ0 kB T X02 t,                    (5.78)
+                                                        √
+or, using the thermal de Broglie wavelength λdB = 1/ 2M kB T ,
+
+                                          (2X0 )2
+                              Aint = γ0           t.                     (5.79)
+                                            λ2dB
+
+Thus the oscillations in the Wigner function are exponentially damped at a
+decoherence rate
+                              −1       (ΔX)2
+                             τΔX  = γ0 2 ,                          (5.80)
+                                        λdB
+where ΔX is the coherent separation in position space. We thus recover our
+previous result (5.61) for the decoherence rate in the context of the Caldeira–
+Leggett case.
+    Let us now consider the situation (5.67) in which the superposition of
+Gaussians is initially only separated in momentum, i.e., X0 = 0. Thus κp = 0
+at t = 0, and consequently we initially have dAint /dt = 0. That is, Aint will
+remain at its initial value of zero until κp = 0 begins to diﬀer from zero,
+and thus at this initial stage no decoherence occurs. For a weakly damped
+system, one can then show [184] that κp evolves as κp (t) ∝ Xc (t), i.e., its
+value follows the trajectory of the direct peaks. Thus an increase in κp will
+be tied to a change in Xc . Xc starts out from an initial value of zero and

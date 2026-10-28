@@ -1,0 +1,49 @@
+274    6 Observing Decoherence in Action
+
+
+               U (Φ) [Ic Φ0 ]
+
+
+                0.3
+
+                0.2
+                                ψk (Φ)
+                0.1
+                                                    ψk (Φ)
+                   0
+                                         Φ = Φext
+                                                             Φ [Φ0 ]
+                    −0.2          0.2         0.6       1
+Fig. 6.19. Eﬀective double-well potential U (Φ) of the SQUID (in units of Ic Φ0 )
+in the vicinity of the bias point Φext = Φ0 /2. Low-lying energy eigenstates
+ψk (Φ) ≡ Φ|k are well-localized near the bottom of each well and are therefore
+also approximate eigenstates of the ﬂux operator. In the plot, the Φ-axis is mea-
+sured in units of the ﬂux quantum Φ0 , and we chose Φext = 35 Φ0 .
+
+
+U (Φ), with very little spread in ﬂux space. Thus each state |k corresponds
+to a relatively narrow range of values of the total ﬂux Φ and can therefore
+(at least for suﬃciently small k) also be regarded as a “fuzzy” eigenstate of
+the ﬂux operator, with the possible discrete ﬂux values determined by the
+continuity condition (6.32). Accordingly, the states |k are often referred to
+as “k-ﬂuxoid states.”
+    Classically, the barrier separating the two wells of the potential U (Φ) is
+impenetrable for the low-lying k-ﬂuxoid states |k, since their energy is less
+than the barrier height. However, quantum-mechanically, resonant tunneling
+between the wells can occur [282,283]. For example, one can apply a radiation
+ﬁeld to excite the system from a low-lying state to a higher-energy state,
+localized in the same well, and this state can subsequently decay to a lower (or
+equal) energy level in the other well via quantum tunneling. Such tunneling
+processes lead to a macroscopic change of the ﬂux Φ threading the ring, which
+can in turn be observed in form of a macroscopic change in the magnetic
+moment of the system.
+    One typically engineers the SQUID in such a way as to ensure that the
+ground state |0 and ﬁrst excited state |1 (localized at the bottom of opposite
+wells) are well-separated in energy from higher-lying states. Then the SQUID
+can be eﬀectively described as a macroscopic two-state (qubit) system. As
+basis states, we choose the two classical persistent-current states | and |
+corresponding to the supercurrent ﬂowing in, respectively, deﬁnite clockwise
+and anticlockwise directions around the loop. Formally, we may then write
+the eﬀective Hamiltonian of this two-state SQUID as
+
+                                  Ĥ = −σ̂z − Δσ̂x .                     (6.34)

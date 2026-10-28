@@ -1,0 +1,49 @@
+                              6.1 The First Milestone: Atoms in a Cavity       247
+
+levels |g and |e. Suppose the atom is initially in the ground state |g (i.e.,
+cg (0) = 1, ce (0) = 0), then a simple calculation yields the probability of the
+atom to be found in state |e after a time t,
+
+                                   2      2      Ωt
+                             |ce (t)| =      sin2    .                       (6.7)
+                                          Ω2      2
+             √
+Here Ω ≡ Δ2 + 2 is called the generalized Rabi frequency, where Δ =
+ω − ωeg quantiﬁes the detuning between the frequency ω of the ﬁeld and
+the atomic transition frequency ωeg ≡ (Ee − Eg ). We see that the larger the
+detuning Δ, the smaller the maximum amplitude of the component |e in the
+state |ψatom .
+    At resonance, i.e., when the frequency ω of the ﬁeld is tuned to the atomic
+transition frequency ωeg and thus Δ = 0, we have Ω = . Then (6.7) becomes
+
+                             2           t  1
+                       |ce (t)| = sin2      = (1 − cos t) ,                 (6.8)
+                                         2   2
+i.e., the atom cycles between the two energy levels |g and |e at the Rabi
+frequency . In particular, if the atoms starts out in the state |g (or |e)
+and the ﬁeld is switched on for a time τ = π/2 (a so-called “resonant π/2
+                  2
+pulse”), |ce (τ )| = 1/2, i.e., the resulting state of the atom is the equal-weight
+superposition
+                               |ψatom  ∝ |g + eiΦ |e ,                     (6.9)
+where Φ is some (real) phase. This is exactly how the initial superposition
+state of the rubidium atom is achieved in the experiment.
+    We shall also note that the technique of Ramsey interferometry outlined
+in Sect. 2.2.2 is directly based on the application of two π/2 Rabi pulses.
+The ﬁrst π/2 pulse creates the superposition of the two basis states, as in
+(2.4) and (6.9), whereas the second π/2 pulse, applied after a certain delay
+time, leads to the ﬁnal state (2.6) in which the magnitudes of the expansion
+coeﬃcients ﬂuctuate as a function of the delay time.
+
+6.1.2 Creating the Cat State
+
+How precisely is the superposition state of radiation ﬁelds achieved in the
+experiment? For the following discussion, the reader may refer to Fig. 6.1 for
+a schematic overview of each step of the process. Let us start by having a
+look at the experimental arrangement sketched in Fig. 6.2. Rubidium atoms,
+emitted from the source O and prepared in the initial state |e, pass through
+a series of three cavities, labeled R1 , C, and R2 . The purpose of the ﬁrst
+cavity R1 is to create the superposition state of the rubidium atoms in the
+manner described above. Namely, a π/2 pulse with frequency equal to the
+frequency of the atomic transition |g ←→ |e is applied to the rubidium
+atoms, creating the state (6.9) with Φ = 0, i.e.,

@@ -1,0 +1,50 @@
+144    3 Localization Due to Environmental Scattering
+
+We thus see that, due to the inﬂuence of environmental scattering, for short
+times the coherence length decreases linearly with time, and that the rate of
+decrease is proportional to the scattering constant Λ.
+    On the other hand, we may consider the limit in which t is much larger
+than the localization timescale τb . In view of the fact that the scattering
+rate Λ may take on very large values for macroscopic objects (see Table 3.1),
+this does not mean that t itself needs to be large for this limit to apply. For
+example, even with a rather low value of Λ ≈ 1020 cm−2 s−1 for a dust grain
+of size a = 10−3 cm and an initial coherent spread of 10% of this size, i.e.,
+b = 10−4 cm, we have τb ≈ 10−12 s. Thus, for a macroscopic object, the limit
+t  τb will typically be reached within a tiny fraction of a second. In this
+limit, (3.88) approaches the asymptotic expression
+                                          1
+                                (t) −→ √    .                            (3.91)
+                                         2Λt
+
+Thus in this case the coherence length follows a t−1/2 dependence and is
+independent of the width b of the initial state (3.84).
+   Let us now consider the time evolution of the total size ΔX(t) of the
+ensemble. From (3.81) and (3.87), we obtain
+                                  " 2                  #1/2
+                            1   1   t     8 Λt3
+              ΔX(t) = +       =         +       + 4b 2
+                                                            .             (3.92)
+                        8C(t)   2 m2 b2   3 m3
+
+In the absence of any environmental interactions (Λ = 0), i.e., for a purely
+unitary time evolution of the free particle described by the initial wave func-
+tion (3.84), ΔX(t) coincides with the expression for the coherence length (t)
+evaluated for Λ = 0 [see (3.89)],
+                                      " 2          #1/2
+                                    1   t        2
+                       ΔXfree (t) =         + 4b        .                 (3.93)
+                                    2 m2 b2
+
+Thus, without the environment, the spreading proceeds at exactly the same
+rate in both the x = x direction (describing the ensemble of positions) and
+the x = −x direction (representing spatial coherence). This, of course, is
+the expected behavior for a free particle: If the environment is absent, there
+exists no physical mechanism that would single out one of these two direc-
+tions over the other direction. However, once the environment is included, an
+asymmetry is introduced. Now the scattering events act as a form of measure-
+ment device for the position of the system. Broadly speaking, the scattered
+particles will try to resolve diﬀerences |x − x | between two positions x and
+x while being insensitive to the sum (x + x ) of two positions. This asymme-
+try of the environmental monitoring process with respect to the coordinates
+(x + x ) and (x − x ) is encapsulated in the form of the equation of motion for
+ρS (x, x , t) [see the right-hand side of (3.78)] and leads to the diﬀerent time

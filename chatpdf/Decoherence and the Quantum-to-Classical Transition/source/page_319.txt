@@ -1,0 +1,48 @@
+                                             7.4 Quantum Error Correction      307
+
+In classical computing, to detect the error that has occurred in a collection of
+bits, we can simply read out the state of each bit and then analyze the result
+in a suitable manner. By contrast, any measurement performed on the qubits
+will in general reveal some information about the state of the qubits. If we
+think of this measurement in the usual way as an interaction that entangles
+the qubits with some measurement device, then we know that this process
+will in turn lead to decoherence of the qubits.
+    The upshot of this fact is that, in order to successfully do error detection
+in the quantum setting, we must extract information about the error that has
+occurred in the qubit system without extracting any information about the
+state of the qubits themselves. Thus, even if we had managed to redundantly
+encode the state of a single qubit in a collection of physical qubits as in
+(7.12), we would have no direct way of measuring and comparing the states
+of each of the qubits without destroying the superposition and therefore the
+very quantum information that we were seeking to protect. We will see in the
+following sections how to overcome these obstacles and how to implement
+error correction in quantum computation.
+
+7.4.2 Representing the Inﬂuence of Decoherence
+by Discrete Errors
+
+While in the classical case we only need to correct discrete bit ﬂips, in the
+quantum setting the qubit state is represented by a superposition described
+by two real numbers that can change by any continuous amount. It would
+therefore appear that we need to have available an inﬁnite (in fact, uncount-
+ably inﬁnite!) number of diﬀerent error-correcting operations. Fortunately,
+this turns out not to be the case. As we shall see now, we can in fact dis-
+cretize the continuum of possible errors into linear combinations of a very
+small number of errors, which we can then quite easily correct. This remark-
+able result is one of the cornerstones for making quantum error correction
+possible. Let us see how this discretization comes about.
+    For this purpose, consider a single qubit S interacting with some environ-
+ment E. Suppose S is initially in a pure state
+
+                               |ψ = α |0 + β |1 .                         (7.16)
+
+Then, following our discussion in Sect. 2.15.3, the initial state of the com-
+posite qubit–environment system can always be written in the product form
+|ψ |er . A completely arbitrary interaction between S and E can be repre-
+sented by the evolution
+
+                    |0 |er  −→ c00 |0 |e00  + c01 |1 |e01  ,          (7.17a)
+                    |1 |er  −→ c10 |0 |e10  + c11 |1 |e11  ,          (7.17b)
+
+where the coeﬃcients cij are here equal to either zero or one, and where
+the environmental states |eij  are not necessarily orthogonal or normalized.

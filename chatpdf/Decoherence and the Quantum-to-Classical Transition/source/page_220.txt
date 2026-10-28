@@ -1,0 +1,46 @@
+206     5 Canonical Models For Decoherence
+
+5.2.7 Exact Master Equation
+
+The model for linear quantum Brownian motion has the remarkable feature
+of being exactly solvable. Maybe even more astonishing, as ﬁrst shown by
+Hu, Paz, and Zhang in 1992 [219] following preliminary work by other au-
+thors [109,221,230–232], the resulting exact (non-Markovian) master equation
+is local in time for arbitrary spectral densities of the environment (see also our
+discussion in Sect. 4.4). This master equation takes exactly the same func-
+tional form as the Born–Markov master equation (5.25) derived in Sects. 5.2.1
+and 5.2.2 above, namely,
+
+  d                   1 2                           )              *
+     ρ̂S (t) = −i ĤS + M Ω  (t)X̂ 2 , ρ̂S (t) − iγ(t) X̂, P̂ , ρ̂S (t)
+  dt                   2
+                                                                    
+                        − D(t) X̂, X̂, ρ̂S (t) − f (t) X̂, P̂ , ρ̂S (t) , (5.84)
+
+                  1
+with ĤS = 2M        P̂ 2 + 12 M Ω 2 X̂ 2 representing the harmonic-oscillator self-
+Hamiltonian (5.23) of the system.
+    The only—and key—diﬀerence between the exact equation (5.84) and
+the Born–Markov version (5.25) is the fact that now the coeﬃcients Ω            2,
+γ, D, and f are explicitly time-dependent and fairly complicated functions
+of other time-dependent coeﬃcients, which in turn involve various integrals
+over the noise and dissipation kernels (5.16) and (5.17) (see [219] for details).
+All subtle features of the exact non-Markovian dynamics are encapsulated
+in these coeﬃcients Ω       2 (t), γ(t), D(t), and f (t) appearing in (5.84), while
+the interpretation of the diﬀerent terms on the right-hand side of (5.84) is
+exactly the same as in the case of the Born–Markov master equation (5.25).
+As brieﬂy mentioned in Sect. 4.3, the particular time dependences of the
+coeﬃcients Ω   2 (t), γ(t), D(t), and f (t) enforce the positivity of the reduced
+density matrix [see (4.42)], despite the fact that (not surprisingly) the exact
+master equation cannot be written in the positivity-ensuring Lindblad form
+(4.44).
+    The fact that the reduced dynamics in the model for linear quantum Brow-
+nian can be determined exactly and are given by a time-local master equation
+is a fairly unique feature. Not many other physically interesting models seem
+to allow for the calculation of the exact master equation. One such example
+that permits an exact solution is that of a two-level system interacting with
+an environment of harmonic oscillators described by an interaction Hamilto-
+nian of a particular form (which is an example of a spin–boson model; see
+the next Sect. 5.3). As shown by Garraway [233, 234], the resulting exact
+master equation is local in time and has time-dependent coeﬃcients, just as
+the master equation (5.84) for quantum Brownian motion.

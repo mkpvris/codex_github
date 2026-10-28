@@ -1,0 +1,35 @@
+% 原文 p.104
+\hypertarget{srcpage:104}{}\label{srcpage:104}
+\subsubsectionlink{Schmidt分解}
+それぞれHilbert空間$\mathcal H_{\mathcal A}$、$\mathcal H_{\mathcal B}$を持つ二つの系$\mathcal A$、$\mathcal B$を考えよう。Schmidt分解定理\cite{ref144}によれば、複合系$\mathcal{AB}$の任意の純粋状態$\lvert\Psi\rangle$は、常に対角形、または「Schmidt」形
+\begin{equation}\lvert\Psi\rangle=\sum_i\lambda_i\lvert a_i\rangle\lvert b_i\rangle\tag{2.127}\end{equation}
+で書ける。ここでSchmidt状態$\lvert a_i\rangle$、$\lvert b_i\rangle$は、それぞれ$\mathcal H_{\mathcal A}$、$\mathcal H_{\mathcal B}$の正規直交基底、いわゆるSchmidt基底をなし、展開係数$\lambda_i$は、$\sum_i\lvert\lambda_i\rvert^2=1$を満たす複素数である。しかし、位相因子をSchmidt基底状態へ吸収すれば、これらの係数は、$\sum_i p_i=1$を満たす非負の実数$\sqrt{p_i}$に選べる。したがってSchmidt分解は
+\begin{equation}\lvert\Psi\rangle=\sum_i\sqrt{p_i}\lvert a_i\rangle\lvert b_i\rangle\tag{2.128}\end{equation}
+と書ける。さらに、この分解が一意であるのは、係数$\sqrt{p_i}$がすべて互いに異なる場合、かつその場合に限ることを示せる。
+
+Schmidt分解の一意性には、2.5.2節の優先基底問題の議論ですでに触れた。そこで、von Neumann測定相互作用の結果として現れ、対角的なSchmidt形にある、系と装置の最終的な複合状態の基底の曖昧さが、その状態から測定された観測可能量を一意に推論できないという問題につながることを示した。
+
+Schmidt定理は、$\mathcal A$、$\mathcal B$の縮約密度行列$\hat\rho_{\mathcal A}$、$\hat\rho_{\mathcal B}$にも直接の含意を持つ。式(2.128)を用いれば、$\hat\rho_{\mathcal A}$は、
+\begin{equation}\begin{split}\hat\rho_{\mathcal A}&=\operatorname{Tr}_{\mathcal B}\lvert\Psi\rangle\langle\Psi\rvert\\&=\sum_k\langle b_k\rvert\left[\sum_{ij}\sqrt{p_ip_j}\lvert a_i\rangle\langle a_j\rvert\otimes\lvert b_i\rangle\langle b_j\rvert\right]\lvert b_k\rangle\\&=\sum_i p_i\lvert a_i\rangle\langle a_i\rvert\end{split}\tag{2.129}\end{equation}
+で与えられ、同様に
+\begin{equation}\begin{split}\hat\rho_{\mathcal B}&=\operatorname{Tr}_{\mathcal A}\lvert\Psi\rangle\langle\Psi\rvert\\&=\sum_i p_i\lvert b_i\rangle\langle b_i\rvert\end{split}\tag{2.130}\end{equation}
+となる。
+
+% 原文 p.105
+\hypertarget{srcpage:105}{}\label{srcpage:105}
+したがって$\hat\rho_{\mathcal A}$、$\hat\rho_{\mathcal B}$は、それぞれ基底$\{\lvert a_i\rangle\}$、$\{\lvert b_i\rangle\}$で対角であり、同じスペクトル$\{p_i\}$を持つ。環境と相互作用する系という、デコヒーレンスに関係する場合に適用すれば、Schmidt定理は、関心のある系の縮約密度行列が、厳密に対角になる正規直交基底を、常に見いだせることを意味する。
+
+したがって密度行列のSchmidt分解とは、単に形式的な対角化と、それが常に可能だという事実を指す。この分解は量子物理学の多くの分野で重要な役割を果たすが、デコヒーレンスの記述や量子力学の解釈的問題への関係は、ときに誤って表現されてきた。これは、デコヒーレンスの効果が、環境の選ぶ特定の基底で、縮約密度行列の非対角要素が消えることとして記述されるため、形式的には密度行列の対角化、つまりまさにSchmidt分解の主題に対応するように見えるからかもしれない。
+
+実際、系の密度行列を各瞬間に対角化して得るSchmidt基底は、優先基底を与える能力について、頻繁に研究されてきた（たとえば文献\cite{ref005,ref006,ref145,ref146}）。そのためSchmidt基底状態を「瞬間的な指針状態」と考える人もいた\cite{ref145}。しかしSchmidt分解は、先験的な物理的意味や解釈上の意味を持たない、純粋な数学的手順である。縮約密度行列に適用したSchmidt定理は、そのような行列はすべて、何らかの基底で対角化できると述べるだけである。しかし、この基底が準古典的性質を表すとは限らない（たとえば文献\cite{ref147,ref148}）。これは、系と環境の相互作用の構造が選ぶ指針基底で、環境によって縮約密度行列が近似的に対角化されることと、際立って異なる。指針状態と密度行列を対角化する状態の重要な相違を、初めて明瞭に述べたのはZurek\cite{ref008}であり、2.8.3節の予測可能性のふるいなど、その後の発展の基礎となった。
+
+他の方法では、瞬間的なSchmidt状態を計算せず、代わりに、系と環境の相互作用の構造が選ぶ基底で、縮約密度行列が近似的に対角になるまで、特徴的なデコヒーレンス時間が過ぎるのを待つ。この過程は、たとえば適切なマスター方程式で記述できる（第4章）。その後、このデコヒーレンスした密度行列を対角化してSchmidt状態を計算する。デコヒーレンスは通常、非常によい近似で、指針基底の縮約密度行列を急速に対角化するため、得られるSchmidt状態は、後者が非常に近い縮退にある場合を除き、環境が超選択する状態と、典型的によく似ている。
+
+この近縮退の特別な状況は、容易に示せる\cite{ref146}。2次元Hilbert空間で記述される系を考える。デコヒーレンスの作用の結果、環境が超選択する基底で表した系の縮約密度行列が、次の形になったとする。
+
+% 原文 p.106
+\hypertarget{srcpage:106}{}\label{srcpage:106}
+\begin{equation}\rho=\begin{pmatrix}1/2+\delta&\omega^*\\\omega&1/2-\delta\end{pmatrix},\qquad\lvert\omega\rvert\ll1,\quad\delta\ll1.\tag{2.131}\end{equation}
+ここで$\lvert\omega\rvert\ll1$は強いデコヒーレンス、$\delta\ll1$は近縮退を表す。デコヒーレンスが厳密な対角化$\omega=0$をもたらせば、任意の固定した$\delta$に対して、$\rho$の固有ベクトルは、理想的指針状態に対応する$(0,1)$、$(1,0)$に比例する。しかし$\omega>0$という近似的対角性と、$\delta\longrightarrow0$という縮退の場合、固有ベクトル、したがってSchmidt状態は、$(\pm\lvert\omega\rvert/\omega,1)$に比例するようになる。これは縮退の場合、瞬間的なものではなく、デコヒーレンスした縮約密度行列を対角化しても、そのSchmidt分解が、環境の超選択する状態とは大きく異なる状態を与えうることを意味する。
+
+まとめると、優先される準古典的指針状態を得るための適切な基準は、環境との量子もつれに対する耐性であることを強調するのが重要である。これらの状態は一般に、系の瞬間的な密度行列を単に対角化しても得られない。しかし多くの状況で、デコヒーレンスした縮約密度行列の固有状態は、準古典的で安定な指針状態をよく近似する。特に、後者に十分な非縮退があるときにはそうである。

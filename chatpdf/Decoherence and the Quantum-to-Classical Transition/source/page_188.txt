@@ -1,0 +1,46 @@
+174     5 Canonical Models For Decoherence
+
+
+                     V (q)
+
+
+
+
+                               |0
+                                                 |1
+
+                                                            q
+
+Fig. 5.1. Mapping onto two-state systems. We consider a system described by an
+extended coordinate q and moving in a double-well potential V (q). In many cases,
+the system occupies only the lowest-lying state in each well and can therefore be
+eﬀectively described by two basis states |0 and |1, corresponding to localization
+in the left and right well, respectively.
+
+
+particle. Such two-level systems play a particularly important role in quan-
+tum computing, where they physically represent the qubits used to encode
+quantum information (see Chap. 7).
+    Intrinsic dynamics of the two-level system are created by quantum tun-
+neling between the wells, which results in transitions between the two states
+|0 and |1. Taking the states |0 and |1 as the eigenstates of the Pauli z-
+spin operator σ̂z , tunneling is therefore mediated by a term in the system’s
+Hamiltonian of the form
+                              1                        1
+                 ĤStunnel = − Δ0 (|01| + |10|) ≡ − Δ0 σ̂x ,             (5.1)
+                              2                        2
+where Δ0 is the so-called tunneling matrix element. The diﬀerence in energy
+(the so-called “asymmetry energy”) between the ground states in each of
+the two wells is often small in comparison with the energy spacing between
+the states in a given well, such that the low-lying energy levels in each well
+are approximately lined up. This ensures that a “particle” that is localized
+in one well—say, the left well corresponding to the state |0—and tunnels
+through the barrier usually cannot reach an excited level |1  = |1 in the
+right well [209].
+
+5.1.2 Mapping of the Environment
+
+Let us now turn to the mapping of the environment. As mentioned above,
+two situations of interest arise here: A description of the environment as a
+set of harmonic oscillators and as a collection of spin- 12 particles representing
+quantum two-level systems.

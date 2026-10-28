@@ -1,0 +1,56 @@
+220     5 Canonical Models For Decoherence
+
+Note the formal similarity of this expression to the result (5.24) for the
+interaction-picture position operator X̂(τ ) used in the context of the model
+for quantum Brownian motion.
+    We now insert (5.141) into our master equation (5.138). After some
+straightforward algebra, which involves rearranging terms and using the stan-
+dard identity relations σ̂y σ̂z = iσ̂x and σ̂z σ̂y = −iσ̂x for the Pauli spin op-
+erators, we obtain the ﬁnal expression for the Born–Markov master equation
+for the spin–boson model deﬁned by the Hamiltonian (5.137),
+
+  d                                        
+     ρ̂S (t) = −i ĤS ρ̂S (t) − ρS (t)ĤS† − D   [σ̂z , [σ̂z , ρ̂S (t)]]
+  dt
+                                             + ζ σ̂z ρ̂S (t)σ̂y + ζ ∗ σ̂y ρ̂S (t)σ̂z .   (5.142)
+
+Several new quantities appear in this equation. First,
+                                             
+                                   1       ∗
+                         ĤS = − Δ0 − ζ σ̂x                                              (5.143)
+                                    2
+
+is the renormalized (and in general non-Hermitian) Hamiltonian of the sys-
+tem. Thus the tunneling term − 21 Δ0 is changed by an amount ζ ∗ due to the
+inﬂuence of the environment, where
+
+                                          ζ ∗ = f − i
+                                                      γ.                                 (5.144)
+
+                 f, and γ
+The coeﬃcients D,          appearing in (5.142) and (5.144) are determined
+by expressions analogous to those for, respectively, the normal-diﬀusion and
+anomalous-diﬀusion coeﬃcients D and f [see (5.26c) and (5.26d)] and the
+damping coeﬃcient γ [see (5.26b)] in the model for quantum Brownian mo-
+tion,
+                              ∞
+                        
+                        D≡        dτ ν(τ ) cos (Δ0 τ ) ,            (5.145a)
+                             0 ∞
+                        f ≡      dτ ν(τ ) sin (Δ0 τ ) ,            (5.145b)
+                             0 ∞
+                        ≡
+                        γ         dτ η(τ ) sin (Δ0 τ ) .            (5.145c)
+                                      0
+
+Accordingly, once a speciﬁc form of the spectral density of the environment
+is chosen, the coeﬃcients (5.145) can be evaluated in much the same way as
+discussed for the case of quantum Brownian motion (see Sect. 5.2.3).
+    The interpretation of the diﬀerent terms appearing on the right-hand side
+of the master equation (5.142) is also similar to the case of quantum Brownian
+motion. The term
+                                                                         
+                                             1 ρ̂S (t) − 2σ̂z ρ̂S (t)σ̂z
+                 [σ̂z , [σ̂z , ρ̂S (t)]] = D
+                D                                                           (5.146)
+                                                2

@@ -1,0 +1,54 @@
+234       5 Canonical Models For Decoherence
+
+mapping technique, the Born–Markov master equation can then be immedi-
+ately written down by substituting X̂ −→ σ̂z in the general expression (5.22)
+for the master equation for quantum Brownian motion,
+
+   d                             
+     ρ̂S (t) = −i ĤS , ρ̂S (t)
+  dt
+    ∞
+ −        dτ {ν(τ ) [σ̂z , [σ̂z (−τ ), ρ̂S (t)]] − iη(τ ) [σ̂z , {σ̂z (−τ ), ρ̂S (t)}]} .   (5.193)
+      0
+
+The kernels ν(τ ) and η(τ ) are now given by the spin-bath expressions (5.191)
+and (5.192).
+     If we take the self-Hamiltonian of the system to be of the form ĤS =
+− 12 Δ0 σ̂x , as in our discussion of the spin–boson model (see Sect. 5.3.2), the
+explicit time evolution of the interaction-picture operator σ̂z (τ ) is
+
+          σ̂z (τ ) = eiĤS τ σ̂z e−iĤS τ = σ̂z cos (Δ0 τ ) + σ̂y sin (Δ0 τ ) .             (5.194)
+
+Using this expression in (5.193) yields the master equation
+
+  d                            
+                                    [σ̂z , [σ̂z , ρ̂S (t)]]+ζ σ̂z ρ̂S (t)σ̂y +ζ ∗ σ̂y ρ̂S (t)σ̂z .
+     ρ̂S (t) = −i ĤS , ρ̂S (t) − D
+  dt
+                                                                                            (5.195)
+
+This equation is formally identical to the spin–boson master equation (5.142).
+This result is of course not surprising: After all, it was our goal to map the
+spin bath onto an equivalent oscillator (i.e., bosonic) bath. The quantities
+appearing in (5.195) are deﬁned just as in the spin–boson case, see (5.143),
+(5.144), and (5.145a), but are now evaluated with the kernels (5.191) and
+(5.192).
+
+Example #2: Mapping of the Oscillator–Spin model
+onto the Model for Quantum Brownian Motion
+
+As another example for the mapping approach, let us discuss the case of a
+central harmonic oscillator (weakly) coupled to a spin bath [242]. A potential
+application of this (weak-coupling) “oscillator–spin model” is the modeling
+of decoherence and dissipation in quantum-electromechanical systems, which
+will be discussed in more detail in Sect. 6.4.2. Let us consider the rather
+general oscillator–spin model described by the total Hamiltonian
+                                                Δi                      
+      Ĥ = ĤS + ĤE + Ĥint = ĤS −                     σ̂x(i) + X̂ ⊗       gi σ̂z(i) ,    (5.196)
+                                                 i
+                                                     2                   i
+
+where
+                                            P̂ 2   M Ω2 2
+                                   ĤS =         +     X̂                                   (5.197)
+                                            2M      2

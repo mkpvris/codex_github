@@ -1,0 +1,51 @@
+224    5 Canonical Models For Decoherence
+
+model deﬁned by the Hamiltonian (2.100). The last term on the right-hand
+side of (5.150) corresponds to the familiar linear interaction between the
+z-spin coordinate of the central system and the z-spin coordinate of each
+environmental spin, with coupling strengths gi .
+
+Solving the Model
+
+Despite the presence of the tunneling term, the global dynamics of the model
+deﬁned by (5.150) can be solved exactly, as shown by Dobrovitski et al.
+[243] and Cucchietti, Paz, and Zurek [118]. We shall closely follow the latter
+approach [118] in our subsequent derivation.
+    A key simplifying feature of the Hamiltonian (5.150) arises from the fact
+that this Hamiltonian still contains only σ̂z environment operators, just as
+in the static case (2.100). Thus, as in the model discussed in Sect. 2.10, the
+eigenstates |n of the environment part Ê of the Hamiltonian are given by
+                                                                            (i)
+products of the eigenstates |↑i and |↓i of the ith environment operator σ̂z
+[see (2.101)]. Explicitly,
+
+                     Ê |n = n |n ,        n = 0, . . . , 2N − 1,   (5.151)
+
+with eigenvalues [see (2.102)]
+                                        N
+                                        
+                                 n =         (−1)ni gi ,              (5.152)
+                                        i=1
+
+where ni = 0 if the ith environmental spin is in the “up” state, and ni = 1 if
+this spin is in the “down” state.
+    Consider now a pure product system–environment state given by
+
+                                  |Ψn  = |ψS  |n ,                  (5.153)
+
+where |ψS  denotes an arbitrary state vector of the system. The action of the
+Hamiltonian (5.150) on this state is
+                                                  
+                                  1         1
+                    Ĥ |Ψn  = − Δ0 σ̂x + n σ̂z |Ψn  .              (5.154)
+                                  2         2
+In other words, for every environment state |n we can consider a correspond-
+ing eﬀective system Hamiltonian of the form
+                            (n)      1        1
+                          ĤS     ≡ − Δ0 σ̂x + n σ̂z .                (5.155)
+                                     2        2
+The time evolution of an arbitrary initial product state of the form
+                                         ⎛N          ⎞
+                                          2−1
+                      |Ψ (0) = |ψS (0) ⎝     cn |n⎠               (5.156)
+                                                   n=0

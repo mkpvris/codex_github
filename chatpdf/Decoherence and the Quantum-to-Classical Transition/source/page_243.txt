@@ -1,0 +1,52 @@
+                                          5.4 Spin-Environment Models       229
+
+the Born–Markov master equation for the spin environment is given by the
+Born–Markov master equation (5.22) for the oscillator environment evaluated
+with a modiﬁed spectral density. We shall now show how this is done.
+
+The Model
+
+We decompose the Hamiltonian for our spin-environment model in the usual
+form as
+                        Ĥ = ĤS + ĤE + Ĥint .                 (5.167)
+Here, ĤS is a general self-Hamiltonian of the system. We have also included
+a self-Hamiltonian
+                                 Δi             (i)
+                        ĤE = −        σ̂x(i) ≡   ĤE                 (5.168)
+                                  i
+                                     2          i
+
+of the environment, where Δi denotes the tunneling matrix element for the
+ith environmental spin. This self-Hamiltonian lends intrinsic dynamics to the
+environment, in contrast with the more simpliﬁed spin-environment models
+considered in Sects. 2.10 and 5.4.1. For simplicity, we assume here that the
+asymmetry energy for each spin vanishes, i.e., that each environmental “par-
+ticle” moves in a symmetric double-well potential.4
+    Finally, the interaction Hamiltonian Ĥint takes the usual form [compare
+(5.150)]                              
+                         Ĥint = ŝ ⊗   gi σ̂z(i) ≡ ŝ ⊗ Ê,          (5.169)
+                                     i
+
+i.e., a general coordinate ŝ of the system interacts bilinearly with each envi-
+ronmental spin, with coupling strengths quantiﬁed by the gi . Later, we will
+specialize on the cases ŝ = σ̂z for a spin system (the “spin–spin model”) and
+ŝ = X̂ for a harmonic-oscillator system.
+
+Computing the Spin-Environment Self-Correlation Function
+
+We assume the limit of weak system–environment couplings and take the en-
+vironment to be in thermal equilibrium at temperature T . We would now like
+to derive the Born–Markov master equation (see Sect. 4.2) for this spin-bath
+model. To do so, the ﬁrst goal will be the derivation of the environment self-
+correlation functions (4.10). Just as in the case of quantum Brownian motion
+[compare (5.5)], the interaction Hamiltonian (5.169) contains only a single
+term, and thus we need to calculate only one environment self-correlation
+function, namely,                    3         4
+                              C(τ ) = Ê(τ )Ê    .                   (5.170)
+                                               ρ̂E
+
+   4
+    The case of nonvanishing asymmetry energies, and thus the inclusion of terms
+                  (i)
+proportional to σ̂z in the self-Hamiltonian (5.168), can be treated in much the
+same way as outlined in this section [242].

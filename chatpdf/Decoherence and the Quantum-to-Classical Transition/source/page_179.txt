@@ -1,0 +1,51 @@
+                                 4.3 Master Equations in the Lindblad Form               165
+
+    e−iĤS t Ŝα (t)Ŝβ (t − τ )ρ̂S (t)eiĤS t
+                              (I)
+                                                                                 
+       = e−iĤS t Ŝα (t)eiĤS t e−iĤS t Ŝβ (t − τ )eiĤS t e−iĤS t ρ̂S (t)eiĤS t
+                                                                         (I)
+
+                                   
+       = Ŝα e−iĤS τ Ŝβ eiĤS τ ρ̂S
+       = Ŝα Ŝβ (−τ )ρ̂S .                                                            (4.38)
+
+In this way, (4.34) can now be written as (reintroducing the commutator
+notation)
+                                      ∞         $
+  d                                                                            
+     ρ̂S (t) = −i ĤS , ρ̂S (t) −           dτ     Cαβ (τ ) Ŝα , Ŝβ (−τ )ρ̂S (t)
+  dt                                  0           αβ
+                                                                                %
+                                                 +Cβα (−τ ) ρ̂S (t)Ŝβ (−τ ), Ŝα . (4.39)
+
+We can simplify our notation by realizing that the integral on the right-hand
+side of (4.39) extends over the entire range τ = 0 . . . ∞, and that therefore the
+overall time dependence of the environment self-correlation functions Cαβ (τ )
+and of the interaction-picture operators Ŝβ (−τ ) is eﬀectively integrated out.
+Using the time-independent quantities B̂α and Ĉα introduced in (4.9),
+                              ∞     
+                      B̂α =       dτ     Cαβ (τ )Ŝβ (−τ ),                (4.40a)
+                                 0           β
+                                  ∞        
+                         Ĉα =         dτ         Cβα (−τ )Ŝβ (−τ ),                 (4.40b)
+                                 0           β
+
+the Born–Markov master equation (4.39) then takes the ﬁnal form (4.8) given
+in Sect. 4.2, i.e.,
+   d                             $                                   %
+      ρ̂S (t) = −i ĤS , ρ̂S (t) −     Ŝα , B̂α ρ̂S (t) + ρ̂S (t)Ĉα , Ŝα . (4.41)
+   dt                              α
+
+This completes our derivation. In Chap. 5, we shall illustrate the applica-
+tion of this master equation in the context of several important decoherence
+models.
+
+
+4.3 Master Equations in the Lindblad Form
+Master equations in the so-called Lindblad form refer to a particular (al-
+beit quite general) class of Markovian master equations. They arise from the
+requirement that the master equation ought to ensure the positivity of the
+reduced density matrix at all times, i.e., that
+
+                                     ψ| ρ̂S (t) |ψ ≥ 0                               (4.42)

@@ -1,0 +1,50 @@
+240     5 Canonical Models For Decoherence
+
+  d                                        
+     ρ̂S (t) = −i ĤS ρ̂S (t) − ρS (t)ĤS† − D   [σ̂z , [σ̂z , ρ̂S (t)]]
+  dt
+                                             + ζ σ̂z ρ̂S (t)σ̂y + ζ ∗ σ̂y ρ̂S (t)σ̂z .   (5.204)
+
+The term in round brackets on the right-hand side represents the evolution
+under the environment-shifted self-Hamiltonian ĤS , the second term corre-
+sponds to decoherence in the σ̂z eigenbasis of the system, and the last two
+terms describe the decay of the two-level system.
+
+Spin-Environment Models
+
+We used the model of a tunneling central spin whose σ̂z coordinate is lin-
+early coupled to an environment of other spins to illustrate the selection of
+diﬀerent preferred pointer bases by the environment. We also showed how,
+in the weak-coupling limit, spin environments can be mapped onto oscillator
+environments. That is, the reduced dynamics of the system weakly coupled
+to a spin environment can be described by this system coupled to an equiva-
+lent oscillator environment described by an explicitly temperature-dependent
+spectral density of the form
+                                                      
+                                                   ω
+                       Jeﬀ (ω, T ) ≡ J(ω) tanh           ,            (5.205)
+                                                 2kB T
+
+where J(ω) is the spectral density of the spin environment. We can there-
+fore take over all our previous expressions from the oscillator-environment
+case (i.e., from the quantum Brownian motion and spin–boson models), but
+evaluate them with the eﬀective spectral density (5.205). We discussed the
+mapping of the spin–spin model onto the spin–boson model, and the mapping
+of the oscillator–spin model onto the model for quantum Brownian motion.
+
+Master Equations are General;
+Coeﬃcients and Spectral Densities are Speciﬁc
+
+The canonical models are described by fairly general master equations that,
+under certain assumptions, may even take similar formal structures for dif-
+ferent canonical models. For example, in Sect. 5.4.2 we have seen that, in the
+weak-coupling limit, spin-environment models can be mapped onto oscillator-
+environment models in the sense that the former can be described by master
+equations that are formally identical to the master equations derived for the
+latter models. In fact, the oscillator-environment equations turn out to be
+universal in the case of weak coupling [211].
+    However, what encapsulates the diﬀerences between environments and
+their physical properties is the speciﬁc form of the coeﬃcients multiplying
+the terms in the master equation. These coeﬃcients are in turn dependent on
+the spectral density of the environment. For example, the master equation for
+quantum Brownian motion evaluated with a standard ohmic spectral density

@@ -1,0 +1,93 @@
+\documentclass[a4paper,11pt]{ltjsarticle}
+
+% ========== package ========== %
+% --- 数式環境 --- %
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+% --- 数式環境 END --- %
+% ブラケット
+\usepackage{braket}
+% ベクトルの太文字
+\usepackage{bm}
+% 添え字左右上下 \fourIdx{左上}{左下}{右上}{右下}{ベース} で使う．Iは大文字
+\usepackage{fouridx}
+% 色
+\usepackage{color}
+% 余白指定
+\usepackage{geometry}
+% --- ページ内リンク --- %
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue}
+% --- ページ内リンク END --- %
+% 花文字
+\usepackage{mathrsfs}
+% 画像
+\usepackage{graphicx}
+% tcolorbox
+\usepackage{tcolorbox}
+% appendix
+\usepackage{appendix}
+% --- 参考文献 --- %
+\usepackage{etoolbox}
+\usepackage{fontspec} % fontspecは読み込んでOKですが、設定順序に注意が必要です
+%% --- 参考文献フォント --- %%
+  \IfFontExistsTF{Times New Roman}{
+    \newfontfamily\bibfontface{Times New Roman}
+  }{
+    \newfontfamily\bibfontface{FreeSerif} % 代替フォント
+  }
+%% --- 参考文献フォント END --- %%
+%% --- 参考文献リンク位置 --- %%
+  \BeforeBeginEnvironment{thebibliography}{%
+    \phantomsection
+    \addcontentsline{toc}{section}{参考文献}
+  }
+  \AtBeginEnvironment{thebibliography}{%
+    \normalfont\bibfontface
+  }
+%% --- 参考文献のリンク位置 --- %%
+% --- 参考文献 END --- %
+% ========== package END ========== %
+
+% ========== newcommand ========== %
+% --- セクションから目次へのリンク --- %
+\newcommand{\sectionlink}[1]{\section[#1]{\hyperlink{toc}{#1}}}
+\newcommand{\subsectionlink}[1]{\subsection[#1]{\hyperlink{toc}{#1}}}
+% セクション番号リンク
+\makeatletter
+\renewcommand{\@seccntformat}[1]{%
+  \protect\hyperlink{toc}{\csname the#1\endcsname}\quad
+}
+\makeatother
+
+\numberwithin{equation}{section}
+% ==========- newcommand END ========== %
+\allowdisplaybreaks
+%===========================================================
+% --- タイトル --- %
+%===========================================================
+\geometry{left=25mm, right=25mm, top=30mm, bottom=30mm}
+
+% Original template retained. Extensions needed for book hierarchy and figures.
+\usepackage{tikz}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{float}
+\usepackage{multicol}
+\usepackage{xparse}
+\RenewDocumentCommand{\sectionlink}{s m}{\IfBooleanTF{#1}{\phantomsection\section*{\hyperlink{toc}{#2}}\addcontentsline{toc}{section}{#2}}{\section[#2]{\hyperlink{toc}{#2}}}}
+\RenewDocumentCommand{\subsectionlink}{s m}{\IfBooleanTF{#1}{\subsection*{\hyperlink{toc}{#2}}}{\subsection[#2]{\hyperlink{toc}{#2}}}}
+\NewDocumentCommand{\subsubsectionlink}{s m}{\IfBooleanTF{#1}{\subsubsection*{\hyperlink{toc}{#2}}}{\subsubsection[#2]{\hyperlink{toc}{#2}}}}
+\newcommand{\paragraphlink}[1]{\paragraph{\hyperlink{toc}{#1}}}
+\numberwithin{figure}{section}
+\numberwithin{table}{section}
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+\renewcommand{\figurename}{図}
+\renewcommand{\tablename}{表}
+\hypersetup{pdftitle={デコヒーレンスと量子から古典への移行},pdfauthor={Maximilian Schlosshauer},urlcolor=blue,citecolor=blue,bookmarksnumbered=true}
+\title{\bfseries デコヒーレンスと\\量子から古典への移行\\[1ex]{\large\normalfont Decoherence and the Quantum-to-Classical Transition}}
+\author{Maximilian Schlosshauer\\[1ex]{\small The University of Melbourne, School of Physics}\\{\small Melbourne, Victoria, 3010, Australia}\\[1ex]{\small\href{https://link.springer.com/book/10.1007/978-3-540-35775-9}{Springer：原著}}}
+\date{2026年10月28日}
+\begin{document}\hypertarget{toc}{}\tableofcontents\clearpage\setcounter{section}{2}\input{chapters/ch03}\clearpage\input{chapters/ch04}\end{document}

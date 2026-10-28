@@ -1,0 +1,54 @@
+                                                             5.3 The Spin–Boson Model             219
+
+Hamiltonian (5.136). Namely, we will assume that the asymmetry energy ω0
+is equal to zero, corresponding to the central system moving in a symmet-
+ric double-well potential. With this assumption, the ﬁrst σ̂z term in (5.136)
+vanishes, such that our model is now deﬁned by the Hamiltonian
+
+             1          1           1
+                                                          
+      Ĥ = − Δ0 σ̂x +           p̂2i + mi ωi2 q̂i2 + σ̂z ⊗   ci q̂i . (5.137)
+             2          i
+                            2mi       2                    i
+
+This slightly simpliﬁed form of the Hamiltonian when compared with (5.136)
+makes the subsequent derivation of the Born–Markov master equation more
+transparent and will also allow us to more closely establish interesting analo-
+gies with quantum Brownian motion.
+    Fortunately, in our derivation we can proceed in a very similar manner as
+in the case of quantum Brownian motion (see Sect. 5.2.1). In fact, since we
+deal with the same type of environment and a bilinear system–environment
+coupling, many results can be taken over directly. For example, the bulk of
+the derivation of the master equation for quantum Brownian motion had
+been devoted to the calculation of the environment self-correlation functions
+(5.15). Since these functions are independent of the representation of the
+central system, we can directly use the results obtained in Sect. 5.2.1 in the
+following derivation.
+    In particular, we can take over the form of the master equation (5.22) for
+quantum Brownian motion and simply replace the position operator X̂ by
+the Pauli z-spin operator σ̂z ,
+                                          ∞
+  d                           
+     ρ̂S (t) = −i ĤS , ρ̂S (t) −               dτ {ν(τ ) [σ̂z , [σ̂z (−τ ), ρ̂S (t)]]
+  dt                                       0
+                                                     −iη(τ ) [σ̂z , {σ̂z (−τ ), ρ̂S (t)}]} ,   (5.138)
+
+where ĤS = − 12 Δ0 σ̂x is the system Hamiltonian. The noise and the dissipa-
+tion kernels ν(τ ) and η(τ ) appearing in (5.138) have exactly the same forms
+(5.16) and (5.17) as in the case of quantum Brownian motion, namely,
+                                               ∞                    
+            1 2                                                  ω
+    ν(τ ) =        ci {q̂i (τ ), q̂i }ρ̂E ≡     dωJ(ω) coth           cos (ωτ ) ,
+            2 i                                0                2kB T
+                                                                                               (5.139)
+                                                     ∞
+              i
+    η(τ ) =           c2i [q̂i (τ ), q̂i ]ρ̂E ≡         dωJ(ω) sin (ωτ ) .                   (5.140)
+              2   i                                 0
+
+
+The time dependence of the operator σ̂z in the interaction picture can be
+computed by solving the Heisenberg equations of motion with respect to the
+system Hamiltonian ĤS . The result is
+
+        σ̂z (τ ) = eiĤS τ σ̂z e−iĤS τ = σ̂z cos (Δ0 τ ) − σ̂y sin (Δ0 τ ) .                  (5.141)

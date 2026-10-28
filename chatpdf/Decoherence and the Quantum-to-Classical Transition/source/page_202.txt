@@ -1,0 +1,47 @@
+188    5 Canonical Models For Decoherence
+
+5.2.3 Ohmic Decoherence and Dissipation
+
+Let us now further evaluate the coeﬃcients Ω     2 , γ, D, and f [see (5.26)]
+appearing in the master equation (5.25) for quantum Brownian motion of a
+central harmonic oscillator. To do so, we must choose a speciﬁc functional
+form for the spectral density J(ω) appearing in the expressions for ν(τ ) and
+η(τ ) [see (5.16) and (5.17)].
+    As indicated above, one typically replaces the discrete sum in the original
+expression (5.18) for J(ω) with an (often phenomenologically motivated) con-
+tinuous function of the environmental frequencies ω. Usually, the frequency
+dependence of J(ω) is taken to follow a power-law dependence of the form
+J(ω) ∝ ω α . The most common choice for the exponent α is α = 1, such
+that J(ω) increases linearly with ω. This type of spectral density is called
+ohmic (the nomenclature has its origin in an analysis of dissipative eﬀects in
+the spin–boson model). Other, less important examples include “subohmic”
+spectral densities characterized by α < 1 and “supraohmic” spectral densities
+for which α > 1.
+    Let us now focus on the case of an ohmic spectral density J(ω) ∝ ω,
+which we may write explicitly as
+                                        2M γ0
+                               J(ω) =         ω.                         (5.43)
+                                         π
+Here, the constant γ0 describes the eﬀective coupling strength between the
+system and the environment. In our original discrete expression (5.18) for
+the spectral density, this interaction strength was represented by the sum
+over terms containing the individual oscillator couplings ci . As we shall see
+shortly, γ0 plays the role of a frequency-independent damping constant. (In
+phenomenological models of decoherence based on concrete experimental sit-
+uations, one often derives γ0 from measured data.)
+   A power-law frequency dependence of J(ω) would imply that the distri-
+bution of environmental frequencies grows without bound. However, this is
+physically unreasonable. Typically, the linear dependence of J(ω) on the fre-
+quency ω only holds for small values of ω and becomes attenuated toward
+higher frequencies. One therefore usually chooses a high-frequency cutoﬀ Λ
+and modiﬁes (5.43) to include a term that damps J(ω) for frequencies ω > Λ.
+A common choice is a cutoﬀ term of the so-called Lorentz–Drude form,
+
+                                   2M γ0     Λ2
+                          J(ω) =         ω 2     .                       (5.44)
+                                    π     Λ + ω2
+A plot of this spectral density is shown in Fig. 5.2. We see that, as intended,
+for environmental frequencies ω exceeding the cutoﬀ Λ the corresponding
+density J(ω) of frequencies decreases.
+    The explicit choice (5.44) for the spectral density J(ω) now allows us to
+compute the coeﬃcients Ω    2 , γ, D, and f [see (5.26)]. It turns out that the

@@ -1,0 +1,48 @@
+48        2 The Basic Formalism and Interpretation of Decoherence
+
+by referring to the amount of information encoded in one subsystem about
+the corresponding (relative) states of the other subsystem. We had related
+this measure to the distinguishability of the relevant states of one of the
+subsystems, quantiﬁed by the mutual overlap of these states. We thus see
+the intimate connection between the degree of entanglement, the amount of
+distinguishability, and the extent to which interference can be observed by
+performing measurements on only one of the subsystems.
+    For example, in the limiting case of vanishing overlap (and thus perfect
+distinguishability) of the states |b1  and |b2 , the reduced density matrix
+(2.49) becomes diagonal in the {|a1  , |a2 } basis,
+                                    1
+                            ρ̂A =     (|a1 a1 | + |a2 a2 |) .                   (2.51)
+                                    2
+Since the oﬀ-diagonal (interference) terms |a1 a2 | and |a2 a1 | are now ab-
+sent, there is no local observable Ô = ÔA ⊗ IˆB that would allow us to measure
+interference between the states |a1  and |a2 .
+
+Reduced Density Matrices Versus Ensembles
+
+An important remark is in order here. Evidently, the reduced density matrix
+(2.51) is formally identical to the density matrix that would be obtained if
+system A were described by a proper mixture. Recall that such a proper
+mixture would correspond to a situation in which the system is in either one
+of the two pure states |a1  and |a2  with equal probabilities, as opposed to
+the global entangled superposition (2.42) in which both components |a1  and
+|a2  are present (which could, at least in principle, always be conﬁrmed by
+suitable interference experiments; see Sect. 2.2.1).
+     The formal identity between the reduced density matrix (2.51) (arising
+from a tracing-out of the degrees of freedom of system B that is entangled
+with system A) and a mixed-state density matrix implies that a measure-
+ment of an observable that only pertains to system A cannot discriminate
+between the two cases, pure vs. mixed state.14 However, it is of crucial im-
+portance to understand that this formal identity must not be interpreted as
+implying that the state of the system can be viewed as mixed too (see also
+the discussions by d’Espagnat [47–49]). In general, density matrices are only
+a calculational tool for computing the probability distribution of a set of
+possible outcomes of measurements, but they do not specify the state of the
+system. Since the two systems A and B are entangled and the total compos-
+ite system is still described by the superposition (2.42), it follows from the
+     14
+     One can show (see, e.g., pp. 208–210 of [68]) that this inability to operationally
+discern mixed from pure states is in fact not just a consequence of the restriction
+to local measurements, but also holds for any observable of the composite system
+that factorizes into the form Ô = ÔA ⊗ ÔB , where ÔA and ÔB do not commute
+with the projection operators |ai ai | and |bi bi |, i = 1, 2, in the Hilbert spaces of
+A and B, respectively.

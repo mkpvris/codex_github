@@ -1,0 +1,47 @@
+106    2 The Basic Formalism and Interpretation of Decoherence
+
+a reduced density matrix (expressed in the environment-superselected basis)
+of the form                                    
+                               1/2 + δ ω ∗
+                         ρ=                       ,                 (2.131)
+                                  ω     1/2 − δ
+with |ω|  1 (strong decoherence) and δ  1 (near-degeneracy). If decoher-
+ence led to exact diagonality, ω = 0, the eigenvectors of ρ would be, for any
+ﬁxed value of δ, proportional to (0, 1) and (1, 0) (corresponding to the “ideal”
+pointer states). However, for ω > 0 (approximate diagonality) and δ −→ 0
+(degeneracy), the eigenvectors—and thus the Schmidt states—become pro-
+portional to (±|ω|/ω, 1). This implies that, in the case of degeneracy, the
+Schmidt decomposition of the reduced density matrix may yield states that
+are very diﬀerent from the environment-superselected states, even if the deco-
+hered (rather than the instantaneous) reduced density matrix is diagonalized.
+    In summary, it is important to emphasize that the resilience to envi-
+ronmental entanglement is the relevant criterion for obtaining the preferred
+quasiclassical pointer states. These states cannot, in general, be arrived at by
+simply diagonalizing the instantaneous density matrix of the system. How-
+ever, the eigenstates of the decohered reduced density matrix will, in many
+situations, approximate the quasiclassical stable pointer states well, especially
+when these latter states are suﬃciently nondegenerate.
+
+2.15.2 The Wigner Representation
+
+The Wigner representation (or Wigner function) is often used as an alter-
+native to the density matrix for systems described by a continuous degree of
+freedom. Typically, this degree of freedom is the position x of the system,
+and we shall here focus on this case. Given the (pure-state or mixed-state)
+position-space density matrix ρ(x, x ) ≡ x| ρ̂ |x  of the system, the Wigner
+function is deﬁned as [149, 150]
+                                +∞
+                           1
+               W (x, p) ≡             dy eipy ρ(x + y/2, x − y/2),       (2.132)
+                          2π    −∞
+
+where p is the momentum of the particle (or, more generally, the variable
+conjugate to x).
+    The Wigner function bears some similarities to a (classical) probability
+distribution in phase space. For example, W (x, p) is a real-valued function
+of x and p, and the probability distributions P (x) ≡ ρ(x, x) and P (p) ≡
+ρ(p, p) ≡ p| ρ̂ |p for x and p can be recovered as the marginals of W (x, p),
+                                             
+                           P (x) = ρ(x, x) = dp W (x, p),                (2.133)
+                                             
+                           P (p) = ρ(p, p) = dx W (x, p),               (2.134)

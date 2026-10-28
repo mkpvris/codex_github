@@ -1,0 +1,50 @@
+                 2.4 The Concept and Interpretation of Density Matrices               39
+                                                    (2.18) 
+                   Tr ρ̂ =       pi Tr (|ψi ψi |) =              pi = 1.         (2.23)
+                             i                                 i
+
+As discussed in Sect. 2.3, entanglement between two subsystems corresponds
+to the inability of writing the composite pure state |Ψ  as a tensor product
+|Ψ  = |ψ1 |φ2 of pure subsystem states |ψ1 and |φ2 . We may now restate
+this situation equivalently in the language of density matrices. The two sub-
+systems are entangled with each other if the composite system is described by
+a (pure-state or mixed-state) density matrix ρ̂ that cannot be written in the
+tensor-product form ρ̂ = ρ̂1 ⊗ ρ̂2 , where ρ̂1 and ρ̂2 are density matrices per-
+taining to the two subsystems. This criterion follows directly from the above
+deﬁnition of entanglement in terms of state vectors. Thus, whenever the total
+density matrix factorizes into subsystem density matrices, ρ̂ = ρ̂1 ⊗ ρ̂2 ⊗ · · · ,
+there exist no quantum correlations between these subsystems.
+    Finally, at the risk of overstating an important point, we emphasize that
+a mixed state must be clearly distinguished from a pure-state superposition
+of the form                           √
+                               |ψ =       pi |ψi  .                     (2.24)
+                                           i
+
+As discussed in Sect. 2.2.1, here all component states |ψi  are simultaneously
+present, which can (at least in principle) always be experimentally veriﬁed.
+There is no a priori probabilistic element contained in this superposition:
+|ψ is a pure state and therefore encapsulates maximum knowledge about
+the system. The density matrix corresponding to the superposition (2.24) is
+                             √
+              ρ̂ = |ψψ| =        pi pj |ψi ψj |
+                                 ij
+                                                       √
+                             =        pi |ψi ψi | +          pi pj |ψi ψj |.   (2.25)
+                                  i                     i=j
+
+The presence of the oﬀ-diagonal terms i = j (that represent interference be-
+tween diﬀerent states |ψi ) clearly distinguishes this pure-state density matrix
+from the mixed-state density matrix (2.20).
+
+2.4.3 Quantifying the Degree of “Mixedness”
+
+Since a pure-state density matrix ρ̂ = |ψψ| is simply the projection operator
+onto the pure state |ψ, it immediately follows that
+
+                                         ρ̂2 = ρ̂.                                 (2.26)
+
+This projection-operator property ρ̂2 = ρ̂ in fact constitutes a necessary and
+suﬃcient condition for the system to be in a pure state, as we can see from
+the following argument. Suppose the system is not in a pure state but is
+instead described by the mixed-state density matrix (2.20), with at least two
+non-zero probabilities pi . For this density matrix, we obtain

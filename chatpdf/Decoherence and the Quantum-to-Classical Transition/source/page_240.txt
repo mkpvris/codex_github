@@ -1,0 +1,56 @@
+226    5 Canonical Models For Decoherence
+
+                                   us to study the resulting
+matrix (5.158). This will then allow                         dynamics of
+                                    (n)   (n)     (n)
+the system. Explicit expressions px (t), py (t), pz (t) corresponding to
+each term Ûn (t)ρ̂S (0)Ûn† (t) in the sum on the right-hand side of (5.158) are
+obtained rather easily by using the explicit expression (5.159) for Ûn (t) (see
+[118] for the results).
+    The next step is then to calculate the sums over all individual terms of
+              2 (n)
+the form |cn | ps (t), s ∈ {x, y, z}, to obtain the full polarization vector [see
+(5.158) and (5.160)]. Instead of working with discrete indices n, let us now
+take the usual approach of rewriting (5.158) in an equivalent integral form as
+                                   
+                        ρ̂S (t) = d J()Û (t)ρ̂S (0)Û † (t),           (5.163)
+
+where we have introduced the spectral density describing the distribution of
+the environment energies  as
+                                      N
+                                     2 −1
+                                                 2
+                            J() =           |cn | δ( − n ).            (5.164)
+                                     n=0
+
+As shown by Cucchietti, Paz, and Zurek [118], this distribution approaches
+a Gaussian for large numbers N of environmental spins,
+                                                   
+                         N −→∞      1            2
+                   J() −−−−−→ +         exp − 2 .                 (5.165)
+                                   2πs2N        2sN
+
+The width sN of the Gaussian (5.165) quantiﬁes the typical range of the envi-
+ronmental energies  [see (5.152)]. We proved the result (5.165) in Sect. 2.10
+for the simpliﬁed situation in which all environment couplings and expansion
+coeﬃcients were assumed to be equal. However, (5.165) not only holds for
+much more general choices of coeﬃcients, but is also a good (continuum)
+approximation to the exact expression (5.164) for already very modest values
+of N [118].
+    Using the Gaussian spectral density (5.165), the components px (t), py (t),
+and pz (t) of the polarization vector are then given by [118]
+              
+                        Δ2 + 2 cos (2Ω t)
+      px (t) = d J() 0                   px (0),                        (5.166a)
+                                Ω2
+                       "                                         #
+                                              Δ0 sin (2Ω t)
+      py (t) = d J() cos (2Ω t) py (0) −                  pz (0) ,      (5.166b)
+                                                    Ω
+                       "                                                  #
+                          2 + Δ20 cos (2Ω t)          Δ0 sin (2Ω t)
+      pz (t) = d J()                        pz (0) +               py (0) ,
+                                  Ω2                        Ω
+                                                                          (5.166c)
+             +
+where Ω =        2 + Δ20 /4.

@@ -1,0 +1,46 @@
+122    3 Localization Due to Environmental Scattering
+
+scattering center is located at the origin. The last line of (3.10) can be used
+to deﬁne the translated scattering operator
+
+                            Ŝx ≡ e−iq̂·x/ Ŝ0 eiq̂·x/ ,               (3.11)
+
+which describes scattering with the scattering center located at the position
+x. To summarize, the scattering interaction is then given by
+
+              |x |χi  −→ Ŝ |x |χi  = |x Ŝx |χi  ≡ |x |χ(x) ,   (3.12)
+
+where we have introduced the abbreviation |χ(x) for the ﬁnal state of the
+environmental particle scattered at x. We see from (3.12) that the scattering
+process can be thought of as a measurement-like interaction that establishes
+correlations between the state |x, describing the center-of-mass position of
+the system, and the ﬁnal state |χ(x) of the particle, which encodes which-
+path information about the location x of the scattering center.
+    From (3.12) it follows that the scattering process transforms the initial
+composite density matrix
+                                
+   ρ̂(0) = ρ̂S (0) ⊗ ρ̂E (0) = dx dx ρS (x, x , 0)|xx | ⊗ |χi χi | (3.13)
+
+into the density matrix
+                      
+             ρ̂ = dx dx ρS (x, x , 0)|xx | ⊗ |χ(x)χ(x )|.        (3.14)
+
+Using (2.50), the corresponding ﬁnal reduced density matrix ρ̂S of the system
+is then given by
+                         
+       ρ̂S = TrE ρ̂ = dx dx ρS (x, x , 0)|xx |χ(x )|χ(x).       (3.15)
+
+Expressed in the position basis, the scattering-induced evolution of the re-
+duced density matrix can therefore be summarized as
+
+                  ρS (x, x , 0) −→ ρS (x, x , 0)χ(x )|χ(x).         (3.16)
+
+We see that the local suppression of spatial coherence due to the scattering
+event is quantiﬁed by the overlap χ(x )|χ(x) of the relative states of the
+scattered particle (see also our general discussion in Sects. 2.6.3 and 2.7). We
+shall now calculate the time dependence of this overlap.
+
+
+3.2 Calculating the Decoherence Factor
+To proceed, let us formally write the scattering operator Ŝ0 in terms of an-
+other operator T̂ (the “T -matrix”) as

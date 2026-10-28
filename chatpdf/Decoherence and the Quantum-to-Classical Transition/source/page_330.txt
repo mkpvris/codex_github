@@ -1,0 +1,46 @@
+318     7 Decoherence and Quantum Computing
+
+ 1. First, we apply cnot gates from the ﬁrst and the second of the S-qubits
+    to the ﬁrst ancilla qubit.
+ 2. Then, we carry out cnot gates from the ﬁrst and the third of the S-qubits
+    to the second ancilla qubit.
+
+    The eﬀect of this sequence of cnot gates on the initial ancilla state |00
+for each of the three-qubit computational basis states as the input is shown
+in Table 7.2. The combined state (7.44) of the ancilla and the three-qubit
+system after application of the above sequence of cnot gates then reads
+
+                      |Ψ  |00 −→ (α |000 + β |111) |00
+                                 + (α |100 + β |011) |11
+                                + (α |010 + β |101) |10
+                                + (α |001 + β |110) |01 .                  (7.45)
+
+We now see that we have correlated each of the four possibilities Ẑ000 , Ẑ100 ,
+Ẑ010 , and Ẑ001 with a distinct ancilla state |ij, (i, j) ∈ {0, 1}. Since these
+states are mutually orthogonal, we can perfectly distinguish the four error
+types by measuring the two ancilla qubits.
+    Now our error-correction procedure is almost complete. Suppose that the
+ancilla measurement has yielded the outcome (i.e., the error syndrome) “01.”
+This measurement has reduced the composite state (7.45) of the ancilla and
+the qubit system to
+                            (α |001 + β |110) |01 .                      (7.46)
+Since the ancilla is now completely disentangled from the qubit system, we
+can ignore the ancilla state in the following.
+   Based on the measurement outcome, we immediately know that we must
+apply the countertransformation Iˆ⊗ Iˆ⊗ σ̂x to correct the error (see Table 7.3).
+This transformation changes the state (7.46) according to
+
+
+Table 7.2. Evolution of the initial two-qubit ancilla state |00 after application of
+the ﬁrst (center column) and the second (right column) cnot gate, for the diﬀerent
+qubit–environment input states listed in the left column.
+
+                       Input    First cnot    Second cnot
+                        |000       |00           |00
+                        |111       |00           |00
+                        |100       |10           |11
+                        |011       |10           |11
+                        |010       |10           |10
+                        |101       |10           |10
+                        |001       |00           |01
+                        |110       |00           |01

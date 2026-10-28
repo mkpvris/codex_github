@@ -1,0 +1,47 @@
+294    7 Decoherence and Quantum Computing
+
+mitigating detrimental decoherence eﬀects in quantum computers by means
+of so-called quantum error correction. Finally, in Sect. 7.5, we will discuss
+quantum computation using the concept of decoherence-free (i.e., pointer)
+subspaces introduced in Sect. 2.8.1. Readers who would like to learn more
+about quantum information theory and quantum computing in general will
+ﬁnd plenty of material, for example, in the book by Nielsen and Chuang [56].
+
+
+7.1 A Brief Overview of Quantum Computing
+
+We all know that a computer bought today will be hopelessly outdated only
+a few years later. The rate at which computers have become faster over the
+past decades is nothing short of astounding. Accordingly, the complexity of
+the circuits that make up the computer’s processor (measured, for example,
+by the number of transistors per chip) continues to increase rapidly. Readers
+may have heard of Moore’s famous “law,” which states that circuit complexity
+roughly doubles every two years, a prediction that has proved surprisingly
+accurate up to date.
+    As a consequence, a few researchers in the 1970s and 1980s realized that
+at some point, the individual processing structures (e.g, transistors) on a chip
+would have to reach atomic scales at which quantum eﬀects would become
+important.1 They were thus led to speculations about whether such quan-
+tum eﬀects could in fact be harnessed in order to enhance computing power.
+Or, put even more boldly, could one build a computer whose power depends
+speciﬁcally on a clever use of quantum-mechanical principles?
+
+7.1.1 The Power of Quantum Computing
+
+Let us think for a second why a computer that is inherently quantum in nature
+would be so much more powerful than a standard (“classical”) computer. A
+classical computer encodes information in the elementary unit of a logical
+bit, which can take values of either “0” or “1.” A key mantra of quantum
+information theory is that “information is inevitably physical” (an insight
+probably ﬁrst emphasized by Landauer [325]). Information must always be
+encoded by some physical system, be it by a pencil stroke on a sheet of paper
+or by the presence of electrons in a transistor, and as such, the encoding of
+information itself is subject to the laws of physics.
+    Accordingly, let us consider a physical system that can be in two states
+corresponding to the bit values of “0” and “1,” and that therefore is capable
+of encoding one bit of information. In the spirit of our above argument of
+shrinking component sizes in computers, this system may well be a quantum
+system with two basis states |0 and |1 that are classically distinguishable
+   1
+    In a 1997 speech, Moore himself predicted this to happen around the year
+2017 [324].

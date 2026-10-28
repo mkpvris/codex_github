@@ -1,0 +1,45 @@
+                             2.15 Formal Tools and Their Interpretation     107
+         
+with dx dp W (x, p) = Tr(ρ̂) = 1.
+    However, there are important caveats that show that one must not take
+too far this tempting identiﬁcation between the Wigner function and a prob-
+ability distribution in phase space. Most importantly, the Wigner function
+will in general take on negative values in some regions, which demonstrates
+that it cannot represent a proper probability distribution. (In fact, one can
+show that the Wigner function of a pure state has no negative values if and
+only if the state is Gaussian [151]). Of course, this ﬁnding should not be
+all that surprising. After all, the uncertainty relation of quantum mechan-
+ics forbids the simultaneous determination of position and momentum with
+arbitrary precision. Therefore, quite simply, an actual quantum phase-space
+distribution cannot possibly exist.
+    Despite these cautionary remarks, in many cases the Wigner function
+allows us to nicely visualize position–momentum correlations and quantum
+interferences in phase space. The use of the Wigner function to represent
+“double slit–like” superpositions and to study the dynamics of phase-space
+decoherence goes back to Zurek [13]. In this book, we will employ the Wigner
+function in our study of quantum Brownian motion in Sect. 5.2.
+    To get a feel for what the Wigner function looks like, let us consider a
+superposition of two Gaussian wave packets separated by a distance Δx in
+position space (see Fig. 2.7). The corresponding Wigner function is shown
+in Fig. 2.8. We observe two main peaks together with an oscillatory pattern.
+The main peaks, often also called the direct peaks, are located in the clas-
+sically expected phase-space regions (i.e., separated by Δx in position and
+identical with respect to their extension in the momentum direction). We may
+therefore view these peaks as akin to describing the “classical” phase-space
+distribution described by the two superimposed peaks. We clearly see the
+signiﬁcant spread in the momentum direction, which is a consequence of the
+fairly tight localization in position space: According to the uncertainty prin-
+ciple, we cannot have perfect localization in both position and momentum,
+
+
+
+
+                                    Δx
+
+
+
+
+                                                           x
+
+Fig. 2.7. Illustration of a superposition of two Gaussian wave packets separated
+by Δx in space.

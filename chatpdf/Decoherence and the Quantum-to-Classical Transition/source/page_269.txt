@@ -1,0 +1,50 @@
+256    6 Observing Decoherence in Action
+
+the relative sign between these two components encodes information about
+the measured state of the atom.
+    Now suppose that this phase information is transferred to the “reservoir”
+C2 by the coupling between the two cavities. Then the state of C1 must
+accordingly be described by the mixture (6.24). The idea behind the exper-
+imental proposal is that, if the coupling between C1 and C2 is reversible
+to a suﬃciently large degree, the direction of this information transfer can
+subsequently be reversed, such that the initial superposition state in C1 is
+restored while C2 is returned to its initial empty state. Thus we can simulate
+a reversible decoherence process, in which the cavity C2 plays the role of a
+controllable single-mode environment for C1 that leads to decoherence and
+subsequent reappearance of the Schrödinger-cat state in C1 .
+    Let us make this argument a little bit more precise. Suppose energy is
+exchanged between the two cavities C1 and C2 in an oscillatory manner with
+frequency ΩC . This frequency is chosen such that the time required for the
+preparation of the cat state in C1 is much shorter than the time it takes for
+one cycle of energy exchange. Thus it is assumed that the coupling between
+C1 and C2 does not inﬂuence the preparation of the superposition state.
+Since the coupling is linear, a coherent ﬁeld |α(t) in C1 gives rise to another
+coherent ﬁeld |β(t) in C2 . Taking into account the fact that C2 contains no
+ﬁeld at t = 0, we can write α(t) = α0 cos(ΩC t/2) and β(t) = α0 sin(ΩC t/2).
+Therefore the initial cat state in C1 [see (6.18) and (6.19)]
+                                4
+                          (g,e)     1
+                         ΨC1      =   (± |α + |−α) ,                    (6.27)
+                                     N
+evolves into an entangled state for the combined C1 +C2 system,
+                     4
+               (g,e)      1
+              ΨC1 +C2 =     (± |α(t) |β(t) + |−α(t) |−β(t)) .        (6.28)
+                          N
+What happens now can easily be understood from the fact that the overlap of
+the two coherent-ﬁeld states |±α decreases as the mean number of photons
+        2
+n̄ = |α| increases. After a time t = π/ΩC has passed, β(t) = α0 , so all pho-
+tons are concentrated in cavity C2 . Thus the states |±β have attained their
+maximum degree of distinctness, whereas the distinguishability of the states
+|±α is at its minimum. This implies that cavity C2 now holds a maximum
+amount of information about the relative sign between the components in
+the superposition, at the expense of cavity C1 . In other words, there is no
+measurement that we could perform on C1 alone that would tell us anything
+about the relative sign between the components. C2 has carried away the
+phase information, and C1 is formally described by an incoherent mixture of
+states |±α, see (6.24).
+    The reader may recognize this state of aﬀairs as exactly analogous to our
+usual description of decoherence processes where the states associated with
+the environment rapidly attain orthogonality, leading to a decay of relative-
+phase information in the density matrix of the system (see Sect. 2.7). This

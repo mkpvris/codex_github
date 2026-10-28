@@ -1,0 +1,4280 @@
+
+--- PRINTED PAGE 171 / PDF PAGE 185 ---
+5 A World of Spins and Oscillators:
+Canonical Models for Decoherence
+Needless to say, there are countless diﬀerent physical systems in nature for
+which decoherence plays an important role. The task of modeling decoher-
+ence in each and every of these systems would therefore appear rather daunt-
+ing. Each time we are confronted with a diﬀerent physical system, it would
+seem that we would need to start from scratch in developing an appropriate
+system–environment model and in determining its dynamics. How could we
+accomplish this modeling task given the complexity of the many-body sys-
+tems and interactions typically encountered on mesoscopic and macroscopic
+scales?
+Fortunately, a very convenient simpliﬁcation comes to our rescue here. It
+turns out that in many (if not most) situations of practical interest, the cen-
+tral system interacting with an environment can be mapped onto a very small
+set of canonical models. In such models, the central system is represented ei-
+ther by a particle described by continuous phase-space coordinates moving in
+some potential (e.g., a harmonic-oscillator potential), or by a spin-1
+2 particle
+if the state space of the system is discrete and eﬀectively two-dimensional.
+Similarly, the environment is modeled as a collection of harmonic oscillators
+or spin particles. Accordingly, decoherence models in which the environment
+is represented by harmonic oscillators are commonly referred to asoscillator-
+environment models, and models based on an environment of spin particles
+are called spin-environment models. (A quick note on terminology: In the
+following, the expression “thermal bath,” or “bath” for short, will refer to an
+environment in thermal equilibrium.)
+Since there are four diﬀerent possible ways in which these choices for
+the representation of the system and the environment can be combined, we
+thus obtain a total of four main canonical models for decoherence. Canonical
+models play an enormously important role in studies of decoherence, since
+they are very general: The details of a given physical system in contact with
+a speciﬁc physical environment are largely encapsulated in the particular set
+of parameters used to evaluate the model. Thus once the model is solved for
+an arbitrary choice of parameters, it can rather easily be applied to a whole
+host of systems in nature by simply choosing the parameters in such a way
+as to match the physical situation of interest.
+
+--- PRINTED PAGE 172 / PDF PAGE 186 ---
+172 5 Canonical Models For Decoherence
+Each of the canonical models gives rise to decoherence dynamics that
+are unique to the model for some parameter regime and may approximate
+another model for a diﬀerent parameter regime. For example, in the limit of
+weak couplings between the system and the environment, spin-environment
+models can be mapped onto oscillator-environment models [199, 208] (see
+Sect. 5.4.2 below).
+This chapter is organized as follows. In Sect. 5.1, we shall discuss the
+physical motivations and assumptions that underlie the mapping of physical
+systems onto canonical models. Then, in Sect. 5.2, we will describe the ﬁrst of
+the canonical models that is very important to the description of decoherence
+and the quantum-to-classical transition in the everyday world around us. This
+is the model for quantum Brownian motion. It describes a particle represented
+by continuous phase-space coordinates and coupled to an environment of
+noninteracting harmonic oscillators.
+In Sect. 5.3, we then go on to replace the central system with an eﬀective
+two-level system. The resulting model has become known as the so-called
+spin–boson model, since here a central spin system interacts with a bosonic
+environment of harmonic oscillators. We will analytically solve a simpliﬁed
+version of this model and also derive the Born–Markov master equation for
+the general model.
+In Sect. 5.4, we will turn to spin-environment models. As we shall discuss
+below, these models become particularly relevant at very low temperatures
+such as those encountered in superconducting systems. We shall focus on the
+physically most relevant case of a central two-level system (represented by a
+spin-1
+2 particle) interacting with an environment of other spins. We will also
+describe the mapping of spin environments onto oscillator environments.
+The literature on the diﬀerent decoherence models and their application
+to concrete physical situations has become so vast that it would be hopeless
+to even attempt to capture this ﬁeld in its entirety. Nonetheless, this chapter
+will provide readers with a good overview of the main decoherence models
+and their physical relevance and demonstrate some of the standard techniques
+employed in solving these models. Inevitably, the discussion will occasionally
+be somewhat technical, so readers may pick and choose the preferred level of
+detail with which to study the text. Those who would like to focus on only
+one of the canonical models to begin with and later come back to the other
+models are encouraged to start with the model for quantum Brownian motion
+described in Sect. 5.2. This model not only is of crucial importance in studies
+of decoherence, but will also allow us to discuss many important physical,
+formal, and conceptual aspects of decoherence. We will see the Born–Markov
+master equation formalism in action, analyze the physical meaning of the
+diﬀerent terms in the resulting master equation, describe the role and prop-
+erties of spectral densities, illustrate the dynamics of decoherence and the
+environment-induced superselection of preferred states in phase space, and
+discuss general limitations of such decoherence models.
+
+--- PRINTED PAGE 173 / PDF PAGE 187 ---
+5.1 Mapping onto Canonical Models 173
+5.1 Mapping onto Canonical Models
+First, let us describe some of the physical ideas behind the mapping of the
+central system (Sect. 5.1.1) and the environment (Sect. 5.1.2) onto harmonic
+oscillators or spin-1
+2 particles.
+5.1.1 Mapping of the Central System
+In many cases, the relevant dynamics of the central system can be described
+by one or two coordinates of interest, even if the full microscopic structure
+of the dynamics of system is much more complicated. These coordinates may
+be either continuous or discrete.
+In the case of continuous coordinates, the typical situation of physi-
+cal interest is that of a mass point described by phase-space coordinates
+ˆX (position) and ˆP (momentum) and moving in some potential V ( ˆX). In
+studies of decoherence, one often considers a harmonic-oscillator potential
+V ( ˆX)= MΩ2 ˆX2/2, representing the motion of a particle, such as an atom
+or ion, conﬁned to a “trap,” for instance, a crystal lattice or magnetic ﬁeld.
+The free-particle case V ( ˆX) = 0 is also of obvious relevance to the quantum-
+to-classical transition.
+The selection of position and momentum as the relevant “classical” coordi-
+nates is a consequence of environmental interactions, namely, of environment-
+induced superselection (see Sect. 2.8). In many important cases, such as quan-
+tum Brownian motion (Sect. 5.2), the evolution of the central system is gov-
+erned in roughly equal strengths by the self-Hamiltonian ˆHS of the system
+and the system–environment interaction Hamiltonian ˆHint. Most interactions
+in nature are dependent on the distance between the two interacting partners,
+and thus ˆHint will typically be diagonal in position (see also Sect. 2.8.4). On
+the other hand, the kinetic-energy termM ˆP2/2i n ˆHS is diagonal in momen-
+tum. As we shall discuss in Sect. 5.2.5, the pointer states of the system then
+emerge as a compromise between complete localization in position space and
+complete localization in momentum space, leading to states that are approx-
+imately localized in phase space [86,106,109].
+The physically most relevant situation involving discrete coordinates is
+that of a central system eﬀectively acting as a two-level system. This typi-
+cally happens if the system has two energy minimums separated by a barrier
+and if the energy of the system is suﬃciently low (i.e., close to the energy
+minimums and much less than the barrier height). Then the dynamics of
+the system are eﬀectively those of a particle conﬁned to a double-well po-
+tential (Fig. 5.1). In many physical situations, besides the ground state only
+one or two excited states (if any) are contained in each well, and these ex-
+cited states are usually not populated. Thus we obtain an eﬀective two-state
+system, with the two states corresponding to localization in the “left” and
+“right” wells, respectively. The two levels can then in turn be mapped onto
+the two quantum states |0⟩ (“spin up”) and |1⟩ (“spin down”) of a spin- 1
+2
+
+--- PRINTED PAGE 174 / PDF PAGE 188 ---
+174 5 Canonical Models For Decoherence
+q
+V (q)
+|0⟩
+|1⟩
+Fig. 5.1. Mapping onto two-state systems. We consider a system described by an
+extended coordinate q and moving in a double-well potential V (q). In many cases,
+the system occupies only the lowest-lying state in each well and can therefore be
+eﬀectively described by two basis states |0⟩ and |1⟩, corresponding to localization
+in the left and right well, respectively.
+particle. Such two-level systems play a particularly important role in quan-
+tum computing, where they physically represent the qubits used to encode
+quantum information (see Chap. 7).
+Intrinsic dynamics of the two-level system are created by quantum tun-
+neling between the wells, which results in transitions between the two states
+|0⟩ and |1⟩. Taking the states |0⟩ and |1⟩ as the eigenstates of the Pauli z-
+spin operator ˆσz, tunneling is therefore mediated by a term in the system’s
+Hamiltonian of the form
+ˆHtunnel
+S = − 1
+2Δ0 (|0⟩⟨1| + |1⟩⟨0|) ≡− 1
+2Δ0ˆσx, (5.1)
+where Δ0 is the so-called tunneling matrix element. The diﬀerence in energy
+(the so-called “asymmetry energy”) between the ground states in each of
+the two wells is often small in comparison with the energy spacing between
+the states in a given well, such that the low-lying energy levels in each well
+are approximately lined up. This ensures that a “particle” that is localized
+in one well—say, the left well corresponding to the state |0⟩—and tunnels
+through the barrier usually cannot reach an excited level |1′⟩ ̸= |1⟩ in the
+right well [209].
+5.1.2 Mapping of the Environment
+Let us now turn to the mapping of the environment. As mentioned above,
+two situations of interest arise here: A description of the environment as a
+set of harmonic oscillators and as a collection of spin-1
+2 particles representing
+quantum two-level systems.
+
+--- PRINTED PAGE 175 / PDF PAGE 189 ---
+5.1 Mapping onto Canonical Models 175
+Oscillator Environments
+The representation of environments by a large number of harmonic oscilla-
+tors has a long history going back to quantum electrodynamics and to spin-
+wave and electron-gas models (see [210] for an overview). Oscillator envi-
+ronments correspond to a quasicontinuum ofdelocalized bosonic ﬁeld modes,
+with coherence and energy from the central system becoming eﬀectively irre-
+versibly lost into this extended bosonic environment. By “delocalized modes”
+we mean to convey the notion that the wave function of each harmonic oscil-
+lator (i.e., of each bosonic ﬁeld mode) is spread out over a large spatial region.
+This delocalization of the environmental modes is a characteristic property
+of harmonic-oscillator environments.
+Oscillator environments play an enormously important role in the model-
+ing of decoherence processes, mainly because such environments are of great
+generality. It can be shown that, at suﬃciently low energies, a large class of
+interacting system–environment compounds can eﬀectively be represented by
+one or two coordinates of the system linearly coupled to an environment of
+harmonic oscillators. In fact, as was originally demonstrated by Feynman and
+Vernon [211] (see also the work by Caldeira and Leggett [212]), the interac-
+tion withany environment can be rigorously mapped onto a system (linearly)
+coupled to an oscillator environment, provided the interaction is suﬃciently
+weak and second-order perturbation theory can be applied. (We will discuss
+this mapping in more detail in Sect. 5.4.2 below.)
+Spin Environments
+Spin environments are typically the appropriate model in the low-temperature
+setting. Of course, such low temperatures are usually not encountered in
+the everyday world around us. However, they are routinely attained in the
+laboratory and are crucial to many experiments. In particular, experiments
+devoted to the studies of macroscopic quantum coherence and decoher-
+ence (see Chap. 6)—most notably, those involving superconducting systems
+(Sect. 6.3)—require temperatures close to absolute zero in order to oper-
+ate. Such experiments are also of great interest with respect to the realiza-
+tion of qubit systems that could be used to implement quantum computers
+(Chap. 7).
+It is therefore very important to be able to correctly model decoherence in
+the low-temperature regime. Experimental evidence shows that in this regime
+decoherence is typically dominated by interactions withlocalized modes, such
+as paramagnetic spins, paramagnetic electronic impurities, tunneling charges,
+defects, and nuclear spins [199,200,213] (see also Sects. 6.3 and 6.4.2). The
+localization of these modes means that, in contrast with oscillator environ-
+ments, the wave function associated with each of these modes is conﬁned to
+a small region in space.
+
+--- PRINTED PAGE 176 / PDF PAGE 190 ---
+176 5 Canonical Models For Decoherence
+Each of the localized modes is described by a ﬁnite-dimensional Hilbert
+space with a ﬁnite energy cutoﬀ. Thus we can model these modes as a set
+of discrete states, which can be mapped onto a spin system. In most cases
+of interest, there are only two such states of interest, so we can map our
+environment of localized modes onto an environment of spin-1
+2 particles. The
+spin-environment modes may be part either of the physical system of in-
+terest itself (thus forming an “internal environment”) or of the surrounding
+substrate. For example, in so-called superconducting quantum interference
+devices (SQUIDs; see Sect. 6.3 for details) the ﬂux coordinate couples elec-
+tromagnetically not only to the huge collection of nuclear spins that make up
+the bulk matter of the SQUID and are located within the penetration depth
+of the ﬂux, but also to any impurities in the material [214].
+There are numerous other examples that show that spin environments are
+a signiﬁcant, and often dominant, source of decoherence. When researchers
+try to create coherent superposition states on macroscopic scales, they typ-
+ically operate the experiment at very low temperatures in order to “freeze
+out” the thermal environment and to thus minimize decoherence eﬀects. This
+thermal environment is precisely the bath of delocalized bosonic modes (i.e.,
+harmonic oscillators) discussed earlier. But lowering the temperature—often
+down to the vicinity of absolute zero, as in superconducting systems such as
+SQUIDs—usually does not aﬀect the inﬂuence of localized modes such as nu-
+clear spins and impurities that are intrinsically present in the material. These
+sources of decoherence will then become dominant in this low-temperature
+regime.
+Oscillator Environments versus Spin Environments:
+Diﬀerences and Similarities
+Having separately outlined physical motivations behind the use of oscillator
+and spin environments, let us now synthesize our exposition by discussing
+some important diﬀerences (and similarities) between these two types of en-
+vironments.
+As mentioned above, oscillator environments become universal environ-
+ments in the weak-coupling limit: The interaction of a system with an arbi-
+trary environment can be mapped onto the linear coupling to an equivalent
+oscillator environment [211,212]. In this sense one may say that (linearly cou-
+pled) oscillator environments presume the validity of the weak-coupling limit.
+Additionally, the coupling strength of each mode is usually assumed to scale
+with the number N of oscillators in the environment as ∝ 1/
+√
+N. This scal-
+ing ensures that summing up the contributions from all modes yields a value
+that is independent of N, and that thus the thermodynamic limit N −→ ∞
+is well-deﬁned.
+This combined assumption of weak and N-dependent coupling implies
+that, while the central system will in general be strongly aﬀected by the
+
+--- PRINTED PAGE 177 / PDF PAGE 191 ---
+5.1 Mapping onto Canonical Models 177
+collective inﬂuence of the oscillators in the environment, each individual os-
+cillator in the environment is only negligibly inﬂuenced by its coupling to
+the system. Any eﬀects imparted on the environment by the central system
+usually decay away very quickly (this corresponds to the Born–Markov ap-
+proximations introduced in Sect. 4.2). Thus the dynamics of the environment
+itself are hardly aﬀected by the dynamics of the central system.
+As frequently emphasized [199,200,210,215,216], the assumptions of weak
+and N-dependent coupling are usually not physically reasonable in the case
+of the localized modes represented by spin environments. In many physical
+situations of interest, the energy scale associated with the strength of the cou-
+pling of each environmental spin to the (usually macroscopic) coordinate of
+the central system dominates over the other relevant energy scales set by the
+remaining terms in the Hamiltonian. In particular, interactions between the
+spins in the environment are typically extremely weak. This is due to the fact
+that the wave functions of the diﬀerent environmental modes are localized,
+such that there is only little spatial overlap between these wave functions. Be-
+cause of their restricted phase space, the environmental spins couple usually
+also only very weakly to any other external (delocalized) modes. Furthermore,
+it has been argued [199,200] that in the spin-environment case it is usually
+neither necessary nor physically reasonable to use a strongly N-dependent
+scaling of the couplings as in the case of an oscillator environment (although
+spin-coupling scalings such as ∝ 1/N have sometimes been assumed in the
+literature; see, e.g., [217]).
+Thus the situation of interest in the case of spin environments is the
+strong-coupling regime described by coupling coeﬃcients that are indepen-
+dent of (or only weakly dependent on) the number of spins in the environment.
+This leads to a very diﬀerent behavior of the environment—and thus in turn
+of the system coupled to the environment—than in the case of an oscillator
+environment. Typically, the spin-environment modes become very strongly
+“slaved” to the relevant coordinate describing the central system, and thus
+the dynamics of the environment are heavily inﬂuenced by the dynamics of
+the central spin [199].
+This behavior allows for dynamical changes of the environment even in
+the zero-temperature limit when the intrinsic ﬂuctuations (i.e., the dynamics
+induced by the self-Hamiltonian and the interspin interactions) in the en-
+vironment are frozen out. One consequence of this eﬀect is that, as already
+mentioned above, the spin environment typically exerts a signiﬁcant decoher-
+ing inﬂuence on the system even at temperatures close to absolute zero (say,
+at μK temperatures), while the decohering eﬀect of an oscillator bath would
+in most cases become in comparison negligibly small at such temperatures.
+The experimental observation of relatively fast decoherence rates at near-zero
+temperatures would therefore indicate the interaction with localized modes
+as the dominant source of decoherence. This enables one to experimentally
+
+--- PRINTED PAGE 178 / PDF PAGE 192 ---
+178 5 Canonical Models For Decoherence
+distinguish the two sources of decoherence, namely, delocalized bosonic ﬁeld
+modes and localized spin-type modes.
+5.2 Quantum Brownian Motion
+The model for quantum Brownian motion consists of a particle moving in one
+spatial dimension and interacting linearly with an environment of indepen-
+dent harmonic oscillators in thermal equilibrium at a temperature T. Quan-
+tum Brownian motion constitutes the probably most important and most
+studied decoherence model. This model not only is the default choice for es-
+timating decoherence eﬀects especially on macroscopic everyday-world scales,
+but also plays an extremely important role in general studies of dissipative
+quantum systems [18,218]. We shall therefore spend some time investigating
+the subject of quantum Brownian motion.
+We will proceed as follows. First, in Sect. 5.2.1, we shall derive the Born–
+Markov master equation for the model using the formalism developed in
+Chap. 4. In Sect. 5.2.2, we shall discuss the master equation for the special
+case of the central particle’s being conﬁned to a harmonic-oscillator potential.
+We further evaluate the resulting master equation in Sect. 5.2.3 by focusing
+on a speciﬁc form of the so-called spectral density, which describes the prop-
+erties of the environment. In Sect. 5.2.4, we will then consider the special case
+of a high-temperature environment and derive the corresponding Caldeira–
+Leggett master equation, which plays a central role in studies of decoherence.
+In Sect. 5.2.5, we will analyze the dynamics of quantum Brownian motion by
+studying the time evolution of a superposition of two Gaussian wave packets
+in phase space. We will show how the interaction with the environment leads
+to the emergence of preferred states that are localized in phase space. The
+dynamical evolution of these pointer states then corresponds to the “quan-
+tum version” of Newtonian trajectories. Some cautionary remarks against
+an overgeneralization of the results of the Caldeira–Leggett model (as well as
+the general model for quantum Brownian motion) will be made in Sect. 5.2.6.
+Finally, in Sect. 5.2.7, we will brieﬂy discuss the exact master equation for
+quantum Brownian motion.
+5.2.1 Derivation of the Born–Markov Master Equation
+First, let us deﬁne our model. As usual, we decompose the total system–
+environment Hamiltonian ˆH into three parts [see (2.85) and (4.12)],
+ˆH = ˆHS + ˆHE + ˆHint. (5.2)
+For now, we shall leave the self-Hamiltonian ˆHS of the system unspeciﬁed.
+(In Sect. 5.2.2 below, we will specialize on the case of a harmonic-oscillator
+potential.) The self-Hamiltonian ˆHE of the environment describes a collection
+
+--- PRINTED PAGE 179 / PDF PAGE 193 ---
+5.2 Quantum Brownian Motion 179
+of harmonic oscillators. Since, by assumption, these oscillators do not interact
+with each other, ˆHE is simply the sum of all single-oscillator Hamiltonians,
+i.e.,
+ˆHE =
+∑
+i
+( 1
+2mi
+ˆp2
+i + 1
+2miω2
+i ˆq2
+i
+)
+. (5.3)
+In obvious notation, mi and ωi denote the mass and natural frequency of
+the ith environmental oscillator, and ˆqi and ˆpi are the canonical position and
+momentum operators.
+The form of the interaction between the system and the environment is
+such that the position coordinate ˆX of the central particle (the system S)
+couples linearly to the positions ˆqi of the oscillators in the environment, with
+coupling strengths ci. The interaction Hamiltonian ˆHint thus reads
+ˆHint = ˆX ⊗
+∑
+i
+ci ˆqi ≡ ˆX ⊗ ˆE. (5.4)
+The assumption of bilinear coupling (linear in bothˆX and ˆqi) is an important
+assumption of our model, which is therefore often explicitly referred to as
+“linear quantum Brownian motion.” Our following discussion will be based
+on this most commonly studied model.
+We see that the system–environment interaction is of the form (2.91),
+which describes the continuous environmental monitoring of the position
+coordinate of the system. Thus, without any further calculations, we can
+already anticipate that the coupling (5.4) will, among other possible conse-
+quences such as dissipative eﬀects and decoherence in other bases, lead to
+decoherence of the system in the position basis.
+Our ﬁrst goal is now to determine the environment self-correlation func-
+tions (4.10). Since ˆHint, see (5.4), contains a single term, only one such func-
+tion will need to computed, namely,1
+C(τ)=
+⣨
+ˆE(τ) ˆE
+⟩
+ˆρE
+, (5.5)
+where ˆρE =ˆρE(0) [see (4.6)]. Using (5.4), this expression can be evaluated,
+which yields
+C(τ)=
+∑
+ij
+cicj ⟨ˆqi(τ)ˆqj ⟩ˆρE
+=
+∑
+i
+c2
+i ⟨ˆqi(τ)ˆqi⟩ˆρE
+. (5.6)
+For the sake of notational simplicity, we have here omitted the tensor-product
+symbol “ ⊗” in products of operators pertaining to diﬀerent fragments of
+the environment (and will continue to do so throughout this chapter). The
+1As in the previous Chap. 4, throughout this chapter we shall use the convention
+that all operators (other than the density operator) with explicit time arguments
+should be understood as interaction-picture operators.
+
+--- PRINTED PAGE 180 / PDF PAGE 194 ---
+180 5 Canonical Models For Decoherence
+vanishing of the termsi ̸= j in the last step in (5.6) is due to the fact that the
+environmental oscillators do not interact with each other and are therefore
+completely uncorrelated. Thus, for i ̸= j,
+⟨ˆqi(τ)ˆqj ⟩ˆρE
+= ⟨ˆqi(τ)⟩ˆρE
+⟨ˆqj ⟩ˆρE
+=0 , (5.7)
+since the expectation value ⟨qi⟩ˆρE of the position coordinate of the oscillator
+is equal to zero.
+Thus our task of evaluatingC(τ) is now reduced to the goal of computing
+the averages ⟨ˆqi(τ)ˆqi⟩ˆρE
+[see (5.6)]. This is easily accomplished. Let us switch
+to the representation of ˆqi in terms of the bosonic creation and annihilation
+operators ˆa†
+i and ˆai,
+ˆqi =
+√
+1
+2miωi
+(
+ˆai +ˆa†
+i
+)
+. (5.8)
+Then the time evolution of the operator ˆqi in the interaction picture can be
+written as [see (A.4)]
+ˆqi(τ)=e i ˆHE τˆqie−i ˆHE τ =
+√
+1
+2miωi
+(
+ˆaie−iωiτ +ˆa†
+i eiωiτ
+)
+. (5.9)
+Therefore
+⟨ˆqi(τ)ˆqi⟩ˆρE
+= 1
+2miωi
+⣨
+ˆaiˆa†
+i e−iωiτ +ˆa†
+i ˆaieiωiτ
+⟩
+ˆρE
+= 1
+2miωi
+{⣨
+ˆaiˆa†
+i
+⟩
+ˆρE
+e−iωiτ +
+⣨
+ˆa†
+i ˆai
+⟩
+ˆρE
+eiωiτ
+}
+. (5.10)
+But the quantity
+Ni =
+⣨
+ˆa†
+i ˆai
+⟩
+ˆρE
+(5.11)
+is simply the mean occupation number of the ith oscillator in the environ-
+ment. By assumption, the environment is in thermal equilibrium, which cor-
+responds to
+Ni ≡ Ni(T)= 1
+eωi/kBT − 1. (5.12)
+Using this expression and the standard commutation relation
+[
+ˆai, ˆa†
+i
+]
+=1f o r
+the operators ˆai and ˆa†
+i , we can rewrite (5.10) as
+⟨ˆqi(τ)ˆqi⟩ˆρE
+= 1
+2miωi
+{
+[1 +Ni(T)] e−iωiτ +Ni(T)eiωiτ}
+= 1
+2miωi
+{[1 + 2Ni(T)] cos (ωiτ) − is i n(ωiτ)}
+= 1
+2miωi
+{
+coth
+( ωi
+2kBT
+)
+cos (ωiτ) − is i n(ωiτ)
+}
+, (5.13)
+
+--- PRINTED PAGE 181 / PDF PAGE 195 ---
+5.2 Quantum Brownian Motion 181
+where in the last step we have used the fact that [see (5.12)]
+1+2 Ni(T)=1+ 2
+eωi/kBT − 1
+= eωi/kBT +1
+eωi/kBT − 1 = coth
+( ωi
+2kBT
+)
+. (5.14)
+Hence the environment self-correlation function (5.6) can now be written as
+C(τ)=
+∑
+i
+c2
+i
+2miωi
+{
+coth
+( ωi
+2kBT
+)
+cos (ωiτ) − is i n(ωiτ)
+}
+≡ ν(τ) − iη(τ). (5.15)
+Here, the functions
+ν(τ)= 1
+2
+∑
+i
+c2
+i ⟨{ˆqi(τ), ˆqi}⟩ˆρE
+=
+∑
+i
+c2
+i
+2miωi
+coth
+( ωi
+2kBT
+)
+cos (ωiτ)
+≡
+∫ ∞
+0
+dωJ(ω) coth
+( ω
+2kBT
+)
+cos (ωτ), (5.16)
+η(τ)= i
+2
+∑
+i
+c2
+i ⟨[ˆqi(τ), ˆqi]⟩ˆρE
+=
+∑
+i
+c2
+i
+1
+2miωi
+sin (ωiτ)
+≡
+∫ ∞
+0
+dωJ(ω)s i n(ωτ) (5.17)
+are commonly referred to in the literature as thenoise kernel and dissipation
+kernel, respectively. The curly brackets{·, ·} in the ﬁrst line of (5.16) denote
+the anticommutator { ˆA, ˆB}≡ ˆA ˆB + ˆB ˆA. The function J(ω), introduced in
+the last line of (5.16) and (5.17), is deﬁned as
+J(ω) ≡
+∑
+i
+c2
+i
+2miωi
+δ(ω− ωi) (5.18)
+and is called the spectral density of the environment. Spectral densities en-
+capsulate the physical properties of the environment and play an immensely
+important role in theoretical and experimental studies of decoherence. In
+modeling the environment, one often goes to a continuum limit for the en-
+vironment in which the description in terms of individual oscillators with
+discrete frequencies ωi and masses mi is replaced by a spectral density J(ω)
+corresponding to a continuous spectrum of environmental frequencies ω.W e
+
+--- PRINTED PAGE 182 / PDF PAGE 196 ---
+182 5 Canonical Models For Decoherence
+shall discuss examples for such continuous spectral densities below. For the
+moment being, we shall stick to the original expression (5.18) forJ(ω). Thus
+far, the beneﬁt of the deﬁnition (5.18) therefore merely amounts to a slightly
+more compact notation of the noise and dissipation kernels (5.16) and (5.17).
+Having successfully determined the environment self-correlation function
+C(τ) [see (5.15)], we have completed the main step in the derivation of the
+desired Born–Markov master equation for quantum Brownian motion. The
+rest of the derivation is now straightforward. The operators ˆB and ˆC [see
+(4.9a) and (4.9b)] are immediately written down as
+ˆB =
+∫ ∞
+0
+dτC(τ) ˆX(−τ), (5.19a)
+ˆC =
+∫ ∞
+0
+dτC(−τ) ˆX(−τ), (5.19b)
+where
+ˆX(τ)=e i ˆHS τ ˆXe−i ˆHS τ (5.20)
+is the position operator of the system S in the interaction picture. Inserting
+(5.19a) and (5.19b), with C(τ) given by (5.15), into our general expression
+(4.8) for the Born–Markov master equation then yields
+d
+dt ˆρS(t)= −i
+[ ˆHS, ˆρS(t)
+]
+−
+∫ ∞
+0
+dτ
+{
+C(τ)
+[ ˆX, ˆX(−τ)ˆρS(t)
+]
++ C(−τ)
+[
+ˆρS(t) ˆX(−τ), ˆX
+]}
+. (5.21)
+Using the decomposition C(τ)= ν(τ) − iη(τ) [see (5.15)] involving the noise
+and the dissipation kernels (5.16) and (5.17) and rearranging terms leads to
+the ﬁnal form of the master equation,
+d
+dt ˆρS(t)= −i
+[ ˆHS, ˆρS(t)
+]
+−
+∫ ∞
+0
+dτ
+{
+ν(τ)
+[ ˆX,
+[ ˆX(−τ), ˆρS(t)
+]]
+−iη(τ)
+[ ˆX,
+{ˆX(−τ), ˆρS(t)
+}]}
+. (5.22)
+We see that the decohering (and dissipative) inﬂuence of the environment is
+completely described by integrals over the noise and dissipation kernels (5.16)
+and (5.17) multiplied by products of (Schr¨ odinger-picture and interaction-
+picture) position operators of the system.
+5.2.2 Harmonic Oscillator as the Central System
+To simplify the master equation (5.22) even further and to gain an under-
+standing of the physical meaning of the noise and dissipation terms, let us
+now specialize to the case of the system’s being represented by a harmonic
+oscillator with the standard self-Hamiltonian
+
+--- PRINTED PAGE 183 / PDF PAGE 197 ---
+5.2 Quantum Brownian Motion 183
+ˆHS = 1
+2M
+ˆP2 + 1
+2MΩ2 ˆX2. (5.23)
+The explicit form of the interaction-picture position operatorˆX(τ) [see (5.20)]
+is then easily determined by solving the Heisenberg equations of motions for
+the operators ˆX and ˆP of the system, which yields
+ˆX(τ)=e i ˆHS τ ˆXe−i ˆHS τ = ˆX cos (Ωτ)+ 1
+MΩ
+ˆP sin (Ωτ). (5.24)
+Inserting this expression for ˆX(τ) into (5.22) yields the Born–Markov master
+equation describing the reduced dynamics of a harmonic oscillator linearly
+and weakly coupled to a thermal environment of harmonic oscillators,
+d
+dt ˆρS(t)= −i
+[ ˆHS + 1
+2M ˜Ω2 ˆX2, ˆρS(t)
+]
+− iγ
+[ ˆX,
+{ˆP, ˆρS(t)
+}]
+− D
+[ ˆX,
+[ ˆX, ˆρS(t)
+]]
+− f
+[ ˆX,
+[ ˆP, ˆρS(t)
+]]
+. (5.25)
+Here, we have introduced the coeﬃcients ˜Ω2, γ, D,a n df deﬁned as
+˜Ω2 ≡− 2
+M
+∫ ∞
+0
+dτη(τ)c o s(Ωτ), (5.26a)
+γ≡ 1
+MΩ
+∫ ∞
+0
+dτη(τ)s i n(Ωτ), (5.26b)
+D ≡
+∫ ∞
+0
+dτν(τ)c o s(Ωτ), (5.26c)
+f ≡− 1
+MΩ
+∫ ∞
+0
+dτν(τ)s i n(Ωτ). (5.26d)
+Each of these coeﬃcients carries a particular physical interpretation, derived
+from its role in the master equation (5.25). Before discussing these terms
+one by one, let us ﬁrst rewrite (5.25) in two other equivalent ways that are
+frequently used in the literature.
+First of all, it is often convenient to express (5.25) in the position repre-
+sentation. Using the basic relation
+⟨X| ˆP ˆρS(t) |X′⟩ = −i ∂
+∂X⟨X| ˆρS(t) |X′⟩≡− i ∂
+∂XρS(X,X ′,t), (5.27)
+we obtain the equation of motion for the reduced density matrixρS(X,X ′,t)
+in the position basis,
+∂
+∂tρS(X,X ′,t)=
+[
+− i
+2M
+( ∂2
+∂X′2 − ∂2
+∂X2
+)
+− i
+2M
+(
+Ω2 + ˜Ω2
+) (
+X2 − X′2)
++γ(X − X′)
+( ∂
+∂X′ − ∂
+∂X
+)
+− D(X − X′)2
++if(X − X′)
+( ∂
+∂X′ + ∂
+∂X
+)]
+ρS(X,X ′,t). (5.28)
+
+--- PRINTED PAGE 184 / PDF PAGE 198 ---
+184 5 Canonical Models For Decoherence
+We may also express (5.25) as a master equation for the Wigner represen-
+tation W(X,P ), see (2.132) and Sect. 2.15.2, of the position-space reduced
+density matrixρS(X,X ′). Without giving the derivation here, we shall simply
+state the result [219],
+∂
+∂tW(X,P,t )=
+[
+− P
+M
+∂
+∂X+M
+(
+Ω2 + ˜Ω2
+)
+X ∂
+∂P+γ∂
+∂PP
++D ∂2
+∂P2 − f ∂
+∂X
+∂
+∂P
+]
+W(X,P,t ). (5.29)
+Readers familiar with statistical mechanics may recognize the formal simi-
+larity between (5.29) and the Fokker–Planck equation in classical statistical
+physics.
+Let us proceed by discussing the interpretation of the diﬀerent terms
+appearing in the master equation (5.25). The ﬁrst commutator on the right-
+hand side of (5.25),
+−i
+[ ˆHS + 1
+2M ˜Ω2 ˆX2, ˆρS(t)
+]
+, (5.30)
+describes the reversible unitary dynamics of a harmonic oscillator of physical
+frequency (Ω2 + ˜Ω2)1/2. Thus we see that ˜Ω2 introduces a temperature-
+independent shift of the natural frequency Ω of the central oscillator, repre-
+senting an example of the Lamb-shift contribution discussed on p. 155.
+Next, the term
+−iγ
+[ ˆX,
+{ˆP, ˆρS(t)
+}]
+(5.31)
+in (5.25) describes momentum damping—and thus dissipation—due to the
+interaction with the environment. To see this, consider the time evolution
+of the expectation value ⟨ ˆP ⟩t for the momentum of the central oscillator as
+determined by the equation of motion (5.25). Using the trace rule ⟨ ˆP ⟩ =
+TrS (ˆρS ˆP), we obtain
+d
+dt ⟨ ˆP ⟩t = d
+dtTrS
+{
+ˆρS(t) ˆP
+}
+=T rS
+{dˆρS(t)
+dt
+ˆP
+}
+= −M(Ω2 + ˜Ω2)⟨ ˆX⟩t − 2γ⟨ ˆP ⟩t. (5.32)
+The ﬁrst term −M(Ω2 + ˜Ω2)⟨ ˆX⟩t is due to the usual unitary evolution in the
+(Lamb-shifted) harmonic-oscillator potential. Let us, for the moment being,
+disregard this unitary nondissipative term. Then, from (5.32), we immediately
+see that, due to the interaction with the environment, the expectation value
+for the momentum of the central system decreases exponentially at a rate 2γ,
+⟨ ˆP ⟩t ∝ e−2γt⟨ ˆP ⟩0. (5.33)
+Thus we have shown that the term (5.31) in the master equation (5.25)
+indeed describes momentum damping at a rate proportional to γ. Note that
+
+--- PRINTED PAGE 185 / PDF PAGE 199 ---
+5.2 Quantum Brownian Motion 185
+this rate depends only on the spectral density but not on the temperature of
+the environment [see (5.17) and (5.26b)].
+Let us now consider the third term on the right-hand side of (5.25),
+−D
+[ ˆX,
+[ ˆX, ˆρS(t)
+]]
+. (5.34)
+Note that this term is of the Lindblad double-commutator form (4.45), de-
+scribing environmental monitoring of the position coordinateˆX of the system
+and thus decoherence in the position basis. This role can also be easily seen
+by writing out the double commutator in the position representation,
+D
+[ ˆX,
+[ ˆX, ˆρS(t)
+]]
+−→ D(X − X′)2ρS(X,X ′,t). (5.35)
+The reader may recognize the term on the right-hand side as being of a
+similar form as the expression (3.55) that described spatial localization in
+the model for environmental scattering discussed in Chap. 3. The coeﬃcient
+D multiplied by (X − X′)2 therefore plays the role of a decoherence rate.
+That is,
+τ|X−X′| = 1
+D(X − X′)2 (5.36)
+is the timescale on which spatial interferences over a distance |X − X′| be-
+come suppressed by a factor of e [see also (3.58)].
+The coeﬃcient D also describes diﬀusion in momentum, as seen from the
+time evolution of the expectation value ⟨ ˆP2⟩t of the squared momentum of
+the system. A simple calculation similar to the one leading to (5.32) yields
+d
+dt ⟨ ˆP2⟩t = −M(Ω2 + ˜Ω2)⟨ ˆX ˆP + ˆP ˆX⟩t − 4γ⟨ ˆP2⟩t +2D. (5.37)
+Focusing on the time dependence of⟨ ˆP2⟩t due to theD term only, we obtain
+the evolution ⟨ ˆP2⟩t ∝ Dt, which shows that D indeed describes diﬀusion in
+momentum space. D is therefore often referred to as the normal-diﬀusion
+coeﬃcient in the literature on quantum Brownian motion. Here, the termi-
+nology “normal diﬀusion” refers to the linear time dependence of ⟨ ˆP2⟩t.
+Recall that such normal diﬀusion is a signature of classical Brownian mo-
+tion, where the varianceσ2
+x of the normal distribution describing the possible
+positions of the particle increases as σ2
+x(t) ∝ t. In fact, the same time depen-
+dence holds also in the quantum case. It is easy to show that, in the long-time
+limit γt≫ 1, the master equation (5.25) yields for the time dependence of
+the position-space dispersion
+ΔX2(t)= D
+2m2γ2 t. (5.38)
+That is, the width ΔX(t) of the ensemble in position space asymptotically
+scales as ΔX(t) ∝
+√
+t, just as in classical Brownian motion. Indeed, this
+
+--- PRINTED PAGE 186 / PDF PAGE 200 ---
+186 5 Canonical Models For Decoherence
+similarity between the quantum and classical settings originally motivated
+the choice of the term “quantum Brownian motion.” Incidentally, (5.37) also
+conﬁrms our earlier ﬁnding (5.33) that the coeﬃcient γquantiﬁes dissipation,
+since ⟨ ˆP2/2M ⟩ is the kinetic energy of the system.
+The role of D as a diﬀusion coeﬃcient can also be seen from the master
+equation (5.29) in the Wigner representation. Singling out the D term, we
+obtain the evolution equation
+∂
+∂tW(X,P,t )= D ∂2
+∂P2 W(X,P,t ), (5.39)
+which has the well-known form of a diﬀusion equation in the variable P for
+the case of a constant diﬀusion coeﬃcient D.
+Finally, we turn our attention to the last term
+−f
+[ ˆX,
+[ ˆP, ˆρS(t)
+]]
+(5.40)
+in the master equation (5.25). This term, too, describes diﬀusion and deco-
+herence, just like the normal-diﬀusion term (5.34). This can best be seen from
+the Wigner form (5.29) of the master equation. The contribution due to the
+f term alone is
+∂
+∂tW(X,P,t )= −f ∂
+∂X
+∂
+∂PW(X,P,t ). (5.41)
+This form is similar to the diﬀusion equation (5.39) in terms of the appearance
+of a double derivative on the right-hand side of the equation. However, in
+contrast with the “normal” diﬀusion equation, in (5.41) this double derivative
+is composed of single derivatives with respect to two diﬀerent variables X
+and P. Motivated by this diﬀerence, the quantityf is often referred to as the
+anomalous-diﬀusion coeﬃcient in the literature. As we will show below, in
+many physical situations of interest the inﬂuence of this anomalous-diﬀusion
+term (5.40) on the reduced dynamics of the system is negligibly small in
+comparison with the normal-diﬀusion term (5.34). In such cases, we may use
+a simpliﬁed version of the master equation (5.25) without the anomalous-
+diﬀusion term (see Sect. 5.2.4).
+Note that in our model the normal-diﬀusion and anomalous-diﬀusion co-
+eﬃcients depend on both the spectral density J(ω) and the temperature T
+of the environment [see (5.26) with (5.16) and (5.17)]. This is in contrast to
+the frequency shift ˜Ω2 and the momentum-damping rateγ, which, as already
+mentioned above, are independent of the temperature of the environment.
+Finally, we shall mention that in the literature a (partially) “pre-Marko-
+vian” form of the coeﬃcients (5.26) is often discussed (see, e.g., [15,16]). In
+this case, the upper limit of the time integral is not yet taken to inﬁnity but
+only up to the time t (see also the discussion on p. 163). In other words, an
+explicitly time-dependent version of the coeﬃcients ˜Ω2(t), γ(t), D(t), and
+f(t) is considered,
+
+--- PRINTED PAGE 187 / PDF PAGE 201 ---
+5.2 Quantum Brownian Motion 187
+˜Ω2(t)= − 2
+M
+∫ t
+0
+dτη(τ)c o s(Ωτ), (5.42a)
+γ(t)= 1
+MΩ
+∫ t
+0
+dτη(τ)s i n(Ωτ), (5.42b)
+D(t)=
+∫ t
+0
+dτν(τ)c o s(Ωτ), (5.42c)
+f(t)= − 1
+MΩ
+∫ t
+0
+dτν(τ)s i n(Ωτ). (5.42d)
+The master equation (5.25) evaluated with these time-dependent coeﬃcients
+instead of the “Markovian coeﬃcients” (5.26) is then of the Redﬁeld type
+[174,175] mentioned in Sect. 4.2.2. That is, the master equation is based on (i)
+the Born approximation and (ii) the ﬁrst Markov approximation of replacing
+the retarded-time density operator ˆρ(I)
+S (t′)b yˆρ(I)
+S (t) in the integrand on the
+right-hand side of the Born master equation (4.32). However, the limit of the
+integration in (4.32) is not extended to inﬁnity.
+The resulting master equation [i.e., (5.25) with coeﬃcients given by (5.42)]
+allows for a more realistic treatment of quantum Brownian motion in situ-
+ations where the Markov approximation is not (fully) appropriate, for ex-
+ample, in the case of low-temperature environments [109, 220]. In fact, the
+coeﬃcients (5.42) represent a middle ground between the Markovian setting
+[the master equation (5.25) evaluated with the time-independent coeﬃcients
+(5.26)] on the one hand, and the exact master equation for quantum Brow-
+nian motion on the other hand (see Sect. 5.2.7), which is valid for arbitrary
+system–environment interaction strengths and not just in the weak-coupling
+limit considered here.
+The time dependence of the coeﬃcients (5.42) has been studied in detail
+in the literature (see, e.g., the discussions by Hu, Paz, and Zhang [219] and by
+Paz and Zurek [15]). For example, in the case of an ohmic spectral density of
+the environment (see the next Sect. 5.2.3) it can be shown that the frequency
+shift ˜Ω2(t) and the momentum-damping coeﬃcientγ(t) both start out from a
+value of zero and asymptotically approach their ﬁnal values on a timescale set
+by the order of magnitude of the highest frequencies that are present in the
+environment to a signiﬁcant degree. The diﬀusion coeﬃcients D(t)a n df(t)
+exhibit an initial temperature-independent transient and then settle rather
+quickly into their (temperature-dependent) asymptotic values.
+Since the Markovian coeﬃcients (5.26) correspond to taking the limit
+t −→ ∞ in the integrals in (5.42), the coeﬃcients ˜Ω2(t), γ(t), D(t), and f(t)
+asymptotically approach the values of these Markovian coeﬃcients. In the
+following, we shall focus on the Markovian case, i.e., on the master equation
+(5.25) together with the time-independent expressions (5.26) for the coeﬃ-
+cients.
+
+--- PRINTED PAGE 188 / PDF PAGE 202 ---
+188 5 Canonical Models For Decoherence
+5.2.3 Ohmic Decoherence and Dissipation
+Let us now further evaluate the coeﬃcients ˜Ω2, γ, D,a n d f [see (5.26)]
+appearing in the master equation (5.25) for quantum Brownian motion of a
+central harmonic oscillator. To do so, we must choose a speciﬁc functional
+form for the spectral density J(ω) appearing in the expressions for ν(τ)a n d
+η(τ) [see (5.16) and (5.17)].
+As indicated above, one typically replaces the discrete sum in the original
+expression (5.18) forJ(ω) with an (often phenomenologically motivated) con-
+tinuous function of the environmental frequencies ω. Usually, the frequency
+dependence of J(ω) is taken to follow a power-law dependence of the form
+J(ω) ∝ ωα. The most common choice for the exponent αis α = 1, such
+that J(ω) increases linearly with ω. This type of spectral density is called
+ohmic (the nomenclature has its origin in an analysis of dissipative eﬀects in
+the spin–boson model). Other, less important examples include “subohmic”
+spectral densities characterized byα< 1 and “supraohmic” spectral densities
+for which α> 1.
+Let us now focus on the case of an ohmic spectral density J(ω) ∝ ω,
+which we may write explicitly as
+J(ω)= 2Mγ0
+π ω. (5.43)
+Here, the constant γ0 describes the eﬀective coupling strength between the
+system and the environment. In our original discrete expression (5.18) for
+the spectral density, this interaction strength was represented by the sum
+over terms containing the individual oscillator couplings ci. As we shall see
+shortly, γ0 plays the role of a frequency-independent damping constant. (In
+phenomenological models of decoherence based on concrete experimental sit-
+uations, one often derives γ0 from measured data.)
+A power-law frequency dependence of J(ω) would imply that the distri-
+bution of environmental frequencies grows without bound. However, this is
+physically unreasonable. Typically, the linear dependence ofJ(ω) on the fre-
+quency ωonly holds for small values of ωand becomes attenuated toward
+higher frequencies. One therefore usually chooses a high-frequency cutoﬀ Λ
+and modiﬁes (5.43) to include a term that dampsJ(ω) for frequenciesω>Λ.
+A common choice is a cutoﬀ term of the so-called Lorentz–Drude form,
+J(ω)= 2Mγ0
+π ω Λ2
+Λ2 +ω2 . (5.44)
+A plot of this spectral density is shown in Fig. 5.2. We see that, as intended,
+for environmental frequencies ω exceeding the cutoﬀ Λ the corresponding
+density J(ω) of frequencies decreases.
+The explicit choice (5.44) for the spectral density J(ω) now allows us to
+compute the coeﬃcients ˜Ω2, γ, D,a n df [see (5.26)]. It turns out that the
+
+--- PRINTED PAGE 189 / PDF PAGE 203 ---
+5.2 Quantum Brownian Motion 189
+0
+12 3 4 5
+0.1
+0.2
+0.3
+0
+ω [Λ]
+J(ω)[ Mγo]
+cutoﬀ
+(ω = Λ)
+Fig. 5.2. Plot of the spectral densityJ(ω) (in units ofMγ0) as given by (5.44).J(ω)
+increases approximately linearly for frequencies ω well below the high-frequency
+cutoﬀ Λ and decreases subsequently for frequencies ω>Λ . The frequency axis is
+displayed in units of the cutoﬀ Λ.
+momentum-damping coeﬃcient γand the normal-diﬀusion coeﬃcient D are
+particularly easy to evaluate. To see this, note that the noise kernelν(τ)[ s e e
+(5.16)] is simply, apart from a missing prefactor
+√
+2/π, the Fourier cosine
+transform of the function J(ω) coth (ω/2kBT). Similarly, the dissipation ker-
+nel η(τ) [see (5.17)] is proportional to the Fourier sine transform of J(ω).
+Furthermore, a look at the expression for γ[see (5.26b)] shows that this
+function is proportional to the Fourier sine transform of η(τ).
+But, for odd functions g(−x)= −g(x), the double Fourier sine transform
+returns the original function,
+2
+π
+∫ ∞
+0
+dk sin(x′k)
+∫ ∞
+0
+dxg (x)s i n (kx)= g(x′). (5.45)
+Since our spectral density (5.44) is an odd function ofω,a n dγis (apart from
+a prefactor) the double Fourier sine transform of J(ω), γis therefore simply
+proportional to J(ω) evaluated at the frequencyΩ of the harmonic oscillator
+of the system [cf. (5.26b) and (5.45)]. Taking into account the prefactor 2
+π
+arising from the deﬁnition of the double Fourier transform (5.45), we thus
+obtain
+γ= π
+2
+1
+MΩJ(Ω)= γ0
+Λ2
+Λ2 +Ω2 . (5.46)
+This relation between the momentum-damping coeﬃcientγappearing in the
+master equation (5.25) and the eﬀective coupling strength γ0 introduced in
+the expression (5.43) for the spectral density justiﬁes our earlier claim that
+γ0 can be viewed as a frequency-independent damping constant. If we do not
+impose any cutoﬀ on the spectral density ( Λ →∞ ), γand γ0 are exactly
+equal.
+To calculate the normal-diﬀusion coeﬃcientD [see (5.26b)], we can follow
+a similar argument.D is proportional to the double Fourier cosine transform
+
+--- PRINTED PAGE 190 / PDF PAGE 204 ---
+190 5 Canonical Models For Decoherence
+of J(ω) coth (ω/2kBT). For even functions g(−x)= g(x), an identity analo-
+gous to (5.45) holds for such double Fourier cosine transforms, namely,
+2
+π
+∫ ∞
+0
+dk cos(x′k)
+∫ ∞
+0
+dxg (x)c o s (kx)= g(x′). (5.47)
+Since the function J(ω) coth (ω/2kBT) is indeed even in ω, we therefore ob-
+tain
+D = π
+2J(Ω) coth
+( Ω
+2kBT
+)
+= Mγ0Ω Λ2
+Λ2 +Ω2 coth
+( Ω
+2kBT
+)
+. (5.48)
+The temperature dependence of D is illustrated in Fig. 5.3. We observe that
+D increases with temperature: Decoherence becomes stronger as the tem-
+perature of the environment is raised. For high temperatures kBT ≫ Ω,
+coth (Ω/2kBT) ≈ 2kBT/Ω, and thusD increases approximately linearly with
+temperature (this high-temperature limit will be studied in more detail in
+Sect. 5.2.4 below).
+The expression for the frequency renormalization ˜Ω2 [see (5.26a)] is a
+Fourier cosine transform of a Fourier sine transform. Although no simple
+identities of the form (5.45) or (5.47) hold in this case, it is quite straight-
+forward to explicitly evaluate this coeﬃcient. We shall here simply state the
+result without derivation,
+˜Ω2 = −2γ0
+Λ3
+Λ2 +Ω2 . (5.49)
+Finally, the anomalous-diﬀusion coeﬃcientf [see (5.26d)] is more diﬃcult to
+evaluate because of the presence of the term coth (ω/2kBT). One case that is
+relatively easy to treat is that of a high-temperature environment such that
+1
+0.2 0.4 0.60 .8 1
+1.4
+1.8
+0 T [Ω/kB]
+D(T)[ D(0)]
+1.2
+1.6
+2.0
+2.2
+Fig. 5.3. Temperature dependence of the normal-diﬀusion coeﬃcientD, see (5.48),
+for the case of the ohmic spectral density (5.44). The vertical axis is shown in units
+of D(T = 0), the zero-temperature value of the normal-diﬀusion coeﬃcient, and
+the temperature axis is displayed in units of Ω/k B.
+
+--- PRINTED PAGE 191 / PDF PAGE 205 ---
+5.2 Quantum Brownian Motion 191
+kBT ≫ Ω (see the next section). In this limit, the resulting expression for f
+is smaller than the normal-diﬀusion coeﬃcient (5.48) by a factor on the order
+of the cutoﬀ frequency Λ.
+5.2.4 The Caldeira–Leggett Master Equation
+In the following, we shall have a closer look at the limit of a high-temperature
+environment. That is, we consider the situation in which the thermal en-
+ergy kBT of the environment is much larger than (the energies correspond-
+ing to) the natural frequency Ω of the system and the environmental cutoﬀ
+frequency Λ. Then we can approximate the term coth (Ω/2kBT) appearing
+in the expression (5.48) for the normal-diﬀusion coeﬃcient D by 2kBT/Ω,
+which is the ﬁrst-order term in the Taylor expansion of coth (Ω/2kBT) around
+Ω/2kBT = 0. In this case the coeﬃcient D becomes
+D
+kBT ≫Ω
+−−−−−→ 2Mγ0kBT Λ2
+Λ2 +Ω2 . (5.50)
+We also assume that the cutoﬀ Λ(the upper-limit region of environmental
+frequencies) is much larger than the characteristic frequencyΩof the system.
+Then (5.50) takes the form
+D
+Λ ≫Ω
+−−−→ 2Mγ0kBT. (5.51)
+Furthermore, the momentum-damping coeﬃcient γ, see (5.46), approaches
+the value of the eﬀective coupling strengthγ0,
+γ
+Λ ≫Ω
+−−−→ γ0, (5.52)
+and the frequency normalization ˜Ω2, see (5.49), becomes
+˜Ω2 Λ ≫Ω
+−−−→ − 2γ0Λ. (5.53)
+Finally, given the assumptions considered here, the anomalous-diﬀusion co-
+eﬃcient f can be explicitly evaluated to give the result
+f
+kBT ≫Ω
+−−−−−→
+Λ ≫Ω
+2γ0kBT
+Λ . (5.54)
+To gain further insight into the relevance of the corresponding anomalous-
+diﬀusion term f[ ˆX, [ ˆP, ˆρS(t)]] in the master equation (5.25), let us compare
+the magnitude of this term to that of the term D[ ˆX, [ ˆX, ˆρS(t)]]. These mag-
+nitudes are on the order of, respectively,
+DX2 ∼ 2Mγ0kBTX 2 (5.55)
+and
+
+--- PRINTED PAGE 192 / PDF PAGE 206 ---
+192 5 Canonical Models For Decoherence
+fXP ∼ fXMΩX ∼ 2γ0kBT
+Λ MΩX2 = DΩ
+ΛX2. (5.56)
+Since by assumption Λ ≫ Ω, we can here safely neglect the anomalous-
+diﬀusion term in the master equation (5.25).
+Let us now insert our above expressions (5.51), (5.52), and (5.53) for the
+coeﬃcients D, γ,a n d ˜Ω2 into the Born–Markov master equation (5.25). The
+result is
+d
+dt ˆρS(t)= −i
+[ ˆH′
+S, ˆρS(t)
+]
+− iγ0
+[ ˆX,
+{ˆP, ˆρS(t)
+}]
+− 2Mγ0kBT
+[ ˆX,
+[ ˆX, ˆρS(t)
+]]
+,
+(5.57)
+where the frequency-shifted Hamiltonian ˆH′
+S of the system is
+ˆH′
+S = ˆHS + 1
+2M ˜Ω2 ˆX2 = 1
+2M
+ˆP2 + 1
+2M
+[
+Ω2 − 2γ0Λ
+] ˆX2. (5.58)
+The interpretation of the terms appearing on the right-hand side of (5.57)
+has already been discussed in the context of the more general form (5.25) of
+the master equation (see Sect. 5.2.2). The ﬁrst term is the usual Liouville–
+von Neumann term with a frequency-shifted Hamiltonian. The second term
+describes momentum damping (i.e., dissipation) with a characteristic rate
+proportional to γ0. The third term represents decoherence in the position ba-
+sis with consequent momentum diﬀusion, with a characteristic temperature-
+dependent localization rate given by the product of the coeﬃcient Mγ0kBT
+and the squared separation (X − X′)2.
+Equation (5.57) is commonly known as theCaldeira–Leggett master equa-
+tion (here written for the case of a central harmonic-oscillator system), which
+was ﬁrst derived by Caldeira and Leggett in the early 1980s using a path-
+integral approach [221]. It is widely used in the modeling of decoherence and
+dissipation processes. In fact, it has often been quite successfully applied to
+situations in which the assumptions on which the derivation of the equation
+is based were not strictly fulﬁlled (for example, in quantum-optical settings
+where often kBT ≲ Λ[222]).
+A particularly appealing feature of the Caldeira–Leggett master equation
+is that it allows for very intuitive and simple estimates of decoherence rates
+and of the relationship of these rates to the relevant rates for dissipation. To
+see this, recall [see (2.114)] that the expression for the thermal de Broglie
+wavelength for a particle of mass M at temperature T is given by (setting,
+as usual, ℏ ≡ 1)
+λdB = 1√2MkBT . (5.59)
+Using the position representation, the last term on the right-hand side of
+(5.57) can therefore be written as
+−γ0
+( X − X′
+λdB
+) 2
+ρS(X,X ′,t). (5.60)
+
+--- PRINTED PAGE 193 / PDF PAGE 207 ---
+5.2 Quantum Brownian Motion 193
+This term describes spatial localization with a decoherence rateτ−1
+|X−X′ | given
+by [compare (3.58) and (5.36)]
+τ−1
+|X−X′| = γ0
+( X − X′
+λdB
+) 2
+. (5.61)
+We see that the ratio of the decoherence rate to the damping rateγ0 is sim-
+ply equal to the squared ratio of the spatial separation to the thermal de
+Broglie wavelength (5.59) of the object. Since the constant γ−1
+0 quantiﬁes
+the dissipation (relaxation) timescale of the system, (5.61) is precisely the
+expression (2.113) given (but not derived) in Sect. 2.11. As mentioned there,
+the expression (5.61) derived from the model for quantum Brownian motion
+was ﬁrst used by Zurek in the early 1980s to introduce the notion of a deco-
+herence timescale [12]. In the same section, we had also pointed out that the
+thermal de Broglie wavelength is extremely small for macroscopic and even
+mesoscopic objects. Hence such objects described by superpositions of macro-
+scopically separated center-of-mass positions will typically be decohered on
+timescales many orders of magnitude shorter than the relaxation timescales.
+Over timescales on the order of the decoherence time, we may therefore
+often neglect the dissipative term in the master equation (5.57). This yields
+the simpliﬁed, “pure-decoherence” master equation
+d
+dt ˆρS(t)= −i
+[ ˆH′
+S, ˆρS(t)
+]
+− 2Mγ0kBT
+[ ˆX,
+[ ˆX, ˆρS(t)
+]]
+, (5.62)
+or, expressed in the position basis,
+∂
+∂tρS(X,X ′,t)=
+[
+− i
+2M
+( ∂2
+∂X′2 − ∂2
+∂X2
+)
+− i
+2M
+(
+Ω2 − 2γ0Λ
+)(
+X2 − X′2)
+−γ0
+( X − X′
+λdB
+) 2]
+ρS(X,X ′,t). (5.63)
+This equation describes the local damping of spatial coherence at a rate
+given by (5.61). Note that (5.63) has the same structure as the equation
+of motion (3.78) for the case of environmental scattering. The role of the
+scattering constantΛ[see (3.56)] in the scattering model is now played by the
+coeﬃcient γ0/λ2
+dB. The diﬀerence between the two equations (3.78) and (5.63)
+is simply that (5.63) corresponds to the case of the central system conﬁned
+to a harmonic-oscillator potential, whereas the scattering model underlying
+(3.78) considered an unbound system.
+However, this diﬀerence is far from critical, since it turns out that the form
+of the Caldeira–Leggett equation (5.57) is in fact not tied to the assumption
+of a system represented by a harmonic oscillator. It is possible to write down
+an equation of the form (5.57) for any arbitrary potential of the system.
+The system does not even need to be described by the canonical position
+
+--- PRINTED PAGE 194 / PDF PAGE 208 ---
+194 5 Canonical Models For Decoherence
+and momentum coordinates ˆX and ˆP. Instead, we may choose to model a
+discrete two-level system represented by the Pauli spin operators ˆσx and ˆσz,
+as in the case of the spin–boson model (see Sect. 5.3). Then these Pauli spin
+operators simply take the place of the coordinates ˆX and ˆP in the master
+equation, and the distinct physical properties of the system are reﬂected in
+the particular choice of the physical quantities entering into the coeﬃcients
+in the master equation.
+5.2.5 Dynamics of Quantum Brownian Motion
+Let us now return to the general form of the master equation (5.25) for quan-
+tum Brownian motion (with the central system represented by a harmonic
+oscillator) and illustrate the resulting time evolution of the system gener-
+ated by this equation. These dynamics have been studied in detail by many
+authors. We will here mostly follow the analysis given by Paz, Habib, and
+Zurek [184].
+We shall take the initial wave function of the system to be the coherent
+superposition
+Ψ(X,t =0 )= Ψ1(X)+ Ψ2(X), (5.64)
+where Ψ1(X)a n dΨ2(X) are Gaussian wave packets given by
+Ψ1,2(X)= N exp
+[
+− (X ∓ X0)2
+2δ2
+]
+exp (±iP0X). (5.65)
+Here, N is a normalization constant, and δis the width of the Gaussian in
+position space. Thus we consider superpositions of two Gaussians that are
+initially symmetrically located in phase space, namely, at positions±X0 with
+opposite and equal momenta P0.
+This strategy will allow us to investigate the decoherence dynamics in
+position and momentum space and thus to address key questions such as:
+Does decoherence in quantum Brownian motion also aﬀect superpositions
+of momenta, or only superpositions of positions? How do the characteristic
+timescales for decoherence in these two bases diﬀer? To answer these ques-
+tions, we shall consider the decoherence dynamics for two limiting cases of
+interest [184]. The ﬁrst situation is that of the superposition (5.64) of two
+Gaussians separated in position only (X0 >δ, P0 = 0),
+Ψpos(X,t =0 )= N
+{
+exp
+[
+− (X − X0)2
+2δ2
+]
++e x p
+[
+− (X +X0)2
+2δ2
+]}
+. (5.66)
+The second case corresponds to the superposition (5.64) with Ψ1(X)a n d
+Ψ2(X) separated in momentum only (X0 =0 , P0 > 1/δ),
+Ψmom(X,t =0 )=2 N exp
+[
+− X2
+2δ2
+]
+cos (P0X). (5.67)
+
+--- PRINTED PAGE 195 / PDF PAGE 209 ---
+5.2 Quantum Brownian Motion 195
+Since we are now working in a phase-space picture described by the coor-
+dinates X and P, it will be convenient to switch to the Wigner representa-
+tion W(X,P ), see (2.132), of the position-space density matrix ρS(X,X ′)=
+Ψ(X)Ψ∗(X′). The Wigner function corresponding to the initial state (5.64)
+is rather easy to compute, since the Wigner representation of a Gaussian
+wave packet is again a Gaussian localized in the ( X,P ) plane. The Wigner
+representation of the two direct terms Ψ1(X)Ψ∗
+1 (X′)a n dΨ2(X)Ψ∗
+2 (X′)c a n
+be shown to be of the form [184]
+W1,2(X,P,t =0 )= N2δ2 exp
+[
+− (X ∓ X0)2
+δ2
+]
+exp
+[
+−δ2(P ∓ P0)2]
+. (5.68)
+The contribution from the oﬀ-diagonal (interference) termsΨ1(X)Ψ∗
+2 (X′)a n d
+Ψ2(X)Ψ∗
+1 (X′) reads in the Wigner representation
+Wint(X,P,t =0 )=2 N2δ2 exp
+[
+−X2
+δ2 − δ2P2
+]
+cos [2X0P +2P0X]. (5.69)
+The resulting full Wigner function of the initial state (5.64) is therefore
+W(X,P,t =0 )= W1(X,P,t =0 )+ W2(X,P,t =0 )+ Wint(X,P,t =0 ).
+(5.70)
+This function is illustrated in the top row of Fig. 5.4 for the two diﬀerent
+limiting cases Ψpos(X,t = 0), see (5.66), and Ψmom(X,t = 0), see (5.67),
+representing separation in, respectively, position and momentum only. We
+clearly see the localization of the two “classical” (direct) peaks along the X
+and P axes, respectively (see also our general discussion in Sect. 2.15.2). We
+also observe the characteristic oscillatory pattern between these peaks. Note
+that the “ridges” and “valleys” of this pattern are parallel to the axis joining
+the peaks, i.e., parallel to the axis corresponding to the variable in which the
+separation occurs. As evident from (5.69), the wavenumber of the oscillations
+is directly determined by the separations X0 and P0 [see also (2.135)].
+Let us now study the subsequent time evolution of the Wigner function
+(5.70) as given by the Born–Markov master equation (5.29) expressed in the
+Wigner representation. Without going into the details of the derivation here,
+one can show that the resulting time-evolved Wigner function can again be
+written in the form [184]
+W(X,P,t )= W1(X,P,t )+ W2(X,P,t )+ Wint(X,P,t ), (5.71)
+with the direct and interference terms given by
+
+--- PRINTED PAGE 196 / PDF PAGE 210 ---
+196 5 Canonical Models For Decoherence
+x
+p
+x
+pp
+Fig. 5.4. Time evolution of a superposition of two Gaussian wave packets in the
+Wigner picture, as studied by Paz, Habib, and Zurek [184]. The left column cor-
+responds to a separation of the initial wave packets in position only, whereas the
+right column represents the dynamics of a superposition of wave packets separated
+in momentum only. Interference between the two wave packets is represented by
+oscillations between the direct peaks. The interaction with the environment damps
+these oscillations, a process which represents decoherence. However, this damping
+occurs on diﬀerent timescales for the two initial conditions.
+
+--- PRINTED PAGE 197 / PDF PAGE 211 ---
+5.2 Quantum Brownian Motion 197
+W1,2(X,P,t )= N2δ2 δ2
+δ1
+exp
+[
+− (X ∓ Xc)2
+δ2
+1
+]
+× exp
+[
+−δ2
+2 (P ∓ Pc − β(X ∓ Xc))2
+]
+, (5.72a)
+Wint(X,P,t )=2 N2δ2 δ2
+δ1
+exp (−Aint)e x p
+[
+−X2
+δ2
+1
+− δ2
+2(P − βX)2
+]
+× cos [2κpP +2 (κx − βκp)X]. (5.72b)
+Here, the coeﬃcients δ1, δ2, Xc, Pc, β, Aint, κx,a n dκp are in general time-
+dependent, with initial values [compare (5.72) with (5.68) and (5.69)]
+δ2
+1 = δ2
+2 = δ2, (5.73a)
+κx = Pc = P0,κ p = Xc = X0, (5.73b)
+Aint =0 . (5.73c)
+Explicit (however rather complicated) general expressions for these coeﬃ-
+cients obtained from the exact solution of the quantum Brownian model
+(i.e., the solution derived without making the Born–Markov approximations
+used in our above treatment; see Sect. 5.2.7 below) have been given by Paz,
+Habib, and Zurek [184] for arbitrary choices of the spectral density of the
+environment. More simple and concrete expressions for these coeﬃcients can
+be obtained if we focus on the Born–Markov approximation and choose a
+particular form of the spectral density.
+Regardless, the precise form of the coeﬃcients will not be of further in-
+terest to us here. Instead, we shall try to get a good qualitative picture of
+the time evolution of the Wigner function as described by (5.71) and (5.72).
+This evolution is shown in Fig. 5.4 for the two limiting cases (5.66) and (5.67)
+of initial states. We see that for both initial conditions, the interaction with
+the environment leads to a suppression of the oscillations representing quan-
+tum interference between the wave packets. However, the timescales on which
+this decoherence happens are observed to be very diﬀerent: The superposi-
+tion (5.66) of two wave packets that are initially separated in position only
+is decohered much faster than the superposition (5.67) of momenta. In fact,
+as we shall analyze in more detail below, in the ﬁrst case decoherence occurs
+on a timescale that is virtually independent of the relaxation and dynamical
+timescales of the system. By contrast, in the second case of a superposition
+of momenta quantum, interference is damped on the timescale set by the
+intrinsic dynamics of the system, i.e., by the self-Hamiltonian of the system.
+This observation is quite easily explained. The interaction Hamiltonian
+explicitly depends on the position of the system. This means that the en-
+vironment directly monitors this position, which leads to strong and rapid
+decoherence in the position basis. The momentum of the system, on the
+other hand, does not appear in the interaction Hamiltonian and is thus not
+directly monitored by the environment. Therefore decoherence in momentum
+can occur only in an indirect manner, i.e., as the result of the monitoring of
+
+--- PRINTED PAGE 198 / PDF PAGE 212 ---
+198 5 Canonical Models For Decoherence
+position and the resulting decoherence in position. In the case in which the
+wave packets are initially separated in momentum only, the state (5.67) is
+already well-localized in position. Therefore the environmental monitoring of
+the position of the system cannot make this state even more localized in po-
+sition, and the superposition (5.67) is initially insensitive to the monitoring
+by the environment, and thus to decoherence.
+However, on a dynamical timescale this superposition evolves into a su-
+perposition of positions, since the opposite momenta ±P associated with the
+two direct peaks shift these peaks into opposite X-directions (see the right
+column of Fig. 5.4). Now the state becomes sensitive to the environmental
+monitoring of position, which in turn leads to the damping of the oscilla-
+tions. This explains why decoherence in momentum does happen in spite
+of the absence of a momentum term in the interaction Hamiltonian, and
+why this decoherence occurs on a dynamical timescale rather than on the
+much shorter timescale for decoherence in position (i.e., the timescale cor-
+responding to decoherence in the quantity that is directly monitored by the
+environment). In the following, we shall make these arguments more precise
+by analyzing the time dependence of the quantities appearing in the direct
+and interference terms (5.72a) and (5.72b) of the Wigner function (5.71).
+First, let us look at the dynamics of the Gaussian peaks described by the
+direct terms W1,2(X,P,t ). These peaks follow “classical” trajectories given
+by X(t)= ±Xc(t)a n dP(t)= ±Pc(t), which depend on the particular choice
+of the spectral density but not on the temperature of the environment. The
+widths of the Gaussian peaks, given byδ1 (the width in position) andδ2 (the
+width in momentum), change over time due to the presence of the environ-
+ment. We also see that the environment leads to a distortion of the shape
+of the Gaussians, quantiﬁed by the coeﬃcient β. Both the widths δ1,2 and
+the distortion βdepend on the spectral density and the temperature of the
+environment.
+Of most interest for our discussion of decoherence is the interference term
+Wint(X,P,t ), see (5.72b), representing the characteristic oscillations that are
+a signature of interference between the wave packets Ψ1(x)a n dΨ1(x). First
+of all, we see that the (temperature-dependent) wavenumbers κx and κp of
+these oscillations along the X and P axes are altered by the interaction
+with the environment. The quantity most relevant to decoherence is the term
+exp (−Aint), which (as we shall see) describes the damping of the oscillations
+and thus decoherence. We can interpret this term as quantifying the visibility
+of the interference fringes, since exp ( −Aint) equals the peak-to-peak ratio
+between the interference term Wint(X,P ) (which takes its maximum value
+at X = P = 0) and the direct terms W1,2(X,P ) (which assume their peak
+values at X = ±Xc and P = ±Pc),
+exp (−Aint)= 1
+2
+Wint(X =0 ,P =0 )
+[W1(X = Xc,P = Pc)W2(X = −Xc,P = −Pc)]1/2 . (5.74)
+
+--- PRINTED PAGE 199 / PDF PAGE 213 ---
+5.2 Quantum Brownian Motion 199
+In view of this interpretation, the term exp (−Aint) is therefore often called
+the “fringe-visibility function.” One can show that the quantity Aint is given
+by [184]
+Aint = X2
+0
+δ2 +δ2P2
+0 − κ2
+p
+δ2
+2
+− δ2
+1κ2
+x, (5.75)
+where all quantities appearing in this expression should be understood as
+explicitly time-dependent. At time t =0 ,w eh a v eδ1 = δ2 = δ, κx = P0,
+κp = X0 [see (5.73)], and thus Aint = 0. For subsequent times t> 0,
+Aint increases but is always bounded from above by its asymptotic (time-
+independent) maximum value of
+Amax
+int = X2
+0
+δ2 +δ2P2
+0 . (5.76)
+In fact, one can derive an explicit equation of motion forAint from the master
+equation for quantum Brownian motion. The result is [184]
+d
+dtAint =4 Dκ2
+p − 4fκp(κx − βκp), (5.77)
+where D and f are the usual normal-diﬀusion and anomalous-diﬀusion co-
+eﬃcients in the Born–Markov approximations. (If the Redﬁeld equation or
+the exact master equation [219] are used, these coeﬃcients will be explicitly
+time-dependent; see also Sect. 5.2.7.)
+Equation (5.77) shows that the time evolution of Aint, and thus the dy-
+namics of the suppression of the interference terms, depends on several pa-
+rameters. First of all, we see that the change of Aint over time exhibits an
+explicit direct dependence on the diﬀusion coeﬃcients D and f, but neither
+on the momentum-damping (friction) coeﬃcient γappearing in the master
+equation (5.25) nor on the free evolution given by the renormalized Hamil-
+tonian ˆH′
+S. However, the time evolution of Aint is indirectly inﬂuenced by
+γand ˆH′
+S, since it turns out that the dynamics of κx and κp appearing in
+(5.77) depend on γand ˆH′
+S.
+On the other hand, as we will see below, this indirect inﬂuence of γand
+ˆH′
+S on Aint is typically very weak in comparison with the direct dependence
+of Aint on the diﬀusion coeﬃcients. This already hints at an important con-
+clusion. In many cases the evolution ofAint, and thus the suppression of the
+oscillatory terms in the Wigner function, occurs on a timescale that is essen-
+tially independent of the relaxation timescale set by γand of the dynamical
+timescale determined by ˆH′
+S.
+Since ﬁrst term 4 Dκ2
+p on the right-hand side of (5.77) is strictly non-
+negative, the normal-diﬀusion coeﬃcient D will always correspond to a sup-
+pression of the interference terms and thus to decoherence. From (5.72b) we
+see that κp quantiﬁes the wavenumber of the Wigner oscillations along the
+momentum direction. As evident from (5.77), the sign of the second term is
+not ﬁxed but rather depends on the interplay between κx and βκp.T h u st h e
+
+--- PRINTED PAGE 200 / PDF PAGE 214 ---
+200 5 Canonical Models For Decoherence
+anomalous-diﬀusion coeﬃcient f may switch its role from aiding the suppres-
+sion of interference to a counteracting of this suppression.
+A crucial feature of the time evolution of Aint as given by (5.77) is the
+direct dependence on the initial conditions, in particular, on the initial sep-
+arations X0 and P0. The dependence enters via the coeﬃcients κx and κp,
+which at time t = 0 take the values κx = P0 and κp = X0 [see (5.73b)].
+As we shall see now, this dependence is responsible for the very diﬀerent
+timescales for decoherence in position and momentum as mentioned above
+(see also Fig. 5.4).
+First, let us focus on the limiting case (5.66) in which the initial state
+corresponds to a superposition of two Gaussians separated in position space
+only. Since κp = X0 at t = 0, we see that the contribution from the normal-
+diﬀusion term 4Dκ2
+p in the evolution equation (5.77) for Aint immediately
+plays a role in damping interference.
+Let us study the time dependence ofAint as given by (5.77) for the simple
+Caldeira–Leggett case of a high-temperature ohmic environment discussed in
+Sect. 5.2.4 above. Here, the anomalous-diﬀusion coeﬃcient f becomes neg-
+ligible in comparison with the normal-diﬀusion coeﬃcient D,a n dD can be
+approximated by the value 2Mγ0kBT [see (5.51)]. Furthermore, let us make
+the simplifying assumption that the interference fringes do not move much
+over time, i.e., that we can neglect the time dependence of κp and replace it
+by its initial value ofX0. With these assumptions, (5.77) is readily solved to
+give
+Aint =8 Mγ0kBTX 2
+0t, (5.78)
+or, using the thermal de Broglie wavelength λdB =1 /√2MkBT,
+Aint = γ0
+(2X0)2
+λ2
+dB
+t. (5.79)
+Thus the oscillations in the Wigner function are exponentially damped at a
+decoherence rate
+τ−1
+ΔX = γ0
+(ΔX)2
+λ2
+dB
+, (5.80)
+where ΔX is the coherent separation in position space. We thus recover our
+previous result (5.61) for the decoherence rate in the context of the Caldeira–
+Leggett case.
+Let us now consider the situation (5.67) in which the superposition of
+Gaussians is initially only separated in momentum, i.e.,X0 =0 .T h u sκp =0
+at t = 0, and consequently we initially have dAint/dt =0 .T h a ti s ,Aint will
+remain at its initial value of zero until κp = 0 begins to diﬀer from zero,
+and thus at this initial stage no decoherence occurs. For a weakly damped
+system, one can then show [184] that κp evolves as κp(t) ∝ Xc(t), i.e., its
+value follows the trajectory of the direct peaks. Thus an increase in κp will
+be tied to a change in Xc. Xc starts out from an initial value of zero and
+
+--- PRINTED PAGE 201 / PDF PAGE 215 ---
+5.2 Quantum Brownian Motion 201
+then evolves on a dynamical timescale. Now the diﬀusion terms in (5.77)
+can have an eﬀect onAint, resulting in positive values of Aint, which in turn
+leads to the suppression of the oscillations of the Wigner interference term
+Wint(X,P,t ), see (5.72b).
+Therefore, in the case of a superposition of Gaussian wave packets sepa-
+rated in momentum only, decoherence is related to two distinct timescales.
+First, a comparably slow dynamical timescale on which the superposition of
+positions is generated (i.e., on whichXc becomes suﬃciently diﬀerent from its
+initial value of zero) such that the environmental monitoring of the position
+of the system can have an eﬀect. Second, once this superposition of positions
+is dynamically created, it is rapidly decohered on the decoherence timescale
+for such position-space superpositions (as given by, e.g., (5.80) for the case
+of high-temperature ohmic environments). Thus the decoherence rate in mo-
+mentum is continuously limited by the rate of the dynamical evolution of
+the system. This means that the only timescale relevant to decoherence in
+momentum is the dynamical timescale. This analysis provides the rigorous
+support for our initial intuitive explanation of the much slower decoherence
+rate in momentum space when compared to the decoherence rate in position
+space.
+What are the resulting preferred states (i.e., the pointer states) singled
+out by the interaction with the environment? To answer this question, one
+can compute the change in purityς=T rˆρ2
+S [see (2.30)] of the reduced density
+matrix ˆρS of the harmonic-oscillator system. We can calculate this change
+from the Born–Markov master equation (5.25). We shall here neglect the
+inﬂuence of the momentum-damping term γ, because one can show that
+this term always leads to an unphysical increase in purity over time that
+is completely insensitive to the form of the density matrix [16]. Omitting
+this term can be well justiﬁed in the limit of weak damping, i.e., in the
+case of an “underdamped” harmonic oscillator. We shall also neglect the
+anomalous-diﬀusion term, which is appropriate in the high-temperature limit
+(see Sect. 5.2.4). With these assumptions, theinstantaneous change in purity
+is found to be [86]
+d
+dtς(t)= −4DΔX2(t), (5.81)
+where ΔX2(t)= ⟨ ˆX2⟩t −⟨ ˆX⟩2
+t is the dispersion in position space. Thus
+we see that the instantaneous decrease in purity, and thus the amount of
+decoherence, is minimized if this spatial dispersion is minimized. That is, the
+instantaneous pointer states would be those perfectly localized in position.
+We may have anticipated this result based on the fact that the environment
+directly monitors the position of the system.
+However, the intrinsic evolution of the harmonic-oscillator system as given
+by the self-Hamiltonian (5.23) also plays an important role. In fact, as is
+well known for a harmonic oscillator, over the course of an oscillation period
+T =2 π/Ωposition and momentum interchange their roles. This symmetry
+
+--- PRINTED PAGE 202 / PDF PAGE 216 ---
+202 5 Canonical Models For Decoherence
+of the Hamiltonian of the system with respect to the position and momen-
+tum variables means that a state that is asymmetrically localized in phase
+space (say, well localized in position but completely delocalized in momen-
+tum) would be strongly altered under the time evolution generated by the
+Hamiltonian of the system.
+To make this argument more precise, instead of studying the instanta-
+neous change (5.81) in purity, let us now look at the change in purity aver-
+aged over one full period t =0 ...T of the harmonic-oscillator system. This
+average change can be shown to be given by [15,84]
+ς(T) − ς(0) = −2D
+(
+ΔX2 + ΔP2
+M2Ω2
+)
+, (5.82)
+where ΔX2 ≡ ΔX2(0) and ΔP2 ≡ ΔP2(0) are the dispersions in position
+and momentum at the initial time t = 0. Note that the anomalous-diﬀusion
+term f does not appear in (5.82) even if we do not neglect it a priori [as in
+(5.81)], because it turns out that the inﬂuence of this term averages out over
+one oscillation period.
+Equation (5.82) shows that the average decrease in purity, and thus the
+amount of decoherence, is smallest if ΔX2 and ΔP2 are chosen such as to
+minimize the term in brackets on the right-hand side of the equation, con-
+strained by the requirement ΔXΔP ≥ 1/2 as mandated by the uncertainty
+relation (recall that we have set ℏ ≡ 1 throughout this chapter). The choice
+for ΔX2 and ΔP2 that minimizes the decrease (5.82) in purity is then found
+to be
+ΔX2 = 1
+2MΩ,Δ P 2 = MΩ
+2 . (5.83)
+Thus the environment-superselected pointer states in quantum Brownian mo-
+tion are minimum-uncertainty Gaussians (coherent states) that are well local-
+ized in both position and momentum. This was ﬁrst shown by Zurek, Habib,
+and Paz [86] (see also [84,223–226]).
+Quantum mechanics, of course, forbids perfect localization in phase space,
+but the coherent states selected by the interaction with the environment rep-
+resent phase-space localization that is “as good as it gets.” Thus we may
+view these coherent states as the quantum version of the idealized concept
+of a classical point in phase space. By reidentifying over time the (improper)
+ensembles of minimum-uncertainty Gaussian wave packets described by the
+reduced density matrix, we can recover quasi-Newtonian trajectories of par-
+ticles in phase space.
+Strictly speaking, the above derivation of coherent states as the pointer
+states in quantum Brownian motion was based on the assumption of a weakly
+damped harmonic oscillator. However, our conclusions are not signiﬁcantly al-
+tered in the strong-damping regime, the main diﬀerence being a preference for
+stronger localization in position than momentum [227]. Moreover, Eisert [106]
+showed that the environment-induced superselection of minimal-uncertainty
+
+--- PRINTED PAGE 203 / PDF PAGE 217 ---
+5.2 Quantum Brownian Motion 203
+Gaussian states is completely generic for the case of free quantum particles
+coupled to a thermal bath, in the sense that exact decoherence to such co-
+herent states occurs for arbitrary bath temperatures, system–environment
+coupling strengths, and spectral densities of the environment.
+Finally, one may also investigate the environment-induced superselection
+of preferred states in quantum Brownian motion for the limiting case of very
+small frequencies of the environment relative to the intrinsic frequency of the
+system. This limit of a “slow” environment is opposite to the situation of
+the Caldeira–Leggett model of Sect. 5.2.4 and corresponds to the “quantum
+limit” of decoherence (see Sect. 2.8.2). Paz and Zurek [103] considered a
+variant of the standard quantum Brownian motion model (namely, a particle
+interacting with a scalar ﬁeld) and found that in this limit the decrease of
+purity of the reduced density matrix is minimized for energy eigenstates of
+the system (i.e., eigenstates of the self-Hamiltonian), which thus emerge as
+the pointer states for the system. This result is in agreement with our general
+discussion in Sect. 2.8.
+5.2.6 Limitations of the Quantum Brownian Motion
+and Caldeira–Leggett Models
+In Sect. 5.2.4, we showed how the Caldeira–Leggett model leads to the very
+simple equation (5.61) for estimating the rate of spatial decoherence. In par-
+ticular, we found that the ratio of the rate of spatial decoherence to the rate
+of dissipation was given by the ratio of the coherent separation to the thermal
+de Broglie wavelength. As demonstrated in Sect. 2.11, in typical situations of
+mesoscopic and macroscopic objects described by superpositions of two posi-
+tions separated by similarly mesoscopic or macroscopic distances, this ratio
+can be extremely large. This suggests that in such situations typical deco-
+herence rates will be many orders of magnitude larger than the dissipation
+rates.
+One should be somewhat guarded, however, against too a literal interpre-
+tation of such estimates. The assumptions that have led to the Caldeira–
+Leggett equation (5.57), and thus to the expression (5.61) for the deco-
+herence rate, are often not fulﬁlled in physically realistic cases of inter-
+est [162,228,229]. It would therefore be inappropriate to overgeneralize (5.61)
+by interpreting it as a universally valid expression for the decoherence rate of
+spatial superpositions. Moreover, the general decoherence (and dissipation)
+dynamics arising from the Caldeira–Leggett equation (5.57) should be con-
+sidered in the context and within the scope of this model, and one should
+be cautious about drawing overly generic conclusions from results obtained
+from this model.
+For example, the decoherence rate as given by (5.61) scales quadratically
+with the coherent separation ΔX = |X − X′| in a position-space superposi-
+tion state. Of course, this is intuitively reasonable: The larger the separation,
+
+--- PRINTED PAGE 204 / PDF PAGE 218 ---
+204 5 Canonical Models For Decoherence
+the more nonclassical the superposition state, and the faster we expect de-
+coherence to be. However, on physical grounds there should exist an upper
+limit to this decoherence rate that cannot be exceeded even if we increase
+the separation further.
+The reason for this limit is easy to see by recalling our results for the case
+of environmental scattering discussed in Chap. 3. There, we distinguished two
+cases: The situation in which the typical wavelength of the scattered envi-
+ronmental particles is short with respect to the coherent separationΔX (the
+“short-wavelength limit,” see Sect. 3.3.1), and the opposite case in which this
+wavelength is long in comparison withΔX (the “long-wavelength limit,” see
+Sect. 3.3.2). In the short-wavelength limit, a single scattering event is able
+to completely resolve the separation ΔX, whereas in the long-wavelength
+limit many such events are needed to transmit an appreciable amount of
+which-path information to the environment. As discussed in Sect. 3.3.2, the
+decoherence rate obtained in the short-wavelength limit therefore imposes an
+upper bound on the decoherence rate: The environment cannot possibly ob-
+tain any more which-path information, and thus the decoherence rate cannot
+exceed the value calculated in the short-wavelength limit.
+A similar argument should be expected to hold true for the case of the
+model for quantum Brownian motion discussed here. That is, we would anti-
+cipate that the environment of harmonic oscillators possesses a certain max-
+imum coherence length. Then, for separations ΔX exceeding this coherence
+length, we would enter the equivalent of the short-wavelength regime consid-
+ered for the case of environmental scattering, leading to a saturation of the
+decoherence rate. Evidently, such saturation does not occur in the Caldeira–
+Leggett model. There is no place in which a quantity equivalent to a coherence
+length of the environment would enter into the model, and the decoherence
+rate (5.61) grows without bounds as we increase the separation ΔX.
+This example clearly shows that the results of the Caldeira–Leggett model
+cannot be extrapolated to arbitrary physical situations and parameters. To
+investigate this issue further, one can consider the general model of a massive
+particle coupled to a massless scalar ﬁeld. This model was investigated in
+detail by Unruh and Zurek [109]. It was shown that the model for quantum
+Brownian motion emerges as a limiting case of this particle–ﬁeld model if one
+assumes that the dominant wavelengths of the environmental ﬁeld are much
+longer than the typical coherent separation ΔX of the central particle (this
+corresponds to a dipole-type approximation) [15,109].
+This indicates that an implicit long-wavelength assumption underlies the
+model for quantum Brownian motion—not only the Caldeira–Leggett model
+but also the more general model described by the master equation (5.25).
+This in turn explains why the decoherence rate predicted by the Caldeira–
+Leggett model does not saturate. In fact, in the general particle–ﬁeld model
+the decoherence rate is found to exhibit an approximately quadratic depen-
+dence on the separation ΔX for values of ΔX small in comparison with the
+
+--- PRINTED PAGE 205 / PDF PAGE 219 ---
+5.2 Quantum Brownian Motion 205
+dominant wavelengths of the ﬁeld, and to approach a constant value as ΔX
+grows much larger [15, 109, 229]. The lack of saturation of the decoherence
+rate as evident in (5.61) is therefore merely an artifact of the underlying
+model [228,229].
+Another limitation of the Markovian model for quantum Brownian motion
+is due to the use of the time-independent coeﬃcients (5.26). As mentioned
+at the end of Sect. 5.2.2, if the more realistic treatment of time-dependent
+coeﬃcients is used [see (5.42)], the normal-diﬀusion coeﬃcient D is found to
+exhibit a temperature-independent transient during which D grows from an
+initial value of zero before settling into its ﬁnal value (5.48). The timescale
+of this transient is given by the high-frequency cutoﬀ Λ, see (5.44), which
+therefore imposes a limit on the decoherence rate. In our treatment, we have
+completely neglected this transient, and instead assumed that the coeﬃcient
+D is constant at all times.
+Furthermore, the role of the assumption (4.23) of an initially completely
+uncorrelated system–environment state in inducing rather spurious decoher-
+ence dynamics has been discussed in detail by Anglin and Zurek [229]. Finally,
+the Caldeira–Leggett model is based on the assumption of a high-temperature
+environment, and hence it may be inadequate for representing decoherence
+in low-temperature experimental settings such as those involving, say, super-
+conductors. In particular, at low temperatures the anomalous-diﬀusion term
+(5.40) in the full master equation (5.25) may become relevant, approaching a
+similar magnitude as the normal-diﬀusion term (5.34) and thus signiﬁcantly
+inﬂuencing the dynamics of the system [15,220].
+Thus, in summary, conclusions drawn from a speciﬁc decoherence model
+should not be misinterpreted as universally valid statements about generic
+properties of decoherence in nature. As we have seen, some seemingly phys-
+ically relevant features observed in models of decoherence may often simply
+be due to artifacts of the model and the assumptions made in deriving the
+model.
+However, despite these cautionary remarks, it should not go unmentioned
+that the estimates for decoherence rates obtained from the Caldeira–Leggett
+model have been found to yield surprisingly robust estimates of decoherence
+rates. That is, when these estimates are compared to predictions derived from
+more general and realistic models, good agreement is found even in cases
+where one may have anticipated greater discrepancies. For example, for envi-
+ronments where the high-temperature assumption underlying the Caldeira–
+Leggett model is not valid, the estimates of decoherence rates obtained from
+this—now strictly speaking incorrect—model are often surprisingly close to
+those derived from more complicated non-Markovian models. (See the anal-
+ysis by Paz, Habib, and Zurek [184] for a more detailed comparison and
+discussion.) This feature, together with the simplicity of arriving at such es-
+timates [see (5.61)], makes the Caldeira–Leggett model an excellent starting
+point for the treatment of many decoherence problems.
+
+--- PRINTED PAGE 206 / PDF PAGE 220 ---
+206 5 Canonical Models For Decoherence
+5.2.7 Exact Master Equation
+The model for linear quantum Brownian motion has the remarkable feature
+of being exactly solvable. Maybe even more astonishing, as ﬁrst shown by
+Hu, Paz, and Zhang in 1992 [219] following preliminary work by other au-
+thors [109,221,230–232], the resulting exact (non-Markovian) master equation
+is local in time for arbitrary spectral densities of the environment (see also our
+discussion in Sect. 4.4). This master equation takes exactly the same func-
+tional form as the Born–Markov master equation (5.25) derived in Sects. 5.2.1
+and 5.2.2 above, namely,
+d
+dt ˆρS(t)= −i
+[ ˆHS + 1
+2M ˜Ω2(t) ˆX2, ˆρS(t)
+]
+− iγ(t)
+[ ˆX,
+{ˆP, ˆρS(t)
+}]
+− D(t)
+[ ˆX,
+[ ˆX, ˆρS(t)
+]]
+− f(t)
+[ ˆX,
+[ ˆP, ˆρS(t)
+]]
+, (5.84)
+with ˆHS = 1
+2M
+ˆP2 + 1
+2MΩ2 ˆX2 representing the harmonic-oscillator self-
+Hamiltonian (5.23) of the system.
+The only—and key—diﬀerence between the exact equation (5.84) and
+the Born–Markov version (5.25) is the fact that now the coeﬃcients ˜Ω2,
+γ, D,a n df are explicitly time-dependent and fairly complicated functions
+of other time-dependent coeﬃcients, which in turn involve various integrals
+over the noise and dissipation kernels (5.16) and (5.17) (see [219] for details).
+All subtle features of the exact non-Markovian dynamics are encapsulated
+in these coeﬃcients ˜Ω2(t), γ(t), D(t), and f(t) appearing in (5.84), while
+the interpretation of the diﬀerent terms on the right-hand side of (5.84) is
+exactly the same as in the case of the Born–Markov master equation (5.25).
+As brieﬂy mentioned in Sect. 4.3, the particular time dependences of the
+coeﬃcients ˜Ω2(t), γ(t), D(t), and f(t) enforce the positivity of the reduced
+density matrix [see (4.42)], despite the fact that (not surprisingly) the exact
+master equation cannot be written in the positivity-ensuring Lindblad form
+(4.44).
+The fact that the reduced dynamics in the model for linear quantum Brow-
+nian can be determined exactly and are given by a time-local master equation
+is a fairly unique feature. Not many other physically interesting models seem
+to allow for the calculation of the exact master equation. One such example
+that permits an exact solution is that of a two-level system interacting with
+an environment of harmonic oscillators described by an interaction Hamilto-
+nian of a particular form (which is an example of a spin–boson model; see
+the next Sect. 5.3). As shown by Garr away [233, 234], the resulting exact
+master equation is local in time and has time-dependent coeﬃcients, just as
+the master equation (5.84) for quantum Brownian motion.
+
+--- PRINTED PAGE 207 / PDF PAGE 221 ---
+5.3 The Spin–Boson Model 207
+5.3 The Spin–Boson Model
+The spin–boson model corresponds to a single two-level system interacting
+with a large reservoir of bosonic ﬁeld modes, i.e., a spin-1
+2 particle coupled to
+an environment of harmonic oscillators. This model has been widely studied
+in the context of decoherence and dissipation in quantum systems. The role
+of two-level (qubit) systems in quantum computing (Chap. 7) and in exper-
+iments on macroscopic quantum coherence (Chap. 6) has led to additional
+interest in the spin–boson model. Recently, the model has even been used to
+analyze the role of quantum decoherence in biological systems [235].
+The seminal review paper by Leggett et al. [209] discusses the extremely
+rich dynamics of the spin–boson model in great detail. Since the environment
+consists of harmonic oscillators, it is possible to derive the exact Feynman–
+Vernon inﬂuence functional [211] for the model and thereby to eﬀectively
+eliminate the individual bath degrees of freedom from the problem (see
+Sect. IV of [209]). Thus, despite its complex dynamics, it is in principle pos-
+sible to solve the spin–boson model exactly. In particular, one can formally
+write down exact expressions for the quantities of interest for the central spin,
+such as the expectation value ⟨ˆσz(t)⟩ and correlation functions.
+Unfortunately, these exact expressions are rather complicated and very
+cumbersome to evaluate in practical situations of interest. One therefore often
+employs certain assumptions and approximations. One important example is
+the so-called “non-interacting blip approximation” that has been studied in
+detail by Leggett et al. [209]. This approximation not only greatly simpliﬁes
+the task of determining the dynamics of the central spin, but the solutions
+obtained from it also turn out to be very close to the exact results over most of
+the parameter space. In fact, in certain parameter regimes they even coincide
+with the exact results.
+Here we shall not discuss these more advanced methods and instead ap-
+proach the spin–boson model in the following two steps. First, we shall con-
+sider a simpliﬁed version of the model in which the Hamiltonian of the spin
+system does not contain a tunneling term. For this model, the exact system–
+environment dynamics can be determined in a fairly straightforward manner
+without the use of the master-equation formalism. This simpliﬁed spin–boson
+model neatly exhibits characteristic features of decoherence, making it an
+ideal candidate for the study of decoherence in two-level systems. In fact,
+when quantum information and quantum computation started to attract at-
+tention in the 1990s (see Chap. 7), the model was used to gain some ﬁrst
+insights into the decoherence of a single qubit in the presence of a ther-
+mal environment [89,236]. Since then, it has been frequently revisited (see,
+e.g., [96,237]).
+In Sect. 5.3.2, we shall then generalize our model to the full spin–boson
+model by including a tunneling term in the Hamiltonian. We will derive
+the explicit form of the Born–Markov master equation (4.8) for this model,
+
+--- PRINTED PAGE 208 / PDF PAGE 222 ---
+208 5 Canonical Models For Decoherence
+which will give us another opportunity to see how the general master-equation
+formalism described in Sect. 4.2 is applied to a concrete example.
+5.3.1 Simpliﬁed Spin–Boson Model Without Tunneling
+In the following, let us consider the simpliﬁed spin–boson model described
+by the Hamiltonian
+ˆH = ˆHS + ˆHE + ˆHint. (5.85)
+Here,
+ˆHS = 1
+2ω0ˆσz (5.86)
+is the self-Hamiltonian of the system. Let us denote the eigenstates of ˆσz by
+|0⟩ and |1⟩. The asymmetry energy ω0 is the diﬀerence in energy between
+the basis states |0⟩ and |1⟩ of the system. By contrast with the general spin–
+boson model, we have not included a tunneling term − 1
+2Δ0ˆσx [see (5.1)] in
+ˆHS that would generate intrinsic dynamics of the central spin.
+In (5.85), ˆHE denotes the familiar self-Hamiltonian (5.3) of the environ-
+ment of harmonic oscillators,
+ˆHE =
+∑
+i
+( 1
+2mi
+ˆp2
+i + 1
+2miω2
+i ˆq2
+i
+)
+. (5.87)
+As usual, the ith harmonic oscillator in the bath is described by its natural
+frequency ωi, mass mi, and position and momentum operators ˆ qi and ˆpi,
+respectively, and it deﬁnes a bosonic mode i. The interaction Hamiltonian
+ˆHint =ˆσz ⊗
+∑
+i
+ci ˆqi (5.88)
+describes the linear coupling of the ˆσz coordinate of the system to the po-
+sitions coordinates ˆqi of each harmonic oscillator in the environment, with
+coupling strengths ci. Finally, let us also deﬁne ˆH0 as the sum of the self-
+Hamiltonians of the system and the environment, ˆH0 ≡ ˆHS + ˆHE.
+Equivalently, we may recast the Hamiltonian (5.85) in terms of bosonic
+creation and annihilation operators ˆa†
+i and ˆai for each mode i. This formu-
+lation leads to a more compact notation which, among other things, does no
+longer require us to explicitly include the oscillator masses mi in the Hamil-
+tonian. Using the standard relations
+ˆqi =
+√
+1
+2miωi
+(
+ˆai +ˆa†
+i
+)
+, (5.89a)
+ˆpi = −i
+√miωi
+2
+(
+ˆai − ˆa†
+i
+)
+, (5.89b)
+
+--- PRINTED PAGE 209 / PDF PAGE 223 ---
+5.3 The Spin–Boson Model 209
+and dropping, for simplicity, the vacuum-energy term ∑
+i
+ωi
+2 , we can rewrite
+(5.85) as
+ˆH = 1
+2ω0ˆσz +
+∑
+i
+ωiˆa†
+i ˆai +ˆσz ⊗
+∑
+i
+(
+giˆa†
+i +g∗
+i ˆai
+)
+, (5.90)
+with the obvious relations between the ci and gi.2 The operators ˆa†
+i and ˆai
+obey the usual bosonic commutation relations,
+[
+ˆai, ˆa†
+j
+]
+= δij. (5.91)
+Let us ﬁrst note that, similarly to the spin–spin model described in Sect. 2.10,
+we have [ ˆH, ˆσz
+]
+=0 . (5.92)
+There exists neither an intrinsic tunneling term proportional to ˆσx nor any
+coupling between an environmental coordinate and ˆσx that could induce any
+transitions between the two basis states |0⟩ and |1⟩ of the system. Thus the
+populations of the two levels of the system are conserved quantities. There is
+no energy exchange between the system and the environment, and we there-
+fore deal with a model of decoherence without dissipation. As discussed in
+Sect. 2.11, while in realistic systems usually both dissipation and decoher-
+ence are present, the timescale for decoherence is typically many orders of
+magnitude shorter than the timescale for thermal relaxation. Thus our model
+can be regarded as a good representation of such rapid decoherence processes
+during which the amount of dissipation is negligible.
+Solving the Model
+To solve the model deﬁned by the Hamiltonian (5.90), let us now switch to
+the interaction picture (see Appendix). Here the evolution of the interaction-
+picture Hamiltonian ˆHint(t) is given by the free part ˆH0 of the total Hamil-
+tonian,
+ˆHint(t)=e i ˆH0t ˆHinte−i ˆH0t =ˆσz ⊗
+∑
+i
+(
+giˆa†
+i eiωit +g∗
+i ˆaie−iωit
+)
+. (5.93)
+This equation is easily proved by noting that the Heisenberg equations of
+motion for the operators ˆσz,ˆa†
+i , and ˆai read, using (5.91),
+2Note that, although theci are real numbers and are related to thegi by a real-
+valued factor, we have used the complex conjugate of gi in (5.90). This complex
+notation, introduced a posteriori, is a generalization that should be of no concern
+to the reader here.
+
+--- PRINTED PAGE 210 / PDF PAGE 224 ---
+210 5 Canonical Models For Decoherence
+dˆσz
+dt =i
+[ ˆH0, ˆσz
+]
+=0 , (5.94a)
+dˆa†
+i
+dt =i
+[ ˆH0, ˆa†
+i
+]
+=i ωi
+[
+ˆa†
+i ˆai, ˆa†
+i
+]
+= iωiˆa†
+i, (5.94b)
+dˆai
+dt =i
+[ ˆH0, ˆai
+]
+= iωi
+[
+ˆa†
+i ˆai, ˆai
+]
+= −iωiˆai. (5.94c)
+Next, we write down the evolution operator in the interaction picture, which
+reads
+ˆU(t)= T← exp
+[
+−i
+∫ t
+0
+dt′ ˆHint(t′)
+]
+, (5.95)
+where T← denotes the time-ordered product of operators (i.e., operators are
+arranged such that their time arguments increase from right to left).3 We can
+formally expand (5.95) in terms of a Dyson series [58] as
+ˆU(t)=
+∞∑
+n=0
+(−i)n
+n!
+∫ t
+0
+dt1
+∫ t1
+0
+dt2 ···
+×
+∫ tn− 1
+0
+dtn T←
+{
+ˆHint(t1) ˆHint(t2) ··· ˆHint(tn)
+}
+. (5.96)
+Since the commutator
+[ ˆHint(t), ˆHint(t′ ̸= t)
+]
+will in general be equal to an-
+other (time-dependent) operator, the required time ordering means that we
+usually cannot evaluate this series in closed form. However, a great simpli-
+ﬁcation occurs in the present case. Since the commutator of the operators
+ˆa†
+i and ˆai is a c-number (instead of another operator), the commutator of
+ˆHint(t)a n d ˆHint(t′ ̸= t), with ˆHint(t) given by (5.93), is simply a function of
+c-numbers, [ ˆHint(t), ˆHint(t′)
+]
+= −2i
+∑
+i
+|gi|2 sinωi(t − t′). (5.97)
+The explicit evaluation of (5.95) using (5.97) is somewhat cumbersome, so we
+refer readers interested in the derivation to [237] for details. The important
+point for our present discussion is that (5.97) enables us to write ˆU(t)a s
+a product of a global time-dependent phase factor and the ordinary (not
+time-ordered) equivalent of (5.95),
+ˆU(t)=e iφ(t) exp
+[
+−i
+∫ t
+0
+dt′ ˆHint(t′)
+]
+≡ eiφ(t) ˆV (t). (5.98)
+In our subsequent discussion, the global phase factor will play no role (al-
+though it may become relevant in other settings; see [96] for an example).
+3The necessity of a time ordering of the operators has sometimes been overlooked
+in discussions of this model in the literature (see, e.g., [89] and the correction in [96]
+and [237]).
+
+--- PRINTED PAGE 211 / PDF PAGE 225 ---
+5.3 The Spin–Boson Model 211
+Therefore, for our purposes, instead of the time-ordered evolution operator
+(5.95) we may simply use ˆV (t), which can be directly evaluated by carrying
+out the integration in the argument of the exponential. This yields
+ˆV (t) = exp
+[
+1
+2 ˆσz ⊗
+∑
+i
+(
+λi(t)ˆa†
+i − λ∗
+i (t)ˆai
+) ]
+, (5.99)
+where we have deﬁned the time-dependent coeﬃcients
+λi(t) ≡ 2gi
+ωi
+(
+1 − eiωit)
+. (5.100)
+What time evolution does ˆV (t), see (5.99), induce? For the remainder of this
+section, let us make the usual assumption that there exist no correlations
+between the system and the environment at t =0 ,
+|Ψ(0)⟩ =( a |0⟩ +b |1⟩) |ΦE ⟩. (5.101)
+We then readily obtain the time evolution
+|Ψ(t)⟩ = ˆV (t) |Ψ(0)⟩
+= a |0⟩
+∏
+i
+ˆD (λi(t)/2) |ΦE ⟩ +b |1⟩
+∏
+i
+ˆD (−λi(t)/2) |ΦE ⟩
+≡ a |0⟩| E+(t)⟩ +b |1⟩| E− (t)⟩. (5.102)
+Here we have introduced the operator
+ˆD (λi(t)) ≡ exp
+[
+λi(t)ˆa†
+i − λ∗
+i (t)ˆai
+]
+, (5.103)
+which generates the evolution of the ith environmental oscillator.
+The reader may immediately recognize the similarity of the time evolu-
+tion described by (5.102) to that encountered in the simple static model of
+Sect. 2.10, see (2.105). In both cases, the interaction establishes quantum
+correlations between the basis states |0⟩ and |1⟩ of S and the corresponding
+relative states |E+(t)⟩ and |E− (t)⟩ of the environment.
+What concrete form do these environmental states |E+(t)⟩ and |E− (t)⟩
+take? To answer this question, we must ﬁrst choose a particular initial state
+|ΦE ⟩ of the environment [see (5.101)], which we shall now do for two examples
+of interest. First, we shall consider the case in which the environment is in
+the ground state. Second, we will look at the situation of the environment’s
+being in thermal equilibrium.
+Case Study #1: Environment in the Ground State
+Here we shall assume that each harmonic oscillator in the environment is
+initially in the energy ground state |E0⟩,
+
+--- PRINTED PAGE 212 / PDF PAGE 226 ---
+212 5 Canonical Models For Decoherence
+|ΦE ⟩ =
+∏
+i
+|E0⟩i , (5.104)
+where the index i runs over all environmental oscillators. For a quantum
+harmonic oscillator, a coherent state |λ⟩ of amplitude λis deﬁned via the
+relation [238–241]
+|λ⟩≡ exp
+[
+λˆa† − λ∗ˆa
+]
+|E0⟩. (5.105)
+Comparing this deﬁnition with the expression for the operator ˆD (λi(t)),
+see (5.103), we immediately see that ˆD (λi(t)) is simply the generator of a
+coherent state of amplitude λi(t) for the ith environmental oscillator. Thus
+the two ﬁnal states |E±(t)⟩ are products of coherent states with amplitudes
+±λi(t)/2,
+|E±(t)⟩ =
+∏
+i
+|±λi(t)/2⟩. (5.106)
+Therefore we deal with a measurement-like process. If the system is in the
+state |0⟩ (|1⟩), the state of the environment gets shifted into the state|E+(t)⟩
+(|E− (t)⟩). If the states |E±(t)⟩ are suﬃciently distinguishable, i.e., if their
+overlap ⟨E− (t)|E+(t)⟩ is small, they act as “pointers” capable of discriminat-
+ing between the states |0⟩ and |1⟩. In this case quantum coherence between
+|0⟩ and |1⟩ will be lost (or, rather, delocalized) from the system, and the
+oﬀ-diagonal elements in the reduced density matrix of the system expressed
+in the {|0⟩, |1⟩} basis will decay.
+To quantify this decoherence process, let us compute the time evolution
+of the overlap r(t) ≡⟨ E − (t)|E+(t)⟩ (which plays the role of a decoherence
+factor). For two coherent states |λ⟩ and |μ⟩ we have
+⟨λ|μ⟩ =e x p
+[
+− 1
+2 |λ|2 − 1
+2 |μ|2 +λ∗μ
+]
+. (5.107)
+Thus the decoherence factor r(t) is given by
+r(t)= ⟨E− (t)|E+(t)⟩ =
+∏
+i
+exp
+[
+− 1
+2 |λi(t)|2
+]
+=e x p
+[
+−
+∑
+i
+4 |gi|2
+ω2
+i
+(1 − cosωit)
+]
+. (5.108)
+For times t much smaller than the dynamical timescales ω−1
+i of the envi-
+ronmental modes, i.e., ωit ≪ 1, we can approximate the cosine in (5.108)
+by
+cosωit ≈ 1 − 1
+2ω2
+i t2. (5.109)
+In this case the decoherence factor is
+r(t)= ⟨E− (t)|E+(t)⟩≈ exp
+[
+−
+∑
+i
+2 |gi|2 t2
+]
+, (5.110)
+
+--- PRINTED PAGE 213 / PDF PAGE 227 ---
+5.3 The Spin–Boson Model 213
+i.e., we obtain Gaussian decay of coherence between the states |0⟩ and |1⟩.
+Deviations from this Gaussian behavior occur when t becomes compa-
+rable to the typical timescales of the environment, ωit ≈ 1, and thus the
+approximation (5.109) starts to fail. Fig. 5.5 shows an example for the time
+evolution of the decoherence factor r(t) also for such larger times, with the
+purely Gaussian decay (5.110) pictured for comparison.
+As already pointed out in Sect. 2.10, it is important to keep in mind that
+for ﬁnite numbers of environmental oscillators, r(t) will return to its initial
+value of one after a ﬁnite (albeit for large environments very long) time.
+We can see this point directly from recognizing that the argument in the
+exponential of (5.108) is a sum of functions that are periodic in time, and thus
+the sum itself is periodic in time. Therefore, for ﬁnite-sized environments, the
+coherence initially localized at the level of the system will always be restored
+after a ﬁnite time span.
+Case Study #2: Environment in Thermal Equilibrium
+Let us now turn to the more general case in which each environmental oscil-
+lator i is in a thermal state,
+ˆρEi = 1
+Zi
+e−ωiˆa†
+i ˆai/kBT ≡ 1
+Zi
+e− ˆHEi /kBT. (5.111)
+Here
+Zi =T rEi e− ˆHEi /kBT (5.112)
+is the partition function for the ith mode. Thus the initial state of the com-
+posite system SE is given by
+00 .5
+short-time
+approximation
+exact
+solution
+t
+r(t)
+10− 5
+10− 10
+10− 15
+1
+10− 20
+1.01 .52 .02 .53 .0
+Fig. 5.5. Time evolution of the decoherence factor r(t)= ⟨E− (t)|E+(t)⟩ (i.e., of
+the overlap of the relative environmental states). Both the exact evolution (5.108)
+and the short-time approximation (5.110) are shown for an environment consisting
+of N = 20 harmonic oscillators. The couplings gi and frequencies ωi were chosen
+randomly from the interval [0, 1].
+
+--- PRINTED PAGE 214 / PDF PAGE 228 ---
+214 5 Canonical Models For Decoherence
+ˆρ(0) = ˆρS(0)
+⨂
+i
+1
+Zi
+e− ˆHEi /kBT. (5.113)
+The time evolution of the reduced density matrixρS(t) for the system is then
+obtained in the usual manner via
+ˆρS(t)=T r E
+[
+ˆV (t)ρS(0)ˆV −1(t)
+]
+, (5.114)
+with ˆV (t) given by (5.99). Since we already know from (5.92) that the diago-
+nal elements ρ(ii)
+S (t)o fˆρS(t) expressed in the {|0⟩, |1⟩} basis are constant in
+time,
+ρ(ii)
+S (t)= ρ(ii)
+S (0),i =0 ,1, (5.115)
+we only need to compute the oﬀ-diagonal elements,
+ρ(01)
+S (t)= ⟨0| TrE
+[
+ˆV (t)ˆρ(0)ˆV −1(t)
+]
+|1⟩,
+ρ(10)
+S (t)= ⟨1| TrE
+[
+ˆV (t)ˆρ(0)ˆV −1(t)
+]
+|0⟩. (5.116)
+Using the deﬁnitions above, these expressions are readily computed as follows,
+ρ(01)
+S (t)= ρ(01)
+S (0) TrE
+{
+exp
+[ ∑
+i
+(
+λi(t)ˆa†
+i − λ∗
+i (t)ˆai
+) ] ⨂
+i
+ˆρEi
+}
+= ρ(01)
+S (0)
+∏
+i
+TrEi
+{
+ˆD (λi(t)) ˆρEi
+}
+= ρ(01)
+S (0)
+∏
+i
+⣨
+ˆD (λi(t))
+⟩
+ˆρEi
+=
+[
+ρ(10)
+S (t)
+]∗
+. (5.117)
+In other words, the decoherence factor r(t) is given by
+r(t)=
+∏
+i
+⣨
+ˆD (λi(t))
+⟩
+ˆρEi
+=
+∏
+i
+⣨
+exp
+[
+λi(t)ˆa†
+i − λ∗
+i (t)ˆai
+]⟩
+ˆρEi
+, (5.118)
+i.e., by the product of the expectation values of the operators ˆD (λi(t)), see
+(5.103), for the thermal modes ˆρEi of the environment.
+It now turns out that
+χ(λi,t) ≡
+⣨
+exp
+[
+λi(t)ˆa†
+i − λ∗
+i (t)ˆai
+]⟩
+ˆρEi
+(5.119)
+is just the symmetrically ordered characteristic function for a single harmonic
+oscillator (a single ﬁeld mode) in thermal equilibrium, a function that is
+well-known from quantum optics (see, e.g., [241]). This function is given by
+[18,150]
+χ(λi,t) = exp
+[
+− 1
+2 |λi(t)|2 coth (ωi/2kBT)
+]
+. (5.120)
+
+--- PRINTED PAGE 215 / PDF PAGE 229 ---
+5.3 The Spin–Boson Model 215
+Hence
+r(t) = exp
+[
+−4
+∑
+i
+|gi|2
+ω2
+i
+(1 − cosωit) coth (ωi/2kBT)
+]
+≡ eΓ(t), (5.121)
+where we have denoted the argument of the exponential byΓ(t).
+Time evolution of the decoherence factor
+After these rather formal manipulations, let us now try to get a feel for
+the time dependence of r(t) by studying Γ(t). First, let us assume that the
+environment is suﬃciently large such that we can assume a continuous density
+of environmental modes. Just as in our discussion of quantum Brownian
+motion in Sect. 5.2, we therefore go from our expression (5.121) in terms of
+a sum over the discrete couplingsgi to a continuous description by means of
+a spectral density J(ω),
+∑
+i
+|gi|2 −→
+∫ ∞
+0
+dωJ(ω). (5.122)
+With this replacement, Γ(t) appearing in (5.121) becomes
+Γ(t)= −
+∫ ∞
+0
+dω4J(ω)
+ω2 (1 − cosωt) coth (ω/2kBT). (5.123)
+Of course, if we choose
+J(ω)=
+∑
+i
+|gi|2 δ(ω− ωi), (5.124)
+the right-hand side of (5.123) will be trivially identical to our original expres-
+sion (5.121). Instead, let us now representJ(ω) by a suitably chosen smooth
+function of ω.
+As in the case of quantum Brownian motion (see Sect. 5.2.3), we shall
+consider a spectral density that is ohmic for suﬃciently small frequencies,
+J(ω) ∝ ω, and that has a smooth high-frequency cutoﬀ quantiﬁed by Λ.
+Instead of the Lorentz–Drude form (5.44) used in our model for quantum
+Brownian motion, let us here choose an exponential cutoﬀ of the form e−ω/Λ .
+Thus our spectral density takes the form
+J(ω)=4 J0ωe−ω/Λ , (5.125)
+where J0 is a dimensionless constant. The factor of four appearing in (5.123)
+has been absorbed into (5.125). The spectral density is plotted in Fig. 5.6.
+As desired, J(ω) increases approximately linearly for frequencies ω<Λ and
+decreases for ω>Λ.
+With the functional form (5.125) for J(ω), (5.123) reads
+
+--- PRINTED PAGE 216 / PDF PAGE 230 ---
+216 5 Canonical Models For Decoherence
+0
+12 3 4 5
+0.1
+0.2
+0.3
+0
+ω [Λ]
+J(ω)[ 4J0]
+cutoﬀ
+(ω = Λ)
+Fig. 5.6. Spectral density J(ω) given by (5.125), shown in units of 4J0. The spec-
+tral density is chosen to be approximately ohmic (i.e., J(ω) ∝ ω) for frequencies
+well below the cutoﬀ frequency Λ. At frequencies ω>Λ , the ohmic character is
+suppressed by a term e− ω/Λ . The frequency ω is measured in units of the cutoﬀΛ.
+Γ(t)= −J0
+∫ ∞
+0
+dωe−ω/Λ 1 − cosωt
+ω coth (ω/2kBT). (5.126)
+If we now make the reasonable assumption that the thermal energykBT of the
+environment is small in comparison with the cutoﬀ frequency Λ, kBT ≪ Λ,
+this integral can be solved exactly. The result can be decomposed as
+Γ(t)= Γﬂuc(t)+ Γtherm(t). (5.127)
+Here
+Γﬂuc(t)= − 1
+2 ln
+(
+1+ Λ2t2)
+(5.128)
+is the (exact) contribution to Γ(t) due to purely quantum vacuum ﬂuctua-
+tions (note that this term is independent of the bath temperature), and
+Γtherm(t) ≈− ln
+[ sinh(πkBTt)
+πkBTt
+]
+(5.129)
+is the contribution due to thermal ﬂuctuations in the bath.
+A plot of Γ(t) is shown in Fig. 5.7. We see that Γ(t) decreases from its
+initial value of one. We can therefore conclude that coherence between the
+components |0⟩ and |1⟩ indeed becomes locally damped, since the relevant
+decoherence factor (5.118) is given by r(t)=e Γ(t).A sw es h a l ls e ei nt h e
+following, we can distinguish several characteristic timescales for this deco-
+herence process.
+Decoherence timescales
+Let us investigate the relevant timescales over which either one of the two
+contributions Γﬂuc(t)a n d Γtherm(t) dominates the time evolution of Γ(t).
+
+--- PRINTED PAGE 217 / PDF PAGE 231 ---
+5.3 The Spin–Boson Model 217
+Γ(t)[ J0]
+t [Λ− 1]
+0 5 10 15 20
+0
+−1
+−2
+−3
+Fig. 5.7. Time dependence of the exponent Γ(t) (in units of J0), see (5.126),
+with time measured in units of the cutoﬀ period Λ− 1.H e r ew eh a v ec h o s e nt h e
+temperature of the bath such that kBT = Λ/60, i.e., the thermal correlation time
+is assumed to be 60 times longer than the cutoﬀ period Λ− 1.
+From (5.128) and (5.129) we see that these timescales will be deﬁned by the
+magnitude of t relative to the cutoﬀ period Λ−1 and the thermal correlation
+time (kBT)−1.
+First, let us assume that we are in the extreme short-time regime with
+t ≪ Λ−1 and t ≪ (kBT)−1. Then we can terminate the Taylor expansion of
+the natural logarithm in the expression (5.128) for Γﬂuc(t) after the second
+term (i.e., we expand Γﬂuc(t)t oﬁ r s to r d e ri nΛ2t2),
+Γﬂuc(t) ≈− 1
+2Λ2t2, (5.130)
+and thereforeΓﬂuc(t) ≪ 1. The thermal contributionΓtherm(t) plays no role at
+all in this regime. Thus the decoherence factorr(t), see (5.118), is close to one,
+with any (weak) decay being entirely due to quantum vacuum ﬂuctuations.
+Second, suppose t is larger than the characteristic period set by the cutoﬀ
+frequency,t ≫ Λ−1, but still much smaller than the thermal correlation time,
+t ≪ (kBT)−1. Then we can again neglect the contribution ofΓtherm(t)t oΓ(t),
+and we can approximate Γﬂuc(t)a s
+Γﬂuc(t) ≈− 1
+2 ln
+(
+Λ2t2)
+= − lnΛt. (5.131)
+Thus Γﬂuc(t) is of magnitude larger than one, and quantum vacuum ﬂuctua-
+tions are a dominant source of decoherence in this regime.
+Finally, let us assume the long-time regime for whicht is much larger than
+the typical thermal ﬂuctuation time, i.e.,t ≫ (kBT)−1. Then, using that
+sinh(x)= 1
+2
+(
+ex − e−x)
+≈ 1
+2ex if x ≫ 1, (5.132)
+we obtain
+
+--- PRINTED PAGE 218 / PDF PAGE 232 ---
+218 5 Canonical Models For Decoherence
+Γtherm(t) ≈− πkBTt +l n( 2πkBTt) ≈− πkBTt ≫ Γﬂuc(t), (5.133)
+and thus
+Γ(t) ≈− πkBTt. (5.134)
+Inserting this expression for Γ(t) into (5.121), we thus see that the deco-
+herence factor r(t) decays exponentially on a timescale set by the thermal
+correlation time (kBT)−1,
+r(t) ≈ e−(πkBT)t. (5.135)
+5.3.2 Born–Markov Master Equation for the Spin–Boson Model
+In the simpliﬁed spin–boson model discussed in the previous Sect. 5.3.1, the
+total Hamiltonian (5.90) was completely diagonal in the ˆσz eigenbasis of the
+central spin. This means that the spin system has no intrinsic dynamics in
+the {|0⟩, |1⟩} basis: If the system did not couple to any environment, the
+probability of ﬁnding the system in the state |0⟩ (or |1⟩)u p o nm e a s u r e m e n t
+would not change in time.
+Let us now generalize this simpliﬁed model to include intrinsic dynamics
+by adding a tunneling term − 1
+2Δ0ˆσx to the Hamiltonian (5.90), where Δ0
+denotes the tunneling matrix element [see (5.1)]. Switching back to the (ˆqi, ˆpi)
+representation for the environmental coordinates, this yields the general spin–
+boson model deﬁned by the Hamiltonian
+ˆH = 1
+2ω0ˆσz − 1
+2Δ0ˆσx +
+∑
+i
+( 1
+2mi
+ˆp2
+i + 1
+2miω2
+i ˆq2
+i
+)
++ˆσz ⊗
+∑
+i
+ci ˆqi. (5.136)
+Leggett et al. [209] showed in detail how this form of the Hamiltonian can
+be rigorously motivated from physical considerations. For our purposes, the
+introductory remarks of Sect. 5.1 on the role of spin-system and oscillator-
+environment models will be considered suﬃcient to motivate our interest in
+the Hamiltonian (5.136).
+Despite the fact that this Hamiltonian seems only marginally more com-
+plicated than the no-tunneling Hamiltonian (5.90) considered in Sect. 5.3.1,
+the presence of the tunneling term renders the general spin–boson model
+deﬁned by (5.136) much more complex, both in terms of its mathematical
+solution and of the dependences of the resulting decoherence dynamics on
+the relative magnitudes of the parameters. The aforementioned review by
+Leggett et al. [209] discusses in great detail exact and approximate solutions
+of the model.
+Here, we shall focus on the derivation of the Born–Markov master equa-
+tion for the spin–boson model. Recall that this master equation is appropri-
+ate if the system is weakly coupled to a large environment. To facilitate the
+subsequent calculations, we shall introduce one minor simpliﬁcation in the
+
+--- PRINTED PAGE 219 / PDF PAGE 233 ---
+5.3 The Spin–Boson Model 219
+Hamiltonian (5.136). Namely, we will assume that the asymmetry energyω0
+is equal to zero, corresponding to the central system moving in a symmet-
+ric double-well potential. With this assumption, the ﬁrst ˆσz term in (5.136)
+vanishes, such that our model is now deﬁned by the Hamiltonian
+ˆH = − 1
+2Δ0ˆσx +
+∑
+i
+( 1
+2mi
+ˆp2
+i + 1
+2miω2
+i ˆq2
+i
+)
++ˆσz ⊗
+∑
+i
+ci ˆqi. (5.137)
+This slightly simpliﬁed form of the Hamiltonian when compared with (5.136)
+makes the subsequent derivation of the Born–Markov master equation more
+transparent and will also allow us to more closely establish interesting analo-
+gies with quantum Brownian motion.
+Fortunately, in our derivation we can proceed in a very similar manner as
+in the case of quantum Brownian motion (see Sect. 5.2.1). In fact, since we
+deal with the same type of environment and a bilinear system–environment
+coupling, many results can be taken over directly. For example, the bulk of
+the derivation of the master equation for quantum Brownian motion had
+been devoted to the calculation of the environment self-correlation functions
+(5.15). Since these functions are independent of the representation of the
+central system, we can directly use the results obtained in Sect. 5.2.1 in the
+following derivation.
+In particular, we can take over the form of the master equation (5.22) for
+quantum Brownian motion and simply replace the position operator ˆX by
+the Pauli z-spin operator ˆσz,
+d
+dt ˆρS(t)= −i
+[ ˆHS, ˆρS(t)
+]
+−
+∫ ∞
+0
+dτ{ν(τ)[ˆσz,[ˆσz(−τ), ˆρS(t)]]
+−iη(τ)[ˆσz, {ˆσz(−τ), ˆρS(t)}]}, (5.138)
+where ˆHS = − 1
+2Δ0ˆσx is the system Hamiltonian. The noise and the dissipa-
+tion kernels ν(τ)a n dη(τ) appearing in (5.138) have exactly the same forms
+(5.16) and (5.17) as in the case of quantum Brownian motion, namely,
+ν(τ)= 1
+2
+∑
+i
+c2
+i ⟨{ˆqi(τ), ˆqi}⟩ˆρE
+≡
+∫ ∞
+0
+dωJ(ω) coth
+( ω
+2kBT
+)
+cos (ωτ),
+(5.139)
+η(τ)= i
+2
+∑
+i
+c2
+i ⟨[ˆqi(τ), ˆqi]⟩ˆρE
+≡
+∫ ∞
+0
+dωJ(ω)s i n(ωτ). (5.140)
+The time dependence of the operator ˆ σz in the interaction picture can be
+computed by solving the Heisenberg equations of motion with respect to the
+system Hamiltonian ˆHS. The result is
+ˆσz(τ)=e i ˆHS τˆσze−i ˆHS τ =ˆσz cos (Δ0τ) − ˆσy sin (Δ0τ). (5.141)
+
+--- PRINTED PAGE 220 / PDF PAGE 234 ---
+220 5 Canonical Models For Decoherence
+Note the formal similarity of this expression to the result (5.24) for the
+interaction-picture position operator ˆX(τ) used in the context of the model
+for quantum Brownian motion.
+We now insert (5.141) into our master equation (5.138). After some
+straightforward algebra, which involves rearranging terms and using the stan-
+dard identity relations ˆσy ˆσz =i ˆσx and ˆσz ˆσy = −iˆσx for the Pauli spin op-
+erators, we obtain the ﬁnal expression for the Born–Markov master equation
+for the spin–boson model deﬁned by the Hamiltonian (5.137),
+d
+dt ˆρS(t)= −i
+(
+ˆH′
+S ˆρS(t) − ρS(t) ˆH′†
+S
+)
+− ˜D [ˆσz,[ˆσz, ˆρS(t)]]
++ζˆσz ˆρS(t)ˆσy +ζ∗ˆσy ˆρS(t)ˆσz. (5.142)
+Several new quantities appear in this equation. First,
+ˆH′
+S =
+(
+− 1
+2Δ0 − ζ∗
+)
+ˆσx (5.143)
+is the renormalized (and in general non-Hermitian) Hamiltonian of the sys-
+tem. Thus the tunneling term − 1
+2Δ0 is changed by an amountζ∗ due to the
+inﬂuence of the environment, where
+ζ∗ = ˜f − i˜γ. (5.144)
+The coeﬃcients ˜D, ˜f,a n d˜γappearing in (5.142) and (5.144) are determined
+by expressions analogous to those for, respectively, the normal-diﬀusion and
+anomalous-diﬀusion coeﬃcients D and f [see (5.26c) and (5.26d)] and the
+damping coeﬃcient γ[see (5.26b)] in the model for quantum Brownian mo-
+tion,
+˜D ≡
+∫ ∞
+0
+dτν(τ)c o s(Δ0τ), (5.145a)
+˜f ≡
+∫ ∞
+0
+dτν(τ)s i n(Δ0τ), (5.145b)
+˜γ≡
+∫ ∞
+0
+dτη(τ)s i n(Δ0τ). (5.145c)
+Accordingly, once a speciﬁc form of the spectral density of the environment
+is chosen, the coeﬃcients (5.145) can be evaluated in much the same way as
+discussed for the case of quantum Brownian motion (see Sect. 5.2.3).
+The interpretation of the diﬀerent terms appearing on the right-hand side
+of the master equation (5.142) is also similar to the case of quantum Brownian
+motion. The term
+˜D [ˆσz,[ˆσz, ˆρS(t)]] = ˜D
+( 1
+2 ˆρS(t) − 2ˆσz ˆρS(t)ˆσz
+)
+(5.146)
+
+--- PRINTED PAGE 221 / PDF PAGE 235 ---
+5.3 The Spin–Boson Model 221
+is of the standard Lindblad double-commutator form (4.45), representing the
+direct monitoring of the system observable ˆσz by the environment, as already
+evident from the structure of the interaction Hamiltonian, see (5.136). It thus
+describes decoherence in the basis {|0⟩, |1⟩} at a rate given by the coeﬃcient
+˜D.
+This can also be seen explicitly by expressing (5.146) as a 2×2 matrix in
+the basis {|0⟩, |1⟩}. If we denote the matrix elements ⟨i| ˆρS(t) |j⟩, i ∈{ 0,1},
+of the reduced density matrix by ρ(ij)
+S (t), we get
+˜D [ˆσz,[ˆσz, ˆρS(t)]] ˙ = ˜D
+(
+0 ρ(01)
+S (t)
+ρ(10)
+S (t)0
+)
+. (5.147)
+Thus the time evolution of the oﬀ-diagonal matrix elements of the reduced
+density matrix (expressed in the eigenbasis of ˆσz) due to the inﬂuence of the
+˜D term (5.146) alone (neglecting all other terms appearing in the master
+equation) is
+d
+dtρ(01)
+S (t)= − ˜Dρ(01)
+S (t),
+d
+dtρ(10)
+S (t)= − ˜Dρ(10)
+S (t). (5.148)
+This implies exponential decay of the oﬀ-diagonal elements at a rate given
+by ˜D. The diagonal elements ρ(00)
+S (t)a n dρ(11)
+S (t) (i.e., the occupation prob-
+abilities) remain unaﬀected by the dynamics generated by the term (5.146),
+indicating a pure decoherence process without damping. This, again, is anal-
+ogous to the case of quantum Brownian motion, where we found that the
+normal-diﬀusion term induced exponential damping of spatial coherences [see
+(5.35)].
+Note that for the case of a vanishing tunneling matrix element, Δ0 =0 ,
+we also have ζ= 0. Then the master equation (5.142) reduces to the “pure-
+decoherence” form
+d
+dt ˆρS(t)= −i
+[ ˆHS, ˆρS(t)
+]
+− ˜D [ˆσz,[ˆσz, ˆρS(t)]], (5.149)
+which does not contain any terms that correspond to damping or frequency
+shifts. This is simply the Lindblad equation (4.45) with Lindblad operator
+ˆL =ˆσz, describing the environmental monitoring of the value ofz-spin of the
+system.
+Finally, the last two terms on the right-hand side of the master equation
+(5.142) describe the decay of the two-level system, quantiﬁed by an interplay
+between the coeﬃcients ˜f and ˜γ, see (5.145b) and (5.145c). This can be seen
+quite easily, e.g., by writing out these terms in matrix form. (Since our focus
+is on decoherence, we shall not show the proof here.)
+
+--- PRINTED PAGE 222 / PDF PAGE 236 ---
+222 5 Canonical Models For Decoherence
+In summary, we have seen how the Born–Markov master equation for the
+spin–boson model can be obtained in a manner quite analogous to the deriva-
+tion of the master equation for quantum Brownian motion. The next step
+would consist of studying the spin–boson model beyond the Born–Markov ap-
+proximations, which often break down in physical situations where the central
+two-level system and its environment are at very low temperatures (see the
+discussion in Sect. 4.4). Prominent examples for such low-temperature sys-
+tems are the superconducting qubit systems operated at temperatures close
+to absolute zero (see Sect. 6.3).
+As mentioned above, the rich non-Markovian dynamics of the spin–boson
+model have been analyzed in great detail by Leggett et al. [209]. As expected,
+the dynamics are found to exhibit strong dependences on the various param-
+eters in the model, such as the temperature of the environment, the form
+of the spectral density (subohmic vs. ohmic vs. supraohmic), and the overall
+system–environment coupling strength. For each parameter regime, a charac-
+teristic dynamical behavior emerges: Localization, exponential or incoherent
+relaxation, exponential decay, and strongly or weakly damped coherent oscil-
+lations (see Table I of [209] for an overview of the diﬀerent parameter regimes
+and the resulting dynamics).
+We shall here refrain from discussing these rather complex dynamics
+and instead consider ourselves satisﬁed with the two models studied above,
+namely, the simpliﬁed spin–boson model and the spin–boson model in the
+framework of the Born–Markov approximations. These models already ex-
+hibit the main features relevant to a study of decoherence in models of
+the spin–boson type. Readers interested in an in-depth analysis of the non-
+Markovian dynamics of dissipation and decoherence in the spin–boson model
+will ﬁnd a vast amount of information in the article by Leggett et al. [209]
+and the book by Weiss [218].
+5.4 Spin-Environment Models
+Let us now switch our focus from the study of environments composed of
+harmonic oscillators to the analysis of models in which the environment is
+represented by a collection of spin- 1
+2 particles (i.e., quantum two-level sys-
+tems). In Sect. 5.1.2, we already discussed the physical motivation for the
+consideration of such spin environments and mentioned some key diﬀerences
+between spin and oscillator environments.
+A central system represented by a spin particle linearly coupled to a col-
+lection of other spins comprises the physically most relevant (and most stud-
+ied) spin-environment model. The typical physical situation for which such
+a “spin–spin model” is appropriate is that of a single two-level system, such
+as a superconducting qubit, strongly coupled to a low-temperature environ-
+ment (see our discussion in Sect. 5.1). The other “canonical” possibility of a
+
+--- PRINTED PAGE 223 / PDF PAGE 237 ---
+5.4 Spin-Environment Models 223
+central harmonic oscillator interacting with an environment of two-level sys-
+tems has only recently begun to attract attention in the context of studying
+decoherence and dissipation in so-called quantum-electromechanical systems
+(see Sect. 6.4.2) and also in micron-scale ion traps [242].
+In this section, we shall investigate diﬀerent aspects of such spin-environ-
+ment models. We shall structure our discussion of spin–spin models in a
+similar manner as in the case of the spin–boson model. First, in Sect. 5.4.1,
+we will discuss a spin–spin model that is a simple generalization of the de-
+coherence model studied in Sect. 2.10. Next, in Sect. 5.4.2, we will discuss
+spin-environment models in the limit of weak linear system–environment cou-
+plings. We will show how in this case the spin environment can be mapped
+onto an oscillator environment with a modiﬁed spectral density, as originally
+suggested by Feynman and Vernon [211] (see also Sect. 5.1.2). This will al-
+low us to take over the formal results from our study of quantum Brownian
+motion, that is, we can derive a Born–Markov master equation of the form
+(5.22) for a central system weakly interacting with a spin bath.
+In Sect. 5.4.3, we will discuss features of more general spin–spin mod-
+els. We will focus on giving an overview of the decoherence dynamics aris-
+ing in such models, without going into the mathematics required to solve
+the models. Readers interested in a more detailed account of the theory of
+spin-environment models will ﬁnd plenty of material in the review article by
+Prokof’ev and Stamp [199]. A short and accessible summary is given in [200].
+5.4.1 A Simple Dynamical Spin–Spin Model
+We already encountered a member of the class of spin–spin models in
+Sect. 2.10 when we discussed a prototype model for illustrating basic features
+of environmental decoherence and superselection. We were able to solve the
+global dynamics of this model exactly in a straightforward fashion, because
+we had neglected the self-Hamiltonians of both the central spin and the spin
+environment, and because we had assumed that the interaction Hamiltonian
+was already diagonal in the ˆσz eigenbasis of both the central spin and the
+collection of environmental spins [see (2.100)]. Clearly, this model was rather
+artiﬁcial, as it did not model the internal dynamics of the system and environ-
+ment and thus corresponded to the limit of strong system–environment inter-
+actions which completely dominate the dynamics (the quantum-measurement
+regime).
+We shall now generalize this static spin–spin model by adding a tunneling
+term of the form− 1
+2Δ0ˆσx [see (5.1)] to the original Hamiltonian (2.100). Thus
+we consider the model described by the total Hamiltonian
+ˆH = ˆHS + ˆHint = − 1
+2Δ0ˆσx + 1
+2 ˆσz ⊗
+N∑
+i=1
+giˆσ(i)
+z ≡− 1
+2Δ0ˆσx + 1
+2 ˆσz ⊗ ˆE. (5.150)
+We will show that the inclusion of the tunneling term in (5.150) will in
+general lead to signiﬁcantly diﬀerent dynamics compared to the original static
+
+--- PRINTED PAGE 224 / PDF PAGE 238 ---
+224 5 Canonical Models For Decoherence
+model deﬁned by the Hamiltonian (2.100). The last term on the right-hand
+side of (5.150) corresponds to the familiar linear interaction between the
+z-spin coordinate of the central system and the z-spin coordinate of each
+environmental spin, with coupling strengths gi.
+Solving the Model
+Despite the presence of the tunneling term, the global dynamics of the model
+deﬁned by (5.150) can be solved exactly, as shown by Dobrovitski et al.
+[243] and Cucchietti, Paz, and Zurek [118]. We shall closely follow the latter
+approach [118] in our subsequent derivation.
+A key simplifying feature of the Hamiltonian (5.150) arises from the fact
+that this Hamiltonian still contains only ˆσz environment operators, just as
+in the static case (2.100). Thus, as in the model discussed in Sect. 2.10, the
+eigenstates |n⟩ of the environment part ˆE of the Hamiltonian are given by
+products of the eigenstates |↑⟩i and |↓⟩i of the ith environment operator ˆσ(i)
+z
+[see (2.101)]. Explicitly,
+ˆE |n⟩ = ϵn |n⟩,n =0 ,..., 2N − 1, (5.151)
+with eigenvalues [see (2.102)]
+ϵn =
+N∑
+i=1
+(−1)nigi, (5.152)
+where ni = 0 if theith environmental spin is in the “up” state, and ni =1i f
+this spin is in the “down” state.
+Consider now a pure product system–environment state given by
+|Ψn⟩ = |ψS ⟩|n⟩, (5.153)
+where |ψS ⟩ denotes an arbitrary state vector of the system. The action of the
+Hamiltonian (5.150) on this state is
+ˆH |Ψn⟩ =
+(
+− 1
+2Δ0ˆσx + 1
+2ϵnˆσz
+)
+|Ψn⟩. (5.154)
+In other words, for every environment state|n⟩ we can consider a correspond-
+ing eﬀective system Hamiltonian of the form
+ˆH(n)
+S ≡− 1
+2Δ0ˆσx + 1
+2ϵnˆσz. (5.155)
+The time evolution of an arbitrary initial product state of the form
+|Ψ(0)⟩ = |ψS(0)⟩
+⎛
+⎝
+2N −1∑
+n=0
+cn |n⟩
+⎞
+⎠ (5.156)
+
+--- PRINTED PAGE 225 / PDF PAGE 239 ---
+5.4 Spin-Environment Models 225
+can be written as
+|Ψ(t)⟩ =
+2N −1∑
+n=0
+cn
+[
+ˆUn(t) |ψS(0)⟩
+]
+|n⟩, (5.157)
+and thus
+ˆρS(t)=T r E |Ψ(t)⟩⟨Ψ(t)| =
+2N −1∑
+n=0
+|cn|2 ˆUn(t)ˆρS(0) ˆU †
+n(t), (5.158)
+where ˆρS(0) = |ψS(0)⟩⟨ψS(0)|. Here ˆUn(t) is the system evolution operator
+corresponding to the eﬀective Hamiltonian (5.155). This operator is given
+by [118]
+ˆUn(t)= ˆI cos (Ωnt) − i
+Ωn
+(
+ϵnˆσz − 1
+2Δ0ˆσx
+)
+sin (Ωnt), (5.159)
+with Ωn =
+√
+ϵ2n +Δ2
+0/4.
+Following the approach of [118], let us now formally express the reduced
+density matrix ˆρS(t) in terms of the so-called polarization vector p(t) ≡
+(px(t),py(t),pz(t)) as
+ˆρS(t)= 1
+2
+(
+ˆI + p(t) · ˆσ
+)
+= 1
+2
+(
+ˆI +px(t)ˆσx +py(t)ˆσy +pz(t)ˆσz
+)
+. (5.160)
+We can interpretp as follows. Broadly speaking, the direction ofp tells us into
+what set of eigenstates the density matrix (5.160) decomposes. For example,
+if px = py =0 ,
+ˆρS = 1
+2
+(
+1+ pz 0
+01 − pz
+)
+, (5.161)
+and thus the eigenstates of ˆρS are given by the eigenstates |0⟩ and |1⟩ of ˆσz.
+On the other hand, if py = pz =0 ,
+ˆρS = 1
+2
+( 1 px
+px 1
+)
+, (5.162)
+and the eigenstates of this density matrix are the eigenstates of ˆσx.
+The dominating component of the polarization vector p(t −→ ∞ ) will
+tell us in which “direction” (i.e., in which basis) the decoherence process is
+most eﬀective. Thus the polarization-vector description allows for an intuitive
+analysis of the preferred pointer basis arising in our model. For example, if
+px(t)a n dpy(t) tend toward zero while pz(t) approaches a ﬁnite asymptotic
+value, we can conclude that the eigenbasis{|0⟩, |1⟩} of ˆσz is the pointer basis
+of the system.
+Therefore our next goal will be to calculate the components px(t), py(t),
+and pz(t) of the polarization vector corresponding to the reduced density
+
+--- PRINTED PAGE 226 / PDF PAGE 240 ---
+226 5 Canonical Models For Decoherence
+matrix (5.158). This will then allow us to study the resulting dynamics of
+the system. Explicit expressions
+(
+p(n)
+x (t),p(n)
+y (t),p(n)
+z (t)
+)
+corresponding to
+each term ˆUn(t)ˆρS(0) ˆU †
+n(t) in the sum on the right-hand side of (5.158) are
+obtained rather easily by using the explicit expression (5.159) for ˆUn(t)( s e e
+[118] for the results).
+The next step is then to calculate the sums over all individual terms of
+the form |cn|2 p(n)
+s (t), s ∈{ x,y,z }, to obtain the full polarization vector [see
+(5.158) and (5.160)]. Instead of working with discrete indices n, let us now
+take the usual approach of rewriting (5.158) in an equivalent integral form as
+ˆρS(t)=
+∫
+dϵJ (ϵ) ˆUϵ(t)ˆρS(0) ˆU †
+ϵ (t), (5.163)
+where we have introduced the spectral density describing the distribution of
+the environment energies ϵ as
+J(ϵ)=
+2N −1∑
+n=0
+|cn|2 δ(ϵ − ϵn). (5.164)
+As shown by Cucchietti, Paz, and Zurek [118], this distribution approaches
+a Gaussian for large numbers N of environmental spins,
+J(ϵ)
+N −→ ∞
+−−−−−→ 1√
+2πs2
+N
+exp
+(
+− ϵ2
+2s2
+N
+)
+. (5.165)
+The widthsN of the Gaussian (5.165) quantiﬁes the typical range of the envi-
+ronmental energies ϵ [see (5.152)]. We proved the result (5.165) in Sect. 2.10
+for the simpliﬁed situation in which all environment couplings and expansion
+coeﬃcients were assumed to be equal. However, (5.165) not only holds for
+much more general choices of coeﬃcients, but is also a good (continuum)
+approximation to the exact expression (5.164) for already very modest values
+of N [118].
+Using the Gaussian spectral density (5.165), the componentspx(t), py(t),
+and pz(t) of the polarization vector are then given by [118]
+px(t)=
+∫
+dϵJ (ϵ)Δ2
+0 +ϵ2 cos (2Ωϵt)
+Ω2ϵ
+px(0), (5.166a)
+py(t)=
+∫
+dϵJ (ϵ)
+[
+cos (2Ωϵt)py(0) − Δ0 sin (2Ωϵt)
+Ωϵ
+pz(0)
+]
+, (5.166b)
+pz(t)=
+∫
+dϵJ (ϵ)
+[ϵ2 +Δ2
+0 cos (2Ωϵt)
+Ω2ϵ
+pz(0) +Δ0 sin (2Ωϵt)
+Ωϵ
+py(0)
+]
+,
+(5.166c)
+where Ωϵ =
+√
+ϵ2 +Δ2
+0/4.
+
+--- PRINTED PAGE 227 / PDF PAGE 241 ---
+5.4 Spin-Environment Models 227
+Dynamics of the Model
+Let us now evaluate the above integrals (5.166) for two important limiting
+situations. The ﬁrst case,Δ0 ≪ sN , corresponds to weak intrinsic dynamics of
+the system. In this limit, the dynamics of the system will hardly be inﬂuenced
+by the presence of the self-Hamiltonian of the system. Thus we expect our
+model to approach the results of the static model discussed in Sect. 2.10.
+Following the study of Cucchietti, Paz, and Zurek [118], the evolution of the
+components (5.166) of the polarization vector for this case is shown as the
+top graph in Fig. 5.8. The polarization vector at time t = 0 was chosen to
+be px(0) = py(0) = pz(0) = 1 /
+√
+3 so as to avoid initial bias toward the
+eigenstates of any one of the operators ˆσx,ˆσy,o rˆσz.
+We see that the componentspx(t)a n dpy(t) rapidly decay from their initial
+values. The component py(t) converges toward zero, while px(t) approaches
+a constant positive value close to zero. By contrast, pz(t) hardly decays at
+all. Instead, it remains close to its initial value. The components px(t)a n d
+0
+20 30
+0.2
+0.6
+0.4
+px(t)
+pz(t)
+py(t)
+t [Ω − 1
+ϵ ]
+0
+0.8
+0.4
+−0.8
+−0.6
+10
+10
+t [Ω − 1
+ϵ ]
+px(t)
+py(t)
+pz(t)
+Fig. 5.8. Time dependence of the components px(t), py(t), and pz(t)o ft h ep o l a r -
+ization vector, see (5.166), as studied by Cucchietti, Paz, and Zurek [118]. This po-
+larization vector describes the evolution of the reduced density matrix [see (5.160)]
+for the spin–spin model deﬁned by the Hamiltonian (5.150). The timet is measured
+in units of the characteristic timescale Ω − 1
+ϵ for the intrinsic evolution of the sys-
+tem. The top plot shows the case of weak intrinsic dynamics (Δ 0 =0 .1sN ), which
+leads to the selection of approximate eigenstates of ˆσz as the preferred basis. The
+bottom plot depicts the opposite situation of strong self-dynamics of the system
+and low-energy (“slow”) modes of the environment ( Δ 0 =5 sN ). Now approximate
+eigenstates of ˆσx, and thus of the self-Hamiltonian, emerge as pointer states.
+
+--- PRINTED PAGE 228 / PDF PAGE 242 ---
+228 5 Canonical Models For Decoherence
+pz(t) settle into ﬁnal values whose ratio is similar to the (small) ratioΔ0/sN .
+We thus see that the preferred pointer states selected by the environment are
+close to the eigenstates of ˆσz, with a small added contribution from ˆσx.
+Let us now consider the second limiting case in which the highest energies
+available in the environment are smaller than the energy spacing Δ0 of the
+system, i.e., sN ≪ Δ0. The bottom graph in Fig. 5.8 depicts the correspond-
+ing time evolution of the components of the polarization vector. We observe
+that py(t)a n dpz(t) exhibit an oscillatory time dependence with a quickly de-
+caying envelope, whereaspx(t) rapidly settles into a stationary value close to
+1/2. This implies that the dynamically selected preferred basis of the system
+is now close to the eigenbasis of thex-spin operator ˆσx and thus to the eigen-
+basis of the self-Hamiltonian. That is, the dynamics select energy eigenstates
+as the pointer basis for the system.
+Our model nicely illustrates the dependence of the preferred basis on
+the relative strengths of the self-Hamiltonian of the system and the inter-
+action Hamiltonian. The preferred basis emerges as the local basis that is
+most robust under the total Hamiltonian. As we have seen, in the quantum-
+measurement limit, i.e., when the interaction Hamiltonian dominates over the
+self-Hamiltonian (Δ0 ≪ sN ), the preferred states are eigenstates of the in-
+teraction Hamiltonian, in agreement with the commutativity criterion (2.89)
+discussed in Sect. 2.8.1. Conversely, when the modes of the environment are
+“slow” ( sN ≪ Δ0) and the self-Hamiltonian dominates the evolution of the
+system, the resulting preferred basis of the system is given by “local” en-
+ergy eigenstates, i.e., eigenstates of the self-Hamiltonian. As emphasized in
+Sect. 2.8.2, this quantum limit of decoherence [103] is not simply equivalent
+to neglecting the presence of the environment. Rather, the environment leads
+to the decoherence of superpositions of energy eigenstates.
+5.4.2 Spin-Environment Models in the Weak-Coupling Limit:
+Mapping to Oscillator Environments
+In several places we have already alluded to the remarkable fact that, under
+the assumption of weak system–environment couplings, the dynamics of the
+reduced system interacting withsome environment can be represented by this
+system interacting with an equivalent environment of harmonic oscillators
+[211,212]. The mapping of a spin environment was ﬁrst studied by Caldeira,
+Castro Neto, and de Carvalho [208].
+We emphasize that this mapping does not mean that the dynamics of
+the system generated by an oscillator environment will be identical to those
+induced by the spin environment. In fact, the resulting dynamics will in gen-
+eral be very diﬀerent. Instead, by “mapping” we mean to convey the insight
+that the reduced dynamics in the presence of the spin environment with a
+given spectral density are identical to those in the presence of an oscilla-
+tor environment described by a spectral density that is suitably modiﬁed
+from the spectral density of the original spin environment. In other words,
+
+--- PRINTED PAGE 229 / PDF PAGE 243 ---
+5.4 Spin-Environment Models 229
+the Born–Markov master equation for the spin environment is given by the
+Born–Markov master equation (5.22) for the oscillator environment evaluated
+with a modiﬁed spectral density. We shall now show how this is done.
+The Model
+We decompose the Hamiltonian for our spin-environment model in the usual
+form as
+ˆH = ˆHS + ˆHE + ˆHint. (5.167)
+Here, ˆHS is a general self-Hamiltonian of the system. We have also included
+a self-Hamiltonian
+ˆHE = −
+∑
+i
+Δi
+2 ˆσ(i)
+x ≡
+∑
+i
+ˆH(i)
+E (5.168)
+of the environment, where Δi denotes the tunneling matrix element for the
+ith environmental spin. This self-Hamiltonian lends intrinsic dynamics to the
+environment, in contrast with the more simpliﬁed spin-environment models
+considered in Sects. 2.10 and 5.4.1. For simplicity, we assume here that the
+asymmetry energy for each spin vanishes, i.e., that each environmental “par-
+ticle” moves in a symmetric double-well potential.4
+Finally, the interaction Hamiltonian ˆHint takes the usual form [compare
+(5.150)]
+ˆHint =ˆs ⊗
+∑
+i
+giˆσ(i)
+z ≡ ˆs ⊗ ˆE, (5.169)
+i.e., a general coordinate ˆs of the system interacts bilinearly with each envi-
+ronmental spin, with coupling strengths quantiﬁed by the gi. Later, we will
+specialize on the cases ˆs =ˆσz for a spin system (the “spin–spin model”) and
+ˆs = ˆX for a harmonic-oscillator system.
+Computing the Spin-Environment Self-Correlation Function
+We assume the limit of weak system–environment couplings and take the en-
+vironment to be in thermal equilibrium at temperatureT. We would now like
+to derive the Born–Markov master equation (see Sect. 4.2) for this spin-bath
+model. To do so, the ﬁrst goal will be the derivation of the environment self-
+correlation functions (4.10). Just as in the case of quantum Brownian motion
+[compare (5.5)], the interaction Hamiltonian (5.169) contains only a single
+term, and thus we need to calculate only one environment self-correlation
+function, namely,
+C(τ)=
+⣨
+ˆE(τ) ˆE
+⟩
+ˆρE
+. (5.170)
+4The case of nonvanishing asymmetry energies, and thus the inclusion of terms
+proportional to ˆσ(i)
+z in the self-Hamiltonian (5.168), can be treated in much the
+same way as outlined in this section [242].
+
+--- PRINTED PAGE 230 / PDF PAGE 244 ---
+230 5 Canonical Models For Decoherence
+Here ˆE(τ)=e i ˆHE τ ˆEe−i ˆHE τ denotes the collective environment operator ˆE
+[deﬁned in (5.169)] in the interaction picture.
+Since the environmental spins do not interact with each other and thus[
+ˆσ(i)
+x , ˆσ(j)
+z
+]
+=0f o ri ̸= j, the exponential ei ˆHE τ factors into single-spin terms,
+ei ˆHE τ ≡ ei ∑
+i
+ˆH(i)
+E τ =
+∏
+i
+ei ˆH(i)
+E τ. (5.171)
+Therefore we can write the environment self-correlation function (5.170) as
+C(τ)=
+∑
+ij
+gigj
+⣨
+ei ˆH(i)
+E τˆσ(i)
+z e−i ˆH(i)
+E τˆσ(j)
+z
+⟩
+ˆρE
+≡
+∑
+ij
+gigj
+⣨
+ˆσ(i)
+z (τ)ˆσ(j)
+z
+⟩
+ˆρE
+.
+(5.172)
+We now use again the fact that the environmental spins do not directly inter-
+act with each other and are therefore uncorrelated, which implies [compare
+(5.7) for the analogous argument in the model for quantum Brownian motion]
+⣨
+ˆσ(i)
+z (τ)ˆσ(j)
+z
+⟩
+ˆρE
+=
+⣨
+ˆσ(i)
+z (τ)
+⟩
+ˆρE
+⣨
+ˆσ(j)
+z
+⟩
+ˆρE
+(5.173)
+for i ̸= j. We may therefore decompose the sum in (5.172) as
+C(τ)=
+∑
+i
+gi
+⣨
+ˆσ(i)
+z (τ)
+⟩
+ˆρE
+∑
+j̸=i
+gj
+⣨
+ˆσ(j)
+z
+⟩
+ˆρE
++
+∑
+i
+g2
+i
+⣨
+ˆσ(i)
+z (τ)ˆσ(i)
+z
+⟩
+ˆρE
+. (5.174)
+We now make the nonrestrictive assumption that the average of the “quantum
+force” due to the spin bath vanishes at t = 0 (if this is not the case, we can
+always add a constant to achieve this goal), that is,
+⣨
+ˆE
+⟩
+ˆρE
+=
+∑
+i
+gi
+⣨
+ˆσ(i)
+z
+⟩
+ˆρE
+=0 . (5.175)
+This implies that the term ∑
+j̸=i gj
+⣨
+ˆσ(j)
+z
+⟩
+ˆρE
+appearing in the ﬁrst sum on
+the right-hand side of (5.174) is also (approximately) zero. This allows us to
+greatly simplify (5.172) by neglecting the crossterms i ̸= j,
+C(τ)=
+∑
+i
+g2
+i
+⣨
+ˆσ(i)
+z (τ)ˆσ(i)
+z
+⟩
+ˆρE
+=
+∑
+i
+g2
+i TrE
+{[
+1
+Z
+∏
+i
+e− ˆHE /kBT
+]
+ˆσ(i)
+z (τ)ˆσ(i)
+z
+}
+. (5.176)
+In the last line we have explicitly written out the expression for the thermal
+average over the initial state ˆρE of the bath, withZ =T rE e− ˆHE /kBT . First of
+all, since the bath spins are uncorrelated, the thermal average over the initial
+state ˆρE involving all bath spins reduces to single-spin averages,
+
+--- PRINTED PAGE 231 / PDF PAGE 245 ---
+5.4 Spin-Environment Models 231
+C(τ)=
+∑
+i
+g2
+i
+1
+Zi
+TrEi
+{
+e− ˆH(i)
+E /kBT ˆσ(i)
+z (τ)ˆσ(i)
+z
+}
+, (5.177)
+where Zi is deﬁned as in (5.112). Next, we need to compute the time evolution
+of the interaction-picture operator ˆσ(i)
+z (τ) given by
+ˆσ(i)
+z (τ)=e −i ˆH(i)
+E τˆσ(i)
+z e−i ˆH(i)
+E τ. (5.178)
+Denoting the eigenbasis of ˆσ(i)
+z by {|↑⟩i , |↓⟩i}, the explicit matrix represen-
+tation of the environment Hamiltonian ˆH(i)
+E is
+ˆH(i)
+E =
+( 0 −Δi/2
+−Δi/20
+)
+. (5.179)
+Diagonalizing this matrix yields the eigenvalues E± = ±(−Δi/2) and corre-
+sponding eigenvectors |±⟩i =( |↑⟩i ∓| ↓ ⟩i)/
+√
+2. In this new basis {|+⟩i , |−⟩i},
+the operator ˆσ(i)
+z takes the form
+ˆσ(i)
+z =( |+⟩⟨−|)i +( |−⟩⟨+|)i. (5.180)
+Thus the time evolution in the interaction picture is
+ˆσ(i)
+z (τ)=e −iΔ iτ(|+⟩⟨−|)i +e iΔ iτ(|−i⟩⟨+|)i. (5.181)
+With these explicit expressions, the argument in curly brackets on the right-
+hand side of (5.177) reads
+e− ˆH(i)
+E /kBT ˆσ(i)
+z (τ)ˆσ(i)
+z =e Δ i/2kBT −iΔ iτ(|+⟩⟨+|)i +e −Δ i/2kBT+iΔ iτ(|−⟩⟨−|)i.
+(5.182)
+Taking the trace over this expression (for simplicity in the{|+⟩i , |−⟩i} basis)
+and using that
+Zi =T rEi e− ˆH(i)
+E /kBT =e Δ i/2kBT +e −Δ i/2kBT, (5.183)
+we obtain the explicit form of the environment self-correlation function
+(5.177),
+C(τ)=
+∑
+i
+g2
+i
+1
+Zi
+TrE
+{
+e− ˆH(i)
+E /kBT ˆσ(i)
+z (τ)ˆσ(i)
+z
+}
+=
+∑
+i
+g2
+i
+{
+cos (Δiτ) − i tanh
+( Δi
+2kBT
+)
+sin (Δiτ)
+}
+. (5.184)
+Finally, let us follow the usual procedure and replace the discrete sum in-
+volving the environmental self-energies Δi by an integral using the spectral
+density
+
+--- PRINTED PAGE 232 / PDF PAGE 246 ---
+232 5 Canonical Models For Decoherence
+J(Δ) ≡
+∑
+i
+g2
+i δ(Δ − Δi). (5.185)
+This establishes our ﬁnal expression for the environment self-correlation func-
+tion,
+C(τ)=
+∫
+dΔJ(Δ)
+{
+cos (Δτ) − i tanh
+( Δ
+2kBT
+)
+sin (Δτ)
+}
+. (5.186)
+This equation is our main result, which we shall now use to see how the spin
+bath is mapped onto an equivalent bath of oscillators.
+Mapping Spins onto Oscillators
+Let us contrast our expression (5.186) for the spin-environment self-correlation
+function with the environment self-correlation function (5.15) obtained for the
+case of an harmonic-oscillator bath, which reads
+Cosc(τ)=
+∫
+dωJosc(ω)
+{
+coth
+( ω
+2kBT
+)
+cos (ωτ) − is i n(ωτ)
+}
+≡ ν(τ) − iη(τ), (5.187)
+where
+Josc(ω) ≡
+∑
+i
+g2
+i
+2miωi
+δ(ω− ωi) (5.188)
+is the spectral density of the harmonic-oscillator environment. Here, we have
+added the subscript “osc” in order to distinguish the above expressions from
+their counterparts in the spin-bath case.
+Comparing expressions (5.186) and (5.187), we see that the explicitly
+temperature-dependent noise kernel ν(τ) [i.e., the real part of Cosc(τ)] in
+the oscillator-bath case has lost this temperature dependence in the case
+of the spin bath: The real part of C(τ) in the expression (5.186) does not
+contain any explicit temperature dependence. On the other hand, the imagi-
+nary part of C(τ) for the spin bath contains a temperature-dependent factor
+tanh(Δ/2kBT), whereas the corresponding dissipation kernelη(τ) appearing
+in Cosc(τ) does not exhibit such an explicit temperature dependence.
+The only case for which the two expressions (5.186) and (5.187) agree is
+at zero temperature, since tanh( Δ/2kBT) −→ 1 and coth(ω/2kBT) −→ 1
+as T −→ 0. This behavior can be understood as follows. At zero tempera-
+ture, both the spins and harmonic oscillators in the respective environments
+will be eﬀectively conﬁned to their ground states and cannot occupy any ex-
+cited states. Thus the characteristic diﬀerence between spins and oscillators—
+namely, that the former are restricted to a two-dimensional state space, while
+the latter can occupy a continuum of energy levels—fades away in the limit
+T −→ 0, and the spin and oscillator baths behave similarly.
+
+--- PRINTED PAGE 233 / PDF PAGE 247 ---
+5.4 Spin-Environment Models 233
+However, even at ﬁnite temperatures, we can map the expression (5.186)
+for the spin bath onto the expression (5.187) for the oscillator bath by using
+a little trick. Suppose we introduce a new eﬀective spectral densityJeﬀ(Δ,T )
+deﬁned as
+Jeﬀ(Δ,T ) ≡ J(Δ) tanh
+( Δ
+2kBT
+)
+, (5.189)
+where J(Δ) is the original spectral density (5.185) of the spin bath. Let
+us now replace the oscillator-bath spectral density Josc(ω) appearing in the
+environment self-correlation function (5.187) by this explicitly temperature-
+dependent expression Jeﬀ(Δ,T ). Changing notation ω−→ Δ in the integral
+on the right-hand side of (5.187), we get
+Cosc(τ)=
+∫
+dΔJ(Δ) tanh
+( Δ
+2kBT
+){
+coth
+( Δ
+2kBT
+)
+cos (Δτ) − is i n(Δτ)
+}
+=
+∫
+dΔJ(Δ)
+{
+cos (Δτ) − i tanh
+( Δ
+2kBT
+)
+sin (Δτ)
+}
+. (5.190)
+But this is precisely the expression (5.186) for the environment self-correlation
+function of the spin bath!
+We have therefore discovered a simple route for taking over all of our
+previous results derived in Sect. 5.2 for the oscillator bath to the spin-bath
+case. All we need to do is to evaluate the oscillator-bath expressions that
+depend on the spectral density of the bath with the modiﬁed “surrogate”
+spectral density (5.189), which is given by the true spectral density J(Δ)
+of the spin bath multiplied by the additional temperature-dependent and
+frequency-dependent factor tanh(Δ/2kBT).
+In particular, the kernels ν(τ)a n dη(τ) for the spin bath are given by
+ν(τ)=
+∫ ∞
+0
+dΔJ(Δ)c o s(Δτ), (5.191)
+η(τ)=
+∫ ∞
+0
+dΔJ(Δ) tanh
+( Δ
+2kBT
+)
+sin (Δτ), (5.192)
+obtained by inserting the new eﬀective spectral density (5.189) into (5.16)
+and (5.17). The formal diﬀerences between these expressions for the kernels
+and their counterparts (5.16) and (5.17) for the oscillator bath may not seem
+dramatic at a ﬁrst glance. However, the eﬀect on the reduced dynamics can be
+enormous. Let us now study two explicit examples for the mapping procedure.
+Example #1: Mapping of the Spin–Spin Model
+onto the Spin–Boson Model
+We consider the case of the central system’s being represented by a spin- 1
+2
+particle bilinearly coupled to the spin bath through ˆσz. Following our above
+
+--- PRINTED PAGE 234 / PDF PAGE 248 ---
+234 5 Canonical Models For Decoherence
+mapping technique, the Born–Markov master equation can then be immedi-
+ately written down by substituting ˆX −→ ˆσz in the general expression (5.22)
+for the master equation for quantum Brownian motion,
+d
+dt ˆρS(t)= −i
+[ ˆHS, ˆρS(t)
+]
+−
+∫ ∞
+0
+dτ{ν(τ)[ˆσz,[ˆσz(−τ), ˆρS(t)]] − iη(τ)[ˆσz, {ˆσz(−τ), ˆρS(t)}]}. (5.193)
+The kernelsν(τ)a n dη(τ) are now given by the spin-bath expressions (5.191)
+and (5.192).
+If we take the self-Hamiltonian of the system to be of the form ˆHS =
+− 1
+2Δ0ˆσx, as in our discussion of the spin–boson model (see Sect. 5.3.2), the
+explicit time evolution of the interaction-picture operator ˆσz(τ)i s
+ˆσz(τ)=e i ˆHS τˆσze−i ˆHS τ =ˆσz cos (Δ0τ)+ˆσy sin (Δ0τ). (5.194)
+Using this expression in (5.193) yields the master equation
+d
+dt ˆρS(t)= −i
+[ ˆH′
+S, ˆρS(t)
+]
+− ˜D [ˆσz,[ˆσz, ˆρS(t)]]+ζˆσz ˆρS(t)ˆσy +ζ∗ˆσy ˆρS(t)ˆσz.
+(5.195)
+This equation is formally identical to the spin–boson master equation (5.142).
+This result is of course not surprising: After all, it was our goal to map the
+spin bath onto an equivalent oscillator (i.e., bosonic) bath. The quantities
+appearing in (5.195) are deﬁned just as in the spin–boson case, see (5.143),
+(5.144), and (5.145a), but are now evaluated with the kernels (5.191) and
+(5.192).
+Example #2: Mapping of the Oscillator–Spin model
+onto the Model for Quantum Brownian Motion
+As another example for the mapping approach, let us discuss the case of a
+central harmonic oscillator (weakly) coupled to a spin bath [242]. A potential
+application of this (weak-coupling) “oscillator–spin model” is the modeling
+of decoherence and dissipation in quantum-electromechanical systems, which
+will be discussed in more detail in Sect. 6.4.2. Let us consider the rather
+general oscillator–spin model described by the total Hamiltonian
+ˆH = ˆHS + ˆHE + ˆHint = ˆHS −
+∑
+i
+Δi
+2 ˆσ(i)
+x + ˆX ⊗
+∑
+i
+giˆσ(i)
+z , (5.196)
+where
+ˆHS =
+ˆP2
+2M + MΩ2
+2
+ˆX2 (5.197)
+
+--- PRINTED PAGE 235 / PDF PAGE 249 ---
+5.4 Spin-Environment Models 235
+is the usual harmonic-oscillator Hamiltonian describing the intrinsic dynam-
+ics of the central system. The environment self-Hamiltonian ˆHE has the fa-
+miliar form (5.168). The interaction Hamiltonian ˆHint describes the bilinear
+coupling of the position coordinate of the central oscillator to the z-spin
+coordinate of each environmental spin.
+Again following our strategy for mapping spin baths onto oscillator baths
+(assuming the weak-coupling limit applies), we can now readily describe the
+reduced dynamics of the oscillator system by the Born–Markov master equa-
+tion (5.25) for quantum Brownian motion of a particle conﬁned to a harmonic-
+oscillator potential,
+d
+dt ˆρS(t)= −i
+[ ˆHS + 1
+2M ˜Ω2 ˆX2, ˆρS(t)
+]
+− iγ
+[ ˆX,
+{ˆP, ˆρS(t)
+}]
+− D
+[ ˆX,
+[ ˆX, ˆρS(t)
+]]
+− f
+[ ˆX,
+[ ˆP, ˆρS(t)
+]]
+. (5.198)
+The frequency shift ˜Ω2, momentum-damping rate γ, and the diﬀusion coef-
+ﬁcients D and f are given by the same expressions (5.26) as in the case of
+quantum Brownian motion, but with the kernels ν(τ)a n dη(τ) appearing
+these expressions replaced by the “surrogate” spin-bath kernels (5.191) and
+(5.192).
+Let us consider the example of an ohmic spectral density for the spin
+bath,
+J(Δ)= 2Mγ0
+π Δ Λ2
+Λ2 +Δ2 . (5.199)
+This spectral density is formally identical to the ohmic spectral density (5.44)
+considered in the context of quantum Brownian motion. Following the same
+approach as detailed in Sect. 5.2.3, the choice of an explicit form for the
+spectral density now allows us to evaluate the coeﬃcients appearing in the
+master equation (5.198).
+As before, the coeﬃcients γand D are given by double Fourier sine and
+cosine transforms, respectively (see the discussion in Sect. 5.2.3 for details).
+Thus we can readily write down the resulting expressions [compare (5.46)
+and (5.48)],
+γ= π
+2
+1
+MΩJeﬀ(Ω,T )= γ0
+Λ2
+Λ2 +Ω2 tanh
+( Ω
+2kBT
+)
+, (5.200)
+D = π
+2Jeﬀ(Ω,T ) coth
+( Ω
+2kBT
+)
+= Mγ0Ω Λ2
+Λ2 +Ω2 . (5.201)
+We see that, in contrast to an ohmic oscillator bath, for the ohmic spin bath
+the momentum-damping coeﬃcient γis explicitly temperature-dependent.
+The factor tanh(Ω/2kBT), and thusγ, decrease with increasing temperature.
+This observation may seem rather counterintuitive at a ﬁrst glance, since we
+would expect a “warmer” environment to either have a stronger eﬀect on the
+
+--- PRINTED PAGE 236 / PDF PAGE 250 ---
+236 5 Canonical Models For Decoherence
+system, or, at least, not induce less damping of the system than a “colder”
+environment.
+However, the temperature dependence of the damping coeﬃcient is rather
+easily explained. For an oscillator bath, each oscillator possesses an inﬁnity
+of energy levels, so there is no upper limit to the amount of energy that
+can be absorbed by the bath. By contrast, a spin- 1
+2 particle has only two
+possible energy levels, so the spin bath as a whole saturates very quickly
+as the temperature (and thus the amount of energy that can be absorbed
+from the system) is increased. It follows that, since the dissipation rate of the
+oscillator bath (in the model for quantum Brownian motion) is temperature-
+independent [see (5.46)], the ability of the spin bath to exert a dissipative
+eﬀect on the system must decrease with increasing temperature. Indeed, the
+temperature dependence of the damping rate as predicted by (5.200) has
+been observed experimentally [244] in physical systems such as glasses, where
+dissipation is due to the interaction of phonon (i.e., oscillator) modes with
+two-level systems [245].
+The normal-diﬀusion coeﬃcient (5.201), and thus the rate of spatial de-
+coherence, is seen to have no explicit temperature dependence in the case of
+an ohmic spin bath. This is in contrast with the normal-diﬀusion coeﬃcient
+(5.48) in quantum Brownian motion, which scales as coth(Ω/2kBT), making
+spatial decoherence stronger as we go to higher temperatures of the environ-
+ment. In fact, in the high-temperature limit of the Caldeira–Leggett model,
+we had found a linear increase of D with temperature [see (5.51)].
+Once again, this diﬀerence between the spin-bath and oscillator-bath set-
+tings can be understood from the point of view of the size of the state spaces
+available to each particle in the environment. The ability of environmental
+oscillators to occupy a signiﬁcant number of increasingly excited energy levels
+with growing temperature translates into shorter and shorter characteristic
+wavelengths present in the environment. The shorter the typical environ-
+mental wavelengths, the better the position of the central system can be
+resolved and thus the more which-path information can be obtained, leading
+to stronger spatial decoherence (see also the discussion in Sect. 5.2.6).
+By contrast, spin-1
+2 particles can only occupy two energy levels. The range
+of typical environmental wavelengths, and therefore the rate of spatial deco-
+herence, will saturate very quickly as we increase the temperature. Within the
+context of our particular model, this even leads to a completely temperature-
+independent decoherence rate. In fact, in this model we had assumed that the
+environmental two-level systems move in a symmetric double-well potential.
+Thus the two states of the corresponding spin particle are here associated
+with the same energy, restricting the state space even further. It is easy to
+show that if this symmetry assumption is dropped and an asymmetry term
+of the form ∑
+i
+ωi
+2 ˆσ(i)
+z is included in the bath Hamiltonian, the rate of spatial
+decoherence is increased by a constant (but still temperature-independent)
+value. This increase reﬂects the larger state space now available to the bath
+
+--- PRINTED PAGE 237 / PDF PAGE 251 ---
+5.5 Summary 237
+particles, which corresponds to the presence of shorter environmental wave-
+lengths.
+5.4.3 Beyond Markov: Solving General Spin-Environment Models
+Finally, let us conclude our discussion of spin-environment models by giv-
+ing the reader a brief idea of how more general models of this type may
+be solved without resorting to the limiting Born–Markov approximations.
+As we discussed in Sect. 5.1.2, the interesting regime for spin-environment
+models is typically that of low temperatures and strong system–environment
+couplings. This leads to signiﬁcant non-Markovian memory eﬀects in the
+environment and usually renders simplifying weak-coupling approximations
+inapplicable. It follows that spin-environment models frequently cannot be
+treated by means of an approximate Born–Markov master equation (as we did
+in the previous Sect. 5.4.2), whose derivation is based on weak couplings and
+negligible environment self-correlation times. This renders the mathematical
+solution of such non-Markovian spin-environment models often somewhat
+cumbersome.
+In most cases, the relevant decoherence dynamics arising from general
+spin-environment models—for example, in terms of the central-spin expecta-
+tion value ⟨ˆσz(t)⟩—can be calculated analytically using advanced techniques
+such as the instanton formalism [199]. In this context, the problem arises of
+how to properly “average” over the degrees of freedom of a strongly coupled
+spin environment. Prokof’ev and Stamp [199] showed that this task can be
+facilitated by breaking down the general spin-environment model into four
+limiting cases, each of which emphasizes a diﬀerent parameter regime and
+thus disregards certain terms in the general expression for the total Hamil-
+tonian. Each of these cases can then be solved separately, and each yields an
+expression for an averaging integral over certain quantities in the model. As
+shown in [199], the correct procedure for averaging over the spin environment
+in the general case—and thus for obtaining the reduced dynamics of the cen-
+tral system—is then simply given by the combined application of these four
+separate averages. Here, we shall not go into the details of this approach and
+instead refer interested readers to [199] for details. Further discussions of the
+physical and mathematical foundations of spin-environment models can be
+found in [200,210,214,216].
+5.5 Summary
+This chapter on decoherence models has been somewhat lengthy and techni-
+cal. Let us therefore summarize some of the main results.
+
+--- PRINTED PAGE 238 / PDF PAGE 252 ---
+238 5 Canonical Models For Decoherence
+Mapping onto Canonical Models
+A large class of physical systems of interest can be represented either by
+spin-1
+2 particles (for systems whose state space is eﬀectively reduced to two
+diﬀerent basis states), or by particles that are described by the continuous
+canonical coordinates position and momentum and that move in some po-
+tential.
+Environments can be modeled either as a collection of harmonic oscilla-
+tors, corresponding to a quasicontinuum of delocalized bosonic ﬁeld modes,
+or as a collection of localized modes represented by spins. Spin environments
+are often the appropriate model for low-temperature environments strongly
+coupled to the central system.
+Quantum Brownian Motion
+This is the model of a central particle moving in some potential in real space
+and bilinearly interacting with an environment of noninteracting harmonic
+oscillators. We focused on the case of the central system represented by a
+harmonic oscillator.
+We derived the Born–Markov master equation for this model [see (5.25)],
+d
+dt ˆρS(t)= −i
+[ ˆHS + 1
+2M ˜Ω2 ˆX2, ˆρS(t)
+]
+− iγ
+[ ˆX,
+{ˆP, ˆρS(t)
+}]
+− D
+[ ˆX,
+[ ˆX, ˆρS(t)
+]]
+− f
+[ ˆX,
+[ ˆP, ˆρS(t)
+]]
+. (5.202)
+The ﬁrst term on the right-hand side of this equation describes the unitary
+dynamics (with a frequency shift quantiﬁed by ˜Ω2). The second term cor-
+responds to momentum damping with a rate proportional to γ. The third
+term describes decoherence of spatial coherences over a distance ΔX at a
+rate D(ΔX)2. The fourth term also represents decoherence but can often
+be neglected, especially at higher temperatures. All coeﬃcients appearing in
+the master equation (5.202) are strongly dependent on the spectral density
+of the environment, which encapsulates the physical characteristics of the
+environment.
+In the high-temperature limit, the reduced dynamics of the central system
+are in many cases well approximated by a simpliﬁed form of the master
+equation (5.202) known as the Caldeira–Leggett master equation, given by
+[see (5.57)]
+d
+dt ˆρS(t)= −i
+[ ˆH′
+S, ˆρS(t)
+]
+− iγ0
+[ ˆX,
+{ˆP, ˆρS(t)
+}]
+− 2Mγ0kBT
+[ ˆX,
+[ ˆX, ˆρS(t)
+]]
+.
+(5.203)
+Again, the ﬁrst term on the right-hand side represents the unitary evolution
+(governed by the environment-renormalized self-HamiltonianˆH′
+S), the second
+term describes dissipation, and the third term corresponds to decoherence of
+spatial superpositions at a rate that increases linearly with the temperature
+
+--- PRINTED PAGE 239 / PDF PAGE 253 ---
+5.5 Summary 239
+of the bath. Let us summarize the assumptions that have entered into the
+derivation of the Caldeira–Leggett master equation (5.57):
+– The Born–Markov approximations hold (see Sect. 4.2.1).
+– The environment of harmonic oscillators is described by an ohmic spectral
+density J(ω) ∝ ωwith a high-frequency cutoﬀ Λ.
+– The environment is at a suﬃciently high temperature, such that its ther-
+mal energy is much larger than the energy scale set by the natural fre-
+quency of the system (kBT ≫ Ω).
+– The natural frequency of the system is much smaller than the high-
+frequency cutoﬀ Λof the environment (Ω ≪ Λ).
+We found that the interplay of environmental monitoring and intrinsic dy-
+namics leads to the emergence of pointer states that are minimum-uncertainty
+Gaussians and that are therefore well-localized in both position and momen-
+tum, approximating classical points in phase space (see Sect. 5.2.6). These
+states arise as a compromise: They are the most robust under the combined
+inﬂuence of the direct monitoring of the position coordinate by the environ-
+ment on the one hand, and under the intrinsic dynamics of the system (whose
+self-Hamiltonian is symmetric in both position and momentum coordinates)
+on the other hand. The intrinsic dynamics, through their creation of spatial
+superpositions from superpositions of momentum, lead to decoherence in mo-
+mentum, even though the momentum coordinate is not directly monitored
+by the environment.
+This diﬀerence between “direct” decoherence in position and “indirect”
+decoherence in momentum is also reﬂected in the fact that the timescales for
+decoherence in position and decoherence in momentum are distinctly diﬀer-
+ent. Decoherence in momentum occurs on the dynamical timescale set by the
+intrinsic evolution of the system. By contrast, the timescale for decoherence
+in position is essentially independent of (and typically much shorter than)
+this dynamical timescale.
+Spin–Boson Model
+This model consists of a central two-level system (represented by a spin- 1
+2
+particle) bilinearly coupled to an environment of noninteracting harmonic
+oscillators.
+For a simpliﬁed version of the model (without a tunneling term in the
+Hamiltonian of the system) and for an ohmic spectral density of the environ-
+ment, we found that interferences between the “spin up” and “spin down”
+states of the system are exponentially damped at a rate which increases lin-
+early with the temperature T of the environment (see Sect. 5.3.1).
+We also derived the Born–Markov master equation for the general spin–
+boson model, which reads [see (5.142)]
+
+--- PRINTED PAGE 240 / PDF PAGE 254 ---
+240 5 Canonical Models For Decoherence
+d
+dt ˆρS(t)= −i
+(
+ˆH′
+S ˆρS(t) − ρS(t) ˆH′†
+S
+)
+− ˜D [ˆσz,[ˆσz, ˆρS(t)]]
++ζˆσz ˆρS(t)ˆσy +ζ∗ˆσy ˆρS(t)ˆσz. (5.204)
+The term in round brackets on the right-hand side represents the evolution
+under the environment-shifted self-Hamiltonian ˆH′
+S, the second term corre-
+sponds to decoherence in the ˆσz eigenbasis of the system, and the last two
+terms describe the decay of the two-level system.
+Spin-Environment Models
+We used the model of a tunneling central spin whose ˆ σz coordinate is lin-
+early coupled to an environment of other spins to illustrate the selection of
+diﬀerent preferred pointer bases by the environment. We also showed how,
+in the weak-coupling limit, spin environments can be mapped onto oscillator
+environments. That is, the reduced dynamics of the system weakly coupled
+to a spin environment can be described by this system coupled to an equiva-
+lent oscillator environment described by an explicitly temperature-dependent
+spectral density of the form
+Jeﬀ(ω,T) ≡ J(ω) tanh
+( ω
+2kBT
+)
+, (5.205)
+where J(ω) is the spectral density of the spin environment. We can there-
+fore take over all our previous expressions from the oscillator-environment
+case (i.e., from the quantum Brownian motion and spin–boson models), but
+evaluate them with the eﬀective spectral density (5.205). We discussed the
+mapping of the spin–spin model onto the spin–boson model, and the mapping
+of the oscillator–spin model onto the model for quantum Brownian motion.
+Master Equations are General;
+Coeﬃcients and Spectral Densities are Speciﬁc
+The canonical models are described by fairly general master equations that,
+under certain assumptions, may even take similar formal structures for dif-
+ferent canonical models. For example, in Sect. 5.4.2 we have seen that, in the
+weak-coupling limit, spin-environment models can be mapped onto oscillator-
+environment models in the sense that the former can be described by master
+equations that are formally identical to the master equations derived for the
+latter models. In fact, the oscillator-environment equations turn out to be
+universal in the case of weak coupling [211].
+However, what encapsulates the diﬀerences between environments and
+their physical properties is the speciﬁc form of the coeﬃcients multiplying
+the terms in the master equation. These coeﬃcients are in turn dependent on
+the spectral density of the environment. For example, the master equation for
+quantum Brownian motion evaluated with a standard ohmic spectral density
+
+--- PRINTED PAGE 241 / PDF PAGE 255 ---
+5.5 Summary 241
+will in general describe reduced dynamics that are signiﬁcantly diﬀerent from
+the reduced dynamics obtained from the master equation evaluated with the
+temperature-dependent “eﬀective” spectral density (5.205).
+The speciﬁc functional form of the coeﬃcients also plays an important
+role. For example, in our treatment of quantum Brownian motion we have
+mainly focused on Markov-type coeﬃcients without explicit time dependence
+[see (5.26)]. However, we have also shown how an explicitly time-dependent
+version of the coeﬃcients [see (5.42)] can be used instead to achieve a more
+realistic treatment of the short-time dynamics of decoherence. Finally, one
+can use the exact expressions for the coeﬃcients, yielding the complete non-
+Markovian dynamics (see Sect. 5.2.7). In each case, the master equation takes
+the same form (5.202), but the resulting dynamics may diﬀer greatly between
+the diﬀerent choices for the coeﬃcients, even when using the same spectral
+density.
+Thus we conclude that the actual physics of a master equation for a de-
+coherence model is mainly contained in the particular form of the coeﬃcients
+and spectral density used to evaluate the master equation.
+Generality
+Needless to say, models are only simpliﬁed representations of physical sys-
+tems. We discussed several important assumptions and approximations that
+have entered in some of our models:
+– The Born–Markov approximations.
+– The assumption of bilinear system–environment couplings (made in all
+models discussed here).
+– Implicit long-wavelength assumptions for the environment, leading to an
+unrealistic lack of the saturation of the decoherence rate in quantum
+Brownian motion.
+– The approximation of time-dependent coeﬃcients in the master equation
+by their long-time asymptotic values [compare (5.26) and (5.42)].
+– The assumption of a high-temperature environment in deriving the Cal-
+deira–Leggett master equation.
+Any of these assumptions may be completely innocuous in the context of
+the modeling of one physical system, but may lead to unrealistic results for
+another system. Therefore, whenever a concrete experimental situation is to
+be modeled by a particular canonical model for decoherence, special care must
+be taken to properly understand the assumptions underlying each model and
+the extent to which these assumptions may hold in the experimental setting
+of interest.

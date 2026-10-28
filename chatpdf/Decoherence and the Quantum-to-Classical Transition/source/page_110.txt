@@ -1,0 +1,50 @@
+                               2.12 Decoherence Versus Classical Noise     95
+
+the planet Jupiter has been revolving around the sun on a Newtonian tra-
+jectory for billions of years, while its motional state has remained virtually
+unaﬀected by any dissipative loss (friction) due to the sunlight scattered oﬀ
+the planet’s surface. If relaxation and decoherence timescales were indeed
+similar, this fact would obviously be very diﬃcult to explain.
+
+
+2.12 Decoherence Versus Classical Noise
+In this book, we consistently reserve the term “decoherence” to describe the
+consequences of (usually in practice irreversible) quantum entanglement with
+some environment, in agreement with the historically established meaning
+and the vast body of literature on environmental decoherence. As described
+in detail in Sects. 2.6 and 2.7, the basic mechanism of decoherence can be
+formalized as follows. Suppose we have a set of pointer states {|sn } of the
+system S deﬁned by their property of getting least getting entangled in the
+course of the interaction with the environment E,
+
+                             |sn  |E0  −→ |sn  |En  .            (2.115)
+                                                
+Then an arbitrary pure-state superposition n cn |sn  of these pointer states
+|sn  results in the familiar entangled state
+                                 
+                                             
+                          cn |sn  |E0  −→        cn |sn  |En  .  (2.116)
+                     n                      n
+
+As described in Sect. 2.7, in the formalism of reduced density matrices this
+leads to a decay of the oﬀ-diagonal terms in the {|sn } basis,
+                                                 
+                 cn c∗n |sn sn |En |En  −→
+                                                         2
+       ρ̂S =                                        |cn | |sn sn |, (2.117)
+             nn                                n
+
+since the relative environmental states |En  become rapidly mutually orthog-
+onal (distinguishable). Evidently, the interaction (2.116) does not result in
+any dynamical change of any of the component states of S; its only eﬀect
+is pure, nonlocal entanglement. Thus decoherence should be understood as
+a distinctly quantum-mechanical eﬀect with no classical analog. This is the
+formalism and the physical interpretation of decoherence used in this book.
+    However, the reader may ﬁnd descriptions of several other processes in the
+literature that are sometimes referred to as “decoherence” or that are claimed
+to be “equivalent” to decoherence in some (formal, physical, etc.) sense. Most
+of these associations are based on the observation that diﬀerent processes may
+all lead to the disappearance of oﬀ-diagonal elements (in some basis) in the
+density matrix of the system. However, it is important to emphasize that
+the density-matrix description is only a formal tool that, somewhat mislead-
+ingly and deceptively, hides the crucial physical and conceptual diﬀerences

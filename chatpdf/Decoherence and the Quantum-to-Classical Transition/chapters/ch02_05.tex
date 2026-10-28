@@ -1,0 +1,65 @@
+% 原文 pp.39--44、2.4.3--2.4.5。
+\subsubsectionlink{「混合の程度」の定量化}
+純粋状態の密度行列$\hat\rho=\lvert\psi\rangle\langle\psi\rvert$は、純粋状態$\lvert\psi\rangle$への射影演算子にすぎないので、直ちに
+\begin{equation}\hat\rho^2=\hat\rho\tag{2.26}\end{equation}
+が従う。この射影演算子の性質$\hat\rho^2=\hat\rho$は、実際、系が純粋状態にあるための必要十分条件をなす。次の議論でそれが分かる。系が純粋状態になく、代わりに、少なくとも二つの非零の確率$p_i$を持つ混合状態の密度行列(2.20)で記述されているとする。この密度行列については、
+% 原文 p.40
+\hypertarget{srcpage:40}{}\label{srcpage:40}
+\begin{equation}\hat\rho^2=\sum_{ij}p_ip_j\lvert\psi_i\rangle\langle\psi_j\rvert\langle\psi_i\vert\psi_j\rangle\tag{2.27}\end{equation}
+を得る。まず、一般に$i\ne j$に対して$\langle\psi_i\vert\psi_j\rangle\ne0$であるが、仮に$i\ne j$で$\langle\psi_i\vert\psi_j\rangle=0$でも、結局
+\begin{equation}\hat\rho^2=\sum_i p_i^2\lvert\psi_i\rangle\langle\psi_i\rvert\tag{2.28}\end{equation}
+を得る。各$p_i$の値は1未満なので、この式は$\hat\rho$［式(2.20)］と異なる。したがって、任意の密度行列$\hat\rho$が与えられたら、式(2.26)、すなわち$\hat\rho^2=\hat\rho$が成り立つかを調べるだけで、系が純粋状態にあるかどうかを容易に判定できる。
+
+さらに一歩進み、与えられた密度行列が純粋かどうかを示すだけでなく、次の意味でその「混合の程度」を定量化する尺度を定義できる。再び式(2.20)の混合状態の密度行列、
+\begin{equation}\hat\rho=\sum_i p_i\lvert\psi_i\rangle\langle\psi_i\rvert\tag{2.29}\end{equation}
+を考えよう。すでに分かっているように、純粋状態の密度行列の場合は、一つ、たとえば$p_1=1$を除くすべての$p_i$が零であることに対応する。すなわち、この状況では系の状態について「無知」はない。いま$p_1$の大きさを減らすとしよう。確率の規格化条件$\sum_i p_i=1$によれば、そのとき少なくとも一つの、$p_1$とは別の$p_i$が非零の値、たとえば$p_2>0$を取らなければならない。いまや、系が純粋状態$\lvert\psi_1\rangle$、$\lvert\psi_2\rangle$のどちらに準備されたかを確実には知らないので、ある程度の「無知」が存在する。それでも、たとえば$p_1=90\%$、$p_2=10\%$なら、状態$\lvert\psi_1\rangle$が準備されたと、かなりの自信を持てる。したがって「混合の程度」は低い。純粋状態の反対の極限は、密度行列が単位演算子に比例するときに達する。これは、系のHilbert空間の基底をなす、互いに直交する純粋状態の、等しい重みの集団に対応する。この場合、密度行列は、どの純粋状態が準備されたかについて、いかなる情報も含まず、したがって最大の無知、すなわち「混合の程度」を表す。
+
+次に、混合の程度をより一般的に定量化する二つの尺度を導入しよう。単純で広く用いられる尺度は、密度行列の純度であり、
+\begin{equation}\varsigma\equiv\operatorname{Tr}(\hat\rho^2)\tag{2.30}\end{equation}
+と定義される。なぜこれが適切な尺度なのだろうか。$\hat\rho$が純粋状態の密度行列を表すなら、式(2.18)、(2.26)から$\varsigma=1$が従う。他方、状態$\{\lvert\psi_i\rangle\}$が、系の$N$次元Hilbert空間の正規直交基底をなすと仮定すると、混合状態の密度行列(2.20)の純度は、式(2.28)より
+% 原文 p.41
+\hypertarget{srcpage:41}{}\label{srcpage:41}
+\begin{equation}\varsigma=\sum_{i=1}^N p_i^2\tag{2.31}\end{equation}
+である。この和の下限は$1/N$であり、密度行列が最大混合であるとき、すなわち、すべての$i=1,\ldots,N$について$p_i=1/N$であるときに、ちょうどこの値を取る。
+
+密度行列の純粋さ、または不純さを定量化する、もう一つの広く用いられる尺度は、von Neumannエントロピーである。この尺度は、1927年に数学者John von Neumannが初めて導入し\cite{ref059}、その後、彼の記念碑的な量子力学の著書\cite{ref060}でさらに発展させた（興味深い歴史的考察は文献\cite{ref061}も参照）。von Neumannエントロピーは、古典統計力学のエントロピーの概念を、量子力学の密度演算子へ一般化したものと見なせる。それは
+\begin{equation}S(\hat\rho)\equiv-\operatorname{Tr}(\hat\rho\log_2\hat\rho)\equiv-\sum_i\lambda_i\log_2\lambda_i\tag{2.32}\end{equation}
+で与えられる。ここで$\lambda_i$は密度行列$\hat\rho$の固有値である。慣例により、$\lambda_i=0$の場合は$0\log_2(0)\equiv0$と定義して扱う。これにより、混合に含まれない状態は、当然ながらエントロピーの値に寄与しない。
+
+再び、この尺度の具体的な値を求めよう。$\hat\rho$が純粋なら、一つを除くすべての$\lambda_i$が零で、残りの一つは1を取らなければならないため、$S(\hat\rho)=0$である。したがって純粋状態は、von Neumannエントロピーが零であることによって特徴付けられる。他方、互いに排他的で、したがって直交する純粋状態$\lvert\psi_i\rangle$（$i=1,\ldots,N$）のどれを準備したかについての完全な無知に対応する、最大混合状態では、$\lambda_i=p_i=1/N$だから、
+\begin{equation}S(\hat\rho)=\log_2(N)\tag{2.33}\end{equation}
+を得る。これは$S(\hat\rho)$が取りうる最大値である。中間の、最大混合でない状態では、それに応じて値は小さくなる。たとえば準備装置が、直交する状態の部分集合$\lvert\psi_i\rangle$（$i=1,\ldots,M<N$）だけを等しい確率で準備するなら、$S(\hat\rho)=\log_2(M)$を得る。これらの値は、von Neumannエントロピーの定義が、古典的、すなわち熱力学的な状況でのエントロピーの直観と一致することを示す。そこではエントロピーは、系の状態についての情報量、または逆に無知の量の尺度であり、典型的には、系が利用できる異なる可能な状態の数によって定量化される。
+
+\subsubsectionlink{混合状態の密度行列の基底の曖昧さ}
+上の2.4.2節では、混合状態の概念が古典的確率概念に基づくことを論じた。したがって、混合状態の密度行列(2.20)は、純粋状態の、無知として解釈可能な真正混合を表すとも言う\cite{ref047,ref048,ref049}\footnote{この分類は、縮約密度行列を導入するとき（2.4.6節）に重要となる。縮約密度行列は、無知として解釈できないことが分かる。}。これは式(2.20)の形の混合状態の密度行列を、ある程度まで、純粋量子状態$\lvert\psi_i\rangle$の古典的確率分布と解釈できることを表現している。しかし、それが正しいのは、系が実際に状態$\lvert\psi_i\rangle$の一つに準備されたことを知っていて、単にどの状態かについての、より具体的な情報を持たない場合だけである。他方、密度行列(2.20)だけを与えられ、たとえば準備手順などの追加情報がなければ、系が実際に状態$\lvert\psi_i\rangle$の一つにあるとは推論できない。なぜなら、非純粋な密度行列はどれも、多くの異なる方法で書くことができ、特定の量子状態の集団への分割はいずれも任意であることを示しているからである。言い換えれば、混合状態の密度行列だけでは、純粋状態の古典的確率分布を一意に再構成できない。
+
+% 原文 p.42
+\hypertarget{srcpage:42}{}\label{srcpage:42}
+これを説明するため、混合状態の密度行列
+\begin{equation}\hat\rho=\frac12\lvert0_z\rangle\langle0_z\rvert+\frac12\lvert1_z\rangle\langle1_z\rvert\tag{2.34}\end{equation}
+を考えよう。このような密度行列は、Pauliスピン演算子$\hat\sigma_z$の固有状態$\lvert0_z\rangle$、$\lvert1_z\rangle$のどちらか一方に、等しい確率で準備された系を記述する際に用いる。ただし、どちらかは知らないので、これらの状態の古典的確率分布による記述に頼らざるをえない。
+
+他方、状態$\lvert0_z\rangle$、$\lvert1_z\rangle$は、$x$軸方向のスピンに対するPauli演算子$\hat\sigma_x$の固有状態$\lvert0_x\rangle$、$\lvert1_x\rangle$によっても書き直せる。
+\begin{equation}\begin{split}\lvert0_z\rangle&=\frac1{\sqrt2}(\lvert0_x\rangle+\lvert1_x\rangle),\\\lvert1_z\rangle&=\frac1{\sqrt2}(\lvert0_x\rangle-\lvert1_x\rangle).\end{split}\tag{2.35}\end{equation}
+これらを用いれば、密度行列(2.34)は同値に
+\begin{equation}\hat\rho=\frac12\lvert0_x\rangle\langle0_x\rvert+\frac12\lvert1_x\rangle\langle1_x\rvert\tag{2.36}\end{equation}
+と書ける。実際、$\hat\rho$は、任意の軸に沿ったスピン固有状態を用いて、この形に無限通りに書き直せる。したがって、系のスピン状態をどの物理的な軸に沿って準備したかを知らない限り、密度行列だけが与えるのは、異なる純粋状態の集合の確率についての情報だけであり、具体的にどの集合の状態を準備したかという情報ではない。ここで、その集合は$\{\lvert0_z\rangle,\lvert1_z\rangle\}$、$\{\lvert0_x\rangle,\lvert1_x\rangle\}$などで表される。
+
+% 原文 p.43
+\hypertarget{srcpage:43}{}\label{srcpage:43}
+\subsubsectionlink{混合状態の密度行列と物理的集団}
+ここで重要な注意を述べておく。式(2.20)の形の混合状態の密度行列$\hat\rho=\sum_i p_i\lvert\psi_i\rangle\langle\psi_i\rvert$は、同一の系$\mathcal S_k$（$k=1,\ldots,N$）の物理的集団、すなわち、特定の関心のある系の「コピー」の集まりを記述するためにも、しばしば用いられる。各系は、純粋状態$\lvert\psi_i\rangle$（$i=1,\ldots,M\le N$）の一つに決定論的に準備されている。量$p_i$は、今度は状態$\lvert\psi_i\rangle$に準備された系の割合を表す。この「集団」による方法は、密度行列の概念を導入する動機付けとして、教科書に頻繁に見られる（たとえば文献\cite{ref058}）。
+
+しかし、物理的な集団と統計的な混合の間には、重要な区別が必要である。集団の場合、混合状態の密度行列による記述を正当化する情報の不足は、何もない（もちろん、個々の系自体が純粋状態に準備されていない場合は別である）。むしろ、すべての個々の系$\mathcal S_k$の集団は、各系$\mathcal S_k$の$N$個の状態空間$\mathcal H_k$のテンソル積であるHilbert空間$\mathcal H$によって記述しなければならない。
+\begin{equation}\mathcal H=\bigotimes_{k=1}^N\mathcal H_k.\tag{2.37}\end{equation}
+同様に、全系$\mathcal S$は、個々の状態$\lvert\psi_k\rangle\in\{\lvert\psi_i\rangle\}$の、純粋なテンソル積状態$\lvert\Psi\rangle$で記述される。
+\begin{equation}\lvert\Psi\rangle=\left(\prod_{j=1}^{Np_1}\lvert\psi_1\rangle\right)\left(\prod_{j=1}^{Np_2}\lvert\psi_2\rangle\right)\cdots\left(\prod_{j=1}^{Np_M}\lvert\psi_M\rangle\right).\tag{2.38}\end{equation}
+したがって、対応する$N$系の純粋密度行列$\hat\rho=\lvert\Psi\rangle\langle\Psi\rvert$は、一系の純粋状態$\lvert\psi_i\rangle$の確率分布を記述する混合状態の密度行列の式(2.20)とは、明らかに異なる。
+
+物理系の集団を一系の混合状態の密度行列で記述することが正当化されるのは、集団平均という、限定された純粋に統計的な意味においてだけである。これは、集団内の一系の測定に話を限り、集団全体の平均的統計を考える場合である。具体的には、$N$系の純粋状態(2.38)で記述される集団の各要素について、一系の観測可能量$\hat O$を測定し、結果を集団全体で平均すれば、
+\begin{equation}\langle\hat O\rangle=\frac1N\sum_{i=1}^M Np_i\langle\psi_i\rvert\hat O\lvert\psi_i\rangle\tag{2.39}\end{equation}
+を得る。簡単のため、$\lvert\psi_i\rangle$は個々の系ごとに、正規直交基底状態の組をなすと仮定した。代わりに、混合状態$\hat\rho$［式(2.20)］における$\hat O$の期待値を、トレース則を使って計算すると、同じ結果
+% 原文 p.44
+\hypertarget{srcpage:44}{}\label{srcpage:44}
+\begin{equation}\langle\hat O\rangle=\sum_{i=1}^M p_i\operatorname{Tr}(\hat\rho\hat O)=\sum_{i=1}^M p_i\langle\psi_i\rvert\hat O\lvert\psi_i\rangle\tag{2.40}\end{equation}
+を得る。したがって一系の観測可能量については、集団平均において、しかもこの平均においてのみ、$N$系の純粋状態$\lvert\Psi\rangle$に対応する純粋状態密度行列が生む統計は、一系の混合状態の密度行列(2.20)から得られる統計と一致する。これに対し、集団を$N$系の純粋状態として正しく記述する式(2.38)によれば、系の集団の任意の観測可能量についても、各個別の系についても、統計を計算できる。

@@ -1,0 +1,53 @@
+                                            5.2 Quantum Brownian Motion          179
+
+of harmonic oscillators. Since, by assumption, these oscillators do not interact
+with each other, ĤE is simply the sum of all single-oscillator Hamiltonians,
+i.e.,
+                              1           1
+                                                      
+                                         2        2 2
+                      ĤE =            p̂ + mi ωi q̂i .                    (5.3)
+                               i
+                                    2mi i   2
+In obvious notation, mi and ωi denote the mass and natural frequency of
+the ith environmental oscillator, and q̂i and p̂i are the canonical position and
+momentum operators.
+   The form of the interaction between the system and the environment is
+such that the position coordinate X̂ of the central particle (the system S)
+couples linearly to the positions q̂i of the oscillators in the environment, with
+coupling strengths ci . The interaction Hamiltonian Ĥint thus reads
+                                       
+                         Ĥint = X̂ ⊗      ci q̂i ≡ X̂ ⊗ Ê.                 (5.4)
+                                        i
+
+
+The assumption of bilinear coupling (linear in both X̂ and q̂i ) is an important
+assumption of our model, which is therefore often explicitly referred to as
+“linear quantum Brownian motion.” Our following discussion will be based
+on this most commonly studied model.
+    We see that the system–environment interaction is of the form (2.91),
+which describes the continuous environmental monitoring of the position
+coordinate of the system. Thus, without any further calculations, we can
+already anticipate that the coupling (5.4) will, among other possible conse-
+quences such as dissipative eﬀects and decoherence in other bases, lead to
+decoherence of the system in the position basis.
+    Our ﬁrst goal is now to determine the environment self-correlation func-
+tions (4.10). Since Ĥint , see (5.4), contains a single term, only one such func-
+tion will need to computed, namely,1
+                                         3       4
+                                C(τ ) = Ê(τ )Ê     ,                       (5.5)
+                                                  ρ̂E
+
+where ρ̂E = ρ̂E (0) [see (4.6)]. Using (5.4), this expression can be evaluated,
+which yields
+                                                     
+               C(τ ) =      ci cj q̂i (τ )q̂j ρ̂E =   c2i q̂i (τ )q̂i ρ̂E . (5.6)
+                         ij                       i
+
+For the sake of notational simplicity, we have here omitted the tensor-product
+symbol “⊗” in products of operators pertaining to diﬀerent fragments of
+the environment (and will continue to do so throughout this chapter). The
+   1
+    As in the previous Chap. 4, throughout this chapter we shall use the convention
+that all operators (other than the density operator) with explicit time arguments
+should be understood as interaction-picture operators.

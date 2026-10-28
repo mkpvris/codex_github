@@ -1,0 +1,49 @@
+2.5 The Measurement Problem and the Quantum-to-Classical Transition              53
+
+ment in the usual sense. This is so because the ﬁnal state on the right-hand
+side of (2.54) is, for at least two reasons to be discussed in the following,
+not suﬃcient to directly conclude that the measurement has actually been
+completed. To emphasize this fact, the scheme (2.54) is frequently referred
+to as premeasurement.
+
+2.5.2 The Problem of the Preferred Basis
+
+The ﬁrst problem is that there exists a basis ambiguity regarding the expan-
+sion of the ﬁnal composite state on the right-hand side of (2.54). We can
+express this state in many diﬀerent ways, implying that in the von Neumann
+scheme stated above the observable that was supposedly measured is not
+uniquely deﬁned by this ﬁnal state. In fact, given any set of states describing
+our system S, there exists a corresponding set of apparatus states such that
+the ﬁnal composite state takes the form (2.54),
+                                               
+        |ψ |ar  −→ |Ψ  =    ci |si  |ai  =   ci |si  |ai  = . . . . (2.55)
+                              i                 i
+
+However, this freedom in the choice of the basis is in practice to some degree
+limited by two constraints. First of all, we will typically require the states
+|ai  of the apparatus to be mutually orthogonal. This ensures that these
+states correspond to classically distinct outcomes of the measurement, such
+that the possible states |si  of the system can be reliably distinguished. Sec-
+ond, for an arbitrary choice of the set of apparatus states |ai , the relative
+states |si  for the system may fail to be mutually orthogonal. In this case
+the system observables corresponding to the states |si  (i.e., the observables
+with eigenstates |si ) will not be Hermitian, which is usually an undesired
+property.15
+     In view of these arguments, we may therefore require the apparatus states
+|ai  to be mutually orthogonal, i.e., ai |aj  = 0 for i = j. In this case, it
+follows from the so-called Schmidt theorem (see Sect. 2.15.1 below) that the
+decomposition                         
+                               |Ψ  =    ci |si  |ai  ,                 (2.56)
+                                       i
+                   2
+with ci real and     ci = 1, is unique, provided all the coeﬃcients ci are
+diﬀerent from one another.
+    Let us consider a simple example showing that the decomposition (2.56)
+is in general not unique if this condition on the coeﬃcients does not hold.
+
+   15
+      However, non-Hermitian observables are not a priori forbidden and arise in
+certain experimental settings. For instance, in quantum optics one often performs
+measurements that have coherent states as their outcomes. Coherent states, how-
+ever, form an overcomplete set of states and can therefore not be represented by
+Hermitian observables. See also the discussion by Zurek in [16].

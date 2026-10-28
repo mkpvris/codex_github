@@ -1,0 +1,49 @@
+                                        5.2 Quantum Brownian Motion        199
+
+In view of this interpretation, the term exp (−Aint ) is therefore often called
+the “fringe-visibility function.” One can show that the quantity Aint is given
+by [184]
+                                X2           κ2p
+                        Aint = 20 + δ 2 P02 − 2 − δ12 κ2x ,              (5.75)
+                                δ            δ2
+where all quantities appearing in this expression should be understood as
+explicitly time-dependent. At time t = 0, we have δ1 = δ2 = δ, κx = P0 ,
+κp = X0 [see (5.73)], and thus Aint = 0. For subsequent times t > 0,
+Aint increases but is always bounded from above by its asymptotic (time-
+independent) maximum value of
+
+                                     X02
+                            Amax
+                             int =       + δ 2 P02 .                    (5.76)
+                                     δ2
+In fact, one can derive an explicit equation of motion for Aint from the master
+equation for quantum Brownian motion. The result is [184]
+                     d
+                        Aint = 4Dκ2p − 4f κp (κx − βκp ),               (5.77)
+                     dt
+where D and f are the usual normal-diﬀusion and anomalous-diﬀusion co-
+eﬃcients in the Born–Markov approximations. (If the Redﬁeld equation or
+the exact master equation [219] are used, these coeﬃcients will be explicitly
+time-dependent; see also Sect. 5.2.7.)
+     Equation (5.77) shows that the time evolution of Aint , and thus the dy-
+namics of the suppression of the interference terms, depends on several pa-
+rameters. First of all, we see that the change of Aint over time exhibits an
+explicit direct dependence on the diﬀusion coeﬃcients D and f , but neither
+on the momentum-damping (friction) coeﬃcient γ appearing in the master
+equation (5.25) nor on the free evolution given by the renormalized Hamil-
+tonian ĤS . However, the time evolution of Aint is indirectly inﬂuenced by
+γ and ĤS , since it turns out that the dynamics of κx and κp appearing in
+(5.77) depend on γ and ĤS .
+     On the other hand, as we will see below, this indirect inﬂuence of γ and
+ĤS on Aint is typically very weak in comparison with the direct dependence
+of Aint on the diﬀusion coeﬃcients. This already hints at an important con-
+clusion. In many cases the evolution of Aint , and thus the suppression of the
+oscillatory terms in the Wigner function, occurs on a timescale that is essen-
+tially independent of the relaxation timescale set by γ and of the dynamical
+timescale determined by ĤS .
+     Since ﬁrst term 4Dκ2p on the right-hand side of (5.77) is strictly non-
+negative, the normal-diﬀusion coeﬃcient D will always correspond to a sup-
+pression of the interference terms and thus to decoherence. From (5.72b) we
+see that κp quantiﬁes the wavenumber of the Wigner oscillations along the
+momentum direction. As evident from (5.77), the sign of the second term is
+not ﬁxed but rather depends on the interplay between κx and βκp . Thus the

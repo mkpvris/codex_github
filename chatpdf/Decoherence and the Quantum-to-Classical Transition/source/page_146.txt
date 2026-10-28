@@ -1,0 +1,57 @@
+                             3.3 Full Versus Partial Which-Path Resolution          131
+
+where Θ is the angle between the incoming and the outgoing trajectory of
+the scattered particle. Thus
+                                          
+                                        2      dn̂ dn̂
+F (x−x ) = (x−x )2 dq (q)v(q)q 2 2                   (1 − cos Θ) |f (q n̂, q n̂ )| .
+                                                                                      2
+                                       3        8π
+                                                                                (3.52)
+                                                      2
+Second, we may take the cross section |f (q n̂, q n̂ )| to be isotropic, i.e., to
+be dependent only on the magnitude q of the momentum and the scattering
+angle Θ. Then we may further simplify (3.52) by carrying out some of the
+angular integrations, which yields
+                                          
+                                       2π
+F (x−x ) = (x−x )2 dq (q)v(q)q 2 2
+                                                                                      2
+                                              d cos Θ (1 − cos Θ) |f (q, cos Θ)| .
+                                       3
+                                                                                (3.53)
+Apart from the angular weighting term (1 − cos Θ), the second integral is
+similar to the expression for the total cross section σtot (q) of the scattering
+process, see (3.44). Let us therefore interpret
+                             
+                         2π                                       2
+               σeﬀ (q) ≡       d cos Θ (1 − cos Θ) |f (q, cos Θ)|               (3.54)
+                          3
+as the eﬀective cross section for the scattering interaction, which is conse-
+quently on the order of the total cross section σtot (q).
+    Let us now explore the resulting time dependence of interference terms
+ρS (x, x ), x = x , of the reduced density matrix of the object. Referring
+back to (3.40) and using (3.53) and (3.54), the change of the reduced density
+matrix due to scattering is given by
+
+                     ∂ρS (x, x , t)
+                                     = −Λ(x − x )2 ρS (x, x , t),             (3.55)
+                          ∂t
+where we have introduced the scattering constant
+                           
+                                          q2
+                      Λ ≡ dq (q)v(q) 2 σeﬀ (q),                                (3.56)
+                                          
+which encapsulates the physical details of the interaction.
+    Over timescales that are short in comparison with the internal dynamics
+of the system, (3.55) shows that the scattering events lead to a suppression
+of oﬀ-diagonal terms that increases exponentially with time and with the
+squared separation (Δx)2 = (x − x )2 ,
+
+                       ρS (x, x , t) = ρS (x, x , 0)e−Λ(Δx) t .
+                                                              2
+                                                                                (3.57)
+
+We see that the scattering constant Λ quantiﬁes the rate at which spatial
+coherences over a given distance Δx are suppressed. Equation (3.57) therefore
+motivates the introduction of a decoherence timescale τΔx given by

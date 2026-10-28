@@ -1,0 +1,50 @@
+194    5 Canonical Models For Decoherence
+
+and momentum coordinates X̂ and P̂ . Instead, we may choose to model a
+discrete two-level system represented by the Pauli spin operators σ̂x and σ̂z ,
+as in the case of the spin–boson model (see Sect. 5.3). Then these Pauli spin
+operators simply take the place of the coordinates X̂ and P̂ in the master
+equation, and the distinct physical properties of the system are reﬂected in
+the particular choice of the physical quantities entering into the coeﬃcients
+in the master equation.
+
+5.2.5 Dynamics of Quantum Brownian Motion
+
+Let us now return to the general form of the master equation (5.25) for quan-
+tum Brownian motion (with the central system represented by a harmonic
+oscillator) and illustrate the resulting time evolution of the system gener-
+ated by this equation. These dynamics have been studied in detail by many
+authors. We will here mostly follow the analysis given by Paz, Habib, and
+Zurek [184].
+    We shall take the initial wave function of the system to be the coherent
+superposition
+                        Ψ (X, t = 0) = Ψ1 (X) + Ψ2 (X),                 (5.64)
+where Ψ1 (X) and Ψ2 (X) are Gaussian wave packets given by
+                              "             #
+                                 (X ∓ X0 )2
+              Ψ1,2 (X) = N exp −              exp (±iP0 X) .            (5.65)
+                                     2δ 2
+
+Here, N is a normalization constant, and δ is the width of the Gaussian in
+position space. Thus we consider superpositions of two Gaussians that are
+initially symmetrically located in phase space, namely, at positions ±X0 with
+opposite and equal momenta P0 .
+    This strategy will allow us to investigate the decoherence dynamics in
+position and momentum space and thus to address key questions such as:
+Does decoherence in quantum Brownian motion also aﬀect superpositions
+of momenta, or only superpositions of positions? How do the characteristic
+timescales for decoherence in these two bases diﬀer? To answer these ques-
+tions, we shall consider the decoherence dynamics for two limiting cases of
+interest [184]. The ﬁrst situation is that of the superposition (5.64) of two
+Gaussians separated in position only (X0 > δ, P0 = 0),
+                       -     "             #        "             #.
+                                (X − X0 )2             (X + X0 )2
+   Ψpos (X, t = 0) = N exp −                 +  exp  −               . (5.66)
+                                    2δ 2                  2δ 2
+
+The second case corresponds to the superposition (5.64) with Ψ1 (X) and
+Ψ2 (X) separated in momentum only (X0 = 0, P0 > 1/δ),
+                                       "     #
+                                         X2
+               Ψmom (X, t = 0) = 2N exp − 2 cos (P0 X) .          (5.67)
+                                         2δ

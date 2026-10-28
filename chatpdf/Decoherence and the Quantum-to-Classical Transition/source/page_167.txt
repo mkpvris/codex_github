@@ -1,0 +1,40 @@
+4 Master-Equation Formulations
+of Decoherence
+
+
+
+
+In this chapter, we will introduce the description of decoherence dynamics
+in terms of so-called master equations. Such master equations directly and
+conveniently yield the time evolution of the reduced density matrix ρ̂S (t)
+for the open quantum system S interacting with an environment E. They
+relieve us from the need of having to ﬁrst determine the dynamics of the
+total system–environment combination and to then trace out the degrees
+of freedom of the environment. The master-equation approach is motivated
+by two issues. First, we are usually not interested in the dynamics of the
+environment or of the global system–environment combination. All we really
+care about is the inﬂuence of the environment on our system of interest.
+Second, it is often impossible to analytically determine the time evolution of
+the density matrix. In such cases, one can use approximation schemes that
+lead to master equations for the approximate evolution of the reduced density
+matrix.
+    In contrast with the dynamics of the density matrix of a closed system, the
+evolution equation for the reduced density matrix will of course, in general, be
+nonunitary, since the interaction with the environment will typically change
+the amount of coherence present in the system. Put into more formal terms,
+since the trace operation used to obtain the reduced density matrix is a
+nonunitary operation, the master equation must in general also be nonunitary.
+    This chapter is organized as follows. In Sect. 4.1, we will introduce the
+basic ideas and the general formalism of master equations. In Sect. 4.2, we
+will then discuss in some detail a very important type of master equation,
+namely, the so-called Born–Markov master equation. This master equation
+plays a key role in studies of decoherence. The derivation of this equation,
+given in Sect. 4.2.2, is inevitably somewhat technical, so some readers may
+prefer to just glance over this section or skip it altogether. In Sect. 4.3, we will
+discuss so-called Lindblad master equations, a special and more simpliﬁed
+form of the general Born–Markov master equation that is valid under an
+additional assumption. As we shall see, Lindblad master equations allow for
+a very intuitive representation of decoherence processes. Finally, in Sect. 4.4,
+we will brieﬂy discuss the case of non-Markovian dynamics.
+    We note that master equations also play an important role in the the-
+ory of so-called quantum dynamical semigroups. Since our focus here is on

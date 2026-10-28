@@ -1,0 +1,50 @@
+                                 4.3 Master Equations in the Lindblad Form             167
+
+master equation into the Lindblad form, we refer the reader to Sect. 3.3.1
+of [18].
+    Conversely, the inability of writing a master equation in the Lindblad
+form does not necessarily imply that the positivity condition (4.42) is vio-
+lated. A good example is the model for quantum Brownian motion, which
+we shall discuss in Sect. 5.2. For this model, it is possible to derive the ex-
+act, non-Markovian master equation (see Sect. 5.2.7). This equation cannot
+be brought into the Lindblad form without imposing several approximations
+and assumptions [183]. Yet, it is clear that, since the master equation is ex-
+act, it should automatically enforce the positivity of the density matrix at all
+times. As it turns out, this is indeed the case. The explanation for this ini-
+tially puzzling behavior can be found through a careful analysis of the exact
+dynamics, which shows that in the exact master equation positivity arises
+through rather subtle time dependences of the coeﬃcients appearing in the
+master equation [184, 185].
+    We can simplify the Lindblad master equation (4.43) further by diagonal-
+izing the matrix Γ deﬁned by the coeﬃcients γαβ appearing in this equation.
+This diagonalization is always possible because, as one can show, this matrix
+is positive (i.e., all its eigenvalues κμ are ≥ 0). Then (4.43) can be rewritten
+in the diagonal form [177, 179]
+ d                            1 $ †                                                   %
+   ρ̂S (t) = −i ĤS , ρ̂S (t) −     κμ L̂μ L̂μ ρ̂S (t) + ρ̂S L̂†μ L̂μ − 2L̂μ ρ̂S (t)L̂†μ .
+dt                               2 μ
+                                                                        (4.44)
+Here ĤS denotes the renormalized (“Lamb-shifted”) Hamiltonian of the sys-
+tem. The so-called Lindblad operators (or “Lindblad generators”) L̂μ are
+simply appropriate linear combinations of the original operators Ŝα , with
+coeﬃcients determined from the diagonalization of the matrix Γ .
+   Note that, because the operators Ŝα are not necessarily Hermitian, the
+Lindblad operators L̂μ do not always correspond to physical observables, but
+when they do, we can rewrite (4.44) in the more compact double-commutator
+form
+          d                             1                       
+             ρ̂S (t) = −i ĤS , ρ̂S (t) −     κμ L̂μ , L̂μ , ρ̂S (t) . (4.45)
+          dt                               2 μ
+
+In fact, our equation of motion (3.78) for environmental scattering,
+                          2         
+   ∂ρS (x, x , t)     i  ∂       ∂2
+                   =−          −        ρS (x, x , t) − Λ(x − x )2 ρS (x, x , t),
+        ∂t            2m ∂x2    ∂x2
+                                                                              (4.46)
+is of the Lindblad form (4.45). To see this, let us evaluate (4.45) with the
+single Lindblad operator L̂ = x̂ and the “free”-particle Hamiltonian ĤS =
+ĤS = p̂2 /2m,
+                  d               i  2           1
+                     ρ̂S (t) = −     p̂ , ρ̂S (t) − κ [x̂, [x̂, ρ̂S (t)]] .        (4.47)
+                  dt             2m                2

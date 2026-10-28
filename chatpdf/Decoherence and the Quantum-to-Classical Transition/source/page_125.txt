@@ -1,0 +1,52 @@
+110    2 The Basic Formalism and Interpretation of Decoherence
+
+2.15.4 The Operator-Sum Formalism
+
+Let us introduce a completely general formalism for representing the inﬂuence
+of the environment on the reduced density matrix of the system, without any
+reference to the particular form of the Hamiltonian. The derivation of this so-
+called operator-sum formalism (often also referred to as the Kraus-operator
+formalism [152]) is very simple and goes as follows.
+    To begin, suppose that the system S and its environment E are initially
+completely uncorrelated, such that the joint density matrix is
+
+                                 ρ̂(0) = ρ̂S (0) ⊗ ρ̂E (0).                (2.140)
+
+We can then write down the diagonal decomposition of the initial density
+matrix ρ̂E (0) of the environment,
+                                      
+                            ρ̂E (0) =   pi |Ei Ei |.           (2.141)
+                                              i
+                                    
+Here the coeﬃcients pi obey i pi = 1, and the environmental states |Ei 
+form a set of orthonormal basis states of the Hilbert space HE of the envi-
+ronment.
+    Given the usual unitary time evolution operator Û (t) = e−iĤt , where Ĥ is
+the total Hamiltonian (here assumed to be time-independent) of the system–
+environment combination, the evolution of the reduced density matrix ρ̂S (t)
+of the system is given by
+                                                            !
+                                       
+       ρ̂S (t) = TrE Û (t) ρ̂S (0) ⊗    pi |Ei Ei |  Û † (t) .       (2.142)
+                                                  i
+
+If we explicitly carry out the trace operation in the basis {|Ei }, (2.142)
+becomes
+                                                      
+                                        
+     ρ̂S (t) =   Ej | Û (t) ρ̂S (0) ⊗    pi |Ei Ei |  Û † (t) |Ej 
+               j                                  i
+             √                                 √
+           =   pi Ej | Û (t) |Ei  ⊗ ρ̂S (0) ⊗ pi Ei | Û † (t) |Ej    (2.143)
+               ij
+                                      †
+           ≡        Êij ⊗ ρ̂S (0) ⊗ Êij .
+               ij
+
+In the last line we have deﬁned the Kraus operators [152]
+                                 √
+                           Êij ≡ pi Ej | Û (t) |Ei                     (2.144)
+
+acting on the Hilbert space HS of the system.
+    The Kraus operators contain all the available information about the initial
+state of the environment and about the dynamics of the system–environment

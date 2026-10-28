@@ -1,0 +1,48 @@
+76        2 The Basic Formalism and Interpretation of Decoherence
+
+case in which the environment is included. Faithful measurement in the usual
+sense concerns the requirement that the measuring apparatus act as a reliable
+“mirror” of the states of the system by forming only correlations of the form
+|si  |ai  but not |si  |aj  with i = j. But since any realistic measurement pro-
+cess must include the inevitable coupling of the apparatus to its environment,
+the measurement could hardly be considered faithful as a whole if the interac-
+tion with the environment disturbed the correlations between the system and
+the apparatus.21 In fact, this ability of the apparatus to serve as a robust and
+faithful “indicator” of the state of the system amounts to the very deﬁnition
+of a measurement device. Environment-induced superselection applied to the
+von Neumann scheme therefore explains why measurement apparatuses seem
+to be designed to measure only certain physical quantities but not others.
+     Let us now return to the case of a system interacting with an environment
+without the explicit presence of an apparatus. Thus far, we have considered
+the simpliﬁed ideal situation in which the eﬀective system–environment dy-
+namics were directly written in the von Neumann form, as in (2.78). This
+allowed us to immediately infer the preferred states of the system. In gen-
+eral, however, we are simply given a total Hamiltonian Ĥ, which describes
+the intrinsic dynamics of the system and environment as well as the interac-
+tion between the system and environment. Typically, this total Hamiltonian
+is decomposed into the relevant three parts,
+
+                              Ĥ = ĤS + ĤE + Ĥint ,                        (2.85)
+
+where ĤS and ĤE denote the self-Hamiltonians of the system and environ-
+ment representing the intrinsic dynamics, and Ĥint is the system–environment
+interaction Hamiltonian.
+    We may now ask the important question: Given an arbitrary total Hamil-
+tonian deﬁning the system–environment model, how are we to determine the
+pointer states for the system? Of course, our general selection criterion re-
+mains the same: The preferred set of pointer states corresponds to the set of
+states of the system that are most robust under the inﬂuence of the environ-
+ment. However, how are we to ﬁnd out which states fulﬁll this requirement?
+This problem will be discussed in the following.
+
+2.8.1 Pointer States in the Quantum-Measurement Limit
+
+Let us ﬁrst consider an important special case that not only applies to many
+situations relevant to decoherence, but also provides us with a simple and
+intuitive criterion for determining the preferred set of pointer states of the
+system. Suppose the energy scales associated with the system–environment
+interaction Hamiltonian Ĥint in (2.85) are much larger than the energy scales
+     21
+    For fundamental limitations on the precision of von Neumann measurements of
+operators that do not commute with a globally conserved quantity, see the Wigner–
+Araki–Yanase theorem [87, 88].

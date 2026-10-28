@@ -1,0 +1,41 @@
+96     2 The Basic Formalism and Interpretation of Decoherence
+
+between the processes whose eﬀects may have a similar representation in the
+density-matrix formalism. While in some cases, if one takes a practical point
+of view (say, as a quantum engineer or experimentalist), it may occasionally
+indeed be justiﬁed to associate processes diﬀerent from pure environmental
+entanglement with the term “decoherence,” the fundamental interpretation
+of such processes is diﬀerent from “true” decoherence in the sense used in
+this book. This is not merely a philosophical issue: There always exists some
+experimental procedure that would, at least in principle, be able to distin-
+guish between the diﬀerent physical processes underlying formally similar
+density-matrix descriptions.
+    The most common and important example of “fake decoherence” (to use a
+term coined by Joos [17]) is to interpret the result of an ensemble average over
+diﬀerent noisy realizations of a system as the description of a decoherence
+process. This represents an example where formal similarities arising in the
+density-matrix formalism lead to the (incorrect) classiﬁcation as a physical
+decoherence process. We may trace back the source of this confusion to the use
+of density matrices to describe two physically very diﬀerent settings. On the
+one hand, the density-matrix formalism is often used to describe true physical
+ensembles, i.e., a collection of N physical systems in which each individual
+system is described by a pure state (see also the discussion in Sect. 2.4.5).
+For example, suppose that each system is represented by a two-dimensional
+Hilbert space spanned by the basis states |0 and |1, and that the pure state
+of the ith system is given by
+                                  1              
+                          |ψi  = √ |0 + |1 eiφi ,                    (2.118)
+                                   2
+
+where eiφi is some system-speciﬁc relative phase factor. These phase factors
+may come about in two diﬀerent ways. First, each system may have been
+prepared in a slightly diﬀerent initial state from the beginning. Alternatively,
+all systems may start out in the same state but may be subject to slightly
+diﬀerent Hamiltonians. For example, the potential in the Hamiltonians Ĥi of
+each system may contain random ﬂuctuations, Vi (t) = V0 (t) + δVi (t) [121].
+In either case, the diﬀerences in the relative-phase factors for the diﬀerent
+systems can thus be thought of as being due to the presence of classical noise
+(applied during the preparation of the system and/or during the subsequent
+evolution).
+    If we now take the average over the ensemble {|ψi } of the pure states of
+all N systems, we obtain the ensemble density matrix

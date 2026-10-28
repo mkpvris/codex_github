@@ -1,0 +1,46 @@
+                          7.3 Decoherence Versus Classical Fluctuations     303
+
+computing are the ﬂuctuations in the intensity [349] and duration [350] of
+the laser beam incident on qubits in an ion trap, inhomogeneities in the
+magnetic ﬁelds in NMR quantum computing [351], and bias ﬂuctuations in
+superconducting qubits [293].
+    Phenomenologically and formally the inﬂuence of such classical processes
+on the qubits may be described in a manner similar to the eﬀect of envi-
+ronmental entanglement, namely, in terms of “qubit errors” (see Sect. 7.4.2
+below). From a purely practical point of view, the distinction between deco-
+herence due to entangling interactions with an environment on the one hand,
+and the loss of phase coherence due to classical noise (in an ensemble average)
+on the other hand, may therefore not be relevant and is often not made ex-
+plicit. The distinction between classical noise and quantum decoherence has
+been further blurred by the ﬁeld of quantum error correction (see Sect. 7.4),
+since the error-correcting schemes are insensitive to the physical origin of the
+qubit errors.
+    Furthermore, as mentioned in Sect. 2.12, the loss of phase coherence due
+to environmental entanglement is sometimes simulated by classical ﬂuctua-
+tions perturbing the system, i.e., by the addition of certain time-dependent
+terms to the self-Hamiltonian of the system. This strategy was implemented,
+for example, in theoretical [349,352] and experimental [125,353] studies of the
+inﬂuence of ﬂuctuating parameters on the phase coherence of qubits in ion-
+trap quantum computers. In the theoretical domain, Schneider and Milburn
+investigated “decoherence” due to random ﬂuctuations both in the phase and
+intensity of the qubit-controlling laser beam [349] and in the parameters of
+the trap which conﬁnes the ions. In experiments carried out by a group at
+NIST [125, 353], the inﬂuence of diﬀerent types of reservoirs on the decay of
+Schrödinger-cat states of a trapped ion (superpositions of coherent states and
+number eigenstates) was experimentally simulated by letting certain param-
+eters of the harmonic trap, such as the location of the minimum or the trap
+frequency, ﬂuctuate randomly.
+    As we have already discussed in Sect. 2.12, the key point is now that, if
+the inﬂuence of the environment is modeled in this way as classical noise, the
+decay of coherence can manifest itself only in an ensemble, i.e., in the form
+of an average over a large number of particular realizations of such noise
+processes. Since the system is not coupled to any external environment, in
+any individual realization of the noise process the dynamics of the system
+are completely unitary, and thus no coherence can have been lost from the
+system. By contrast, if the system becomes entangled with environmental
+degrees of freedom, at the very least we would need to perform a pair of
+measurements on the environment before and after the interaction with the
+system in order to gather enough information to reverse the eﬀect of deco-
+herence by application of an appropriate countertransformation. Moreover,
+as shown in the NIST experiment [125], these measurements would not al-
+ways constitute a suﬃcient procedure for “undoing” decoherence (see also

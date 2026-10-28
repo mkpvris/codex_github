@@ -1,0 +1,189 @@
+\documentclass[a4paper,11pt]{ltjsarticle}
+
+% ========== package ========== %
+% --- 数式環境 --- %
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+% --- 数式環境 END --- %
+% ブラケット
+\usepackage{braket}
+% ベクトルの太文字
+\usepackage{bm}
+% 添え字左右上下 \fourIdx{左上}{左下}{右上}{右下}{ベース} で使う．Iは大文字
+\usepackage{fouridx}
+% 色
+\usepackage{color}
+% 余白指定
+\usepackage{geometry}
+% --- ページ内リンク --- %
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue}
+% --- ページ内リンク END --- %
+% 花文字
+\usepackage{mathrsfs}
+% 画像
+\usepackage{graphicx}
+% tcolorbox
+\usepackage{tcolorbox}
+% appendix
+\usepackage{appendix}
+% --- 参考文献 --- %
+\usepackage{etoolbox}
+\usepackage{fontspec} % fontspecは読み込んでOKですが、設定順序に注意が必要です
+%% --- 参考文献フォント --- %%
+  \IfFontExistsTF{Times New Roman}{
+    \newfontfamily\bibfontface{Times New Roman}
+  }{
+    \newfontfamily\bibfontface{FreeSerif} % 代替フォント
+  }
+%% --- 参考文献フォント END --- %%
+%% --- 参考文献リンク位置 --- %%
+  \BeforeBeginEnvironment{thebibliography}{%
+    \phantomsection
+    \addcontentsline{toc}{section}{参考文献}
+  }
+  \AtBeginEnvironment{thebibliography}{%
+    \normalfont\bibfontface
+  }
+%% --- 参考文献のリンク位置 --- %%
+% --- 参考文献 END --- %
+% ========== package END ========== %
+
+% ========== newcommand ========== %
+% --- セクションから目次へのリンク --- %
+\newcommand{\sectionlink}[1]{\section[#1]{\hyperlink{toc}{#1}}}
+\newcommand{\subsectionlink}[1]{\subsection[#1]{\hyperlink{toc}{#1}}}
+% セクション番号リンク
+\makeatletter
+\renewcommand{\@seccntformat}[1]{%
+  \protect\hyperlink{toc}{\csname the#1\endcsname}\quad
+}
+\makeatother
+
+\numberwithin{equation}{section}
+% ==========- newcommand END ========== %
+\allowdisplaybreaks
+%===========================================================
+% --- タイトル --- %
+%===========================================================
+\geometry{left=25mm, right=25mm, top=30mm, bottom=30mm}
+
+% Original template retained. Extensions needed for book hierarchy and figures.
+\usepackage{tikz}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{float}
+\usepackage{multicol}
+\usepackage{xparse}
+\RenewDocumentCommand{\sectionlink}{s m}{\IfBooleanTF{#1}{\phantomsection\section*{\hyperlink{toc}{#2}}\addcontentsline{toc}{section}{#2}}{\section[#2]{\hyperlink{toc}{#2}}}}
+\RenewDocumentCommand{\subsectionlink}{s m}{\IfBooleanTF{#1}{\subsection*{\hyperlink{toc}{#2}}}{\subsection[#2]{\hyperlink{toc}{#2}}}}
+\NewDocumentCommand{\subsubsectionlink}{s m}{\IfBooleanTF{#1}{\subsubsection*{\hyperlink{toc}{#2}}}{\subsubsection[#2]{\hyperlink{toc}{#2}}}}
+\newcommand{\paragraphlink}[1]{\paragraph[#1]{\hyperlink{toc}{#1}}}
+\newcommand{\sourcepageref}[1]{\hyperlink{srcpage:#1}{\pageref*{srcpage:#1}}}
+\numberwithin{figure}{section}
+\numberwithin{table}{section}
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+\renewcommand{\figurename}{図}
+\renewcommand{\tablename}{表}
+\hypersetup{pdftitle={デコヒーレンスと量子から古典への移行},pdfauthor={Maximilian Schlosshauer},urlcolor=blue,citecolor=blue,bookmarksnumbered=true,hypertexnames=false}
+\title{\bfseries デコヒーレンスと\\量子から古典への移行\\[1ex]{\large\normalfont Decoherence and the Quantum-to-Classical Transition}}
+\author{Maximilian Schlosshauer\\[1ex]{\small The University of Melbourne, School of Physics}\\{\small Melbourne, Victoria, 3010, Australia}\\[1ex]{\small\href{https://link.springer.com/book/10.1007/978-3-540-35775-9}{Springer：原著}}}
+\date{2026年10月28日}
+\begin{document}
+\nocite{ref001,ref002,ref003,ref004,ref005,ref006,ref007,ref008,ref009,ref010,ref011,ref012,ref013,ref014,ref015,ref016,ref017,ref018,ref019,ref020,ref021,ref022,ref023,ref024,ref025,ref026,ref027,ref028,ref029,ref030,ref031,ref032,ref033,ref034,ref035,ref036,ref037,ref038,ref039,ref040,ref041,ref042,ref043,ref044,ref045,ref046,ref047,ref048,ref049,ref050,ref051,ref052,ref053,ref054,ref055,ref056,ref057,ref058,ref059,ref060,ref061,ref062,ref063,ref064,ref065,ref066,ref067,ref068,ref069,ref070,ref071,ref072,ref073,ref074,ref075,ref076,ref077,ref078,ref079,ref080,ref081,ref082,ref083,ref084,ref085,ref086,ref087,ref088,ref089,ref090,ref091,ref092,ref093,ref094,ref095,ref096,ref097,ref098,ref099,ref100,ref101,ref102,ref103,ref104,ref105,ref106,ref107,ref108,ref109,ref110,ref111,ref112,ref113,ref114,ref115,ref116,ref117,ref118,ref119,ref120,ref121,ref122,ref123,ref124,ref125,ref126,ref127,ref128,ref129,ref130,ref131,ref132,ref133,ref134,ref135,ref136,ref137,ref138,ref139,ref140,ref141,ref142,ref143,ref144,ref145,ref146,ref147,ref148,ref149,ref150,ref151,ref152,ref153,ref154,ref155,ref156,ref157,ref158,ref159,ref160,ref161,ref162,ref163,ref164,ref165,ref166,ref167,ref168,ref169,ref170,ref171,ref172,ref173,ref174,ref175,ref176,ref177,ref178,ref179,ref180,ref181,ref182,ref183,ref184,ref185,ref186,ref187,ref188,ref189,ref190,ref191,ref192,ref193,ref194,ref195,ref196,ref197,ref198,ref199,ref200,ref201,ref202,ref203,ref204,ref205,ref206,ref207,ref208,ref209,ref210,ref211,ref212,ref213,ref214,ref215,ref216,ref217,ref218,ref219,ref220,ref221,ref222,ref223,ref224,ref225,ref226,ref227,ref228,ref229,ref230,ref231,ref232,ref233,ref234,ref235,ref236,ref237,ref238,ref239,ref240,ref241,ref242,ref243,ref244,ref245,ref246,ref247,ref248,ref249,ref250,ref251,ref252,ref253,ref254,ref255,ref256,ref257,ref258,ref259,ref260,ref261,ref262,ref263,ref264,ref265,ref266,ref267,ref268,ref269,ref270,ref271,ref272,ref273,ref274,ref275,ref276,ref277,ref278,ref279,ref280,ref281,ref282,ref283,ref284,ref285,ref286,ref287,ref288,ref289,ref290,ref291,ref292,ref293,ref294,ref295,ref296,ref297,ref298,ref299,ref300,ref301,ref302,ref303,ref304,ref305,ref306,ref307,ref308,ref309,ref310,ref311,ref312,ref313,ref314,ref315,ref316,ref317,ref318,ref319,ref320,ref321,ref322,ref323,ref324,ref325,ref326,ref327,ref328,ref329,ref330,ref331,ref332,ref333,ref334,ref335,ref336,ref337,ref338,ref339,ref340,ref341,ref342,ref343,ref344,ref345,ref346,ref347,ref348,ref349,ref350,ref351,ref352,ref353,ref354,ref355,ref356,ref357,ref358,ref359,ref360,ref361,ref362,ref363,ref364,ref365,ref366,ref367,ref368,ref369,ref370,ref371,ref372,ref373,ref374,ref375,ref376,ref377,ref378,ref379,ref380,ref381,ref382,ref383,ref384,ref385,ref386,ref387,ref388,ref389,ref390,ref391,ref392,ref393,ref394,ref395,ref396,ref397,ref398,ref399,ref400,ref401,ref402,ref403,ref404,ref405,ref406,ref407,ref408,ref409,ref410,ref411,ref412,ref413,ref414,ref415,ref416,ref417,ref418,ref419,ref420,ref421,ref422,ref423,ref424,ref425,ref426,ref427,ref428,ref429,ref430,ref431,ref432,ref433,ref434,ref435,ref436,ref437,ref438,ref439,ref440,ref441,ref442,ref443,ref444,ref445,ref446,ref447,ref448,ref449,ref450,ref451,ref452,ref453,ref454,ref455,ref456,ref457,ref458,ref459,ref460,ref461,ref462,ref463,ref464,ref465,ref466,ref467,ref468,ref469,ref470,ref471,ref472,ref473,ref474,ref475,ref476,ref477,ref478,ref479,ref480,ref481,ref482,ref483,ref484,ref485,ref486,ref487,ref488,ref489,ref490,ref491,ref492,ref493,ref494,ref495,ref496,ref497,ref498,ref499,ref500,ref501,ref502,ref503,ref504,ref505,ref506,ref507,ref508,ref509,ref510,ref511,ref512,ref513,ref514,ref515,ref516,ref517,ref518,ref519,ref520,ref521,ref522,ref523}
+
+\pagenumbering{roman}
+\maketitle
+\thispagestyle{empty}
+\clearpage
+\input{chapters/publication}
+\input{chapters/preface}
+\hypertarget{toc}{}
+\tableofcontents
+\clearpage
+\pagenumbering{arabic}
+\clearpage
+\setcounter{section}{0}
+\setcounter{footnote}{0}
+\input{chapters/ch01}
+\clearpage
+\setcounter{section}{1}
+\setcounter{footnote}{0}
+\input{chapters/ch02_01}
+\input{chapters/ch02_02}
+\input{chapters/ch02_03}
+\input{chapters/ch02_04}
+\input{chapters/ch02_05}
+\input{chapters/ch02_06}
+\input{chapters/ch02_07}
+\input{chapters/ch02_08}
+\input{chapters/ch02_09}
+\input{chapters/ch02_10}
+\input{chapters/ch02_11}
+\input{chapters/ch02_12}
+\input{chapters/ch02_13}
+\input{chapters/ch02_14}
+\input{chapters/ch02_15}
+\input{chapters/ch02_16}
+\input{chapters/ch02_17}
+\input{chapters/ch02_18}
+\input{chapters/ch02_19}
+\input{chapters/ch02_20}
+\input{chapters/ch02_21}
+\input{chapters/ch02_22}
+\clearpage
+\setcounter{section}{2}
+\setcounter{footnote}{0}
+\input{chapters/ch03}
+\clearpage
+\setcounter{section}{3}
+\setcounter{footnote}{0}
+\input{chapters/ch04}
+\clearpage
+\setcounter{section}{4}
+\setcounter{footnote}{0}
+\input{chapters/ch05_01}
+\input{chapters/ch05_02}
+\input{chapters/ch05_03}
+\input{chapters/ch05_04}
+\input{chapters/ch05_05}
+\input{chapters/ch05_06}
+\input{chapters/ch05_07}
+\input{chapters/ch05_08}
+\input{chapters/ch05_09}
+\clearpage
+\setcounter{section}{5}
+\setcounter{footnote}{0}
+\input{chapters/ch06}
+\clearpage
+\setcounter{section}{6}
+\setcounter{footnote}{0}
+\input{chapters/ch07_01}
+\input{chapters/ch07_02}
+\input{chapters/ch07_03}
+\input{chapters/ch07_04}
+\input{chapters/ch07_05}
+\input{chapters/ch07_06}
+\clearpage
+\setcounter{section}{7}
+\setcounter{footnote}{0}
+\input{chapters/ch08}
+\clearpage
+\setcounter{section}{8}
+\setcounter{footnote}{0}
+\input{chapters/ch09}
+\clearpage
+\setcounter{footnote}{0}
+\input{chapters/appendix}
+
+\clearpage
+\renewcommand{\refname}{\hyperlink{toc}{参考文献}}
+\bibliographystyle{utphys}
+\bibliography{ref}
+\clearpage
+\input{chapters/index}
+\clearpage
+\input{chapters/series_back}
+\end{document}

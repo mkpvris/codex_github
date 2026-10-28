@@ -1,0 +1,50 @@
+296     7 Decoherence and Quantum Computing
+
+                                        z
+
+                                                 x̂
+                                            2θ
+
+                                                        y
+                                         φ
+                                    x
+
+
+
+
+Fig. 7.1. Geometrical representation of the state of a qubit as a point on the
+Bloch sphere, a unit sphere in R3 . An arbitrary qubit state can be described by
+two real parameters θ and φ [see (7.4)], where 2θ and φ play the role of the familiar
+spherical coordinates. That is, the state (7.4) is represented by the unit vector
+x̂ = (sin 2θ cos φ, sin 2θ sin φ, cos 2θ).
+
+
+This basis is referred to as the computational basis for the N -qubit system.
+Any N -qubit state can also be described by a 2N × 2N density matrix. If
+we diagonalize this matrix, we see that this state can simultaneously encode
+2N independent real numbers, since there are 2N real-valued entries (rep-
+resenting the populations in the eigenbasis of the density operator) on the
+matrix diagonal. This is to be compared to N classical bits which encode
+only a binary string of length N . This shows the ﬁrst advantage of quantum
+computers: The storage capacity of arrays of qubits is exponentially larger
+than that of classical bits, and a qubit can be in any of the inﬁnitely many
+coherent superposition states (7.1).
+    The second advantage is related to the diﬀerent ways in which classical
+and quantum computers process information. In a classical computer, we
+apply logical gates (such as and, not, and xor) that act on one or two bits
+at a time. In the quantum case, implementation of gates corresponds to the
+application of unitary transformations Û that act on the Hilbert space of the
+N -qubit system.2
+    2
+      We note that there exists an alternative approach to quantum computing in
+which the entire quantum computation proceeds in form of a time-ordered series of
+projective measurements on a qubit system which has initially been prepared in a
+highly entangled state (the so-called cluster state) [326–328]. It can be shown that
+such measurement-based (or cluster-state) quantum computation is able to per-
+form exactly the same computational tasks as conventional quantum computation
+based on unitary gate operations. In other words, a measurement-based quantum
+computer is just as universal as a “standard” quantum computer. This is a rather
+remarkable result, since the nonunitary nature of quantum measurement would in-
+tuitively lead one to believe that it is incompatible with the simulation of arbitrary
+(and therefore also unitary) quantum dynamics. Since cluster-state quantum com-
+putation requires the preparation of a highly entangled N -qubit state that must

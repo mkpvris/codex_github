@@ -1,0 +1,47 @@
+                                                        5.3 The Spin–Boson Model        213
+
+i.e., we obtain Gaussian decay of coherence between the states |0 and |1.
+     Deviations from this Gaussian behavior occur when t becomes compa-
+rable to the typical timescales of the environment, ωi t ≈ 1, and thus the
+approximation (5.109) starts to fail. Fig. 5.5 shows an example for the time
+evolution of the decoherence factor r(t) also for such larger times, with the
+purely Gaussian decay (5.110) pictured for comparison.
+     As already pointed out in Sect. 2.10, it is important to keep in mind that
+for ﬁnite numbers of environmental oscillators, r(t) will return to its initial
+value of one after a ﬁnite (albeit for large environments very long) time.
+We can see this point directly from recognizing that the argument in the
+exponential of (5.108) is a sum of functions that are periodic in time, and thus
+the sum itself is periodic in time. Therefore, for ﬁnite-sized environments, the
+coherence initially localized at the level of the system will always be restored
+after a ﬁnite time span.
+
+Case Study #2: Environment in Thermal Equilibrium
+
+Let us now turn to the more general case in which each environmental oscil-
+lator i is in a thermal state,
+                               1 −ωi â†i âi /kB T   1 −ĤE /kB T
+                      ρ̂Ei =      e                 ≡    e  i      .                 (5.111)
+                               Zi                     Zi
+Here
+                                       Zi = TrEi e−ĤEi /kB T                        (5.112)
+is the partition function for the ith mode. Thus the initial state of the com-
+posite system SE is given by
+
+
+                                   0     0.5   1.0   1.5   2.0    2.5      3.0
+                               1                                                 t
+                                                                 exact
+                        10−5                                    solution
+
+               r(t)    10−10
+
+                       10−15
+                                                  short-time
+                          −20                    approximation
+                       10
+
+Fig. 5.5. Time evolution of the decoherence factor r(t) = E− (t)|E+ (t) (i.e., of
+the overlap of the relative environmental states). Both the exact evolution (5.108)
+and the short-time approximation (5.110) are shown for an environment consisting
+of N = 20 harmonic oscillators. The couplings gi and frequencies ωi were chosen
+randomly from the interval [0, 1].

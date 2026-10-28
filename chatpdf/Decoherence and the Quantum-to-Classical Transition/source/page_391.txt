@@ -1,0 +1,41 @@
+Appendix: The Interaction Picture
+
+
+
+
+The technique of expressing operators and quantum states in the so-called
+interaction picture is of great importance in treating quantum-mechanical
+problems in a perturbative fashion. It plays an important role, for example, in
+the derivation of the Born–Markov master equation for decoherence detailed
+in Sect. 4.2.2. We shall review the basics of the interaction-picture approach
+in the following.
+    We begin by considering a Hamiltonian of the form
+
+                                 Ĥ = Ĥ0 + V̂ .                            (A.1)
+
+Here Ĥ0 denotes the part of the Hamiltonian that describes the free (un-
+perturbed) evolution of a system S, whereas V̂ is some added external per-
+turbation. In applications of the interaction-picture formalism, V̂ is typically
+assumed to be weak in comparison with Ĥ0 , and the idea is then to deter-
+mine the approximate dynamics of the system given this assumption. In the
+following, however, we shall proceed with exact calculations only and make
+no assumption about the relative strengths of the two components Ĥ0 and
+V̂ .
+     From standard quantum theory, we know that the expectation value of
+an operator observable Â(t) is given by the trace rule [see (2.17)],
+                          &          '      &                    '
+              Â(t) = Tr Â(t)ρ̂(t) = Tr Â(t)e−iĤt ρ̂(0)eiĤt .       (A.2)
+
+For reasons that will immediately become obvious, let us rewrite this expres-
+sion as
+                 &                                                     '
+     Â(t) = Tr eiĤ0 t Â(t)e−iĤ0 t eiĤ0 t e−iĤt ρ̂(0)eiĤt e−iĤ0 t . (A.3)
+
+In inserting the time-evolution operators e±iĤ0 t at the beginning and the
+end of the expression in square brackets, we have made use of the fact
+    the trace
+that                    under permutations of the arguments, i.e., that
+                 is cyclic
+Tr ÂB̂ Ĉ · · · = Tr B̂ Ĉ · · · Â , etc. Thus we could move the ﬁrst factor
+eiĤ0 t to the end of the argument of the trace, canceling out the extra factor
+e−iĤ0 t at that position.

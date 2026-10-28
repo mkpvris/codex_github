@@ -1,0 +1,60 @@
+                     2.4 The Concept and Interpretation of Density Matrices                47
+
+Local Measurability of Interference and Distinguishability
+
+For our bipartite state (2.42), we can easily evaluate ρ̂A [see (2.44)] from
+the expression (2.43) for the full density matrix ρ̂. Expanding the states |bi ,
+i = 1, 2, of B in terms of the set {|φl } of orthonormal basis vectors of HB ,
+                                        (i)
+                               |bi  =     cl |φl  ,                     (2.48)
+                                                  l
+
+we obtain
+                 ⎛                                    ⎞
+                     1
+                      2
+    ρ̂A = TrA ⎝               |ai aj | ⊗ |bi bj |⎠
+                     2 ij=1
+                                                              
+          1
+              2                      (i)  (j) ∗
+        =        |ai aj |   φk |     cl cl      |φl φl | |φk 
+          2 ij=1                      
+                                k            ll
+
+            1
+             2                   (i)  (j) ∗
+        =            |ai aj |  ck ck
+            2 ij=1
+                                k
+
+            1 
+              2
+        =          |ai aj |bj |bi 
+            2 ij=1
+            1
+        =     (|a1 a1 | + |a2 a2 | + |a1 a2 |b2 |b1  + |a2 a1 |b1 |b2 ) .   (2.49)
+            2
+This result can be easily generalized to the case in which the composite system
+AB is not described by the two-component state (2.42) but instead by the
+                                              N
+more general N -component state |Ψ  = √1N n=1 |an  |bn  with N > 2. Then
+the resulting reduced density matrix takes the form
+                                             N
+                                         1 
+                                ρ̂A =           |ai aj |bj |bi .                    (2.50)
+                                         N ij=1
+
+We see from (2.49) that the inﬂuence of the system B on the measurement
+                                                                              ∗
+statistics is now eﬀectively subsumed in the overlap b2 |b1  = b1 |b2  of
+the B-states |b1  and |b2  that multiplies the oﬀ-diagonal terms |a1 a2 | and
+|a2 a1 | in the reduced density matrix. As we have mentioned in Sect. 2.4.2,
+these oﬀ-diagonal terms correspond to interference between the states |a1 
+and |a2 .
+     Thus we obtain a very important result: The amount of overlap of the rel-
+ative states |b1  and |b2  of B that are one-to-one correlated with the states
+|a1  and |a2  of A [see (2.42)] quantiﬁes the degree of interference in the
+{|a1  , |a2 } basis that can be measured on A. This immediately connects
+with our earlier observation in Sect. 2.3.2. There, we had introduced an in-
+tuitive notion of the degree of entanglement present in a bipartite pure state

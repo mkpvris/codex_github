@@ -1,0 +1,50 @@
+136     3 Localization Due to Environmental Scattering
+
+for the scattering constant for the case of a free electron range from Λ ≈
+100 cm−2 s−1 for an environment of thermal (300 K) photons down to Λ ≈
+10−15 cm−2 s−1 for an environment of solar neutrinos [166].
+    Although these values are much smaller than those obtained for meso-
+scopic and macroscopic objects above, they still show that the coherent
+spreading of wave packets induced by the free Schrödinger evolution is ef-
+ﬁciently suppressed at the level of the system. Recall that in the beginning
+of this chapter we had shown that the wave function of an electron with an
+initial spatial width of 1 Å would very quickly become completely delocalized
+under purely unitary time evolution, reaching a width of about Δx = 108 cm
+within a second [see (3.3)]. Our numerical estimates demonstrate that lo-
+calization of such a spread-out wave packet would occur within less than a
+second even if only the environment of solar neutrinos was taken into account.
+Thermal photons, on the other hand, would lead to an extremely short deco-
+herence time of about 10−16 s for the electron described by this delocalized
+wave packet. However, it is very important to keep in mind that for micro-
+scopic particles such as electrons the assumption of a recoil-free interaction
+(on which our above derivation of the expression for the localization rate
+is based) is usually not physically reasonable. Therefore we should not take
+these numerical estimates too literally.
+
+3.4.2 Scattering of Air Molecules
+
+Let us now consider the scattering of air molecules. Needless to say, this type
+of environment constitutes a very important source of decoherence in the
+everyday world around us. Air molecules are matter particles whose thermal
+de Broglie wavelength (2.114) is typically very short. For example, an O2
+molecule at room temperature has a thermal de Broglie wavelength of about
+λdB ≈ 2 × 10−11 m, or about 20 Å. At T = 3 K, the wavelength is ten times
+longer, i.e., λdB ≈ 2 × 10−10 m, or about 200 Å. If we again take “dust”
+particles with typical extensions between a = 10−6 cm and a = 10−3 cm
+as our objects of interest, then it is clear that we are here in the regime
+in which the relevant wavelength of the scattering environmental particle is
+much shorter than the size of the object.
+     In this case, we may take the cross section |f (q n̂, q n̂ )| to be a constant
+                                                                   2
+    2
+|f | such that the cross section integrated over all orientations is simply equal
+to the geometric cross section πa2 of the object,
+                           
+                                      2         2 !
+                              dn̂ |f | = 4π |f | = πa2 ,                      (3.69)
+
+                  2
+which implies |f | = a2 /4.
+   Since our goal is to determine lower-bound estimates of the decoherence
+rate, let us again employ the long-wavelength limit of Sect. 3.3.2. That is, we
+shall assume that the coherent separation Δx between the two position-space

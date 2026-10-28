@@ -1,0 +1,48 @@
+300    7 Decoherence and Quantum Computing
+
+7.1.4 Examples of Famous Quantum Algorithms
+
+In the years following Deutsch’s paper, researchers busied themselves with
+ﬁnding computational problems that would demonstrate the superior power
+of a quantum computer over a classical computer [339–343]. Initial attempts
+were rather unfruitful, until in 1994 Peter Shor [344,345] presented a quantum
+algorithm that could solve the factoring problem (i.e., the task of decompos-
+ing a given integer into a product of prime numbers) in only polynomial
+time—namely, in time O(N 2 ) for an N -digit number. By contrast, solving
+the factoring problem on a classical computer is widely believed (although
+not rigorously proved) to require exponential time and is therefore essentially
+impossible to accomplish on such a computer for any reasonably large num-
+ber. The importance of Shor’s discovery may not lie as much in its potential
+practical applications as in the fact that the algorithm plays, as Steane [336]
+put it, a “conceptual role similar to that of Bell’s inequality, in deﬁning some-
+thing of the essential nature of quantum mechanics.”
+    It is fair to say that Shor’s algorithm was the root of much of the initial
+and continuing interest that surrounds the ﬁeld of quantum computing. Since
+then, progress in ﬁnding new algorithms that would demonstrate the power
+of quantum computers has been rather slow (cf. [339, 342]). The probably
+most signiﬁcant discovery since Shor’s algorithm has been Grover’s search
+algorithm [346,347]. This algorithm allows for highly eﬃcient database search:
+It is capable of ﬁnding
+                    √      a particular entry in a completely unstructured list
+of N items in O( N ) steps. By contrast, on a classical computer this task
+would take on the order of N steps, since in average we will need to look
+through half of the list (i.e., perform N/2 steps) to ﬁnd a speciﬁc entry. Thus
+a quantum √   computer that implements Grover’s algorithm would be faster by
+a factor O( N ) than any classical computer.
+
+7.1.5 Physical Realizations of Quantum Computers
+
+Our above introduction to quantum computing has been deliberately kept
+rather abstract. We have simply assumed that we have a collection of qubits
+available that we can coherently manipulate through the application of uni-
+tary transformations (gates). We have speciﬁed neither the physical nature of
+the qubits nor how such gate operations are implemented in practice. In fact,
+the area of research on experimental realizations of prototype quantum com-
+puters (systems containing a few qubits that can be coherently controlled) is
+vast, and it would be completely outside of the scope of this book to attempt
+to give an overview of this rapidly evolving ﬁeld.
+    Just to give the reader a ﬁrst idea, in Table 7.1 we list some of the possible
+physical realizations of the qubits and control mechanisms (which implement
+gates and measurements) that may have the potential to mature into full-
+blown quantum computers at some point in the future. Each technology has
+its advantages and disadvantages, which can in general be traced back to

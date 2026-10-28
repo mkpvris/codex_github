@@ -1,0 +1,43 @@
+% 原文 p.98（後半）
+
+
+\subsectionlink{仮想デコヒーレンスと量子的「消去」}
+2.7節で論じたように、系と相互作用する多数の自由度を制御できないことによって生じる、局所的な位相関係の非局在化の実効的不可逆性は、デコヒーレンスの目印である。そのような「実の」デコヒーレンスと、真に、あるいは実効的に可逆な位相の非局在化を区別し、後者を仮想デコヒーレンスと呼ぶ。
+
+% 原文 p.99
+\hypertarget{srcpage:99}{}\label{srcpage:99}
+位相の非局在化を真に逆転し、重ね合わせを系の水準に再局在化できる可能性は、大域的な系と環境の発展が完全にユニタリであることに基づく。系と環境の組合せに適切なユニタリ逆変換を加えれば、系と環境のもつれがほどけ、元の分離可能な系と環境の積状態を力学的に回復する。このデコヒーレンスの完全な逆転は、実質的に時間の矢の逆転に対応し、波動関数の成分を局所的に再結合する、実際の再コヒーレンス過程を記述する。これは、磁場によって分離された二本の原子ビームを、その後再結合、つまり再集束する、可逆なStern--Gerlach実験\cite{ref126,ref127}に類似する。実際には、そのような可逆なデコヒーレンスは、「人工的環境」として働く、完全に制御された第二の系へ、系を結合することによって、実験的に研究できるだろう。この考えを実験で実現するための具体的提案を、6.1.4節で論じる。
+
+系に対するデコヒーレンスの影響は、デコヒーレンス前の元の重ね合わせ状態を再構成することによっても、実効的に逆転できる。そのような元の状態の実効的再構成の例は、量子消去という名で知られるようになった\cite{ref075,ref128,ref129,ref130}。同様の考えは、量子コンピュータの誤り訂正の概念の基礎にもある（7.4節）。量子的「消去」の基本方式は、文献では典型的に次のように述べられる（たとえば文献\cite{ref130}）。引用符を付ける理由は後に説明する。再び二重スリット実験を考え、経路検出器が、粒子がどのスリットを通るかを測定する。系と検出器の複合発展は、式(2.65)、すなわち
+\begin{equation}\frac1{\sqrt2}(\lvert\psi_1\rangle+\lvert\psi_2\rangle)\lvert\text{「準備完了」}\rangle\longrightarrow\frac1{\sqrt2}(\lvert\psi_1\rangle\lvert1\rangle+\lvert\psi_2\rangle\lvert2\rangle)\tag{2.122}\end{equation}
+の形となる。経路検出器に、明示的な読み出し装置を結合する。測定相互作用は
+\begin{equation}\lvert\pm\rangle\lvert\Phi_0\rangle\longrightarrow\lvert\pm\rangle\lvert\Phi_\pm\rangle\tag{2.123}\end{equation}
+と仮定する。ここで$\lvert\Phi_0\rangle$は読み出し装置の初期状態、$\lvert\pm\rangle$は経路検出器の共役状態、
+\begin{equation}\lvert\pm\rangle\equiv\frac1{\sqrt2}(\lvert1\rangle\pm\lvert2\rangle)\tag{2.124}\end{equation}
+である。その結果、粒子、経路検出器、読み出し装置からなる全系の発展は、次となる。
+
+% 原文 p.100
+\hypertarget{srcpage:100}{}\label{srcpage:100}
+\begin{equation}\begin{split}
+&\frac1{\sqrt2}(\lvert\psi_1\rangle+\lvert\psi_2\rangle)\lvert\text{「準備完了」}\rangle\lvert\Phi_0\rangle\\
+&\quad\longrightarrow\frac1{\sqrt2}(\lvert\psi_1\rangle\lvert1\rangle+\lvert\psi_2\rangle\lvert2\rangle)\lvert\Phi_0\rangle\\
+&\quad=\frac1{\sqrt2}(\lvert\psi_+\rangle\lvert+\rangle+\lvert\psi_-\rangle\lvert-\rangle)\lvert\Phi_0\rangle\\
+&\quad\longrightarrow\frac1{\sqrt2}(\lvert\psi_+\rangle\lvert+\rangle\lvert\Phi_+\rangle+\lvert\psi_-\rangle\lvert-\rangle\lvert\Phi_-\rangle).
+\end{split}\tag{2.125}\end{equation}
+ここで$\lvert\psi_\pm\rangle$は式(2.79)で定義した共役状態である。
+
+発展(2.125)は、読み出し装置が、粒子の経路の情報を含まない経路検出器の状態、すなわち$\lvert\pm\rangle$と量子的に相関することを示す\footnote{状態$\lvert+\rangle$、$\lvert-\rangle$の一方で記述される検出器について、二つの可能な経路のどちらを記録したかを調べる測定をすると、結果$\lvert1\rangle$、$\lvert2\rangle$は等しい確率で得られるからである。}。量子力学の標準的な収縮の描像では、読み出し装置の測定は、式(2.125)の右辺の終状態を、成分$\lvert\psi_+\rangle\lvert+\rangle\lvert\Phi_+\rangle$と$\lvert\psi_-\rangle\lvert-\rangle\lvert\Phi_-\rangle$の一方へ射影する。言い換えれば測定は、粒子の経路を推論できない状態に、系を「強制」する。
+
+したがって、経路成分$\lvert\psi_1\rangle$、$\lvert\psi_2\rangle$の間の干渉は、重ね合わせ$\lvert\psi_\pm\rangle$に具現されるように、実際の局所的な再コヒーレンス過程とは違い、非局所的に回復される。この意味で、系の初めの重ね合わせ$\lvert\psi_+\rangle$、または位相を逆にした$\lvert\psi_-\rangle$が再構成される。そのため消去は、粒子がスクリーンに記録された後まで遅らせてもよい。そのような「遅延選択」実験（たとえば文献\cite{ref131}）の精神は、Wheelerが初めて提案した思考実験\cite{ref041}に遡る。量子的「消去」は、光子による二重スリット実験\cite{ref135}を含む、いくつかの実験\cite{ref131,ref132,ref133,ref134,ref135}で実証された。
+
+しかし「量子消去」という用語は、かなり誤解を招くことを強調しておく。これを見るため、二つの場合を区別しよう。第一に、粒子と経路検出器の相互作用(2.122)が、不可逆だと仮定してよい。これは真の意味の測定を記述する。不可逆性を測定の定義的性質と見なせることを思い出そう。開いた系の描像では、この不可逆性は、不可避な環境相互作用と、その結果として成分状態$\lvert\psi_1\rangle\lvert1\rangle$、$\lvert\psi_2\rangle\lvert2\rangle$間の位相関係が非局在化することから生じる。そのとき経路測定の記録は、アクセス不能な環境に消えないよう刻まれるので、実際にこの情報を消去できない\footnote{もちろん、この議論では、経路測定の不可逆性の具体的な起源は重要でない。たとえば、単に波動関数の収縮が不可逆性をもたらすと仮定してもよい。}。
+
+% 原文 p.101
+\hypertarget{srcpage:101}{}\label{srcpage:101}
+あるいは、式(2.122)を、可逆で、したがって仮想的でしかない、経路「測定」を記述すると見なしてもよい\footnote{ここで引用符を使うのは、可逆な相互作用を正当な測定と見なすのが難しいことを、明確にするためである。また式(2.125)の第一行から第二行へ、粒子と検出器のもつれ状態を変換すると、経路検出器がそもそも何を「測定」したのかという問いが、未解決のままになることにも注意しよう。式(2.125)の第一行からは、系の$\{\lvert\psi_1\rangle,\lvert\psi_2\rangle\}$基底の「測定」を推論するが、第二行は、共役基底$\{\lvert\psi_+\rangle,\lvert\psi_-\rangle\}$の「測定」を意味する。もちろん、これは単に2.5.2節の優先基底の問題である。}。古典物理学では、「消去」は、たとえば熱への変換による、情報の不可逆な破壊に対応する\cite{ref136}。量子的状況の類似の過程は、可逆な経路「測定」の仮想的な「結果」$\lvert1\rangle$、$\lvert2\rangle$を、以前に記録した粒子の経路に、制御されない仕方で依存し、そのためもはや経路情報を符号化しない、新たな状態$\lvert d_1\rangle$、$\lvert d_2\rangle$へ、不可逆に変えることで表される。したがって経路情報の観点では、$\lvert d_1\rangle$、$\lvert d_2\rangle$は区別できず、まとめて$\lvert d_0\rangle$と書いてよい。このリセット\cite{ref136,ref137}は、たとえば熱浴として実現される、制御されない情報の「排出先」に検出器を結合して、次の形の実効的に不可逆な発展を起こすことで達成できる。
+\begin{equation}\begin{split}
+&\frac1{\sqrt2}(\lvert\psi_1\rangle\lvert1\rangle+\lvert\psi_2\rangle\lvert2\rangle)\lvert\chi_0\rangle\\
+&\quad\longrightarrow\frac1{\sqrt2}(\lvert\psi_1\rangle\lvert d_1\rangle\lvert\chi_1\rangle+\lvert\psi_2\rangle\lvert d_2\rangle\lvert\chi_2\rangle)\\
+&\quad\equiv\frac1{\sqrt2}(\lvert\psi_1\rangle\lvert\chi_1\rangle+\lvert\psi_2\rangle\lvert\chi_2\rangle)\lvert d_0\rangle.
+\end{split}\tag{2.126}\end{equation}
+ここで$\lvert\chi_0\rangle$は排出先の初期状態である。元の経路検出器の状態$\lvert1\rangle$、$\lvert2\rangle$の差は、決定論的に排出先へ転送されなければならず、それによって検出器のエントロピーが増え、初めの可逆な経路「測定」から得た情報を補償する。したがって排出先の状態$\lvert\chi_1\rangle$、$\lvert\chi_2\rangle$は識別可能であり、式(2.126)で実装する真の経路情報の消去は、明らかに粒子に追加の空間的デコヒーレンスを導入し、今度は必然的に不可逆となる。消去過程(2.126)は、発展(2.125)と大きく異なる。実際、式(2.125)が成り立つためには、式(2.126)の意味で経路情報の不可逆な破壊、すなわち実際の消去は、起こってはならない。

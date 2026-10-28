@@ -1,0 +1,47 @@
+                  7.5 Quantum Computation on Decoherence-Free Subspaces                    325
+    &                                                             '
+        Iˆ(1) ⊗ · · · ⊗ Iˆ(j−1) ⊗ σ̂z(j) ⊗ Iˆ(j+1) ⊗ · · · ⊗ Iˆ(N ) |si  = λ(j) |si    (7.56)
+
+for all i and 1 ≤ j ≤ N . As the reader may easily verify, there is only a single
+state that fulﬁlls this eigenvalue problem, namely, the computational-basis
+state |0 · · · 0. Since we need at least a two-dimensional subspace to encode
+a single logical qubit, the case of independent decoherence in the spin–boson
+model does not allow for the existence of a DFS for quantum computation. In
+the language of pointer subspaces, there is only a single exact pointer state,
+and this environment-superselected preferred state of the system will be the
+ground state |0 · · · 0.
+    Of course, in realistic settings neither the assumption of purely indepen-
+dent decoherence nor the limit of entirely collective decoherence will be com-
+pletely appropriate. Fortunately, however, we have now two powerful, comple-
+mentary methods at our disposal for combating decoherence in each of these
+two limiting cases. We can use encoding in DFS to protect our qubit sys-
+tem from collective decoherence eﬀects, and we can recover from single-qubit
+errors due to independent decoherence using the active error-correction meth-
+ods described in Sect. 7.4. In fact, these two approaches can be tied together
+(or “concatenated” [94]) to allow for universal fault-tolerant quantum com-
+putation even when the restriction to single-qubit errors is dropped [95, 373].
+
+7.5.2 Experimental Realizations of Decoherence-Free Subspaces
+
+The results of the ﬁrst experiment that explicitly demonstrated the existence
+of a DFS were reported by Kwiat and coworkers in 2000 [374]. One should
+emphasize that the experiment was more a proof-of-principle demonstration
+than an actual realization of a DFS relevant to quantum computation. It was
+simply shown that a particular Bell state [see (2.7)] of a pair of photons was
+essentially immune to collective decoherence, while photon pairs in the other
+three Bell states suﬀered signiﬁcant decoherence, in agreement with theoret-
+ical predictions. The experiment used an artiﬁcial environment, namely, two
+little pieces of quartz oriented at adjustable angles with respect to the paths
+of the two photons, to induce a controllable decohering interaction with the
+photons passing through the quartz. Aligning the two quartz pieces at iden-
+tical angles (modulo 90o ) induced collective decoherence. Changing the angle
+then corresponded to inducing decoherence in diﬀerent bases. In essence, this
+experiment simply demonstrated the existence of a single pointer state.
+     The results of another experiment on DFS were reported in 2001 by
+Kielpinski et al. at NIST [375]. The authors used two-qubit Bell states sim-
+ilar to those employed in the experiment by Kwiat et al. [374] described in
+the previous paragraph. However, this time they encoded the single logical
+qubit into a DFS of a pair of two trapped and strongly interacting 9 Be+ ions.
+The experiment demonstrated that superpositions of the encoded basis states
+were indeed immune to the inﬂuence of collective decoherence. The observed
+decay of coherence was much slower than for an unencoded qubit state and

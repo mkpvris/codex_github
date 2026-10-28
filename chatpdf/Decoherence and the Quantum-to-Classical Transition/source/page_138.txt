@@ -1,0 +1,54 @@
+                                         3.2 Calculating the Decoherence Factor       123
+
+                                        Ŝ0 = Iˆ + iT̂ .                            (3.17)
+
+The T -matrix is well-known from standard quantum-mechanical scattering
+theory (see, e.g., [58]). It is used here since its elements in the momentum
+eigenbasis {|q} of the scattered particle are conveniently deﬁned in terms of
+the scattering amplitude f (q, q  ) as
+                         i                             i
+     q| T̂ |q   =        δ(q − q  )f (q, q  ) =      δ(E − E  )f (q, q  ).   (3.18)
+                       2πq                          2πm
+Here m is the mass of the environmental particle, and q = |q|. The term
+δ(E − E  ) ensures energy conservation, as mandated by the assumption of
+recoil-free elastic scattering. We note that |f (q, q  )| is an experimentally
+                                                          2
+                                                            dσ
+accessible quantity, namely, the diﬀerential cross section dΩ  for the scattering
+process, which is deﬁned as
+                                   dσ   scattered ﬂux
+                                      ≡               .                             (3.19)
+                                   dΩ    incident ﬂux
+Since the scattering operator Ŝ0 is unitary,
+
+                                          Ŝ0 Ŝ0† = I,
+                                                     ˆ                              (3.20)
+
+we obtain the following relation from the deﬁnition (3.17) of the T -matrix,
+
+                                   T̂ T̂ † + i(T̂ − T̂ † ) = 0.                     (3.21)
+
+This result will come in handy below.
+   Using the expression (3.12) for the environmental states, the overlap
+χ(x )|χ(x) is given by
+
+                             χ(x )|χ(x) = χi | Ŝx†  Ŝx |χi  .               (3.22)
+
+Evidently, this expression is simply equal to the expectation value of the
+product Ŝx†  Ŝx of the translated scattering operators (3.11) in the (pure) state
+|χi  of the incident environmental particle (the generalization to mixed states
+is straightforward). Using the trace rule (2.17), we can therefore equivalently
+rewrite (3.22) as
+                                              $               %
+                         χ(x )|χ(x) = TrE ρ̂E (0)Ŝx†  Ŝx ,             (3.23)
+
+with ρ̂E (0) = |χi χi |. This is the expression of interest that we shall now
+evaluate. Let us begin by assuming the environmental particle is restricted to
+a box-normalization volume V . Following [160], we deﬁne momentum eigen-
+      q  which are normalized over the volume V ,
+kets |
+                                          "         #1/2
+                                        (2π)3
+                                   q ≡
+                                  |                       |q .                    (3.24)
+                                          V

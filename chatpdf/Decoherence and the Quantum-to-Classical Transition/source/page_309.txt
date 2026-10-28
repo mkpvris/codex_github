@@ -1,0 +1,48 @@
+                            7.1 A Brief Overview of Quantum Computing           297
+
+    The key point is now that any such transformation Û , even if it acts on
+only a single qubit, is capable of changing the global state of the N -qubit
+system. For a maximally entangled state, for example, a unitary operation
+applied to a single qubit will in general alter the global state of all N qubits. It
+thus operates simultaneously on all 2N basis states of the total qubit system.
+As a simple example, suppose a two-qubit entangled state of the Bell form
+(2.7a),
+                            +
+                           Φ = √1 (|00 + |11) ,                            (7.6)
+                                       2
+is subject to a unitary transformation Û that acts only on the ﬁrst qubit,
+e.g.,
+                        Û = (−|01| + |10|)1 ⊗ Iˆ2 .              (7.7)
+Then the transformed state reads
+                               1
+                       Û Φ+ = √ (|10 − |01) .                             (7.8)
+                                  2
+We may view this feature as a consequence of the nonlocal, holistic nature
+of entangled multi-particle states. Again, this is to be contrasted with the
+classical situation, in which we would either need to perform the same oper-
+ation 2N times, or have 2N “processors” operating in parallel, each of which
+applies one classical logic gate.3 We remark here that, in practice, one needs
+to consider only quantum gates that act on one or two qubits at a time, since
+one can show that a certain set of such one-qubit and two-qubit gates is suﬃ-
+cient to perform any quantum computation [56,331–334]. This is a very useful
+result, since it is in practice diﬃcult to engineer interactions between more
+than two qubits that would be required to physically implement multi-qubit
+gates.
+
+7.1.2 Reading Out a Quantum Computer
+
+In the case of a classical computer, we obtain the result of the computation
+simply by reading out the ﬁnal values of all bits. We can do this at any time
+without altering the state of the computer. The corresponding procedure in
+remain suﬃciently robust to decoherence over time, its general decoherence prop-
+erties are likely to be similar to those of gate-based quantum computation. For an
+accessible introduction to cluster-state quantum computation, we refer the reader
+to [329].
+    3
+      In analogy with this observation, quantum computers are often said to exhibit
+massive “quantum parallelism” (this feature was pointed out early by Zurek under
+the name of “quantum Monte Carlo” [330]). However, this term should be inter-
+preted with care. Parallelism creates the impression of many independent processes
+performed in parallel, whereas in the quantum case we really should think of a
+single quantum-mechanical “whole” (namely, the global quantum state) subject to
+a single operation (the quantum gate).

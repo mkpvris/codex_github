@@ -1,0 +1,46 @@
+178    5 Canonical Models For Decoherence
+
+distinguish the two sources of decoherence, namely, delocalized bosonic ﬁeld
+modes and localized spin-type modes.
+
+
+5.2 Quantum Brownian Motion
+The model for quantum Brownian motion consists of a particle moving in one
+spatial dimension and interacting linearly with an environment of indepen-
+dent harmonic oscillators in thermal equilibrium at a temperature T . Quan-
+tum Brownian motion constitutes the probably most important and most
+studied decoherence model. This model not only is the default choice for es-
+timating decoherence eﬀects especially on macroscopic everyday-world scales,
+but also plays an extremely important role in general studies of dissipative
+quantum systems [18, 218]. We shall therefore spend some time investigating
+the subject of quantum Brownian motion.
+    We will proceed as follows. First, in Sect. 5.2.1, we shall derive the Born–
+Markov master equation for the model using the formalism developed in
+Chap. 4. In Sect. 5.2.2, we shall discuss the master equation for the special
+case of the central particle’s being conﬁned to a harmonic-oscillator potential.
+We further evaluate the resulting master equation in Sect. 5.2.3 by focusing
+on a speciﬁc form of the so-called spectral density, which describes the prop-
+erties of the environment. In Sect. 5.2.4, we will then consider the special case
+of a high-temperature environment and derive the corresponding Caldeira–
+Leggett master equation, which plays a central role in studies of decoherence.
+In Sect. 5.2.5, we will analyze the dynamics of quantum Brownian motion by
+studying the time evolution of a superposition of two Gaussian wave packets
+in phase space. We will show how the interaction with the environment leads
+to the emergence of preferred states that are localized in phase space. The
+dynamical evolution of these pointer states then corresponds to the “quan-
+tum version” of Newtonian trajectories. Some cautionary remarks against
+an overgeneralization of the results of the Caldeira–Leggett model (as well as
+the general model for quantum Brownian motion) will be made in Sect. 5.2.6.
+Finally, in Sect. 5.2.7, we will brieﬂy discuss the exact master equation for
+quantum Brownian motion.
+
+5.2.1 Derivation of the Born–Markov Master Equation
+
+First, let us deﬁne our model. As usual, we decompose the total system–
+environment Hamiltonian Ĥ into three parts [see (2.85) and (4.12)],
+
+                            Ĥ = ĤS + ĤE + Ĥint .                       (5.2)
+
+For now, we shall leave the self-Hamiltonian ĤS of the system unspeciﬁed.
+(In Sect. 5.2.2 below, we will specialize on the case of a harmonic-oscillator
+potential.) The self-Hamiltonian ĤE of the environment describes a collection

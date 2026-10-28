@@ -1,0 +1,51 @@
+36      2 The Basic Formalism and Interpretation of Decoherence
+
+all possible outcomes oi of this measurement, weighted by the correspond-
+ing Born probabilities. But this is precisely the deﬁnition of the expectation
+value Ô of the observable Ô. This connection between the (mathematical)
+procedure of the trace of the operator ρ̂Ô and the (physical) concept of an
+expectation value of a measurement is known as the trace rule,10
+
+                                  Ô = Tr (ρ̂Ô).                           (2.17)
+                  ˆ we get the expected result
+If we choose Ô = I,
+
+                                     Tr ρ̂ = 1.                               (2.18)
+
+This relation simply reﬂects the fact that pure states are normalized, i.e.,
+            2
+that |ψ|ψ| = 1. Before proceeding, we emphasize again that the concept
+and interpretation of the trace fundamentally relies on the Born rule. The
+importance of this point will become clear later.
+
+2.4.2 Mixed-State Density Matrices
+
+So far, using density matrices to describe the state of a system has not re-
+ally yielded any advantage. If our system is in a completely known quantum
+state, then the descriptions of a system in terms of a (pure) quantum state
+|ψ or of the corresponding (pure-state) density matrix (2.11) are completely
+equivalent, both formally and physically. However, we may also describe our
+system by a mixed state. A mixed state expresses insuﬃcient information
+about the state of the system, in the sense that the system is (before the
+measurement) in one of the pure states |ψi  (which do not need to be orthog-
+onal) but the observer simply does not know in which. Therefore we can only
+ascribe probabilities pi ≥ 0 to each of the states |ψi .11
+    Such a situation typically arises if the physical procedure used to prepare
+a quantum state contains a probabilistic element (albeit with known probabil-
+ities). For instance, the preparation device may be able to prepare one of two
+possible states |ψ1  and |ψ2  (Fig. 2.3). Which particular state is prepared is
+decided by a spin measurement on a spin- 12 particle in an unknown quantum
+state, which will yield “spin up” and “spin down” with equal probabilities
+
+Statement (i) is, in essence, the collapse postulate of quantum mechanics and hence
+often separated out from the Born rule, reducing the content of the Born rule to
+the prescription (ii) for calculating the actual values of the probabilities.
+   10
+      Of course, the trace rule is completely equivalent to computing pure-state ex-
+pectation values via Ô = ψ| Ô |ψ, as the reader can immediately conﬁrm by
+evaluating the trace (2.16) using a set of orthonormal basis states that contains the
+state |ψ of the system.
+   11
+      For simplicity, we shall consider here the case of a ﬁnite-dimensional Hilbert
+space. The generalization to the case of inﬁnitely many dimensions is rather
+straightforward (see, for example, [58]).

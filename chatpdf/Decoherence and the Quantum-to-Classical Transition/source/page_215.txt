@@ -1,0 +1,47 @@
+                                         5.2 Quantum Brownian Motion        201
+
+then evolves on a dynamical timescale. Now the diﬀusion terms in (5.77)
+can have an eﬀect on Aint , resulting in positive values of Aint , which in turn
+leads to the suppression of the oscillations of the Wigner interference term
+Wint (X, P, t), see (5.72b).
+    Therefore, in the case of a superposition of Gaussian wave packets sepa-
+rated in momentum only, decoherence is related to two distinct timescales.
+First, a comparably slow dynamical timescale on which the superposition of
+positions is generated (i.e., on which Xc becomes suﬃciently diﬀerent from its
+initial value of zero) such that the environmental monitoring of the position
+of the system can have an eﬀect. Second, once this superposition of positions
+is dynamically created, it is rapidly decohered on the decoherence timescale
+for such position-space superpositions (as given by, e.g., (5.80) for the case
+of high-temperature ohmic environments). Thus the decoherence rate in mo-
+mentum is continuously limited by the rate of the dynamical evolution of
+the system. This means that the only timescale relevant to decoherence in
+momentum is the dynamical timescale. This analysis provides the rigorous
+support for our initial intuitive explanation of the much slower decoherence
+rate in momentum space when compared to the decoherence rate in position
+space.
+    What are the resulting preferred states (i.e., the pointer states) singled
+out by the interaction with the environment? To answer this question, one
+can compute the change in purity ς = Tr ρ̂2S [see (2.30)] of the reduced density
+matrix ρ̂S of the harmonic-oscillator system. We can calculate this change
+from the Born–Markov master equation (5.25). We shall here neglect the
+inﬂuence of the momentum-damping term γ, because one can show that
+this term always leads to an unphysical increase in purity over time that
+is completely insensitive to the form of the density matrix [16]. Omitting
+this term can be well justiﬁed in the limit of weak damping, i.e., in the
+case of an “underdamped” harmonic oscillator. We shall also neglect the
+anomalous-diﬀusion term, which is appropriate in the high-temperature limit
+(see Sect. 5.2.4). With these assumptions, the instantaneous change in purity
+is found to be [86]
+                               d
+                                 ς(t) = −4DΔX 2 (t),                      (5.81)
+                              dt
+where ΔX 2 (t) = X̂ 2 t − X̂2t is the dispersion in position space. Thus
+we see that the instantaneous decrease in purity, and thus the amount of
+decoherence, is minimized if this spatial dispersion is minimized. That is, the
+instantaneous pointer states would be those perfectly localized in position.
+We may have anticipated this result based on the fact that the environment
+directly monitors the position of the system.
+    However, the intrinsic evolution of the harmonic-oscillator system as given
+by the self-Hamiltonian (5.23) also plays an important role. In fact, as is
+well known for a harmonic oscillator, over the course of an oscillation period
+T = 2π/Ω position and momentum interchange their roles. This symmetry

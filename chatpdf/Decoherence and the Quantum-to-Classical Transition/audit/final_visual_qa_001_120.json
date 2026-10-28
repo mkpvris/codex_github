@@ -1,0 +1,51 @@
+{
+  "reviewer": "translate_ch08_09",
+  "pdf": "pdf/Schlosshauer_Decoherence_jp.pdf",
+  "pdf_total_pages": 348,
+  "reviewed_pdf_page_range": [
+    1,
+    120
+  ],
+  "reviewed_contact_sheets": [
+    "audit/final_render/qa_first120_01.jpg",
+    "audit/final_render/qa_first120_02.jpg",
+    "audit/final_render/qa_first120_03.jpg",
+    "audit/final_render/qa_first120_04.jpg",
+    "audit/final_render/qa_first120_05.jpg",
+    "audit/final_render/qa_first120_06.jpg",
+    "audit/final_render/qa_first120_07.jpg",
+    "audit/final_render/qa_first120_08.jpg",
+    "audit/final_render/qa_first120_09.jpg",
+    "audit/final_render/qa_first120_10.jpg"
+  ],
+  "contact_sheet_source": "All 120 final PDF page PNGs produced by root render_final.py; helper composed identical 12-page contact sheets before root completed rendering remaining pages.",
+  "full_page_pngs_inspected": [
+    1,
+    3,
+    5,
+    10,
+    26,
+    30,
+    77,
+    93,
+    99,
+    112,
+    119
+  ],
+  "checks": {
+    "title_and_front_matter": "Japanese main title and smaller English original title, author/affiliation, publisher link, date-only field, publication information, dedication, preface and contents display cleanly.",
+    "headings_and_body": "All contact-sheet pages inspected for page margins, paragraph flow, unexpected blank pages, missing text blocks, overlapping text and visible missing glyphs; no defects detected.",
+    "equations": "Equations and equation numbers stay within page area. Full-page checks included long nested tensor/sum expression on PDF77 and Kraus completeness derivation at bottom of PDF93; no cuts or overlaps.",
+    "tables": "Tables3.1 and3.2 on PDF112 inspected at full page. Headers, superscript powers, row labels, captions and rules are complete and readable.",
+    "figures": "Figure crops, mathematical diagrams and captions within pages1–120 inspected. Full-page checks included Figure2.2 on PDF30 and Figure3.6 on PDF119. No clipped labels/captions detected. Original internal English labels intentionally retained.",
+    "footnotes": "Footnote blocks fit above footers. German original quotations on PDF26 and PDF99 were verified to be explicitly introduced original-language quotations, not untranslated body prose.",
+    "page_breaks": "PDF4 is the intentionally sparse dedication. PDF96 contains final short continuation of Chapter2 summary before Chapter3 starts on PDF97; intentional chapter break, not missing content."
+  },
+  "visual_issues": [],
+  "text_or_image_changes_made": false,
+  "status": "passed",
+  "pdf_sha256": "21cfe8c7fb3dcf4732092ce746eccf60cd6ecec717295e04ae63716633512d36",
+  "revalidated_pdf_sha256": "14e941517ab64e98111561b2154a39dfb45ca6962ac86bba5742e9a1df90c737",
+  "revalidation": "All page images1–120 remain pixel-identical through both subsequent equation asset repair renderings. See render_manifest.json and render_history_*.json.",
+  "final_pdf": "pdf/Decoherence and the Quantum-to-Classical Transition.pdf"
+}

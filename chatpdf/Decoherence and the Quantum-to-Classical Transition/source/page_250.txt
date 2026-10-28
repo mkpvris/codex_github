@@ -1,0 +1,49 @@
+236    5 Canonical Models For Decoherence
+
+system, or, at least, not induce less damping of the system than a “colder”
+environment.
+    However, the temperature dependence of the damping coeﬃcient is rather
+easily explained. For an oscillator bath, each oscillator possesses an inﬁnity
+of energy levels, so there is no upper limit to the amount of energy that
+can be absorbed by the bath. By contrast, a spin- 12 particle has only two
+possible energy levels, so the spin bath as a whole saturates very quickly
+as the temperature (and thus the amount of energy that can be absorbed
+from the system) is increased. It follows that, since the dissipation rate of the
+oscillator bath (in the model for quantum Brownian motion) is temperature-
+independent [see (5.46)], the ability of the spin bath to exert a dissipative
+eﬀect on the system must decrease with increasing temperature. Indeed, the
+temperature dependence of the damping rate as predicted by (5.200) has
+been observed experimentally [244] in physical systems such as glasses, where
+dissipation is due to the interaction of phonon (i.e., oscillator) modes with
+two-level systems [245].
+    The normal-diﬀusion coeﬃcient (5.201), and thus the rate of spatial de-
+coherence, is seen to have no explicit temperature dependence in the case of
+an ohmic spin bath. This is in contrast with the normal-diﬀusion coeﬃcient
+(5.48) in quantum Brownian motion, which scales as coth(Ω/2kB T ), making
+spatial decoherence stronger as we go to higher temperatures of the environ-
+ment. In fact, in the high-temperature limit of the Caldeira–Leggett model,
+we had found a linear increase of D with temperature [see (5.51)].
+    Once again, this diﬀerence between the spin-bath and oscillator-bath set-
+tings can be understood from the point of view of the size of the state spaces
+available to each particle in the environment. The ability of environmental
+oscillators to occupy a signiﬁcant number of increasingly excited energy levels
+with growing temperature translates into shorter and shorter characteristic
+wavelengths present in the environment. The shorter the typical environ-
+mental wavelengths, the better the position of the central system can be
+resolved and thus the more which-path information can be obtained, leading
+to stronger spatial decoherence (see also the discussion in Sect. 5.2.6).
+    By contrast, spin- 12 particles can only occupy two energy levels. The range
+of typical environmental wavelengths, and therefore the rate of spatial deco-
+herence, will saturate very quickly as we increase the temperature. Within the
+context of our particular model, this even leads to a completely temperature-
+independent decoherence rate. In fact, in this model we had assumed that the
+environmental two-level systems move in a symmetric double-well potential.
+Thus the two states of the corresponding spin particle are here associated
+with the same energy, restricting the state space even further. It is easy to
+show that if this symmetry assumption is dropped and an asymmetry term
+             
+of the form i ω2i σ̂z is included in the bath Hamiltonian, the rate of spatial
+                     (i)
+
+decoherence is increased by a constant (but still temperature-independent)
+value. This increase reﬂects the larger state space now available to the bath

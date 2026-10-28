@@ -1,0 +1,51 @@
+232     5 Canonical Models For Decoherence
+                                     
+                          J(Δ) ≡         gi2 δ(Δ − Δi ).                (5.185)
+                                     i
+
+This establishes our ﬁnal expression for the environment self-correlation func-
+tion,
+                        -                                    .
+                                                 Δ
+      C(τ ) = dΔ J(Δ) cos (Δτ ) − i tanh               sin (Δτ ) .      (5.186)
+                                               2kB T
+
+This equation is our main result, which we shall now use to see how the spin
+bath is mapped onto an equivalent bath of oscillators.
+
+Mapping Spins onto Oscillators
+
+Let us contrast our expression (5.186) for the spin-environment self-correlation
+function with the environment self-correlation function (5.15) obtained for the
+case of an harmonic-oscillator bath, which reads
+                               -                                       .
+                                            ω
+        Cosc (τ ) = dω Josc (ω) coth              cos (ωτ ) − i sin (ωτ )
+                                         2kB T
+               ≡ ν(τ ) − iη(τ ),                                        (5.187)
+
+where
+                                         gi2
+                        Josc (ω) ≡              δ(ω − ωi )              (5.188)
+                                     i
+                                         2mi ωi
+is the spectral density of the harmonic-oscillator environment. Here, we have
+added the subscript “osc” in order to distinguish the above expressions from
+their counterparts in the spin-bath case.
+    Comparing expressions (5.186) and (5.187), we see that the explicitly
+temperature-dependent noise kernel ν(τ ) [i.e., the real part of Cosc (τ )] in
+the oscillator-bath case has lost this temperature dependence in the case
+of the spin bath: The real part of C(τ ) in the expression (5.186) does not
+contain any explicit temperature dependence. On the other hand, the imagi-
+nary part of C(τ ) for the spin bath contains a temperature-dependent factor
+tanh(Δ/2kB T ), whereas the corresponding dissipation kernel η(τ ) appearing
+in Cosc (τ ) does not exhibit such an explicit temperature dependence.
+    The only case for which the two expressions (5.186) and (5.187) agree is
+at zero temperature, since tanh(Δ/2kB T ) −→ 1 and coth(ω/2kB T ) −→ 1
+as T −→ 0. This behavior can be understood as follows. At zero tempera-
+ture, both the spins and harmonic oscillators in the respective environments
+will be eﬀectively conﬁned to their ground states and cannot occupy any ex-
+cited states. Thus the characteristic diﬀerence between spins and oscillators—
+namely, that the former are restricted to a two-dimensional state space, while
+the latter can occupy a continuum of energy levels—fades away in the limit
+T −→ 0, and the spin and oscillator baths behave similarly.

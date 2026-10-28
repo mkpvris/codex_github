@@ -1,0 +1,518 @@
+% 原文 printed pp.153--170 / PDF pp.167--184
+\sectionlink{デコヒーレンスのマスター方程式による定式化}
+% 原文 p.153
+\hypertarget{srcpage:153}{}\label{srcpage:153}
+本章では、いわゆるマスター方程式を用いる、デコヒーレンスの動力学の記述を導入する。このようなマスター方程式は、環境Eと相互作用する開いた量子系Sの縮約密度行列$\hat\rho_{\mathrm S}(t)$の時間発展を、直接、便利な形で与える。これを用いれば、まず系と環境の全体の運動を求め、その後、環境の自由度についてトレースを取る必要がなくなる。マスター方程式の方法を動機づけるのは、二つの事情である。第一に、通常、環境や、系と環境の全体の運動には関心がなく、本当に知りたいのは、対象となる系に環境が及ぼす影響だけである。第二に、密度行列の時間発展を解析的に決定することは、しばしば不可能である。そのような場合、近似法を用いて、縮約密度行列の近似的な発展のマスター方程式を得ることができる。
+
+閉じた系の密度行列の運動とは異なり、縮約密度行列の発展方程式は、もちろん一般に非ユニタリーである。環境との相互作用は、通常、系に存在するコヒーレンスの量を変えるからである。より形式的にいえば、縮約密度行列を得るためのトレース操作は非ユニタリーな操作なので、一般にマスター方程式も非ユニタリーでなければならない。
+
+本章の構成は次のとおりである。4.1節ではマスター方程式の基本的な考え方と一般的形式を導入する。4.2節では、非常に重要な種類のマスター方程式、いわゆるBorn--Markovマスター方程式を、やや詳しく論じる。このマスター方程式は、デコヒーレンスの研究で重要な役割を果たす。4.2.2節で与えるこの方程式の導出は、どうしても多少技術的になるので、そこをざっと眺めるだけにするか、完全に飛ばす読者もいるかもしれない。4.3節では、追加の仮定のもとで成り立つ、一般のBorn--Markovマスター方程式の特別で、より単純な形である、いわゆるLindbladマスター方程式を論じる。後で見るように、Lindbladマスター方程式は、デコヒーレンス過程の非常に直観的な表示を可能にする。最後に4.4節では、非Markov的な運動の場合を簡単に論じる。
+
+マスター方程式は、いわゆる量子力学的半群の理論でも重要な役割を果たす。ただし、ここではデコヒーレンスの模型化に焦点を当てるため、マスター方程式と力学的半群の数学的関係は、これ以上論じない。この主題について関心のある読者には、詳しい情報として文献\cite{ref017}の第7章と、BreuerとPetruccioneの著書\cite{ref018}を参照していただきたい。
+
+% 原文 p.154
+\hypertarget{srcpage:154}{}\label{srcpage:154}
+\subsectionlink{一般的形式}
+デコヒーレンスの「通常の」形式では、縮約密度行列$\hat\rho_{\mathrm S}(t)$は
+\begin{equation}
+\hat\rho_{\mathrm S}(t)=\operatorname{Tr}_{\mathrm E}\{\hat\rho_{\mathrm{SE}}(t)\}
+\equiv\operatorname{Tr}_{\mathrm E}\{\hat U(t)\hat\rho_{\mathrm{SE}}(0)\hat U^{\dagger}(t)\}
+\tag{4.1}
+\end{equation}
+によって計算する。$\hat U(t)$は、複合系SEの時間発展演算子である。(4.1)から明らかなように、この方法では、トレース操作によって縮約された記述に到達する前に、必ず全系SEの運動$\hat\rho_{\mathrm{SE}}(t)$を決定しなければならない。本章の導入で述べたように、ある程度複雑な模型系の大部分では、この作業を実際に行うことは、不可能とまではいわなくとも非常に難しい。
+
+これに対し、マスター方程式の形式では、代わりに
+\begin{equation}
+\hat\rho_{\mathrm S}(t)=\hat V(t)\hat\rho_{\mathrm S}(0)
+\tag{4.2}
+\end{equation}
+という形の表式から、$\hat\rho_{\mathrm S}(t)$を直接計算する。演算子$\hat V(t)$は、$\hat\rho_{\mathrm S}(t)$の発展を生成する、いわゆる力学的写像である。$\hat V(t)$は、別の演算子に作用する演算子を表すため、通常「超演算子」と呼ばれる。(4.2)は$\hat\rho_{\mathrm S}(t)$のマスター方程式と呼ばれ、このようなマスター方程式が取りうる最も一般的な形を表す。
+
+明らかに、マスター方程式が厳密であれば、定義上(4.1)と(4.2)は同値でなければならない。すなわち恒等式
+\begin{equation}
+\hat V(t)\hat\rho_{\mathrm S}(0)\equiv\operatorname{Tr}_{\mathrm E}\{\hat U(t)\hat\rho_{\mathrm{SE}}(0)\hat U^{\dagger}(t)\}
+\tag{4.3}
+\end{equation}
+が成り立たなければならず、その場合、マスター方程式は(4.1)の自明な書き換えにすぎない。
+
+したがって、マスター方程式の力が発揮されるのは、系と環境の状態と運動について、何らかの仮定を課して初めてである。そのような仮定により、全体の厳密な運動$\hat\rho_{\mathrm{SE}}(t)$を計算できないときでも、$\hat\rho_{\mathrm S}(t)$の近似的な時間発展を決定できる。実際、ここでは、ある近似から得られる、時間について局所的な1階微分方程式として書けるマスター方程式に、注意を限定する。すなわち
+\begin{equation}
+\frac{\mathrm d}{\mathrm dt}\hat\rho_{\mathrm S}(t)=\hat L[\hat\rho_{\mathrm S}(t)]
+=\underbrace{-\mathrm i[\hat H'_{\mathrm S},\hat\rho_{\mathrm S}(t)]}_{\text{ユニタリーな発展}}
++\underbrace{\hat D[\hat\rho_{\mathrm S}(t)]}_{\text{デコヒーレンス}}
+\tag{4.4}
+\end{equation}
+という形のものである。
+
+% 原文 p.155
+\hypertarget{srcpage:155}{}\label{srcpage:155}
+この方程式は、時刻$t$での$\hat\rho_{\mathrm S}$の変化が、同じ$t$で評価した$\hat\rho_{\mathrm S}$のみに依存し、他の時刻$t'\ne t$には依存しないという意味で、時間について局所的である。(4.4)に現れる超演算子$\hat L$は$\hat\rho_{\mathrm S}(t)$に作用し、通常、環境の初期状態とHamiltonianの各項に依存する。この超演算子の背後にある物理的直観を伝えるため、$\hat L$を二つの部分に分解した。
+\begin{enumerate}
+\item Hamiltonian $\hat H'_{\mathrm S}$との、通常のLiouville--von Neumann交換子で与えられるユニタリーな部分。このHamiltonianは、環境がなければSの発展を生成する、Sの摂動のない自由Hamiltonian $\hat H_{\mathrm S}$とは、一般に同一ではないことに注意する必要がある。環境の存在は、しばしば自由Hamiltonianを摂動し、系のエネルギー準位の繰り込みをもたらすからである。この効果（しばしばLambシフトの寄与と呼ばれる）は、環境によって生じる非ユニタリーな発展とは無関係で、縮約された運動のユニタリーな部分だけを変えることを強調しておく。
+\item 環境によるデコヒーレンス（場合によっては散逸も）を表す、非ユニタリーな部分$\hat D[\hat\rho_{\mathrm S}(t)]$。以下では、この項が主な関心の対象となる。
+\end{enumerate}
+系の発展が完全にユニタリーなら、$\hat D[\hat\rho_{\mathrm S}(t)]=0$であり、(4.4)は単に
+\begin{equation}
+\frac{\mathrm d}{\mathrm dt}\hat\rho_{\mathrm S}(t)=-\mathrm i[\hat H'_{\mathrm S},\hat\rho_{\mathrm S}(t)]
+\tag{4.5}
+\end{equation}
+となる。この方程式と、閉じた系に対する標準のLiouville--von Neumann方程式との唯一の違いは、摂動のないHamiltonian $\hat H_{\mathrm S}$の代わりに、環境によってシフトした系のHamiltonian $\hat H'_{\mathrm S}$を用いる点である。
+
+次節では、ある一組の仮定のもとで、$\hat L$、すなわち$\hat H'_{\mathrm S}$と$\hat D[\hat\rho_{\mathrm S}(t)]$の、具体的で一般的な表式を導く。得られたマスター方程式を与えられた模型に適用すれば、すべての時刻$t$における$\hat\rho_{\mathrm S}(t)$の時間発展を計算できる。
+
+\subsectionlink{Born--Markovマスター方程式}
+Born--Markovマスター方程式は、開いた量子系とデコヒーレンスの研究において、きわめて重要な役割を果たす。これにより、多くのデコヒーレンスの問題を、数学的に簡単な、しばしば閉じた形で扱える。この方程式に基づく模型の予測と実験データの比較から、マスター方程式の基礎にあるBornとMarkovの仮定は、多くの場合に妥当であることが示されている。しかし、Markov的な運動に従わず、したがってBorn--Markovマスター方程式では適切に模型化できないことの多い重要な物理系（例えば低温の固体系）も、いろいろと存在することを、この段階で強調しておく必要がある。この点には、後の4.4節で戻る。
+
+% 原文 p.156
+\hypertarget{srcpage:156}{}\label{srcpage:156}
+\subsubsectionlink{Born--Markovマスター方程式の構造}
+Born--Markovマスター方程式は、大まかには次のように述べられる、二つの中心的な近似に基づいている（これらの近似の形式的表現と物理的正当化については、後の4.2.2節で詳しく論じる）。
+\begin{enumerate}
+\item \textbf{Born近似。}系と環境の結合は十分弱く、環境は十分大きいため、環境の密度演算子の変化は無視でき、系と環境の状態は、常に近似的な積状態にとどまる。すなわち
+\begin{equation}
+\hat\rho(t)\approx\hat\rho_{\mathrm S}(t)\otimes\hat\rho_{\mathrm E},
+\tag{4.6}
+\end{equation}
+であり、$\hat\rho_{\mathrm E}$は常にほぼ一定である。
+\item \textbf{Markov近似。}系との結合で作られる環境内部の自己相関は、系の状態が顕著に変化する特徴的時間尺度に比べて速く減衰するという意味で、環境の「記憶効果」は無視できる。
+\end{enumerate}
+これらの仮定が成り立つとしよう。さらに、系Sは自己Hamiltonian $\hat H_{\mathrm S}$をもち、環境との結合は、対角形
+\begin{equation}
+\hat H_{\mathrm{int}}=\sum_\alpha\hat S_\alpha\otimes\hat E_\alpha
+\tag{4.7}
+\end{equation}
+に書ける相互作用Hamiltonian $\hat H_{\mathrm{int}}$によって記述されるとする［(2.93)参照］。系と環境の演算子$\hat S_\alpha$、$\hat E_\alpha$はユニタリーだが、必ずしもHermiteではない。2.8節で説明したように、対角分解(4.7)の直観的な物理解釈は、$\hat S_\alpha$が、環境によって連続的に「監視」される系の物理量に対応するというものである（ただし$\hat S_\alpha$がHermiteの場合）。
+
+このとき、縮約密度演算子$\hat\rho_{\mathrm S}(t)$の発展は、Born--Markovマスター方程式
+\begin{equation}
+\frac{\mathrm d}{\mathrm dt}\hat\rho_{\mathrm S}(t)=-\mathrm i[\hat H_{\mathrm S},\hat\rho_{\mathrm S}(t)]
+-\sum_\alpha\left\{[\hat S_\alpha,\hat B_\alpha\hat\rho_{\mathrm S}(t)]+[\hat\rho_{\mathrm S}(t)\hat C_\alpha,\hat S_\alpha]\right\}
+\tag{4.8}
+\end{equation}
+で与えられる。この式に現れる系の演算子$\hat B_\alpha$、$\hat C_\alpha$の定義は
+\begin{align}
+\hat B_\alpha&\equiv\int_0^\infty\mathrm d\tau\sum_\beta C_{\alpha\beta}(\tau)\hat S_\beta^{(\mathrm I)}(-\tau),\tag{4.9a}\\
+\hat C_\alpha&\equiv\int_0^\infty\mathrm d\tau\sum_\beta C_{\beta\alpha}(-\tau)\hat S_\beta^{(\mathrm I)}(-\tau)\tag{4.9b}
+\end{align}
+である。
+
+% 原文 p.157
+\hypertarget{srcpage:157}{}\label{srcpage:157}
+ここで$\hat S_\alpha^{(\mathrm I)}(-\tau)$は、いわゆる相互作用描像の系演算子$\hat S_\alpha$を表す。相互作用描像は、以下のBorn--Markovマスター方程式の導出で多用するため、付録で復習する。以下では、表記を簡単にするため、相互作用描像の演算子を表す上付き添字「I」を省略する。代わりに、陽な時間引数をもつ演算子は、すべて相互作用描像の演算子と理解するという約束を導入する。ただし密度演算子では、やはり時間引数をもつSchrödinger描像の密度演算子（Schrödinger描像では量子状態が陽に時間に依存するため）との違いを明確にするため、上付き添字の表記を維持する。
+
+(4.9)に現れる量$C_{\alpha\beta}(\tau)$は
+\begin{equation}
+C_{\alpha\beta}(\tau)\equiv\langle\hat E_\alpha(\tau)\hat E_\beta\rangle_{\hat\rho_{\mathrm E}}
+\tag{4.10}
+\end{equation}
+で与えられ、平均は環境の初期状態$\hat\rho_{\mathrm E}$について取る［Born近似(4.6)では、$\hat\rho_{\mathrm E}$は常にほぼ一定にとどまることを思い出そう］。以下では、$C_{\alpha\beta}(\tau)$を環境自己相関関数と呼ぶ。この名称の理由は容易に理解できる。演算子$\hat E_\alpha$は、Hermiteであれば、系と環境の相互作用によって環境について「測定」される観測量とみなせる。環境自己相関関数は、特定の$\hat E_\alpha$のそのような「測定」の結果が、時間$\tau$後に行った同じ観測量の「測定」の結果と、どの程度相関しているかを教える。大まかにいえば、これらの関数は、系との相互作用についての情報を環境が時間とともにどの程度保持するかを定量化する。実際、Markov近似は、これらの環境自己相関関数が、系の発展によって定まる時間尺度と比べて速く減衰するという仮定に対応する。
+
+Born--Markovマスター方程式の形(4.8)は、かなり威圧的で、具体例への適用が難しそうに見えるかもしれない。与えられた模型について、量$\hat B_\alpha$、$\hat C_\alpha$［(4.9)参照］を具体的に決めるには、(i)相互作用描像の演算子$\hat S_\alpha(\tau)$、$\hat E_\alpha(\tau)$（その時間発展は、それぞれ系と環境のHamiltonian $\hat H_{\mathrm S}$、$\hat H_{\mathrm E}$によって与えられる。付録参照）、(ii)環境自己相関関数$C_{\alpha\beta}(\tau)$［(4.10)参照］を計算しなければならない。
+
+しかし、多くの関心ある状況では、マスター方程式(4.8)は大幅に簡単になる。例えば、大部分の場合、環境によって監視される系の観測量$\hat S$を一つだけ考えればよい。すると、相互作用Hamiltonianの対角分解(4.7)の和は一項だけになり、
+\begin{equation}
+\hat H_{\mathrm{int}}=\hat S\otimes\hat E
+\tag{4.11}
+\end{equation}
+となる。
+% 原文 p.158
+\hypertarget{srcpage:158}{}\label{srcpage:158}
+また、相互作用描像の演算子$\hat S_\alpha(\tau)$、$\hat E_\alpha(\tau)$の時間依存性もしばしば非常に簡単で、時には自明でさえあるため、量$\hat B_\alpha$、$\hat C_\alpha$［(4.9)参照］の計算が容易になる。これがどう働くかは、次の第5章で、Born--Markovマスター方程式(4.8)を具体例に適用する際に見る。
+\subsubsectionlink{Born--Markovマスター方程式の導出}
+本節では、Born--Markovマスター方程式(4.8)を第一原理から導く。とりわけ導出に入る仮定の理解を深めるため、読者には、主要な段階を実際に追っていただきたい。
+
+\subsubsectionlink*{相互作用描像での記述}
+まず、系と環境の全Hamiltonianを、通常の形
+\begin{equation}
+\hat H=\hat H_{\mathrm S}+\hat H_{\mathrm E}+\hat H_{\mathrm{int}}
+\tag{4.12}
+\end{equation}
+に分解することから始めよう。摂動論を適用したいので、相互作用描像へ移るのが便利である。このとき
+\begin{equation}
+\hat H_0\equiv\hat H_{\mathrm S}+\hat H_{\mathrm E}
+\tag{4.13}
+\end{equation}
+は全自由Hamiltonianであり、$\hat H_{\mathrm{int}}$は摂動的に扱う相互作用を表す。
+
+相互作用Hamiltonian $\hat H_{\mathrm{int}}$と、系と環境の全密度演算子$\hat\rho(t)$を、相互作用描像へ変換する。この変換は［(A.4)、(A.5)参照］
+\begin{align}
+\hat H_{\mathrm{int}}(t)&=e^{\mathrm i\hat H_0t}\hat H_{\mathrm{int}}e^{-\mathrm i\hat H_0t},\tag{4.14}\\
+\hat\rho^{(\mathrm I)}(t)&=e^{\mathrm i\hat H_0t}\hat\rho(t)e^{-\mathrm i\hat H_0t}
+=e^{\mathrm i\hat H_0t}e^{-\mathrm i\hat Ht}\hat\rho e^{\mathrm i\hat Ht}e^{-\mathrm i\hat H_0t}\tag{4.15}
+\end{align}
+で与えられる。$\hat\rho^{(\mathrm I)}(t)$の時間発展は、相互作用描像でのLiouville--von Neumann方程式［(A.9)参照］
+\begin{equation}
+\frac{\mathrm d}{\mathrm dt}\hat\rho^{(\mathrm I)}(t)=-\mathrm i[\hat H_{\mathrm{int}}(t),\hat\rho^{(\mathrm I)}(t)]
+\tag{4.16}
+\end{equation}
+で決まる。したがって、相互作用描像の密度演算子の発展は、全Hamiltonianのうち、相互作用描像での結合部分$\hat H_{\mathrm{int}}(t)$だけによって生成される。
+
+% 原文 p.159
+\hypertarget{srcpage:159}{}\label{srcpage:159}
+\subsubsectionlink*{積分による反復解}
+(4.16)を形式的に積分すると、
+\begin{equation}
+\hat\rho^{(\mathrm I)}(t)=\hat\rho(0)-\mathrm i\int_0^t\mathrm dt'\,[\hat H_{\mathrm{int}}(t'),\hat\rho^{(\mathrm I)}(t')]
+\tag{4.17}
+\end{equation}
+を得る。この$\hat\rho^{(\mathrm I)}(t)$の表式を、(4.16)の右辺へ戻して代入しよう。すると
+\begin{equation}
+\begin{aligned}
+\frac{\mathrm d}{\mathrm dt}\hat\rho^{(\mathrm I)}(t)
+&=-\mathrm i\left[\hat H_{\mathrm{int}}(t),\hat\rho(0)-\mathrm i\int_0^t\mathrm dt'\,[\hat H_{\mathrm{int}}(t'),\hat\rho^{(\mathrm I)}(t')]\right]\\
+&=-\mathrm i[\hat H_{\mathrm{int}}(t),\hat\rho(0)]
+-\int_0^t\mathrm dt'\,[\hat H_{\mathrm{int}}(t),[\hat H_{\mathrm{int}}(t'),\hat\rho^{(\mathrm I)}(t')]]
+\end{aligned}\tag{4.18}
+\end{equation}
+となる。さらに［導出は(A.12)参照］
+\begin{equation}
+\hat\rho^{(\mathrm I)}_{\mathrm S}(t)=\operatorname{Tr}_{\mathrm E}\{\hat\rho^{(\mathrm I)}(t)\}
+\tag{4.19}
+\end{equation}
+なので、環境についてトレースを取るだけで、(4.18)を縮約密度演算子$\hat\rho^{(\mathrm I)}_{\mathrm S}(t)$の方程式に変換できる。
+\begin{equation}
+\begin{aligned}
+\frac{\mathrm d}{\mathrm dt}\hat\rho^{(\mathrm I)}_{\mathrm S}(t)
+&=-\mathrm i\operatorname{Tr}_{\mathrm E}[\hat H_{\mathrm{int}}(t),\hat\rho(0)]\\
+&\quad-\int_0^t\mathrm dt'\,\operatorname{Tr}_{\mathrm E}[\hat H_{\mathrm{int}}(t),[\hat H_{\mathrm{int}}(t'),\hat\rho^{(\mathrm I)}(t')]].
+\end{aligned}\tag{4.20}
+\end{equation}
+実際、一般性を失わずに
+\begin{equation}
+\operatorname{Tr}_{\mathrm E}[\hat H_{\mathrm{int}}(t),\hat\rho(0)]=0
+\tag{4.21}
+\end{equation}
+と仮定できる。Hamiltonian $\hat H_0$、$\hat H_{\mathrm{int}}$を形式的に再定義すれば、常にこれを実現できることは容易に示せる。すると(4.20)は
+\begin{equation}
+\frac{\mathrm d}{\mathrm dt}\hat\rho^{(\mathrm I)}_{\mathrm S}(t)
+=-\int_0^t\mathrm dt'\,\operatorname{Tr}_{\mathrm E}[\hat H_{\mathrm{int}}(t),[\hat H_{\mathrm{int}}(t'),\hat\rho^{(\mathrm I)}(t')]]
+\tag{4.22}
+\end{equation}
+と簡単になる。
+
+この式に至るまでの計算はすべて厳密であり、近似は一切行っていない。ここで少し立ち止まり、次の問いを考えよう。$\hat\rho^{(\mathrm I)}_{\mathrm S}(t)$のマスター方程式として望ましい性質のうち、(4.22)にはまだ何が欠けているだろうか。(4.22)の右辺は、依然として0から$t$までのすべての時刻で評価した、系と環境の全密度演算子$\hat\rho^{(\mathrm I)}$に依存している。したがって(4.22)は、まだ、$\hat\rho^{(\mathrm I)}_{\mathrm S}$の時刻$t$での変化を、$\hat\rho^{(\mathrm I)}_{\mathrm S}(t)$と一組の既知量だけで決める、(4.4)のような時間局所的な微分方程式ではない。そこで、二つの望ましい性質が浮かび上がる。
+
+% 原文 p.160
+\hypertarget{srcpage:160}{}\label{srcpage:160}
+\begin{description}
+\item[(P1)] マスター方程式を、縮約密度演算子$\hat\rho^{(\mathrm I)}_{\mathrm S}(t)$と環境の初期状態だけで完全に表したい。すなわち、時間に依存する環境状態に関係する項を除きたい。この性質を満たすマスター方程式は積分微分方程式と呼ばれる。ある時刻$t$での対象量の微分的変化が、すべての時刻$t'\leq t$にわたる、その量の関数の積分に依存するからである。
+\item[(P2)] $\hat\rho^{(\mathrm I)}_{\mathrm S}$の時刻$t$での変化が、過去の時刻$t'<t$で評価した$\hat\rho^{(\mathrm I)}_{\mathrm S}$に依存しないようにしたい。
+\end{description}
+これらの目標を実現する工夫は、前述のBorn近似とMarkov近似の適用にある。Born近似を課すと、(4.22)の右辺の全密度演算子$\hat\rho^{(\mathrm I)}$への依存性がなくなり、(P1)が実現する。続いてMarkov近似が、得られた積分微分型のマスター方程式を、時間について局所的な微分方程式に変え、(P2)の目標を達成する。後で論じるように、どちらの近似も、系と環境の結合が弱いことと、環境が系に比べて大きいことから動機づけられる。
+
+先に進む前に、以下では、系と環境の間に初期相関がない、すなわち
+\begin{equation}
+\hat\rho(0)=\hat\rho^{(\mathrm I)}(0)=\hat\rho_{\mathrm S}(0)\otimes\hat\rho_{\mathrm E}(0)
+\tag{4.23}
+\end{equation}
+と仮定することに注意しよう。これは、ここで考える弱い系・環境結合の場合には、妥当な仮定である。
+
+\subsubsectionlink*{Born近似を課す}
+4.2.1節で述べたように［(4.6)参照］、Born近似は、系と環境の組合せの密度演算子$\hat\rho$が常に近似的な積の形にとどまり、環境の密度行列$\hat\rho_{\mathrm E}$の時間的変化を無視できると仮定する。
+\begin{equation}
+\hat\rho(t)\approx\hat\rho_{\mathrm S}(t)\otimes\hat\rho_{\mathrm E}\qquad\forall t\geq0,
+\tag{4.24}
+\end{equation}
+ここで$\hat\rho_{\mathrm E}=\hat\rho_{\mathrm E}(0)$である。相互作用描像でも同値な条件
+\begin{equation}
+\hat\rho^{(\mathrm I)}(t)\approx\hat\rho^{(\mathrm I)}_{\mathrm S}(t)\otimes\hat\rho_{\mathrm E}\qquad\forall t\geq0
+\tag{4.25}
+\end{equation}
+が成り立つ。これは$\hat\rho^{(\mathrm I)}(t)=e^{\mathrm i\hat H_0t}\hat\rho(t)e^{-\mathrm i\hat H_0t}$［(4.15)参照］から容易にわかる。$\hat H_0=\hat H_{\mathrm S}+\hat H_{\mathrm E}$は、系と環境に別々に作用するため、両者の間にいかなるもつれも確立できない。
+
+Born近似の背後にある物理的直観は、系と環境の相互作用が十分弱く（いわゆる「弱結合極限」）、環境が系に比べて十分大きいため、(i)環境の密度演算子は系との相互作用によって顕著に変わらず、(ii)系と環境は常に分離可能な状態にとどまる、というものである。
+
+% 原文 p.161
+\hypertarget{srcpage:161}{}\label{srcpage:161}
+Born近似は、多くの物理的に興味ある場合に妥当な仮定となることがわかっている。通常、系は非常に大きな環境と結合しており、その環境は全体として見ると、系と環境の相互作用の過程において、系の状態変化と比べて無視できるほど小さな変化しか受けない。すなわち、そのような場合、系から環境への反作用は無視できる。(4.25)は、系の密度演算子に任意に大きな変化を許し、また、系との相互作用によって環境に励起が生じることを排除しない点に注意しよう。
+
+Born近似(4.25)を用いれば、マスター方程式(4.22)は
+\begin{equation}
+\frac{\mathrm d}{\mathrm dt}\hat\rho^{(\mathrm I)}_{\mathrm S}(t)
+=-\int_0^t\mathrm dt'\,\operatorname{Tr}_{\mathrm E}[\hat H_{\mathrm{int}}(t),[\hat H_{\mathrm{int}}(t'),\hat\rho^{(\mathrm I)}_{\mathrm S}(t')\otimes\hat\rho_{\mathrm E}]]
+\tag{4.26}
+\end{equation}
+と書ける。明らかに、Born近似によって、先に述べた望ましい性質(P1)を達成した。マスター方程式の両辺は、いまや縮約密度演算子$\hat\rho^{(\mathrm I)}_{\mathrm S}(t)$だけで完全に表されており、環境の状態は分離されて、初期状態$\hat\rho_{\mathrm E}$へ帰着している。
+
+\subsubsectionlink*{Markov近似を課す}
+表式(4.26)は、なお積分微分方程式である。すなわち、時刻$t$での$\hat\rho^{(\mathrm I)}_{\mathrm S}$の変化を計算するには、すべての過去の時刻$t'<t$での$\hat\rho^{(\mathrm I)}_{\mathrm S}$を知らなければならない。しかし、以下で示すように、適切な近似、すなわちMarkov近似を課すことで、(4.26)を(4.4)のような時間局所的なマスター方程式に変換できる。
+
+まず、相互作用Hamiltonianを、対角形$\hat H_{\mathrm{int}}=\sum_\alpha\hat S_\alpha\otimes\hat E_\alpha$［(4.7)参照］と書き、相互作用描像へ変換する。
+\begin{equation}
+\begin{aligned}
+\hat H_{\mathrm{int}}(t)
+&=e^{\mathrm i\hat H_0t}\hat H_{\mathrm{int}}e^{-\mathrm i\hat H_0t}\\
+&=\sum_\alpha(e^{\mathrm i\hat H_{\mathrm S}t}\hat S_\alpha e^{-\mathrm i\hat H_{\mathrm S}t})\otimes(e^{\mathrm i\hat H_{\mathrm E}t}\hat E_\alpha e^{-\mathrm i\hat H_{\mathrm E}t})\\
+&=\sum_\alpha\hat S_\alpha(t)\otimes\hat E_\alpha(t).
+\end{aligned}\tag{4.27}
+\end{equation}
+すると(4.26)は
+\begin{equation}
+\begin{aligned}
+\frac{\mathrm d}{\mathrm dt}\hat\rho^{(\mathrm I)}_{\mathrm S}(t)
+=-\int_0^t\mathrm dt'\sum_{\alpha\beta}\operatorname{Tr}_{\mathrm E}
+\big[\hat S_\alpha(t)\otimes\hat E_\alpha(t),
+\big[\hat S_\beta(t')\otimes\hat E_\beta(t'),\hat\rho^{(\mathrm I)}_{\mathrm S}(t')\otimes\hat\rho_{\mathrm E}\big]\big]
+\end{aligned}\tag{4.28}
+\end{equation}
+と表せる。
+
+% 原文 p.162
+\hypertarget{srcpage:162}{}\label{srcpage:162}
+ここで
+\begin{equation}
+C_{\alpha\beta}(t,t')\equiv\operatorname{Tr}_{\mathrm E}\{\hat E_\alpha(t)\hat E_\beta(t')\hat\rho_{\mathrm E}\}
+=\langle\hat E_\alpha(t)\hat E_\beta(t')\rangle_{\hat\rho_{\mathrm E}}
+\tag{4.29}
+\end{equation}
+と定義しよう。以下では、環境が定常状態、すなわち平衡状態にあるとする。
+\begin{equation}
+[\hat H_{\mathrm E},\hat\rho_{\mathrm E}]=0.
+\tag{4.30}
+\end{equation}
+このことから
+\begin{equation}
+C_{\alpha\beta}(t,t')=\operatorname{Tr}_{\mathrm E}\{\hat E_\alpha(t-t')\hat E_\beta\hat\rho_{\mathrm E}\}
+\equiv C_{\alpha\beta}(t-t')
+\tag{4.31}
+\end{equation}
+と書ける。これは、先に導入した環境自己相関関数(4.10)そのものである。
+
+仮定(4.30)により、これらの環境自己相関関数は、(4.29)のような絶対時刻$t$には依存せず、同じ「測定」（特定の演算子$\hat E_\alpha$で表される）の二つの結果の時間間隔にだけ依存することがわかる。その相関の程度を(4.31)が定量化するのである。\footnote{この簡単化がいつでも適切なわけではない。興味深い反例として、例えば文献\cite{ref018}の3.4.3節を参照。}
+
+(4.31)を(4.28)に代入し、二重交換子を書き下すと、
+\begin{equation}
+\begin{aligned}
+\frac{\mathrm d}{\mathrm dt}\hat\rho^{(\mathrm I)}_{\mathrm S}(t)
+=-\int_0^t\mathrm dt'\sum_{\alpha\beta}\Big\{&C_{\alpha\beta}(t-t')
+\big[\hat S_\alpha(t)\hat S_\beta(t')\hat\rho^{(\mathrm I)}_{\mathrm S}(t')
+-\hat S_\beta(t')\hat\rho^{(\mathrm I)}_{\mathrm S}(t')\hat S_\alpha(t)\big]\\
+&+C_{\beta\alpha}(t'-t)
+\big[\hat\rho^{(\mathrm I)}_{\mathrm S}(t')\hat S_\beta(t')\hat S_\alpha(t)
+-\hat S_\alpha(t)\hat\rho^{(\mathrm I)}_{\mathrm S}(t')\hat S_\beta(t')\big]\Big\}
+\end{aligned}\tag{4.32}
+\end{equation}
+を得る。この表式の導出では、トレースは演算子の巡回置換で不変であるという基本的事実から
+\begin{equation}
+\operatorname{Tr}_{\mathrm E}\{\hat E_\alpha\hat E_\beta\hat\rho_{\mathrm E}\}
+=\operatorname{Tr}_{\mathrm E}\{\hat\rho_{\mathrm E}\hat E_\alpha\hat E_\beta\}
+=\operatorname{Tr}_{\mathrm E}\{\hat E_\alpha\hat\rho_{\mathrm E}\hat E_\beta\}
+\tag{4.33}
+\end{equation}
+となることを用いた。また、演算子$\hat S_\alpha(t)$と密度演算子$\hat\rho^{(\mathrm I)}_{\mathrm S}(t')$をトレース操作の外へ出した。トレースは環境についてだけ取るため、これは許される。
+
+% 原文 p.163
+\hypertarget{srcpage:163}{}\label{srcpage:163}
+ここでMarkov近似を課し、(4.33)をさらに簡単にしよう。物理的に興味のある多くの状況で、環境は、系との相互作用の過程で作られた内部の自己相関を、非常に速く「忘れる」と仮定できる。言い換えれば、そのような状況では、環境は「自身の履歴を記録し続ける」ことはない。環境の各部分の間に動的に確立した量子的相関は、系の相互作用描像の縮約密度演算子$\hat\rho^{(\mathrm I)}_{\mathrm S}(t)$が顕著に変化する特徴的時間尺度$\tau_{\mathrm S}$より、はるかに短い時間尺度$\tau_{\mathrm{corr}}$で破壊される。この$\tau_{\mathrm{corr}}\ll\tau_{\mathrm S}$という仮定がMarkov近似を構成する。今回のように、環境が系に弱くしか結合せず、環境の温度が十分高い場合に適切である。
+
+読者は、古典的確率論のMarkov過程に馴染みがあるかもしれない（よい入門として文献\cite{ref018}の1.4節を参照）。大まかにいえば、ある事象の確率がすべての先行する事象に依存しない場合、その確率過程はMarkov的である。すなわち、過程の各段階は、前の段階から独立である。言い換えれば、系は過去の記憶を保持せず、各段階は完全に無相関である。「Markov的な環境」との類似性は、いまや明らかであろう。
+
+微分形の時間局所的なマスター方程式を得るという目標に対して、Markov近似はどのような帰結をもつだろうか。マスター方程式の現在の構造(4.32)を振り返ろう。この導出に適用すると、Markov近似は、環境自己相関関数$C_{\alpha\beta}(t-t')$［(4.31)参照］が$(t-t')=0$のまわりに鋭いピークをもち、系の相互作用描像の密度演算子$\hat\rho^{(\mathrm I)}_{\mathrm S}(t)$の変化率を定量化する$\tau_{\mathrm S}$より、はるかに短い時間尺度で減衰することを意味する。この性質の含意は二つある。
+
+第一に、環境自己相関関数$C_{\alpha\beta}(t-t')$が消える典型的時間間隔$\tau_{\mathrm{corr}}$の間に、系の相互作用描像の縮約密度演算子$\hat\rho^{(\mathrm I)}_{\mathrm S}(t)$はほとんど変わらない。したがって、(4.32)の右辺の被積分関数で、遅延時刻の密度演算子$\hat\rho^{(\mathrm I)}_{\mathrm S}(t')$を、現在時刻の密度演算子$\hat\rho^{(\mathrm I)}_{\mathrm S}(t)$に置き換えられる。得られるマスター方程式は、いわゆるRedfield方程式\cite{ref174,ref175}であり、望ましい性質(P2)、すなわち時間局所性を満たす。実際、Markovの仮定によって、さらに簡単化できる。すなわち、$t\gg\tau_{\mathrm{corr}}$ならば、自己相関関数$C_{\alpha\beta}(t-t')$、したがって被積分関数は$t'\ll t$で消えるため、(4.32)の右辺の積分下限を、問題なく$-\infty$に延ばせる。
+
+環境の自己相関時間が無視できるほど短いというMarkov近似に基づく、この二つの変更と、変数置換$t'\longrightarrow\tau\equiv t-t'$によって、(4.32)は
+\begin{equation}
+\begin{aligned}
+\frac{\mathrm d}{\mathrm dt}\hat\rho^{(\mathrm I)}_{\mathrm S}(t)
+=-\int_0^\infty\mathrm d\tau\sum_{\alpha\beta}\Big\{&C_{\alpha\beta}(\tau)
+\big[\hat S_\alpha(t)\hat S_\beta(t-\tau)\hat\rho^{(\mathrm I)}_{\mathrm S}(t)
+-\hat S_\beta(t-\tau)\hat\rho^{(\mathrm I)}_{\mathrm S}(t)\hat S_\alpha(t)\big]\\
+&+C_{\beta\alpha}(-\tau)
+\big[\hat\rho^{(\mathrm I)}_{\mathrm S}(t)\hat S_\beta(t-\tau)\hat S_\alpha(t)
+-\hat S_\alpha(t)\hat\rho^{(\mathrm I)}_{\mathrm S}(t)\hat S_\beta(t-\tau)\big]\Big\}
+\end{aligned}\tag{4.34}
+\end{equation}
+となる。
+
+% 原文 p.164
+\hypertarget{srcpage:164}{}\label{srcpage:164}
+望みどおり、このマスター方程式の右辺は、もはや時間依存の全密度演算子$\hat\rho^{(\mathrm I)}(t)$には依存せず、系の縮約密度演算子$\hat\rho^{(\mathrm I)}_{\mathrm S}(t)$と、環境の初期状態［自己相関関数$C_{\alpha\beta}(\tau)$を通じて入る。(4.31)参照］だけに依存する。また、このマスター方程式は時間について局所的である。$t$以外の時間引数をもってマスター方程式に入るのは、完全に既知の量、すなわち、Hamiltonianの形からあらかじめ決まる演算子$\hat S_\alpha(t)$、$\hat E_\alpha(t)$だけである。
+
+(4.34)が中心的な結果を確立し、導出は本質的に完了した。最後に残るのは、方程式をSchrödinger描像へ戻し、形式的に少し整理することだけである。
+
+\subsubsectionlink*{Schrödinger描像へ戻す変換}
+相互作用描像で書かれた密度演算子の発展方程式をSchrödinger描像に戻すには、次の一般的手順を用いればよい。(A.12)より
+\begin{equation}
+\hat\rho^{(\mathrm I)}_{\mathrm S}(t)=e^{\mathrm i\hat H_{\mathrm S}t}\hat\rho_{\mathrm S}(t)e^{-\mathrm i\hat H_{\mathrm S}t}
+\tag{4.35}
+\end{equation}
+であり、直ちに
+\begin{equation}
+\frac{\mathrm d}{\mathrm dt}\hat\rho^{(\mathrm I)}_{\mathrm S}(t)
+=\mathrm i[\hat H_{\mathrm S},\hat\rho^{(\mathrm I)}_{\mathrm S}(t)]
++e^{\mathrm i\hat H_{\mathrm S}t}\left(\frac{\mathrm d}{\mathrm dt}\hat\rho_{\mathrm S}(t)\right)e^{-\mathrm i\hat H_{\mathrm S}t}
+\tag{4.36}
+\end{equation}
+が従う。再び(4.35)を用いると、
+\begin{equation}
+\frac{\mathrm d}{\mathrm dt}\hat\rho_{\mathrm S}(t)
+=-\mathrm i[\hat H_{\mathrm S},\hat\rho_{\mathrm S}(t)]
++e^{-\mathrm i\hat H_{\mathrm S}t}\left(\frac{\mathrm d}{\mathrm dt}\hat\rho^{(\mathrm I)}_{\mathrm S}(t)\right)e^{\mathrm i\hat H_{\mathrm S}t}
+\tag{4.37}
+\end{equation}
+と書き換えられる。
+
+この手順を、相互作用描像のBorn--Markovマスター方程式(4.34)に適用しよう。$\mathrm d\hat\rho^{(\mathrm I)}_{\mathrm S}(t)/\mathrm dt$の表式(4.34)を(4.37)の右辺に代入する。時間発展演算子$e^{\pm\mathrm i\hat H_{\mathrm S}t}$を(4.34)の角括弧内に入れ、(4.14)、(4.35)を用いる。例えば、(4.34)の右辺の括弧内の第1項については
+\begin{equation}
+\begin{aligned}
+&e^{-\mathrm i\hat H_{\mathrm S}t}\hat S_\alpha(t)\hat S_\beta(t-\tau)\hat\rho^{(\mathrm I)}_{\mathrm S}(t)e^{\mathrm i\hat H_{\mathrm S}t}\\
+&=(e^{-\mathrm i\hat H_{\mathrm S}t}\hat S_\alpha(t)e^{\mathrm i\hat H_{\mathrm S}t})
+(e^{-\mathrm i\hat H_{\mathrm S}t}\hat S_\beta(t-\tau)e^{\mathrm i\hat H_{\mathrm S}t})
+(e^{-\mathrm i\hat H_{\mathrm S}t}\hat\rho^{(\mathrm I)}_{\mathrm S}(t)e^{\mathrm i\hat H_{\mathrm S}t})\\
+&=\hat S_\alpha(e^{-\mathrm i\hat H_{\mathrm S}\tau}\hat S_\beta e^{\mathrm i\hat H_{\mathrm S}\tau})\hat\rho_{\mathrm S}
+=\hat S_\alpha\hat S_\beta(-\tau)\hat\rho_{\mathrm S}
+\end{aligned}\tag{4.38}
+\end{equation}
+となる。
+
+% 原文 p.165
+\hypertarget{srcpage:165}{}\label{srcpage:165}
+こうして、交換子の表記を再び用いると、(4.34)は
+\begin{equation}
+\begin{aligned}
+\frac{\mathrm d}{\mathrm dt}\hat\rho_{\mathrm S}(t)
+&=-\mathrm i[\hat H_{\mathrm S},\hat\rho_{\mathrm S}(t)]\\
+&\quad-\int_0^\infty\mathrm d\tau\sum_{\alpha\beta}\big\{
+C_{\alpha\beta}(\tau)[\hat S_\alpha,\hat S_\beta(-\tau)\hat\rho_{\mathrm S}(t)]
++C_{\beta\alpha}(-\tau)[\hat\rho_{\mathrm S}(t)\hat S_\beta(-\tau),\hat S_\alpha]\big\}
+\end{aligned}\tag{4.39}
+\end{equation}
+と書ける。(4.39)の右辺の積分は$\tau=0\ldots\infty$の全範囲に及ぶため、環境自己相関関数$C_{\alpha\beta}(\tau)$と相互作用描像の演算子$\hat S_\beta(-\tau)$の時間依存性は、全体として実効的に積分消去される。このことに気づけば、表記を簡単にできる。(4.9)で導入した時間に依存しない量$\hat B_\alpha$、$\hat C_\alpha$、
+\begin{align}
+\hat B_\alpha&=\int_0^\infty\mathrm d\tau\sum_\beta C_{\alpha\beta}(\tau)\hat S_\beta(-\tau),\tag{4.40a}\\
+\hat C_\alpha&=\int_0^\infty\mathrm d\tau\sum_\beta C_{\beta\alpha}(-\tau)\hat S_\beta(-\tau)\tag{4.40b}
+\end{align}
+を用いると、Born--Markovマスター方程式(4.39)は、4.2節で与えた最終形(4.8)、すなわち
+\begin{equation}
+\frac{\mathrm d}{\mathrm dt}\hat\rho_{\mathrm S}(t)=-\mathrm i[\hat H_{\mathrm S},\hat\rho_{\mathrm S}(t)]
+-\sum_\alpha\big\{[\hat S_\alpha,\hat B_\alpha\hat\rho_{\mathrm S}(t)]+[\hat\rho_{\mathrm S}(t)\hat C_\alpha,\hat S_\alpha]\big\}
+\tag{4.41}
+\end{equation}
+となる。
+
+これで導出は完了である。第5章では、重要なデコヒーレンス模型をいくつか取り上げ、このマスター方程式の適用を示す。
+\subsectionlink{Lindblad形のマスター方程式}
+いわゆるLindblad形のマスター方程式は、Markov的なマスター方程式の、特定の、ただし非常に一般的な一群を指す。これは、マスター方程式が常に縮約密度行列の正値性、すなわち系Sの任意の純粋状態$|\psi\rangle$と、すべての$t$について
+\begin{equation}
+\langle\psi|\hat\rho_{\mathrm S}(t)|\psi\rangle\geq0
+\tag{4.42}
+\end{equation}
+を保証すべきであるという要請から生じる。
+
+% 原文 p.166
+\hypertarget{srcpage:166}{}\label{srcpage:166}
+縮約密度行列の要素$\langle\psi|\hat\rho_{\mathrm S}(t)|\psi\rangle$を占有確率と解釈したいので、この条件は物理的に妥当である。$\hat\rho_{\mathrm S}(t)$の時間発展が厳密であれば、もちろん正値性の条件は自動的に満たされる。しかし、近似的なマスター方程式によって発展させた縮約密度行列では、(4.42)は必ずしも成り立たない。
+
+Gorini、Kossakowski、Sudarshan\cite{ref176}およびLindblad\cite{ref177}は、縮約密度行列$\hat\rho_{\mathrm S}(t)$の正値性(4.42)を保証する最も一般的なマスター方程式が
+\begin{equation}
+\frac{\mathrm d}{\mathrm dt}\hat\rho_{\mathrm S}(t)=-\mathrm i[\hat H_{\mathrm S},\hat\rho_{\mathrm S}(t)]
++\frac12\sum_{\alpha\beta}\gamma_{\alpha\beta}\big\{[\hat S_\alpha,\hat\rho_{\mathrm S}(t)\hat S_\beta^{\dagger}]
++[\hat S_\alpha\hat\rho_{\mathrm S}(t),\hat S_\beta^{\dagger}]\big\}
+\tag{4.43}
+\end{equation}
+という形であることを初めて示した。ここで$\hat S_\alpha$は、相互作用Hamiltonianの対角分解$\hat H_{\mathrm{int}}=\sum_\alpha\hat S_\alpha\otimes\hat E_\alpha$［(4.7)参照］に現れる系の演算子である。時間に依存しない係数$\gamma_{\alpha\beta}$は、デコヒーレンス過程（場合によっては散逸過程も）の物理パラメータについての全情報をまとめたものであり、係数行列$\Gamma\equiv(\gamma_{\alpha\beta})$を定義する。
+
+明らかに、Lindbladマスター方程式(4.43)は時間について局所的であり、さらにMarkov的でもある。(4.43)の形の方程式は、さまざまな仮定からいろいろな方法で導出でき、したがって必ずしもBorn--Markovマスター方程式(4.8)に結びついてはいない。現象論的模型から導いたLindblad形のマスター方程式は、すでに1960年代に、多くの著者によって用いられていた（例えば文献\cite{ref178}）。しかし、生成子と量子力学的半群の理論における厳密な数学的導出が確立したのは、1970年代後半になってからである\cite{ref176,ref177,ref179,ref180,ref181}。
+
+(4.43)を、Born--Markovマスター方程式の一般式(4.8)と比較すると、両者にはある形式的類似性が見られる。しかし明らかに、同じものではない。特に、(4.8)の演算子$\hat B_\alpha$、$\hat C_\alpha$は、一般に、相互作用演算子$\hat S_\alpha$と環境自己相関関数についての非自明な時間積分である［(4.9)参照］。それでも読者は、(4.8)をLindblad形(4.43)に変形できるのではないかと考えるかもしれない。だが、これは常に可能なわけではない。Lindbladマスター方程式は、一般のBorn--Markovマスター方程式の特別な場合である。したがって後者の方程式によって発展させた密度行列は、必ずしも正値性の条件(4.42)を満たさない\cite{ref182}。
+
+ただし、Born--Markov近似に加えて、さらに別の仮定を課せば、(4.8)をLindblad形(4.43)にすることができる。この仮定はしばしば回転波近似と呼ばれ、量子光学で一般に用いられる。系の発展の典型的時間尺度$\tau_{\mathrm S}$が系の緩和時間尺度より短いときは、いつでもこの仮定が正当化される。回転波近似を用いてBorn--Markovマスター方程式をLindblad形に変換する詳細については、文献\cite{ref018}の3.3.1節を参照していただきたい。
+
+% 原文 p.167
+\hypertarget{srcpage:167}{}\label{srcpage:167}
+逆に、マスター方程式をLindblad形で書けないからといって、必ずしも正値性の条件(4.42)が破れるわけではない。よい例は、5.2節で論じる量子Brown運動の模型である。この模型では、厳密で非Markov的なマスター方程式を導出できる（5.2.7節参照）。この方程式は、いくつかの近似と仮定を課さなければLindblad形にできない\cite{ref183}。しかし、マスター方程式が厳密である以上、常に密度行列の正値性が自動的に保証されるはずであることは明らかであり、実際、そのとおりとなる。一見不可解なこの振る舞いは、厳密な運動を注意深く解析することで説明できる。それによると、厳密なマスター方程式では、方程式に現れる係数の、かなり微妙な時間依存性を通じて正値性が生じる\cite{ref184,ref185}。
+
+Lindbladマスター方程式(4.43)は、係数$\gamma_{\alpha\beta}$で定義される行列$\Gamma$を対角化して、さらに簡単にできる。この行列は正（すべての固有値$\kappa_\mu$が$\geq0$）であることが示せるため、対角化は常に可能である。すると(4.43)は、対角形\cite{ref177,ref179}
+\begin{equation}
+\frac{\mathrm d}{\mathrm dt}\hat\rho_{\mathrm S}(t)
+=-\mathrm i[\hat H'_{\mathrm S},\hat\rho_{\mathrm S}(t)]
+-\frac12\sum_\mu\kappa_\mu\{\hat L_\mu^{\dagger}\hat L_\mu\hat\rho_{\mathrm S}(t)
++\hat\rho_{\mathrm S}\hat L_\mu^{\dagger}\hat L_\mu-2\hat L_\mu\hat\rho_{\mathrm S}(t)\hat L_\mu^{\dagger}\}
+\tag{4.44}
+\end{equation}
+と書き換えられる。$\hat H'_{\mathrm S}$は、系の繰り込まれた（「Lambシフトした」）Hamiltonianを表す。いわゆるLindblad演算子（または「Lindblad生成子」）$\hat L_\mu$は、もとの演算子$\hat S_\alpha$の適当な線形結合にすぎず、その係数は行列$\Gamma$の対角化で決まる。
+
+演算子$\hat S_\alpha$は必ずしもHermiteではないため、Lindblad演算子$\hat L_\mu$も、必ずしも物理的観測量には対応しないことに注意しよう。ただし、対応する場合には、(4.44)を、より簡潔な二重交換子の形
+\begin{equation}
+\frac{\mathrm d}{\mathrm dt}\hat\rho_{\mathrm S}(t)
+=-\mathrm i[\hat H'_{\mathrm S},\hat\rho_{\mathrm S}(t)]
+-\frac12\sum_\mu\kappa_\mu[\hat L_\mu,[\hat L_\mu,\hat\rho_{\mathrm S}(t)]]
+\tag{4.45}
+\end{equation}
+に書き換えられる。
+
+実際、環境散乱についての運動方程式(3.78)、
+\begin{equation}
+\frac{\partial\rho_{\mathrm S}(x,x',t)}{\partial t}
+=-\frac{\mathrm i}{2m}\left(\frac{\partial^2}{\partial x'^2}-\frac{\partial^2}{\partial x^2}\right)\rho_{\mathrm S}(x,x',t)
+-\Lambda(x-x')^2\rho_{\mathrm S}(x,x',t)
+\tag{4.46}
+\end{equation}
+は、Lindblad形(4.45)である。これを見るため、一つのLindblad演算子$\hat L=\hat x$と、「自由」粒子のHamiltonian $\hat H'_{\mathrm S}=\hat H_{\mathrm S}=\hat p^2/2m$を用いて、(4.45)を評価しよう。
+\begin{equation}
+\frac{\mathrm d}{\mathrm dt}\hat\rho_{\mathrm S}(t)=-\frac{\mathrm i}{2m}[\hat p^2,\hat\rho_{\mathrm S}(t)]-\frac12\kappa[\hat x,[\hat x,\hat\rho_{\mathrm S}(t)]].
+\tag{4.47}
+\end{equation}
+
+% 原文 p.168
+\hypertarget{srcpage:168}{}\label{srcpage:168}
+このマスター方程式を位置表示で表すと、
+\begin{equation}
+\frac{\partial\rho_{\mathrm S}(x,x',t)}{\partial t}
+=-\frac{\mathrm i}{2m}\left(\frac{\partial^2}{\partial x'^2}-\frac{\partial^2}{\partial x^2}\right)\rho_{\mathrm S}(x,x',t)
+-\frac12\kappa(x-x')^2\rho_{\mathrm S}(x,x',t)
+\tag{4.48}
+\end{equation}
+を得る。Lindblad係数$\kappa/2$を散乱定数$\Lambda$［(3.56)参照］と同一視すれば、これは明らかに(4.46)と同じである。
+
+Lindbladマスター方程式は、開いた量子系の環境による監視を表す、直観的でかなり簡単な方法を与える。この監視過程の背後にある実際の物理の大部分は、(4.44)に現れる係数$\kappa_\mu$に隠れている。実際、Lindblad演算子を無次元に選べば、係数$\kappa_\mu$は時間の逆数の単位をもつので、デコヒーレンス率を直接表すとみなせる。したがって、Lindblad方程式を用いてデコヒーレンス率を見積もる際の、通常、最も重要で難しい作業は、まさにこれらの係数$\kappa_\mu$を決めることである。
+
+(4.45)より、$\hat\rho_{\mathrm S}(t)$が、すべての時刻$t$で各Lindblad演算子$\hat L_\mu$と可換、すなわち
+\begin{equation}
+[\hat L_\mu,\hat\rho_{\mathrm S}(t)]=0\qquad\forall\mu,t
+\tag{4.49}
+\end{equation}
+なら、デコヒーレンス項が消えることが直ちにわかる。この場合、$\hat\rho_{\mathrm S}(t)$は純粋にユニタリーに発展する。$\hat L_\mu$は$\hat S_\alpha$の線形結合にすぎないため、(4.49)は、通常、\footnote{もちろん、特定の$\hat L_\mu$に対して、$\hat S_\alpha$のかなり病的な線形結合を工夫し、個々の交換子(4.50)がゼロでないのに、たまたま交換子(4.49)がゼロになるようにすることも考えられる。}
+\begin{equation}
+[\hat S_\alpha,\hat\rho_{\mathrm S}(t)]=0\qquad\forall\alpha,t
+\tag{4.50}
+\end{equation}
+を意味する。優先される指針状態という概念（2.8節参照）との関係は、いまやかなり明らかであろう。(4.50)は、すべての$\hat S_\alpha$の同時固有状態がデコヒーレンスの影響を受けないことを意味するが、これは、まさに指針状態の条件(2.94)である。
+
+最後に、いわゆる量子ジャンプ法と量子軌道法について、簡単に触れよう。ここでは、環境で明示的に観測された一連の測定結果を条件として、縮約密度行列の発展を考える。これにより、特定の測定記録を条件に、確率的に発展する系の一つの実現を、形式的に記述できる。その運動は、Lindblad演算子$\hat L_\mu$の測定記録を条件とする縮約密度行列$\hat\rho^{\mathrm C}_{\mathrm S}$について、Lindblad型(4.45)のマスター方程式
+\begin{equation}
+\begin{aligned}
+\mathrm d\hat\rho^{\mathrm C}_{\mathrm S}
+&=-\mathrm i[\hat H_{\mathrm S},\hat\rho^{\mathrm C}_{\mathrm S}]\,\mathrm dt
+-\frac12\sum_\mu\kappa_\mu[\hat L_\mu,[\hat L_\mu,\hat\rho^{\mathrm C}_{\mathrm S}]]\,\mathrm dt\\
+&\quad+\sum_\mu\sqrt{\kappa_\mu}\,\mathcal W[\hat L_\mu]\hat\rho^{\mathrm C}_{\mathrm S}\,\mathrm dW_\mu
+\end{aligned}\tag{4.51}
+\end{equation}
+で記述される。
+
+% 原文 p.169
+\hypertarget{srcpage:169}{}\label{srcpage:169}
+ここで$\mathcal W[\hat L]\hat\rho\equiv\hat L\hat\rho+\hat\rho\hat L^{\dagger}-\hat\rho\operatorname{Tr}\{\hat L\hat\rho+\hat\rho\hat L^{\dagger}\}$であり、$\mathrm dW_\mu$は、いわゆるWiener増分を表す。(4.51)は、Lindblad方程式(4.45)を個々の量子軌道に拡散的に「ほどく」ことに対応し、その軌道は「確率的Schrödinger方程式」によって表せる。ここでは詳細に立ち入らない。この主題には膨大な文献がある（例えば文献\cite{ref186,ref187,ref188,ref189,ref190,ref191,ref192,ref193,ref194,ref195,ref196,ref197,ref198}）。
+
+\subsectionlink{非Markov的な動力学}
+すでに強調したように、Born--Markovマスター方程式を厳密に適用できるのは、系と環境の結合が弱く、環境の記憶効果を無視できる場合に限られる。しかし、物理的に興味ある多くの状況では、環境の温度が低く、系と環境の相互作用が強いため、この仮定は満たされない。このような非Markov的な動力学の具体例は、他の二準位系からなる低温環境に、超伝導量子ビットが強く結合している場合であり、その状況ではBorn--Markov近似はもはや正当化されない\cite{ref199,ref200}。
+
+直観的には、環境の顕著な記憶効果によって、縮約密度演算子の発展が、系と環境の全体の過去の履歴に強く依存するようになり、縮約された動力学を、時間局所的な微分方程式で記述することは不可能になると予想するかもしれない。実際、一部の状況ではそうなる。その場合、一般に、遅延時刻の核と系の履歴にわたる積分に依存する、(4.22)のような積分微分方程式を解く必要がある。このような方程式は、例えば、いわゆるNakajima--Zwanzig射影演算子法\cite{ref201,ref202,ref203}の文脈で現れる（詳細は文献\cite{ref017}の第7章も参照）。こうした方法から得られる方程式は時間局所的でなく、解析的に解くことが難しいため、その厳密な形が用いられることはまれである。
+
+しかし驚くべきことに、多くの別の場合には、非Markov的な動力学でさえ、なお
+\begin{equation}
+\frac{\mathrm d}{\mathrm dt}\hat\rho_{\mathrm S}(t)=\hat K(t)\hat\rho_{\mathrm S}(t)
+\tag{4.52}
+\end{equation}
+という形の微分方程式で記述できることが示せる。Born--Markovマスター方程式(4.8)とは異なり、ここでは超演算子$\hat K(t)$が$t$に陽に依存するが、過去の時刻$t'<t$への依存性はない。特に、$\hat\rho_{\mathrm S}$の変化は、同じ時刻$t$で評価した$\hat\rho_{\mathrm S}$だけで完全に決まり、運動方程式で系の履歴にわたる積分は不要である。したがってマスター方程式(4.52)は、依然として時間について局所的である。
+
+(4.52)の形の、時間局所的な非Markovマスター方程式は、さまざまな方法で得られる。例えば量子Brown運動（5.2節参照）の場合、Born--Markovマスター方程式(4.8)から導かれる方程式とほぼ同じ方法で、非Markov的な（ただし依然として弱結合極限を仮定する）マスター方程式を導ける。
+
+% 原文 p.170
+\hypertarget{srcpage:170}{}\label{srcpage:170}
+二つのマスター方程式の違いは、演算子$\hat B_\alpha$、$\hat C_\alpha$の表式(4.9)に現れる時間積分の範囲だけである。Markov的な場合、積分の上限を無限大とし、時間に依存しない$\hat B_\alpha$、$\hat C_\alpha$の表式を得る。代わりに、積分を0から$t$までに限定すれば、陽に時間に依存する演算子$\hat B_\alpha(t)$、$\hat C_\alpha(t)$が得られる。この形式的には簡単な変更により、特に$t=0$に近い初期領域で、より細かな動力学を示す、量子Brown運動の「前Markov的」マスター方程式が得られる（この方程式は、4.2.2節で述べたRedfield型である）。
+
+実際、量子Brown運動の場合には、厳密な非Markovマスター方程式を導出できる（5.2.7節参照）。これは、環境自己相関関数(4.10)の表式がより複雑になることを除けば、Markovマスター方程式と同じ構造をもつ。量子Brown運動模型の厳密解が存在することにより、その結果の運動を、近似的なBorn--Markovマスター方程式から得られる運動と直接比較することもできる。こうして、量子Brown運動の模型で記述される、与えられた物理的状況について、Born--Markovの仮定がどの程度妥当な近似となるかを調べられる。量子Brown運動におけるMarkov的・非Markov的動力学の問題は、5.2.2節、5.2.7節で詳しく論じる（文献\cite{ref183}も参照）。一般に、いわゆる時間畳み込みなし射影演算子法\cite{ref204,ref205,ref206,ref207}を用いて、(4.52)型の、非Markov的だが時間局所的なマスター方程式を得られる場合が多い。ここでは、この方法の詳細には立ち入らない。
+
+結論として、Born--Markovマスター方程式(4.8)、特に簡単なLindblad形(4.44)、(4.45)を用いれば、近似的なデコヒーレンスの動力学をかなり直接的に計算でき、形式（Lindblad演算子）と物理解釈（環境による系の観測量の連続的監視）の間に、直観的なつながりを与えられる。しかし、個々の物理的状況においては、系と環境の結合が弱く、環境の記憶効果が無視できるといった、このマスター方程式の導出の基礎となる仮定が、実際にどの程度適切かを、注意深く評価する必要がある。次の第5章では、具体的な模型を論じる際、この問題にたびたび立ち戻る。

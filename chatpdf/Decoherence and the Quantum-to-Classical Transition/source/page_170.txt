@@ -1,0 +1,49 @@
+156    4 Master-Equation Formulations of Decoherence
+
+we should emphasize already at this stage that there exist various important
+physical systems (for example, low-temperature solid-state systems) which
+do not obey Markovian dynamics and which therefore often cannot be ade-
+quately modeled using the Born–Markov master equation. We will come back
+to this issue in Sect. 4.4 below.
+
+4.2.1 Structure of the Born–Markov Master Equation
+
+The Born–Markov master equation is based on two core approximations that
+can be broadly stated as follows (the formal representation and physical jus-
+tiﬁcation of these approximations is discussed in more detail in Sect. 4.2.2
+below):
+
+ 1. The Born approximation. The system–environment coupling is suﬃ-
+    ciently weak and the environment is reasonably large such that changes
+    of the density operator of the environment are negligible and the system–
+    environment state remains in an approximate product state at all times,
+    i.e.,
+                                 ρ̂(t) ≈ ρ̂S (t) ⊗ ρ̂E ,                 (4.6)
+    with ρ̂E approximately constant at all times.
+ 2. The Markov approximation. “Memory eﬀects” of the environment are
+    negligible, in the sense that any self-correlations within the environment
+    created by the coupling to the system decay rapidly compared to the
+    characteristic timescale over which the state of the system varies notice-
+    ably.
+
+    Assume now these assumptions hold. Suppose further that the system S
+has self-Hamiltonian ĤS and that its coupling to the environment is described
+by the interaction Hamiltonian Ĥint , which we may write in the diagonal form
+[see (2.93)]                         
+                            Ĥint =      Ŝα ⊗ Êα .                      (4.7)
+                                       α
+
+Here the system and environment operators Ŝα and Êα are unitary but not
+necessarily Hermitian. As explained in Sect. 2.8, the intuitive physical in-
+terpretation of the diagonal decomposition (4.7) is that the operators Ŝα
+correspond to the physical quantities of the system that are continuously
+“monitored” by the environment (provided the Ŝα are Hermitian).
+   Then the evolution of the reduced density operator ρ̂S (t) is given by the
+Born–Markov master equation
+
+  d                             $                                  %
+     ρ̂S (t) = −i ĤS , ρ̂S (t) −    Ŝα , B̂α ρ̂S (t) + ρ̂S (t)Ĉα , Ŝα .   (4.8)
+  dt                              α
+
+
+The system operators B̂α and Ĉα appearing in this equation are deﬁned as

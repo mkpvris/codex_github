@@ -1,0 +1,55 @@
+168     4 Master-Equation Formulations of Decoherence
+
+Expressing this master equation in the position representation then yields
+                         2               
+  ∂ρS (x, x , t)     i   ∂          ∂2                     1
+                                            ρS (x, x , t) − κ (x − x ) ρS (x, x , t),
+                                                                        2
+                  =−         2
+                                −       2
+        ∂t           2m ∂x          ∂x                      2
+                                                                                 (4.48)
+which is evidently identical to (4.46) if we identify the Lindblad coeﬃcient
+κ/2 with the scattering constant Λ, see (3.56).
+     Lindblad master equations provide us with an intuitive and rather sim-
+ple way of representing the environmental monitoring of an open quantum
+system. Most of the real physics behind this monitoring process is hidden
+in the coeﬃcients κμ appearing in (4.44). In fact, if the Lindblad operators
+are chosen to be dimensionless, the coeﬃcients κμ can be viewed as directly
+representing decoherence rates, since they have units of inverse time. Accord-
+ingly, usually the most important and diﬃcult task of estimating decoherence
+rates using the Lindblad equation consists precisely of determining these co-
+eﬃcients κμ .
+     From (4.45) we immediately see that the decoherence term vanishes if
+ρ̂S (t) commutes with each of the Lindblad operators L̂μ for all times t,
+                                         
+                            L̂μ , ρ̂S (t) = 0        ∀μ, t.                      (4.49)
+
+In this case, ρ̂S (t) evolves purely unitarily. Since the L̂μ are simply linear
+combinations of the Ŝα , (4.49) (typically2 ) implies that
+                                         
+                             Ŝα , ρ̂S (t) = 0   ∀α, t.                  (4.50)
+
+The connection to the concept of preferred pointer states (see Sect. 2.8)
+should now be rather clear. Equation (4.50) implies that simultaneous eigen-
+states of all Ŝα will be immune to decoherence, which is precisely the pointer-
+state criterion (2.94).
+    Finally, let us brieﬂy mention so-called quantum-jump and quantum-
+trajectory methods. Here, the evolution of the reduced density matrix is con-
+ditioned on an explicitly observed sequence of measurement results in the
+environment. This allows for the (formal) description of a single realization
+of the system evolving stochastically, conditioned on a particular measure-
+ment record. The dynamics are then described by a master equation of the
+Lindblad type (4.45) for the reduced density matrix ρ̂C  S conditioned on the
+measurement records of the Lindblad operators L̂μ ,
+                       1                         √
+dρ̂C              C
+   S = −i ĤS , ρ̂S dt −     κμ L̂μ , L̂μ , ρ̂C
+                                              S    dt +   κμ W[L̂μ ]ρ̂C
+                                                                      S dWμ .
+                         2 μ                            μ
+                                                                                 (4.51)
+   2
+     One might of course devise some rather pathological linear combinations of the
+Ŝα for a particular L̂μ such that the commutator (4.49) happens to vanish while
+the individual commutators (4.50) are nonzero.

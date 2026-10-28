@@ -1,0 +1,51 @@
+                                  2.12 Decoherence Versus Classical Noise                   97
+              N
+          1 
+   ρ̂ =         |ψi ψi |
+          N i=1
+                                    N
+                                                                   N
+                                                                              
+      1        1                  1  iφi                          1  −iφi
+     = |00| + |11| +                e          |10| +              e        |01|.
+      2        2                 2N i=1                           2N i=1
+                                                                                    (2.119)
+
+In the limit of large N , the sums over the random phase factors e±iφi average
+out to zero, and therefore
+                                     1         1
+                             ρ̂ −→     |00| + |11|.                             (2.120)
+                                     2         2
+Evidently, this “ensemble dephasing” leads to a density matrix that has the
+same diagonal form as the reduced density matrix of an individual system
+subject to decoherence in the {|0 , |1} basis. However, in the case of (2.119)
+and (2.120) the disappearance of the interference terms |01| and |10| is
+simply the result of a mathematical averaging procedure over many members
+in a physical ensemble of system (or, put diﬀerently, over the diﬀerent in-
+stances of particular noise processes). It does not correspond to decoherence
+in our sense, which describes the delocalization of phase coherence for indi-
+vidual systems. Another example of “fake decoherence,” this time resulting
+from an averaging over dynamical phases in the density-matrix formalism,
+has been critically analyzed in [122].
+     In fact, as we have pointed out in Sect. 2.4.5, the correct description of an
+ensemble of N physical systems, each of which is described by a pure state
+|ψi  of the form (2.118), is given by a pure-state (tensor) product of all states
+|ψi ,
+                                           N
+                                  |Ψ  =         |ψi  .                            (2.121)
+                                           i=1
+
+This state “lives” in a 2N -dimensional Hilbert space, and thus the correspond-
+ing density matrix has size 2N × 2N , rather than 2 × 2 as in (2.119). Without
+environmental interactions, each individual system evolves completely unitar-
+ily, and therefore the phase relations φi remain well-deﬁned at all times. Only
+formally these phases appear to be “washed out” when the density-matrix
+formalism is used to represent ensemble averages over many physical systems,
+as in (2.119), but they are not physically delocalized from the systems and re-
+main therefore, at least in principle, experimentally accessible to the observer
+of each of these systems. If we knew the time evolution of the noise process,
+we could always apply a suitable unitary countertransformation to the sys-
+tem that would completely reverse the eﬀect of this noise on the system in
+each individual run of the experiment. This reversal of ensemble dephasing
+has been implemented in practice, for example, in NMR experiments. Here
+a collection of spins eventually dephases, since noise eﬀects cause each spin

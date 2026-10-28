@@ -1,0 +1,45 @@
+304    7 Decoherence and Quantum Computing
+
+Sect. IV.C of [16]). Thus this experiment illustrates nicely some of the key
+similarities and diﬀerences between classical noise and environmental deco-
+herence.
+    This is of course not to say that classical noise is not important in quan-
+tum computing. To the contrary, noise due to ﬂuctuations and imperfections
+in experimental implementations may be equally signiﬁcant as the eﬀect of
+decoherence induced by environmental entanglement. While we will continue
+to reserve the term “decoherence” to describe the consequences of environ-
+mental entanglement, the more general term “qubit error” will, if not speciﬁed
+further, refer to any change of the state of the qubit, regardless of whether
+the change is induced by classical noise or environmental entanglement.
+
+
+7.4 Quantum Error Correction
+We have available two main avenues toward combating decoherence eﬀects
+in quantum computers. The ﬁrst route consists of minimizing detrimental
+environmental inﬂuences before they even have a chance to severely corrupt
+the coherent superposition states of the qubits. In Sect. 7.5, we will discuss
+one possible method, namely, the encoding of logical qubits states in pointer
+subspaces that are immune to decoherence.
+    The second, complementary approach consists of trying to actively “undo”
+the eﬀect that decoherence has imparted on the qubits. Since it is impossi-
+ble in practice to exert full control over the environment, phase relations are
+typically irreversibly delocalized from the qubits into the environment (see
+Sect. 2.7). A true (time) reversal of the decoherence process, i.e., a complete
+relocalization of the phase coherence at the level of the qubits, is therefore
+out of reach. However, as discussed in Sect. 2.13, through the coupling of
+the system to an auxiliary system, we can reconstruct the original superposi-
+tion state in a nonlocal fashion. In the context of quantum computing, such
+schemes have become known under the heading of quantum error correction,
+ﬁrst developed independently by Steane [354] and Shor [355] in the mid-1990s
+(for accessible reviews, see, e.g., [56,356,357]). As we shall see, the basic idea
+of quantum error correction is similar to the process of quantum “erasure”
+discussed in Sect. 2.13. The main diﬀerence between the two schemes lies
+in the fact that quantum error correction requires the reconstruction of the
+exact initial superposition state. By contrast, quantum “erasure” simply re-
+covers the possibility of interference between the path components, and the
+reconstructed superposition may be either the original or the phase-reversed
+superposition state [see (2.125)].
+    Let us emphasize that quantum error correction will be an integral, indis-
+pensable element of any foreseeable implementation of a quantum computer.
+Decoherence induced by interactions with the environment and the control
+apparatus as well as noise due to faulty gate operations will simply be too

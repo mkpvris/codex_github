@@ -1,0 +1,50 @@
+                                             7.4 Quantum Error Correction         313
+
+
+
+
+    (a)                                         system           environment
+
+
+
+
+    (b)                       ancilla           system           environment
+
+
+
+
+                     k
+    (c)                       ancilla           system           environment
+
+          measurement
+
+
+    (d)                            <k−1
+                                   E            system
+
+
+Fig. 7.2. Quantum error correction by means of ancilla qubits. (a) The interaction
+between the system S and the environment E entangles the two partners [see (7.30)].
+(b) The ancilla qubits A are let to interact with S, creating the tripartite entangled
+state (7.31) involving S, A, and E. (c) A projective measurement on A reduces this
+state to a product state of the form (7.33), eﬀectively disentangling the subsystems.
+The outcome of the measurement contains information about the error that needs
+to be corrected. (d) Application of an appropriate countertransformation Êk−1 then
+restores the original state of S.
+
+
+the qubits, albeit transformed by the error operators Êi . The measurement
+of the ancilla then simultaneously reduces the total composite ancilla–qubit–
+environment state to a single one of these errors (it has “forced” the system
+to “decide” among the set {Êi } of possible errors), and tells us which error
+has been singled out. Thus the task of reconstructing the original superpo-
+sition state has boiled down to reversing a single, and known, discrete error
+Êk .
+     In this sense, the basic idea of quantum error correction is, as Preskill
+put it [360], to “ﬁght entanglement with entanglement.” By this statement
+we mean to convey the insight that we can combat the detrimental eﬀect of
+environmental entanglement on our qubit system by entangling the qubit–
+environment combination with a third “artiﬁcial environment,” namely, the
+ancilla, over which we have full control. Our procedure for error recovery has
+transferred entropy from the qubits to the ancilla, and the ancilla therefore
+acts as a sink for the entropy introduced into the qubit system by the envi-

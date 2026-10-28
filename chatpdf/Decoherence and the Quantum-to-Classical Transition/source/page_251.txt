@@ -1,0 +1,43 @@
+                                                           5.5 Summary       237
+
+particles, which corresponds to the presence of shorter environmental wave-
+lengths.
+
+5.4.3 Beyond Markov: Solving General Spin-Environment Models
+
+Finally, let us conclude our discussion of spin-environment models by giv-
+ing the reader a brief idea of how more general models of this type may
+be solved without resorting to the limiting Born–Markov approximations.
+As we discussed in Sect. 5.1.2, the interesting regime for spin-environment
+models is typically that of low temperatures and strong system–environment
+couplings. This leads to signiﬁcant non-Markovian memory eﬀects in the
+environment and usually renders simplifying weak-coupling approximations
+inapplicable. It follows that spin-environment models frequently cannot be
+treated by means of an approximate Born–Markov master equation (as we did
+in the previous Sect. 5.4.2), whose derivation is based on weak couplings and
+negligible environment self-correlation times. This renders the mathematical
+solution of such non-Markovian spin-environment models often somewhat
+cumbersome.
+    In most cases, the relevant decoherence dynamics arising from general
+spin-environment models—for example, in terms of the central-spin expecta-
+tion value σ̂z (t)—can be calculated analytically using advanced techniques
+such as the instanton formalism [199]. In this context, the problem arises of
+how to properly “average” over the degrees of freedom of a strongly coupled
+spin environment. Prokof’ev and Stamp [199] showed that this task can be
+facilitated by breaking down the general spin-environment model into four
+limiting cases, each of which emphasizes a diﬀerent parameter regime and
+thus disregards certain terms in the general expression for the total Hamil-
+tonian. Each of these cases can then be solved separately, and each yields an
+expression for an averaging integral over certain quantities in the model. As
+shown in [199], the correct procedure for averaging over the spin environment
+in the general case—and thus for obtaining the reduced dynamics of the cen-
+tral system—is then simply given by the combined application of these four
+separate averages. Here, we shall not go into the details of this approach and
+instead refer interested readers to [199] for details. Further discussions of the
+physical and mathematical foundations of spin-environment models can be
+found in [200, 210, 214, 216].
+
+
+5.5 Summary
+This chapter on decoherence models has been somewhat lengthy and techni-
+cal. Let us therefore summarize some of the main results.

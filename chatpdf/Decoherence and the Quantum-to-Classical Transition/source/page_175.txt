@@ -1,0 +1,53 @@
+                                     4.2 The Born–Markov Master Equation           161
+
+so-called “weak-coupling limit”), and that the environment is large in com-
+parison with the size of the system, such that (i) the density operator for the
+environment does not change signiﬁcantly as a consequence of the interaction
+with the system, and that (ii) the system and the environment remain in a
+separable state at all times.
+    It turns out that the Born approximation is a reasonable assumption in
+many cases of physical interest. Usually, the system is coupled to a very
+large environment which, viewed as a whole, undergoes only negligibly small
+changes in the course of the system–environment interaction compared to the
+change of the state of the system. That is, the back-action of the system on
+the environment can in such cases be ignored. Note that (4.25) allows for
+arbitrarily large changes of the density operator of the system, and it does
+not exclude the occurrence of environmental excitations in the environment
+induced by the interaction with the system.
+    Using the Born approximation (4.25), the master equation (4.22) can now
+be written as
+                       t
+        d (I)                                                          
+                          dt TrE Ĥint (t), Ĥint (t ), ρ̂S (t ) ⊗ ρ̂E .
+                                                            (I)
+          ρ̂ (t) = −                                                        (4.26)
+        dt S           0
+
+Evidently (by virtue of the Born approximation), we have fulﬁlled our de-
+sired property (P1) stated above. Both sides of our master equation are now
+                                                              (I)
+expressed entirely in terms of the reduced density operator ρ̂S (t), with the
+state of the environment separated out and reduced to the initial state ρ̂E .
+
+Imposing the Markov Approximation
+
+The expression (4.26) is still an integro-diﬀerential equation, i.e., computing
+                (I)                                    (I)
+the change of ρ̂S at time t requires knowledge of ρ̂S at all previous times
+ 
+t < t. However, as we shall now show, by imposing a suitable approximation
+(namely, the Markov approximation) we can transform (4.26) into a time-
+local master equation of the form (4.4).
+        us start by writing the interaction Hamiltonian in the diagonal form
+    Let 
+Ĥint = α Ŝα ⊗ Êα [see (4.7)] and transforming it to the interaction picture,
+
+             Ĥint (t) = eiĤ0 t Ĥint e−iĤ0 t
+                                                                         
+                       =         eiĤS t Ŝα e−iĤS t ⊗ eiĤE t Êα e−iĤE t
+                           α
+                          
+                      =        Ŝα (t) ⊗ Êα (t).                                (4.27)
+                           α
+
+Then (4.26) can be expressed as

@@ -1,0 +1,48 @@
+                                            5.4 Spin-Environment Models       223
+
+central harmonic oscillator interacting with an environment of two-level sys-
+tems has only recently begun to attract attention in the context of studying
+decoherence and dissipation in so-called quantum-electromechanical systems
+(see Sect. 6.4.2) and also in micron-scale ion traps [242].
+    In this section, we shall investigate diﬀerent aspects of such spin-environ-
+ment models. We shall structure our discussion of spin–spin models in a
+similar manner as in the case of the spin–boson model. First, in Sect. 5.4.1,
+we will discuss a spin–spin model that is a simple generalization of the de-
+coherence model studied in Sect. 2.10. Next, in Sect. 5.4.2, we will discuss
+spin-environment models in the limit of weak linear system–environment cou-
+plings. We will show how in this case the spin environment can be mapped
+onto an oscillator environment with a modiﬁed spectral density, as originally
+suggested by Feynman and Vernon [211] (see also Sect. 5.1.2). This will al-
+low us to take over the formal results from our study of quantum Brownian
+motion, that is, we can derive a Born–Markov master equation of the form
+(5.22) for a central system weakly interacting with a spin bath.
+    In Sect. 5.4.3, we will discuss features of more general spin–spin mod-
+els. We will focus on giving an overview of the decoherence dynamics aris-
+ing in such models, without going into the mathematics required to solve
+the models. Readers interested in a more detailed account of the theory of
+spin-environment models will ﬁnd plenty of material in the review article by
+Prokof’ev and Stamp [199]. A short and accessible summary is given in [200].
+
+5.4.1 A Simple Dynamical Spin–Spin Model
+We already encountered a member of the class of spin–spin models in
+Sect. 2.10 when we discussed a prototype model for illustrating basic features
+of environmental decoherence and superselection. We were able to solve the
+global dynamics of this model exactly in a straightforward fashion, because
+we had neglected the self-Hamiltonians of both the central spin and the spin
+environment, and because we had assumed that the interaction Hamiltonian
+was already diagonal in the σ̂z eigenbasis of both the central spin and the
+collection of environmental spins [see (2.100)]. Clearly, this model was rather
+artiﬁcial, as it did not model the internal dynamics of the system and environ-
+ment and thus corresponded to the limit of strong system–environment inter-
+actions which completely dominate the dynamics (the quantum-measurement
+regime).
+    We shall now generalize this static spin–spin model by adding a tunneling
+term of the form − 21 Δ0 σ̂x [see (5.1)] to the original Hamiltonian (2.100). Thus
+we consider the model described by the total Hamiltonian
+                                     N
+                     1        1                       1        1
+ Ĥ = ĤS + Ĥint = − Δ0 σ̂x + σ̂z ⊗     gi σ̂z(i) ≡ − Δ0 σ̂x + σ̂z ⊗ Ê. (5.150)
+                     2        2      i=1
+                                                      2        2
+We will show that the inclusion of the tunneling term in (5.150) will in
+general lead to signiﬁcantly diﬀerent dynamics compared to the original static

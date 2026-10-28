@@ -1,0 +1,46 @@
+                                         5.2 Quantum Brownian Motion          195
+
+Since we are now working in a phase-space picture described by the coor-
+dinates X and P , it will be convenient to switch to the Wigner representa-
+tion W (X, P ), see (2.132), of the position-space density matrix ρS (X, X  ) =
+Ψ (X)Ψ ∗ (X  ). The Wigner function corresponding to the initial state (5.64)
+is rather easy to compute, since the Wigner representation of a Gaussian
+wave packet is again a Gaussian localized in the (X, P ) plane. The Wigner
+representation of the two direct terms Ψ1 (X)Ψ1∗ (X  ) and Ψ2 (X)Ψ2∗ (X  ) can
+be shown to be of the form [184]
+                                   "             #
+                                      (X ∓ X0 )2                     
+   W1,2 (X, P, t = 0) = N 2 δ 2 exp −       2
+                                                   exp −δ 2 (P ∓ P0 )2 . (5.68)
+                                          δ
+
+The contribution from the oﬀ-diagonal (interference) terms Ψ1 (X)Ψ2∗ (X  ) and
+Ψ2 (X)Ψ1∗ (X  ) reads in the Wigner representation
+                                   "             #
+                                      X2
+  Wint (X, P, t = 0) = 2N 2 δ 2 exp − 2 − δ 2 P 2 cos [2X0 P + 2P0 X] . (5.69)
+                                      δ
+
+The resulting full Wigner function of the initial state (5.64) is therefore
+
+   W (X, P, t = 0) = W1 (X, P, t = 0) + W2 (X, P, t = 0) + Wint (X, P, t = 0).
+                                                                          (5.70)
+This function is illustrated in the top row of Fig. 5.4 for the two diﬀerent
+limiting cases Ψpos (X, t = 0), see (5.66), and Ψmom (X, t = 0), see (5.67),
+representing separation in, respectively, position and momentum only. We
+clearly see the localization of the two “classical” (direct) peaks along the X
+and P axes, respectively (see also our general discussion in Sect. 2.15.2). We
+also observe the characteristic oscillatory pattern between these peaks. Note
+that the “ridges” and “valleys” of this pattern are parallel to the axis joining
+the peaks, i.e., parallel to the axis corresponding to the variable in which the
+separation occurs. As evident from (5.69), the wavenumber of the oscillations
+is directly determined by the separations X0 and P0 [see also (2.135)].
+    Let us now study the subsequent time evolution of the Wigner function
+(5.70) as given by the Born–Markov master equation (5.29) expressed in the
+Wigner representation. Without going into the details of the derivation here,
+one can show that the resulting time-evolved Wigner function can again be
+written in the form [184]
+
+        W (X, P, t) = W1 (X, P, t) + W2 (X, P, t) + Wint (X, P, t),      (5.71)
+
+with the direct and interference terms given by

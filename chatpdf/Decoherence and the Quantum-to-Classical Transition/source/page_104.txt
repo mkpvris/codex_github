@@ -1,0 +1,55 @@
+                                         2.10 A Simple Model for Decoherence               89
+
+has made the experimental realization of such qubit systems a major area of
+research (see Chap. 6).
+    Let us now return to our simple model for decoherence. In the following,
+let us denote the two basis states of S by |0 and |1, while we shall use |↑i
+and |↓i , i = 1 . . . N , to represent the basis states of the N two-level systems
+of the environment. We describe the total system–environment combination
+by a 2N +1 -dimensional tensor- product Hilbert space
+
+                         H = HS ⊗ HE1 ⊗ HE1 ⊗ · · · ⊗ HEN ,                           (2.98)
+
+where HS denotes the Hilbert space of the system and HEi represents the
+Hilbert space of the ith environmental spin.
+    We will now assume that the interaction Hamiltonian Ĥint governing the
+interaction between the system and the environment completely dominates
+the evolution, i.e., we shall neglect any intrinsic dynamics of the system
+and the environment. Both system and environment are entirely static, and
+the only dynamical process is the formation of correlations between the two
+partners. This corresponds to the quantum-measurement limit described in
+Sect. 2.8.1 above.
+    The interaction Hamiltonian Ĥint (and thus the total system–environment
+Hamiltonian Ĥ) is chosen to be of the form
+                                          ⎛                                              ⎞
+                                            N                               
+                 1
+    Ĥ = Ĥint = (|00| − |11|) ⊗ ⎝           gi [(|↑↑|)i − (|↓↓|)i ]        Iˆi ⎠
+                 2                          i=1                              i =i
+                       ⎛                         ⎞
+                          N            
+                 1
+               ≡ σ̂z ⊗ ⎝      gi σ̂z(i)     Iˆi ⎠ .                                    (2.99)
+                 2        i=1            i =i
+
+
+Here Iˆi = (|↑↑|)i + (|↓↓|)i denotes the identity operator for the ith envi-
+                                              (i)
+ronmental two-level system, and σ̂z and σ̂z are the Pauli z-spin operators
+of the system and the ith environmental spin, respectively. From now on in
+this book, we shall simplify our notation by omitting the explicit inclusion of
+the identity operators in interaction Hamiltonians and simply write (2.99) as
+
+                                             N
+                                     1                      1
+                     Ĥ = Ĥint =      σ̂z ⊗     gi σ̂z(i) ≡ σ̂z ⊗ Ê.               (2.100)
+                                     2       i=1
+                                                            2
+
+From (2.100) we observe that the central spin couples linearly through its z-
+spin component to each of the environmental spins, with a coupling strength
+given by the constants gi , i = 1 . . . N . Comparison with (2.90) shows that
+the interaction Hamiltonian (2.100) is already in diagonal form, which allows
+us to immediately infer the pointer states of the system selected by the in-
+teraction with the environment. We see that the environment monitors the
+observable σ̂z , i.e., the z-spin component, of the system. Thus, without any

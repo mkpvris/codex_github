@@ -1,0 +1,47 @@
+                                               7.4 Quantum Error Correction     315
+
+subspace Hcode is often referred to as the code subspace for the quantum
+error-correcting scheme.)
+    As we have seen in our above outline, the basic strategy of quantum error
+correction is to project the qubit state into orthogonal subspaces labeled by
+the error operators Êi . Then we can perform a measurement that reveals into
+which of these error subspaces the state has been projected and thus obtain
+information about which countertransformation to use in order to correct the
+error. Formally, a suﬃcient (albeit not necessary) condition for the existence
+of an error-correcting code that can correct errors up to a certain weight t is
+therefore given by requiring that the “error-projected” subspaces
+
+                            {Êi Hcode | weight(Êi ) ≤ t}                    (7.35)
+
+are (at least approximately) mutually orthogonal for all i. Then, for any
+initial state |ψ ∈ Hcode , the diﬀerent error terms Êi |ψ |ei  in the expansion
+of the perturbed state will be mutually orthogonal and thus distinguishable
+by a measurement, without revealing the quantum information encoded in
+the state |ψ itself.
+
+7.4.5 Importance of Redundant Encoding
+and the Three-Bit Code for Phase Errors
+
+It turns out that, in order to fulﬁll condition (7.35), it is usually necessary
+to use redundant encoding. In Sect. 7.4.1, we explained how in classical com-
+puting redundant encoding helps recover the original, unperturbed state. We
+also mentioned that we cannot clone an unknown quantum state. However,
+note that (7.14) points to a method for how we can easily accomplish a re-
+dundant encoding in the “relative-state” form using the computational-basis
+states as the preferred basis. Namely, we simply apply a series of cnot gates
+between the ﬁrst and all other qubits, i.e.,
+
+        (α |0 + β |1) |00 · · · 0 −→ α |000 · · · 0 + β |111 · · · 1 .   (7.36)
+
+How may such redundant encoding help us in correcting quantum errors?
+   First of all, to see why we usually cannot get very far without such en-
+coding, consider the example of a single-qubit state |ψ = α |0 + β |1 that
+becomes entangled with an environment. The ﬁnal composite state can then
+be written as [see (7.24)]
+                    1
+             |Ψ  = √ [(α |0 + β |1) |e+  + (α |0 − β |1) |e− ] .       (7.37)
+                     2
+The assumption encapsulated in (7.31) is now that there exist two orthogonal
+ancilla states |a0  and |a1  and a unitary transformation acting on the Hilbert
+space of the composite ancilla–qubit system such that we can induce the
+evolution

@@ -1,0 +1,47 @@
+280     6 Observing Decoherence in Action
+
+persistent-current states | and | will oscillate as a function of τ with
+frequency δf .
+    In practice, we expect the amplitude of this oscillation to decay, as deco-
+herence diminishes the amount of coherence between the states |0 and |1
+(and thus also between the persistent-current states | and |) during the
+duration τ of the free qubit evolution. As we have explained in Sect. 2.2.2,
+if the superposition becomes completely decohered, then we arrive at an
+incoherent mixture of the states | and | for which the occupation prob-
+abilities are independent of the delay time τ .
+    This eventual disappearance of the oscillations of the occupation proba-
+bilities with increasing delay time τ allows us to observe and quantify the
+gradual eﬀect of decoherence. Chiorescu et al. [284] measured the relevant
+occupation probabilities of the persistent-current states over a range of delay
+times τ . They traced out a damped oscillation of this probability, from which
+the characteristic decoherence timescale could be read oﬀ (Fig. 6.24).
+    We see the expected oscillatory dependence of the occupation probability
+on the delay time τ . The frequency of the oscillation was found to match
+the detuning δf of the microwave radiation, in excellent agreement with the
+predictions of the Ramsey theory. From the decay of the envelope of the
+oscillations, the authors obtained a decoherence time of about 20 ns, which
+represents the characteristic timescale for an environment-induced loss of
+phase coherence between the classical persistent-current states | and |
+during the free evolution of the qubit in this experiment.
+    In more recent experiments involving superconducting ﬂux qubits, signif-
+icantly longer decoherence times up to 4 μs have been observed [287]. These
+promising results have nourished hopes that superconducting qubits might
+be good candidates for the implementation of solid-state quantum-computing
+devices (see Chap. 7). Here, gate operations via the application of control
+pulses can be performed very fast and single-qubit gate operations can be as
+
+
+                 P (τ )
+                80
+                70
+                60
+                50
+                40
+                     0     5    10    15     20     25    30    35
+                                  delay time τ (ns)
+
+Fig. 6.24. Dependence of the occupation probability P (τ ) on the delay time
+τ between the application of two π/2 pulses in a superconducting ﬂux qubit as
+observed in the experiment of Chiorescu et al. [284]. The damping of the oscillation
+amplitude corresponds to the gradual loss of coherence from the system. Figure
+adapted with permission from [284]. Copyright 2003 by AAAS.

@@ -1,0 +1,54 @@
+184    5 Canonical Models For Decoherence
+
+We may also express (5.25) as a master equation for the Wigner represen-
+tation W (X, P ), see (2.132) and Sect. 2.15.2, of the position-space reduced
+density matrix ρS (X, X  ). Without giving the derivation here, we shall simply
+state the result [219],
+                  "                  
+  ∂                  P ∂            2 X ∂ + γ ∂ P
+     W (X, P, t) = −      + M Ω2 + Ω
+  ∂t                 M ∂X                ∂P     ∂P
+                                               #
+                                  ∂2      ∂ ∂
+                              +D      −f         W (X, P, t).              (5.29)
+                                 ∂P 2    ∂X ∂P
+
+Readers familiar with statistical mechanics may recognize the formal simi-
+larity between (5.29) and the Fokker–Planck equation in classical statistical
+physics.
+    Let us proceed by discussing the interpretation of the diﬀerent terms
+appearing in the master equation (5.25). The ﬁrst commutator on the right-
+hand side of (5.25),
+                                    1 2 2               
+                            −i ĤS + M Ω      X̂ , ρ̂S (t) ,                (5.30)
+                                     2
+describes the reversible unitary dynamics of a harmonic oscillator of physical
+frequency (Ω 2 + Ω  2 )1/2 . Thus we see that Ω      2 introduces a temperature-
+independent shift of the natural frequency Ω of the central oscillator, repre-
+senting an example of the Lamb-shift contribution discussed on p. 155.
+    Next, the term                  )              *
+                                −iγ X̂, P̂ , ρ̂S (t)                        (5.31)
+in (5.25) describes momentum damping—and thus dissipation—due to the
+interaction with the environment. To see this, consider the time evolution
+of the expectation value P̂ t for the momentum of the central oscillator as
+determined by the equation of motion (5.25). Using the trace rule P̂  =
+TrS (ρ̂S P̂ ), we obtain
+                                   $       %       -              .
+                  d           d                       dρ̂S (t)
+                     P̂ t = TrS ρ̂S (t)P̂ = TrS              P̂
+                  dt          dt                         dt
+                                       )X̂t − 2γP̂ t .
+                            = −M (Ω + Ω
+                                   2    2
+                                                                       (5.32)
+
+The ﬁrst term −M (Ω 2 + Ω  2 )X̂t is due to the usual unitary evolution in the
+(Lamb-shifted) harmonic-oscillator potential. Let us, for the moment being,
+disregard this unitary nondissipative term. Then, from (5.32), we immediately
+see that, due to the interaction with the environment, the expectation value
+for the momentum of the central system decreases exponentially at a rate 2γ,
+
+                               P̂ t ∝ e−2γt P̂ 0 .                     (5.33)
+
+Thus we have shown that the term (5.31) in the master equation (5.25)
+indeed describes momentum damping at a rate proportional to γ. Note that

@@ -1,0 +1,55 @@
+3.4 Decoherence Due to Scattering of Thermal Photonsand Air Molecules      137
+
+components of the spatial superposition describing the object is much shorter
+than the wavelengths of the scattering air molecules.
+   Then (3.54) gives σeﬀ = πa2 /3. If we insert this value into our general
+expression (3.56) for the scattering constant Λ in the long-wavelength limit,
+we obtain
+                              
+                                             q2
+                         Λ = dq (q)v(q) 2 σeﬀ (q)
+                                             
+                                 2 
+                              πa
+                            =         dq (q)v(q)q 2
+                              32
+                              πa2 (        
+                            ≡    2
+                                    v(q)q 2 ,                          (3.70)
+                              3
+where v(q)q 2  denotes the average value of the quantity v(q)q 2 for a given
+distribution (q).
+    Since we deal with an environment of gas particles, we take the number
+density (q) of air molecules with momentum q to be distributed according
+to the Maxwell–Boltzmann distribution,
+                                          3/2   "       #
+                    N               1                q2
+              (q) = 4πq 2                  exp −           ,     (3.71)
+                    V            2πmkB T           2mkB T
+                                                      (       
+where N/V is the total density of the air. The average v(q)q 2 appearing
+in (3.70), with v(q) = q/m, is then easily computed by carrying out the
+Gaussian integral,
+                    
+       (                              N                 3/2
+         v(q)q 2 = dq (q)v(q)q 2 = 4 (m/π)1/2 (2kB T ) .         (3.72)
+                                       V
+Thus the scattering constant (3.70) is
+                            8 N                     3/2
+                      Λ=         (2πm)1/2 a2 (kB T ) .                   (3.73)
+                           32 V
+We see that here the dependence of the scattering rate on the size a of the
+object and the temperature T is much less dramatic than in the case of photon
+scattering, where we had found Λ ∝ T 9 [see (3.66)]. The a2 dependence is a
+direct consequence of the use of the geometric cross section, while Rayleigh
+scattering is characterized by a much stronger a6 scaling [see (3.59)].
+    Using (3.73), we can estimate some typical values for Λ. Air at normal
+pressure contains about 3 × 1019 particles per cm3 and has a mass of about
+29 kg per kmol (1 kmol contains about 6 × 1026 particles). Thus the mass m
+of an individual air molecule is approximately m = 0.5×10−25 kg. Evaluating
+(3.73) with these values leads to
+                                                             3/2
+                                       1  a 2           T
+             Λ(normal pressure) ≈ 10  39
+                                                                     .   (3.74)
+                                     cm2 s cm             K

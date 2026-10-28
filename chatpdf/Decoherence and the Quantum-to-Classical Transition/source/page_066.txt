@@ -1,0 +1,47 @@
+2.5 The Measurement Problem and the Quantum-to-Classical Transition          51
+
+the measured system and the measuring apparatus, treating not only the
+system but also the apparatus (and, ultimately, the observer; see Sect. 9.2)
+as quantum-mechanical objects. It is worth noting that this approach rep-
+resented a radical departure from the Copenhagen interpretation that had
+postulated the existence of intrinsically classical measurement apparatuses
+which were regarded as not subject to the laws of quantum mechanics (see
+Sect. 8.1).
+    Despite its name, the scope of the von Neumann measurement scheme
+goes far beyond the context of quantum measurement in the actual sense. In
+fact, the von Neumann scheme is the easiest way to understand how quan-
+tum entanglement arises. It also illustrates nicely the aforementioned three
+components of the measurement problem, namely, the problem of the pre-
+ferred basis, the nonobservability of interference eﬀects, and the problem of
+outcomes. Finally, it will allow us to introduce the basic formalism of deco-
+herence, by regarding decoherence as a consequence of a von Neumann–type
+measurement interaction between the system and its environment.
+    After these introductory remarks, let us now formulate the von Neumann
+measurement scheme. Its typical ingredients are a (typically microscopic)
+system S, described by a Hilbert space HS with basis vectors {|si }, and a
+(usually macroscopic) measuring apparatus A, formally represented by basis
+vectors {|ai } in a Hilbert space HA . Strictly speaking, whether the system
+and the apparatus are microscopic or macroscopic has no bearing on the
+following general argument. However, it typically reasonable, from a physical
+point of view, to associate microscopicity with the system, since we would
+like to ensure that the system can be easily prepared in a superposition
+state. On the other hand, the physical realization of a measuring apparatus
+typically involves a macroscopic system with a large number of degrees of
+freedom, and from our experience we would expect such an apparatus to
+behave according to the laws of classical physics (although the von Neumann
+scheme deliberately treats the apparatus in quantum-mechanical terms).
+    The purpose of the apparatus is now to measure the state of the system
+S. We can think of the apparatus as having some kind of pointer that moves
+to the position “i,” represented by the state |ai , if the system is measured
+to be in the state |si  (see Fig. 2.4). Assuming that, before the measurement
+takes place, the apparatus starts out in some initial “ready” state |ar , the
+dynamical measurement interaction between the system and the apparatus
+will then be of the form
+
+                             |si  |ar  −→ |si  |ai                   (2.52)
+
+for all i. Here the initial and ﬁnal states reside in the tensor-product Hilbert
+space HS ⊗HA describing the total SA system. We see that the measurement
+has established a one-to-one correspondence between the state of the system
+and the state of the apparatus: The latter perfectly mirrors the former. Also
+note that, in writing the right-hand side of (2.52), we have tacitly assumed

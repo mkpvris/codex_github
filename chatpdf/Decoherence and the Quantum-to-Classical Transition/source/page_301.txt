@@ -1,0 +1,48 @@
+288     6 Observing Decoherence in Action
+
+    In their original proposal [312], Armour, Blencowe, and Schwab estimated
+the decoherence time of the spatial box–resonator superposition state (6.37)
+using the well-explored model for quantum Brownian motion described in
+Sect. 5.2. Here, the central harmonic oscillator represents the fundamental
+ﬂexural mode of the resonator, which is in turn weakly coupled to an envi-
+ronment of other harmonic oscillators. However, as we have outlined above,
+a more realistic representation of the environment of a nanomechanical res-
+onator at millikelvin temperatures may be a collection of two-level systems
+representing the defects. If we model these two-level systems as quantum
+spin- 12 particles, we arrive at the oscillator–spin model. We derived the weak-
+coupling master equation for this model in Sect. 5.4.2 [see (5.198)].
+    However, the temperature dependence of the damping rate derived from
+this model [see (5.200)] is found to disagree with data obtained from experi-
+ments on QEMS, in which the dissipation rate has been observed to increase
+with temperature [318, 319]. This discrepancy indicates that at least some of
+the two-level defects in the resonator should be modeled as spin- 12 particles
+that are strongly coupled to an additional decohering and dissipative envi-
+ronment (see Fig. 6.28). This environment renders the tunneling of the spins
+incoherent and also leads to relaxation of the spins, thereby inducing defect
+dynamics akin to those of classical two-level ﬂuctuators. By absorbing the
+excess energy from the spin bath, it prevents this bath from saturating. The
+more realistic model for decoherence and dissipation in QEMS may therefore
+be that of the central harmonic oscillator coupled to a number of indepen-
+dent spin–boson models (i.e., spins interacting with an oscillator bath). First
+studies of this model have been carried out very recently [242]. QEMS thus
+oﬀer the opportunity to experimentally distinguish and test diﬀerent models
+for decoherence and dissipation.
+
+
+
+               oscillator            oscillator             oscillator
+                 bath                  bath                   bath
+
+                 spin                   spin                   spin
+
+
+                                     system
+                               (harmonic oscillator)
+
+
+Fig. 6.28. Schematic illustration of a possible model for decoherence and dissipa-
+tion in QEMS. The central system consists of a harmonic oscillator, which represents
+the fundamental ﬂexural mode of the nanomechanical resonator. The oscillator in-
+teracts with a collection of two-level defects modeled as spin- 12 particles. In turn,
+each spin is further coupled to a dissipative bath of oscillators that absorbs energy
+from the (otherwise easily saturated) spin environment.

@@ -1,0 +1,46 @@
+82     2 The Basic Formalism and Interpretation of Decoherence
+
+impossible to ﬁnd any observable for which the commutativity criterion (2.89)
+would be fulﬁlled exactly.
+    Thus, although the diagonalization of the interaction Hamiltonian or the
+application of the commutativity criterion (2.89) are conceptually intuitive
+methods for determining the preferred states and observables in simple cases
+for which the quantum-measurement limit holds, they are often not adequate
+and practicable in more complex situations. The goal of ﬁnding exact pointer
+states that are completely immune to the immersion into the environment is
+therefore often weakened to the aim of determining the states of the system
+that are most robust to the environmental interaction. Approximate pointer
+states are then our best representation of quasiclassical states that are min-
+imally aﬀected by the inevitable interaction with the environment. Also, in
+many realistic physical situations of interest, both the self-Hamiltonian of the
+system and the system–environment interaction Hamiltonian both contribute
+in roughly equal strengths (for example, this is the case in the model for quan-
+tum Brownian motion discussed in Sect. 5.2). Then neither the quantum-
+measurement limit of negligible intrinsic dynamics nor the quantum limit of
+decoherence corresponding to a “slow” environment applies.
+    Therefore more general methods are needed for determining the preferred
+states selected by the interaction with the environment. Such methods were
+developed by Zurek [84, 104] and Zurek, Habib, and Paz [86] under the name
+of the predictability-sieve strategy. The basic idea consists of using a suitable
+measure for the amount of decoherence introduced into the system, such as
+the purity or the von Neumann entropy of the reduced density matrix (see
+Sect. 2.4.3). One then computes the time dependence of the purity or von
+Neumann entropy (or whichever measure has been chosen) for a large set
+of initial states of the system evolving under the total system–environment
+Hamiltonian. The states most immune to decoherence will be those which
+lead to the smallest decrease in purity or the smallest increase in von Neu-
+mann entropy. Application of this method leads to a ranking of the possible
+preferred states with respect to their “classicality,” i.e., their robustness with
+respect to the interaction with the environment.
+    We thus picture ourselves “sifting” through the Hilbert space, sorting
+the states according to their robustness to environmental interactions. The
+most stable states will also be the most predictable (thus motivating the
+terminology “predictability sieve” introduced by Zurek). This is so because
+the fact that the loss of purity or the increase in von Neumann entropy is
+minimized for these states also means that the loss of “information” about the
+state of the system is minimized (recall that a pure state, which has zero von
+Neumann entropy, corresponds to a maximum amount of knowledge about
+the state of the system).
+    In general, the preferred states selected by the predictability sieve may
+diﬀer depending on which measure is used to rank the robustness of the
+states. We already mentioned two measures, namely, purity and von Neumann

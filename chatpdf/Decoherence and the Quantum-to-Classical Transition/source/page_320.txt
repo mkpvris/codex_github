@@ -1,0 +1,54 @@
+308     7 Decoherence and Quantum Computing
+
+Depending on the value of the cij , diﬀerent physical interpretations may be
+attached to the general evolution (7.17). For example, the choice c00 = c11 = 1
+and c01 = c10 = 0 would correspond to decoherence in the true sense, i.e., to
+a purely entangling (von Neumann–type) interaction with the environment
+[see (2.52)],
+
+                                |0 |er  −→ |0 |e00  ,                        (7.18a)
+                                |1 |er  −→ |1 |e11  ,                        (7.18b)
+
+without any change of the component states |0 and |1.
+    Let us for now assume the most general case in which all coeﬃcients cij
+in (7.17) are equal to one. Then the arbitrary pure initial state (7.16) of S
+evolves according to
+
+      |ψ |er  −→ α [|0 |e00  + |1 |e01 ] + β [|0 |e10  + |1 |e11 ] .    (7.19)
+
+It is elementary to rewrite this equation in the form
+                                               1
+                   |ψ |er  −→ (α |0 + β |1)  [|e00  + |e11 ]
+                                               2
+                                               1
+                              + (α |1 + β |0) [|e01  + |e10 ]
+                                               2
+                                               1
+                              + (α |0 − β |1) [|e00  − |e11 ]
+                                               2
+                                               1
+                              + (α |1 − β |0) [|e01  − |e10 ] .               (7.20)
+                                               2
+In fact, we can simplify this expression by noting that the part of each term
+in the sum corresponding to the qubit system can be written as either the
+identity operator Iˆ or one of the Pauli operators σ̂x , σ̂y , and σ̂z acting on the
+initial state |ψ of the qubit. Namely,
+                                         1
+                      |ψ |er  −→ Iˆ |ψ     [|e00  + |e11 ]
+                                            2
+                                            1
+                                 + (σ̂x |ψ) [|e01  + |e10 ]
+                                            2
+                                            1
+                                 + (σ̂z |ψ) [|e00  − |e11 ]
+                                            2
+                                            1
+                                 + (σ̂y |ψ) [|e01  − |e10 ] .              (7.21)
+                                            2
+We can summarize this result as follows. Consider a single qubit S, initially
+described by a pure state |ψ and interacting with an environment E. Then
+an arbitrary evolution of the combined qubit–environment state can always
+be written in the form
+                                            
+                |ψ |er  −→ Iˆ |ψ |eI  +    (σ̂s |ψ) |es  .      (7.22)
+                                                s=x,y,z

@@ -1,0 +1,39 @@
+170    4 Master-Equation Formulations of Decoherence
+
+(but still assumes the weak-coupling limit) in much the same way as the
+equation deduced from the Born–Markov master equation (4.8). The two
+master equations diﬀer only in the range of the time integral appearing in
+the expressions (4.9) for the operators B̂α and Ĉα . In the Markovian case, the
+upper limit of the integral is taken to inﬁnity, leading to time-independent
+expressions for B̂α and Ĉα . Instead, one can let the integral extend from zero
+to t only, resulting in explicitly time-dependent operators B̂α (t) and Ĉα (t).
+With this formally simple modiﬁcation, a “pre-Markovian” master equation
+for quantum Brownian motion emerges that exhibits more ﬁne-grained dy-
+namics, especially in the initial regime close to t = 0. (This equation is of the
+Redﬁeld type mentioned in Sect. 4.2.2.)
+    In fact, for the case of quantum Brownian motion it is possible to de-
+rive the exact non-Markovian master equation (see Sect. 5.2.7), which has
+the same structure as the Markovian master equation save for more compli-
+cated expressions for the environment self-correlation functions (4.10). The
+existence of an exact solution of the quantum Brownian motion model also
+enables us to directly compare the resulting dynamics to the dynamics ob-
+tained from the approximate Born–Markov master equation. In this way, we
+can investigate to what extent the Born–Markov assumptions may constitute
+a reasonable set of approximations for a given physical situation described
+by the model for quantum Brownian motion. The issue of Markovian vs.
+non-Markovian dynamics in quantum Brownian motion will be discussed in
+more detail in Sects. 5.2.2 and 5.2.7 (see also [183]). In general, it is often
+possible to arrive at non-Markovian but time-local master equations of the
+type (4.52) by using the so-called time-convolutionless projection operator
+technique [204–207]. We shall not go into the details of this approach here.
+    We conclude that the Born–Markov master equation (4.8), especially
+when written in the simple Lindblad forms (4.44) or (4.45), allows for a fairly
+straightforward calculation of the approximate decoherence dynamics and for
+an intuitive connection between the formalism (the Lindblad operators) and
+its physical interpretation (the continuous monitoring of system observables
+by the environment). However, in each physical situation one needs to care-
+fully evaluate to what extent the assumptions underlying the derivation of
+this master equation, such as weak system–environment couplings and neg-
+ligible environmental memory eﬀects, are actually appropriate. In the next
+Chap. 5, when discussing concrete models, we will frequently come back to
+this issue.

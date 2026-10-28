@@ -1,0 +1,52 @@
+                                             5.2 Quantum Brownian Motion       197
+                                   "             #
+                              δ2      (X ∓ Xc )2
+      W1,2 (X, P, t) = N 2 δ 2 exp −
+                              δ1          δ12
+                                 &                          '
+                                                          2
+                         × exp −δ22 (P ∓ Pc − β(X ∓ Xc )) ,          (5.72a)
+                                                "    2
+                                                                     #
+                               δ2                  X
+      Wint (X, P, t) = 2N 2 δ 2 exp (−Aint ) exp − 2 − δ22 (P − βX)2
+                               δ1                  δ1
+                         × cos [2κp P + 2(κx − βκp )X] .                   (5.72b)
+
+Here, the coeﬃcients δ1 , δ2 , Xc , Pc , β, Aint , κx , and κp are in general time-
+dependent, with initial values [compare (5.72) with (5.68) and (5.69)]
+
+                         δ12 = δ22 = δ 2 ,                                 (5.73a)
+                         κx = Pc = P 0 ,     κp = X c = X 0 ,              (5.73b)
+                       Aint = 0.                                           (5.73c)
+
+Explicit (however rather complicated) general expressions for these coeﬃ-
+cients obtained from the exact solution of the quantum Brownian model
+(i.e., the solution derived without making the Born–Markov approximations
+used in our above treatment; see Sect. 5.2.7 below) have been given by Paz,
+Habib, and Zurek [184] for arbitrary choices of the spectral density of the
+environment. More simple and concrete expressions for these coeﬃcients can
+be obtained if we focus on the Born–Markov approximation and choose a
+particular form of the spectral density.
+    Regardless, the precise form of the coeﬃcients will not be of further in-
+terest to us here. Instead, we shall try to get a good qualitative picture of
+the time evolution of the Wigner function as described by (5.71) and (5.72).
+This evolution is shown in Fig. 5.4 for the two limiting cases (5.66) and (5.67)
+of initial states. We see that for both initial conditions, the interaction with
+the environment leads to a suppression of the oscillations representing quan-
+tum interference between the wave packets. However, the timescales on which
+this decoherence happens are observed to be very diﬀerent: The superposi-
+tion (5.66) of two wave packets that are initially separated in position only
+is decohered much faster than the superposition (5.67) of momenta. In fact,
+as we shall analyze in more detail below, in the ﬁrst case decoherence occurs
+on a timescale that is virtually independent of the relaxation and dynamical
+timescales of the system. By contrast, in the second case of a superposition
+of momenta quantum, interference is damped on the timescale set by the
+intrinsic dynamics of the system, i.e., by the self-Hamiltonian of the system.
+    This observation is quite easily explained. The interaction Hamiltonian
+explicitly depends on the position of the system. This means that the en-
+vironment directly monitors this position, which leads to strong and rapid
+decoherence in the position basis. The momentum of the system, on the
+other hand, does not appear in the interaction Hamiltonian and is thus not
+directly monitored by the environment. Therefore decoherence in momentum
+can occur only in an indirect manner, i.e., as the result of the monitoring of

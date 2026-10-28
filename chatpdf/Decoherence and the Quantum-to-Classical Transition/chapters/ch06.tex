@@ -1,0 +1,139 @@
+% 原文 p.243
+\hypertarget{srcpage:243}{}\label{srcpage:243}
+\sectionlink{バッキーボールとSQUID：デコヒーレンスの働きを観測する}
+\setcounter{footnote}{0}
+1990年代半ばまで、デコヒーレンスは主に理論模型を通じて研究されていた。第3章で述べたように、1985年にJoosとZeh\cite{ref007}は、塵の粒や大きな分子のような、極めて小さな物体の空間的重ね合わせ状態でさえ、ごくわずかな環境の散乱によって急速にデコヒーレンスすることを示した。また、Zurekが1984年に導いた、空間的デコヒーレンス率の概算式(2.113)\cite{ref012}は、巨視的尺度では、デコヒーレンスが散逸に比べて圧倒的に速いことを示唆した。これらの結果から、デコヒーレンスは極めて効率的かつ高速であるという一般的理解と、日常世界の非古典的重ね合わせは、どれも直ちにデコヒーレンスするという一般的予測が生まれた。
+
+ここまでは、1980年代に知られていた。少なくとも、そうではないかと考えられていた。しかし、決定的に欠けていたのは、デコヒーレンスの作用により、重ね合わせ状態が徐々に観測できなくなる様子を示し、その動力学を実証する実験であった。経験世界に関係するあらゆる長さの尺度では、Schrödingerの猫状態の観測を阻むほど、デコヒーレンスは強く速い、と述べるだけでなく、そのような実験によって、この量子から古典への移行がどう起きるかを直接見られるはずである。デコヒーレンスの滑らかな作用が量子的特徴を運び去り、対象の物体を無事に古典領域へ送り込む様子を観測でき、さらに、その後量子コヒーレンスを回復させ、量子から古典への移行が本当に双方向の過程であることさえ示せるかもしれない。実験パラメーターを操作することで、この過程の動力学と性質を変え、基本的な量子・古典境界というCopenhagenの見方（8.1節参照）に挑むことができる。最後に、デコヒーレンスの理論模型を試し、実際の実験環境における環境相互作用の効果を、本当にどこまで捉えているかを調べることもできる。
+
+そのような実験の有用性と面白さを、読者にも納得していただけたことを願いつつ、デコヒーレンスの実験を実現する際に、直ちに直面する困難を見よう。デコヒーレンスの漸進的な作用を観測するためには、何をする必要があるだろうか。第一に、非古典的重ね合わせ状態に系を準備できなければならない。もちろん、系はデコヒーレンスを十分に受けやすくするため、ある最低限の「大きさ」を持つべきである。単一の電子ではなく、できれば、
+% 原文 p.244
+\hypertarget{srcpage:244}{}\label{srcpage:244}
+数個のもつれた光子や分子のような、中間的尺度の系が望ましい。しかし、ここに落とし穴がある。そのような系の重ね合わせ状態は通常、実験で分解できるよりもはるかに速くデコヒーレンスすることを、理論研究から知っている。したがって、デコヒーレンスが速過ぎず、しかも十分によく制御できるよう、非常に巧妙に実験を設計しなければならない。さらに、重ね合わせ状態を作ったら、あまり余分なデコヒーレンスを加えずに、系の状態を連続的に監視する手段も必要になる。これらの望ましい性質をすべて考えると、デコヒーレンス実験の実現は、非常に特殊な系と観測技術を必要とする、手ごわい課題である。
+
+本章では、実験室で「Schrödingerの子猫」を作り、デコヒーレンスによって実効的に古典的な系へ変わる様子を、理論的予測との印象的な一致の下で観測できるようにした、近年の実験をいくつか述べる。6.1節では、漸進的なデコヒーレンス過程の観測を初めて可能にした実験を論じる。これは、電磁場の異なる状態の重ね合わせに基づく実験であった。6.2節では、かなり重い$\mathrm C_{70}$分子について、干渉模様と、デコヒーレンスによるその消失が観測された実験を述べる。6.3節では、超伝導二準位系、すなわち「量子ビット」系の実験に焦点を当てる。最後の6.4節では、将来のデコヒーレンス研究の有望な候補である、Bose--Einstein凝縮と量子電気機械系という、ほかの二つの実験領域を概説する。
+
+\subsectionlink{最初の画期的成果：共振器中の原子}
+1996年には、中間的尺度のSchrödingerの猫状態の生成と検証について、いくつもの実験的突破があった。これらの実験の基本機構は、Schrödingerが猫の逆説で最初に考えたもの（第1章参照）と似た過程に根ざし、von Neumannの測定図式（2.5.1節参照）で形式的に記述できる。比較的容易に重ね合わせ状態$(|s_1\rangle+|s_2\rangle)/\sqrt2$へ準備できる微視的な系Sを、中間的尺度または巨視的な装置Aと相互作用させ、後者が$\{|s_1\rangle,|s_2\rangle\}$基底でSの状態を「測定」するようにする。ここで測定とは、量子相関を形成するという、一般的なvon Neumannの意味である（2.5.1節参照）。これによって、もつれた結合状態が得られる［(2.54)と比較］。
+\begin{equation}
+|\Psi\rangle=\frac1{\sqrt2}(|s_1\rangle|a_1\rangle+|s_2\rangle|a_2\rangle).\tag{6.1}
+\end{equation}
+したがって、中間的尺度または巨視的な結合系SAは、今や重ね合わせ、すなわち「猫」状態$|\Psi\rangle$で記述される。
+
+Monroeたち\cite{ref246}は、この原理を使い、捕獲した単一の${}^9\mathrm{Be}^+$イオンについて、中間的尺度の距離だけ離れた、空間的によく局在した二つのコヒーレント状態波束の重ね合わせを作った。
+% 原文 p.245
+\hypertarget{srcpage:245}{}\label{srcpage:245}
+各波束は、イオンの異なる微視的な内部電子状態と相関していた。したがって、イオンは(6.1)の形の、もつれた猫状態、すなわち
+\begin{equation}
+|\Psi\rangle=\frac1{\sqrt2}(|x_1\rangle|\uparrow\rangle+|x_2\rangle|\downarrow\rangle)\tag{6.2}
+\end{equation}
+で記述される。ここで$|x_i\rangle$は$x_i$付近に局在した二つの波束、$|\uparrow\rangle$と$|\downarrow\rangle$は関係する二つの電子状態を表す。Monroeらは、超微細基底状態の対を用いた。先に導入した記法では、これらの電子状態が系Sに対応し、波束の二つの異なる空間領域が、中間的尺度の「計器」Aとして働く。
+
+実験では、波束の中心は約80nm離れており、各波束の幅約7nmよりはるかに大きかった。重ね合わせの存在は、干渉模様を明示的に観測することで検証された。Monroeらは、実験でデコヒーレンスを調べるための技術をいくつか指摘したが、この問題を実際に実験的に調べたわけではなかった。
+
+この野心的な目標は、同年、ParisのEcole Normale SupérieureのMichel Bruneたちによる、注目すべき実験\cite{ref247}で達成された（この実験の分かりやすい総説は\cite{ref248}も参照）。研究者たちは、物質粒子の重ね合わせの代わりに、古典的に区別できる位相を持つ放射場の、中間的尺度の猫状態を作り、その重ね合わせがデコヒーレンスによって徐々に壊れる様子を「見た」。この実験では、微視的な系Sと「計器」Aが、物理的に別々の系として実現されるため、Monroeらの実験よりも、元のSchrödingerの猫の設定の精神にさらに近い。
+
+実験の基本的な考えは、次のとおりである。原子を、二つのエネルギー固有状態$|g\rangle$と$|e\rangle$の重ね合わせに準備し、電磁場のコヒーレント状態$|\alpha\rangle$を含む共振器を通過させる。場は、原子が$|e\rangle$状態なら、そのコヒーレント状態が位相シフト$\varphi$を受けて、$|\alpha\rangle\to|e^{i\varphi}\alpha\rangle$となり、原子が$|g\rangle$状態なら何も起きないという仕方で、原子の状態を実効的に測定する。時間発展の線形性により、原子の重ね合わせが、結合した原子・場状態に刻み込まれる。
+\begin{equation}
+\frac1{\sqrt2}(|g\rangle+|e\rangle)|\alpha\rangle
+\longrightarrow\frac1{\sqrt2}(|g\rangle|\alpha\rangle+|e\rangle|\alpha e^{i\varphi}\rangle).\tag{6.3}
+\end{equation}
+実験では、コヒーレント状態は約10個の光子からなり、達成される位相シフト$\varphi$は$\pi$程度なので、場の相対状態$|\alpha\rangle$と$|e^{i\varphi}\alpha\rangle$は、中間的尺度で異なる。したがって、(6.3)の右辺は、真に中間的尺度の猫状態を表す。後述する巧妙な方法で、重ね合わせ状態の存在を検証し、その漸進的なデコヒーレンスを観測する。以下、この実験をより詳しく説明する。
+
+% 原文 p.246
+\hypertarget{srcpage:246}{}\label{srcpage:246}
+\subsubsectionlink{原子と場の相互作用およびRabi振動}
+実験では、重ね合わせの「種」として働く微視的な系Sは、二つの円形Rydberg状態に対応する、異なる二つのエネルギー固有状態$|g\rangle$、$|e\rangle$の重ね合わせに準備した、Rb原子で実現される。これらは、大きな量子数$n$と、量子化軸方向の最大の軌道角運動量、すなわち$|m|=n-1$を持つ状態である。Bruneら\cite{ref247}は$n=50$と51を用いた。対応する価電子の確率密度はトーラス形で、価電子は量子化軸に垂直な平面内の、準古典的な円軌道を運動する。このような状態には、多くの興味深い性質がある。この実験で最も重要なのは、大きな磁気双極子モーメントのため、弱いマイクロ波放射とも強く相互作用することである。また、電子は原子核から遠く、したがって加速度が比較的小さいため、放射減衰時間が長い。これら二つの特徴により、デコヒーレンスの漸進的作用の観測に必要な、長寿命の原子・場相関を準備できる。
+
+原子と外部振動場の相互作用が実験の主要要素なので、いわゆるRabi振動を簡単に復習しよう。原子の二つのエネルギー準位$|g\rangle$（エネルギー$E_g$）と$|e\rangle$（エネルギー$E_e$）だけが関係すると仮定できるとする。実験で用いる円形Rydberg準位は放射と非常に強く相互作用するので、これはよい近似である。このとき原子状態は、
+\begin{equation}
+|\psi_{\mathrm{atom}}\rangle=c_g(t)|g\rangle+c_e(t)|e\rangle\tag{6.4}
+\end{equation}
+と書ける。$c_g(t)$と$c_e(t)$は、$|c_g(t)|^2+|c_e(t)|^2=1$を満たす任意の複素係数である。場がない場合、原子のHamiltonianは、
+\begin{equation}
+\hat H_0=E_g|g\rangle\langle g|+E_e|e\rangle\langle e|.\tag{6.5}
+\end{equation}
+それでは、周波数$\omega$の外部正弦振動場を加えよう。この場は古典的に扱うが、それは次の理由によって、この実験では完全に正当な近似となる。実験に使われる、場を含む特定の共振器は非常に散逸的であり、環境と強く相互作用する。したがって場のエネルギーとコヒーレンスが絶えず共振器から漏れ出し、場を実効的に古典的にする。これもまたデコヒーレンス過程である\cite{ref249}。これは、実験の共振器内の平均光子数が1程度であり、量子的取扱いが必要に思えるにもかかわらず成り立つ。
+
+場を加えると、原子のHamiltonianは、$\hbar\equiv1$として、
+\begin{equation}
+\hat H=\hat H_0+\frac\epsilon2e^{i\omega t}|g\rangle\langle e|+\frac\epsilon2e^{-i\omega t}|e\rangle\langle g|\tag{6.6}
+\end{equation}
+となる。Rabi周波数$\epsilon$は、原子と場の結合の尺度である。したがって、外場は原子準位$|g\rangle$と$|e\rangle$の間に遷移を誘起できる。
+% 原文 p.247
+\hypertarget{srcpage:247}{}\label{srcpage:247}
+原子が初めに基底状態$|g\rangle$、すなわち$c_g(0)=1$、$c_e(0)=0$にあるとすると、簡単な計算から、時間$t$後に原子が$|e\rangle$状態に見いだされる確率が得られる。
+\begin{equation}
+|c_e(t)|^2=\frac{\epsilon^2}{\Omega^2}\sin^2\frac{\Omega t}{2}.\tag{6.7}
+\end{equation}
+ここで$\Omega\equiv\sqrt{\Delta^2+\epsilon^2}$は一般化Rabi周波数と呼ばれ、$\Delta=\omega-\omega_{eg}$は、場の周波数$\omega$と原子遷移周波数$\omega_{eg}\equiv E_e-E_g$との離調を表す。離調$\Delta$が大きいほど、状態$|\psi_{\mathrm{atom}}\rangle$の成分$|e\rangle$の最大振幅は小さくなることが分かる。
+
+共鳴時、すなわち場の周波数$\omega$を原子遷移周波数$\omega_{eg}$へ調整し、$\Delta=0$とすると、$\Omega=\epsilon$である。このとき(6.7)は、
+\begin{equation}
+|c_e(t)|^2=\sin^2\frac{\epsilon t}{2}=\frac12(1-\cos\epsilon t)\tag{6.8}
+\end{equation}
+となる。すなわち、原子は二つのエネルギー準位$|g\rangle$、$|e\rangle$の間を、Rabi周波数$\epsilon$で往復する。特に、原子を$|g\rangle$または$|e\rangle$状態から出発させ、時間$\tau=\pi/(2\epsilon)$だけ場を加えると、いわゆる「共鳴$\pi/2$パルス」であるが、$|c_e(\tau)|^2=1/2$となり、原子の結果の状態は、等しい重みの重ね合わせ
+\begin{equation}
+|\psi_{\mathrm{atom}}\rangle\propto|g\rangle+e^{i\Phi}|e\rangle\tag{6.9}
+\end{equation}
+となる。$\Phi$は、ある実数の位相である。実験でRb原子の初期重ね合わせ状態を作る方法は、まさにこれである。
+
+2.2.2節で概説したRamsey干渉法も、二つの$\pi/2$ Rabiパルスの適用に直接基づくことを指摘しよう。最初の$\pi/2$パルスは、(2.4)、(6.9)のように、二つの基底状態の重ね合わせを作る。一方、ある遅延時間後に加える二番目の$\pi/2$パルスは、展開係数の大きさが遅延時間の関数として変動する、最終状態(2.6)をもたらす。
+
+\subsubsectionlink{猫状態を作る}
+放射場の重ね合わせ状態は、実験で厳密にどのように作られるのだろうか。以下の議論では、各段階の模式的概観を示す図6.1を参照されたい。まず、図6.2に描いた実験配置を見よう。源Oから放出され、初期状態$|e\rangle$に準備されたRb原子は、$R_1$、C、$R_2$と名づけられた、三つの共振器を順に通過する。最初の共振器$R_1$の目的は、上述の方法でRb原子の重ね合わせ状態を作ることである。すなわち、原子遷移$|g\rangle\leftrightarrow|e\rangle$の周波数に等しい周波数の$\pi/2$パルスを原子へ加え、$\Phi=0$とした状態(6.9)、すなわち
+% 原文 p.248
+\hypertarget{srcpage:248}{}\label{srcpage:248}
+\begin{figure}[htbp]\centering\includegraphics[width=.96\linewidth]{figures/ch06_fig01.pdf}
+\caption{猫状態を生成する事象の系列。(a)共振器$R_1$で$\pi/2$パルスを加え、Rb原子を$|g\rangle$と$|e\rangle$の重ね合わせ(6.10)に準備する。(b)コヒーレント場$|\alpha\rangle$を含む共振器Cを通過するとき、原子が$|e\rangle$状態なら、場へ分散的位相シフト$|\alpha\rangle\to|-\alpha\rangle$を与える。原子は$|g\rangle$と$|e\rangle$の重ね合わせなので、もつれた原子・場状態［(6.15)参照］が作られる。(c)共振器$R_2$で、別の$\pi/2$パルスを原子へ加え、原子・場状態(6.17)へ導く。(d)検出器対$D_e$、$D_g$で原子のエネルギー状態$|g\rangle$または$|e\rangle$を測定し、共振器Cの状態を、もつれていない猫状態$|\Psi_{\mathrm{field}}^{(g,e)}\rangle\propto(\pm|\alpha\rangle+|-\alpha\rangle)$へ射影する。}
+\end{figure}
+\begin{figure}[htbp]\centering\includegraphics[width=.9\linewidth]{figures/ch06_fig02.pdf}
+\caption{放射場の中間的尺度のSchrödingerの猫状態を作り、その漸進的デコヒーレンスを監視するために、Bruneら\cite{ref247}が用いた実験配置。炉Oから放出されたRb原子は、光子場を含む共振器$R_1$、C、$R_2$を順に通過し、電離箱$D_e$、$D_g$で検出される。許可を得て\cite{ref250}の図を改作。Copyright 1996 by the American Physical Society.}
+\end{figure}
+
+% 原文 p.249
+\hypertarget{srcpage:249}{}\label{srcpage:249}
+\begin{equation}
+|\psi_{\mathrm{atom}}\rangle=\frac1{\sqrt2}(|g\rangle+|e\rangle)\tag{6.10}
+\end{equation}
+を作る。初期原子状態が$|g\rangle$なら、最終状態は$|\psi_{\mathrm{atom}}\rangle=(|g\rangle-|e\rangle)/\sqrt2$であっただろう。次に原子は共振器Cへ入る。共振器中の熱放射を最小にするため、Cは絶対零度近くの超伝導領域まで冷却される。共振器$R_1$とは対照的に、Cはいわゆる「Q値」が非常に大きい。Qは``quality''を表す。これは散逸損失が最小限となり、共振器内の光子寿命がかなり長いことを意味する。共振器は、約3cm離れた二枚の平行な鏡からなる。ただし鏡の間隔は調節でき、その結果、共振器内の放射の周波数を変えられる。この放射は、数個の光子を含むコヒーレント場からなる。
+
+共振器の周波数が、準位$|g\rangle$からのいかなる遷移の共鳴周波数からも大きく外れているため、場と相互作用する$|g\rangle$状態には何も起こらない一方、別の準位$|i\rangle$、すなわち$n=52$の円形Rydberg状態を含む、$|e\rangle$からの遷移の周波数には、かなり近いことに注意することが非常に重要である。しかし、原子軌道に沿う場の強度の増減は非常にゆっくりなので、原子と場の相互作用はほぼ断熱的である。つまり、原子と場の間でエネルギー量子は交換されず、状態(6.4)の成分$|e\rangle$の振幅$|c_e(t)|$にも実際の変化は起きない。代わりに起こることが、非常に興味深い。共振器Cへ入った原子は、場に対する屈折媒質として働き、場の周波数にシフト$\delta\omega$を生じさせる。このシフトが有意になるのは原子が$|e\rangle$状態の場合だけで、$|g\rangle$状態では無視できることが分かる。原子と場の相互作用時間$\tau$を微調整することで、実験では、原子が$|e\rangle$状態の場合に、場に$\pi$に近い値の位相シフト$\varphi=\tau\delta\omega$を与える。
+
+各光子へそのような位相シフト$\varphi$を加えると、コヒーレント状態$|\alpha\rangle$はどうなるだろうか。複素振幅$\alpha$の光子場のコヒーレント状態は、光子数固有状態$|n\rangle$の重ね合わせで定義される\cite{ref238,ref239,ref240,ref241}。
+\begin{equation}|\alpha\rangle=\sum_{n=0}^\infty c_n|n\rangle,\tag{6.11}\end{equation}
+ここで、
+\begin{equation}c_n=e^{-|\alpha|^2/2}\frac{\alpha^n}{\sqrt{n!}}.\tag{6.12}\end{equation}
+したがって光子数状態の分布は、平均光子数$\bar n=|\alpha|^2$のPoisson分布に従う。
+\begin{equation}\wp(n)\equiv|c_n|^2=e^{-\bar n}\left(\frac{\bar n^n}{n!}\right).\tag{6.13}\end{equation}
+各光子が位相シフト$\varphi$を受けると、状態$|\alpha\rangle$は、
+% 原文 p.250
+\hypertarget{srcpage:250}{}\label{srcpage:250}
+\begin{equation}
+|\alpha\rangle\longrightarrow e^{-|\alpha|^2/2}\sum_{n=0}^\infty e^{in\varphi}\frac{\alpha^n}{\sqrt{n!}}|n\rangle
+=e^{-|\alpha|^2/2}\sum_{n=0}^\infty\frac{(e^{i\varphi}\alpha)^n}{\sqrt{n!}}|n\rangle=|e^{i\varphi}\alpha\rangle.\tag{6.14}
+\end{equation}
+となる。したがって、実験のように$\varphi=\pi$の位相シフトでは、コヒーレント場状態$|\alpha\rangle$は$|-\alpha\rangle$へ変換される。原子が共振器Cを通過した後、複合的な原子・場系は、状態［(6.3)参照］
+\begin{equation}|\Psi_{\mathrm{atom+field}}\rangle=\frac1{\sqrt2}(|g\rangle|\alpha\rangle+|e\rangle|-\alpha\rangle)\tag{6.15}\end{equation}
+で記述されることになる。図6.2の実験配置へ立ち戻ろう。実際には、$R_1$と同一の第三の共振器$R_2$が、原子軌道に沿って共振器Cの後にある。$R_2$内では、Cから出てきた原子へ、二回目の$\pi/2$パルスを加える。このパルスが、次の変換を実現することを思い出そう［(6.10)参照］。
+\begin{equation}\begin{aligned}|g\rangle&\longrightarrow\frac1{\sqrt2}(|g\rangle-|e\rangle),\\|e\rangle&\longrightarrow\frac1{\sqrt2}(|g\rangle+|e\rangle).\end{aligned}\tag{6.16}\end{equation}
+したがって、もつれた状態(6.15)は、
+\begin{equation}\begin{aligned}
+|\Psi_{\mathrm{atom+field}}\rangle&=\frac12(|g\rangle|\alpha\rangle-|e\rangle|\alpha\rangle+|g\rangle|-\alpha\rangle+|e\rangle|-\alpha\rangle)\\
+&=\frac12(|\alpha\rangle+|-\alpha\rangle)|g\rangle+\frac12(-|\alpha\rangle+|-\alpha\rangle)|e\rangle.
+\end{aligned}\tag{6.17}\end{equation}
+となる。$R_2$の通過後、原子は二つの電離箱$D_e$、$D_g$へ入り、$|g\rangle$状態か$|e\rangle$状態かが測定される。状態(6.17)と量子力学の通常の射影公準によれば、測定後の場の状態は、原子が$|g\rangle$状態に見いだされるなら、
+\begin{equation}|\psi_{\mathrm{field}}^{(g)}\rangle=\frac1{\mathcal N}(|\alpha\rangle+|-\alpha\rangle),\tag{6.18}\end{equation}
+原子が$|e\rangle$状態に見いだされるなら、
+\begin{equation}|\psi_{\mathrm{field}}^{(e)}\rangle=\frac1{\mathcal N}(-|\alpha\rangle+|-\alpha\rangle)\tag{6.19}\end{equation}
+の、どちらかになる。ここで$\mathcal N$は規格化因子であり、$|\alpha|^2$が大きければ$\sqrt2$に非常に近い。簡単のため、以下では$\mathcal N=\sqrt2$と仮定しよう。
+
+(6.18)、(6.19)から、今や異なる位相を持つ二つのコヒーレント場状態の重ね合わせを、実際に準備できたことが分かる。これらの状態の「猫らしさ」は、共振器C内の平均光子数$\bar n=|\alpha|^2$が増すほど大きくなる。
+% 原文 p.251
+\hypertarget{srcpage:251}{}\label{srcpage:251}
+これらの重ね合わせ状態は、もつれた状態$|\Psi_{\mathrm{atom+field}}\rangle$［(6.15)参照］とは異なることに注意しよう。後者からは、場自体が重ね合わせにあるとはいえず、原子・場の結合系だけが重ね合わせで記述される。これに対して、共振器$R_2$を通過した後の原子状態の測定は、原子と場のもつれを解くので、(6.18)、(6.19)は放射場の真の重ね合わせ状態を表す。
+
+重要な問いが一つ残る。重ね合わせ(6.18)、(6.19)を、対応する混合から、どう区別できるだろうか。これは、上述の方法で中間的尺度のSchrödingerの猫を作ることに成功したと主張するためだけでなく、私たちの主要目標、すなわちデコヒーレンスの作用を観測するためにも重要である。実験では、次節で説明する巧妙な仕掛けによって、この問題を解決する。
+\input{chapters/ch06_b.tex}
+\input{chapters/ch06_c.tex}
+\input{chapters/ch06_d.tex}

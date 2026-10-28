@@ -1,0 +1,48 @@
+94     2 The Basic Formalism and Interpretation of Decoherence
+
+merous theoretical and experimental studies have demonstrated, the deco-
+herence timescale is typically many orders of magnitude shorter than the
+relaxation timescale. In Sect. 5.2.4, we will show that a rule-of-thumb esti-
+mate for the ratio of the relaxation timescale τr to the decoherence timescale
+τd for a massive object described by a superposition of two diﬀerent positions
+a distance Δx apart is
+                                           2
+                                τr      Δx
+                                   ∼           .                       (2.113)
+                                τd      λdB
+Here, λdB is the thermal de Broglie wavelength of the object,
+                                         
+                              λdB = √          ,                        (2.114)
+                                        2mkB T
+where m is the mass of the object, T its temperature, and kB is the Boltzmann
+constant. Equation (2.113) was derived by Zurek in 1984 [12], providing a ﬁrst
+general estimate for the decoherence timescale (then still called “decorrelation
+timescale”).
+    In his paper (and also in his subsequent article in Physics Today [13]),
+Zurek gave the following numerical example to illustrate the typically enor-
+mous diﬀerences between the decoherence and relaxation timescales at the
+macroscopic level. Zurek considered a macroscopic object of mass m = 1 g
+at room temperature (T = 300 K). For this object, λdB is tiny, namely,
+λdB ≈ 10−23 m. Clearly, this number is microscopic by all accounts. Suppose
+now the particle is described by a coherent superposition of two mesoscopi-
+cally or even macroscopically distinct locations. Then, the ratio (Δx/λdB )2
+in (2.113) will be very large, and it follows that the decoherence timescale
+τd for this superposition will be overwhelmingly shorter than the dissipation
+(relaxation) timescale τr . Zurek [12,13] used the example of the object’s being
+described by a superposition of two spatial locations a macroscopic distance
+Δx = 1 cm apart. Then the ratio (2.113) is on the order of 1040 . That is,
+the typical decoherence time for an object described by such a superposition
+is some 40 orders of magnitude shorter than the relaxation time required to
+reach thermal equilibrium!
+    For macroscopic objects, the dissipative inﬂuence of the environment is
+therefore usually completely negligible with respect to the dynamics of the
+system on any timescale relevant to the decoherence induced by this environ-
+ment. For example, photons scattering oﬀ a bowling ball will hardly aﬀect the
+ball’s motion in any way, while they will lead to virtually instantaneous de-
+coherence of a superposition state involving macroscopically distinguishable
+positions of the ball (see also Fig. 1.3).
+    Thus this crucial diﬀerence between relaxation and decoherence timescales
+explains why we observe macroscopic objects to follow perfectly Newtonian
+trajectories—eﬀectively “created” through the action of decoherence (see
+Sect. 5.2.5)—with often hardly any manifestation of dissipation, such as a
+slowing-down of the object. To use an example going back to Joos [17, p. 79],

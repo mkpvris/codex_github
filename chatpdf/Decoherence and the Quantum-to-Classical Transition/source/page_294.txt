@@ -1,0 +1,46 @@
+                        6.3 SQUIDs and Other Superconducting Qubits        281
+
+short as about 2 ns. One may therefore be able to perform on the order of a
+thousand gate operations before coherence is appreciably lost. This number,
+however, is still rather far away from the O(100, 000) gate operations required
+to implement even simple quantum algorithms.
+    Quantum-coherent oscillations and decoherence have also been observed
+in superconducting devices whose key variable is either charge or phase, in-
+stead of the ﬂux variable used in the case of SQUIDs. Generally, the formal
+description of the physics of superconducting charge and phase devices is very
+similar to that of the SQUID given above.
+    Superconducting charge qubits, commonly known as Cooper-pair boxes,
+consist of a tiny superconducting “island” onto which Cooper pairs can tun-
+nel from a reservoir through a Josephson junction. The two qubit basis states
+then correspond to two diﬀerent charge states of the island, diﬀering by at
+least one Cooper pair. Cooper-pair boxes were the ﬁrst superconducting qubit
+systems that allowed for the experimental observation of Rabi oscillations be-
+tween charge states, which was accomplished in 1999 by Nakamura, Pashkin,
+and Tsai [288]. In 2002, Vion et al. [289] reported the observation of many
+thousands of coherent oscillations with a decoherence time of 0.5 μs.
+    Coherent oscillations of the Rabi type have also been observed in phase
+qubits. Phase qubits contain a single Josephson junction, similar to the rf-
+SQUID. However, instead of the ﬂux threading the loop, the key variable
+is here the phase diﬀerence between the electrodes of the junction. Yu et
+al. [290] measured Rabi oscillations between macroscopically distinct phase
+states and found decoherence times up to several μs. Similar results were also
+reported by Martinis et al. [291].
+    Current experimental evidence (see, e.g., [291, 292]) indicates that the
+main source of decoherence in superconducting qubits is the presence of in-
+trinsic defects in the Josephson junctions and the superconductor, rather
+than (as one may have expected) interactions with the external circuit used
+to control the loop–junction setup. Often, these defects can be modeled as
+eﬀective two-level systems. As brieﬂy mentioned in Sect. 5.1.2, it has been
+well known for a while that decoherence and dissipation in low-temperature
+(e.g., superconducting) systems is mainly due to such intrinsic two-level sys-
+tems [199, 200]. Since the superconducting qubit itself is a two-level system,
+the appropriate model for a theoretical description of decoherence in such
+qubits is likely to be of the spin–spin type discussed in Sect. 5.4 [199].
+    For example, Martinis et al. [292] applied this model to a study of deco-
+herence in superconducting phase qubits due to dielectric loss from two-level
+states present both in the bulk insulating material as well as in the Joseph-
+son junction. Insights gathered from these theoretical studies were success-
+fully translated into signiﬁcantly improved experimental structures. Other
+theoretical studies of decoherence in superconducting qubits have focused
+on the inﬂuence of noise processes, such as ﬂuctuations in the bias current
+controlling a current-biased Josephson junction [293]. However, in view of

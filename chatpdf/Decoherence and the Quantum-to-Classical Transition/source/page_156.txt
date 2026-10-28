@@ -1,0 +1,53 @@
+                            3.5 Illustrating the Dynamics of Decoherence            141
+
+                                            1
+                               (t) ≡ +             .                             (3.80)
+                                           8A(t)
+
+On the other hand, the width of ρS (x, x , t) in the diagonal x = x direction
+corresponds to the size of the probability distribution P (x, t) ≡ ρS (x, x, t),
+which describes the probability of ﬁnding the system at x upon     + a mea-
+surement of its position. This width is inversely proportional to C(t) [see
+(3.79)]. Accordingly, we shall introduce the ensemble width ΔX(t) as
+                                                1
+                              ΔX(t) = +                 ,                         (3.81)
+                                               8C(t)
+
+which quantiﬁes the total size of the position-space ensemble.
+   The coeﬃcient B(t), together with A(t) and C(t), is related to the spread
+ΔP (t) of the momentum distribution, which is given by
+                                    "               #1/2
+                                  √         B 2 (t)
+                       ΔP (t) =    2 A(t) +              .                        (3.82)
+                                            4C(t)
+
+We can use (3.81) and (3.82) to write down the corresponding uncertainty
+relation,
+                                   "             #1/2
+                                 1 A(t) B 2 (t)
+                  ΔX(t)ΔP (t) =          +            .           (3.83)
+                                 2 C(t) 4C(t)
+Finally, the term D(t) ensures that the trace of the density matrix is a con-
+served quantity at all times.
+    Inserting our Gaussian ansatz (3.79) into the equation of motion (3.78)
+yields a set of coupled diﬀerential equations for the coeﬃcients A(t), B(t),
+C(t), and D(t) that can be solved explicitly for arbitrary initial conditions
+(see, e.g., Appendix A2 of [17]). Here, let us illustrate the decoherence dy-
+namics of the reduced density matrix by choosing a particular initial state,
+namely, a pure-state Gaussian wave packet of width b centered at x = 0,
+                                  "      #1/4                    
+                                 1                          −x2
+                      ψ(x, 0) =                 exp                   .           (3.84)
+                                2πb2                        4b2
+
+This yields the initial density matrix
+                               "        #1/2                             
+                                 1                  x2 + x2
+                 ρS (x, x , 0) =               exp −                          ,   (3.85)
+                                 2πb2                  4b2
+
+which corresponds to the initial values A(0) = C(0) = 1/8b2 and B(0) =
+D(0) = 0 for the coeﬃcients appearing in (3.79).
+    The density matrix (3.85) is plotted in Fig. 3.5. We see that the Gaussian
+is symmetric with respect to the x and x axes, i.e., the coherence length
+and ensemble width are of equal magnitudes. For this initial state (3.85), the

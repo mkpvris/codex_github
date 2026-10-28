@@ -1,0 +1,53 @@
+                                                  5.3 The Spin–Boson Model       215
+
+Hence
+               
+                     |gi |2
+    r(t) = exp −4               (1 − cos ωi t) coth (ωi /2kB T ) ≡ eΓ (t) ,   (5.121)
+                      i
+                          ωi2
+
+where we have denoted the argument of the exponential by Γ (t).
+
+Time evolution of the decoherence factor
+
+After these rather formal manipulations, let us now try to get a feel for
+the time dependence of r(t) by studying Γ (t). First, let us assume that the
+environment is suﬃciently large such that we can assume a continuous density
+of environmental modes. Just as in our discussion of quantum Brownian
+motion in Sect. 5.2, we therefore go from our expression (5.121) in terms of
+a sum over the discrete couplings gi to a continuous description by means of
+a spectral density J(ω),
+                                       ∞
+                                 2
+                            |gi | −→        dω J(ω).                 (5.122)
+                            i                 0
+
+
+With this replacement, Γ (t) appearing in (5.121) becomes
+                   ∞
+                          4J(ω)
+        Γ (t) = −     dω        (1 − cos ωt) coth (ω/2kB T ) .                (5.123)
+                   0        ω2
+Of course, if we choose
+                                             2
+                           J(ω) =          |gi | δ(ω − ωi ),                  (5.124)
+                                       i
+
+the right-hand side of (5.123) will be trivially identical to our original expres-
+sion (5.121). Instead, let us now represent J(ω) by a suitably chosen smooth
+function of ω.
+    As in the case of quantum Brownian motion (see Sect. 5.2.3), we shall
+consider a spectral density that is ohmic for suﬃciently small frequencies,
+J(ω) ∝ ω, and that has a smooth high-frequency cutoﬀ quantiﬁed by Λ.
+Instead of the Lorentz–Drude form (5.44) used in our model for quantum
+Brownian motion, let us here choose an exponential cutoﬀ of the form e−ω/Λ .
+Thus our spectral density takes the form
+
+                                J(ω) = 4J0 ωe−ω/Λ ,                           (5.125)
+
+where J0 is a dimensionless constant. The factor of four appearing in (5.123)
+has been absorbed into (5.125). The spectral density is plotted in Fig. 5.6.
+As desired, J(ω) increases approximately linearly for frequencies ω < Λ and
+decreases for ω > Λ.
+   With the functional form (5.125) for J(ω), (5.123) reads

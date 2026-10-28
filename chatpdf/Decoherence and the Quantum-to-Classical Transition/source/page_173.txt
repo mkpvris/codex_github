@@ -1,0 +1,57 @@
+                                       4.2 The Born–Markov Master Equation                        159
+
+Iterative Solution by Integration
+
+If we now formally integrate (4.16), we get
+                                             t
+                                                                             
+                    ρ̂(I) (t) = ρ̂(0) − i         dt Ĥint (t ), ρ̂(I) (t ) .              (4.17)
+                                             0
+
+Let us insert this expression for ρ̂(I) (t) back into the right-hand side of (4.16).
+This yields
+                                       t
+   d (I)                                                            
+     ρ̂ (t) = −i Ĥint (t), ρ̂(0) − i     dt Ĥint (t ), ρ̂(I) (t )
+  dt                                   0
+                                       t
+                                                                             
+             = −i Ĥint (t), ρ̂(0) −      dt Ĥint (t), Ĥint (t ), ρ̂(I) (t ) . (4.18)
+                                            0
+
+Since we have [see (A.12) for the derivation]
+                                        $        %
+                            (I)
+                          ρ̂S (t) = TrE ρ̂(I) (t) ,                                           (4.19)
+
+we can transform (4.18) into an equation for the reduced density operator
+  (I)
+ρ̂S (t) by simply taking the trace over the environment,
+                                                  t
+  d (I)                                                                                       
+     ρ̂S (t) = −i TrE Ĥint (t), ρ̂(0) −               dt TrE Ĥint (t), Ĥint (t ), ρ̂(I) (t ) .
+  dt                                              0
+                                                                                              (4.20)
+In fact, without loss of generality, one can assume that
+                                               
+                            TrE Ĥint (t), ρ̂(0) = 0.                                         (4.21)
+
+It is easy to show that this can always be achieved by a formal redeﬁnition
+of the Hamiltonians Ĥ0 and Ĥint . Then (4.20) simpliﬁes to
+                                t
+              d (I)                                                           
+                ρ̂ (t) = −           dt TrE Ĥint (t), Ĥint (t ), ρ̂(I) (t ) .            (4.22)
+              dt S              0
+
+All calculations leading up to this equation have been exact and no approxi-
+mations have been made. Let us now pause for a moment and ask ourselves
+the following question. What features are still absent from (4.22) that would
+                                          (I)
+be desirable for a master equation for ρ̂S (t)? Note that the right-hand side
+of (4.22) still depends on the total system–environment density operator ρ̂(I)
+evaluated at all times between 0 and t. Thus (4.22) is not yet a time-local
+                                                                            (I)
+diﬀerential equation of the form (4.4) that would determine the change of ρ̂S
+                               (I)
+at time t solely in terms of ρ̂S (t) and a set of known quantities. Therefore
+two desirable properties emerge:

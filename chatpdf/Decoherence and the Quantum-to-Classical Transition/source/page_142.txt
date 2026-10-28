@@ -1,0 +1,59 @@
+                                    3.2 Calculating the Decoherence Factor          127
+
+  ρS (x, x , T ) − ρS (x, x , 0) = −ρS (x, x , 0)
+                                                     
+        T                                            
+               dq μ(q)v(q) dn̂ 1 − ei(q−qn̂ )·(x−x )/ |f (q, q n̂ )| . (3.38)
+                                                                       2
+    ×
+       V
+Here v(q) denotes the speed of particles with momentum q. For scattering of
+massive particles we have v(q) = q/m, while for scattering of photons and
+other massless particles v(q) = c, with c representing the speed of light.
+    Equation (3.38) describes the eﬀect of a single scattering event. A col-
+lection of N independent scattering events may be represented by simply
+multiplying the integral on the right-hand side of (3.38) by N . Then N/V
+is the total number density of environmental particles. For simplicity, let us
+assume that the incoming particles are isotropically distributed in space, i.e.,
+that every initial direction q/ |q| is equally likely. We may then write the
+momentum probability distribution μ(q) as
+                                    −1
+                                 1 N
+                        μ(q) ≡               (q) dq dn̂,                 (3.39)
+                               4π V
+                                              
+where
+       the prefactor is chosen such that dq (q) = N/V (recall that
+  dq μ(q) = 1), i.e., (q) denotes the number density of incoming particles
+with magnitude of momentum equal to q.
+    Dividing (3.38) by T and taking the diﬀerential limit of small T , we obtain
+our ﬁnal result for the time evolution of the reduced density matrix,
+                     ∂ρS (x, x , t)
+                                     = −F (x − x )ρS (x, x , t),               (3.40)
+                          ∂t
+with the decoherence factor F (x − x ) given by
+                            
+                                dn̂ dn̂                        
+                                                                      
+          
+                                           1 − eiq(n̂−n̂ )·(x−x )/ |f (q n̂, q n̂ )| .
+                                                                                      2
+ F (x − x ) = dq (q)v(q)
+                                  4π
+                                                                                 (3.41)
+From (3.40) we see that F (x − x ) plays the role of a localization rate, i.e.,
+it denotes the characteristic decoherence rate at which spatial coherences
+between two positions x and x become locally suppressed.
+    Equations (3.40) and (3.41) represent our main result. We have found the
+expression that quantiﬁes the inﬂuence of a collection of incoming particles
+scattering oﬀ our object of interest on the interference (oﬀ-diagonal) terms
+in the position density matrix of the object. As we have not yet speciﬁed the
+form of the scattering cross section |f (q n̂, q n̂ )| , our expression is considered
+                                                       2
+
+fairly general.
+    Let us summarize the assumptions employed in our derivation of (3.40)
+and (3.41):
+ 1. There are no initial correlations between the system and the environment
+    [see (3.4)]. This assumption is made in virtually all decoherence models
+    (see also Chap. 5).

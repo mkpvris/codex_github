@@ -1,0 +1,53 @@
+324    7 Decoherence and Quantum Computing
+
+expressed in the computational basis (7.5) will be an eigenstate of Ŝz . There
+are 2N + 1 diﬀerent possible integer eigenvalues m, ranging from m = −N
+(corresponding to the basis state |1 · · · 1) to m = +N (for the basis state
+|0 · · · 0). Generally, a computational-basis state with m0 qubits in the “0”
+state has eigenvalue m = 2m0 − N .
+     The largest number of mutually orthogonal computational-basis states
+with the same eigenvalue m of Ŝz is given by the set S0 of basis states with
+m = 0, i.e., those with an equal number of qubits being in the “0” and “1”
+states. Formally, we may write
+                          ⎧                                   ⎫
+                          ⎨                           N
+                                                             ⎬
+                   S0 = |i1 · · · iN  | ij ∈ {0, 1},   ij = 0 ,          (7.52)
+                          ⎩                                   ⎭
+                                                       j=1
+
+
+and there are                                     
+                                              N
+                                  n0 =                                     (7.53)
+                                             N/2
+states in this set. Therefore the states contained in S0 span a DFS of dimen-
+sion n0 . For large values of N , we can approximate the binomial coeﬃcient
+in (7.53) using Stirling’s formula,
+                            
+                          N            1              N 1
+                  log2         ≈ N − log2 (πN/2) −−−→ N.                (7.54)
+                         N/2           2
+
+Thus, as claimed above, in the limiting case of collective decoherence the
+dimension of our DFS approaches the dimension of the original Hilbert
+space, and the encoding eﬃciency approaches unity (i.e., we can, in the limit
+N −→ ∞, encode all 2N qubit basis states of our original Hilbert space in a
+decoherence-free fashion).
+   For example, for N = 4 qubits, the set
+
+            S0 = { |0011 , |0101 , |0110 , |1001 , |1010 , |1100 }   (7.55)
+
+of computational-basis states spans a maximum-size DFS of dimension equal
+to six, to be compared with the dimension of the original Hilbert space, which
+is 24 = 16. Thus, given the model for collective decoherence considered here,
+we can encode up to two logical qubits in our DFS. Three logical qubits would
+already require 23 computational basis states, which (7.55) evidently does not
+aﬀord. Using four physical qubits, we can therefore carry out decoherence-free
+quantum computations that require no more than two logical qubits.
+    Conversely, in the case of purely independent decoherence, it is not possi-
+ble to ﬁnd any DFS of dimension greater than one. This can be seen from the
+following simple observation. The environment operators Êi appearing in the
+interaction Hamiltonian (7.50) will now in general all be diﬀerent from one
+another. To ﬁnd a DFS, we follow the usual strategy (7.49) of determining a
+set of orthonormal basis states {|si } such that

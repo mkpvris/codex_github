@@ -1,0 +1,52 @@
+                                             5.2 Quantum Brownian Motion            189
+
+
+                   J(ω) [M γo ]
+
+                     0.3
+
+
+                     0.2        cutoﬀ
+                               (ω = Λ)
+                     0.1
+
+
+                       0                                        ω [Λ]
+                           0      1      2    3      4      5
+Fig. 5.2. Plot of the spectral density J(ω) (in units of M γ0 ) as given by (5.44). J(ω)
+increases approximately linearly for frequencies ω well below the high-frequency
+cutoﬀ Λ and decreases subsequently for frequencies ω > Λ. The frequency axis is
+displayed in units of the cutoﬀ Λ.
+
+
+momentum-damping coeﬃcient γ and the normal-diﬀusion coeﬃcient D are
+particularly easy to evaluate. To see this, note that+the noise kernel ν(τ ) [see
+(5.16)] is simply, apart from a missing prefactor 2/π, the Fourier cosine
+transform of the function J(ω) coth (ω/2kB T ). Similarly, the dissipation ker-
+nel η(τ ) [see (5.17)] is proportional to the Fourier sine transform of J(ω).
+Furthermore, a look at the expression for γ [see (5.26b)] shows that this
+function is proportional to the Fourier sine transform of η(τ ).
+    But, for odd functions g(−x) = −g(x), the double Fourier sine transform
+returns the original function,
+                                    ∞
+                 2 ∞            
+                        dk sin(x k)     dx g(x) sin(kx) = g(x ).         (5.45)
+                 π 0                 0
+
+Since our spectral density (5.44) is an odd function of ω, and γ is (apart from
+a prefactor) the double Fourier sine transform of J(ω), γ is therefore simply
+proportional to J(ω) evaluated at the frequency Ω of the harmonic oscillator
+of the system [cf. (5.26b) and (5.45)]. Taking into account the prefactor π2
+arising from the deﬁnition of the double Fourier transform (5.45), we thus
+obtain
+                            π 1                  Λ2
+                       γ=           J(Ω) = γ0 2        .                 (5.46)
+                            2 MΩ              Λ + Ω2
+This relation between the momentum-damping coeﬃcient γ appearing in the
+master equation (5.25) and the eﬀective coupling strength γ0 introduced in
+the expression (5.43) for the spectral density justiﬁes our earlier claim that
+γ0 can be viewed as a frequency-independent damping constant. If we do not
+impose any cutoﬀ on the spectral density (Λ → ∞), γ and γ0 are exactly
+equal.
+    To calculate the normal-diﬀusion coeﬃcient D [see (5.26b)], we can follow
+a similar argument. D is proportional to the double Fourier cosine transform

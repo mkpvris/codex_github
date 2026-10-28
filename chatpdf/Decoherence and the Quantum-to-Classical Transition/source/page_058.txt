@@ -1,0 +1,51 @@
+                  2.4 The Concept and Interpretation of Density Matrices                43
+
+2.4.5 Mixed-State Density Matrices Versus Physical Ensembles
+
+                   is in order here. A mixed-state density matrix of the
+An important remark
+form (2.20), ρ̂ = i pi |ψi ψi |, is also often used to describe a physical en-
+semble of identical systems Sk , k = 1 . . . N (that is, a collection of “copies” of
+a particular system of interest), each of which is prepared, in a deterministic
+manner, in one of the pure states |ψi , i = 1, . . . , M ≤ N . The quantity pi
+now denotes the fraction of systems that have been prepared in the state |ψi .
+This “ensemble” approach is frequently found in textbooks when motivating
+the introduction of the density-matrix concept (see, e.g., [58]).
+   However, there is an important distinction to be made between (physical)
+ensembles and (statistical) mixtures. In the case of ensembles, there is no
+insuﬃciency of information whatsoever that would justify the description by
+a mixed-state density matrix (unless, of course, each individual system is not
+prepared in a pure state). Instead, the ensemble of all individual systems Sk
+must rather be described by a Hilbert space H that is the tensor product of
+the N constituent state-spaces Hk of each system Sk ,
+                                              N
+                                              
+                                      H=             Hk .                            (2.37)
+                                              k=1
+
+Similarly, the total system S is described by a pure (tensor) product state
+|Ψ  of the individual states |ψk  ∈ {|ψi },
+                     ⎛          ⎞⎛             ⎞ ⎛         ⎞
+                          N p1           N p2                      N pM
+               |Ψ  = ⎝          |ψ1 ⎠ ⎝         |ψ2 ⎠ · · · ⎝          |ψM ⎠ .   (2.38)
+                          j=1               j=1                    j=1
+
+
+The corresponding N -system pure density matrix ρ̂ = |Ψ Ψ | is therefore
+manifestly diﬀerent from the expression (2.20) for the mixed-state density
+matrix that describes a probability distribution of single-system pure states
+|ψi .
+     Only in the limited and purely statistical sense of an ensemble average can
+the description of ensembles of physical systems by a single-system mixed-
+state density matrix be justiﬁed. This is the case if we restrict ourselves to
+measurements on single systems in the ensemble and consider the average
+statistics for the entire ensemble. Speciﬁcally, if we measure a single-system
+observable Ô on every member in the ensemble described by the N -system
+pure state (2.38) and average the results over the ensemble, we obtain
+                                         M
+                                     1 
+                           Ô =          N pi ψi | Ô |ψi  ,                     (2.39)
+                                     N i=1
+
+where we have for simplicity assumed that the |ψi  form an orthonormal set of
+basis states for each individual system. If we instead compute the expectation

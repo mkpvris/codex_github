@@ -1,0 +1,61 @@
+                                                5.2 Quantum Brownian Motion       181
+
+where in the last step we have used the fact that [see (5.12)]
+                                                2
+                 1 + 2Ni (T ) = 1 +
+                                           eωi /kB T − 1
+                                                                       
+                                 eωi /kB T + 1                   ωi
+                                = ω /k T       = coth                       .   (5.14)
+                                 e i B −1                       2kB T
+
+Hence the environment self-correlation function (5.6) can now be written as
+                  c2 -           
+                                     ωi
+                                                                       .
+                      i
+         C(τ ) =             coth           cos (ωi τ ) − i sin (ωi τ )
+                 i
+                   2mi ωi           2kB T
+               ≡ ν(τ ) − iη(τ ).                                                (5.15)
+
+Here, the functions
+                         1 2
+                 ν(τ ) =        c {q̂i (τ ), q̂i }ρ̂E
+                         2 i i
+                          c2                            
+                                 i                  ωi
+                       =               coth                 cos (ωi τ )
+                          i
+                            2mi ωi                2kB T
+                          ∞                               
+                                                        ω
+                       ≡     dω J(ω) coth                     cos (ωτ ) ,       (5.16)
+                          0                           2kB T
+                         i 2
+                 η(τ ) =        c [q̂i (τ ), q̂i ]ρ̂E
+                         2 i i
+                                  1
+                       =    c2i          sin (ωi τ )
+                          i
+                                2m  i ωi
+                          ∞
+                       ≡     dω J(ω) sin (ωτ )                                  (5.17)
+                            0
+
+are commonly referred to in the literature as the noise kernel and dissipation
+kernel, respectively. The curly brackets {·, ·} in the ﬁrst line of (5.16) denote
+the anticommutator {Â, B̂} ≡ ÂB̂ + B̂ Â. The function J(ω), introduced in
+the last line of (5.16) and (5.17), is deﬁned as
+                                            c2i
+                           J(ω) ≡                  δ(ω − ωi )                   (5.18)
+                                       i
+                                            2mi ωi
+
+and is called the spectral density of the environment. Spectral densities en-
+capsulate the physical properties of the environment and play an immensely
+important role in theoretical and experimental studies of decoherence. In
+modeling the environment, one often goes to a continuum limit for the en-
+vironment in which the description in terms of individual oscillators with
+discrete frequencies ωi and masses mi is replaced by a spectral density J(ω)
+corresponding to a continuous spectrum of environmental frequencies ω. We

@@ -1,0 +1,47 @@
+246    6 Observing Decoherence in Action
+
+6.1.1 Atom–Field Interactions and Rabi Oscillations
+In the experiment, the microscopic system S (which serves as the “seed” of
+the superposition) is realized in form of a rubidium atom prepared in a su-
+perposition of two distinct energy eigenstates |g and |e corresponding to
+two circular Rydberg states. These are states with a large quantum number
+n (Brune et al. [247] used n = 50 and 51) and maximum orbital angular
+momentum along the quantization axis, i.e., |m| = n − 1. The corresponding
+valence-electron probability density is torus-shaped, such that the valence
+electron moves in a quasiclassical circular planar orbit perpendicular to the
+quantization axis. Such states have many interesting properties. Most impor-
+tant to this experiment, they interact strongly with even weak microwave
+radiation due to their large magnetic dipole moment. Also, the electrons are
+far away from the nucleus and thus their acceleration is comparably small,
+leading to long radiative decay times. Both features allow for the prepara-
+tion of long-lived atom–ﬁeld correlations necessary to an observation of the
+gradual action of decoherence.
+    Since the interaction between an atom and an external oscillating ﬁeld
+is the key component of the experiment, let us brieﬂy review so-called Rabi
+oscillations. Suppose that we can make the assumption that only the two
+energy levels |g (with energy Eg ) and |e (with energy Ee ) of the atom are
+relevant. Since the circular Rydberg levels used in the experiment interact
+very strongly with radiation, this is a good approximation. The state of the
+atom can then be written as
+                         |ψatom  = cg (t) |g + ce (t) |e ,               (6.4)
+                                                                              2
+where cg (t) and ce (t) are arbitrary complex coeﬃcients such that |cg (t)| +
+        2
+|ce (t)| = 1. Without the ﬁeld, the Hamiltonian for the atom is
+                           Ĥ0 = Eg |gg| + Ee |ee|.                     (6.5)
+Let us now turn on an external sinusoidal oscillating ﬁeld with frequency ω.
+We will treat this ﬁeld classically, which turns out to be a perfectly legitimate
+approximation in our experiment for the following reason. The particular
+cavity used in the experiment that contains the ﬁeld is very dissipative, i.e.,
+it interacts strongly with the environment. Thus energy and coherence of the
+ﬁeld continuously leak out of the cavity, making the ﬁeld eﬀectively classical
+(another decoherence process!) [249]. This is despite the fact that the average
+number of photons in the cavity in the experiment is of order one, such that
+a quantum treatment may have appeared necessary.
+    When the ﬁeld is turned on, the Hamiltonian of the atom becomes (setting
+ ≡ 1)
+                                              
+                     Ĥ = Ĥ0 + eiωt |ge| + e−iωt |eg|,                  (6.6)
+                                 2             2
+where the Rabi frequency  measures the coupling between the atom and
+the ﬁeld. Thus the external ﬁeld can induce transitions between the atomic

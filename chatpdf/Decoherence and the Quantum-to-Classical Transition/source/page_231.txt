@@ -1,0 +1,48 @@
+                                                    5.3 The Spin–Boson Model           217
+
+
+                               0       5       10          15       20
+                           0                                             t [Λ−1 ]
+
+
+                          −1
+            Γ (t) [J0 ]
+                          −2
+
+
+                          −3
+
+Fig. 5.7. Time dependence of the exponent Γ (t) (in units of J0 ), see (5.126),
+with time measured in units of the cutoﬀ period Λ−1 . Here we have chosen the
+temperature of the bath such that kB T = Λ/60, i.e., the thermal correlation time
+is assumed to be 60 times longer than the cutoﬀ period Λ−1 .
+
+
+From (5.128) and (5.129) we see that these timescales will be deﬁned by the
+magnitude of t relative to the cutoﬀ period Λ−1 and the thermal correlation
+time (kB T )−1 .
+   First, let us assume that we are in the extreme short-time regime with
+t  Λ−1 and t  (kB T )−1 . Then we can terminate the Taylor expansion of
+the natural logarithm in the expression (5.128) for Γﬂuc (t) after the second
+term (i.e., we expand Γﬂuc (t) to ﬁrst order in Λ2 t2 ),
+                                                1
+                                    Γﬂuc (t) ≈ − Λ2 t2 ,                            (5.130)
+                                                2
+and therefore Γﬂuc (t)  1. The thermal contribution Γtherm (t) plays no role at
+all in this regime. Thus the decoherence factor r(t), see (5.118), is close to one,
+with any (weak) decay being entirely due to quantum vacuum ﬂuctuations.
+     Second, suppose t is larger than the characteristic period set by the cutoﬀ
+frequency, t  Λ−1 , but still much smaller than the thermal correlation time,
+t  (kB T )−1 . Then we can again neglect the contribution of Γtherm (t) to Γ (t),
+and we can approximate Γﬂuc (t) as
+                                      1       
+                          Γﬂuc (t) ≈ − ln Λ2 t2 = − ln Λt.                          (5.131)
+                                      2
+Thus Γﬂuc (t) is of magnitude larger than one, and quantum vacuum ﬂuctua-
+tions are a dominant source of decoherence in this regime.
+    Finally, let us assume the long-time regime for which t is much larger than
+the typical thermal ﬂuctuation time, i.e., t  (kB T )−1 . Then, using that
+                                   1 x      1
+                    sinh(x) =        e − e−x ≈ ex               if x  1,           (5.132)
+                                   2          2
+we obtain

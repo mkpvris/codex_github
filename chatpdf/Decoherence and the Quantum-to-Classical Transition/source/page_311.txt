@@ -1,0 +1,44 @@
+                          7.1 A Brief Overview of Quantum Computing       299
+
+have seen, this approach becomes prohibitively computationally expensive for
+larger N , since the size of the matrices and the number of matrix operations
+(and thus the demand for storage space and processing power) blows up
+exponentially with increasing N . This makes it impossible for all practical
+purposes to simulate a larger quantum system (in other words, a quantum
+algorithm) on a classical computer. Second, from a more fundamental point
+of view, Bell’s theorem [30] shows that there exists no classical mechanism
+that could prepare two correlated distant systems whose correlations violate
+the Bell inequality. Thus such (EPR/Bell-type) correlations are a distinct
+feature of the quantum world and of quantum computing [335, 336].
+    The problem of how to eﬃciently simulate quantum systems lies at the
+roots of the quantum-computing program. In a seminal paper of 1982, Feyn-
+man [335] explored the issue of constructing a quantum system that could
+eﬃciently emulate the physical behavior of any other (quantum) system in
+nature. Consequently, such a system would not only represent a universal
+emulator, but also a universal quantum computer, since quantum computers
+must necessarily also be physical systems. Feynman modeled this universal
+emulator in terms of a lattice of spins with nearest-neighbor interactions.
+Famously, Feynman was able to demonstrate that this model would, in prin-
+ciple, be able to simulate any other quantum system that can be described by
+a ﬁnite-dimensional Hilbert space. This was a truly groundbreaking discovery
+of fundamental importance. However, Feynman’s model still had a drawback.
+Each new computational problem would in general require one to choose a
+diﬀerent form and strength of the spin–spin interactions. Obviously, this re-
+quirement is hard to implement in practice, and Feynman did not specify the
+physical mechanism that would enable the user to freely choose the governing
+Hamiltonian.
+    Therefore the next step consisted of devising a universal quantum com-
+puter that, based on a ﬁxed Hamiltonian (i.e., on a speciﬁc physical archi-
+tecture), would be able to solve any given problem simply by choosing diﬀer-
+ent operations applied to the quantum computer. This was accomplished by
+David Deutsch in an important paper of 1985 [337]. Deutsch used a model
+based on a collection of two-state systems. He showed that a small set of uni-
+tary transformations—the aforementioned “quantum gates”—applied to the
+combined state of these systems could in principle implement any arbitrary
+unitary evolution and thus simulate any physical system. For a large class of
+possible evolutions, this quantum computer would also run eﬃciently [338],
+in the sense that the number of computational steps required to implement a
+particular evolution would grow less than exponentially with the size of the
+input (i.e., the number of two-state systems in Deutsch’s model). This ability
+to eﬃciently simulate (virtually) any other physical system made Deutsch’s
+proposal the ﬁrst blueprint for a (virtually) universal quantum computer.

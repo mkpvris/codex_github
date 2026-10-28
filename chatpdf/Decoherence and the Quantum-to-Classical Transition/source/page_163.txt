@@ -1,0 +1,54 @@
+148     3 Localization Due to Environmental Scattering
+
+     Finally, let us illustrate the time evolution of a superposition of two equal-
+weight Gaussian wave packets of the form (3.84) centered around x = ±x0 ,
+i.e.,
+
+  Ψ (x, 0) = ψx0 (x, 0) + ψ−x0 (x, 0)
+             "      #1/4 -                                      .
+                1                −(x − x0 )2           −(x + x0 )2
+           =               exp                 + exp                  .         (3.96)
+               2πb2                   4b2                 4b2
+
+This wave function is illustrated in Fig. 3.10.
+    If x0  b, such a quantum state would correspond to the nonclassical
+situation of a particle being described by a superposition of two well-deﬁned,
+distinguishable positions separated by a distance 2x0 . The corresponding
+density matrix is
+
+      ρS (x, x , 0) = Ψ ∗ (x , 0)Ψ (x, 0)
+                                                 ∗
+                    = ψx∗0 (x , 0)ψx0 (x, 0) + ψ−x0
+                                                     (x , 0)ψ−x0 (x, 0)
+                                                     ∗
+                      + ψx∗0 (x , 0)ψ−x0 (x, 0) + ψ−x 0
+                                                          (x , 0)ψx0 (x, 0).   (3.97)
+
+This density matrix is shown as the top plot of Fig. 3.11. The two peaks
+along the oﬀ-diagonal x = −x correspond to the spatial interference terms
+                              ∗
+ψx∗0 (x , 0)ψ−x0 (x, 0) and ψ−x0
+                                  (x , 0)ψx0 (x, 0) between the two wave packets
+ψx0 (x, 0) and ψ−x0 (x, 0) introduced in (3.96).
+     The subsequent time evolution of the density matrix (3.97) as determined
+by the equation of motion (3.78) is illustrated in Fig. 3.11. We observe that,
+as expected, interference terms corresponding to spatial coherence between
+the two regions around x = ±x0 are gradually suppressed due to the pres-
+ence of the environment. In the limit of complete decoherence, we obtain an
+(albeit improper!) ensemble of the two states describing localization of the
+system around +x0 and −x0 , respectively. That is, measurements that per-
+
+
+
+
+                                          Ψ(x, 0)
+                    ψ−x0 (x, 0)                            ψx0 (x, 0)
+
+
+
+
+                                                                     x
+                                  −x0                 x0
+
+Fig. 3.10. Illustration of the superposition (3.96) of two Gaussian wave packets
+centered around +x0 and −x0 , respectively.

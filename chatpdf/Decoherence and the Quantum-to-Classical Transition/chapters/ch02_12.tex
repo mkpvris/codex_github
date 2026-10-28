@@ -1,0 +1,60 @@
+% 原文 p.76（後半）
+
+
+\subsubsectionlink{量子測定極限における指針状態}
+まず、デコヒーレンスに関係する多くの状況に適用されるだけでなく、系の優先指針状態の集合を決めるための、単純で直観的な基準を与える、重要な特殊例を考えよう。式(2.85)の、系と環境の相互作用Hamiltonian$\hat H_{\mathrm{int}}$に伴うエネルギー尺度が、自己Hamiltonian$\hat H_{\mathcal S}$、$\hat H_{\mathcal E}$のエネルギー尺度より、はるかに大きいとする。
+
+% 原文 p.77
+\hypertarget{srcpage:77}{}\label{srcpage:77}
+すなわち、系と環境の相互作用が非常に強く、系の発展を完全に支配する、量子測定極限を考える。言い換えれば、系と環境の内在的な力学は、相互作用が引き起こす発展に比べて無視できる。その場合、全Hamiltonian(2.85)は、相互作用Hamiltonian$\hat H_{\mathrm{int}}$だけで近似できる。
+\begin{equation}\hat H\approx\hat H_{\mathrm{int}}.\tag{2.86}\end{equation}
+このHamiltonianが生成する発展のもとでもつれない、系の頑健な状態の集合を見いだそう。そのため、時刻$t=0$で積状態$\lvert s_i\rangle\lvert E_0\rangle$から出発した複合系が、相互作用Hamiltonian$\hat H_{\mathrm{int}}$の作用のもとで、その後のすべての時刻$t>0$に積$\lvert s_i\rangle\lvert E_i(t)\rangle$の形にとどまるような、系の状態$\lvert s_i\rangle$を探す。すなわち、次を要求する\footnote{ここでは$\hat H_{\mathrm{int}}$は陽には時間に依存しないと仮定する。}。
+\begin{equation}e^{-i\hat H_{\mathrm{int}}t}\lvert s_i\rangle\lvert E_0\rangle=\lambda_i\lvert s_i\rangle e^{-i\hat H_{\mathrm{int}}t}\lvert E_0\rangle\equiv\lvert s_i\rangle\lvert E_i(t)\rangle.\tag{2.87}\end{equation}
+ここから直ちに主要な結果を得る。量子測定極限(2.86)では、系の指針状態$\lvert s_i\rangle$は、単に、相互作用Hamiltonian$\hat H_{\mathrm{int}}$の、系のHilbert空間に属する部分の固有状態で与えられる。この重要な結果は、Zurekの有名な1981年の論文\cite{ref008}で初めて得られた。これは非常に直観的である。結局、固有状態$\lvert s_i\rangle$は、$\hat H=\hat H_{\mathrm{int}}$の作用のもとで定常だからである。
+
+この結果は、指針射影演算子$\lvert s_i\rangle\langle s_i\rvert$の線形結合にすぎない、指針観測可能量
+\begin{equation}\hat O_{\mathcal S}=\sum_i o_i\lvert s_i\rangle\langle s_i\rvert\tag{2.88}\end{equation}
+の言葉でも、同値に表せる。$\lvert s_i\rangle$が$\hat H_{\mathrm{int}}$の固有状態なので、各項$\lvert s_i\rangle\langle s_i\rvert$は$\hat H_{\mathrm{int}}$と可換であり、したがって$\hat O_{\mathcal S}$自体も$\hat H_{\mathrm{int}}$と可換になる。
+\begin{equation}[\hat O_{\mathcal S},\hat H_{\mathrm{int}}]=0.\tag{2.89}\end{equation}
+この重要な条件は、文献でしばしば可換性基準と呼ばれる。Zurek\cite{ref008,ref009}が初めて導入して論じて以来、デコヒーレンス研究計画の形式的体系の礎の一つとなっている。
+
+このように、量子測定極限(2.86)で、環境が超選択する量を決める、別々だが同値な二つの方法を見いだした。指針状態は、相互作用Hamiltonianの固有状態である系の状態で与えられ、対応する系の指針観測可能量は、相互作用Hamiltonianと可換な観測可能量である。もちろん後者は、指針状態の射影演算子の線形結合にすぎないので［式(2.88)］、指針状態と指針観測可能量は、大部分同義の概念である。
+
+% 原文 p.78
+\hypertarget{srcpage:78}{}\label{srcpage:78}
+関心のある多くの場合、相互作用Hamiltonianの構造から、対応する系の固有状態、したがって優先指針状態の集合が直ちに分かる。たとえば相互作用Hamiltonianは、しばしば積の形
+\begin{equation}\hat H_{\mathrm{int}}=\hat S\otimes\hat E\tag{2.90}\end{equation}
+で与えられ、$\hat S$、$\hat E$は、それぞれ系と環境のHilbert空間に作用する演算子である。したがって、環境が超選択する観測可能量は、$\hat S$と可換なものになる。$\hat S$がHermiteなら、相互作用Hamiltonian(2.90)の積構造$\hat S\otimes\hat E$は、きわめて直観的に解釈できる。$\hat S$は、環境が直接監視する物理量を表す。$\hat S$のよくある例は位置演算子$\hat x$で、このとき相互作用Hamiltonianは
+\begin{equation}\hat H_{\mathrm{int}}=\hat x\otimes\hat E\tag{2.91}\end{equation}
+となる。この相互作用Hamiltonianは、環境が系の位置を連続的に監視することを記述する。すなわち、環境は系の位置基底で実効的な非破壊測定を行う。したがって、空間的重ね合わせがデコヒーレンスを起こすと、直ちに予想できる。$\hat x$の固有状態を$\lvert x\rangle$とすれば、相互作用Hamiltonian(2.91)が生成する、系と環境の具体的な発展は、
+\begin{equation}e^{-i\hat H_{\mathrm{int}}t}\lvert x\rangle\lvert E_0\rangle=\lvert x\rangle e^{-ix\hat Et}\lvert E_0\rangle\equiv\lvert x\rangle\lvert E_x(t)\rangle\tag{2.92}\end{equation}
+である。$\lvert E_x(t)\rangle$の添字「$x$」は、環境の状態が、いまや系の位置についての情報を含むことを示すために使った。2.7節で論じたように、異なる$x$の値に対応する状態$\lvert E_x(t)\rangle$の重なりの時間依存性によって、生じるデコヒーレンスの力学と時間尺度が得られる［式(2.76)、(2.77)］。
+
+任意の相互作用Hamiltonian$\hat H_{\mathrm{int}}$は、ユニタリだが必ずしもHermiteでない、系と環境の演算子$\hat S_\alpha$、$\hat E_\alpha$の、対角分解の形で常に書けることを示せる。
+\begin{equation}\hat H_{\mathrm{int}}=\sum_\alpha\hat S_\alpha\otimes\hat E_\alpha.\tag{2.93}\end{equation}
+この相互作用Hamiltonianは、一項のHamiltonian(2.90)の明らかな一般化である。$\hat S_\alpha$がHermiteなら、式(2.93)は、異なる系の観測可能量$\hat S_\alpha$を、環境が同時に監視することを記述する。$\{\lvert s_i\rangle\}$が系の指針状態の組をなすための十分条件は、$\lvert s_i\rangle$が演算子$\hat S_\alpha$の同時固有状態であるという要請で与えられる。
+
+% 原文 p.79
+\hypertarget{srcpage:79}{}\label{srcpage:79}
+\begin{equation}\hat S_\alpha\lvert s_i\rangle=\lambda_i^{(\alpha)}\lvert s_i\rangle\qquad(\text{すべての }\alpha,i).\tag{2.94}\end{equation}
+なぜなら、この場合には
+\begin{equation}\begin{split}e^{-i\hat H_{\mathrm{int}}t}\lvert s_i\rangle\lvert E_0\rangle&=e^{-i(\sum_\alpha\hat S_\alpha\otimes\hat E_\alpha)t}\lvert s_i\rangle\lvert E_0\rangle\\&=\lvert s_i\rangle e^{-i(\sum_\alpha\lambda_i^{(\alpha)}\hat E_\alpha)t}\lvert E_0\rangle\\&\equiv\lvert s_i\rangle\lvert E_i(t)\rangle\end{split}\tag{2.95}\end{equation}
+だからである。すなわち、初期状態$\lvert s_i\rangle$で記述される系は環境ともつれず、したがって$\lvert s_i\rangle$は、環境が超選択する優先状態を表す。幸いにも、実際的に関心のあるデコヒーレンス模型で、三つ以上の異なる観測可能量$\hat S_\alpha$を含む相互作用Hamiltonian(2.93)に出会うことは、まれである。実際、第5章の模型の相互作用Hamiltonianは、すべて単純な一項の形(2.90)になる。
+
+指針状態の条件(2.94)は、指針部分空間という概念へ強められる。これはZurekが1982年に初めて導入し\cite{ref009}、最近は、特に量子計算の文脈で、複数の研究者が、デコヒーレンスのない部分空間（DFS）という名のもとで、さらに研究している\cite{ref089,ref090,ref091,ref092,ref093,ref094,ref095,ref096,ref097,ref098}。指針部分空間、またはDFSは、その内部のあらゆる状態がデコヒーレンスに影響されない、系のHilbert空間の部分空間である。一般には、指針状態の重ね合わせは、それ自体が指針状態ではないことを思い出そう。
+
+そのための重要な条件の一つは、要請(2.94)で定義した優先状態$\lvert s_i\rangle$が、その部分空間の正規直交基底$\{\lvert s_i\rangle\}$をなし、式(2.94)の固有値$\lambda_i^{(\alpha)}$が添字$i$に依存しないことである。すなわち、すべての$\lvert s_i\rangle$が、各$\hat S_\alpha$の、同時に縮退した固有状態である。
+\begin{equation}\hat S_\alpha\lvert s_i\rangle=\lambda^{(\alpha)}\lvert s_i\rangle\qquad(\text{すべての }\alpha,i).\tag{2.96}\end{equation}
+すると、部分空間の任意の状態$\lvert\psi\rangle$を、$\lvert s_i\rangle$の重ね合わせ$\lvert\psi\rangle=\sum_i c_i\lvert s_i\rangle$と表せ、その重ね合わせは
+\begin{equation}\begin{split}e^{-i\hat H_{\mathrm{int}}t}\lvert\psi\rangle\lvert E_0\rangle&=e^{-i\hat H_{\mathrm{int}}t}\left(\sum_i c_i\lvert s_i\rangle\right)\lvert E_0\rangle\\&=\left(\sum_i c_i\lvert s_i\rangle\right)e^{-i(\sum_\alpha\lambda^{(\alpha)}\hat E_\alpha)t}\lvert E_0\rangle\\&\equiv\lvert\psi\rangle\lvert E_\psi(t)\rangle\end{split}\tag{2.97}\end{equation}
+と発展する。したがって状態$\lvert\psi\rangle$は環境ともつれない。$\lvert\psi\rangle$は完全に任意だったので、式(2.96)を満たす正規直交状態$\lvert s_i\rangle$の組が張る部分空間内のすべての状態は、デコヒーレンスに影響されない。
+
+条件(2.96)は、相互作用Hamiltonianに、系と環境の両方へ同時に非自明に作用する項がないことを意味するとも解釈できる［式(2.97)］。したがって系が、この条件を満たす基底ベクトルで張られる部分空間内の状態から出発し、環境と相関していなければ、その後すべての時刻で、系と環境の組合せは自動的に分離可能な状態にとどまる。ただし$\hat H_{\mathcal S}$が状態を部分空間の外へ持ち出さないことが必要である（下記参照）。系は環境ともつれず、そのためデコヒーレンスは起こらない。
+
+% 原文 p.80
+\hypertarget{srcpage:80}{}\label{srcpage:80}
+また、式(2.96)は、与えられた相互作用演算子$\hat S_\alpha$の作用が、DFSのすべての基底状態$\lvert s_i\rangle$に対して同じであることを意味するので、DFSの存在は、系と環境の相互作用構造の対称性、すなわち力学的対称性に対応することにも注意しよう。
+
+系の自己Hamiltonian$\hat H_{\mathcal S}$も役割を果たす、より一般的な場合には、$\hat H_{\mathcal S}$の作用のもとで、時間がたっても部分空間にデコヒーレンスがないことを、さらに確保する必要がある。すなわち、DFSの基底状態$\lvert s_i\rangle$がどれも、$\hat H_{\mathcal S}$の生成する発展によって、部分空間の外へ流れ出ないと要求する。それ以外では、初めにデコヒーレンスのなかった状態が、一般にはデコヒーレンスを起こしやすくなる。この条件をより形式的に言えば、$\hat H_{\mathcal S}$が、いずれの基底状態$\lvert s_i\rangle$も、基底$\{\lvert s_i\rangle\}$の張る部分空間の外のHilbert部分空間に射影してはならない。DFS存在の第三の条件は、ある初期時刻$t=0$で、系$\mathcal S$と環境$\mathcal E$が完全に無相関でなければならないことである。以上の三条件は、DFS存在の十分条件かつ必要条件であることを、厳密に証明できる\footnote{最初期の証明の一つ、ZanardiとRasetti\cite{ref092}によるものは、標準的なHamiltonianによる方法を用いた。Lidar、Chuang、Whaley\cite{ref090}、そして独立にZanardi\cite{ref093}は、第4章で述べるBorn--Markovマスター方程式の形式に基づく方法を使った。これは後に、Bacon、Lidar、Whaley\cite{ref099}によって非Markov的な状況に一般化された。演算子和形式（2.15.4節）を用いた一般的証明は、Lidar、Bacon、Whaley\cite{ref094}が与えた。これらの条件は、量子誤り訂正（7.4節）や、いわゆる「スタビライザー」形式（たとえば文献\cite{ref100}）の言葉でも導ける。これらの異なる定式化の比較は、文献\cite{ref101}の5.6節を参照。}。
+
+指針部分空間、すなわちDFSは、量子計算との関連から、過去十年間に多くの関心を集めてきた。基本的な考えは、量子コンピュータに記憶された壊れやすい量子情報を、そのような部分空間に符号化し、自然にデコヒーレンスから守ることである。この方法は7.5節でさらに詳しく述べる（LidarとWhaleyの総説\cite{ref101}も参照）。指針部分空間の背後にある考えは、他の関心のある分野でも、デコヒーレンスを抑える方法の提案に使われている。たとえば、Bose--Einstein凝縮体の、巨視的に識別可能な状態の重ね合わせの文脈である\cite{ref102}（6.4.1節）。最後に、DFSの概念は最近、Knill、Laflamme、Violaが初めて発展させた\cite{ref098}、雑音のない部分系、あるいは「雑音のない量子符号」の形式へ拡張・一般化されていることを述べておく（文献\cite{ref100}も参照）。この話題の簡潔な概説は、文献\cite{ref101}の第7節にある。

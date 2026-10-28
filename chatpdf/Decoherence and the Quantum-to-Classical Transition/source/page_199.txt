@@ -1,0 +1,51 @@
+                                           5.2 Quantum Brownian Motion       185
+
+this rate depends only on the spectral density but not on the temperature of
+the environment [see (5.17) and (5.26b)].
+    Let us now consider the third term on the right-hand side of (5.25),
+                                            
+                            −D X̂, X̂, ρ̂S (t) .                      (5.34)
+
+Note that this term is of the Lindblad double-commutator form (4.45), de-
+scribing environmental monitoring of the position coordinate X̂ of the system
+and thus decoherence in the position basis. This role can also be easily seen
+by writing out the double commutator in the position representation,
+                              
+               D X̂, X̂, ρ̂S (t) −→ D(X − X  )2 ρS (X, X  , t).       (5.35)
+
+The reader may recognize the term on the right-hand side as being of a
+similar form as the expression (3.55) that described spatial localization in
+the model for environmental scattering discussed in Chap. 3. The coeﬃcient
+D multiplied by (X − X  )2 therefore plays the role of a decoherence rate.
+That is,
+                                          1
+                         τ|X−X  | =                                  (5.36)
+                                     D(X − X  )2
+is the timescale on which spatial interferences over a distance |X − X  | be-
+come suppressed by a factor of e [see also (3.58)].
+    The coeﬃcient D also describes diﬀusion in momentum, as seen from the
+time evolution of the expectation value P̂ 2 t of the squared momentum of
+the system. A simple calculation similar to the one leading to (5.32) yields
+
+       d 2                    2 )X̂ P̂ + P̂ X̂t − 4γP̂ 2 t + 2D.
+          P̂ t = −M (Ω 2 + Ω                                            (5.37)
+       dt
+
+Focusing on the time dependence of P̂ 2 t due to the D term only, we obtain
+the evolution P̂ 2 t ∝ Dt, which shows that D indeed describes diﬀusion in
+momentum space. D is therefore often referred to as the normal-diﬀusion
+coeﬃcient in the literature on quantum Brownian motion. Here, the termi-
+nology “normal diﬀusion” refers to the linear time dependence of P̂ 2 t .
+    Recall that such normal diﬀusion is a signature of classical Brownian mo-
+tion, where the variance σx2 of the normal distribution describing the possible
+positions of the particle increases as σx2 (t) ∝ t. In fact, the same time depen-
+dence holds also in the quantum case. It is easy to show that, in the long-time
+limit γt  1, the master equation (5.25) yields for the time dependence of
+the position-space dispersion
+                                             D
+                              ΔX 2 (t) =           t.                     (5.38)
+                                           2m2 γ 2
+
+That is, the width ΔX(t)
+                   √     of the ensemble in position space asymptotically
+scales as ΔX(t) ∝ t, just as in classical Brownian motion. Indeed, this

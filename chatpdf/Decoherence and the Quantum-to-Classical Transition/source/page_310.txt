@@ -1,0 +1,48 @@
+298     7 Decoherence and Quantum Computing
+
+quantum computing consists of a projective measurement, carried out in some
+chosen basis, of some (or all) qubits at the end of the computation. According
+to the standard theory of quantum measurement, this will collapse the global
+state of the N -qubit system onto one of the states in the measured basis and
+destroy any existing entanglement between each individually measured qubit
+and the other qubits. The key diﬀerence to the classical case is related to
+the fact that measurement in quantum mechanics is probabilistic. That is,
+if we apply the same series of quantum gates to a collection of identically
+prepared N -qubit systems, the measurement outcomes will in general vary
+from system to system—we can only specify the probability of the system to
+be found in a certain state upon measurement (see Sect. 2.1).
+    This fact may seem to render quantum computation essentially useless,
+since we would in general not be able to obtain a single consistent result at
+the conclusion of a set of identical quantum computations. Thus the quantum
+computer will typically at least in some cases not yield the correct answer to
+the computational problem in question. Fortunately, in many situations it is
+rather easy to verify whether a given output is actually the correct result or
+not. For example, the famous algorithm for the factorization of integers on a
+quantum computer (see Sect. 7.1.4 below) will not always yield the correct
+answer. However, it is trivial to check whether a given decomposition of an
+integer into prime numbers is correct, and therefore we can simply manu-
+ally discard any incorrect results from the quantum computer. Provided the
+probability of the ﬁnal measured state to correspond to the correct solution is
+reasonably high (e.g., such that obtaining the correct answer does not require
+a number of runs of the quantum computer that grows exponentially with
+the size of the problem), we have still employed the power of the quantum
+computer to our advantage.
+
+7.1.3 Simulating Physical Systems
+
+Let us now ask the following question: Could a classical computer, at least
+in principle, always simulate a quantum system?4 After all, one might think
+of emulating the evolution of, say, an N -qubit system by representing its
+quantum state by 2N × 2N matrices and by applying other 2N × 2N matrices
+to represent gate operations. There are, however, two caveats. First, as we
+   4
+     At the risk of stating the obvious, we note that a quantum computer can
+also simulate any classical computer if states are prepared and quantum gates
+are applied such that each qubit is at any time described by either one of the
+states |0 and |1 but not by superpositions thereof. This point is directly relevant
+to our subsequent discussion of the role of decoherence in quantum computing.
+Decoherence tends to destroy any coherent superpositions of the computational-
+basis states (7.5) of an N -qubit system, thereby eﬀectively transforming the qubits
+into a classical logical-bit register. The quantum computer then loses its “quantum
+power”—it still can perform the same functions as a classical computer, but nothing
+more.

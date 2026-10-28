@@ -1,0 +1,47 @@
+                         6.3 SQUIDs and Other Superconducting Qubits        279
+
+SQUIDs are particularly good candidates for the creation of such superpo-
+sition states, because the relevant macroscopic variable (the trapped macro-
+scopic ﬂux through the SQUID ring) can be controlled via microscopic energy
+diﬀerences in the Josephson junction [286]. The height Δ of the tunneling bar-
+rier is dominantly determined by properties of the junction, independently
+of the size of the loop. This means that the scaling of the achievable “size”
+of the superpositions of macroscopically distinct ﬂux states is only weakly
+dependent on the amount of distinctness itself (i.e., on the diﬀerence in ﬂux
+between the persistent-current states).
+    This feature of SQUIDs allows for the creation of superpositions of “classi-
+cal” states that have a signiﬁcantly larger degree of macroscopic distinctness
+than those achieved in other experiments. For example, in the matter-wave
+diﬀraction experiments with C70 molecules √     (Sect. 6.2), the spacing of the
+diﬀraction grating must decrease as 1/ N with the number N of atoms in
+the molecule in order for a diﬀraction pattern to be observed. Thus, in this
+case, our ability to experimentally produce interference patterns for molecules
+of a particular size scales with the size of the molecules itself.
+
+6.3.4 Observing and Quantifying Decoherence
+
+It is important to note that the characteristic damping time of the Rabi os-
+cillations derived from the decay of the envelope of the oscillatory occupation
+probability (see Fig. 6.23) does not immediately give access to the intrinsic
+decoherence timescale of the persistent-current superpositions (6.36a) and
+(6.36b). The reason lies in the fact that the Rabi oscillations are induced by
+an external driving ﬁeld, namely, by the applied microwave pulse. To mea-
+sure the decoherence timescale, however, we must consider the delocalization
+of relative phase information between the components in the superposition
+under the free (nondriven) evolution of the qubit interacting with its uncon-
+trolled environment.
+    This goal can be accomplished by using the technique of Ramsey interfer-
+ometry [51]. The following procedure is a variation of the “resonant” Ramsey
+technique described in Sect. 2.2.2. First, with the qubit biased close to the
+degeneracy point Φext = Φ0 /2, we again start by initializing the qubit in the
+energy ground state |0. We then apply a π/2 microwave pulse to the qubit
+that is oﬀ-resonance by an amount δf from the transition frequency ΔE/2π
+between the two levels |0 and |1. This transforms the state of the qubit
+into a coherent superposition of the states |0 and |1, which is then allowed
+to evolve freely for a certain period of time τ . During this time the relative
+phase between the components |0 and |1 in the superposition increases by
+2π(δf )τ (in the frame rotating with the applied microwave frequency). Then
+a second oﬀ-resonant π/2 pulse is applied. In the resulting superposition,
+the magnitudes of the coeﬃcients multiplying the components |0 and |1
+will exhibit an oscillatory dependence on the delay time τ , with a frequency
+equal to δf /2. It follows that the occupation probabilities of the classical

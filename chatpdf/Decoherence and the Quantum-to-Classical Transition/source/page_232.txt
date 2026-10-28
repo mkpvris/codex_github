@@ -1,0 +1,50 @@
+218     5 Canonical Models For Decoherence
+
+      Γtherm (t) ≈ −πkB T t + ln (2πkB T t) ≈ −πkB T t  Γﬂuc (t),          (5.133)
+
+and thus
+                                 Γ (t) ≈ −πkB T t.                          (5.134)
+Inserting this expression for Γ (t) into (5.121), we thus see that the deco-
+herence factor r(t) decays exponentially on a timescale set by the thermal
+correlation time (kB T )−1 ,
+
+                                r(t) ≈ e−(πkB T )t .                        (5.135)
+
+
+5.3.2 Born–Markov Master Equation for the Spin–Boson Model
+
+In the simpliﬁed spin–boson model discussed in the previous Sect. 5.3.1, the
+total Hamiltonian (5.90) was completely diagonal in the σ̂z eigenbasis of the
+central spin. This means that the spin system has no intrinsic dynamics in
+the {|0 , |1} basis: If the system did not couple to any environment, the
+probability of ﬁnding the system in the state |0 (or |1) upon measurement
+would not change in time.
+    Let us now generalize this simpliﬁed model to include intrinsic dynamics
+by adding a tunneling term − 12 Δ0 σ̂x to the Hamiltonian (5.90), where Δ0
+denotes the tunneling matrix element [see (5.1)]. Switching back to the (q̂i , p̂i )
+representation for the environmental coordinates, this yields the general spin–
+boson model deﬁned by the Hamiltonian
+
+       1          1           1           1
+                                                                
+  Ĥ = ω0 σ̂z − Δ0 σ̂x +              p̂2i + mi ωi2 q̂i2 + σ̂z ⊗   ci q̂i . (5.136)
+       2          2           i
+                                  2mi       2                    i
+
+Leggett et al. [209] showed in detail how this form of the Hamiltonian can
+be rigorously motivated from physical considerations. For our purposes, the
+introductory remarks of Sect. 5.1 on the role of spin-system and oscillator-
+environment models will be considered suﬃcient to motivate our interest in
+the Hamiltonian (5.136).
+    Despite the fact that this Hamiltonian seems only marginally more com-
+plicated than the no-tunneling Hamiltonian (5.90) considered in Sect. 5.3.1,
+the presence of the tunneling term renders the general spin–boson model
+deﬁned by (5.136) much more complex, both in terms of its mathematical
+solution and of the dependences of the resulting decoherence dynamics on
+the relative magnitudes of the parameters. The aforementioned review by
+Leggett et al. [209] discusses in great detail exact and approximate solutions
+of the model.
+    Here, we shall focus on the derivation of the Born–Markov master equa-
+tion for the spin–boson model. Recall that this master equation is appropri-
+ate if the system is weakly coupled to a large environment. To facilitate the
+subsequent calculations, we shall introduce one minor simpliﬁcation in the

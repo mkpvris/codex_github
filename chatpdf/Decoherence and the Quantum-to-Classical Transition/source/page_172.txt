@@ -1,0 +1,48 @@
+158    4 Master-Equation Formulations of Decoherence
+
+system observable Ŝ that is monitored by the environment. Then the sum in
+the diagonal decomposition (4.7) of the interaction Hamiltonian reduces to a
+single term,
+                               Ĥint = Ŝ ⊗ Ê.                       (4.11)
+Also, the time dependence of the interaction-picture operators Ŝα (τ ) and
+Êα (τ ) is often very simple (sometimes even trivial), facilitating the calcu-
+lation of the quantities B̂α and Ĉα [see (4.9)]. We shall see how this works
+in the next Chap. 5, where we will apply the Born–Markov master equation
+(4.8) to some concrete examples.
+
+4.2.2 Derivation of the Born–Markov Master Equation
+
+In this section, we shall derive the Born–Markov master equation (4.8) from
+ﬁrst principles. Readers are encouraged to work through the main steps of
+the derivation, in particular in order to get a better understanding of the
+assumptions that enter into this derivation.
+
+Interaction-Picture Description
+
+First, let us begin by decomposing the total system–environment Hamiltonian
+in the usual form as
+                            Ĥ = ĤS + ĤE + Ĥint .                  (4.12)
+Since we would like to apply perturbation theory, it is convenient to switch
+to the interaction picture. Then
+
+                                   Ĥ0 ≡ ĤS + ĤE                            (4.13)
+
+denotes the total free Hamiltonian, and Ĥint represents the interaction that
+is to be treated perturbatively.
+    We now transform the interaction Hamiltonian Ĥint and the total system–
+environment density operator ρ̂(t) to the interaction picture. These transfor-
+mations are given by [see (A.4) and (A.5)]
+
+                       Ĥint (t) = eiĤ0 t Ĥint e−iĤ0 t ,                   (4.14)
+                         (I)           iĤ0 t            −iĤ0 t
+                       ρ̂      (t) = e          ρ̂(t)e
+                                       iĤ0 t −iĤt
+                                  =e            e        ρ̂eiĤt e−iĤ0 t .   (4.15)
+
+The time evolution of ρ̂(I) (t) is determined by the interaction-picture Liou-
+ville–von Neumann equation [see (A.9)],
+                        d (I)                             
+                           ρ̂ (t) = −i Ĥint (t), ρ̂(I) (t) .                 (4.16)
+                        dt
+Thus the evolution of the interaction-picture density operator is generated
+only by the interaction-picture coupling part Ĥint (t) of the full Hamiltonian.

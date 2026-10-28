@@ -1,0 +1,58 @@
+210     5 Canonical Models For Decoherence
+
+                        dσ̂z               
+                              = i Ĥ0 , σ̂z = 0,                                            (5.94a)
+                         dt
+                        dâ†i                                  
+                              = i Ĥ0 , â†i = iωi â†i âi , â†i = iωi â†i ,             (5.94b)
+                         dt
+                        dâi                                   
+                              = i Ĥ0 , âi = iωi â†i âi , âi = −iωi âi .               (5.94c)
+                         dt
+Next, we write down the evolution operator in the interaction picture, which
+reads                             "                 #         t
+                           Û (t) = T← exp −i                      dt Ĥint (t ) ,         (5.95)
+                                                           0
+
+where T← denotes the time-ordered product of operators (i.e., operators are
+arranged such that their time arguments increase from right to left).3 We can
+formally expand (5.95) in terms of a Dyson series [58] as
+
+             ∞
+                   n  t                t1
+               (−i)
+  Û (t) =                      dt1            dt2 · · ·
+             n=0
+                   n!       0            0
+                                 tn−1             $                                        %
+                           ×                 dtn T← Ĥint (t1 )Ĥint (t2 ) · · · Ĥint (tn ) . (5.96)
+                                    0
+                                                    
+Since the commutator Ĥint (t), Ĥint (t = t) will in general be equal to an-
+other (time-dependent) operator, the required time ordering means that we
+usually cannot evaluate this series in closed form. However, a great simpli-
+ﬁcation occurs in the present case. Since the commutator of the operators
+â†i and âi is a c-number (instead of another operator), the commutator of
+Ĥint (t) and Ĥint (t = t), with Ĥint (t) given by (5.93), is simply a function of
+c-numbers,                                       
+                                         
+                    Ĥint (t), Ĥint (t ) = −2i    |gi | sin ωi (t − t ).
+                                                         2
+                                                                                (5.97)
+                                                           i
+
+The explicit evaluation of (5.95) using (5.97) is somewhat cumbersome, so we
+refer readers interested in the derivation to [237] for details. The important
+point for our present discussion is that (5.97) enables us to write Û (t) as
+a product of a global time-dependent phase factor and the ordinary (not
+time-ordered) equivalent of (5.95),
+                                  "  t                #
+               Û (t) = eiφ(t) exp −i   dt Ĥint (t ) ≡ eiφ(t) V̂ (t). (5.98)
+                                                     0
+
+In our subsequent discussion, the global phase factor will play no role (al-
+though it may become relevant in other settings; see [96] for an example).
+   3
+     The necessity of a time ordering of the operators has sometimes been overlooked
+in discussions of this model in the literature (see, e.g., [89] and the correction in [96]
+and [237]).

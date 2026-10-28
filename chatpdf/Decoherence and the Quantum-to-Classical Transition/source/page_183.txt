@@ -1,0 +1,47 @@
+                                            4.4 Non-Markovian Dynamics         169
+                                   $            %
+Here, W[L̂]ρ̂ ≡ L̂ρ̂+ ρ̂L̂† − ρ̂ Tr L̂ρ̂ + ρ̂L̂† , and the dWμ denote the so-called
+Wiener increments. Equation (4.51) corresponds to a diﬀusive “unraveling”
+of the Lindblad equation (4.45) into individual quantum trajectories that can
+then be expressed by means of a “stochastic Schrödinger equation.” We shall
+not go into the details here—there exists a large volume of literature on this
+topic (see, e.g., [186–198]).
+
+
+4.4 Non-Markovian Dynamics
+As we have emphasized before, the Born–Markov master equation is only
+strictly applicable if the system–environment coupling is weak and memory
+eﬀects of the environment can be neglected. In many situations of physical
+interest, however, this assumption is not fulﬁlled because of low tempera-
+tures of the environment and strong interactions of the system with its en-
+vironment. A concrete example of such non-Markovian dynamics is that of
+a superconducting qubit strongly coupled to a low-temperature environment
+of other two-level systems, a situation in which making the Born–Markov
+approximations is no longer justiﬁed [199, 200].
+    Intuitively, one might expect that pronounced memory eﬀects in the envi-
+ronment will cause strong dependences of the evolution of the reduced density
+operator on the past history of the full system–environment combination and
+thus make it impossible to describe the reduced dynamics by a diﬀerential
+equation that is local in time. In some situations this is indeed the case, and
+one will then, in general, have to resort to solving integro-diﬀerential equa-
+tions such as (4.22), which depend on retarded-time kernels and integrations
+over the history of the system. Such equations are encountered, for example,
+in the context of the so-called Nakajima–Zwanzig projection-operator ap-
+proach [201–203] (see also Chap. 7 of [17] for details). Such techniques lead
+to equations that are not local in time and are diﬃcult to solve analytically,
+and they are therefore rarely used in their exact forms.
+    Surprisingly, however, in many other cases one can show that even non-
+Markovian dynamics can still be described by a diﬀerential equation of the
+form
+                               d
+                                  ρ̂S (t) = K̂(t)ρ̂S (t).                (4.52)
+                               dt
+In contrast with the Born–Markov master equation (4.8), the superoperator
+K̂(t) depends here explicitly on t, but there are no dependences on previous
+times t < t. In particular, the change in ρ̂S is entirely determined by ρ̂S
+evaluated at the same time t only, and no integration over the history of the
+system in the equation of motion is required. Therefore the master equation
+(4.52) is still local in time.
+    Time-local non-Markovian master equations of the form (4.52) can be ar-
+rived at in various ways. For example, in the case of quantum Brownian mo-
+tion (see Sect. 5.2), one can derive a master equation that is non-Markovian

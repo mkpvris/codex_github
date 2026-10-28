@@ -1,0 +1,55 @@
+310     7 Decoherence and Quantum Computing
+
+    The evolution (7.22) can be generalized to a system of N qubits interact-
+ing with an environment. One can show that the dynamics of the composite
+system composed of these qubits and the environment can be written as
+                                              
+                       |ψ |er  −→      Êi |ψ |ei  .               (7.26)
+                                              i
+
+
+Here |ψ is the initial N -qubit state, and the Êi are tensor products of N
+operators involving identity and Pauli operators, with each operator acting
+on the Hilbert space of a single qubit. For example,
+
+                  Êi = σ̂y(1) ⊗ Iˆ(2) ⊗ σ̂x(3) ⊗ · · · ⊗ σ̂z(N )   etc.,      (7.27)
+
+where the superscripts indicate which qubit each operator acts on.
+    For the case of a single qubit, we found that an entangling interaction with
+the environment can be described as a combination of no error (represented
+by the identity operator) and a phase-ﬂip error (represented by the Pauli
+operator σ̂z ) [see (7.24)]. The analogous result holds true also for the case of
+N qubits. Now the relevant error operators Êi are products of N single-qubit
+operators, each of which is either the identity operator or the operator σ̂z
+acting on the Hilbert space of a single qubit.5 For example,
+
+                  Êi = σ̂z(1) ⊗ Iˆ(2) ⊗ σ̂z(3) ⊗ · · · ⊗ Iˆ(N )    etc.       (7.28)
+
+To establish a more transparent notation, let us denote these N -qubit error
+operators (7.28) in the form Ẑj1 j2 ···jN , where each jk is either equal to 0 if
+the identity operator Iˆ(k) acts on the kth qubit, or equal to 1 if the phase-ﬂip
+            (k)
+operator σ̂z acts on this qubit. For example, in this notation the operator
+Êi written out in (7.28) would read Ẑ101···0 . Then we can express a purely
+entangling system–environment interaction as
+                    ⎧                                      ⎫
+                    ⎨   1  1       1                    ⎬
+       |ψ |er  −→              ···      Ẑj1 j2 ···jN |ψ |
+                                                             e           , (7.29)
+                    ⎩                                      ⎭ j1 j2 ···jN
+                         j1 =0 j2 =0    jN =0
+
+
+where the |
+           ej1 j2 ···jN  are some relative states of the environment.
+    We remark that the most general form of (7.29) corresponds, errorwise,
+to the “worst-case scenario” of environmental entanglement: In principle, 2N
+diﬀerent error operators Ẑj1 j2 ···jN will need to be taken into account. We
+say that phase-ﬂip errors up to weight N will have to be considered, where
+   5
+    There are at least two equivalent diﬀerent ways of proving this result. First, we
+may try an explicit proof along the lines of the one-qubit case considered above. This
+proof, although quite straightforward, is notationally somewhat cumbersome. The
+second (and more elegant) route consists of making use of the so-called Jamiolkowski
+isomorphism [359]. Since this approach requires the introduction of new formal
+elements, we shall not further consider it here.

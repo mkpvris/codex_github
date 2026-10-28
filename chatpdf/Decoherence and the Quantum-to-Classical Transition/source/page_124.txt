@@ -1,0 +1,51 @@
+                                 2.15 Formal Tools and Their Interpretation      109
+
+see from Fig. 2.8 that the Wigner function takes on negative values, in par-
+ticular in the region of the oscillatory pattern. As discussed above, this is
+a direct visual indicator that we cannot interpret the Wigner function as a
+classical phase-space probability distribution.
+
+2.15.3 “Purifying” the Environment
+When discussing the trace operation in Sect. 2.4.6, we have shown how to
+obtain the reduced state of a system from the pure state of a larger composite
+system—in our case, the system of interest together with its environment. It
+should not come as a surprise that we can also “invert” this procedure to
+purify any given nonpure state (in a Hilbert space of ﬁnite dimension). By
+this statement we mean the ability of regarding an arbitrary nonpure state
+as the reduced state of the pure state of a larger system.
+    The proof of this statement is absolutely straightforward. Suppose our
+system of interest S is described by some (in general nonpure) density matrix
+ρ̂S in a Hilbert space HS . From Sect. 2.4 [see especially (2.20)]
+                                                                  we know
+that any density matrix can be written in the form      Sρ̂ =     i pi |ψi ψi |,
+where the pi are nonnegative real numbers obeying i pi = 1. Let us now
+introduce another (ﬁctitious) system, which we may call the “environment”
+E (although, of course, no particular physical role or representation needs to
+be attached to this second system). We take the Hilbert space HE of E to
+have the same dimensionality as HS and choose an orthonormal basis {|φi }
+of HE . Let us deﬁne the pure state
+                                    √
+                             |Ψ  ≡     pi |ψi  |φi                    (2.136)
+                                          i
+
+of the composite SE system. The corresponding pure-state density matrix is
+then                             √
+                 ρ̂ = |Ψ Ψ | =   pi pj |ψi ψj | ⊗ |φi φj |. (2.137)
+                                     ij
+
+If we now take the trace over our ﬁctitious “environment” E, we simply
+recover the original density matrix ρ̂S of S,
+                           ⎡                                 ⎤
+                           √
+         TrE ρ̂ =    φk | ⎣    pi pj |ψi ψj | ⊗ |φi φj |⎦ |φk  (2.138)
+                   k            ij
+                   
+               =       pi |ψi ψi | = ρ̂S .                                  (2.139)
+                   i
+
+This “puriﬁcation theorem” has an important implication. In discussions of
+decoherence one can always assume, without loss of generality, that the envi-
+ronment is in a pure state before its interaction with the system of interest.
+This is so because in cases where the environment is not in a pure state to
+begin with, we can always purify it through the introduction of an additional
+(ﬁctitious) environment.

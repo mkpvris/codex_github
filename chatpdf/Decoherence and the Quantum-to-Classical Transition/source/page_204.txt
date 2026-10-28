@@ -1,0 +1,48 @@
+190     5 Canonical Models For Decoherence
+
+of J(ω) coth (ω/2kB T ). For even functions g(−x) = g(x), an identity analo-
+gous to (5.45) holds for such double Fourier cosine transforms, namely,
+                                   ∞
+               2 ∞
+                      dk cos(x k)     dx g(x) cos(kx) = g(x ).      (5.47)
+               π 0                  0
+
+Since the function J(ω) coth (ω/2kB T ) is indeed even in ω, we therefore ob-
+tain
+                                                             
+          π               Ω                  Λ2             Ω
+     D = J(Ω) coth              = M γ0 Ω 2         coth           .    (5.48)
+           2            2kB T             Λ + Ω2          2kB T
+The temperature dependence of D is illustrated in Fig. 5.3. We observe that
+D increases with temperature: Decoherence becomes stronger as the tem-
+perature of the environment is raised. For high temperatures kB T  Ω,
+coth (Ω/2kB T ) ≈ 2kB T /Ω, and thus D increases approximately linearly with
+temperature (this high-temperature limit will be studied in more detail in
+Sect. 5.2.4 below).
+   The expression for the frequency renormalization Ω     2 [see (5.26a)] is a
+Fourier cosine transform of a Fourier sine transform. Although no simple
+identities of the form (5.45) or (5.47) hold in this case, it is quite straight-
+forward to explicitly evaluate this coeﬃcient. We shall here simply state the
+result without derivation,
+
+                                   2 = −2γ0     Λ3
+                                  Ω                       .                    (5.49)
+                                               Λ2 + Ω 2
+Finally, the anomalous-diﬀusion coeﬃcient f [see (5.26d)] is more diﬃcult to
+evaluate because of the presence of the term coth (ω/2kB T ). One case that is
+relatively easy to treat is that of a high-temperature environment such that
+
+
+                D(T ) [D(0)]
+                 2.2
+                  2.0
+                  1.8
+                  1.6
+                  1.4
+                  1.2
+                    1                                             T [Ω /kB ]
+                        0   0.2     0.4   0.6      0.8        1
+Fig. 5.3. Temperature dependence of the normal-diﬀusion coeﬃcient D, see (5.48),
+for the case of the ohmic spectral density (5.44). The vertical axis is shown in units
+of D(T = 0), the zero-temperature value of the normal-diﬀusion coeﬃcient, and
+the temperature axis is displayed in units of Ω/kB .

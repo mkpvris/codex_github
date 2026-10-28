@@ -1,0 +1,52 @@
+116      3 Localization Due to Environmental Scattering
+
+    Environmental scattering and the resulting process of spatial localization
+also play a key role for historical reasons. The attempt to directly identify
+narrow wave packets in position space with particles and their trajectories
+goes back to the early years of quantum mechanics. Based on ideas inspired
+by the theory of relativity and the photoelectric eﬀect, the French physicist
+Louis de Broglie suggested in the early 1920s that every particle of mass
+m and velocity v has a quantum “matter wave” of wavelength λ = h/mv
+associated with it [34, 153–155]. Schrödinger was heavily inﬂuenced by de
+Broglie’s Ph.D. thesis of 1924 [156], as evidenced in a letter to Einstein dated
+November 16, 1925:
+      I have been intensely concerned these days with Louis de Broglie’s
+      ingenious theory. It is extraordinarily exciting, but still has some very
+      grave diﬃculties.
+Only weeks later, Schrödinger identiﬁed de Broglie’s matter wave with a wave
+function ψ and formulated his famous wave equation that speciﬁed the time
+evolution of this wave function, thereby giving birth to wave mechanics.
+    However, in developing his theory, Schrödinger became immediately aware
+of the problem of how to describe particles by spatially extended waves. It is
+well known that, for a free particle, unitary time evolution tends to coherently
+spread out any spatially localized wave packet (Fig. 3.1). For example, if at
+time t = 0 a free particle is described by a wave packet of the form
+                                              1/2      "     #
+                                          1                 x2
+                     ψ(x, t = 0) =       √            exp − 2 ,                (3.1)
+                                          πσ               2σ
+                                               2
+the position probability density |ψ(x, t)| at a later time t > 0 is given by
+                                                    "                          #
+             2                1                                x2
+    |ψ(x, t)| = √                                exp − 2
+                   πσ [1 + 2 t2 /(m2 σ 4 )]
+                                             1/2      σ [1 + 2 t2 /(m2 σ 4 )]
+                             "          #
+                    1              x2
+               ≡ √       exp − 2           .                                    (3.2)
+                   πσ(t)          σ (t)
+
+
+                     |ψ(x, 0)|2
+
+
+
+
+                                                           |ψ(x, t)|2
+                                         x                                        x
+
+Fig. 3.1. Coherent spread of the probability density |ψ(x, t)| for a free-particle
+                                                                   2
+
+Gaussian wave packet under unitary time evolution.

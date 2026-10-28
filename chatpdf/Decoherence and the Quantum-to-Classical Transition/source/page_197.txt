@@ -1,0 +1,63 @@
+                                                 5.2 Quantum Brownian Motion         183
+
+                                         1 2 1
+                             ĤS =         P̂ + M Ω 2 X̂ 2 .                       (5.23)
+                                        2M     2
+The explicit form of the interaction-picture position operator X̂(τ ) [see (5.20)]
+is then easily determined by solving the Heisenberg equations of motions for
+the operators X̂ and P̂ of the system, which yields
+                                                           1
+        X̂(τ ) = eiĤS τ X̂e−iĤS τ = X̂ cos (Ωτ ) +         P̂ sin (Ωτ ) .        (5.24)
+                                                          MΩ
+Inserting this expression for X̂(τ ) into (5.22) yields the Born–Markov master
+equation describing the reduced dynamics of a harmonic oscillator linearly
+and weakly coupled to a thermal environment of harmonic oscillators,
+  d                   1 2 2                )              *
+     ρ̂S (t) = −i ĤS + M Ω X̂ , ρ̂S (t) − iγ X̂, P̂ , ρ̂S (t)
+  dt                   2
+                                                              
+                            − D X̂, X̂, ρ̂S (t) − f X̂, P̂ , ρ̂S (t) . (5.25)
+
+Here, we have introduced the coeﬃcients Ω   2 , γ, D, and f deﬁned as
+                                 ∞
+                    2 ≡ − 2
+                    Ω               dτ η(τ ) cos (Ωτ ) ,               (5.26a)
+                            M 0
+                                 ∞
+                            1
+                     γ≡             dτ η(τ ) sin (Ωτ ) ,               (5.26b)
+                          MΩ 0
+                           ∞
+                     D≡        dτ ν(τ ) cos (Ωτ ) ,                    (5.26c)
+                           0
+                                   ∞
+                              1
+                     f ≡−              dτ ν(τ ) sin (Ωτ ) .            (5.26d)
+                            MΩ 0
+Each of these coeﬃcients carries a particular physical interpretation, derived
+from its role in the master equation (5.25). Before discussing these terms
+one by one, let us ﬁrst rewrite (5.25) in two other equivalent ways that are
+frequently used in the literature.
+    First of all, it is often convenient to express (5.25) in the position repre-
+sentation. Using the basic relation
+                                   ∂                          ∂
+     X| P̂ ρ̂S (t) |X   = −i      X| ρ̂S (t) |X   ≡ −i    ρS (X, X  , t),   (5.27)
+                                  ∂X                         ∂X
+we obtain the equation of motion for the reduced density matrix ρS (X, X  , t)
+in the position basis,
+                      "       2                
+   ∂                       i    ∂          ∂2        i               
+                                                                   2 X 2 − X 2
+                                                                                 
+     ρS (X, X  , t) = −            2
+                                       −      2
+                                                   − M Ω2 + Ω
+  ∂t                     2M ∂X            ∂X         2
+                                                   
+                                        ∂        ∂
+                      + γ(X − X  )         −         − D(X − X  )2
+                                       ∂X      ∂X
+                                                   #
+                                        ∂        ∂
+                      +if (X − X  )        +          ρS (X, X  , t).     (5.28)
+                                       ∂X      ∂X

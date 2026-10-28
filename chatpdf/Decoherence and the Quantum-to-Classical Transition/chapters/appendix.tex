@@ -1,0 +1,130 @@
+% 原文 p.379
+\hypertarget{srcpage:379}{}\label{srcpage:379}
+\sectionlink*{付録：相互作用描像}
+
+演算子と量子状態を、いわゆる相互作用描像で表す手法は、量子力学的問題を摂動的に扱ううえで、非常に重要である。たとえば、4.2.2節で詳しく述べた、デコヒーレンスに対するBorn--Markovマスター方程式の導出で、重要な役割を果たす。以下で、相互作用描像による方法の基礎を復習しよう。
+
+まず、次の形のHamiltonianを考える。
+\begin{equation}
+\hat H=\hat H_0+\hat V.\tag{A.1}
+\end{equation}
+ここで$\hat H_0$は、系Sの自由な、すなわち摂動されていない発展を記述するHamiltonianの部分であり、$\hat V$は、付け加えられた何らかの外部摂動である。相互作用描像の形式を応用するときには、通常、$\hat V$は$\hat H_0$に比べて弱いと仮定し、この仮定の下で系の近似的な動力学を決定することを目指す。しかし以下では、厳密な計算だけを行い、二成分$\hat H_0$と$\hat V$の相対的な強さについて、仮定を置かない。
+
+標準量子論から、観測量演算子$\hat A(t)$の期待値は、トレース規則［(2.17)参照］によって与えられることが分かる。
+\begin{equation}
+\langle\hat A(t)\rangle=\operatorname{Tr}[\hat A(t)\hat\rho(t)]
+=\operatorname{Tr}[\hat A(t)e^{-i\hat Ht}\hat\rho(0)e^{i\hat Ht}].\tag{A.2}
+\end{equation}
+すぐに明らかになる理由によって、この式を次のように書き換えよう。
+\begin{equation}
+\langle\hat A(t)\rangle=\operatorname{Tr}\left[\left(e^{i\hat H_0t}\hat A(t)e^{-i\hat H_0t}\right)
+\left(e^{i\hat H_0t}e^{-i\hat Ht}\hat\rho(0)e^{i\hat Ht}e^{-i\hat H_0t}\right)\right].\tag{A.3}
+\end{equation}
+角括弧内の式の最初と最後へ、時間発展演算子$e^{\pm i\hat H_0t}$を挿入する際、トレースが引数の巡回置換に対して不変である、すなわち$\operatorname{Tr}(\hat A\hat B\hat C\cdots)=\operatorname{Tr}(\hat B\hat C\cdots\hat A)$などとなることを利用した。したがって、最初の因子$e^{i\hat H_0t}$をトレースの引数の最後へ動かすと、その位置の余分な因子$e^{-i\hat H_0t}$と相殺できる。
+
+% 原文 p.380
+\hypertarget{srcpage:380}{}\label{srcpage:380}
+式(A.3)を動機として、一般の演算子$\hat A(t)$と密度行列$\hat\rho(t)$の、相互作用描像での形を導入する。
+\begin{equation}
+\hat A^{(\mathrm I)}(t)=e^{i\hat H_0t}\hat A(t)e^{-i\hat H_0t},\tag{A.4}
+\end{equation}
+\begin{equation}
+\begin{aligned}
+\hat\rho^{(\mathrm I)}(t)&=e^{i\hat H_0t}\hat\rho(t)e^{-i\hat H_0t}\\
+&=e^{i\hat H_0t}e^{-i\hat Ht}\hat\rho(0)e^{i\hat Ht}e^{-i\hat H_0t}.
+\end{aligned}\tag{A.5}
+\end{equation}
+ここでは上付き添字$(\mathrm I)$で、相互作用描像の演算子を表す。相互作用描像の演算子$\hat A^{(\mathrm I)}(t)$の動力学は、全Hamiltonian$\hat H$ではなく、摂動されていない自由なHamiltonian$\hat H_0$によって完全に定まることに注意しよう。
+
+新しい定義(A.4)、(A.5)を用いると、期待値の式(A.3)は、簡潔な形に書ける。
+\begin{equation}
+\langle\hat A(t)\rangle=\operatorname{Tr}[\hat A^{(\mathrm I)}(t)\hat\rho^{(\mathrm I)}(t)].\tag{A.6}
+\end{equation}
+それでは、相互作用描像の密度行列$\hat\rho^{(\mathrm I)}(t)$の発展方程式を求めよう。Schrödinger描像の密度行列$\hat\rho(t)$について、標準的なLiouville--von Neumann方程式
+\begin{equation}
+\frac{\mathrm d}{\mathrm dt}\hat\rho(t)=-i[\hat H,\hat\rho(t)]\tag{A.7}
+\end{equation}
+を使うと、次を得る。
+\begin{equation}
+\begin{aligned}
+\frac{\mathrm d}{\mathrm dt}\hat\rho^{(\mathrm I)}(t)
+&=i[\hat H_0,\hat\rho^{(\mathrm I)}(t)]+e^{i\hat H_0t}\left(\frac{\mathrm d}{\mathrm dt}\hat\rho(t)\right)e^{-i\hat H_0t}\\
+&\overset{\text{(A.7)}}=i[\hat H_0,\hat\rho^{(\mathrm I)}(t)]-ie^{i\hat H_0t}[\hat H,\hat\rho(t)]e^{-i\hat H_0t}\\
+&\overset{\text{(A.1)}}=i[\hat H_0,\hat\rho^{(\mathrm I)}(t)]-ie^{i\hat H_0t}[\hat H_0+\hat V,\hat\rho(t)]e^{-i\hat H_0t}.
+\end{aligned}\tag{A.8}
+\end{equation}
+(A.4)と(A.5)から、第二の交換子内の量に時間発展演算子$e^{\pm i\hat H_0t}$を適用することは、それらを相互作用描像へ変換することに相当すると分かる。したがって式(A.8)は、次のようになる。
+\begin{equation}
+\begin{aligned}
+\frac{\mathrm d}{\mathrm dt}\hat\rho^{(\mathrm I)}(t)
+&=i[\hat H_0,\hat\rho^{(\mathrm I)}(t)]-i[\hat H_0,\hat\rho^{(\mathrm I)}(t)]
+-i[\hat V^{(\mathrm I)}(t),\hat\rho^{(\mathrm I)}(t)]\\
+&=-i[\hat V^{(\mathrm I)}(t),\hat\rho^{(\mathrm I)}(t)].
+\end{aligned}\tag{A.9}
+\end{equation}
+これで、第一の主要な結果が得られた。相互作用描像の密度演算子の時間発展は、Liouville--von Neumann型の方程式で与えられるが、全Hamiltonian$\hat H$の代わりに、相互作用描像の摂動$\hat V^{(\mathrm I)}(t)$が現れる。それにふさわしく、(A.9)は相互作用描像のLiouville--von Neumann方程式と呼ばれる。
+
+% 原文 p.381
+\hypertarget{srcpage:381}{}\label{srcpage:381}
+ここまでは、起源をそれ以上指定しない何らかの摂動$\hat V$を受ける、単一の系Sを考えた。今度は、デコヒーレンスに関係する設定へ進もう。摂動は、相互作用Hamiltonian$\hat H_{\mathrm{int}}$で記述される、何らかの外部環境Eとの相互作用によるものとする。すなわち$\hat V\equiv\hat H_{\mathrm{int}}$である。系と環境の自己Hamiltonianを、それぞれ$\hat H_{\mathrm S}$、$\hat H_{\mathrm E}$と書けば、複合系SEの全Hamiltonianは、次の形に書ける。
+\begin{equation}
+\hat H=\hat H_0+\hat V\equiv\underbrace{\hat H_{\mathrm S}+\hat H_{\mathrm E}}_{\equiv\hat H_0}
++\underbrace{\hat H_{\mathrm{int}}}_{\equiv\hat V}.\tag{A.10}
+\end{equation}
+通常の方針に従い、縮約密度演算子$\hat\rho_{\mathrm S}(t)$の時間発展を決定したい。ここでは、相互作用描像の縮約密度演算子
+\begin{equation}
+\hat\rho_{\mathrm S}^{(\mathrm I)}(t)\equiv\operatorname{Tr}_{\mathrm E}[\hat\rho^{(\mathrm I)}(t)]\tag{A.11}
+\end{equation}
+を得たい。以下の二つの問いを扱う。
+\begin{enumerate}
+\item Schrödinger描像の縮約密度演算子$\hat\rho_{\mathrm S}(t)$が与えられたとき、対応する相互作用描像の演算子$\hat\rho_{\mathrm S}^{(\mathrm I)}(t)$は何か。
+\item $\hat\rho_{\mathrm S}^{(\mathrm I)}(t)$に対する、適切な時間発展方程式は何か。
+\end{enumerate}
+第一の問いに答えよう。(A.11)のトレースを評価すると、次を得る。
+\begin{equation}
+\begin{aligned}
+\operatorname{Tr}_{\mathrm E}[\hat\rho^{(\mathrm I)}(t)]
+&\overset{\text{(A.5)}}=\operatorname{Tr}_{\mathrm E}[e^{i\hat H_0t}\hat\rho(t)e^{-i\hat H_0t}]\\
+&\overset{\text{(A.10)}}=e^{i\hat H_{\mathrm S}t}\left\{\operatorname{Tr}_{\mathrm E}[e^{i\hat H_{\mathrm E}t}\hat\rho(t)e^{-i\hat H_{\mathrm E}t}]\right\}e^{-i\hat H_{\mathrm S}t}\\
+&=e^{i\hat H_{\mathrm S}t}\{\operatorname{Tr}_{\mathrm E}[\hat\rho(t)]\}e^{-i\hat H_{\mathrm S}t}\\
+&=e^{i\hat H_{\mathrm S}t}\hat\rho_{\mathrm S}(t)e^{-i\hat H_{\mathrm S}t}\\
+&\overset{\text{(A.11)}}\equiv\hat\rho_{\mathrm S}^{(\mathrm I)}(t).
+\end{aligned}\tag{A.12}
+\end{equation}
+ここで、最後から二番目の行では、引数の巡回置換に対するトレース操作の不変性を、再び使った。少し言い方を変えれば、引数のユニタリー変換に対するトレースの不変性である。
+
+式(A.12)は、相互作用描像の縮約密度演算子が、Schrödinger描像の縮約密度演算子に、自由な系Hamiltonian$\hat H_{\mathrm S}$だけを含むユニタリー変換を施すことで得られることを示す。すなわち、
+\begin{equation}
+\hat\rho_{\mathrm S}^{(\mathrm I)}(t)=e^{i\hat H_{\mathrm S}t}\hat\rho_{\mathrm S}(t)e^{-i\hat H_{\mathrm S}t}.\tag{A.13}
+\end{equation}
+(A.13)と、相互作用描像の全密度演算子$\hat\rho^{(\mathrm I)}(t)$に対応する変換(A.5)の類似性は、これで明らかだろう。
+% 原文 p.382
+\hypertarget{srcpage:382}{}\label{srcpage:382}
+いずれの場合にも、変換に含まれるのは自由Hamiltonianだけであり、$\hat\rho^{(\mathrm I)}(t)$に対しては$\hat H_0$、相互作用描像の縮約密度演算子$\hat\rho_{\mathrm S}^{(\mathrm I)}(t)$に対しては系Hamiltonian$\hat H_{\mathrm S}$である。
+
+定義(A.13)はまた、望まれるように、系の観測量$\hat A_{\mathrm S}(t)$の期待値が、Schrödinger描像と相互作用描像で自動的に一致することを保証する。すなわち、
+\begin{equation}
+\langle\hat A_{\mathrm S}(t)\rangle=\operatorname{Tr}_{\mathrm S}[\hat\rho_{\mathrm S}(t)\hat A_{\mathrm S}(t)]
+=\operatorname{Tr}_{\mathrm S}[\hat\rho_{\mathrm S}^{(\mathrm I)}(t)\hat A_{\mathrm S}^{(\mathrm I)}(t)],\tag{A.14}
+\end{equation}
+ここで、
+\begin{equation}
+\hat A_{\mathrm S}^{(\mathrm I)}(t)\overset{\text{(A.4)}}=e^{i\hat H_0t}\hat A_{\mathrm S}(t)e^{-i\hat H_0t}
+\overset{\text{(A.10)}}=e^{i\hat H_{\mathrm S}t}\hat A_{\mathrm S}(t)e^{-i\hat H_{\mathrm S}t}.\tag{A.15}
+\end{equation}
+(A.14)の証明は直ちに得られる。
+\begin{equation}
+\begin{aligned}
+\operatorname{Tr}_{\mathrm S}[\hat\rho_{\mathrm S}^{(\mathrm I)}(t)\hat A_{\mathrm S}^{(\mathrm I)}(t)]
+&=\operatorname{Tr}_{\mathrm S}[e^{i\hat H_{\mathrm S}t}\hat\rho_{\mathrm S}(t)\hat A_{\mathrm S}(t)e^{-i\hat H_{\mathrm S}t}]\\
+&=\operatorname{Tr}_{\mathrm S}[\hat\rho_{\mathrm S}(t)\hat A_{\mathrm S}(t)].
+\end{aligned}\tag{A.16}
+\end{equation}
+最後に、先ほどの第二の問いに答え、相互作用描像の縮約密度演算子$\hat\rho_{\mathrm S}^{(\mathrm I)}(t)$の運動方程式を求めよう。相互作用描像の全密度演算子$\hat\rho^{(\mathrm I)}(t)$の発展方程式(A.9)で、$\hat V^{(\mathrm I)}(t)\equiv\hat H_{\mathrm{int}}^{(\mathrm I)}(t)$とし、両辺について環境のトレースを取ると、次を得る。
+\begin{equation}
+\frac{\mathrm d}{\mathrm dt}\hat\rho_{\mathrm S}^{(\mathrm I)}(t)
+=-i\operatorname{Tr}_{\mathrm E}[\hat H_{\mathrm{int}}^{(\mathrm I)}(t),\hat\rho^{(\mathrm I)}(t)].\tag{A.17}
+\end{equation}
+よく見ると、この方程式は標準的なLiouville--von Neumannの形ではない。右辺が、縮約密度演算子$\hat\rho_{\mathrm S}^{(\mathrm I)}(t)$ではなく、全密度演算子$\hat\rho^{(\mathrm I)}(t)$に依存するからである。この事実は、読者にとってそれほど意外ではないだろう。結局、環境の状態は一般に、縮約密度演算子の発展に影響するのである。
+
+したがって一般には、縮約動力学を決めるために、相互作用する系と環境の組全体を考えなければならない。この点は、もちろん、Schrödinger描像と相互作用描像のどちらで考えるかとは無関係である。系と環境の結合が弱いといった、ある近似を課して初めて、時間依存する全体の系・環境密度演算子に明示的には依存しない、系の縮約密度演算子の発展方程式が得られる。そのようなマスター方程式は、第4章と第5章で導かれる。

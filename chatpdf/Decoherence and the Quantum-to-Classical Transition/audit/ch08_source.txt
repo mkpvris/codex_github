@@ -1,0 +1,1378 @@
+8 The Role of Decoherence in Interpretations
+of Quantum Mechanics
+
+
+
+
+Many decades have now elapsed since the famous Solvay conference of 1927
+during which the elite of physicists engaged in a heated debate about the in-
+terpretation of quantum mechanics [385]. Yet, discussions about the meaning
+of quantum theory show no sign of abating. If one would like to go beyond a
+purely pragmatic “shut-up-and-calculate” approach to quantum mechanics1
+and relate the quantum formalism to a presumed physical reality “out there,”
+it is virtually impossible not to get tangled up in interpretive questions. The
+existence of a variety of interpretations of quantum mechanics is therefore as
+old as quantum theory itself.
+     In this chapter, we shall discuss the following key question. What impli-
+cations does decoherence have for these diﬀerent interpretations of quantum
+mechanics, given that decoherence itself is related to interpretive problems of
+quantum mechanics? This question is of particular interest given that deco-
+herence was “discovered” a fairly long time after many of the main interpre-
+tations of quantum mechanics—such as relative-state interpretations, modal
+interpretations, and the pilot-wave theory of de Broglie and Bohm—had al-
+ready been formulated. (As recounted at the end of Chap. 1, it was only in
+the early 1990s that decoherence started to attract broader attention from
+the scientiﬁc community.) When the importance of decoherence for a realis-
+tic description of interpretation-related topics such as quantum measurement
+was ﬁnally realized, the question of the implications of decoherence for ex-
+isting (and future) interpretations of quantum mechanics became acutely
+relevant. Since one of the main goals of interpretations was to make sense
+of the puzzling aspects of quantum measurement, and since decoherence was
+concerned (among other things) with a realistic description of such measure-
+ments, it became inevitable to revisit these interpretations in the context of
+the new insights gained from decoherence.
+     Let us outline some of the key questions that one encounters when in-
+vestigating the implications of decoherence for interpretations of quantum
+mechanics:
+
+
+   1
+     Although often attributed to Feynman, it appears that the nickname “shut-up-
+and-calculate interpretation” was actually coined by Mermin [386]. For an example
+of such an interpretive stance, see [44].
+330     8 The Role of Decoherence in Interpretations of Quantum Mechanics
+
+– Is decoherence by itself capable of solving certain foundational problems of
+  quantum mechanics, thereby rendering some of the interpretive or formal
+  additives to quantum mechanics introduced by particular interpretations
+  superﬂuous? If this is indeed the case, what core foundational problems
+  remain, and what form do they take?
+– Can decoherence enforce the empirical adequacy of interpretations, that
+  is, can it protect an interpretation from experimental disproof?
+– In turn, can decoherence rule out certain interpretations by demonstrating
+  that these interpretations lead to clashes with standard quantum mechan-
+  ics or with our observations?
+– Can decoherence provide physical motivations for some of the assumptions
+  introduced by a particular interpretation and thereby also lend a more
+  precise (physical) meaning to these assumptions?
+– To what extent can decoherence act as an “amalgam” that may unify
+  and simplify a spectrum of diﬀerent interpretations, thereby showing that
+  seemingly diﬀerent interpretations can be reduced to a common core?
+These and other questions will be addressed and analyzed in this chapter
+(parts of which are based on a review paper [1] of this author2 ), separately
+for each of the main interpretive strands of quantum mechanics. We will
+consider the standard and Copenhagen interpretations (Sect. 8.1), relative-
+state interpretations (Sect. 8.2), modal interpretations (Sect. 8.3), physical
+collapse theories (Sect. 8.4), and Bohmian mechanics (Sect. 8.5). By doing
+so, we will not only be able to assess the current status of the diﬀerent
+interpretations in the light of decoherence, but also acquire new insights into
+the meaning and scope of decoherence itself.
+
+
+8.1 The Standard and Copenhagen Interpretations
+In this section, we shall discuss the standard interpretation of quantum me-
+chanics as commonly presented (either explicitly or implicitly) in most text-
+books on quantum mechanics. This interpretation is often also referred to
+as “orthodox” quantum mechanics. We deliberately distinguish the standard
+interpretation from the Copenhagen interpretation,3 which introduces the
+additional assumption of the necessity of fundamental, irreducible classical
+concepts in order to describe quantum phenomena, including measurements.
+
+   2
+      Parts of this chapter adapted with permission from [1]. Copyright 2004 by the
+American Physical Society.
+    3
+      It has been argued [387], and is now widely recognized, that there exists in
+fact no single coherent “Copenhagen interpretation” but rather a patchwork of
+sometimes divergent views due to Bohr, Heisenberg, and their contemporaries. Here
+our discussion shall refer to the interpretive notions as put forward by Bohr and
+Heisenberg (which often need to be distinguished).
+                        8.1 The Standard and Copenhagen Interpretations           331
+
+We shall come back to this particular aspect of the Copenhagen interpreta-
+tion in Sect. 8.1.3 below. An in-depth discussion of the relationship between
+the Copenhagen interpretation and decoherence can be found in [388]; see
+also [389, 390].
+    A deﬁning feature of the standard interpretation is the collapse postulate,
+which we have already mentioned in many places of this book. This postulate
+can be decomposed into several parts. First, it states that every measurement
+performed on a quantum system induces a discontinuous break in the unitary
+time evolution. Second, this break results in the “collapse” of the wave func-
+tion, expanded in terms of the eigenstates of the measured observable, onto
+one of these terms. Thereby a single component in the superposition of terms
+is selected as the outcome of the measurement. Third, the probability of a
+particular outcome is given by the amplitude-squared overlap between the
+initial wave function and the quantum state corresponding to the outcome
+(Born’s rule; see also footnote 9 on p. 35).
+    The standard interpretation does not give any explanations of the nature
+of the collapse.4 Despite the prominent role of measurement and the collapse
+postulate in this interpretation, the concrete deﬁnition of “measurement”
+remains rather unclear. In principle, the standard interpretation does not
+a priori exclude the possibility of macroscopic superpositions of “classical”
+states. At the same time, it tells us that such superpositions could never be
+observed, since any such observation would amount to a collapse-inducing
+measurement interaction. However, the question of what precisely counts as
+a measurement is not answered: Is a human observer required to induce the
+collapse? When does a given interaction induce a collapse, and when does it
+allow the system to continue to evolve unitarily?
+
+8.1.1 The Problem of Outcomes
+We have already discussed the problem of outcomes in the context of the von
+Neumann measurement scheme (see Sect. 2.5.4). As mentioned there, in the
+standard interpretation the interpretive rule for the existence of outcomes (or
+deﬁnite “values”) is given by the eigenvalue–eigenstate link, which prescribes
+that a system has a deﬁnite value of a physical quantity if and only if it
+is in an eigenstate of the observable corresponding to this quantity. This is
+an “objective” criterion since it allows us to infer the existence of a deﬁnite
+(quantum) state of the system to which a value of a physical quantity can be
+ascribed.
+    Within this interpretive framework (and without presuming the collapse
+postulate) decoherence cannot solve the problem of outcomes described in
+    4
+      The Copenhagen interpretation, on the other hand, appears to emphasize an
+epistemic nature of the collapse. Since this interpretation regards the wave function
+as representing a probability amplitude only, the collapse has the character of a mere
+“increase of information” rather than that of an actual physical process. See also
+the discussion in Sect. 2.1.
+332      8 The Role of Decoherence in Interpretations of Quantum Mechanics
+
+Sect. 2.5.4. This is so because phase coherence between macroscopically dif-
+ferent pointer states is preserved in the state that includes the environment,
+and we can always enlarge the system so as to include (at least parts of)
+the environment. In other words, the superposition is only enlarged, with co-
+herence being delocalized into the environment (“the interference terms still
+exist, but they are not there” [7, p. 224]), and the process of decoherence
+could in principle always be reversed. Therefore, if we assume the orthodox
+eigenvalue–eigenstate link to establish the existence of determinate values of
+physical quantities, decoherence cannot ensure that the system actually ever
+is in a deﬁnite pointer state (unless, of course, the system is initially in an
+eigenstate of the pointer observable), or that measurements have outcomes
+at all.
+    Let us discuss this important issue in some more detail. First note that,
+with respect to the global system–environment quantum state vector, the
+interaction with the environment has only led to additional entanglement,
+                               
+                                                   
+    |Ψ (t = 0) =       cn |sn  |E0  −→ |Ψ (t) =     cn |sn  |En (t) . (8.1)
+                      n                                n
+
+In some sense, the entanglement brought about by the interaction with the
+environment could initially even be considered as making the measurement
+problem, as considered in the context of the von Neumann scheme (see
+Sect. 2.5), even worse. Bacciagaluppi [391, Sect. 3.2] puts it like this:
+      Intuitively, if the environment is carrying out, without our interven-
+      tion, lots of approximate position measurements, then the measure-
+      ment problem ought to apply more widely, also to these spontaneously
+      occurring measurements. (. . . ) The state of the object and the envi-
+      ronment could be a superposition of zillions of very well localized
+      terms, each with slightly diﬀerent positions, and which are collec-
+      tively spread over a macroscopic distance, even in the case of ev-
+      eryday objects. (. . . ) If everything is in interaction with everything
+      else, everything is entangled with everything else, and that is a worse
+      problem than the entanglement of measuring apparatuses with the
+      measured probes.
+The rapid decrease of the overlap En (t)|Em=n (t) of the relative states of
+the environment, corresponding to an increase in the distinguishability of
+these states, becomes only relevant once we consider local measurements in
+the context of the usual measurement axioms of quantum mechanics, for
+example, by forming the reduced density matrix of the system corresponding
+to the state (8.1),
+                              
+                    ρ̂S (t) =   cm c∗n |sm sn |En (t)|Em (t).        (8.2)
+                              mn
+
+As discussed in Sect. 2.7, the rapidly decaying overlap En (t)|Em=n (t) means
+that interference terms |sm sn=m | become damped. The reduced density
+                      8.1 The Standard and Copenhagen Interpretations        333
+
+matrix is transformed into an approximate, albeit improper, ensemble of the
+component states |sn ,
+                                         2
+                         ρ̂S (t) ≈   |cn | |sn sn |.                (8.3)
+                                     n
+
+Recall that the introduction of the reduced density matrix was motivated by
+the fact that this mathematical object completely encapsulates all measure-
+ment statistics of the local system. These statistics are given by the expecta-
+tion values of all possible local observables ÔS , computed from the trace rule
+ÔS  = Tr(ρ̂S ÔS ). For all practical purposes and for any local measurement
+performed on the system only, the statistics generated by the reduced density
+matrix (8.3) of the system will then be (approximately) the same as those
+generated by the corresponding proper mixture (ensemble) of pure states. In
+this purely operational sense, decoherence thus explains why certain interfer-
+ence eﬀects are so diﬃcult to observe, especially in the macroscopic domain
+(see also Sects. 2.7 and 2.5.3).
+    However, note that the trace operation is nonunitary and generally mo-
+tivated by, and interpreted as, an averaging over diﬀerent outcomes of mea-
+surements. As shown in Sect. 2.4.1, the identiﬁcation of the formal expression
+Tr(ρ̂Ô) as the expectation value of a quantity represented by the operator Ô
+relies on the mathematical fact that, when writing out this trace, it is found to
+be equal to a sum over the possible outcomes of the measurement represented
+by Ô, weighted by the Born probabilities for the system to be “thrown” into
+a particular state corresponding to each of these outcomes in the course of
+a measurement. This interpretation, however, already presumes that mea-
+surements have outcomes and that the Born rule holds. Therefore the trace
+operation, and thus the concept and interpretation of reduced density ma-
+trices, is based on the statistical interpretation and the usual measurement
+axioms of quantum mechanics. In the words of Pessoa Jr. [64, p. 432], “taking
+a partial trace amounts to the statistical version of the projection postulate.”
+    Since, in the standard interpretation of quantum mechanics, it is precisely
+this projection (or collapse) postulate that ensures the existence of outcomes
+and, consequently, deﬁnes when we can assign deﬁnite values of physical
+quantities to systems, this existence of outcomes cannot be derived from any
+formal structure that is obtained by means of the trace rule, such as the
+reduced density matrix. Once the measurement axioms (and thus the trace
+rule) are dropped, we are left with a global entangled system–environment
+state (8.1) that, according to the standard interpretation, does not allow us to
+say anything about the physical state of the system or to assign a particular
+outcome (i.e., a deﬁnite value of a physical quantity) to the system.
+334    8 The Role of Decoherence in Interpretations of Quantum Mechanics
+
+8.1.2 Observables, Measurements,
+and Environment-Induced Superselection
+
+In the standard and Copenhagen interpretations, the assignment of physical
+properties is determined by an observable that represents the measurement
+of a physical quantity and that in turn deﬁnes the preferred basis. However,
+any Hermitian operator can play the role of an observable, and thus any given
+state has the potential for an inﬁnite number of diﬀerent properties, whose
+attribution is usually mutually exclusive unless the corresponding observables
+commute (in which case they share a common eigenbasis, which preserves the
+uniqueness of the preferred basis). What, then, determines the observable
+that is being measured? In the standard and Copenhagen interpretations, it
+is essentially the “user” who simply “chooses” the particular observable to
+be measured and thus determines which properties the system possesses.
+    This positivist point of view has led to a lot of controversy. It runs counter
+to the notion of an observer-independent reality, which has been at the heart
+of natural science since its beginning. Moreover, in practice, one certainly
+does not have the freedom to choose arbitrary observables and measure them.
+Instead, one has “instruments” (including one’s senses) that are designed to
+measure a particular observable. For most (and maybe all) practical purposes,
+this will ultimately boil down to a single relevant observable, namely, position.
+But what makes the instruments designed for a particular observable?
+    Answering this crucial question essentially means abandoning the ortho-
+dox view of treating measurements as a “black-box” process that has little,
+if any, relation to the workings of actual physical measurements. The formal-
+ization of measurements as a formation of quantum correlations between a
+system and an apparatus goes back to the early years of quantum mechanics
+and is reﬂected in the von Neumann measurement scheme (see Sect. 2.5.1).
+However, as we have discussed in Sect. 2.5.2, it does not resolve the issue
+of how the choice of observables is made. The second element, the explicit
+inclusion of the environment in a description of the measurement process,
+was brought into quantum theory by the studies of decoherence. The sta-
+bility criterion for pointer states introduced by Zurek [8] means that mea-
+surements must be of such a nature as to establish robust records, that is,
+the system–apparatus correlations ought to be preserved in spite of the in-
+evitable interaction with the surrounding environment (see the discussion in
+Sect. 2.8). The “user” cannot choose the observables arbitrarily, but must
+design a measuring device whose interaction with the environment is such
+as to ensure stable records (which, in turn, deﬁnes a measuring device for
+this observable). In the reading of orthodox quantum mechanics, this can be
+interpreted as the environment determining the properties of the system.
+    In this sense, the decoherence program has embedded the rather for-
+mal concept of measurement as proposed by the standard and Copenhagen
+interpretations—with its vague notion of observables that are seemingly freely
+chosen by the observer—into a more realistic and physically motivated frame-
+                       8.1 The Standard and Copenhagen Interpretations          335
+
+work [388]. This is accomplished via the speciﬁcation of observer-free crite-
+ria for the selection of the measured observable by taking into account the
+physical structure of the measuring device and its interaction with the en-
+vironment. In most cases, the environment is also needed to amplify the
+measurement record [76] and thereby to make it accessible to the external
+observer (see also Sect. 2.9).
+
+8.1.3 The Concept of Classicality
+in the Copenhagen Interpretation
+
+The Copenhagen interpretation additionally postulates that classicality is not
+to be derived from quantum mechanics, for example, as the macroscopic limit
+of an underlying quantum structure (as is in some sense assumed, but not
+explicitly derived, in the standard interpretation). Instead it prescribes that
+classicality ought to be viewed as an indispensable and irreducible element of
+a complete quantum theory—and, in fact, be considered as a concept prior to
+quantum theory. In particular, the Copenhagen interpretation assumes the
+existence of macroscopic measurement apparatuses that obey classical physics
+and that are not supposed to be described in quantum-mechanical terms (in
+stark contrast to the von Neumann measurement scheme). Such classical
+apparatuses are considered necessary in order to make quantum-mechanical
+phenomena accessible to us in terms of the “classical” world of our experience
+(see, e.g., [72, p. 209]). This dualism between the system, to be described
+by quantum mechanics, and the apparatus, obeying classical physics, also
+entails the existence of a fundamental (albeit in principle movable) boundary
+between system and apparatus, which separates the microworld from the
+macroworld (the “Heisenberg cut” [392, p. 15]).5
+    To understand precisely what Bohr, Heisenberg, and others meant when
+they insisted on the necessity of “irreducibly classical concepts” is a notori-
+ously diﬃcult task, and we shall refer the reader to, e.g., [388,396] for further
+discussions. Whether such fundamental notions of classical concepts are ren-
+dered superﬂuous or even untenable in light of the emergent-classicality pro-
+gram of decoherence depends largely on the kind of status—epistemological,
+physical, etc.—one attributes to these concepts [388]. It is certainly clear
+   5
+     As discussed in detail in [388], Bohr and Heisenberg seemed to have held rather
+diﬀerent views of the cut. In particular, Heisenberg suggested that the location of
+the cut “cannot be established physically”—it represents no physical discontinuity
+[393, p. 49]—“and moreover it is precisely the arbitrariness in the choice of the
+location of the cut that is decisive for the application of quantum mechanics” [394,
+p. 416]. By contrast, as recounted by Heisenberg [395, p. 24], “Bohr has emphasized
+that it is more realistic to state that the division into the object and rest of the
+world is not arbitrary” and that the object is determined by the very nature of
+the experiment. Howard [396] has also argued that for Bohr the quantum–classical
+distinction did not exactly coincide with the object–instrument distinction, whereas
+this appears to have been precisely the case for Heisenberg.
+336    8 The Role of Decoherence in Interpretations of Quantum Mechanics
+
+that environment-induced superselection and suppression of interference have
+demonstrated how quasiclassical robust states can emerge, or remain absent,
+using the quantum formalism alone and over a broad range of microscopic
+to macroscopic scales, in excellent agreement with recent experiments (see
+Chap. 6) showing that the boundary between system and apparatus is to
+a large extent movable toward the apparatus. Similar results have been ob-
+tained from the general study of quantum nondemolition measurements (see,
+for example, Chap. 19 of [138]), which include the monitoring of a system by
+its environment. In this way decoherence unambiguously speciﬁes the location
+of the Heisenberg cut and thus provides a physical, quantitative underpinning
+of the quantum–classical divide and the dynamics at this boundary.
+    Note that the Copenhagen view implies that the apparatus is macroscopic
+by deﬁnition, since it is described in classical terms. However, the actual “in-
+strument” could well be microscopic. Only the “ampliﬁer,” which ensures
+the eﬀective irreversibility and redundancy of the measurement records (as
+ﬁrst emphasized by Zurek [76]; see also his discussion in [16, 323, 389]), must
+be macroscopic. As an example, consider the decoherence model described
+in Sect. 2.10. Here the system can be associated with an “instrument” rep-
+resented by a bistable atom, while the environment plays the role of the
+ampliﬁer (“bit-by-byte measurement”). Similarly, certain macroscopic mea-
+surement devices may be described in (“microscopic”) quantum-mechanical
+terms. Examples include the macroscopic detectors of gravitational waves
+[69] and the macroscopic resonators in quantum-electromechanical systems
+[307] used to implement quantum-limited position measurements [310] (see
+Sect. 6.4.2). Both devices may be treated as quantum-mechanical harmonic
+oscillators.
+    Based on the progress already achieved by the decoherence program, it
+is reasonable to anticipate that decoherence embedded in some additional
+interpretive structure could lead to a complete and consistent derivation of
+the (appearance of the) classical world from quantum-mechanical principles.
+From a physical point of view, this would make the postulate of intrinsically
+classical apparatuses (which have to be treated outside of the realm of quan-
+tum mechanics) appear as neither necessary nor viable. In this way, we can
+simultaneously acknowledge the correctness of Bohr’s epistemological notion
+of the necessity of a classical world and view the classical world as part of, and
+as emerging from, a purely quantum-mechanical substrate [67, 104, 388, 391].
+
+
+8.2 Relative-State Interpretations
+The system–observer duality of orthodox quantum mechanics introduces into
+the theory external “observers” who are not described by the deterministic
+laws of quantum systems but instead follow a stochastic indeterminism. This
+approach obviously runs into problems when the universe as a whole is con-
+sidered, since by deﬁnition there cannot be any external observers.
+                                       8.2 Relative-State Interpretations    337
+
+    The central idea of relative-state interpretations, ﬁrst described (but not
+worked out in detail) by Hugh Everett in the late 1950s [140] and subsequently
+further developed by many authors, is to abandon this system–observer dual-
+ity. Instead, one (i) assumes the existence of a total quantum state |Ψ  repre-
+senting the physical state of the entire universe and (ii) upholds the universal
+validity of the Schrödinger evolution. In addition, one (iii) postulates that
+at the completion of a measurement all terms in the expansion of the total
+state in the eigenbasis of the measured observable correspond to (physical)
+states in some sense, that is, no particular “outcome” is singled out, neither
+formally nor physically. Each of these (physical) states can be understood as
+relative (a) to the state of the other part in the composite system (as in Ev-
+erett’s original proposal; see also [141,143]), (b) to a particular “branch” of a
+constantly “splitting” universe (the many-worlds interpretation, popularized
+by DeWitt [397] and Deutsch [398]), or (c) to a particular “mind” in the set
+of minds of the conscious observer (the many-minds interpretation; see, for
+example, [399]).
+    Relative-state interpretations face two main diﬃculties. First, the pre-
+ferred-basis problem: If states are only relative, the question arises, relative
+to what? What determines the particular basis terms that are used to deﬁne
+the branches, which in turn specify the relative properties, worlds, or minds
+in the next instant of time? When precisely does the “splitting” occur? Which
+properties are made determinate in each branch, and how are they connected
+to the determinate properties of our experience? Second, what is the meaning
+of probabilities, given that every possible outcome “occurs” in some sense,
+and how can Born’s rule be motivated in such an interpretive framework?
+As we will describe below, proponents of relative-state interpretations have
+frequently appealed to decoherence in solving these diﬃculties (see, for ex-
+ample, [398, 400–407]).
+    In turn, the pioneers of the decoherence program, such as Zeh and Zurek,
+have often made use of ideas of Everett’s relative-state framework (see, for
+instance, [4, 5, 104, 408]), presumably because the Everett approach takes
+unitary quantum mechanics essentially “as is,” with a minimum of added
+interpretive elements. This matches well the spirit of the decoherence pro-
+gram, which attempts to explain the emergence of classicality purely from
+the formalism of basic quantum mechanics. Zeh adheres to an Everett-style
+branching to which distinct observers are attached [408] (see also Sect. 9.4).
+Zurek has employed relative states as a useful concept to clearly bring out
+the preferred-basis problem [8] and to emphasize the importance and role of
+stable measurement records [84,104] (see Zurek’s “existential interpretation”
+described in Sect. 8.2.3 below).
+
+8.2.1 Everett Branches and the Preferred-Basis Problem
+
+Stapp [409, p. 1043] stated the requirement that “a many-worlds interpre-
+tation of quantum theory exists only to the extent that the associated ba-
+338      8 The Role of Decoherence in Interpretations of Quantum Mechanics
+
+sis problem is solved.” In the context of relative-state interpretations, the
+preferred-basis problem is not only much more severe than in the orthodox
+interpretation, but also more fundamental for at least two reasons:
+
+ 1. The branching occurs continuously and essentially everywhere. If mea-
+    surements are understood in the general sense of the formation of quan-
+    tum correlations, every newly formed correlation, whether it pertains to
+    microscopic or macroscopic systems, corresponds to a branching.
+ 2. The ontological implications are much more drastic, at least in those
+    relative-state interpretations which assume an actual “splitting” of worlds
+    or minds, since the choice of the basis determines the resulting “world”
+    or “mind” as a whole.
+
+    The environment-induced superselection criteria of the decoherence pro-
+gram have frequently been employed to solve the preferred-basis problem
+of relative-state interpretations (see, for example, [104, 406, 407, 410]). A
+decoherence-based approach to selecting the preferred Everett bases has sev-
+eral advantages. First, no a priori existence of a preferred basis needs to
+be postulated, but instead the preferred basis arises dynamically from the
+physical criterion of robustness. Second, the selection will be empirically
+adequate, since the decoherence program is derived solely from the well-
+conﬁrmed Schrödinger dynamics (modulo the possibility that robustness may
+not be the universally valid selection criterion). Lastly, the evolving decohered
+components of the wave function can be reidentiﬁed over time (forming “tra-
+jectories” in the preferred state spaces) and thus can be used to deﬁne stable,
+temporally extended Everett branches. Similarly, such trajectories can be as-
+sociated with robust record states of observers and with environmental states
+that make information about the state of the system accessible to many ob-
+servers (see Sect. 2.9 and also Sect. 8.2.3 below).
+    The approach of using environment-induced superselection and decoher-
+ence to deﬁne the Everett branches has been criticized on grounds of being
+“conceptually approximate,” since environment-induced superselection gen-
+erally leads to an only approximate speciﬁcation of a preferred basis (see
+Sect. 2.8.3) and therefore cannot give an “exact” deﬁnition of the Everett
+branches (see, for example, the comment of Kent [411], and also Bell’s es-
+say [412]). Wallace [407, pp. 90–91] has argued against such an objection
+as
+      (. . . ) arising from a view implicit in much discussion of Everett-style
+      interpretations: that certain concepts and objects in quantum me-
+      chanics must either enter the theory formally in its axiomatic struc-
+      ture, or be regarded as illusion. (. . . ) [Instead] the emergence of a
+      classical world from quantum mechanics is to be understood in terms
+      of the emergence from the theory of certain sorts of structures and
+      patterns, and . . . this means that we have no need (as well as no
+      hope!) of the precision which Kent [411] and others (. . . ) demand.
+                                       8.2 Relative-State Interpretations    339
+
+Indeed, it is reasonable to assert that there is no a priori reason to doubt that
+an “approximate” criterion for the selection of the preferred basis can give a
+meaningful deﬁnition of the Everett branches—one that is empirically ade-
+quate and that accounts for our experiences. The environment-superselected
+basis emerges from the physically very reasonable criterion of robustness, to-
+gether with the purely quantum-mechanical eﬀect of decoherence. It would
+be rather diﬃcult to imagine how an axiomatically introduced “exact” rule
+could be able to select preferred bases in a manner that is similarly physically
+motivated and capable of ensuring empirical adequacy.
+    Besides using the environment-superselected pointer states to describe the
+Everett branches, various authors have also directly used the instantaneous
+Schmidt decomposition of the composite state (or, equivalently, the set of
+orthogonal eigenstates of the reduced density matrix) to deﬁne the preferred
+basis (we discussed the Schmidt decomposition in Sect. 2.15.1). This ap-
+proach is easier to implement than the explicit search for dynamically stable
+pointer states, since the preferred basis follows directly from a simple math-
+ematical diagonalization procedure at each instant of time. Furthermore, it
+gives an “exact” rule for basis selection in relative-state interpretations. The
+quantum origin of the Schmidt decomposition, which matches well the “pure
+quantum mechanics” spirit of Everett’s proposal (where the formalism of
+quantum mechanics supplies its own interpretation), has also been counted
+as an advantage [147]. In an earlier work, Deutsch [398] attributed a funda-
+mental role to the Schmidt decomposition in relative-state interpretations as
+deﬁning an “interpretation basis” which imposes the precise structure that
+is needed to give meaning to Everett’s basic concept. However, as pointed
+out in Sect. 2.15.1, basis states obtained from the instantaneous Schmidt de-
+composition will frequently have properties that are very diﬀerent from those
+selected by the stability criterion and that are undesirably nonclassical. For
+example, they may lack the spatial localization of the robustness-selected
+Gaussians [409].
+    The question to what extent the Schmidt basis states correspond to clas-
+sical properties in Everett-style interpretations was investigated in detail by
+Barvinsky and Kamenshchik [147]. The authors compared the states selected
+by the Schmidt decomposition to coherent states (i.e., minimum-uncertainty
+Gaussians), where the latter were chosen as the “yardstick states” represent-
+ing classicality. As we have seen in Sect. 5.2.5, such coherent states emerge
+as the preferred states, for example, in the model for quantum Brownian mo-
+tion. For the investigated models, Barvinsky and Kamenshchik found that
+only subsets of the Everett branches deﬁned by the Schmidt decomposition
+exhibit classicality in the sense of coherent states. Furthermore, the degree
+of classicality of these branches is very sensitive to the choice of the initial
+state and the interaction Hamiltonian, such that classicality emerges typi-
+cally only temporarily, and the Schmidt basis generally lacks robustness un-
+340    8 The Role of Decoherence in Interpretations of Quantum Mechanics
+
+der time evolution. Similar diﬃculties with the Schmidt-basis approach have
+been reported by Kent and McElwaine [148].
+
+8.2.2 Probabilities in Relative-State Interpretations
+
+The question of the origin and meaning of probabilities in a relative-state
+interpretation based solely on a deterministically evolving global quantum
+state, and the problem of how to consistently derive Born’s rule in such a
+framework, has been the subject of much discussion and criticism directed at
+this type of interpretation. Early approaches that aimed at an understanding
+of probabilities in the relative-state framework in terms of relative frequencies
+(see, e.g., [140, 397, 413–415]) have been shown to be circular [411, 416, 417].
+    Initially, decoherence was thought to provide a natural account of the
+probability concept in a relative-state framework. The idea was to relate the
+diagonal elements of the decohered reduced density matrix to the collection
+of possible “events” and to interpret the corresponding coeﬃcients as relative
+frequencies of branches [104,418]. Since decoherence enables one to reidentify
+the individual localized components of the wave function over time (describ-
+ing, for example, observers and their measurement outcomes attached to
+well-deﬁned branches; see also Sect. 9.4), this leads to an interpretation of
+the Born probabilities as empirical frequencies. However, this argument can-
+not yield a noncircular derivation of the Born rule, since the formalism and
+interpretation of reduced density matrices presume this rule (see our discus-
+sion in Sects. 2.4.1, 2.4.6 and 8.1.1). Attempts to derive probabilities from
+reduced density matrices are therefore circular [16, 419].
+    A derivation that is based on the nonprobabilistic axioms of quantum
+mechanics and on elements of classical decision theory has been presented by
+Deutsch [418] (see also the critique by Barnum et al. [420] and the subsequent
+defense by Gill [421] and Wallace [422]; Saunders [423] embedded Deutsch’s
+derivation into an operational framework). However, it is important to realize
+that such decision-theoretic approaches are subject to the same charge of
+circularity pointed out in the previous paragraph. This is so because these
+approaches ﬁrst need to deﬁne the “classical” events (outcomes) to which
+probabilities
+              are to be assigned. If one starts from pure states of the form
+|ψ = n eiϕn |φn , as Deutsch’s derivation does, one would need to (i) justify
+the identiﬁcation of the states |φn  with the possible events, and (ii) show
+that the phase relations ϕn between these states are irrelevant, i.e., do not
+inﬂuence the “decision” of the observer. The approach of Deutsch does not
+address these issues. Thus it tacitly uses environment-induced superselection
+(which selects the set of events that can be observed) and decoherence (which
+explains the irrelevance of phase relations from the view of the local observer),
+while it fails to supply a derivation of these processes in a manner that does
+not presume Born’s rule.
+    The solution to the problem of understanding the meaning of probabilities
+and of deriving Born’s rule in a relative-state framework must therefore be
+                                        8.2 Relative-State Interpretations     341
+
+sought on a much more fundamental level of quantum mechanics. Quantum
+information theory has established the notion that quantum mechanics can
+be viewed as a description of what, and how much, “information” nature is
+willing to proliferate [56]. For example, a peculiar feature of quantum me-
+chanics is that complete knowledge  √     of a global pure bipartite quantum state
+|Ψ  = (|a1  |b1  + |a2  |b2 ) / 2 does not appear to contain any information
+about the “absolute” state of one of the subsystems. This hints at ways how
+a concept of “objective ignorance,” and therefore of objective probabilities,
+may emerge directly from the quantum feature of entanglement without any
+classical counterpart. This idea has recently been developed under the head-
+ing of environment-assisted invariance, or envariance for short, in a series
+of papers by Zurek [16, 65–67]. The motivation and spirit of this approach
+is strongly based on decoherence. Envariance and Zurek’s derivation of the
+Born rule have been discussed further by Schlosshauer and Fine [424], Bar-
+num [425], and Mohrhoﬀ [426]. Given a set of assumptions, envariance leads
+to a derivation of quantum probabilities and Born’s rule. We shall outline
+this promising approach in the following.
+    Zurek’s derivation is based on a study of the properties of a composite
+entangled state and therefore intrinsically requires the decomposition of the
+Hilbert space into subsystems and the usual tensor-product structure. Zurek
+considers a bipartite product Hilbert space HA ⊗HB and a completely known
+composite pure state |Ψ  written in the diagonal Schmidt decomposition [see
+(2.127)]
+                                 1                               
+                      |Ψ  = √ eiϕ1 |a1  |b1  + eiϕ2 |a2  |b2  .         (8.4)
+                                  2
+Here {|a1  , |a2 } and {|b1  , |b2 } are sets of orthonormal basis vectors that
+span the Hilbert spaces HA and HB , respectively. Then the core result to be
+established by Zurek’s derivation is to show that the probabilities of obtaining
+either one of the relative states |a1  and |a2  (identiﬁed by Zurek with the
+“events” of interest to which probabilities are to be assigned [66, p. 12]; see
+also the discussion in [424]) are equal. Given this result, generalizations to
+higher-dimensional Hilbert spaces and to the case of unequal absolute values
+of the Schmidt coeﬃcients in (8.4) can be achieved by means of a counting
+argument [67].
+    The result is arrived at in two key steps. First, a few simple and quite
+natural assumptions (called “facts” by Zurek [67]) are introduced that relate
+the global quantum state vector (8.4) to properties of the “state of the system
+A.” This is necessary because the global quantum state of the composite
+system is all that the pure state-vector formalism of quantum mechanics
+provides for the description of two entangled subsystems. More generally,
+the relative-state framework presumes nothing besides the global unitarily
+evolving state vector, which usually contains a high degree of environmental
+entanglement. There does not exist a quantum state vector that could be
+assigned to one of the subsystems alone, and (as discussed above) we must
+342      8 The Role of Decoherence in Interpretations of Quantum Mechanics
+
+not use reduced density matrices to describe the local system. Zurek’s “facts”
+can be stated as follows [67]:
+(i)   The state of A is completely determined by the global quantum state
+      (8.4).
+(ii) The state of A speciﬁes all measurable properties of A, including prob-
+      abilities of outcomes of measurements on A.
+(iii) Unitary transformations can change the state of A only if they act on A.
+      That is, when the transformation has the form IˆA ⊗ ÛB , the state of A
+      remains the same. This amounts to a “no-signaling” assumption, i.e., to
+      the assumption that entanglement cannot be used to send instantaneous
+      “messages” between subsystems (see also [424,425] for discussions of this
+      assumption).
+Granted these three assumptions, Zurek shows that measurable properties of
+A can depend neither
+(1) on the phases ϕi in (8.4), such that we can assume the simpliﬁed form
+                                  1
+                           |Ψ  = √ (|a1  |b1  + |a2  |b2 )            (8.5)
+                                   2
+    for our purpose of discussing probabilities associated with A;
+(2) nor on whether |a1  is paired with |b1  or with |b2 , i.e., the unitary
+    transformation acting on A that changes the quantum state vector
+                                  1
+                           |Ψ  = √ (|a1  |b1  + |a2  |b2 )            (8.6)
+                                   2
+      into
+                                   1
+                          |Ψ   = √ (|a2  |b1  + |a1  |b2 )           (8.7)
+                                    2
+      cannot have altered the state of A.
+In a way, result (2) already indicates a feature of ignorance about the state
+of A, since interchanging the potential “outcomes” |ai  through local op-
+erations performed on A does not change any measurable properties of A.
+This feature may be viewed as leading to a form of “objective indiﬀerence”
+among the |ai . It is important to note that this eﬀect is crucially dependent
+on the feature of entanglement.
+                         √        In a nonentangled pure state of the form
+|ψ = |a1  + eiϕ |a2  / 2, the phase ϕ must of course not be ignored (and
+would be measurable in a suitable interference experiment), and therefore the
+                                                                            √
+system described by the “swapped” state vector |ψ   = |a2  + eiϕ |a1  / 2
+is clearly physically diﬀerent from that represented by the original state vec-
+tor |ψ.
+    To make the above argument more precise, the second key step of the
+derivation explicitly connects the notion of probabilities of the outcomes |ai 
+                                       8.2 Relative-State Interpretations    343
+
+in a measurement performed on A (previously only subsumed under the gen-
+eral heading of “measurable properties of A”) to the global state vector via
+an additional assumption. In [67], Zurek oﬀers three possible choices for this
+assumption, of which we should quote only one (see also [425]). Namely, it
+is assumed that the form of the Schmidt product states |ai  |bi  appearing in
+(8.4) implies a perfect correlation between the Schmidt “partners,” i.e., that
+the detection of the Schmidt state |ai  implies detection of its partner |bi 
+with certainty. This leads one to conclude that the probabilities for |ai  and
+|bi  must be equal. Given this assumption and using result (2) above, it can
+be readily established (see [67, 424]) that the probabilities for |a1  and |a2 
+must be equal, thus completing the derivation.
+     The need for the ﬁnal assumption may be considered a reﬂection of the
+well-worn phrase that a transition from a nonprobabilistic theory (such as
+quantum mechanics solely based on deterministically evolving state vectors)
+to a probabilistic theory (that refers to “probabilities of outcomes of local
+measurements”) requires, at some stage, to “put probabilities in to get prob-
+abilities out” [424]. However, in the quantum setting, this introduction of
+the probability concept relies only on a special case of probability—namely,
+certainty—and has a far more objective character than in the classical setting.
+While in the latter case probabilities refer to subjective ignorance in spite of
+the existence of an underlying well-deﬁned physical state, in the quantum
+case all that is available, namely, the global entangled quantum state, is per-
+fectly known. The objectivity of ignorance in quantum mechanics can thus be
+viewed as a consequence of a form of “complementarity” between local and
+global observables [67] and helps explain the fundamental need for a proba-
+bilistic description in the quantum setting despite the deterministic evolution
+of the global state vector.
+     It is the great merit of Zurek’s proposal to have emphasized this objective
+character of quantum probabilities arising from the feature of quantum entan-
+glement. On the basis of the above assumptions and the resulting derivation
+of Born’s rule, Zurek [67] has also shown how key elements of the decoherence
+program, such as the environment-induced superselection of pointer states,
+can be rederived using the framework of envariance alone, without resorting
+to a description in terms of reduced density matrices. The importance of
+such an approach lies in the fact that, as discussed in several places of this
+book, the usual formalism of decoherence relies fundamentally on reduced
+density matrices and thus on the usual measurement axioms of quantum me-
+chanics, in particular on Born’s rule. It is fair to say that this reliance has
+been a key challenge to the development of a decoherence-based no-collapse
+interpretation of quantum mechanics that derives the measurement postu-
+lates as emerging in an eﬀective manner from consequences of environmental
+entanglement alone.
+344    8 The Role of Decoherence in Interpretations of Quantum Mechanics
+
+8.2.3 The “Existential Interpretation”
+
+A relative-state interpretation that relies heavily on decoherence has been
+proposed by Zurek [84, 104] (see also the recent reevaluation in [67]). This
+approach, termed the “existential interpretation,” deﬁnes the reality, or ob-
+jective existence, of a state as the possibility of ﬁnding out what the state is
+and simultaneously leaving it unperturbed, similar to a classical state. Zurek
+assigns a “relative objective existence” to the environment-superselected ro-
+bust states. By measuring properties of the system–environment interaction
+Hamiltonian, the observer could, at least in principle, determine the set of
+observables that can be measured on the system without perturbing it and
+thus ﬁnd out the “objective” state of the system. What actually happens, of
+course, is that the observer takes advantage of the redundant records of the
+state of the system encoded in the environment (see Sect. 2.9). By intercept-
+ing parts of this environment, the observer can determine the state of the
+system essentially without perturbing it [16, 66, 110, 323]).
+    Zurek emphasizes the importance of stable records for observers, i.e., of
+robust correlations between the environment-selected states and the memory
+states of the observer. Information must be represented physically [325], and
+thus the “objective” state of the observer who has detected one of the poten-
+tial outcomes of a measurement must be physically distinct and objectively
+diﬀerent from the state of an observer who has recorded an alternative out-
+come (since the record states can be determined from the outside without
+perturbing them—see the previous paragraph). The diﬀerent objective states
+of the observer are, via quantum correlations, attached to diﬀerent branches
+deﬁned by the environment-selected robust states; they thus ultimately label
+the diﬀerent branches of the universal state vector. This is claimed to lead
+to the perception of classicality. The impossibility of perceiving arbitrary
+superpositions is explained via the rapid decoherence-induced suppression of
+interference between diﬀerent memory states, where each (physically distinct)
+memory state represents an individual observer identity (see also Chap. 9).
+    Recently, Zurek has connected the existential interpretation to his en-
+variance program and his derivation of the Born rule (see the previous
+Sect. 8.2.2) [67]. The derivation can be recast in the framework of the ex-
+istential interpretation such that probabilities refer explicitly to the future
+record state of an observer. This concept of probability bears similarities with
+classical probability theory (for more details on these ideas, see [67]).
+
+
+8.3 Modal Interpretations
+The ﬁrst type of modal interpretation was suggested by van Fraassen [427,
+428] based on his program of “constructive empiricism,” which proposes to
+take only empirical adequacy, but not necessarily “truth,” as the goal of sci-
+ence. Since then, a large number of interpretations of quantum mechanics
+                                               8.3 Modal Interpretations     345
+
+have been suggested that can be considered as modal (for a review and dis-
+cussion of some of the basic properties and problems of such interpretations,
+see [429]).
+    In general, the idea of modal interpretations is to weaken the orthodox
+eigenvalue–eigenstate link by allowing for the assignment of deﬁnite measure-
+ment outcomes even if the system is not in an eigenstate of the observable
+representing the measurement. In this way, one can preserve a purely uni-
+tary time evolution and account for deﬁnite measurement results without the
+need for an additional collapse postulate. Of course, this immediately raises
+the question of how physical properties perceived through measurements and
+measurement results are connected to the quantum state. The general goal of
+modal interpretations is therefore to specify rules that determine a catalog of
+possible properties of a system described by the density matrix ρ̂(t). Two dif-
+ferent views are typically distinguished, namely, a “semantic approach” that
+only changes the way of talking about the connection between properties and
+state, and a “realistic view” that provides a diﬀerent speciﬁcation of what
+the possible properties of a system really are, given the state vector (or the
+density matrix).
+    Such an attribution of possible properties must fulﬁll certain require-
+ments. For instance, probabilities for outcomes of measurements should be
+consistent with the usual Born probabilities of standard quantum mechanics.
+It should also be possible to recover our experience of classicality at the level
+of macroscopic objects. And ﬁnally, an explicit time evolution of properties
+and their probabilities should be deﬁnable that is consistent with the results
+of the Schrödinger equation. As we shall see in the following, decoherence has
+frequently been used to motivate and deﬁne rules for property assignment in
+modal interpretations. Dieks [430,431] even suggested that one of the central
+goals of modal approaches is to provide an interpretation of decoherence.
+
+8.3.1 Property Assignment Based on
+Environment-Induced Superselection
+
+The intrinsic diﬃculty of modal interpretations is to avoid any ad hoc charac-
+ter of the property assignment, yet to ﬁnd generally applicable rules that lead
+to a selection of possible properties that include the determinate properties
+of our experience. To solve this problem, various modal interpretations have
+embraced the results of the decoherence program. A natural approach would
+be to employ the environment-induced superselection of preferred bases to
+deﬁne sets of possible quasiclassical properties associated with the correct
+probabilities. This approach would be based on an entirely physical and very
+general selection criterion (namely, the stability criterion) and has, for the
+cases studied, been shown to give results that agree well with our experience,
+thus matching van Fraassen’s goal of empirical adequacy.
+    Furthermore, since the decoherence program is based solely on Schrödinger
+dynamics, the task of deﬁning a time evolution of the “property states” and
+346    8 The Role of Decoherence in Interpretations of Quantum Mechanics
+
+their associated probabilities which is in agreement with the results of unitary
+quantum mechanics would presumably be easier than in a model of property
+assignment in which the set of possibilities does not arise dynamically via the
+Schrödinger equation alone (for a detailed proposal for modal dynamics of
+the latter type, see [432]). The need for explicit dynamics of property states
+in modal interpretations is controversial. One can argue that it suﬃces to
+show that at each instant of time, the set of possibly possessed properties
+that can be assigned to the system is empirically adequate, in the sense that
+it contains the properties of our experience, especially with respect to the
+properties of macroscopic objects (this is essentially the view of, for example,
+van Fraassen [427, 428]). On the other hand, this cannot ensure that these
+properties behave over time in agreement with our experience (for instance,
+that macroscopic objects which are left undisturbed do not spontaneously
+change their position in space in an observable manner). In other words, the
+emergence of classicality is to be tied not only to determinate properties at
+each instant of time, but also to the existence of quasiclassical “trajecto-
+ries” in property space. Since decoherence allows one to reidentify compo-
+nents of the decohered density matrix over time, this could be used to derive
+property states with a continuous, quasiclassical trajectory-like time evolu-
+tion based on Schrödinger dynamics alone. For discussions of this approach,
+see [432, 433].
+
+8.3.2 Property Assignment Based on
+Instantaneous Schmidt Decompositions
+
+Since it is often rather diﬃcult to determine explicitly the robust pointer
+states in more complicated models (see the predictability-sieve approach de-
+scribed in Sect. 2.8.3), the problem arises of how to specify a simple yet
+general rule for property assignment based on environment-induced supers-
+election that is easy to apply to concrete cases of interest. To simplify this
+situation, several modal interpretations have restricted themselves to the or-
+thogonal decomposition of the density matrix to deﬁne the set of properties
+that can be assigned (see, for instance, [68, 434–437]).
+    For example, the approach of Dieks [436] recognizes, by referring to the
+decoherence program, the relevance of the environment by considering a com-
+posite system–environment
+              √             state vector and its diagonal Schmidt decomposi-
+tion, |Ψ  = k pk |sk  |ek , which always exists (see Sect. 2.15.1). Possible
+properties that can be assigned to the system are then represented by the
+Schmidt projectors |sk sk |. Although all terms are present in the Schmidt
+expansion (which Dieks calls the “mathematical state”), the “physical state”
+is postulated to be given by only one of the terms, with probability pk . A
+generalization of this approach to a decomposition into any number of sub-
+systems has been described by Vermaas and Dieks [437]. In this sense, the
+Schmidt decomposition itself is taken to deﬁne an interpretation of quantum
+                                               8.3 Modal Interpretations     347
+
+mechanics. Dieks [438] suggested a physical motivation for the Schmidt de-
+composition in modal interpretations based on the assumed requirement of
+a one-to-one correspondence between the properties of the system and its
+environment. (For a comment on the violation of the property composition
+principle in such interpretations, see the analysis by Clifton [429].)
+    However, as discussed in Sects. 2.15.1 and 8.2.1, the states selected by
+the (instantaneous) orthogonal decomposition of the reduced density matrix
+will in general diﬀer from the robust environment-superselected states and
+may have distinctly nonclassical properties. That this will be the case es-
+pecially when the states selected by the orthogonal decomposition are close
+to degeneracy (as it is often the case for macroscopic systems with many
+degrees of freedom) has already been shown in Sect. 2.15.1. This issue has
+also been explored in more detail in the context of modal interpretations by
+Bacciagaluppi [439] and Donald [440], who showed that in the case of near-
+degeneracy, the resulting projectors will be extremely sensitive to the precise
+form of the state [439]. Clearly such sensitivity is undesired, since the projec-
+tors, and thus the properties of the system, will not be well-behaved under
+the inevitable approximations employed in physics [440].
+
+8.3.3 Property Assignment Based on
+Decompositions of the Decohered Density Matrix
+
+Other authors have therefore used the orthogonal decomposition of the deco-
+hered reduced density matrix (instead of the decomposition of the instanta-
+neous density matrix), which has led to noteworthy results. When the system
+is represented by an only ﬁnite-dimensional Hilbert space, the resulting states
+were indeed found to be typically close to the robust states selected by the
+stability criterion, unless again the ﬁnal composite state was close to degen-
+eracy [441, 442]. Thus, in suﬃciently nondegenerate cases, decoherence can
+ensure that the deﬁnite properties selected by modal interpretations of the
+Dieks type will be reasonably close to the properties corresponding to the
+ideal pointer states, provided the modal properties are based on the orthog-
+onal decomposition of the decohered reduced density matrix.
+    On the other hand, Bacciagaluppi [443] showed that, in the case of an
+inﬁnite-dimensional state space of the system, the predictions of the modal
+approach [436, 437] and those of decoherence can diﬀer signiﬁcantly. Using
+the scattering model of Joos and Zeh [7] described in Chap. 3, it was demon-
+strated that the deﬁnite properties obtained from the orthogonal decomposi-
+tion of the decohered density matrix were highly delocalized (that is, smeared
+out over the entire spread of this matrix), although the coherence length of
+the density matrix itself was shown to be very small, so that decoherence in-
+dicated localized properties. Thus, based on these results (and similar ones of
+Donald [440]), decoherence can be used to argue for the physical inadequacy
+of the rule for the assignment of deﬁnite properties proposed by Dieks [436]
+and Vermaas and Dieks [437].
+348    8 The Role of Decoherence in Interpretations of Quantum Mechanics
+
+8.4 Physical Collapse Theories
+The basic idea of physical collapse theories is to introduce an explicit modiﬁ-
+cation of the Schrödinger time evolution to achieve a physical mechanism for
+state-vector reduction (for an extensive review, see [444]). This is in general
+motivated by a “realist” interpretation of the state vector, that is, the state
+vector is directly identiﬁed with a physical state. This assumption is then seen
+as requiring the reduction of a superposition state onto one of its components
+to establish equivalence to the observed determinate properties of physical
+states (at least as far as the macroscopic realm is concerned). Physical col-
+lapse models are not only motivated by the problem of the nonobservability
+of macroscopic interference eﬀects, but moreover also by the conceptual goal
+of resolving a felt “weirdness” in the existing quantum theory [445] as exem-
+pliﬁed by Schrödinger’s cat paradox. Since such models lead to an objective
+reduction of the wave function of a system, they allow for the assignment of a
+pure quantum state, i.e., a deﬁnite wave function, to the system at (almost)
+all times.
+    The ﬁrst proposals for theories of this type go back to Pearle [446–448] and
+Gisin [194], who developed models that modify the unitary dynamics such
+that a superposition of quantum states evolves continuously into one of its
+terms (see also the review by Pearle [449]). Typically, terms representing ex-
+ternal white noise are added to the Schrödinger equation, causing the squared
+amplitudes |cn (t)|2 in the state-vector expansion |Ψ (t) = n cn (t) |ψn  to
+ﬂuctuate
+           randomly in time, while maintaining the normalization condition
+   n |cn (t)|2
+               = 1 for all t. Eventually one amplitude |cn (t)|2 approaches a
+value of unity, while all other squared coeﬃcients decay to zero (the “gam-
+bler’s ruin game”), where |cn (t)|2 −→ 1 with probability |cn (t = 0)|2 to
+ensure agreement with the predictions of the Born rule. Such models are
+known under the heading of stochastic dynamical reduction.
+    These early models exhibit two main diﬃculties. First, they suﬀer from
+the preferred-basis problem. What determines the terms in the state-vector
+expansion onto which the state vector gets reduced? Why does reduction lead
+to the distinct macroscopic states of our experience and not superpositions
+thereof? Second, how can one account for the empirical fact that the eﬀec-
+tiveness of the collapse seems to increase from microscopic to macroscopic
+scales?
+    These problems motivated spontaneous localization models, ﬁrst proposed
+by Ghirardi, Rimini, and Weber (henceforth GRW) [450]. Here state-vector
+reduction is not implemented as a dynamical process (i.e., as a continuous
+evolution over time), but instead occurs instantaneously and spontaneously,
+leading to a spatial localization of the wave function. To be precise, the N -
+particle wave function ψ(x1 , . . . , xN ) is at random
+                                                        intervals multiplied by a
+Gaussian of the form exp −(X − xk )2 /2Δ2 (this process is often called a
+“hit” or a “jump”), and the resulting product is subsequently normalized.
+The occurrence of these hits is not explained, but simply postulated as a new
+                                           8.4 Physical Collapse Theories     349
+
+fundamental physical mechanism. Both the coordinate xk and the center X
+of the Gaussian hit are chosen at random, but the probability of a speciﬁc X
+is postulated to be given by the squared inner product of ψ(x1 , . . . , xN ) with
+the Gaussian (and therefore hits are more likely to occur where |ψ|2 , viewed
+as a function of xk only, is large).
+    The mean frequency ν of hits for a single microscopic particle is chosen
+so as to eﬀectively preserve unitary time evolution for microscopic systems,
+while ensuring that for macroscopic objects composed of a very large number
+N of particles the localization occurs rapidly (on the order of N ν) in order to
+preclude the persistence of nonclassical spatial superpositions on timescales
+shorter than realistic observations could resolve. In their original paper [450],
+GRW chose ν ≈ 10−16 s−1 , and thus a macroscopic system containing on the
+order of 1023 particles would undergo localization on average every 10−7 s.
+Inevitable coupling to the environment can in general be expected to lead to
+a further drastic increase of N and therefore to an even higher localization
+rate. Note, however, that the localization process itself is independent of any
+interaction with the environment.
+    Subsequently, the ideas of stochastic dynamical reduction and the GRW
+theory were combined into continuous spontaneous localization models [451,
+452]. Here localization of the GRW type can be shown to emerge from
+a nonunitary, nonlinear Itô stochastic diﬀerential equation, namely, the
+Schrödinger equation augmented by spatially correlated Brownian motion
+terms (see also [191, 453]). The particular choice of the stochastic terms
+determines the preferred basis. Frequently, these terms have been based
+on the mass density, which yields spatial localization similar to the GRW
+model [451–453]. Stochastic terms driven by the Hamiltonian, leading to a
+reduction in the energy basis, have also been studied [454–463].
+
+8.4.1 The Preferred-Basis Problem
+
+Physical reduction theories typically remove wave-function collapse from the
+restrictive context of the orthodox interpretation (where the external observer
+arbitrarily selects the measured observable and thus determines the preferred
+basis). Instead, they understand reduction as a universal mechanism that
+acts constantly on every state vector regardless of an explicit measurement
+situation. It is thus particularly important to provide a deﬁnition for the
+states onto which the wave function collapses.
+    As mentioned before, the original stochastic dynamical reduction models
+suﬀered from this preferred-basis problem. Taking into account environment-
+induced superselection of a preferred basis could help resolve this issue. Since
+decoherence occurs on extremely short timescales (especially for mesoscopic
+and macroscopic objects), it would presumably be able to bring about basis
+selection much faster than the time required for dynamical ﬂuctuations to
+establish a “winning” expansion coeﬃcient.
+350    8 The Role of Decoherence in Interpretations of Quantum Mechanics
+
+    By contrast, the GRW theory solves the preferred-basis problem by postu-
+lating a mechanism that leads to spatial localization. That is, position is here
+assumed to be the universal preferred basis. On the one hand, decoherence
+supplies the physical motivation for this basis selection (see Sect. 2.8.4). On
+the other hand, however, by restricting the reduction mechanism to spatial lo-
+calization, GRW bypasses the question of why certain systems are observed to
+be in robust states which are not necessarily spatially localized. For example,
+microscopic systems are usually found in energy eigenstates, and SQUIDs
+are described by states of supercurrents ﬂowing in speciﬁc directions (see
+Sect. 6.3). In the case of microscopic systems, the particular choice of the
+parameters of the localization process in the GRW model means that these
+systems remain essentially unaﬀected by the reduction mechanism. Similarly,
+in the case of SQUIDs, the GRW mechanism would only result in a small re-
+duction of the supercurrent below the detectable level due to a breaking-up of
+Cooper pairs, but not in an approximate reduction onto one of the persistent-
+current states [444, 464, 465].
+    However, given that these systems are eﬀectively exempt from the GRW
+collapse, what makes it then so diﬃcult to observe superpositions of energy
+eigenstates in microscopic systems, or superpositions of supercurrent states in
+SQUIDs? Of course, one may argue that essentially all our observations must
+be grounded in a position measurement,6 and that thus the GRW mechanism
+will lead to an indirect reduction of such superpositions through the coupling
+to measurement devices, which are usually macroscopic and thus suscepti-
+ble to the localization mechanism. However, such an argument introduces a
+dependence on measurements for the “world as we perceive it” to emerge.
+This runs counter to the basic idea of physical collapse theories, namely,
+that quantum states directly represent a physical, observer-independent re-
+ality that does not require measurements at a fundamental level. In compar-
+ison, environment-induced superselection constitutes a much more general
+approach to the problem of the preferred basis, by explaining the emergence
+of a range of preferred robust observables on the basis of the physical prop-
+erties of the relevant system–environment interactions.
+    A similar argument can be made with respect to continuous spontaneous
+localization models. Here, one essentially preselects a preferred basis through
+the particular choice of the stochastic terms added to the Schrödinger equa-
+tion. This allows for a greater range of possible preferred bases, for instance by
+combining terms driven by the Hamiltonian and by the mass density, leading
+to a competition between localization in energy and position space (corre-
+sponding to the two most frequently observed preferred bases). Nonetheless,
+
+    6
+      This measurement may ultimately occur only in the brain of the observer; see
+the objection to the GRW model by Albert and Vaidman [466]. With respect to the
+general preference for position as the basis of measurements, Bell [412] once said
+that “in physics the only observations we must consider are position observations,
+if only the positions of instrument pointers.”
+                                          8.4 Physical Collapse Theories    351
+
+any particular choice of terms will again be subject to the charge of possessing
+an ad hoc ﬂavor.
+
+8.4.2 Simultaneous Presence of Decoherence
+and Spontaneous Localization
+
+Since decoherence will always be present, the assumption that a physical col-
+lapse theory holds means that the evolution of a system will be guided by
+both decoherence eﬀects and the collapse mechanism. Let us ﬁrst consider
+the situation in which decoherence and the collapse mechanism act construc-
+tively in the same direction, i.e., toward a common preferred basis. This
+raises the question in which order these two eﬀects inﬂuence the evolution
+of the system [391]. If the collapse occurs on a shorter timescale than the
+environment-induced superselection of a preferred basis and the suppression
+of local interference, decoherence will in most cases have very little inﬂuence
+on the evolution of the system, since typically the system will already have
+evolved into a reduced state. Conversely, if decoherence acts more quickly on
+the system than the localization mechanism, the interaction with the envi-
+ronment would lead to the preparation of quasiclassical robust states that
+are subsequently chosen by the localization mechanism. As demonstrated in
+Chap. 3, decoherence usually occurs on extremely short timescales and can
+be shown to be typically signiﬁcantly faster than the action of the reduction
+mechanism (for such studies related to the GRW model, see [166, 467]). This
+indicates that decoherence will typically play an important role even in the
+presence of physical wave-function reduction.
+    The second case corresponds to the situation in which decoherence leads
+to the selection of a diﬀerent preferred basis than the basis speciﬁed by the
+collapse mechanism. As remarked by Bacciagaluppi [391] in the context of
+the GRW theory, one might then imagine the collapse either to occur only
+at the level of the environment (which would thus serve as an amplifying
+and recording device with diﬀerent localization properties than the system
+under study), or to lead to an explicit competition between decoherence and
+collapse eﬀects.
+
+8.4.3 The Tails Problem
+
+The clear advantage of physical collapse models over the consideration of
+decoherence-induced eﬀects alone for a solution to the measurement problem
+lies in the fact that collapse models achieve an actual quantum-state reduc-
+tion. Thus one may be tempted to conclude that at the conclusion of the
+reduction process the system actually is in a determinate state. However, all
+collapse models lead to an only approximate reduction of the wave function.
+In the case of dynamical reduction models, the state will always retain small
+interference terms for ﬁnite times. Similarly, in the GRW theory the width
+352     8 The Role of Decoherence in Interpretations of Quantum Mechanics
+
+Δ of the multiplying Gaussian cannot be made arbitrarily small, and there-
+fore the reduced wave packet cannot become perfectly localized in position
+space, since this would entail an inﬁnitely large energy gain by the system
+due to the time–energy uncertainty relation, which would certainly show up
+experimentally (in their original paper [450], GRW chose Δ ≈ 10−5 cm). This
+need for an only approximate reduction leads to wave function “tails” [468].
+That is, in any region in space and at any time t > 0, the amplitude of the
+wave function will remain nonzero if it had been nonzero at t = 0 (before
+the collapse), and thus there will always be a part of the system that is not
+“here.”
+    In this sense, collapse models are as much “ﬁne for all practical purposes”
+(to paraphrase Bell [469]) as decoherence is, where perfect orthogonality of
+the relative states of the environment is only attained as t −→ ∞. The sever-
+ity of the consequences, however, is not equivalent for the two strategies. Since
+collapse models directly change the state vector, a single outcome is at least
+approximately selected, and it only requires a weakening of the eigenvalue–
+eigenstate link to make this state of aﬀairs correspond to the (objective)
+existence of a determinate physical property.7 In the case of decoherence,
+the lack of an exact disappearance of local interference terms is not the main
+problem. Even if exact orthogonality of the relative environmental states were
+ensured at all times (leading to complete decoherence), the resulting reduced
+density matrix would still represent an improper mixture. We would there-
+fore have to supply some additional interpretive framework to explain our
+perception of outcomes (see also the comment by GRW [445]).
+
+8.4.4 Connecting Decoherence and Collapse Models
+
+It was realized early that there exists a striking formal similarity of the equa-
+tions of motion that govern the time evolution of density matrices in the GRW
+approach and in models of decoherence. For example, the GRW equation for
+a single free mass point in one dimension reads [450]
+                        " 2          #
+     ∂ρ(x, x , t)    1  ∂       ∂2
+   i               =         −         ρ(x, x , t) − iΛ(x − x )2 ρ(x, x , t), (8.8)
+         ∂t          2m ∂x2    ∂x2
+where the second term on the right-hand side accounts for the destruction of
+spatial interference terms. This equation is formally identical, for example,
+to the master equation (3.78) describing the evolution of the reduced density
+matrix in the presence of environmental scattering.
+    Joos [471] used this formal similarity to question the need for an explicit
+reduction-inducing mechanism, at least with respect to achieving the suppres-
+sion of spatial coherences over macroscopic distances. Provided the value of
+   7
+    It should be noted, however, that such “fuzzy” eigenvalue–eigenstate links may
+in turn lead to diﬃculties, as the discussion of Lewis’ “counting anomaly” has
+shown [470].
+                                         8.4 Physical Collapse Theories    353
+
+the GRW localization parameter Λ appearing in (8.8) is chosen in agreement
+with the value derived from the physical properties of the relevant system–
+environment interaction, the time evolution of the reduced density matrix
+describing the dynamics of the system coupled to a scattering environment
+on the one hand, and the time evolution of the density matrix of the system
+under the inﬂuence of the GRW collapse on the other hand, will be identical.
+    Of course, as pointed out also by GRW [445] in response to Joos’ comment,
+it is important to bear in mind the fundamental diﬀerence between the ap-
+proximately proper ensembles arising from collapse models and the improper
+ensembles resulting from decoherence. The latter ensembles are derived from
+entangled global system–environment states and therefore do not allow for
+the assignment of a pure quantum state to the system (see Sects. 2.4.6 and
+8.1.1). The reduced density matrix arising from decoherence does not describe
+the state of the system, but only the statistics of local measurements in the
+context of the usual measurement axioms of quantum mechanics (with these
+statistics then explaining the nonobservability of macroscopic interference ef-
+fects). Therefore, despite the formal similarity between the GRW evolution
+equation (8.8) and the master equation (3.78) for scattering-induced decoher-
+ence, these equations describe the dynamics of two types of density matrices
+whose conceptual, interpretive, and formal underpinnings must be carefully
+distinguished.
+    Finally, the formal similarity of the evolution equations may nourish hopes
+that the postulated reduction mechanisms of collapse models could possibly
+be derived from novel (nonunitary) interactions with a universal collapse-
+inducing “environment.” For example, Penrose [472, 473] has suggested that
+quantum gravity might act as such an “environment” (see also [449, 453]).
+
+8.4.5 Experimental Tests of Collapse Models
+
+Collapse theories postulate deviations from Schrödinger dynamics and could
+thus be tested in experiments. Several proposals for an experimental detection
+of the GRW collapse, and for the demonstration of potential deviations from
+the predictions of quantum theory when dynamical state-vector reduction
+is included, have been discussed in the literature (see, e.g., [464, 474–477]).
+Conversely, one may speculate that the simultaneous presence of both de-
+coherence and reduction eﬀects might allow for an experimental disproof of
+collapse theories by preparing states that diﬀer in an observable manner from
+the predictions of the reduction models.
+    If we acknowledge the existence and feasibility of interpretations of quan-
+tum mechanics that only appeal to decoherence in explaining the perception
+of apparent collapses (see, for example, the “existential interpretation” of
+Zurek [84,104] described in Sect. 8.2.3), we will not be able to experimentally
+distinguish between a “true” collapse and a mere suppression of interference
+due to decoherence. Instead, an experimental situation is required in which a
+354    8 The Role of Decoherence in Interpretations of Quantum Mechanics
+
+given collapse model predicts a reduction of the wave function, but in which
+no (signiﬁcant) suppression of interference through decoherence arises.
+    The problem in realizing such experiments is the required shielding of the
+system from decoherence eﬀects. In fact, it would be very diﬃcult to dis-
+tinguish collapse eﬀects from decoherence, since the large number of atoms
+required for the collapse mechanism to be eﬀective also leads to strong deco-
+herence [166, 444, 467]. It would therefore be necessary to isolate the system
+of interest extremely well from its environment, such that decoherence eﬀects
+can be neglected in comparison with the environment-independent collapse
+mechanism. Even in this case it might be diﬃcult to exclude the inﬂuence of
+decoherence due to, for example, thermal emission of radiation, as demon-
+strated in the case of C70 interferometry (see Sect. 6.2 and [267, 270]). Based
+on explicit numerical estimates, Tegmark [166] has shown that decoherence
+due to scattering of environmental particles such as air molecules or pho-
+tons will have a much stronger inﬂuence on the evolution of the system than
+the proposed GRW eﬀect of spontaneous localization (see also [444, 467]; for
+diﬀerent results for energy-driven reduction models, see [461]).
+    The increasing size of physical systems for which interference eﬀects have
+been experimentally observed imposes bounds on the parameters used in col-
+lapse models. However, the current experiments demonstrating mesoscopic
+and macroscopic interferences are still quite far away from disproving the ex-
+isting collapse theories. For example, even the rather impressive C70 diﬀrac-
+tion experiments still fall short of ruling out continuous spontaneous localiza-
+tion models (which lead to the strongest deviations from Schrödinger dynam-
+ics among all physical collapse theories) by eleven orders of magnitude [478].
+A mirror-superposition experiment recently proposed by Marshall et al. [477],
+which could lead to a spatial superposition involving O(1014 ) atoms, fails to
+rule out continuous spontaneous localization models by about six orders of
+magnitude [477, 479]. The superpositions observed in coherent quantum tun-
+neling in SQUIDs and other superconducting qubit systems (see Sect. 6.3)
+also appear to be compatible with dynamical reduction models. As men-
+tioned above, the spatial localization mechanism is ineﬀective in bringing
+about a collapse onto the persistent-current states [444, 464, 465]. However,
+given the rapid development of experiments demonstrating quantum super-
+positions and interference eﬀects on increasingly large scales, it may be only
+a matter of time when it becomes possible to probe the range relevant to a
+test of physical reduction models.
+
+
+8.5 Bohmian Mechanics
+David Bohm’s approach [35–37] is a modiﬁcation of de Broglie’s original
+“pilot-wave” proposal [34]. In Bohmian mechanics, a system containing N
+(nonrelativistic) particles is described by a wave function ψ(t) and the con-
+ﬁguration Q(t) = (q1 (t), . . . , qN (t)) ∈ R3N of particle positions qi (t). Thus
+                                                       8.5 Bohmian Mechanics      355
+
+
+
+
+Fig. 8.1. A sample of Bohmian trajectories that particles may follow in the double-
+slit experiment. Figure reprinted, with kind permission from Springer Science and
+Business Media, from [480].
+
+
+the state of the system is represented by (ψ, Q) at each instant t. The evo-
+lution of the system is guided by two equations. The wave function ψ(t) is
+transformed as usual via the standard Schrödinger equation, while the par-
+ticle positions qi (t) of the conﬁguration Q(t) evolve according to the guiding
+equation
+            dqi                            1     ψ ∗ ∇qi ψ
+                = viψ (q1 , . . . , qN ) ≡    Im           (q1 , . . . , qN ),   (8.9)
+             dt                            mi       ψ∗ ψ
+where mi is the mass of the ith particle. The particles follow determinate
+trajectories described by Q(t), with the distribution of Q(t) given by the
+                                        2
+quantum equilibrium distribution |ψ| .
+    In Bohmian mechanics, the wave function plays the role of a “guiding
+ﬁeld.” That is, through the guiding equation (8.9) the wave function generates
+a velocity ﬁeld which the particles follow. Thus the Bohm theory describes
+the motion of particles along trajectories, similar to Newtonian mechanics.
+However, instead of the force–acceleration law of classical mechanics, the
+equation of motion for the particles is now given by (8.9), with the change of
+the wave function ψ, which enters on the right-hand side of (8.9), determined
+by the Schrödinger equation.
+    We can neatly illustrate this formalism in the context of the double-slit
+experiment [37, 481]. Fig. 8.1 shows a set of possible Bohmian trajectories of
+single particles behind the slits. Each particle follows one of these determinate
+trajectories and thus passes through either one of the slits. Which particular
+Bohmian trajectories is taken by an individual particle simply depends on
+the initial position of the particle. Thus, although each particle at any given
+time is described by the same wave function ψ, the particles deterministically
+follow diﬀerent determinate trajectories. Bohmian mechanics is therefore an
+example of a hidden-variables theory (see Sect. 2.1.2). That is, the wave
+function ψ does not constitute a complete description of the physical state
+of the system, and the always-determinate positions qi (t) of the particles
+356      8 The Role of Decoherence in Interpretations of Quantum Mechanics
+
+play the role of the hidden variables. From Fig. 8.1 we observe that the
+particles take distinctly non-Newtonian paths. Instead of being straight lines,
+the particle trajectories become concentrated in areas in which the amplitude
+of the wave function ψ is large. The familiar maximums and minimums of the
+interference pattern observed on the screen can therefore be directly related
+to the “density” of the Bohmian trajectories.
+
+8.5.1 Particles as Fundamental Entities
+
+Bohm’s theory has been criticized for attributing a fundamental ontological
+status to particles. General arguments against particles on a fundamental
+level of any relativistic quantum theory have been frequently given (see, for
+instance, [482,483]).8 Moreover, and this is the point we would like to discuss
+in this section, it has been argued that the appearance of particles could be
+derived from the continuous process of decoherence, leading to claims that no
+fundamental role need be attributed to particles [408, 486, 487]. Based on the
+fact that decohered reduced density matrices of mesoscopic and macroscopic
+systems essentially always represent (improper) ensembles of narrow wave
+packets in position space, Zeh [408, p. 190] holds that such wave packets can
+be viewed as representing individual “particle” positions:
+      All particle aspects observed in measurements of quantum ﬁelds (like
+      spots on a plate, tracks in a bubble chamber, or clicks of a counter)
+      can be understood by taking into account this decoherence of the
+      relevant local (i.e., subsystem) density matrix.
+Of course, to interpret the improper ensembles of narrow wave packets re-
+sulting from decoherence as leading to the perception of individual particles,
+we must supply an additional interpretive framework that explains why only
+one of the wave packets is perceived. That is, we need to add some inter-
+pretive rule to get from the improper ensemble emerging from decoherence
+to the perception of individual terms, so decoherence alone does not neces-
+sarily make Bohm’s particle concept superﬂuous. But it suggests that the
+postulate of particles as fundamental entities may well be unnecessary, and
+taken together with the diﬃculties in reconciling such a particle theory with
+a relativistic quantum ﬁeld theory, Bohm’s a priori assumption of particles
+at a fundamental level of the theory appears seriously challenged.
+
+8.5.2 Bohmian Trajectories and Decoherence
+
+A well-known property of Bohmian mechanics is the fact that its trajectories
+are often highly nonclassical (see, for example, [37, 488, 489]). This poses the
+   8
+    On the other hand, there are proposals for a “Bohmian mechanics of quan-
+tum ﬁelds,” i.e., a theory that embeds quantum ﬁeld theory into a Bohmian-style
+framework [484, 485].
+                                                           8.6 Summary       357
+
+serious problem of how Bohm’s theory can explain the existence of quasiclas-
+sical trajectories at a macroscopic level.
+    Bohm and Hiley [37] considered the scattering of a beam of environmen-
+tal particles on a macroscopic system, a process that gives rise to decoher-
+ence [7, 17]. The authors demonstrated that this scattering yields quasiclas-
+sical trajectories for the system. Furthermore, Appleby [489] showed that for
+isolated systems, the Bohm theory will typically not give the correct classi-
+cal limit. It was thus suggested that the inclusion of the environment and
+the resulting decoherence eﬀects might be helpful in recovering quasiclassi-
+cal trajectories in Bohmian mechanics [486, 490–494]. The basic idea is then
+to associate the quasi-Newtonian phase-space trajectories in the improper
+ensemble created by decoherence (see, e.g., Sect. 5.2.5) with the particle tra-
+jectories Q(t) of the Bohm theory. As pointed out by Bacciagaluppi [391], a
+great advantage of this strategy lies in the fact that the same approach would
+allow for a recovery of both quantum and classical phenomena.
+    However, a careful analysis by Appleby [490] showed that only under cer-
+tain additional assumptions will processes that lead to decoherence also result
+in the correct quasiclassical Bohmian trajectories for macroscopic systems
+(Appleby described the example of the long-time limit of a system that has
+initially been prepared in an energy eigenstate). Interesting results were also
+reported by Allori [491], Allori and Zangı̀ [492], and Allori et al. [493]. These
+authors demonstrated that decoherence eﬀects can play the role of preserv-
+ing classical properties of Bohmian trajectories. Furthermore, they showed
+that, while in standard quantum mechanics it is important to maintain nar-
+row wave packets to account for the emergence of classicality, the Bohmian
+description of a system by both its wave function and its conﬁguration al-
+lows for the derivation of quasiclassical behavior from highly delocalized wave
+functions.
+    Sanz and Borondo [494] studied the double-slit experiment in the frame-
+work of Bohmian mechanics and in the presence of decoherence. They showed
+that even when (spatial) coherence is fully lost, and thus interference is ab-
+sent, nonlocal quantum correlations remain that inﬂuence the dynamics of
+the particles in the Bohm theory. This example demonstrates that in general
+decoherence does not suﬃce to ensure the correct classical limit in Bohmian
+mechanics.
+
+
+8.6 Summary
+
+We have shown how the environment-induced superselection of preferred
+states has been incorporated into diﬀerent interpretations of quantum me-
+chanics in order to achieve a very general and empirically adequate deﬁni-
+tion (and explanation) of the “determinate quantities” in each interpretation.
+Thus the decoherence program has made a very signiﬁcant contribution to
+358    8 The Role of Decoherence in Interpretations of Quantum Mechanics
+
+solving the infamous preferred-basis problem that had haunted many inter-
+pretations for a long time. In some cases, such as in relative-state interpreta-
+tions, the lack of a clear deﬁnition of preferred bases had been at the focus of
+ongoing criticism directed at such interpretations. In other cases, such as in
+physical collapse theories or Bohmian mechanics, the particular form of the
+preferred basis is simply postulated. Here decoherence can provide a physical
+motivation for the particular choice of the postulated quantity.
+    We have argued that, within the standard interpretation of quantum
+mechanics, decoherence cannot solve the problem of outcomes in quantum
+measurement. We are still left with a multitude of (albeit individually well-
+localized quasiclassical) components, and we need to supplement or otherwise
+to interpret this situation in order to explain why and how single outcomes
+are perceived. Accordingly, we have discussed how environment-induced su-
+perselection and the local suppression of interference terms can be put to
+great use in physically motivating, or potentially disproving, rules and as-
+sumptions of alternative interpretive approaches that change (or altogether
+abandon) the eigenvalue–eigenstate link and/or modify the unitary dynamics
+in order to account for our perception of outcomes and classicality in general.
+    For example, to name just a few applications, decoherence can provide
+a universal criterion for the selection of the branches in relative-state inter-
+pretations and a physical argument for the noninterference between these
+branches from the point of view of an observer. In modal interpretations,
+decoherence can be used to specify empirically adequate sets of properties
+that can be assigned to systems. In collapse models, the free parameters
+(and possibly even the nature of the reduction mechanism itself) might be
+derivable from environmental interactions. Decoherence can also help select
+quasiclassical particle trajectories in Bohmian mechanics. Moreover, it has
+become clear that decoherence is capable of ensuring the empirical adequacy
+and thus empirical equivalence of diﬀerent interpretations. This observation
+has led the physicist Max Tegmark to the suggestion [495, p. 855] that the
+choice between, for example, the orthodox and the Everett interpretation may
+become “purely a matter of taste, roughly equivalent to whether one believes
+mathematical language or human language to be more fundamental.”
+

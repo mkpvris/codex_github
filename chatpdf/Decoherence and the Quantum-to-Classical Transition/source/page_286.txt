@@ -1,0 +1,48 @@
+                         6.3 SQUIDs and Other Superconducting Qubits        273
+
+Since the quantities ΔφJ and Φ0 are ﬁxed, the only free parameter in (6.32) is
+the total ﬂux Φ. Thus in SQUIDs the dynamics of a macroscopic quantity of
+matter (namely, on the order of 109 Cooper pairs) are collectively determined
+by the quantum-mechanical evolution of a single macroscopic coordinate Φ.
+Because ﬂux is the key variable in SQUIDs, these devices are often referred to
+as superconducting ﬂux qubits. (As we shall describe in Sect. 6.3.4, there exist
+other types of superconducting qubit systems in which physical quantities
+such as charge or phase are the key variables [281].)
+    Let us now discuss the dynamics of Φ. It turns out that the evolution of
+Φ is governed by an eﬀective Hamiltonian of the form
+                                 "                                 #
+        P2            2 d2        (Φ − Φext )2   Ic Φ0          Φ
+  H = Φ + U (Φ) =             +                 −       cos   2π       . (6.33)
+        2C            2C dΦ2           2L          2π            Φ0
+
+Here C denotes the total capacitance, L is the self-inductance of the loop, and
+Ic is the critical current of the Josephson junction. We shall not derive the
+structure of this Hamiltonian here (interested readers may ﬁnd the derivation
+in [218]). Instead, let us get a feel for what kind of dynamics this Hamiltonian
+implies.
+    We can interpret the Hamiltonian as determining the motion of a ﬁcti-
+tious “particle” of “mass” C in a potential given by U (Φ). The role of the
+usual canonical variables position and momentum is here played by the total
+trapped ﬂux Φ and the conjugate quantity PΦ = −id/dΦ, which is often
+referred to as the total displacement current and has units of charge. The
+analog of the kinetic energy of a particle moving in real space is in our case
+the electrostatic energy.
+    If the external magnetic ﬁeld is adjusted such that the induced ﬂux Φext is
+in the vicinity of the bias point Φext = Φ0 /2, U (Φ) takes the form of a tilted
+one-dimensional double-well potential (Fig. 6.19). This is the experimentally
+relevant situation, which we shall assume from now on. The amount of tilt
+is determined by the ﬂux Φext , and at Φext = Φ0 /2 the double well becomes
+exactly symmetric (this case will be discussed in more detail below). Thus
+we can change the shape of the potential by adjusting the strength of the
+externally applied magnetic ﬁeld.
+    Broadly speaking, the two wells of the potential U (Φ) correspond to the
+two possible directions (clockwise and counterclockwise) of the supercurrent
+around the loop. Each well contains a number of energy eigenstates |k of the
+Hamiltonian (6.33) that are (provided the damping induced by the Josephson
+junction is weak) localized well below the barrier separating the two wells.
+Thus we have a set of left-well (right-well) energy eigenstates that correspond,
+in an approximate manner, to a classical persistent clockwise (counterclock-
+wise) current around the loop.
+    More precisely, the corresponding wave functions ψk (Φ) ≡ Φ|k are lo-
+cally of the s-wave type. This means that the amplitudes of these wave func-
+tions are narrowly peaked around the bottom of either one of the wells of

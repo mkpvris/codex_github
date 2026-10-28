@@ -1,0 +1,47 @@
+176    5 Canonical Models For Decoherence
+
+    Each of the localized modes is described by a ﬁnite-dimensional Hilbert
+space with a ﬁnite energy cutoﬀ. Thus we can model these modes as a set
+of discrete states, which can be mapped onto a spin system. In most cases
+of interest, there are only two such states of interest, so we can map our
+environment of localized modes onto an environment of spin- 12 particles. The
+spin-environment modes may be part either of the physical system of in-
+terest itself (thus forming an “internal environment”) or of the surrounding
+substrate. For example, in so-called superconducting quantum interference
+devices (SQUIDs; see Sect. 6.3 for details) the ﬂux coordinate couples elec-
+tromagnetically not only to the huge collection of nuclear spins that make up
+the bulk matter of the SQUID and are located within the penetration depth
+of the ﬂux, but also to any impurities in the material [214].
+    There are numerous other examples that show that spin environments are
+a signiﬁcant, and often dominant, source of decoherence. When researchers
+try to create coherent superposition states on macroscopic scales, they typ-
+ically operate the experiment at very low temperatures in order to “freeze
+out” the thermal environment and to thus minimize decoherence eﬀects. This
+thermal environment is precisely the bath of delocalized bosonic modes (i.e.,
+harmonic oscillators) discussed earlier. But lowering the temperature—often
+down to the vicinity of absolute zero, as in superconducting systems such as
+SQUIDs—usually does not aﬀect the inﬂuence of localized modes such as nu-
+clear spins and impurities that are intrinsically present in the material. These
+sources of decoherence will then become dominant in this low-temperature
+regime.
+
+Oscillator Environments versus Spin Environments:
+Diﬀerences and Similarities
+
+Having separately outlined physical motivations behind the use of oscillator
+and spin environments, let us now synthesize our exposition by discussing
+some important diﬀerences (and similarities) between these two types of en-
+vironments.
+    As mentioned above, oscillator environments become universal environ-
+ments in the weak-coupling limit: The interaction of a system with an arbi-
+trary environment can be mapped onto the linear coupling to an equivalent
+oscillator environment [211,212]. In this sense one may say that (linearly cou-
+pled) oscillator environments presume the validity of the weak-coupling limit.
+Additionally, the coupling strength of each mode is usually assumed
+                                                               √       to scale
+with the number N of oscillators in the environment as ∝ 1/ N . This scal-
+ing ensures that summing up the contributions from all modes yields a value
+that is independent of N , and that thus the thermodynamic limit N −→ ∞
+is well-deﬁned.
+    This combined assumption of weak and N -dependent coupling implies
+that, while the central system will in general be strongly aﬀected by the

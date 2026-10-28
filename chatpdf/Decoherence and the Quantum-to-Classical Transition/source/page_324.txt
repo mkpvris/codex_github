@@ -1,0 +1,49 @@
+312    7 Decoherence and Quantum Computing
+
+us now bring the aforementioned ancilla qubits (to be denoted by A in the
+following) into the game. One purpose of these ancilla qubits is to act as a
+diagnostic tool in the following sense. Suppose the initial state of the ancilla
+is described by the state |ar . We now let the ancilla interact with the qubit
+system such that
+                    
+                                                       
+              |ar       Êi |ψ |ei  −→      |ai  Êi |ψ |ei  .      (7.31)
+                      i                          i
+
+This equation describes a von Neumann-type interaction (see Sect. 2.5.1),
+with the ancilla playing the role of the “apparatus.” To make the following
+argument more clear, let us assume that the ancilla states |ai  appearing on
+the right-hand side of (7.31) are at least approximately mutually orthogonal,
+such that they can be distinguished by measurement. (We will elaborate on
+this important issue below.)
+    Now we can use the following procedure (see Fig. 7.2). First, we measure
+the observable                       
+                              ÔA =      ai |ai ai |                  (7.32)
+                                         i
+
+on the ancilla, with ai = aj for i = j. The projective measurement will yield
+a particular outcome, say, ak , and lead to the reduction of the entangled state
+on the right-hand side of (7.31) onto the kth component of the superposition,
+i.e.,                                                
+                    |ai  Êi |ψ |ei  −→ |ak  Êk |ψ |ek  .          (7.33)
+                  i
+
+Since we know that the outcome of our measurement was ak , we also imme-
+diately know which transformation to use to “undo” the eﬀect of the environ-
+ment, namely, Êk−1 = Êk† . (This feature motivates our earlier statement that
+the ancilla qubits act as a “diagnostic tool” for the “symptom” Êk .) Thus
+we now apply the transformation Êk−1 to our qubit system, which yields
+                                         Ê −1
+                      |ak  Êk |ψ |ek  −−k−→ |ak  |ψ |ek  .        (7.34)
+
+We have reached our desired result: We have successfully returned the qubit
+to its original state |ψ. In this way, we have indeed recovered from the
+detrimental eﬀect of decoherence.
+    Note that, as required in order to avoid introducing additional decoher-
+ence in the computational basis of the qubit system, we have obtained no
+information whatsoever about the state of the qubits themselves. Instead, by
+quantum-correlating the composite qubit–environment system with the an-
+cilla, we have encoded information about the various errors Êi in the diﬀerent
+relative states |ai  of the ancilla. We can safely measure the ancilla without
+destroying the quantum information contained in the qubits, since each of
+the states |ai  of the ancilla is correlated with the full initial state |ψ of

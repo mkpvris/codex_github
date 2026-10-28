@@ -1,0 +1,46 @@
+72      2 The Basic Formalism and Interpretation of Decoherence
+
+   Let us now introduce the conjugate states |ψ±  of the system, deﬁned as
+even and odd superpositions of |ψ1  and |ψ2 ,
+                                       1
+                              |ψ±  ≡ √ (|ψ1  ± |ψ2 ) .                          (2.79)
+                                        2
+Looking back at (2.70), we immediately see that ψ+ (x) corresponds to the
+previously considered initial (superposition) state of the system. Since |ψ1 
+and |ψ2  represent states localized in space, |ψ+  and |ψ−  correspond to
+nonclassical delocalized states. Would the interaction (2.78) with the envi-
+ronment also lead to the suppression of interference between the components
+|ψ+  and |ψ− ?
+    Recall that, in order for this suppression to happen, the interaction be-
+tween the system and the environment must be such as to distinguish be-
+tween the states |ψ+  and |ψ− . That is, the environment has to be able
+to encode which-state information about |ψ+  and |ψ− . It is now easy to
+see that the dynamics (2.78) do not accomplish this goal. The form of the
+system–environment interaction implies the evolution
+                                   1
+                    |ψ±  |E0  −→ √ (|ψ1  |E1  ± |ψ2  |E2 ) .                 (2.80)
+                                    2
+The system states |ψ1  and |ψ2  are by assumption distinct, ψ1 |ψ2  = 0.
+Furthermore, following our above discussion, the ﬁnal environmental states
+|E1  and |E2  resolve the diﬀerence between these states, i.e., E1 |E2  −→ 0.
+Hence the ﬁnal composite state on the right-hand side of (2.80) is of the
+nonseparable Bell type (2.7). A measurement performed on the environment
+in the {|E1  , |E2 } basis will reveal no information whatsoever about which
+of the two states |ψ+  and |ψ−  has been prepared initially. This is so because
+we will always obtain the outcomes |E1  and |E2  with equal probabilities,
+regardless of whether the system started out in the state |ψ+  or the state
+|ψ− . Moreover, we can rewrite the right-hand side of (2.80) in inﬁnitely
+equivalent many ways (see the discussion in Sect. 2.5.2) and still retain the
+Bell-state structure (2.80),
+     1                               1
+     √ (|ψ1  |E1  ± |ψ2  |E2 ) = √ (|ψ1  |E1  ± |ψ2  |E2 ) = . . . ,   (2.81)
+      2                               2
+with ψ1 |ψ2  = 0 and E1 |E2  −→ 0. Accordingly, there exists no measure-
+ment in any basis {|E1  , |E2 } that could be performed on the environment
+and would allow us to distinguish between the two states |ψ+  and |ψ− .
+    Hence the particular interaction (2.78) between the system and the envi-
+ronment is completely insensitive to the diﬀerence between the states |ψ+ 
+and |ψ− . No information is encoded in the environment as a result of this
+interaction that would allow us to distinguish these two states by looking at
+the environment. Thus the environment cannot bring about any suppression
+of interference between |ψ+  and |ψ− .

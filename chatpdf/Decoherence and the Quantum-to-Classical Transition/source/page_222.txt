@@ -1,0 +1,52 @@
+208     5 Canonical Models For Decoherence
+
+which will give us another opportunity to see how the general master-equation
+formalism described in Sect. 4.2 is applied to a concrete example.
+
+5.3.1 Simpliﬁed Spin–Boson Model Without Tunneling
+
+In the following, let us consider the simpliﬁed spin–boson model described
+by the Hamiltonian
+                            Ĥ = ĤS + ĤE + Ĥint .                (5.85)
+Here,
+                                         1
+                                ĤS =      ω0 σ̂z                       (5.86)
+                                         2
+is the self-Hamiltonian of the system. Let us denote the eigenstates of σ̂z by
+|0 and |1. The asymmetry energy ω0 is the diﬀerence in energy between
+the basis states |0 and |1 of the system. By contrast with the general spin–
+boson model, we have not included a tunneling term − 12 Δ0 σ̂x [see (5.1)] in
+ĤS that would generate intrinsic dynamics of the central spin.
+    In (5.85), ĤE denotes the familiar self-Hamiltonian (5.3) of the environ-
+ment of harmonic oscillators,
+                               1             1
+                                                      
+                                          2       2 2
+                       ĤE =            p̂ + mi ωi q̂i .                (5.87)
+                               i
+                                    2mi i      2
+
+As usual, the ith harmonic oscillator in the bath is described by its natural
+frequency ωi , mass mi , and position and momentum operators q̂i and p̂i ,
+respectively, and it deﬁnes a bosonic mode i. The interaction Hamiltonian
+                                           
+                             Ĥint = σ̂z ⊗   ci q̂i                    (5.88)
+                                           i
+
+describes the linear coupling of the σ̂z coordinate of the system to the po-
+sitions coordinates qˆi of each harmonic oscillator in the environment, with
+coupling strengths ci . Finally, let us also deﬁne Ĥ0 as the sum of the self-
+Hamiltonians of the system and the environment, Ĥ0 ≡ ĤS + ĤE .
+    Equivalently, we may recast the Hamiltonian (5.85) in terms of bosonic
+creation and annihilation operators â†i and âi for each mode i. This formu-
+lation leads to a more compact notation which, among other things, does no
+longer require us to explicitly include the oscillator masses mi in the Hamil-
+tonian. Using the standard relations
+                                 5
+                                      1               
+                           q̂i =             âi + â†i ,               (5.89a)
+                                    2mi ωi
+                                   5
+                                      mi ω i            
+                           p̂i = −i            âi − â†i ,             (5.89b)
+                                        2

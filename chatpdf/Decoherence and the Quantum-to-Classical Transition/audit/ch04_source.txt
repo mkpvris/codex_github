@@ -1,0 +1,1094 @@
+
+--- PRINTED PAGE 153 / PDF PAGE 167 ---
+4 Master-Equation Formulations
+of Decoherence
+In this chapter, we will introduce the description of decoherence dynamics
+in terms of so-called master equations. Such master equations directly and
+conveniently yield the time evolution of the reduced density matrix ˆ ρS(t)
+for the open quantum system S interacting with an environment E. They
+relieve us from the need of having to ﬁrst determine the dynamics of the
+total system–environment combination and to then trace out the degrees
+of freedom of the environment. The master-equation approach is motivated
+by two issues. First, we are usually not interested in the dynamics of the
+environment or of the global system–environment combination. All we really
+care about is the inﬂuence of the environment on our system of interest.
+Second, it is often impossible to analytically determine the time evolution of
+the density matrix. In such cases, one can use approximation schemes that
+lead to master equations for theapproximate evolution of the reduced density
+matrix.
+In contrast with the dynamics of the density matrix of a closed system, the
+evolution equation for the reduced density matrix will of course, in general, be
+nonunitary, since the interaction with the environment will typically change
+the amount of coherence present in the system. Put into more formal terms,
+since the trace operation used to obtain the reduced density matrix is a
+nonunitary operation, the master equation must in general also be nonunitary.
+This chapter is organized as follows. In Sect. 4.1, we will introduce the
+basic ideas and the general formalism of master equations. In Sect. 4.2, we
+will then discuss in some detail a very important type of master equation,
+namely, the so-called Born–Markov master equation. This master equation
+plays a key role in studies of decoherence. The derivation of this equation,
+given in Sect. 4.2.2, is inevitably somewhat technical, so some readers may
+prefer to just glance over this section or skip it altogether. In Sect. 4.3, we will
+discuss so-called Lindblad master equations, a special and more simpliﬁed
+form of the general Born–Markov master equation that is valid under an
+additional assumption. As we shall see, Lindblad master equations allow for
+a very intuitive representation of decoherence processes. Finally, in Sect. 4.4,
+we will brieﬂy discuss the case of non-Markovian dynamics.
+We note that master equations also play an important role in the the-
+ory of so-called quantum dynamical semigroups. Since our focus here is on
+
+--- PRINTED PAGE 154 / PDF PAGE 168 ---
+154 4 Master-Equation Formulations of Decoherence
+the modeling of decoherence, we shall not further discuss this mathematical
+connection between master equations and dynamical semigroups. Instead we
+refer interested readers to Chap. 7 of [17] and to the book by Breuer and
+Petruccione [18] for further information on this topic.
+4.1 General Formalism
+In the “ordinary” formalism of decoherence, the reduced density matrix ˆρS(t)
+is computed via
+ˆρS(t)=T r E {ˆρSE (t)}≡ TrE
+{
+ˆU(t)ˆρSE (0) ˆU † (t)
+}
+, (4.1)
+where ˆU(t) denotes the time-evolution operator for the composite system
+SE. As is evident from (4.1), this approach inevitably requires that we ﬁrst
+determine the dynamics ˆρSE (t) of the total systemSE before we can arrive at
+the reduced description through the trace operation. As we have indicated in
+the introduction to this chapter, this task is very diﬃcult, if not impossible,
+to carry out in practice for most reasonably complex model systems.
+By contrast, in the master-equation formalism, we instead calculate ˆρS(t)
+directly from an expression of the form
+ˆρS(t)= ˆV (t)ˆρS(0), (4.2)
+where the operator ˆV (t) is the so-called dynamical map that generates the
+evolution of ˆρS(t). Since ˆV (t) represents an operator that in turn acts on
+another operator, it is commonly referred to as a “superoperator.” Equa-
+tion (4.2) is called a master equation for ˆρS(t), and it represents the most
+general form that such a master equation may take.
+Obviously, if the master equation is exact, then (4.1) and (4.2) must be
+equivalent by deﬁnition, i.e., we must have the identity
+ˆV (t)ˆρS(0) ≡ TrE
+{
+ˆU(t)ˆρSE (0) ˆU † (t)
+}
+, (4.3)
+and the master equation would amount to nothing else but a trivial rewriting
+of (4.1).
+Therefore, the power of master equations is only unlocked once we im-
+pose certain assumptions about the system–environment states and dynam-
+ics. Such assumptions then allow us to determine the approximate time evo-
+lution of ˆρS(t) even when it is impossible to calculate the exact global dynam-
+ics ˆρSE (t). In fact, here we shall restrict our attention to master equations
+(obtained from certain approximations) that can be written as ﬁrst-order dif-
+ferential equations that are local in time, i.e., that can be expressed in the
+form
+
+--- PRINTED PAGE 155 / PDF PAGE 169 ---
+4.2 The Born–Markov Master Equation 155
+d
+dt ˆρS(t)= ˆL[ˆρS(t)] = −i
+[ ˆH′
+S, ˆρS(t)
+]
+  
+unitary evolution
++ ˆD[ˆρS(t)]  
+decoherence
+. (4.4)
+This equation is local in time in the sense that the change of ˆ ρS at time t
+depends only on ˆρS evaluated at t but not at any other times t′ ̸= t.T h e
+superoperator ˆL appearing in (4.4) acts on ˆρS(t) and typically depends on
+the initial state of the environment and the diﬀerent terms in the Hamilto-
+nian. To convey the physical intuition behind this superoperator,ˆL has been
+decomposed into two parts:
+1. A unitary part that is given by the usual Liouville–von Neumann commu-
+tator with the Hamiltonian ˆH′
+S. It is important to note that this Hamil-
+tonian is in general not identical to the unperturbed free Hamiltonian
+ˆHS of S that would generate the evolution of S in absence of the en-
+vironment, because the presence of the environment often perturbs the
+free Hamiltonian, leading to a renormalization of the energy levels of the
+system. We emphasize that this eﬀect (often called the Lamb-shift con-
+tribution) has nothing do with the nonunitary evolution induced by the
+environment but only alters the unitary part of the reduced dynamics.
+2. A nonunitary part ˆD[ˆρS(t)] that represents decoherence (and possibly
+also dissipation) due to the environment. This term will be of the most
+interest to us in the following.
+We note that, if the evolution of the system is completely unitary, we have
+ˆD[ˆρS(t)] = 0, and thus (4.4) simply becomes
+d
+dt ˆρS(t)= −i
+[ ˆH′
+S, ˆρS(t)
+]
+. (4.5)
+This equation diﬀers from the standard Liouville–von Neumann equation for
+closed systems only in the use of the environment-shifted system Hamiltonian
+ˆH′
+S instead of the unperturbed Hamiltonian ˆHS.
+In the next section, we shall derive an explicit general expression for ˆL
+(i.e., for ˆH′
+S and ˆD[ˆρS(t)]) under a certain set of assumptions. Applied to a
+given model, the resulting master equation then allows us to compute the
+time evolution of ˆρS(t) for all times t.
+4.2 The Born–Markov Master Equation
+The Born–Markov master equation plays an enormously important role in
+the study of open quantum systems and decoherence. It allows one to treat
+many decoherence problems in a mathematically simple, and often closed,
+form. Comparisons between the predictions of models based on this equation
+and experimental data have shown that the Born and Markov assumptions on
+which the master equation is based are reasonable in many cases. However,
+
+--- PRINTED PAGE 156 / PDF PAGE 170 ---
+156 4 Master-Equation Formulations of Decoherence
+we should emphasize already at this stage that there exist various important
+physical systems (for example, low-temperature solid-state systems) which
+do not obey Markovian dynamics and which therefore often cannot be ade-
+quately modeled using the Born–Markov master equation. We will come back
+to this issue in Sect. 4.4 below.
+4.2.1 Structure of the Born–Markov Master Equation
+The Born–Markov master equation is based on two core approximations that
+can be broadly stated as follows (the formal representation and physical jus-
+tiﬁcation of these approximations is discussed in more detail in Sect. 4.2.2
+below):
+1. The Born approximation. The system–environment coupling is suﬃ-
+ciently weak and the environment is reasonably large such that changes
+of the density operator of the environment are negligible and the system–
+environment state remains in an approximate product state at all times,
+i.e.,
+ˆρ(t) ≈ ˆρS(t) ⊗ ˆρE, (4.6)
+with ˆρE approximately constant at all times.
+2. The Markov approximation. “Memory eﬀects” of the environment are
+negligible, in the sense that any self-correlations within the environment
+created by the coupling to the system decay rapidly compared to the
+characteristic timescale over which the state of the system varies notice-
+ably.
+Assume now these assumptions hold. Suppose further that the system S
+has self-Hamiltonian ˆHS and that its coupling to the environment is described
+by the interaction Hamiltonian ˆHint, which we may write in the diagonal form
+[see (2.93)]
+ˆHint =
+∑
+α
+ˆSα ⊗ ˆEα. (4.7)
+Here the system and environment operators ˆSα and ˆEα are unitary but not
+necessarily Hermitian. As explained in Sect. 2.8, the intuitive physical in-
+terpretation of the diagonal decomposition (4.7) is that the operators ˆSα
+correspond to the physical quantities of the system that are continuously
+“monitored” by the environment (provided the ˆSα are Hermitian).
+Then the evolution of the reduced density operator ˆρS(t) is given by the
+Born–Markov master equation
+d
+dt ˆρS(t)= −i
+[ ˆHS, ˆρS(t)
+]
+−
+∑
+α
+{[ˆSα, ˆBα ˆρS(t)
+]
++
+[
+ˆρS(t) ˆCα, ˆSα
+]}
+. (4.8)
+The system operators ˆBα and ˆCα appearing in this equation are deﬁned as
+
+--- PRINTED PAGE 157 / PDF PAGE 171 ---
+4.2 The Born–Markov Master Equation 157
+ˆBα ≡
+∫ ∞
+0
+dτ
+∑
+β
+Cαβ (τ) ˆS(I)
+β (−τ), (4.9a)
+ˆCα ≡
+∫ ∞
+0
+dτ
+∑
+β
+Cβα (−τ) ˆS(I)
+β (−τ). (4.9b)
+Here ˆS(I)
+α (−τ) denotes the system operatorˆSα in the so-called interaction pic-
+ture. The interaction-picture formalism will be used heavily in the derivation
+of the Born–Markov master equation below and is reviewed in the Appendix.
+From now on, we shall simplify our notation by omitting the superscript
+“(I)” for indicating operators in the interaction picture. Instead we shall in-
+troduce the convention that all operators bearing explicit time arguments
+are meant to be understood as interaction-picture operators. For the density
+operator, however, we will uphold the superscript notation to make clear the
+distinction from the Schr¨odinger-picture density operator, which also car-
+ries a time argument (since in the Schr¨odinger picture quantum states are
+explicitly time-dependent).
+The quantity Cαβ (τ) appearing in (4.9) is given by
+Cαβ (τ) ≡
+⣨
+ˆEα(τ) ˆEβ
+⟩
+ˆρE
+, (4.10)
+where the average is taken over the initial state ˆρE of the environment (recall
+that the Born approximation (4.6) means that ˆ ρE remains approximately
+constant at all times). The Cαβ (τ) will be referred to as the environment
+self-correlation functions in the following. The reason for this terminology is
+easy to understand. The operators ˆEα (provided they are Hermitian) can be
+thought of as observables “measured” on the environment by the interaction
+between the system and the environment. The environment self-correlation
+functions then tell us to what extent the result of such a “measurement”
+of a particular ˆEα is correlated with the result of a “measurement” of the
+same observable carried out a timeτlater. Broadly speaking, these functions
+thus quantify to what degree the environment retains information over time
+about its interaction with the system. In fact, the Markov approximation
+corresponds to the assumption of a rapid decay of these environment self-
+correlation functions relative to the timescale set by the evolution of the
+system.
+The form (4.8) of the Born–Markov master equation may look fairly
+daunting and diﬃcult to apply to concrete cases. To explicitly determine
+the quantities ˆBα and ˆCα [see (4.9)] for a given model, we would need to
+calculate (i) the interaction-picture operators ˆSα(τ)a n d ˆEα(τ) (whose time
+evolution is given by the system and environment Hamiltonians ˆHS and ˆHE,
+respectively; see Appendix), and (ii) the environment self-correlation func-
+tions Cαβ (τ), see (4.10).
+However, in many situations of interest, the master equation (4.8) simpli-
+ﬁes considerably. For example, in most cases we have to consider only a single
+
+--- PRINTED PAGE 158 / PDF PAGE 172 ---
+158 4 Master-Equation Formulations of Decoherence
+system observable ˆS that is monitored by the environment. Then the sum in
+the diagonal decomposition (4.7) of the interaction Hamiltonian reduces to a
+single term,
+ˆHint = ˆS ⊗ ˆE. (4.11)
+Also, the time dependence of the interaction-picture operators ˆSα(τ)a n d
+ˆEα(τ) is often very simple (sometimes even trivial), facilitating the calcu-
+lation of the quantities ˆBα and ˆCα [see (4.9)]. We shall see how this works
+in the next Chap. 5, where we will apply the Born–Markov master equation
+(4.8) to some concrete examples.
+4.2.2 Derivation of the Born–Markov Master Equation
+In this section, we shall derive the Born–Markov master equation (4.8) from
+ﬁrst principles. Readers are encouraged to work through the main steps of
+the derivation, in particular in order to get a better understanding of the
+assumptions that enter into this derivation.
+Interaction-Picture Description
+First, let us begin by decomposing the total system–environment Hamiltonian
+in the usual form as
+ˆH = ˆHS + ˆHE + ˆHint. (4.12)
+Since we would like to apply perturbation theory, it is convenient to switch
+to the interaction picture. Then
+ˆH0 ≡ ˆHS + ˆHE (4.13)
+denotes the total free Hamiltonian, and ˆHint represents the interaction that
+is to be treated perturbatively.
+We now transform the interaction HamiltonianˆHint and the total system–
+environment density operator ˆρ(t) to the interaction picture. These transfor-
+mations are given by [see (A.4) and (A.5)]
+ˆHint(t)=e i ˆH0t ˆHinte−i ˆH0t, (4.14)
+ˆρ(I)(t)=e i ˆH0t ˆρ(t)e−i ˆH0t
+=e i ˆH0te−i ˆHt ˆρei ˆHte−i ˆH0t. (4.15)
+The time evolution of ˆρ(I)(t) is determined by the interaction-picture Liou-
+ville–von Neumann equation [see (A.9)],
+d
+dt ˆρ(I)(t)= −i
+[ ˆHint(t), ˆρ(I)(t)
+]
+. (4.16)
+Thus the evolution of the interaction-picture density operator is generated
+only by the interaction-picture coupling part ˆHint(t) of the full Hamiltonian.
+
+--- PRINTED PAGE 159 / PDF PAGE 173 ---
+4.2 The Born–Markov Master Equation 159
+Iterative Solution by Integration
+If we now formally integrate (4.16), we get
+ˆρ(I)(t)=ˆρ(0) − i
+∫ t
+0
+dt′ [ ˆHint(t′), ˆρ(I)(t′)
+]
+. (4.17)
+Let us insert this expression for ˆρ(I)(t) back into the right-hand side of (4.16).
+This yields
+d
+dt ˆρ(I)(t)= −i
+[ ˆHint(t), ˆρ(0) − i
+∫ t
+0
+dt′ [ ˆHint(t′), ˆρ(I)(t′)
+]]
+= −i
+[ ˆHint(t), ˆρ(0)
+]
+−
+∫ t
+0
+dt′ [ ˆHint(t),
+[ ˆHint(t′), ˆρ(I)(t′)
+]]
+. (4.18)
+Since we have [see (A.12) for the derivation]
+ˆρ(I)
+S (t)=T r E
+{
+ˆρ(I)(t)
+}
+, (4.19)
+we can transform (4.18) into an equation for the reduced density operator
+ˆρ(I)
+S (t) by simply taking the trace over the environment,
+d
+dt ˆρ(I)
+S (t)= −iT rE
+[ ˆHint(t), ˆρ(0)
+]
+−
+∫ t
+0
+dt′ TrE
+[ ˆHint(t),
+[ ˆHint(t′), ˆρ(I)(t′)
+]]
+.
+(4.20)
+In fact, without loss of generality, one can assume that
+TrE
+[ ˆHint(t), ˆρ(0)
+]
+=0 . (4.21)
+It is easy to show that this can always be achieved by a formal redeﬁnition
+of the Hamiltonians ˆH0 and ˆHint. Then (4.20) simpliﬁes to
+d
+dt ˆρ(I)
+S (t)= −
+∫ t
+0
+dt′ TrE
+[ ˆHint(t),
+[ ˆHint(t′), ˆρ(I)(t′)
+]]
+. (4.22)
+All calculations leading up to this equation have been exact and no approxi-
+mations have been made. Let us now pause for a moment and ask ourselves
+the following question. What features are still absent from (4.22) that would
+be desirable for a master equation for ˆρ(I)
+S (t)? Note that the right-hand side
+of (4.22) still depends on the total system–environment density operator ˆρ(I)
+evaluated at all times between 0 and t. Thus (4.22) is not yet a time-local
+diﬀerential equation of the form (4.4) that would determine the change of ˆρ(I)
+S
+at time t solely in terms of ˆρ(I)
+S (t) and a set of known quantities. Therefore
+two desirable properties emerge:
+
+--- PRINTED PAGE 160 / PDF PAGE 174 ---
+160 4 Master-Equation Formulations of Decoherence
+(P1) We would like to express our master equation entirely in terms of the
+reduceddensity operator ˆρ(I)
+S (t) and the initial state of the environment,
+i.e., we would like to eliminate any terms pertaining to a time-dependent
+state of the environment. A master equation that fulﬁlls this property
+is called an integro-diﬀerential equation, since the diﬀerential change of
+the quantity of interest at a certain time t depends on an integral of a
+function of this quantity over all timest′ ≤ t.
+(P2) We would like to eliminate any dependences of the change of ˆ ρ(I)
+S at
+time t on ˆρ(I)
+S evaluated at times t′ <t .
+The trick to accomplish these goals lies in the application of the Born and
+Markov approximations mentioned above. Imposing the Born approximation
+will eliminate the dependence on the full density operator ˆρ(I) on the right-
+hand side of (4.22) and thus take care of (P1). The Markov approximation will
+then transform the resulting integro-diﬀerential master equation into a time-
+local diﬀerential equation, thereby achieving the goal stated in (P2). As we
+will discuss below, both approximations can be motivated from assumptions
+of weak system–environment couplings and of an environment that is large
+compared to the size of the system.
+Before proceeding, let us note that in the following we will assume the
+absence of initial correlations between the system and the environment, i.e.,
+ˆρ(0) = ˆρ(I)(0) = ˆρS(0) ⊗ ˆρE(0). (4.23)
+This is a reasonable assumption for the case of weak system–environment
+coupling considered here.
+Imposing the Born Approximation
+As already mentioned in Sect. 4.2.1 [see (4.6)], the Born approximation as-
+sumes that the density operator ˆρof the system–environment combination
+remains at all times in an approximate product form and that temporal
+changes in the density matrix ˆρE of the environment can be neglected,
+ˆρ(t) ≈ ˆρS(t) ⊗ ˆρE ∀t ≥ 0, (4.24)
+with ˆρE =ˆρE(0). The equivalent condition then also holds in the interaction
+picture,
+ˆρ(I)(t) ≈ ˆρ(I)
+S (t) ⊗ ˆρE ∀t ≥ 0. (4.25)
+This is easily seen from the fact that ˆ ρ(I)(t)=e i ˆH0t ˆρ(t)e−i ˆH0t [see (4.15)].
+Since ˆH0 = ˆHS + ˆHE acts separately on the system and the environment, it
+cannot establish any entanglement between the two partners.
+The physical intuition behind the Born approximation is that the in-
+teraction between the system and the environment is suﬃciently weak (the
+
+--- PRINTED PAGE 161 / PDF PAGE 175 ---
+4.2 The Born–Markov Master Equation 161
+so-called “weak-coupling limit”), and that the environment is large in com-
+parison with the size of the system, such that (i) the density operator for the
+environment does not change signiﬁcantly as a consequence of the interaction
+with the system, and that (ii) the system and the environment remain in a
+separable state at all times.
+It turns out that the Born approximation is a reasonable assumption in
+many cases of physical interest. Usually, the system is coupled to a very
+large environment which, viewed as a whole, undergoes only negligibly small
+changes in the course of the system–environment interaction compared to the
+change of the state of the system. That is, the back-action of the system on
+the environment can in such cases be ignored. Note that (4.25) allows for
+arbitrarily large changes of the density operator of the system, and it does
+not exclude the occurrence of environmental excitations in the environment
+induced by the interaction with the system.
+Using the Born approximation (4.25), the master equation (4.22) can now
+be written as
+d
+dt ˆρ(I)
+S (t)= −
+∫ t
+0
+dt′ TrE
+[ ˆHint(t),
+[ ˆHint(t′), ˆρ(I)
+S (t′) ⊗ ˆρE
+]]
+. (4.26)
+Evidently (by virtue of the Born approximation), we have fulﬁlled our de-
+sired property (P1) stated above. Both sides of our master equation are now
+expressed entirely in terms of the reduced density operator ˆρ(I)
+S (t), with the
+state of the environment separated out and reduced to the initial state ˆρE.
+Imposing the Markov Approximation
+The expression (4.26) is still an integro-diﬀerential equation, i.e., computing
+the change of ˆρ(I)
+S at time t requires knowledge of ˆρ(I)
+S at all previous times
+t′ <t . However, as we shall now show, by imposing a suitable approximation
+(namely, the Markov approximation) we can transform (4.26) into a time-
+local master equation of the form (4.4).
+Let us start by writing the interaction Hamiltonian in the diagonal form
+ˆHint = ∑
+α ˆSα ⊗ ˆEα [see (4.7)] and transforming it to the interaction picture,
+ˆHint(t)=e i ˆH0t ˆHinte−i ˆH0t
+=
+∑
+α
+(
+ei ˆHS t ˆSαe−i ˆHS t
+)
+⊗
+(
+ei ˆHE t ˆEαe−i ˆHE t
+)
+=
+∑
+α
+ˆSα(t) ⊗ ˆEα(t). (4.27)
+Then (4.26) can be expressed as
+
+--- PRINTED PAGE 162 / PDF PAGE 176 ---
+162 4 Master-Equation Formulations of Decoherence
+d
+dt ˆρ(I)
+S (t)
+= −
+∫ t
+0
+dt′ ∑
+αβ
+TrE
+[ˆSα(t) ⊗ ˆEα(t),
+[ˆSβ(t′) ⊗ ˆEβ(t′), ˆρ(I)
+S (t′) ⊗ ˆρE
+]]
+. (4.28)
+Let us now deﬁne
+Cαβ (t,t ′) ≡ TrE
+{
+ˆEα(t) ˆEβ(t′)ˆρE
+}
+=
+⣨
+ˆEα(t) ˆEβ(t′)
+⟩
+ˆρE
+. (4.29)
+In the following, we shall suppose that the environment is in a stationary
+state (i.e., in equilibrium), [ ˆHE, ˆρE
+]
+=0 . (4.30)
+This implies that we can write
+Cαβ (t,t ′)=T r E
+{
+ˆEα(t − t′) ˆEβ ˆρE
+}
+≡C αβ (t − t′), (4.31)
+which are precisely the environment self-correlation functions (4.10) intro-
+duced above.
+We see that, due to the assumption (4.30), these environment self-
+correlation functions do not depend on the absolute time t [as in (4.29)] but
+only on the time interval between the results of the two identical “measure-
+ments” (represented by a particular operator ˆEα) whose degree of correlation
+is quantiﬁed by (4.31).1
+Inserting (4.31) into (4.28) and writing out the double commutator, we
+obtain
+d
+dt ˆρ(I)
+S (t)=
+−
+∫ t
+0
+dt′ ∑
+αβ
+{
+Cαβ (t − t′)
+[
+ˆSα(t) ˆSβ(t′)ˆρ(I)
+S (t′) − ˆSβ(t′)ˆρ(I)
+S (t′) ˆSα(t)
+]
++Cβα (t′ − t)
+[
+ˆρ(I)
+S (t′) ˆSβ(t′) ˆSα(t) − ˆSα(t)ˆρ(I)
+S (t′) ˆSβ(t′)
+]}
+. (4.32)
+In deriving this expression, we have used the basic fact that the trace is
+invariant under cyclic permutations of the operators, such that
+TrE
+{
+ˆEα ˆEβ ˆρE
+}
+=T rE
+{
+ˆρE ˆEα ˆEβ
+}
+=T rE
+{
+ˆEα ˆρE ˆEβ
+}
+. (4.33)
+We have also separated out the operatorsˆSα(t) as well as the density operator
+ˆρ(I)
+S (t′) from the trace operation. We are allowed to do this because the trace
+is taken over the environment only.
+1This simpliﬁcation is not always appropriate. See, e.g., Sect. 3.4.3 of [18] for
+an interesting counterexample.
+
+--- PRINTED PAGE 163 / PDF PAGE 177 ---
+4.2 The Born–Markov Master Equation 163
+Let us now further simplify (4.33) by imposing the Markov approximation.
+It turns out that in many physical situation of interest, the environment
+can be assumed to very quickly “forget” any internal self-correlations that
+have been established in the course of the interaction with the system. In
+other words, in such situations the environment does not “keep track of its
+history”—any dynamically established quantum correlations between parts
+of the environment are destroyed on a timescaleτcorr much shorter than the
+characteristic timescaleτS over which the reduced interaction-picture density
+operator ˆρ(I)
+S (t) of the system changes noticeably. This assumptionτcorr ≪ τS
+constitutes the Markov approximation. It is appropriate if, as in our case, the
+environment is only weakly coupled to the system, and if the environment is
+at a suﬃciently high temperature.
+Readers may be familiar with Markovian processes from classical proba-
+bility theory (see Sect. 1.4 of [18] for a good introduction to this subject).
+Broadly speaking, a stochastic process is Markovian if the probability of a
+particular event is independent of all earlier events. That is, each step in
+the process is independent of the previous steps. In other words, the system
+retains no memory of its past—the steps are completely uncorrelated. The
+analogy with a “Markovian environment” should now be clear.
+What are the consequences of the Markov approximation for our goal of
+obtaining a time-local master equation in diﬀerential form? Let us look back
+at the current structure (4.32) of the master equation. Applied to our deriva-
+tion, the Markov approximation means that the environment self-correlations
+functions Cαβ (t − t′) [see (4.31)] are sharply peaked around (t − t′)=0a n d
+decay on a timescale much shorter than the timescale set byτS, which quan-
+tiﬁes the rate of change of the interaction-picture density operator ˆρ(I)
+S (t)o f
+the system. The implications of this property are twofold.
+First, since the reduced interaction-picture density operator ˆρ(I)
+S (t)o ft h e
+system changes only insigniﬁcantly during the typical time intervalτcorr over
+which the environment self-correlations functions Cαβ (t − t′) vanish, we can
+replace the retarded-time density operator ˆρ(I)
+S (t′) by the current-time den-
+sity operator ˆρ(I)
+S (t) in the integrand on the right-hand side of (4.32). The
+resulting master equation is the so-called Redﬁeld equation [174,175], which
+fulﬁlls our desired property (P2) of being time-local. In fact, the Markov
+assumption allows us to simplify the master equation even further. Namely,
+we realize that, for t ≫ τcorr, we can safely extend the lower limit of the
+integration on the right-hand side of (4.32) to −∞ , since the self-correlation
+functions Cαβ (t − t′) (and thus the integrand) vanish fort′ ≪ t.
+With these two modiﬁcations (which are both based on the Markov ap-
+proximation of negligibly short environmental self-correlation times) and the
+substitution t′ −→ τ≡ t − t′, (4.32) becomes
+
+--- PRINTED PAGE 164 / PDF PAGE 178 ---
+164 4 Master-Equation Formulations of Decoherence
+d
+dt ˆρ(I)
+S (t)=
+−
+∫ ∞
+0
+dτ
+∑
+αβ
+{
+Cαβ (τ)
+[
+ˆSα(t) ˆSβ(t − τ)ˆρ(I)
+S (t) − ˆSβ(t − τ)ˆρ(I)
+S (t) ˆSα(t)
+]
++Cβα (−τ)
+[
+ˆρ(I)
+S (t) ˆSβ(t − τ) ˆSα(t) − ˆSα(t)ˆρ(I)
+S (t) ˆSβ(t − τ)
+]}
+. (4.34)
+As desired, the right-hand side of this master equation does no longer depend
+on the full time-dependent density operator ˆρ(I)(t), but only on the reduced
+density operator ˆρ(I)
+S (t) of the system, together with the initial state of the
+environment [which enters through the self-correlation functions Cαβ (τ), see
+(4.31)]. Also, the master equation is local in time. Only completely known
+quantities, namely, the operators ˆSα(t)a n d ˆEα(t) (which are determined a
+priori by the form of the Hamiltonian), enter into the master equation with
+time arguments other than t.
+Equation (4.34) establishes our core result, and our derivation is essen-
+tially complete. The last remaining step is simply concerned with transform-
+ing the equation back to the Schr¨ odinger picture and with making some
+formal rearrangements.
+Transformation Back to the Schr¨odinger Picture
+To transform a density-operator evolution equation written in the interaction
+picture back to the Schr¨odinger picture, we can use the following general
+recipe. From (A.12) we have
+ˆρ(I)
+S (t)=e i ˆHS t ˆρS(t)e−i ˆHS t, (4.35)
+and thus it immediately follows that
+d
+dt ˆρ(I)
+S (t)=i
+[ ˆHS, ˆρ(I)
+S (t)
+]
++e i ˆHS t
+( d
+dt ˆρS(t)
+)
+e−i ˆHS t. (4.36)
+Again using (4.35), this may be rewritten as
+d
+dt ˆρS(t)= −i
+[ ˆHS, ˆρS(t)
+]
++e −i ˆHS t
+( d
+dt ˆρ(I)
+S (t)
+)
+ei ˆHS t. (4.37)
+Let us apply this procedure to our interaction-picture Born–Markov master
+equation (4.34). We insert the expression (4.34) for d
+dt ˆρ(I)
+S (t) into the right-
+hand side of (4.37). We pull the time evolution operators e ±i ˆHS t into the
+square brackets in (4.34) and then use (4.14) and (4.35). For example, for the
+ﬁrst term inside the brackets on the right-hand side of (4.34), this will lead
+to
+
+--- PRINTED PAGE 165 / PDF PAGE 179 ---
+4.3 Master Equations in the Lindblad Form 165
+e−i ˆHS t ˆSα(t) ˆSβ(t − τ)ˆρ(I)
+S (t)ei ˆHS t
+=
+(
+e−i ˆHS t ˆSα(t)ei ˆHS t
+)(
+e−i ˆHS t ˆSβ(t − τ)ei ˆHS t
+)(
+e−i ˆHS t ˆρ(I)
+S (t)ei ˆHS t
+)
+= ˆSα
+(
+e−i ˆHS τ ˆSβei ˆHS τ
+)
+ˆρS
+= ˆSα ˆSβ(−τ)ˆρS. (4.38)
+In this way, (4.34) can now be written as (reintroducing the commutator
+notation)
+d
+dt ˆρS(t)= −i
+[ ˆHS, ˆρS(t)
+]
+−
+∫ ∞
+0
+dτ
+∑
+αβ
+{
+Cαβ (τ)
+[ˆSα, ˆSβ(−τ)ˆρS(t)
+]
++Cβα (−τ)
+[
+ˆρS(t) ˆSβ(−τ), ˆSα
+]}
+. (4.39)
+We can simplify our notation by realizing that the integral on the right-hand
+side of (4.39) extends over the entire rangeτ=0 ... ∞ , and that therefore the
+overall time dependence of the environment self-correlation functions Cαβ (τ)
+and of the interaction-picture operators ˆSβ(−τ) is eﬀectively integrated out.
+Using the time-independent quantities ˆBα and ˆCα introduced in (4.9),
+ˆBα =
+∫ ∞
+0
+dτ
+∑
+β
+Cαβ (τ) ˆSβ(−τ), (4.40a)
+ˆCα =
+∫ ∞
+0
+dτ
+∑
+β
+Cβα (−τ) ˆSβ(−τ), (4.40b)
+the Born–Markov master equation (4.39) then takes the ﬁnal form (4.8) given
+in Sect. 4.2, i.e.,
+d
+dt ˆρS(t)= −i
+[ ˆHS, ˆρS(t)
+]
+−
+∑
+α
+{[ˆSα, ˆBα ˆρS(t)
+]
++
+[
+ˆρS(t) ˆCα, ˆSα
+]}
+. (4.41)
+This completes our derivation. In Chap. 5, we shall illustrate the applica-
+tion of this master equation in the context of several important decoherence
+models.
+4.3 Master Equations in the Lindblad Form
+Master equations in the so-called Lindblad form refer to a particular (al-
+beit quite general) class of Markovian master equations. They arise from the
+requirement that the master equation ought to ensure the positivity of the
+reduced density matrix at all times, i.e., that
+⟨ψ| ˆρS(t) |ψ⟩≥ 0 (4.42)
+
+--- PRINTED PAGE 166 / PDF PAGE 180 ---
+166 4 Master-Equation Formulations of Decoherence
+for any pure state |ψ⟩ of the system S and for all t. This condition is phys-
+ically reasonable, since we would like to interpret the elements ⟨ψ| ˆρS(t) |ψ⟩
+of the reduced density matrix as occupation probabilities. If the time evolu-
+tion of ˆρS(t) is exact, the positivity condition will of course be automatically
+fulﬁlled. However, for reduced density matrices evolved by means of approx-
+imate master equations, (4.42) will not necessarily hold.
+It was ﬁrst shown by Gorini, Kossakowski, and Sudarshan [176] and Lind-
+blad [177] that the most general master equation that ensures the positivity
+(4.42) of the reduced density matrix ˆρS(t)i so ft h ef o r m
+d
+dt ˆρS(t)= −i
+[ ˆHS, ˆρS(t)
+]
++ 1
+2
+∑
+αβ
+γαβ
+{[ˆSα, ˆρS(t) ˆS†
+β
+]
++
+[ˆSα ˆρS(t), ˆS†
+β
+]}
+.
+(4.43)
+Here, the operators ˆSα are the system operators appearing in the diagonal
+decomposition ˆHint = ∑
+α ˆSα ⊗ ˆEα of the interaction Hamiltonian [see (4.7)].
+The time-independent coeﬃcients γαβ encapsulate all information about the
+physical parameters of the decoherence (and possibly dissipation) processes
+and deﬁne a coeﬃcient matrix Γ≡ (γαβ ).
+Evidently, the Lindblad master equation (4.43) is local in time. Moreover,
+it is also Markovian. Equations of the form (4.43) can be derived in many dif-
+ferent ways from various assumptions and are therefore not necessarily tied to
+the Born–Markov master equation (4.8). Master equations of the Lindblad
+form, derived from phenomenological models, were used by many authors
+already in the 1960s (see, e.g., [178]). However, their rigorous mathemati-
+cal derivation within the theory of generators and quantum dynamical semi-
+groups was established only in the second half of the 1970s [176,177,179–181].
+If we compare (4.43) to our general expression (4.8) for the Born–Markov
+master equation, we observe a certain formal similarity between the two equa-
+tions. Yet, evidently, they are not the same. In particular, the operators ˆBα
+and ˆCα appearing in (4.8) are in general nontrivial time integrals over the
+interaction operators ˆSα and the environment self-correlation functions [see
+(4.9)]. Still, the reader may suspect that it could be possible to transform
+(4.8) into the Lindblad form (4.43). However, it turns out that this cannot
+always be done: The Lindblad master equation is a special case of the general
+Born–Markov master equation. It follows that density matrices evolved by
+the latter equation do not necessarily fulﬁll the condition (4.42) of positiv-
+ity [182].
+It is, however, possible to bring (4.8) into the Lindblad form (4.43) if
+another assumption (in addition to the Born–Markov approximations) is
+imposed. This assumption is often called the rotating-wave approximation,
+which is commonly made in quantum optics. This assumption is justiﬁed
+whenever the typical timescale τS for the evolution of the system is short
+in comparison with the relaxation timescale of the system. For details on
+how the rotating-wave approximation is used to transform the Born–Markov
+
+--- PRINTED PAGE 167 / PDF PAGE 181 ---
+4.3 Master Equations in the Lindblad Form 167
+master equation into the Lindblad form, we refer the reader to Sect. 3.3.1
+of [18].
+Conversely, the inability of writing a master equation in the Lindblad
+form does not necessarily imply that the positivity condition (4.42) is vio-
+lated. A good example is the model for quantum Brownian motion, which
+we shall discuss in Sect. 5.2. For this model, it is possible to derive the ex-
+act, non-Markovian master equation (see Sect. 5.2.7). This equation cannot
+be brought into the Lindblad form without imposing several approximations
+and assumptions [183]. Yet, it is clear that, since the master equation is ex-
+act, it should automatically enforce the positivity of the density matrix at all
+times. As it turns out, this is indeed the case. The explanation for this ini-
+tially puzzling behavior can be found through a careful analysis of the exact
+dynamics, which shows that in the exact master equation positivity arises
+through rather subtle time dependences of the coeﬃcients appearing in the
+master equation [184,185].
+We can simplify the Lindblad master equation (4.43) further by diagonal-
+izing the matrixΓdeﬁned by the coeﬃcients γαβ appearing in this equation.
+This diagonalization is always possible because, as one can show, this matrix
+is positive (i.e., all its eigenvalues κμ are ≥ 0). Then (4.43) can be rewritten
+in the diagonal form [177,179]
+d
+dt ˆρS(t)= −i
+[ ˆH′
+S, ˆρS(t)
+]
+− 1
+2
+∑
+μ
+κμ
+{
+ˆL†
+μ ˆLμ ˆρS(t)+ˆρS ˆL†
+μ ˆLμ − 2ˆLμ ˆρS(t)ˆL†
+μ
+}
+.
+(4.44)
+Here ˆH′
+S denotes the renormalized (“Lamb-shifted”) Hamiltonian of the sys-
+tem. The so-called Lindblad operators (or “Lindblad generators”) ˆLμ are
+simply appropriate linear combinations of the original operators ˆSα, with
+coeﬃcients determined from the diagonalization of the matrix Γ.
+Note that, because the operators ˆSα are not necessarily Hermitian, the
+Lindblad operators ˆLμ do not always correspond to physical observables, but
+when they do, we can rewrite (4.44) in the more compact double-commutator
+form
+d
+dt ˆρS(t)= −i
+[ ˆH′
+S, ˆρS(t)
+]
+− 1
+2
+∑
+μ
+κμ
+[ˆLμ,
+[ˆLμ, ˆρS(t)
+]]
+. (4.45)
+In fact, our equation of motion (3.78) for environmental scattering,
+∂ρS(x,x ′,t)
+∂t = − i
+2m
+( ∂2
+∂x′2 − ∂2
+∂x2
+)
+ρS(x,x ′,t) − Λ(x − x′)2ρS(x,x ′,t),
+(4.46)
+is of the Lindblad form (4.45). To see this, let us evaluate (4.45) with the
+single Lindblad operator ˆL =ˆx and the “free”-particle Hamiltonian ˆH′
+S =
+ˆHS =ˆp2/2m,
+d
+dt ˆρS(t)= − i
+2m
+[
+ˆp2, ˆρS(t)
+]
+− 1
+2κ[ˆx,[ˆx, ˆρS(t)]]. (4.47)
+
+--- PRINTED PAGE 168 / PDF PAGE 182 ---
+168 4 Master-Equation Formulations of Decoherence
+Expressing this master equation in the position representation then yields
+∂ρS(x,x ′,t)
+∂t = − i
+2m
+( ∂2
+∂x′2 − ∂2
+∂x2
+)
+ρS(x,x ′,t) − 1
+2κ(x − x′)2 ρS(x,x ′,t),
+(4.48)
+which is evidently identical to (4.46) if we identify the Lindblad coeﬃcient
+κ/2 with the scattering constant Λ, see (3.56).
+Lindblad master equations provide us with an intuitive and rather sim-
+ple way of representing the environmental monitoring of an open quantum
+system. Most of the real physics behind this monitoring process is hidden
+in the coeﬃcients κμ appearing in (4.44). In fact, if the Lindblad operators
+are chosen to be dimensionless, the coeﬃcients κμ can be viewed as directly
+representing decoherence rates, since they have units of inverse time. Accord-
+ingly, usually the most important and diﬃcult task of estimating decoherence
+rates using the Lindblad equation consists precisely of determining these co-
+eﬃcients κμ.
+From (4.45) we immediately see that the decoherence term vanishes if
+ˆρS(t) commutes with each of the Lindblad operators ˆLμ for all times t,
+[ˆLμ, ˆρS(t)
+]
+=0 ∀μ,t. (4.49)
+In this case, ˆρS(t) evolves purely unitarily. Since the ˆLμ are simply linear
+combinations of the ˆSα, (4.49) (typically2) implies that
+[ˆSα, ˆρS(t)
+]
+=0 ∀α,t. (4.50)
+The connection to the concept of preferred pointer states (see Sect. 2.8)
+should now be rather clear. Equation (4.50) implies that simultaneous eigen-
+states of all ˆSα will be immune to decoherence, which is precisely the pointer-
+state criterion (2.94).
+Finally, let us brieﬂy mention so-called quantum-jump and quantum-
+trajectory methods. Here, the evolution of the reduced density matrix iscon-
+ditioned on an explicitly observed sequence of measurement results in the
+environment. This allows for the (formal) description of a single realization
+of the system evolving stochastically, conditioned on a particular measure-
+ment record. The dynamics are then described by a master equation of the
+Lindblad type (4.45) for the reduced density matrix ˆρC
+S conditioned on the
+measurement records of the Lindblad operators ˆLμ,
+dˆρC
+S = −i
+[ ˆHS, ˆρC
+S
+]
+dt − 1
+2
+∑
+μ
+κμ
+[ˆLμ,
+[ˆLμ, ˆρC
+S
+]]
+dt +
+∑
+μ
+√κμ W[ˆLμ]ˆρC
+S dWμ.
+(4.51)
+2One might of course devise some rather pathological linear combinations of the
+ˆSα for a particular ˆLμ such that the commutator (4.49) happens to vanish while
+the individual commutators (4.50) are nonzero.
+
+--- PRINTED PAGE 169 / PDF PAGE 183 ---
+4.4 Non-Markovian Dynamics 169
+Here, W[ˆL]ˆρ≡ ˆLˆρ+ˆρˆL† − ˆρTr
+{
+ˆLˆρ+ˆρˆL†
+}
+,a n dt h edWμ denote the so-called
+Wiener increments. Equation (4.51) corresponds to a diﬀusive “unraveling”
+of the Lindblad equation (4.45) into individual quantum trajectories that can
+then be expressed by means of a “stochastic Schr¨odinger equation.” We shall
+not go into the details here—there exists a large volume of literature on this
+topic (see, e.g., [186–198]).
+4.4 Non-Markovian Dynamics
+As we have emphasized before, the Born–Markov master equation is only
+strictly applicable if the system–environment coupling is weak and memory
+eﬀects of the environment can be neglected. In many situations of physical
+interest, however, this assumption is not fulﬁlled because of low tempera-
+tures of the environment and strong interactions of the system with its en-
+vironment. A concrete example of such non-Markovian dynamics is that of
+a superconducting qubit strongly coupled to a low-temperature environment
+of other two-level systems, a situation in which making the Born–Markov
+approximations is no longer justiﬁed [199,200].
+Intuitively, one might expect that pronounced memory eﬀects in the envi-
+ronment will cause strong dependences of the evolution of the reduced density
+operator on the past history of the full system–environment combination and
+thus make it impossible to describe the reduced dynamics by a diﬀerential
+equation that is local in time. In some situations this is indeed the case, and
+one will then, in general, have to resort to solving integro-diﬀerential equa-
+tions such as (4.22), which depend on retarded-time kernels and integrations
+over the history of the system. Such equations are encountered, for example,
+in the context of the so-called Nakajima–Zwanzig projection-operator ap-
+proach [201–203] (see also Chap. 7 of [17] for details). Such techniques lead
+to equations that are not local in time and are diﬃcult to solve analytically,
+and they are therefore rarely used in their exact forms.
+Surprisingly, however, in many other cases one can show that even non-
+Markovian dynamics can still be described by a diﬀerential equation of the
+form d
+dt ˆρS(t)= ˆK(t)ˆρS(t). (4.52)
+In contrast with the Born–Markov master equation (4.8), the superoperator
+ˆK(t) depends here explicitly on t, but there are no dependences on previous
+times t′ <t . In particular, the change in ˆ ρS is entirely determined by ˆρS
+evaluated at the same timet only, and no integration over the history of the
+system in the equation of motion is required. Therefore the master equation
+(4.52) is still local in time.
+Time-local non-Markovian master equations of the form (4.52) can be ar-
+rived at in various ways. For example, in the case of quantum Brownian mo-
+tion (see Sect. 5.2), one can derive a master equation that is non-Markovian
+
+--- PRINTED PAGE 170 / PDF PAGE 184 ---
+170 4 Master-Equation Formulations of Decoherence
+(but still assumes the weak-coupling limit) in much the same way as the
+equation deduced from the Born–Markov master equation (4.8). The two
+master equations diﬀer only in the range of the time integral appearing in
+the expressions (4.9) for the operatorsˆBα and ˆCα. In the Markovian case, the
+upper limit of the integral is taken to inﬁnity, leading to time-independent
+expressions for ˆBα and ˆCα. Instead, one can let the integral extend from zero
+to t only, resulting in explicitly time-dependent operators ˆBα(t)a n d ˆCα(t).
+With this formally simple modiﬁcation, a “pre-Markovian” master equation
+for quantum Brownian motion emerges that exhibits more ﬁne-grained dy-
+namics, especially in the initial regime close tot = 0. (This equation is of the
+Redﬁeld type mentioned in Sect. 4.2.2.)
+In fact, for the case of quantum Brownian motion it is possible to de-
+rive the exact non-Markovian master equation (see Sect. 5.2.7), which has
+the same structure as the Markovian master equation save for more compli-
+cated expressions for the environment self-correlation functions (4.10). The
+existence of an exact solution of the quantum Brownian motion model also
+enables us to directly compare the resulting dynamics to the dynamics ob-
+tained from the approximate Born–Markov master equation. In this way, we
+can investigate to what extent the Born–Markov assumptions may constitute
+a reasonable set of approximations for a given physical situation described
+by the model for quantum Brownian motion. The issue of Markovian vs.
+non-Markovian dynamics in quantum Brownian motion will be discussed in
+more detail in Sects. 5.2.2 and 5.2.7 (see also [183]). In general, it is often
+possible to arrive at non-Markovian but time-local master equations of the
+type (4.52) by using the so-called time-convolutionless projection operator
+technique [204–207]. We shall not go into the details of this approach here.
+We conclude that the Born–Markov master equation (4.8), especially
+when written in the simple Lindblad forms (4.44) or (4.45), allows for a fairly
+straightforward calculation of the approximate decoherence dynamics and for
+an intuitive connection between the formalism (the Lindblad operators) and
+its physical interpretation (the continuous monitoring of system observables
+by the environment). However, in each physical situation one needs to care-
+fully evaluate to what extent the assumptions underlying the derivation of
+this master equation, such as weak system–environment couplings and neg-
+ligible environmental memory eﬀects, are actually appropriate. In the next
+Chap. 5, when discussing concrete models, we will frequently come back to
+this issue.

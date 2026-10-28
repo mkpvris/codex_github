@@ -1,0 +1,55 @@
+104    2 The Basic Formalism and Interpretation of Decoherence
+
+2.15.1 The Schmidt Decomposition
+
+Consider two systems A and B endowed with Hilbert spaces HA and HB ,
+respectively. Then the Schmidt decomposition theorem [144] tells us that an
+arbitrary pure state |Ψ  of the composite system AB can always be written
+in the diagonal (or “Schmidt”) form
+                                    
+                             |Ψ  =   λi |ai  |bi  .              (2.127)
+                                                 i
+
+Here the Schmidt states |ai  and |bi  form orthonormal bases (the so-called
+Schmidt bases) of HA and HB , respectively, and the expansion coeﬃcients
+                                            2
+λi are complex numbers fulﬁlling i |λi | = 1. However, by absorbing the
+phase factors into the Schmidt basis states, these coeﬃcients
+                                                             can be chosen
+                                        √
+to be real and nonnegative numbers pi obeying i pi = 1, and thus the
+Schmidt decomposition can be written as
+                                 √
+                          |Ψ  =         pi |ai  |bi  .             (2.128)
+                                             i
+
+Furthermore, it can be shown that this decomposition is unique if and only
+                  √
+if the coeﬃcients pi are all diﬀerent from one another.
+    The issue of the uniqueness of the Schmidt decomposition has already
+been touched upon in our discussion of the preferred-basis problem in
+Sect. 2.5.2. There we showed that the basis ambiguity in the ﬁnal compos-
+ite system–apparatus state (which arises as the result of a von Neumann
+measurement interaction and is in the diagonal Schmidt form) leads to the
+problem that the measured observable cannot be uniquely inferred from this
+state.
+    The Schmidt theorem also has immediate implications for the reduced
+density matrices ρ̂A and ρ̂B of A and B, respectively. Using (2.128), ρ̂A is
+given by
+
+                ρ̂A = TrB |Ψ Ψ |
+                               ⎡                                ⎤
+                               √
+                    =    bk | ⎣   pi pj |ai aj | ⊗ |bi bj |⎦ |bk 
+                        k            ij
+                       
+                   =        pi |ai ai |,                                (2.129)
+                        i
+
+
+and similarly
+
+                ρ̂B = TrA |Ψ Ψ |
+                      
+                    =    pi |bi bi |.                                   (2.130)
+                        i

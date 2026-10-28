@@ -1,0 +1,47 @@
+198    5 Canonical Models For Decoherence
+
+position and the resulting decoherence in position. In the case in which the
+wave packets are initially separated in momentum only, the state (5.67) is
+already well-localized in position. Therefore the environmental monitoring of
+the position of the system cannot make this state even more localized in po-
+sition, and the superposition (5.67) is initially insensitive to the monitoring
+by the environment, and thus to decoherence.
+    However, on a dynamical timescale this superposition evolves into a su-
+perposition of positions, since the opposite momenta ±P associated with the
+two direct peaks shift these peaks into opposite X-directions (see the right
+column of Fig. 5.4). Now the state becomes sensitive to the environmental
+monitoring of position, which in turn leads to the damping of the oscilla-
+tions. This explains why decoherence in momentum does happen in spite
+of the absence of a momentum term in the interaction Hamiltonian, and
+why this decoherence occurs on a dynamical timescale rather than on the
+much shorter timescale for decoherence in position (i.e., the timescale cor-
+responding to decoherence in the quantity that is directly monitored by the
+environment). In the following, we shall make these arguments more precise
+by analyzing the time dependence of the quantities appearing in the direct
+and interference terms (5.72a) and (5.72b) of the Wigner function (5.71).
+    First, let us look at the dynamics of the Gaussian peaks described by the
+direct terms W1,2 (X, P, t). These peaks follow “classical” trajectories given
+by X(t) = ±Xc (t) and P (t) = ±Pc (t), which depend on the particular choice
+of the spectral density but not on the temperature of the environment. The
+widths of the Gaussian peaks, given by δ1 (the width in position) and δ2 (the
+width in momentum), change over time due to the presence of the environ-
+ment. We also see that the environment leads to a distortion of the shape
+of the Gaussians, quantiﬁed by the coeﬃcient β. Both the widths δ1,2 and
+the distortion β depend on the spectral density and the temperature of the
+environment.
+    Of most interest for our discussion of decoherence is the interference term
+Wint (X, P, t), see (5.72b), representing the characteristic oscillations that are
+a signature of interference between the wave packets Ψ1 (x) and Ψ1 (x). First
+of all, we see that the (temperature-dependent) wavenumbers κx and κp of
+these oscillations along the X and P axes are altered by the interaction
+with the environment. The quantity most relevant to decoherence is the term
+exp (−Aint ), which (as we shall see) describes the damping of the oscillations
+and thus decoherence. We can interpret this term as quantifying the visibility
+of the interference fringes, since exp (−Aint ) equals the peak-to-peak ratio
+between the interference term Wint (X, P ) (which takes its maximum value
+at X = P = 0) and the direct terms W1,2 (X, P ) (which assume their peak
+values at X = ±Xc and P = ±Pc ),
+
+                  1                Wint (X = 0, P = 0)
+ exp (−Aint ) =                                                       . (5.74)
+                  2 [W1 (X = Xc , P = Pc )W2 (X = −Xc , P = −Pc )]1/2

@@ -1,0 +1,53 @@
+140     3 Localization Due to Environmental Scattering
+
+                              dρ̂(t)                 
+                                     = −i Ĥ(t), ρ̂(t) .                         (3.77)
+                               dt
+Expressed in the position representation, we then obtain the full equation of
+motion for the particle,
+                           2          
+   ∂ρS (x, x , t)     i     ∂      ∂2
+                   =−           −        ρS (x, x , t) − Λ(x − x )2 ρS (x, x , t).
+         ∂t           2m ∂x2      ∂x2
+                                                                               (3.78)
+In Chap. 4, we will recognize this equation as an example of a master equation
+for decoherence, i.e., of an equation of motion that describes the evolution of
+the reduced density matrix of an object interacting with an environment.
+    It is now fairly straightforward to construct solutions of the equation of
+motion (3.78) [7]. We will closely follow Joos et al. [17] in our subsequent
+discussion. Let us use the Gaussian ansatz
+                      )
+  ρS (x, x , t) = exp −A(t)(x − x )2 − iB(t)(x − x )(x + x )
+                                                                       *
+                                                 −C(t)(x + x )2 − D(t) , (3.79)
+
+where A(t), B(t), C(t), and D(t) are time-dependent coeﬃcients which de-
+pend on the state at t = 0. If ρS (x, x , t) is Hermitian, then these coeﬃcients
+are real-valued functions of time.
+   Each of the coeﬃcients A(t), B(t), C(t), and D(t) appearing in (3.79) has
+a particular interpretation (see Fig. 3.4). The width of the Gaussian in the
+“oﬀ-diagonal” x = −x direction quantiﬁes the range of spatial      + coherence.
+From (3.79) we see that this width is inversely proportional to A(t), which
+motivates the introduction of a characteristic coherence length
+
+
+
+                             x
+
+
+
+                                                                       x
+                                           ensemble
+                                            width
+                         coherence
+                           length
+
+
+
+
+Fig. 3.4. Illustration of some of the key quantities relevant to the description of
+the Gaussian density matrix (3.79). The extension of the density matrix in+the oﬀ-
+diagonal x = −x direction is quantiﬁed by the coherence length (t) ≡ 1/ 8A(t),
+which measures the characteristic distance over which +   the system can exhibit spatial
+interference eﬀects. The ensemble width ΔX(t) ≡ 1/ 8C(t) represents the size of
+the probability distribution P (x, t) ≡ ρS (x, x, t) for diﬀerent positions x.

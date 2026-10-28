@@ -1,0 +1,45 @@
+                                              5.3 The Spin–Boson Model        207
+
+5.3 The Spin–Boson Model
+The spin–boson model corresponds to a single two-level system interacting
+with a large reservoir of bosonic ﬁeld modes, i.e., a spin- 12 particle coupled to
+an environment of harmonic oscillators. This model has been widely studied
+in the context of decoherence and dissipation in quantum systems. The role
+of two-level (qubit) systems in quantum computing (Chap. 7) and in exper-
+iments on macroscopic quantum coherence (Chap. 6) has led to additional
+interest in the spin–boson model. Recently, the model has even been used to
+analyze the role of quantum decoherence in biological systems [235].
+    The seminal review paper by Leggett et al. [209] discusses the extremely
+rich dynamics of the spin–boson model in great detail. Since the environment
+consists of harmonic oscillators, it is possible to derive the exact Feynman–
+Vernon inﬂuence functional [211] for the model and thereby to eﬀectively
+eliminate the individual bath degrees of freedom from the problem (see
+Sect. IV of [209]). Thus, despite its complex dynamics, it is in principle pos-
+sible to solve the spin–boson model exactly. In particular, one can formally
+write down exact expressions for the quantities of interest for the central spin,
+such as the expectation value σ̂z (t) and correlation functions.
+    Unfortunately, these exact expressions are rather complicated and very
+cumbersome to evaluate in practical situations of interest. One therefore often
+employs certain assumptions and approximations. One important example is
+the so-called “non-interacting blip approximation” that has been studied in
+detail by Leggett et al. [209]. This approximation not only greatly simpliﬁes
+the task of determining the dynamics of the central spin, but the solutions
+obtained from it also turn out to be very close to the exact results over most of
+the parameter space. In fact, in certain parameter regimes they even coincide
+with the exact results.
+    Here we shall not discuss these more advanced methods and instead ap-
+proach the spin–boson model in the following two steps. First, we shall con-
+sider a simpliﬁed version of the model in which the Hamiltonian of the spin
+system does not contain a tunneling term. For this model, the exact system–
+environment dynamics can be determined in a fairly straightforward manner
+without the use of the master-equation formalism. This simpliﬁed spin–boson
+model neatly exhibits characteristic features of decoherence, making it an
+ideal candidate for the study of decoherence in two-level systems. In fact,
+when quantum information and quantum computation started to attract at-
+tention in the 1990s (see Chap. 7), the model was used to gain some ﬁrst
+insights into the decoherence of a single qubit in the presence of a ther-
+mal environment [89, 236]. Since then, it has been frequently revisited (see,
+e.g., [96, 237]).
+    In Sect. 5.3.2, we shall then generalize our model to the full spin–boson
+model by including a tunneling term in the Hamiltonian. We will derive
+the explicit form of the Born–Markov master equation (4.8) for this model,

@@ -1,0 +1,46 @@
+                           7.1 A Brief Overview of Quantum Computing          295
+
+and correspond to the two possible values of the classical bit. Such “qubit”
+systems have already been discussed in Sect. 2.10 and Chap. 5. In principle,
+any quantum system with an eﬀectively two-dimensional state space can be
+used as a qubit. Examples include photons with their two polarization degrees
+of freedom, ionic or nuclear spins, and atoms with two dominant energy levels.
+We shall describe some of these physical realizations in Sect. 7.1.5 below.
+    Quantum mechanics then tells us that this system could, at least in prin-
+ciple (i.e., provided decoherence in the {|0 , |1} basis can be neglected), also
+be found in a coherent superposition
+                               |ψ = α |0 + β |1 .                        (7.1)
+Sloppily speaking, this means that a qubit can simultaneously encode both
+logical bits 0 and 1, in contrast with a classical bit that has a value of either
+0 or 1. Since there are inﬁnitely many ways to choose the coeﬃcients α and
+β, there exist inﬁnitely many possible states of a single qubit, as opposed to
+the two states of a classical bit. A single qubit in a given state |ψ can encode
+two real numbers, whereas a classical qubit represents only a single binary
+digit. This can be seen from the fact that |ψ can always be written in the
+form
+                         |ψ = |α| eiφ0 |0 + |β| eiφ1 |1 .                 (7.2)
+If we disregard an irrelevant overall phase factor, this may be expressed as
+                        |ψ = |α| |0 + |β| ei(φ1 −φ0 ) |1 .               (7.3)
+                                           2
+The normalization requirement |ψ|ψ| = 1 then implies that we may rewrite
+this equation as
+                                           
+                               θ             θ iφ
+                   |ψ = cos      |0 + sin     e |1 ,              (7.4)
+                               2             2
+with φ ≡ φ1 − φ0 and an appropriate choice of the angle θ (0 ≤ θ ≤ π).
+We note that the form (7.4) allows for a nice visualization of such a state in
+terms of the Bloch-sphere picture (see Fig. 7.1). We have thus shown that any
+of the inﬁnitely many possible single-qubit states encodes two real numbers
+(here given by the angles θ and φ).
+    Suppose now that our system is composed of N qubits. The Hilbert space
+of this system has dimension 2N , since it is given by the tensor product
+H = H1 ⊗H2 ⊗· · ·⊗HN of the single-qubit Hilbert spaces Hi , 1 ≤ i ≤ N . Thus
+there are 2N mutually orthogonal basis states, which are typically chosen to
+be product states of the original single-qubit basis states |0i and |1i of the
+ith qubit (1 ≤ i ≤ N ),
+                         |00 · · · 0 ≡ |01 |02 · · · |0N ,
+                         |00 · · · 1 ≡ |01 |02 · · · |1N ,
+                                      ..
+                                       .
+                         |11 · · · 1 ≡ |11 |12 · · · |1N .              (7.5)

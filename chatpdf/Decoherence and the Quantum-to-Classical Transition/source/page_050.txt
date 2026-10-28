@@ -1,0 +1,50 @@
+                  2.4 The Concept and Interpretation of Density Matrices         35
+
+there will be no interference terms in this basis. Thus our association between
+interference (coherence) and the “quantumness” of a system must not lead us
+to the erroneous conclusion that the absence of interference terms from the
+density matrix written in some basis necessarily implies that the system “does
+not have quantum properties” or “behaves classically.” The basis in which
+the density matrix takes this diagonal form may not at all correspond to
+the familiar determinate quantities of our experience (see also Sect. 2.15.1).
+Expressed in a diﬀerent basis, interference terms will in general reappear,
+showing the persistent quantum coherence between these basis states.
+    Let us now introduce the trace operation, denoted by “Tr.” This operation
+always acts on some operator Â and is implemented in the following way.
+Choose an orthonormal basis {|φi } of the Hilbert space of the system, and
+perform the operation
+                                     
+                            Tr(Â) ≡     φi | Â |φi  .                 (2.14)
+                                        i
+
+It is easy to show that this operation is linear,
+
+                           Tr(Â + B̂) = Tr(Â) + Tr(B̂),                    (2.15)
+
+and that it is independent of the particular choice of the orthonormal basis
+{|φi }. Thus we can use any arbitrary set of orthonormal basis vectors to
+compute the trace.
+     What is the reason for introducing the trace operation? To answer this
+question, let us consider the operator Â = ρ̂Ô, formed by the product of the
+pure-state density matrix (2.11) and a Hermitian operator Ô representing
+some observable that is measured on the system. Let us choose the eigen-
+states |oi  of Ô, with corresponding eigenvalues oi (we shall assume a discrete
+spectrum here), as the orthonormal basis for evaluating the trace (2.14) of
+ρ̂Ô. This yields
+                                                                     2
+                Tr(ρ̂Ô) =     oi | (|ψψ|) Ô |oi  =   oi |oi |ψ| .  (2.16)
+                            i                         i
+
+                       2
+But the term |oi |ψ| is simply the Born probability of the outcome oi in
+a measurement represented by Ô.9 Thus Tr(ρ̂Ô) represents an average over
+
+   9
+     The Born rule [19] can be stated as follows. Suppose a system is described by
+a pure state |ψ. Suppose further that an observable represented by a Hermitian
+operator Ô, with eigenstates |oi  and corresponding eigenvalues oi (again assuming
+a discrete spectrum for Ô), is measured on the system. Then:
+(i) The states |oi  and corresponding (eigen)values oi are the only possible out-
+     comes of the measurement.
+(ii) The probability of ﬁnding the system in the state |oi  after the measurement
+     (or, put diﬀerently, of measuring the value oi ) is given by |oi |ψ|2 .

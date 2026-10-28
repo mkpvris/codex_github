@@ -1,0 +1,47 @@
+186    5 Canonical Models For Decoherence
+
+similarity between the quantum and classical settings originally motivated
+the choice of the term “quantum Brownian motion.” Incidentally, (5.37) also
+conﬁrms our earlier ﬁnding (5.33) that the coeﬃcient γ quantiﬁes dissipation,
+since P̂ 2 /2M  is the kinetic energy of the system.
+    The role of D as a diﬀusion coeﬃcient can also be seen from the master
+equation (5.29) in the Wigner representation. Singling out the D term, we
+obtain the evolution equation
+                      ∂                   ∂2
+                         W (X, P, t) = D      W (X, P, t),                (5.39)
+                      ∂t                 ∂P 2
+which has the well-known form of a diﬀusion equation in the variable P for
+the case of a constant diﬀusion coeﬃcient D.
+   Finally, we turn our attention to the last term
+                                              
+                             −f X̂, P̂ , ρ̂S (t)                    (5.40)
+
+in the master equation (5.25). This term, too, describes diﬀusion and deco-
+herence, just like the normal-diﬀusion term (5.34). This can best be seen from
+the Wigner form (5.29) of the master equation. The contribution due to the
+f term alone is
+                    ∂                    ∂ ∂
+                       W (X, P, t) = −f       W (X, P, t).                (5.41)
+                    ∂t                  ∂X ∂P
+This form is similar to the diﬀusion equation (5.39) in terms of the appearance
+of a double derivative on the right-hand side of the equation. However, in
+contrast with the “normal” diﬀusion equation, in (5.41) this double derivative
+is composed of single derivatives with respect to two diﬀerent variables X
+and P . Motivated by this diﬀerence, the quantity f is often referred to as the
+anomalous-diﬀusion coeﬃcient in the literature. As we will show below, in
+many physical situations of interest the inﬂuence of this anomalous-diﬀusion
+term (5.40) on the reduced dynamics of the system is negligibly small in
+comparison with the normal-diﬀusion term (5.34). In such cases, we may use
+a simpliﬁed version of the master equation (5.25) without the anomalous-
+diﬀusion term (see Sect. 5.2.4).
+    Note that in our model the normal-diﬀusion and anomalous-diﬀusion co-
+eﬃcients depend on both the spectral density J(ω) and the temperature T
+of the environment [see (5.26) with (5.16) and (5.17)]. This is in contrast to
+the frequency shift Ω 2 and the momentum-damping rate γ, which, as already
+mentioned above, are independent of the temperature of the environment.
+    Finally, we shall mention that in the literature a (partially) “pre-Marko-
+vian” form of the coeﬃcients (5.26) is often discussed (see, e.g., [15, 16]). In
+this case, the upper limit of the time integral is not yet taken to inﬁnity but
+only up to the time t (see also the discussion on p. 163). In other words, an
+explicitly time-dependent version of the coeﬃcients Ω     2 (t), γ(t), D(t), and
+f (t) is considered,

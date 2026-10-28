@@ -1,0 +1,48 @@
+                  2.4 The Concept and Interpretation of Density Matrices         45
+
+Relevance to Decoherence
+Before deriving (2.41), let us ﬁrst discuss the importance of the concept of
+reduced density matrices for the description of decoherence. Recall that de-
+coherence arises from interactions between two systems, namely, the “system
+of interest” and its environment. Typically, such interactions will then lead to
+an entangled state for the system–environment combination. Usually, the ob-
+server will perform measurements only on the system of interest, whereas the
+environment is typically either inaccessible, cannot be completely measured,
+or is simply of no interest. As an example, we may consider the environment
+of photons scattering oﬀ an object. In practice, it will usually be impossible
+to intercept all of these scattered photons, and thus the observer will only be
+able to measure observables that pertain to the system and a fraction of the
+environmental photons.
+    This is where the reduced density matrix comes into play. By tracing
+over (all, or a fraction of) the degrees of freedom of the environment of the
+system–environment density matrix, we obtain a complete and exhaustive
+description of the measurement statistics for our system of interest in terms
+of the reduced density matrix of the system. All inﬂuences of the environ-
+ment on local measurements performed on the system will automatically be
+encapsulated in this reduced density matrix. Since the system is entangled
+with its environment, no individual quantum state can be attributed to the
+system itself. Therefore, the reduced density matrix is all we have available to
+describe the statistics of measurements on the system,13 and this reduced den-
+sity matrix is necessarily nonpure due to the presence of system–environment
+entanglement.
+
+Derivation of the Reduced Density Matrix
+Let us now derive the expression (2.41) for the reduced density matrix. To
+do so, let us consider an entangled state of two systems A and B of the form
+                               1
+                        |Ψ  = √ (|a1  |b1  + |a2  |b2 ) ,               (2.42)
+                                2
+where |ai  and |bi , i = 1, 2, are arbitrary normalized (but not necessarily
+orthogonal) states of A and B, respectively. From (2.11), the corresponding
+pure-state density matrix is
+
+                                       1
+                                           2
+                     ρ̂ = |Ψ Ψ | =          |ai aj | ⊗ |bi bj |.       (2.43)
+                                       2 ij=1
+  13
+     The so-called “envariance” program, recently developed by Zurek [16, 65–67]
+and outlined in Sect. 8.2.2, uses symmetries of entangled states to provide a frame-
+work that allows one to discuss (given a set of assumptions) the state of, and mea-
+surements on, a system entangled with another system without the use of reduced
+density matrices (and thus without presuming the Born rule).

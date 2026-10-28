@@ -1,0 +1,49 @@
+                  2.4 The Concept and Interpretation of Density Matrices           41
+
+space of the system, the mixed-state density matrix (2.20) has purity [see
+(2.28)]
+                                   N
+                               ς=      p2i .                        (2.31)
+                                         i=1
+
+The sum is bounded from below by the value 1/N , which is attained precisely
+if the density matrix is maximally mixed, i.e., if pi = 1/N for all i = 1, . . . , N .
+    Another commonly used measure for quantifying the (im)purity of the
+density matrix is the so-called von Neumann entropy. This measure was
+ﬁrst introduced in 1927 by the mathematician John von Neumann [59], who
+subsequently developed it further in his monumental book on quantum me-
+chanics [60] (see also [61] for some interesting historical remarks). The von
+Neumann entropy can be viewed as a generalization of the notion of entropy
+in classical statistical mechanics to the case of quantum-mechanical density
+operators. It is given by
+                                                  
+                     S(ρ̂) ≡ −Tr (ρ̂ log2 ρ̂) ≡ −   λi log2 λi ,             (2.32)
+                                                   i
+
+where the λi denote the eigenvalues of the density matrix ρ̂. By convention,
+the case λi = 0 is handled by deﬁning 0 log2 (0) ≡ 0, such that states absent
+from a mixture do not enter into the value of the entropy (as it should be).
+    Let us now again determine some explicit values for this measure. If ρ̂ is
+pure, then all λi = 0 except for one (which must therefore take on a value of
+one), and thus S(ρ̂) = 0. Thus a pure state is characterized by a value of zero
+of the von Neumann entropy. On the other hand, for a maximally mixed state
+that corresponds to complete ignorance about which of the mutually exclusive
+(and thus orthogonal) pure states |ψi , i = 1, . . . , N , has been prepared, we
+have λi = pi = 1/N and thus
+
+                                 S(ρ̂) = log2 (N ),                            (2.33)
+
+which is the maximum value that S(ρ̂) can take. For the intermediate case of
+non-maximally mixed states, the value is correspondingly lower. For example,
+if the preparation device prepares only a subset of orthogonal states |ψi ,
+i = 1, . . . , M < N , with equal probabilities, we obtain S(ρ̂) = log2 (M ).
+These values show that the deﬁnition of the von Neumann entropy matches
+our intuition about entropy in the classical (i.e., thermodynamic) setting,
+where entropy is a measure of the amount of information—or, conversely, of
+ignorance—about the state of the system, typically quantiﬁed by the number
+of diﬀerent possible states available to the system.
+
+2.4.4 The Basis Ambiguity of Mixed-State Density Matrices
+
+In Sect. 2.4.2 above we discussed how the notion of a mixed state is based on
+a classical probability concept. Accordingly, one also says that a mixed-state

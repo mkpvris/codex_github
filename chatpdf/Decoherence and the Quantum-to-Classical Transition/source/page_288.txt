@@ -1,0 +1,47 @@
+                         6.3 SQUIDs and Other Superconducting Qubits          275
+
+Here the eigenstates of the Pauli spin operator σ̂z are | and |, with
+2 = 2Ip (Φext − Φ0 /2) denoting the asymmetry energy between these states,
+and Ip ≈ Ic . Δ is the matrix element for tunneling between | and |. The
+two lowest-lying energy eigenstates |0 and |1 are then linear combinations
+of | and | given by
+
+                        |0 = cos(θ) | + sin(θ) | ,                   (6.35a)
+                        |1 = − sin(θ) | + cos(θ) | ,                 (6.35b)
+                                            √
+with tan 2θ = Δ/ and energies E0,1 = ∓ Δ2 + 2 . The  √ energy-level split-
+ting between |0 and |1 is therefore ΔE = 2E1 = 2 Δ2 + 2 . Away from
+the bias point Φext = Φ0 /2,   Δ, and thus the states | and | are
+essentially identical to the zero-ﬂuxoid and one-ﬂuxoid energy eigenstates |0
+and |1, in agreement with our discussion above. The expectation value of
+the supercurrent corresponding to the two states |0 and |1 can be shown to
+be equal to ±Ip cos 2θ (where the positive sign indicates clockwise direction
+of the current).
+
+6.3.3 Superposition States and Coherent Oscillations in SQUIDs
+
+Let us now consider what happens if the SQUID is at the bias point
+Φext = Φ0 /2. Now the double well becomes symmetric and we have  = 0 in
+(6.34), i.e., the energy levels in the left and right wells line up. In this case,
+classically, the energy levels associated with the states |0 and |1 would cross
+and therefore these states would become degenerate. Quantum-mechanically,
+however, this degeneracy is lifted by the continued existence of a tunneling
+barrier Δ between the wells [see (6.34)], which leads to a “repulsion” of the
+energy levels, producing an anticrossing of these levels (Fig. 6.20). Since now
+θ = π/4 in (6.35a) and (6.35b), the energy ground state |0 and the ﬁrst
+excited state |1 are given by symmetric and antisymmetric superpositions
+of the persistent-current states | and |,
+                                  1
+                            |0 = √ (| + |) ,                         (6.36a)
+                                   2
+                                  1
+                            |1 = √ (− | + |) .                       (6.36b)
+                                   2
+The energy splitting ΔE between these two new eigenstates is typically very
+small and is√solely determined by the capacitance C of the junction, scaling
+as ΔE ∝ e− C .
+    Since | and | are localized in, respectively, the left and right wells,
+superpositions (6.36a) and (6.36b) are delocalized across the two wells. The
+existence of these superpositions in a SQUID was experimentally conﬁrmed
+in 2000 by Friedman et al. [276] and independently by van der Wal et al. [277].
+In the experiment by Friedman et al., the states | and | corresponded

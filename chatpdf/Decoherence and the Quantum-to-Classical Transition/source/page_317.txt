@@ -1,0 +1,47 @@
+                                          7.4 Quantum Error Correction       305
+
+strong, according to current estimates, to allow for useful quantum compu-
+tations to be carried out if no error-correcting methods are employed. A
+concrete example that demonstrates the importance of active quantum error
+correction for an even comparably basic computational task has been given
+by Miquel, Paz, and Zurek [350] and by Miquel, Paz, and Perazzo [358]. The
+authors modeled an ion-trap quantum computer composed of 18 ions (the
+qubit system) that implements Shor’s factorization algorithm [344, 345] (see
+Sect. 7.1.4) through a series of about 15,000 gate operations, physically rep-
+resented by laser pulses incident on the ions. Errors are introduced into the
+computation both by imperfect implementations of the gate operations [350]
+and by environmental decoherence of the qubit system [358]. It was demon-
+strated that, without error correction, the computational task of factorizing
+even small numbers (the authors studied the example of the number 15)
+would very rapidly go astray, making it eﬀectively impossible to implement
+the algorithm in practice.
+
+7.4.1 Classical Versus Quantum Error Correction
+
+First of all, to get a feel for how error correction in the quantum setting de-
+mands new approaches, let us brieﬂy review how error correction is typically
+implemented in a classical computer. Here, the key idea is that of redundancy.
+That is, instead of encoding one bit of information (a logical bit) in a single
+physical bit, we encode the logical bit in several physical bits. If now a small
+fraction of these physical bits gets corrupted, we can still extract the original
+logical bit by a simple majority vote. For example, we may encode the logical
+bits 0 and 1 in three physical bits,
+
+                                 0L ←→ 000,                               (7.9a)
+                                 1L ←→ 111,                               (7.9b)
+
+where we have used the subscript “L” to denote the logical bit. Suppose now
+that some noise process ﬂips the third physical bit of the encoded bit 0L ,
+
+                                 000 −→ 001.                              (7.10)
+
+By a simple majority vote, we may now conclude that the uncorrupted state
+was likely to be “000.” Of course, this protocol fails if more than one bit was
+ﬂipped. Clearly, for our scheme to bring about any improvement over the
+completely uncorrected case, we must therefore require the probability of a
+single bit ﬂip to be less than 50%. If this probability was larger than 50%,
+then the three-bit state would in average suﬀer more than one bit ﬂip, and
+the error correction would, in average, yield the wrong state.
+    The approach of redundant encoding cannot be directly taken over to the
+quantum setting. The idea analog to the classical case would be to copy a
+single-qubit state

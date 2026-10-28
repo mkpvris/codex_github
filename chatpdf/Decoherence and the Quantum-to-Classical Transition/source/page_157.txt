@@ -1,0 +1,50 @@
+142     3 Localization Due to Environmental Scattering
+
+
+
+
+                            x
+
+
+                                                                  x
+
+
+
+
+Fig. 3.5. Illustration of the initial density matrix ρS (x, x , 0) [see (3.85)]. The
+density matrix has the shape of a symmetric Gaussian in the (x, x ) plane, with a
+coherence length (0) (the extension along the “oﬀ-diagonal” x = −x ) equal to the
+ensemble width ΔX(0) (the width along the diagonal x = x ).
+
+
+resulting time dependence of the coeﬃcients A(t), B(t), C(t), and D(t) is
+easily computed. Let us explicitly state the expressions for A(t) and C(t),
+which read (see [7] or Appendix A2 of [17] for the derivation)
+
+                          Λt3 + 3m2 b2 /2 + 2Λ2 b2 t4 + 12Λm2 b4 t
+                 A(t) =                                                       (3.86)
+                                 3t2 + 8Λb2 t3 + 12m2 b4
+
+and
+                            " 2                  #−1
+                          1   t     8 Λt3      2
+                 C(t) =           +       + 4b       .                        (3.87)
+                          2 m2 b2   3 m3
+Before studying the resulting time evolution of related key quantities such
+as the coherence length, ensemble width, and purity of the reduced density
+matrix, let us brieﬂy discuss how we expect the initial Gaussian (3.85) to
+evolve over time if decoherence due to environmental scattering is taken into
+account. We anticipate that the interaction with the environment will make
+it increasingly hard to observe spatial coherences over a given distance Δx =
+|x − x |. That is, we expect the coherence length (t) [see (3.80)] to decrease
+over time, “squeezing” the Gaussian (3.85) in the direction perpendicular to
+the “classical” diagonal x = x . In the limit of complete decoherence, the
+Gaussian would then approach the shape of the quasiclassical distribution,
+i.e., that of an inﬁnitely narrow ridge along the diagonal x = x . At the same
+time, we anticipate the squeezing in the x = −x direction to be accompanied
+by a spreading in the x = x direction.
+     Let us now conﬁrm these intuitions by studying the time evolution of some
+of the relevant quantities, using the explicit expressions (3.86) and (3.87) for
+the coeﬃcients A(t) and C(t). Probably the quantity of most interest to
+decoherence is the coherence length (t) deﬁned in (3.80). Using (3.86), the
+time dependence of this quantity is given by

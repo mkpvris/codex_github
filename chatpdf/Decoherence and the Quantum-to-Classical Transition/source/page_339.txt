@@ -1,0 +1,46 @@
+                                               7.6 Summary and Outlook         327
+
+time-dependent modiﬁcations of the Hamiltonian of the system that eﬀec-
+tively counteract the inﬂuence of the environment. These modiﬁcations take
+the form of sequences of rapid projective measurements or strong control-ﬁeld
+pulses acting on the system only (“quantum bang-bang control” [379]). Even
+if the structure of the system–environment interaction Hamiltonian is not
+known at all, decoherence can be suppressed arbitrarily well in the limit of
+an inﬁnitely fast rate of the decoupling control ﬁeld, thus dynamically creat-
+ing a DFS (which then represents a dynamically decoupled subspace). In the
+realistic case of a ﬁnite control rate, suﬃcient (albeit imperfect) protection
+from decoherence can be achieved via this decoupling technique provided the
+control rate is larger than the fastest timescale set by the rate of formation
+of environmental entanglement.
+
+
+7.6 Summary and Outlook
+The key obstacle to the realization of a quantum computer is the required
+trade-oﬀ between shielding and controllability. On the one hand, we need
+to construct qubit systems that are reasonably protected from unwanted
+interactions with the environment in order to minimize decoherence. On the
+other hand, these qubit systems must remain suﬃciently open to allow for
+their coherent control in order to perform the quantum computation.
+    Given that we thus cannot simply isolate the qubits, the minimization
+of decoherence in quantum computation will always require a combination
+of techniques, such as active quantum error correction, decoherence-free sub-
+spaces, environment engineering, dynamical decoupling, etc. One can show
+that, once the (typically rather unrealistic) restriction to single-qubit errors is
+dropped, universal fault-tolerant quantum computation can only be achieved
+if one uses both DFS and quantum error correction [373]. The idea is then to
+ﬁrst construct the quantum computer in such a way as to exploit (or create)
+dynamical symmetries which allow for an encoding in subspaces that are ap-
+proximately decoherence-free to a suﬃcient degree. Eﬀective DFS can also
+be created and maintained during the quantum computation via externally
+induced time-dependent modiﬁcations of the evolution of the qubit system.
+Since DFS exhibit a certain degree of robustness toward small perturbations
+from the ideal conditions, this approach will induce a certain stability of the
+quantum computation toward decoherence eﬀects. Then, as a second step,
+schemes for quantum error correction can be used to try to actively recover
+from the inﬂuence of decoherence.
+    To date, it has been possible to coherently control only a handful of qubits,
+much too few to allow for any useful quantum computation to be carried out.
+It remains to be seen if, and when, it will be possible to suﬃciently prolong
+decoherence times to enable the construction of a working quantum computer.
+Regardless, the research into strategies for combating decoherence sparked by
+the interest in quantum computing has also proved fruitful for improving our

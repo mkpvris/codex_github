@@ -1,0 +1,56 @@
+3.4 Decoherence Due to Scattering of Thermal Photonsand Air Molecules         133
+
+environmental scattering (see Sect. 3.3.2) is usually appropriate. At any rate,
+considering this limit (rather than the short-wavelength limit of Sect. 3.3.1)
+ensures that we obtain lower bounds on the decoherence rate.
+   The relevant diﬀerential cross section is then given by the Rayleigh law
+[168] (averaged over the diﬀerent polarizations of the scattered radiation),
+                                  q 4  ε − 1  2 1            
+                            2
+             |f (q n̂, q n̂ )| =       a6               1 + cos2 Θ .    (3.59)
+                                         ε+2       2
+We see that this diﬀerential cross section depends on the magnitude q of
+the momentum of the environmental particle and on the scattering angle Θ
+between the directions n̂ and n̂ of the particle before and after the scattering.
+   Let us now calculate the eﬀective cross section σeﬀ (q) for the Rayleigh
+cross section (3.59). From (3.54) we obtain
+                 q 4  ε − 1  2 π                                    
+      σeﬀ (q) =        a6                  d cos Θ (1 − cos Θ) 1 + cos2 Θ
+                          ε+2       3
+                                    2
+                8π  q 4 6 ε − 1
+              =           a              .                                  (3.60)
+                 9           ε+2
+Next, to compute the scattering constant Λ, see (3.56), we need to obtain
+the momentum density (q). Assuming black-body radiation, the average
+occupation number of photons of energy cq at temperature T is given by the
+Planck distribution
+                                           2
+                          n(q)T = cq/k T        ,                   (3.61)
+                                      e   B   −1
+where c denotes the speed of light, and the factor of 2 is due to the fact
+that there are two possible polarization directions of the photon. To obtain
+the number density (q), we must multiply n(q)T by the number of states
+per unit volume with momenta between q and q + dq, which is given by
+(assuming an isotropic distribution of momenta)
+                             1             1
+                                  d3 q =         q 2 dq.                   (3.62)
+                           (2π)3        2π 2 3
+This yields the number density
+                                                           
+                                   1             q2
+                         (q) =                                 .          (3.63)
+                                  π 3
+                                   2         ecq/kB T − 1
+Let us now compute the resulting scattering constant Λ. Using (3.56), we
+obtain
+             
+         Λ = dq (q)v(q)q 2 σeﬀ (q)
+                                      2                     2
+                     1         q2           q 8π  q 4 6 ε − 1
+            =       dq                    c            a
+                   π 2 3 ecq/kB T − 1      2 9          ε+2
+                             2 
+               8 6        ε−1                 q 8
+            =      a c              dq cq/k T        .                     (3.64)
+              9π9        ε+2           e     B   −1

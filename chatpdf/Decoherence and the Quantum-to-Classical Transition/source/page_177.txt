@@ -1,0 +1,49 @@
+                                 4.2 The Born–Markov Master Equation        163
+
+    Let us now further simplify (4.33) by imposing the Markov approximation.
+It turns out that in many physical situation of interest, the environment
+can be assumed to very quickly “forget” any internal self-correlations that
+have been established in the course of the interaction with the system. In
+other words, in such situations the environment does not “keep track of its
+history”—any dynamically established quantum correlations between parts
+of the environment are destroyed on a timescale τcorr much shorter than the
+characteristic timescale τS over which the reduced interaction-picture density
+            (I)
+operator ρ̂S (t) of the system changes noticeably. This assumption τcorr  τS
+constitutes the Markov approximation. It is appropriate if, as in our case, the
+environment is only weakly coupled to the system, and if the environment is
+at a suﬃciently high temperature.
+    Readers may be familiar with Markovian processes from classical proba-
+bility theory (see Sect. 1.4 of [18] for a good introduction to this subject).
+Broadly speaking, a stochastic process is Markovian if the probability of a
+particular event is independent of all earlier events. That is, each step in
+the process is independent of the previous steps. In other words, the system
+retains no memory of its past—the steps are completely uncorrelated. The
+analogy with a “Markovian environment” should now be clear.
+    What are the consequences of the Markov approximation for our goal of
+obtaining a time-local master equation in diﬀerential form? Let us look back
+at the current structure (4.32) of the master equation. Applied to our deriva-
+tion, the Markov approximation means that the environment self-correlations
+functions Cαβ (t − t ) [see (4.31)] are sharply peaked around (t − t ) = 0 and
+decay on a timescale much shorter than the timescale set by τS , which quan-
+                                                                         (I)
+tiﬁes the rate of change of the interaction-picture density operator ρ̂S (t) of
+the system. The implications of this property are twofold.
+                                                                    (I)
+    First, since the reduced interaction-picture density operator ρ̂S (t) of the
+system changes only insigniﬁcantly during the typical time interval τcorr over
+which the environment self-correlations functions Cαβ (t − t ) vanish, we can
+replace the retarded-time density operator ρ̂S (t ) by the current-time den-
+                                                 (I)
+
+                 (I)
+sity operator ρ̂S (t) in the integrand on the right-hand side of (4.32). The
+resulting master equation is the so-called Redﬁeld equation [174, 175], which
+fulﬁlls our desired property (P2) of being time-local. In fact, the Markov
+assumption allows us to simplify the master equation even further. Namely,
+we realize that, for t  τcorr , we can safely extend the lower limit of the
+integration on the right-hand side of (4.32) to −∞, since the self-correlation
+functions Cαβ (t − t ) (and thus the integrand) vanish for t  t.
+    With these two modiﬁcations (which are both based on the Markov ap-
+proximation of negligibly short environmental self-correlation times) and the
+substitution t −→ τ ≡ t − t , (4.32) becomes

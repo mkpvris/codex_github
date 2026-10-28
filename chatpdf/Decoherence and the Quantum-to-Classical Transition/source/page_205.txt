@@ -1,0 +1,54 @@
+                                               5.2 Quantum Brownian Motion     191
+
+kB T  Ω (see the next section). In this limit, the resulting expression for f
+is smaller than the normal-diﬀusion coeﬃcient (5.48) by a factor on the order
+of the cutoﬀ frequency Λ.
+
+5.2.4 The Caldeira–Leggett Master Equation
+
+In the following, we shall have a closer look at the limit of a high-temperature
+environment. That is, we consider the situation in which the thermal en-
+ergy kB T of the environment is much larger than (the energies correspond-
+ing to) the natural frequency Ω of the system and the environmental cutoﬀ
+frequency Λ. Then we can approximate the term coth (Ω/2kB T ) appearing
+in the expression (5.48) for the normal-diﬀusion coeﬃcient D by 2kB T /Ω,
+which is the ﬁrst-order term in the Taylor expansion of coth (Ω/2kB T ) around
+Ω/2kB T = 0. In this case the coeﬃcient D becomes
+
+                           k T   Ω                          Λ2
+                       D −−
+                          B
+                           −−−→ 2M γ0 kB T                         .         (5.50)
+                                                        Λ2 + Ω 2
+We also assume that the cutoﬀ Λ (the upper-limit region of environmental
+frequencies) is much larger than the characteristic frequency Ω of the system.
+Then (5.50) takes the form
+                                 Λ     Ω
+                             D −−−→ 2M γ0 kB T.                              (5.51)
+
+Furthermore, the momentum-damping coeﬃcient γ, see (5.46), approaches
+the value of the eﬀective coupling strength γ0 ,
+                                       Λ       Ω
+                                 γ −−−→ γ0 ,                                 (5.52)
+                                 2 , see (5.49), becomes
+and the frequency normalization Ω
+                                 Λ Ω
+                              2 −
+                              Ω   −−→ −2γ0 Λ.                                (5.53)
+
+Finally, given the assumptions considered here, the anomalous-diﬀusion co-
+eﬃcient f can be explicitly evaluated to give the result
+
+                                 k T       Ω       2γ0 kB T
+                             f −−
+                                B
+                                 −−−→                       .                (5.54)
+                                  Λ    Ω              Λ
+To gain further insight into the relevance of the corresponding anomalous-
+diﬀusion term f [X̂, [P̂ , ρ̂S (t)]] in the master equation (5.25), let us compare
+the magnitude of this term to that of the term D[X̂, [X̂, ρ̂S (t)]]. These mag-
+nitudes are on the order of, respectively,
+
+               DX 2 ∼ 2M γ0 kB T X 2                                         (5.55)
+
+and

@@ -1,0 +1,46 @@
+          7.2 Decoherence Versus Controllability in Quantum Computers         301
+
+Table 7.1. Examples for the physical realization of the qubit system and the qubit
+control.
+   Scheme        Qubits realized as                    Qubits controlled by
+   Optical       Photons                               Optical media
+   Ion trap      Trapped ions                          Laser beam
+   Cavity QED    Two-level atoms                       Laser beam
+   NMR           Nuclear spins                         Magnetic ﬁeld
+   Solid state   Coupled quantum dots                  Point contact
+                 Superconducting tunnel junctions      Bias current of junction
+
+
+
+the fundamental trade-oﬀ problem between decoherence and controllability,
+which we shall discuss in the following Sect. 7.2. Current experiments using
+the components listed in Table 7.1 have achieved coherent control of only
+a few qubits. Implementation of any useful quantum algorithms will require
+many more qubits, and thus these experiments are still a far cry from practical
+realizations of quantum computers.
+
+
+7.2 Decoherence Versus Controllability
+in Quantum Computers
+
+As we have already indicated in several places, quantum computers derive
+their power from the presence of nonlocal coherent superpositions of the
+computational-basis states (7.5), which are product states of the individual
+qubit basis states |0 and |1 (which must be suﬃciently distinguishable so we
+can manipulate and measure them by means of some apparatus controlling
+the quantum computer). Thus quantum computing is based on superposi-
+tions of mesoscopically or macroscopically distinct states, which are typically
+extremely sensitive to decoherence. It is fair to say that decoherence is the
+number-one enemy of quantum computers, and that much, if not most, of the
+research on the implementation of a quantum computer has revolved around
+the problem of how to control, minimize, and “undo” decoherence.
+    To address the problem of decoherence in quantum computers, one might
+be tempted to suggest that it will be suﬃcient to shield the qubits as much
+as possible from any environmental interactions. Indeed, isolating the qubits
+from their surroundings would minimize decoherence. However, such a strat-
+egy would also compromise the functionality of the quantum computer. As we
+have seen, a quantum computation is carried out through the application of
+a series of unitary operations to the qubits. Physically, such gate operations
+correspond to some interaction between the qubit system and an external
+apparatus. The speciﬁc physical form of the interaction depends on the par-
+ticular implementation of the quantum computer (see Table 7.1). To reliably

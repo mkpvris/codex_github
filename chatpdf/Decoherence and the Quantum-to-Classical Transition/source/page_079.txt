@@ -1,0 +1,49 @@
+64         2 The Basic Formalism and Interpretation of Decoherence
+
+the evolution of the state of the composite particle–detector system will be
+of the form
+                         |ψ1  |“ready” −→ |ψ1  |1 .               (2.63)
+Repeating the above argument with the role of the slits reversed yields the
+evolution
+                       |ψ2  |“ready” −→ |ψ2  |2 .                (2.64)
+Equations (2.63) and (2.64) correspond to the general description (2.52) of a
+measurement interaction.
+                              √ the particle must be described by a superpo-
+    Now, if both slits are open,
+sition |ψ = (|ψ1  + |ψ2 ) / 2 of the two components |ψ1  and |ψ2 . Using
+(2.63) and (2.64), we therefore obtain a dynamical evolution of the von Neu-
+mann type (2.54), leading to an entangled composite particle–detector state,
+            1                             1
+           √ (|ψ1  + |ψ2 ) |“ready” −→ √ (|ψ1  |1 + |ψ2  |2) .                (2.65)
+             2                             2
+Once again, the detector states |1 and |2 act as “pointers” for the relative
+states |ψ1  and |ψ2  of the system.
+    What can we now learn about the particle by performing a measurement
+on it, for instance by letting it impinge on the detection screen, which cor-
+responds to a measurement of position? As we know from Sect. 2.4.6, the
+quantity of interest is now the reduced density matrix for the particle, which
+for the pure state on the right-hand side of (2.65) is given by [see (2.49)]
+                    1
+     ρ̂particle =     {|ψ1 ψ1 | + |ψ2 ψ2 | + |ψ1 ψ2 |2|1 + |ψ2 ψ1 |1|2} . (2.66)
+                    2
+This density matrix corresponds to a particle density (x) at the detecting
+screen given by
+           (x) ≡ ρparticle (x, x)
+                    ≡ x| ρ̂particle |x
+                      1                1
+                    = |ψ1 (x)| + |ψ2 (x)| + Re {ψ1 (x)ψ2∗ (x)2|1} ,
+                                  2      2
+                                                                                     (2.67)
+                      2                2
+where ψi (x) = x|ψi , i = 1, 2. The last term describes the well-known inter-
+ference pattern, and we see that the visibility of this interference pattern is
+quantiﬁed by the overlap 2|1. This observation directly connects with our
+previous discussion in Sect. 2.4.6.
+    In particular, the limiting case of perfect distinguishability of the detector
+states |1 and |2, 2|1 = 0, corresponds to the “particle” regime,
+                                        1         2 1        2
+                               (x) =     |ψ1 (x)| + |ψ2 (x)| .                      (2.68)
+                                        2           2
+Conversely, if |1 and |2 are completely unable to resolve the path of the
+particle, 2|1 = 1 (disregarding phase factors), the “wave” scenario of full
+interference pattern applies,

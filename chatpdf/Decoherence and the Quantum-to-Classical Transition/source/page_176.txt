@@ -1,0 +1,60 @@
+162     4 Master-Equation Formulations of Decoherence
+
+  d (I)
+    ρ̂ (t)
+  dt S
+       t                                                                 
+          dt   TrE Ŝα (t) ⊗ Êα (t), Ŝβ (t ) ⊗ Êβ (t ), ρ̂S (t ) ⊗ ρ̂E . (4.28)
+                                                                (I)
+  =−
+        0      αβ
+
+Let us now deﬁne
+                           $                   % 3                4
+         Cαβ (t, t ) ≡ TrE Êα (t)Êβ (t )ρ̂E = Êα (t)Êβ (t )          .     (4.29)
+                                                                      ρ̂E
+
+In the following, we shall suppose that the environment is in a stationary
+state (i.e., in equilibrium),           
+                                ĤE , ρ̂E = 0.                       (4.30)
+This implies that we can write
+                                $                    %
+              Cαβ (t, t ) = TrE Êα (t − t )Êβ ρ̂E ≡ Cαβ (t − t ),            (4.31)
+
+which are precisely the environment self-correlation functions (4.10) intro-
+duced above.
+    We see that, due to the assumption (4.30), these environment self-
+correlation functions do not depend on the absolute time t [as in (4.29)] but
+only on the time interval between the results of the two identical “measure-
+ments” (represented by a particular operator Êα ) whose degree of correlation
+is quantiﬁed by (4.31).1
+    Inserting (4.31) into (4.28) and writing out the double commutator, we
+obtain
+
+  d (I)
+    ρ̂ (t) =
+  dt S
+       t     $             &                                                     '
+          dt   Cαβ (t − t ) Ŝα (t)Ŝβ (t )ρ̂S (t ) − Ŝβ (t )ρ̂S (t )Ŝα (t)
+                                                (I)                  (I)
+    −
+         0      αβ
+                          &                                                     '%
+             +Cβα (t − t) ρ̂S (t )Ŝβ (t )Ŝα (t) − Ŝα (t)ρ̂S (t )Ŝβ (t ) . (4.32)
+                             (I)                                (I)
+
+
+
+In deriving this expression, we have used the basic fact that the trace is
+invariant under cyclic permutations of the operators, such that
+            $           %     $           %      $          %
+         TrE Êα Êβ ρ̂E = TrE ρ̂E Êα Êβ = TrE Êα ρ̂E Êβ .      (4.33)
+
+We have also separated out the operators Ŝα (t) as well as the density operator
+ρ̂S (t ) from the trace operation. We are allowed to do this because the trace
+  (I)
+
+is taken over the environment only.
+   1
+     This simpliﬁcation is not always appropriate. See, e.g., Sect. 3.4.3 of [18] for
+an interesting counterexample.

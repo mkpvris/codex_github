@@ -1,0 +1,59 @@
+                                          3.2 Calculating the Decoherence Factor         125
+
+    Let us evaluate the second and third term in the sum in the last line of
+(3.28) by inserting a complete set of momentum eigenstates |q , see (3.25),
+and then using (3.18). This yields
+
+  χ(x )|χ(x)
+                             ⎡                                                            ⎤
+             3                                                                 
+        (2π)                                                                       2
+    =                   μ(q) ⎣1 −               1 − ei(q−q )·(x−x )/ q | T̂ q  ⎦ .
+          V
+                 q∈QV                 q  ∈QV
+                                                                                      (3.29)
+
+We now go to the continuum limit of momentum states |  q  by replacing the
+sum by an integral according to the usual transformation relation
+                                            
+                         (2π)3 
+                                       −→     dq.                     (3.30)
+                            V
+                                           q∈QV
+             
+Using that       dq μ(q) = 1 and employing deﬁnition (3.24), expression (3.29)
+then reads
+
+ χ(x )|χ(x)
+                                                            2
+               (2π)3                                         
+ = 1 − dq μ(q)          dq  1 − ei(q−q )·(x−x )/ q| T̂ |q   . (3.31)
+                 V
+Following the approach of Adler [161], let us now introduce a time parameter
+T which denotes the elapsed time in the scattering process. Then, from (3.16)
+and (3.31), we may write the evolution of the reduced density matrix as
+
+  ρS (x, x , T ) − ρS (x, x , 0) = −ρS (x, x , 0)
+                                                                       2
+                     (2π)3                                              
+      ×      dq μ(q)               dq  1 − ei(q−q )·(x−x )/ q| T̂ |q   . (3.32)
+                        V
+Note that in writing (3.32), we have assumed that the characteristic timescale
+for the free evolution of the object is much longer than the average time
+between scattering events, such that the only change of the density matrix
+of the object during the interval T arises from the scattering
+                                                              events.
+                                                             
+                                                                 2
+    Let us now evaluate the squared matrix element q| T̂ |q  appearing in
+this equation. Using the form
+                                            i
+                        q| T̂ |q   =        δ(E − E  )f (q, q  )                 (3.33)
+                                          2πm
+of (3.18), we thus need to calculate
+                               2
+                                       1
+                  q| T̂ |q   =           δ 2 (E − E  ) |f (q, q  )| .
+                                                                          2
+                                                                                      (3.34)
+                                      (2πm)2

@@ -1,0 +1,49 @@
+                               3.5 Illustrating the Dynamics of Decoherence          139
+
+environment on the spatial coherence of C60 and C70 molecules will be de-
+scribed in detail in Sect. 6.2.
+    Here we shall therefore only brieﬂy note a couple of other experiments,
+which have used atom interferometers of the Mach–Zehnder type in order to
+observe interference patterns for matter particles [170]. In such an interfer-
+ometer, the path of each atom is coherently split within the interferometer
+and subsequently recombined. This results in an spatial interference pattern
+in form of an oscillatory dependence of the atomic ﬂux on position.
+    Kokorowski et al. [171] used a Mach–Zehnder interferometer to observe
+the loss of coherence of sodium atoms due to scattering of controlled numbers
+of photons emitted from a laser beam. They measured the loss of contrast of
+the interference pattern as a function of the mean number of photons that
+were spontaneously scattered by atoms within the interferometer for diﬀerent
+path separations (these separations correspond to the quantity Δx used in
+our model). The experiment veriﬁed the theoretically predicted exponential
+decay of this contrast, and thus of spatial coherence, with the square of
+the separation Δx and with time [see (3.57)]. In a similar experiment, Uys,
+Perreault, and Cronin [172] studied spatial decoherence of sodium atoms due
+to scattering of gas molecules within the interferometer and found, again,
+good agreement with theoretical predictions.
+
+
+3.5 Illustrating the Dynamics of Decoherence
+
+In the previous Sect. 3.4, we focused on estimating typical decoherence
+timescales of spatial superpositions for various objects immersed into dif-
+ferent types of environments. Let us now illustrate the explicit dynamics of
+the decoherence process. We shall concentrate here on the case of a particle
+moving in one spatial dimension.
+    Recall that, in the long-wavelength limit, the interference terms of the re-
+duced density matrix of the object decay due to the inﬂuence of the scattering
+environment as [see (3.55)]
+
+                      ∂ρS (x, x , t)
+                                      = −Λ(x − x )2 ρS (x, x , t).              (3.75)
+                           ∂t
+Let us now include the term describing the unitary evolution under the “free-
+particle” Hamiltonian6 (setting  ≡ 1 in the remainder of this chapter)
+
+                                         p2     1 ∂2
+                            H(x, p) =       ≡−        .                           (3.76)
+                                         2m    2m ∂x2
+This term is given by the Liouville–von Neumann equation,
+
+   6
+    Of course, our particle is not truly free, since it is subject to collisions with the
+environment.

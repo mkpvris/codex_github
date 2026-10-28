@@ -1,0 +1,47 @@
+322    7 Decoherence and Quantum Computing
+
+case the system–environment interaction is completely symmetric with re-
+spect to any permutations of the qubits, leading to a DFS of maximum size.
+What happens if this perfect symmetry is broken by additional small inde-
+pendent coupling terms? Clearly, we would like our DFS to be reasonably
+robust to such perturbations. Following initial studies by Lidar, Chuang, and
+Whaley [90], Bacon, Lidar, and Whaley [99] showed that, to ﬁrst order in
+the perturbation strength, the storage of quantum information in DFS is
+stable to such perturbations to all orders in time. However, the processing
+of such quantum information encoded in DFS was found to be robust to
+symmetry-breaking perturbations only to ﬁrst order in time. The authors
+also demonstrated how this insuﬃcient robustness of quantum computation
+on DFS can be mitigated by combining DFS with active quantum error-
+correction schemes [94].
+
+7.5.1 What Does a Decoherence-Free Subspace Look Like?
+
+So far, we have only stated the general conditions for the existence of a
+DFS, without giving any concrete examples of its structure. Also, a DFS
+would obviously be of little use for quantum computation if it was so small
+as to eﬀectively make it impossible to form the necessary higher-dimensional
+superposition states. The question of the size of the DFS relative to the
+dimension of the full Hilbert space of the system is therefore very important.
+Probably not surprisingly, we must adopt particular models for the system–
+environment interaction to give speciﬁc answers to this question. Here we will
+consider the model most commonly considered in the literature on DFS (see,
+e.g., [89,91,93,96,237]), namely, the spin–boson model discussed in Sect. 5.3.
+
+Independent Versus Collective Decoherence
+
+Let us distinguish two limiting cases for modeling decoherence in qubits. The
+ﬁrst limit is that of independent decoherence, i.e., the assumption that each
+qubit couples independently to its own environment, without any interactions
+between these environments. We already mentioned this case in Sect. 7.4.2.
+The assumption of independent decoherence is often made in the context of
+quantum error correction. It implies that the error processes aﬀecting the
+qubits are completely uncorrelated. Thus, if the probability of a particular
+error to aﬀect one qubit is p, the probability of this error to occur in K
+qubits will be pK . In this case, we may represent qubit errors simply as a
+linear combination of error operators of weight equal to one, i.e., as a com-
+bination of single-qubit errors with all other qubits unaﬀected. Many error-
+correcting schemes (such as the three-qubit code discussed in Sect. 7.4.5) are
+only eﬃcient in correcting such single-qubit errors, and thus the assumption
+of independent decoherence frequently underlies these schemes.
+    However, this assumption is rather unrealistic when the qubits are located
+spatially close to each other (relative to the typical coherence length of the

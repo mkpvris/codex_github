@@ -1,0 +1,42 @@
+                       2.13 Virtual Decoherence and Quantum “Erasure”          99
+
+    The possibility of a true reversal of phase delocalization (i.e., the relocal-
+ization of the superposition at the level of the system) is based on the fact that
+the global system–environment evolution is completely unitary. Application
+of an appropriate unitary countertransformation to the system–environment
+combination then disentangles the system from the environment and dynam-
+ically recovers the original separable system–environment product state. This
+complete reversal of decoherence—corresponding, in eﬀect, to a reversal of
+the arrow of time—describes an actual recoherence process involving the lo-
+cal recombination of wave-function components. This is analogous to the
+reversible Stern–Gerlach experiment [126, 127], where the two atomic beams
+separated by the action of the magnetic ﬁeld are subsequently recombined
+(refocused). In practice, such reversible decoherence could be experimentally
+studied through the coupling of the system to a second, fully controlled sys-
+tem acting as an “artiﬁcial environment.” We will discuss a concrete proposal
+for the experimental realization of this idea in Sect. 6.1.4.
+    The inﬂuence of decoherence on the system can also be eﬀectively re-
+versed by reconstructing the original pre-decoherence superposition state of
+the system. An example of such an eﬀective reconstruction of the original
+state has become known under the heading of quantum erasure [75,128–130].
+A similar idea underlies the concept of error correction in quantum computers
+(see Sect. 7.4). The basic scheme of quantum “erasure” (the use of the quota-
+tion marks will be motivated below) is typically described in the literature as
+follows (see, e.g., [130]). We again consider the double-slit experiment, with
+which-path detectors measuring through which slit the particle passes. The
+composite system–detector evolution is then of the form (2.65), i.e.,
+       1                               1
+       √ (|ψ1  + |ψ2 ) |“ready” −→ √ (|ψ1  |1 + |ψ2  |2) .         (2.122)
+        2                               2
+We now couple the which-path detector to an explicit read-out device. The
+measurement interaction is assumed to be of the form
+
+                            |± |Φ0  −→ |± |Φ±  ,                      (2.123)
+
+where |Φ0  is the initial state of the read-out device, and |± are the conjugate
+states of the which-path detector,
+                                   1
+                             |± ≡ √ (|1 ± |2) .                        (2.124)
+                                    2
+The resulting evolution of the total system composed of the particle, the
+which-path detector, and the read-out device is then

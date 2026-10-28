@@ -1,0 +1,51 @@
+                                           5.4 Spin-Environment Models       233
+
+    However, even at ﬁnite temperatures, we can map the expression (5.186)
+for the spin bath onto the expression (5.187) for the oscillator bath by using
+a little trick. Suppose we introduce a new eﬀective spectral density Jeﬀ (Δ, T )
+deﬁned as                                             
+                                                  Δ
+                       Jeﬀ (Δ, T ) ≡ J(Δ) tanh           ,              (5.189)
+                                                 2kB T
+where J(Δ) is the original spectral density (5.185) of the spin bath. Let
+us now replace the oscillator-bath spectral density Josc (ω) appearing in the
+environment self-correlation function (5.187) by this explicitly temperature-
+dependent expression Jeﬀ (Δ, T ). Changing notation ω −→ Δ in the integral
+on the right-hand side of (5.187), we get
+                                  -                                       .
+                                Δ               Δ
+ Cosc (τ ) = dΔ J(Δ) tanh              coth            cos (Δτ ) − i sin (Δτ )
+                              2kB T           2kB T
+                      -                                   .
+                                              Δ
+           = dΔ J(Δ) cos (Δτ ) − i tanh             sin (Δτ ) .           (5.190)
+                                            2kB T
+
+But this is precisely the expression (5.186) for the environment self-correlation
+function of the spin bath!
+    We have therefore discovered a simple route for taking over all of our
+previous results derived in Sect. 5.2 for the oscillator bath to the spin-bath
+case. All we need to do is to evaluate the oscillator-bath expressions that
+depend on the spectral density of the bath with the modiﬁed “surrogate”
+spectral density (5.189), which is given by the true spectral density J(Δ)
+of the spin bath multiplied by the additional temperature-dependent and
+frequency-dependent factor tanh(Δ/2kB T ).
+    In particular, the kernels ν(τ ) and η(τ ) for the spin bath are given by
+                          ∞
+                 ν(τ ) =      dΔ J(Δ) cos (Δτ ) ,                         (5.191)
+                         0 ∞                        
+                                                  Δ
+                 η(τ ) =      dΔ J(Δ) tanh              sin (Δτ ) ,       (5.192)
+                           0                   2k BT
+
+obtained by inserting the new eﬀective spectral density (5.189) into (5.16)
+and (5.17). The formal diﬀerences between these expressions for the kernels
+and their counterparts (5.16) and (5.17) for the oscillator bath may not seem
+dramatic at a ﬁrst glance. However, the eﬀect on the reduced dynamics can be
+enormous. Let us now study two explicit examples for the mapping procedure.
+
+Example #1: Mapping of the Spin–Spin Model
+onto the Spin–Boson Model
+
+We consider the case of the central system’s being represented by a spin- 12
+particle bilinearly coupled to the spin bath through σ̂z . Following our above

@@ -1,0 +1,47 @@
+                                    4.2 The Born–Markov Master Equation        155
+
+              d                                           
+                 ρ̂S (t) = L̂ [ρ̂S (t)] = −i ĤS , ρ̂S (t) + D̂[ρ̂S (t)] .   (4.4)
+              dt                          /      01        2 / 01 2
+                                         unitary evolution     decoherence
+
+This equation is local in time in the sense that the change of ρ̂S at time t
+depends only on ρ̂S evaluated at t but not at any other times t = t. The
+superoperator L̂ appearing in (4.4) acts on ρ̂S (t) and typically depends on
+the initial state of the environment and the diﬀerent terms in the Hamilto-
+nian. To convey the physical intuition behind this superoperator, L̂ has been
+decomposed into two parts:
+ 1. A unitary part that is given by the usual Liouville–von Neumann commu-
+    tator with the Hamiltonian ĤS . It is important to note that this Hamil-
+    tonian is in general not identical to the unperturbed free Hamiltonian
+    ĤS of S that would generate the evolution of S in absence of the en-
+    vironment, because the presence of the environment often perturbs the
+    free Hamiltonian, leading to a renormalization of the energy levels of the
+    system. We emphasize that this eﬀect (often called the Lamb-shift con-
+    tribution) has nothing do with the nonunitary evolution induced by the
+    environment but only alters the unitary part of the reduced dynamics.
+ 2. A nonunitary part D̂[ρ̂S (t)] that represents decoherence (and possibly
+    also dissipation) due to the environment. This term will be of the most
+    interest to us in the following.
+     We note that, if the evolution of the system is completely unitary, we have
+D̂[ρ̂S (t)] = 0, and thus (4.4) simply becomes
+
+                            d                            
+                               ρ̂S (t) = −i ĤS , ρ̂S (t) .                  (4.5)
+                            dt
+This equation diﬀers from the standard Liouville–von Neumann equation for
+closed systems only in the use of the environment-shifted system Hamiltonian
+ĤS instead of the unperturbed Hamiltonian ĤS .
+     In the next section, we shall derive an explicit general expression for L̂
+(i.e., for ĤS and D̂[ρ̂S (t)]) under a certain set of assumptions. Applied to a
+given model, the resulting master equation then allows us to compute the
+time evolution of ρ̂S (t) for all times t.
+
+
+4.2 The Born–Markov Master Equation
+The Born–Markov master equation plays an enormously important role in
+the study of open quantum systems and decoherence. It allows one to treat
+many decoherence problems in a mathematically simple, and often closed,
+form. Comparisons between the predictions of models based on this equation
+and experimental data have shown that the Born and Markov assumptions on
+which the master equation is based are reasonable in many cases. However,

@@ -1,0 +1,48 @@
+34     2 The Basic Formalism and Interpretation of Decoherence
+
+role can be traced back to the fact that entanglement between the system and
+the environment makes it impossible to assign an individual quantum state
+vector to the system (see the previous Sect. 2.3), and thus we typically cannot
+describe the system of interest in terms of such pure quantum states. As we
+shall see, reduced density matrices then provide an elegant method for rep-
+resenting the measurement statistics for the system. In the following, we will
+spend some time discussing the various aspects of pure-state, mixed-state,
+and reduced density matrices.
+
+2.4.1 Pure-State Density Matrices and the Trace Operation
+
+Let us begin with the familiar concept of quantum state vectors. As we have
+explained above, a quantum state vector |ψ encapsulates maximum knowl-
+edge about the state of a physical system. We can also deﬁne the density
+operator ρ̂ corresponding to such a pure state |ψ as
+
+                                  ρ̂ ≡ |ψψ|,                           (2.11)
+
+which is simply the projection operator onto the state |ψ. In this book, we
+shall interchangeably use the term density matrix for the density operator ρ̂.
+Strictly speaking, the density matrix refers to the matrix representation of the
+density operator in a particular basis, but the use of “density matrix” for the
+operator ρ̂ is so established in the literature that we shall follow this widely
+accepted terminology. In cases where we would like to explicitly refer to the
+matrix representation of the density operator, we will make the distinction
+clear by omitting the operator-indicating caret from ρ̂, that is, by denoting
+such actual density matrices by ρ.
+    If we express |ψ as a superposition of basis states |ψi ,
+                                       
+                                |ψ =      ci |ψi  ,                     (2.12)
+                                       i
+
+the corresponding density matrix written in this basis {|ψi } reads
+                                    
+                      ρ̂ = |ψψ| =    ci c∗j |ψi ψj |.                (2.13)
+                                       ij
+
+The terms i = j on the right-hand side of this equation embody the quan-
+tum coherence between the diﬀerent components |ψi . Accordingly, they are
+usually referred to as interference terms, or oﬀ-diagonal terms (since these
+terms correspond to the oﬀ-diagonal elements in the matrix representation
+of ρ̂ in the basis {|ψi }).
+    However, it is important to keep in mind that such interference terms
+are always to be understood with respect to a particular basis {|ψi }, i.e.,
+coherence and interference is present between certain components |ψi . There
+always exists a basis in which the density matrix becomes diagonal, and thus

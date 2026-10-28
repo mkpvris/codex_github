@@ -1,0 +1,58 @@
+180      5 Canonical Models For Decoherence
+
+vanishing of the terms i = j in the last step in (5.6) is due to the fact that the
+environmental oscillators do not interact with each other and are therefore
+completely uncorrelated. Thus, for i = j,
+
+                              q̂i (τ )q̂j ρ̂E = q̂i (τ )ρ̂E q̂j ρ̂E = 0,                 (5.7)
+
+since the expectation value qi ρ̂E of the position coordinate of the oscillator
+is equal to zero.
+    Thus our task of evaluating C(τ ) is now reduced to the goal of computing
+the averages q̂i (τ )q̂i ρ̂E [see (5.6)]. This is easily accomplished. Let us switch
+to the representation of q̂i in terms of the bosonic creation and annihilation
+operators â†i and âi ,               5
+                                            1               
+                                 q̂i =             âi + â†i .                  (5.8)
+                                         2mi ωi
+Then the time evolution of the operator q̂i in the interaction picture can be
+written as [see (A.4)]
+                                              5
+                                                  1  −iωi τ              
+           q̂i (τ ) = eiĤE τ
+                              q̂i e −iĤE τ
+                                            =          âi e + â†i eiωi τ . (5.9)
+                                                2mi ωi
+Therefore
+                            1 3 † −iωi τ                              4
+        q̂i (τ )q̂i ρ̂E =       âi âi e         + â†i âi eiωi τ
+                          2mi ωi                                        ρ̂E
+                                 -3          4                   3        4             .
+                            1              †         −iωi τ          †            iωi τ
+                        =            âi âi       e         + âi âi          e         .   (5.10)
+                          2mi ωi               ρ̂E                          ρ̂E
+
+But the quantity                               3         4
+                                           Ni = â†i âi                                      (5.11)
+                                                             ρ̂E
+
+is simply the mean occupation number of the ith oscillator in the environ-
+ment. By assumption, the environment is in thermal equilibrium, which cor-
+responds to
+                                                 1
+                             Ni ≡ Ni (T ) = ω /k T    .                 (5.12)
+                                           e i B −1
+                                                                     
+Using this expression and the standard commutation relation âi , â†i = 1 for
+the operators âi and â†i , we can rewrite (5.10) as
+
+                          1 )                                         *
+      q̂i (τ )q̂i ρ̂E =       [1 + Ni (T )] e−iωi τ + Ni (T )eiωi τ
+                        2mi ωi
+                          1
+                      =        {[1 + 2Ni (T )] cos (ωi τ ) − i sin (ωi τ )}
+                        2mi ωi
+                               -                                          .
+                          1               ωi
+                      =          coth            cos (ωi τ ) − i sin (ωi τ ) ,                (5.13)
+                        2mi ωi          2kB T

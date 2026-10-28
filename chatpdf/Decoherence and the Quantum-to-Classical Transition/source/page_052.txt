@@ -1,0 +1,48 @@
+                 2.4 The Concept and Interpretation of Density Matrices         37
+
+
+
+
+                         “up”          preparation “1”                |ψ1 
+
+
+
+
+            spin        “down”         preparation “2”                |ψ2 
+        measurement
+
+Fig. 2.3. Example for a probabilistic state-preparation procedure. Depending on
+the outcome of a spin measurement on a spin- 12 particle, the device prepares a
+given system in either the quantum state |ψ1  or the quantum state |ψ2 . The
+observer, ignorant of the particular outcome of the spin measurement, will assign
+equal (and classical!) probabilities to the states |ψ1  and |ψ2 . To express this
+subjective ignorance, she will describe the prepared system by the mixed-state
+density matrix ρ̂ = 12 |ψ1 ψ1 | + 12 |ψ2 ψ2 |.
+
+
+(such a measurement could be implemented, for example, using the Stern–
+Gerlach device described in Sect. 2.2.2). Then, depending on the outcome
+of this measurement, the device prepares (completely deterministically!) the
+system of interest in either the state |ψ1  or the state |ψ2 . However, the
+observer does not inquire about the outcome of the spin measurement. She
+will therefore only know that either |ψ1  or |ψ2  has been prepared but not
+which of these two states. Of course, this is a somewhat artiﬁcial example,
+because the probabilistic character of the preparation procedure is here intro-
+duced deliberately. But it is easy to imagine other, more realistic situations
+in which the probabilistic element is inherent to the physical device used
+for state preparation. For example, the device may be imperfect and thus
+produce a range of possible pure states.
+    Regardless of the physical origin of the probabilistic element, the mixed
+state, i.e., the resulting set of possible pure states |ψi  with associated prob-
+abilities pi , represents a classical ensemble. By this we mean to convey the
+notion that the origin of the probabilities is purely classical. These prob-
+abilities simply express the subjective ignorance of the observer about the
+quantum state of the system, while physically the system has indeed been
+prepared in a pure and thus completely known state (albeit not known to
+the observer). In principle, we could always completely follow or backtrack
+every step of the state-preparation procedure to determine which of the pure
+states |ψi  has been produced in each run of the procedure. The probabil-
+ities pi simply express our practical decision not to inquire into the ﬁner
+details of the preparation procedure, but there is nothing fundamental about
+these probabilities. Therefore they simply correspond to a “coarse-graining”
+approach as in classical statistical mechanics, where we cannot in practice

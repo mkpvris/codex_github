@@ -1,0 +1,54 @@
+216     5 Canonical Models For Decoherence
+
+
+                 J(ω) [4J0 ]
+
+
+                  0.3
+
+                                  cutoﬀ
+                  0.2
+                                 (ω = Λ)
+
+                   0.1
+
+                    0                                                ω [Λ]
+                         0          1      2       3      4      5
+
+Fig. 5.6. Spectral density J(ω) given by (5.125), shown in units of 4J0 . The spec-
+tral density is chosen to be approximately ohmic (i.e., J(ω) ∝ ω) for frequencies
+well below the cutoﬀ frequency Λ. At frequencies ω > Λ, the ohmic character is
+suppressed by a term e−ω/Λ . The frequency ω is measured in units of the cutoﬀ Λ.
+
+                          ∞
+                                               1 − cos ωt
+         Γ (t) = −J0              dω e−ω/Λ                coth (ω/2kB T ) .   (5.126)
+                             0                     ω
+If we now make the reasonable assumption that the thermal energy kB T of the
+environment is small in comparison with the cutoﬀ frequency Λ, kB T  Λ,
+this integral can be solved exactly. The result can be decomposed as
+
+                                  Γ (t) = Γﬂuc (t) + Γtherm (t).              (5.127)
+
+Here
+                                       1             
+                         Γﬂuc (t) = − ln 1 + Λ2 t2                   (5.128)
+                                       2
+is the (exact) contribution to Γ (t) due to purely quantum vacuum ﬂuctua-
+tions (note that this term is independent of the bath temperature), and
+                                         "               #
+                                           sinh(πkB T t)
+                       Γtherm (t) ≈ − ln                             (5.129)
+                                              πkB T t
+is the contribution due to thermal ﬂuctuations in the bath.
+    A plot of Γ (t) is shown in Fig. 5.7. We see that Γ (t) decreases from its
+initial value of one. We can therefore conclude that coherence between the
+components |0 and |1 indeed becomes locally damped, since the relevant
+decoherence factor (5.118) is given by r(t) = eΓ (t) . As we shall see in the
+following, we can distinguish several characteristic timescales for this deco-
+herence process.
+
+Decoherence timescales
+
+Let us investigate the relevant timescales over which either one of the two
+contributions Γﬂuc (t) and Γtherm (t) dominates the time evolution of Γ (t).

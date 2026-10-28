@@ -1,0 +1,53 @@
+                                            5.2 Quantum Brownian Motion       193
+                                                                  −1
+This term describes spatial localization with a decoherence rate τ|X−X  | given
+
+by [compare (3.58) and (5.36)]
+                                                        2
+                            −1                  X − X
+                           τ|X−X  | = γ0                     .            (5.61)
+                                                 λdB
+
+We see that the ratio of the decoherence rate to the damping rate γ0 is sim-
+ply equal to the squared ratio of the spatial separation to the thermal de
+Broglie wavelength (5.59) of the object. Since the constant γ0−1 quantiﬁes
+the dissipation (relaxation) timescale of the system, (5.61) is precisely the
+expression (2.113) given (but not derived) in Sect. 2.11. As mentioned there,
+the expression (5.61) derived from the model for quantum Brownian motion
+was ﬁrst used by Zurek in the early 1980s to introduce the notion of a deco-
+herence timescale [12]. In the same section, we had also pointed out that the
+thermal de Broglie wavelength is extremely small for macroscopic and even
+mesoscopic objects. Hence such objects described by superpositions of macro-
+scopically separated center-of-mass positions will typically be decohered on
+timescales many orders of magnitude shorter than the relaxation timescales.
+    Over timescales on the order of the decoherence time, we may therefore
+often neglect the dissipative term in the master equation (5.57). This yields
+the simpliﬁed, “pure-decoherence” master equation
+         d                                                      
+            ρ̂S (t) = −i ĤS , ρ̂S (t) − 2M γ0 kB T X̂, X̂, ρ̂S (t) ,     (5.62)
+         dt
+or, expressed in the position basis,
+                      "      2            
+  ∂                       i   ∂       ∂2       i                         
+     ρS (X, X  , t) = −        2
+                                   −     2
+                                             − M Ω 2 − 2γ0 Λ X 2 − X 2
+  ∂t                     2M ∂X       ∂X        2
+                                                  2
+                                            X − X
+                                     −γ0              ρS (X, X  , t). (5.63)
+                                             λdB
+
+This equation describes the local damping of spatial coherence at a rate
+given by (5.61). Note that (5.63) has the same structure as the equation
+of motion (3.78) for the case of environmental scattering. The role of the
+scattering constant Λ [see (3.56)] in the scattering model is now played by the
+coeﬃcient γ0 /λ2dB . The diﬀerence between the two equations (3.78) and (5.63)
+is simply that (5.63) corresponds to the case of the central system conﬁned
+to a harmonic-oscillator potential, whereas the scattering model underlying
+(3.78) considered an unbound system.
+    However, this diﬀerence is far from critical, since it turns out that the form
+of the Caldeira–Leggett equation (5.57) is in fact not tied to the assumption
+of a system represented by a harmonic oscillator. It is possible to write down
+an equation of the form (5.57) for any arbitrary potential of the system.
+The system does not even need to be described by the canonical position

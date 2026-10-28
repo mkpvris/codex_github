@@ -1,0 +1,52 @@
+52      2 The Basic Formalism and Interpretation of Decoherence
+
+
+
+
+                                                 i
+
+
+                 system
+                   |si 
+                                             “ready”
+                                                    apparatus
+                                                       |ai 
+
+
+Fig. 2.4. Von Neumann scheme for ideal quantum measurement. Both system and
+apparatus are treated as quantum systems. The system–apparatus interaction is
+such that the system’s being in state |si  causes the apparatus pointer to move from
+the initial “ready” position on the dial to position “i,” represented by a quantum
+state |ai  of the apparatus.
+
+
+that the measurement interaction does not change the state of the system.
+Because of these assumptions, the measurement scheme (2.52) is often called
+ideal. Such measurements which do not disturb the state of the system are
+also known as quantum nondemolition measurements [69].
+    Now we come to the key point. Thus far, the interaction (2.52) has not
+led to any entanglement: The ﬁnal system–apparatus state is still separable.
+However, let us consider what happens if the system starts out in a superpo-
+sition of the basis states |si ,
+                                        
+                                  |ψ =   ci |si  .                  (2.53)
+                                         i
+
+In this case, the linearity of the Schrödinger equation implies that the system–
+apparatus combination SA will evolve according to
+                                  
+                                                   
+          |ψ |ar  =      ci |si  |ar  −→ |Ψ  =     ci |si  |ai  .    (2.54)
+                        i                             i
+
+This evolution represents the (ideal) von Neumann quantum-measurement
+scheme.
+     Inspection of the right-hand side of (2.54) shows that the ﬁnal state of the
+system–apparatus combination is in general described by an entangled state,
+i.e., we can no longer attribute an individual state vector to the system or the
+apparatus. Entanglement has thus been created dynamically. The superposi-
+tion initially present only in the system has been ampliﬁed to the level of the
+(typically macroscopic) apparatus, in the sense that the ﬁnal superposition
+involves both the system and the apparatus.
+     The crucial diﬃculty is now that it is not at all obvious how one is to
+regard the dynamical evolution described by (2.54) as representing measure-

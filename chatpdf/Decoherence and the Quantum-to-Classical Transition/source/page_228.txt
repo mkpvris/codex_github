@@ -1,0 +1,65 @@
+214    5 Canonical Models For Decoherence
+                                           1
+                        ρ̂(0) = ρ̂S (0)               e−ĤEi /kB T .                     (5.113)
+                                           i
+                                                 Zi
+
+The time evolution of the reduced density matrix ρS (t) for the system is then
+obtained in the usual manner via
+                                   &                     '
+                      ρ̂S (t) = TrE V̂ (t)ρS (0)V̂ −1 (t) ,           (5.114)
+
+with V̂ (t) given by (5.99). Since we already know from (5.92) that the diago-
+                (ii)
+nal elements ρS (t) of ρ̂S (t) expressed in the {|0 , |1} basis are constant in
+time,
+                          (ii)      (ii)
+                         ρS (t) = ρS (0),      i = 0, 1,                  (5.115)
+we only need to compute the oﬀ-diagonal elements,
+                                  &                    '
+                  ρS (t) = 0| TrE V̂ (t)ρ̂(0)V̂ −1 (t) |1 ,
+                   (01)
+
+                                  &                    '
+                  ρS (t) = 1| TrE V̂ (t)ρ̂(0)V̂ −1 (t) |0 .
+                   (10)
+                                                                                         (5.116)
+
+Using the deﬁnitions above, these expressions are readily computed as follows,
+                                                                       !
+                                                †
+                                                                 
+       (01)       (01)                                 ∗
+      ρS (t) = ρS (0) TrE exp             λi (t)âi − λi (t)âi     ρ̂Ei
+                                           i                                    i
+                                    $                 %
+                    (01)
+                 = ρS (0)       TrEi D̂ (λi (t)) ρ̂Ei
+                            i
+                                3            4         &      '∗
+                    (01)                                 (10)
+                 = ρS (0)        D̂ (λi (t))          = ρS (t) .                         (5.117)
+                                               ρ̂Ei
+                            i
+
+In other words, the decoherence factor r(t) is given by
+              3             4      3    &                       '4
+     r(t) =     D̂ (λi (t))   =     exp λi (t)â†i − λ∗i (t)âi                      ,   (5.118)
+                            ρ̂Ei                                              ρ̂Ei
+             i                        i
+
+
+i.e., by the product of the expectation values of the operators D̂ (λi (t)), see
+(5.103), for the thermal modes ρ̂Ei of the environment.
+     It now turns out that
+                               3   &                        '4
+                    χ(λi , t) ≡ exp λi (t)â†i − λ∗i (t)âi             (5.119)
+                                                                       ρ̂Ei
+
+is just the symmetrically ordered characteristic function for a single harmonic
+oscillator (a single ﬁeld mode) in thermal equilibrium, a function that is
+well-known from quantum optics (see, e.g., [241]). This function is given by
+[18, 150]                       "                            #
+                                   1       2
+                 χ(λi , t) = exp − |λi (t)| coth (ωi /2kB T ) .          (5.120)
+                                   2

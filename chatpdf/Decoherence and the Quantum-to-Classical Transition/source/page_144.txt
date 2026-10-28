@@ -1,0 +1,54 @@
+                           3.3 Full Versus Partial Which-Path Resolution     129
+
+contribute to the integral when compared to the constant term of one. In this
+limit                                 
+                                          dn̂ dn̂
+             F (x − x ) = dq (q)v(q)             |f (q n̂, q n̂ )| .
+                                                                     2
+                                                                        (3.42)
+                                            4π
+The integral                   
+                                   dn̂ |f (q n̂, q n̂ )|
+                                                             2
+                                                                           (3.43)
+
+is simply equal to the total cross section for momentum q = q n̂. The second
+volume integral over dn̂ then averages over all possible directions n̂ of q, and
+thus we obtain        
+                          dn̂ dn̂
+                                   |f (q n̂, q n̂ )| = σtot (q),
+                                                     2
+                                                                          (3.44)
+                            4π
+where σtot (q) denotes the total cross section for momentum q (irrespective of
+the direction). Therefore (3.42) becomes
+                                    
+                               
+                      F (x − x ) = dq (q)v(q)σtot (q).                (3.45)
+
+We can simplify this expression even further by recognizing that the integral
+is equal to the total scattering rate Γtot ,
+
+                                F (x − x ) = Γtot .                       (3.46)
+
+Note that this result means that there is an upper limit to the decoherence
+rate when going to larger and larger separations Δx. This, of course, con-
+stitutes a completely reasonable ﬁnding: For any given separation Δx there
+is a wavelength of the environmental particle that allows for complete res-
+olution of this separation and therefore for a maximum amount of spatial
+decoherence. Increasing this separation further therefore cannot lead to even
+stronger decoherence.
+    Inserting (3.46) into (3.40), we thus see that the oﬀ-diagonal elements
+ρS (x, x ), x = x , of the reduced density matrix of the system change as
+
+                       ∂ρS (x, x , t)
+                                       = −Γtot ρS (x, x , t).             (3.47)
+                            ∂t
+For short time intervals over which the internal dynamics of the system are
+negligible, the time evolution of the interference terms is therefore given by
+
+                       ρS (x, x , t) = ρS (x, x , 0)e−Γtot t .           (3.48)
+
+This shows that in the limit of maximum decoherence, spatial interference
+terms become exponentially suppressed at a rate set by the total scattering
+rate Γtot .

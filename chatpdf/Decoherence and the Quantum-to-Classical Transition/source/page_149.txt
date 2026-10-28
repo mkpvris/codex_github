@@ -1,0 +1,51 @@
+134    3 Localization Due to Environmental Scattering
+
+The integral can be computed using the deﬁnition of the Riemann ζ-function
+for integer arguments n,
+                                      ∞
+                                1             xn−1
+                      ζ(n) =              dx x      .               (3.65)
+                             (n − 1)! 0      e −1
+
+Evaluating this expression for x = cq/kB T and n = 9, we ﬁnally obtain
+                                           2           9
+                          8 6         ε−1          kB T
+                Λ = 8!      a c                                ζ(9) ∝ a6 T 9 ,   (3.66)
+                         9π           ε+2           c
+
+where ζ(9) ≈ 1.002. We emphasize the extremely strong dependence of Λ
+on the size a of the object and the temperature T of the photon gas. For
+example, increasing T by a factor of two makes the decoherence rate more
+than 500 times larger.
+   Evaluating the constants appearing in (3.66), and assuming (ε − 1)/(ε +
+2) ≈ 1, yields the scattering rate
+                                                                 9
+                                        1  a 6              T
+                         Λ ≈ 1020                                      .         (3.67)
+                                      cm2 s cm                K
+
+Let us use this expression to compute numerical estimates for Λ for a few
+cases of interest. For photons at room temperature (T = 300 K) scattering oﬀ
+a dust grain of size a = 10−3 cm, we obtain Λ ≈ 1024 cm−2 s−1 . Using (3.58),
+this means that spatial interferences over distances on the order of as little
+as Δx = |x − x | ≈ 10−12 cm will become eﬀectively suppressed within the
+time span of a second. Similarly, interferences over separations on the order
+of the size of the object (Δx ≈ 10−3 cm) will become signiﬁcantly damped
+within a mere 10−18 seconds. For the same object (a = 10−3 cm) immersed
+into cosmic microwave background radiation (which consists of photons at
+the characteristic temperature of 3 K), the scattering constant is reduced by
+a factor of 1018 , i.e., Λ ≈ 106 cm−2 s−1 . Even this rate still corresponds to a
+very eﬃcient decoherence process, as coherences over distances on the order
+of 10−3 cm will be locally suppressed within the time span of a second.
+    If we reduce the size of the object down to, say, a = 10−6 cm, corre-
+sponding to a very small dust particle or a large molecule, we obtain Λ ≈
+106 cm−2 s−1 for a photon gas at room temperature and Λ ≈ 10−12 cm−2 s−1
+for cosmic microwave background radiation. We see that in the latter case,
+decoherence is relatively slow, as the reader might have intuitively expected.
+Our estimate means that, if the 3 K background radiation was the only
+source of environmental scattering, interferences could here in principle be
+maintained for several seconds over separations up to 106 cm before becoming
+noticeably degraded.
+    All values for Λ calculated here are summarized in Table 3.1. In Table 3.2,
+we have also listed the corresponding decoherence timescales (3.58) for co-
+herent separations Δx equal to the size a of the object. Needless to say, the

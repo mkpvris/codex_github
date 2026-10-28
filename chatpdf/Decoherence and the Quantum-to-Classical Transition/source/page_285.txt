@@ -1,0 +1,49 @@
+272     6 Observing Decoherence in Action
+
+rier is correspondingly referred to as the Josephson junction (for reviews,
+see [280, 281]).
+
+6.3.2 Basic Physics of SQUIDs
+
+A SQUID is directly based on the Josephson eﬀect. It consists of a ring
+of superconducting material interrupted by one (rf-SQUID) or several (dc-
+SQUID) Josephson junctions (Fig. 6.18). In this section, we shall focus on
+the rf-SQUID with a single junction. The quantum-mechanical tunneling of
+Cooper pairs through the junction leads to the ﬂow of a supercurrent around
+the loop, which creates a magnetic ﬂux threading the SQUID ring. Addition-
+ally, the SQUID is immersed into an external magnetic ﬁeld whose strength
+can be adjusted, giving rise to an additional ﬂux Φext through the loop. The
+purpose of this external ﬂux will be explained below.
+    Quantum mechanics requires that the wave function describing the su-
+percurrent be continuous around the loop, and thus an integer multiple of
+the wavelength must equal the circumference of the loop. The total change
+in phase around the loop is given by 2πΦ/Φ0 . Here Φ0 = h/2e is the so-called
+ﬂux quantum (with e being the electron charge). Φ denotes the total trapped
+ﬂux through the loop, composed of the ﬂux created by the ﬂow of supercur-
+rent around the loop and the ﬂux Φext due to the external magnetic ﬁeld.
+If the loop did not contain a Josephson junction, then the requirement of
+continuity of the wave function would translate into the condition
+
+                           Φ/Φ0 = k,        k = 1, 2, . . .                     (6.31)
+
+However, the presence of the Josephson junction introduces an additional
+phase shift ΔφJ , which is completely determined by the physical properties
+of the junction. The complete condition for phase continuity then reads
+
+                    ΔφJ + 2πΦ/Φ0 = 2πk,            k = 1, 2, . . . .            (6.32)
+
+                                                 supercurrent
+
+
+
+
+                                                              superconducting ring
+
+
+
+
+                               Josephon junction
+Fig. 6.18. Schematic illustration of a SQUID. A ring of superconducting material
+is interrupted by one or several Josephson junctions, which induce the ﬂow of a dis-
+sipationless “supercurrent” around the loop. This supercurrent creates a magnetic
+ﬂux through the loop.

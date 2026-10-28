@@ -1,0 +1,44 @@
+                                            7.4 Quantum Error Correction         317
+
+can be performed by applying the so-called Hadamard rotation
+                                           
+                                  1    1 1
+                           H=√                                                (7.40)
+                                   2 1 −1
+to the original basis states |0 and |1. Note that a phase-ﬂip σ̂z in the basis
+{|0 , |1} looks like a bit-ﬂip error in the basis {|+ , |−}, because
+                                   σ̂z |± = |∓ .                            (7.41)
+We have thus accomplished the encoding
+                   α |0 + β |1 −→ α |+ + + + β |− − − .                   (7.42)
+The three qubits will interact with the environment and thus be subject to
+entanglement and decoherence, leading to phase errors Ẑijk , (i, j, k) ∈ {0, 1}.
+Suppose we only consider error operators of weight ≤ 1 (namely, the operators
+Ẑ000 , Ẑ100 , Ẑ010 , and Ẑ001 ). Then the composite qubit–environment state may
+be written as
+                     |Ψ  = (α |+ + + + β |− − −) |e000 
+                          + (α |− + + + β |+ − −) |e100 
+                          + (α |+ − + + β |− + −) |e010 
+                          + (α |+ + − + β |− − +) |e001  .                 (7.43)
+In the following, we shall refrain from writing down the environmental states.
+As we do not care about their precise form, we may simply imagine each of
+the qubit terms in the state to be correlated with some relative state of the
+environment.
+    Now we would like to diagnose the error. To do so, we ﬁrst apply the
+Hadamard rotation (7.40) one more time to each qubit, which returns us
+to the original basis {|0 , |1}. Then the state (7.43) becomes (omitting the
+environmental states)
+                            |Ψ  = (α |000 + β |111)
+                                 + (α |100 + β |011)
+                                 + (α |010 + β |101)
+                                + (α |001 + β |110)                         (7.44)
+Next we introduce two ancilla qubits prepared in the state |ar  = |00.8 To
+encode information about the qubit errors in the ancilla, we perform a series
+of cnot gates in the following way:
+   8
+     In fact, it can be shown that these two ancilla qubits are not strictly required
+to perform the error diagnosis and correction. The error syndrome could in princi-
+ple also be extracted directly from the three encoded qubits themselves. However,
+inclusion of the ancilla allows our description of the three-bit code to follow more
+clearly the basic ideas of quantum error correction outlined above. Furthermore, it
+turns out that the ancilla qubits are required to implement so-called fault-tolerant
+schemes for error correction (see Sect. 7.4.6 below).

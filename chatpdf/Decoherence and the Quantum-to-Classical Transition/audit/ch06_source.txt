@@ -1,0 +1,2284 @@
+6 Of Buckey Balls and SQUIDs:
+Observing Decoherence in Action
+
+
+
+
+Until the mid-1990s, decoherence was mainly studied through theoretical
+models. As described in Chap. 3, in 1985 Joos and Zeh [7] showed that spatial
+superposition states of even minuscule objects, such as dust grains or large
+molecules, are rapidly decohered by the scattering of only minimal environ-
+ments. Furthermore, the rule-of-thumb expression (2.113) for spatial decoher-
+ence rates derived by Zurek in 1984 [12] suggested that on macroscopic scales
+decoherence would be overwhelmingly more rapid than dissipation. These re-
+sults led to the common notion that decoherence is extremely eﬃcient and
+fast, and to the general prediction that any nonclassical superposition in the
+everyday world would be immediately decohered.
+    That much was known (or at least suspected) in the 1980s. What was
+sorely missing, though, was some kind of experiment that would demonstrate
+the dynamics of decoherence, by showing how superposition states becomes
+gradually unobservable due to the action of decoherence. Instead of simply
+stating that decoherence is so strong and rapid as to preclude the observation
+of Schrödinger-cat states at all length scales relevant to the world of our ex-
+perience, such experiments would enable us to see directly how this quantum-
+to-classical transition happens. We could observe how the smooth action of
+decoherence carries away quantum features and shuttles our object of interest
+safely into the classical domain—and maybe even how quantum coherence
+can subsequently be restored, thus showing that the quantum-to-classical
+transition really is a two-way process. We could change the dynamics and
+properties of this process by manipulating experimental parameters, thereby
+challenging the Copenhagen view of a fundamental quantum–classical bound-
+ary (see Sect. 8.1). Finally, we could test our theoretical models for decoher-
+ence to ﬁnd out how much they really capture the eﬀects of environmental
+interactions in an actual experimental setting.
+    Now that readers have hopefully been convinced of how useful and ex-
+citing such experiments would be, let us look at the diﬃculties that we im-
+mediately face in realizing experiments on decoherence. What do we need to
+do in order to observe the gradual action of decoherence? First, we ought to
+be able to prepare a system in a nonclassical superposition state. Of course,
+the system should have some minimal “size” to be suﬃciently susceptible
+to decoherence—it should not just be a single electron, but preferably some
+244    6 Observing Decoherence in Action
+
+mesoscopic system such as a few entangled photons or a molecule. But here
+lies the catch. We know from theoretical studies that superposition states in
+such systems would typically be decohered much faster than we could resolve
+in an actual experiment. Therefore the experiment must be designed very
+cleverly to ensure that decoherence does not happen too quickly and that
+it can also be suﬃciently well controlled. Then, once the superposition state
+is created, we must have means available to continuously monitor the state
+of the system, but without introducing too much additional decoherence.
+Given all these desired properties, the realization of experiments on decoher-
+ence constitutes a formidable task which requires very special systems and
+observation techniques.
+    In this chapter, we shall describe some of the recent experiments that have
+made it possible to generate “Schrödinger kittens” in the laboratory and to
+observe how they are turned into eﬀectively classical systems through deco-
+herence, in impressive agreement with theoretical predictions. In Sect. 6.1, we
+will discuss the ﬁrst experiment that allowed for the observation of gradual de-
+coherence processes. This experiment was based on superpositions of distinct
+states of an electromagnetic ﬁeld. In Sect. 6.2, we will describe experiments
+in which interference patterns (and their decoherence-induced disappearance)
+were observed for rather massive C70 molecules. In Sect. 6.3, we will focus on
+experiments involving superconducting two-level (“qubit”) systems. Finally,
+in Sect. 6.4, we will outline two other experimental domains—Bose–Einstein
+condensation and quantum-electromechanical systems—that are promising
+candidates for future studies of decoherence.
+
+
+6.1 The First Milestone: Atoms in a Cavity
+The year 1996 saw several experimental breakthroughs in the creation and
+veriﬁcation of mesoscopic Schrödinger-cat states. The basic mechanism of
+these experiments is rooted in a process similar to that originally envisioned
+by Schrödinger in his cat paradox (see Chap. 1) and can be formally de-
+scribed by the von Neumann measurement scheme (see Sect. 2.5.1). We let
+a microscopic system   √ S, which is rather easily prepared in a superposition
+state (|s1  + |s2 ) / 2, interact with a mesoscopic or macroscopic apparatus
+A, such that the latter “measures” the state of S in the {|s1  , |s2 } basis (in
+the general von Neumann sense of the formation of quantum correlations; see
+Sect. 2.5.1). This results in an entangled joint state [compare (2.54)],
+                               1
+                        |Ψ  = √ (|s1  |a1  + |s2  |a2 ) .              (6.1)
+                                2
+Thus the combined mesoscopic or macroscopic system SA is now described
+by the superposition (“cat”) state |Ψ .
+    Monroe and coworkers [246] used this principle to generate a superposition
+of two mesoscopically separated but spatially well-localized coherent-state
+                              6.1 The First Milestone: Atoms in a Cavity      245
+
+wave packets of a single trapped 9 Be+ ion, where each wave packet was
+correlated with distinct (microscopic) internal electronic states of the ion.
+Thus the ion is described by an entangled cat state of the form (6.1), namely,
+                               1
+                        |Ψ  = √ (|x1  |↑ + |x2  |↓) .                  (6.2)
+                                2
+Here the |xi  denote the two wave packets localized around xi , and |↑ and |↓
+are the two relevant electronic states of the ion (Monroe et al. used a pair of
+hyperﬁne ground states). In the notation introduced above, these electronic
+states would correspond to the system S, whereas the two distinct spatial
+regions of the wave packets act as the mesoscopic “meter” A.
+    In the experiment, the centers of the wave packets were about 80 nm
+apart, much more than the width of each individual wave packet (which was
+about 7 nm). The existence of the superposition was veriﬁed through the
+explicit observation of an interference pattern. While Monroe et al. pointed
+out some possible techniques for studying decoherence in the experiment,
+they did not actually experimentally investigate this problem.
+    This ambitious goal was accomplished during the same year in a re-
+markable experiment by Michel Brune and coworkers at the Ecole Normale
+Supérieure in Paris [247] (see also [248] for an accessible review of the experi-
+ment). Instead of creating superpositions of a matter particle, the researchers
+generated a mesoscopic cat state of radiation ﬁelds with classically distin-
+guishable phases and then “watched” how this superposition was gradually
+destroyed by decoherence. This experiment comes even closer to the spirit of
+the original Schrödinger-cat setting than the experiment by Monroe et al., as
+the microscopic system S and the “meter” A are here realized as physically
+distinct systems.
+    The basic idea of the experiment is as follows. An atom is prepared in
+a superposition of two energy eigenstates |g and |e and then allowed to
+transverse a cavity containing a coherent state |α of an electromagnetic
+ﬁeld. The ﬁeld eﬀectively measures the state of the atom in such a way that,
+if the atom is in the state
+                             |e, the coherent state of the ﬁeld undergoes a
+phase shift φ, |α −→ eiφ α , whereas nothing happens if the atom is in the
+state |g. Due to the linearity of the time evolution, the superposition of the
+atom is imprinted on the combined atom–ﬁeld state,
+                 1                        1                   
+                √ (|g + |e) |α −→ √ |g |α + |e αeiφ .                 (6.3)
+                  2                        2
+Since in the experiment the coherent state consists of about 10 photons and
+the
+ iφ achieved
+             phase shift φ is on the order of π, the relative states |α and
+e α of the ﬁeld are mesoscopically distinct. Therefore the right-hand side
+of (6.3) represents a truly mesoscopic cat state. A cleverly designed method,
+to be described below, is then used to verify the existence of the superposition
+state and to observe the gradual decoherence of this superposition. We will
+explain this experiment in more detail in the following.
+246    6 Observing Decoherence in Action
+
+6.1.1 Atom–Field Interactions and Rabi Oscillations
+In the experiment, the microscopic system S (which serves as the “seed” of
+the superposition) is realized in form of a rubidium atom prepared in a su-
+perposition of two distinct energy eigenstates |g and |e corresponding to
+two circular Rydberg states. These are states with a large quantum number
+n (Brune et al. [247] used n = 50 and 51) and maximum orbital angular
+momentum along the quantization axis, i.e., |m| = n − 1. The corresponding
+valence-electron probability density is torus-shaped, such that the valence
+electron moves in a quasiclassical circular planar orbit perpendicular to the
+quantization axis. Such states have many interesting properties. Most impor-
+tant to this experiment, they interact strongly with even weak microwave
+radiation due to their large magnetic dipole moment. Also, the electrons are
+far away from the nucleus and thus their acceleration is comparably small,
+leading to long radiative decay times. Both features allow for the prepara-
+tion of long-lived atom–ﬁeld correlations necessary to an observation of the
+gradual action of decoherence.
+    Since the interaction between an atom and an external oscillating ﬁeld
+is the key component of the experiment, let us brieﬂy review so-called Rabi
+oscillations. Suppose that we can make the assumption that only the two
+energy levels |g (with energy Eg ) and |e (with energy Ee ) of the atom are
+relevant. Since the circular Rydberg levels used in the experiment interact
+very strongly with radiation, this is a good approximation. The state of the
+atom can then be written as
+                         |ψatom  = cg (t) |g + ce (t) |e ,               (6.4)
+                                                                              2
+where cg (t) and ce (t) are arbitrary complex coeﬃcients such that |cg (t)| +
+        2
+|ce (t)| = 1. Without the ﬁeld, the Hamiltonian for the atom is
+                           Ĥ0 = Eg |gg| + Ee |ee|.                     (6.5)
+Let us now turn on an external sinusoidal oscillating ﬁeld with frequency ω.
+We will treat this ﬁeld classically, which turns out to be a perfectly legitimate
+approximation in our experiment for the following reason. The particular
+cavity used in the experiment that contains the ﬁeld is very dissipative, i.e.,
+it interacts strongly with the environment. Thus energy and coherence of the
+ﬁeld continuously leak out of the cavity, making the ﬁeld eﬀectively classical
+(another decoherence process!) [249]. This is despite the fact that the average
+number of photons in the cavity in the experiment is of order one, such that
+a quantum treatment may have appeared necessary.
+    When the ﬁeld is turned on, the Hamiltonian of the atom becomes (setting
+ ≡ 1)
+                                              
+                     Ĥ = Ĥ0 + eiωt |ge| + e−iωt |eg|,                  (6.6)
+                                 2             2
+where the Rabi frequency  measures the coupling between the atom and
+the ﬁeld. Thus the external ﬁeld can induce transitions between the atomic
+                              6.1 The First Milestone: Atoms in a Cavity       247
+
+levels |g and |e. Suppose the atom is initially in the ground state |g (i.e.,
+cg (0) = 1, ce (0) = 0), then a simple calculation yields the probability of the
+atom to be found in state |e after a time t,
+
+                                   2      2      Ωt
+                             |ce (t)| =      sin2    .                       (6.7)
+                                          Ω2      2
+             √
+Here Ω ≡ Δ2 + 2 is called the generalized Rabi frequency, where Δ =
+ω − ωeg quantiﬁes the detuning between the frequency ω of the ﬁeld and
+the atomic transition frequency ωeg ≡ (Ee − Eg ). We see that the larger the
+detuning Δ, the smaller the maximum amplitude of the component |e in the
+state |ψatom .
+    At resonance, i.e., when the frequency ω of the ﬁeld is tuned to the atomic
+transition frequency ωeg and thus Δ = 0, we have Ω = . Then (6.7) becomes
+
+                             2           t  1
+                       |ce (t)| = sin2      = (1 − cos t) ,                 (6.8)
+                                         2   2
+i.e., the atom cycles between the two energy levels |g and |e at the Rabi
+frequency . In particular, if the atoms starts out in the state |g (or |e)
+and the ﬁeld is switched on for a time τ = π/2 (a so-called “resonant π/2
+                  2
+pulse”), |ce (τ )| = 1/2, i.e., the resulting state of the atom is the equal-weight
+superposition
+                               |ψatom  ∝ |g + eiΦ |e ,                     (6.9)
+where Φ is some (real) phase. This is exactly how the initial superposition
+state of the rubidium atom is achieved in the experiment.
+    We shall also note that the technique of Ramsey interferometry outlined
+in Sect. 2.2.2 is directly based on the application of two π/2 Rabi pulses.
+The ﬁrst π/2 pulse creates the superposition of the two basis states, as in
+(2.4) and (6.9), whereas the second π/2 pulse, applied after a certain delay
+time, leads to the ﬁnal state (2.6) in which the magnitudes of the expansion
+coeﬃcients ﬂuctuate as a function of the delay time.
+
+6.1.2 Creating the Cat State
+
+How precisely is the superposition state of radiation ﬁelds achieved in the
+experiment? For the following discussion, the reader may refer to Fig. 6.1 for
+a schematic overview of each step of the process. Let us start by having a
+look at the experimental arrangement sketched in Fig. 6.2. Rubidium atoms,
+emitted from the source O and prepared in the initial state |e, pass through
+a series of three cavities, labeled R1 , C, and R2 . The purpose of the ﬁrst
+cavity R1 is to create the superposition state of the rubidium atoms in the
+manner described above. Namely, a π/2 pulse with frequency equal to the
+frequency of the atomic transition |g ←→ |e is applied to the rubidium
+atoms, creating the state (6.9) with Φ = 0, i.e.,
+248     6 Observing Decoherence in Action
+
+
+ rubidium
+   atom
+                   R1               C                 R2              De   Dg
+
+
+       π/2 pulse
+                                      atom–ﬁeld
+(a)    |ψatom  = √12 |g + |e         interaction
+
+                                                          π/2 pulse
+(b)    |Ψatom+field  = √12 (|g|α + |e|−α)
+                                                                           measurement
+(c)    |Ψatom+field  = 12 (|g|α − |e|α + |g|−α + |e|−α)
+
+                                                              (g,e)
+(d)                                                         |ψfield  ∝ (±|α + |−α)
+
+Fig. 6.1. Sequence of events leading to the generation the cat state. (a) A rubidium
+atom is prepared in the superposition (6.10) of the states |g and |e by application
+of a π/2 pulse in cavity R1 . (b) When passing through cavity C containing a
+coherent ﬁeld |α, the atom imparts a dispersive phase shift |α −→ |−α on the
+ﬁeld if the atom is in state |e. Since the atom is in a superposition of |g and |e, an
+entangled atom–ﬁeld state [see (6.15)] is created. (c) In the cavity R2 , another π/2
+pulse is applied to the atom, leading to the atom–ﬁeld state (6.17). (d) The energy
+state of the atom (|g or |e) is measured by the detector
+                                                          pair  4 De and Dg , projecting
+                                                          (g,e)
+the state of cavity C on the nonentangled cat state Ψfield ∝ (± |α + |−α).
+
+
+           oven O
+                    rubidium
+                      atom
+                                                  cavity C
+                                             (atom–ﬁeld interaction)
+
+
+
+                cavity R1
+               (π/2 pulse)
+                                                              De detection
+                                                                  Dg
+                                             cavity R2
+                                            (π/2 pulse)
+
+
+Fig. 6.2. Setup used in the experiment by Brune et al. [247] for creating mesoscopic
+Schrödinger-cat states of radiation ﬁelds and for monitoring the gradual decoher-
+ence of these states. Rubidium atoms emitted from the oven O pass through a
+sequence of cavities R1 , C, and R2 containing photon ﬁelds and are detected by
+the ionization chambers De and Dg . Figure adapted with permission from [250].
+Copyright 1996 by the American Physical Society.
+                             6.1 The First Milestone: Atoms in a Cavity      249
+
+                                       1
+                           |ψatom  = √ (|g + |e) .                     (6.10)
+                                        2
+(If the initial state of the atom had been |g, the ﬁnal state would be
+|ψatom  = √12 (|g − |e).) Next, the atoms enter the cavity C, which is cooled
+down to the superconducting regime close to absolute zero in order to min-
+imize the thermal radiation present in the cavity. In contrast to cavity R1 ,
+C has a very large so-called “Q factor” (Q stands for “quality”). This means
+that dissipative losses are minimized, such that photons in the cavity have
+rather long lifetimes. The cavity is made of two parallel mirrors about 3 cm
+apart. However, the distance between these mirrors can also be adjusted, and
+thereby the frequency of the radiation inside the cavity can be varied. This
+radiation consists of a coherent ﬁeld containing a few photons.
+    It is very important to note that the frequency in the cavity is far oﬀ the
+resonance frequency for any transitions from level |g, so nothing happens to
+the state |g interacting with the ﬁeld, but the frequency is fairly close to
+that of a transition from |e involving yet another level |i (namely, the cir-
+cular Rydberg state with n = 52). However, the ﬁeld increases and decreases
+in strength so slowly along the trajectory of the atom that the atom–ﬁeld
+interaction is nearly adiabatic, i.e., no energy quanta are exchanged between
+the atom and the ﬁeld and no actual changes in the amplitude |ce (t)| for
+the component |e in the state (6.4) occur. What happens instead is most
+interesting. The atom entering the cavity C acts as a refractive medium for
+the ﬁeld, i.e., it leads to a shift δω in the frequency of the ﬁeld. It turns out
+that this shift is only signiﬁcant if the atom is in the state |e, and the shift
+is negligible if the atom is in the state |g. By ﬁne-tuning the interaction
+time τ between the atom and the ﬁeld, the experiment achieves a phase shift
+φ = τ δω of the ﬁeld with a value close to π if the atom is in state |e.
+    What happens to the coherent state |α if such a phase shift φ is applied
+to each photon? A coherent state of a photon ﬁeld, with (complex) amplitude
+α, is deﬁned as a superposition of photon-number eigenstates |n [238–241],
+                                       ∞
+                                       
+                               |α =         cn |n ,                     (6.11)
+                                       n=0
+
+with
+                                            αn
+                              cn = e−|α| /2 √ .
+                                        2
+                                                                          (6.12)
+                                             n!
+Thus the distribution of photon-number states follows a Poisson distribution
+                                       2
+with average photon number n̄ = |α| ,
+                                              n
+                                              n̄
+                         (n) ≡ |cn | = e−n̄
+                                     2
+                                                   .                  (6.13)
+                                              n!
+
+Now, if every photon suﬀers a phase shift φ, the state |α becomes
+250    6 Observing Decoherence in Action
+                   ∞
+                                            ∞
+                            αn                   (eiφ α)n            
+ |α −→ e−|α| /2       einφ √ |n = e−|α| /2              |n = eiφ α . (6.14)
+              2                          2
+                                                   √
+                   n=0       n!              n=0     n!
+
+Hence for a phase shift φ = π, as in the experiment, the coherent ﬁeld state
+|α is transformed into the state |−α. This implies that, after the atom has
+passed through the cavity C, the composite atom–ﬁeld system is described
+by the state [see (6.3)]
+                                     1
+                    |Ψatom+ﬁeld  = √ (|g |α + |e |−α) .             (6.15)
+                                      2
+Let us now have a look back at the experimental setup sketched in Fig. 6.2.
+We see that there is in fact a third cavity, R2 , which is identical to R1 and
+positioned after cavity C along the atomic trajectory. Inside R2 , a second
+π/2 pulse is applied to the atom emerging from the cavity C. Recall that this
+pulse implements the transformations [see (6.10)]
+                                   1
+                            |g −→ √ (|g − |e) ,
+                                    2
+                                   1
+                            |e −→ √ (|g + |e) .                       (6.16)
+                                    2
+Thus the entangled state (6.15) becomes
+                      1
+       |Ψatom+ﬁeld  =  (|g |α − |e |α + |g |−α + |e |−α)
+                      2
+                      1                      1
+                     = (|α + |−α) |g + (− |α + |−α) |e .           (6.17)
+                      2                      2
+After passage through R2 , the atom enters two ionization chambers De and
+Dg , which measure whether the atom is in the state |g or |e. Given the
+state (6.17) and the usual projection postulate of quantum mechanics, this
+means that the state of the ﬁeld after the measurement will be either
+                            4
+                        (g)       1
+                       ψﬁeld =      (|α + |−α)                     (6.18)
+                                  N
+
+if the atom is found in the state |g, or
+                              4
+                          (e)    1
+                         ψﬁeld =   (− |α + |−α) ,                     (6.19)
+                                  N
+
+                  √ in the state |e. Here, N
+if the atom is found
+                                             2
+                                               is a normalization factor that
+      √ close to 2 for larger values of |α| . For simplicity, let us assume
+is very
+N = 2 in the following.
+    From (6.18) and (6.19) we see that we have now indeed prepared a su-
+perposition of two coherent ﬁeld states with distinct phases. The “catness”
+                                                          2
+of these states increases with the average number n̄ = |α| of photons in the
+                             6.1 The First Milestone: Atoms in a Cavity     251
+
+cavity C. We note that these superposition states diﬀer from the entangled
+state |Ψatom+ﬁeld , see (6.15). The latter state does not allow one to speak of
+the ﬁeld itself being in a superposition—only the combined atom–ﬁeld system
+is described by a superposition. By contrast, the measurement of the state of
+the atom after passage through the cavity R2 disentangles the atom and the
+ﬁeld, and thus (6.18) and (6.19) represent true superposition states of the
+radiation ﬁeld.
+    One important question remains: How can we distinguish the superpo-
+sitions (6.18) and (6.19) from the corresponding mixture? This is not only
+important for claiming success of the above scheme for the creation of meso-
+scopic Schrödinger cats, but also for achieving our main goal, namely, for
+observing the action of decoherence. The experiment solves this problem
+through a clever trick, which will be explained in the next section.
+
+6.1.3 Observing the Gradual Action of Decoherence
+
+Note that the passage and measurement of the ﬁrst atom has left behind
+                                 4 thestate 4of the atom, since the ﬁnal state
+information in the cavity C about
+                            (g)       (e)
+of the ﬁeld in C is either ψﬁeld or ψﬁeld , depending on the outcome of
+the measurement. As we can see from (6.18) and (6.19), this information is
+encoded in the relative sign between the components |α and |−α of the
+superposition. We know that decoherence tends to delocalize such phase in-
+formation into the environment and to thus make it inaccessible at the level
+of the system. How can we monitor the resulting decay of coherence?
+    The trick is to send a second atom, acting as a probe, through the sequence
+R1 →C→R2 of cavities. If this is done quickly enough after passage of the
+ﬁrst atom, the information about the ﬁrst atom will still be well-encoded
+in the state of the ﬁeld in the cavity C, and the second atom will become
+correlated with this information. The remarkable result is that, in absence of
+                                                 2
+decoherence (and for photon numbers n̄ = |α|  1), after detection at De
+or Dg the second atom will always be found in the same state as the ﬁrst
+atom.
+    That this is indeed true can be easily seen from the following simple
+calculation (see Fig. 6.3). Let us assume
+                                        4 atom 1 has been detected in the state
+                                    (e)
+|e, such that the ﬁeld state is ψﬁeld . After traversing cavity R1 , atom 2
+is described by the superposition |ψatom2  = √12 (|g + |e) [see (6.10)] (the
+basis states |g and |e now refer to atom 2). Thus the initial uncorrelated
+state of this atom and the ﬁeld is
+                                    1
+                 |Ψatom2+ﬁeld  =     (|g + |e) (− |α + |−α) .        (6.20)
+                                    2
+What happens when atom 2 passes through cavity C? Recall that the ﬁeld
+state suﬀers a phase shift |±α −→ |∓α if the atom is in the state |e.
+Therefore the combined state after passage through C is now
+252     6 Observing Decoherence in Action
+
+  second
+ rubidium
+   atom
+                   R1               C                 R2            De     Dg
+
+
+       π/2 pulse
+                                        atom–ﬁeld
+(a)   |ψatom2  = √12 (|g + |e)       interaction
+                                                        π/2 pulse
+(b)   |Ψatom2+field  = 12 (−|g|α + |g|−α
+                             −|e|−α + |e|α)                          measurement
+
+(c)                         |Ψatom2+field  = √12 |e(|α − |−α)
+
+(d)                                                             |ψatom2  = |e
+
+Fig. 6.3. Sequence of events for detecting the superposition state of ﬁelds in the
+cavity C and for monitoring its decoherence, assuming that the initial atom has
+been detected in the state |e. (a) A π/2 pulse in cavity R1 prepares a second
+rubidium atom in the superposition (6.20) of the states |g and |e. (b) The atom
+enters cavity C, which has been left in a superposition state after passage of the
+ﬁrst atom. Atom 2 imparts another phase shift on the ﬁeld in C, leading to an
+entangled atom–ﬁeld state [see (6.21)]. (c) The π/2 pulse in cavity R2 disentangles
+the ﬁeld and the atom [see (6.22)]. (d) If the ﬁeld states |±α are (approximately)
+orthogonal, this means that atom 2 will always be detected in state |e, identical to
+the state of atom 1. Thus the two measurement outcomes are perfectly correlated.
+Decay of this correlation implies decoherence of the cat state in the cavity C.
+
+                         1
+      |Ψatom2+ﬁeld  =     (− |g |α + |g |−α − |e |−α + |e |α) .          (6.21)
+                         2
+Next, the atom passes through cavity R2 , which transforms |g and |e into
+superpositions of these states [see (6.16)]. Thus the state (6.21) becomes
+                           1
+        |Ψatom2+ﬁeld  = √ (− |g |α + |e |α + |g |−α − |e |−α
+                         2 2
+                             − |e |−α − |g |−α + |e |α + |g |α)
+                          1
+                       = √ |e (|α − |−α) .                           (6.22)
+                           2
+Assuming that |α and |−α are orthogonal—an approximation that gets
+                                          2
+better as the number of photons n̄ = |α| in the cavity C increases—the
+reduced density operator for atom 2 corresponding to the state (6.22) is
+             ρ̂atom2 = Trﬁeld |Ψatom2+ﬁeld Ψatom2+ﬁeld | = |e2 e2 |.          (6.23)
+It immediately follows that the probability Pee of ﬁnding atom 2 in the state
+|e, given the detection of atom 1 in the state |e, is Pee = 1. A similar
+                             6.1 The First Milestone: Atoms in a Cavity     253
+
+calculation can be done under the assumption that atom 1 was detected
+in the state |g. This establishes our above assertion of perfect two-atom
+correlations.
+    Thus all we need to do to observe the decoherence of our cat state is
+to measure the decay of correlations Pee (T ) [or Pgg (T )] between measure-
+ment outcomes for pairs of atoms as we increase the time interval T between
+sending oﬀ the ﬁrst and the second atom. If T is much smaller than the char-
+acteristic decoherence time of the ﬁeld superposition, Pee (T ) will be close
+to one, reﬂecting the perfect correlation between the measurement outcomes
+when the superposition has not yet been appreciably decohered. As we make
+the delay time T longer, the superposition in the cavity will become increas-
+ingly decohered, until all relative-phase information (and thus information
+about the state of the ﬁrst atom) has been delocalized into the environment
+and the ﬁeld is described by the incoherent statistical mixture
+                                  1
+                       ρ̂ﬁeld =     (|αα| + |−α−α|) .                 (6.24)
+                                  2
+This will then yield completely uncorrelated measurement results between the
+ﬁrst and the second atom, i.e., the outcome of the measurement on the second
+atom will be random and independent of the result of the measurement on
+the ﬁrst atom. Thus this decoherence process will be observable as the decay
+of Pee (T ) down to a value of 12 .
+    Fig. 6.4 shows a theoretical prediction for Pee (T ) [250], which was found
+to match very well the experimental observations [251]. We clearly see how
+Pee (T ) quite rapidly decreases from its initial value of one down to a plateau
+of Pee (T ) = 12 , corresponding to full decoherence. The reader may wonder
+why Pee (T ), after remaining at around 12 over a range of delay times T ,
+suddenly continues to decay toward a value of zero for larger values of T .
+The explanation is quite simple. The photons in the cavity C have an only
+ﬁnite lifetime, so eventually there are no photons left in C. Thus this cavity
+ceases to have an eﬀect on the atoms passing through it. In this case, the
+atoms experience only the two π/2 pulses in the cavities R1 and R2 , whose
+combined eﬀect it is to transform the initial state |e into |g [see (6.16)],
+
+                 π/2 1
+            |e −−→ √ (|g + |e)                                         (6.25)
+                      2
+                        "                          #
+                 π/2 1    1           1
+                −−→ √ √ (|g − |e) + √ (|g + |e) = |g .               (6.26)
+                      2    2           2
+
+Thus the atoms are never detected in the state |e, and thus Pee (T ) −→ 0 as
+T −→ ∞.
+   From the graph in Fig. 6.4, we can read oﬀ the characteristic decoherence
+time of the ﬁeld superposition. The experiment showed that the decoherence
+time depends on two key parameters:
+254     6 Observing Decoherence in Action
+
+
+                 Pee (T )
+                  1
+
+                0.8         partial decoherence
+                                 complete decoherence
+                0.6
+                                                  dissipation
+                0.4
+
+                0.2
+
+                                                                    T [γ]
+                      0      1       2      3        4          5
+
+Fig. 6.4. Dependence of the joint probability Pee (T ) on the delay time T between
+the passage of a pair of atoms, as given by Davidovich et al. [250]. The initial fast
+decay of Pee (T ) corresponds to decoherence of the cat state in the cavity C; a
+value of Pee (T ) = 12 represents complete decoherence. For even larger values of T ,
+Pee (T ) decreases further due to photon leakage from the cavity. The delay time T
+is measured in units of the characteristic dissipation period γ of the cavity. Figure
+adapted with permission from [250]. Copyright 1996 by the American Physical
+Society.
+
+
+ 1. The phase shift φ of the ﬁeld induced by atoms in the state |e passing
+    through the cavity C. It is found that, the larger φ, the shorter the deco-
+    herence time of the ﬁeld superposition. This behavior is reasonable: The
+    “catness” of the superposition state depends on how distinguishable the
+    components of the superposition are. If φ is small, then the ﬁeld states
+    |α and eiφ α [see (6.14)] have a large overlap. On the other hand, as
+    φ approaches its maximal value of π (the value that we had assumed in
+    our above discussion and that comes
+                                           close to the phase shift achieved in
+    the experiment), |α and eiφ α become orthogonal and thus maximally
+    distinct.
+                                 2
+ 2. The mean number n̄ = |α| of photons in the cavity C. Again, this makes
+    sense: The more photons,
+                               4 the more mesoscopic (and ultimately macro-
+                         (g,e)
+    scopic) the states Ψﬁeld , see (6.18), and thus the more strongly these
+                                            the larger n̄, the smaller the over-
+    states are subject to decoherence. Also,
+    lap between the components |α and eiφ α for a given phase shift φ, and
+    thus the more distinct these components become.
+
+    In their experiment, Brune and coworkers varied these parameters and
+observed how the decoherence rate changed accordingly. Remarkably, the
+results were found to be in astonishing agreement with theoretical predictions
+of Davidovich et al. [250]. It was the ﬁrst time that a mesoscopic “Schrödinger
+kitten” was generated, its existence veriﬁed, and its decoherence observed in
+a controlled way.
+                             6.1 The First Milestone: Atoms in a Cavity      255
+
+    The type of experiment carried out by Brune and coworkers has since
+inspired a number of further experiments that have conﬁrmed and extended
+the results described above. For example, by increasing the number of photons
+in the cavity C (which requires improving the Q factor of the cavity), larger
+and larger cat states can be created (recent experiments have used several
+tens of photons [252]). This class of experiments is commonly referred to as
+“cavity quantum electrodynamics,” or “cavity QED” for short. Apart from
+allowing for the generation of Schrödinger-cat states and the observation
+of their decoherence, cavity QED could potentially be used to implement
+quantum computers. Readers interested in learning more about cavity QED
+will ﬁnd a good and entertaining introduction in the book by Dutra [253].
+
+6.1.4 Bringing Schrödinger Cats Back to Life
+
+Despite the fact that decoherence is a completely unitary (and thus in prin-
+ciple reversible) process, we are accustomed to thinking of the quantum-to-
+classical transition as a “one-way street.” Once quantum coherence is lost, the
+object behaves classically, and nothing seems to bring it back to the quantum
+world. Of course, from our general discussion of decoherence in Sect. 2.7, we
+know the reason why decoherence is considered irreversible for all practical
+purposes. To actually “relocalize” the superposition at the level of the system
+(i.e., to eﬀectively time-reverse the process of decoherence), we would need to
+have appropriate control over the environment, which is usually impossible
+to achieve in practice.
+    In Sect. 2.13, we pointed out that a truly reversible decoherence process
+(an example of virtual decoherence) could be studied by letting the system
+interact with an appropriately designed “artiﬁcial” environment over which
+we can maintain full control. In 1997, the Brune group [254] proposed a mod-
+iﬁed version of the cavity-QED experiment described in the previous sections
+that contains such an engineered environment. As of 2007, the proposal has
+not yet been experimentally realized, mainly because it requires a reversible
+coupling between two superconducting cavities that is diﬃcult to implement
+in practice. Nonetheless, since the idea behind this experiment is very in-
+triguing and chances are good that the technical obstacles can be overcome
+in the near future, we shall outline the proposal in this section.
+    The experimental setup is essentially the same as described above (see
+Fig. 6.2). The key diﬀerence is that now the superconducting cavity C is
+linearly coupled (e.g., by means of a superconducting wave guide) to a second,
+identical cavity C2 that is initially empty. (We shall denote the ﬁrst cavity C
+by C1 in the following to distinguish it clearly from the additional cavity C2 .)
+Through the coupling, C1 and C2 can exchange energy (i.e., photons). Recall
+that after a rubidium atom has passed through the apparatus and its state
+has been measured by the detectors De and Dg , the cavity C1 is left in a
+superposition of the two ﬁeld states |α and |−α [see (6.18) and (6.19)], and
+256    6 Observing Decoherence in Action
+
+the relative sign between these two components encodes information about
+the measured state of the atom.
+    Now suppose that this phase information is transferred to the “reservoir”
+C2 by the coupling between the two cavities. Then the state of C1 must
+accordingly be described by the mixture (6.24). The idea behind the exper-
+imental proposal is that, if the coupling between C1 and C2 is reversible
+to a suﬃciently large degree, the direction of this information transfer can
+subsequently be reversed, such that the initial superposition state in C1 is
+restored while C2 is returned to its initial empty state. Thus we can simulate
+a reversible decoherence process, in which the cavity C2 plays the role of a
+controllable single-mode environment for C1 that leads to decoherence and
+subsequent reappearance of the Schrödinger-cat state in C1 .
+    Let us make this argument a little bit more precise. Suppose energy is
+exchanged between the two cavities C1 and C2 in an oscillatory manner with
+frequency ΩC . This frequency is chosen such that the time required for the
+preparation of the cat state in C1 is much shorter than the time it takes for
+one cycle of energy exchange. Thus it is assumed that the coupling between
+C1 and C2 does not inﬂuence the preparation of the superposition state.
+Since the coupling is linear, a coherent ﬁeld |α(t) in C1 gives rise to another
+coherent ﬁeld |β(t) in C2 . Taking into account the fact that C2 contains no
+ﬁeld at t = 0, we can write α(t) = α0 cos(ΩC t/2) and β(t) = α0 sin(ΩC t/2).
+Therefore the initial cat state in C1 [see (6.18) and (6.19)]
+                                4
+                          (g,e)     1
+                         ΨC1      =   (± |α + |−α) ,                    (6.27)
+                                     N
+evolves into an entangled state for the combined C1 +C2 system,
+                     4
+               (g,e)      1
+              ΨC1 +C2 =     (± |α(t) |β(t) + |−α(t) |−β(t)) .        (6.28)
+                          N
+What happens now can easily be understood from the fact that the overlap of
+the two coherent-ﬁeld states |±α decreases as the mean number of photons
+        2
+n̄ = |α| increases. After a time t = π/ΩC has passed, β(t) = α0 , so all pho-
+tons are concentrated in cavity C2 . Thus the states |±β have attained their
+maximum degree of distinctness, whereas the distinguishability of the states
+|±α is at its minimum. This implies that cavity C2 now holds a maximum
+amount of information about the relative sign between the components in
+the superposition, at the expense of cavity C1 . In other words, there is no
+measurement that we could perform on C1 alone that would tell us anything
+about the relative sign between the components. C2 has carried away the
+phase information, and C1 is formally described by an incoherent mixture of
+states |±α, see (6.24).
+    The reader may recognize this state of aﬀairs as exactly analogous to our
+usual description of decoherence processes where the states associated with
+the environment rapidly attain orthogonality, leading to a decay of relative-
+phase information in the density matrix of the system (see Sect. 2.7). This
+                               6.1 The First Milestone: Atoms in a Cavity        257
+
+analogy is expected, since cavity C2 precisely plays the role of the environ-
+ment in this context. However, the key diﬀerence of the proposal discussed
+here is that, after a characteristic time τ = 2π/ΩC , which is the period of
+energy exchange between the two cavities C1 and C2 , the process has been
+completely reversed: Now the states |±α are again maximally distinct, as at
+t = 0. All information about the relative sign can be retrieved from cavity C1 ,
+and the coherence of the superposition of ﬁeld states in C2 has been restored.
+    Now we can observe the gradual decoherence and recoherence in exactly
+the same way as before, namely, by sending a second atom through the ap-
+paratus and measuring the dependence of the joint probability Pee (T ) on the
+delay time T between the passages of the two atoms. If sources of decoher-
+ence other than the coupling between the cavities C1 and C2 are neglected,
+we expect that Pee (T ) will periodically return to its initial value of one at
+times Tn = nτ = 2nπ/ΩC , with n = 1, 2, . . .. At these times Tn the deco-
+herence of the cat state in C1 has been completely undone. Conversely, at
+intervals nτ /2 = nπ/ΩC , the state of C1 is described by an incoherent mix-
+ture, and thus the outcomes of the measurements on atom 1 and 2 are fully
+uncorrelated, yielding Pee (nτ /2) = 12 .
+    This behavior is sketched in Fig. 6.5. Instead of directly plotting the joint
+probability Pee (T ), we have here used the two-atom correlation function η(T )
+as originally introduced by Raimond, Brune, and Haroche [254]. This function
+takes a value of 12 in the case of perfect correlations, and a value of zero in the
+case of complete decoherence. We see that for delay times equal to integer
+multiples of the characteristic time τ = 2π/ΩC , the initial state is restored
+and we thus obtain a revival of coherence.
+
+        η(T )
+      0.5
+      0.4
+      0.3
+      0.2
+      0.1
+
+        0                                                               T [τ ]
+                 0.5       1      1.5       2       2.5      3
+Fig. 6.5. Dependence of the two-atom correlation function η(T ) on the delay time
+T in the recoherence experiment proposed by Raimond, Brune, and Haroche [254].
+Coherence is continuously removed from, and returned to, the cavity C1 by a second
+cavity C2 (the reservoir). This leads to a periodical revival of the cat state in C1
+and thus to reappearance of the maximum-correlation signal η(T ) = 12 . The delay
+time T is expressed in units of the characteristic period τ = 2π/ΩC with which
+energy (and thus phase information) is exchanged between the two cavities C1 and
+C2 . The initial ﬁeld in C1 was taken to contain an average of ﬁve photons.
+258    6 Observing Decoherence in Action
+
+    Of course, in a realistic experimental setting, this revival process will not
+go on forever, since the cavities C1 and C2 are subject to other sources of
+decoherence and dissipative eﬀects such as photon loss on the mirror surfaces.
+It has been shown [255] that these processes would lead to an exponential
+decay of the amplitude of the revival peaks shown in Fig. 6.5, and thus
+it is unlikely that more than a few peaks could be observed in practice.
+Nonetheless, the observation of a single revival peak would already be an
+impressive experimental illustration of the fact that decoherence is, at least
+in principle, completely reversible.
+
+
+6.2 Interferometry with C70 Molecules
+
+In this section, we will describe a series of experiments carried out by the
+group of Anton Zeilinger at the University of Vienna. In essence, these exper-
+iments are a sophisticated version of the well-known double-slit experiment.
+However, instead of light or microscopic entities such as electrons, interfer-
+ence patterns are here observed for massive molecules. These experiments are
+remarkable for two reasons. First, they demonstrate the quantum “wave na-
+ture” of objects that would normally clearly fall into the “matter” category.
+Second, they show directly how the continuous action of decoherence gradu-
+ally takes away the “quantumness” of these objects and transforms them into
+the familiar classical objects of our experience. Before we describe these ex-
+periments in more detail, let us ﬁrst sketch in a few paragraphs a predecessor,
+namely, the double-slit experiment carried out with single electrons.
+
+6.2.1 The Double-Slit Experiment with Electrons
+
+When, in the year of 2002, the readers of Physics World were asked to
+nominate the “most beautiful experiment in physics” of all times, the win-
+ner turned out to be the double-slit experiment with single electrons [256].
+Feynman had famously remarked [257] that the double-slit experiment is a
+phenomenon “which has in it the heart of quantum mechanics; in reality
+it contains the only mystery” of the theory. Indeed, it is probably diﬃcult
+to fathom another experiment that embodies so simply and completely the
+strange features of quantum mechanics.
+    Interestingly, it was not until the year 1961 that the experiment in its orig-
+inal form—a double slit traversed by electrons—had actually been carried out
+by Claus Jönsson, a student of Gottfried Möllenstedt’s at the University of
+Tübingen [258,259]. Möllenstedt had previously experimentally demonstrated
+electron interference using a diﬀerent device, called the electron biprism—in
+essence, a very thin wire that splits the electron beam in half. This method
+bears similarities to the slip of paper the English scientist Thomas Young had
+                                  6.2 Interferometry with C70 Molecules     259
+
+used at the beginning of the 19th century to split a beam of sunlight in ex-
+periments demonstrating the ability of light to exhibit wave-like constructive
+and destructive interference eﬀects [260].
+    Perhaps even more surprising, the experiment that ensured that only a
+single electron was present in the apparatus at any time was carried out
+only in 1989 by Akira Tonomura and coworkers at Hitachi using an elec-
+tron biprism, just as in Möllenstedt’s experiments [261]. The resulting in-
+terference pattern is shown in Fig. 6.6. This experiment clearly reﬂects the
+“mysteries” of quantum mechanics, as it shows that the interference fringes
+are not induced by interactions between electrons, but are rather due to the
+wave nature of individual electrons. Decoherence in the electron-biprism in-
+terferometer was recently investigated by Sonnentag and Hasselbach [262],
+who studied the decay of the visibility of the interference pattern induced by
+Coulomb interactions between the electrons and a macroscopic and dissipa-
+tive electron-gas and phonon-gas environment.
+
+6.2.2 Experimental Setup
+
+Let us now outline the experimental setup used by the Zeilinger group for
+demonstrating the wave nature of massive molecules. The original experi-
+ment, reported in 1999 in a Nature article by Markus Arndt and cowork-
+ers [263], used C60 molecules, often nicknamed “buckey balls” because of
+their shape (see Fig. 6.7). Subsequent experiments, results of which were ﬁrst
+reported in a 2002 paper by the Zeilinger group [264], were carried out using
+even bigger C70 molecules (in the shape of an elongated buckey ball) and a
+diﬀerent experimental setup [264–267]. Our following discussion will be based
+on this later series of experiments.
+    Let us ﬁrst get a sense of how truly massive these C70 molecules are (rel-
+ative to microscopic entities such as electrons, that is). Since each carbon
+
+
+
+
+Fig. 6.6. Interference pattern from single electrons obtained in the double-slit
+experiment by Tonomura and coworkers [261]. Figure reprinted with permission
+from [261]. Copyright 1989 American Institute of Physics.
+260     6 Observing Decoherence in Action
+
+
+
+
+Fig. 6.7. Schematic illustration of a C60 molecule used in the original matter-wave
+interference experiment of Arndt et al. [263]. Sixty carbon atoms are arranged in
+the shape of a buckey ball with a diameter of about 1 nm.
+
+
+atom contains six protons, six neutrons, and six electrons, a C70 molecule
+is composed of a total of over 1,000 microscopic constituents. Each such
+molecule possesses a very large number of highly excited internal rotational
+and vibrational degrees of freedom. This makes it possible to assign a ﬁnite
+temperature to each individual molecule. Also, emission of thermal radia-
+tion (i.e., of photons) from the molecules can be observed [267]. Thus, C70
+molecules seem to clearly fall into the “particle” category.
+    Why is it so diﬃcult to observe interference eﬀects for such massive
+molecules? The relevant quantity is the matter de Broglie wavelength λ =
+h/mv, where m and v are the mass and velocity, respectively, of the particle.
+Thus the more massive and faster the particle, the shorter this wavelength.
+To observe interference eﬀects with particles in a double slit–type experiment,
+the separation between the slits (and thus even more so the width of each
+slit) must be on the order of the wavelength. For typical velocities of C70
+molecules in the experiment (around 100 m/s), the de Broglie wavelength of
+these molecules is a mere few picometers. The reader may easily imagine the
+impossibility of manufacturing such narrow, and narrowly spaced, slits.
+    How can this diﬃculty be overcome? The experiments of the Zeilinger
+group solve the problem through a neat trick that is based on the so-
+called Talbot–Lau eﬀect. The basic principle of this eﬀect is the follow-
+ing (see Fig. 6.8). Suppose a plane wave is traveling in the +z direction,
+f (z) = e2πiz/λ . Now we place a grating, composed of an array of parallel
+slits, at a right angle to the incoming wave. Let us denote the spacing of
+adjacent slits by d. One can then show (which we will not do here—see [268]
+for a short derivation) that at integer multiples of the distance
+
+                                           d2
+                                    Lλ =                                    (6.29)
+                                           λ
+behind the grating the plane wave will in fact be equal to the pattern of the
+grating. In other words, if we place a screen at a distance nLλ , n = 1, 2, . . .,
+behind the grating and carry out the experiment with light, the screen will
+                                    6.2 Interferometry with C70 Molecules        261
+
+
+
+
+                             Lλ
+Fig. 6.8. Illustration of the Talbot–Lau eﬀect. A plane wave traversing the grating
+on the left will generate an image of the grating at distances nLλ , n = 1, 2, . . .,
+from the grating.
+
+
+show dark and light bands spaced a distance d apart, creating an image of
+the grating itself. This Talbot–Lau eﬀect is a true interference phenomenon.
+Hence, if we carry out this experiment with matter particles and observe
+a density pattern equal to the grating pattern at multiples of the “Talbot
+length” Lλ , we have demonstrated the wave nature of these particles. To be
+sure, the fringes may in principle also be due to a simple blocking of rays
+by the grating (the so-called Moiré eﬀect). However, the Moiré pattern is
+independent of the wavelength λ. Thus, to make sure that we actually deal
+with the Talbot–Lau eﬀect, we can simply observe a variation in the pattern
+while varying λ. In the matter-wave case, this is achieved by changing the
+mean velocity v of the particles, since λ = h/mv.
+    A simple estimate will immediately convince the reader of the advan-
+tage of the Talbot–Lau method for detecting interference eﬀects with C70
+molecules. In the experiments of the Zeilinger group, the spacing d of the
+grating is about one micrometer, and the wavelength of the molecules equals
+a few picometer. Thus Lλ ∼ (10−6 m)2 /10−12 m = 1 m, i.e., all we need to
+do to observe the interference pattern is to place the “screen,” i.e., a parti-
+cle detector, at the macroscopic distance Lλ behind the grating. (The actual
+distance in the experiment is Lλ = 38 cm.) If we then measure a periodic
+variation of the particle density (with period d) that exhibits the character-
+istic wavelength dependence as we change the velocity of the molecules, we
+have conﬁrmed the wave nature of these molecules.
+    The setup in the experiments of the Zeilinger group is schematically shown
+in Fig. 6.9. The C70 molecules are emitted from a source and then pass
+through a total of three identical free-standing gold gratings, each containing
+on the order of a thousand slits with period d = 990 nm. The purpose of the
+ﬁrst grating is to induce a certain degree of coherence in the beam such that
+a diﬀraction pattern can be observed. The center grating acts as the actual
+diﬀraction grating. Finally, a third grating is placed at a distance equal to the
+262    6 Observing Decoherence in Action
+
+
+                                                              ion detector
+                  z
+
+              x                                                      ionizing
+                                                                     laser beam
+                                                         grating 3
+
+                                                 grating 2
+               C70
+                                      grating 1
+                             velocity selector
+
+                      source (oven)
+
+Fig. 6.9. Setup for observing matter-wave interference with C70 molecules in the
+experiments of the Zeilinger group [264–267]. Figure adapted with permission from
+[264]. Copyright 2002 by the American Physical Society.
+
+
+Talbot length Lλ behind the diﬀraction grating. Recall that this means that,
+if the C70 molecules indeed possess a wave nature, an interference pattern will
+be obtained that, at the position of the third grating, will be an image of the
+diﬀraction grating itself. In other words, the molecular density would have
+periodic maximums and minimums along the x direction, with the peaks
+spaced apart by the slit spacing d. The purpose of the third grating is to
+act as a scanning mask for this molecular-density pattern. By moving the
+grating along x, the number of molecules registered behind the grating will
+ﬂuctuate between a maximum and minimum value if an interference pattern
+is present. This ﬂuctuation can then be easily measured by counting the
+number of molecules behind the third grating as a function of the x position
+of the grating.
+    The mean velocities of the molecules passing through the apparatus can
+be adjusted between about 90 m/s and 220 m/s by changing the position
+of the molecular source such that the ﬁxed-height delimiter selects diﬀerent
+portions of the beam, which follows a free-ﬂight parabola. These velocities
+correspond to de Broglie wavelengths between 2 and 6 pm. The entire appa-
+ratus is contained in a vacuum chamber to minimize collisions between the
+C70 molecules and other particles.
+
+6.2.3 Conﬁrming the Wave Nature of Massive Molecules
+
+The result of a typical run of the experiment is shown in Fig. 6.10. The hori-
+zontal axis corresponds to the position of the scanning mask along the x axis
+(see Fig. 6.9), and the vertical axis shows the molecular density behind the
+grating for each position. We clearly see the oscillatory ﬂuctuations in the
+density of C70 molecules, which conﬁrms the existence of spatial coherence
+                                     6.2 Interferometry with C70 Molecules        263
+
+                  counts in 5 s
+
+                    5000
+
+                    4000
+
+                    3000
+
+                    2000
+
+                    1000
+
+                        0
+                         55    55.5 56 56.5 57 57.5             58
+                              position of third grating (μm)
+
+Fig. 6.10. Interference fringes for C70 molecules observed in the experiments of
+the Zeilinger group. The solid line is a ﬁtted sine curve based on theoretical predic-
+tions. Figure adapted with permission from [264]. Copyright 2002 by the American
+Physical Society.
+
+
+and interference eﬀects. By varying the velocity of the molecules and observ-
+ing the change in the density pattern (in agreement with the Talbot–Lau
+theory), it was also explicitly conﬁrmed that this pattern is indeed due to
+the Talbot–Lau eﬀect.
+    Also, the interference eﬀect is a strict one-particle eﬀect and not due to
+any interference between diﬀerent molecules, for two reasons. First, inter-
+particle interference would require that the interacting molecules are in the
+same state. However, since each C70 molecule has a very large number of
+internal degrees of freedom, the chances for this to be the case are eﬀectively
+zero. Second, the distance between two molecules is much larger than the
+range of any intermolecular forces, so essentially only a single molecule is
+passing through the apparatus at any given time.
+
+6.2.4 Which-Path Information and Decoherence
+
+Let us now turn to the main theme of this chapter, namely, the experimental
+observation of decoherence. In the C70 -interference experiments, decoherence
+is dominantly due to collisions between C70 molecules and molecules in the
+background gas (which is always present in the apparatus to some degree,
+since the vacuum is never perfect). We described such collisional decoherence
+in detail in Chap. 3 and showed that it constitutes a ubiquitous source of
+decoherence in nature. However, as mentioned in the opening paragraphs
+of this chapter, for mesoscopic and macroscopic objects this decoherence is
+typically so fast as to make it eﬀectively impossible to observe its gradual
+action.
+264     6 Observing Decoherence in Action
+
+     This brings us to a key advantage of the C70 -interference experiments.
+Here, the amount of collisional decoherence can be precisely tuned by chang-
+ing the density of the background gas. Fig. 6.11 displays the experimentally
+measured interference pattern for the C70 molecules for two diﬀerent pressures
+(i.e., densities) of the background gas, as reported by Lucia Hackermüller et
+al. [268] (see also [265]). The left plot shows clearly visible interference fringes.
+As the pressure of the background gas is increased, the interference fringes
+become less pronounced (right plot). Let us quantify the visibility V (p) of
+the interference pattern at a given background-gas pressure p as the relative
+diﬀerence between the maximum amplitude cmax (p) and minimum amplitude
+cmin (p) of the interference pattern,
+
+                                        cmax (p) − cmin (p)
+                              V (p) =                       .                    (6.30)
+                                        cmax (p) + cmin (p)
+
+In the idealized case of no decoherence and no other experimental imper-
+fections, we would have cmin = 0 and therefore full visibility. In the com-
+pletely decohered case, no interference pattern would be observable and thus
+cmax = cmin , which implies zero visibility.
+    The experimental data [265, 268] for the change of the visibility (6.30)
+with gas pressure p is shown in Fig. 6.12. The visibility is found to decrease
+exponentially with p (note that the vertical axis is in logarithmic units). This
+exponential decay is in remarkable agreement with theoretical calculations
+[160, 269].
+
+                    counts per second
+                       400
+
+                       300
+
+
+                       200
+
+                       100
+
+
+                          0
+                               51  52 53 54 51 52 53 54
+                                 position of      position of
+                              3rd grating (μm) 3rd grating (μm)
+
+Fig. 6.11. Diminished interference eﬀect in C70 -molecule interferometry due to
+decoherence induced by collisions with background-gas molecules, as observed in
+the experiments of the Zeilinger group [268]. The visibility of the interference fringes
+decreases when the pressure of the gas is increased from the left to the right panel.
+Figure adapted, with kind permission from Springer Science and Business Media,
+from [268].
+                                     6.2 Interferometry with C70 Molecules     265
+
+                    visibility (%)
+                       30
+
+                       20
+
+
+                       10
+                        8
+                        6
+
+                        4
+                            0    0.4     0.8     1.2    1.6
+                                pressure (in 10−6 mbar)
+
+Fig. 6.12. Dependence of the visibility (6.30) of the interference pattern on the
+pressure of the background gas, as reported by the Zeilinger group [268]. The
+measured values (circles) are seen to agree well with the theoretical prediction
+(solid line), which describes an exponential decay of the visibility with pressure.
+Figure adapted, with kind permission from Springer Science and Business Media,
+from [268].
+
+
+    Thus these experiments provide impressive direct evidence for how the in-
+teraction with the environment gradually delocalizes the quantum coherence
+required for interference eﬀects to be observed. This decoherence process oc-
+curs in a completely controlled way: By changing the amount of which-path
+information obtained by the environment (e.g., by altering the density of the
+background gas), the amount of decoherence and thus the loss of quantum
+features can be precisely tuned. So we can smoothly navigate and explore the
+quantum–classical boundary, and we ﬁnd our observations to be in excellent
+agreement with theoretical predictions.
+
+6.2.5 Decoherence Due to Emission of Thermal Radiation
+
+What are the most important decoherence mechanisms for macroscopic bod-
+ies? Certainly, as we have seen, collisions with other particles (photons, air
+molecules, etc.) are ubiquitous and play a crucial role. However, another
+fundamental source of decoherence on these length scales is the emission of
+thermal radiation. Every “large” object is able to store energy in its many in-
+ternal degrees of freedom. Macroscopic bodies essentially continuously absorb
+and emit photons. Each emitted photon carries away information about the
+path of the body, leading to decoherence in the position basis and therefore
+to spatial localization of the object.
+    For macroscopic objects, thermal emission of radiation is typically so
+strong as to completely preclude the possibility of observing spatial inter-
+ference eﬀects. Interestingly, as we shall see below, C70 molecules perfectly
+navigate the boundary between the microscopic and macroscopic regimes
+266     6 Observing Decoherence in Action
+
+with respect to thermal decoherence. They are small enough to allow for vis-
+ible interference patterns to emerge, but they are also suﬃciently complex
+that, when heated to a temperature of several thousand Kelvin, thermal de-
+coherence leads to a complete disappearance of interference patterns. Thus
+these molecules are ideally suited for an explicit observation of thermal deco-
+herence eﬀects. All we need to do is to gradually heat up the molecules before
+they pass through the apparatus and then record the decay of the visibility
+of the interference fringes as a function of the molecular temperature.
+    This idea has been realized in a remarkable experiment that was carried
+out by members of the Zeilinger group and reported in 2004 by Hackermüller
+et al. [267]. Before passage through the gratings, the C70 molecules were
+heated by a laser beam from their source temperature of about 900 K to tem-
+peratures up to around 3,000 K. The observed interference pattern for four
+diﬀerent values of laser power (and thus mean temperature of the molecules)
+is shown in Fig. 6.13.
+    We see that the visibility decreases with laser power due to thermal emis-
+sion of radiation from the molecules, as expected. The results from a series of
+runs at various laser heating powers are shown in Fig. 6.14, and we observe
+that the experimental data is in good agreement with predictions obtained
+
+              counts per 2 seconds
+
+                   800
+
+
+                   600
+
+
+                   400
+
+
+                   200
+
+                              0W        3W         6W       10.5 W
+                     0
+                         35 36 37 35 36 37 35 36 37 35 36 37 38
+                               position of third grating (μm)
+
+Fig. 6.13. Interference patterns for C70 molecules for diﬀerent laser heating pow-
+ers (inducing diﬀerent mean temperatures of the molecules), as measured in the
+experiment by Hackermüller et al. [267]. The visibility of the interference fringes
+decreases as the average temperature of the molecules is increased. The variation
+in the overall average count rate at diﬀerent values of laser heating power is due
+to variations of the eﬃciency of the ion-counting detector with the energy of the
+molecules and due to ionization and fragmentation eﬀects in the heating stage.
+Figure reprinted from [267] by permission from Macmillan Publishers Ltd: Nature,
+copyright 2004.
+                                      6.2 Interferometry with C70 Molecules        267
+                   visibility
+                          1,360    2,270 2,850 3,070 3,140
+                    1.0            mean temperature (K)
+                    0.8
+
+                    0.6
+
+                    0.4
+
+                    0.2
+
+                     0
+                          1,540     2,580 2,880 2,930 2,940
+                                  laser heating power (W)
+
+Fig. 6.14. Decay of the visibility of the C70 interference pattern as a function of
+laser heating power and mean molecular temperature in the experiment of Hack-
+ermüller et al. [267]. The circles represent experimental data, which agrees well with
+the theoretical prediction represented by the solid line. Figure reprinted from [267]
+by permission from Macmillan Publishers Ltd: Nature, copyright 2004.
+
+
+from theoretical calculations [267]. A further detailed theoretical analysis of
+the experiment can be found in [270, 271].
+    The results demonstrate that for C70 molecules below temperatures of
+about 1,000 K, thermal decoherence is suﬃciently weak for an interference
+pattern to be observed. At temperatures above about 2,000 K, thermal deco-
+herence signiﬁcantly reduces the visibility of the fringes, while around 3,000 K
+the interference pattern disappears completely.
+    This behavior can be explained as follows. For an emitted photon to trans-
+mit a suﬃcient amount of which-path information to resolve the path of the
+C70 molecule, its wavelength must be comparable to the separation of the dif-
+ferent paths of the molecule, i.e., to the spacing between the maxima of the
+wave packets corresponding to passage of the molecule through the diﬀerent
+slits in the diﬀraction grating. This separation is on the order of the spacing of
+the slits themselves, d ≈ 1 μm, so thermal decoherence requires the emission
+of photons of wavelength λ  1 μm. It turns out that only for temperatures
+above 2,000 K there is a signiﬁcant probability of a C70 molecule to emit a
+photon of this wavelength. For temperatures around 3,000 K, the molecule
+typically emits several such photons. This transfers a suﬃcient amount of
+which-path information to the environment to entirely destroy the interfer-
+ence pattern.
+
+6.2.6 Beyond Buckey Balls
+
+Now that single-particle interference fringes have been experimentally ob-
+served for C70 molecules, we can naturally go further and attempt to demon-
+268     6 Observing Decoherence in Action
+
+strate such quantum eﬀects for larger and larger molecules. In fact, the
+Zeilinger group has already taken the next step into this direction in an exper-
+iment reported by Hackermüller et al. in 2002 [266]. Using an experimental
+setup similar to that for C70 molecules, interference patterns were observed
+for the even more massive ﬂuorinated fullerene C60 F48 (mass m = 1632 amu,
+108 atoms) and for the biomolecule tetraphenylporphyrin C44 H30 N4 (mass
+m = 614 amu, width over 2 nm). The structure of these molecules is sketched
+in Fig. 6.15, and the resulting interference patterns are displayed in Fig. 6.16.
+Again, well-deﬁned interference fringes are observed even for these compara-
+bly massive and complex molecules, and the measured visibilities were found
+to be in good agreement with theoretically predicted values.
+
+
+
+
+Fig. 6.15. Three-dimensional structure of the C60 F48 molecule (left) and the
+biomolecule tetraphenylporphyrin C44 H30 N4 (right) used in the interference exper-
+iments by Hackermüller et al. [266]. Figure reprinted with permission from [266].
+Copyright 2003 by the American Physical Society.
+
+
+  counts                                   counts
+   5,000                                   14,000
+  4,000                                    12,000
+
+  3,000                                    10,000
+
+  2,000                                     8,000
+                                            6,000
+  1,000
+                                            4,000
+      0
+      45.5      46.5       47.5     48.5        58    59    60    61     62   63
+        position of third grating (μm)           position of third grating (μm)
+
+Fig. 6.16. Interference fringes for the C60 F48 molecule (left) and the biomolecule
+tetraphenylporphyrin (C44 H30 N4 ) (right) observed in the experiment by Hack-
+ermüller et al. [266]. The solid line is a ﬁtted sine curve. Figure adapted with
+permission from [266]. Copyright 2003 by the American Physical Society.
+                                         6.2 Interferometry with C70 Molecules   269
+
+    One may now speculate about the feasibility of interference experiments
+that use even larger particles, for instance, biomolecules such as proteins and
+viruses [268, 272] or carbonaceous aerosols [271]. Such experiments will be
+limited by three main factors:
+
+ 1. Collisional decoherence. In order to observe interference fringes for these
+    molecules, the vacuum in the apparatus must be very good. Using a de-
+    coherence model for the visibility of interference fringes as a function
+    of the density of the background gas, the quality of the vacuum in the
+    apparatus required for the observation of interference eﬀects has been
+    estimated for several biomolecules up to the size of a rhinovirus [268,272]
+    (see Fig. 6.17). The estimates assume the availability of an elongated
+    Talbot–Lau interferometer with a spacing of one meter between the grat-
+    ings (which is about three times more than the currently used distance),
+    which has not yet been experimentally realized. Given this design, the
+    required low background-gas densities are within the reach of current
+    technology [265, 268].
+ 2. Thermal decoherence. This eﬀect will become increasingly relevant on
+    larger scales. For example, for a simple double-slit setup (as opposed to
+    the Talbot–Lau interferometer) it has been estimated that a small virus
+    (mass 5×107 amu) would need to be cooled down to about 40 K to exhibit
+    a suﬃciently visible interference pattern [271]. Obviously, it would be
+    quite diﬃcult to produce a beam of such “cold viruses” in the laboratory.
+    For objects larger than the C70 molecules, it may thus well turn out that
+
+
+                         1         101         102       103          104
+                    1                                                       m
+                             C70
+                   0.5
+                                    insulin
+              p                               green ﬂourescent protein
+                                                  hemoglobin
+                   0.1
+                                                         ferritin
+                  0.05
+
+
+                                                         rhinovirus
+
+Fig. 6.17. Estimates for the maximum background-gas pressure p that would still
+permit the observation of interference fringes for several biomolecules in an elon-
+gated Talbot–Lau interferometer. The horizontal axis shows the molecular weight
+m relative to the mass of a C70 molecule. The pressure, shown on the vertical axis,
+is normalized by the pressure required to observe interference with C70 molecules.
+Plot generated using data reported by Hackermüller et al. [268].
+270    6 Observing Decoherence in Action
+
+    it will be experimentally much more challenging to mitigate the eﬀect of
+    thermal decoherence than that of collisional decoherence [271].
+ 3. Dephasing due to inertial forces and vibrations. While not a decoherence
+    eﬀect per se, the visibility of the interference pattern is also aﬀected by
+    noise due to gravitational, rotational, and acoustic perturbations, which
+    are induced by the mass and rotation of the earth and by vibrations of the
+    diﬀraction gratings [273]. These eﬀects can severely limit the observability
+    of the interference fringes, so the experimenters have taken much care to
+    minimize these sources of noise in the Talbot–Lau setup described here.
+    Still, for the particles listed in Fig. 6.17, vibrational noise is predicted to
+    be a major obstacle to observing interference [273]. In currently available
+    setups, this noise is likely to diminish the visibility of the interference
+    pattern to a larger extent than collisional and thermal decoherence.
+
+    The important point to bear in mind is, however, that the conditions for
+an observation of interference eﬀects can be precisely speciﬁed and quantiﬁed
+using theoretical decoherence models. We no longer have to limit ourselves to
+the assumption of a vaguely deﬁned, fundamental divide between the quan-
+tum and classical realms as postulated by the Copenhagen interpretation.
+Instead, by treating the molecules of interest as open quantum systems in-
+teracting with their environments, we can understand what we need to do in
+order to observe interference eﬀects, and why interference fringes are unob-
+servable in a particular experimental setting.
+    The C70 molecules have the perfect amount of susceptibility to decoher-
+ence to allow for an observation of the gradual action of decoherence due to
+collisions with surrounding particles and due to the emission of thermal radia-
+tion. Thus it is diﬃcult to imagine a more accessible and intuitive experiment
+for demonstrating the direct and controllable inﬂuence of decoherence that
+drives the system into the classical regime. It will be exciting to follow the
+development of research in this ﬁeld, as future interference experiments are
+expected to push the envelope even further toward the macroscopic realm.
+
+
+6.3 SQUIDs and Other Superconducting Qubits
+
+Let us now turn to superconducting quantum two-state (qubit) systems. Over
+the past decade, these systems have become key players in experimental stud-
+ies of macroscopic coherence and decoherence. They have gained additional
+importance as potential building blocks of superconducting quantum com-
+puters [274]. In the following, we shall focus on so-called superconducting
+quantum interference devices, or SQUIDs for short. We will also mention
+some related types of superconducting qubit systems such as Cooper-pair
+boxes.
+    A SQUID is a macroscopic quantum system that can exhibit a variety
+of fascinating quantum eﬀects. In SQUIDs the state of billions of Bose-
+                         6.3 SQUIDs and Other Superconducting Qubits        271
+
+condensed electron pairs (see below) is described by a single collective macro-
+scopic variable whose evolution is governed by the Schrödinger equation. The
+potential of SQUIDs for explorations of the quantum domain and of possible
+limits to quantum mechanics has been recognized early. In 1980, Leggett [275]
+proposed a Gedankenexperiment involving the superposition of macroscopic
+ﬂux states in a SQUID to demonstrate the possibility of quantum-coherent
+behavior in a macroscopic system. However, it took two decades for this pro-
+posal to mature into successful experiments [276, 277].
+
+6.3.1 Superconductivity and Supercurrents
+
+The phenomenon of superconductivity was ﬁrst discovered in the early 1900s
+by Heike Kamerlingh Onnes. Onnes used liquid helium to cool down solid
+mercury and found that at a temperature of several Kelvin above absolute
+zero, the electrical resistance of the mercury disappeared. He published his
+results in 1911 in a paper aptly entitled “On the sudden rate at which the
+resistance of mercury disappears” [278]. Two years later, he was awarded the
+Nobel Prize for his work. However, a theoretical understanding of supercon-
+ductivity at the microscopic level was not reached until 1957, when Bardeen,
+Cooper, and Schrieﬀer [279] explained superconductivity as the formation of
+so-called Cooper pairs of electrons of opposite spin, where the mutual attrac-
+tion is mediated by phonons in the crystal lattice of the material. Cooper
+pairs eﬀectively act as bosons and can therefore exhibit properties that are
+strikingly diﬀerent from those of single electrons, which are fermions.
+    Why can Cooper pairs traverse the material without encountering any re-
+sistance? To answer this question, we note that each Cooper pair corresponds
+to a low-energy ground state that is separated by an energy gap ΔE from
+the ﬁrst excited state. If the thermal vibrational energy of the crystal lattice
+is less than ΔE, the lattice cannot induce any transitions in the state of
+the Cooper pair, and thus the pair remains unaﬀected by collisions with the
+lattice. This is in contrast with a single (free) electron that can absorb and
+emit arbitrary amounts of energy, leading to dissipation and thus to electrical
+resistance.
+    A key feature of superconductivity is the fact that, since the Cooper pairs
+all assume the same low-energy quantum state, a number of Cooper pairs
+can form a resistanceless current (“supercurrent”) in which the collective
+center-of-mass motion of the pairs is represented by a single macroscopic
+wave function. Thanks to the peculiar features of quantum mechanics, the
+ﬂow of such a current does not even require the application of an external
+voltage. All we need to do is to insert a very thin insulating barrier between
+two pieces of superconducting material. Cooper pairs then tunnel through
+the barrier, leading to the ﬂow of a supercurrent at zero voltage. This ex-
+perimentally well-conﬁrmed, purely quantum-mechanical phenomenon is one
+of the diﬀerent incarnations of the so-called Josephson eﬀect, and the bar-
+272     6 Observing Decoherence in Action
+
+rier is correspondingly referred to as the Josephson junction (for reviews,
+see [280, 281]).
+
+6.3.2 Basic Physics of SQUIDs
+
+A SQUID is directly based on the Josephson eﬀect. It consists of a ring
+of superconducting material interrupted by one (rf-SQUID) or several (dc-
+SQUID) Josephson junctions (Fig. 6.18). In this section, we shall focus on
+the rf-SQUID with a single junction. The quantum-mechanical tunneling of
+Cooper pairs through the junction leads to the ﬂow of a supercurrent around
+the loop, which creates a magnetic ﬂux threading the SQUID ring. Addition-
+ally, the SQUID is immersed into an external magnetic ﬁeld whose strength
+can be adjusted, giving rise to an additional ﬂux Φext through the loop. The
+purpose of this external ﬂux will be explained below.
+    Quantum mechanics requires that the wave function describing the su-
+percurrent be continuous around the loop, and thus an integer multiple of
+the wavelength must equal the circumference of the loop. The total change
+in phase around the loop is given by 2πΦ/Φ0 . Here Φ0 = h/2e is the so-called
+ﬂux quantum (with e being the electron charge). Φ denotes the total trapped
+ﬂux through the loop, composed of the ﬂux created by the ﬂow of supercur-
+rent around the loop and the ﬂux Φext due to the external magnetic ﬁeld.
+If the loop did not contain a Josephson junction, then the requirement of
+continuity of the wave function would translate into the condition
+
+                           Φ/Φ0 = k,        k = 1, 2, . . .                     (6.31)
+
+However, the presence of the Josephson junction introduces an additional
+phase shift ΔφJ , which is completely determined by the physical properties
+of the junction. The complete condition for phase continuity then reads
+
+                    ΔφJ + 2πΦ/Φ0 = 2πk,            k = 1, 2, . . . .            (6.32)
+
+                                                 supercurrent
+
+
+
+
+                                                              superconducting ring
+
+
+
+
+                               Josephon junction
+Fig. 6.18. Schematic illustration of a SQUID. A ring of superconducting material
+is interrupted by one or several Josephson junctions, which induce the ﬂow of a dis-
+sipationless “supercurrent” around the loop. This supercurrent creates a magnetic
+ﬂux through the loop.
+                         6.3 SQUIDs and Other Superconducting Qubits        273
+
+Since the quantities ΔφJ and Φ0 are ﬁxed, the only free parameter in (6.32) is
+the total ﬂux Φ. Thus in SQUIDs the dynamics of a macroscopic quantity of
+matter (namely, on the order of 109 Cooper pairs) are collectively determined
+by the quantum-mechanical evolution of a single macroscopic coordinate Φ.
+Because ﬂux is the key variable in SQUIDs, these devices are often referred to
+as superconducting ﬂux qubits. (As we shall describe in Sect. 6.3.4, there exist
+other types of superconducting qubit systems in which physical quantities
+such as charge or phase are the key variables [281].)
+    Let us now discuss the dynamics of Φ. It turns out that the evolution of
+Φ is governed by an eﬀective Hamiltonian of the form
+                                 "                                 #
+        P2            2 d2        (Φ − Φext )2   Ic Φ0          Φ
+  H = Φ + U (Φ) =             +                 −       cos   2π       . (6.33)
+        2C            2C dΦ2           2L          2π            Φ0
+
+Here C denotes the total capacitance, L is the self-inductance of the loop, and
+Ic is the critical current of the Josephson junction. We shall not derive the
+structure of this Hamiltonian here (interested readers may ﬁnd the derivation
+in [218]). Instead, let us get a feel for what kind of dynamics this Hamiltonian
+implies.
+    We can interpret the Hamiltonian as determining the motion of a ﬁcti-
+tious “particle” of “mass” C in a potential given by U (Φ). The role of the
+usual canonical variables position and momentum is here played by the total
+trapped ﬂux Φ and the conjugate quantity PΦ = −id/dΦ, which is often
+referred to as the total displacement current and has units of charge. The
+analog of the kinetic energy of a particle moving in real space is in our case
+the electrostatic energy.
+    If the external magnetic ﬁeld is adjusted such that the induced ﬂux Φext is
+in the vicinity of the bias point Φext = Φ0 /2, U (Φ) takes the form of a tilted
+one-dimensional double-well potential (Fig. 6.19). This is the experimentally
+relevant situation, which we shall assume from now on. The amount of tilt
+is determined by the ﬂux Φext , and at Φext = Φ0 /2 the double well becomes
+exactly symmetric (this case will be discussed in more detail below). Thus
+we can change the shape of the potential by adjusting the strength of the
+externally applied magnetic ﬁeld.
+    Broadly speaking, the two wells of the potential U (Φ) correspond to the
+two possible directions (clockwise and counterclockwise) of the supercurrent
+around the loop. Each well contains a number of energy eigenstates |k of the
+Hamiltonian (6.33) that are (provided the damping induced by the Josephson
+junction is weak) localized well below the barrier separating the two wells.
+Thus we have a set of left-well (right-well) energy eigenstates that correspond,
+in an approximate manner, to a classical persistent clockwise (counterclock-
+wise) current around the loop.
+    More precisely, the corresponding wave functions ψk (Φ) ≡ Φ|k are lo-
+cally of the s-wave type. This means that the amplitudes of these wave func-
+tions are narrowly peaked around the bottom of either one of the wells of
+274    6 Observing Decoherence in Action
+
+
+               U (Φ) [Ic Φ0 ]
+
+
+                0.3
+
+                0.2
+                                ψk (Φ)
+                0.1
+                                                    ψk (Φ)
+                   0
+                                         Φ = Φext
+                                                             Φ [Φ0 ]
+                    −0.2          0.2         0.6       1
+Fig. 6.19. Eﬀective double-well potential U (Φ) of the SQUID (in units of Ic Φ0 )
+in the vicinity of the bias point Φext = Φ0 /2. Low-lying energy eigenstates
+ψk (Φ) ≡ Φ|k are well-localized near the bottom of each well and are therefore
+also approximate eigenstates of the ﬂux operator. In the plot, the Φ-axis is mea-
+sured in units of the ﬂux quantum Φ0 , and we chose Φext = 35 Φ0 .
+
+
+U (Φ), with very little spread in ﬂux space. Thus each state |k corresponds
+to a relatively narrow range of values of the total ﬂux Φ and can therefore
+(at least for suﬃciently small k) also be regarded as a “fuzzy” eigenstate of
+the ﬂux operator, with the possible discrete ﬂux values determined by the
+continuity condition (6.32). Accordingly, the states |k are often referred to
+as “k-ﬂuxoid states.”
+    Classically, the barrier separating the two wells of the potential U (Φ) is
+impenetrable for the low-lying k-ﬂuxoid states |k, since their energy is less
+than the barrier height. However, quantum-mechanically, resonant tunneling
+between the wells can occur [282,283]. For example, one can apply a radiation
+ﬁeld to excite the system from a low-lying state to a higher-energy state,
+localized in the same well, and this state can subsequently decay to a lower (or
+equal) energy level in the other well via quantum tunneling. Such tunneling
+processes lead to a macroscopic change of the ﬂux Φ threading the ring, which
+can in turn be observed in form of a macroscopic change in the magnetic
+moment of the system.
+    One typically engineers the SQUID in such a way as to ensure that the
+ground state |0 and ﬁrst excited state |1 (localized at the bottom of opposite
+wells) are well-separated in energy from higher-lying states. Then the SQUID
+can be eﬀectively described as a macroscopic two-state (qubit) system. As
+basis states, we choose the two classical persistent-current states | and |
+corresponding to the supercurrent ﬂowing in, respectively, deﬁnite clockwise
+and anticlockwise directions around the loop. Formally, we may then write
+the eﬀective Hamiltonian of this two-state SQUID as
+
+                                  Ĥ = −σ̂z − Δσ̂x .                     (6.34)
+                         6.3 SQUIDs and Other Superconducting Qubits          275
+
+Here the eigenstates of the Pauli spin operator σ̂z are | and |, with
+2 = 2Ip (Φext − Φ0 /2) denoting the asymmetry energy between these states,
+and Ip ≈ Ic . Δ is the matrix element for tunneling between | and |. The
+two lowest-lying energy eigenstates |0 and |1 are then linear combinations
+of | and | given by
+
+                        |0 = cos(θ) | + sin(θ) | ,                   (6.35a)
+                        |1 = − sin(θ) | + cos(θ) | ,                 (6.35b)
+                                            √
+with tan 2θ = Δ/ and energies E0,1 = ∓ Δ2 + 2 . The  √ energy-level split-
+ting between |0 and |1 is therefore ΔE = 2E1 = 2 Δ2 + 2 . Away from
+the bias point Φext = Φ0 /2,   Δ, and thus the states | and | are
+essentially identical to the zero-ﬂuxoid and one-ﬂuxoid energy eigenstates |0
+and |1, in agreement with our discussion above. The expectation value of
+the supercurrent corresponding to the two states |0 and |1 can be shown to
+be equal to ±Ip cos 2θ (where the positive sign indicates clockwise direction
+of the current).
+
+6.3.3 Superposition States and Coherent Oscillations in SQUIDs
+
+Let us now consider what happens if the SQUID is at the bias point
+Φext = Φ0 /2. Now the double well becomes symmetric and we have  = 0 in
+(6.34), i.e., the energy levels in the left and right wells line up. In this case,
+classically, the energy levels associated with the states |0 and |1 would cross
+and therefore these states would become degenerate. Quantum-mechanically,
+however, this degeneracy is lifted by the continued existence of a tunneling
+barrier Δ between the wells [see (6.34)], which leads to a “repulsion” of the
+energy levels, producing an anticrossing of these levels (Fig. 6.20). Since now
+θ = π/4 in (6.35a) and (6.35b), the energy ground state |0 and the ﬁrst
+excited state |1 are given by symmetric and antisymmetric superpositions
+of the persistent-current states | and |,
+                                  1
+                            |0 = √ (| + |) ,                         (6.36a)
+                                   2
+                                  1
+                            |1 = √ (− | + |) .                       (6.36b)
+                                   2
+The energy splitting ΔE between these two new eigenstates is typically very
+small and is√solely determined by the capacitance C of the junction, scaling
+as ΔE ∝ e− C .
+    Since | and | are localized in, respectively, the left and right wells,
+superpositions (6.36a) and (6.36b) are delocalized across the two wells. The
+existence of these superpositions in a SQUID was experimentally conﬁrmed
+in 2000 by Friedman et al. [276] and independently by van der Wal et al. [277].
+In the experiment by Friedman et al., the states | and | corresponded
+276     6 Observing Decoherence in Action
+
+
+                U (Φ) [Ic Φ0 ]
+
+
+
+                  0.2
+
+
+                  0.1
+
+
+                    0                                      |1
+                                          ΔE
+                                                           |0
+                                                                 Φ [Φ0 ]
+                     −0.2        0.2        0.6        1
+Fig. 6.20. Eﬀective potential U (Φ) of the SQUID at bias Φext = Φ0 /2. At this bias
+point the double well becomes symmetric. The presence of the tunneling barrier
+prevents the energy levels in the two wells from crossing. Instead, level anticrossing
+occurs via the formation of delocalized energy eigenstates |0 = √12 (| + |) (the
+new symmetric ground state) and |1 = √12 (− | + |) (the new antisymmetric
+ﬁrst excited state). These eigenstates are superpositions of the “classical” persistent-
+current states | and |. Their presence has been conﬁrmed experimentally via
+spectroscopic measurements [276, 277] and via the observation of coherent Rabi
+oscillations [284, 285].
+
+
+to opposite-direction supercurrents of several μA, each current composed of
+billions of Cooper pairs. This amounts to a macroscopic diﬀerence of more
+than Φ0 /4 in the ﬂux generated by these two currents, equal to about 1010 μB
+(where μB is the Bohr magneton) in local magnetic moment. The states
+(6.36a) and (6.36b) therefore represent superpositions of macroscopically dis-
+tinct states of the Schrödinger-cat type, just as envisioned in Leggett’s orig-
+inal thought experiment [275] twenty years earlier. Friedman et al. veriﬁed
+the existence of the superposition states by indirect means via a static spec-
+troscopic measurement of the energy diﬀerence ΔE between these two states.
+Their result for ΔE turned out to be in excellent agreement with theoretical
+predictions.
+    There is another way of demonstrating the existence of such superposition
+states in SQUIDs, namely, through the observation of coherent oscillations
+between the persistent-current states | and |. These oscillations are of
+the Rabi type described in Sect. 6.1.1. First, the external ﬂux threading the
+SQUID is tuned slightly away from the degeneracy point Φext = Φ0 /2, such
+that the energy eigenstates |0 and |1 are close to degeneracy. The SQUID
+is initialized in the ground state |0 by allowing it to relax. Then a pulse
+of microwave radiation is applied whose frequency is tuned to the (small)
+energy diﬀerence ΔE between the states |0 and |1. Following our discus-
+sion of Rabi oscillations in Sect. 6.1.1, this will cause the qubit to oscillate
+between the states |0 and |1 and thus also between the persistent-current
+                           6.3 SQUIDs and Other Superconducting Qubits              277
+
+states | and | [see (6.35)]. This eﬀect manifests itself in an oscillation of
+the macroscopic supercurrent in the SQUID between clockwise and counter-
+clockwise directions around the loop (see Fig. 6.21). The oscillation occurs
+at the Rabi frequency, which is determined by the strength of the coupling
+between the qubit and the microwave ﬁeld and is linearly dependent on the
+microwave amplitude. Thus the relative probability of the SQUID’s being in
+each of the two states | and | depends on the amplitude and length of
+the microwave pulse [see (6.8)].
+    In 2003 Chiorescu and coworkers [284] experimentally demonstrated such
+Rabi oscillations in a superconducting ﬂux qubit. The full experimental
+setup consisted here of a μm-sized superconducting loop interrupted by three
+Josephson junctions (Fig. 6.22). The use of three junctions does not signif-
+icantly alter the basic physics of this type of qubit compared to the single-
+junction rf-SQUID described above, but it facilitates the correct tuning of the
+qubit. The qubit was in turn coupled to a dc-SQUID (with two Josephson
+junctions), which acted as an extremely sensitive read-out device for the ﬂux
+in the qubit.
+    Chiorescu et al. applied a microwave pulse of given length and ampli-
+tude and then performed a projective measurement on the ﬂux qubit in the
+
+
+                                supercurrent                 Rabi period
+      −I              +I
+                                  +I
+
+                                                                                t
+
+                                  −I
+Fig. 6.21. Quantum-coherent tunneling in a SQUID (tuned close to the degeneracy
+point Φext = Φ0 /2) can be observed via the coherent oscillation of the macroscopic
+supercurrent between clockwise and counterclockwise directions.
+
+
+
+
+Fig. 6.22. Superconducting ﬂux qubit used in the experiment by Chiorescu et al.
+[284]. The actual qubit, shown on the right, consists of a tiny superconducting loop
+with three Josephson junctions. The two possible directions of the persistent current
+around the loop are indicated by white and black arrows. The change in magnetic
+ﬂux in the qubit is detected by a SQUID composed of a larger superconducting loop
+(partially shared with the qubit) interrupted by two Josephson junctions. Figure
+reprinted with permission from [284]. Copyright 2003 by AAAS.
+278     6 Observing Decoherence in Action
+
+persistent-current basis {| , |} (corresponding to the experimentally ac-
+cessible observable). By carrying out this procedure several thousand times,
+they obtained the experimental probability of ﬁnding the qubit in (say) the
+state |, corresponding to the supercurrent ﬂowing in clockwise direction.
+By repeating this experiment over a range of pulse lengths of the microwave
+radiation (while keeping the microwave amplitude ﬁxed), they were able to
+trace out hundreds of damped Rabi oscillations with a surprisingly long de-
+cay time of about 150 ns (Fig. 6.23). To conﬁrm that these oscillations were
+indeed quantum-coherent oscillations of the Rabi type, the researchers suc-
+cessfully veriﬁed that the observed oscillation frequencies scaled linearly with
+the amplitude of the microwave pulse, which is a key signature of the Rabi
+process. An alternative continuous read-out scheme for the detection of co-
+herent oscillations was implemented in a subsequent experiment by Ilichev et
+al. [285].
+     The Rabi oscillations observed by Chiorescu et al. [284] and Ilichev et
+al. [285], together with the earlier spectroscopic results of Friedman et al. [276]
+and van der Wal et al. [277], impressively demonstrate the presence of co-
+herent superpositions involving macroscopically distinct supercurrent states.
+
+
+                     P (τ )
+
+                     80
+                     60
+                     40
+                     80
+                     60
+                     40
+                     80
+                     60
+                     40
+                          0 10 20 30 40 50 60 70 80 90 100
+                                 pulse length τ (ns)
+
+Fig. 6.23. Rabi oscillations between the macroscopic opposite-direction supercur-
+rent states | and | in a superconducting ﬂux qubit as observed in the experi-
+ment by Chiorescu et al. [284]. These oscillations conﬁrm the existence of coherent
+superpositions of the states | and |. Results for three diﬀerent amplitudes of
+the resonant microwave radiation are shown (with the amplitude decreasing from
+top to bottom). The vertical axis denotes the percentage P (τ ) of runs in which
+the qubit was found in the particular deﬁnite-current state | (say), as a function
+of the length τ of the microwave pulse. Figure adapted with permission from [284].
+Copyright 2003 by AAAS.
+                         6.3 SQUIDs and Other Superconducting Qubits        279
+
+SQUIDs are particularly good candidates for the creation of such superpo-
+sition states, because the relevant macroscopic variable (the trapped macro-
+scopic ﬂux through the SQUID ring) can be controlled via microscopic energy
+diﬀerences in the Josephson junction [286]. The height Δ of the tunneling bar-
+rier is dominantly determined by properties of the junction, independently
+of the size of the loop. This means that the scaling of the achievable “size”
+of the superpositions of macroscopically distinct ﬂux states is only weakly
+dependent on the amount of distinctness itself (i.e., on the diﬀerence in ﬂux
+between the persistent-current states).
+    This feature of SQUIDs allows for the creation of superpositions of “classi-
+cal” states that have a signiﬁcantly larger degree of macroscopic distinctness
+than those achieved in other experiments. For example, in the matter-wave
+diﬀraction experiments with C70 molecules √     (Sect. 6.2), the spacing of the
+diﬀraction grating must decrease as 1/ N with the number N of atoms in
+the molecule in order for a diﬀraction pattern to be observed. Thus, in this
+case, our ability to experimentally produce interference patterns for molecules
+of a particular size scales with the size of the molecules itself.
+
+6.3.4 Observing and Quantifying Decoherence
+
+It is important to note that the characteristic damping time of the Rabi os-
+cillations derived from the decay of the envelope of the oscillatory occupation
+probability (see Fig. 6.23) does not immediately give access to the intrinsic
+decoherence timescale of the persistent-current superpositions (6.36a) and
+(6.36b). The reason lies in the fact that the Rabi oscillations are induced by
+an external driving ﬁeld, namely, by the applied microwave pulse. To mea-
+sure the decoherence timescale, however, we must consider the delocalization
+of relative phase information between the components in the superposition
+under the free (nondriven) evolution of the qubit interacting with its uncon-
+trolled environment.
+    This goal can be accomplished by using the technique of Ramsey interfer-
+ometry [51]. The following procedure is a variation of the “resonant” Ramsey
+technique described in Sect. 2.2.2. First, with the qubit biased close to the
+degeneracy point Φext = Φ0 /2, we again start by initializing the qubit in the
+energy ground state |0. We then apply a π/2 microwave pulse to the qubit
+that is oﬀ-resonance by an amount δf from the transition frequency ΔE/2π
+between the two levels |0 and |1. This transforms the state of the qubit
+into a coherent superposition of the states |0 and |1, which is then allowed
+to evolve freely for a certain period of time τ . During this time the relative
+phase between the components |0 and |1 in the superposition increases by
+2π(δf )τ (in the frame rotating with the applied microwave frequency). Then
+a second oﬀ-resonant π/2 pulse is applied. In the resulting superposition,
+the magnitudes of the coeﬃcients multiplying the components |0 and |1
+will exhibit an oscillatory dependence on the delay time τ , with a frequency
+equal to δf /2. It follows that the occupation probabilities of the classical
+280     6 Observing Decoherence in Action
+
+persistent-current states | and | will oscillate as a function of τ with
+frequency δf .
+    In practice, we expect the amplitude of this oscillation to decay, as deco-
+herence diminishes the amount of coherence between the states |0 and |1
+(and thus also between the persistent-current states | and |) during the
+duration τ of the free qubit evolution. As we have explained in Sect. 2.2.2,
+if the superposition becomes completely decohered, then we arrive at an
+incoherent mixture of the states | and | for which the occupation prob-
+abilities are independent of the delay time τ .
+    This eventual disappearance of the oscillations of the occupation proba-
+bilities with increasing delay time τ allows us to observe and quantify the
+gradual eﬀect of decoherence. Chiorescu et al. [284] measured the relevant
+occupation probabilities of the persistent-current states over a range of delay
+times τ . They traced out a damped oscillation of this probability, from which
+the characteristic decoherence timescale could be read oﬀ (Fig. 6.24).
+    We see the expected oscillatory dependence of the occupation probability
+on the delay time τ . The frequency of the oscillation was found to match
+the detuning δf of the microwave radiation, in excellent agreement with the
+predictions of the Ramsey theory. From the decay of the envelope of the
+oscillations, the authors obtained a decoherence time of about 20 ns, which
+represents the characteristic timescale for an environment-induced loss of
+phase coherence between the classical persistent-current states | and |
+during the free evolution of the qubit in this experiment.
+    In more recent experiments involving superconducting ﬂux qubits, signif-
+icantly longer decoherence times up to 4 μs have been observed [287]. These
+promising results have nourished hopes that superconducting qubits might
+be good candidates for the implementation of solid-state quantum-computing
+devices (see Chap. 7). Here, gate operations via the application of control
+pulses can be performed very fast and single-qubit gate operations can be as
+
+
+                 P (τ )
+                80
+                70
+                60
+                50
+                40
+                     0     5    10    15     20     25    30    35
+                                  delay time τ (ns)
+
+Fig. 6.24. Dependence of the occupation probability P (τ ) on the delay time
+τ between the application of two π/2 pulses in a superconducting ﬂux qubit as
+observed in the experiment of Chiorescu et al. [284]. The damping of the oscillation
+amplitude corresponds to the gradual loss of coherence from the system. Figure
+adapted with permission from [284]. Copyright 2003 by AAAS.
+                        6.3 SQUIDs and Other Superconducting Qubits        281
+
+short as about 2 ns. One may therefore be able to perform on the order of a
+thousand gate operations before coherence is appreciably lost. This number,
+however, is still rather far away from the O(100, 000) gate operations required
+to implement even simple quantum algorithms.
+    Quantum-coherent oscillations and decoherence have also been observed
+in superconducting devices whose key variable is either charge or phase, in-
+stead of the ﬂux variable used in the case of SQUIDs. Generally, the formal
+description of the physics of superconducting charge and phase devices is very
+similar to that of the SQUID given above.
+    Superconducting charge qubits, commonly known as Cooper-pair boxes,
+consist of a tiny superconducting “island” onto which Cooper pairs can tun-
+nel from a reservoir through a Josephson junction. The two qubit basis states
+then correspond to two diﬀerent charge states of the island, diﬀering by at
+least one Cooper pair. Cooper-pair boxes were the ﬁrst superconducting qubit
+systems that allowed for the experimental observation of Rabi oscillations be-
+tween charge states, which was accomplished in 1999 by Nakamura, Pashkin,
+and Tsai [288]. In 2002, Vion et al. [289] reported the observation of many
+thousands of coherent oscillations with a decoherence time of 0.5 μs.
+    Coherent oscillations of the Rabi type have also been observed in phase
+qubits. Phase qubits contain a single Josephson junction, similar to the rf-
+SQUID. However, instead of the ﬂux threading the loop, the key variable
+is here the phase diﬀerence between the electrodes of the junction. Yu et
+al. [290] measured Rabi oscillations between macroscopically distinct phase
+states and found decoherence times up to several μs. Similar results were also
+reported by Martinis et al. [291].
+    Current experimental evidence (see, e.g., [291, 292]) indicates that the
+main source of decoherence in superconducting qubits is the presence of in-
+trinsic defects in the Josephson junctions and the superconductor, rather
+than (as one may have expected) interactions with the external circuit used
+to control the loop–junction setup. Often, these defects can be modeled as
+eﬀective two-level systems. As brieﬂy mentioned in Sect. 5.1.2, it has been
+well known for a while that decoherence and dissipation in low-temperature
+(e.g., superconducting) systems is mainly due to such intrinsic two-level sys-
+tems [199, 200]. Since the superconducting qubit itself is a two-level system,
+the appropriate model for a theoretical description of decoherence in such
+qubits is likely to be of the spin–spin type discussed in Sect. 5.4 [199].
+    For example, Martinis et al. [292] applied this model to a study of deco-
+herence in superconducting phase qubits due to dielectric loss from two-level
+states present both in the bulk insulating material as well as in the Joseph-
+son junction. Insights gathered from these theoretical studies were success-
+fully translated into signiﬁcantly improved experimental structures. Other
+theoretical studies of decoherence in superconducting qubits have focused
+on the inﬂuence of noise processes, such as ﬂuctuations in the bias current
+controlling a current-biased Josephson junction [293]. However, in view of
+282    6 Observing Decoherence in Action
+
+our general discussion in Sect. 2.12 (see also Sect. 7.3) it is important to
+clearly distinguish such noise-induced ensemble dephasing from “true” deco-
+herence created by environmental entanglement, even though both processes
+may lead to similar results from the phenomenological perspective of local
+measurement statistics.
+
+
+6.4 Other Experimental Domains
+In the previous sections, we have described experiments that have successfully
+generated and detected superposition states of mesoscopically and macro-
+scopically distinct states and that have allowed us to observe the gradual de-
+coherence of such superpositions. In these experiments, decoherence has pro-
+vided a qualitative and quantitative explanation of the quantum-to-classical
+phenomena observed in the laboratory.
+    In a similar vein—but now taking a diﬀerent point of view—decoherence
+also helps us understand what prevents us from being able to generate and
+observe superposition states in certain experiments. In this section, we will
+describe two such experimental domains, which are promising candidates for
+the future creation and observation of even larger nonclassical superposition
+states than those available to date. As we shall see, decoherence allows us to
+describe qualitatively and quantitatively why it is so diﬃcult to create and
+observe such superpositions in these experiments. Furthermore, decoherence
+suggests methods for improving the experimental procedures, such that we
+can come closer to achieving our goal of generating the desired superposition
+states in the laboratory.
+
+6.4.1 Decoherence in Bose–Einstein Condensates
+
+Bose–Einstein condensation is a quantum-mechanical phenomenon in which
+a macroscopic number of atoms (up to O(107 ) in some experiments) under-
+goes a quantum phase transition into a condensate in which all atoms lose
+their individuality and occupy the same quantum state. Thus the conden-
+sate can be fully described by a single quantum-mechanical N -particle wave
+function with a phase. This phase of the wave function is experimentally
+accessible. For example, if two condensates are allowed to overlap, an in-
+terference pattern is observed due to the phase diﬀerence between the two
+condensates [294, 296–299] (Fig. 6.25). Recently it has also become possible
+to construct an interferometer in which a single condensate is coherently split
+and then recombined, resulting in the observation of interference fringes [295]
+(see again Fig. 6.25).
+    In spite of these successes in demonstrating the quantum properties of
+Bose–Einstein condensates, experimental attempts to produce Bose–Einstein
+condensates in a superposition of states involving macroscopically distin-
+guishable numbers of particles have thus far failed, despite several promising
+                                        6.4 Other Experimental Domains         283
+
+
+
+
+Fig. 6.25. Interference patterns of the atomic gas density in Bose–Einstein conden-
+sates. Left: Pattern resulting from the phase diﬀerence between two independent
+condensates that were let to overlap. Figure reprinted with permission from [294].
+Copyright 1997 by AAAS. Right: Interference fringes obtained in a “double-slit”
+interferometer for Bose–Einstein condensates. A single condensate was coherently
+split (mimicking the role of the slits in the standard double-slit experiment) and
+subsequently recombined. Figure reprinted with permission from [295]. Copyright
+2004 by the American Physical Society.
+
+
+theoretical proposals [300–306]. However, this failure can be well understood,
+both qualitatively and quantitatively, by taking into account the relevant de-
+coherence mechanisms. In the case of superposition states of Bose–Einstein
+condensates, decoherence is found to be dominantly due to elastic and inelas-
+tic scattering between condensate and noncondensate atoms.
+    Detailed models of such scattering processes have been developed (see,
+e.g., [102]), providing us with realistic predictions for decoherence timescales
+as a function of the key parameters of the experiment (such as the size of
+the condensate). Insights gained from these decoherence models have also led
+to concrete proposals for how to minimize decoherence through clever ex-
+perimental design. Examples of such suggested improvements include the
+construction of modiﬁed condensate traps that allow for a faster evapo-
+ration of the decoherence-inducing thermal cloud of noncondensate atoms
+[102]; the creation of macroscopic superpositions of relative-phase (instead
+of number-diﬀerence) states, thereby taking into account the environment-
+selected pointer basis in order to minimize decoherence [303]; the implemen-
+tation of active environment engineering (Sect. 7.5.3) to decrease the eﬀective
+size of the thermal cloud [102]; and the faster generation of the superposi-
+tion state [306]. Each of these proposals is derived from an analysis of the
+various decoherence mechanisms involved in a particular experimental setup.
+Given such a setup, models for decoherence then tell us the location of the
+quantum–classical boundary and what we can and need to do to push this
+boundary in order to realize the desired cat states.
+284    6 Observing Decoherence in Action
+
+6.4.2 Decoherence in Quantum-Electromechanical Systems
+
+Quantum-electromechanical systems, or QEMS for short, are a relative re-
+cent addition to the zoo of experiments that have the potential to gener-
+ate even larger nonclassical superposition states [307] (see also [308, 309]
+for an introduction to QEMS). We already mentioned QEMS in Sect. 5.4.2
+in the context of the “oscillator–spin model” for decoherence and dissipa-
+tion. QEMS show great promise for the demonstration of truly mechanical
+“Schrödinger kittens” involving billions of atoms in a superposition of two
+well-distinguishable positions in space. Given the rapid experimental progress
+in the ﬁeld of QEMS, it is quite likely that over the next few years these sys-
+tems will become a major player in explorations of the quantum-to-classical
+transition.
+     QEMS are a result of the recent revolution in nanotechnology. The main
+component of a QEMS is a miniature mechanical double-clamped beam or
+single-clamped cantilever, manufactured from crystalline materials such as
+silicone and with typical dimensions on the order of nanometers to micro-
+meters (Fig. 6.26). The beam (or cantilever) acts as tiny mechanical res-
+onator. If a suitable driving force is applied for a brief period of time, the
+resonator is set into an oscillatory motion.
+     Because of the extremely small dimensions of the resonator, the oscilla-
+tion frequencies can be remarkably high, given the mechanical nature of such
+systems. Recent experiments have achieved frequencies up to one gigahertz,
+i.e., frequencies in the microwave range [311]. Furthermore, dissipative eﬀects
+in the resonators can be made relatively weak, resulting in tens of thousands
+of free oscillations before a signiﬁcant decrease in the oscillation amplitude
+occurs. The oscillatory motion of the resonator is detected by an electronic
+
+
+
+
+  transducer
+                                                          mechanical resonator
+
+
+
+
+                          2 μm
+
+Fig. 6.26. Experimental realization of a quantum-electromechanical system, con-
+structed in the laboratory of Keith Schwab at Cornell University [310]. A beam of
+width 200 nm and length 8 μm acts as a nanomechanical resonator with a natu-
+ral frequency of 19.7 MHz. The vibrational motion of the beam is translated into
+an electrical signal by means of an electronic transducer. Figure reprinted with
+permission from [310]. Copyright 2004 by AAAS.
+                                      6.4 Other Experimental Domains      285
+
+transducer and converted into a corresponding electrical signal that is subse-
+quently read out.
+    Remarkably, most degrees of freedom of the resonator are either “frozen
+out” at the typical low (millikelvin) temperatures at which QEMS operate, or
+they couple only negligibly to the transducer. Thus, in most cases, the macro-
+scopic resonator can be eﬀectively treated as a single quantum-mechanical
+harmonic oscillator (corresponding to the lowest fundamental ﬂexural mode
+of the beam or cantilever). The nanomechanical resonators in QEMS are
+macroscopic mechanical objects composed of billions of atoms and perturbed
+by a host of intrinsic defects, imperfections, etc. Nonetheless, as we shall
+discuss now, they can exhibit distinctly quantum-mechanical eﬀects.
+    One key feature of QEMS is their extreme sensitivity to spatial displace-
+ments. In this context, an important quantity is the quantum zero-point
+displacement uncertainty Δxzp of the harmonic oscillator, which represents
+the quantum limit to position detection. For the nanomechanical resonators
+currently manufactured in the laboratory, Δxzp is on the order of only a
+tenth of a picometer [307]. Nonetheless, in recent experiments (involving, for
+example, the QEMS shown in Fig. 6.26) it has been possible to resolve spatial
+displacements of the resonator down to a few times of Δxzp [310]. Thus ex-
+periments on QEMS are very close to achieving the goal of quantum-limited
+position measurements.
+
+A Scheme for Creating Mechanical “Schrödinger Kittens”
+Using QEMS
+
+Researchers have also considered the possibility of putting the resonator into
+a coherent superposition of two diﬀerent spatial displacements and to observe
+the gradual decoherence of such states. What makes this prospect particu-
+larly exciting is the fact that QEMS are purely mechanical structures that are
+much more closer to the objects of the everyday world around us than, say,
+superconducting qubits (Sect. 6.3) or Bose–Einstein condensates (Sect. 6.4.1).
+Mechanical “Schrödinger kittens” in QEMS, if realized, would represent su-
+perpositions of two distinct positions of a macroscopic “rough” ordinary-
+matter mechanical object. At this point, no such superposition states have
+been realized in the laboratory, but concrete proposals exist [312] and the-
+oretical studies of the relevant decoherence and dissipation mechanisms are
+underway [242, 313–315]. The idea of entangling several nanomechanical res-
+onators that are separated by macroscopic distances has also been investi-
+gated theoretically [316]. One may even conceive of the possibility of using
+QEMS as mechanical qubits in quantum computers [317].
+    Let us now brieﬂy outline the scheme for the generation of spatial super-
+position states in QEMS as proposed by Armour, Blencowe, and Schwab [312]
+(see also [307]). The basic idea consists of using a two-state quantum system
+whose basis states |0 and |1 couple to two diﬀerent displacements of the
+resonator and which is rather easily prepared in a superposition of |0 and
+286      6 Observing Decoherence in Action
+
+|1. In [312], the authors chose a Cooper-pair box (see Sect. 6.3.4). Here the
+two basis states |0 and |1 correspond to diﬀerent values of electrical charge
+present on the superconducting island. The electrostatic interaction between
+the Cooper-pair box and the cantilever will result in two diﬀerent displace-
+ments of the resonator, depending on whether the Cooper-pair box is in the
+state |0 or in the state |1 (see Fig. 6.27). Let us denote the center-of-mass
+position states of the resonator corresponding to these two displacements by
+|P0  and |P1 .
+    Suppose now we prepare the Cooper-pair box in a superposition of the
+form √12 (|0 + |1). As shown in [312], if a particular sequence of control
+pulses is applied to the box, we can obtain an entangled box–resonator su-
+perposition state of the form
+                                   1
+                           |Ψ  = √ (|0 |P0  + |1 |P1 ) .                       (6.37)
+                                    2
+Provided the spatial separation between the center-of-mass states |P0  and
+|P1  is suﬃciently macroscopic, we have therefore generated a state of the
+Schrödinger-cat type. Here, the resonator plays the role of the cat, while the
+Cooper-pair box corresponds to the unstable atom in Schrödinger’s original
+setting.
+    The existence of the superposition state (6.37) can be conﬁrmed using
+the technique of Ramsey interferometry (see Sect. 2.2.2). By applying an
+additional control pulse to the Cooper-pair box after a certain delay time,
+the entangled state (6.37) is transformed in such a way that the probabilities
+
+
+
+
+                                                                                   
+              q0     “+”              q1               |Ψ = √12 |0|P0  + |1|P1 
+
+              |0                    |1
+
+
+      |P0                   |P1 
+
+Fig. 6.27. Scheme for the generation of a superposition state involving two dis-
+tinct positions of the nanomechanical resonator, as proposed by Armour, Blencowe,
+and Schwab [312]. A Cooper-pair box, described by basis states |0 and |1 (cor-
+responding to diﬀerent electric charges q0 and q1 on the superconducting island
+of the box), is electrostatically coupled to the nanomechanical resonator. If the
+Cooper-pair box is prepared in a coherent superposition √12 (|0 + |1) and a suit-
+able sequence of control pulses is applied, an entangled box–resonator superposition
+state √12 (|0 |P0  + |1 |P1 ) results, where |P0  and |P1  correspond to the two dis-
+tinguishable center-of-mass positions of the resonator.
+                                       6.4 Other Experimental Domains        287
+
+of ﬁnding the box in the state |0 or |1 exhibit an oscillatory dependence on
+the delay time. This dependence would be absent if the box–resonator system
+were in a classical mixture of the component states of the superposition. As
+discussed in Sect. 6.3.4, the Ramsey method also yields information about
+the characteristic decoherence time of the superposition.
+
+Decoherence in QEMS
+
+To evaluate the practical viability of the superposition scheme described
+above, it will be important to understand the main sources of decoherence
+aﬀecting such superpositions states in QEMS. First of all, the Cooper-pair
+box itself will of course be subject to decoherence. However, as mentioned in
+Sect. 6.3.4, relatively long decoherence times in the microsecond regime are
+within experimental reach [289]. We can therefore focus on the decoherence
+due to the environmental interactions of the resonator itself.
+    Interestingly, current experimental evidence [318, 319] (see also earlier re-
+sults in, e.g., [320,321]) indicates that the dominant source of dissipation (and
+therefore also decoherence) in QEMS may be the interaction of the lowest
+fundamental ﬂexural mode of the resonator with localized defects present in
+the resonator itself. These defects are eﬀective two-level systems that may
+assume various physical realizations, such as charge traps, impurity atoms,
+elastic centers, and dangling bonds created by the disruption of the crystal
+structure at the surface of the resonator.
+    At this point, the precise physical details underlying these defects and
+their interactions with the ﬂexural mode of the resonator are rather poorly
+understood at the level of both experiment and theory. Since the spatial
+superposition states in QEMS described above have not yet been experi-
+mentally realized, there exists no direct experimental data on decoherence in
+QEMS. However, recent experiments have yielded valuable information on
+the characteristic properties of dissipation in QEMS [318, 319].
+    Since dissipation is generally accompanied by decoherence (but not vice
+versa), such measurements can also provide us with insights into the decoher-
+ence properties of QEMS. For example, we may be able to extract an eﬀective
+spectral density of the environment composed of the defects from the data on
+dissipation. Provided we have available a suitable model for the interaction
+between the resonator and the defects, we can compute the relevant deco-
+herence coeﬃcients and dynamics using this spectral density. This will then
+allow us to estimate characteristic decoherence rates for the above QEMS su-
+perposition states and thus to assess the viability of proposed schemes for the
+generation of such states. One overarching goal is therefore the development
+of realistic models for dissipation and decoherence in QEMS [242, 314, 315].
+Achieving this goal would not only enhance our theoretical understanding of
+QEMS, but it would also enable us to make progress toward the experimen-
+tal realization of superpositions states in QEMS and would suggest general
+improvements in the implementation of QEMS.
+288     6 Observing Decoherence in Action
+
+    In their original proposal [312], Armour, Blencowe, and Schwab estimated
+the decoherence time of the spatial box–resonator superposition state (6.37)
+using the well-explored model for quantum Brownian motion described in
+Sect. 5.2. Here, the central harmonic oscillator represents the fundamental
+ﬂexural mode of the resonator, which is in turn weakly coupled to an envi-
+ronment of other harmonic oscillators. However, as we have outlined above,
+a more realistic representation of the environment of a nanomechanical res-
+onator at millikelvin temperatures may be a collection of two-level systems
+representing the defects. If we model these two-level systems as quantum
+spin- 12 particles, we arrive at the oscillator–spin model. We derived the weak-
+coupling master equation for this model in Sect. 5.4.2 [see (5.198)].
+    However, the temperature dependence of the damping rate derived from
+this model [see (5.200)] is found to disagree with data obtained from experi-
+ments on QEMS, in which the dissipation rate has been observed to increase
+with temperature [318, 319]. This discrepancy indicates that at least some of
+the two-level defects in the resonator should be modeled as spin- 12 particles
+that are strongly coupled to an additional decohering and dissipative envi-
+ronment (see Fig. 6.28). This environment renders the tunneling of the spins
+incoherent and also leads to relaxation of the spins, thereby inducing defect
+dynamics akin to those of classical two-level ﬂuctuators. By absorbing the
+excess energy from the spin bath, it prevents this bath from saturating. The
+more realistic model for decoherence and dissipation in QEMS may therefore
+be that of the central harmonic oscillator coupled to a number of indepen-
+dent spin–boson models (i.e., spins interacting with an oscillator bath). First
+studies of this model have been carried out very recently [242]. QEMS thus
+oﬀer the opportunity to experimentally distinguish and test diﬀerent models
+for decoherence and dissipation.
+
+
+
+               oscillator            oscillator             oscillator
+                 bath                  bath                   bath
+
+                 spin                   spin                   spin
+
+
+                                     system
+                               (harmonic oscillator)
+
+
+Fig. 6.28. Schematic illustration of a possible model for decoherence and dissipa-
+tion in QEMS. The central system consists of a harmonic oscillator, which represents
+the fundamental ﬂexural mode of the nanomechanical resonator. The oscillator in-
+teracts with a collection of two-level defects modeled as spin- 12 particles. In turn,
+each spin is further coupled to a dissipative bath of oscillators that absorbs energy
+from the (otherwise easily saturated) spin environment.
+                                                           6.5 Outlook     289
+
+6.5 Outlook
+When Schrödinger ﬁrst sketched his cat paradox in 1935, he regarded it as
+a pure thought experiment, as an example for the evidently “absurd” conse-
+quences that arise if one applies quantum mechanics to the macroscopic world
+of our experience. Yet, over the past years immense progress has been made
+in breeding (and observing) comparably small, but nonetheless macroscopic
+Schrödinger cats in the laboratory. In this chapter, we have described ex-
+periments that have achieved the generation of superpositions of two macro-
+scopically distinguishable states involving dozens of photons (Sect. 6.1), the
+observation of interference patterns for massive C70 molecules (Sect. 6.2), and
+the veriﬁcation of the existence of superpositions of two μA currents ﬂowing
+in opposite directions (Sect. 6.3).
+    In each of these experiments, researchers have also managed to explicitly
+observe the gradual action of decoherence, i.e., to measure how the super-
+position becomes eventually unobservable due to the interaction with the
+environment. We have thus clearly seen the smoothness of the quantum-to-
+classical transition: There is no ﬁxed barrier between the quantum and clas-
+sical domains that would manifest itself as a discontinuous transformation of
+a quantum state into a classical state. By manipulating the interactions of
+the system with its environment, we can directly change the dynamics and
+timescales of the transition.
+    The experiments described in this chapter therefore show that the scope
+of decoherence is much broader than to simply refer to the eﬀectively in-
+stantaneous “localization” of macroscopic objects around us. Instead, de-
+coherence explains the emergence of eﬀective classicality as a gradual and
+controllable process that can be directly observed and tested in the labora-
+tory and is accessible to a rigorous theoretical description in terms of the
+standard quantum-mechanical formalism.
+    The interplay between theory and experiment is here a very close one.
+Measurements of decoherence timescales and other properties of the deco-
+herence dynamics enable us to directly test our decoherence models in the
+laboratory. We thereby learn to what extent these models are realistic and
+physically adequate. In turn, the decoherence models provide us with valu-
+able information about existing and future experiments. They tell us at which
+stage of “macroscopicity” the quantum-to-classical transition can be expected
+to occur in a particular experimental setting, what type of “Schrödinger kit-
+tens” we might be able to create and observe given a certain set of experimen-
+tal parameters, and how we may be able to improve our experiments to gener-
+ate increasingly “cat-like” superpositions. In this chapter, we have described
+two experimental domains—Bose–Einstein condensation (Sect. 6.4.1) and
+quantum-electromechanical systems (Sect. 6.4.2)—that have not yet achieved
+the creation of certain superposition states proposed in theoretical schemes.
+Nonetheless, decoherence models, combined with measured data, allow us to
+identify the physically relevant decoherence mechanisms in these systems that
+290    6 Observing Decoherence in Action
+
+prevent us from “seeing” the desired superposition states, and they suggest
+strategies for mitigating these detrimental decoherence eﬀects.
+    The natural question to ask is where the experiments on superpositions
+of macroscopically distinct states will be headed in the future, and what the
+resulting implications for our understanding of quantum mechanics and for
+the construction of large-scale quantum systems, such as quantum computers,
+will be. There are many answers to this question, so let us just mention a few
+key points.
+    First of all, on the scales investigated thus far, the existing experimental
+evidence does not point to any fundamental limitations of the superposition
+principle. It appears that, as long as we are able to suﬃciently control de-
+coherence eﬀects (and this limit is open to precise quantitative analysis) via
+a proper experimental design which minimizes unwanted interactions with
+the environment, any number of superpositions of “classical” states could be
+generated and observed.
+    Thus it is safe to say that, over the next few years, we will witness many
+experiments that will push the envelope for the achievable “size” of superpo-
+sitions of macroscopically distinct states further and further. We may soon
+be able to observe interference patterns for even larger biomolecules such
+as viruses, realize superposition states of Bose–Einstein condensates and
+nanomechanical resonators, and achieve impressively increased decoherence
+times in superconducting qubits. Such experiments will also be motivated by
+the continuing search for possible breakdowns of the superposition principle.
+However, since decoherence leads to an apparent breakdown from the view of
+the local observer, it will remain very diﬃcult to design an experiment that
+would be suﬃciently shielded from decoherence but reasonably susceptible to
+the mechanism inducing the deviation from unitary evolution (see Sect. 8.4
+and also [286, 322]).
+    It is important to emphasize that the ability to generate and observe su-
+perpositions of increasingly distinct macroscopic states does not solve any of
+the fundamental interpretive questions associated with such superpositions
+in particular, and with decoherence and quantum mechanics in general. The
+problem of the proper interpretation and physical meaning of quantum states
+(Sect. 2.1), especially of superposition states (Sect. 2.2.1), is already evident
+in microscopic settings, such as the Stern–Gerlach experiment described in
+Sect. 2.2.2. While the recent experiments on superpositions in the macro-
+scopic domain may add a ﬂavor of counterintuitivity of the Schrödinger-cat
+type to the problem, they neither solve nor exacerbate the fundamental prob-
+lems of interpretation.
+    In particular, the question of how to understand the persistence of coher-
+ence in the global quantum state involving the environment, and thus the is-
+sue of how to properly relate the improper mixtures of quantum states arising
+in the density-matrix description of decoherence to some form of underlying
+quantum reality, remains a matter of foundational debate. Experiments of
+                                                            6.5 Outlook     291
+
+the type discussed here will certainly continue to enlighten the discussion,
+if only by further challenging our preconceived notions about the “nature of
+reality.” Once experiments may be able to conclusively demonstrate (or rule
+out) deviations from purely unitary dynamics, we may gain—or be forced
+into—new insights into quantum mechanics and the structure of quantum
+reality. For now, though, the interpretive issues are here to stay, even in view
+of the stunning experimental achievements described in this chapter.
+

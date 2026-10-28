@@ -1,0 +1,49 @@
+                                                   5.3 The Spin–Boson Model           209
+                                                                 ωi
+and dropping, for simplicity, the vacuum-energy term              i 2 , we can rewrite
+(5.85) as
+                     1                                †              
+              Ĥ =     ω0 σ̂z +   ωi â†i âi + σ̂z ⊗   gi âi + gi∗ âi ,         (5.90)
+                     2          i                     i
+
+
+with the obvious relations between the ci and gi .2 The operators â†i and âi
+obey the usual bosonic commutation relations,
+                                         
+                                âi , â†j = δij .                      (5.91)
+
+Let us ﬁrst note that, similarly to the spin–spin model described in Sect. 2.10,
+we have                                  
+                                   Ĥ, σ̂z = 0.                          (5.92)
+There exists neither an intrinsic tunneling term proportional to σ̂x nor any
+coupling between an environmental coordinate and σ̂x that could induce any
+transitions between the two basis states |0 and |1 of the system. Thus the
+populations of the two levels of the system are conserved quantities. There is
+no energy exchange between the system and the environment, and we there-
+fore deal with a model of decoherence without dissipation. As discussed in
+Sect. 2.11, while in realistic systems usually both dissipation and decoher-
+ence are present, the timescale for decoherence is typically many orders of
+magnitude shorter than the timescale for thermal relaxation. Thus our model
+can be regarded as a good representation of such rapid decoherence processes
+during which the amount of dissipation is negligible.
+
+Solving the Model
+
+To solve the model deﬁned by the Hamiltonian (5.90), let us now switch to
+the interaction picture (see Appendix). Here the evolution of the interaction-
+picture Hamiltonian Ĥint (t) is given by the free part Ĥ0 of the total Hamil-
+tonian,
+                                                 †                             
+     Ĥint (t) = eiĤ0 t Ĥint e−iĤ0 t = σ̂z ⊗   gi âi eiωi t + gi∗ âi e−iωi t . (5.93)
+                                             i
+
+This equation is easily proved by noting that the Heisenberg equations of
+motion for the operators σ̂z , â†i , and âi read, using (5.91),
+
+
+
+    2
+      Note that, although the ci are real numbers and are related to the gi by a real-
+valued factor, we have used the complex conjugate of gi in (5.90). This complex
+notation, introduced a posteriori, is a generalization that should be of no concern
+to the reader here.

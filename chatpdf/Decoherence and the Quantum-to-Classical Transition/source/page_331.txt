@@ -1,0 +1,49 @@
+                                              7.4 Quantum Error Correction      319
+
+Table 7.3. Three-bit code for correcting phase-ﬂip errors. The table shows the four
+possible error syndromes obtained by measuring the two ancilla qubits, the corre-
+sponding errors in the encoded three-qubit state, and the countertransformations
+needed to restore the original three-qubit state.
+     Syndrome     Error                               Recovery transformation
+
+     00           Ẑ000 (no error)                  None needed
+     11           Ẑ100 (phase-ﬂip of ﬁrst qubit)   σ̂x ⊗ Iˆ ⊗ Iˆ
+     10           Ẑ010 (phase-ﬂip of second qubit) Iˆ ⊗ σ̂x ⊗ Iˆ
+     01           Ẑ001 (phase-ﬂip of third qubit) Iˆ ⊗ Iˆ ⊗ σ̂x
+
+
+                                        ˆ
+                                     ˆ I⊗σ̂
+                                     I⊗ x
+                 α |001 + β |110 −−−−−→ α |000 + β |111 ,                (7.47)
+
+and we have therefore restored the initial, redundantly encoded qubit state
+(7.39). We can then, ﬁnally, apply the inverse of the encoding transformation
+(7.39) to arrive at the original, unperturbed single-qubit state α |0 + β |1.
+    This scheme for the correction of phase errors cannot always succeed if
+we include phase errors that aﬀect more than one qubit (i.e., if we consider
+phase-error operators of weight greater than one). This can be easily seen
+from the fact that our two ancilla qubits can give us only two classical bits
+of information about the error. Therefore we can distinguish with certainty
+only up to four diﬀerent error possibilities. If we include all possible phase-
+error operators for three qubits (i.e., all operators of weight between zero and
+three), we can recover the original state only with a certain probability. Since
+we now have to be able to correct for eight diﬀerent errors, a speciﬁc error
+syndrome will correspond to two diﬀerent errors. We can compute the prob-
+abilities of these two possibilities and then apply the countertransformation
+corresponding to the error that is more likely.
+    Assuming that the probability p of a single-bit error is less than 50% and
+that the errors are uncorrelated (such that the probabilities of two-qubit and
+three-qubit errors are 3p2 (1 − p) and p3 , respectively), the most likely error
+types will be precisely the ones considered in our example above, namely,
+Ẑ000 , Ẑ100 , Ẑ010 , and Ẑ001 . More speciﬁcally, since the probability of our
+scheme to fail is 3p2 (1 − p) + p3 (which is simply the probability of the
+occurrence of two-qubit and three-qubit errors), the probability of failure
+scales as O(p2 ) and therefore decreases quite rapidly as p becomes smaller.
+This is to be compared to the completely uncorrected case, in which the
+probability of failure scales as O(p) (since our state will be perturbed any
+time a single error occurs, which, by deﬁnition, happens with probability
+p). Thus our error-correcting scheme described above will improve matters
+over the case of no error correction whenever p < 50%. This situation is
+similar to the majority-voting scheme for classical error correction discussed
+in Sect. 7.4.1. There we showed that error recovery will yield an advantage

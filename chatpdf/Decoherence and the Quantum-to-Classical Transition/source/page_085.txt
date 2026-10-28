@@ -1,0 +1,50 @@
+70     2 The Basic Formalism and Interpretation of Decoherence
+
+interest. This yields precise dynamical descriptions for the time evolution of
+the environmental states and the resulting inﬂuence on the dynamics of the
+reduced density matrix of the system. Typically, these models show that the
+diﬀerent environmental relative states |Ei (t) (which are quantum-correlated
+with the distinct system states |si  monitored by the environment) become
+distinguishable on very short timescales as a result of the system–environment
+interaction.
+    Speciﬁcally, as we shall see, for many system–environment models the
+overlap of the diﬀerent relative environmental states |Ei (t) is found to follow
+an exponential decay, i.e.,
+
+                            Ei (t)|Ej (t) ∝ e−t/τd                      (2.75)
+
+for i = j. Here and in the following we shall take t = 0 to correspond to the
+time at which the interaction is “switched on” (for times t < 0 the system
+and environment are usually assumed to be completely uncorrelated). The
+quantity τd denotes the characteristic decoherence timescale, which can be
+evaluated numerically for particular choices of the parameters in each model.
+    Through (2.73), these decay characteristics (such as the functional form,
+relevant timescales, etc.) for the overlap of the environmental states |Ei (t)
+then translate directly into the characteristic time dependences and timescales
+for the suppression of coherences between the superposition-state compo-
+nents |si  of the system that are one-to-one correlated with the |Ei (t) [see
+(2.72)]. In order to quantitatively study the decoherence dynamics for a given
+system–environment model, we must therefore evaluate the explicit form of
+the |Ei (t). We will study a ﬁrst example in Sect. 2.10 below. More realistic
+models will be treated later in the book.
+    In particular, Chap. 3 will be devoted to an explicit modeling of spatial
+decoherence induced by the scattering of environmental particles such as air
+molecules and photons. To anticipate, we will ﬁnd that the overlap of the
+relative environmental states decays as
+
+                         Ex (t)|Ex (t) ∝ e−Λ|x−x | t .
+                                                     2
+                                                                          (2.76)
+
+Here |Ex (t) denotes the relative state of the environment that is one-to-
+one correlated with the state of the system that describes localization of the
+system’s center of mass at position x. The constant Λ is determined by the
+particular physical properties of the scattering process. We see that the over-
+lap (2.76) decreases exponentially with time. Expression (2.76) is therefore
+an example of the frequently encountered exponential-decay behavior (2.75).
+Environmental particles continuously scatter oﬀ the object, steadily increas-
+ing the amount of which-path information (namely, of information about the
+position of the system) that becomes encoded in the environment.
+    We also observe from (2.76) that the characteristic decoherence timescale
+τd [see (2.75)] is inversely proportional to the square of the coherent sepa-
+ration |x − x | between diﬀerent (center-of-mass) positions x and x of the

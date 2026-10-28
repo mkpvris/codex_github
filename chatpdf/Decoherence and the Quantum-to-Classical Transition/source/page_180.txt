@@ -1,0 +1,49 @@
+166    4 Master-Equation Formulations of Decoherence
+
+for any pure state |ψ of the system S and for all t. This condition is phys-
+ically reasonable, since we would like to interpret the elements ψ| ρ̂S (t) |ψ
+of the reduced density matrix as occupation probabilities. If the time evolu-
+tion of ρ̂S (t) is exact, the positivity condition will of course be automatically
+fulﬁlled. However, for reduced density matrices evolved by means of approx-
+imate master equations, (4.42) will not necessarily hold.
+    It was ﬁrst shown by Gorini, Kossakowski, and Sudarshan [176] and Lind-
+blad [177] that the most general master equation that ensures the positivity
+(4.42) of the reduced density matrix ρ̂S (t) is of the form
+
+  d                            1    $                                  %
+     ρ̂S (t) = −i ĤS , ρ̂S (t) +   γαβ Ŝα , ρ̂S (t)Ŝβ† + Ŝα ρ̂S (t), Ŝβ† .
+  dt                              2
+                                   αβ
+                                                                           (4.43)
+
+Here, the operators Ŝαare the system operators appearing in the diagonal
+decomposition Ĥint = α Ŝα ⊗ Êα of the interaction Hamiltonian [see (4.7)].
+The time-independent coeﬃcients γαβ encapsulate all information about the
+physical parameters of the decoherence (and possibly dissipation) processes
+and deﬁne a coeﬃcient matrix Γ ≡ (γαβ ).
+     Evidently, the Lindblad master equation (4.43) is local in time. Moreover,
+it is also Markovian. Equations of the form (4.43) can be derived in many dif-
+ferent ways from various assumptions and are therefore not necessarily tied to
+the Born–Markov master equation (4.8). Master equations of the Lindblad
+form, derived from phenomenological models, were used by many authors
+already in the 1960s (see, e.g., [178]). However, their rigorous mathemati-
+cal derivation within the theory of generators and quantum dynamical semi-
+groups was established only in the second half of the 1970s [176,177,179–181].
+     If we compare (4.43) to our general expression (4.8) for the Born–Markov
+master equation, we observe a certain formal similarity between the two equa-
+tions. Yet, evidently, they are not the same. In particular, the operators B̂α
+and Ĉα appearing in (4.8) are in general nontrivial time integrals over the
+interaction operators Ŝα and the environment self-correlation functions [see
+(4.9)]. Still, the reader may suspect that it could be possible to transform
+(4.8) into the Lindblad form (4.43). However, it turns out that this cannot
+always be done: The Lindblad master equation is a special case of the general
+Born–Markov master equation. It follows that density matrices evolved by
+the latter equation do not necessarily fulﬁll the condition (4.42) of positiv-
+ity [182].
+     It is, however, possible to bring (4.8) into the Lindblad form (4.43) if
+another assumption (in addition to the Born–Markov approximations) is
+imposed. This assumption is often called the rotating-wave approximation,
+which is commonly made in quantum optics. This assumption is justiﬁed
+whenever the typical timescale τS for the evolution of the system is short
+in comparison with the relaxation timescale of the system. For details on
+how the rotating-wave approximation is used to transform the Born–Markov

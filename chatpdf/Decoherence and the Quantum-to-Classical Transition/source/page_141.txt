@@ -1,0 +1,52 @@
+126    3 Localization Due to Environmental Scattering
+
+Squared energy delta functions δ 2 (E − E  ) commonly appear in the deriva-
+tion of Fermi’s Golden Rule for the transition probability in time-dependent
+perturbation theory (see, e.g., Chap. 18 of [167]). In fact, the matrix ele-
+                  2
+                  
+ment q| T̂ |q   is evidently simply the probability of making the scattering-
+induced transition |q −→ |q  .
+    Then, following the method suggested by Adler [161] (which is akin to
+the usual approach employed in the derivation of Fermi’s Golden Rule), we
+can handle the squared energy delta function by using the Fourier-integral
+representation of the energy delta function,
+                                               T /2
+                                      1                                  
+                 δ(E − E  ) = lim                         dt ei(E−E )t/ .          (3.35)
+                                T →∞ 2π        −T /2
+
+This allows us to write
+                                                         T /2
+                                             1                                
+           δ 2 (E − E  ) = δ(E − E  ) lim                         dt ei(E−E )t/
+                                       T →∞ 2π             −T /2
+                                                         T /2
+                                                  1
+                        = δ(E − E  ) lim                           dt
+                                       T →∞ 2π             −T /2
+                                                 T
+                        = δ(E − E  ) lim              ,                             (3.36)
+                                       T →∞ 2π
+
+where the second line follows from the fact that the ﬁrst delta function in
+front of the integral vanishes unless E = E  .
+    In the general derivation of Fermi’s Golden Rule, the parameter T can
+be interpreted as the time interval during which the interaction is “turned
+on.” Equation (3.36) then shows that the transition probability grows ap-
+proximately linearly with T for suﬃciently large T . Therefore, if we let T
+denote a time interval much longer than the typical time required for a single
+scattering event to take place, we can write (3.36) as
+
+                                               T                m T
+               δ 2 (E − E  ) = δ(E − E  )       = δ(q − q  )       .              (3.37)
+                                              2π               q 2π
+We shall also assume that T is signiﬁcantly shorter than the characteristic
+decoherence time of the central particle induced by the scattering of a large
+number of particles. The chosen regime for T is reasonable, since it will in
+general require many collisions between the object and the environmental
+particles to induce an appreciable degree of spatial decoherence.
+    We now use (3.37) in (3.34) and insert the resulting expression into (3.32).
+The delta function δ(q −q  ) in (3.37) enforces momentum conservation, |q  | =
+|q|. Writing dq  ≡ q 2 dn̂ , where dn̂ is a solid-angle diﬀerential in momentum
+space, we readily obtain

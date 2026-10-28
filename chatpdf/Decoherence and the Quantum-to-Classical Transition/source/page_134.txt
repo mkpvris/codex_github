@@ -1,0 +1,46 @@
+                                               3.1 The Scattering Model      119
+
+to the additional incorrect factor of 2π) was subsequently given by Gallis and
+Fleming [162]. The ﬁrst derivation remedying this ﬂaw and arriving at the
+correct result for the decoherence rate was presented by Diósi [159]. Several
+years later, Hornberger and Sipe [160] revisited the problem of environmen-
+tal scattering and obtained the correct result using a sophisticated approach
+quite diﬀerent from that of Diósi. While their reevaluation is very careful and
+thorough, it is also rather complicated. Recently, Adler [161] showed that the
+correct result can be obtained in a signiﬁcantly easier manner by means of
+a little trick. Other derivations have been discussed by, e.g., Halliwell [163]
+and Hornberger [164, 165]. Our following presentation will mainly adhere to
+the derivations of Hornberger and Sipe [160] and Adler [161], with the goal
+of obtaining the correct result while keeping the calculations as simple as
+possible.
+    This chapter is organized as follows. Section 3.1 will introduce our scatter-
+ing model. In Sect. 3.2, we will compute the explicit form of the decoherence
+factor that describes the decay of spatial coherences. In Sect. 3.3, we will
+treat two important limiting cases, namely, the situation of environmental
+wavelengths that are short (Sect. 3.3.1) and long (Sect. 3.3.2) in comparison
+with the coherent separation between the two center-of-mass positions in a
+spatial superposition state of the system. Section 3.4 will apply our theory
+to the scattering of photons (Sect. 3.4.1) and air molecules (Sect. 3.4.2). Fi-
+nally, in Sect. 3.5, we will discuss the explicit dynamics resulting from such
+scattering-induced decoherence by studying the time evolution of the reduced
+density matrix of the system.
+
+
+3.1 The Scattering Model
+We consider an object (the system S) that scatters a collection of environ-
+mental particles (the environment E), see Fig. 3.2. We shall make the usual
+assumption that S and E are initially completely uncorrelated, i.e., that the
+(pure-state) density matrix ρ̂ for the composite SE arrangement factorizes at
+t = 0,
+                            ρ̂(0) = ρ̂S (0) ⊗ ρ̂E (0).                  (3.4)
+Let us ﬁrst consider the case of a single scattering event and study its in-
+ﬂuence on the density matrix ρ̂S of the system (Fig. 3.3). In the following,
+we will use very basic quantum-mechanical scattering theory. Reviews of this
+subject matter can be found in most textbooks on quantum mechanics (e.g.,
+in Chap. 7 of [58]), but the reader should be able to follow the derivation
+without having to consult other literature.
+   Let us denote the initial state of the system with center-of-mass location
+x by a position eigenstate |x (with eigenvalue x), and let us write |χi  for
+the initial state of the incoming environmental particle. Then the eﬀect of
+the scattering event can be formally expressed by the action of the scattering
+operator Ŝ (the so-called “S-matrix”) on the initial state,

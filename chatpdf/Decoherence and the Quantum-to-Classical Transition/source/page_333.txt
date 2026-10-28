@@ -1,0 +1,49 @@
+              7.5 Quantum Computation on Decoherence-Free Subspaces            321
+
+gate and measurement operation being “noisy” (i.e., having a certain error
+probability).
+    While we shall not go into the details of fault-tolerant quantum computing
+(see, e.g., [56,367] for accessible reviews of this subject), we shall state an im-
+portant result that is often referred to as the threshold theorem [360,368–371].
+If one adopts a fault-tolerant implementation of quantum-error correction,
+then one can show that, provided the error rate per gate operation (in some
+physical implementation) is below a certain threshold value,10 it should be
+possible, at least in principle, to eﬃciently perform arbitrarily large quan-
+tum computations. This important theorem can be proved given a small set
+of physically reasonable assumptions about the nature of the errors, and it
+suggests that there should be no fundamental obstacle to an implementation
+of quantum computers.
+
+
+7.5 Quantum Computation
+on Decoherence-Free Subspaces
+
+We introduced the general concept of decoherence-free subspaces (DFS)
+[89–98], or pointer subspaces [9], in Sect. 2.8.1. Recall that DFS are sub-
+spaces HDF of the Hilbert space H of the system such that any state |ψ
+in this subspace remains (exactly or approximately) pure in spite of interac-
+tions with the environment. Applied to quantum computing, with the system
+represented by a collection of computational qubits, DFS allow us to encode
+quantum information in “quiet corners” of the Hilbert space so as to au-
+tomatically protect this information from the detrimental inﬂuence of the
+environment. By contrast with quantum error correction, DFS prevent errors
+from happening in the ﬁrst place and thus represent a strategy for intrinsic
+error avoidance.
+    We showed that [see (2.96)], given the general diagonal decomposition of
+the interaction Hamiltonian,
+                                     
+                             Ĥint =    Ŝα ⊗ Êα ,                    (7.48)
+                                          α
+
+a necessary requirement for a DFS to emerge is the existence of a set of
+orthonormal degenerate eigenstates |si  of the operators Ŝα ,
+
+                     Ŝα |si  = λ(α) |si    for all α and i.              (7.49)
+
+In Sect. 2.8.1, we also discussed that the condition (7.49) amounts to the
+presence of dynamical symmetries. Below, we will consider a model in which
+all qubits couple in exactly the same way to a single environment. In this
+   Current estimates for this accuracy threshold vary between about 10−2 and
+  10
+  −6
+10 per computational step; see [372] for an analysis of the diﬀerent estimates.

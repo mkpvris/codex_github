@@ -1,0 +1,16 @@
+return {
+ ["name:Times New Roman#717619"]={ "c:/Windows/Fonts/times.ttf", false },
+ ["name:Times New Roman/B:mode=node;script=latn;language=dflt;#b#717620"]={ "c:/Windows/Fonts/timesbd.ttf", false },
+ ["name:Times New Roman/B:mode=node;script=latn;language=dflt;#b#717621"]={ "c:/Windows/Fonts/timesbd.ttf", false },
+ ["name:Times New Roman/B:mode=node;script=latn;language=dflt;#b#717622"]={ "c:/Windows/Fonts/timesbd.ttf", false },
+ ["name:Times New Roman/BI:mode=node;script=latn;language=dflt;#bi#717621"]={ "c:/Windows/Fonts/timesbi.ttf", false },
+ ["name:Times New Roman/BI:mode=node;script=latn;language=dflt;#bi#717622"]={ "c:/Windows/Fonts/timesbi.ttf", false },
+ ["name:Times New Roman/I:mode=node;script=latn;language=dflt;#i#717620"]={ "c:/Windows/Fonts/timesi.ttf", false },
+ ["name:Times New Roman/I:mode=node;script=latn;language=dflt;#i#717621"]={ "c:/Windows/Fonts/timesi.ttf", false },
+ ["name:Times New Roman/I:mode=node;script=latn;language=dflt;#i#717622"]={ "c:/Windows/Fonts/timesi.ttf", false },
+ ["name:Times New Roman:mode=node;#717618"]={ "c:/Windows/Fonts/times.ttf", false },
+ ["name:Times New Roman:mode=node;#717622"]={ "c:/Windows/Fonts/times.ttf", false },
+ ["name:Times New Roman:mode=node;script=latn;language=dflt;#717620"]={ "c:/Windows/Fonts/times.ttf", false },
+ ["name:Times New Roman:mode=node;script=latn;language=dflt;#717621"]={ "c:/Windows/Fonts/times.ttf", false },
+ ["name:Times New Roman:mode=node;script=latn;language=dflt;#717622"]={ "c:/Windows/Fonts/times.ttf", false },
+}

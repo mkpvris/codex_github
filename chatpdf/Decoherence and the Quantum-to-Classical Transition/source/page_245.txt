@@ -1,0 +1,63 @@
+                                                        5.4 Spin-Environment Models      231
+                                 1    $    (i)
+                                                                     %
+                     C(τ ) =   gi2 TrEi e−ĤE /kB T σ̂z(i) (τ )σ̂z(i) ,               (5.177)
+                             i
+                                  Zi
+
+where Zi is deﬁned as in (5.112). Next, we need to compute the time evolution
+                                      (i)
+of the interaction-picture operator σ̂z (τ ) given by
+                                                  (i)            (i)
+                               σ̂z(i) (τ ) = e−iĤE τ σ̂z(i) e−iĤE τ .               (5.178)
+                                      (i)
+Denoting the eigenbasis of σ̂z by {|↑i , |↓i }, the explicit matrix represen-
+                                           (i)
+tation of the environment Hamiltonian ĤE is
+                                                   
+                          (i)      0       −Δi /2
+                        ĤE =                         .                 (5.179)
+                                 −Δi /2        0
+
+Diagonalizing this matrix yields the eigenvalues
+                                            √     E± = ±(−Δi /2) and corre-
+sponding eigenvectors |±i = (|↑i ∓ |↓i )/ 2. In this new basis {|+i , |−i },
+               (i)
+the operator σ̂z takes the form
+
+                               σ̂z(i) = (|+−|)i + (|−+|)i .                       (5.180)
+
+Thus the time evolution in the interaction picture is
+
+                      σ̂z(i) (τ ) = e−iΔi τ (|+−|)i + eiΔi τ (|−i +|)i .          (5.181)
+
+With these explicit expressions, the argument in curly brackets on the right-
+hand side of (5.177) reads
+     (i)
+ e−ĤE /kB T σ̂z(i) (τ )σ̂z(i) = eΔi /2kB T −iΔi τ (|++|)i + e−Δi /2kB T +iΔi τ (|−−|)i .
+                                                                                     (5.182)
+Taking the trace over this expression (for simplicity in the {|+i , |−i } basis)
+and using that
+                                      (i)
+                     Zi = TrEi e−ĤE /kB T = eΔi /2kB T + e−Δi /2kB T ,               (5.183)
+
+we obtain the explicit form of the environment self-correlation function
+(5.177),
+                      1     $     (i)
+                                                            %
+           C(τ ) =        TrE e−ĤE /kB T σ̂z(i) (τ )σ̂z(i)
+                         gi2
+                  i
+                       Zi
+                   -                       
+                                                  Δi
+                                                                      .
+                =   gi cos (Δi τ ) − i tanh
+                     2
+                                                            sin (Δi τ ) .             (5.184)
+                  i
+                                               2kB T
+
+Finally, let us follow the usual procedure and replace the discrete sum in-
+volving the environmental self-energies Δi by an integral using the spectral
+density

@@ -1,0 +1,53 @@
+382      Appendix: The Interaction Picture
+
+each case, the transformation involves only the free Hamiltonian, namely, the
+Hamiltonian Ĥ0 for ρ̂(I) (t) and the system Hamiltonian ĤS for the reduced
+                                          (I)
+interaction-picture density operator ρ̂S (t).
+    We note that the deﬁnition (A.13) also ensures, as desired, that expec-
+tation values of system observables ÂS (t) automatically agree in both the
+Schrödinger and interaction pictures, i.e., that
+                         &              '      &             '
+                                                  (I)   (I)
+          ÂS (t) = TrS ρ̂S (t)ÂS (t) = TrS ρ̂S (t)ÂS (t) ,       (A.14)
+
+where
+                 (A.4)                       (A.10)
+         ÂS (t) = eiĤ0 t ÂS (t)e−iĤ0 t            eiĤS t ÂS (t)e−iĤS t .
+          (I)
+                                              =                                   (A.15)
+
+The proof of (A.14) is immediate:
+                &             '      &                              '
+            TrS ρ̂S (t)ÂS (t) = TrS eiĤS t ρ̂S (t)ÂS (t)e−iĤS t
+                  (I)    (I)
+
+                                     &               '
+                                = TrS ρ̂S (t)ÂS (t) .                            (A.16)
+
+Finally, let us now answer the second question posed above, i.e., let us ﬁnd
+an equation of motion for the reduced interaction-picture density operator
+  (I)
+ρ̂S (t). Taking the trace over the environment on both sides of our evolution
+equation (A.9) for the full interaction-picture density operator ρ̂(I) (t), with
+               (I)
+V̂ (I) (t) ≡ Ĥint (t), yields
+
+                         d (I)             (I)                
+                           ρ̂ (t) = −i TrE Ĥint (t), ρ̂(I) (t) .                 (A.17)
+                         dt S
+A closer inspection reveals that this equation is not of the standard Liouville–
+von Neumann form, since the right-hand side depends on the full density
+                                                                    (I)
+operator ρ̂(I) (t) rather than on the reduced density operator ρ̂S (t). This
+fact should not be too surprising to the reader. After all, the state of the
+environment will generally inﬂuence the evolution of the reduced density
+operator.
+    Thus, in general, we must consider the full interacting system–environment
+combination to determine the reduced dynamics. (This observation is, of
+course, independent of whether we work in the Schrödinger or the interac-
+tion picture.) Only once certain approximations are imposed (for instance, the
+assumption of weak system–environment coupling), we may obtain an evolu-
+tion equation for the reduced density operator of the system that does not
+explicitly depend on the time-dependent total (system–environment) density
+operator. Such master equations are derived in Chaps. 4 and 5.

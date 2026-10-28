@@ -1,0 +1,47 @@
+320     7 Decoherence and Quantum Computing
+
+only if in average no more than one bit ﬂips (i.e., if the probability of single-bit
+ﬂips is less than 50%).
+    Interestingly, the three-bit code for phase errors described here was the
+basis of the ﬁrst experimental implementation of quantum error correction re-
+alized in 1998 [361].9 The experiment was carried out using liquid-state NMR
+to represent an ensemble quantum-computing device [351]. It was found that
+the experimentally implemented quantum error-correction protocol indeed
+led to a slowdown of the theoretically predicted loss of coherence from the
+qubit system.
+    Since redundant encoding requires a signiﬁcant increase in the number of
+physical qubits in the quantum computer over the unencoded case, redundant
+encoding has to be implemented very carefully so as to avoid introducing
+large amounts of further decoherence. (Above we had pointed out a similar
+problem in the context of the ancilla qubits.) The overarching goal is therefore
+to achieve a maximum of error-correcting abilities with the smallest possible
+ratio of physical to logical qubits.
+
+7.4.6 Apparatus-Induced Decoherence and Fault Tolerance
+
+Thus far we have considered interactions with the uncontrolled environment
+as the source of our phase errors. However, we really meant to convey a
+broader notion of “environment” in this context—namely, that of any physi-
+cal system interacting with the qubit system. An important such interaction
+is the coupling of the qubit system to the apparatus that prepares, manip-
+ulates, and measures the qubits and thus processes quantum information.
+Any such interaction with the apparatus will in general lead to entangle-
+ment between the apparatus and the qubit system and thus to decoherence
+of the qubits. Each gate operation, for example, will then typically induce
+some qubit decoherence. In addition, the practical implementation of gate
+operations will always be imperfect, introducing classical noise. Quantum al-
+gorithms usually require the application of many thousands of gates to the
+qubit system, leading to the rapid accumulation of errors.
+    Therefore, we must not only periodically correct qubit errors due to the
+continuous interaction with the uncontrolled environment, but also due to
+the processing of quantum information. Of course, as mentioned above, since
+error correction itself is based on measurements and gate operations per-
+formed by some apparatus, it will in turn introduce decoherence eﬀects into
+the qubits and cannot be executed with inﬁnite accuracy in any realistic sit-
+uation. This problem can be mitigated by so-called fault-tolerant methods
+for error detection and recovery [362–366], which aim at ensuring reliable op-
+eration of the quantum computer even in the realistic setting of each single
+   9
+     We note, though, that this experiment did not make use of the two ancilla
+qubits introduced above. Instead the error syndrome was obtained directly from
+certain joint measurements on the qubit system.

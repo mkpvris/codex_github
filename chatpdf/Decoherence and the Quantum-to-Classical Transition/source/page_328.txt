@@ -1,0 +1,47 @@
+316     7 Decoherence and Quantum Computing
+
+                1
+  |ar  |Ψ  −→ √ [|a0  (α |0 + β |1) |e+  + |a1  (α |0 − β |1) |e− ] . (7.38)
+                 2
+But if we make the replacement β −→ −β, then the role of the ancilla states
+as “error indicators” will be reversed. Namely, the ancilla state |a0  will now
+be correlated with a term of the phase-ﬂip type, whereas the state |a1  will
+correspond to the error-free term. Thus a measurement of the ancilla will not
+reveal any valuable information about the error that has occurred—unless,
+of course, if we knew something about the coeﬃcients α and β (and, in
+turn, if the ancilla states were some function of these coeﬃcients). But such
+knowledge can clearly not be assumed to exist, since the initial qubit state
+will in general be completely unknown.7
+    This diﬃculty marks the departure of quantum error correction from the
+more simple approach of quantum “erasure” (see Sect. 2.13). Note that the
+evolution described by (7.37) and (7.38) is essentially that of the “erasure”
+protocol (2.125), with the ancilla and environment corresponding to, respec-
+tively, the read-out device and the which-path detector. In quantum “era-
+sure,” the interference pattern is recovered in the sense of a conditioning of
+the outcome of the read-out measurement (2.124) on the observed position
+of the particle on the screen [130]. This conditioning is necessary because
+the states |ψ+  and |ψ−  in (2.125) correspond to, respectively, fringe and
+“antifringe” patterns on the screen, with the combined pattern being equal
+to the no-interference classical distribution. Thus the eﬀective recovery of an
+interference pattern requires us to be able to distinguish the ﬁnal relative
+states |Φ±  of the read-out device, but we do not need to infer from the
+read-out measurement the particular value of the relative phase between the
+components |ψ1  and |ψ1  in the states |ψ± . By contrast, in quantum com-
+puting it is important to restore the original superposition state, and thus
+we will need to be able to detect and correct the relative phase between the
+computational-basis states, a requirement that (7.38) does not fulﬁll.
+    This problem can be solved through a redundant encoding of the single-
+qubit state. To illustrate this approach, we shall consider the example of a
+single logical qubit redundantly encoded in three physical qubits using the
+scheme (7.36),
+                   (α |0 + β |1) |00 −→ α |000 + β |111 .                 (7.39)
+As we will see in the following, this encoding allows us to diagnose (and
+recover from) a phase-ﬂip error aﬀecting a single qubit without any knowledge
+about the initial qubit state.
+   First, we transform the encoded state (7.39) √to the conjugate basis
+{|+ , |−} for each qubit, where |± = (|0 ± |1) / 2. This transformation
+   7
+     This is of course the whole point of error correction in both the classical and
+quantum settings: We are given a perturbed state and would like to reconstruct
+the unknown initial state. If we knew from the outset what the unperturbed state
+should be, we could trivially just reprepare the system in this state.

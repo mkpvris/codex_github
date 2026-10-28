@@ -1,0 +1,50 @@
+252     6 Observing Decoherence in Action
+
+  second
+ rubidium
+   atom
+                   R1               C                 R2            De     Dg
+
+
+       π/2 pulse
+                                        atom–ﬁeld
+(a)   |ψatom2  = √12 (|g + |e)       interaction
+                                                        π/2 pulse
+(b)   |Ψatom2+field  = 12 (−|g|α + |g|−α
+                             −|e|−α + |e|α)                          measurement
+
+(c)                         |Ψatom2+field  = √12 |e(|α − |−α)
+
+(d)                                                             |ψatom2  = |e
+
+Fig. 6.3. Sequence of events for detecting the superposition state of ﬁelds in the
+cavity C and for monitoring its decoherence, assuming that the initial atom has
+been detected in the state |e. (a) A π/2 pulse in cavity R1 prepares a second
+rubidium atom in the superposition (6.20) of the states |g and |e. (b) The atom
+enters cavity C, which has been left in a superposition state after passage of the
+ﬁrst atom. Atom 2 imparts another phase shift on the ﬁeld in C, leading to an
+entangled atom–ﬁeld state [see (6.21)]. (c) The π/2 pulse in cavity R2 disentangles
+the ﬁeld and the atom [see (6.22)]. (d) If the ﬁeld states |±α are (approximately)
+orthogonal, this means that atom 2 will always be detected in state |e, identical to
+the state of atom 1. Thus the two measurement outcomes are perfectly correlated.
+Decay of this correlation implies decoherence of the cat state in the cavity C.
+
+                         1
+      |Ψatom2+ﬁeld  =     (− |g |α + |g |−α − |e |−α + |e |α) .          (6.21)
+                         2
+Next, the atom passes through cavity R2 , which transforms |g and |e into
+superpositions of these states [see (6.16)]. Thus the state (6.21) becomes
+                           1
+        |Ψatom2+ﬁeld  = √ (− |g |α + |e |α + |g |−α − |e |−α
+                         2 2
+                             − |e |−α − |g |−α + |e |α + |g |α)
+                          1
+                       = √ |e (|α − |−α) .                           (6.22)
+                           2
+Assuming that |α and |−α are orthogonal—an approximation that gets
+                                          2
+better as the number of photons n̄ = |α| in the cavity C increases—the
+reduced density operator for atom 2 corresponding to the state (6.22) is
+             ρ̂atom2 = Trﬁeld |Ψatom2+ﬁeld Ψatom2+ﬁeld | = |e2 e2 |.          (6.23)
+It immediately follows that the probability Pee of ﬁnding atom 2 in the state
+|e, given the detection of atom 1 in the state |e, is Pee = 1. A similar

@@ -1,0 +1,50 @@
+                            3.5 Illustrating the Dynamics of Decoherence      147
+
+    To quantify the interplay between the reduction of the coherence length
+(t) and the increase of the ensemble size ΔX(t), one often considers a com-
+bined dimensionless quantity in form of the ratio (see, e.g., [17, 173]),
+                                           ,
+                                   (t)      C(t)
+                           δ(t) ≡        =        .                       (3.94)
+                                  ΔX(t)      A(t)
+
+A plot of δ(t) is shown in Fig. 3.9. Without the environment present, δ(t)
+remains constant, i.e., the coherent spreading proceeds at the same rate in
+the x = x and x = −x directions [see (3.89) and the subsequent discussion].
+With the environment included, the coherence length (t) decreases while
+the overall width ΔX(t) increases. However, ΔX(t) increases at a slower
+rate than the rate of decrease of (t), leading to a net decrease of δ(t).
+    Another reason for our introduction of the quantity δ(t) is that it allows
+us to easily establish an immediate connection to another measure of deco-
+herence, namely, the purity ς = Tr (ρ̂2 ) of a density matrix ρ̂ as introduced
+in Sect. 2.4.3 [see (2.30)]. For the reduced density matrix ρS (t) of our model,
+the purity is found to be                ,
+                                           C(t)
+                                  ς(t) =        .                         (3.95)
+                                           A(t)
+But evidently this coincides with the expression (3.94) for δ(t), i.e., the quan-
+tity δ(t) also describes the purity of the reduced density matrix in our scat-
+tering model. From Fig. 3.9 we see that, as expected, the environmental
+scattering leads to a decrease of the purity of the reduced density matrix,
+reﬂecting the gradual action of decoherence.
+
+
+               δ(t)
+                                                             without
+               1
+                                                           environment
+
+
+
+
+           10−1
+                                           with
+                                       environment
+
+           10−2
+                                                            t [τb ]
+                  10−3   10−2     10−1       1       101
+Fig. 3.9. Time dependence of the ratio δ(t) ≡ (t)/ΔX(t) [see (3.94)] with and
+without environmental scattering. The quantity δ(t) also describes the time evo-
+lution of the purity of the local density matrix in our model. The time t is again
+measured in units of the characteristic localization timescale τb = 1/Λb2 .

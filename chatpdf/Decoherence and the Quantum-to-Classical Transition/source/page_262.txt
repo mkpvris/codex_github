@@ -1,0 +1,55 @@
+                             6.1 The First Milestone: Atoms in a Cavity      249
+
+                                       1
+                           |ψatom  = √ (|g + |e) .                     (6.10)
+                                        2
+(If the initial state of the atom had been |g, the ﬁnal state would be
+|ψatom  = √12 (|g − |e).) Next, the atoms enter the cavity C, which is cooled
+down to the superconducting regime close to absolute zero in order to min-
+imize the thermal radiation present in the cavity. In contrast to cavity R1 ,
+C has a very large so-called “Q factor” (Q stands for “quality”). This means
+that dissipative losses are minimized, such that photons in the cavity have
+rather long lifetimes. The cavity is made of two parallel mirrors about 3 cm
+apart. However, the distance between these mirrors can also be adjusted, and
+thereby the frequency of the radiation inside the cavity can be varied. This
+radiation consists of a coherent ﬁeld containing a few photons.
+    It is very important to note that the frequency in the cavity is far oﬀ the
+resonance frequency for any transitions from level |g, so nothing happens to
+the state |g interacting with the ﬁeld, but the frequency is fairly close to
+that of a transition from |e involving yet another level |i (namely, the cir-
+cular Rydberg state with n = 52). However, the ﬁeld increases and decreases
+in strength so slowly along the trajectory of the atom that the atom–ﬁeld
+interaction is nearly adiabatic, i.e., no energy quanta are exchanged between
+the atom and the ﬁeld and no actual changes in the amplitude |ce (t)| for
+the component |e in the state (6.4) occur. What happens instead is most
+interesting. The atom entering the cavity C acts as a refractive medium for
+the ﬁeld, i.e., it leads to a shift δω in the frequency of the ﬁeld. It turns out
+that this shift is only signiﬁcant if the atom is in the state |e, and the shift
+is negligible if the atom is in the state |g. By ﬁne-tuning the interaction
+time τ between the atom and the ﬁeld, the experiment achieves a phase shift
+φ = τ δω of the ﬁeld with a value close to π if the atom is in state |e.
+    What happens to the coherent state |α if such a phase shift φ is applied
+to each photon? A coherent state of a photon ﬁeld, with (complex) amplitude
+α, is deﬁned as a superposition of photon-number eigenstates |n [238–241],
+                                       ∞
+                                       
+                               |α =         cn |n ,                     (6.11)
+                                       n=0
+
+with
+                                            αn
+                              cn = e−|α| /2 √ .
+                                        2
+                                                                          (6.12)
+                                             n!
+Thus the distribution of photon-number states follows a Poisson distribution
+                                       2
+with average photon number n̄ = |α| ,
+                                              n
+                                              n̄
+                         (n) ≡ |cn | = e−n̄
+                                     2
+                                                   .                  (6.13)
+                                              n!
+
+Now, if every photon suﬀers a phase shift φ, the state |α becomes

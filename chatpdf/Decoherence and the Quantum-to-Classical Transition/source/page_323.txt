@@ -1,0 +1,48 @@
+                                              7.4 Quantum Error Correction         311
+
+the weight of a general error operator Êi is deﬁned as the number of the
+constituent single-qubit operators that are diﬀerent from the identity.
+    Fortunately, in many cases of interest relevant to quantum error correc-
+tion, simpliﬁed versions of this general setting can be used. One important
+case is that of partial decoherence. Here, only a small number K < N of qubits
+becomes entangled with the environment during the time between two appli-
+cations of an error-correcting mechanism. Then it will be suﬃcient to restrict
+our attention to the 2K possible error operators of weight ≤ K. Another case
+of interest is that of independent qubit decoherence. Here, we focus on error
+operators of weight equal to one only, i.e., we consider the case of a collec-
+tion of independent phase-ﬂip errors acting on single qubits. Thus each qubit
+undergoes phase ﬂips independently of all other qubits: Phase-ﬂip errors are
+not correlated among multiple qubits, but only occur locally at the site of an
+individual qubit. The assumption of independent qubit decoherence can be
+physically justiﬁed in situations where each qubit couples dominantly to its
+own environment and where these individual environments do not interact
+with each other. For example, this may be the case if the qubits are spatially
+separated and only couple to their immediate surroundings.
+
+7.4.3 “Undoing” Decoherence in a Quantum Computer
+
+Let us now employ the above results and insights to see how we can eﬀec-
+tively “undo” the eﬀects of decoherence on the system and return the qubit
+system to its original pre-decoherence state, thereby implementing quantum
+error correction. Instead of trying to ﬁnd out which error to correct by mea-
+suring the system and then to directly manipulate the system–environment
+combination, we use an additional set of qubits, referred to as the ancilla, to
+help us in detecting and correcting errors. Such ancilla qubits play the role of
+an artiﬁcial “environment.” They are in general of the same physical form as
+the computational qubits, but they do not take part in the actual execution
+of the quantum algorithm. Their only role is to help the quantum computer
+combat decoherence. Instead of manipulating the qubit–environment system
+(which is diﬃcult, if not impossible), we operate on the qubit–ancilla system
+(over which we assume to have perfect control).
+    Recall that the inﬂuence of an entangling interaction between the qubit
+system S and its environment E can be written in the form6 [see (7.26)]
+                                               
+                        |ψ |er  −→      Êi |ψ |ei  .                (7.30)
+                                          i
+
+Our objective is now to recover, given the entangled state on the right-hand
+side of (7.30), the initial (and of course unknown!) state |ψ. To do so, let
+   6
+    Although here we focus on decoherence-induced errors, the following scheme
+holds for arbitrary error operators Êi and is not restricted to error operators of the
+form Ẑj1 j2 ···jN .

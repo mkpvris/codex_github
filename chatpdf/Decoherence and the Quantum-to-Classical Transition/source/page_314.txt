@@ -1,0 +1,46 @@
+302    7 Decoherence and Quantum Computing
+
+implement quantum gates, the interaction between the qubits and the control
+apparatus must be suﬃciently strong.
+    Thus we are faced with two opposing demands. On the one hand, we
+would like to isolate the qubits in order to minimize unwanted environmental
+interactions and to thus protect the qubit superposition states. On the other
+hand, however, we need to keep the qubit system suﬃciently open to allow for
+the qubits to be manipulated (in form of state preparations and gate opera-
+tions) and read out by controlled interactions with a macroscopic apparatus.
+In turn, such qubit–apparatus interactions will in general induce decoherence
+of the qubits due to entanglement with the apparatus, with further pertur-
+bations introduced by classical noise (ﬂuctuations) in the apparatus.
+    Therefore, the formidable challenge of designing a quantum computer
+consists of meeting both demands in a balanced way. Obviously, a quantum
+computer that has a very low environmental decoherence rate but cannot
+be manipulated in any reasonable way is as useless as a quantum computer
+that we are able to control well but whose environmental interactions are so
+strong as to immediately deteriorate the device into a classical computer. In
+short, we require the qubits to interact strongly with certain components of
+the environment (namely, the apparatus) but not with the remainder (the
+uncontrolled surroundings into which the qubits are immersed).
+    For example, optical quantum computing uses photons as physical qubits,
+with the two diﬀerent orientations of polarization representing the computa-
+tional-basis states. Photons are relatively insensitive to decoherence, since
+they are uncharged particles and exhibit usually only weak interactions with
+each other and with matter. In ordinary linear optical media photons do not
+interact with each other at all (and only extremely weakly in nonlinear me-
+dia), posing the problem of how to implement two-qubit gate operations that
+would entangle a pair of photons. A possible way of out of this dilemma has
+been suggested by the famous Knill–Laﬂamme–Milburn scheme [348], which
+uses only linear optics, single-photon states, and projective measurements to
+entangle two photonic qubits. However, this scheme in turn introduces new
+challenges that need to be overcome for the construction of an optical quan-
+tum computer to become feasible. Similarly, qubits implemented as single
+spins inside of a nucleus have long decoherence times but are very diﬃcult
+to control and measure.
+
+
+7.3 Decoherence Versus Classical Fluctuations
+As discussed in Sect. 2.12, decoherence should be understood as a distinctly
+quantum-mechanical eﬀect with no classical analog. By contrast, in the liter-
+ature on quantum computing readers will often ﬁnd that the term “decoher-
+ence” is used in a more sloppy way as referring to any process that aﬀects
+the qubits, including perturbations due to classical ﬂuctuations and imperfec-
+tions. Examples for sources of such classical noise in the context of quantum

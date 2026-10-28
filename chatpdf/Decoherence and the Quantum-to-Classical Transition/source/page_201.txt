@@ -1,0 +1,53 @@
+                                            5.2 Quantum Brownian Motion          187
+                                       t
+                       2 (t) = − 2
+                      Ω                   dτ η(τ ) cos (Ωτ ) ,               (5.42a)
+                                  M 0
+                                       t
+                                  1
+                       γ(t) =             dτ η(τ ) sin (Ωτ ) ,               (5.42b)
+                                MΩ 0
+                                 t
+                       D(t) =       dτ ν(τ ) cos (Ωτ ) ,                     (5.42c)
+                                 0
+                                         t
+                                    1
+                       f (t) = −            dτ ν(τ ) sin (Ωτ ) .             (5.42d)
+                                  MΩ 0
+
+The master equation (5.25) evaluated with these time-dependent coeﬃcients
+instead of the “Markovian coeﬃcients” (5.26) is then of the Redﬁeld type
+[174,175] mentioned in Sect. 4.2.2. That is, the master equation is based on (i)
+the Born approximation and (ii) the ﬁrst Markov approximation of replacing
+the retarded-time density operator ρ̂S (t ) by ρ̂S (t) in the integrand on the
+                                         (I)       (I)
+
+right-hand side of the Born master equation (4.32). However, the limit of the
+integration in (4.32) is not extended to inﬁnity.
+    The resulting master equation [i.e., (5.25) with coeﬃcients given by (5.42)]
+allows for a more realistic treatment of quantum Brownian motion in situ-
+ations where the Markov approximation is not (fully) appropriate, for ex-
+ample, in the case of low-temperature environments [109, 220]. In fact, the
+coeﬃcients (5.42) represent a middle ground between the Markovian setting
+[the master equation (5.25) evaluated with the time-independent coeﬃcients
+(5.26)] on the one hand, and the exact master equation for quantum Brow-
+nian motion on the other hand (see Sect. 5.2.7), which is valid for arbitrary
+system–environment interaction strengths and not just in the weak-coupling
+limit considered here.
+    The time dependence of the coeﬃcients (5.42) has been studied in detail
+in the literature (see, e.g., the discussions by Hu, Paz, and Zhang [219] and by
+Paz and Zurek [15]). For example, in the case of an ohmic spectral density of
+the environment (see the next Sect. 5.2.3) it can be shown that the frequency
+       2 (t) and the momentum-damping coeﬃcient γ(t) both start out from a
+shift Ω
+value of zero and asymptotically approach their ﬁnal values on a timescale set
+by the order of magnitude of the highest frequencies that are present in the
+environment to a signiﬁcant degree. The diﬀusion coeﬃcients D(t) and f (t)
+exhibit an initial temperature-independent transient and then settle rather
+quickly into their (temperature-dependent) asymptotic values.
+    Since the Markovian coeﬃcients (5.26) correspond to taking the limit
+t −→ ∞ in the integrals in (5.42), the coeﬃcients Ω     2 (t), γ(t), D(t), and f (t)
+asymptotically approach the values of these Markovian coeﬃcients. In the
+following, we shall focus on the Markovian case, i.e., on the master equation
+(5.25) together with the time-independent expressions (5.26) for the coeﬃ-
+cients.

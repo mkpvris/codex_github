@@ -1,0 +1,46 @@
+                                            7.4 Quantum Error Correction        309
+
+Here the σ̂s act on the Hilbert space HS of S, and |eI  and {|es } are envi-
+ronmental states that are not necessarily orthogonal or normalized.
+    Let us appreciate the meaning of this result. Equation (7.22) shows that
+a completely arbitrary inﬂuence of the environment on the qubit can be ex-
+pressed simply in terms of a weighted sum of the discrete Pauli operators and
+the identity operator acting on the original state of the qubit. This discretiza-
+tion of the continuum of possible changes of the state into a superposition
+of only four operators can be done because {I,  ˆ σ̂x , σ̂y , σ̂z } forms a complete
+set of operators for the Hilbert space HS of S. We will see below that this
+discretization is crucial in detecting and correcting errors in quantum com-
+puters.
+    Because of their eﬀect on the state of a qubit, the eﬀect of σ̂x and σ̂z is
+often referred as a “bit-ﬂip error” and “phase-ﬂip error,” respectively. This
+can be seen by comparing (7.20) and (7.21), or directly from the fact that
+                       σ̂x (α |0 + β |1) = α |1 + β |0 ,                (7.23a)
+                        σ̂z (α |0 + β |1) = α |0 − β |1 .               (7.23b)
+In other words, the operator σ̂x swaps the two bits |0 and |1, while σ̂z
+rotates the phase of the bit |1 by 180o (which amounts to a sign ﬂip). Note
+that the phase ﬂip operation has no classical analogue, since a classical bit
+is in either one of the two states 0 and 1. Therefore phase relations between
+these two states cannot play a role. Furthermore, the reader may easily verify
+that the operator σ̂y is simply a combination of a bit-ﬂip and a phase-ﬂip
+error, since σ̂x σ̂z = −iσ̂y .
+    It should be emphasized, though, that despite this suggestive labeling of
+the Pauli operators the physical interpretation of (7.20) and (7.21) in terms of
+a sequence of bit-ﬂip and phase-ﬂip errors is only justiﬁed if the corresponding
+relative states of the environment are orthogonal. Only in this case the Pauli
+operators represent mutually exclusive “error possibilities” (with associated
+probabilities) that could be distinguished in a measurement.
+    For our purpose of describing environmental entanglement and the result-
+ing decoherence eﬀects, a simpliﬁed version of the general result (7.22) will
+suﬃce. From (7.18) and (7.21) we see that the inﬂuence of environmental
+decoherence on a single qubit can be represented as a combination of the
+identity operator and the Pauli operator σ̂z . That is,
+                                 1                            
+                    |ψ |er  −→ √ Iˆ |ψ |e+  + σ̂z |ψ |e−  ,          (7.24)
+                                  2
+where we have deﬁned new (conjugate) relative environmental states |e±  as
+                                   1
+                           |e±  ≡ √ (|e00  ± |e11 ) .                     (7.25)
+                                    2
+This result may not come as a surprise, since decoherence is associated with
+the delocalization of local phase relations, and we may thus intuitively expect
+the eﬀect of decoherence to be related to phase-ﬂip errors.

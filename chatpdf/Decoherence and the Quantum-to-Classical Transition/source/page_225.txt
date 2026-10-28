@@ -1,0 +1,49 @@
+                                                     5.3 The Spin–Boson Model             211
+
+Therefore, for our purposes, instead of the time-ordered evolution operator
+(5.95) we may simply use V̂ (t), which can be directly evaluated by carrying
+out the integration in the argument of the exponential. This yields
+                            
+                              1                              
+                V̂ (t) = exp σ̂z ⊗      λi (t)â†i − λ∗i (t)âi ,     (5.99)
+                              2      i
+
+where we have deﬁned the time-dependent coeﬃcients
+                                            gi            
+                               λi (t) ≡ 2        1 − eiωi t .                          (5.100)
+                                            ωi
+
+What time evolution does V̂ (t), see (5.99), induce? For the remainder of this
+section, let us make the usual assumption that there exist no correlations
+between the system and the environment at t = 0,
+
+                             |Ψ (0) = (a |0 + b |1) |ΦE  .                         (5.101)
+
+We then readily obtain the time evolution
+
+        |Ψ (t) = V̂ (t) |Ψ (0)
+               = a |0       D̂ (λi (t)/2) |ΦE  + b |1        D̂ (−λi (t)/2) |ΦE 
+                         i                                 i
+               ≡ a |0 |E+ (t) + b |1 |E− (t) .                                     (5.102)
+
+Here we have introduced the operator
+                                    &                       '
+                   D̂ (λi (t)) ≡ exp λi (t)â†i − λ∗i (t)âi ,                         (5.103)
+
+which generates the evolution of the ith environmental oscillator.
+    The reader may immediately recognize the similarity of the time evolu-
+tion described by (5.102) to that encountered in the simple static model of
+Sect. 2.10, see (2.105). In both cases, the interaction establishes quantum
+correlations between the basis states |0 and |1 of S and the corresponding
+relative states |E+ (t) and |E− (t) of the environment.
+    What concrete form do these environmental states |E+ (t) and |E− (t)
+take? To answer this question, we must ﬁrst choose a particular initial state
+|ΦE  of the environment [see (5.101)], which we shall now do for two examples
+of interest. First, we shall consider the case in which the environment is in
+the ground state. Second, we will look at the situation of the environment’s
+being in thermal equilibrium.
+
+Case Study #1: Environment in the Ground State
+
+Here we shall assume that each harmonic oscillator in the environment is
+initially in the energy ground state |E0 ,

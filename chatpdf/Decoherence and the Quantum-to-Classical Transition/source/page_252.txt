@@ -1,0 +1,51 @@
+238     5 Canonical Models For Decoherence
+
+Mapping onto Canonical Models
+
+A large class of physical systems of interest can be represented either by
+spin- 12 particles (for systems whose state space is eﬀectively reduced to two
+diﬀerent basis states), or by particles that are described by the continuous
+canonical coordinates position and momentum and that move in some po-
+tential.
+    Environments can be modeled either as a collection of harmonic oscilla-
+tors, corresponding to a quasicontinuum of delocalized bosonic ﬁeld modes,
+or as a collection of localized modes represented by spins. Spin environments
+are often the appropriate model for low-temperature environments strongly
+coupled to the central system.
+
+Quantum Brownian Motion
+
+This is the model of a central particle moving in some potential in real space
+and bilinearly interacting with an environment of noninteracting harmonic
+oscillators. We focused on the case of the central system represented by a
+harmonic oscillator.
+    We derived the Born–Markov master equation for this model [see (5.25)],
+
+  d                   1 2 2                )              *
+     ρ̂S (t) = −i ĤS + M Ω X̂ , ρ̂S (t) − iγ X̂, P̂ , ρ̂S (t)
+  dt                   2
+                                                             
+                           − D X̂, X̂, ρ̂S (t) − f X̂, P̂ , ρ̂S (t) .        (5.202)
+
+The ﬁrst term on the right-hand side of this equation describes the unitary
+dynamics (with a frequency shift quantiﬁed by Ω    2 ). The second term cor-
+responds to momentum damping with a rate proportional to γ. The third
+term describes decoherence of spatial coherences over a distance ΔX at a
+rate D(ΔX)2 . The fourth term also represents decoherence but can often
+be neglected, especially at higher temperatures. All coeﬃcients appearing in
+the master equation (5.202) are strongly dependent on the spectral density
+of the environment, which encapsulates the physical characteristics of the
+environment.
+    In the high-temperature limit, the reduced dynamics of the central system
+are in many cases well approximated by a simpliﬁed form of the master
+equation (5.202) known as the Caldeira–Leggett master equation, given by
+[see (5.57)]
+
+  d                                 )              *                         
+    ρ̂S (t) = −i ĤS , ρ̂S (t) − iγ0 X̂, P̂ , ρ̂S (t) − 2M γ0 kB T X̂, X̂, ρ̂S (t) .
+ dt
+                                                                              (5.203)
+Again, the ﬁrst term on the right-hand side represents the unitary evolution
+(governed by the environment-renormalized self-Hamiltonian ĤS ), the second
+term describes dissipation, and the third term corresponds to decoherence of
+spatial superpositions at a rate that increases linearly with the temperature

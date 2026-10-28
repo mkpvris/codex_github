@@ -1,0 +1,79 @@
+% 原文 pp.44--49、2.4.6全体。
+\subsubsectionlink{縮約密度行列}
+縮約密度行列は、デコヒーレンスの形式的記述において重要な役割を果たし、その起源は量子力学の初期に遡る\cite{ref060,ref062,ref063}（興味深い考察は文献\cite{ref064}も参照）。縮約密度行列の概念の基本的な動機は、他の系$\mathcal B$と量子的に相関している、すなわちもつれている量子系$\mathcal A$を記述することである。この場合、全複合系$\mathcal{AB}$の量子状態は純粋であってよく、したがって原理上は完全に既知でありうる。しかし、観測者が最初の系$\mathcal A$にしかアクセスできず、$\mathcal A$についてだけ測定を行え、$\mathcal B$については行えないとしよう。その場合、複合系の状態について知りうることはすべて、$\mathcal A$だけに対する局所的な測定から導かなければならず、その測定は、この系で可能な測定結果と、その確率分布を与える。そこで中心的な問いは、次のようになる。系$\mathcal A$の観測者が引き出せるすべての情報、すなわち、すべての測定統計を、過不足なく正しく含む、量子力学の形式内で適切な数学的対象は何か。
+
+その対象は、次式で与えられる縮約密度行列であることが分かる。
+\begin{equation}\hat\rho_{\mathcal A}\equiv\operatorname{Tr}_{\mathcal B}\hat\rho.\tag{2.41}\end{equation}
+添字「$\mathcal B$」は、$\mathcal B$のHilbert空間$\mathcal H_{\mathcal B}$の正規直交基底だけを用いて、トレースを取ることを意味する。そのため演算「$\operatorname{Tr}_{\mathcal B}$」は、$\mathcal B$にわたる部分トレースとも呼ばれ、観測されない系$\mathcal B$の自由度についての「平均」と解釈できる。この解釈は後にさらに明らかになる。したがって式(2.41)は、系$\mathcal A$だけに属するすべての観測可能量の測定統計が、$\mathcal A$と量子的に相関している$\mathcal B$の自由度の「トレースを取って消去」して得た縮約密度行列$\hat\rho_{\mathcal A}$に、完全に含まれることを意味する。
+
+% 原文 p.45
+\hypertarget{srcpage:45}{}\label{srcpage:45}
+\paragraph{デコヒーレンスとの関係}
+式(2.41)を導く前に、まずデコヒーレンスの記述における縮約密度行列の概念の重要性を論じよう。デコヒーレンスは、二つの系、すなわち「関心のある系」と、その環境との間の相互作用から生じることを思い出そう。通常、そのような相互作用は、系と環境を合わせたもののもつれ状態をもたらす。普通、観測者は関心のある系だけについて測定し、環境は通常、アクセス不能か、完全には測定できないか、あるいは単に関心の対象ではない。たとえば、物体に散乱される光子からなる環境を考えてよい。実際上、散乱された光子をすべて捕らえることは通常不可能なので、観測者が測定できるのは、系と環境光子の一部に属する観測可能量だけである。
+
+ここで縮約密度行列が役に立つ。系と環境の密度行列について、環境の自由度の全部または一部にわたりトレースを取ると、系の縮約密度行列によって、関心のある系の測定統計の完全で網羅的な記述を得られる。系に対する局所測定への環境の影響は、すべて自動的に、この縮約密度行列に包含される。系は環境ともつれているので、系自体に個別の量子状態を帰属させることはできない。したがって、系の測定統計を記述するために利用できるのは、縮約密度行列だけであり\footnote{Zurekが最近発展させた、いわゆる「envariance」の研究計画\cite{ref016,ref065,ref066,ref067}は、8.2.2節で概説するように、もつれ状態の対称性を使う。この計画は、ある仮定の集合のもとで、縮約密度行列を用いず、したがってBorn則を前提とせずに、他の系ともつれた系の状態と測定を論じられる枠組みを与える。}、この縮約密度行列は、系と環境の量子もつれの存在により、必ず非純粋になる。
+
+\paragraph{縮約密度行列の導出}
+縮約密度行列の式(2.41)を導こう。そのため、二つの系$\mathcal A$、$\mathcal B$の、次の形のもつれ状態を考える。
+\begin{equation}\lvert\Psi\rangle=\frac1{\sqrt2}(\lvert a_1\rangle\lvert b_1\rangle+\lvert a_2\rangle\lvert b_2\rangle).\tag{2.42}\end{equation}
+ここで$\lvert a_i\rangle$と$\lvert b_i\rangle$（$i=1,2$）は、それぞれ$\mathcal A$、$\mathcal B$の任意の規格化された状態であり、必ずしも直交していない。式(2.11)から、対応する純粋状態の密度行列は、
+\begin{equation}\hat\rho=\lvert\Psi\rangle\langle\Psi\rvert=\frac12\sum_{i,j=1}^2\lvert a_i\rangle\langle a_j\rvert\otimes\lvert b_i\rangle\langle b_j\rvert\tag{2.43}\end{equation}
+である。また、$\{\lvert\psi_k\rangle\}$、$\{\lvert\phi_l\rangle\}$を、それぞれ$\mathcal A$、$\mathcal B$のHilbert空間$\mathcal H_{\mathcal A}$、$\mathcal H_{\mathcal B}$の正規直交基底とする。
+
+% 原文 p.46
+\hypertarget{srcpage:46}{}\label{srcpage:46}
+系$\mathcal A$だけに作用する観測可能量を考えよう。それは$\hat O=\hat O_{\mathcal A}\otimes\hat I_{\mathcal B}$と書ける。ここで$\hat I_{\mathcal B}$は、$\mathcal B$のHilbert空間の単位演算子である。先ほど提起した問いに従い、二部分系の密度行列(2.43)より単純でありながら、このような$\mathcal A$の観測可能量すべての期待値を計算できる、数学的対象が存在するかを調べたい。
+
+すでに知っているように、任意の観測可能量の期待値$\langle\hat O\rangle$は、標準的なトレース則(2.17)、$\langle\hat O\rangle=\operatorname{Tr}(\hat\rho\hat O)$で計算できる。いま$\hat O=\hat O_{\mathcal A}\otimes\hat I_{\mathcal B}$なので、系$\mathcal B$に属するトレース演算の部分を直ちに実行できる。具体的には、
+\begin{equation}\begin{split}
+\langle\hat O\rangle&=\operatorname{Tr}(\hat\rho\hat O)\\
+&=\sum_{kl}\langle\phi_l\rvert\langle\psi_k\rvert\hat\rho(\hat O_{\mathcal A}\otimes\hat I_{\mathcal B})\lvert\psi_k\rangle\lvert\phi_l\rangle\\
+&=\sum_k\langle\psi_k\rvert\left(\sum_l\langle\phi_l\rvert\hat\rho\lvert\phi_l\rangle\right)\hat O_{\mathcal A}\lvert\psi_k\rangle\\
+&=\sum_k\langle\psi_k\rvert(\operatorname{Tr}_{\mathcal B}\hat\rho)\hat O_{\mathcal A}\lvert\psi_k\rangle\\
+&\equiv\sum_k\langle\psi_k\rvert\hat\rho_{\mathcal A}\hat O_{\mathcal A}\lvert\psi_k\rangle\\
+&=\operatorname{Tr}_{\mathcal A}(\hat\rho_{\mathcal A}\hat O_{\mathcal A}).
+\end{split}\tag{2.44}\end{equation}
+ここで$\hat\rho_{\mathcal A}$は、まさに式(2.41)で導入した縮約密度行列である。
+
+縮約密度行列の概念は、二部分系のもつれ状態から、$N$個の部分系間の量子もつれを記述する任意の純粋状態$\lvert\psi\rangle$へ一般化できる。系$i$だけに属する観測可能量$\hat O$、
+\begin{equation}\hat O=\hat I_1\otimes\hat I_2\otimes\cdots\otimes\hat I_{i-1}\otimes\hat O_i\otimes\hat I_{i+1}\otimes\cdots\otimes\hat I_N\tag{2.45}\end{equation}
+を考える。トレース則を適用して得る$\hat O$の測定統計は、$N$個すべての部分系を含む複合系の純粋状態の密度行列$\hat\rho=\lvert\Psi\rangle\langle\Psi\rvert$を使っても、第$i$部分系の縮約密度行列
+\begin{equation}\hat\rho_i=\operatorname{Tr}_{1,\ldots,i-1,i+1,\ldots,N}(\hat\rho)\tag{2.46}\end{equation}
+を使っても同じになる。後者は、第$i$部分系を除くすべての部分系についてトレースを取って得られる。これは、
+\begin{equation}\langle\hat O\rangle=\operatorname{Tr}(\hat\rho\hat O)=\operatorname{Tr}_i(\hat\rho_i\hat O_i)\tag{2.47}\end{equation}
+が容易に示されるからである。
+
+% 原文 p.47
+\hypertarget{srcpage:47}{}\label{srcpage:47}
+\paragraph{干渉の局所的測定可能性と識別可能性}
+二部分系の状態(2.42)については、全密度行列$\hat\rho$の式(2.43)から、$\hat\rho_{\mathcal A}$［式(2.44)］を容易に計算できる。$\mathcal B$の状態$\lvert b_i\rangle$（$i=1,2$）を、$\mathcal H_{\mathcal B}$の正規直交基底ベクトルの組$\{\lvert\phi_l\rangle\}$で
+\begin{equation}\lvert b_i\rangle=\sum_l c_l^{(i)}\lvert\phi_l\rangle\tag{2.48}\end{equation}
+と展開すれば、
+\begin{equation}\begin{split}
+\hat\rho_{\mathcal A}&=\operatorname{Tr}_{\mathcal A}\left(\frac12\sum_{i,j=1}^2\lvert a_i\rangle\langle a_j\rvert\otimes\lvert b_i\rangle\langle b_j\rvert\right)\\
+&=\frac12\sum_{i,j=1}^2\lvert a_i\rangle\langle a_j\rvert\sum_k\langle\phi_k\rvert\left(\sum_{ll'}c_l^{(i)}(c_{l'}^{(j)})^*\lvert\phi_l\rangle\langle\phi_{l'}\rvert\right)\lvert\phi_k\rangle\\
+&=\frac12\sum_{i,j=1}^2\lvert a_i\rangle\langle a_j\rvert\sum_k c_k^{(i)}(c_k^{(j)})^*\\
+&=\frac12\sum_{i,j=1}^2\lvert a_i\rangle\langle a_j\rvert\langle b_j\vert b_i\rangle\\
+&=\frac12\bigl(\lvert a_1\rangle\langle a_1\rvert+\lvert a_2\rangle\langle a_2\rvert\\
+&\hspace{17mm}+\lvert a_1\rangle\langle a_2\rvert\langle b_2\vert b_1\rangle+\lvert a_2\rangle\langle a_1\rvert\langle b_1\vert b_2\rangle\bigr)
+\end{split}\tag{2.49}\end{equation}
+を得る。この結果は、複合系$\mathcal{AB}$が二成分状態(2.42)ではなく、$N>2$の、より一般的な$N$成分状態$\lvert\Psi\rangle=N^{-1/2}\sum_{n=1}^N\lvert a_n\rangle\lvert b_n\rangle$で記述される場合にも、容易に一般化できる。その場合、縮約密度行列は
+\begin{equation}\hat\rho_{\mathcal A}=\frac1N\sum_{i,j=1}^N\lvert a_i\rangle\langle a_j\rvert\langle b_j\vert b_i\rangle\tag{2.50}\end{equation}
+となる。式(2.49)から、測定統計への系$\mathcal B$の影響は、縮約密度行列の非対角項$\lvert a_1\rangle\langle a_2\rvert$、$\lvert a_2\rangle\langle a_1\rvert$に掛かる、$\mathcal B$の状態$\lvert b_1\rangle$と$\lvert b_2\rangle$の重なり$\langle b_2\vert b_1\rangle=\langle b_1\vert b_2\rangle^*$へ、実効的にまとめられることが分かる。2.4.2節で述べたように、これらの非対角項は、状態$\lvert a_1\rangle$、$\lvert a_2\rangle$間の干渉に対応する。
+
+したがって、非常に重要な結果を得る。$\mathcal A$の状態$\lvert a_1\rangle$、$\lvert a_2\rangle$と一対一に相関した、$\mathcal B$の相対状態$\lvert b_1\rangle$、$\lvert b_2\rangle$の重なりの大きさ［式(2.42)］は、$\mathcal A$で測定できる$\{\lvert a_1\rangle,\lvert a_2\rangle\}$基底の干渉の程度を定量化する。これは2.3.2節の先の考察に直結する。そこでは、二部分系の純粋状態に存在するもつれの程度を、一方の部分系に符号化された、他方の対応する相対状態に関する情報量によって、直観的に導入した。この尺度を、一方の部分系の関連する状態の識別可能性に結び付け、それらの相互の重なりによって定量化した。こうして、もつれの程度、識別可能性の大きさ、そして一方の部分系だけを測定して干渉を観測できる程度の間の、密接なつながりが見える。
+
+% 原文 p.48
+\hypertarget{srcpage:48}{}\label{srcpage:48}
+たとえば、状態$\lvert b_1\rangle$、$\lvert b_2\rangle$の重なりが消失し、したがって完全に識別可能になる極限では、縮約密度行列(2.49)は$\{\lvert a_1\rangle,\lvert a_2\rangle\}$基底で対角となる。
+\begin{equation}\hat\rho_{\mathcal A}=\frac12(\lvert a_1\rangle\langle a_1\rvert+\lvert a_2\rangle\langle a_2\rvert).\tag{2.51}\end{equation}
+非対角の干渉項$\lvert a_1\rangle\langle a_2\rvert$、$\lvert a_2\rangle\langle a_1\rvert$がなくなるため、状態$\lvert a_1\rangle$、$\lvert a_2\rangle$間の干渉を測定できる局所的な観測可能量$\hat O=\hat O_{\mathcal A}\otimes\hat I_{\mathcal B}$は存在しない。
+
+\paragraph{縮約密度行列と集団}
+ここで重要な注意を述べる。明らかに、縮約密度行列(2.51)は、系$\mathcal A$が真正混合で記述される場合に得る密度行列と、形式上同一である。そのような真正混合は、二つの純粋状態$\lvert a_1\rangle$、$\lvert a_2\rangle$の一方に、系が等しい確率である状況に対応することを思い出そう。これは、両成分$\lvert a_1\rangle$、$\lvert a_2\rangle$が存在する、大域的にもつれた重ね合わせ(2.42)と対照的である。後者は、少なくとも原理上、適切な干渉実験によって常に確かめられる（2.2.1節）。
+
+系$\mathcal A$ともつれた系$\mathcal B$の自由度についてトレースを取って得る縮約密度行列(2.51)と、混合状態の密度行列が形式上同一であることは、$\mathcal A$だけに属する観測可能量の測定では、純粋状態と混合状態という二つの場合を区別できないことを意味する\footnote{混合状態と純粋状態を操作的に区別できないことは、実際には、局所測定への制限の帰結にとどまらず、$\hat O=\hat O_{\mathcal A}\otimes\hat O_{\mathcal B}$の形に因数分解される複合系の任意の観測可能量についても成り立つことを示せる（たとえば文献\cite[pp.~208--210]{ref068}）。ここで$\hat O_{\mathcal A}$、$\hat O_{\mathcal B}$は、それぞれ$\mathcal A$、$\mathcal B$のHilbert空間における射影演算子$\lvert a_i\rangle\langle a_i\rvert$、$\lvert b_i\rangle\langle b_i\rvert$（$i=1,2$）と可換ではない。}。しかし、この形式上の同一性を、系の状態も混合と見なせることを意味すると解釈してはならないと理解することが、決定的に重要である（d'Espagnatの議論\cite{ref047,ref048,ref049}も参照）。一般に、密度行列は、可能な測定結果の集合の確率分布を計算する道具にすぎず、系の状態を指定しない。二つの系$\mathcal A$と$\mathcal B$はもつれており、全複合系は依然として重ね合わせ(2.42)で記述されているので、量子力学の標準的規則から、どちらの部分系にも、個別の確定した状態を帰属させられないことが従う。したがって、もつれた部分系の縮約密度行列は、非真正混合を表す\cite{ref047,ref048,ref049}。
+
+% 原文 p.49
+\hypertarget{srcpage:49}{}\label{srcpage:49}
+そのため、縮約密度行列が混合状態の密度行列に形式上似ていることをもって、系$\mathcal B$との物理的相互作用と、形式的なトレース演算によって、大域的にもつれた重ね合わせ状態(2.42)から、どういうわけか魔法のように確定した部分系状態、すなわち、縮約密度行列(2.51)が示すような、等しい確率の$\lvert a_1\rangle$または$\lvert a_2\rangle$が得られた、と論じることはできない。この考察は、量子測定問題に対するデコヒーレンスの含意を論じるときに重要になる（次の2.5節）。第8章、特に8.1節でも、この問題に戻る。

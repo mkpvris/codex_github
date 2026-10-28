@@ -1,0 +1,45 @@
+% 原文 p.110
+\hypertarget{srcpage:110}{}\label{srcpage:110}
+\subsubsectionlink{演算子和形式}
+Hamiltonianの具体形を参照せずに、環境が系の縮約密度行列に及ぼす影響を表す、完全に一般的な形式を導入しよう。この演算子和形式、しばしばKraus演算子形式\cite{ref152}とも呼ぶものの導出は、非常に単純で、次のようになる。
+
+まず、系$\mathcal S$と環境$\mathcal E$が、初めに完全に無相関であり、共同の密度行列が
+\begin{equation}\hat\rho(0)=\hat\rho_{\mathcal S}(0)\otimes\hat\rho_{\mathcal E}(0)\tag{2.140}\end{equation}
+であるとする。そのうえで、環境の初期密度行列$\hat\rho_{\mathcal E}(0)$の対角分解を、
+\begin{equation}\hat\rho_{\mathcal E}(0)=\sum_i p_i\lvert E_i\rangle\langle E_i\rvert\tag{2.141}\end{equation}
+と書ける。係数$p_i$は$\sum_i p_i=1$を満たし、環境状態$\lvert E_i\rangle$は、環境のHilbert空間$\mathcal H_{\mathcal E}$の正規直交基底状態の組をなす。
+
+系と環境の全Hamiltonianを$\hat H$とし、ここでは時間に依存しないと仮定する。通常のユニタリ時間発展演算子$\hat U(t)=e^{-i\hat Ht}$が与えられると、系の縮約密度行列$\hat\rho_{\mathcal S}(t)$の発展は、
+\begin{equation}\hat\rho_{\mathcal S}(t)=\operatorname{Tr}_{\mathcal E}\left\{\hat U(t)\left[\hat\rho_{\mathcal S}(0)\otimes\sum_i p_i\lvert E_i\rangle\langle E_i\rvert\right]\hat U^\dagger(t)\right\}\tag{2.142}\end{equation}
+で与えられる。基底$\{\lvert E_i\rangle\}$で明示的にトレースを取れば、式(2.142)は
+\begin{equation}\begin{split}
+\hat\rho_{\mathcal S}(t)&=\sum_j\langle E_j\rvert\hat U(t)\left[\hat\rho_{\mathcal S}(0)\otimes\sum_i p_i\lvert E_i\rangle\langle E_i\rvert\right]\hat U^\dagger(t)\lvert E_j\rangle\\
+&=\sum_{ij}\sqrt{p_i}\langle E_j\rvert\hat U(t)\lvert E_i\rangle\otimes\hat\rho_{\mathcal S}(0)\otimes\sqrt{p_i}\langle E_i\rvert\hat U^\dagger(t)\lvert E_j\rangle\\
+&\equiv\sum_{ij}\hat E_{ij}\otimes\hat\rho_{\mathcal S}(0)\otimes\hat E_{ij}^\dagger
+\end{split}\tag{2.143}\end{equation}
+となる。最終行では、系のHilbert空間$\mathcal H_{\mathcal S}$に作用するKraus演算子\cite{ref152}を、
+\begin{equation}\hat E_{ij}\equiv\sqrt{p_i}\langle E_j\rvert\hat U(t)\lvert E_i\rangle\tag{2.144}\end{equation}
+と定義した。
+
+Kraus演算子は、環境の初期状態と、系と環境の組合せの力学に関する、利用可能なすべての情報を含む。したがって、環境が系の縮約密度行列に及ぼす効果を、完全に包含する。Kraus演算子は、トレースを取る際に使う基底$\{\lvert E_i\rangle\}$の選び方に依存するが、それ以外は、環境$\mathcal E$の初期状態と、共同系$\mathcal{SE}$のHamiltonianによって、一意に決まる。
+
+% 原文 p.111
+\hypertarget{srcpage:111}{}\label{srcpage:111}
+複合系$\mathcal{SE}$の発展はユニタリなので、Kraus演算子は完全性の制約
+\begin{equation}\sum_{ij}\hat E_{ij}\hat E_{ij}^\dagger=\hat I_{\mathcal S}\tag{2.145}\end{equation}
+を満たす。これは次のことから、容易に分かる。
+\begin{equation}\begin{split}
+\sum_{ij}\hat E_{ij}\hat E_{ij}^\dagger&=\sum_{ij}p_i\langle E_j\rvert\hat U(t)\lvert E_i\rangle\langle E_i\rvert\hat U^\dagger(t)\lvert E_j\rangle\\
+&=\sum_i p_i\langle E_i\rvert\hat U^\dagger(t)\left(\sum_j\lvert E_j\rangle\langle E_j\rvert\right)\hat U(t)\lvert E_i\rangle\\
+&=\sum_i p_i\langle E_i\rvert\hat U^\dagger(t)\hat U(t)\lvert E_i\rangle\\
+&=\left(\sum_i p_i\right)\hat I_{\mathcal S}=\hat I_{\mathcal S}.
+\end{split}\tag{2.146}\end{equation}
+したがって式(2.145)は、$\mathcal{SE}$のユニタリ発展の指標と見なせる。この関係が満たされなければ、$\mathcal{SE}$と相互作用し、その実効的に非ユニタリな発展をもたらす、別の環境$\mathcal E'$の存在を推論しなければならない。
+
+演算子和、すなわちKraus演算子による方法は、環境の効果を、演算子$\hat E_{ij}$［式(2.144)］が生成する、一般に非ユニタリな縮約密度行列の変換の列として、整然と表す。この方法は、縮約密度行列の発展を形式的に表す、簡潔で見通しのよい枠組みを与える。しかし、具体的な関心のある状況で、デコヒーレンスの力学を明示的に計算する実際的な有用性は、いくつかの理由でやや限られる。
+
+第一に、Kraus演算子(2.144)を計算する仕事は、全Hamiltonian$\hat H$の対角化に対応する。2.10節の模型など、ごく少数の単純なデコヒーレンス模型を除き、この対角化は通常、実際の応用では実行不能である。第二に、Kraus演算子は、縮約密度行列の発展への、ユニタリ、非ユニタリ両方の、すべての寄与を含む。しかしデコヒーレンスを論じる場合、普通は、デコヒーレンスの原因である非ユニタリ項だけに関心がある。非ユニタリ項とユニタリ項を望みどおり明確に区別することは、上の演算子和形式ではできない。
+
+% 原文 p.112
+\hypertarget{srcpage:112}{}\label{srcpage:112}
+第三に、Kraus演算子が記述する力学は、たとえば、系から環境へのすべての可能な反作用効果も含む、縮約密度行列の厳密な発展を表すため、しばしば不必要に詳細である。実際的に関心のある多くの状況では、そうした効果を無視でき、その場合、系の縮約密度行列の近似的発展について、簡略化した「マスター」方程式を導ける。そのような方程式を、第4章、第5章で詳しく論じる。

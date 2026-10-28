@@ -1,0 +1,57 @@
+                2.8 Environment-Induced Superselection of Pointer States                         79
+                                       (α)
+                        Ŝα |si  = λi       |si        for all α and i,                     (2.94)
+
+since in this case
+                                                     
+                     e−iĤint t |si  |E0  = e−i(       α Ŝα ⊗Êα    )t |s  |E 
+                                                                            i      0
+                                                                          
+                                                                   (α)
+                                                      −i        α λi     Êα t
+                                             = |si  e                           |E0 
+                                             ≡ |si  |Ei (t) .                               (2.95)
+
+That is, the system described by the initial state |si  does not get entangled
+with the environment, and thus |si  represents an environment-superselected
+preferred state. Fortunately, in decoherence models of practical interest, it is
+rare to encounter interaction Hamiltonians (2.93) involving more than two
+diﬀerent observables Ŝα . In fact, the interaction Hamiltonians of the models
+discussed in Chap. 5 will all be of the simple single-term form (2.90).
+     The pointer-state condition (2.94) can be strengthened to the concept of
+pointer subspaces, ﬁrst introduced by Zurek in 1982 [9] and recently further
+explored (especially in the context of quantum computing) by several authors
+under the heading of decoherence-free subspaces (DFS) [89–98]. Pointer sub-
+spaces, or DFS, are subspaces of the Hilbert space of the system in which
+every state in the subspace is immune to decoherence. (Recall that in general
+superpositions of pointer states will not be pointer states themselves.)
+     One important condition for this to happen is that the preferred states
+|si  deﬁned by the requirement (2.94) form an orthonormal basis {|si } of
+                                             (α)
+the subspace, and that the eigenvalues λi in (2.94) are independent of the
+index i, i.e., that all |si  are simultaneous degenerate eigenstates of each Ŝα ,
+
+                        Ŝα |si  = λ(α) |si            for all α and i.                     (2.96)
+
+ any state |ψ of the subspace can be expressed as a superposition |ψ =
+Then
+  i ci |si  of the states |si , and the superposition will evolve as
+                                                              
+                                                     
+                  −iĤint t               −iĤint t
+                e           |ψ |E0  = e              ci |si  |E0 
+                                                         i
+                                                        
+                                                                  
+                                                  ci |si  e−i(         αλ    Êα   )t |E 
+                                                                          (α)
+                                   =                                                     0
+                                              i
+                                   ≡ |ψ |Eψ (t) .                                           (2.97)
+
+Thus the state |ψ does not become entangled with the environment. Since
+|ψ was completely arbitrary, all states in the subspace spanned by the set of
+orthonormal states |si  obeying (2.96) will be immune to decoherence.
+   We can interpret the condition (2.96) also as implying that there is no
+term in the interaction Hamiltonian that would act jointly on both the system
+and the environment in a nontrivial manner [see (2.97)]. Thus, if the system

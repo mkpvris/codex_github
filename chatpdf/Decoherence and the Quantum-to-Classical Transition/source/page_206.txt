@@ -1,0 +1,50 @@
+192     5 Canonical Models For Decoherence
+
+                                        2γ0 kB T           Ω
+               f XP ∼ f XM ΩX ∼                  M ΩX 2 = D X 2 .              (5.56)
+                                           Λ               Λ
+Since by assumption Λ  Ω, we can here safely neglect the anomalous-
+diﬀusion term in the master equation (5.25).
+   Let us now insert our above expressions (5.51), (5.52), and (5.53) for the
+coeﬃcients D, γ, and Ω 2 into the Born–Markov master equation (5.25). The
+result is
+ d                                  )              *                         
+    ρ̂S (t) = −i ĤS , ρ̂S (t) − iγ0 X̂, P̂ , ρ̂S (t) − 2M γ0 kB T X̂, X̂, ρ̂S (t) ,
+ dt
+                                                                                (5.57)
+where the frequency-shifted Hamiltonian ĤS of the system is
+                   1 2 2     1 2 1  2         
+       ĤS = ĤS + M Ω X̂ =    P̂ + M Ω − 2γ0 Λ X̂ 2 .                        (5.58)
+                   2         2M     2
+The interpretation of the terms appearing on the right-hand side of (5.57)
+has already been discussed in the context of the more general form (5.25) of
+the master equation (see Sect. 5.2.2). The ﬁrst term is the usual Liouville–
+von Neumann term with a frequency-shifted Hamiltonian. The second term
+describes momentum damping (i.e., dissipation) with a characteristic rate
+proportional to γ0 . The third term represents decoherence in the position ba-
+sis with consequent momentum diﬀusion, with a characteristic temperature-
+dependent localization rate given by the product of the coeﬃcient M γ0 kB T
+and the squared separation (X − X  )2 .
+    Equation (5.57) is commonly known as the Caldeira–Leggett master equa-
+tion (here written for the case of a central harmonic-oscillator system), which
+was ﬁrst derived by Caldeira and Leggett in the early 1980s using a path-
+integral approach [221]. It is widely used in the modeling of decoherence and
+dissipation processes. In fact, it has often been quite successfully applied to
+situations in which the assumptions on which the derivation of the equation
+is based were not strictly fulﬁlled (for example, in quantum-optical settings
+where often kB T  Λ [222]).
+    A particularly appealing feature of the Caldeira–Leggett master equation
+is that it allows for very intuitive and simple estimates of decoherence rates
+and of the relationship of these rates to the relevant rates for dissipation. To
+see this, recall [see (2.114)] that the expression for the thermal de Broglie
+wavelength for a particle of mass M at temperature T is given by (setting,
+as usual,  ≡ 1)
+                                           1
+                                λdB = √          .                        (5.59)
+                                         2M kB T
+Using the position representation, the last term on the right-hand side of
+(5.57) can therefore be written as
+                                            2
+                                    X − X
+                          −γ0                     ρS (X, X  , t).             (5.60)
+                                     λdB

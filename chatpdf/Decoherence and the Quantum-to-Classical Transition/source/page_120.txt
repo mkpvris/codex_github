@@ -1,0 +1,46 @@
+                              2.15 Formal Tools and Their Interpretation      105
+
+Thus ρ̂A and ρ̂B are diagonal in the bases {|ai } and {|bi }, respectively, and
+have the same spectrum {pi }. Applied to the decoherence-relevant case of a
+system interacting with an environment, the Schmidt theorem means that we
+can always ﬁnd an orthonormal basis in which the reduced density matrix of
+our system of interest becomes exactly diagonal.
+    Thus the Schmidt decomposition of a density matrix refers simply to its
+formal diagonalization and the fact that this diagonalization can always be
+done. While this decomposition plays an important role in many areas of
+quantum physics, its relevance to a description of decoherence and to inter-
+pretive problems in quantum mechanics has sometimes been misrepresented.
+This might be due to the fact that, since the eﬀect of decoherence is described
+in terms of a vanishing of oﬀ-diagonal elements of the (reduced) density ma-
+trix in a speciﬁc environment-selected basis, decoherence may formally ap-
+pear to correspond to a density-matrix diagonalization, which is precisely the
+subject of the Schmidt decomposition.
+    In fact, the Schmidt basis, obtained by diagonalizing the density matrix of
+the system at each instant of time, has been frequently studied with respect to
+its ability to yield a preferred basis (see, for example, [5,6,145,146]). This has
+led some to consider the Schmidt basis states as describing “instantaneous
+pointer states” [145]. However, the Schmidt decomposition is a purely mathe-
+matical procedure that has no a priori physical or interpretive meaning. The
+Schmidt theorem applied to reduced density matrices simply states that every
+such density matrix can be diagonalized in some basis. However, this basis
+will not necessarily represent quasiclassical properties (see, e.g., [147, 148]).
+This is in stark contrast with the environment-induced approximate diago-
+nalization of the reduced density matrix in the pointer basis selected by the
+structure of the system–environment interaction. The important distinction
+between pointer states and the states that diagonalize the density matrix
+was ﬁrst clearly noted by Zurek [8], laying the foundation for subsequent
+developments, such as the predictability sieve discussed in Sect. 2.8.3.
+    Other approaches have refrained from computing instantaneous Schmidt
+states and have instead allowed for a characteristic decoherence time to pass
+during which the reduced density matrix becomes approximately diagonal
+in the basis selected by the structure of the system–environment interac-
+tion (this process can, for example, be described by an appropriate master
+equation; see Chap. 4). Schmidt states are then calculated by diagonalizing
+this decohered density matrix. Since decoherence usually leads to rapid di-
+agonality of the reduced density matrix in the pointer basis to a very good
+approximation, the resulting Schmidt states are typically very similar to the
+environment-superselected states, except in cases where the latter states are
+very nearly degenerate.
+    This particular situation of near-degeneracy is readily illustrated [146].
+Consider a system described by a two-dimensional Hilbert space. Suppose
+the action of decoherence has resulted in the system’s being represented by

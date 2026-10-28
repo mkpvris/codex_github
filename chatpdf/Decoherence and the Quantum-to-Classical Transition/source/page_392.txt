@@ -1,0 +1,51 @@
+380     Appendix: The Interaction Picture
+
+    Equation (A.3) motivates us to now introduce the interaction-picture form
+of general operators Â(t) and density matrices ρ̂(t) as
+
+                       Â(I) (t) = eiĤ0 t Â(t)e−iĤ0 t ,                             (A.4)
+                        ρ̂(I) (t) = eiĤ0 t ρ̂(t)e−iĤ0 t
+                                 = eiĤ0 t e−iĤt ρ̂(0)eiĤt e−iĤ0 t .                (A.5)
+
+Here the superscript (I) is used to denote interaction-picture operators. Note
+that the dynamics of the interaction-picture operators Â(I) (t) are fully de-
+termined by the unperturbed (free) Hamiltonian Ĥ0 rather than by the total
+Hamiltonian Ĥ.
+    With the new deﬁnitions (A.4) and (A.5), our expectation-value equa-
+tion (A.3) can then be written in the compact form
+                                     &                 '
+                        Â(t) = Tr Â(I) (t)ρ̂(I) (t) .                (A.6)
+
+Let us now determine an evolution equation for the interaction-picture den-
+sity matrix ρ̂(I) (t). Using the standard Liouville–von Neumann equation for
+the density matrix ρ̂(t) in the Schrödinger picture,
+
+                                 d                     
+                                    ρ̂(t) = −i Ĥ, ρ̂(t) ,                             (A.7)
+                                 dt
+we obtain
+                                                        
+       d (I)                          iĤ0 t   d
+                             (I)
+          ρ̂ (t) = i Ĥ0 , ρ̂ (t) + e               ρ̂(t) e−iĤ0 t
+       dt                                        dt
+                (A.7)                                 
+                 = i Ĥ0 , ρ̂(I) (t) − ieiĤ0 t Ĥ, ρ̂(t) e−iĤ0 t
+                (A.1)                                        
+                 = i Ĥ0 , ρ̂(I) (t) − ieiĤ0 t Ĥ0 + V̂ , ρ̂(t) e−iĤ0 t .            (A.8)
+
+From (A.4) and (A.5) we see that the application of the time-evolution opera-
+tors e±iĤ0 t to the quantities in the second commutator amounts to a transfor-
+mation of these quantities to the interaction picture. Equation (A.8) therefore
+becomes
+        d (I)                                                                 
+           ρ̂ (t) = i Ĥ0 , ρ̂(I) (t) − i Ĥ0 , ρ̂(I) (t) − i V̂ (I) (t), ρ̂(I) (t)
+        dt
+                                           
+                  = −i V̂ (I) (t), ρ̂(I) (t) .                                         (A.9)
+
+This establishes our ﬁrst main result: The time evolution of the interaction-
+picture density operator is given by an equation of the Liouville–von Neu-
+mann type, but with the interaction-picture perturbation V̂ (I) (t) instead of
+the full Hamiltonian Ĥ. Appropriately, (A.9) is called the interaction-picture
+Liouville–von Neumann equation.

@@ -1,0 +1,49 @@
+                             6.1 The First Milestone: Atoms in a Cavity     253
+
+calculation can be done under the assumption that atom 1 was detected
+in the state |g. This establishes our above assertion of perfect two-atom
+correlations.
+    Thus all we need to do to observe the decoherence of our cat state is
+to measure the decay of correlations Pee (T ) [or Pgg (T )] between measure-
+ment outcomes for pairs of atoms as we increase the time interval T between
+sending oﬀ the ﬁrst and the second atom. If T is much smaller than the char-
+acteristic decoherence time of the ﬁeld superposition, Pee (T ) will be close
+to one, reﬂecting the perfect correlation between the measurement outcomes
+when the superposition has not yet been appreciably decohered. As we make
+the delay time T longer, the superposition in the cavity will become increas-
+ingly decohered, until all relative-phase information (and thus information
+about the state of the ﬁrst atom) has been delocalized into the environment
+and the ﬁeld is described by the incoherent statistical mixture
+                                  1
+                       ρ̂ﬁeld =     (|αα| + |−α−α|) .                 (6.24)
+                                  2
+This will then yield completely uncorrelated measurement results between the
+ﬁrst and the second atom, i.e., the outcome of the measurement on the second
+atom will be random and independent of the result of the measurement on
+the ﬁrst atom. Thus this decoherence process will be observable as the decay
+of Pee (T ) down to a value of 12 .
+    Fig. 6.4 shows a theoretical prediction for Pee (T ) [250], which was found
+to match very well the experimental observations [251]. We clearly see how
+Pee (T ) quite rapidly decreases from its initial value of one down to a plateau
+of Pee (T ) = 12 , corresponding to full decoherence. The reader may wonder
+why Pee (T ), after remaining at around 12 over a range of delay times T ,
+suddenly continues to decay toward a value of zero for larger values of T .
+The explanation is quite simple. The photons in the cavity C have an only
+ﬁnite lifetime, so eventually there are no photons left in C. Thus this cavity
+ceases to have an eﬀect on the atoms passing through it. In this case, the
+atoms experience only the two π/2 pulses in the cavities R1 and R2 , whose
+combined eﬀect it is to transform the initial state |e into |g [see (6.16)],
+
+                 π/2 1
+            |e −−→ √ (|g + |e)                                         (6.25)
+                      2
+                        "                          #
+                 π/2 1    1           1
+                −−→ √ √ (|g − |e) + √ (|g + |e) = |g .               (6.26)
+                      2    2           2
+
+Thus the atoms are never detected in the state |e, and thus Pee (T ) −→ 0 as
+T −→ ∞.
+   From the graph in Fig. 6.4, we can read oﬀ the characteristic decoherence
+time of the ﬁeld superposition. The experiment showed that the decoherence
+time depends on two key parameters:

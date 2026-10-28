@@ -1,0 +1,96 @@
+\subsectionlink{量子誤り訂正}
+量子コンピューターのデコヒーレンス効果に対抗するには、主要な二つの道がある。第一の道は、有害な環境の影響が量子ビットのコヒーレントな重ね合わせ状態をひどく損なう機会を得る前に、それを最小化することである。7.5節では、その一つの方法、すなわちデコヒーレンスの影響を受けないポインター部分空間へ論理量子ビット状態を符号化する方法を論じる。
+
+第二の相補的な方法は、デコヒーレンスが量子ビットに与えた効果を積極的に「取り消そう」とするものである。環境を完全に制御することは実際には不可能なので、位相関係は通常、量子ビットから環境へと不可逆的に非局在化する（2.7節参照）。したがって、デコヒーレンス過程の真の（時間的）反転、すなわち量子ビットのレベルでの位相コヒーレンスの完全な再局在化は、手が届かない。しかし2.13節で論じたように、系を補助系と結合することによって、元の重ね合わせ状態を非局所的な仕方で再構成できる。量子計算の文脈では、このような方式は量子誤り訂正という名称で知られるようになった。最初に独立に開発したのは、1990年代半ばのSteane\cite{ref354}とShor\cite{ref355}である（わかりやすい総説として、たとえば文献\cite{ref056,ref356,ref357}参照）。以下で見るように、量子誤り訂正の基本的な考えは、2.13節で論じた量子「消去」の過程に似ている。両方式の主要な違いは、量子誤り訂正では初期の重ね合わせ状態を正確に再構成する必要がある点にある。これに対して量子「消去」は、経路成分間の干渉の可能性を回復するだけであり、再構成された重ね合わせは、元の状態の場合も、位相を反転した状態の場合もある［式(2.125)参照］。
+
+量子誤り訂正は、予見できるどのような量子コンピューターの実現でも、一体不可分の、欠かせない要素となることを強調しておこう。現在の見積もりでは、環境および制御装置との相互作用が生じさせるデコヒーレンスと、不完全なゲート操作による雑音は、誤り訂正法を用いなければ有用な量子計算を実行できないほど強い。
+% 原文 p.305
+\hypertarget{srcpage:305}{}\label{srcpage:305}
+比較的基本的な計算課題にさえ、能動的な量子誤り訂正が重要であることを示す具体例を、Miquel、Paz、Zurek\cite{ref350}と、Miquel、Paz、Perazzo\cite{ref358}が与えた。彼らは、18個のイオン（量子ビット系）からなり、Shorの因数分解アルゴリズム\cite{ref344,ref345}（7.1.4節参照）を約15,000回のゲート操作で実行する、イオントラップ量子コンピューターを模型化した。ゲート操作は、物理的にはイオンへ入射するレーザーパルスで表される。計算には、ゲート操作の不完全な実行\cite{ref350}と、量子ビット系の環境によるデコヒーレンス\cite{ref358}の両方から誤りが導入される。誤り訂正がなければ、小さな数（著者たちは15を例に調べた）の因数分解でさえ、計算はきわめて速やかに誤った方向へ進み、アルゴリズムを実際に実現するのは事実上不可能になることが示された。
+
+\subsubsectionlink{古典的誤り訂正と量子誤り訂正}
+まず、量子の場合の誤り訂正に新しい方法が必要な理由を実感するため、古典コンピューターで通常どのように誤り訂正を行うかを、簡単に振り返ろう。ここでの主要な考えは冗長性である。すなわち、1ビットの情報（論理ビット）を一つの物理ビットに符号化する代わりに、複数の物理ビットへ符号化する。すると、物理ビットの一部が損なわれても、単純な多数決によって元の論理ビットを取り出せる。たとえば、論理ビット0と1を三つの物理ビットへ
+\begin{align}0_{\mathrm L}&\longleftrightarrow000,\tag{7.9a}\\1_{\mathrm L}&\longleftrightarrow111\tag{7.9b}\end{align}
+と符号化してよい。ここでは添字Lで論理ビットを表した。いま、ある雑音過程が、符号化されたビット$0_{\mathrm L}$の第三の物理ビットを反転するとしよう。
+\begin{equation}000\longrightarrow001.\tag{7.10}\end{equation}
+単純な多数決により、損なわれる前の状態はおそらく「000」であったと結論できる。もちろん、二つ以上のビットが反転すると、この手順は失敗する。したがって、まったく訂正しない場合より少しでも改善するには、単一ビットの反転確率が50\%未満でなければならない。この確率が50\%を超えれば、三ビット状態では平均して一つより多くのビットが反転し、誤り訂正は平均すると誤った状態を返す。
+
+冗長符号化の方法を、そのまま量子の場合へ移すことはできない。古典的な場合に対応する考えは、単一量子ビット状態
+% 原文 p.306
+\hypertarget{srcpage:306}{}\label{srcpage:306}
+\begin{equation}|\psi\rangle=\alpha|0\rangle+\beta|1\rangle\tag{7.11}\end{equation}
+を他の$N-1$個の量子ビットへコピーし、全$N$量子ビットの状態を
+\begin{equation}|\Psi\rangle=\bigotimes_{i=1}^{N}(\alpha|0\rangle_i+\beta|1\rangle_i)\tag{7.12}\end{equation}
+とすることである。これにより、同じ単一量子ビット状態$|\psi\rangle$を、$N$個の物理量子ビットへ冗長に符号化したことになる。しかし、任意の量子状態の複製が不可能であることは、量子力学的時間発展の線形性の基本的帰結である。この有名な複製不可能定理\cite{ref020,ref021}の証明は、かなり直接的である。二つの量子ビット基底状態$|0\rangle_1$と$|1\rangle_1$をコピーできる、何らかの装置があるとしよう。すなわち、初期状態$|\psi_0\rangle_2$の第二量子ビットが与えられると、この装置は
+\begin{align}|0\rangle_1|\psi_0\rangle_2&\longrightarrow|0\rangle_1|0\rangle_2,\tag{7.13a}\\|1\rangle_1|\psi_0\rangle_2&\longrightarrow|1\rangle_1|1\rangle_2\tag{7.13b}\end{align}
+という過程を実現する。特別な場合$|\psi_0\rangle_2=|0\rangle_2$には、この時間発展を、量子情報理論では制御NOT（CNOT）ゲートと呼ぶ。これは単に、第二の系の状態変化が第一の系の状態に条件付けられた、von Neumann型の時間発展(2.52)に対応する。すなわち、第一の系が状態$|0\rangle_1$なら第二の系の状態は変わらず、第一の系が状態$|1\rangle_1$なら第二の系は$|1\rangle_2$へ変わる。この種の時間発展は、いわゆる条件付き量子力学の一例である。
+
+装置と二つの量子ビットからなる複合系の時間発展は、ユニタリーであり、したがって線形なので、式(7.13)から、第一量子ビットの入力状態$(|0\rangle_1+|1\rangle_1)$に対する出力は
+\begin{equation}(|0\rangle_1+|1\rangle_1)|\psi_0\rangle_2\longrightarrow|0\rangle_1|0\rangle_2+|1\rangle_1|1\rangle_2\tag{7.14}\end{equation}
+となる。しかし、この最終状態は、望む出力状態
+\begin{equation}\begin{aligned}(&|0\rangle_1+|1\rangle_1)(|0\rangle_2+|1\rangle_2)\\&=|0\rangle_1|0\rangle_2+|0\rangle_1|1\rangle_2+|1\rangle_1|0\rangle_2+|1\rangle_1|1\rangle_2\end{aligned}\tag{7.15}\end{equation}
+とは明らかに異なる。この単純な観察で証明は終わる。したがって、単一量子ビット状態(7.11)を複製できるのは、係数$\alpha$と$\beta$をあらかじめ知っている場合だけである。しかし、この要求はきわめて制限的である。量子ビットの初期状態を準備した直後の、ごく短い期間を別にすれば、通常、これらの係数を知らないからである。
+
+実際、任意の量子状態を完全に複製し、古典的な冗長符号化を模倣できたとしても、量子誤りの検出と訂正には役立たないだろう。この問題の理由は、古典的な場合と量子的な場合の、第二の基本的な違いにある。
+% 原文 p.307
+\hypertarget{srcpage:307}{}\label{srcpage:307}
+古典計算では、ビットの集まりに生じた誤りを検出するため、各ビットの状態を単に読み出し、その結果を適切に分析すればよい。これに対して、量子ビットに対するどのような測定も、一般には量子ビットの状態についての情報をいくらか明らかにする。この測定を通常のように、量子ビットをある測定装置ともつれさせる相互作用と考えれば、その過程が今度は量子ビットにデコヒーレンスを生じさせることがわかる。
+
+このことの帰結は、量子的な場合に誤り検出を成功させるには、量子ビット自体の状態についての情報をまったく取り出すことなく、量子ビット系に生じた誤りについての情報を取り出さなければならないということである。したがって、式(7.12)のように、単一量子ビットの状態を物理量子ビットの集まりへ冗長に符号化できたとしても、重ね合わせ、したがって保護しようとした量子情報そのものを破壊せずに、各量子ビットの状態を直接測定して比較する方法はない。以下の節では、これらの障害を克服し、量子計算で誤り訂正を実現する方法を見る。
+
+\subsubsectionlink{デコヒーレンスの影響を離散的誤りで表す}
+古典的な場合には、離散的なビット反転だけを訂正すればよいが、量子的な場合の量子ビット状態は、二つの実数によって記述される重ね合わせで表され、その実数は任意の連続的な量だけ変わりうる。したがって、無限個の（実際には非可算無限個もの！）異なる誤り訂正操作を用意する必要があるように思われる。しかし幸い、そうではないことがわかる。これから見るように、実際には、可能な誤りの連続体を、ごく少数の誤りの線形結合へと離散化でき、その少数の誤りは比較的容易に訂正できる。この注目すべき結果は、量子誤り訂正を可能にする礎の一つである。この離散化がどう生じるかを見よう。
+
+そのために、ある環境Eと相互作用する単一量子ビットSを考える。Sは初めに純粋状態
+\begin{equation}|\psi\rangle=\alpha|0\rangle+\beta|1\rangle\tag{7.16}\end{equation}
+にあるとする。すると2.15.3節の議論から、複合量子ビット・環境系の初期状態は、つねに積の形$|\psi\rangle|e_{\mathrm r}\rangle$に書ける。SとEの完全に任意の相互作用は、時間発展
+\begin{align}|0\rangle|e_{\mathrm r}\rangle&\longrightarrow c_{00}|0\rangle|e_{00}\rangle+c_{01}|1\rangle|e_{01}\rangle,\tag{7.17a}\\|1\rangle|e_{\mathrm r}\rangle&\longrightarrow c_{10}|0\rangle|e_{10}\rangle+c_{11}|1\rangle|e_{11}\rangle\tag{7.17b}\end{align}
+によって表せる。ここで係数$c_{ij}$は0か1であり、環境状態$|e_{ij}\rangle$は、必ずしも直交しても規格化されてもいない。
+% 原文 p.308
+\hypertarget{srcpage:308}{}\label{srcpage:308}
+$c_{ij}$の値によって、一般的な時間発展(7.17)には異なる物理的解釈を与えられる。たとえば$c_{00}=c_{11}=1$、$c_{01}=c_{10}=0$という選択は、真の意味でのデコヒーレンス、すなわち、成分状態$|0\rangle$と$|1\rangle$をまったく変化させない、環境との純粋にもつれだけを生む（von Neumann型の）相互作用［式(2.52)参照］
+\begin{align}|0\rangle|e_{\mathrm r}\rangle&\longrightarrow|0\rangle|e_{00}\rangle,\tag{7.18a}\\|1\rangle|e_{\mathrm r}\rangle&\longrightarrow|1\rangle|e_{11}\rangle\tag{7.18b}\end{align}
+に対応する。
+
+いまは、式(7.17)のすべての係数$c_{ij}$が1である、最も一般的な場合を仮定しよう。すると、Sの任意の純粋な初期状態(7.16)は
+\begin{equation}\begin{aligned}|\psi\rangle|e_{\mathrm r}\rangle\longrightarrow{}&\alpha[|0\rangle|e_{00}\rangle+|1\rangle|e_{01}\rangle]\\&+\beta[|0\rangle|e_{10}\rangle+|1\rangle|e_{11}\rangle]\end{aligned}\tag{7.19}\end{equation}
+に従って発展する。この式を
+\begin{equation}\begin{aligned}|\psi\rangle|e_{\mathrm r}\rangle\longrightarrow{}& (\alpha|0\rangle+\beta|1\rangle)\tfrac12[|e_{00}\rangle+|e_{11}\rangle]\\&+(\alpha|1\rangle+\beta|0\rangle)\tfrac12[|e_{01}\rangle+|e_{10}\rangle]\\&+(\alpha|0\rangle-\beta|1\rangle)\tfrac12[|e_{00}\rangle-|e_{11}\rangle]\\&+(\alpha|1\rangle-\beta|0\rangle)\tfrac12[|e_{01}\rangle-|e_{10}\rangle]\end{aligned}\tag{7.20}\end{equation}
+の形へ書き直すのは初等的である。実際、和の各項のうち、量子ビット系に対応する部分が、恒等演算子$\hat I$かPauli演算子$\hat\sigma_x$、$\hat\sigma_y$、$\hat\sigma_z$のいずれかを量子ビットの初期状態$|\psi\rangle$へ作用させたものとして書けることに気付けば、表式を簡単にできる。すなわち、
+\begin{equation}\begin{aligned}|\psi\rangle|e_{\mathrm r}\rangle\longrightarrow{}& (\hat I|\psi\rangle)\tfrac12[|e_{00}\rangle+|e_{11}\rangle]\\&+(\hat\sigma_x|\psi\rangle)\tfrac12[|e_{01}\rangle+|e_{10}\rangle]\\&+(\hat\sigma_z|\psi\rangle)\tfrac12[|e_{00}\rangle-|e_{11}\rangle]\\&+(\hat\sigma_y|\psi\rangle)\tfrac12[|e_{01}\rangle-|e_{10}\rangle]\end{aligned}\tag{7.21}\end{equation}
+である。この結果は次のようにまとめられる。初めに純粋状態$|\psi\rangle$で記述され、環境Eと相互作用する単一量子ビットSを考える。このとき、量子ビットと環境を合わせた状態の任意の時間発展は、つねに
+\begin{equation}|\psi\rangle|e_{\mathrm r}\rangle\longrightarrow\hat I|\psi\rangle|e_I\rangle+\sum_{s=x,y,z}(\hat\sigma_s|\psi\rangle)|e_s\rangle\tag{7.22}\end{equation}
+の形で書ける。
+% 原文 p.309
+\hypertarget{srcpage:309}{}\label{srcpage:309}
+ここで$\hat\sigma_s$はSのHilbert空間$\mathcal H_{\mathrm S}$に作用し、$|e_I\rangle$と$\{|e_s\rangle\}$は、必ずしも直交しても規格化されてもいない環境状態である。
+
+この結果の意味をよく考えよう。式(7.22)は、量子ビットに対する環境の完全に任意の影響が、元の量子ビット状態に作用する、離散的なPauli演算子と恒等演算子の重み付きの和として、単純に表せることを示す。状態に起こりうる変化の連続体を、わずか四つの演算子の重ね合わせへ離散化できるのは、$\{\hat I,\hat\sigma_x,\hat\sigma_y,\hat\sigma_z\}$がSのHilbert空間$\mathcal H_{\mathrm S}$の完全な演算子集合をなすためである。この離散化が量子コンピューターの誤り検出と訂正で決定的に重要であることを、後で見る。
+
+量子ビット状態に対する効果のために、$\hat\sigma_x$と$\hat\sigma_z$の作用は、それぞれ「ビット反転誤り」と「位相反転誤り」とよく呼ばれる。これは式(7.20)と(7.21)を比較するか、直接
+\begin{align}\hat\sigma_x(\alpha|0\rangle+\beta|1\rangle)&=\alpha|1\rangle+\beta|0\rangle,\tag{7.23a}\\\hat\sigma_z(\alpha|0\rangle+\beta|1\rangle)&=\alpha|0\rangle-\beta|1\rangle\tag{7.23b}\end{align}
+からわかる。言い換えれば、演算子$\hat\sigma_x$は二つのビット$|0\rangle$と$|1\rangle$を入れ替え、$\hat\sigma_z$はビット$|1\rangle$の位相を$180^\circ$回転する（符号反転に相当する）。位相反転操作には、古典的な対応物がないことに注意しよう。古典ビットは0か1のいずれか一方の状態なので、二状態間の位相関係は役割を果たしえない。さらに、$\hat\sigma_x\hat\sigma_z=-i\hat\sigma_y$であるから、演算子$\hat\sigma_y$が、単にビット反転誤りと位相反転誤りの組合せであることも、読者は容易に確認できる。
+
+ただし、Pauli演算子にこのような示唆的な名称が付いていても、式(7.20)と(7.21)を、ビット反転誤りと位相反転誤りの列として物理的に解釈してよいのは、対応する環境の相対状態が直交している場合だけであることを、強調すべきである。この場合に限って、Pauli演算子は、測定で区別できる、互いに排他的な「誤りの可能性」（対応する確率を伴う）を表す。
+
+環境とのもつれと、その結果生じるデコヒーレンス効果を記述するという目的には、一般的結果(7.22)の簡単な形で十分である。式(7.18)と(7.21)から、単一量子ビットへの環境によるデコヒーレンスの影響は、恒等演算子とPauli演算子$\hat\sigma_z$の組合せで表せることがわかる。すなわち、
+\begin{equation}|\psi\rangle|e_{\mathrm r}\rangle\longrightarrow\frac1{\sqrt2}(\hat I|\psi\rangle|e_+\rangle+\hat\sigma_z|\psi\rangle|e_-\rangle)\tag{7.24}\end{equation}
+である。ここで、新しい（共役な）環境の相対状態$|e_\pm\rangle$を
+\begin{equation}|e_\pm\rangle\equiv\frac1{\sqrt2}(|e_{00}\rangle\pm|e_{11}\rangle)\tag{7.25}\end{equation}
+と定義した。デコヒーレンスは局所的な位相関係の非局在化に結び付いているので、その効果が位相反転誤りに関係すると直観的に予想できることを考えれば、この結果は意外ではないかもしれない。
+
+% 原文 p.310
+\hypertarget{srcpage:310}{}\label{srcpage:310}
+時間発展(7.22)は、環境と相互作用する$N$量子ビット系へ一般化できる。量子ビットと環境からなる複合系の力学は
+\begin{equation}|\psi\rangle|e_{\mathrm r}\rangle\longrightarrow\sum_i(\hat E_i|\psi\rangle)|e_i\rangle\tag{7.26}\end{equation}
+と書けることを示せる。ここで$|\psi\rangle$は初期の$N$量子ビット状態であり、$\hat E_i$は、恒等演算子とPauli演算子からなる$N$個の演算子のテンソル積である。各演算子は単一量子ビットのHilbert空間に作用する。たとえば、
+\begin{equation}\hat E_i=\hat\sigma_y^{(1)}\otimes\hat I^{(2)}\otimes\hat\sigma_x^{(3)}\otimes\cdots\otimes\hat\sigma_z^{(N)}\quad\text{など}\tag{7.27}\end{equation}
+であり、上付き添字は各演算子が作用する量子ビットを表す。
+
+単一量子ビットの場合には、環境とのもつれを生む相互作用を、誤りなし（恒等演算子で表す）と位相反転誤り（Pauli演算子$\hat\sigma_z$で表す）の組合せとして記述できることを見いだした［式(7.24)参照］。同様の結果は、$N$量子ビットの場合にも成り立つ。関連する誤り演算子$\hat E_i$は、今度は、各々が恒等演算子か、単一量子ビットのHilbert空間に作用する演算子$\hat\sigma_z$である、$N$個の単一量子ビット演算子の積となる。\footnote{この結果を証明する、少なくとも二つの異なる同等な方法がある。第一に、上で考えた一量子ビットの場合と同じ方針で、明示的な証明を試みることができる。この証明はかなり直接的だが、記法はやや煩雑である。第二の（より洗練された）方法は、いわゆるJamiołkowski同型\cite{ref359}を利用することである。この方法では新しい形式的要素を導入する必要があるので、ここではこれ以上扱わない。}たとえば、
+\begin{equation}\hat E_i=\hat\sigma_z^{(1)}\otimes\hat I^{(2)}\otimes\hat\sigma_z^{(3)}\otimes\cdots\otimes\hat I^{(N)}\quad\text{など}\tag{7.28}\end{equation}
+である。より見通しのよい記法として、これらの$N$量子ビット誤り演算子(7.28)を、$\hat Z_{j_1j_2\cdots j_N}$と書こう。各$j_k$は、第$k$量子ビットに恒等演算子$\hat I^{(k)}$が作用するなら0、位相反転演算子$\hat\sigma_z^{(k)}$が作用するなら1である。たとえば、この記法では式(7.28)の演算子$\hat E_i$は$\hat Z_{101\cdots0}$となる。すると、純粋にもつれだけを生む系と環境の相互作用を
+\begin{equation}|\psi\rangle|e_{\mathrm r}\rangle\longrightarrow\left\{\sum_{j_1=0}^{1}\sum_{j_2=0}^{1}\cdots\sum_{j_N=0}^{1}\right\}\hat Z_{j_1j_2\cdots j_N}|\psi\rangle|\widetilde e_{j_1j_2\cdots j_N}\rangle\tag{7.29}\end{equation}
+と表せる。ここで$|\widetilde e_{j_1j_2\cdots j_N}\rangle$は、ある環境の相対状態である。
+
+式(7.29)の最も一般的な形は、誤りという点では、環境とのもつれの「最悪の場合」に対応する。原理的には、$2^N$個の異なる誤り演算子$\hat Z_{j_1j_2\cdots j_N}$を考慮する必要がある。この場合、重み$N$までの位相反転誤りを考えなければならないという。

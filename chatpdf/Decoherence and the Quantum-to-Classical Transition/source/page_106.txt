@@ -1,0 +1,58 @@
+                                       2.10 A Simple Model for Decoherence          91
+                                             N
+                                            2 −1
+                   |E0 (t) = |E1 (−t) =           cn e−i n t/2 |n .          (2.106)
+                                            n=0
+
+The interpretation of the time-evolved state (2.105) is simple and follows our
+general discussion of the role of the environment as a “which-state” detector
+(see Sect. 2.6.3). The basis states |0 and |1 of the system have become
+correlated with the corresponding relative states |E0 (t) and |E1 (t) of the
+environment. The more distinguishable the states |E0 (t) and |E1 (t) are,
+i.e., the smaller the overlap E1 (t)|E0 (t) is, the more information becomes
+encoded in the environment that would allow one to distinguish between the
+states |0 and |1 of the system by looking at the environment. Accordingly,
+we expect that interference between these states |0 and |1 will become
+progressively damped as the overlap E1 (t)|E0 (t) decreases.
+     This motivates us to interpret the overlap E1 (t)|E0 (t) as a decoherence
+factor r(t), which is given by [see (2.106)]
+                                                N
+                                               2 −1
+                                                        |cn | e−i n t ,
+                                                            2
+                    r(t) ≡ E1 (t)|E0 (t) =                                    (2.107)
+                                                  n=0
+
+          2          2N −1     2
+with |cn | ≤ 1 and n=0 |cn | = 1. If r(t) −→ 0, then the oﬀ-diagonal terms
+|01| and |10| of the reduced density matrix ρ̂S (t) of the system expressed
+in the {|0 , |1} basis disappear, i.e.,
+
+        ρ̂S (t) = TrE ρ̂(t) ≡ TrE |Ψ (t)Ψ (t)|
+              = |a|2 |00| + |b|2 |11| + ab∗ r(t)|01| + a∗ br∗ (t)|10|
+              −→ |a|2 |00| + |b|2 |11|.                                     (2.108)
+
+This describes the local damping of interferences between the states |0 and
+|1. The expression (2.108) also explicitly conﬁrms that the diagonal elements
+of ρ̂S (t) are independent of time and that thus the two-level populations are
+unchanged by the interaction, as already pointed out above.
+     The interesting question, of course, concerns the time evolution of the
+decoherence factor r(t) and the dependence of this factor on the number
+of environmental spins. From (2.107) we see that r(t) corresponds to the
+addition of 2N vectors of lengths |cn | rotating in the complex plane with
+                                         2
+
+diﬀerent frequencies proportional to n . For any ﬁxed time t, this amounts
+to a two-dimensional random-walk problem and was investigated in detail by
+Zurek [9] and Cucchietti, Paz, and Zurek [118]. Each of the 2N steps of the
+                               2
+random walk has length |cn | and follows the direction given by the phase
+             2N −1     2                                  2
+n t. Since n=0 |cn | = 1, the average step length |c|  will be equal to
+ −N
+2 . From standard random-walk theory it then follows that the average
+squared length of the complex vector r(t) will scale as
+
+                            |r(t)|  ∝ |c|  = 2−N .
+                                   2          2
+                                                                                (2.109)

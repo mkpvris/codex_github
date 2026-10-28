@@ -1,0 +1,198 @@
+Appendix: The Interaction Picture
+
+
+
+
+The technique of expressing operators and quantum states in the so-called
+interaction picture is of great importance in treating quantum-mechanical
+problems in a perturbative fashion. It plays an important role, for example, in
+the derivation of the Born–Markov master equation for decoherence detailed
+in Sect. 4.2.2. We shall review the basics of the interaction-picture approach
+in the following.
+    We begin by considering a Hamiltonian of the form
+
+                                 Ĥ = Ĥ0 + V̂ .                            (A.1)
+
+Here Ĥ0 denotes the part of the Hamiltonian that describes the free (un-
+perturbed) evolution of a system S, whereas V̂ is some added external per-
+turbation. In applications of the interaction-picture formalism, V̂ is typically
+assumed to be weak in comparison with Ĥ0 , and the idea is then to deter-
+mine the approximate dynamics of the system given this assumption. In the
+following, however, we shall proceed with exact calculations only and make
+no assumption about the relative strengths of the two components Ĥ0 and
+V̂ .
+     From standard quantum theory, we know that the expectation value of
+an operator observable Â(t) is given by the trace rule [see (2.17)],
+                          &          '      &                    '
+              Â(t) = Tr Â(t)ρ̂(t) = Tr Â(t)e−iĤt ρ̂(0)eiĤt .       (A.2)
+
+For reasons that will immediately become obvious, let us rewrite this expres-
+sion as
+                 &                                                     '
+     Â(t) = Tr eiĤ0 t Â(t)e−iĤ0 t eiĤ0 t e−iĤt ρ̂(0)eiĤt e−iĤ0 t . (A.3)
+
+In inserting the time-evolution operators e±iĤ0 t at the beginning and the
+end of the expression in square brackets, we have made use of the fact
+    the trace
+that                    under permutations of the arguments, i.e., that
+                 is cyclic
+Tr ÂB̂ Ĉ · · · = Tr B̂ Ĉ · · · Â , etc. Thus we could move the ﬁrst factor
+eiĤ0 t to the end of the argument of the trace, canceling out the extra factor
+e−iĤ0 t at that position.
+380     Appendix: The Interaction Picture
+
+    Equation (A.3) motivates us to now introduce the interaction-picture form
+of general operators Â(t) and density matrices ρ̂(t) as
+
+                       Â(I) (t) = eiĤ0 t Â(t)e−iĤ0 t ,                             (A.4)
+                        ρ̂(I) (t) = eiĤ0 t ρ̂(t)e−iĤ0 t
+                                 = eiĤ0 t e−iĤt ρ̂(0)eiĤt e−iĤ0 t .                (A.5)
+
+Here the superscript (I) is used to denote interaction-picture operators. Note
+that the dynamics of the interaction-picture operators Â(I) (t) are fully de-
+termined by the unperturbed (free) Hamiltonian Ĥ0 rather than by the total
+Hamiltonian Ĥ.
+    With the new deﬁnitions (A.4) and (A.5), our expectation-value equa-
+tion (A.3) can then be written in the compact form
+                                     &                 '
+                        Â(t) = Tr Â(I) (t)ρ̂(I) (t) .                (A.6)
+
+Let us now determine an evolution equation for the interaction-picture den-
+sity matrix ρ̂(I) (t). Using the standard Liouville–von Neumann equation for
+the density matrix ρ̂(t) in the Schrödinger picture,
+
+                                 d                     
+                                    ρ̂(t) = −i Ĥ, ρ̂(t) ,                             (A.7)
+                                 dt
+we obtain
+                                                        
+       d (I)                          iĤ0 t   d
+                             (I)
+          ρ̂ (t) = i Ĥ0 , ρ̂ (t) + e               ρ̂(t) e−iĤ0 t
+       dt                                        dt
+                (A.7)                                 
+                 = i Ĥ0 , ρ̂(I) (t) − ieiĤ0 t Ĥ, ρ̂(t) e−iĤ0 t
+                (A.1)                                        
+                 = i Ĥ0 , ρ̂(I) (t) − ieiĤ0 t Ĥ0 + V̂ , ρ̂(t) e−iĤ0 t .            (A.8)
+
+From (A.4) and (A.5) we see that the application of the time-evolution opera-
+tors e±iĤ0 t to the quantities in the second commutator amounts to a transfor-
+mation of these quantities to the interaction picture. Equation (A.8) therefore
+becomes
+        d (I)                                                                 
+           ρ̂ (t) = i Ĥ0 , ρ̂(I) (t) − i Ĥ0 , ρ̂(I) (t) − i V̂ (I) (t), ρ̂(I) (t)
+        dt
+                                           
+                  = −i V̂ (I) (t), ρ̂(I) (t) .                                         (A.9)
+
+This establishes our ﬁrst main result: The time evolution of the interaction-
+picture density operator is given by an equation of the Liouville–von Neu-
+mann type, but with the interaction-picture perturbation V̂ (I) (t) instead of
+the full Hamiltonian Ĥ. Appropriately, (A.9) is called the interaction-picture
+Liouville–von Neumann equation.
+                                             Appendix: The Interaction Picture      381
+
+    Up to now, we have considered the case of a single system S subject to
+some perturbation V̂ whose origin we have not speciﬁed further. Let us now
+enter the setting relevant to decoherence: We suppose that the perturbation is
+due to the interaction with some external environment E described by an in-
+teraction Hamiltonian Ĥint , i.e., V̂ ≡ Ĥint . If we denote the self-Hamiltonians
+of the system and the environment by ĤS and ĤE , respectively, we may write
+the total Hamiltonian of the composite system SE in the form
+
+                       Ĥ = Ĥ0 + V̂ ≡ ĤS + ĤE + Ĥint .                       (A.10)
+                                       / 01 2 /012
+                                                ≡Ĥ0        ≡V̂
+
+Following the usual strategy, we are interested in determining the time evo-
+lution of the reduced density operator ρ̂S (t). In our case, we would like to
+obtain the reduced interaction-picture density operator
+                                        &         '
+                             (I)
+                           ρ̂S (t) ≡ TrE ρ̂(I) (t) .                  (A.11)
+
+We will now address the following two questions:
+ 1. Given the reduced density operator ρ̂S (t) in the Schrödinger picture, what
+                                    (I)
+    is the corresponding operator ρ̂S (t) in the interaction picture?
+                                                              (I)
+ 2. What is the appropriate time-evolution equation for ρ̂S (t)?
+Let us answer the ﬁrst question. Evaluating the trace in (A.11) gives
+              &        ' (A.5)     &                   '
+          TrE ρ̂(I) (t) = TrE eiĤ0 t ρ̂(t)e−iĤ0 t
+                         (A.10) iĤS t
+                                       $   &                     '%
+                           = e          TrE eiĤE t ρ̂(t)e−iĤE t e−iĤS t
+
+                         = eiĤS t {TrE [ρ̂(t)]} e−iĤS t
+                         = eiĤS t ρ̂S (t)e−iĤS t
+                         (A.11)    (I)
+                           ≡      ρ̂S (t),                                       (A.12)
+
+where in the second-to-last line we have again used the invariance of the
+trace operation under cyclic permutations of the arguments (or, put slightly
+diﬀerently, the invariance of the trace under unitary transformations of the
+argument).
+    Equation (A.12) shows that the reduced density operator in the interac-
+tion picture is obtained by a unitary transformation of the reduced density
+operator in the Schrödinger picture involving the free system Hamiltonian
+ĤS only, i.e.,
+                         ρ̂S (t) = eiĤS t ρ̂S (t)e−iĤS t .
+                           (I)
+                                                                     (A.13)
+The analogy of (A.13) to the corresponding transformation for the total
+interaction-picture density operator ρ̂(I) (t), see (A.5), should now be clear. In
+382      Appendix: The Interaction Picture
+
+each case, the transformation involves only the free Hamiltonian, namely, the
+Hamiltonian Ĥ0 for ρ̂(I) (t) and the system Hamiltonian ĤS for the reduced
+                                          (I)
+interaction-picture density operator ρ̂S (t).
+    We note that the deﬁnition (A.13) also ensures, as desired, that expec-
+tation values of system observables ÂS (t) automatically agree in both the
+Schrödinger and interaction pictures, i.e., that
+                         &              '      &             '
+                                                  (I)   (I)
+          ÂS (t) = TrS ρ̂S (t)ÂS (t) = TrS ρ̂S (t)ÂS (t) ,       (A.14)
+
+where
+                 (A.4)                       (A.10)
+         ÂS (t) = eiĤ0 t ÂS (t)e−iĤ0 t            eiĤS t ÂS (t)e−iĤS t .
+          (I)
+                                              =                                   (A.15)
+
+The proof of (A.14) is immediate:
+                &             '      &                              '
+            TrS ρ̂S (t)ÂS (t) = TrS eiĤS t ρ̂S (t)ÂS (t)e−iĤS t
+                  (I)    (I)
+
+                                     &               '
+                                = TrS ρ̂S (t)ÂS (t) .                            (A.16)
+
+Finally, let us now answer the second question posed above, i.e., let us ﬁnd
+an equation of motion for the reduced interaction-picture density operator
+  (I)
+ρ̂S (t). Taking the trace over the environment on both sides of our evolution
+equation (A.9) for the full interaction-picture density operator ρ̂(I) (t), with
+               (I)
+V̂ (I) (t) ≡ Ĥint (t), yields
+
+                         d (I)             (I)                
+                           ρ̂ (t) = −i TrE Ĥint (t), ρ̂(I) (t) .                 (A.17)
+                         dt S
+A closer inspection reveals that this equation is not of the standard Liouville–
+von Neumann form, since the right-hand side depends on the full density
+                                                                    (I)
+operator ρ̂(I) (t) rather than on the reduced density operator ρ̂S (t). This
+fact should not be too surprising to the reader. After all, the state of the
+environment will generally inﬂuence the evolution of the reduced density
+operator.
+    Thus, in general, we must consider the full interacting system–environment
+combination to determine the reduced dynamics. (This observation is, of
+course, independent of whether we work in the Schrödinger or the interac-
+tion picture.) Only once certain approximations are imposed (for instance, the
+assumption of weak system–environment coupling), we may obtain an evolu-
+tion equation for the reduced density operator of the system that does not
+explicitly depend on the time-dependent total (system–environment) density
+operator. Such master equations are derived in Chaps. 4 and 5.
+

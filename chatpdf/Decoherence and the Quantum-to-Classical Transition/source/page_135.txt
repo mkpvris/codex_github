@@ -1,0 +1,42 @@
+120     3 Localization Due to Environmental Scattering
+
+
+
+
+Fig. 3.2. Environmental scattering. A collection of particles, such as photons or
+air molecules, scatters oﬀ the object of interest.
+
+                       before                                 after
+
+                                                   |χ(x )
+
+
+                                |x                                   |x 
+            |χi 
+
+
+Fig. 3.3. A single scattering event. The incoming environmental particle, described
+by the initial state |χi , elastically scatters oﬀ a stationary object of interest, whose
+center-of-mass state is represented by a position eigenstate |x. The range of the
+scattering potential is suﬃciently short, such that the states of the object and
+the incoming particle are initially uncorrelated. The object is assumed to be much
+more massive than the scattered environmental particle, such that the object is
+not disturbed by the scattering event. Thus the interaction yields the evolution
+|x |χi  −→ |x |χ(x), where |χ(x) is the ﬁnal state of the scattered particle [see
+also (3.12)].
+
+
+                                |x |χi  −→ Ŝ |x |χi  ,                         (3.5)
+
+where we have used the separability assumption (3.4) for the initial state.
+At the risk of stating the obvious, we note that |χi  is of course independent
+of the location x of the scattering object. The state |x can be thought of
+the state |x = 0 (corresponding to the scattering center being located at the
+origin) translated by the action of the momentum operator p̂ of the system,4
+
+                                |x = e−ip̂·x/ |x = 0 .                           (3.6)
+
+We can hence rewrite (3.5) as
+   4
+    Since our model will be used to calculate explicit numerical values of decoher-
+ence timescales, we shall retain  throughout the following derivation.

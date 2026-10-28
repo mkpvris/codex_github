@@ -1,0 +1,47 @@
+38      2 The Basic Formalism and Interpretation of Decoherence
+
+(but could in principle) follow, say, the deterministic path of each individual
+molecule in a gas.
+    How would the observer describe the statistics of measurements performed
+on a system described by a mixed state? Clearly, since she is no longer able
+to assign a pure quantum state |ψ to the system, she cannot compute ex-
+pectation values of observables Ô via the usual rules Ô = ψ| Ô |ψ or
+Ô = Tr (ρ̂Ô) [see (2.17)] with a pure-state density matrix ρ̂ = |ψψ|. How-
+ever, these rules are easily generalized by combining the classical probability
+concept (arising from the ignorance of the observer about the prepared pure
+state of the system) with the intrinsic quantum-mechanical probabilities (aris-
+ing from the probabilistic “collapse” of the quantum state into an eigenstate
+of the measured observable). The intuitive idea consists of simply weighting
+the expectation values ψi | Ô |ψi  for each of the possible pure states |ψi 
+contained in the mixed state by their respective classical probabilities pi of
+the |ψi  and sum the results over the entire ensemble, i.e.,
+                                     
+                              Ô =    pi ψi | Ô |ψi  .                (2.19)
+                                     i
+
+This expression still contains two separate statistical elements, namely, the
+classical probabilities pi as well as the quantum expectation values ψi | Ô |ψi 
+for each of the pure states |ψi . It turns out we can introduce a mixed-state
+density matrix that encapsulates both of these parts and thus completely
+encodes all statistical properties of the system. This density matrix is given
+by                                   
+                                ρ̂ =     pi |ψi ψi |,                    (2.20)
+                                     i
+                  
+with pi ≥ 0 and i pi = 1. We can view this density matrix as a classical
+probability distribution of pure-state density matrices ρ̂i = |ψi ψi |.
+    Since the classical probability concept is already built into the mixed-
+state density matrix (2.20), expectation values of observables Ô can now be
+computed in exactly the same way as for pure states by using the trace rule
+(2.17), i.e.,
+                               Ô = Tr (ρ̂Ô).                          (2.21)
+As it should be, this is equivalent to the method (2.19) of computing the
+expectation values in the pure component states |ψi  and weighting them by
+the mixed-state probabilities pi .
+   Just as the pure-state density matrix, the mixed-state density matrix also
+obeys the normalization condition (2.18),
+
+                                    Tr ρ̂ = 1.                              (2.22)
+
+This follows directly from the normalization (2.18) ofeach constituent pure-
+state density matrix ρ̂i = |ψi ψi | and the fact that i pi = 1,

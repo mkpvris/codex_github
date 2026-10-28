@@ -1,0 +1,59 @@
+164    4 Master-Equation Formulations of Decoherence
+
+  d (I)
+    ρ̂ (t) =
+  dt S
+        ∞    $        &
+                                             (I)                   (I)
+                                                                               '
+   −      dτ   Cαβ (τ ) Ŝα (t)Ŝβ (t − τ )ρ̂S (t) − Ŝβ (t − τ )ρ̂S (t)Ŝα (t)
+       0         αβ
+                     &                                                       '%
+                        (I)                                 (I)
+           +Cβα (−τ ) ρ̂S (t)Ŝβ (t − τ )Ŝα (t) − Ŝα (t)ρ̂S (t)Ŝβ (t − τ ) . (4.34)
+
+As desired, the right-hand side of this master equation does no longer depend
+on the full time-dependent density operator ρ̂(I) (t), but only on the reduced
+                   (I)
+density operator ρ̂S (t) of the system, together with the initial state of the
+environment [which enters through the self-correlation functions Cαβ (τ ), see
+(4.31)]. Also, the master equation is local in time. Only completely known
+quantities, namely, the operators Ŝα (t) and Êα (t) (which are determined a
+priori by the form of the Hamiltonian), enter into the master equation with
+time arguments other than t.
+    Equation (4.34) establishes our core result, and our derivation is essen-
+tially complete. The last remaining step is simply concerned with transform-
+ing the equation back to the Schrödinger picture and with making some
+formal rearrangements.
+
+Transformation Back to the Schrödinger Picture
+
+To transform a density-operator evolution equation written in the interaction
+picture back to the Schrödinger picture, we can use the following general
+recipe. From (A.12) we have
+
+                              ρ̂S (t) = eiĤS t ρ̂S (t)e−iĤS t ,
+                               (I)
+                                                                                     (4.35)
+
+and thus it immediately follows that
+                                                                      
+               d (I)                                       d
+                  ρ̂S (t) = i ĤS , ρ̂S (t) + eiĤS t           ρ̂S (t) e−iĤS t .
+                                      (I)
+                                                                                     (4.36)
+               dt                                            dt
+
+Again using (4.35), this may be rewritten as
+                                                                       
+               d                                            d (I)
+                  ρ̂S (t) = −i ĤS , ρ̂S (t) + e−iĤS t          ρ̂S (t) eiĤS t .   (4.37)
+               dt                                             dt
+
+Let us apply this procedure to our interaction-picture Born–Markov master
+                                                      d (I)
+equation (4.34). We insert the expression (4.34) for dt ρ̂S (t) into the right-
+hand side of (4.37). We pull the time evolution operators e±iĤS t into the
+square brackets in (4.34) and then use (4.14) and (4.35). For example, for the
+ﬁrst term inside the brackets on the right-hand side of (4.34), this will lead
+to

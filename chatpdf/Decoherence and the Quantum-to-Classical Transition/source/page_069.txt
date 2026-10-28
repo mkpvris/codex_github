@@ -1,0 +1,48 @@
+54     2 The Basic Formalism and Interpretation of Decoherence
+
+Suppose both the system S and the apparatus A are quantum-mechanical
+two-state systems represented by spin- 12 particles, described by basis states
+|0z  and |1z . Suppose further that the states |0z A and |1z A of A act as
+“pointers” for the spin states |0z S and |1z S of S. That is, the von Neumann
+interaction (2.52) is here described by the dynamics
+
+                      |0z S |“ready”A −→ |0z S |0z A ,
+                                                                          (2.57)
+                      |1z S |“ready”A −→ |1z S |1z A .
+                                                                           √
+Assuming the system S starts out in the superposition (|0z S + |1z S ) / 2,
+it follows from (2.57) and the linearity of the Schrödinger equation [see also
+(2.54)] that the ﬁnal composite entangled spin–apparatus state will be
+                            1
+                    |Ψ  = √ (|0z S |0z A + |1z S |1z A ) .           (2.58)
+                             2
+Let us now use (2.35) to rewrite the z-spin states |0z i and |1z i , i = S, A,
+in terms of the eigenstates |0x i and |1x i of the Pauli spin operator σ̂x .
+Expressed in the new basis {|0x i , |1x i }, the state (2.58) reads
+
+                           1
+                    |Ψ  = √ (|0x S |0x A + |1x S |1x A ) .           (2.59)
+                            2
+Recall that we regarded A as a measuring device for the spin of the system S.
+Equations (2.58) and (2.59) then imply that the apparatus A has formed one-
+to-one correlations with both the z-spin and x-spin states of S. If we interpret,
+in the spirit of the von Neumann scheme (i.e., without the assumption of
+any subsequent wave-function collapse), this formation of system–apparatus
+correlations as a complete measurement, this state of aﬀairs seems to imply
+the following. Once A has measured the spin of S along the z axis [see the
+ﬁnal state (2.58)], A may be considered as having measured also the spin of
+S along the x axis, where the latter “measurement” is represented by the
+equivalent form (2.59) of (2.58).
+    Thus our device A would appear to have simultaneously measured two
+noncommuting observables of the system, namely, σ̂x and σ̂z , in apparent
+contradiction with the laws of quantum mechanics. What is more, it is easy
+to show that the state (2.58) can in fact be rewritten in inﬁnitely many
+equivalent ways using the spin- 12 basis along any arbitrary axis. Thus it would
+appear that, once our apparatus A has “measured” the spin of S along the z
+axis—in the von Neumann sense of the formation of correlations of the type
+(2.58)—it has also “measured” spin along any other spatial direction.
+    Such a situation of simultaneous measurement of a set of noncommuting
+observables is not only forbidden by quantum mechanics, but also contradicts
+our experience that measuring devices seem to be designed to measure only
+very particular quantities. In our example, the apparatus A may be realized
+in form of a Stern–Gerlach device (see Sect. 2.2.2), with the states |0z A

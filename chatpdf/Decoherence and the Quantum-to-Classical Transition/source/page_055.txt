@@ -1,0 +1,49 @@
+40      2 The Basic Formalism and Interpretation of Decoherence
+                                  
+                          ρ̂2 =        pi pj |ψi ψj |ψi |ψj .             (2.27)
+                                  ij
+
+First, in general ψi |ψj  = 0 for i = j, but even if ψi |ψj  = 0 for i = j, we
+nonetheless end up with
+                                      
+                                ρ̂2 =     p2i |ψi ψi |.                      (2.28)
+                                          i
+
+This expression diﬀers from ρ̂, see (2.20), since the value of each pi is less
+than one. Thus, if we are given some arbitrary density matrix ρ̂, we can easily
+determine whether the system is in a pure state by simply checking whether
+(2.26) holds, i.e., whether ρ̂2 = ρ̂.
+    We can go one step further and deﬁne measures that not only tell us
+whether a given density matrix is pure, but also quantify the degree of
+“mixedness” of this density matrix in the following sense. Consider again
+the mixed-state density matrix as in (2.20),
+                                     
+                                ρ̂ =   pi |ψi ψi |.                   (2.29)
+                                         i
+
+As we know by now, the case of a pure-state density matrix corresponds to
+all pi being equal to zero except for one, say p1 = 1. That is, there is no
+“ignorance” about the state of the system in this situation. Suppose now we
+decrease the magnitude of p1 . The normalization condition for probabilities,
+
+   i pi = 1, tells us that now at least one other pi = p1 must attain a non-
+zero value, say, p2 > 0. Now there is a degree of “ignorance” present, as
+we do not know with certainty in which of the pure states |ψ1  and |ψ2 
+the system has been prepared. Nonetheless, if, for example, p1 = 90% and
+p2 = 10%, we can still be reasonably conﬁdent that the state |ψ1  has indeed
+been prepared. Accordingly, the degree of “mixedness” is low. The opposite
+extreme of the pure state is attained if the density matrix is proportional
+to the identity operator, which corresponds to an equal-weight ensemble of
+mutually orthogonal pure states which form a basis of the Hilbert space of the
+system. In this case the density matrix contains no information whatsoever
+about which pure state has been prepared and therefore expresses a maximum
+degree of ignorance (“mixedness”).
+     Let us now introduce two measures that quantify the degree of mixedness
+in a more general way. A simple and commonly used measure is the so-called
+purity of the density matrix, deﬁned as
+
+                                       ς ≡ Tr (ρ̂2 ).                         (2.30)
+
+Why is this a sensible measure? If ρ̂ represents a pure-state density matrix, it
+follows from (2.18) and (2.26) that ς = 1. On the other hand, assuming that
+the states {|ψi } form an orthonormal basis of the N -dimensional Hilbert

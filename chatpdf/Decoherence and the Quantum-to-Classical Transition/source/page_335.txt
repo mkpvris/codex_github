@@ -1,0 +1,51 @@
+              7.5 Quantum Computation on Decoherence-Free Subspaces                      323
+
+environment). In this case, all qubits “feel” the (approximately) same envi-
+ronment, and it is likely that errors will become correlated among multiple
+qubits. The limiting case corresponding to this situation is that of collective
+decoherence, in which all qubits couple to exactly the same environment.
+    It turns out that these two extremes, completely independent decoher-
+ence on the one hand and purely collective decoherence on the other hand,
+delineate the limits on the size of a DFS. For the spin–boson model, in the
+limit of collective decoherence (and many qubits), the dimension of the DFS
+will asymptotically approach the dimension of the original Hilbert space,
+thus allowing for optimal decoherence-free encoding. In the opposite limit
+of independent decoherence, however, we shall see that there exists no DFS
+that would allow for an encoding of logical qubits. We shall not reproduce
+the detailed models and proofs necessary to establish these results, but we
+nonetheless would like to gain some intuition into the relationship between
+the size of the DFS and the particular decoherence model. This will be done
+in the following.
+
+A Simple Example
+
+Let us ﬁrst consider the case of collective decoherence in the spin–boson model
+[89, 91, 93, 96, 237]. DFS emerge here almost by deﬁnition. The interaction
+Hamiltonian for a collection of N qubits is given by a generalization of the
+interaction Hamiltonian in (5.90), i.e.,
+                      N
+                                                               N
+            Ĥint =         σ̂z(i) ⊗           gij â†j + gij
+                                                           ∗
+                                                              âj ≡   σ̂z(i) ⊗ Êi .   (7.50)
+                      i=1              j                            i=1
+
+Here the gij denote the coupling strength of the ith qubit to the jth environ-
+mental oscillator, and the âj (â†j ) are the annihilation (creation) operators
+for the jth mode of the bosonic ﬁeld.
+    The assumption of collective decoherence means that all qubits couple to
+the same environment, which implies that the couplings gij (and thus the
+environment operators Êi ) must be independent of the index i. Then (7.50)
+becomes                                    
+                               
+                     Ĥint =            (i)
+                                      σ̂z     ⊗ Ê ≡ Ŝz ⊗ Ê.            (7.51)
+                                           i
+
+The precise form of the environment operator Ê is not really important here.
+The key point is that the interaction Hamiltonian has now been written in
+the form (7.51) with the sum replaced by a single term Ŝz ⊗ Ê.
+    Now let us recall that a DFS is spanned by a degenerate set of eigenstates
+of the system operators Ŝα of the interaction Hamiltonian [see (7.49)]. Thus
+in this case the DFS will be spanned by degenerate eigenstates of the collec-
+tive spin operator Ŝz deﬁned in (7.51). Clearly, any N -qubit product state

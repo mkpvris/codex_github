@@ -1,0 +1,54 @@
+92      2 The Basic Formalism and Interpretation of Decoherence
+
+This shows that the degree of suppression of coherences in the {|0 , |1}
+scales exponentially with the size N of the environment. Furthermore, Zurek
+[9] and Cucchietti, Paz, and Zurek [118] demonstrated that, for suﬃciently
+large N and a large class of distributions of the couplings gi , r(t) follows an
+approximately Gaussian decay with time,
+
+                                    r(t) ≈ e−Γ t .
+                                                    2 2
+                                                                                  (2.110)
+The precise value of the decay constant Γ 2 is determined by the initial state
+of the environment and the distribution of the couplings gi . An example for
+the time evolution of the decoherence factor (2.107) is shown in Fig. 2.6. We
+observe rapid decay of |r(t)| for both N = 20 and N = 100.
+    However, it is important to realize that, as long as the number of environ-
+mental spins (and thus the number of degrees of freedom in the environment)
+is ﬁnite, there always exists a characteristic recurrence time τrec for which the
+decoherence factor (2.107) will return to its initial value of one. This is simply
+a consequence of the fact that (2.107) is a sum of functions that are periodic
+in time. Any such sum of periodic functions must in turn be periodic, too.
+The value of the recurrence time depends on the initial state of the environ-
+ment and the distribution of the couplings gi . For example, in the limiting
+case of a highly “nonrandom” initial state of the environment with no initial
+correlations between the environmental spins,
+                                                N
+                                                    1
+                    |Ψ (0) = (a |0 + b |1)       √ (|↑i + |↓i ) ,            (2.111)
+                                                i=1
+                                                     2
+
+
+                             0        5             10       15          20
+                         1                                                    t
+
+
+                     10−4
+                                           N = 20
+
+           |r(t)|    10−8
+
+                    10−12                 N = 100
+
+
+                    10−16
+
+
+Fig. 2.6. Evolution of the absolute value of the decoherence factor r(t), see (2.107),
+describing the time dependence of interference terms in a central static spin system
+interacting with a collection of N static environmental spins for two diﬀerent values
+N = 20 and N = 100. The initial state of each environmental spin was assumed
+to be completely random, with the environmental spins completely uncorrelated
+with each other and with the system. The couplings were chosen randomly from
+the interval [0, 1].

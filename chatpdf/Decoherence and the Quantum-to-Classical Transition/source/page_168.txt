@@ -1,0 +1,46 @@
+154    4 Master-Equation Formulations of Decoherence
+
+the modeling of decoherence, we shall not further discuss this mathematical
+connection between master equations and dynamical semigroups. Instead we
+refer interested readers to Chap. 7 of [17] and to the book by Breuer and
+Petruccione [18] for further information on this topic.
+
+
+4.1 General Formalism
+
+In the “ordinary” formalism of decoherence, the reduced density matrix ρ̂S (t)
+is computed via
+                                            $                      %
+              ρ̂S (t) = TrE {ρ̂SE (t)} ≡ TrE Û (t)ρ̂SE (0)Û † (t) ,   (4.1)
+
+where Û (t) denotes the time-evolution operator for the composite system
+SE. As is evident from (4.1), this approach inevitably requires that we ﬁrst
+determine the dynamics ρ̂SE (t) of the total system SE before we can arrive at
+the reduced description through the trace operation. As we have indicated in
+the introduction to this chapter, this task is very diﬃcult, if not impossible,
+to carry out in practice for most reasonably complex model systems.
+    By contrast, in the master-equation formalism, we instead calculate ρ̂S (t)
+directly from an expression of the form
+
+                              ρ̂S (t) = V̂ (t)ρ̂S (0),                     (4.2)
+
+where the operator V̂ (t) is the so-called dynamical map that generates the
+evolution of ρ̂S (t). Since V̂ (t) represents an operator that in turn acts on
+another operator, it is commonly referred to as a “superoperator.” Equa-
+tion (4.2) is called a master equation for ρ̂S (t), and it represents the most
+general form that such a master equation may take.
+    Obviously, if the master equation is exact, then (4.1) and (4.2) must be
+equivalent by deﬁnition, i.e., we must have the identity
+                                         $                      %
+                      V̂ (t)ρ̂S (0) ≡ TrE Û (t)ρ̂SE (0)Û † (t) ,        (4.3)
+
+and the master equation would amount to nothing else but a trivial rewriting
+of (4.1).
+    Therefore, the power of master equations is only unlocked once we im-
+pose certain assumptions about the system–environment states and dynam-
+ics. Such assumptions then allow us to determine the approximate time evo-
+lution of ρ̂S (t) even when it is impossible to calculate the exact global dynam-
+ics ρ̂SE (t). In fact, here we shall restrict our attention to master equations
+(obtained from certain approximations) that can be written as ﬁrst-order dif-
+ferential equations that are local in time, i.e., that can be expressed in the
+form

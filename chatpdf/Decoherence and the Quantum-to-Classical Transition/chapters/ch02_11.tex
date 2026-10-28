@@ -1,0 +1,65 @@
+% 原文 p.71（後半）
+
+
+\subsectionlink{環境誘起超選択}
+前節では、デコヒーレンスをもたらす系と環境の相互作用を、標準的なvon Neumann測定方式として表せることを示した［式(2.72)］。しかしこれは、von Neumann測定の文脈で論じた優先基底の問題（2.5.2節）が、ここでも当てはまることを意味する。すなわち、環境との相互作用によって、その間の干渉が局所的に抑制されるものとして、何が特定の成分、上の例での状態$\lvert\psi_1\rangle$、$\lvert\psi_2\rangle$を選び出すのか、と問える。
+
+これに答えるため、この例の系と環境の相互作用が、発展(2.71)、
+\begin{align}\lvert\psi_1\rangle\lvert E_0\rangle&\longrightarrow\lvert\psi_1\rangle\lvert E_1\rangle,\tag{2.78a}\\\lvert\psi_2\rangle\lvert E_0\rangle&\longrightarrow\lvert\psi_2\rangle\lvert E_2\rangle,\tag{2.78b}\end{align}
+および$\langle E_1\vert E_2\rangle\longrightarrow0$で記述されることを思い出そう。この相互作用の形は、$\lvert\psi_1\rangle$、$\lvert\psi_2\rangle$が、たとえば物体の異なる空間位置や向きという、十分に異なる系の物理状態に対応し、この違いを、系を連続的に監視する環境が分解するという事実によって動機付けた。
+
+% 原文 p.72
+\hypertarget{srcpage:72}{}\label{srcpage:72}
+系の共役な状態$\lvert\psi_\pm\rangle$を、$\lvert\psi_1\rangle$、$\lvert\psi_2\rangle$の偶および奇の重ね合わせとして導入しよう。
+\begin{equation}\lvert\psi_\pm\rangle\equiv\frac1{\sqrt2}(\lvert\psi_1\rangle\pm\lvert\psi_2\rangle).\tag{2.79}\end{equation}
+式(2.70)を振り返れば、$\psi_+(x)$が、先に考えた系の初期の重ね合わせ状態に対応することがすぐ分かる。$\lvert\psi_1\rangle$、$\lvert\psi_2\rangle$は空間に局在した状態を表すので、$\lvert\psi_+\rangle$、$\lvert\psi_-\rangle$は、非古典的な非局在状態に対応する。環境との相互作用(2.78)は、成分$\lvert\psi_+\rangle$、$\lvert\psi_-\rangle$間の干渉も抑制するだろうか。
+
+この抑制が起こるためには、系と環境の相互作用が、状態$\lvert\psi_+\rangle$、$\lvert\psi_-\rangle$を識別するものでなければならないことを思い出そう。すなわち環境が、$\lvert\psi_+\rangle$、$\lvert\psi_-\rangle$のどちらの状態かという情報を符号化できる必要がある。力学(2.78)が、この目的を達成しないことは容易に分かる。系と環境の相互作用の形から、
+\begin{equation}\lvert\psi_\pm\rangle\lvert E_0\rangle\longrightarrow\frac1{\sqrt2}(\lvert\psi_1\rangle\lvert E_1\rangle\pm\lvert\psi_2\rangle\lvert E_2\rangle)\tag{2.80}\end{equation}
+という発展が従う。系状態$\lvert\psi_1\rangle$、$\lvert\psi_2\rangle$は、仮定により異なり、$\langle\psi_1\vert\psi_2\rangle=0$である。さらに上の議論より、最終的な環境状態$\lvert E_1\rangle$、$\lvert E_2\rangle$は、この違いを分解し、$\langle E_1\vert E_2\rangle\longrightarrow0$となる。したがって、式(2.80)の右辺の最終的な複合状態は、分離不可能なBell型(2.7)である。環境を$\{\lvert E_1\rangle,\lvert E_2\rangle\}$基底で測定しても、初めに$\lvert\psi_+\rangle$、$\lvert\psi_-\rangle$のどちらが準備されたかについて、いかなる情報も得られない。初めの系の状態が$\lvert\psi_+\rangle$でも$\lvert\psi_-\rangle$でも、結果$\lvert E_1\rangle$、$\lvert E_2\rangle$は、常に等しい確率で得られるからである。さらに、式(2.80)の右辺は、Bell状態の構造を保ったまま、無限通りの同値な方法で書き直せる（2.5.2節の議論）。
+\begin{equation}\frac1{\sqrt2}(\lvert\psi_1\rangle\lvert E_1\rangle\pm\lvert\psi_2\rangle\lvert E_2\rangle)=\frac1{\sqrt2}(\lvert\psi'_1\rangle\lvert E'_1\rangle\pm\lvert\psi'_2\rangle\lvert E'_2\rangle)=\cdots,\tag{2.81}\end{equation}
+ここで$\langle\psi'_1\vert\psi'_2\rangle=0$、$\langle E'_1\vert E'_2\rangle\longrightarrow0$である。したがって、どの基底$\{\lvert E'_1\rangle,\lvert E'_2\rangle\}$を用いても、環境に対して行いうる測定に、二状態$\lvert\psi_+\rangle$、$\lvert\psi_-\rangle$を区別できるものはない。
+
+ゆえに、系と環境のこの特定の相互作用(2.78)は、$\lvert\psi_+\rangle$、$\lvert\psi_-\rangle$の違いに、完全に無感覚である。この相互作用によって、環境を見てこれら二状態を区別できるような情報は、環境に何も符号化されない。したがって環境は、$\lvert\psi_+\rangle$、$\lvert\psi_-\rangle$間の干渉の抑制を、何らもたらせない。
+
+% 原文 p.73
+\hypertarget{srcpage:73}{}\label{srcpage:73}
+この点は、状態$\lvert\psi_+\rangle$、$\lvert\psi_-\rangle$の重ね合わせ
+\begin{equation}\lvert\psi\rangle=\frac1{\sqrt2}(\lvert\psi_+\rangle+\lvert\psi_-\rangle)\tag{2.82}\end{equation}
+を考えることにより、さらに直接的に理解できる。しかし定義(2.79)から、この重ね合わせは、元の局在状態$\lvert\psi_1\rangle$に等しいことが直ちに分かる。したがって力学(2.78)から、状態(2.82)は環境とまったくもつれない。
+\begin{equation}\lvert\psi\rangle\lvert E_0\rangle\xrightarrow{(2.78)}\lvert\psi\rangle\lvert E_1\rangle.\tag{2.83}\end{equation}
+式(2.83)では環境とのもつれがないため、成分$\lvert\psi_+\rangle$、$\lvert\psi_-\rangle$間の干渉の局所的減衰は起こらない。
+
+これらの観察を、本節の主要な結果へ一般化できる。系の状態には、他よりデコヒーレンスを起こしやすいものがあり、特定の状態の感受性は、系と環境の相互作用の構造によって決まる。系の優先状態は、環境との相互作用に最も影響されにくく、最も頑健な状態として、力学的に現れる。すなわち、発展中に環境とのもつれが最も小さく、そのためデコヒーレンスに最も影響されない状態である。これは一般に、優先状態選択の安定性基準と呼ばれ、Zurekが1980年代初頭の二つの画期的論文\cite{ref008,ref009}で導入し論じた。
+
+その結果生じる、環境の力学による優先状態の選択を、初めて詳しく研究し定式化したのもZurek\cite{ref008,ref009}であり、環境誘起超選択と名付けた（文献ではeinselectionという略語もしばしば用いる）。「超選択」という語は、素粒子物理学などで広く使われる超選択則\cite{ref078,ref079,ref080,ref081,ref082,ref083}にちなんで選ばれている（文献\cite{ref017}の第6章も参照）。そのような運動学的超選択則は歴史的に、陽子と中性子の重ね合わせのような、決して観測されない物理状態を、先験的に排除するために仮定された。この例は「電荷超選択則」によって禁止されると見なされた。
+
+同じように、環境との相互作用は、系の観測可能な状態を「超選択」すると言える。ある状態は環境との相互作用があっても頑健だが、他の状態は急速にデコヒーレンスを起こし、実際上観測できなくなる。しかし、仮定された「厳密な」超選択則と違い、環境誘起超選択は、系と環境の相互作用の構造から力学的に現れる、実効的な超選択則を表す。したがって環境誘起超選択は、特定の状態の存在を最初から単に排除する代わりに、なぜそれらを観測しないかを説明するため\cite{ref004,ref008,ref009,ref083,ref084,ref085}、仮定された超選択則より強力な概念と見なせる\footnote{ただし、「厳密な」超選択則も、対称性や他の議論から十分に動機付けられることが多く、単に任意の、その場しのぎの公準によって導入されるわけではないことに注意したい。}。
+
+% 原文 p.74
+\hypertarget{srcpage:74}{}\label{srcpage:74}
+すでに早い時期にZeh\cite{ref004}は、力学的安定性条件の重要性を強調し、量子系の開放性が、電荷、糖分子の左右性、アンモニア分子のパリティなどの優先量の「超選択」を説明するかもしれないと示唆していた。
+
+式(2.78)で与えられる系と環境の相互作用の単純な例では、系が状態$\lvert\psi_1\rangle$、$\lvert\psi_2\rangle$の一方から出発すれば、環境ともつれないことが、直ちに分かる。最終的な系と環境の複合状態は、それぞれ、分離可能な積$\lvert\psi_1\rangle\lvert E_1\rangle$、$\lvert\psi_2\rangle\lvert E_2\rangle$の形に、常にとどまる。したがって環境は、系の状態を乱さない、量子非破壊測定を行うと見なせる（2.5.1節も参照）。上で論じた環境粒子の散乱では、$\lvert\psi_1\rangle$、$\lvert\psi_2\rangle$は空間によく局在した状態を表し、そのため環境が超選択する優先観測可能量は、系の位置である。逆に、系が$\lvert\psi_1\rangle$、$\lvert\psi_2\rangle$の重ね合わせ(2.70)で記述されれば、環境と最大にもつれ、$\{\lvert\psi_1\rangle,\lvert\psi_2\rangle\}$基底でデコヒーレンスが起こる。したがって位置の重ね合わせの測定に対応する系の観測可能量は、この観測可能量の測定に対応する縮約行列の空間的干渉項が、環境との相互作用により急速に減衰するという意味で、「測定しにくい」。大まかに言えば、このような空間的重ね合わせの脆弱さは、実際上観測しにくいことを意味する。Zurek\cite{ref008,ref009,ref012}、およびJoosとZeh\cite{ref007}が最初に示したように、これは、なぜ大半の物理系が、非局在な重ね合わせ状態ではなく、通常、明確な位置に見いだされるかについての、強力な説明を与える（2.8.4節）。
+
+Zurekは、安定性基準によって選ばれる優先状態に、指針状態という語も作った\cite{ref008}。この用語は、環境が超選択する優先状態は、その頑健性によって、測定装置の目盛の指針を読み取るのと同様に、系の水準で最も容易に「読み取られる」物理量に対応する、という考えによる。頑健性は、古典物理学の状態の目印なので（2.1節）、指針状態は、そのような古典状態の「代役」と見なせる。それゆえ、指針状態は準古典状態を表すと言う。以下では、安定性基準の意味で環境との相互作用が選ぶ状態に対して、「環境に超選択される状態」「優先状態」「優先指針状態」を、区別せずに用いる。
+
+% 原文 p.75
+\hypertarget{srcpage:75}{}\label{srcpage:75}
+環境が超選択する状態が、系のHilbert空間の基底をなす場合もある。すなわち、デコヒーレンスによって系の指針基底が現れる。この状況は、たとえば離散的な2次元状態空間で実効的に記述される系で現れる。他方、環境が超選択する状態が過完備な集合をなす、重要な場合もある。すなわち、指針状態は必ずしも互いに直交せず、したがって系のHilbert空間の正しい基底状態を表さない。5.2節で詳しく論じる重要な例は、位相空間の連続的なコヒーレント状態、すなわち位置と運動量の両方によく局在した、最小不確定性のGaussian波束の、環境誘起超選択である\cite{ref006,ref086}。こうしたコヒーレント状態は有限の重なりを持ち、したがって真の基底をなさない。
+
+ここで、その後の環境との相互作用を含めることにより、von Neumann測定方式(2.52)（2.5.1節）と、それに伴う優先基底の問題（2.5.2節）を考え直そう。上の考察に従えば、この相互作用は、系と装置の組合せに対し、環境とのもつれが最も小さい、優先指針状態を選ぶ。環境との相互作用が$\lvert s_i\rangle\lvert a_i\rangle$の非破壊測定の形なら、式(2.52)の右辺の状態$\lvert s_i\rangle\lvert a_i\rangle$が、その条件を満たす\footnote{二つの部分系、たとえば$\mathcal S$と$\mathcal A$については、終状態の対角分解$\sum_n c_n\lvert s_n\rangle\lvert a_n\rangle$が必ず存在する（2.15.1節）が、三つの部分系、たとえば$\mathcal S$、$\mathcal A$、$\mathcal E$については、$\sum_n c_n\lvert s_n\rangle\lvert a_n\rangle\lvert e_n\rangle$の形の分解が、常に可能ではないことに注意しよう。このことは、式(2.84)のような時間発展を生む全Hamiltonianが、特別な形でなければならないことを意味する。発展演算子の形のこの制約と、それによって実験的証拠との不一致が生じる可能性へのコメントは、文献\cite{ref064}を参照。}。
+\begin{equation}\lvert s_i\rangle\lvert a_i\rangle\lvert E_0\rangle\longrightarrow\lvert s_i\rangle\lvert a_i\rangle\lvert E_i\rangle\qquad(\text{すべての }i).\tag{2.84}\end{equation}
+簡単のため、環境は、通常巨視的な装置と主に直接相互作用し、しばしば微視的な系との相互作用は、ごく小さいと仮定してよい。その場合、式(2.84)は、装置の異なる指針位置を記述する状態$\lvert a_i\rangle$が、環境によって超選択される頑健な優先状態であることを意味する。これも、Zurekの指針状態という用語の、直接的な動機の一つである。それに応じて、系と装置の力学の形は、環境と相互作用する装置によって測定できる系の状態、すなわち、力学的に安定した系と装置の量子的相関を形成することによって、確実に記録できる状態を選ぶ\cite{ref008,ref009}。
+
+この問題は、式(2.84)が、環境との相互作用が、系の状態$\lvert s_i\rangle$と対応する装置状態$\lvert a_i\rangle$の間に確立された量子的相関を乱さない、という要請に対応することに気付けば、少し違う角度からも見られる。この基準は、Zurek\cite{ref008}が初めて提案して調べた。これは「忠実な測定」の概念を、環境を含む現実的な場合に一般化したものと見なせる。
+
+% 原文 p.76
+\hypertarget{srcpage:76}{}\label{srcpage:76}
+通常の意味での忠実な測定は、測定装置が系の状態の信頼できる「鏡」として働き、$\lvert s_i\rangle\lvert a_i\rangle$の形の相関だけを作り、$i\ne j$である$\lvert s_i\rangle\lvert a_j\rangle$を作らないという要請に関わる。しかし、現実の測定過程には、装置と環境との不可避の結合を含めなければならないため、環境との相互作用が、系と装置の相関を乱すなら、測定全体を忠実と見なすことは、ほとんどできない\footnote{大域的な保存量と可換でない演算子のvon Neumann測定の精度に関する、根本的な限界については、Wigner--Araki--Yanase定理\cite{ref087,ref088}を参照。}。実際、系の状態の頑健かつ忠実な「指標」として働く装置の能力は、測定装置の定義そのものである。したがってvon Neumann方式に環境誘起超選択を適用すると、なぜ測定装置は、他の量ではなく、特定の物理量だけを測定するように設計されているように見えるかを説明できる。
+
+明示的な装置なしに、系が環境と相互作用する場合に戻ろう。これまでは、実効的な系と環境の力学を、式(2.78)のようにvon Neumannの形で直接書く、簡単化した理想的な状況を考えてきた。これによって、系の優先状態を直ちに推論できた。しかし一般には、系と環境の内在的力学、および系と環境の間の相互作用を記述する、全Hamiltonian$\hat H$が単に与えられる。通常、この全Hamiltonianは、関係する三つの部分に分けられる。
+\begin{equation}\hat H=\hat H_{\mathcal S}+\hat H_{\mathcal E}+\hat H_{\mathrm{int}}.\tag{2.85}\end{equation}
+ここで$\hat H_{\mathcal S}$、$\hat H_{\mathcal E}$は、内在的力学を表す系と環境の自己Hamiltonianであり、$\hat H_{\mathrm{int}}$は、系と環境の相互作用Hamiltonianである。
+
+いま、重要な問いを提起できる。系と環境の模型を定義する任意の全Hamiltonianが与えられたとき、系の指針状態をどう決めればよいか。もちろん一般的な選択基準は変わらない。優先される指針状態の集合は、環境の影響に対して最も頑健な系の状態の集合に対応する。しかし、どの状態がこの要請を満たすかを、どう見いだせばよいのだろうか。この問題を以下で論じる。

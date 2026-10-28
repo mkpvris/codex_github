@@ -1,0 +1,46 @@
+314     7 Decoherence and Quantum Computing
+
+ronmental interaction. Accordingly, we must “erase” any error information
+stored in the ancilla qubits (i.e., we must in turn couple the ancilla to some
+other sink for entropy) before we can reuse the ancilla in a subsequent cycle
+of error correction.
+    Our above scheme for quantum error correction has been highly ideal-
+ized. In particular, three issues will make it challenging to implement this
+scheme in practice. First, as we shall discuss in Sect. 7.4.4 below, it is im-
+possible to design an interaction between the computational qubits and the
+ancilla that would allow us to distinguish between all possible errors through
+a measurement of the ancilla. Second, in realistic settings the error opera-
+tors Êi may be very complex, and it remains to be seen whether and how
+the corresponding countertransformations (whose physical implementation
+will require interactions of the computational qubits with some macroscopic
+device) can be applied to the quantum computer without introducing signif-
+icant further decoherence. Third, the ancilla qubits are physically similar to
+the computational qubits and can therefore be expected to be equally prone
+to environmental interactions (and thus decoherence) as the computational
+qubits themselves. Such eﬀective measurements of the ancilla qubits by the
+environment would then compromise the proper functioning of the quan-
+tum error-correction scheme. Since the inclusion of ancilla qubits increases
+the total number of qubits in the quantum computer, and since decoherence
+rates typically scale exponentially with the size of the system, it will require
+sophisticated experimental designs to ensure not only that quantum error
+correction works in practice, but also that it does not unintentionally make
+the problem of qubit decoherence even worse.
+
+7.4.4 When Does an Error-Correcting Code Exist?
+
+To keep the above outline of the basic principles of quantum error correction
+as simple as possible, we have assumed [see (7.31)] that there exists a unitary
+transformation acting on the Hilbert space of the composite ancilla–qubit
+system that leads to a correlated ancilla–qubit–environment state in such a
+way that the relative ancilla states |ai  are all distinguishable and correspond
+to the diﬀerent error types Êi , i.e., ai |aj  ≈ δij for two diﬀerent errors
+Êi = Êj . However, we did not elaborate at all on the question of how to
+show that this transformation exists and of how to determine it.
+    In fact, this question is at the heart of quantum error correction. It turns
+out that it is usually impossible to ﬁnd a transformation that would account
+for all possible errors Êi that may in principle occur. Instead, the typical scope
+of a scheme for quantum error correction is restricted to transformations of
+the form (7.31) that can distinguish all errors Êi up to a certain weight
+t < N . Furthermore, error-correcting codes are usually not able to recover
+arbitrary initial qubit states, but only those states contained in a certain
+subspace Hcode of the total Hilbert space HS of the qubit system. (The

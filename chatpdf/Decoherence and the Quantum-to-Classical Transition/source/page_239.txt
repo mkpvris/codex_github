@@ -1,0 +1,53 @@
+                                                     5.4 Spin-Environment Models       225
+
+can be written as
+                                     N
+                                    2 −1     &                '
+                        |Ψ (t) =           cn Ûn (t) |ψS (0) |n ,               (5.157)
+                                    n=0
+
+and thus
+                                             N
+                                            2 −1
+                                                    |cn | Ûn (t)ρ̂S (0)Ûn† (t),
+                                                        2
+        ρ̂S (t) = TrE |Ψ (t)Ψ (t)| =                                              (5.158)
+                                             n=0
+
+where ρ̂S (0) = |ψS (0)ψS (0)|. Here Ûn (t) is the system evolution operator
+corresponding to the eﬀective Hamiltonian (5.155). This operator is given
+by [118]
+                                                       
+                                     i           1
+          Ûn (t) = Iˆ cos (Ωn t) −      n σ̂z − Δ0 σ̂x sin (Ωn t) ,   (5.159)
+                                    Ωn           2
+               +
+with Ωn = 2n + Δ20 /4.
+    Following the approach of [118], let us now formally express the reduced
+density matrix ρ̂S (t) in terms of the so-called polarization vector p(t) ≡
+(px (t), py (t), pz (t)) as
+              1 ˆ             1                                       
+  ρ̂S (t) =      I + p(t) · σ̂ =   Iˆ + px (t)σ̂x + py (t)σ̂y + pz (t)σ̂z .         (5.160)
+              2                  2
+We can interpret p as follows. Broadly speaking, the direction of p tells us into
+what set of eigenstates the density matrix (5.160) decomposes. For example,
+if px = py = 0,                                  
+                                1 1 + pz     0
+                          ρ̂S =                     ,                    (5.161)
+                                2     0    1 − pz
+and thus the eigenstates of ρ̂S are given by the eigenstates |0 and |1 of σ̂z .
+On the other hand, if py = pz = 0,
+                                             
+                                    1 1 px
+                              ρ̂S =             ,                      (5.162)
+                                    2 px 1
+and the eigenstates of this density matrix are the eigenstates of σ̂x .
+    The dominating component of the polarization vector p(t −→ ∞) will
+tell us in which “direction” (i.e., in which basis) the decoherence process is
+most eﬀective. Thus the polarization-vector description allows for an intuitive
+analysis of the preferred pointer basis arising in our model. For example, if
+px (t) and py (t) tend toward zero while pz (t) approaches a ﬁnite asymptotic
+value, we can conclude that the eigenbasis {|0 , |1} of σ̂z is the pointer basis
+of the system.
+    Therefore our next goal will be to calculate the components px (t), py (t),
+and pz (t) of the polarization vector corresponding to the reduced density

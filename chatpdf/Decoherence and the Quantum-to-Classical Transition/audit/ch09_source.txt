@@ -1,0 +1,913 @@
+9 Observations, the Quantum Brain,
+and Decoherence
+
+
+
+
+Biological systems are rarely analyzed in quantum-mechanical terms. The
+enormous complexity of such systems makes a quantum-mechanical treat-
+ment essentially impossible. Furthermore, structures in biological systems
+are typically embedded into aqueous environments at room temperatures. It
+is therefore reasonable to expect that such systems will be subject to very
+strong decoherence, which will eﬀectively suppress any quantum-coherent be-
+havior. At the same time, if we expect quantum mechanics to be valid on all
+scales, the behavior of biological structures will be governed by the laws of
+quantum mechanics.
+    In this context, the brain is a biological system of particular interest. It
+constitutes the central organ that processes our perceptions. It is clear that
+every empirically relevant statement of a physical theory must be related to
+precisely these perceptions. Therefore, in trying to explain our observations
+based on what is predicted by the theory, we may need to give an account of
+the role of the system that delivers these perceptions to us, namely, the brain.
+Furthermore, as we shall outline below, historically the related question of
+the role of “consciousness” in quantum theory arose, including proposals that
+consciousness may induce a collapse of the wave function.
+    In this chapter, after a few introductory remarks on the general prob-
+lem of observation in quantum mechanics (Sect. 9.1), in Sect. 9.2 we will
+explicitly include the observer in the von Neumann measurement scheme
+(see Sect. 2.5.1) and discuss the resulting consequences. We will then focus
+on the quantum-mechanical brain (Sect. 9.3). We will describe some explicit
+modeling studies of the decoherence properties of neuronal (and other) su-
+perposition states in the brain, which have resulted in explicit numerical
+estimates for the relevant decoherence timescales. In Sect. 9.4, we shall also
+brieﬂy discuss the implications of these results for “subjective” resolutions of
+the measurement problem.
+
+
+9.1 The Role of the Observer in Quantum Mechanics
+The role of the observer in quantum mechanics has been at the heart of many
+foundational disputes reaching back to the early days of the theory. Recall
+that a peculiar feature of quantum mechanics is the fact that, in contrast with
+360      9 Observations, the Quantum Brain, and Decoherence
+
+classical physics, states are inherently fragile (see Sect. 2.1). The measurement
+of a particular physical quantity will in general perturb the quantum state of
+the system and thus the outcome of a subsequent measurement of a diﬀerent
+quantity represented by a noncommuting observable.
+    It thus seems that the physical state of the system “is” what the observer
+chooses to measure. This feature introduces a ﬂavor of “subjectivity” into
+our description of nature that is rather unknown in the classical theories.
+Therefore observations, and consequently observers, seem to play a much
+more fundamental role in quantum mechanics than in classical physics. We
+already quoted Heisenberg’s radical statement (see p. 19) that “the particle
+trajectory is created by our act of observing it” [42, p. 185]. In this positivist
+view (which is most apparent in Bohr’s writings), the entire formalism of
+quantum mechanics constitutes, in essence, a recipe for predicting what the
+observer will ﬁnd if a measurement was to be performed, but it does not
+make any ontological claims as to “what is really out there.” In fact, any
+statements about the physical state of the system prior to measurement are
+deemed meaningless by the Copenhagen interpretation.
+    Even the many people who subscribe to some variant of the Copenhagen
+interpretation when dealing with practical issues of experimental physics still
+maintain a belief in the existence of an observer-independent physical reality
+that quantum mechanics ought to refer to. The overarching question is then
+how to reconcile the lesson learned from quantum mechanics—that physical
+systems cannot, in general, be assigned an exhaustive set of premeasurement
+values of physical quantities—with our intuitively felt need for an “objectively
+existing” world around us to which we wish the theory to pertain in some
+way.
+    At the same time, we are also forced to carefully examine notions that we
+have come to regard as objective and thus as a required part of a physical
+theory, despite the fact that they might simply be artifacts of our subjective
+perception. Von Neumann [60, Chap. VI] reminded us that
+      experience makes assertions only of the kind “an observer has made a
+      particular (subjective) observation,” but never of the kind “a certain
+      physical quantity has a particular value.”1
+Similarly, d’Espagnat [496, pp. 134–135] cautions us as follows:
+      The fact that we perceive such “things” as macroscopic objects lying
+      at distinct places is due, partly at least, to the structure of our sen-
+      sory and intellectual equipment. We should not, therefore, take it as
+      being part of the body of sure knowledge that we have to take into
+      account for deﬁning a quantum state. (. . . ) In fact, scientists most
+   1
+     The original German text reads: “Denn die Erfahrung macht nur Aussagen
+von diesem Typus: ein Beobachter hat eine bestimmte (subjektive) Wahrnehmung
+gemacht, und nie eine solche: eine physikalische Größe hat einen bestimmten
+Wert.”
+                  9.2 Quantum Observers and the Von Neumann Chain          361
+
+   rightly claim that the purpose of science is to describe human expe-
+   rience, not to describe “what really is”; and as long as we only want
+   to describe human experience, that is, as long as we are content with
+   being able to predict what will be observed in all possible circum-
+   stances (. . . ) we need not postulate the existence—in some absolute
+   sense—of unobserved (i.e., not yet observed) objects lying at deﬁnite
+   places in ordinary 3-dimensional space.
+Von Neumann and d’Espagnat therefore urge us to realize that the often
+deeply felt commitment to a general objective “deﬁniteness” is only based
+on our everyday experience of macroscopic systems. If it was possible for us
+to know, independently of our experience, that deﬁniteness in fact existed
+in nature, then subjective deﬁniteness would (presumably) be a consequence
+of the objective deﬁniteness once we have constructed a simple model which
+connects the “external” physical phenomena with our “internal” perceptual
+and cognitive apparatus. (Here we may justify the expected simplicity of such
+a model by referring to the presumed identity of the physical laws governing
+external and internal processes, an assumption von Neumann referred to
+as “psycho-physical parallelism” [60].) However, any knowledge is directly
+or indirectly based on our observations, and therefore there is no way of
+acquiring knowledge about the objective existence of deﬁniteness without
+rooting such knowledge in our (subjective) observation of deﬁniteness. At
+the same time, macroscopic interference and coherence phenomena clearly
+show the fuzziness of the boundary between the quantum world and the
+deﬁniteness observed at the level of our direct experience (see Chap. 6).
+    It may therefore indeed be reasonable to give up the demand that objec-
+tive deﬁniteness should be an a priori part of a satisfactory physical theory—
+provided, of course, the theory is able to account for all of our subjectively
+observed deﬁniteness in agreement with our experience. The corresponding
+“subjective” resolutions of the measurement problem have received an enor-
+mous boost from the theory of decoherence. In fact, decoherence makes many
+of these types of subjective approaches empirically viable in the ﬁrst place,
+because decoherence may allow us to derive deﬁniteness from the point of
+view of local observers without having to enforce deﬁniteness on the global
+level. We will discuss such strategies in more detail in Sect. 9.4 below.
+
+
+9.2 Quantum Observers and the Von Neumann Chain
+Instead of attributing a particular a priori role to measurements and ob-
+servers, as done in the Copenhagen interpretation (Sect. 8.1) and other inter-
+pretations of quantum mechanics, let us now take a diﬀerent viewpoint. We
+simply treat the observer as a quantum system interacting with the observed
+system. We may model this situation using the von Neumann measurement
+scheme discussed in Sect. 2.5.1, with the observer included as the ﬁnal link
+in the von Neumann chain of measurement interactions (Fig. 9.1).
+362       9 Observations, the Quantum Brain, and Decoherence
+
+
+
+                  system             apparatus           observer
+
+
+ Fig. 9.1. The von Neumann chain with the observer included as the last link.
+
+
+    Then, the quantum states of the observer corresponding to the observa-
+tion of the diﬀerent possible outcomes of the measurement become quantum-
+correlated with the corresponding relative states of the measurement appara-
+tus, which in turn is quantum-correlated with the diﬀerent components in the
+superposition state describing the system of interest. We may schematically
+express this measurement interaction in the usual von Neumann form as [see
+(2.54)]
+              
+     
+         cn |n |“apparatus ready” |“observer ready”
+      n
+           
+      −→        cn |n |“pointer at n” |“observer perceives outcome n” ,   (9.1)
+            n
+       
+where n cn |n is the state of the observed (measured) system. Thus the
+ﬁnal quantum state describing measurement in this formalism is an entan-
+gled system–apparatus–observer superposition state whose components cor-
+respond to the diﬀerent “outcomes” of the measurement.
+    However, the inclusion of the observer as in (9.1) does not terminate the
+von Neumann chain of interacting systems. The addition of further links
+to this chain—such as an environment, secondary apparatuses or observers,
+etc.—will again lead to a ﬁnal entangled state involving states corresponding
+to all possible outcomes, just as in (9.1). As long as the time evolution of
+the composite system that includes all these links is strictly unitary, there
+cannot be any change in the amount of information contained in this state
+(as measured, for example, by the purity or the von Neumann entropy, see
+Sect. 2.4.3), and the chain does not terminate. We are thus faced with a
+problem of inﬁnite regression.
+    This raises the fundamental question of how and when these diﬀerent
+correlated component states may reduce to the single measurement outcome
+actually experienced by the observer. The problem of whether, how, and
+where the von Neumann chain becomes terminated is of course, in essence,
+the problem of outcomes, which we have already discussed in several places
+in this book (see, for example, Sects. 2.5.4 and 8.1). Von Neumann himself
+was clearly aware of this problem. To him, the only sure fact was that we, as
+observers, always perceive deﬁnite outcomes at the conclusion of the measure-
+ment. Thus the theory must account for such deﬁnite perceptions at least at
+the level of the experience of the observer. The statistical predictions of quan-
+tum mechanics are insensitive to where exactly the Heisenberg cut is placed
+                    9.2 Quantum Observers and the Von Neumann Chain             363
+
+along the observational chain. Thus some form of wave-function collapse may
+be introduced at any stage between the apparatus and the observer. How-
+ever, only at the level of the observer an explanation of our perception of
+manifestly deﬁnite outcomes is actually forced out by the obvious empirical
+constraints.
+    In this spirit, von Neumann postulated a collapse of the wave function
+within the observer, which he referred to as the “ﬁrst intervention” (“er-
+ster Eingriﬀ ” in German).2 This approach stood in stark contrast to the
+Copenhagen interpretation (see Sect. 8.1). While in the latter the collapse
+of the wave function was only implicit in the assumption of the existence of
+intrinsically classical measurement devices that are not to be subjected to
+further quantum-mechanical analysis, von Neumann did not attribute any
+special role to the measurement devices themselves. However, unable to re-
+solve the problem of how to explain our perception of deﬁnite outcomes from
+his purely quantum-mechanical formalism of interacting quantum systems,
+he felt forced to uphold a fundamental quantum–classical boundary, albeit
+now pushed all the way toward the observer. We may say that von Neumann’s
+ambitious goal of providing a purely quantum-mechanical description of the
+measurement process was therefore cut short by his ad hoc introduction of a
+collapse at the level of the observer.
+    Von Neumann himself did not elaborate on the nature of the collapse
+in the observer, or on what distinguished observers from inanimate objects
+such as measurement devices. However, by placing the Heisenberg cut within
+the observer, a new door was opened, namely, the question of the role of
+“consciousness” in the quantum measurement process and in the (actual or
+just perceived) collapse of the wave function.
+    The approach of including rather vague terms such as “mind” and “con-
+sciousness” at a fundamental level of a physical theory surely runs counter to
+the traditional strategy of natural science in general, and physics in particu-
+lar. At the same time, the peculiar relevance of the observer in the quantum
+theory—the seemingly inevitable need to depart from the previously unques-
+tioned assumption of an observer-independent reality that is similar in struc-
+ture to the world directly observed by us—seems to have reintroduced the
+idea of attributing a distinct (physical) role to the mind of the observer.
+    Even the Copenhagen interpretation itself, and the positivist attitude
+embodied in it, implicitly assigns relevance to the concept of a “mind” by
+regarding quantum mechanics essentially as a set of statements that obtain
+physical meaning only in the context of veriﬁcation (i.e., measurements) by
+an observer. As discussed by d’Espagnat [497], by referring not to what “is”
+but only to what can be “found out” by the observer, the observer’s mind
+(that veriﬁes, ﬁnds out, etc.) constitutes a primitive notion which is prior to
+
+   2
+     Interestingly, the unitary Schrödinger evolution governing the interaction be-
+tween the system, the apparatus, and the observer was referred to as the “second
+intervention.”
+364    9 Observations, the Quantum Brain, and Decoherence
+
+that of scientiﬁc reality. Yet, terms such as “mind” and “consciousness” were
+not an explicit part of the Copenhagen interpretation, and the basic intuition
+that the knowledge obtained by the observer nonetheless must refer to some
+underlying physical reality was not truly relinquished by the proponents of
+this interpretation.
+    A famous (albeit only temporary) supporter of the idea that conscious-
+ness plays a fundamental role in the quantum measurement process was Eu-
+gene Wigner. His motivation was grounded in a Gedankenexperiment that
+he devised in the early 1960s and that has since become known as the prob-
+lem of Wigner’s friend [498]. This thought experiment is a variation of the
+Schrödinger-cat setup. The poison is replaced by a measuring device that
+emits a ﬂash of light when the unstable atom decays, and—crucially—the
+cat is substituted by a human observer, referred to as “Wigner’s friend.” Let
+us call the external observer in the original Schrödinger-cat scenario “Wigner”
+to distinguish him from his friend.
+    Thus our setup now contains two human observers: An “inside” ob-
+server (Wigner’s friend) whose measurement-type interaction with the atom–
+apparatus system is described quantum-mechanically within the von Neu-
+mann scheme, and an “outside” observer (Wigner himself) that later inquires
+about the result of this interaction. The box of the original cat scenario (hous-
+ing the cat together with the unstable atom and the poison) corresponds
+here to the laboratory room containing the atom, the measuring device, and
+Wigner’s friend. Wigner waits outside of the room for some period of time,
+during which the combined state of the atom, apparatus, and Wigner’s friend
+evolves into the usual cat-type superposition. We may schematically express
+this evolution in the form
+  (α |“atom not decayed” + β |“atom decayed”)
+       ⊗ |“device ready” |“observer ready”
+    −→ α |“atom not decayed” |“no ﬂash emitted” |“no ﬂash observed”
+         + β |“atom decayed” |“ﬂash emitted” |“ﬂash observed” .         (9.2)
+Wigner then enters the room to inquire about the outcome of the experiment.
+He asks his friend whether she has seen a ﬂash of light or not. The friend,
+evidently, will answer that she either has or has not observed the ﬂash. De-
+pending on the answer, Wigner would conclude that, from his perspective,
+the cat state describing the combined atom–apparatus–friend system has col-
+lapsed onto either one of its two components on the right-hand side of (9.2).
+But what would Wigner’s friend say if Wigner asked her about her experience
+regarding the ﬂash of light before he had entered the laboratory and asked
+the ﬁrst question?
+   In essence, just as in the case of the Schrödinger-cat scenario, the overar-
+ching issue brought out by the example of Wigner’s friend is the question of
+when and where the collapse-inducing measurement takes place. In the case
+of Wigner’s friend, however, the diﬀerence—and in Wigner’s thinking, the
+   9.3 Decoherence in the Brain:   The Brain as a Quantum Computer?        365
+
+crucial diﬀerence—to the Schrödinger-cat paradox is that the superposition
+involves a conscious observer who should be able to provide a verbal state-
+ment to Wigner (after he has entered the room) about her experience before
+Wigner had gone into the laboratory and had asked her about whether or
+not she has seen the ﬂash of light.
+    Wigner himself believed that the superposition of two distinct “states
+of consciousness” in (9.2)—one corresponding to the observation of a ﬂash,
+the other to the failure to observe a ﬂash—would need to be regarded as
+absurd. In his opinion, the conscious observer must always be in only one of
+these states [498]. This belief led him to conclude that conscious observations
+cannot be described by the standard linear quantum formalism as in (9.2), i.e.,
+that consciousness must be fundamentally diﬀerent from material objects, in
+the sense that it breaks the unitary evolution and induces a collapse of the
+wave function onto a deﬁnite state of the conscious observer.
+    From a purely empirical point of view, a strong counterargument to the
+conclusiveness of Wigner’s reasoning is that superpositions of diﬀerent states
+of consciousness do not necessarily need to be regarded as absurd and thus
+be excluded, as long as these states do not interfere in any way, i.e., as long
+these diﬀerent “quantum versions” of the conscious observer are not “aware”
+of each other. Decoherence would inevitably also aﬀect the conscious observer,
+and thus we may conjecture that it would be impossible to empirically conﬁrm
+the existence of the diﬀerent “branches of consciousness” in (9.2) from the
+“inside view” of the observer. We will discuss this point in more detail in
+Sect. 9.4. In fact, Wigner later abandoned [499] his views on the special role
+of consciousness in quantum measurement once he became aware of Zeh’s
+paper of 1970 [4], which had introduced some of the basic ideas underlying
+the decoherence program.
+
+
+9.3 Decoherence in the Brain:
+The Brain as a Quantum Computer?
+The brain comprises an astonishingly complex network of O(1011 ) neurons
+interconnected via O(1014 ) synapses. There are convincing arguments that
+the memory capabilities and dynamical interactions of this neuronal network
+are the physiological core for the storing and processing of our sensory input.
+It is not unreasonable to conjecture that ultimately all cognitive processes,
+including our perception of “consciousness,” can be reduced to neuronal ac-
+tivity. Researchers in neurobiology and biophysics typically model the brain
+in completely classical terms as a massively parallel interconnected web of
+on–oﬀ “switches” (nodes) [500–502]. Each such node represents a single neu-
+ron and is turned on or oﬀ (corresponding to, respectively, the ﬁring and
+resting state of a neuron) depending on a particular, often nonlinear, acti-
+vation function. For obvious reasons, such models are usually referred to as
+artiﬁcial neuronal networks.
+366      9 Observations, the Quantum Brain, and Decoherence
+
+     Broadly speaking, the brain is thus modeled as a classical computer. One
+of the surprising insights that has been gained from such modeling studies
+is that even relatively simple networks, based on a fairly small number of
+nodes and on only very few rules for the activation of each node, can yield
+an astonishingly complex behavior, not dissimilar to that observed in simple
+cognitive processes. Yet, despite the success of such classical models, the ques-
+tion of whether quantum eﬀects may play an important role in our cognitive
+apparatus has been discussed in at least two respects.
+     First, quantum “uncertainties” and the apparent indeterminism of quan-
+tum mechanics have sometimes been invoked to evade the strict determinism
+mandated by classical physics and to restore a notion of “free will.” Such
+a strategy, however, is fundamentally ﬂawed. Any quantum “uncertainties”
+would represent wholly uncontrollable eﬀects, completely diﬀerent from our
+understanding of the concept of “free will,” which is based on our feeling of
+being able to actively control and decide our actions. For the same reason,
+the fact that quantum mechanics only predicts probabilities for measurement
+outcomes and thus seems to reintroduce indeterminism into the description
+of the physical world cannot be used to infer the existence of a free will. Once
+again, any actions triggered by such “quantum randomness” would not be
+controllable by the individual claimed to possess free will. Thus, if anything,
+invoking quantum theory in these ways renders the old “problem of free will”
+(if there is any problem at all) even more severe.3 Finally, we should also note
+that synaptic transmissions in the brain have a fairly high failure rate due to
+the complexity of the underlying biological processes [504]. This inevitably
+leads to a rather high degree of unpredictability on the “everyday level.”
+Any such purely functional unpredictabilities will presumably be far more
+signiﬁcant than any quantum-uncertainty eﬀects. Therefore the view of the
+brain as a deterministic classical computer with a predictable input/output
+pattern should in fact not be taken too literally.
+   3
+     On the subject of free will, Einstein once said in his thoughtful Credo of 1932
+[503]:
+      I do not believe in free will. Schopenhauer’s words: “Man can do what he
+      wants, but he cannot will what he wills,” accompany me in all situations
+      throughout my life and reconcile me with the actions of others, even if they
+      are rather painful to me. This awareness of the lack of free will keeps me
+      from taking myself and my fellow men too seriously as acting and deciding
+      individuals, and from losing my temper.
+      (The original text reads: “Ich glaube nicht an die Freiheit des Willens.
+      Schopenhauers Wort: “Der Mensch kann wohl tun, was er will, aber er
+      kann nicht wollen, was er will”, begleitet mich in allen Lebenslagen und
+      versöhnt mich mit den Handlungen der Menschen, auch wenn sie mir recht
+      schmerzlich sind. Diese Erkenntnis von der Unfreiheit des Willens schützt
+      mich davor, mich selbst und die Mitmenschen als handelnde und urteilende
+      Individuen allzu ernst zu nehmen und den guten Humor zu verlieren.”)
+   9.3 Decoherence in the Brain:   The Brain as a Quantum Computer?        367
+
+    Beyond this “naı̈ve” application of quantum theory to the brain lies the
+realm of suggestions that the complexity of human cognitive processes gener-
+ated by the brain may be explainable only if the brain is capable of acting as
+a quantum computer. In other words, such proposals are based on the idea
+that at least part of the abilities of the brain may be due to the presence and
+manipulation of quantum-coherent superposition states of the usual classi-
+cal states in the brain (such as the resting and ﬁring states of a neuron, for
+example). If this was true, it would follow that classical artiﬁcial neuronal
+networks would be intrinsically insuﬃcient to fully simulate the brain.
+    In particular, the question of whether human consciousness may be linked
+to quantum-coherent processes has frequently been discussed. In the previ-
+ous Sect. 9.2, we have already alluded to a related but opposite-directed
+concept, namely, Wigner’s early speculation [498] that the collapse of the
+wave function may be precipitated by the action of consciousness. There,
+consciousness was invoked to eﬀectively destroy the quantum coherence em-
+bodied in the global entangled state (9.1) produced by the von Neumann
+chain of measurement-type interactions. Now, the direction of the problem is
+reversed: May quantum coherence be associated with the emergence of con-
+sciousness? In this context, various macroscopic quantum-coherent processes
+have been suggested as the origin of consciousness (see, e.g., [505–511]). Most
+prominently, Penrose [473] and others [512–514] have suggested that so-called
+microtubules in the brain—dynamically active structures that are a dominant
+part of the cytoskeleton (i.e., of the internal scaﬀolding of cells)—may have
+suﬃciently long decoherence times to allow for quantum computations, and,
+moreover, that such computations could be associated with the emergence of
+consciousness (see Sect. 9.3.2 below).
+    Quite independently of issues concerning the rather vague notion of con-
+sciousness and its potential role in a fundamental theory of physics, the
+obvious overarching question that we shall now discuss is then the follow-
+ing. Could the relevant structures in the brain—most notably, neurons and
+microtubules—sustain quantum coherence long enough to allow for quan-
+tum computations in the brain to be carried out? Based on our discussion
+of decoherence in the previous chapters of this book, we would expect that
+such decoherence times would be extremely short. After all, neurons and mi-
+crotubules, while small on a biological scale, are still macroscopic and very
+complex objects on the typical scales considered in quantum physics. A state
+of, say, a neuron being in a superposition of ﬁring and resting would fall
+clearly into the category of superpositions of macroscopically distinct states
+(see below). Furthermore, these structures are embedded into a macroscopic
+“warm and wet” environment and interact strongly with this environment.
+    Our intuition regarding the shortness of decoherence times has been sup-
+ported by quantitative results reported by Tegmark in 2000 [515]. Tegmark
+considered models for the interaction of neurons and microtubules with their
+natural environment within the brain and presented order-of-magnitude esti-
+368      9 Observations, the Quantum Brain, and Decoherence
+
+mates for the resulting decoherence timescales of superposition states in these
+structures. We shall describe these results in the following Sects. 9.3.1 (de-
+coherence in neurons) and 9.3.2 (decoherence in microtubules). Implications
+of these results for “subjective” resolutions of the measurement problem will
+be discussed in Sect. 9.4.
+
+9.3.1 Decoherence Timescales for Superposition States in Neurons
+
+Let us ﬁrst discuss the case of neuronal decoherence as considered by Tegmark
+[515]. The neuron’s key component of interest is here the so-called axon, which
+can be thought of as a long hollow tube with a diameter of about d ≈ 10 μm
+(Fig. 9.2). Most of the wall of the axon is coated with myelin, which acts as an
+insulator. However, there are narrow bands (several nanometers wide) along
+the axon where this insulation is absent, creating patches of semipermeable
+membrane (with a thickness of about h ≈ 10 nm) that allow for the exchange
+of ions between the inside of the axon and the aqueous medium surrounding
+the axon. The ﬁring of a neuron is represented by a very rapid ﬂux of sodium
+ions from the surroundings through these membrane patches into the inside
+of the axon, mediated by voltage-gated sodium channels located inside the
+membrane. This ﬁring propagates along the axon at high speeds (up to 100
+m/s), causing the sodium channels in every patch to open. The inﬂux of ions
+only last for about one millisecond, after which the sodium channels close up
+again, and the neuron returns to its resting state. Using parameters typical
+for neurons found in the central nervous system, Tegmark estimated that a
+total of O(106 ) sodium ions traverse the entire length of the axon membrane
+(combining the contributions from all individual patches) during ﬁring.
+    This means that during ﬁring there are on the order of N = 106 more
+sodium ions in the interior of the axon than during resting (see Fig. 9.3). Thus
+
+                          myelin        semipermeable
+                        insulation        membrane
+
+      dendrites
+                                                  d ≈ 10 μm
+                                                               bouton (foot)
+
+
+                                        axon
+
+                  nucleus (cell body)
+
+Fig. 9.2. Schematic illustration of a neuron. A segment of the axon is magniﬁed
+for clariﬁcation. For the most part, the axon wall is covered with myelin, which
+insulates the inside of the axon from the surrounding medium. Small band-shaped
+areas, however, lack this insulation, and ions can traverse through the resulting
+semipermeable membrane.
+   9.3 Decoherence in the Brain:         The Brain as a Quantum Computer?        369
+
+
+    axon             voltage-sensitive                            voltage-sensitive
+  membrane             gate (closed)                                gate (open)
+
+
+
+
+                                sodium
+         h                        ions
+inside           outside                       inside         outside
+Fig. 9.3. Illustration of the resting (left) and ﬁring (right) states of a neuron. In
+the ﬁring state, O(106 ) more sodium ions are present on the inside of the axon than
+in the resting state.
+
+
+a superposition of ﬁring and resting states corresponds to a superposition of
+the two states describing a collection of O(N ) sodium atoms located on the
+inside and outside, respectively, of the axon. In other words, we deal with a
+system composed of O(N ) sodium atoms and described by a superposition
+of two center-of-mass positions a distance O(h) apart.
+    Tegmark then studied three types of environmental interactions by which
+the neuronal superposition will lose coherence, namely, collisions of the
+sodium atoms with other nearby sodium (and potassium) ions, collisions with
+surrounding water molecules, and electrostatic (Coulomb) interactions with
+distant ions. All three cases can be treated using the theory for scattering-
+induced decoherence described in Chap. 3.4 Let us brieﬂy sketch the reason-
+ing for the ﬁrst two cases of ion–ion and ion–water collisions. The thermal
+de Broglie wavelength (2.114) of a sodium (or potassium) ion and of a water
+molecule at T = 310 K (i.e., at human body temperature) are of similar
+magnitude, namely, λdB ≈ 0.03 nm. This value is much smaller than the
+coherent spatial separation h ≈ 10 nm. This means that such an ion or water
+molecule, acting as a scattered environmental particle, can perfectly resolve
+the separation h. We are therefore entirely within the short-wavelength limit
+discussed in Sect. 3.3.1.
+    4
+      Note that the model developed in Chap. 3 is based on the assumption that the
+momentum change of the scatterer, i.e., of the system of interest, is much smaller
+than the momentum change of the scattered environmental particles, such that
+recoil of the object can be neglected. Strictly speaking, this approximation does not
+hold in our case, since the mass of the scatterer (the sodium ion) is similar to the
+mass of the environmental particle (a sodium or potassium ion, or a water molecule).
+The following numerical estimates should therefore not be taken too literally. On
+the other hand, for the present purpose, we shall be content with a few crude
+estimates. Even if the correct values deviated by several orders of magnitude from
+our estimates, the general conclusion of extremely short decoherence timescales for
+such neuronal superposition states, relative to the timescales relevant to biological
+and cognitive processes, will remain unaﬀected.
+370    9 Observations, the Quantum Brain, and Decoherence
+
+    In this limit of maximum decoherence, we have shown that the rate of de-
+cay of the oﬀ-diagonal elements of the position-space reduced density matrix
+of the system saturates at a value set by the total scattering rate Γtot [see
+(3.48)],
+                         ρ(x, x , t) = ρ(x, x , 0)e−Γtot t .          (9.3)
+For a single sodium ion in a superposition of being located on the inside
+and outside of the axon, and using the cross section for Coulomb scattering,
+Tegmark estimated Γtot ≈ 1014 s−1 for collisions with sodium and potassium
+ions, and roughly the same value for the scattering of water molecules. The
+decoherence timescale τd for the spatial superposition involving N = 106 ions
+is then estimated to be on the order of
+                                            −1
+                           τd = (N Γtot )        ≈ 10−20 s.                     (9.4)
+
+For the third case of decoherence due to Coulomb interactions with more
+distant ions, Tegmark employed a similar scattering model. Without going
+into the details here, the resulting estimate for the typical timescale for de-
+coherence of the neuronal superposition turns out to be very similar to that
+of (9.4), namely, τd ≈ 10−19 s. All values are summarized in Table 9.1.
+    How do these values compare to the timescales relevant to biological and
+cognitive processes in the brain? The duration of a single ﬁring is on the
+order of 10−3 s, which is thus many orders of magnitude larger than τd .
+We thus conclude that the process of ﬁring itself is eﬀectively classical by
+virtue of decoherence. Tegmark estimated the timescale for typical cognitive
+processes—such as deliberate actions, thoughts, speech, motor response to
+external stimuli, etc.—to be around 10−2 –100 s, which certainly seems rea-
+sonable in light of our own experience and of general experimental evidence
+from neurophysiology. It is clear that such timescales massively exceed the
+decoherence times of 10−19 –10−20 s estimated for neuronal superpositions.
+We can therefore quite safely conclude that such superpositions cannot play
+a signiﬁcant role in the above examples of cognitive processes.
+    We can go even further and also use these results to arrive at insights
+about the aforementioned “quantum nature of consciousness” suggested by
+some authors. As we have pointed out, general evidence from neurobiology
+
+
+Table 9.1. Estimates of decoherence timescales (in seconds) for superpositions of
+ﬁring and resting neuronal states and of kink-like excitations in microtubules, as
+reported by Tegmark [515].
+
+       Object         Environment                       Decoherence timescale
+       Neuron         Sodium and potassium ions                10−20
+       Neuron         Water molecules                          10−20
+       Neuron         Distant ions                             10−19
+       Microtubule    Distant ions                             10−13
+   9.3 Decoherence in the Brain:    The Brain as a Quantum Computer?        371
+
+suggests that conscious perceptions are linked to certain neuronal patterns
+of resting and ﬁring in the brain. As argued by Tegmark [515], this would
+mean that consciousness cannot have the suggested quantum nature, for the
+following reason. Suppose that, at some fundamental level, the source of con-
+sciousness was indeed due to some subsystem of the brain with a suﬃciently
+long decoherence time, such that one may assume that quantum-coherent pro-
+cesses should be possible. However, to actually create the conscious percep-
+tion within the observer, this subsystem would need to continuously interact
+with the neuronal network. Since the neurons are in turn strongly coupled to
+their environment, these subsystem–neuron interactions would rapidly sup-
+press any quantum coherence within the subsystem, thus eﬀectively destroy-
+ing the proposed quantum nature of consciousness. This argument is quite
+independent of the precise form that such a quantum consciousness would
+take. It only requires the (quite well-motivated) assumption that diﬀerent
+conscious perceptions correspond to diﬀerent neuronal patterns of ﬁring and
+resting.
+    Finally, let us note that it is of course no coincidence that the relevant
+“computational” states of the neurons—i.e., the resting and ﬁring states—
+correspond to the most ubiquitous environment-superselected states in na-
+ture, namely, states that are localized in position space. These neuronal states
+can be identiﬁed with “record states” that are capable of robustly encoding in-
+formation in spite of environmental interactions [67,104] (see also Zurek’s “ex-
+istential interpretation” outlined in Sect. 8.2.3). If the computational states
+of neurons corresponded to the spatial superpositions of resting and ﬁring,
+they would be subject to rapid scattering-induced decoherence and would
+therefore be hardly useful for encoding information in the brain.
+
+9.3.2 Decoherence Timescales for Superposition States
+in Microtubules
+
+Tegmark also estimated typical decoherence timescales for superposition
+states in microtubules. As mentioned on p. 367, it has been suggested that
+such microtubules may allow for quantum-coherent dynamics and may even
+be the “origin of human consciousness” [473,512–514]. Microtubules are a key
+component of neurons in the brain and also play important roles in various
+cellular processes. They take the shape of hollow cylinders with a diameter of
+about 24 nm and lengths on the order of micrometers to millimeters (Fig. 9.4).
+Each cylinder consists of a bundle of 13 individual so-called protoﬁlaments.
+Each such protoﬁlament is a linear row of tubulin dimers composed of the
+monomers α-tubulin and β-tubulin. The β subunit carries an extra 18 Ca2+
+ions, whereas an equal number of negative charges is located at the nearby
+α subunit. This gives the dimer an electric dipole moment of strength 36e.
+Along each protoﬁlament, the tubulin dimers align such that the α subunit
+of one dimer is in contact with the β subunit of the next dimer. Thus, from a
+physics point of view, protoﬁlaments are strings of tiny electric dipoles that
+372       9 Observations, the Quantum Brain, and Decoherence
+
+
+
+
+Fig. 9.4. Structure of a microtubule. The image shows a three-dimensional recon-
+struction based on data obtained from cryoelectron microscopy at a resolution of
+about 8 Å. Created by the Visualization Group of Ken Downing at the Lawrence
+Berkeley National Laboratory [516, 517].
+
+
+are bundled together in parallel so as to create a net electric dipole moment
+of the microtubule as a whole (Fig. 9.5).
+    The inside of each dimer contains a single delocalized electron which can
+be localized in either one of two hydrophobic pockets located toward the
+side of the α subunit and β subunit, respectively (Fig. 9.6). If the electron
+is localized toward the β subunit (referred to as the β state of the dimer),
+the dimer undergoes a conformational distortion of about 30 degrees from
+the vertical axis associated with the conformation in which the electron is
+
+
+                                                            ≈ 24 nm
+                                       −                   − − −
+
+                 α   −
+      p
+                                                                            p
+                β    +
+
+
+               ≈ 4 nm                  +
+                                                           + + +
+
+Fig. 9.5. Dipole moment of a microtubule. Left: Each tubulin dimer (composed of
+α and β monomers) acts as a miniature electric dipole. Middle: The protoﬁlaments
+are strings of such electric dipoles. Right: Since the protoﬁlaments bundle together
+in a parallel manner to form the microtubule, the latter possesses a dipole moment
+that is the sum of the dipole moments of the individual protoﬁlaments.
+   9.3 Decoherence in the Brain:          The Brain as a Quantum Computer?   373
+
+
+                                                     30o
+                               electron
+                    α                            α
+
+                                                               electron
+                    β                                  β
+
+
+     Fig. 9.6. The two conformational states α and β of the tubulin dimer.
+
+
+localized toward the α subunit (the α state of the dimer). Thus, the dimer can
+be described as an eﬀective two-state system, with basis states corresponding
+to the conformational states α and β. As a consequence of the distortion of
+the dimer, the direction of the electric dipole moment will be diﬀerent for
+the α and β states, and we can associate these two states with two distinct
+values pα and pβ of electric dipole moment along the axis of the microtubule.
+We may thus regard the protoﬁlaments as a set of interacting Ising spin- 12
+chains, where the spin states “up” and “down” now correspond to the two
+possible states α and β of electric dipole moment along the microtubule axis.
+    Certain processes, such as the supply of energy via a process of hydro-
+lysis, can induce a change between the conformational states α and β of
+a tubulin dimer located at one end of the microtubule [518]. Mediated by
+dipole–dipole interactions between the dimers, it has been suggested that the
+resulting change in the dipole moment associated with the dimer may then
+propagate rapidly along the axis of the microtubule (see Fig. 9.7). Sataric,
+Tuszynski, and Zakula [519] proposed a detailed theoretical model for such
+
+
+                    p(z)
+
+
+                                                                   z
+
+
+
+
+                           β     β    β      β        α    α   α
+Fig. 9.7. Model for kink-like excitations in microtubules. A change of the local
+dipole moment at one end of the microtubule, corresponding to a conformational
+switch between the states α and β of the tubulin dimer, travels along the axis of
+the microtubule, mediated by dipole–dipole interactions between the dimers. This
+results in kink-like excitations of the dipole moment p(z) along the axis of the
+microtubule, with these excitations propagating down the axis of the microtubule
+at high speeds. (For simplicity, we have associated the states α and β with equal
+but opposite values of the electric dipole moment along the microtubule axis.)
+374    9 Observations, the Quantum Brain, and Decoherence
+
+“kink-like” excitations (solitons) to describe the possibility of lossless energy
+transfer in microtubules.
+    Tegmark [515], focusing on this particular model, estimated typical deco-
+herence timescales for a superposition of two kink-like excitations separated
+by a distance of many dimers. He considered Coulomb interactions between
+the net charge at the location of the kink (taken to be equal to the total
+charge due to the 18 Ca2+ ions in the 13 β subunits contained in the “ring”
+of dimers formed by a cross section of the microtubule) with distant en-
+vironmental ions. The corresponding timescale τd for the decoherence of a
+superposition of two well-separated kinks was estimated using a Coulomb-
+scattering model similar to that employed in the modeling of decoherence of
+neuronal superpositions due to interactions with distant ions (see Sect. 9.3.1).
+Tegmark found a value of τd ≈ 10−13 s (see also Table 9.1). If we choose to
+identify the potential nature of quantum-coherent behavior of microtubules
+with this type of superposition, Tegmark’s numerical estimate quite clearly
+rules out the possibility that microtubules may exhibit quantum-coherent
+behavior akin to a quantum computer.
+    However, another possibility has been considered in (rather controver-
+sial) models developed by Penrose and Hameroﬀ [473, 512, 513]. Here, in-
+stead of the superpositions of spatially separated kink-like excitations stud-
+ied by Tegmark, the authors considered superpositions of the two conforma-
+tional states α and β of an individual tubulin dimer. Attempting to chal-
+lenge Tegmark’s claim that decoherence is too strong for microtubules to ex-
+hibit quantum-coherent dynamics, Hagan, Hameroﬀ, and Tuszynski [514] sug-
+gested that such conﬁgurational superpositions involving individual dimers
+would allow for decoherence times many orders of magnitude longer than the
+decoherence times for superpositions of solitons estimated by Tegmark.
+    To calculate the decoherence time of superpositions of the α and β states,
+Hagan, Hameroﬀ, and Tuszynski [514] used a model similar to that employed
+by Tegmark but applied it to the dipole moment of a single dimer. However,
+as pointed out by Rosa and Faber [520], once an unjustiﬁed approximation
+in the calculations presented in [514] is corrected, the resulting decoherence
+times are of similar magnitude as those originally given by Tegmark for su-
+perpositions of spatially separated kink-like excitations. Although not con-
+clusively ruling out the models of the Penrose–Hameroﬀ type, these estimates
+present a very serious challenge to such theories.
+    It is fair to say a majority of researchers now uphold the view that biolog-
+ical structures in the brain are most likely too prone to decoherence to allow
+for any quantum coherence to persist over timescales relevant to cognitive
+and conscious processes [521]. Therefore classical models of the brain remain
+largely unchallenged to date. Based on Tegmark’s numerical results and on
+general intuitions about decoherence on macroscopic scales, it is unlikely that
+this situation will change any time soon.
+              9.4 “Subjective” Resolutions of the Measurement Problem      375
+
+9.4 “Subjective” Resolutions
+of the Measurement Problem
+
+The ﬁnal state of the von Neumann chain (9.1) describes diﬀerent “men-
+tal states” of the observer (corresponding to the perception of the diﬀer-
+ent outcomes labeled by n) quantum-correlated with the relative states of
+the apparatus, system, etc. Approaches toward a subjective resolution of the
+measurement problem then try to explain how the observer’s perception of
+only a single one of these possible outcomes may arise, in spite of the per-
+sistence of coherence in the global state. In this case the “physical reality
+out there” (whatever it might be) may well continue to be exhaustively de-
+scribed by the global superposition state (9.1), without the (empirical) need
+to single out any of the component states. As we have discussed in Sect. 9.1,
+there is no fundamental reason that would prevent us from regarding such a
+subjective resolution of the measurement problem as satisfactory and suﬃ-
+cient, provided the theory is capable of correctly accounting for all possible
+observations (see also [1, 322, 496]).
+    We mentioned above that current scientiﬁc evidence suggests that most,
+if not all, cognitive activity—and thus, presumably, the “states of mind,” or
+“mental states” of an observer5 —can be associated with certain resting/ﬁring
+patterns of the network of neurons in the brain (see [504, 522] for more pre-
+cise deﬁnitions of the relationship between perceptions and the neuronal pat-
+terns). This would mean that, broadly speaking, each of the abstract states
+“observer perceives outcome n” on the right-hand side of (9.1) corresponds
+to a certain resting/ﬁring pattern of a collection of neurons. As we have seen
+above, superpositions of ﬁring and resting states will be rapidly decohered by
+the interaction with the environment. It is therefore reasonable to conclude
+that this decoherence will result in a practically irreversible dynamical de-
+coupling of the “branches” on the right-hand side of (9.1), which correspond
+to the distinct outcomes labeled by the index n.
+    One may now ask the question of why the robust neuronal pointer states
+(i.e., the resting and ﬁring states) become quantum-correlated precisely with
+the stable quasiclassical pointer states in the world around us, i.e., why the
+“outcome states” in (9.1) correspond to the familiar states of our experi-
+ence. For example, why does an environment-superselected resting or ﬁring
+state of a neuron get correlated with spatially well-localized states of macro-
+scopic objects, instead of with superpositions of macroscopically separated
+states? Apart from the obvious reason of a limited set of available interaction
+Hamiltonians and thus of a heavily constrained set of detectable observables,
+Zurek [13] has pointed out another important reason:
+
+
+   5
+    The frequent use of quotation marks in the following paragraphs inevitably
+reﬂects the rather vague nature of notions such as “mind,” “consciousness,” and
+“mental states.”
+376      9 Observations, the Quantum Brain, and Decoherence
+
+      Our senses did not evolve for the purpose of verifying quantum me-
+      chanics. Rather, they have developed in the process in which survival
+      of the ﬁttest played a central role. There is no evolutionary reason
+      for perception when nothing can be gained from prediction. And,
+      as the predictability sieve illustrates, only quantum states that are
+      robust in spite of decoherence, and hence, eﬀectively classical, have
+      predictable consequences. Indeed, classical reality can be regarded as
+      nearly synonymous with predictability.
+We also need to show that the branches deﬁned by the (objective) phys-
+ical interactions between the subsystems indeed correspond to the (subjec-
+tive) conscious experiences of the diﬀerent individual measurement outcomes.
+That is, we ought to demonstrate that the classical neuronal resting/ﬁring
+patterns associated with each individual branch indeed represent the rele-
+vant collective memory (or “record”) states in the brain associated with the
+conscious perception of the diﬀerent possible outcomes (corresponding to von
+Neumann’s aforementioned principle of a “psycho-physical parallelism” [60]).
+    Needless to say, quantum mechanics itself does not allow us to derive a
+relationship between subjective experience and its physical correlates. This
+fact has led some to the conclusion that the question of this connection can
+only be fully answered through the introduction of new physical laws [504].
+Other authors, such as Zeh [39, 523], have suggested that the empirical fact
+of decohering wave-function components in neuronal processes constitutes
+suﬃcient (if not compelling) grounds for postulating, within the quantum-
+mechanical formalism, the “existence of consciousness.” In this picture, dy-
+namically autonomous conscious observers are then associated with the ro-
+bust components of the global wave function of the type (9.1), with each
+of the components labeled by the decohered neuronal states corresponding
+to deﬁnite resting/ﬁring patterns. We thus obtain a multitude of classical
+“worlds” (deﬁned by the robust branches) within a single quantum universe
+(described by the unitarily evolving global quantum state vector).
+    Given this setting, it may indeed not be far-fetched to conclude that a
+multitude of such conscious perceptions of the observer can co-“exist,” while
+at the same time this co-“existence” could never be explicitly empirically
+conﬁrmed (which is why we have put the terms “exist” and “existence” in
+quotation marks). In view of this nonobservability, Zeh called the “existence”
+of diﬀerent conscious versions of the observer6 a “heuristic ﬁction” [523],
+since the “existence” of multiple branches representing diﬀerent conscious
+perceptions arises simply as a consequence of the assumption of universally
+valid unitary dynamics (together with a “realist” interpretation of the global
+quantum state).
+
+   6
+    Since the identity of an observer may be regarded as determined by the ob-
+server’s particular conscious perceptions, it may be diﬃcult to argue that this sit-
+uation would represent diﬀerent conscious versions of the same observer.
+               9.4 “Subjective” Resolutions of the Measurement Problem         377
+
+    The conjecture is then that, because the diﬀerent conscious versions of
+the observer would not be “aware” of each other, from the inside perspective
+of the observer one should be able to account for the empirically required
+perception of deﬁnite measurement outcomes, without relinquishing the as-
+sumption that quantum states describe (some form of) physical reality and
+that unitary dynamics is universally valid.
+    Not surprisingly, the resulting “many-minds” interpretation of quantum
+mechanics (e.g., [4, 5, 16, 39, 67, 104, 399, 523]; see also Sect. 8.2) sits uncom-
+fortably with many people. It is not so much a concern about the empirical
+adequacy (i.e., the possibility of experimental disproof) of such a view that
+creates the discomfort. After all, decoherence, together with an additional
+assumption about the connection between neuronal resting/ﬁring patterns
+and the emergence of our conscious perceptions (an assumption that in turn
+could ﬁnd its physical justiﬁcation in decoherence eﬀects), may indeed suﬃce
+to ensure the perception of deﬁnite outcomes at the level of the observer.
+    Rather, the discomfort with many-minds interpretations (as well as with
+“many-worlds” interpretations; see Sect. 8.2) is rooted in our feeling that
+such interpretations run counter to a deeply ingrained philosophical intuition
+of ours, namely, that the subjective observations of the world around us are
+a reasonably good mirror of the “objective external physical reality.” In the
+many-minds picture, the quantum universe described by the global quantum
+state would appear “to be” of a radically diﬀerent form than the observed
+structure of the world (given by a single “classical” branch deﬁned by the
+locality of observers and by decoherence processes), even though we would
+presumably never be able to empirically verify the “existence” of this global
+quantum universe. Of course, ultimately this amounts to a purely philosoph-
+ical discussion about the ontological status of the “other” (unobservable)
+branches. After all, terminology such as “physical reality” and “to be” can
+only refer to existence as conﬁrmed (or at least veriﬁable) by our subjective
+observations. Zeh [408] has put it as follows:
+    [A]fter an observation one need not necessarily conclude that only one
+    component now exists but only that only one component is observed.
+    (. . . ) Superposed world components describing the registration of dif-
+    ferent macroscopic properties by the “same” observer are dynamically
+    entirely independent of one another: they describe diﬀerent observers.
+    (. . . ) He who considers this conclusion of an indeterminism or split-
+    ting of the observer’s identity, derived from the Schrödinger equation
+    in the form of dynamically decoupling (“branching”) wave packets on
+    a fundamental global conﬁguration space, as unacceptable or “extrav-
+    agant” may instead dynamically formalize the superﬂuous hypothesis
+    of a disappearance of the “other” components by whatever method
+    he prefers, but he should be aware that he may thereby also create his
+    own problems: Any deviation from the global Schrödinger equation
+378      9 Observations, the Quantum Brain, and Decoherence
+
+      must in principle lead to observable eﬀects, and it should be recalled
+      that none have ever been discovered.
+Regardless of one’s personal interpretive preferences, one of the main take-
+home points of this section is the insight that decoherence constitutes the
+core mechanism for ensuring the empirical adequacy of interpretations such
+as the many-minds view (see also Sect. 8.2 on this issue). Indeed, without
+decoherence the many-minds (and many-worlds) interpretations would stand
+no chance. Decoherence, or, more precisely, the physical interactions between
+subsystems (including the observer) and the resulting entanglement, account
+for the emergence of locally preferred states, thus dynamically deﬁning the
+structure of the branching. Decoherence also ensures the nonobservability
+of interference eﬀects between these preferred states from the point of local
+observers, leading to eﬀectively independent (i.e., dynamically decoupled)
+“classical” branches.
+    The question of how exactly these branches (containing, among other
+things, certain patterns of neuronal states) may be linked to our actual con-
+scious experiences is of course inherently diﬃcult to answer, as it touches
+upon many aspects in the physical, chemical, biological, and psychological sci-
+ences. However, the important point is that, while the practical details of this
+modern “psycho-physical parallelism” are presently only poorly understood,
+decoherence provides the fundamental ingredients necessary to in principle
+describe observers and observations in a purely quantum-mechanical and em-
+pirically adequate manner. For example, the robust, temporally extended
+branches “created” by decoherence contain all of the essential properties as-
+sociated with observers, such as well-deﬁned stable measurement records that
+are correlated with the familiar determinate quantities of our experience and
+that are also redundantly imprinted in the environment. In contrast with the
+extraneous introduction of a collapse postulate, or with the assumption of the
+existence of intrinsically classical measurement devices or a collapse-inducing
+consciousness outside of the laws of quantum mechanics, this description is
+based solely on interacting physical systems governed by a universally valid
+quantum theory and is open to precise quantitative theoretical and experi-
+mental analysis.
+

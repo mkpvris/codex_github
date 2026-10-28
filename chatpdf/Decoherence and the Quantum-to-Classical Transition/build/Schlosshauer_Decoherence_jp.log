@@ -1,0 +1,3545 @@
+This is LuaHBTeX, Version 1.24.0 (TeX Live 2026)  (format=lualatex 2026.7.19)  28 OCT 2026 23:07
+ restricted system commands enabled.
+ file:line:error style messages enabled.
+**"Decoherence and the Quantum-to-Classical Transition.tex"
+("./Decoherence and the Quantum-to-Classical Transition.tex"
+LaTeX2e <2026-06-01>
+L3 programming layer <2026-06-18>
+Lua module: luaotfload 2024-12-03 v3.29 Lua based OpenType font support
+Lua module: lualibs 2023-07-13 v2.76 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2023-07-13 v2.76 ConTeXt Lua libraries -- extended 
+collection.
+luaotfload | conf : Root cache directory is "C:/Users/false/OneDrive/ドキュ
+メント/ChatGPT/pdf翻訳系/Schlosshauer_Decoherence/build/texcache/luatex-ca
+che/generic/names".
+luaotfload | init : Loading fontloader "fontloader-2023-12-28.lua" from kpse-res
+olved path "c:/texlive/2026/texmf-dist/tex/luatex/luaotfload/fontloader-2023-12-
+28.lua".
+Lua-only attribute luaotfload@noligature = 1
+luaotfload | init : Context OpenType loader version 3.134
+Inserting `luaotfload.node_processor' in `pre_linebreak_filter'.
+Inserting `luaotfload.node_processor' in `hpack_filter'.
+Inserting `luaotfload.glyph_stream' in `glyph_stream_provider'.
+Inserting `luaotfload.define_font' in `define_font'.
+Lua-only attribute luaotfload_color_attribute = 2
+luaotfload | conf : Root cache directory is "C:/Users/false/OneDrive/ドキュ
+メント/ChatGPT/pdf翻訳系/Schlosshauer_Decoherence/build/texcache/luatex-ca
+che/generic/names".
+Inserting `luaotfload.harf.strip_prefix' in `find_opentype_file'.
+Inserting `luaotfload.harf.strip_prefix' in `find_truetype_file'.
+Removing  `luaotfload.glyph_stream' from `glyph_stream_provider'.
+Inserting `luaotfload.harf.glyphstream' in `glyph_stream_provider'.
+Inserting `luaotfload.harf.finalize_vlist' in `post_linebreak_filter'.
+Inserting `luaotfload.harf.finalize_hlist' in `hpack_filter'.
+Inserting `luaotfload.cleanup_files' in `wrapup_run'.
+Inserting `luaotfload.harf.finalize_unicode' in `finish_pdffile'.
+Inserting `luaotfload.glyphinfo' in `glyph_info'.
+Lua-only attribute luaotfload.letterspace_done = 3
+Inserting `luaotfload.aux.set_sscale_dimens' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.set_font_index' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.patch_cambria_domh' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.fixup_fontdata' in `luaotfload.patch_font_unsafe'.
+Inserting `luaotfload.aux.set_capheight' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.set_xheight' in `luaotfload.patch_font'.
+Inserting `luaotfload.rewrite_fontname' in `luaotfload.patch_font'.
+Inserting `tracingstacklevels' in `input_level_string'. (c:/texlive/2026/texmf-
+dist/tex/luatex/luatexja/ltjsarticle.cls
+Document Class: ltjsarticle 2026-05-17 ltjsclasses 
+(c:/texlive/2026/texmf-dist/tex/luatex/luatexja/luatexja.sty
+Package: luatexja 2026-05-17 Japanese Typesetting with Lua(La)TeX
+
+(c:/texlive/2026/texmf-dist/tex/luatex/luatexja/luatexja-core.sty
+Package: luatexja-core 2023-10-07 Core of LuaTeX-ja
+
+(c:/texlive/2026/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+(c:/texlive/2026/texmf-dist/tex/luatex/luatexbase/luatexbase.sty
+Package: luatexbase 2015/10/04 v1.3 luatexbase interface to LuaTeX 
+
+(c:/texlive/2026/texmf-dist/tex/luatex/ctablestack/ctablestack.sty
+Package: ctablestack 2015/10/01 v1.0 Catcode table stable support
+\@catcodetablestackcnt=\count274
+)
+\CatcodeTableOther=\catcodetable14
+\CatcodeTableExpl=\catcodetable15
+)
+(c:/texlive/2026/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+(c:/texlive/2026/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(c:/texlive/2026/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+\pdftexcmds@toks=\toks17
+)
+(c:/texlive/2026/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2025/11/04 v2.10 package option processing (HA)
+
+(c:/texlive/2026/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(c:/texlive/2026/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks18
+\XKV@tempa@toks=\toks19
+\XKV@tempb@toks=\toks20
+
+(c:/texlive/2026/texmf-dist/tex/generic/xkeyval/keyval.tex))
+\XKV@depth=\count275
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(c:/texlive/2026/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count276
+)
+(c:/texlive/2026/texmf-dist/tex/latex/everyhook/everyhook.sty
+(c:/texlive/2026/texmf-dist/tex/latex/svn-prov/svn-prov.sty
+Package: svn-prov 2010/04/24 v3.1862 Package Date/Version from SVN Keywords
+)
+Package: everyhook 2014/11/26 v1.2 (SVN Rev: 12)\ Hooks for low level TeX every
+X primitives.
+\everypar=\toks21
+\frozen@everymath=\toks22
+\frozen@everydisplay=\toks23
+\everyhbox=\toks24
+\everyvbox=\toks25
+\everycr=\toks26
+)
+\ltjlineendcomment=\count277
+\ltj@dimen@zw=\dimen149
+\ltj@dimen@zh=\dimen150
+\ltj@dimen@jQ=\dimen151
+\ltj@icflag=\attribute4
+\ltj@curjfnt=\attribute5
+\ltj@curtfnt=\attribute6
+\ltj@charclass=\attribute7
+\ltj@charcode=\attribute8
+\ltj@autospc=\attribute9
+\ltj@autoxspc=\attribute10
+\ltj@yablshift=\attribute11
+\ltj@ykblshift=\attribute12
+\ltj@tablshift=\attribute13
+\ltj@tkblshift=\attribute14
+\jfam=\attribute15
+\ltj@vert@ori=\attribute16
+\ltj@dir=\attribute17
+\ltj@@japanese=\language2
+\ltj@tempcnta=\count278
+\ltj@tempdima=\dimen152
+\ltj@@stack=\count279
+\ltj@@group@level=\count280
+\ltj@kcat0=\attribute18
+\ltj@kcat1=\attribute19
+\ltj@kcat2=\attribute20
+\ltj@kcat3=\attribute21
+\ltj@kcat4=\attribute22
+\ltj@kcat5=\attribute23
+\ltj@kcat6=\attribute24
+Custom whatsit inhibitglue = 1
+Custom whatsit stack_marker = 2
+Custom whatsit begin_par = 3
+Custom whatsit direction = 4
+Custom whatsit box_boundary = 5
+Custom whatsit ja_al_boundary = 6
+Module luatexbase Info: Uninstalling kernel luatexbase code on input line 184
+(load cache: ltj-cid-auto-adobe-japan1.luc)
+Lua module: luatexja.charrange 2022-08-19 Handling the range of Japanese charact
+ers
+Lua module: luatexja.stack 2022-08-20 LuaTeX-ja stack system
+Inserting `ltj.create_dir_whatsit' in `hpack_filter'.
+Inserting `ltj.create_dir_whatsit' in `post_linebreak_filter'.
+Inserting `ltj.direction' in `vpack_filter'.
+Inserting `ltj.direction' in `pre_output_filter'.
+Inserting `ltj.lineskip' in `post_linebreak_filter'.
+Inserting `ltj.lineskip' in `append_to_vlist_filter'.
+Lua module: luatexja.jfont 2025-05-04 Loader for Japanese fonts
+Removing  `luaotfload.define_font' from `define_font'.
+Inserting `luatexja.font_callback' in `define_font'.
+Removing  `luaotfload.aux.set_sscale_dimens' from `luaotfload.patch_font'.
+Removing  `luaotfload.aux.set_font_index' from `luaotfload.patch_font'.
+Removing  `luaotfload.aux.patch_cambria_domh' from `luaotfload.patch_font'.
+Removing  `luaotfload.aux.set_capheight' from `luaotfload.patch_font'.
+Removing  `luaotfload.aux.set_xheight' from `luaotfload.patch_font'.
+Removing  `luaotfload.rewrite_fontname' from `luaotfload.patch_font'.
+Inserting `ltj.prepare_extra_data' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.set_sscale_dimens' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.set_font_index' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.patch_cambria_domh' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.set_capheight' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.set_xheight' in `luaotfload.patch_font'.
+Inserting `luaotfload.rewrite_fontname' in `luaotfload.patch_font'.
+Inserting `ltj.prepare_extra_data' in `luatexja.define_font'.
+Inserting `ltj.get_vert_form' in `luatexja.define_jfont'.
+Removing  `ltj.prepare_extra_data' from `luaotfload.patch_font'.
+Removing  `luaotfload.aux.set_sscale_dimens' from `luaotfload.patch_font'.
+Removing  `luaotfload.aux.set_font_index' from `luaotfload.patch_font'.
+Removing  `luaotfload.aux.patch_cambria_domh' from `luaotfload.patch_font'.
+Removing  `luaotfload.aux.set_capheight' from `luaotfload.patch_font'.
+Removing  `luaotfload.aux.set_xheight' from `luaotfload.patch_font'.
+Removing  `luaotfload.rewrite_fontname' from `luaotfload.patch_font'.
+Inserting `ltj.supply_tounicode' in `luaotfload.patch_font'.
+Inserting `ltj.prepare_extra_data' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.set_sscale_dimens' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.set_font_index' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.patch_cambria_domh' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.set_capheight' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.set_xheight' in `luaotfload.patch_font'.
+Inserting `luaotfload.rewrite_fontname' in `luaotfload.patch_font'.
+Inserting `ltj.process_input_buffer' in `process_input_buffer'.
+Inserting `ltj.hyphenate' in `hyphenate'.
+Removing  `luaotfload.node_processor' from `hpack_filter'.
+Removing  `luaotfload.harf.finalize_hlist' from `hpack_filter'.
+Removing  `ltj.create_dir_whatsit' from `hpack_filter'.
+Inserting `ltj.set_stack_level' in `hpack_filter'.
+Inserting `luaotfload.node_processor' in `hpack_filter'.
+Inserting `luaotfload.harf.finalize_hlist' in `hpack_filter'.
+Inserting `ltj.create_dir_whatsit' in `hpack_filter'.
+Removing  `luaotfload.node_processor' from `pre_linebreak_filter'.
+Inserting `ltj.set_stack_level' in `pre_linebreak_filter'.
+Inserting `luaotfload.node_processor' in `pre_linebreak_filter'.
+Lua module: luatexja.jfmglue 2026-01-07 Insertion process of JFM glues, [x]kanji
+skip and others
+Inserting `luatexja.beginpar.np_info' in `luatexja.jfmglue.whatsit_getinfo'.
+Inserting `luatexja.beginpar.np_info_after' in `luatexja.jfmglue.whatsit_after'.
+Inserting `ltj.mlist_to_hlist_pre' in `pre_mlist_to_hlist_filter'.
+Inserting `ltj.main' in `pre_linebreak_filter'.
+Removing  `luaotfload.harf.finalize_hlist' from `hpack_filter'.
+Removing  `ltj.create_dir_whatsit' from `hpack_filter'.
+Inserting `ltj.main' in `hpack_filter'.
+Inserting `luaotfload.harf.finalize_hlist' in `hpack_filter'.
+Inserting `ltj.create_dir_whatsit' in `hpack_filter'.
+Removing  `ltj.set_stack_level' from `pre_linebreak_filter'.
+Removing  `luaotfload.node_processor' from `pre_linebreak_filter'.
+Removing  `ltj.main' from `pre_linebreak_filter'.
+Inserting `ltj.adjust_icflag' in `pre_linebreak_filter'.
+Inserting `ltj.set_stack_level' in `pre_linebreak_filter'.
+Inserting `luaotfload.node_processor' in `pre_linebreak_filter'.
+Inserting `ltj.main' in `pre_linebreak_filter'.
+Removing  `ltj.set_stack_level' from `hpack_filter'.
+Removing  `luaotfload.node_processor' from `hpack_filter'.
+Removing  `ltj.main' from `hpack_filter'.
+Removing  `luaotfload.harf.finalize_hlist' from `hpack_filter'.
+Removing  `ltj.create_dir_whatsit' from `hpack_filter'.
+Inserting `ltj.adjust_icflag' in `hpack_filter'.
+Inserting `ltj.set_stack_level' in `hpack_filter'.
+Inserting `luaotfload.node_processor' in `hpack_filter'.
+Inserting `ltj.main' in `hpack_filter'.
+Inserting `luaotfload.harf.finalize_hlist' in `hpack_filter'.
+Inserting `ltj.create_dir_whatsit' in `hpack_filter'.
+(c:/texlive/2026/texmf-dist/tex/luatex/luatexja/ltj-base.sty
+Package: ltj-base 2021-03-16
+\ltj@tempcntb=\count281
+\ltj@tempcntc=\count282
+\ltj@afbox=\box53
+)
+\ltj@@italic@inner=\luafunction31
+\ltj@@start@time@measure@inner=\luafunction32
+\ltj@@stop@time@measure@inner=\luafunction33
+\ltj@@jfont@inner=\luafunction34
+\ltj@zw@inner=\luafunction35
+\ltj@zh@inner=\luafunction36
+\ltj@reset@globaldefs@inner=\luafunction37
+\ltj@restore@globaldefs@inner=\luafunction38
+\ltj@@disihb@inner=\luafunction39
+\ltj@@ihb@inner=\luafunction40
+\ltj@@fakeparbegin@inner=\luafunction41
+\ltj@@fakeboxbdd@inner=\luafunction42
+\ltj@@ins@xk@inner=\luafunction43
+\ltj@@ins@k@inner=\luafunction44
+\ltjsetkanjiskip@inner=\luafunction45
+\ltjsetxkanjiskip@inner=\luafunction46
+\ltj@@getparam@one@inner=\luafunction47
+\ltj@alljachar@inner=\luafunction48
+\ltj@@lua@populate@insertwhatsit@inner=\luafunction49
+\ltj@@vadjust@begin@inner=\luafunction50
+\ltj@@vadjust@dirhook@inner=\luafunction51
+\ltj@@vadjust@check@dir@inner=\luafunction52
+\ltj@@box@dirhook@inner=\luafunction53
+\ltj@@reset@badness@inner=\luafunction54
+\ltj@@lua@raisebox@inner=\luafunction55
+\ltj@@vsplit@inner=\luafunction56
+\ltj@@lua@unboxcheckdir@inner=\luafunction57
+\ltj@@lua@uncopycheckdir@inner=\luafunction58
+\ltj@@lua@uncopy@restore@whatsit@inner=\luafunction59
+(load cache: ltj-kinsoku_default.luc)
+(c:/texlive/2026/texmf-dist/tex/luatex/luatexja/ltj-latex.sty
+Package: ltj-latex 2026-05-17 LaTeX support of LuaTeX-ja
+Inserting `ltj.direction' in `pre_shipout_filter'.
+(c:/texlive/2026/texmf-dist/tex/luatex/luatexja/patches/lltjfont.sty
+Package: lltjfont 2026-03-15 Patch to NFSS2 for LuaTeX-ja
+\ltj@@latex@plv=\count283
+
+(c:/texlive/2026/texmf-dist/tex/latex/base/tuenc.def
+File: tuenc.def 2025/07/18 v2.1d Standard LaTeX file
+\@remove@tlig@@@=\luafunction60
+LaTeX Font Info:    Redeclaring font encoding TU on input line 105.
+LaTeX Encoding Info:    Redeclaring text command \textquotesingle (encoding TU)
+ on input line 148.
+LaTeX Encoding Info:    Redeclaring text command \textasciigrave (encoding TU) 
+on input line 149.
+LaTeX Encoding Info:    Redeclaring text command \textquotedbl (encoding TU) on
+ input line 150.
+LaTeX Encoding Info:    Redeclaring text command \textdollar (encoding TU) on i
+nput line 151.
+LaTeX Encoding Info:    Redeclaring text command \textless (encoding TU) on inp
+ut line 152.
+LaTeX Encoding Info:    Redeclaring text command \textgreater (encoding TU) on 
+input line 153.
+LaTeX Encoding Info:    Redeclaring text command \textbackslash (encoding TU) o
+n input line 154.
+LaTeX Encoding Info:    Redeclaring text command \textasciicircum (encoding TU)
+ on input line 155.
+LaTeX Encoding Info:    Redeclaring text command \textunderscore (encoding TU) 
+on input line 156.
+LaTeX Encoding Info:    Redeclaring text command \textbraceleft (encoding TU) o
+n input line 157.
+LaTeX Encoding Info:    Redeclaring text command \textbar (encoding TU) on inpu
+t line 158.
+LaTeX Encoding Info:    Redeclaring text command \textbraceright (encoding TU) 
+on input line 159.
+LaTeX Encoding Info:    Redeclaring text command \textasciitilde (encoding TU) 
+on input line 160.
+LaTeX Encoding Info:    Redeclaring text command \textexclamdown (encoding TU) 
+on input line 161.
+LaTeX Encoding Info:    Redeclaring text command \textcent (encoding TU) on inp
+ut line 162.
+LaTeX Encoding Info:    Redeclaring text command \textsterling (encoding TU) on
+ input line 163.
+LaTeX Encoding Info:    Redeclaring text command \textcurrency (encoding TU) on
+ input line 164.
+LaTeX Encoding Info:    Redeclaring text command \textyen (encoding TU) on inpu
+t line 165.
+LaTeX Encoding Info:    Redeclaring text command \textbrokenbar (encoding TU) o
+n input line 166.
+LaTeX Encoding Info:    Redeclaring text command \textsection (encoding TU) on 
+input line 167.
+LaTeX Encoding Info:    Redeclaring text command \textasciidieresis (encoding T
+U) on input line 168.
+LaTeX Encoding Info:    Redeclaring text command \textcopyright (encoding TU) o
+n input line 169.
+LaTeX Encoding Info:    Redeclaring text command \textordfeminine (encoding TU)
+ on input line 170.
+LaTeX Encoding Info:    Redeclaring text command \guillemetleft (encoding TU) o
+n input line 171.
+LaTeX Encoding Info:    Redeclaring text command \guillemotleft (encoding TU) o
+n input line 172.
+LaTeX Encoding Info:    Redeclaring text command \textlnot (encoding TU) on inp
+ut line 173.
+LaTeX Encoding Info:    Redeclaring text command \textregistered (encoding TU) 
+on input line 174.
+LaTeX Encoding Info:    Redeclaring text command \textasciimacron (encoding TU)
+ on input line 175.
+LaTeX Encoding Info:    Redeclaring text command \textdegree (encoding TU) on i
+nput line 176.
+LaTeX Encoding Info:    Redeclaring text command \textpm (encoding TU) on input
+ line 177.
+LaTeX Encoding Info:    Redeclaring text command \texttwosuperior (encoding TU)
+ on input line 178.
+LaTeX Encoding Info:    Redeclaring text command \textthreesuperior (encoding T
+U) on input line 179.
+LaTeX Encoding Info:    Redeclaring text command \textasciiacute (encoding TU) 
+on input line 180.
+LaTeX Encoding Info:    Redeclaring text command \textmu (encoding TU) on input
+ line 181.
+LaTeX Encoding Info:    Redeclaring text command \textparagraph (encoding TU) o
+n input line 182.
+LaTeX Encoding Info:    Redeclaring text command \textperiodcentered (encoding 
+TU) on input line 183.
+LaTeX Encoding Info:    Redeclaring text command \textonesuperior (encoding TU)
+ on input line 184.
+LaTeX Encoding Info:    Redeclaring text command \textordmasculine (encoding TU
+) on input line 185.
+LaTeX Encoding Info:    Redeclaring text command \guillemetright (encoding TU) 
+on input line 186.
+LaTeX Encoding Info:    Redeclaring text command \guillemotright (encoding TU) 
+on input line 187.
+LaTeX Encoding Info:    Redeclaring text command \textonequarter (encoding TU) 
+on input line 188.
+LaTeX Encoding Info:    Redeclaring text command \textonehalf (encoding TU) on 
+input line 189.
+LaTeX Encoding Info:    Redeclaring text command \textthreequarters (encoding T
+U) on input line 190.
+LaTeX Encoding Info:    Redeclaring text command \textquestiondown (encoding TU
+) on input line 191.
+LaTeX Encoding Info:    Redeclaring text command \AE (encoding TU) on input lin
+e 192.
+LaTeX Encoding Info:    Redeclaring text command \DH (encoding TU) on input lin
+e 193.
+LaTeX Encoding Info:    Redeclaring text command \texttimes (encoding TU) on in
+put line 194.
+LaTeX Encoding Info:    Redeclaring text command \O (encoding TU) on input line
+ 195.
+LaTeX Encoding Info:    Redeclaring text command \TH (encoding TU) on input lin
+e 196.
+LaTeX Encoding Info:    Redeclaring text command \ss (encoding TU) on input lin
+e 197.
+LaTeX Encoding Info:    Redeclaring text command \ae (encoding TU) on input lin
+e 198.
+LaTeX Encoding Info:    Redeclaring text command \dh (encoding TU) on input lin
+e 199.
+LaTeX Encoding Info:    Redeclaring text command \textdiv (encoding TU) on inpu
+t line 200.
+LaTeX Encoding Info:    Redeclaring text command \o (encoding TU) on input line
+ 201.
+LaTeX Encoding Info:    Redeclaring text command \th (encoding TU) on input lin
+e 202.
+LaTeX Encoding Info:    Redeclaring text command \DJ (encoding TU) on input lin
+e 203.
+LaTeX Encoding Info:    Redeclaring text command \dj (encoding TU) on input lin
+e 204.
+LaTeX Encoding Info:    Redeclaring text command \i (encoding TU) on input line
+ 205.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding TU) on input lin
+e 206.
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding TU) on input lin
+e 207.
+LaTeX Encoding Info:    Redeclaring text command \L (encoding TU) on input line
+ 208.
+LaTeX Encoding Info:    Redeclaring text command \l (encoding TU) on input line
+ 209.
+LaTeX Encoding Info:    Redeclaring text command \NG (encoding TU) on input lin
+e 210.
+LaTeX Encoding Info:    Redeclaring text command \ng (encoding TU) on input lin
+e 211.
+LaTeX Encoding Info:    Redeclaring text command \OE (encoding TU) on input lin
+e 212.
+LaTeX Encoding Info:    Redeclaring text command \oe (encoding TU) on input lin
+e 213.
+LaTeX Encoding Info:    Redeclaring text command \textflorin (encoding TU) on i
+nput line 214.
+LaTeX Encoding Info:    Redeclaring text command \j (encoding TU) on input line
+ 215.
+LaTeX Encoding Info:    Redeclaring text command \textasciicaron (encoding TU) 
+on input line 216.
+LaTeX Encoding Info:    Redeclaring text command \textasciibreve (encoding TU) 
+on input line 217.
+LaTeX Encoding Info:    Redeclaring text command \textacutedbl (encoding TU) on
+ input line 218.
+LaTeX Encoding Info:    Redeclaring text command \textgravedbl (encoding TU) on
+ input line 219.
+LaTeX Encoding Info:    Redeclaring text command \texttildelow (encoding TU) on
+ input line 220.
+LaTeX Encoding Info:    Redeclaring text command \textbaht (encoding TU) on inp
+ut line 221.
+LaTeX Encoding Info:    Redeclaring text command \SS (encoding TU) on input lin
+e 222.
+LaTeX Encoding Info:    Redeclaring text command \textcompwordmark (encoding TU
+) on input line 223.
+LaTeX Encoding Info:    Redeclaring text command \textendash (encoding TU) on i
+nput line 224.
+LaTeX Encoding Info:    Redeclaring text command \textemdash (encoding TU) on i
+nput line 225.
+LaTeX Encoding Info:    Redeclaring text command \textnonbreakinghyphen (encodi
+ng TU) on input line 226.
+LaTeX Encoding Info:    Redeclaring text command \textfiguredash (encoding TU) 
+on input line 228.
+LaTeX Encoding Info:    Redeclaring text command \texthorizontalbar (encoding T
+U) on input line 230.
+LaTeX Encoding Info:    Redeclaring text command \textbardbl (encoding TU) on i
+nput line 232.
+LaTeX Encoding Info:    Redeclaring text command \textquoteleft (encoding TU) o
+n input line 233.
+LaTeX Encoding Info:    Redeclaring text command \textquoteright (encoding TU) 
+on input line 234.
+LaTeX Encoding Info:    Redeclaring text command \quotesinglbase (encoding TU) 
+on input line 235.
+LaTeX Encoding Info:    Redeclaring text command \textquotedblleft (encoding TU
+) on input line 236.
+LaTeX Encoding Info:    Redeclaring text command \textquotedblright (encoding T
+U) on input line 237.
+LaTeX Encoding Info:    Redeclaring text command \quotedblbase (encoding TU) on
+ input line 238.
+LaTeX Encoding Info:    Redeclaring text command \textdagger (encoding TU) on i
+nput line 239.
+LaTeX Encoding Info:    Redeclaring text command \textdaggerdbl (encoding TU) o
+n input line 240.
+LaTeX Encoding Info:    Redeclaring text command \textbullet (encoding TU) on i
+nput line 241.
+LaTeX Encoding Info:    Redeclaring text command \textellipsis (encoding TU) on
+ input line 242.
+LaTeX Encoding Info:    Redeclaring text command \textperthousand (encoding TU)
+ on input line 243.
+LaTeX Encoding Info:    Redeclaring text command \textpertenthousand (encoding 
+TU) on input line 244.
+LaTeX Encoding Info:    Redeclaring text command \guilsinglleft (encoding TU) o
+n input line 245.
+LaTeX Encoding Info:    Redeclaring text command \guilsinglright (encoding TU) 
+on input line 246.
+LaTeX Encoding Info:    Redeclaring text command \textreferencemark (encoding T
+U) on input line 247.
+LaTeX Encoding Info:    Redeclaring text command \textinterrobang (encoding TU)
+ on input line 248.
+LaTeX Encoding Info:    Redeclaring text command \textfractionsolidus (encoding
+ TU) on input line 249.
+LaTeX Encoding Info:    Redeclaring text command \textlquill (encoding TU) on i
+nput line 250.
+LaTeX Encoding Info:    Redeclaring text command \textrquill (encoding TU) on i
+nput line 251.
+LaTeX Encoding Info:    Redeclaring text command \textdiscount (encoding TU) on
+ input line 252.
+LaTeX Encoding Info:    Redeclaring text command \textcolonmonetary (encoding T
+U) on input line 253.
+LaTeX Encoding Info:    Redeclaring text command \textlira (encoding TU) on inp
+ut line 254.
+LaTeX Encoding Info:    Redeclaring text command \textnaira (encoding TU) on in
+put line 255.
+LaTeX Encoding Info:    Redeclaring text command \textwon (encoding TU) on inpu
+t line 256.
+LaTeX Encoding Info:    Redeclaring text command \textdong (encoding TU) on inp
+ut line 257.
+LaTeX Encoding Info:    Redeclaring text command \texteuro (encoding TU) on inp
+ut line 258.
+LaTeX Encoding Info:    Redeclaring text command \textpeso (encoding TU) on inp
+ut line 259.
+LaTeX Encoding Info:    Redeclaring text command \textcelsius (encoding TU) on 
+input line 260.
+LaTeX Encoding Info:    Redeclaring text command \textnumero (encoding TU) on i
+nput line 261.
+LaTeX Encoding Info:    Redeclaring text command \textcircledP (encoding TU) on
+ input line 262.
+LaTeX Encoding Info:    Redeclaring text command \textrecipe (encoding TU) on i
+nput line 263.
+LaTeX Encoding Info:    Redeclaring text command \textservicemark (encoding TU)
+ on input line 264.
+LaTeX Encoding Info:    Redeclaring text command \texttrademark (encoding TU) o
+n input line 265.
+LaTeX Encoding Info:    Redeclaring text command \textohm (encoding TU) on inpu
+t line 266.
+LaTeX Encoding Info:    Redeclaring text command \textmho (encoding TU) on inpu
+t line 267.
+LaTeX Encoding Info:    Redeclaring text command \textestimated (encoding TU) o
+n input line 268.
+LaTeX Encoding Info:    Redeclaring text command \textleftarrow (encoding TU) o
+n input line 269.
+LaTeX Encoding Info:    Redeclaring text command \textuparrow (encoding TU) on 
+input line 270.
+LaTeX Encoding Info:    Redeclaring text command \textrightarrow (encoding TU) 
+on input line 271.
+LaTeX Encoding Info:    Redeclaring text command \textdownarrow (encoding TU) o
+n input line 272.
+LaTeX Encoding Info:    Redeclaring text command \textminus (encoding TU) on in
+put line 273.
+LaTeX Encoding Info:    Redeclaring text command \Hwithstroke (encoding TU) on 
+input line 275.
+LaTeX Encoding Info:    Redeclaring text command \hwithstroke (encoding TU) on 
+input line 276.
+LaTeX Encoding Info:    Redeclaring text command \textasteriskcentered (encodin
+g TU) on input line 277.
+LaTeX Encoding Info:    Redeclaring text command \textsurd (encoding TU) on inp
+ut line 288.
+LaTeX Encoding Info:    Redeclaring text command \textlangle (encoding TU) on i
+nput line 289.
+LaTeX Encoding Info:    Redeclaring text command \textrangle (encoding TU) on i
+nput line 290.
+LaTeX Encoding Info:    Redeclaring text command \textblank (encoding TU) on in
+put line 291.
+LaTeX Encoding Info:    Redeclaring text command \textvisiblespace (encoding TU
+) on input line 292.
+LaTeX Encoding Info:    Redeclaring text command \textopenbullet (encoding TU) 
+on input line 293.
+LaTeX Encoding Info:    Redeclaring text command \textbigcircle (encoding TU) o
+n input line 294.
+LaTeX Encoding Info:    Redeclaring text command \textmusicalnote (encoding TU)
+ on input line 295.
+LaTeX Encoding Info:    Redeclaring text command \textmarried (encoding TU) on 
+input line 296.
+LaTeX Encoding Info:    Redeclaring text command \textdivorced (encoding TU) on
+ input line 297.
+LaTeX Encoding Info:    Redeclaring text command \textinterrobangdown (encoding
+ TU) on input line 298.
+LaTeX Encoding Info:    Redeclaring text command \` (encoding TU) on input line
+ 299.
+LaTeX Encoding Info:    Redeclaring text command \' (encoding TU) on input line
+ 300.
+LaTeX Encoding Info:    Redeclaring text command \^ (encoding TU) on input line
+ 301.
+LaTeX Encoding Info:    Redeclaring text command \~ (encoding TU) on input line
+ 302.
+LaTeX Encoding Info:    Redeclaring text command \= (encoding TU) on input line
+ 303.
+LaTeX Encoding Info:    Redeclaring text command \u (encoding TU) on input line
+ 304.
+LaTeX Encoding Info:    Redeclaring text command \. (encoding TU) on input line
+ 305.
+LaTeX Encoding Info:    Redeclaring text command \" (encoding TU) on input line
+ 306.
+LaTeX Encoding Info:    Redeclaring text command \r (encoding TU) on input line
+ 307.
+LaTeX Encoding Info:    Redeclaring text command \H (encoding TU) on input line
+ 308.
+LaTeX Encoding Info:    Redeclaring text command \v (encoding TU) on input line
+ 309.
+LaTeX Encoding Info:    Redeclaring text command \b (encoding TU) on input line
+ 310.
+LaTeX Encoding Info:    Redeclaring text command \d (encoding TU) on input line
+ 311.
+LaTeX Encoding Info:    Redeclaring text command \c (encoding TU) on input line
+ 312.
+LaTeX Encoding Info:    Redeclaring text command \k (encoding TU) on input line
+ 313.
+LaTeX Encoding Info:    Redeclaring text command \textcommabelow (encoding TU) 
+on input line 314.
+)
+\Cht=\dimen153
+\cht=\dimen154
+\Cdp=\dimen155
+\cdp=\dimen156
+\Cwd=\dimen157
+\cwd=\dimen158
+\Cvs=\dimen159
+\cvs=\dimen160
+\Chs=\dimen161
+\chs=\dimen162
+\cHT=\dimen163
+\dstrutbox=\box54
+\tstrutbox=\box55
+\zstrutbox=\box56
+LaTeX Info: Redefining \strut on input line 71.
+\ltj@@add@fenc@@inner=\luafunction61
+\ltj@@add@kyenc@@inner=\luafunction62
+\ltj@@add@ktenc@@inner=\luafunction63
+\ltj@@is@kyenc@@inner=\luafunction64
+\ltj@@is@ktenc@@inner=\luafunction65
+\ltj@@is@kenc@@inner=\luafunction66
+\ltj@@is@ffam@@inner=\luafunction67
+\ltj@@add@ffam@@inner=\luafunction68
+\ltj@@add@kfam@@inner=\luafunction69
+\ltj@@adjust@baseline@inner=\luafunction70
+LaTeX Info: Redefining \fontencoding on input line 573.
+LaTeX Info: Redefining \fontfamily on input line 619.
+LaTeX Info: Redefining \fontseries on input line 813.
+LaTeX Info: Redefining \fontseriesforce on input line 814.
+LaTeX Info: Redefining \fontshape on input line 822.
+LaTeX Info: Redefining \fontshapeforce on input line 833.
+\ltj@@jfont@@jfmonly@@inner=\luafunction71
+\ltj@@does@alt@set@@inner=\luafunction72
+\ltj@@cipath@clear@inner=\luafunction73
+)
+(c:/texlive/2026/texmf-dist/tex/luatex/luatexja/patches/lltjdefs.sty
+Package: lltjdefs 2024-05-16 Default font settings of LuaTeX-ja
+luaotfload | db : Font names database loaded from C:/Users/false/OneDrive/ド
+キュメント/ChatGPT/pdf翻訳系/Schlosshauer_Decoherence/build/texcache/lua
+tex-cache/generic/names/luaotfload-names.luc.gz(load cache: extra_lmroman10-regu
+lar.luc)
+LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
+(Font)              scaled to size 9.24713pt on input line 69.
+
+(c:/texlive/2026/texmf-dist/tex/luatex/luatexja/jfm-ujisv.lua)
+LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
+(Font)              scaled to size 9.24713pt on input line 69.
+(load cache: extra_haranoajimincho-regular.luc)
+(c:/texlive/2026/texmf-dist/tex/luatex/luatexja/jfm-ujis.lua)
+\symmincho=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
+(Font)                  JY3/mc/m/n --> JY3/gt/m/n on input line 78.
+)
+(c:/texlive/2026/texmf-dist/tex/luatex/luatexja/patches/lltjcore.sty
+Package: lltjcore 2026-05-17 Patch to LaTeX2e Kernel for LuaTeX-ja
+
+(c:/texlive/2026/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2026-06-18 L3 programming layer (loader) 
+
+(c:/texlive/2026/texmf-dist/tex/latex/l3backend/l3backend-luatex.def
+File: l3backend-luatex.def 2026-02-18 L3 backend support: PDF output (LuaTeX)
+\l__color_backend_stack_int=\count284
+Inserting `l3color' in `luaotfload.parse_color'.))
+\@tombowwidth=\dimen164
+\@TL=\box57
+\@Tl=\box58
+\@TC=\box59
+\@TR=\box60
+\@Tr=\box61
+\@BL=\box62
+\@Bl=\box63
+\@BC=\box64
+\@BR=\box65
+\@Br=\box66
+\@CL=\box67
+\@CR=\box68
+(load cache: extra_lmmono9-regular.luc)
+\@bannertoken=\toks27
+\@@paperheight=\dimen165
+\@@paperwidth=\dimen166
+\@@topmargin=\dimen167
+LaTeX Info: Redefining \underline on input line 311.
+)
+(c:/texlive/2026/texmf-dist/tex/luatex/luatexja/patches/lltjp-atbegshi.sty
+Package: lltjp-atbegshi 2024-05-14 Patching \shipout hooks for LuaTeX-ja
+\l__platex_shipout_dummy_box=\box69
+)
+(c:/texlive/2026/texmf-dist/tex/luatex/luatexja/patches/lltjp-geometry.sty
+Package: lltjp-geometry 2024-05-16 Patch to geometry for LuaTeX-ja with vertica
+l writing mode
+
+(c:/texlive/2026/texmf-dist/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+)))
+\ltj@temp@cctb=\catcodetable16
+)
+(c:/texlive/2026/texmf-dist/tex/luatex/luatexja/luatexja-compat.sty
+Package: luatexja-compat 2025-09-21 Compatibility with pTeX
+(load cache: ltj-jisx0208.luc)
+\hour=\count285
+\minute=\count286
+))
+\jsc@mpt=\dimen168
+\jsc@mmm=\dimen169
+\ltjs@@magnify@font@calc=\luafunction74
+\jsc@smallskipamount=\skip49
+(load cache: extra_lmroman9-regular.luc)
+LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
+(Font)              scaled to size 8.44485pt on input line 417.
+LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
+(Font)              scaled to size 9.24713pt on input line 417.
+LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
+(Font)              scaled to size 9.24713pt on input line 417.
+\fullwidth=\dimen170
+(load cache: extra_lmroman8-regular.luc)
+LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
+(Font)              scaled to size 7.3977pt on input line 558.
+LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
+(Font)              scaled to size 7.3977pt on input line 558.
+\c@part=\count287
+\c@section=\count288
+\c@subsection=\count289
+\c@subsubsection=\count290
+\c@paragraph=\count291
+\c@subparagraph=\count292
+\@abstractbox=\box70
+\c@figure=\count293
+\c@table=\count294
+\abovecaptionskip=\skip50
+\belowcaptionskip=\skip51
+LaTeX Info: Redefining \mc on input line 1318.
+LaTeX Info: Redefining \gt on input line 1319.
+\jsc@tocl@width=\dimen171
+\@lnumwidth=\dimen172
+\bibindent=\dimen173
+
+(c:/texlive/2026/texmf-dist/tex/platex/jsclasses/jslogo.sty
+Package: jslogo 2019/07/25 okumura, texjporg
+LaTeX Info: Redefining \TeX on input line 82.
+LaTeX Info: Redefining \LaTeX on input line 135.
+LaTeX Info: Redefining \LaTeXe on input line 188.
+)
+\heisei=\count295
+)
+(c:/texlive/2026/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2026/05/19 v2.18d AMS math features
+\@mathmargin=\skip52
+
+For additional information on amsmath, use the `?' option.
+(c:/texlive/2026/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2024/11/17 v2.01 AMS text
+
+(c:/texlive/2026/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks28
+\ex@=\dimen174
+))
+(c:/texlive/2026/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen175
+)
+(c:/texlive/2026/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count296
+LaTeX Info: Redefining \frac on input line 235.
+\uproot@=\count297
+\leftroot@=\count298
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count299
+\DOTSCASE@=\count300
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box71
+\strutbox@=\box72
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen176
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count301
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count302
+\dotsspace@=\muskip17
+\c@parentequation=\count303
+\dspbrk@lvl=\count304
+\tag@help=\toks29
+\row@=\count305
+\column@=\count306
+\maxfields@=\count307
+\andhelp@=\toks30
+\eqnshift@=\dimen177
+\alignsep@=\dimen178
+\tagshift@=\dimen179
+\tagwidth@=\dimen180
+\totwidth@=\dimen181
+\lineht@=\dimen182
+\@envbody=\toks31
+\multlinegap=\skip53
+\multlinetaggap=\skip54
+\mathdisplay@stack=\toks32
+LaTeX Info: Redefining \[ on input line 2965.
+LaTeX Info: Redefining \] on input line 2966.
+)
+(c:/texlive/2026/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(c:/texlive/2026/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup5
+\symAMSb=\mathgroup6
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(c:/texlive/2026/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2024/10/04 v1.31 mathematical typesetting tools
+
+(c:/texlive/2026/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
+\calc@Acount=\count308
+\calc@Bcount=\count309
+\calc@Adimen=\dimen183
+\calc@Bdimen=\dimen184
+\calc@Askip=\skip55
+\calc@Bskip=\skip56
+LaTeX Info: Redefining \setlength on input line 86.
+LaTeX Info: Redefining \addtolength on input line 87.
+\calc@Ccount=\count310
+\calc@Cskip=\skip57
+)
+(c:/texlive/2026/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
+)
+\g_MT_multlinerow_int=\count311
+\l_MT_multwidth_dim=\dimen185
+\origjot=\skip58
+\l_MT_shortvdotswithinadjustabove_dim=\dimen186
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen187
+\l_MT_above_intertext_sep=\dimen188
+\l_MT_below_intertext_sep=\dimen189
+\l_MT_above_shortintertext_sep=\dimen190
+\l_MT_below_shortintertext_sep=\dimen191
+\xmathstrut@box=\box73
+\xmathstrut@dim=\dimen192
+)
+(c:/texlive/2026/texmf-dist/tex/latex/braket/braket.sty)
+(c:/texlive/2026/texmf-dist/tex/latex/tools/bm.sty
+Package: bm 2025/10/21 v1.2g Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup7
+\symboldletters=\mathgroup8
+\symboldsymbols=\mathgroup9
+Package bm Info: No bold for \OMX/cmex/m/n, using \pmb.
+\symboldmincho=\mathgroup10
+Package bm Info: No bold for \U/msa/m/n, using \pmb.
+Package bm Info: No bold for \U/msb/m/n, using \pmb.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
+)
+(c:/texlive/2026/texmf-dist/tex/latex/fouridx/fouridx.sty
+Package: fouridx 2013/11/21 v2.00 Four indices
+)
+(c:/texlive/2026/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2026-05-17 v1.3f Standard LaTeX Color (DPC)
+
+(c:/texlive/2026/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: luatex.def on input line 149.
+
+(c:/texlive/2026/texmf-dist/tex/latex/graphics-def/luatex.def
+File: luatex.def 2025/09/29 v1.2f Graphics/color driver for luatex
+)
+(c:/texlive/2026/texmf-dist/tex/latex/graphics/mathcolor.ltx))
+(c:/texlive/2026/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2026/03/07 v6.0 Page Geometry
+
+(c:/texlive/2026/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count312
+\Gm@cntv=\count313
+\c@Gm@tempcnt=\count314
+\Gm@bindingoffset=\dimen193
+\Gm@wd@mp=\dimen194
+\Gm@odd@mp=\dimen195
+\Gm@even@mp=\dimen196
+\Gm@layoutwidth=\dimen197
+\Gm@layoutheight=\dimen198
+\Gm@layouthoffset=\dimen199
+\Gm@layoutvoffset=\dimen256
+\Gm@dimlist=\toks33
+)
+(c:/texlive/2026/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2026-06-17 v7.01r Hypertext links for LaTeX
+
+(c:/texlive/2026/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)
+(c:/texlive/2026/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(c:/texlive/2026/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+(c:/texlive/2026/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(c:/texlive/2026/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2026-01-29 v2.58 Cross-referencing by name of section
+
+(c:/texlive/2026/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(c:/texlive/2026/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+
+(c:/texlive/2026/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count315
+)
+(c:/texlive/2026/texmf-dist/tex/generic/stringenc/stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+\@linkdim=\dimen257
+\Hy@linkcounter=\count316
+\Hy@pagecounter=\count317
+
+(c:/texlive/2026/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2026-06-17 v7.01r Hyperref: PDFDocEncoding definition (HO)
+)
+(c:/texlive/2026/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count318
+
+(c:/texlive/2026/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2026-06-17 v7.01r Hyperref: PDF Unicode definition (HO)
+)
+Package hyperref Info: Hyper figures OFF on input line 4199.
+Package hyperref Info: Link nesting OFF on input line 4204.
+Package hyperref Info: Hyper index ON on input line 4207.
+Package hyperref Info: Plain pages OFF on input line 4214.
+Package hyperref Info: Backreferencing OFF on input line 4219.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4466.
+\c@Hy@tempcnt=\count319
+
+(c:/texlive/2026/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip18
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4805.
+\XeTeXLinkMargin=\dimen258
+
+(c:/texlive/2026/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(c:/texlive/2026/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count320
+\Field@Width=\dimen259
+\Fld@charsize=\dimen260
+Package hyperref Info: Hyper figures OFF on input line 6091.
+Package hyperref Info: Link nesting OFF on input line 6096.
+Package hyperref Info: Hyper index ON on input line 6099.
+Package hyperref Info: backreferencing OFF on input line 6106.
+Package hyperref Info: Link coloring OFF on input line 6111.
+Package hyperref Info: Link coloring with OCG OFF on input line 6116.
+Package hyperref Info: PDF/A mode OFF on input line 6121.
+\Hy@abspage=\count321
+\c@Item=\count322
+\c@Hfootnote=\count323
+)
+Package hyperref Info: Driver (autodetected): hluatex.
+
+(c:/texlive/2026/texmf-dist/tex/latex/hyperref/hluatex.def
+File: hluatex.def 2026-06-17 v7.01r Hyperref driver for luaTeX
+\Fld@listcount=\count324
+\c@bookmark@seq@number=\count325
+
+(c:/texlive/2026/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
+
+(c:/texlive/2026/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+84.
+)
+\Hy@SectionHShift=\skip59
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 21.
+
+(c:/texlive/2026/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
+Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
+\symrsfs=\mathgroup11
+)
+(c:/texlive/2026/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2026-05-17 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+
+(c:/texlive/2026/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2026-05-17 v1.4h Standard LaTeX Graphics (DPC,SPQR)
+
+(c:/texlive/2026/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(c:/texlive/2026/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: luatex.def on input line 106.
+)
+\Gin@req@height=\dimen261
+\Gin@req@width=\dimen262
+)
+(c:/texlive/2026/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
+Package: tcolorbox 2026/05/28 version 6.10.0 text color boxes
+
+(c:/texlive/2026/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(c:/texlive/2026/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(c:/texlive/2026/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(c:/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks34
+\pgfutil@tempdima=\dimen263
+\pgfutil@tempdimb=\dimen264
+)
+(c:/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box74
+)
+(c:/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(c:/texlive/2026/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2025-08-29 v3.1.11a (3.1.11a)
+))
+Package: pgf 2025-08-29 v3.1.11a (3.1.11a)
+
+(c:/texlive/2026/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(c:/texlive/2026/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(c:/texlive/2026/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
+
+(c:/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks35
+\pgfkeys@temptoks=\toks36
+
+(c:/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.co
+de.tex
+\pgfkeys@tmptoks=\toks37
+))
+\pgf@x=\dimen265
+\pgf@y=\dimen266
+\pgf@xa=\dimen267
+\pgf@ya=\dimen268
+\pgf@xb=\dimen269
+\pgf@yb=\dimen270
+\pgf@xc=\dimen271
+\pgf@yc=\dimen272
+\pgf@xd=\dimen273
+\pgf@yd=\dimen274
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count326
+\c@pgf@countb=\count327
+\c@pgf@countc=\count328
+\c@pgf@countd=\count329
+\t@pgf@toka=\toks38
+\t@pgf@tokb=\toks39
+\t@pgf@tokc=\toks40
+\pgf@sys@id@count=\count330
+ (c:/texlive/2026/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2025-08-29 v3.1.11a (3.1.11a)
+)
+Driver file for pgf: pgfsys-luatex.def
+
+(c:/texlive/2026/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-luatex.def
+File: pgfsys-luatex.def 2025-08-29 v3.1.11a (3.1.11a)
+
+(c:/texlive/2026/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2025-08-29 v3.1.11a (3.1.11a)
+)))
+(c:/texlive/2026/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfsyssoftpath@smallbuffer@items=\count331
+\pgfsyssoftpath@bigbuffer@items=\count332
+)
+(c:/texlive/2026/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)) (c:/texlive/2026/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+
+(c:/texlive/2026/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: luatex.def on input line 274.
+LaTeX Info: Redefining \color on input line 762.
+
+(c:/texlive/2026/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+)
+(c:/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2025-08-29 v3.1.11a (3.1.11a)
+
+(c:/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(c:/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(c:/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen275
+\pgfmath@count=\count333
+\pgfmath@box=\box75
+\pgfmath@toks=\toks41
+\pgfmath@stack@operand=\toks42
+\pgfmath@stack@operation=\toks43
+)
+(c:/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex)
+(c:/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.te
+x)
+(c:/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric
+.code.tex)
+(c:/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.t
+ex)
+(c:/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.co
+de.tex)
+(c:/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex
+)
+(c:/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.te
+x)
+(c:/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex
+)
+(c:/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithm
+etics.code.tex)
+(c:/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex)
+(c:/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count334
+))
+(c:/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+(c:/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@picminx=\dimen276
+\pgf@picmaxx=\dimen277
+\pgf@picminy=\dimen278
+\pgf@picmaxy=\dimen279
+\pgf@pathminx=\dimen280
+\pgf@pathmaxx=\dimen281
+\pgf@pathminy=\dimen282
+\pgf@pathmaxy=\dimen283
+\pgf@xx=\dimen284
+\pgf@xy=\dimen285
+\pgf@yx=\dimen286
+\pgf@yy=\dimen287
+\pgf@zx=\dimen288
+\pgf@zy=\dimen289
+)
+(c:/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.cod
+e.tex
+File: pgfcorepathconstruct.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@path@lastx=\dimen290
+\pgf@path@lasty=\dimen291
+)
+(c:/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.te
+x
+File: pgfcorepathusage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@shorten@end@additional=\dimen292
+\pgf@shorten@start@additional=\dimen293
+)
+(c:/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfpic=\box76
+\pgf@hbox=\box77
+\pgf@layerbox@main=\box78
+\pgf@picture@serial@count=\count335
+)
+(c:/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code
+.tex
+File: pgfcoregraphicstate.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgflinewidth=\dimen294
+)
+(c:/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.c
+ode.tex
+File: pgfcoretransformations.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@pt@x=\dimen295
+\pgf@pt@y=\dimen296
+\pgf@pt@temp=\dimen297
+)
+(c:/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(c:/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(c:/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.co
+de.tex
+File: pgfcorepathprocessing.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(c:/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfarrowsep=\dimen298
+)
+(c:/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@max=\dimen299
+\pgf@sys@shading@range@num=\count336
+\pgf@shadingcount=\count337
+)
+(c:/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(c:/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfexternal@startupbox=\box79
+) (c:/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(c:/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code
+.tex
+File: pgfcoretransparency.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(c:/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (c:/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+))) (c:/texlive/2026/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.te
+x
+File: pgfmoduleshapes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfnodeparttextbox=\box80
+)
+(c:/texlive/2026/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(c:/texlive/2026/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.st
+y
+Package: pgfcomp-version-0-65 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@nodesepstart=\dimen300
+\pgf@nodesepend=\dimen301
+)
+(c:/texlive/2026/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.st
+y
+Package: pgfcomp-version-1-18 2025-08-29 v3.1.11a (3.1.11a)
+)) (c:/texlive/2026/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(c:/texlive/2026/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(c:/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(c:/texlive/2026/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(c:/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(c:/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2025-08-29 v3.1.11a (3.1.11a)
+\pgffor@iter=\dimen302
+\pgffor@skip=\dimen303
+\pgffor@stack=\toks44
+\pgffor@toks=\toks45
+))
+(c:/texlive/2026/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2025-08-29 v3.1.11a (3.1.11a)
+
+(c:/texlive/2026/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.co
+de.tex
+File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@plot@mark@count=\count338
+\pgfplotmarksize=\dimen304
+)
+\tikz@lastx=\dimen305
+\tikz@lasty=\dimen306
+\tikz@lastxsaved=\dimen307
+\tikz@lastysaved=\dimen308
+\tikz@lastmovetox=\dimen309
+\tikz@lastmovetoy=\dimen310
+\tikzleveldistance=\dimen311
+\tikzsiblingdistance=\dimen312
+\tikz@figbox=\box81
+\tikz@figbox@bg=\box82
+\tikz@tempbox=\box83
+\tikz@tempbox@bg=\box84
+\tikztreelevel=\count339
+\tikznumberofchildren=\count340
+\tikznumberofcurrentchild=\count341
+\tikz@fig@count=\count342
+
+(c:/texlive/2026/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfmatrixcurrentrow=\count343
+\pgfmatrixcurrentcolumn=\count344
+\pgf@matrix@numberofcolumns=\count345
+)
+\tikz@expandcount=\count346
+
+(c:/texlive/2026/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+brarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)))
+(c:/texlive/2026/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks46
+\verbatim@line=\toks47
+\verbatim@in@stream=\read3
+)
+(c:/texlive/2026/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+(c:/texlive/2026/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+\tcb@titlebox=\box85
+\tcb@upperbox=\box86
+\tcb@lowerbox=\box87
+\tcb@phantombox=\box88
+\c@tcbbreakpart=\count347
+\c@tcblayer=\count348
+\c@tcolorbox@number=\count349
+\l__tcobox_tmpa_box=\box89
+\l__tcobox_tmpa_dim=\dimen313
+\tcb@temp=\box90
+\tcb@temp=\box91
+\tcb@temp=\box92
+\tcb@temp=\box93
+)
+(c:/texlive/2026/texmf-dist/tex/latex/appendix/appendix.sty
+Package: appendix 2020/02/08 v1.2c extra appendix facilities
+\c@@pps=\count350
+\c@@ppsavesec=\count351
+\c@@ppsaveapp=\count352
+)
+(c:/texlive/2026/texmf-dist/tex/latex/fontspec/fontspec.sty
+(c:/texlive/2026/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2025-10-09 L3 Experimental document command parser
+)
+Package: fontspec 2025/09/29 v2.9g Font selection for XeLaTeX and LuaLaTeX
+Lua module: fontspec 2025/09/29 v2.9g Font selection for XeLaTeX and LuaLaTeX
+(c:/texlive/2026/texmf-dist/tex/latex/fontspec/fontspec-luatex.sty
+Package: fontspec-luatex 2025/09/29 v2.9g Font selection for XeLaTeX and LuaLaT
+eX
+\l__fontspec_script_int=\count353
+\l__fontspec_language_int=\count354
+\l__fontspec_strnum_int=\count355
+\l__fontspec_tmp_int=\count356
+\l__fontspec_tmpa_int=\count357
+\l__fontspec_tmpb_int=\count358
+\l__fontspec_tmpc_int=\count359
+\l__fontspec_em_int=\count360
+\l__fontspec_emdef_int=\count361
+\l__fontspec_strong_int=\count362
+\l__fontspec_strongdef_int=\count363
+\l__fontspec_tmpa_dim=\dimen314
+\l__fontspec_tmpb_dim=\dimen315
+\l__fontspec_tmpc_dim=\dimen316
+
+(c:/texlive/2026/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
+)
+(c:/texlive/2026/texmf-dist/tex/latex/fontspec/fontspec.cfg)(load cache: extra_l
+mroman10-bold.luc)
+LaTeX Font Info:    Font shape `JT3/mc/b/n' in size <10> not available
+(Font)              Font shape `JT3/gt/m/n' tried instead on input line 3974.
+LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
+(Font)              scaled to size 8.44485pt on input line 3974.
+LaTeX Font Info:    Font shape `JY3/mc/b/n' in size <10> not available
+(Font)              Font shape `JY3/gt/m/n' tried instead on input line 3974.
+LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
+(Font)              scaled to size 8.44485pt on input line 3974.
+(load cache: extra_haranoajigothic-medium.luc)))
+(c:/texlive/2026/texmf-dist/tex/luatex/luatexja/patches/lltjp-fontspec.sty)
+luaotfload | cache : Lookup cache loaded from C:/Users/false/OneDrive/ドキ
+ュメント/ChatGPT/pdf翻訳系/Schlosshauer_Decoherence/build/texcache/luatex
+-cache/generic/names/luaotfload-lookup-cache.luc.(load cache: extra_timesnewroma
+npsmt.luc)(load cache: extra_timesnewromanps-bolditalicmt.luc)(load cache: extra
+_timesnewromanps-boldmt.luc)(load cache: extra_timesnewromanps-italicmt.luc)
+
+Package fontspec Info: 
+(fontspec)             Font family 'TimesNewRoman(0)' created for font 'Times
+(fontspec)             New Roman' with options [].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"name:Times New
+(fontspec)             Roman:mode=node;script=latn;language=dflt;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: <->"name:Times
+(fontspec)             New Roman:mode=node;script=latn;language=dflt;+smcp;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"name:Times New
+(fontspec)             Roman/B:mode=node;script=latn;language=dflt;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <->"name:Times New
+(fontspec)             Roman/B:mode=node;script=latn;language=dflt;+smcp;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"name:Times New
+(fontspec)             Roman/I:mode=node;script=latn;language=dflt;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->"name:Times New
+(fontspec)             Roman/I:mode=node;script=latn;language=dflt;+smcp;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"name:Times
+(fontspec)             New Roman/BI:mode=node;script=latn;language=dflt;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->"name:Times New
+(fontspec)             Roman/BI:mode=node;script=latn;language=dflt;+smcp;"
+
+
+(c:/texlive/2026/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2026-01-28 v4.27 Multi-page Table package (DPC)
+\LTleft=\skip60
+\LTright=\skip61
+\LTpre=\skip62
+\LTpost=\skip63
+\LTchunksize=\count364
+\LTcapwidth=\dimen317
+\LT@head=\box94
+\LT@firsthead=\box95
+\LT@foot=\box96
+\LT@lastfoot=\box97
+\LT@gbox=\box98
+\LT@cols=\count365
+\LT@rows=\count366
+\c@LT@tables=\count367
+\c@LT@chunks=\count368
+\LT@p@ftn=\toks48
+)
+(c:/texlive/2026/texmf-dist/tex/latex/tools/array.sty
+Package: array 2026/02/24 v2.7b Tabular extension package (FMi)
+\col@sep=\dimen318
+\ar@mcellbox=\box99
+\extrarowheight=\dimen319
+\NC@list=\toks49
+\extratabsurround=\skip64
+\backup@length=\skip65
+\ar@cellbox=\box100
+)
+(c:/texlive/2026/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count369
+\float@exts=\toks50
+\float@box=\box101
+\@float@everytoks=\toks51
+\@floatcapt=\box102
+)
+(c:/texlive/2026/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2025/10/21 v2.0b multicolumn formatting (FMi)
+\c@tracingmulticols=\count370
+\mult@box=\box103
+\multicol@leftmargin=\dimen320
+\c@unbalance=\count371
+\c@collectmore=\count372
+\doublecol@number=\count373
+\multicoltolerance=\count374
+\multicolpretolerance=\count375
+\full@width=\dimen321
+\page@free=\dimen322
+\premulticols=\dimen323
+\postmulticols=\dimen324
+\multicolsep=\skip66
+\multicolbaselineskip=\skip67
+\partial@page=\box104
+\last@line=\box105
+\mc@boxedresult=\box106
+\maxbalancingoverflow=\dimen325
+\mult@rightbox=\box107
+\mult@grightbox=\box108
+\mult@firstbox=\box109
+\mult@gfirstbox=\box110
+\@tempa=\box111
+\@tempa=\box112
+\@tempa=\box113
+\@tempa=\box114
+\@tempa=\box115
+\@tempa=\box116
+\@tempa=\box117
+\@tempa=\box118
+\@tempa=\box119
+\@tempa=\box120
+\@tempa=\box121
+\@tempa=\box122
+\@tempa=\box123
+\@tempa=\box124
+\@tempa=\box125
+\@tempa=\box126
+\@tempa=\box127
+\@tempa=\box128
+\@tempa=\box129
+\@tempa=\box130
+\@tempa=\box131
+\@tempa=\box132
+\@tempa=\box133
+\@tempa=\box134
+\@tempa=\box135
+\@tempa=\box136
+\@tempa=\box137
+\@tempa=\box138
+\@tempa=\box139
+\@tempa=\box140
+\@tempa=\box141
+\@tempa=\box142
+\@tempa=\box143
+\@tempa=\box144
+\@tempa=\box145
+\@tempa=\box146
+\c@minrows=\count376
+\c@columnbadness=\count377
+\c@finalcolumnbadness=\count378
+\last@try=\dimen326
+\multicolovershoot=\dimen327
+\multicolundershoot=\dimen328
+\mult@nat@firstbox=\box147
+\colbreak@box=\box148
+\mc@col@check@num=\count379
+\g__mc_curr_col_int=\count380
+)
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 90.
+Package hyperref Info: Option `hypertexnames' set `false' on input line 90.
+
+(c:/texlive/2026/texmf-dist/tex/luatex/luatexja/patches/lltjp-array.sty
+Package: lltjp-array 2026-05-13 Patch to array for LuaTeX-ja
+
+lltjp-array: patch FAILED (\@tabular 2)
+) (./build/Schlosshauer_Decoherence_jp.aux)
+\openout1 = Schlosshauer_Decoherence_jp.aux
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for JY3/mc/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for JT3/mc/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+
+(c:/texlive/2026/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count381
+\scratchdimen=\dimen329
+\scratchbox=\box149
+\nofMPsegments=\count382
+\nofMParguments=\count383
+\everyMPshowfont=\toks52
+\MPscratchCnt=\count384
+\MPscratchDim=\dimen330
+\MPnumerator=\count385
+\makeMPintoPDFobject=\count386
+\everyMPtoPDFconversion=\toks53
+) (c:/texlive/2026/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(c:/texlive/2026/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+*geometry* driver: auto-detecting
+*geometry* detected driver: luatex
+*geometry* verbose mode - [ preamble ] result:
+* driver: luatex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
+* v-part:(T,H,B)=(85.35826pt, 674.33032pt, 85.35826pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=455.24411pt
+* \textheight=674.33032pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-23.29626pt
+* \headheight=21.90002pt
+* \headsep=14.48451pt
+* \topskip=13.9734pt
+* \footskip=28.45792pt
+* \marginparwidth=20.25125pt
+* \marginparsep=20.25125pt
+* \columnsep=20.25125pt
+* \skip\footins=17.52002pt plus 5.475pt minus 2.19pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package hyperref Info: Link coloring ON on input line 94.
+(./build/Schlosshauer_Decoherence_jp.out)
+(./build/Schlosshauer_Decoherence_jp.out)
+\@outlinefile=\write4
+
+\openout4 = Schlosshauer_Decoherence_jp.out
+
+Package fontspec Info: 
+(fontspec)             Adjusting the maths setup (use [no-math] to avoid
+(fontspec)             this).
+
+\symlegacymaths=\mathgroup12
+LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 94.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 94.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 94.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 94.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 94.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 94.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 94.
+LaTeX Font Info:    Redeclaring math accent \check on input line 94.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 94.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 94.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 94.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 94.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 94.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 94.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 94.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 94.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 94.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 94.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 94.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 94.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 94.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 94.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 94.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 94.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `normal' on input line 94.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 94.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `bold' on input line 94.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 94.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 94.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 94.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> TU/lmr/b/n on input line 94.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 94.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 94.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  TU/lmr/m/n --> TU/lmr/b/n on input line 94.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> TU/lmr/b/it on input line 94.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 94.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 94.
+(load cache: extra_lmroman17-regular.luc)
+LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
+(Font)              scaled to size 15.97903pt on input line 99.
+LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
+(Font)              scaled to size 15.97903pt on input line 99.
+(load cache: extra_lmroman12-bold.luc)
+LaTeX Font Info:    Font shape `JT3/mc/b/n' in size <17.28> not available
+(Font)              Font shape `JT3/gt/m/n' tried instead on input line 99.
+LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
+(Font)              scaled to size 14.59271pt on input line 99.
+LaTeX Font Info:    Font shape `JY3/mc/b/n' in size <17.28> not available
+(Font)              Font shape `JY3/gt/m/n' tried instead on input line 99.
+LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
+(Font)              scaled to size 14.59271pt on input line 99.
+LaTeX Font Info:    Font shape `JT3/mc/b/n' in size <12> not available
+(Font)              Font shape `JT3/gt/m/n' tried instead on input line 99.
+LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
+(Font)              scaled to size 10.13382pt on input line 99.
+LaTeX Font Info:    Font shape `JY3/mc/b/n' in size <12> not available
+(Font)              Font shape `JY3/gt/m/n' tried instead on input line 99.
+LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
+(Font)              scaled to size 10.13382pt on input line 99.
+(load cache: extra_lmroman12-regular.luc)
+LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
+(Font)              scaled to size 11.09656pt on input line 99.
+LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
+(Font)              scaled to size 11.09656pt on input line 99.
+LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
+(Font)              scaled to size 8.32242pt on input line 99.
+LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
+(Font)              scaled to size 8.32242pt on input line 99.
+ [1
+
+{c:/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./chapters/pub
+lication.tex
+LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
+(Font)              scaled to size 13.31584pt on input line 2.
+LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
+(Font)              scaled to size 13.31584pt on input line 2.
+LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
+(Font)              scaled to size 13.31584pt on input line 2.
+LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
+(Font)              scaled to size 13.31584pt on input line 2.
+(load cache: extra_lmsans12-regular.luc)
+LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
+(Font)              scaled to size 11.09656pt on input line 7.
+LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
+(Font)              scaled to size 11.09656pt on input line 7.
+LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
+(Font)              scaled to size 9.24713pt on input line 9.
+LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
+(Font)              scaled to size 9.24713pt on input line 9.
+(load cache: extra_lmsans10-regular.luc) [2
+
+]
+LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
+(Font)              scaled to size 8.32242pt on input line 28.
+LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
+(Font)              scaled to size 8.32242pt on input line 28.
+(load cache: extra_lmsans9-regular.luc)
+LaTeX Font Info:    Calculating math sizes for size <9.85501> on input line 35.
+
+(load cache: extra_lmroman6-regular.luc)(load cache: extra_lmroman5-regular.luc)
+
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <4.5> not available
+(Font)              size <5> substituted on input line 35.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <4.5> not available
+(Font)              size <5> substituted on input line 35.
+
+LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
+(Font)              scaled to size 5.82565pt on input line 35.
+LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
+(Font)              scaled to size 4.16121pt on input line 35.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 35.
+
+(c:/texlive/2026/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 35.
+
+
+(c:/texlive/2026/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <4.5> not available
+(Font)              size <5> substituted on input line 35.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <4.5> not available
+(Font)              size <5> substituted on input line 35.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <4.5> not available
+(Font)              size <5> substituted on input line 35.
+
+LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
+(Font)              scaled to size 5.82565pt on input line 35.
+LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
+(Font)              scaled to size 4.16121pt on input line 35.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 35
+.
+(c:/texlive/2026/texmf-dist/tex/latex/jknapltx/ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <4.5> not available
+(Font)              size <5> substituted on input line 35.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <4.5> not available
+(Font)              size <5> substituted on input line 35.
+
+) (./chapters/preface.tex [3
+
+] [4
+
+] [5
+
+] [6]
+LaTeX Font Info:    Calculating math sizes for size <10.95001> on input line 39
+.
+(load cache: extra_lmroman7-regular.luc)
+LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
+(Font)              scaled to size 6.47295pt on input line 39.
+LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
+(Font)              scaled to size 4.62357pt on input line 39.
+LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
+(Font)              scaled to size 6.47295pt on input line 39.
+LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
+(Font)              scaled to size 4.62357pt on input line 39.
+ [7])
+(./build/Schlosshauer_Decoherence_jp.toc [8
+
+] [9] [10] [11])
+\tf@toc=\write5
+
+\openout5 = Schlosshauer_Decoherence_jp.toc
+ [12]
+(./chapters/ch01.tex [1
+
+
+]
+<figures/ch01_fig01.pdf, id=941, 333.245pt x 100.375pt>
+File: figures/ch01_fig01.pdf Graphic file (type pdf)
+<use figures/ch01_fig01.pdf>
+Package luatex.def Info: figures/ch01_fig01.pdf  used on input line 26.
+(luatex.def)             Requested size: 437.0374pt x 131.64688pt.
+ [2<./figures/ch01_fig01.pdf>] [3] [4] [5]
+LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
+(Font)              scaled to size 6.47299pt on input line 93.
+LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
+(Font)              scaled to size 6.47299pt on input line 93.
+LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
+(Font)              scaled to size 6.47295pt on input line 93.
+LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
+(Font)              scaled to size 4.62357pt on input line 93.
+LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
+(Font)              scaled to size 5.82565pt on input line 95.
+LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
+(Font)              scaled to size 4.16121pt on input line 95.
+ [6] [7](load cache: extra_lmroman10-italic.luc)
+LaTeX Font Info:    Font shape `JT3/mc/m/it' in size <10> not available
+(Font)              Font shape `JT3/mc/m/n' tried instead on input line 114.
+LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
+(Font)              scaled to size 8.44485pt on input line 114.
+LaTeX Font Info:    Font shape `JY3/mc/m/it' in size <10> not available
+(Font)              Font shape `JY3/mc/m/n' tried instead on input line 114.
+LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
+(Font)              scaled to size 8.44485pt on input line 114.
+
+[8]) [9] (./chapters/ch02_01.tex [10
+
+] [11] [12]
+LaTeX Font Info:    Calculating math sizes for size <8.76001> on input line 54.
+
+
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <5.59996> not available
+(Font)              size <6> substituted on input line 54.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <4> not available
+(Font)              size <5> substituted on input line 54.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <5.59996> not available
+(Font)              size <6> substituted on input line 54.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <4> not available
+(Font)              size <5> substituted on input line 54.
+
+LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
+(Font)              scaled to size 5.17834pt on input line 54.
+LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
+(Font)              scaled to size 3.69885pt on input line 54.
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <5.59996> not available
+(Font)              size <6> substituted on input line 54.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <4> not available
+(Font)              size <5> substituted on input line 54.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <5.59996> not available
+(Font)              size <6> substituted on input line 54.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <4> not available
+(Font)              size <5> substituted on input line 54.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <5.59996> not available
+(Font)              size <6> substituted on input line 54.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <4> not available
+(Font)              size <5> substituted on input line 54.
+
+LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
+(Font)              scaled to size 7.3977pt on input line 54.
+LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
+(Font)              scaled to size 5.17834pt on input line 54.
+LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
+(Font)              scaled to size 3.69885pt on input line 54.
+
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <5.59996> not available
+(Font)              size <6> substituted on input line 54.
+
+
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <4> not available
+(Font)              size <5> substituted on input line 54.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.59996> not available
+(Font)              size <6> substituted on input line 54.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <4> not available
+(Font)              size <5> substituted on input line 54.
+
+LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
+(Font)              scaled to size 5.17834pt on input line 54.
+[13]) (./chapters/ch02_02.tex [14] [15]
+<figures/ch02_fig01.pdf, id=1215, 335.2525pt x 160.6pt>
+File: figures/ch02_fig01.pdf Graphic file (type pdf)
+<use figures/ch02_fig01.pdf>
+Package luatex.def Info: figures/ch02_fig01.pdf  used on input line 30.
+(luatex.def)             Requested size: 409.71692pt x 196.27232pt.
+ [16<./figures/ch02_fig01.pdf>] [17]
+<figures/ch02_fig02.pdf, id=1284, 335.2525pt x 137.51375pt>
+File: figures/ch02_fig02.pdf Graphic file (type pdf)
+<use figures/ch02_fig02.pdf>
+Package luatex.def Info: figures/ch02_fig02.pdf  used on input line 55.
+(luatex.def)             Requested size: 409.71692pt x 168.05818pt.
+
+[18<./figures/ch02_fig02.pdf>] [19]) (./chapters/ch02_03.tex [20] [21] [22]
+[23]) (./chapters/ch02_04.tex [24] [25] [26]
+<figures/ch02_fig03.pdf, id=1491, 272.01625pt x 94.3525pt>
+File: figures/ch02_fig03.pdf Graphic file (type pdf)
+<use figures/ch02_fig03.pdf>
+Package luatex.def Info: figures/ch02_fig03.pdf  used on input line 45.
+(luatex.def)             Requested size: 409.71692pt x 142.12296pt.
+ [27<./figures/ch02_fig03.pdf>])
+(./chapters/ch02_05.tex [28] [29] [30] [31]) (./chapters/ch02_06.tex [32]
+[33] [34] [35]) (./chapters/ch02_07.tex [36] [37]
+<figures/ch02_fig04.pdf, id=1750, 240.9pt x 112.42pt>
+File: figures/ch02_fig04.pdf Graphic file (type pdf)
+<use figures/ch02_fig04.pdf>
+Package luatex.def Info: figures/ch02_fig04.pdf  used on input line 38.
+(luatex.def)             Requested size: 373.3035pt x 174.22517pt.
+ [38<./figures/ch02_fig04.pdf>] [39]) (./chapters/ch02_08.tex [40] [41] [42] [4
+3]) (./chapters/ch02_09.tex
+[44]
+<figures/ch02_fig05.pdf, id=1915, 274.02374pt x 144.54pt>
+File: figures/ch02_fig05.pdf Graphic file (type pdf)
+<use figures/ch02_fig05.pdf>
+Package luatex.def Info: figures/ch02_fig05.pdf  used on input line 24.
+(luatex.def)             Requested size: 409.71692pt x 216.13234pt.
+ [45] [46<./figures/ch02_fig05.pdf>] [47]) (./chapters/ch02_10.tex [48]
+[49] [50] [51]) (./chapters/ch02_11.tex [52] [53] [54]) (./chapters/ch02_12.tex
+[55] [56] [57]) (./chapters/ch02_13.tex [58] [59] [60] [61])
+(./chapters/ch02_14.tex [62] [63]) (./chapters/ch02_15.tex [64] [65] [66]
+<figures/ch02_fig06.pdf, id=2420, 244.915pt x 136.51pt>
+File: figures/ch02_fig06.pdf Graphic file (type pdf)
+<use figures/ch02_fig06.pdf>
+Package luatex.def Info: figures/ch02_fig06.pdf  used on input line 68.
+(luatex.def)             Requested size: 382.40338pt x 213.14844pt.
+
+[67<./figures/ch02_fig06.pdf>]) (./chapters/ch02_16.tex [68] [69] [70] [71])
+(./chapters/ch02_17.tex [72] [73]) (./chapters/ch02_18.tex [74])
+(./chapters/ch02_19.tex [75] [76]) (./chapters/ch02_20.tex [77]
+<figures/ch02_fig07.pdf, id=2725, 176.66pt x 120.45pt>
+File: figures/ch02_fig07.pdf Graphic file (type pdf)
+<use figures/ch02_fig07.pdf>
+Package luatex.def Info: figures/ch02_fig07.pdf  used on input line 21.
+(luatex.def)             Requested size: 282.24911pt x 192.44455pt.
+<figures/ch02_fig08.pdf, id=2726, 268.00125pt x 119.44624pt>
+File: figures/ch02_fig08.pdf Graphic file (type pdf)
+<use figures/ch02_fig08.pdf>
+Package luatex.def Info: figures/ch02_fig08.pdf  used on input line 25.
+(luatex.def)             Requested size: 386.96027pt x 172.46538pt.
+ [78]
+<figures/ch02_fig09.pdf, id=2743, 268.00125pt x 100.375pt>
+File: figures/ch02_fig09.pdf Graphic file (type pdf)
+<use figures/ch02_fig09.pdf>
+Package luatex.def Info: figures/ch02_fig09.pdf  used on input line 33.
+(luatex.def)             Requested size: 386.96027pt x 144.9289pt.
+ [79<./figures/ch02_fig07.pdf><./figures/ch02_fig08.pdf>]) (./chapters/ch02_21.
+tex
+[80<./figures/ch02_fig09.pdf>] [81]) (./chapters/ch02_22.tex [82] [83])
+[84] (./chapters/ch03.tex [85
+
+]
+<figures/ch03_fig01.pdf, id=2961, 335.2525pt x 105.39375pt>
+File: figures/ch03_fig01.pdf Graphic file (type pdf)
+<use figures/ch03_fig01.pdf>
+Package luatex.def Info: figures/ch03_fig01.pdf  used on input line 34.
+(luatex.def)             Requested size: 409.71692pt x 128.8037pt.
+ [86<./figures/ch03_fig01.pdf>] [87]
+<figures/ch03_fig02.pdf, id=3090, 220.825pt x 120.45pt>
+File: figures/ch03_fig02.pdf Graphic file (type pdf)
+<use figures/ch03_fig02.pdf>
+Package luatex.def Info: figures/ch03_fig02.pdf  used on input line 84.
+(luatex.def)             Requested size: 264.0424pt x 144.03015pt.
+<figures/ch03_fig03.pdf, id=3091, 255.95625pt x 99.37125pt>
+File: figures/ch03_fig03.pdf Graphic file (type pdf)
+<use figures/ch03_fig03.pdf>
+Package luatex.def Info: figures/ch03_fig03.pdf  used on input line 88.
+(luatex.def)             Requested size: 364.19667pt x 141.40382pt.
+ [88<./figures/ch03_fig02.pdf>] [89<./figures/ch03_fig03.pdf>] [90] [91] [92] [
+93] [94]
+[95] [96] [97] [98] [99] [100] [101] [102] [103]
+<figures/ch03_fig04.pdf, id=3610, 245.91875pt x 127.47626pt>
+File: figures/ch03_fig04.pdf Graphic file (type pdf)
+<use figures/ch03_fig04.pdf>
+Package luatex.def Info: figures/ch03_fig04.pdf  used on input line 739.
+(luatex.def)             Requested size: 318.66948pt x 165.19391pt.
+ [104]
+<figures/ch03_fig05.pdf, id=3636, 210.7875pt x 119.44624pt>
+File: figures/ch03_fig05.pdf Graphic file (type pdf)
+<use figures/ch03_fig05.pdf>
+Package luatex.def Info: figures/ch03_fig05.pdf  used on input line 788.
+(luatex.def)             Requested size: 318.66948pt x 180.58324pt.
+ [105<./figures/ch03_fig04.pdf>] [106<./figures/ch03_fig05.pdf>]
+<figures/ch03_fig06.pdf, id=3796, 228.855pt x 147.55125pt>
+File: figures/ch03_fig06.pdf Graphic file (type pdf)
+<use figures/ch03_fig06.pdf>
+Package luatex.def Info: figures/ch03_fig06.pdf  used on input line 821.
+(luatex.def)             Requested size: 318.66948pt x 205.4671pt.
+ [107<./figures/ch03_fig06.pdf>]
+<figures/ch03_fig07.pdf, id=3883, 236.885pt x 155.58125pt>
+File: figures/ch03_fig07.pdf Graphic file (type pdf)
+<use figures/ch03_fig07.pdf>
+Package luatex.def Info: figures/ch03_fig07.pdf  used on input line 852.
+(luatex.def)             Requested size: 318.66948pt x 209.30391pt.
+<figures/ch03_fig08.pdf, id=3886, 230.8625pt x 442.65375pt>
+File: figures/ch03_fig08.pdf Graphic file (type pdf)
+<use figures/ch03_fig08.pdf>
+Package luatex.def Info: figures/ch03_fig08.pdf  used on input line 858.
+(luatex.def)             Requested size: 286.806pt x 549.9589pt.
+
+[108]
+<figures/ch03_fig09.pdf, id=3905, 241.90375pt x 148.555pt>
+File: figures/ch03_fig09.pdf Graphic file (type pdf)
+<use figures/ch03_fig09.pdf>
+Package luatex.def Info: figures/ch03_fig09.pdf  used on input line 878.
+(luatex.def)             Requested size: 318.66948pt x 195.71918pt.
+<figures/ch03_fig10.pdf, id=3906, 194.7275pt x 127.47626pt>
+File: figures/ch03_fig10.pdf Graphic file (type pdf)
+<use figures/ch03_fig10.pdf>
+Package luatex.def Info: figures/ch03_fig10.pdf  used on input line 905.
+(luatex.def)             Requested size: 295.90588pt x 193.71922pt.
+<figures/ch03_fig11.pdf, id=3907, 232.87pt x 487.8225pt>
+File: figures/ch03_fig11.pdf Graphic file (type pdf)
+<use figures/ch03_fig11.pdf>
+Package luatex.def Info: figures/ch03_fig11.pdf  used on input line 911.
+(luatex.def)             Requested size: 286.806pt x 600.87411pt.
+ [109<./figures/ch03_fig07.pdf>] [110<./figures/ch03_fig08.pdf>] [111<./figures/
+ch03_fig09.pdf><./figures/ch03_fig10.pdf>] [112<./figures/ch03_fig11.pdf>]) [11
+3] (./chapters/ch04.tex [114
+
+] [115] [116] [117] [118] [119] [120]
+[121] [122] [123] [124] [125] [126]) [127] (./chapters/ch05_01.tex [128
+
+]
+<figures/ch05_fig01.pdf, id=4562, 205.76875pt x 128.48pt>
+File: figures/ch05_fig01.pdf Graphic file (type pdf)
+<use figures/ch05_fig01.pdf>
+Package luatex.def Info: figures/ch05_fig01.pdf  used on input line 41.
+(luatex.def)             Requested size: 273.14923pt x 170.56648pt.
+
+[129] [130<./figures/ch05_fig01.pdf>] [131]) (./chapters/ch05_02.tex [132]
+<figures/ch05_eq_2.pdf, id=4699, 351.3125pt x 33.48378pt>
+File: figures/ch05_eq_2.pdf Graphic file (type pdf)
+<use figures/ch05_eq_2.pdf>
+Package luatex.def Info: figures/ch05_eq_2.pdf  used on input line 11.
+(luatex.def)             Requested size: 382.40338pt x 36.45009pt.
+<figures/ch05_eq_3.pdf, id=4700, 351.3125pt x 34.14537pt>
+File: figures/ch05_eq_3.pdf Graphic file (type pdf)
+<use figures/ch05_eq_3.pdf>
+Package luatex.def Info: figures/ch05_eq_3.pdf  used on input line 17.
+(luatex.def)             Requested size: 382.40338pt x 37.17029pt.
+<figures/ch05_eq_4.pdf, id=4701, 351.3125pt x 46.67595pt>
+File: figures/ch05_eq_4.pdf Graphic file (type pdf)
+<use figures/ch05_eq_4.pdf>
+Package luatex.def Info: figures/ch05_eq_4.pdf  used on input line 21.
+(luatex.def)             Requested size: 382.40338pt x 50.81094pt.
+
+[133<./figures/ch05_eq_2.pdf><./figures/ch05_eq_3.pdf>]
+<figures/ch05_eq_5.pdf, id=4808, 351.3125pt x 41.2636pt>
+File: figures/ch05_eq_5.pdf Graphic file (type pdf)
+<use figures/ch05_eq_5.pdf>
+Package luatex.def Info: figures/ch05_eq_5.pdf  used on input line 27.
+(luatex.def)             Requested size: 382.40338pt x 44.91911pt.
+<figures/ch05_eq_6.pdf, id=4809, 351.3125pt x 45.51082pt>
+File: figures/ch05_eq_6.pdf Graphic file (type pdf)
+<use figures/ch05_eq_6.pdf>
+Package luatex.def Info: figures/ch05_eq_6.pdf  used on input line 29.
+(luatex.def)             Requested size: 382.40338pt x 49.54259pt.
+<figures/ch05_eq_7.pdf, id=4810, 351.3125pt x 35.18536pt>
+File: figures/ch05_eq_7.pdf Graphic file (type pdf)
+<use figures/ch05_eq_7.pdf>
+Package luatex.def Info: figures/ch05_eq_7.pdf  used on input line 35.
+(luatex.def)             Requested size: 382.40338pt x 38.3024pt.
+<figures/ch05_eq_8.pdf, id=4811, 351.3125pt x 32.09491pt>
+File: figures/ch05_eq_8.pdf Graphic file (type pdf)
+<use figures/ch05_eq_8.pdf>
+Package luatex.def Info: figures/ch05_eq_8.pdf  used on input line 39.
+(luatex.def)             Requested size: 382.40338pt x 34.93817pt.
+<figures/ch05_eq_9.pdf, id=4812, 351.3125pt x 45.80899pt>
+File: figures/ch05_eq_9.pdf Graphic file (type pdf)
+<use figures/ch05_eq_9.pdf>
+Package luatex.def Info: figures/ch05_eq_9.pdf  used on input line 41.
+(luatex.def)             Requested size: 382.40338pt x 49.86717pt.
+ [134<./figures/ch05_eq_4.pdf><./figures/ch05_eq_5.pdf><./figures/ch05_eq_6.pdf>
+<./figures/ch05_eq_7.pdf><./figures/ch05_eq_8.pdf>]
+<figures/ch05_eq_10.pdf, id=5113, 351.3125pt x 68.47539pt>
+File: figures/ch05_eq_10.pdf Graphic file (type pdf)
+<use figures/ch05_eq_10.pdf>
+Package luatex.def Info: figures/ch05_eq_10.pdf  used on input line 43.
+(luatex.def)             Requested size: 382.40338pt x 74.5416pt.
+<figures/ch05_eq_11.pdf, id=5114, 351.3125pt x 26.70082pt>
+File: figures/ch05_eq_11.pdf Graphic file (type pdf)
+<use figures/ch05_eq_11.pdf>
+Package luatex.def Info: figures/ch05_eq_11.pdf  used on input line 45.
+(luatex.def)             Requested size: 382.40338pt x 29.06622pt.
+<figures/ch05_eq_12.pdf, id=5115, 351.3125pt x 30.64973pt>
+File: figures/ch05_eq_12.pdf Graphic file (type pdf)
+<use figures/ch05_eq_12.pdf>
+Package luatex.def Info: figures/ch05_eq_12.pdf  used on input line 47.
+(luatex.def)             Requested size: 382.40338pt x 33.36496pt.
+<figures/ch05_eq_13.pdf, id=5116, 351.3125pt x 98.54153pt>
+File: figures/ch05_eq_13.pdf Graphic file (type pdf)
+<use figures/ch05_eq_13.pdf>
+Package luatex.def Info: figures/ch05_eq_13.pdf  used on input line 49.
+(luatex.def)             Requested size: 382.40338pt x 107.2713pt.
+<figures/ch05_eq_14.pdf, id=5117, 351.3125pt x 71.8539pt>
+File: figures/ch05_eq_14.pdf Graphic file (type pdf)
+<use figures/ch05_eq_14.pdf>
+Package luatex.def Info: figures/ch05_eq_14.pdf  used on input line 55.
+(luatex.def)             Requested size: 382.40338pt x 78.21939pt.
+<figures/ch05_eq_15.pdf, id=5118, 351.3125pt x 65.23137pt>
+File: figures/ch05_eq_15.pdf Graphic file (type pdf)
+<use figures/ch05_eq_15.pdf>
+Package luatex.def Info: figures/ch05_eq_15.pdf  used on input line 57.
+(luatex.def)             Requested size: 382.40338pt x 71.0102pt.
+ [135<./figures/ch05_eq_9.pdf><./figures/ch05_eq_10.pdf><./figures/ch05_eq_11.pd
+f><./figures/ch05_eq_12.pdf><./figures/ch05_eq_13.pdf><./figures/ch05_eq_14.pdf>
+]
+<figures/ch05_eq_16_17.pdf, id=5476, 351.3125pt x 193.73514pt>
+File: figures/ch05_eq_16_17.pdf Graphic file (type pdf)
+<use figures/ch05_eq_16_17.pdf>
+Package luatex.def Info: figures/ch05_eq_16_17.pdf  used on input line 59.
+(luatex.def)             Requested size: 382.40338pt x 210.89809pt.
+<figures/ch05_eq_18.pdf, id=5477, 351.3125pt x 48.76207pt>
+File: figures/ch05_eq_18.pdf Graphic file (type pdf)
+<use figures/ch05_eq_18.pdf>
+Package luatex.def Info: figures/ch05_eq_18.pdf  used on input line 61.
+(luatex.def)             Requested size: 382.40338pt x 53.08186pt.
+<figures/ch05_eq_19a_19b.pdf, id=5478, 351.3125pt x 68.58223pt>
+File: figures/ch05_eq_19a_19b.pdf Graphic file (type pdf)
+<use figures/ch05_eq_19a_19b.pdf>
+Package luatex.def Info: figures/ch05_eq_19a_19b.pdf  used on input line 69.
+(luatex.def)             Requested size: 382.40338pt x 74.6579pt.
+ [136<./figures/ch05_eq_15.pdf><./figures/ch05_eq_16_17.pdf><./figures/ch05_eq_1
+8.pdf>]
+<figures/ch05_eq_21.pdf, id=5671, 351.3125pt x 69.43076pt>
+File: figures/ch05_eq_21.pdf Graphic file (type pdf)
+<use figures/ch05_eq_21.pdf>
+Package luatex.def Info: figures/ch05_eq_21.pdf  used on input line 73.
+(luatex.def)             Requested size: 382.40338pt x 75.58159pt.
+<figures/ch05_eq_22.pdf, id=5672, 351.3125pt x 66.31528pt>
+File: figures/ch05_eq_22.pdf Graphic file (type pdf)
+<use figures/ch05_eq_22.pdf>
+Package luatex.def Info: figures/ch05_eq_22.pdf  used on input line 75.
+(luatex.def)             Requested size: 382.40338pt x 72.19011pt.
+<figures/ch05_eq_23.pdf, id=5675, 351.3125pt x 32.48799pt>
+File: figures/ch05_eq_23.pdf Graphic file (type pdf)
+<use figures/ch05_eq_23.pdf>
+Package luatex.def Info: figures/ch05_eq_23.pdf  used on input line 80.
+(luatex.def)             Requested size: 382.40338pt x 35.36607pt.
+<figures/ch05_eq_24.pdf, id=5676, 351.3125pt x 37.055pt>
+File: figures/ch05_eq_24.pdf Graphic file (type pdf)
+<use figures/ch05_eq_24.pdf>
+Package luatex.def Info: figures/ch05_eq_24.pdf  used on input line 86.
+(luatex.def)             Requested size: 382.40338pt x 40.33766pt.
+ [137<./figures/ch05_eq_19a_19b.pdf><./figures/ch05_eq_21.pdf><./figures/ch05_eq
+_22.pdf><./figures/ch05_eq_23.pdf><./figures/ch05_eq_24.pdf>]
+<figures/ch05_eq_25.pdf, id=5948, 351.3125pt x 57.9046pt>
+File: figures/ch05_eq_25.pdf Graphic file (type pdf)
+<use figures/ch05_eq_25.pdf>
+Package luatex.def Info: figures/ch05_eq_25.pdf  used on input line 88.
+(luatex.def)             Requested size: 382.40338pt x 63.03435pt.
+<figures/ch05_eq_26a_26b_26c_26d.pdf, id=5949, 351.3125pt x 119.52531pt>
+File: figures/ch05_eq_26a_26b_26c_26d.pdf Graphic file (type pdf)
+<use figures/ch05_eq_26a_26b_26c_26d.pdf>
+Package luatex.def Info: figures/ch05_eq_26a_26b_26c_26d.pdf  used on input lin
+e 90.
+(luatex.def)             Requested size: 382.40338pt x 130.11403pt.
+<figures/ch05_eq_27.pdf, id=5950, 351.3125pt x 35.59969pt>
+File: figures/ch05_eq_27.pdf Graphic file (type pdf)
+<use figures/ch05_eq_27.pdf>
+Package luatex.def Info: figures/ch05_eq_27.pdf  used on input line 94.
+(luatex.def)             Requested size: 382.40338pt x 38.75345pt.
+<figures/ch05_eq_28.pdf, id=5951, 351.3125pt x 94.25815pt>
+File: figures/ch05_eq_28.pdf Graphic file (type pdf)
+<use figures/ch05_eq_28.pdf>
+Package luatex.def Info: figures/ch05_eq_28.pdf  used on input line 96.
+(luatex.def)             Requested size: 382.40338pt x 102.60844pt.
+<figures/ch05_eq_29.pdf, id=5953, 351.3125pt x 76.81398pt>
+File: figures/ch05_eq_29.pdf Graphic file (type pdf)
+<use figures/ch05_eq_29.pdf>
+Package luatex.def Info: figures/ch05_eq_29.pdf  used on input line 102.
+(luatex.def)             Requested size: 382.40338pt x 83.6189pt.
+ [138<./figures/ch05_eq_25.pdf><./figures/ch05_eq_26a_26b_26c_26d.pdf><./figures
+/ch05_eq_27.pdf><./figures/ch05_eq_28.pdf>]
+<figures/ch05_eq_30.pdf, id=6158, 351.3125pt x 27.47823pt>
+File: figures/ch05_eq_30.pdf Graphic file (type pdf)
+<use figures/ch05_eq_30.pdf>
+Package luatex.def Info: figures/ch05_eq_30.pdf  used on input line 106.
+(luatex.def)             Requested size: 382.40338pt x 29.91249pt.
+<figures/ch05_eq_32.pdf, id=6159, 351.3125pt x 65.55743pt>
+File: figures/ch05_eq_32.pdf Graphic file (type pdf)
+<use figures/ch05_eq_32.pdf>
+Package luatex.def Info: figures/ch05_eq_32.pdf  used on input line 112.
+(luatex.def)             Requested size: 382.40338pt x 71.36514pt.
+<figures/ch05_eq_33.pdf, id=6160, 351.3125pt x 33.96613pt>
+File: figures/ch05_eq_33.pdf Graphic file (type pdf)
+<use figures/ch05_eq_33.pdf>
+Package luatex.def Info: figures/ch05_eq_33.pdf  used on input line 114.
+(luatex.def)             Requested size: 382.40338pt x 36.97516pt.
+<figures/ch05_eq_34.pdf, id=6161, 351.3125pt x 33.96536pt>
+File: figures/ch05_eq_34.pdf Graphic file (type pdf)
+<use figures/ch05_eq_34.pdf>
+Package luatex.def Info: figures/ch05_eq_34.pdf  used on input line 120.
+(luatex.def)             Requested size: 382.40338pt x 36.97433pt.
+ [139<./figures/ch05_eq_29.pdf><./figures/ch05_eq_30.pdf><./figures/ch05_eq_32.p
+df><./figures/ch05_eq_33.pdf><./figures/ch05_eq_34.pdf>]
+<figures/ch05_eq_35.pdf, id=6406, 351.3125pt x 33.96541pt>
+File: figures/ch05_eq_35.pdf Graphic file (type pdf)
+<use figures/ch05_eq_35.pdf>
+Package luatex.def Info: figures/ch05_eq_35.pdf  used on input line 122.
+(luatex.def)             Requested size: 382.40338pt x 36.97438pt.
+<figures/ch05_eq_36.pdf, id=6407, 351.3125pt x 29.98071pt>
+File: figures/ch05_eq_36.pdf Graphic file (type pdf)
+<use figures/ch05_eq_36.pdf>
+Package luatex.def Info: figures/ch05_eq_36.pdf  used on input line 124.
+(luatex.def)             Requested size: 382.40338pt x 32.63667pt.
+<figures/ch05_eq_37.pdf, id=6408, 351.3125pt x 44.48895pt>
+File: figures/ch05_eq_37.pdf Graphic file (type pdf)
+<use figures/ch05_eq_37.pdf>
+Package luatex.def Info: figures/ch05_eq_37.pdf  used on input line 128.
+(luatex.def)             Requested size: 382.40338pt x 48.4302pt.
+<figures/ch05_eq_38.pdf, id=6409, 351.3125pt x 43.79329pt>
+File: figures/ch05_eq_38.pdf Graphic file (type pdf)
+<use figures/ch05_eq_38.pdf>
+Package luatex.def Info: figures/ch05_eq_38.pdf  used on input line 132.
+(luatex.def)             Requested size: 382.40338pt x 47.67291pt.
+<figures/ch05_eq_39.pdf, id=6410, 351.3125pt x 40.13448pt>
+File: figures/ch05_eq_39.pdf Graphic file (type pdf)
+<use figures/ch05_eq_39.pdf>
+Package luatex.def Info: figures/ch05_eq_39.pdf  used on input line 140.
+(luatex.def)             Requested size: 382.40338pt x 43.68997pt.
+ [140<./figures/ch05_eq_35.pdf><./figures/ch05_eq_36.pdf><./figures/ch05_eq_37.p
+df><./figures/ch05_eq_38.pdf>]
+<figures/ch05_eq_40.pdf, id=6633, 351.3125pt x 31.49078pt>
+File: figures/ch05_eq_40.pdf Graphic file (type pdf)
+<use figures/ch05_eq_40.pdf>
+Package luatex.def Info: figures/ch05_eq_40.pdf  used on input line 144.
+(luatex.def)             Requested size: 382.40338pt x 34.28052pt.
+<figures/ch05_eq_41.pdf, id=6634, 351.3125pt x 39.51244pt>
+File: figures/ch05_eq_41.pdf Graphic file (type pdf)
+<use figures/ch05_eq_41.pdf>
+Package luatex.def Info: figures/ch05_eq_41.pdf  used on input line 146.
+(luatex.def)             Requested size: 382.40338pt x 43.01282pt.
+<figures/ch05_eq_42a_42b_42c_42d.pdf, id=6637, 351.3125pt x 123.87437pt>
+File: figures/ch05_eq_42a_42b_42c_42d.pdf Graphic file (type pdf)
+<use figures/ch05_eq_42a_42b_42c_42d.pdf>
+Package luatex.def Info: figures/ch05_eq_42a_42b_42c_42d.pdf  used on input lin
+e 152.
+(luatex.def)             Requested size: 382.40338pt x 134.84836pt.
+
+[141<./figures/ch05_eq_39.pdf><./figures/ch05_eq_40.pdf><./figures/ch05_eq_41.pd
+f><./figures/ch05_eq_42a_42b_42c_42d.pdf>]) (./chapters/ch05_03.tex
+<figures/ch05_eq_43.pdf, id=6833, 351.3125pt x 41.29037pt>
+File: figures/ch05_eq_43.pdf Graphic file (type pdf)
+<use figures/ch05_eq_43.pdf>
+Package luatex.def Info: figures/ch05_eq_43.pdf  used on input line 10.
+(luatex.def)             Requested size: 382.40338pt x 44.94826pt.
+ [142<./figures/ch05_eq_43.pdf>]
+<figures/ch05_eq_44.pdf, id=6891, 351.3125pt x 43.46059pt>
+File: figures/ch05_eq_44.pdf Graphic file (type pdf)
+<use figures/ch05_eq_44.pdf>
+Package luatex.def Info: figures/ch05_eq_44.pdf  used on input line 14.
+(luatex.def)             Requested size: 382.40338pt x 47.31073pt.
+<figures/ch05_fig02.pdf, id=6892, 225.84375pt x 137.51375pt>
+File: figures/ch05_fig02.pdf Graphic file (type pdf)
+<use figures/ch05_fig02.pdf>
+Package luatex.def Info: figures/ch05_fig02.pdf  used on input line 22.
+(luatex.def)             Requested size: 295.90588pt x 180.19678pt.
+<figures/ch05_eq_45.pdf, id=6893, 351.3125pt x 39.32097pt>
+File: figures/ch05_eq_45.pdf Graphic file (type pdf)
+<use figures/ch05_eq_45.pdf>
+Package luatex.def Info: figures/ch05_eq_45.pdf  used on input line 28.
+(luatex.def)             Requested size: 382.40338pt x 42.80438pt.
+<figures/ch05_eq_46.pdf, id=6894, 351.3125pt x 25.89772pt>
+File: figures/ch05_eq_46.pdf Graphic file (type pdf)
+<use figures/ch05_eq_46.pdf>
+Package luatex.def Info: figures/ch05_eq_46.pdf  used on input line 30.
+(luatex.def)             Requested size: 382.40338pt x 28.19197pt.
+ [143<./figures/ch05_eq_44.pdf><./figures/ch05_fig02.pdf><./figures/ch05_eq_45.p
+df>]
+<figures/ch05_eq_47.pdf, id=7093, 351.3125pt x 43.60347pt>
+File: figures/ch05_eq_47.pdf Graphic file (type pdf)
+<use figures/ch05_eq_47.pdf>
+Package luatex.def Info: figures/ch05_eq_47.pdf  used on input line 38.
+(luatex.def)             Requested size: 382.40338pt x 47.46628pt.
+<figures/ch05_eq_48.pdf, id=7094, 351.3125pt x 41.6897pt>
+File: figures/ch05_eq_48.pdf Graphic file (type pdf)
+<use figures/ch05_eq_48.pdf>
+Package luatex.def Info: figures/ch05_eq_48.pdf  used on input line 40.
+(luatex.def)             Requested size: 382.40338pt x 45.38297pt.
+<figures/ch05_eq_49.pdf, id=7095, 351.3125pt x 42.37495pt>
+File: figures/ch05_eq_49.pdf Graphic file (type pdf)
+<use figures/ch05_eq_49.pdf>
+Package luatex.def Info: figures/ch05_eq_49.pdf  used on input line 44.
+(luatex.def)             Requested size: 382.40338pt x 46.12894pt.
+<figures/ch05_fig03.pdf, id=7096, 224.84pt x 136.51pt>
+File: figures/ch05_fig03.pdf Graphic file (type pdf)
+<use figures/ch05_fig03.pdf>
+Package luatex.def Info: figures/ch05_fig03.pdf  used on input line 47.
+(luatex.def)             Requested size: 295.90588pt x 179.67717pt.
+<figures/ch05_eq_50.pdf, id=7099, 351.3125pt x 42.95444pt>
+File: figures/ch05_eq_50.pdf Graphic file (type pdf)
+<use figures/ch05_eq_50.pdf>
+Package luatex.def Info: figures/ch05_eq_50.pdf  used on input line 55.
+(luatex.def)             Requested size: 382.40338pt x 46.75975pt.
+ [144<./figures/ch05_eq_46.pdf><./figures/ch05_eq_47.pdf><./figures/ch05_eq_48.p
+df><./figures/ch05_eq_49.pdf>]
+<figures/ch05_eq_51.pdf, id=7363, 351.3125pt x 35.2924pt>
+File: figures/ch05_eq_51.pdf Graphic file (type pdf)
+<use figures/ch05_eq_51.pdf>
+Package luatex.def Info: figures/ch05_eq_51.pdf  used on input line 57.
+(luatex.def)             Requested size: 382.40338pt x 38.41895pt.
+<figures/ch05_eq_52.pdf, id=7364, 351.3125pt x 35.98969pt>
+File: figures/ch05_eq_52.pdf Graphic file (type pdf)
+<use figures/ch05_eq_52.pdf>
+Package luatex.def Info: figures/ch05_eq_52.pdf  used on input line 59.
+(luatex.def)             Requested size: 382.40338pt x 39.17798pt.
+<figures/ch05_eq_53.pdf, id=7365, 351.3125pt x 35.31245pt>
+File: figures/ch05_eq_53.pdf Graphic file (type pdf)
+<use figures/ch05_eq_53.pdf>
+Package luatex.def Info: figures/ch05_eq_53.pdf  used on input line 61.
+(luatex.def)             Requested size: 382.40338pt x 38.44075pt.
+<figures/ch05_eq_54.pdf, id=7366, 351.3125pt x 40.94077pt>
+File: figures/ch05_eq_54.pdf Graphic file (type pdf)
+<use figures/ch05_eq_54.pdf>
+Package luatex.def Info: figures/ch05_eq_54.pdf  used on input line 63.
+(luatex.def)             Requested size: 382.40338pt x 44.56767pt.
+ [145<./figures/ch05_fig03.pdf><./figures/ch05_eq_50.pdf><./figures/ch05_eq_51.p
+df><./figures/ch05_eq_52.pdf><./figures/ch05_eq_53.pdf><./figures/ch05_eq_54.pdf
+>]
+<figures/ch05_eq_55.pdf, id=7702, 351.3125pt x 35.34744pt>
+File: figures/ch05_eq_55.pdf Graphic file (type pdf)
+<use figures/ch05_eq_55.pdf>
+Package luatex.def Info: figures/ch05_eq_55.pdf  used on input line 67.
+(luatex.def)             Requested size: 382.40338pt x 38.47884pt.
+<figures/ch05_eq_56.pdf, id=7703, 351.3125pt x 38.8014pt>
+File: figures/ch05_eq_56.pdf Graphic file (type pdf)
+<use figures/ch05_eq_56.pdf>
+Package luatex.def Info: figures/ch05_eq_56.pdf  used on input line 69.
+(luatex.def)             Requested size: 382.40338pt x 42.2388pt.
+<figures/ch05_eq_57.pdf, id=7704, 351.3125pt x 41.14633pt>
+File: figures/ch05_eq_57.pdf Graphic file (type pdf)
+<use figures/ch05_eq_57.pdf>
+Package luatex.def Info: figures/ch05_eq_57.pdf  used on input line 77.
+(luatex.def)             Requested size: 382.40338pt x 44.79146pt.
+<figures/ch05_eq_58.pdf, id=7705, 351.3125pt x 40.55217pt>
+File: figures/ch05_eq_58.pdf Graphic file (type pdf)
+<use figures/ch05_eq_58.pdf>
+Package luatex.def Info: figures/ch05_eq_58.pdf  used on input line 79.
+(luatex.def)             Requested size: 382.40338pt x 44.14465pt.
+<figures/ch05_eq_59.pdf, id=7708, 351.3125pt x 29.38506pt>
+File: figures/ch05_eq_59.pdf Graphic file (type pdf)
+<use figures/ch05_eq_59.pdf>
+Package luatex.def Info: figures/ch05_eq_59.pdf  used on input line 85.
+(luatex.def)             Requested size: 382.40338pt x 31.98825pt.
+<figures/ch05_eq_60.pdf, id=7709, 351.3125pt x 48.80229pt>
+File: figures/ch05_eq_60.pdf Graphic file (type pdf)
+<use figures/ch05_eq_60.pdf>
+Package luatex.def Info: figures/ch05_eq_60.pdf  used on input line 87.
+(luatex.def)             Requested size: 382.40338pt x 53.12566pt.
+ [146<./figures/ch05_eq_55.pdf><./figures/ch05_eq_56.pdf><./figures/ch05_eq_57.p
+df><./figures/ch05_eq_58.pdf><./figures/ch05_eq_59.pdf>]
+<figures/ch05_eq_61.pdf, id=7991, 351.3125pt x 47.43466pt>
+File: figures/ch05_eq_61.pdf Graphic file (type pdf)
+<use figures/ch05_eq_61.pdf>
+Package luatex.def Info: figures/ch05_eq_61.pdf  used on input line 93.
+(luatex.def)             Requested size: 382.40338pt x 51.63686pt.
+<figures/ch05_eq_62.pdf, id=7993, 351.3125pt x 41.42665pt>
+File: figures/ch05_eq_62.pdf Graphic file (type pdf)
+<use figures/ch05_eq_62.pdf>
+Package luatex.def Info: figures/ch05_eq_62.pdf  used on input line 97.
+(luatex.def)             Requested size: 382.40338pt x 45.0966pt.
+<figures/ch05_eq_63.pdf, id=7994, 351.3125pt x 82.2512pt>
+File: figures/ch05_eq_63.pdf Graphic file (type pdf)
+<use figures/ch05_eq_63.pdf>
+Package luatex.def Info: figures/ch05_eq_63.pdf  used on input line 99.
+(luatex.def)             Requested size: 382.40338pt x 89.53781pt.
+ [147<./figures/ch05_eq_60.pdf><./figures/ch05_eq_61.pdf><./figures/ch05_eq_62.p
+df><./figures/ch05_eq_63.pdf>])
+(./chapters/ch05_04.tex
+<figures/ch05_eq_64.pdf, id=8205, 351.3125pt x 19.95256pt>
+File: figures/ch05_eq_64.pdf Graphic file (type pdf)
+<use figures/ch05_eq_64.pdf>
+Package luatex.def Info: figures/ch05_eq_64.pdf  used on input line 6.
+(luatex.def)             Requested size: 382.40338pt x 21.72014pt.
+<figures/ch05_eq_65.pdf, id=8206, 351.3125pt x 45.80974pt>
+File: figures/ch05_eq_65.pdf Graphic file (type pdf)
+<use figures/ch05_eq_65.pdf>
+Package luatex.def Info: figures/ch05_eq_65.pdf  used on input line 8.
+(luatex.def)             Requested size: 382.40338pt x 49.868pt.
+<figures/ch05_eq_67.pdf, id=8208, 351.3125pt x 38.61134pt>
+File: figures/ch05_eq_67.pdf Graphic file (type pdf)
+<use figures/ch05_eq_67.pdf>
+Package luatex.def Info: figures/ch05_eq_67.pdf  used on input line 17.
+(luatex.def)             Requested size: 382.40338pt x 42.03189pt.
+ [148<./figures/ch05_eq_64.pdf><./figures/ch05_eq_65.pdf><./figures/ch05_eq_67.p
+df>]
+<figures/ch05_eq_68.pdf, id=8358, 351.3125pt x 46.377pt>
+File: figures/ch05_eq_68.pdf Graphic file (type pdf)
+<use figures/ch05_eq_68.pdf>
+Package luatex.def Info: figures/ch05_eq_68.pdf  used on input line 22.
+(luatex.def)             Requested size: 382.40338pt x 50.48552pt.
+<figures/ch05_eq_70.pdf, id=8359, 351.3125pt x 35.96219pt>
+File: figures/ch05_eq_70.pdf Graphic file (type pdf)
+<use figures/ch05_eq_70.pdf>
+Package luatex.def Info: figures/ch05_eq_70.pdf  used on input line 29.
+(luatex.def)             Requested size: 382.40338pt x 39.14806pt.
+<figures/ch05_eq_71.pdf, id=8360, 351.3125pt x 33.965pt>
+File: figures/ch05_eq_71.pdf Graphic file (type pdf)
+<use figures/ch05_eq_71.pdf>
+Package luatex.def Info: figures/ch05_eq_71.pdf  used on input line 33.
+(luatex.def)             Requested size: 382.40338pt x 36.97394pt.
+<figures/ch05_eq_72a_72b.pdf, id=8361, 351.3125pt x 102.56276pt>
+File: figures/ch05_eq_72a_72b.pdf Graphic file (type pdf)
+<use figures/ch05_eq_72a_72b.pdf>
+Package luatex.def Info: figures/ch05_eq_72a_72b.pdf  used on input line 35.
+(luatex.def)             Requested size: 382.40338pt x 111.64876pt.
+<figures/ch05_fig04.pdf, id=8363, 338.26375pt x 431.6125pt>
+File: figures/ch05_fig04.pdf Graphic file (type pdf)
+<use figures/ch05_fig04.pdf>
+Package luatex.def Info: figures/ch05_fig04.pdf  used on input line 41.
+(luatex.def)             Requested size: 409.71692pt x 522.79935pt.
+<figures/ch05_eq_73a_73b_73c.pdf, id=8366, 351.3125pt x 60.28973pt>
+File: figures/ch05_eq_73a_73b_73c.pdf Graphic file (type pdf)
+<use figures/ch05_eq_73a_73b_73c.pdf>
+Package luatex.def Info: figures/ch05_eq_73a_73b_73c.pdf  used on input line 48
+.
+(luatex.def)             Requested size: 382.40338pt x 65.63078pt.
+ [149<./figures/ch05_eq_68.pdf><./figures/ch05_eq_70.pdf><./figures/ch05_eq_71.p
+df><./figures/ch05_eq_72a_72b.pdf>] [150<./figures/ch05_fig04.pdf>] [151<./figur
+es/ch05_eq_73a_73b_73c.pdf>]
+<figures/ch05_eq_75.pdf, id=8645, 351.3125pt x 31.91467pt>
+File: figures/ch05_eq_75.pdf Graphic file (type pdf)
+<use figures/ch05_eq_75.pdf>
+Package luatex.def Info: figures/ch05_eq_75.pdf  used on input line 72.
+(luatex.def)             Requested size: 382.40338pt x 34.74197pt.
+<figures/ch05_eq_76.pdf, id=8646, 351.3125pt x 40.17992pt>
+File: figures/ch05_eq_76.pdf Graphic file (type pdf)
+<use figures/ch05_eq_76.pdf>
+Package luatex.def Info: figures/ch05_eq_76.pdf  used on input line 74.
+(luatex.def)             Requested size: 382.40338pt x 43.73941pt.
+<figures/ch05_eq_77.pdf, id=8648, 351.3125pt x 38.97845pt>
+File: figures/ch05_eq_77.pdf Graphic file (type pdf)
+<use figures/ch05_eq_77.pdf>
+Package luatex.def Info: figures/ch05_eq_77.pdf  used on input line 76.
+(luatex.def)             Requested size: 382.40338pt x 42.43153pt.
+ [152<./figures/ch05_eq_75.pdf><./figures/ch05_eq_76.pdf><./figures/ch05_eq_77.p
+df>]
+<figures/ch05_eq_78.pdf, id=8791, 351.3125pt x 19.95316pt>
+File: figures/ch05_eq_78.pdf Graphic file (type pdf)
+<use figures/ch05_eq_78.pdf>
+Package luatex.def Info: figures/ch05_eq_78.pdf  used on input line 92.
+(luatex.def)             Requested size: 382.40338pt x 21.72078pt.
+<figures/ch05_eq_79.pdf, id=8792, 351.3125pt x 46.19884pt>
+File: figures/ch05_eq_79.pdf Graphic file (type pdf)
+<use figures/ch05_eq_79.pdf>
+Package luatex.def Info: figures/ch05_eq_79.pdf  used on input line 94.
+(luatex.def)             Requested size: 382.40338pt x 50.29156pt.
+<figures/ch05_eq_80.pdf, id=8793, 351.3125pt x 29.67365pt>
+File: figures/ch05_eq_80.pdf Graphic file (type pdf)
+<use figures/ch05_eq_80.pdf>
+Package luatex.def Info: figures/ch05_eq_80.pdf  used on input line 96.
+(luatex.def)             Requested size: 382.40338pt x 32.3024pt.
+ [153<./figures/ch05_eq_78.pdf><./figures/ch05_eq_79.pdf><./figures/ch05_eq_80.p
+df>]
+<figures/ch05_eq_81.pdf, id=8925, 351.3125pt x 30.48564pt>
+File: figures/ch05_eq_81.pdf Graphic file (type pdf)
+<use figures/ch05_eq_81.pdf>
+Package luatex.def Info: figures/ch05_eq_81.pdf  used on input line 108.
+(luatex.def)             Requested size: 382.40338pt x 33.18636pt.
+<figures/ch05_eq_82.pdf, id=8928, 351.3125pt x 47.00964pt>
+File: figures/ch05_eq_82.pdf Graphic file (type pdf)
+<use figures/ch05_eq_82.pdf>
+Package luatex.def Info: figures/ch05_eq_82.pdf  used on input line 118.
+(luatex.def)             Requested size: 382.40338pt x 51.1742pt.
+ [154<./figures/ch05_eq_81.pdf><./figures/ch05_eq_82.pdf>]
+<figures/ch05_eq_83.pdf, id=9025, 351.3125pt x 25.36546pt>
+File: figures/ch05_eq_83.pdf Graphic file (type pdf)
+<use figures/ch05_eq_83.pdf>
+Package luatex.def Info: figures/ch05_eq_83.pdf  used on input line 122.
+(luatex.def)             Requested size: 382.40338pt x 27.61256pt.
+) (./chapters/ch05_05.tex
+[155<./figures/ch05_eq_83.pdf>] [156]
+<figures/ch05_eq_84.pdf, id=9125, 351.3125pt x 64.01018pt>
+File: figures/ch05_eq_84.pdf Graphic file (type pdf)
+<use figures/ch05_eq_84.pdf>
+Package luatex.def Info: figures/ch05_eq_84.pdf  used on input line 37.
+(luatex.def)             Requested size: 382.40338pt x 69.68082pt.
+ [157<./figures/ch05_eq_84.pdf>])
+(./chapters/ch05_06.tex [158]
+<figures/ch05_eq_85.pdf, id=9216, 351.3125pt x 19.96375pt>
+File: figures/ch05_eq_85.pdf Graphic file (type pdf)
+<use figures/ch05_eq_85.pdf>
+Package luatex.def Info: figures/ch05_eq_85.pdf  used on input line 20.
+(luatex.def)             Requested size: 382.40338pt x 21.7323pt.
+<figures/ch05_eq_86.pdf, id=9217, 351.3125pt x 26.9101pt>
+File: figures/ch05_eq_86.pdf Graphic file (type pdf)
+<use figures/ch05_eq_86.pdf>
+Package luatex.def Info: figures/ch05_eq_86.pdf  used on input line 22.
+(luatex.def)             Requested size: 382.40338pt x 29.29404pt.
+<figures/ch05_eq_87.pdf, id=9218, 351.3125pt x 48.13916pt>
+File: figures/ch05_eq_87.pdf Graphic file (type pdf)
+<use figures/ch05_eq_87.pdf>
+Package luatex.def Info: figures/ch05_eq_87.pdf  used on input line 26.
+(luatex.def)             Requested size: 382.40338pt x 52.40378pt.
+<figures/ch05_eq_88.pdf, id=9219, 351.3125pt x 44.15585pt>
+File: figures/ch05_eq_88.pdf Graphic file (type pdf)
+<use figures/ch05_eq_88.pdf>
+Package luatex.def Info: figures/ch05_eq_88.pdf  used on input line 28.
+(luatex.def)             Requested size: 382.40338pt x 48.0676pt.
+<figures/ch05_eq_89a_89b.pdf, id=9220, 351.3125pt x 82.4329pt>
+File: figures/ch05_eq_89a_89b.pdf Graphic file (type pdf)
+<use figures/ch05_eq_89a_89b.pdf>
+Package luatex.def Info: figures/ch05_eq_89a_89b.pdf  used on input line 32.
+(luatex.def)             Requested size: 382.40338pt x 89.7356pt.
+<figures/ch05_eq_90.pdf, id=9221, 351.3125pt x 50.1255pt>
+File: figures/ch05_eq_90.pdf Graphic file (type pdf)
+<use figures/ch05_eq_90.pdf>
+Package luatex.def Info: figures/ch05_eq_90.pdf  used on input line 34.
+(luatex.def)             Requested size: 382.40338pt x 54.56609pt.
+ [159<./figures/ch05_eq_85.pdf><./figures/ch05_eq_86.pdf><./figures/ch05_eq_87.p
+df><./figures/ch05_eq_88.pdf><./figures/ch05_eq_89a_89b.pdf>]
+<figures/ch05_eq_91.pdf, id=9475, 351.3125pt x 33.96562pt>
+File: figures/ch05_eq_91.pdf Graphic file (type pdf)
+<use figures/ch05_eq_91.pdf>
+Package luatex.def Info: figures/ch05_eq_91.pdf  used on input line 40.
+(luatex.def)             Requested size: 382.40338pt x 36.97461pt.
+<figures/ch05_eq_92.pdf, id=9476, 351.3125pt x 19.95311pt>
+File: figures/ch05_eq_92.pdf Graphic file (type pdf)
+<use figures/ch05_eq_92.pdf>
+Package luatex.def Info: figures/ch05_eq_92.pdf  used on input line 44.
+(luatex.def)             Requested size: 382.40338pt x 21.72073pt.
+<figures/ch05_eq_94a_94b_94c.pdf, id=9478, 351.3125pt x 91.55125pt>
+File: figures/ch05_eq_94a_94b_94c.pdf Graphic file (type pdf)
+<use figures/ch05_eq_94a_94b_94c.pdf>
+Package luatex.def Info: figures/ch05_eq_94a_94b_94c.pdf  used on input line 55
+.
+(luatex.def)             Requested size: 382.40338pt x 99.66174pt.
+<figures/ch05_eq_95.pdf, id=9479, 351.3125pt x 30.40625pt>
+File: figures/ch05_eq_95.pdf Graphic file (type pdf)
+<use figures/ch05_eq_95.pdf>
+Package luatex.def Info: figures/ch05_eq_95.pdf  used on input line 61.
+(luatex.def)             Requested size: 382.40338pt x 33.09991pt.
+ [160<./figures/ch05_eq_90.pdf><./figures/ch05_eq_91.pdf><./figures/ch05_eq_92.p
+df><./figures/ch05_eq_94a_94b_94c.pdf>]
+<figures/ch05_eq_96.pdf, id=9783, 351.3125pt x 84.67117pt>
+File: figures/ch05_eq_96.pdf Graphic file (type pdf)
+<use figures/ch05_eq_96.pdf>
+Package luatex.def Info: figures/ch05_eq_96.pdf  used on input line 63.
+(luatex.def)             Requested size: 382.40338pt x 92.17215pt.
+<figures/ch05_eq_97.pdf, id=9784, 351.3125pt x 42.72096pt>
+File: figures/ch05_eq_97.pdf Graphic file (type pdf)
+<use figures/ch05_eq_97.pdf>
+Package luatex.def Info: figures/ch05_eq_97.pdf  used on input line 65.
+(luatex.def)             Requested size: 382.40338pt x 46.50558pt.
+<figures/ch05_eq_98.pdf, id=9786, 351.3125pt x 46.91077pt>
+File: figures/ch05_eq_98.pdf Graphic file (type pdf)
+<use figures/ch05_eq_98.pdf>
+Package luatex.def Info: figures/ch05_eq_98.pdf  used on input line 67.
+(luatex.def)             Requested size: 382.40338pt x 51.06656pt.
+<figures/ch05_eq_99.pdf, id=9788, 351.3125pt x 49.86484pt>
+File: figures/ch05_eq_99.pdf Graphic file (type pdf)
+<use figures/ch05_eq_99.pdf>
+Package luatex.def Info: figures/ch05_eq_99.pdf  used on input line 73.
+(luatex.def)             Requested size: 382.40338pt x 54.28233pt.
+<figures/ch05_eq_100.pdf, id=9789, 351.3125pt x 41.51662pt>
+File: figures/ch05_eq_100.pdf Graphic file (type pdf)
+<use figures/ch05_eq_100.pdf>
+Package luatex.def Info: figures/ch05_eq_100.pdf  used on input line 75.
+(luatex.def)             Requested size: 382.40338pt x 45.19453pt.
+ [161<./figures/ch05_eq_95.pdf><./figures/ch05_eq_96.pdf><./figures/ch05_eq_97.p
+df><./figures/ch05_eq_98.pdf><./figures/ch05_eq_99.pdf>]
+<figures/ch05_eq_101.pdf, id=10093, 351.3125pt x 32.68456pt>
+File: figures/ch05_eq_101.pdf Graphic file (type pdf)
+<use figures/ch05_eq_101.pdf>
+Package luatex.def Info: figures/ch05_eq_101.pdf  used on input line 79.
+(luatex.def)             Requested size: 382.40338pt x 35.58005pt.
+<figures/ch05_eq_102.pdf, id=10094, 351.3125pt x 73.97647pt>
+File: figures/ch05_eq_102.pdf Graphic file (type pdf)
+<use figures/ch05_eq_102.pdf>
+Package luatex.def Info: figures/ch05_eq_102.pdf  used on input line 81.
+(luatex.def)             Requested size: 382.40338pt x 80.53001pt.
+<figures/ch05_eq_103.pdf, id=10095, 351.3125pt x 37.55959pt>
+File: figures/ch05_eq_103.pdf Graphic file (type pdf)
+<use figures/ch05_eq_103.pdf>
+Package luatex.def Info: figures/ch05_eq_103.pdf  used on input line 83.
+(luatex.def)             Requested size: 382.40338pt x 40.88696pt.
+<figures/ch05_eq_104.pdf, id=10097, 351.3125pt x 40.3105pt>
+File: figures/ch05_eq_104.pdf Graphic file (type pdf)
+<use figures/ch05_eq_104.pdf>
+Package luatex.def Info: figures/ch05_eq_104.pdf  used on input line 92.
+(luatex.def)             Requested size: 382.40338pt x 43.88158pt.
+<figures/ch05_eq_105.pdf, id=10102, 351.3125pt x 20.66714pt>
+File: figures/ch05_eq_105.pdf Graphic file (type pdf)
+<use figures/ch05_eq_105.pdf>
+Package luatex.def Info: figures/ch05_eq_105.pdf  used on input line 97.
+(luatex.def)             Requested size: 382.40338pt x 22.49803pt.
+ [162<./figures/ch05_eq_100.pdf><./figures/ch05_eq_101.pdf><./figures/ch05_eq_10
+2.pdf><./figures/ch05_eq_103.pdf><./figures/ch05_eq_104.pdf>]
+<figures/ch05_eq_106.pdf, id=10376, 351.3125pt x 41.45554pt>
+File: figures/ch05_eq_106.pdf Graphic file (type pdf)
+<use figures/ch05_eq_106.pdf>
+Package luatex.def Info: figures/ch05_eq_106.pdf  used on input line 99.
+(luatex.def)             Requested size: 382.40338pt x 45.12807pt.
+<figures/ch05_eq_107.pdf, id=10377, 351.3125pt x 41.77106pt>
+File: figures/ch05_eq_107.pdf Graphic file (type pdf)
+<use figures/ch05_eq_107.pdf>
+Package luatex.def Info: figures/ch05_eq_107.pdf  used on input line 103.
+(luatex.def)             Requested size: 382.40338pt x 45.47154pt.
+<figures/ch05_eq_108.pdf, id=10378, 351.3125pt x 80.65219pt>
+File: figures/ch05_eq_108.pdf Graphic file (type pdf)
+<use figures/ch05_eq_108.pdf>
+Package luatex.def Info: figures/ch05_eq_108.pdf  used on input line 105.
+(luatex.def)             Requested size: 382.40338pt x 87.79713pt.
+<figures/ch05_eq_109.pdf, id=10379, 351.3125pt x 25.66364pt>
+File: figures/ch05_eq_109.pdf Graphic file (type pdf)
+<use figures/ch05_eq_109.pdf>
+Package luatex.def Info: figures/ch05_eq_109.pdf  used on input line 107.
+(luatex.def)             Requested size: 382.40338pt x 27.93715pt.
+<figures/ch05_eq_110.pdf, id=10380, 351.3125pt x 49.3445pt>
+File: figures/ch05_eq_110.pdf Graphic file (type pdf)
+<use figures/ch05_eq_110.pdf>
+Package luatex.def Info: figures/ch05_eq_110.pdf  used on input line 109.
+(luatex.def)             Requested size: 382.40338pt x 53.7159pt.
+ [163<./figures/ch05_eq_105.pdf><./figures/ch05_eq_106.pdf><./figures/ch05_eq_10
+7.pdf><./figures/ch05_eq_108.pdf><./figures/ch05_eq_109.pdf><./figures/ch05_eq_1
+10.pdf>]
+<figures/ch05_eq_111.pdf, id=10655, 351.3125pt x 42.32251pt>
+File: figures/ch05_eq_111.pdf Graphic file (type pdf)
+<use figures/ch05_eq_111.pdf>
+Package luatex.def Info: figures/ch05_eq_111.pdf  used on input line 122.
+(luatex.def)             Requested size: 382.40338pt x 46.07182pt.
+<figures/ch05_eq_112.pdf, id=10656, 351.3125pt x 19.95323pt>
+File: figures/ch05_eq_112.pdf Graphic file (type pdf)
+<use figures/ch05_eq_112.pdf>
+Package luatex.def Info: figures/ch05_eq_112.pdf  used on input line 124.
+(luatex.def)             Requested size: 382.40338pt x 21.72087pt.
+<figures/ch05_eq_113.pdf, id=10657, 351.3125pt x 45.20653pt>
+File: figures/ch05_eq_113.pdf Graphic file (type pdf)
+<use figures/ch05_eq_113.pdf>
+Package luatex.def Info: figures/ch05_eq_113.pdf  used on input line 126.
+(luatex.def)             Requested size: 382.40338pt x 49.21135pt.
+<figures/ch05_fig05.pdf, id=10658, 219.82124pt x 119.44624pt>
+File: figures/ch05_fig05.pdf Graphic file (type pdf)
+<use figures/ch05_fig05.pdf>
+Package luatex.def Info: figures/ch05_fig05.pdf  used on input line 129.
+(luatex.def)             Requested size: 309.56265pt x 168.21507pt.
+<figures/ch05_eq_114.pdf, id=10659, 351.3125pt x 37.99362pt>
+File: figures/ch05_eq_114.pdf Graphic file (type pdf)
+<use figures/ch05_eq_114.pdf>
+Package luatex.def Info: figures/ch05_eq_114.pdf  used on input line 136.
+(luatex.def)             Requested size: 382.40338pt x 41.35945pt.
+<figures/ch05_eq_115.pdf, id=10660, 351.3125pt x 21.07442pt>
+File: figures/ch05_eq_115.pdf Graphic file (type pdf)
+<use figures/ch05_eq_115.pdf>
+Package luatex.def Info: figures/ch05_eq_115.pdf  used on input line 138.
+(luatex.def)             Requested size: 382.40338pt x 22.94136pt.
+<figures/ch05_eq_116.pdf, id=10661, 351.3125pt x 59.92049pt>
+File: figures/ch05_eq_116.pdf Graphic file (type pdf)
+<use figures/ch05_eq_116.pdf>
+Package luatex.def Info: figures/ch05_eq_116.pdf  used on input line 140.
+(luatex.def)             Requested size: 382.40338pt x 65.22882pt.
+ [164<./figures/ch05_eq_111.pdf><./figures/ch05_eq_112.pdf><./figures/ch05_eq_11
+3.pdf><./figures/ch05_eq_114.pdf><./figures/ch05_eq_115.pdf>]
+<figures/ch05_eq_117.pdf, id=11021, 351.3125pt x 108.1494pt>
+File: figures/ch05_eq_117.pdf Graphic file (type pdf)
+<use figures/ch05_eq_117.pdf>
+Package luatex.def Info: figures/ch05_eq_117.pdf  used on input line 142.
+(luatex.def)             Requested size: 382.40338pt x 117.73032pt.
+<figures/ch05_eq_118.pdf, id=11022, 351.3125pt x 47.30006pt>
+File: figures/ch05_eq_118.pdf Graphic file (type pdf)
+<use figures/ch05_eq_118.pdf>
+Package luatex.def Info: figures/ch05_eq_118.pdf  used on input line 144.
+(luatex.def)             Requested size: 382.40338pt x 51.49036pt.
+<figures/ch05_eq_119.pdf, id=11023, 351.3125pt x 38.59071pt>
+File: figures/ch05_eq_119.pdf Graphic file (type pdf)
+<use figures/ch05_eq_119.pdf>
+Package luatex.def Info: figures/ch05_eq_119.pdf  used on input line 148.
+(luatex.def)             Requested size: 382.40338pt x 42.00945pt.
+ [165<./figures/ch05_fig05.pdf><./figures/ch05_eq_116.pdf><./figures/ch05_eq_117
+.pdf><./figures/ch05_eq_118.pdf><./figures/ch05_eq_119.pdf>]
+<figures/ch05_eq_120.pdf, id=11351, 351.3125pt x 38.60135pt>
+File: figures/ch05_eq_120.pdf Graphic file (type pdf)
+<use figures/ch05_eq_120.pdf>
+Package luatex.def Info: figures/ch05_eq_120.pdf  used on input line 150.
+(luatex.def)             Requested size: 382.40338pt x 42.02101pt.
+<figures/ch05_eq_121.pdf, id=11352, 351.3125pt x 48.96037pt>
+File: figures/ch05_eq_121.pdf Graphic file (type pdf)
+<use figures/ch05_eq_121.pdf>
+Package luatex.def Info: figures/ch05_eq_121.pdf  used on input line 155.
+(luatex.def)             Requested size: 382.40338pt x 53.29774pt.
+<figures/ch05_eq_122.pdf, id=11354, 351.3125pt x 48.1301pt>
+File: figures/ch05_eq_122.pdf Graphic file (type pdf)
+<use figures/ch05_eq_122.pdf>
+Package luatex.def Info: figures/ch05_eq_122.pdf  used on input line 160.
+(luatex.def)             Requested size: 382.40338pt x 52.39392pt.
+<figures/ch05_eq_123.pdf, id=11355, 351.3125pt x 44.01323pt>
+File: figures/ch05_eq_123.pdf Graphic file (type pdf)
+<use figures/ch05_eq_123.pdf>
+Package luatex.def Info: figures/ch05_eq_123.pdf  used on input line 162.
+(luatex.def)             Requested size: 382.40338pt x 47.91234pt.
+<figures/ch05_eq_124.pdf, id=11356, 351.3125pt x 43.91121pt>
+File: figures/ch05_eq_124.pdf Graphic file (type pdf)
+<use figures/ch05_eq_124.pdf>
+Package luatex.def Info: figures/ch05_eq_124.pdf  used on input line 164.
+(luatex.def)             Requested size: 382.40338pt x 47.80127pt.
+<figures/ch05_eq_125.pdf, id=11357, 351.3125pt x 33.17001pt>
+File: figures/ch05_eq_125.pdf Graphic file (type pdf)
+<use figures/ch05_eq_125.pdf>
+Package luatex.def Info: figures/ch05_eq_125.pdf  used on input line 168.
+(luatex.def)             Requested size: 382.40338pt x 36.10852pt.
+ [166<./figures/ch05_eq_120.pdf><./figures/ch05_eq_121.pdf><./figures/ch05_eq_12
+2.pdf><./figures/ch05_eq_123.pdf><./figures/ch05_eq_124.pdf>]
+<figures/ch05_eq_126.pdf, id=11620, 351.3125pt x 50.13026pt>
+File: figures/ch05_eq_126.pdf Graphic file (type pdf)
+<use figures/ch05_eq_126.pdf>
+Package luatex.def Info: figures/ch05_eq_126.pdf  used on input line 172.
+(luatex.def)             Requested size: 382.40338pt x 54.57127pt.
+<figures/ch05_fig06.pdf, id=11621, 227.85126pt x 139.52126pt>
+File: figures/ch05_fig06.pdf Graphic file (type pdf)
+<use figures/ch05_fig06.pdf>
+Package luatex.def Info: figures/ch05_fig06.pdf  used on input line 178.
+(luatex.def)             Requested size: 295.90588pt x 181.19876pt.
+<figures/ch05_eq_127.pdf, id=11622, 351.3125pt x 31.74335pt>
+File: figures/ch05_eq_127.pdf Graphic file (type pdf)
+<use figures/ch05_eq_127.pdf>
+Package luatex.def Info: figures/ch05_eq_127.pdf  used on input line 182.
+(luatex.def)             Requested size: 382.40338pt x 34.55547pt.
+<figures/ch05_eq_128.pdf, id=11623, 351.3125pt x 24.84932pt>
+File: figures/ch05_eq_128.pdf Graphic file (type pdf)
+<use figures/ch05_eq_128.pdf>
+Package luatex.def Info: figures/ch05_eq_128.pdf  used on input line 184.
+(luatex.def)             Requested size: 382.40338pt x 27.05069pt.
+<figures/ch05_eq_129.pdf, id=11624, 351.3125pt x 43.18106pt>
+File: figures/ch05_eq_129.pdf Graphic file (type pdf)
+<use figures/ch05_eq_129.pdf>
+Package luatex.def Info: figures/ch05_eq_129.pdf  used on input line 186.
+(luatex.def)             Requested size: 382.40338pt x 47.00644pt.
+ [167<./figures/ch05_eq_125.pdf><./figures/ch05_eq_126.pdf><./figures/ch05_fig06
+.pdf><./figures/ch05_eq_127.pdf><./figures/ch05_eq_128.pdf>]
+<figures/ch05_fig07.pdf, id=12027, 251.94125pt x 131.49126pt>
+File: figures/ch05_fig07.pdf Graphic file (type pdf)
+<use figures/ch05_fig07.pdf>
+Package luatex.def Info: figures/ch05_fig07.pdf  used on input line 197.
+(luatex.def)             Requested size: 295.90588pt x 154.43802pt.
+<figures/ch05_eq_130.pdf, id=12028, 351.3125pt x 39.883pt>
+File: figures/ch05_eq_130.pdf Graphic file (type pdf)
+<use figures/ch05_eq_130.pdf>
+Package luatex.def Info: figures/ch05_eq_130.pdf  used on input line 203.
+(luatex.def)             Requested size: 382.40338pt x 43.41621pt.
+ [168<./figures/ch05_eq_129.pdf><./figures/ch05_fig07.pdf><./figures/ch05_eq_130
+.pdf>]
+<figures/ch05_eq_131.pdf, id=12278, 351.3125pt x 39.88289pt>
+File: figures/ch05_eq_131.pdf Graphic file (type pdf)
+<use figures/ch05_eq_131.pdf>
+Package luatex.def Info: figures/ch05_eq_131.pdf  used on input line 207.
+(luatex.def)             Requested size: 382.40338pt x 43.41608pt.
+<figures/ch05_eq_132.pdf, id=12279, 351.3125pt x 39.33325pt>
+File: figures/ch05_eq_132.pdf Graphic file (type pdf)
+<use figures/ch05_eq_132.pdf>
+Package luatex.def Info: figures/ch05_eq_132.pdf  used on input line 211.
+(luatex.def)             Requested size: 382.40338pt x 42.81776pt.
+<figures/ch05_eq_133.pdf, id=12280, 351.3125pt x 32.89468pt>
+File: figures/ch05_eq_133.pdf Graphic file (type pdf)
+<use figures/ch05_eq_133.pdf>
+Package luatex.def Info: figures/ch05_eq_133.pdf  used on input line 213.
+(luatex.def)             Requested size: 382.40338pt x 35.80878pt.
+<figures/ch05_eq_134.pdf, id=12281, 351.3125pt x 19.7914pt>
+File: figures/ch05_eq_134.pdf Graphic file (type pdf)
+<use figures/ch05_eq_134.pdf>
+Package luatex.def Info: figures/ch05_eq_134.pdf  used on input line 215.
+(luatex.def)             Requested size: 382.40338pt x 21.5447pt.
+<figures/ch05_eq_135.pdf, id=12282, 351.3125pt x 50.15048pt>
+File: figures/ch05_eq_135.pdf Graphic file (type pdf)
+<use figures/ch05_eq_135.pdf>
+Package luatex.def Info: figures/ch05_eq_135.pdf  used on input line 221.
+(luatex.def)             Requested size: 382.40338pt x 54.59328pt.
+) (./chapters/ch05_07.tex
+<figures/ch05_eq_136.pdf, id=12285, 351.3125pt x 48.15767pt>
+File: figures/ch05_eq_136.pdf Graphic file (type pdf)
+<use figures/ch05_eq_136.pdf>
+Package luatex.def Info: figures/ch05_eq_136.pdf  used on input line 6.
+(luatex.def)             Requested size: 382.40338pt x 52.42392pt.
+ [169<./figures/ch05_eq_131.pdf><./figures/ch05_eq_132.pdf><./figures/ch05_eq_13
+3.pdf><./figures/ch05_eq_134.pdf><./figures/ch05_eq_135.pdf>]
+<figures/ch05_eq_137.pdf, id=12614, 351.3125pt x 48.6999pt>
+File: figures/ch05_eq_137.pdf Graphic file (type pdf)
+<use figures/ch05_eq_137.pdf>
+Package luatex.def Info: figures/ch05_eq_137.pdf  used on input line 16.
+(luatex.def)             Requested size: 382.40338pt x 53.01419pt.
+<figures/ch05_eq_138.pdf, id=12615, 351.3125pt x 65.63644pt>
+File: figures/ch05_eq_138.pdf Graphic file (type pdf)
+<use figures/ch05_eq_138.pdf>
+Package luatex.def Info: figures/ch05_eq_138.pdf  used on input line 22.
+(luatex.def)             Requested size: 382.40338pt x 71.45116pt.
+<figures/ch05_eq_139_140.pdf, id=12616, 351.3125pt x 92.64786pt>
+File: figures/ch05_eq_139_140.pdf Graphic file (type pdf)
+<use figures/ch05_eq_139_140.pdf>
+Package luatex.def Info: figures/ch05_eq_139_140.pdf  used on input line 24.
+(luatex.def)             Requested size: 382.40338pt x 100.85551pt.
+ [170<./figures/ch05_eq_136.pdf><./figures/ch05_eq_137.pdf><./figures/ch05_eq_13
+8.pdf>]
+<figures/ch05_eq_141.pdf, id=12777, 351.3125pt x 30.74263pt>
+File: figures/ch05_eq_141.pdf Graphic file (type pdf)
+<use figures/ch05_eq_141.pdf>
+Package luatex.def Info: figures/ch05_eq_141.pdf  used on input line 26.
+(luatex.def)             Requested size: 382.40338pt x 33.46611pt.
+<figures/ch05_eq_142.pdf, id=12778, 351.3125pt x 61.42789pt>
+File: figures/ch05_eq_142.pdf Graphic file (type pdf)
+<use figures/ch05_eq_142.pdf>
+Package luatex.def Info: figures/ch05_eq_142.pdf  used on input line 34.
+(luatex.def)             Requested size: 382.40338pt x 66.86977pt.
+<figures/ch05_eq_143.pdf, id=12779, 351.3125pt x 45.4123pt>
+File: figures/ch05_eq_143.pdf Graphic file (type pdf)
+<use figures/ch05_eq_143.pdf>
+Package luatex.def Info: figures/ch05_eq_143.pdf  used on input line 38.
+(luatex.def)             Requested size: 382.40338pt x 49.43532pt.
+<figures/ch05_eq_144.pdf, id=12780, 351.3125pt x 35.3106pt>
+File: figures/ch05_eq_144.pdf Graphic file (type pdf)
+<use figures/ch05_eq_144.pdf>
+Package luatex.def Info: figures/ch05_eq_144.pdf  used on input line 40.
+(luatex.def)             Requested size: 382.40338pt x 38.43872pt.
+<figures/ch05_eq_145a_145b_145c.pdf, id=12781, 351.3125pt x 98.64723pt>
+File: figures/ch05_eq_145a_145b_145c.pdf Graphic file (type pdf)
+<use figures/ch05_eq_145a_145b_145c.pdf>
+Package luatex.def Info: figures/ch05_eq_145a_145b_145c.pdf  used on input line
+ 42.
+(luatex.def)             Requested size: 382.40338pt x 107.38635pt.
+ [171<./figures/ch05_eq_139_140.pdf><./figures/ch05_eq_141.pdf><./figures/ch05_e
+q_142.pdf><./figures/ch05_eq_143.pdf><./figures/ch05_eq_144.pdf>]
+<figures/ch05_eq_146.pdf, id=13024, 351.3125pt x 45.93826pt>
+File: figures/ch05_eq_146.pdf Graphic file (type pdf)
+<use figures/ch05_eq_146.pdf>
+Package luatex.def Info: figures/ch05_eq_146.pdf  used on input line 46.
+(luatex.def)             Requested size: 382.40338pt x 50.0079pt.
+<figures/ch05_eq_147.pdf, id=13025, 351.3125pt x 51.8537pt>
+File: figures/ch05_eq_147.pdf Graphic file (type pdf)
+<use figures/ch05_eq_147.pdf>
+Package luatex.def Info: figures/ch05_eq_147.pdf  used on input line 54.
+(luatex.def)             Requested size: 382.40338pt x 56.44737pt.
+<figures/ch05_eq_148.pdf, id=13026, 351.3125pt x 66.55128pt>
+File: figures/ch05_eq_148.pdf Graphic file (type pdf)
+<use figures/ch05_eq_148.pdf>
+Package luatex.def Info: figures/ch05_eq_148.pdf  used on input line 56.
+(luatex.def)             Requested size: 382.40338pt x 72.44702pt.
+<figures/ch05_eq_149.pdf, id=13027, 351.3125pt x 39.47638pt>
+File: figures/ch05_eq_149.pdf Graphic file (type pdf)
+<use figures/ch05_eq_149.pdf>
+Package luatex.def Info: figures/ch05_eq_149.pdf  used on input line 60.
+(luatex.def)             Requested size: 382.40338pt x 42.97357pt.
+ [172<./figures/ch05_eq_145a_145b_145c.pdf><./figures/ch05_eq_146.pdf><./figures
+/ch05_eq_147.pdf><./figures/ch05_eq_148.pdf>]) (./chapters/ch05_08.tex [173<./fi
+gures/ch05_eq_149.pdf>]
+<figures/ch05_eq_150.pdf, id=13278, 351.3125pt x 42.6194pt>
+File: figures/ch05_eq_150.pdf Graphic file (type pdf)
+<use figures/ch05_eq_150.pdf>
+Package luatex.def Info: figures/ch05_eq_150.pdf  used on input line 19.
+(luatex.def)             Requested size: 382.40338pt x 46.39502pt.
+<figures/ch05_eq_151.pdf, id=13283, 351.3125pt x 31.0031pt>
+File: figures/ch05_eq_151.pdf Graphic file (type pdf)
+<use figures/ch05_eq_151.pdf>
+Package luatex.def Info: figures/ch05_eq_151.pdf  used on input line 29.
+(luatex.def)             Requested size: 382.40338pt x 33.74963pt.
+<figures/ch05_eq_152.pdf, id=13284, 351.3125pt x 49.52943pt>
+File: figures/ch05_eq_152.pdf Graphic file (type pdf)
+<use figures/ch05_eq_152.pdf>
+Package luatex.def Info: figures/ch05_eq_152.pdf  used on input line 31.
+(luatex.def)             Requested size: 382.40338pt x 53.91722pt.
+ [174<./figures/ch05_eq_150.pdf><./figures/ch05_eq_151.pdf>]
+<figures/ch05_eq_153.pdf, id=13397, 351.3125pt x 31.00174pt>
+File: figures/ch05_eq_153.pdf Graphic file (type pdf)
+<use figures/ch05_eq_153.pdf>
+Package luatex.def Info: figures/ch05_eq_153.pdf  used on input line 35.
+(luatex.def)             Requested size: 382.40338pt x 33.74815pt.
+<figures/ch05_eq_154.pdf, id=13398, 351.3125pt x 42.99835pt>
+File: figures/ch05_eq_154.pdf Graphic file (type pdf)
+<use figures/ch05_eq_154.pdf>
+Package luatex.def Info: figures/ch05_eq_154.pdf  used on input line 37.
+(luatex.def)             Requested size: 382.40338pt x 46.80754pt.
+<figures/ch05_eq_155.pdf, id=13399, 351.3125pt x 37.95877pt>
+File: figures/ch05_eq_155.pdf Graphic file (type pdf)
+<use figures/ch05_eq_155.pdf>
+Package luatex.def Info: figures/ch05_eq_155.pdf  used on input line 39.
+(luatex.def)             Requested size: 382.40338pt x 41.32152pt.
+<figures/ch05_eq_156.pdf, id=13400, 351.3125pt x 57.6105pt>
+File: figures/ch05_eq_156.pdf Graphic file (type pdf)
+<use figures/ch05_eq_156.pdf>
+Package luatex.def Info: figures/ch05_eq_156.pdf  used on input line 41.
+(luatex.def)             Requested size: 382.40338pt x 62.71419pt.
+<figures/ch05_eq_157.pdf, id=13401, 351.3125pt x 49.64842pt>
+File: figures/ch05_eq_157.pdf Graphic file (type pdf)
+<use figures/ch05_eq_157.pdf>
+Package luatex.def Info: figures/ch05_eq_157.pdf  used on input line 45.
+(luatex.def)             Requested size: 382.40338pt x 54.04674pt.
+<figures/ch05_eq_158.pdf, id=13402, 351.3125pt x 52.15848pt>
+File: figures/ch05_eq_158.pdf Graphic file (type pdf)
+<use figures/ch05_eq_158.pdf>
+Package luatex.def Info: figures/ch05_eq_158.pdf  used on input line 47.
+(luatex.def)             Requested size: 382.40338pt x 56.77917pt.
+<figures/ch05_eq_159.pdf, id=13404, 351.3125pt x 46.07906pt>
+File: figures/ch05_eq_159.pdf Graphic file (type pdf)
+<use figures/ch05_eq_159.pdf>
+Package luatex.def Info: figures/ch05_eq_159.pdf  used on input line 49.
+(luatex.def)             Requested size: 382.40338pt x 50.16118pt.
+ [175<./figures/ch05_eq_152.pdf><./figures/ch05_eq_153.pdf><./figures/ch05_eq_15
+4.pdf><./figures/ch05_eq_155.pdf><./figures/ch05_eq_156.pdf><./figures/ch05_eq_1
+57.pdf><./figures/ch05_eq_158.pdf>]
+<figures/ch05_eq_160.pdf, id=13804, 351.3125pt x 39.97353pt>
+File: figures/ch05_eq_160.pdf Graphic file (type pdf)
+<use figures/ch05_eq_160.pdf>
+Package luatex.def Info: figures/ch05_eq_160.pdf  used on input line 53.
+(luatex.def)             Requested size: 382.40338pt x 43.51476pt.
+<figures/ch05_eq_161.pdf, id=13805, 351.3125pt x 42.12506pt>
+File: figures/ch05_eq_161.pdf Graphic file (type pdf)
+<use figures/ch05_eq_161.pdf>
+Package luatex.def Info: figures/ch05_eq_161.pdf  used on input line 55.
+(luatex.def)             Requested size: 382.40338pt x 45.85689pt.
+<figures/ch05_eq_162.pdf, id=13806, 351.3125pt x 43.89392pt>
+File: figures/ch05_eq_162.pdf Graphic file (type pdf)
+<use figures/ch05_eq_162.pdf>
+Package luatex.def Info: figures/ch05_eq_162.pdf  used on input line 57.
+(luatex.def)             Requested size: 382.40338pt x 47.78246pt.
+<figures/ch05_eq_163.pdf, id=13808, 351.3125pt x 43.46915pt>
+File: figures/ch05_eq_163.pdf Graphic file (type pdf)
+<use figures/ch05_eq_163.pdf>
+Package luatex.def Info: figures/ch05_eq_163.pdf  used on input line 68.
+(luatex.def)             Requested size: 382.40338pt x 47.32007pt.
+<figures/ch05_eq_164.pdf, id=13809, 351.3125pt x 53.87674pt>
+File: figures/ch05_eq_164.pdf Graphic file (type pdf)
+<use figures/ch05_eq_164.pdf>
+Package luatex.def Info: figures/ch05_eq_164.pdf  used on input line 70.
+(luatex.def)             Requested size: 382.40338pt x 58.64966pt.
+ [176<./figures/ch05_eq_159.pdf><./figures/ch05_eq_160.pdf><./figures/ch05_eq_16
+1.pdf><./figures/ch05_eq_162.pdf><./figures/ch05_eq_163.pdf>]
+<figures/ch05_eq_165.pdf, id=14111, 351.3125pt x 47.46268pt>
+File: figures/ch05_eq_165.pdf Graphic file (type pdf)
+<use figures/ch05_eq_165.pdf>
+Package luatex.def Info: figures/ch05_eq_165.pdf  used on input line 72.
+(luatex.def)             Requested size: 382.40338pt x 51.66736pt.
+<figures/ch05_eq_166a_166b_166c.pdf, id=14114, 351.3125pt x 117.44678pt>
+File: figures/ch05_eq_166a_166b_166c.pdf Graphic file (type pdf)
+<use figures/ch05_eq_166a_166b_166c.pdf>
+Package luatex.def Info: figures/ch05_eq_166a_166b_166c.pdf  used on input line
+ 76.
+(luatex.def)             Requested size: 382.40338pt x 127.85135pt.
+<figures/ch05_fig08.pdf, id=14117, 305.14pt x 201.75375pt>
+File: figures/ch05_fig08.pdf Graphic file (type pdf)
+<use figures/ch05_fig08.pdf>
+Package luatex.def Info: figures/ch05_fig08.pdf  used on input line 85.
+(luatex.def)             Requested size: 427.93057pt x 282.95203pt.
+ [177<./figures/ch05_eq_164.pdf><./figures/ch05_eq_165.pdf><./figures/ch05_eq_16
+6a_166b_166c.pdf>] [178<./figures/ch05_fig08.pdf>]
+<figures/ch05_eq_167.pdf, id=14369, 351.3125pt x 19.95364pt>
+File: figures/ch05_eq_167.pdf Graphic file (type pdf)
+<use figures/ch05_eq_167.pdf>
+Package luatex.def Info: figures/ch05_eq_167.pdf  used on input line 106.
+(luatex.def)             Requested size: 382.40338pt x 21.72131pt.
+<figures/ch05_eq_168.pdf, id=14370, 351.3125pt x 31.2997pt>
+File: figures/ch05_eq_168.pdf Graphic file (type pdf)
+<use figures/ch05_eq_168.pdf>
+Package luatex.def Info: figures/ch05_eq_168.pdf  used on input line 108.
+(luatex.def)             Requested size: 382.40338pt x 34.07251pt.
+<figures/ch05_eq_169.pdf, id=14373, 351.3125pt x 42.70152pt>
+File: figures/ch05_eq_169.pdf Graphic file (type pdf)
+<use figures/ch05_eq_169.pdf>
+Package luatex.def Info: figures/ch05_eq_169.pdf  used on input line 112.
+(luatex.def)             Requested size: 382.40338pt x 46.48444pt.
+<figures/ch05_eq_170.pdf, id=14375, 351.3125pt x 24.82164pt>
+File: figures/ch05_eq_170.pdf Graphic file (type pdf)
+<use figures/ch05_eq_170.pdf>
+Package luatex.def Info: figures/ch05_eq_170.pdf  used on input line 117.
+(luatex.def)             Requested size: 382.40338pt x 27.02055pt.
+ [179<./figures/ch05_eq_167.pdf><./figures/ch05_eq_168.pdf><./figures/ch05_eq_16
+9.pdf><./figures/ch05_eq_170.pdf>]
+<figures/ch05_eq_171.pdf, id=14658, 351.3125pt x 47.21974pt>
+File: figures/ch05_eq_171.pdf Graphic file (type pdf)
+<use figures/ch05_eq_171.pdf>
+Package luatex.def Info: figures/ch05_eq_171.pdf  used on input line 123.
+(luatex.def)             Requested size: 382.40338pt x 51.40292pt.
+<figures/ch05_eq_172.pdf, id=14659, 351.3125pt x 49.61252pt>
+File: figures/ch05_eq_172.pdf Graphic file (type pdf)
+<use figures/ch05_eq_172.pdf>
+Package luatex.def Info: figures/ch05_eq_172.pdf  used on input line 125.
+(luatex.def)             Requested size: 382.40338pt x 54.00766pt.
+<figures/ch05_eq_173.pdf, id=14660, 351.3125pt x 41.71501pt>
+File: figures/ch05_eq_173.pdf Graphic file (type pdf)
+<use figures/ch05_eq_173.pdf>
+Package luatex.def Info: figures/ch05_eq_173.pdf  used on input line 127.
+(luatex.def)             Requested size: 382.40338pt x 45.4105pt.
+<figures/ch05_eq_174.pdf, id=14661, 351.3125pt x 47.21097pt>
+File: figures/ch05_eq_174.pdf Graphic file (type pdf)
+<use figures/ch05_eq_174.pdf>
+Package luatex.def Info: figures/ch05_eq_174.pdf  used on input line 129.
+(luatex.def)             Requested size: 382.40338pt x 51.39337pt.
+<figures/ch05_eq_175.pdf, id=14662, 351.3125pt x 50.15231pt>
+File: figures/ch05_eq_175.pdf Graphic file (type pdf)
+<use figures/ch05_eq_175.pdf>
+Package luatex.def Info: figures/ch05_eq_175.pdf  used on input line 131.
+(luatex.def)             Requested size: 382.40338pt x 54.59528pt.
+<figures/ch05_eq_176.pdf, id=14663, 351.3125pt x 79.92174pt>
+File: figures/ch05_eq_176.pdf Graphic file (type pdf)
+<use figures/ch05_eq_176.pdf>
+Package luatex.def Info: figures/ch05_eq_176.pdf  used on input line 133.
+(luatex.def)             Requested size: 382.40338pt x 87.00198pt.
+
+[180<./figures/ch05_eq_171.pdf><./figures/ch05_eq_172.pdf><./figures/ch05_eq_173
+.pdf><./figures/ch05_eq_174.pdf><./figures/ch05_eq_175.pdf><./figures/ch05_eq_17
+6.pdf>]
+<figures/ch05_eq_177.pdf, id=15018, 351.3125pt x 39.65155pt>
+File: figures/ch05_eq_177.pdf Graphic file (type pdf)
+<use figures/ch05_eq_177.pdf>
+Package luatex.def Info: figures/ch05_eq_177.pdf  used on input line 137.
+(luatex.def)             Requested size: 382.40338pt x 43.16426pt.
+<figures/ch05_eq_178.pdf, id=15019, 351.3125pt x 38.95209pt>
+File: figures/ch05_eq_178.pdf Graphic file (type pdf)
+<use figures/ch05_eq_178.pdf>
+Package luatex.def Info: figures/ch05_eq_178.pdf  used on input line 139.
+(luatex.def)             Requested size: 382.40338pt x 42.40283pt.
+<figures/ch05_eq_179.pdf, id=15020, 351.3125pt x 46.40536pt>
+File: figures/ch05_eq_179.pdf Graphic file (type pdf)
+<use figures/ch05_eq_179.pdf>
+Package luatex.def Info: figures/ch05_eq_179.pdf  used on input line 141.
+(luatex.def)             Requested size: 382.40338pt x 50.51637pt.
+<figures/ch05_eq_180.pdf, id=15021, 351.3125pt x 33.97574pt>
+File: figures/ch05_eq_180.pdf Graphic file (type pdf)
+<use figures/ch05_eq_180.pdf>
+Package luatex.def Info: figures/ch05_eq_180.pdf  used on input line 143.
+(luatex.def)             Requested size: 382.40338pt x 36.98561pt.
+<figures/ch05_eq_181.pdf, id=15022, 351.3125pt x 33.96587pt>
+File: figures/ch05_eq_181.pdf Graphic file (type pdf)
+<use figures/ch05_eq_181.pdf>
+Package luatex.def Info: figures/ch05_eq_181.pdf  used on input line 145.
+(luatex.def)             Requested size: 382.40338pt x 36.97488pt.
+<figures/ch05_eq_182.pdf, id=15023, 351.3125pt x 38.98776pt>
+File: figures/ch05_eq_182.pdf Graphic file (type pdf)
+<use figures/ch05_eq_182.pdf>
+Package luatex.def Info: figures/ch05_eq_182.pdf  used on input line 147.
+(luatex.def)             Requested size: 382.40338pt x 42.44165pt.
+<figures/ch05_eq_183.pdf, id=15024, 351.3125pt x 36.44077pt>
+File: figures/ch05_eq_183.pdf Graphic file (type pdf)
+<use figures/ch05_eq_183.pdf>
+Package luatex.def Info: figures/ch05_eq_183.pdf  used on input line 149.
+(luatex.def)             Requested size: 382.40338pt x 39.66904pt.
+<figures/ch05_eq_184.pdf, id=15025, 351.3125pt x 90.7162pt>
+File: figures/ch05_eq_184.pdf Graphic file (type pdf)
+<use figures/ch05_eq_184.pdf>
+Package luatex.def Info: figures/ch05_eq_184.pdf  used on input line 151.
+(luatex.def)             Requested size: 382.40338pt x 98.75272pt.
+ [181<./figures/ch05_eq_177.pdf><./figures/ch05_eq_178.pdf><./figures/ch05_eq_17
+9.pdf><./figures/ch05_eq_180.pdf><./figures/ch05_eq_181.pdf><./figures/ch05_eq_1
+82.pdf><./figures/ch05_eq_183.pdf>]
+<figures/ch05_eq_185.pdf, id=15476, 351.3125pt x 38.4145pt>
+File: figures/ch05_eq_185.pdf Graphic file (type pdf)
+<use figures/ch05_eq_185.pdf>
+Package luatex.def Info: figures/ch05_eq_185.pdf  used on input line 155.
+(luatex.def)             Requested size: 382.40338pt x 41.81761pt.
+<figures/ch05_eq_186.pdf, id=15477, 351.3125pt x 40.15pt>
+File: figures/ch05_eq_186.pdf Graphic file (type pdf)
+<use figures/ch05_eq_186.pdf>
+Package luatex.def Info: figures/ch05_eq_186.pdf  used on input line 157.
+(luatex.def)             Requested size: 382.40338pt x 43.70686pt.
+<figures/ch05_eq_187.pdf, id=15479, 351.3125pt x 61.31189pt>
+File: figures/ch05_eq_187.pdf Graphic file (type pdf)
+<use figures/ch05_eq_187.pdf>
+Package luatex.def Info: figures/ch05_eq_187.pdf  used on input line 162.
+(luatex.def)             Requested size: 382.40338pt x 66.74347pt.
+<figures/ch05_eq_188.pdf, id=15480, 351.3125pt x 32.61032pt>
+File: figures/ch05_eq_188.pdf Graphic file (type pdf)
+<use figures/ch05_eq_188.pdf>
+Package luatex.def Info: figures/ch05_eq_188.pdf  used on input line 164.
+(luatex.def)             Requested size: 382.40338pt x 35.49924pt.
+ [182<./figures/ch05_eq_184.pdf><./figures/ch05_eq_185.pdf><./figures/ch05_eq_18
+6.pdf><./figures/ch05_eq_187.pdf><./figures/ch05_eq_188.pdf>]
+<figures/ch05_eq_189.pdf, id=15727, 351.3125pt x 30.13889pt>
+File: figures/ch05_eq_189.pdf Graphic file (type pdf)
+<use figures/ch05_eq_189.pdf>
+Package luatex.def Info: figures/ch05_eq_189.pdf  used on input line 174.
+(luatex.def)             Requested size: 382.40338pt x 32.80885pt.
+<figures/ch05_eq_190.pdf, id=15728, 351.3125pt x 68.255pt>
+File: figures/ch05_eq_190.pdf Graphic file (type pdf)
+<use figures/ch05_eq_190.pdf>
+Package luatex.def Info: figures/ch05_eq_190.pdf  used on input line 176.
+(luatex.def)             Requested size: 382.40338pt x 74.30168pt.
+<figures/ch05_eq_191_192.pdf, id=15729, 351.3125pt x 73.23738pt>
+File: figures/ch05_eq_191_192.pdf Graphic file (type pdf)
+<use figures/ch05_eq_191_192.pdf>
+Package luatex.def Info: figures/ch05_eq_191_192.pdf  used on input line 182.
+(luatex.def)             Requested size: 382.40338pt x 79.72545pt.
+<figures/ch05_eq_193.pdf, id=15731, 351.3125pt x 72.07822pt>
+File: figures/ch05_eq_193.pdf Graphic file (type pdf)
+<use figures/ch05_eq_193.pdf>
+Package luatex.def Info: figures/ch05_eq_193.pdf  used on input line 190.
+(luatex.def)             Requested size: 382.40338pt x 78.46358pt.
+ [183<./figures/ch05_eq_189.pdf><./figures/ch05_eq_190.pdf><./figures/ch05_eq_19
+1_192.pdf>]
+<figures/ch05_eq_194.pdf, id=15903, 351.3125pt x 36.08086pt>
+File: figures/ch05_eq_194.pdf Graphic file (type pdf)
+<use figures/ch05_eq_194.pdf>
+Package luatex.def Info: figures/ch05_eq_194.pdf  used on input line 194.
+(luatex.def)             Requested size: 382.40338pt x 39.27724pt.
+<figures/ch05_eq_195.pdf, id=15904, 351.3125pt x 58.3748pt>
+File: figures/ch05_eq_195.pdf Graphic file (type pdf)
+<use figures/ch05_eq_195.pdf>
+Package luatex.def Info: figures/ch05_eq_195.pdf  used on input line 196.
+(luatex.def)             Requested size: 382.40338pt x 63.5462pt.
+<figures/ch05_eq_196.pdf, id=15907, 351.3125pt x 47.09143pt>
+File: figures/ch05_eq_196.pdf Graphic file (type pdf)
+<use figures/ch05_eq_196.pdf>
+Package luatex.def Info: figures/ch05_eq_196.pdf  used on input line 201.
+(luatex.def)             Requested size: 382.40338pt x 51.26323pt.
+<figures/ch05_eq_197.pdf, id=15908, 351.3125pt x 34.23973pt>
+File: figures/ch05_eq_197.pdf Graphic file (type pdf)
+<use figures/ch05_eq_197.pdf>
+Package luatex.def Info: figures/ch05_eq_197.pdf  used on input line 203.
+(luatex.def)             Requested size: 382.40338pt x 37.27301pt.
+ [184<./figures/ch05_eq_193.pdf><./figures/ch05_eq_194.pdf><./figures/ch05_eq_19
+5.pdf><./figures/ch05_eq_196.pdf><./figures/ch05_eq_197.pdf>]
+<figures/ch05_eq_198.pdf, id=16190, 351.3125pt x 64.28142pt>
+File: figures/ch05_eq_198.pdf Graphic file (type pdf)
+<use figures/ch05_eq_198.pdf>
+Package luatex.def Info: figures/ch05_eq_198.pdf  used on input line 209.
+(luatex.def)             Requested size: 382.40338pt x 69.97607pt.
+<figures/ch05_eq_199.pdf, id=16191, 351.3125pt x 29.99928pt>
+File: figures/ch05_eq_199.pdf Graphic file (type pdf)
+<use figures/ch05_eq_199.pdf>
+Package luatex.def Info: figures/ch05_eq_199.pdf  used on input line 213.
+(luatex.def)             Requested size: 382.40338pt x 32.6569pt.
+<figures/ch05_eq_200_201.pdf, id=16192, 351.3125pt x 74.21971pt>
+File: figures/ch05_eq_200_201.pdf Graphic file (type pdf)
+<use figures/ch05_eq_200_201.pdf>
+Package luatex.def Info: figures/ch05_eq_200_201.pdf  used on input line 217.
+(luatex.def)             Requested size: 382.40338pt x 80.79482pt.
+ [185<./figures/ch05_eq_198.pdf><./figures/ch05_eq_199.pdf><./figures/ch05_eq_20
+0_201.pdf>]) (./chapters/ch05_09.tex [186]
+<figures/ch05_eq_202.pdf, id=16358, 351.3125pt x 61.99704pt>
+File: figures/ch05_eq_202.pdf Graphic file (type pdf)
+<use figures/ch05_eq_202.pdf>
+Package luatex.def Info: figures/ch05_eq_202.pdf  used on input line 18.
+(luatex.def)             Requested size: 382.40338pt x 67.48932pt.
+<figures/ch05_eq_203.pdf, id=16359, 351.3125pt x 41.15375pt>
+File: figures/ch05_eq_203.pdf Graphic file (type pdf)
+<use figures/ch05_eq_203.pdf>
+Package luatex.def Info: figures/ch05_eq_203.pdf  used on input line 22.
+(luatex.def)             Requested size: 382.40338pt x 44.79955pt.
+ [187<./figures/ch05_eq_202.pdf><./figures/ch05_eq_203.pdf>]
+<figures/ch05_eq_204.pdf, id=16458, 351.3125pt x 56.14737pt>
+File: figures/ch05_eq_204.pdf Graphic file (type pdf)
+<use figures/ch05_eq_204.pdf>
+Package luatex.def Info: figures/ch05_eq_204.pdf  used on input line 44.
+(luatex.def)             Requested size: 382.40338pt x 61.12143pt.
+<figures/ch05_eq_205.pdf, id=16460, 351.3125pt x 45.39285pt>
+File: figures/ch05_eq_205.pdf Graphic file (type pdf)
+<use figures/ch05_eq_205.pdf>
+Package luatex.def Info: figures/ch05_eq_205.pdf  used on input line 53.
+(luatex.def)             Requested size: 382.40338pt x 49.41418pt.
+ [188<./figures/ch05_eq_204.pdf><./figures/ch05_eq_205.pdf>]) [189] (./chapters
+/ch06.tex [190
+
+] [191] [192]
+<figures/ch06_fig01.pdf, id=16631, 353.69139pt x 177.02913pt>
+File: figures/ch06_fig01.pdf Graphic file (type pdf)
+<use figures/ch06_fig01.pdf>
+Package luatex.def Info: figures/ch06_fig01.pdf  used on input line 87.
+(luatex.def)             Requested size: 437.0374pt x 218.74669pt.
+<figures/ch06_fig02.pdf, id=16632, 353.69139pt x 175.61584pt>
+File: figures/ch06_fig02.pdf Graphic file (type pdf)
+<use figures/ch06_fig02.pdf>
+Package luatex.def Info: figures/ch06_fig02.pdf  used on input line 90.
+(luatex.def)             Requested size: 409.71692pt x 203.43315pt.
+
+[193] [194<./figures/ch06_fig01.pdf><./figures/ch06_fig02.pdf>] [195]
+(./chapters/ch06_b.tex [196]
+<figures/ch06_fig03.pdf, id=16814, 353.69139pt x 191.57083pt>
+File: figures/ch06_fig03.pdf Graphic file (type pdf)
+<use figures/ch06_fig03.pdf>
+Package luatex.def Info: figures/ch06_fig03.pdf  used on input line 28.
+(luatex.def)             Requested size: 437.0374pt x 236.7152pt.
+ [197]
+<figures/ch06_fig04.pdf, id=16835, 353.69139pt x 144.72974pt>
+File: figures/ch06_fig04.pdf Graphic file (type pdf)
+<use figures/ch06_fig04.pdf>
+Package luatex.def Info: figures/ch06_fig04.pdf  used on input line 44.
+(luatex.def)             Requested size: 386.96027pt x 158.34412pt.
+ [198<./figures/ch06_fig03.pdf>] [199<./figures/ch06_fig04.pdf>] [200]
+<figures/ch06_fig05.pdf, id=17013, 353.69139pt x 119.1051pt>
+File: figures/ch06_fig05.pdf Graphic file (type pdf)
+<use figures/ch06_fig05.pdf>
+Package luatex.def Info: figures/ch06_fig05.pdf  used on input line 83.
+(luatex.def)             Requested size: 427.93057pt x 144.10487pt.
+LaTeX Font Info:    Calculating math sizes for size <13.14001> on input line 91
+.
+LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
+(Font)              scaled to size 7.76755pt on input line 91.
+LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
+(Font)              scaled to size 5.54828pt on input line 91.
+LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
+(Font)              scaled to size 7.76755pt on input line 91.
+LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
+(Font)              scaled to size 5.54828pt on input line 91.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 91.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 91.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 91.
+
+[201<./figures/ch06_fig05.pdf>]) (./chapters/ch06_c.tex
+<figures/ch06_fig06.pdf, id=17099, 353.69139pt x 144.29071pt>
+File: figures/ch06_fig06.pdf Graphic file (type pdf)
+<use figures/ch06_fig06.pdf>
+Package luatex.def Info: figures/ch06_fig06.pdf  used on input line 2.
+(luatex.def)             Requested size: 386.96027pt x 157.86378pt.
+<figures/ch06_fig07.pdf, id=17105, 353.69139pt x 112.99048pt>
+File: figures/ch06_fig07.pdf Graphic file (type pdf)
+<use figures/ch06_fig07.pdf>
+Package luatex.def Info: figures/ch06_fig07.pdf  used on input line 8.
+(luatex.def)             Requested size: 295.90588pt x 94.53032pt.
+ [202]
+<figures/ch06_fig08.pdf, id=17129, 353.69139pt x 128.39743pt>
+File: figures/ch06_fig08.pdf Graphic file (type pdf)
+<use figures/ch06_fig08.pdf>
+Package luatex.def Info: figures/ch06_fig08.pdf  used on input line 20.
+(luatex.def)             Requested size: 386.96027pt x 140.47546pt.
+ [203<./figures/ch06_fig06.pdf><./figures/ch06_fig07.pdf>]
+<figures/ch06_fig09.pdf, id=17226, 353.69139pt x 164.30397pt>
+File: figures/ch06_fig09.pdf Graphic file (type pdf)
+<use figures/ch06_fig09.pdf>
+Package luatex.def Info: figures/ch06_fig09.pdf  used on input line 30.
+(luatex.def)             Requested size: 386.96027pt x 179.75966pt.
+ [204<./figures/ch06_fig08.pdf><./figures/ch06_fig09.pdf>]
+<figures/ch06_fig10.pdf, id=17357, 353.69139pt x 173.00537pt>
+File: figures/ch06_fig10.pdf Graphic file (type pdf)
+<use figures/ch06_fig10.pdf>
+Package luatex.def Info: figures/ch06_fig10.pdf  used on input line 41.
+(luatex.def)             Requested size: 373.3035pt x 182.59811pt.
+ [205<./figures/ch06_fig10.pdf>]
+<figures/ch06_fig11.pdf, id=17421, 353.69139pt x 169.91693pt>
+File: figures/ch06_fig11.pdf Graphic file (type pdf)
+<use figures/ch06_fig11.pdf>
+Package luatex.def Info: figures/ch06_fig11.pdf  used on input line 56.
+(luatex.def)             Requested size: 391.51021pt x 188.08627pt.
+<figures/ch06_fig12.pdf, id=17426, 353.69139pt x 161.45232pt>
+File: figures/ch06_fig12.pdf Graphic file (type pdf)
+<use figures/ch06_fig12.pdf>
+Package luatex.def Info: figures/ch06_fig12.pdf  used on input line 61.
+(luatex.def)             Requested size: 373.3035pt x 170.4045pt.
+ [206<./figures/ch06_fig11.pdf>]
+<figures/ch06_fig13.pdf, id=17490, 353.69139pt x 170.56096pt>
+File: figures/ch06_fig13.pdf Graphic file (type pdf)
+<use figures/ch06_fig13.pdf>
+Package luatex.def Info: figures/ch06_fig13.pdf  used on input line 77.
+(luatex.def)             Requested size: 437.0374pt x 210.75426pt.
+<figures/ch06_fig14.pdf, id=17495, 353.69139pt x 168.48056pt>
+File: figures/ch06_fig14.pdf Graphic file (type pdf)
+<use figures/ch06_fig14.pdf>
+Package luatex.def Info: figures/ch06_fig14.pdf  used on input line 82.
+(luatex.def)             Requested size: 386.96027pt x 184.32913pt.
+<figures/ch06_fig15.pdf, id=17505, 353.69139pt x 131.12515pt>
+File: figures/ch06_fig15.pdf Graphic file (type pdf)
+<use figures/ch06_fig15.pdf>
+Package luatex.def Info: figures/ch06_fig15.pdf  used on input line 96.
+(luatex.def)             Requested size: 409.71692pt x 151.89517pt.
+<figures/ch06_fig16.pdf, id=17510, 353.69139pt x 144.60437pt>
+File: figures/ch06_fig16.pdf Graphic file (type pdf)
+<use figures/ch06_fig16.pdf>
+Package luatex.def Info: figures/ch06_fig16.pdf  used on input line 99.
+(luatex.def)             Requested size: 437.0374pt x 178.68091pt.
+ [207<./figures/ch06_fig12.pdf>] [208<./figures/ch06_fig13.pdf><./figures/ch06_f
+ig14.pdf>] [209<./figures/ch06_fig15.pdf><./figures/ch06_fig16.pdf>]
+<figures/ch06_fig17.pdf, id=17795, 353.69139pt x 166.2923pt>
+File: figures/ch06_fig17.pdf Graphic file (type pdf)
+<use figures/ch06_fig17.pdf>
+Package luatex.def Info: figures/ch06_fig17.pdf  used on input line 114.
+(luatex.def)             Requested size: 386.96027pt x 181.93503pt.
+)
+(./chapters/ch06_d.tex [210<./figures/ch06_fig17.pdf>] [211]
+<figures/ch06_fig18.pdf, id=17880, 353.69139pt x 122.67862pt>
+File: figures/ch06_fig18.pdf Graphic file (type pdf)
+<use figures/ch06_fig18.pdf>
+Package luatex.def Info: figures/ch06_fig18.pdf  used on input line 26.
+(luatex.def)             Requested size: 373.3035pt x 129.48085pt.
+ [212<./figures/ch06_fig18.pdf>]
+<figures/ch06_fig19.pdf, id=17943, 353.69139pt x 160.79083pt>
+File: figures/ch06_fig19.pdf Graphic file (type pdf)
+<use figures/ch06_fig19.pdf>
+Package luatex.def Info: figures/ch06_fig19.pdf  used on input line 52.
+(luatex.def)             Requested size: 386.96027pt x 175.91606pt.
+ [213<./figures/ch06_fig19.pdf>]
+<figures/ch06_fig20.pdf, id=18025, 353.69139pt x 157.7836pt>
+File: figures/ch06_fig20.pdf Graphic file (type pdf)
+<use figures/ch06_fig20.pdf>
+Package luatex.def Info: figures/ch06_fig20.pdf  used on input line 77.
+(luatex.def)             Requested size: 386.96027pt x 172.62593pt.
+ [214]
+<figures/ch06_fig21.pdf, id=18053, 353.69139pt x 73.81252pt>
+File: figures/ch06_fig21.pdf Graphic file (type pdf)
+<use figures/ch06_fig21.pdf>
+Package luatex.def Info: figures/ch06_fig21.pdf  used on input line 89.
+(luatex.def)             Requested size: 409.71692pt x 85.50429pt.
+<figures/ch06_fig22.pdf, id=18054, 353.69139pt x 89.39497pt>
+File: figures/ch06_fig22.pdf Graphic file (type pdf)
+<use figures/ch06_fig22.pdf>
+Package luatex.def Info: figures/ch06_fig22.pdf  used on input line 92.
+(luatex.def)             Requested size: 409.71692pt x 103.555pt.
+ [215<./figures/ch06_fig20.pdf>]
+<figures/ch06_fig23.pdf, id=18144, 353.69139pt x 205.1827pt>
+File: figures/ch06_fig23.pdf Graphic file (type pdf)
+<use figures/ch06_fig23.pdf>
+Package luatex.def Info: figures/ch06_fig23.pdf  used on input line 100.
+(luatex.def)             Requested size: 364.19667pt x 211.27791pt.
+ [216<./figures/ch06_fig21.pdf><./figures/ch06_fig22.pdf>] [217<./figures/ch06_f
+ig23.pdf>]
+<figures/ch06_fig24.pdf, id=18336, 353.69139pt x 118.52995pt>
+File: figures/ch06_fig24.pdf Graphic file (type pdf)
+<use figures/ch06_fig24.pdf>
+Package luatex.def Info: figures/ch06_fig24.pdf  used on input line 124.
+(luatex.def)             Requested size: 386.96027pt x 129.6798pt.
+ [218<./figures/ch06_fig24.pdf>] (./chapters/ch06_e.tex
+<figures/ch06_fig25.pdf, id=18428, 353.69139pt x 108.75543pt>
+File: figures/ch06_fig25.pdf Graphic file (type pdf)
+<use figures/ch06_fig25.pdf>
+Package luatex.def Info: figures/ch06_fig25.pdf  used on input line 13.
+(luatex.def)             Requested size: 427.93057pt x 131.58282pt.
+ [219]
+<figures/ch06_fig26.pdf, id=18466, 353.69139pt x 127.18988pt>
+File: figures/ch06_fig26.pdf Graphic file (type pdf)
+<use figures/ch06_fig26.pdf>
+Package luatex.def Info: figures/ch06_fig26.pdf  used on input line 27.
+(luatex.def)             Requested size: 427.93057pt x 153.88663pt.
+
+[220<./figures/ch06_fig25.pdf>] [221<./figures/ch06_fig26.pdf>]
+<figures/ch06_fig27.pdf, id=18579, 353.69139pt x 123.47142pt>
+File: figures/ch06_fig27.pdf Graphic file (type pdf)
+<use figures/ch06_fig27.pdf>
+Package luatex.def Info: figures/ch06_fig27.pdf  used on input line 52.
+(luatex.def)             Requested size: 437.0374pt x 152.56789pt.
+ [222<./figures/ch06_fig27.pdf>]
+<figures/ch06_fig28.pdf, id=18674, 353.69139pt x 123.31483pt>
+File: figures/ch06_fig28.pdf Graphic file (type pdf)
+<use figures/ch06_fig28.pdf>
+Package luatex.def Info: figures/ch06_fig28.pdf  used on input line 70.
+(luatex.def)             Requested size: 391.51021pt x 136.50098pt.
+ [223<./figures/ch06_fig28.pdf>] [224]))) [225]
+(./chapters/ch07_01.tex [226
+
+] [227]
+<figures/ch07_fig01.pdf, id=18770, 353.69139pt x 124.42159pt>
+File: figures/ch07_fig01.pdf Graphic file (type pdf)
+<use figures/ch07_fig01.pdf>
+Package luatex.def Info: figures/ch07_fig01.pdf  used on input line 41.
+(luatex.def)             Requested size: 191.20169pt x 67.26068pt.
+ [228<./figures/ch07_fig01.pdf>] [229]
+[230]) (./chapters/ch07_02.tex [231] [232] [233]) (./chapters/ch07_03.tex
+[234] [235] [236] [237] [238]) (./chapters/ch07_04.tex [239] [240]
+<figures/ch07_fig02.pdf, id=19114, 353.69139pt x 248.92072pt>
+File: figures/ch07_fig02.pdf Graphic file (type pdf)
+<use figures/ch07_fig02.pdf>
+Package luatex.def Info: figures/ch07_fig02.pdf  used on input line 31.
+(luatex.def)             Requested size: 409.71692pt x 288.34941pt.
+ [241<./figures/ch07_fig02.pdf>] [242] [243]) (./chapters/ch07_05.tex [244] [24
+5] [246])
+(./chapters/ch07_06.tex [247] [248] [249] [250] [251]) [252] [253]
+(./chapters/ch08.tex [254
+
+] [255] [256] [257] [258] [259] [260] [261] [262]
+[263] [264] [265] [266] [267] [268] [269] [270] [271]
+<figures/ch08_fig01.pdf, id=19953, 334.24875pt x 111.41624pt>
+File: figures/ch08_fig01.pdf Graphic file (type pdf)
+<use figures/ch08_fig01.pdf>
+Package luatex.def Info: figures/ch08_fig01.pdf  used on input line 326.
+(luatex.def)             Requested size: 427.93057pt x 142.6548pt.
+ [272] [273<./figures/ch08_fig01.pdf>] [274]) [275] (./chapters/ch09.tex [276
+
+] [277]
+<figures/ch09_fig01.pdf, id=20138, 235.88126pt x 39.14626pt>
+File: figures/ch09_fig01.pdf Graphic file (type pdf)
+<use figures/ch09_fig01.pdf>
+Package luatex.def Info: figures/ch09_fig01.pdf  used on input line 45.
+(luatex.def)             Requested size: 400.61703pt x 66.4868pt.
+ [278<./figures/ch09_fig01.pdf>] [279] [280] [281]
+<figures/ch09_fig02.pdf, id=20253, 316.18124pt x 126.4725pt>
+File: figures/ch09_fig02.pdf Graphic file (type pdf)
+<use figures/ch09_fig02.pdf>
+Package luatex.def Info: figures/ch09_fig02.pdf  used on input line 126.
+(luatex.def)             Requested size: 427.93057pt x 171.184pt.
+ [282]
+<figures/ch09_fig03.pdf, id=20271, 335.2525pt x 108.405pt>
+File: figures/ch09_fig03.pdf Graphic file (type pdf)
+<use figures/ch09_fig03.pdf>
+Package luatex.def Info: figures/ch09_fig03.pdf  used on input line 136.
+(luatex.def)             Requested size: 427.93057pt x 138.3725pt.
+ [283<./figures/ch09_fig02.pdf><./figures/ch09_fig03.pdf>] [284]
+<figures/ch09_fig04.pdf, id=20408, 147.55125pt x 141.52875pt>
+File: figures/ch09_fig04.pdf Graphic file (type pdf)
+<use figures/ch09_fig04.pdf>
+Package luatex.def Info: figures/ch09_fig04.pdf  used on input line 185.
+(luatex.def)             Requested size: 396.06015pt x 379.94292pt.
+<figures/ch09_fig05.pdf, id=20413, 293.095pt x 135.50626pt>
+File: figures/ch09_fig05.pdf Graphic file (type pdf)
+<use figures/ch09_fig05.pdf>
+Package luatex.def Info: figures/ch09_fig05.pdf  used on input line 189.
+(luatex.def)             Requested size: 427.93057pt x 197.84366pt.
+ [285]
+<figures/ch09_fig06.pdf, id=20422, 201.75375pt x 93.34875pt>
+File: figures/ch09_fig06.pdf Graphic file (type pdf)
+<use figures/ch09_fig06.pdf>
+Package luatex.def Info: figures/ch09_fig06.pdf  used on input line 199.
+(luatex.def)             Requested size: 373.3035pt x 172.72522pt.
+<figures/ch09_fig07.pdf, id=20425, 169.63374pt x 100.375pt>
+File: figures/ch09_fig07.pdf Graphic file (type pdf)
+<use figures/ch09_fig07.pdf>
+Package luatex.def Info: figures/ch09_fig07.pdf  used on input line 206.
+(luatex.def)             Requested size: 427.93057pt x 253.22505pt.
+ [286<./figures/ch09_fig04.pdf>] [287<./figures/ch09_fig05.pdf><./figures/ch09_f
+ig06.pdf>] [288<./figures/ch09_fig07.pdf>] [289]
+[290]) [291] (./chapters/appendix.tex [292
+
+] [293]) [294]
+(./build/Schlosshauer_Decoherence_jp.bbl
+LaTeX Font Info:    Font shape `JT3/gt/m/it' in size <10> not available
+(Font)              Font shape `JT3/gt/m/n' tried instead on input line 7.
+LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
+(Font)              scaled to size 8.44485pt on input line 7.
+LaTeX Font Info:    Font shape `JY3/gt/m/it' in size <10> not available
+(Font)              Font shape `JY3/gt/m/n' tried instead on input line 7.
+LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
+(Font)              scaled to size 8.44485pt on input line 7.
+(load cache: extra_lmmono10-regular.luc) [295
+
+] [296] [297] [298] [299] [300]
+[301] [302] [303] [304] [305] [306] [307] [308] [309] [310] [311] [312]
+[313] [314] [315] [316] [317] [318] [319] [320] [321] [322] [323] [324]
+[325] [326]) [327] (./chapters/index.tex(load cache: extra_lmroman9-bold.luc)
+LaTeX Font Info:    Font shape `JT3/mc/b/n' in size <9> not available
+(Font)              Font shape `JT3/gt/m/n' tried instead on input line 9.
+LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
+(Font)              scaled to size 7.60036pt on input line 9.
+LaTeX Font Info:    Font shape `JY3/mc/b/n' in size <9> not available
+(Font)              Font shape `JY3/gt/m/n' tried instead on input line 9.
+LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
+(Font)              scaled to size 7.60036pt on input line 9.
+ [328
+
+] [329] [330] [331] [332] [333]
+[334]) [335] (./chapters/series_back.tex) [336
+
+]
+(./build/Schlosshauer_Decoherence_jp.aux)
+ ***********
+LaTeX2e <2026-06-01>
+L3 programming layer <2026-06-18>
+ ***********
+
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 2.5pt have occurred.
+
+Package rerunfilecheck Info: File `Schlosshauer_Decoherence_jp.out' has not cha
+nged.
+(rerunfilecheck)             Checksum: 91CE69576D1DB1A890F8B8C1E15C706E;32342.
+)
+
+Here is how much of LuaTeX's memory you used:
+ 35804 strings out of 475704
+ 382254,1648299 words of node,token memory allocated
+ 32681 words of node memory still in use:
+   12 hlist, 2 vlist, 5 rule, 74 glue, 4 kern, 18 sub_mlist, 1 glyph, 13880 attr
+ibute, 67 glue_spec, 1275 attribute_list, 2 write, 15 user_defined, 189 pdf_acti
+on nodes
+   avail lists: 1:37,2:81331,3:879,4:950,5:466,6:359,7:8670,8:86,9:3698,10:45,11
+:473
+ 54218 multiletter control sequences out of 65536+600000
+ 192 fonts using 164188935 bytes
+ 119i,19n,113p,3737b,883s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2026/texmf-dist/fonts/opentype/public/lm/lmroman9-bold.otf><c:/texli
+ve/2026/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf><c:/Windows/Fon
+ts/timesbd.ttf><c:/Windows/Fonts/timesi.ttf><c:/Windows/Fonts/times.ttf><c:/texl
+ive/2026/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf><c:/texlive/2026
+/texmf-dist/fonts/opentype/public/lm/lmroman5-regular.otf><c:/texlive/2026/texmf
+-dist/fonts/opentype/public/lm/lmroman8-regular.otf><c:/texlive/2026/texmf-dist/
+fonts/opentype/public/lm/lmroman6-regular.otf><c:/texlive/2026/texmf-dist/fonts/
+opentype/public/lm/lmroman7-regular.otf><c:/texlive/2026/texmf-dist/fonts/openty
+pe/public/lm/lmroman10-italic.otf><c:/texlive/2026/texmf-dist/fonts/opentype/pub
+lic/lm/lmsans10-regular.otf><c:/texlive/2026/texmf-dist/fonts/opentype/public/lm
+/lmmono9-regular.otf><c:/texlive/2026/texmf-dist/fonts/opentype/public/lm/lmsans
+9-regular.otf><c:/texlive/2026/texmf-dist/fonts/opentype/public/lm/lmroman10-reg
+ular.otf><c:/texlive/2026/texmf-dist/fonts/opentype/public/lm/lmsans12-regular.o
+tf><c:/texlive/2026/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-R
+egular.otf><c:/texlive/2026/texmf-dist/fonts/opentype/public/lm/lmroman9-regular
+.otf><c:/texlive/2026/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf>
+<c:/texlive/2026/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-Medi
+um.otf><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c
+:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/
+2026/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><c:/texlive/2026/t
+exmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><c:/texlive/2026/texmf-d
+ist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb><c:/texlive/2026/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmmi5.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmmi6.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmm
+i7.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/
+texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><c:/texlive/202
+6/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb><c:/texlive/2026/texmf-d
+ist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb><c:/texlive/2026/texmf-dist/f
+onts/type1/public/amsfonts/cmextra/cmmib9.pfb><c:/texlive/2026/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr5.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmr6.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><
+c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2
+026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2026/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2026/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmsy6.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmsy7.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
+><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><c:/texliv
+e/2026/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/202
+6/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb><c:/texlive/2026/texm
+f-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on Schlosshauer_Decoherence_jp.pdf (348 pages, 24584402 bytes).
+
+PDF statistics: 23452 PDF objects out of 26593 (max. 8388607)
+ 17187 compressed objects within 172 object streams
+ 2559 named destinations out of 2984 (max. 1048576)
+ 1336 words of extra memory for PDF output out of 10000 (max. 100000000)
+

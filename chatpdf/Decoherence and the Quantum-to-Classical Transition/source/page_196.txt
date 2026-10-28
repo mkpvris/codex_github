@@ -1,0 +1,52 @@
+182     5 Canonical Models For Decoherence
+
+shall discuss examples for such continuous spectral densities below. For the
+moment being, we shall stick to the original expression (5.18) for J(ω). Thus
+far, the beneﬁt of the deﬁnition (5.18) therefore merely amounts to a slightly
+more compact notation of the noise and dissipation kernels (5.16) and (5.17).
+    Having successfully determined the environment self-correlation function
+C(τ ) [see (5.15)], we have completed the main step in the derivation of the
+desired Born–Markov master equation for quantum Brownian motion. The
+rest of the derivation is now straightforward. The operators B̂ and Ĉ [see
+(4.9a) and (4.9b)] are immediately written down as
+                                ∞
+                          B̂ =      dτ C(τ )X̂(−τ ),                  (5.19a)
+                               0 ∞
+                          Ĉ =      dτ C(−τ )X̂(−τ ),                 (5.19b)
+                                 0
+
+where
+                            X̂(τ ) = eiĤS τ X̂e−iĤS τ                   (5.20)
+is the position operator of the system S in the interaction picture. Inserting
+(5.19a) and (5.19b), with C(τ ) given by (5.15), into our general expression
+(4.8) for the Born–Markov master equation then yields
+
+  d                           
+     ρ̂S (t) = −i ĤS , ρ̂S (t)
+  dt       ∞      $                                               %
+       −       dτ C(τ ) X̂, X̂(−τ )ρ̂S (t) + C(−τ ) ρ̂S (t)X̂(−τ ), X̂ . (5.21)
+          0
+
+Using the decomposition C(τ ) = ν(τ ) − iη(τ ) [see (5.15)] involving the noise
+and the dissipation kernels (5.16) and (5.17) and rearranging terms leads to
+the ﬁnal form of the master equation,
+                                   ∞   $
+   d                                                           
+     ρ̂S (t) = −i ĤS , ρ̂S (t) −     dτ ν(τ ) X̂, X̂(−τ ), ρ̂S (t)
+  dt
+                                                                     *%
+                                   0
+                                                 )
+                                         −iη(τ ) X̂, X̂(−τ ), ρ̂S (t)    . (5.22)
+
+We see that the decohering (and dissipative) inﬂuence of the environment is
+completely described by integrals over the noise and dissipation kernels (5.16)
+and (5.17) multiplied by products of (Schrödinger-picture and interaction-
+picture) position operators of the system.
+
+5.2.2 Harmonic Oscillator as the Central System
+
+To simplify the master equation (5.22) even further and to gain an under-
+standing of the physical meaning of the noise and dissipation terms, let us
+now specialize to the case of the system’s being represented by a harmonic
+oscillator with the standard self-Hamiltonian

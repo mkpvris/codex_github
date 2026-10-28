@@ -1,0 +1,36 @@
+翻訳と確認事項
+
+書籍：Decoherence and the Quantum-to-Classical Transition
+著者：Maximilian Schlosshauer
+対象：添付の訂正第3刷（2008年）。原文PDF428ページ。
+保存先：C:\Users\false\codex\chatpdf\Decoherence and the Quantum-to-Classical Transition
+TeX：Decoherence and the Quantum-to-Classical Transition.tex
+PDF：pdf\Decoherence and the Quantum-to-Classical Transition.pdf（348ページ）
+
+翻訳範囲
+序文、全9章、付録、脚注、図69点と全キャプション、表6点、参考文献523件、索引639項目、前後の原書掲載情報を収録。
+原文にない導入、要約、訳者注、進捗説明は本文へ追加していない。
+人名・固有名詞と所属機関は原則として原語の綴りを維持。
+図中の英語ラベルは多くを原図のまま保持。第5章の表示数式は主に原文からのベクトル切り抜きを使用し、式番号5.1～5.205を保持。数式周囲の本文混入・端の欠けは修正し、独立点検済み。
+
+テンプレート・表紙
+C:\Users\false\codex\template を丸ごと保存し、元の9ファイルが変更されていないことをSHA-256で確認。
+日本語題名を主題、その下に小さく英語原題。日付欄は日付だけ。
+表紙の原著リンクは出版社ページ https://link.springer.com/book/10.1007/978-3-540-35775-9 。書籍のためタイトルにarXiv番号は記載していない。
+番号なし見出しにも目次へのリンクを設定。
+
+参考文献
+523件すべてをBibTeXで処理。465件は照合したINSPIRE-HEPまたはCrossrefの公式エクスポートを使用し、不足する出版情報を確認のうえ補完。
+同じ題名の別版、再録、書評、親書籍の記録を排除し、正確な刊行物・版の公式記録が得られなかった58件は、原文の書誌情報を省略しない適切な種類のBibTeXレコードとして保持。@miscへの置換なし。
+取得元、採否、不一致、補完・修正の根拠、原文情報、公式エクスポート原本の所在は audit/matching_override.json と audit/bibliography_followup_report.txt に記録。
+原文引用番号1～523と本文の対応順を保持。本文の引用1200箇所の文献番号の多重集合が原文と一致。
+LuaLaTeX → BibTeX → LuaLaTeX2回で生成し、画像修正後の再生成でも相互参照とページ構成の安定を確認。BibTeX警告0件。
+
+完成PDFの検証
+文字欠落・はみ出し・未解決参照の警告なし。全ページを画像化し、分担目視確認。修正した数式画像は拡大確認。
+本文・序文からの引用リンク1201箇所、参考文献の内部リンク先523件、本文原ページに対応する索引用リンク先379件を確認。
+内部リンク2939件に未解決のリンク先なし。完成PDFにDOI・arXiv・出版社等への外部リンク960個のリンク注釈があることを確認。代表DOI・arXiv・出版社URLの到達先も確認。全外部サイトの将来の可用性を保証するものではない。
+詳細：audit/final_pdf_audit.json、audit/final_external_links.json、audit/final_render/render_manifest.json、audit/final_visual_qa_*.json。
+原文自体に誤記と思われる数式表記は勝手に訂正せず、章別の監査ファイルに記録。
+
+PDF SHA-256：14e941517ab64e98111561b2154a39dfb45ca6962ac86bba5742e9a1df90c737

@@ -1,0 +1,52 @@
+                                          5.4 Spin-Environment Models       235
+
+is the usual harmonic-oscillator Hamiltonian describing the intrinsic dynam-
+ics of the central system. The environment self-Hamiltonian ĤE has the fa-
+miliar form (5.168). The interaction Hamiltonian Ĥint describes the bilinear
+coupling of the position coordinate of the central oscillator to the z-spin
+coordinate of each environmental spin.
+    Again following our strategy for mapping spin baths onto oscillator baths
+(assuming the weak-coupling limit applies), we can now readily describe the
+reduced dynamics of the oscillator system by the Born–Markov master equa-
+tion (5.25) for quantum Brownian motion of a particle conﬁned to a harmonic-
+oscillator potential,
+
+  d                   1 2 2                )              *
+     ρ̂S (t) = −i ĤS + M Ω X̂ , ρ̂S (t) − iγ X̂, P̂ , ρ̂S (t)
+  dt                   2
+                                                             
+                           − D X̂, X̂, ρ̂S (t) − f X̂, P̂ , ρ̂S (t) .   (5.198)
+
+The frequency shift Ω 2 , momentum-damping rate γ, and the diﬀusion coef-
+ﬁcients D and f are given by the same expressions (5.26) as in the case of
+quantum Brownian motion, but with the kernels ν(τ ) and η(τ ) appearing
+these expressions replaced by the “surrogate” spin-bath kernels (5.191) and
+(5.192).
+    Let us consider the example of an ohmic spectral density for the spin
+bath,
+                                  2M γ0     Λ2
+                           J(Δ) =       Δ 2       .                  (5.199)
+                                   π     Λ + Δ2
+This spectral density is formally identical to the ohmic spectral density (5.44)
+considered in the context of quantum Brownian motion. Following the same
+approach as detailed in Sect. 5.2.3, the choice of an explicit form for the
+spectral density now allows us to evaluate the coeﬃcients appearing in the
+master equation (5.198).
+    As before, the coeﬃcients γ and D are given by double Fourier sine and
+cosine transforms, respectively (see the discussion in Sect. 5.2.3 for details).
+Thus we can readily write down the resulting expressions [compare (5.46)
+and (5.48)],
+                                                             
+               π 1                       Λ2               Ω
+          γ=          Jeﬀ (Ω, T ) = γ0 2         tanh            ,       (5.200)
+                2 MΩ                  Λ + Ω2            2kB T
+                                        
+               π                     Ω                   Λ2
+          D = Jeﬀ (Ω, T ) coth              = M γ0 Ω 2         .         (5.201)
+                2                  2kB T              Λ + Ω2
+
+We see that, in contrast to an ohmic oscillator bath, for the ohmic spin bath
+the momentum-damping coeﬃcient γ is explicitly temperature-dependent.
+The factor tanh(Ω/2kB T ), and thus γ, decrease with increasing temperature.
+This observation may seem rather counterintuitive at a ﬁrst glance, since we
+would expect a “warmer” environment to either have a stronger eﬀect on the

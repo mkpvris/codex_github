@@ -1,0 +1,1838 @@
+
+--- PRINTED PAGE 115 / PDF PAGE 130 ---
+3 Decoherence Is Everywhere:
+Localization Due to Environmental Scattering
+It is fair to say that localization induced by the scattering of environmental
+particles really lies at the heart of the decoherence program and the quantum-
+classical transition, for several reasons.
+Together with the emission of thermal radiation (see Sect. 6.2.5), en-
+vironmental scattering is the dominant and ubiquitous process for decoher-
+ence in the macroscopic domain. Air molecules, light (optical photons), back-
+ground radioactivity, cosmic muons, solar neutrinos, and even the 3 K cosmic
+background radiation present everywhere in the universe continuously mon-
+itor the position of the quantum system of interest. This results in system–
+environment entanglement that delocalizes local phase relations between spa-
+tially separated wave-function components, leading to decoherence in position
+space (i.e., to localization). While sophisticated experimental setups may be
+able to shield the system from some of these environmental particles (such
+as air molecules and light), it is prohibitively diﬃcult, if not impossible, to
+exclude other inﬂuences.
+The quantum nature of decoherence is again important in understand-
+ing why environmental scattering by essentially any particle is relevant. As
+already pointed out in Chap. 1 and more generally discussed in Sect. 2.11,
+in the classical picture of scattering the scatterer will only be inﬂuenced by
+the scattered particle if the mass of the latter particle is suﬃciently large in
+comparison with the mass of the scatterer. Simply put, in determining the
+Newtonian dynamics of a billiard ball we do not need to concern ourselves
+with the inﬂuence of air molecules, photons, etc. By contrast, in the quan-
+tum picture any interaction between the scattering system and the scattered
+particle may lead to entanglement and thus to decoherence, irrespective of
+the mass ratio. Typically, the more macroscopic the object, the larger its
+scattering cross section, and thus the stronger and faster it is decohered by
+environmental scattering. This behavior can be understood from the fact that,
+as discussed in Sect. 2.12, decoherence corresponds to a situation in which
+the system perturbs the environment (a process which in turn inﬂuences the
+reduced dynamics of the system). It is thus intuitively clear that the degree
+of this perturbation—and thus the amount of decoherence introduced into
+the system—will increase with the size of the system.
+
+--- PRINTED PAGE 116 / PDF PAGE 131 ---
+116 3 Localization Due to Environmental Scattering
+Environmental scattering and the resulting process of spatial localization
+also play a key role for historical reasons. The attempt to directly identify
+narrow wave packets in position space with particles and their trajectories
+goes back to the early years of quantum mechanics. Based on ideas inspired
+by the theory of relativity and the photoelectric eﬀect, the French physicist
+Louis de Broglie suggested in the early 1920s that every particle of mass
+m and velocity v has a quantum “matter wave” of wavelength λ= h/mv
+associated with it [34, 153–155]. Schr¨ odinger was heavily inﬂuenced by de
+Broglie’s Ph.D. thesis of 1924 [156], as evidenced in a letter to Einstein dated
+November 16, 1925:
+I have been intensely concerned these days with Louis de Broglie’s
+ingenious theory. It is extraordinarily exciting, but still has some very
+grave diﬃculties.
+Only weeks later, Schr¨odinger identiﬁed de Broglie’s matter wave with a wave
+function ψand formulated his famous wave equation that speciﬁed the time
+evolution of this wave function, thereby giving birth to wave mechanics.
+However, in developing his theory, Schr¨odinger became immediately aware
+of the problem of how to describe particles by spatially extended waves. It is
+well known that, for a free particle, unitary time evolution tends to coherently
+spread out any spatially localized wave packet (Fig. 3.1). For example, if at
+time t = 0 a free particle is described by a wave packet of the form
+ψ(x,t =0 )=
+( 1√πσ
+) 1/2
+exp
+[
+− x2
+2σ2
+]
+, (3.1)
+the position probability density |ψ(x,t)|2 at a later time t> 0 is given by
+|ψ(x,t)|2 = 1
+√πσ[1 +ℏ2t2/(m2σ4)]1/2 exp
+[
+− x2
+σ2 [1 +ℏ2t2/(m2σ4)]
+]
+≡ 1√πσ(t) exp
+[
+− x2
+σ2(t)
+]
+. (3.2)
+x x
+|ψ(x, 0)|2
+|ψ(x, t)|2
+Fig. 3.1. Coherent spread of the probability density |ψ(x, t)|2 for a free-particle
+Gaussian wave packet under unitary time evolution.
+
+--- PRINTED PAGE 117 / PDF PAGE 132 ---
+3 Localization Due to Environmental Scattering 117
+This means that the width σof the wave packet grows as
+σ(t)= σ
+[
+1+ ℏ2t2/(m2σ4)
+]1/2
+. (3.3)
+For microscopic particles, this spreading occurs on very short timescales. For
+example, if the Gaussian wave packet describes a particle with the mass of
+an electron (m ≈ 10−30 kg) and has an initial width ofσ=1 ˚A, unitary time
+evolution spreads the wave packet to a width on the order of 1016σ=1 06 m
+(or 1,000 km!) within a second. This eﬀect of coherent spreading for free-
+particle wave functions posed a serious diﬃculty to approaches that tried to
+relate narrow wave packets to particles. How could we ever directly identify
+any objects—that evidently remain in spatially well-deﬁned regions—with
+quantum-mechanical wave packets, if these packets immediately and coher-
+ently disperse over macroscopic distances?
+Since the attempt to establish a one-to-one correspondence between
+wave packets and particles had failed for the case of isolated free particles,
+Schr¨odinger turned his attention to situations in which particles are subject
+to a potential. In particular, in a famous 1926 paper entitled “The continu-
+ous transition from micromechanics to macromechanics”1 [157], he used the
+example of the quantum harmonic oscillator to show that, by forming a par-
+ticular linear combination of the position-space solutions of the Schr¨odinger
+equation, each of which represents a spatially spread-out wave, the result-
+ing wave packet is not only narrow at t = 0, but also remains narrow at all
+subsequent times t> 0, with its peak oscillating back and forth just like a
+classical point mass.
+Schr¨odinger, of course, had discovered the coherent states of the quantum
+harmonic oscillator, i.e., minimum-uncertainty wave packets in phase space
+that follow classical trajectories. This success led Schr¨odinger to the upbeat
+prediction that [157, p. 666]
+in much the same way, one will be able to construct wave packets
+which follow elliptical Kepler orbits with large quantum numbers and
+which are the wave-mechanical image of the electron in the hydro-
+gen atom; it is just that one might encounter more mathematical
+diﬃculties than in the particularly simple example discussed here.2
+1The original German title reads: “Der stetige ¨Ubergang von der Mikro- zur
+Makromechanik.”
+2The original German text reads: “Es l¨aßt sich mit Bestimmtheit vorausse-
+hen, daß man auf ganz ¨ ahnliche Weise auch die Wellengruppen konstruieren
+kann, welche auf hochquantigen Keplerellipsen umlaufen und das undulationsmech-
+anische Bild des Wasserstoﬀelektrons sind; nur sind da die rechentechnischen
+Schwierigkeiten gr¨oßer als in dem hier behandelten, ganz besonders einfachen Schul-
+beispiel.”
+
+--- PRINTED PAGE 118 / PDF PAGE 133 ---
+118 3 Localization Due to Environmental Scattering
+However, this—as it turns out, too optimistic 3—assessment did not touch
+upon the core problem identiﬁed earlier, namely, of how to describe free
+particles in terms of wave packets. Several decades after the publication of
+Schr¨odinger’s paper, an understanding of the importance of the openness
+of quantum systems and of the resulting decoherence eﬀects [4–6, 8, 9, 12]
+brought us a major step closer to resolving the diﬃculty of how to reconcile
+the predictions of the Schr¨odinger equation for free particles with the fact
+that every macroscopic objects appears localized. The seminal paper of Joos
+and Zeh [7] showed, through detailed models and numerical results, how
+the ubiquitous scattering of photons, air molecules, and other environmental
+particles eﬀectively suppresses the coherent spreading on extremely short
+timescales. This decoherence process leads to a reduced density matrix for
+the system that represents an (improper) ensemble of position-space wave
+packets whose widths rapidly decrease toward the thermal de Broglie wave
+length (2.114).
+In the following, we will study a model for scattering-induced decoherence
+that goes back to the original model of Joos and Zeh [7]. It is now understood
+that the derivation of the equation of motion for the reduced density matrix
+as presented in [7] contains a subtle ﬂaw, which results in a decoherence rate
+that is larger by a factor of 2 πcompared to the correct result [159–161].
+Of course, at the time of the publication of their paper (1985), Joos and
+Zeh were merely interested in simple estimates of decoherence timescales,
+since measurements of such timescales seemed out of reach for any exper-
+iment. However, over the past few years a rapid progress in experimental
+techniques has enabled researchers to make very precise measurements of de-
+coherence timescales even for mesoscopic and macroscopic objects (see, e.g.,
+the interference experiments with C70 molecules described in Sect. 6.2). These
+measurements are sensitive to diﬀerences on the order of the aforementioned
+factor of 2π, and it has therefore become important to employ a theory of
+environmental scattering that gives the quantitatively correct results.
+Furthermore, the original work by Joos and Zeh was based on an assump-
+tion about the relative wavelengths of the object and the scattered environ-
+mental particles. A more general approach that relaxed this assumption but
+did not address the aforementioned ﬂaw in the derivation (thus still leading
+3The case of Kepler orbits does not give rise to the exact coherent states as in
+the idealized example of a quantum harmonic oscillator. Another interesting exam-
+ple is the case of Hyperion, a moon of Saturn that has been observed to exhibit
+chaotic tumbling. Chaotic dynamics imply an exponential sensitivity of the (classi-
+cal) trajectory on the initial phase-space parameters, which cannot be speciﬁed with
+arbitrary precision due to the Heisenberg uncertainty principle. Thus an initially
+narrow phase-space wave packet describing Hyperion would very rapidly spread
+over large spatial regions. In fact, Zurek [158] estimated that within ≈ 20 years
+the quantum state would be a highly nonlocal coherent superposition of macro-
+scopically distinguishable orientations of the satellite’s major axes. Thus even on
+planetary scales the problem of coherent spreading may arise.
+
+--- PRINTED PAGE 119 / PDF PAGE 134 ---
+3.1 The Scattering Model 119
+to the additional incorrect factor of 2π) was subsequently given by Gallis and
+Fleming [162]. The ﬁrst derivation remedying this ﬂaw and arriving at the
+correct result for the decoherence rate was presented by Di´osi [159]. Several
+years later, Hornberger and Sipe [160] revisited the problem of environmen-
+tal scattering and obtained the correct result using a sophisticated approach
+quite diﬀerent from that of Di´osi. While their reevaluation is very careful and
+thorough, it is also rather complicated. Recently, Adler [161] showed that the
+correct result can be obtained in a signiﬁcantly easier manner by means of
+a little trick. Other derivations have been discussed by, e.g., Halliwell [163]
+and Hornberger [164,165]. Our following presentation will mainly adhere to
+the derivations of Hornberger and Sipe [160] and Adler [161], with the goal
+of obtaining the correct result while keeping the calculations as simple as
+possible.
+This chapter is organized as follows. Section 3.1 will introduce our scatter-
+ing model. In Sect. 3.2, we will compute the explicit form of the decoherence
+factor that describes the decay of spatial coherences. In Sect. 3.3, we will
+treat two important limiting cases, namely, the situation of environmental
+wavelengths that are short (Sect. 3.3.1) and long (Sect. 3.3.2) in comparison
+with the coherent separation between the two center-of-mass positions in a
+spatial superposition state of the system. Section 3.4 will apply our theory
+to the scattering of photons (Sect. 3.4.1) and air molecules (Sect. 3.4.2). Fi-
+nally, in Sect. 3.5, we will discuss the explicit dynamics resulting from such
+scattering-induced decoherence by studying the time evolution of the reduced
+density matrix of the system.
+3.1 The Scattering Model
+We consider an object (the system S) that scatters a collection of environ-
+mental particles (the environment E), see Fig. 3.2. We shall make the usual
+assumption that S and E are initially completely uncorrelated, i.e., that the
+(pure-state) density matrix ˆρfor the composite SE arrangement factorizes at
+t =0 ,
+ˆρ(0) = ˆρS(0) ⊗ ˆρE(0). (3.4)
+Let us ﬁrst consider the case of a single scattering event and study its in-
+ﬂuence on the density matrix ˆρS of the system (Fig. 3.3). In the following,
+we will use very basic quantum-mechanical scattering theory. Reviews of this
+subject matter can be found in most textbooks on quantum mechanics (e.g.,
+in Chap. 7 of [58]), but the reader should be able to follow the derivation
+without having to consult other literature.
+Let us denote the initial state of the system with center-of-mass location
+x by a position eigenstate |x⟩ (with eigenvalue x), and let us write |χi⟩ for
+the initial state of the incoming environmental particle. Then the eﬀect of
+the scattering event can be formally expressed by the action of the scattering
+operator ˆS (the so-called “S-matrix”) on the initial state,
+
+--- PRINTED PAGE 120 / PDF PAGE 135 ---
+120 3 Localization Due to Environmental Scattering
+Fig. 3.2. Environmental scattering. A collection of particles, such as photons or
+air molecules, scatters oﬀ the object of interest.
+|χi⟩
+|x ⟩
+|χ(x)⟩
+before after
+|x ⟩
+Fig. 3.3. A single scattering event. The incoming environmental particle, described
+by the initial state|χi⟩, elastically scatters oﬀ a stationary object of interest, whose
+center-of-mass state is represented by a position eigenstate |x⟩. The range of the
+scattering potential is suﬃciently short, such that the states of the object and
+the incoming particle are initially uncorrelated. The object is assumed to be much
+more massive than the scattered environmental particle, such that the object is
+not disturbed by the scattering event. Thus the interaction yields the evolution
+|x⟩| χi⟩− →| x⟩| χ(x)⟩,w h e r e|χ(x)⟩ is the ﬁnal state of the scattered particle [see
+also (3.12)].
+|x⟩|χi⟩− → ˆS |x⟩|χi⟩, (3.5)
+where we have used the separability assumption (3.4) for the initial state.
+At the risk of stating the obvious, we note that|χi⟩ is of course independent
+of the location x of the scattering object. The state |x⟩ can be thought of
+the state |x = 0⟩ (corresponding to the scattering center being located at the
+origin) translated by the action of the momentum operatorˆp of the system,4
+|x⟩ =e −iˆp·x/ℏ |x = 0⟩. (3.6)
+We can hence rewrite (3.5) as
+4Since our model will be used to calculate explicit numerical values of decoher-
+ence timescales, we shall retain ℏ throughout the following derivation.
+
+--- PRINTED PAGE 121 / PDF PAGE 136 ---
+3.1 The Scattering Model 121
+e−iˆp·x/ℏ |0⟩|χi⟩− → ˆSe−iˆp·x/ℏ |0⟩|χi⟩ = ˆSe−i(ˆp+ˆq)·x/ℏ |0⟩ eiˆq·x/ℏ |χi⟩. (3.7)
+Here, ˆq is the momentum operator for the scattered particle, and thus ˆP ≡
+ˆp + ˆq is the momentum operator for the composite SE system.
+If we now make the assumption that the scattering interaction is invariant
+under spatial translations of the joint system SE (i.e., under translations
+generated by the operator ˆP),
+[ˆS, ˆP
+]
+=0 , (3.8)
+we can pull the ﬁrst exponential on the right-hand side of (3.7) out to the
+front to obtain
+ˆS |x⟩|χi⟩ =e −i(ˆp+ˆq)·x/ℏ ˆS |0⟩ eiˆq·x/ℏ |χi⟩. (3.9)
+To proceed further, a key assumption is now made, namely, that the inter-
+action between the object and the scattered particle does not lead to any
+recoil of the object. This means that the particle remains essentially undis-
+turbed by the scattering event, and that therefore the only consequence of
+the scattering process is the creation of quantum correlations (entanglement)
+between the system and the environment.
+This is a good assumption in situations where the scattering system is
+much more massive than the scattered particle such that recoil eﬀects on the
+system can be neglected. This can be expected to hold for the case of micro-
+scopic or mesoscopic particles scattered oﬀ macroscopic objects. However, we
+should note that timescales for spatial decoherence quoted in the literature
+have sometimes been computed using this assumption even for scattering
+processes in which the ratio of the mass of the scattering object to the mass
+of the scattered environmental particle is either close to one or even less than
+one. An example is the case of small molecules and free electrons decohered
+by the scattering of air molecules [166]. Clearly, in this regime the no-recoil
+assumption cannot be expected to be physically realistic, and one should
+therefore resort to more general models, such as that of Di´ osi [159] (which
+does take recoil into account).
+For the following treatment, we should adopt the above assumption of a
+recoil-free scattering process by taking the scattering object to be much more
+massive than the environmental particle. Then the action of theS-matrix on
+the composite system–environment state does not aﬀect the center-of-mass
+state |x⟩ of the system, i.e., the center of mass remains at positionx.W ec a n
+therefore evaluate (3.7) further,
+ˆS |x⟩|χi⟩ =e −i(ˆp+ˆq)·x/ℏ |0⟩ ˆS0eiˆq·x/ℏ |χi⟩
+=e −iˆp·x/ℏ |0⟩ e−iˆq·x/ℏ ˆS0eiˆq·x/ℏ |χi⟩
+= |x⟩ e−iˆq·x/ℏ ˆS0eiˆq·x/ℏ |χi⟩. (3.10)
+Here, we have added the subscript “0” to the scattering operatorˆS to indicate
+that this operator refers speciﬁcally to a scattering process in which the
+
+--- PRINTED PAGE 122 / PDF PAGE 137 ---
+122 3 Localization Due to Environmental Scattering
+scattering center is located at the origin. The last line of (3.10) can be used
+to deﬁne the translated scattering operator
+ˆSx ≡ e−iˆq·x/ℏ ˆS0eiˆq·x/ℏ, (3.11)
+which describes scattering with the scattering center located at the position
+x. To summarize, the scattering interaction is then given by
+|x⟩|χi⟩− → ˆS |x⟩|χi⟩ = |x⟩ ˆSx |χi⟩≡| x⟩|χ(x)⟩, (3.12)
+where we have introduced the abbreviation |χ(x)⟩ for the ﬁnal state of the
+environmental particle scattered atx. We see from (3.12) that the scattering
+process can be thought of as a measurement-like interaction that establishes
+correlations between the state |x⟩, describing the center-of-mass position of
+the system, and the ﬁnal state |χ(x)⟩ of the particle, which encodes which-
+path information about the location x of the scattering center.
+From (3.12) it follows that the scattering process transforms the initial
+composite density matrix
+ˆρ(0) = ˆρS(0) ⊗ ˆρE(0) =
+∫
+dx
+∫
+dx′ ρS(x,x′,0)|x⟩⟨x′|⊗| χi⟩⟨χi| (3.13)
+into the density matrix
+ˆρ=
+∫
+dx
+∫
+dx′ ρS(x,x′,0)|x⟩⟨x′|⊗| χ(x)⟩⟨χ(x′)|. (3.14)
+Using (2.50), the corresponding ﬁnal reduced density matrix ˆρS of the system
+is then given by
+ˆρS =T rE ˆρ=
+∫
+dx
+∫
+dx′ ρS(x,x′,0)|x⟩⟨x′|⟨χ(x′)|χ(x)⟩. (3.15)
+Expressed in the position basis, the scattering-induced evolution of the re-
+duced density matrix can therefore be summarized as
+ρS(x,x′,0) −→ ρS(x,x′,0)⟨χ(x′)|χ(x)⟩. (3.16)
+We see that the local suppression of spatial coherence due to the scattering
+event is quantiﬁed by the overlap ⟨χ(x′)|χ(x)⟩ of the relative states of the
+scattered particle (see also our general discussion in Sects. 2.6.3 and 2.7). We
+shall now calculate the time dependence of this overlap.
+3.2 Calculating the Decoherence Factor
+To proceed, let us formally write the scattering operator ˆS0 in terms of an-
+other operator ˆT (the “T-matrix”) as
+
+--- PRINTED PAGE 123 / PDF PAGE 138 ---
+3.2 Calculating the Decoherence Factor 123
+ˆS0 = ˆI +i ˆT. (3.17)
+The T-matrix is well-known from standard quantum-mechanical scattering
+theory (see, e.g., [58]). It is used here since its elements in the momentum
+eigenbasis {|q⟩} of the scattered particle are conveniently deﬁned in terms of
+the scattering amplitude f(q,q′)a s
+⟨q| ˆT |q′⟩ = i
+2πℏqδ(q − q′)f(q,q′)= i
+2πℏmδ(E − E′)f(q,q′). (3.18)
+Here m is the mass of the environmental particle, and q = |q|.T h et e r m
+δ(E − E′) ensures energy conservation, as mandated by the assumption of
+recoil-free elastic scattering. We note that |f(q,q′)|2 is an experimentally
+accessible quantity, namely, the diﬀerential cross sectiondσ
+dΩ for the scattering
+process, which is deﬁned as
+dσ
+dΩ ≡ scattered ﬂux
+incident ﬂux. (3.19)
+Since the scattering operator ˆS0 is unitary,
+ˆS0 ˆS†
+0 = ˆI, (3.20)
+we obtain the following relation from the deﬁnition (3.17) of the T-matrix,
+ˆT ˆT † +i (ˆT − ˆT † )=0 . (3.21)
+This result will come in handy below.
+Using the expression (3.12) for the environmental states, the overlap
+⟨χ(x′)|χ(x)⟩ is given by
+⟨χ(x′)|χ(x)⟩ = ⟨χi| ˆS†
+x′ ˆSx |χi⟩. (3.22)
+Evidently, this expression is simply equal to the expectation value of the
+product ˆS†
+x′ ˆSx of the translated scattering operators (3.11) in the (pure) state
+|χi⟩ of the incident environmental particle (the generalization to mixed states
+is straightforward). Using the trace rule (2.17), we can therefore equivalently
+rewrite (3.22) as
+⟨χ(x′)|χ(x)⟩ =T rE
+{
+ˆρE(0) ˆS†
+x′ ˆSx
+}
+, (3.23)
+with ˆρE(0) = |χi⟩⟨χi|. This is the expression of interest that we shall now
+evaluate. Let us begin by assuming the environmental particle is restricted to
+a box-normalization volume V . Following [160], we deﬁne momentum eigen-
+kets |˜q⟩ which are normalized over the volumeV ,
+|˜q⟩≡
+[ (2πℏ)3
+V
+]1/2
+|q⟩. (3.24)
+
+--- PRINTED PAGE 124 / PDF PAGE 139 ---
+124 3 Localization Due to Environmental Scattering
+The kets |˜q⟩ constitute an orthonormal basis over the volumeV in the sense
+that ∑
+q∈QV
+|˜q⟩⟨˜q| = ˆIV . (3.25)
+Here QV is the set of all momenta corresponding to the space of wave func-
+tions that fulﬁll periodic boundary conditions in the volume V ,a n d ˆIV de-
+notes the identity operator in this space.
+We can then expand the initial density matrix ˆρE(0) of the environmental
+particle in terms of an ensemble of the normalized momentum eigenstates
+|˜q⟩,
+ˆρE(0) = (2πℏ)3
+V
+∑
+q∈QV
+μ(q)|˜q⟩⟨˜q|, (3.26)
+where μ(q) is the momentum-space density. The great advantage of using this
+expansion is that the operator ˆT, see (3.17) and (3.18), is diagonal in the full-
+space momentum basis {|q⟩} and therefore also in the properly normalized
+V -volume basis {|˜q⟩}.
+This feature enables us to evaluate the overlap ⟨χ(x′)|χ(x)⟩, see (3.23),
+in a fairly straightforward manner. Using the expansion (3.26) for the state
+of the environment in (3.23), we ﬁrst get
+⟨χ(x′)|χ(x)⟩ = (2πℏ)3
+V
+∑
+q∈QV
+μ(q) ⟨˜q| ˆS†
+x′ ˆSx |˜q⟩
+= (2πℏ)3
+V
+∑
+q∈QV
+μ(q) ⟨˜q| e−iˆq·x′/ℏ ˆS†
+0e−iˆq·(x− x′)/ℏ ˆS0eiˆq·x/ℏ |˜q⟩
+= (2πℏ)3
+V
+∑
+q∈QV
+μ(q)eiq·(x− x′)/ℏ ⟨˜q| ˆS†
+0e−iˆq·(x− x′)/ℏ ˆS0 |˜q⟩.
+(3.27)
+Now using that ˆS0 = ˆI +i ˆT [see (3.17)] and noting the relation (3.21), this
+expression becomes
+⟨χ(x′)|χ(x)⟩
+= (2πℏ)3
+V
+∑
+q∈QV
+μ(q)eiq·(x− x′)/ℏ ⟨˜q|
+(
+ˆI − i ˆT †
+)
+e−iˆq·(x− x′)/ℏ
+(
+ˆI +i ˆT
+)
+|˜q⟩
+= (2πℏ)3
+V
+∑
+q∈QV
+μ(q)
+[
+1 −⟨ ˜q| ˆT ˆT † |˜q⟩ +e iq·(x− x′)/ℏ ⟨˜q| ˆT † e−iˆq·(x− x′)/ℏ ˆT |˜q⟩
+]
+.
+(3.28)
+Here, any exponentials associated with the second term within the square
+brackets in the last line have dropped out, because the operatorˆT commutes
+with the momentum operator [see (3.18)].
+
+--- PRINTED PAGE 125 / PDF PAGE 140 ---
+3.2 Calculating the Decoherence Factor 125
+Let us evaluate the second and third term in the sum in the last line of
+(3.28) by inserting a complete set of momentum eigenstates |˜q⟩, see (3.25),
+and then using (3.18). This yields
+⟨χ(x′)|χ(x)⟩
+= (2πℏ)3
+V
+∑
+q∈QV
+μ(q)
+⎡
+⎣1 −
+∑
+q′∈QV
+(
+1 − ei(q− q′)·(x− x′)/ℏ
+) ⏐⏐⏐⟨˜q| ˆT
+⏐⏐˜q′⟩⏐⏐⏐
+2
+⎤
+⎦.
+(3.29)
+We now go to the continuum limit of momentum states |˜q⟩ by replacing the
+sum by an integral according to the usual transformation relation
+(2πℏ)3
+V
+∑
+q∈QV
+−→
+∫
+dq. (3.30)
+Using that
+∫
+dqμ(q) = 1 and employing deﬁnition (3.24), expression (3.29)
+then reads
+⟨χ(x′)|χ(x)⟩
+=1 −
+∫
+dqμ(q)(2πℏ)3
+V
+∫
+dq′
+(
+1 − ei(q− q′)·(x− x′)/ℏ
+) ⏐⏐⏐⟨q| ˆT |q′⟩
+⏐⏐⏐
+2
+. (3.31)
+Following the approach of Adler [161], let us now introduce a time parameter
+T which denotes the elapsed time in the scattering process. Then, from (3.16)
+and (3.31), we may write the evolution of the reduced density matrix as
+ρS(x,x′,T ) − ρS(x,x′,0) = −ρS(x,x′,0)
+×
+∫
+dqμ(q)(2πℏ)3
+V
+∫
+dq′
+(
+1 − ei(q− q′)·(x− x′)/ℏ
+) ⏐⏐⏐⟨q| ˆT |q′⟩
+⏐⏐⏐
+2
+. (3.32)
+Note that in writing (3.32), we have assumed that the characteristic timescale
+for the free evolution of the object is much longer than the average time
+between scattering events, such that the only change of the density matrix
+of the object during the interval T arises from the scattering events.
+Let us now evaluate the squared matrix element
+⏐⏐⏐⟨q| ˆT |q′⟩
+⏐⏐⏐
+2
+appearing in
+this equation. Using the form
+⟨q| ˆT |q′⟩ = i
+2πℏmδ(E − E′)f(q,q′) (3.33)
+of (3.18), we thus need to calculate
+⏐⏐⏐⟨q| ˆT |q′⟩
+⏐⏐⏐
+2
+= 1
+(2πℏm)2 δ2(E − E′) |f(q,q′)|2 . (3.34)
+
+--- PRINTED PAGE 126 / PDF PAGE 141 ---
+126 3 Localization Due to Environmental Scattering
+Squared energy delta functions δ2(E − E′) commonly appear in the deriva-
+tion of Fermi’s Golden Rule for the transition probability in time-dependent
+perturbation theory (see, e.g., Chap. 18 of [167]). In fact, the matrix ele-
+ment
+⏐⏐⏐⟨q| ˆT |q′⟩
+⏐⏐⏐
+2
+is evidently simply the probability of making the scattering-
+induced transition |q⟩− →| q′⟩.
+Then, following the method suggested by Adler [161] (which is akin to
+the usual approach employed in the derivation of Fermi’s Golden Rule), we
+can handle the squared energy delta function by using the Fourier-integral
+representation of the energy delta function,
+δ(E − E′) = lim
+T →∞
+1
+2πℏ
+∫ T/2
+−T/2
+dt ei(E−E′)t/ℏ. (3.35)
+This allows us to write
+δ2(E − E′)= δ(E − E′) lim
+T →∞
+1
+2πℏ
+∫ T/2
+−T/2
+dt ei(E−E′)t/ℏ
+= δ(E − E′) lim
+T →∞
+1
+2πℏ
+∫ T/2
+−T/2
+dt
+= δ(E − E′) lim
+T →∞
+T
+2πℏ, (3.36)
+where the second line follows from the fact that the ﬁrst delta function in
+front of the integral vanishes unlessE = E′.
+In the general derivation of Fermi’s Golden Rule, the parameter T can
+be interpreted as the time interval during which the interaction is “turned
+on.” Equation (3.36) then shows that the transition probability grows ap-
+proximately linearly with T for suﬃciently large T. Therefore, if we let T
+denote a time interval much longer than the typical time required for a single
+scattering event to take place, we can write (3.36) as
+δ2(E − E′)= δ(E − E′) T
+2πℏ = δ(q − q′)m
+q
+T
+2πℏ. (3.37)
+We shall also assume that T is signiﬁcantly shorter than the characteristic
+decoherence time of the central particle induced by the scattering of a large
+number of particles. The chosen regime for T is reasonable, since it will in
+general require many collisions between the object and the environmental
+particles to induce an appreciable degree of spatial decoherence.
+We now use (3.37) in (3.34) and insert the resulting expression into (3.32).
+The delta functionδ(q −q′) in (3.37) enforces momentum conservation,|q′| =
+|q|. Writing dq′ ≡ q2dˆn′, where dˆn′ is a solid-angle diﬀerential in momentum
+space, we readily obtain
+
+--- PRINTED PAGE 127 / PDF PAGE 142 ---
+3.2 Calculating the Decoherence Factor 127
+ρS(x,x′,T ) − ρS(x,x′,0) = −ρS(x,x′,0)
+× T
+V
+∫
+dqμ(q)v(q)
+∫
+dˆn′
+(
+1 − ei(q−q ˆn′)·(x− x′)/ℏ
+)
+|f(q,q ˆn′)|2 . (3.38)
+Here v(q) denotes the speed of particles with momentumq. For scattering of
+massive particles we have v(q)= q/m, while for scattering of photons and
+other massless particles v(q)= c, with c representing the speed of light.
+Equation (3.38) describes the eﬀect of a single scattering event. A col-
+lection of N independent scattering events may be represented by simply
+multiplying the integral on the right-hand side of (3.38) by N. Then N/V
+is the total number density of environmental particles. For simplicity, let us
+assume that the incoming particles are isotropically distributed in space, i.e.,
+that every initial direction q/ |q| is equally likely. We may then write the
+momentum probability distribution μ(q)a s
+μ(q) ≡ 1
+4π
+( N
+V
+) −1
+ϱ(q)dq dˆn, (3.39)
+where the prefactor is chosen such that
+∫
+dqϱ (q)= N/V (recall that∫
+dqμ(q) = 1), i.e., ϱ(q) denotes the number density of incoming particles
+with magnitude of momentum equal to q.
+Dividing (3.38) byT and taking the diﬀerential limit of smallT, we obtain
+our ﬁnal result for the time evolution of the reduced density matrix,
+∂ρS(x,x′,t)
+∂t = −F(x − x′)ρS(x,x′,t), (3.40)
+with the decoherence factor F(x − x′) given by
+F(x − x′)=
+∫
+dqϱ (q)v(q)
+∫ dˆn dˆn′
+4π
+(
+1 − eiq(ˆn− ˆn′)·(x− x′)/ℏ
+)
+|f(qˆn,q ˆn′)|2 .
+(3.41)
+From (3.40) we see that F(x − x′) plays the role of a localization rate, i.e.,
+it denotes the characteristic decoherence rate at which spatial coherences
+between two positions x and x′ become locally suppressed.
+Equations (3.40) and (3.41) represent our main result. We have found the
+expression that quantiﬁes the inﬂuence of a collection of incoming particles
+scattering oﬀ our object of interest on the interference (oﬀ-diagonal) terms
+in the position density matrix of the object. As we have not yet speciﬁed the
+form of the scattering cross section|f(qˆn,q ˆn′)|2, our expression is considered
+fairly general.
+Let us summarize the assumptions employed in our derivation of (3.40)
+and (3.41):
+1. There are no initial correlations between the system and the environment
+[see (3.4)]. This assumption is made in virtually all decoherence models
+(see also Chap. 5).
+
+--- PRINTED PAGE 128 / PDF PAGE 143 ---
+128 3 Localization Due to Environmental Scattering
+2. The scattering interaction is invariant under translations of the composite
+object–environment system [see (3.8)].
+3. The center-of-mass state of the object is not disturbed by the scattering
+event.
+4. The rate of scattering is much faster than the characteristic rate of change
+of the state of the system induced by the system’s self-Hamiltonian.
+5. The distribution of the diﬀerent directions of the incoming particles is
+isotropic [see (3.39)].
+Most of these assumptions are fairly innocuous and can be rather well
+justiﬁed in the context of the physical situation that is to be modeled here,
+namely, the scattering of a large number of microscopic or mesoscopic par-
+ticles per unit time oﬀ a macroscopic body. The potentially most limiting
+assumption is that of no recoil (assumption 3 above). As already pointed out
+before, this assumption renders our localization model unrealistic for situa-
+tions in which the scattering object and the scattered environmental particles
+have similar masses.
+3.3 Full Versus Partial Which-Path Resolution
+Suppose now our object of interest is described by a coherent superposition of
+two well-localized wave packets a distanceΔx = |x − x′| apart. Based on our
+results (3.40) and (3.41), how fast will such a superposition become decohered
+as a consequence of environmental scattering? To answer this question, we
+shall now discuss two limiting cases: The short-wavelength limit in which
+each scattered particle completely resolves the separation Δx, and the long-
+wavelength limit in which many such scattering events are required to encode
+a signiﬁcant amount of which-path information in the environment and to
+thereby resolve this separation.
+3.3.1 The Short-Wavelength Limit
+First, let us consider the situation in which the typical wavelength λ0 of
+the scattered particle is much shorter than the coherent separation Δx =
+|x − x′|,t h a ti s ,λ0 ≪ Δx. Then we expect that the particle will be able to
+well resolve this separation and thus carry away a maximum of which-path
+information, inducing a maximum amount of decoherence in the system per
+scattering event.
+To check whether this prediction is indeed correct, let us have a look at
+the expression (3.41) for F(x − x′). According to de Broglie relation, the
+wavelengthλ0 corresponds to a momentum q0 =2 πℏ/λ0, and thus λ0 ≪ Δx
+implies that q0Δx/ℏ ≫ 1. Therefore the exponential in the integral on the
+right-hand side of (3.41) will oscillate very rapidly and thus in average not
+
+--- PRINTED PAGE 129 / PDF PAGE 144 ---
+3.3 Full Versus Partial Which-Path Resolution 129
+contribute to the integral when compared to the constant term of one. In this
+limit
+F(x − x′)=
+∫
+dqϱ (q)v(q)
+∫ dˆn dˆn′
+4π |f(qˆn,q ˆn′)|2 . (3.42)
+The integral ∫
+dˆn′ |f(qˆn,q ˆn′)|2 (3.43)
+is simply equal to the total cross section for momentum q = qˆn. The second
+volume integral over dˆn then averages over all possible directionsˆn of q,a n d
+thus we obtain ∫ dˆn dˆn′
+4π |f(qˆn,q ˆn′)|2 = σtot(q), (3.44)
+where σtot(q) denotes the total cross section for momentumq (irrespective of
+the direction). Therefore (3.42) becomes
+F(x − x′)=
+∫
+dqϱ (q)v(q)σtot(q). (3.45)
+We can simplify this expression even further by recognizing that the integral
+is equal to the total scattering rate Γtot,
+F(x − x′)= Γtot. (3.46)
+Note that this result means that there is an upper limit to the decoherence
+rate when going to larger and larger separations Δx. This, of course, con-
+stitutes a completely reasonable ﬁnding: For any given separation Δx there
+is a wavelength of the environmental particle that allows for complete res-
+olution of this separation and therefore for a maximum amount of spatial
+decoherence. Increasing this separation further therefore cannot lead to even
+stronger decoherence.
+Inserting (3.46) into (3.40), we thus see that the oﬀ-diagonal elements
+ρS(x,x′), x ̸= x′, of the reduced density matrix of the system change as
+∂ρS(x,x′,t)
+∂t = −ΓtotρS(x,x′,t). (3.47)
+For short time intervals over which the internal dynamics of the system are
+negligible, the time evolution of the interference terms is therefore given by
+ρS(x,x′,t)= ρS(x,x′,0)e−Γtott. (3.48)
+This shows that in the limit of maximum decoherence, spatial interference
+terms become exponentially suppressed at a rate set by the total scattering
+rate Γtot.
+
+--- PRINTED PAGE 130 / PDF PAGE 145 ---
+130 3 Localization Due to Environmental Scattering
+3.3.2 The Long-Wavelength Limit
+Let us now consider the opposite limit in which the typical wavelength λ0
+of the incoming particle is much larger than the coherent separation Δx =
+|x − x′|. This implies that an individual scattered particle will not be able
+to resolve the separation Δx, and it will thus carry away an only insuﬃcient
+amount of which-path information. Therefore we anticipate that it will take
+a large number of scattering events to induce a signiﬁcant degree of spatial
+localization of the object.5
+Let us investigate the inﬂuence of our assumption λ0 ≫ Δx (or, equiva-
+lently, q0Δx/ℏ ≪ 1 for a typical value q0 of momentum) on the form of the
+expression for F(x − x′), see (3.41). We expand the exponential in (3.41) up
+to ﬁrst order in the argument q(ˆn − ˆn′)(x − x′), i.e.,
+1 − eiq(ˆn− ˆn′)(x− x′)/ℏ ≈− i
+ℏq(ˆn − ˆn′) ·(x − x′)+ 1
+2ℏ2 q2 [(ˆn − ˆn′) · (x − x′)]2 .
+(3.49)
+Now note that the ﬁrst term in this expansion does not contribute to the
+integral in the expression for F(x − x′), see (3.41). This is readily seen
+from the fact that, since f(qˆn,q ˆn′)= f ∗(qˆn′,q ˆn) [see (3.18)] and thus
+|f(qˆn,q ˆn′)|2 = |f(qˆn′,q ˆn)|2, we encounter the situation of a product of a
+function that is odd in ( ˆn, ˆn′), namely, (ˆn − ˆn′) · (x − x′), with a function
+that is even in (ˆn, ˆn′), i.e., |f(qˆn,q ˆn′)|2. Integrated over all directionsˆn and
+ˆn′ of q and q′, the contribution to the integral due to this product term thus
+averages out to zero.
+The expression for F(x − x′) in the limit q0Δx/ℏ ≪ 1 then becomes
+F(x − x′)=
+∫
+dqϱ (q)v(q)q2
+∫ dˆn dˆn′
+8πℏ2 [(ˆn − ˆn′) · (x − x′)]2 |f(qˆn,q ˆn′)|2 .
+(3.50)
+We can further simplify this equation by assuming that the particular ori-
+entation of scattering center (and thus of the coordinate system) does not
+inﬂuence the scattering process. First, this allows us to average the term
+[(ˆn − ˆn′) · (x − x′)]2 over all possible directions ( x − x′). This average is
+given by
+(x − x′)2 1
+3
+∑
+i=x,y,z
+[
+(ˆn − ˆn′) ·ˆi
+]2
+= 1
+3(x − x′)2(ˆn − ˆn′)2
+= 2
+3(x − x′)2 (1 − ˆn · ˆn′)
+= 2
+3(x − x′)2 (1 − cosΘ), (3.51)
+5We note that the original derivation of Joos and Zeh [7] assumed the limit
+λ0 ≫ Δx from the outset (see the comment following equation (3.45) of [7]) and
+thus was intended to lead to cautious lower-bound estimates of localization rates.
+
+--- PRINTED PAGE 131 / PDF PAGE 146 ---
+3.3 Full Versus Partial Which-Path Resolution 131
+where Θ is the angle between the incoming and the outgoing trajectory of
+the scattered particle. Thus
+F(x−x′)=( x−x′)2
+∫
+dqϱ (q)v(q)q2 2
+3ℏ2
+∫ dˆn dˆn′
+8π (1 − cosΘ) |f(qˆn,q ˆn′)|2 .
+(3.52)
+Second, we may take the cross section |f(qˆn,q ˆn′)|2 to be isotropic, i.e., to
+be dependent only on the magnitude q of the momentum and the scattering
+angle Θ. Then we may further simplify (3.52) by carrying out some of the
+angular integrations, which yields
+F(x−x′)=( x−x′)2
+∫
+dqϱ (q)v(q)q2 2π
+3ℏ2
+∫
+dc o sΘ (1 − cosΘ) |f(q, cosΘ)|2 .
+(3.53)
+Apart from the angular weighting term (1 − cosΘ), the second integral is
+similar to the expression for the total cross section σtot(q) of the scattering
+process, see (3.44). Let us therefore interpret
+σeﬀ(q) ≡ 2π
+3
+∫
+dc o sΘ (1 − cosΘ) |f(q, cosΘ)|2 (3.54)
+as the eﬀective cross section for the scattering interaction, which is conse-
+quently on the order of the total cross section σtot(q).
+Let us now explore the resulting time dependence of interference terms
+ρS(x,x′), x ̸= x′, of the reduced density matrix of the object. Referring
+back to (3.40) and using (3.53) and (3.54), the change of the reduced density
+matrix due to scattering is given by
+∂ρS(x,x′,t)
+∂t = −Λ(x − x′)2ρS(x,x′,t), (3.55)
+where we have introduced the scattering constant
+Λ≡
+∫
+dqϱ (q)v(q)q2
+ℏ2 σeﬀ(q), (3.56)
+which encapsulates the physical details of the interaction.
+Over timescales that are short in comparison with the internal dynamics
+of the system, (3.55) shows that the scattering events lead to a suppression
+of oﬀ-diagonal terms that increases exponentially with time and with the
+squared separation (Δx)2 =( x − x′)2,
+ρS(x,x′,t)= ρS(x,x′,0)e−Λ(Δx )2t. (3.57)
+We see that the scattering constant Λ quantiﬁes the rate at which spatial
+coherences over a given distanceΔxare suppressed. Equation (3.57) therefore
+motivates the introduction of a decoherence timescale τΔx given by
+
+--- PRINTED PAGE 132 / PDF PAGE 147 ---
+132 3 Localization Due to Environmental Scattering
+τΔx = 1
+Λ(Δx)2 , (3.58)
+which is the characteristic time required to damp spatial coherences over a
+distance Δx by a factor of e. The inverse quantity τ−1
+Δx therefore plays the
+role of a decoherence rate.
+By contrast with the result (3.48) obtained for the opposite limiting case
+of environmental wavelengths that were assumed to be very short in com-
+parison with the separation Δx, we see from (3.58) that the damping is now
+explicitly, and strongly, dependent on Δx. This diﬀerence is rather easily
+understood from our earlier discussion. If the wavelength of the particle is
+much smaller than Δx, each scattering event leads to a complete resolution
+of this separation, and thus the localization rate will be independent of Δx.
+On the other hand, if the particle’s wavelength is much larger than Δx,i t
+will require a large number of particles to encode an appreciable amount of
+which-path information in the environment, and this amount can be antic-
+ipated to increase, for a given number of scattering events, as Δx becomes
+larger.
+Of course, the decoherence rate cannot exceed the value obtained in
+the short-wavelength limit, since this case already corresponds to a max-
+imum of which-path information acquired by the environment. Therefore
+the long-wavelength decoherence timescale given by (3.58) cannot become
+shorter without bounds for increasingly large separations Δx, as one might
+be tempted to conclude from (3.58). At some point,Δx would become larger
+than the typical wavelength of the environment. The long-wavelength as-
+sumption would then be violated, and we would need to instead consider the
+short-wavelength case in which the decoherence rate indeed saturates to a
+value independent of the separation Δx [see (3.46)].
+3.4 Decoherence Due to Scattering of Thermal Photons
+and Air Molecules
+Let us now explore the application of our decoherence model to concrete phys-
+ical situations of interest. In the following, we shall consider environments
+composed of thermal photons and air molecules, which represent ubiquitous
+sources of decoherence in nature.
+3.4.1 Photon Scattering
+Let us ﬁrst consider the case of a photon-gas environment at temperature T
+interacting with a small object. Following the original example of Joos and
+Zeh [7], we model this object as a dielectric sphere of radiusa, and we assume
+that the dielectric constantεis independent of the frequency of the scattered
+photon. In the present case of photon scattering, the long-wavelength limit of
+
+--- PRINTED PAGE 133 / PDF PAGE 148 ---
+3.4 Decoherence Due to Scattering of Thermal Photonsand Air Molecules 133
+environmental scattering (see Sect. 3.3.2) is usually appropriate. At any rate,
+considering this limit (rather than the short-wavelength limit of Sect. 3.3.1)
+ensures that we obtain lower bounds on the decoherence rate.
+The relevant diﬀerential cross section is then given by the Rayleigh law
+[168] (averaged over the diﬀerent polarizations of the scattered radiation),
+|f(qˆn,q ˆn′)|2 =
+( q
+ℏ
+)4
+a6
+( ε− 1
+ε+2
+) 2 1
+2
+(
+1 + cos2 Θ
+)
+. (3.59)
+We see that this diﬀerential cross section depends on the magnitude q of
+the momentum of the environmental particle and on the scattering angle Θ
+between the directionsˆn and ˆn′ of the particle before and after the scattering.
+Let us now calculate the eﬀective cross section σeﬀ(q) for the Rayleigh
+cross section (3.59). From (3.54) we obtain
+σeﬀ(q)=
+( q
+ℏ
+)4
+a6
+( ε− 1
+ε+2
+) 2 π
+3
+∫
+dc o sΘ(1 − cosΘ)
+(
+1 + cos2 Θ
+)
+= 8π
+9
+( q
+ℏ
+)4
+a6
+( ε− 1
+ε+2
+) 2
+. (3.60)
+Next, to compute the scattering constant Λ, see (3.56), we need to obtain
+the momentum density ϱ(q). Assuming black-body radiation, the average
+occupation number of photons of energycq at temperature T is given by the
+Planck distribution
+⟨n(q)⟩T = 2
+ecq/kBT − 1, (3.61)
+where c denotes the speed of light, and the factor of 2 is due to the fact
+that there are two possible polarization directions of the photon. To obtain
+the number density ϱ(q), we must multiply ⟨n(q)⟩T by the number of states
+per unit volume with momenta between q and q +d q, which is given by
+(assuming an isotropic distribution of momenta)
+1
+(2πℏ)3 d3q = 1
+2π2ℏ3 q2dq. (3.62)
+This yields the number density
+ϱ(q)= 1
+π2ℏ3
+( q2
+ecq/kBT − 1
+)
+. (3.63)
+Let us now compute the resulting scattering constant Λ. Using (3.56), we
+obtain
+Λ=
+∫
+dqϱ (q)v(q)q2σeﬀ(q)
+=
+∫
+dq 1
+π2ℏ3
+( q2
+ecq/kBT − 1
+)
+cq2
+ℏ2
+8π
+9
+( q
+ℏ
+)4
+a6
+( ε− 1
+ε+2
+) 2
+= 8
+9πℏ9 a6c
+( ε− 1
+ε+2
+) 2 ∫
+dq q8
+ecq/kBT − 1. (3.64)
+
+--- PRINTED PAGE 134 / PDF PAGE 149 ---
+134 3 Localization Due to Environmental Scattering
+The integral can be computed using the deﬁnition of the Riemannζ-function
+for integer arguments n,
+ζ(n)= 1
+(n − 1)!
+∫ ∞
+0
+dx xn−1
+ex − 1. (3.65)
+Evaluating this expression for x = cq/kBT and n = 9, we ﬁnally obtain
+Λ=8 ! 8
+9πa6c
+( ε− 1
+ε+2
+) 2 ( kBT
+ℏc
+) 9
+ζ(9) ∝ a6T9, (3.66)
+where ζ(9) ≈ 1.002. We emphasize the extremely strong dependence of Λ
+on the size a of the object and the temperature T of the photon gas. For
+example, increasing T by a factor of two makes the decoherence rate more
+than 500 times larger.
+Evaluating the constants appearing in (3.66), and assuming (ε− 1)/(ε+
+2) ≈ 1, yields the scattering rate
+Λ≈ 1020 1
+cm2 s
+( a
+cm
+)6 ( T
+K
+) 9
+. (3.67)
+Let us use this expression to compute numerical estimates for Λ for a few
+cases of interest. For photons at room temperature (T = 300 K) scattering oﬀ
+a dust grain of sizea =1 0−3 cm, we obtainΛ≈ 1024 cm−2 s−1. Using (3.58),
+this means that spatial interferences over distances on the order of as little
+as Δx = |x − x′|≈ 10−12 cm will become eﬀectively suppressed within the
+time span of a second. Similarly, interferences over separations on the order
+of the size of the object ( Δx ≈ 10−3 cm) will become signiﬁcantly damped
+within a mere 10−18 seconds. For the same object (a =1 0−3 cm) immersed
+into cosmic microwave background rad iation (which consists of photons at
+the characteristic temperature of 3 K), the scattering constant is reduced by
+a factor of 1018, i.e., Λ≈ 106 cm−2 s−1. Even this rate still corresponds to a
+very eﬃcient decoherence process, as coherences over distances on the order
+of 10−3 cm will be locally suppressed within the time span of a second.
+If we reduce the size of the object down to, say, a =1 0 −6 cm, corre-
+sponding to a very small dust particle or a large molecule, we obtain Λ ≈
+106 cm−2 s−1 for a photon gas at room temperature andΛ≈ 10−12 cm−2 s−1
+for cosmic microwave background radiation. We see that in the latter case,
+decoherence is relatively slow, as the reader might have intuitively expected.
+Our estimate means that, if the 3 K background radiation was the only
+source of environmental scattering, interferences could here in principle be
+maintained for several seconds over separations up to 106 cm before becoming
+noticeably degraded.
+All values forΛcalculated here are summarized in Table 3.1. In Table 3.2,
+we have also listed the corresponding decoherence timescales (3.58) for co-
+herent separations Δx equal to the size a of the object. Needless to say, the
+
+--- PRINTED PAGE 135 / PDF PAGE 150 ---
+3.4 Decoherence Due to Scattering of Thermal Photonsand Air Molecules 135
+T able 3.1. Estimates for the scattering constant Λ, in units of cm − 2 s− 1, for a
+dust grain of size a =1 0− 3 cm and for a large molecule of size a =1 0− 6 cm im-
+mersed into radiation and gaseous environments. The quantityΛ(Δx )2 corresponds
+to the characteristic rate at which spatial coherences over a distance Δx become
+suppressed as a consequence of decoherence. The values for photon environments
+shown in the ﬁrst two rows were computed from (3.67), whereas the values for
+scattering of air molecules (at room temperature) given in the last two rows were
+obtained from (3.73) and (3.74).
+Environment Dust grain Large molecule
+Cosmic background radiation 10 6 10− 12
+Photons at room temperature 10 24 106
+Best laboratory vacuum 10 20 1014
+Air at normal pressure 10 37 1031
+T able 3.2. Estimates of decoherence timescalesτΔx = Λ− 1(Δx )− 2 (in seconds) for
+the suppression of spatial interferences over a distance Δx equal to the size a of
+the object (Δx = a =1 0− 3 cm for a dust grain and Δx = a =1 0− 6 cm for a large
+molecule). The timescales were computed using the values forΛ listed in Table 3.1.
+Environment Dust grain Large molecule
+Cosmic background radiation 1 10 24
+Photons at room temperature 10 − 18 106
+Best laboratory vacuum 10 − 14 10− 2
+Air at normal pressure 10 − 31 10− 19
+shortness of these timescales is truly astonishing and indicates the extreme
+speed and eﬃciency of decoherence. Our estimates demonstrate that spatial
+interference eﬀects are extremely diﬃcult to observe for “ordinary” objects
+(such as dust grains) immersed into similarly “ordinary” environments (such
+as thermal photons).
+Even coherence properties of electrons and other microscopic charged
+particles are signiﬁcantly inﬂuenced by the scattering of thermal radiation
+[7, 166]. For the scattering of radiation by charged particles, the relevant
+eﬀective cross section is given by the Thompson cross section,
+dσ
+dΩ(Θ)=
+( Q2
+mc2
+) 2
+1
+2
+(
+1 + cos2 Θ
+)
+. (3.68)
+The so-called Compton radius Q2/mc2 of the charged particle has units of
+length and plays here a role analogous to that of the spatial size a of the
+object in the case of Rayleigh scattering.
+The scattering constant Λcorresponding to the scattering cross section
+(3.68) can be computed in a similar way as above for Rayleigh scattering.
+One then ﬁnds a temperature dependence of Λ ∝ T5. Numerical estimates
+
+--- PRINTED PAGE 136 / PDF PAGE 151 ---
+136 3 Localization Due to Environmental Scattering
+for the scattering constant for the case of a free electron range from Λ ≈
+100 cm−2 s−1 for an environment of thermal (300 K) photons down to Λ≈
+10−15 cm−2 s−1 for an environment of solar neutrinos [166].
+Although these values are much smaller than those obtained for meso-
+scopic and macroscopic objects above, they still show that the coherent
+spreading of wave packets induced by the free Schr¨ odinger evolution is ef-
+ﬁciently suppressed at the level of the system. Recall that in the beginning
+of this chapter we had shown that the wave function of an electron with an
+initial spatial width of 1˚A would very quickly become completely delocalized
+under purely unitary time evolution, reaching a width of aboutΔx =1 08 cm
+within a second [see (3.3)]. Our numerical estimates demonstrate that lo-
+calization of such a spread-out wave packet would occur within less than a
+second even if only the environment of solar neutrinos was taken into account.
+Thermal photons, on the other hand, would lead to an extremely short deco-
+herence time of about 10 −16 s for the electron described by this delocalized
+wave packet. However, it is very important to keep in mind that for micro-
+scopic particles such as electrons the assumption of a recoil-free interaction
+(on which our above derivation of the expression for the localization rate
+is based) is usually not physically reasonable. Therefore we should not take
+these numerical estimates too literally.
+3.4.2 Scattering of Air Molecules
+Let us now consider the scattering of air molecules. Needless to say, this type
+of environment constitutes a very important source of decoherence in the
+everyday world around us. Air molecules are matter particles whose thermal
+de Broglie wavelength (2.114) is typically very short. For example, an O 2
+molecule at room temperature has a thermal de Broglie wavelength of about
+λdB ≈ 2 × 10−11 m, or about 20 ˚A. At T = 3 K, the wavelength is ten times
+longer, i.e., λdB ≈ 2 × 10−10 m, or about 200 ˚A. If we again take “dust”
+particles with typical extensions between a =1 0 −6 cm and a =1 0 −3 cm
+as our objects of interest, then it is clear that we are here in the regime
+in which the relevant wavelength of the scattering environmental particle is
+much shorter than the size of the object.
+In this case, we may take the cross section |f(qˆn,q ˆn′)|2 to be a constant
+|f |2 such that the cross section integrated over all orientations is simply equal
+to the geometric cross section πa2 of the object,
+∫
+dˆn |f |2 =4 π|f |2 !
+= πa2, (3.69)
+which implies |f |2 = a2/4.
+Since our goal is to determine lower-bound estimates of the decoherence
+rate, let us again employ the long-wavelength limit of Sect. 3.3.2. That is, we
+shall assume that the coherent separationΔxbetween the two position-space
+
+--- PRINTED PAGE 137 / PDF PAGE 152 ---
+3.4 Decoherence Due to Scattering of Thermal Photonsand Air Molecules 137
+components of the spatial superposition describing the object is much shorter
+than the wavelengths of the scattering air molecules.
+Then (3.54) gives σeﬀ = πa2/3. If we insert this value into our general
+expression (3.56) for the scattering constant Λin the long-wavelength limit,
+we obtain
+Λ=
+∫
+dqϱ (q)v(q)q2
+ℏ2 σeﬀ(q)
+= πa2
+3ℏ2
+∫
+dqϱ (q)v(q)q2
+≡ πa2
+3ℏ2
+⟨
+v(q)q2⟩
+ϱ , (3.70)
+where ⟨v(q)q2⟩ϱ denotes the average value of the quantityv(q)q2 for a given
+distribution ϱ(q).
+Since we deal with an environment of gas particles, we take the number
+density ϱ(q) of air molecules with momentum q to be distributed according
+to the Maxwell–Boltzmann distribution,
+ϱ(q)= N
+V 4πq2
+( 1
+2πmkBT
+) 3/2
+exp
+[
+− q2
+2mkBT
+]
+, (3.71)
+where N/V is the total density of the air. The average
+⟨
+v(q)q2⟩
+ϱ appearing
+in (3.70), with v(q)= q/m, is then easily computed by carrying out the
+Gaussian integral,
+⟨
+v(q)q2⟩
+ϱ =
+∫
+dqϱ (q)v(q)q2 =4 N
+V (m/π)1/2 (2kBT)3/2 . (3.72)
+Thus the scattering constant (3.70) is
+Λ= 8
+3ℏ2
+N
+V (2πm)1/2a2 (kBT)3/2 . (3.73)
+We see that here the dependence of the scattering rate on the size a of the
+object and the temperatureT is much less dramatic than in the case of photon
+scattering, where we had found Λ∝ T9 [see (3.66)]. The a2 dependence is a
+direct consequence of the use of the geometric cross section, while Rayleigh
+scattering is characterized by a much strongera6 scaling [see (3.59)].
+Using (3.73), we can estimate some typical values for Λ. Air at normal
+pressure contains about 3 × 1019 particles per cm3 and has a mass of about
+29 kg per kmol (1 kmol contains about 6× 1026 particles). Thus the mass m
+of an individual air molecule is approximatelym =0 .5×10−25 kg. Evaluating
+(3.73) with these values leads to
+Λ(normal pressure) ≈ 1039 1
+cm2 s
+( a
+cm
+)2 ( T
+K
+) 3/2
+. (3.74)
+
+--- PRINTED PAGE 138 / PDF PAGE 153 ---
+138 3 Localization Due to Environmental Scattering
+Let us again focus on the two objects previously considered, namely, a dust
+grain of size a =1 0 −3 cm and a large molecule of size a =1 0 −6 cm (see
+Table 3.1).
+At room temperature (T = 300 K), we then obtain from (3.73) the values
+Λ≈ 1037 cm−2 s−1 for a dust grain (a =1 0−3 cm) and Λ≈ 1031 cm−2 s−1
+for a large molecule ( a =1 0 −6 cm). On the other hand, good laboratory
+vacuums achieve particle densities on the order of a few hundred particles
+per cm3 [169, p. 267]. Since the scattering constant is simply proportional
+to the number density of the environmental particles, we thus obtain values
+for Λthat are smaller by a factor of about 1017 than those for air at normal
+pressure. This yieldsΛ≈ 1020 cm−2 s−1 and Λ≈ 1014 cm−2 s−1 for the dust
+grain and large molecule, respectively. Our values for Λare summarized in
+Table 3.1.
+Let us again illustrate the eﬀectiveness of decoherence with a few ex-
+amples. Suppose the large molecule is prepared in a superposition of two
+distinct positions a distance Δx =1 0 ˚A apart. Using (3.58), the scattering
+of air molecules at normal pressure will then lead to decoherence of such a
+superposition on a timescale τΔx ≈ 10−17 s. Even in the best available lab-
+oratory vacuums, this decoherence time will still be on the order of a mere
+second. The shortness of the decoherence times is of course even more im-
+pressive if we consider a larger object such as the aforementioned dust grain.
+Even for a microscopic separation Δx =1 0 ˚A (which is much less than the
+size of the object), (3.58) and (3.74) predict a decoherence time at normal air
+pressure of τΔx ≈ 10−23 s. A few other values of characteristic decoherence
+timescales for the case in which the coherent separation Δx is on the order
+of the size of the object are listed in Table 3.2.
+These decoherence times are extremely short and demonstrate impres-
+sively the eﬀectiveness of scattering-induced decoherence in locally suppress-
+ing spatial coherences. Such estimates show why it is so diﬃcult to observe
+spatial interference patterns for mesoscopic and macroscopic particles not
+only in the everyday world around us, but even under rather sophisticated
+laboratory conditions.
+Once again, our numerical estimates should be interpreted with a grain of
+salt. For example, for the case of a molecule immersed into an environment
+of air molecules, the ratio between the mass of the object and the masses
+of the scattered environmental particles may not be suﬃciently large for the
+no-recoil assumption underlying our model to be appropriate.
+3.4.3 Comparison with Experiments
+There are several experiments that have explicitly measured rates of spatial
+decoherence of atoms and molecules due to scattering of background particles
+such as photons or background-gas molecules. A very impressive experiment
+that directly demonstrates the gradual decohering inﬂuence of a scattering
+
+--- PRINTED PAGE 139 / PDF PAGE 154 ---
+3.5 Illustrating the Dynamics of Decoherence 139
+environment on the spatial coherence of C 60 and C70 molecules will be de-
+scribed in detail in Sect. 6.2.
+Here we shall therefore only brieﬂy note a couple of other experiments,
+which have used atom interferometers of the Mach–Zehnder type in order to
+observe interference patterns for matter particles [170]. In such an interfer-
+ometer, the path of each atom is coherently split within the interferometer
+and subsequently recombined. This results in an spatial interference pattern
+in form of an oscillatory dependence of the atomic ﬂux on position.
+Kokorowski et al. [171] used a Mach–Zehnder interferometer to observe
+the loss of coherence of sodium atoms due to scattering of controlled numbers
+of photons emitted from a laser beam. They measured the loss of contrast of
+the interference pattern as a function of the mean number of photons that
+were spontaneously scattered by atoms within the interferometer for diﬀerent
+path separations (these separations correspond to the quantity Δx used in
+our model). The experiment veriﬁed the theoretically predicted exponential
+decay of this contrast, and thus of spatial coherence, with the square of
+the separation Δx and with time [see (3.57)]. In a similar experiment, Uys,
+Perreault, and Cronin [172] studied spatial decoherence of sodium atoms due
+to scattering of gas molecules within the interferometer and found, again,
+good agreement with theoretical predictions.
+3.5 Illustrating the Dynamics of Decoherence
+In the previous Sect. 3.4, we focused on estimating typical decoherence
+timescales of spatial superpositions for various objects immersed into dif-
+ferent types of environments. Let us now illustrate the explicit dynamics of
+the decoherence process. We shall concentrate here on the case of a particle
+moving in one spatial dimension.
+Recall that, in the long-wavelength limit, the interference terms of the re-
+duced density matrix of the object decay due to the inﬂuence of the scattering
+environment as [see (3.55)]
+∂ρS(x,x ′,t)
+∂t = −Λ(x − x′)2ρS(x,x ′,t). (3.75)
+Let us now include the term describing the unitary evolution under the “free-
+particle” Hamiltonian6 (setting ℏ ≡ 1 in the remainder of this chapter)
+H(x,p)= p2
+2m ≡− 1
+2m
+∂2
+∂x2 . (3.76)
+This term is given by the Liouville–von Neumann equation,
+6Of course, our particle is not truly free, since it is subject to collisions with the
+environment.
+
+--- PRINTED PAGE 140 / PDF PAGE 155 ---
+140 3 Localization Due to Environmental Scattering
+dˆρ(t)
+dt = −i
+[ ˆH(t), ˆρ(t)
+]
+. (3.77)
+Expressed in the position representation, we then obtain the full equation of
+motion for the particle,
+∂ρS(x,x ′,t)
+∂t = − i
+2m
+( ∂2
+∂x′2 − ∂2
+∂x2
+)
+ρS(x,x ′,t) − Λ(x − x′)2ρS(x,x ′,t).
+(3.78)
+In Chap. 4, we will recognize this equation as an example of a master equation
+for decoherence, i.e., of an equation of motion that describes the evolution of
+the reduced density matrix of an object interacting with an environment.
+It is now fairly straightforward to construct solutions of the equation of
+motion (3.78) [7]. We will closely follow Joos et al. [17] in our subsequent
+discussion. Let us use the Gaussian ansatz
+ρS(x,x ′,t) = exp
+{
+−A(t)(x − x′)2 − iB(t)(x − x′)(x +x′)
+−C(t)(x +x′)2 − D(t)
+}
+, (3.79)
+where A(t), B(t), C(t), and D(t) are time-dependent coeﬃcients which de-
+pend on the state at t =0 .I fρS(x,x ′,t) is Hermitian, then these coeﬃcients
+are real-valued functions of time.
+Each of the coeﬃcients A(t), B(t), C(t), andD(t) appearing in (3.79) has
+a particular interpretation (see Fig. 3.4). The width of the Gaussian in the
+“oﬀ-diagonal” x = −x′ direction quantiﬁes the range of spatial coherence.
+From (3.79) we see that this width is inversely proportional to
+√
+A(t), which
+motivates the introduction of a characteristic coherence length
+x
+x′
+ensemble
+width
+coherence
+length
+Fig. 3.4. Illustration of some of the key quantities relevant to the description of
+the Gaussian density matrix (3.79). The extension of the density matrix in the oﬀ-
+diagonal x = −x′ direction is quantiﬁed by the coherence length ℓ(t) ≡ 1/
+√
+8A(t),
+which measures the characteristic distance over which the system can exhibit spatial
+interference eﬀects. The ensemble width ΔX (t) ≡ 1/
+√
+8C(t) represents the size of
+the probability distribution P(x, t) ≡ ρS(x, x, t) for diﬀerent positions x.
+
+--- PRINTED PAGE 141 / PDF PAGE 156 ---
+3.5 Illustrating the Dynamics of Decoherence 141
+ℓ(t) ≡ 1√
+8A(t)
+. (3.80)
+On the other hand, the width of ρS(x,x ′,t) in the diagonal x = x′ direction
+corresponds to the size of the probability distribution P(x,t) ≡ ρS(x,x,t ),
+which describes the probability of ﬁnding the system at x upon a mea-
+surement of its position. This width is inversely proportional to
+√
+C(t)[ s e e
+(3.79)]. Accordingly, we shall introduce the ensemble width ΔX(t)a s
+ΔX(t)= 1√
+8C(t)
+, (3.81)
+which quantiﬁes the total size of the position-space ensemble.
+The coeﬃcient B(t), together withA(t)a n dC(t), is related to the spread
+ΔP(t) of the momentum distribution, which is given by
+ΔP(t)=
+√
+2
+[
+A(t)+ B2(t)
+4C(t)
+]1/2
+. (3.82)
+We can use (3.81) and (3.82) to write down the corresponding uncertainty
+relation,
+ΔX(t)ΔP(t)= 1
+2
+[A(t)
+C(t) + B2(t)
+4C(t)
+]1/2
+. (3.83)
+Finally, the term D(t) ensures that the trace of the density matrix is a con-
+served quantity at all times.
+Inserting our Gaussian ansatz (3.79) into the equation of motion (3.78)
+yields a set of coupled diﬀerential equations for the coeﬃcients A(t), B(t),
+C(t), and D(t) that can be solved explicitly for arbitrary initial conditions
+(see, e.g., Appendix A2 of [17]). Here, let us illustrate the decoherence dy-
+namics of the reduced density matrix by choosing a particular initial state,
+namely, a pure-state Gaussian wave packet of widthb centered at x =0 ,
+ψ(x,0) =
+[ 1
+2πb2
+]1/4
+exp
+( −x2
+4b2
+)
+. (3.84)
+This yields the initial density matrix
+ρS(x,x ′,0) =
+[ 1
+2πb2
+]1/2
+exp
+(
+−x2 +x′2
+4b2
+)
+, (3.85)
+which corresponds to the initial values A(0) = C(0) = 1/8b2 and B(0) =
+D(0) = 0 for the coeﬃcients appearing in (3.79).
+The density matrix (3.85) is plotted in Fig. 3.5. We see that the Gaussian
+is symmetric with respect to the x and x′ axes, i.e., the coherence length
+and ensemble width are of equal magnitudes. For this initial state (3.85), the
+
+--- PRINTED PAGE 142 / PDF PAGE 157 ---
+142 3 Localization Due to Environmental Scattering
+x
+x′
+Fig. 3.5. Illustration of the initial density matrix ρS(x, x′, 0) [see (3.85)]. The
+density matrix has the shape of a symmetric Gaussian in the ( x, x′) plane, with a
+coherence length ℓ(0) (the extension along the “oﬀ-diagonal” x = −x′) equal to the
+ensemble width ΔX (0) (the width along the diagonal x = x′).
+resulting time dependence of the coeﬃcients A(t), B(t), C(t), and D(t)i s
+easily computed. Let us explicitly state the expressions for A(t)a n dC(t),
+which read (see [7] or Appendix A2 of [17] for the derivation)
+A(t)= Λt3 +3m2b2/2+2 Λ2b2t4 +1 2Λm2b4t
+3t2 +8Λb2t3 +1 2m2b4 (3.86)
+and
+C(t)= 1
+2
+[ t2
+m2b2 + 8
+3
+Λt3
+m3 +4b2
+]−1
+. (3.87)
+Before studying the resulting time evolution of related key quantities such
+as the coherence length, ensemble width, and purity of the reduced density
+matrix, let us brieﬂy discuss how we expect the initial Gaussian (3.85) to
+evolve over time if decoherence due to environmental scattering is taken into
+account. We anticipate that the interaction with the environment will make
+it increasingly hard to observe spatial coherences over a given distanceΔx =
+|x − x′|. That is, we expect the coherence length ℓ(t) [see (3.80)] to decrease
+over time, “squeezing” the Gaussian (3.85) in the direction perpendicular to
+the “classical” diagonal x = x′. In the limit of complete decoherence, the
+Gaussian would then approach the shape of the quasiclassical distribution,
+i.e., that of an inﬁnitely narrow ridge along the diagonalx = x′.A tt h es a m e
+time, we anticipate the squeezing in thex = −x′ direction to be accompanied
+by a spreading in the x = x′ direction.
+Let us now conﬁrm these intuitions by studying the time evolution of some
+of the relevant quantities, using the explicit expressions (3.86) and (3.87) for
+the coeﬃcients A(t)a n d C(t). Probably the quantity of most interest to
+decoherence is the coherence length ℓ(t) deﬁned in (3.80). Using (3.86), the
+time dependence of this quantity is given by
+
+--- PRINTED PAGE 143 / PDF PAGE 158 ---
+3.5 Illustrating the Dynamics of Decoherence 143
+ℓ(t)= 1√
+8A(t)
+= 1
+2
+[ 3t2 +8Λb2t3 +1 2m2b4
+2Λt3 +3m2b2 +4Λ2b2t4 +2 4Λm2b4t
+]1/2
+. (3.88)
+As expected, at t = 0 the coherence length is simply equal to the width b of
+the wave packet. In the absence of environmental interactions (Λ= 0), ℓ(t)
+becomes
+ℓfree(t)= 1
+2
+[ t2
+m2b2 +4b2
+]1/2
+= ΔXfree(t). (3.89)
+This expression simply describes the free coherent spread of the wave packet
+discussed at the beginning of this chapter. It is analogous to (3.3) with the
+obvious identiﬁcation σ≡
+√
+2b (recall also that we set ℏ ≡ 1 in this section).
+Let us study the time evolution of ℓ(t) [see (3.88)] in more detail. In
+the following, we shall measure time in units of τb ≡ 1/Λb2, which is the
+characteristic localization timescale for spatial coherences over a distance
+Δx = b (the initial width of the wave packet). A plot of ℓ(t) is shown in
+Fig. 3.6.
+Let us ﬁrst investigate the time evolution of ℓ(t) for times t much shorter
+than the localization timescale τb. Expanding (3.88) around Λb2t =0u pt o
+ﬁrst order in Λb2t yields
+ℓ(t) ≈ b
+(
+1 − 4Λb2t
+)
+. (3.90)
+with
+environment
+t [τb]
+110− 110− 210− 3 101
+ℓ(t)[ b]
+1
+5
+.5
+without
+environment
+Fig. 3.6. Time dependence of the coherence length ℓ(t) given by (3.88) for a
+Gaussian wave packet, as studied by Joos et al. [17]. The time t is measured in
+units of the characteristic localization timescale τb =1 /Λb2,a n dℓ(t) is displayed
+in units of ℓ(0) = b, the initial width of the wave packet. The upper curve shows
+the behavior without environmental interaction (Λ = 0). The lower curve displays
+the eﬀects of the environmental scattering, showing that the distance over which
+the system is able to maintain spatial coherences decreases rapidly with time.
+
+--- PRINTED PAGE 144 / PDF PAGE 159 ---
+144 3 Localization Due to Environmental Scattering
+We thus see that, due to the inﬂuence of environmental scattering, for short
+times the coherence length decreases linearly with time, and that the rate of
+decrease is proportional to the scattering constant Λ.
+On the other hand, we may consider the limit in which t is much larger
+than the localization timescale τb. In view of the fact that the scattering
+rate Λmay take on very large values for macroscopic objects (see Table 3.1),
+this does not mean that t itself needs to be large for this limit to apply. For
+example, even with a rather low value ofΛ≈ 1020 cm−2 s−1 for a dust grain
+of size a =1 0−3 cm and an initial coherent spread of 10% of this size, i.e.,
+b =1 0−4 cm, we haveτb ≈ 10−12 s. Thus, for a macroscopic object, the limit
+t ≫ τb will typically be reached within a tiny fraction of a second. In this
+limit, (3.88) approaches the asymptotic expression
+ℓ(t) −→ 1√
+2Λt
+. (3.91)
+Thus in this case the coherence length follows a t−1/2 dependence and is
+independent of the width b of the initial state (3.84).
+Let us now consider the time evolution of the total size ΔX(t)o ft h e
+ensemble. From (3.81) and (3.87), we obtain
+ΔX(t)= 1√
+8C(t)
+= 1
+2
+[ t2
+m2b2 + 8
+3
+Λt3
+m3 +4b2
+]1/2
+. (3.92)
+In the absence of any environmental interactions ( Λ= 0), i.e., for a purely
+unitary time evolution of the free particle described by the initial wave func-
+tion (3.84),ΔX(t) coincides with the expression for the coherence lengthℓ(t)
+evaluated for Λ= 0 [see (3.89)],
+ΔXfree(t)= 1
+2
+[ t2
+m2b2 +4b2
+]1/2
+. (3.93)
+Thus, without the environment, the spreading proceeds at exactly the same
+rate in both the x = x′ direction (describing the ensemble of positions) and
+the x = −x′ direction (representing spatial coherence). This, of course, is
+the expected behavior for a free particle: If the environment is absent, there
+exists no physical mechanism that would single out one of these two direc-
+tions over the other direction. However, once the environment is included, an
+asymmetry is introduced. Now the scattering events act as a form of measure-
+ment device for the position of the system. Broadly speaking, the scattered
+particles will try to resolve diﬀerences |x − x′| between two positions x and
+x′ while being insensitive to the sum (x+x′) of two positions. This asymme-
+try of the environmental monitoring process with respect to the coordinates
+(x+x′) and (x −x′) is encapsulated in the form of the equation of motion for
+ρS(x,x ′,t) [see the right-hand side of (3.78)] and leads to the diﬀerent time
+
+--- PRINTED PAGE 145 / PDF PAGE 160 ---
+3.5 Illustrating the Dynamics of Decoherence 145
+evolutions for ΔX(t)a n dℓ(t), as seen by comparing the expressions (3.92)
+and (3.88).
+With the environmental interaction present, the additional term 8
+3
+Λt 3
+m3
+appearing in (3.92) leads to an even faster increase of the width of the en-
+semble with time (see Fig. 3.7).7 In our model, the fact that the presence of
+the environment accelerates this “classical” spreading is due to the fact that
+the scattering events lead to an increase in the mean energy of the system.
+This energy increase is a consequence of our assumption that these scattering
+events do not result in a recoil of the system (see p. 121).
+We can thus visualize the time evolution of the density matrix as a com-
+petition between two opposite inﬂuences, as illustrated in Fig. 3.8. On the
+one hand, the overall spatial extensionΔX(t) of the position-space ensemble
+tends to spread out more and more with time, induced by both the unitary
+free-particle evolution and the increase in the mean energy due to the scat-
+tering events. On the other hand, these scattering events also play the role of
+a continuous monitoring of the position of the system, leading to a decrease
+of the coherence lengthℓ(t) and thus to the suppression of spatial coherences
+over increasingly short distances.
+7At a ﬁrst glance, this might seem like a surprising result. After all, in the intro-
+duction to this chapter we suggested that decoherencecounteracts the spreading of
+the wave packet. However, there is no contradiction here. The crucial point to bear
+in mind here is the diﬀerence between coherent and ensemble spreading. Coherent
+spreading means that the system can be found in a superposition of increasingly
+separated positions, e.g., by performing an interference experiment. By contrast,
+ensemble spreading simply corresponds to an increased range of possible positions
+in which the system can be found upon a measurement of its position.
+110− 110− 210− 3 101
+ΔX(t)[ b]
+1
+5 without
+environment
+101
+with
+environment
+t [τb]
+Fig. 3.7. Time evolution of the ensemble widthΔX (t) given by (3.92) for a Gaus-
+sian wave packet, as studied by Joos et al. [17]. The time t is measured in units of
+the characteristic localization timescale τb =1 /Λb2,a n dΔX (t) is plotted in units
+of the initial width ΔX (0) = b of the wave packet.
+
+--- PRINTED PAGE 146 / PDF PAGE 161 ---
+146 3 Localization Due to Environmental Scattering
+x′
+x
+x′
+Fig. 3.8. Time evolution of the Gaussian wave packet (3.79), with the initial state
+given by (3.85), under the inﬂuence of a scattering environment. The coeﬃcients
+A(t)a n d C(t) appearing in (3.79) are determined by (3.86) and (3.87), respec-
+tively. The width of the Gaussian in the oﬀ-diagonal direction x = −x′ (repre-
+senting spatial coherences) becomes progressively reduced, with the density matrix
+approaching a quasiclassical probability distribution of positions concentrated along
+the diagonal x = x′.
+
+--- PRINTED PAGE 147 / PDF PAGE 162 ---
+3.5 Illustrating the Dynamics of Decoherence 147
+To quantify the interplay between the reduction of the coherence length
+ℓ(t) and the increase of the ensemble sizeΔX(t), one often considers a com-
+bined dimensionless quantity in form of the ratio (see, e.g., [17,173]),
+δ(t) ≡ ℓ(t)
+ΔX(t) =
+√
+C(t)
+A(t). (3.94)
+A plot of δ(t) is shown in Fig. 3.9. Without the environment present, δ(t)
+remains constant, i.e., the coherent spreading proceeds at the same rate in
+the x = x′ and x = −x′ directions [see (3.89) and the subsequent discussion].
+With the environment included, the coherence length ℓ(t) decreases while
+the overall width ΔX(t) increases. However, ΔX(t) increases at a slower
+rate than the rate of decrease of ℓ(t), leading to a net decrease of δ(t).
+Another reason for our introduction of the quantity δ(t) is that it allows
+us to easily establish an immediate connection to another measure of deco-
+herence, namely, the purity ς=T r ( ˆρ2) of a density matrix ˆρas introduced
+in Sect. 2.4.3 [see (2.30)]. For the reduced density matrixρS(t) of our model,
+the purity is found to be
+ς(t)=
+√
+C(t)
+A(t). (3.95)
+But evidently this coincides with the expression (3.94) forδ(t), i.e., the quan-
+tity δ(t) also describes the purity of the reduced density matrix in our scat-
+tering model. From Fig. 3.9 we see that, as expected, the environmental
+scattering leads to a decrease of the purity of the reduced density matrix,
+reﬂecting the gradual action of decoherence.
+1
+10− 1
+10− 210− 3 101
+δ(t)
+1 without
+environment
+with
+environment
+10− 1
+10− 2
+t [τb]
+Fig. 3.9. Time dependence of the ratio δ(t) ≡ ℓ(t)/ΔX (t) [see (3.94)] with and
+without environmental scattering. The quantity δ(t) also describes the time evo-
+lution of the purity of the local density matrix in our model. The time t is again
+measured in units of the characteristic localization timescale τb =1 /Λb2.
+
+--- PRINTED PAGE 148 / PDF PAGE 163 ---
+148 3 Localization Due to Environmental Scattering
+Finally, let us illustrate the time evolution of a superposition of two equal-
+weight Gaussian wave packets of the form (3.84) centered around x = ±x0,
+i.e.,
+Ψ(x,0) =ψx0 (x,0) +ψ−x0 (x,0)
+=
+[ 1
+2πb2
+]1/4 {
+exp
+( −(x − x0)2
+4b2
+)
++e x p
+( −(x +x0)2
+4b2
+)}
+. (3.96)
+This wave function is illustrated in Fig. 3.10.
+If x0 ≫ b, such a quantum state would correspond to the nonclassical
+situation of a particle being described by a superposition of two well-deﬁned,
+distinguishable positions separated by a distance 2 x0. The corresponding
+density matrix is
+ρS(x,x ′,0) =Ψ∗(x′,0)Ψ(x,0)
+= ψ∗
+x0 (x′,0)ψx0 (x,0) +ψ∗
+−x0 (x′,0)ψ−x0 (x,0)
++ψ∗
+x0 (x′,0)ψ−x0 (x,0) +ψ∗
+−x0 (x′,0)ψx0 (x,0). (3.97)
+This density matrix is shown as the top plot of Fig. 3.11. The two peaks
+along the oﬀ-diagonal x = −x′ correspond to the spatial interference terms
+ψ∗
+x0 (x′,0)ψ−x0 (x,0) and ψ∗
+−x0 (x′,0)ψx0 (x,0) between the two wave packets
+ψx0 (x,0) and ψ−x0 (x,0) introduced in (3.96).
+The subsequent time evolution of the density matrix (3.97) as determined
+by the equation of motion (3.78) is illustrated in Fig. 3.11. We observe that,
+as expected, interference terms corresponding to spatial coherence between
+the two regions around x = ±x0 are gradually suppressed due to the pres-
+ence of the environment. In the limit of complete decoherence, we obtain an
+(albeit improper!) ensemble of the two states describing localization of the
+system around +x0 and −x0, respectively. That is, measurements that per-
+−x0 x0
+Ψ(x,0)
+ψx0 (x,0)ψ− x0 (x,0)
+x
+Fig. 3.10. Illustration of the superposition (3.96) of two Gaussian wave packets
+centered around +x0 and −x0, respectively.
+
+--- PRINTED PAGE 149 / PDF PAGE 164 ---
+3.5 Illustrating the Dynamics of Decoherence 149
+x
+x′
+Fig. 3.11. Time evolution of the density matrix ρS(x, x′,t ) for the superposition
+(3.96) of two Gaussian wave packets. Interference terms along the oﬀ-diagonalx =
+−x′ become progressively damped by the scattering of environmental particles.
+
+--- PRINTED PAGE 150 / PDF PAGE 165 ---
+150 3 Localization Due to Environmental Scattering
+tain to the system alone will be unable to distinguish this ensemble from the
+corresponding classical (proper) ensemble of localized positions.
+3.6 Summary
+Scattering of environmental particles is one of the dominant sources of de-
+coherence in the macroscopic domain and thus plays an enormously impor-
+tant role in the emergence of classicality in the everyday world around us.
+Scattering-induced decoherence is also ideally suited for illustrating basic
+conceptual aspects of decoherence, for instance, the understanding of this
+decoherence as a consequence of the environment’s acting as a continuous
+monitoring device for the position of the system.
+We found that for the case in which each scattering event encodes only
+incomplete which-path information in the environment (the “long-wavelength
+limit”), spatial interference terms are exponentially damped according to [see
+(3.57)]
+ρS(x,x′,t)= ρS(x,x′,0)e−Λ(x− x′)2t, (3.98)
+where the scattering constantΛembodies the particular physical properties of
+the scattering process. Thus the characteristic timescaleτΔx for decoherence
+of spatial interferences over a distance Δx = |x − x′| is [see (3.58)]
+τΔx = 1
+Λ(Δx)2 . (3.99)
+We see thatτΔx decreases quadratically with the coherent separation Δx.I f
+this separation becomes larger than the typical wavelength of the environmen-
+tal particles, it is completely resolved by each scattering event. Accordingly,
+the decoherence rate saturates and is simply given by the total scattering
+rate [see (3.48)].
+We also obtained some explicit numerical estimates for typical decoher-
+ence timescales, which impressively demonstrate the eﬀectiveness and ubiq-
+uity of scattering-induced decoherence. At a ﬁrst glance, one may have as-
+sumed that, by suitably shielding the system from the environment, one might
+be able to completely avoid decoherence. However, as we have seen, such full
+shielding is impossible to achieve in practice. Even in the best available lab-
+oratory vacuum the density of air molecules remains large enough to lead to
+strong and virtually immediate decay of macroscopic spatial interferences. If
+we were able to completely prevent all these surrounding gas molecules from
+interacting with the system, thermal photons would continue to induce rapid
+decoherence. And even if we managed to reduce such eﬀects, decoherence due
+to an inescapable environment of solar neutrinos and microwave background
+radiation would still occur. These arguments also show why position is the
+ubiquitous preferred basis on macroscopic scales (and often even on micro-
+scopic scales, e.g., in the case of chiral molecules mentioned in Sect. 2.8.4).
+
+--- PRINTED PAGE 151 / PDF PAGE 166 ---
+3.6 Summary 151
+The recognition that quantum systems are practically impossible to shield
+from the inﬂuence of a scattering environment and that these scattering pro-
+cesses have a crucial inﬂuence on the dynamics and observable quantum prop-
+erties of the systems has supplied a missing key ingredient in Schr¨odinger’s
+attempt for a true “wave mechanics” in which wave packets are directly
+identiﬁed with the spatially extended objects around us. The reduced den-
+sity matrix describing an object in contact with a scattering environment can
+be used to deﬁne an improper ensemble of wave packets whose width is given
+by the progressively decreasing coherence length. Each such wave packet may
+then be identiﬁed (at least in the operational sense of local measurements)
+with the appearance of a well-localized particle.
+As we will discuss in more detail in Sect. 6.2, recent experiments of the
+double-slit type involving massive molecules have allowed us to directly con-
+ﬁrm the qualitative and quantitative predictions of models for scattering-
+induced decoherence. As such experiments push toward the generation of
+interference patterns and the observation of the gradual inﬂuence of deco-
+herence for larger and larger objects, we will be able to directly test these
+models in the laboratory on increasingly macroscopic scales.

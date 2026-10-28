@@ -1,0 +1,49 @@
+306     7 Decoherence and Quantum Computing
+
+                                 |ψ = α |0 + β |1                            (7.11)
+onto a set of N − 1 other qubits, such that the total state of all N qubits
+would read
+                                     N
+                            |Ψ  =         (α |0i + β |1i ) .                 (7.12)
+                                     i=1
+
+Thereby we would have redundantly encoded the same single-qubit state |ψ
+in N physical qubits. However, it is a fundamental consequence of the linearity
+of quantum-mechanical time evolution that cloning of arbitrary quantum
+states is not possible. The proof of this famous no-cloning theorem [20, 21]
+is rather straightforward. Suppose we have some sort of device that is able
+to copy our two qubit basis states |01 and |11 . That is, given a second
+qubit described by the initial state |ψ0 2 , the machine would implement the
+following process:
+
+                             |01 |ψ0 2 −→ |01 |02 ,                       (7.13a)
+                             |11 |ψ0 2 −→ |11 |12 .                       (7.13b)
+
+For the special case |ψ0 2 = |02 , this evolution is referred to as a so-called
+controlled-not (or cnot) gate in quantum information theory. It simply cor-
+responds to an evolution of the von Neumann type (2.52), where the change
+of the state of the second system is conditional on the state of the ﬁrst system.
+That is, if the ﬁrst system is in the state |01 , the state of the second system
+remains unchanged, whereas the latter changes to |12 if the ﬁrst system is
+in the state |11 . This type of evolution is an example of so-called conditional
+quantum dynamics.
+    Since the evolution of the composite system consisting of the device and
+the two qubits is unitary and thus linear, it follows from (7.13) that the
+output for the input state (|01 + |11 ) of the ﬁrst qubit would be
+
+                  (|01 + |11 ) |ψ0 2 −→ |01 |02 + |11 |12 .              (7.14)
+
+But this ﬁnal state is evidently diﬀerent from the desired output state, which
+is
+
+ (|01 + |11 ) (|02 + |12 ) = |01 |02 + |01 |12 + |11 |02 + |11 |12 . (7.15)
+
+This simple observation concludes our proof. Thus we can clone the single-
+qubit state (7.11) only if we had advance knowledge of the coeﬃcients α and
+β. But this requirement would be extremely limiting, since we usually do not
+know these coeﬃcients, except maybe for a very brief period of time directly
+after the preparation of the initial qubit state.
+    In fact, even if we were able to perfectly clone arbitrary quantum states
+and thus mimic the classical redundant encoding, it would not help us in de-
+tecting and correcting quantum errors. The reason for this problem lies in the
+second fundamental diﬀerence between the classical and quantum settings.
