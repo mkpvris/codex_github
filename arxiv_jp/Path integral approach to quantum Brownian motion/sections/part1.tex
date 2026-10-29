@@ -1,0 +1,329 @@
+% Original PDF pages 1--10 (printed pp. 587--596).
+\sectionlink{序論}
+
+自然界には、古典的な領域では次の形の運動方程式によって十分に記述できる系が数多く存在する。
+\begin{equation}
+ m\ddot{x}+\eta\dot{x}+v'(x)=F(t).
+ \tag{1.1}\label{eq:1.1}
+\end{equation}
+これは、例えば粘性流体中に浸されたコロイド程度の大きさの粒子を表すことができる。この場合、$m$ は粒子の質量、$\eta$ は減衰定数、$v(x)$ は粒子に作用するポテンシャルであり、$F(t)$ はいわゆる揺動力である。この力は
+\begin{equation}
+ \begin{aligned}
+ \langle F(t)\rangle&=0,\\
+ \langle F(t)F(t')\rangle&=2\eta kT\delta(t-t')
+ \end{aligned}
+ \tag{1.2}\label{eq:1.2}
+\end{equation}
+という関係に従う。ここで $\langle\ \rangle$ は、同じように準備された系の集団についての統計平均を表す。関係 \eqref{eq:1.2} を満たす式 \eqref{eq:1.1} は、よく知られた Langevin 方程式であり、すでに半世紀以上にわたって Brownian 運動の理論の基礎として用いられてきた\cite{ref01}。
+
+% Original PDF page 2 (printed p. 588).
+他のあらゆる現象論的方程式と同様に、式 \eqref{eq:1.1} の有効範囲は限られている。系の長時間での振る舞いに関心がある場合には、Langevin 方程式を用いるのが妥当である。ここで長時間とは、対象とする系に結合した熱浴の緩和時間に比べて長い時間を意味する。先に挙げた例では、粘性媒質中の巨視的粒子は古典論によって十分に記述できるため、量子効果を気にする必要はない。しかし、他の多くの場合には事情は異なる。例えば LCR 回路を考えると、コンデンサーの極板上の電荷についての方程式は式 \eqref{eq:1.1} の形をとることが分かっている。温度が非常に低くなると、この系で量子効果が観測されると予想される。したがって、減衰を含む運動方程式と量子化の手続きをどう両立させるか、という極めて自然な問題が生じる。
+
+この問題の起源は、標準的な量子化の手続きが、対象とする系について Hamiltonian または Lagrangian 関数のいずれかが存在することに基づいているという事実にある。一方、陽に時間に依存しないいかなる Lagrangian または Hamiltonian にも、古典的な Lagrange 方程式または Hamilton 方程式を適用して式 \eqref{eq:1.1} を得ることはできないことがよく知られている。時間に依存する関数を用いれば、標準的な量子化の手続きを直接利用することはできる\cite{ref02}。しかし、この方法では不確定性原理に関する幾つかの問題に直面せざるを得ない\cite{ref03}。過去20年から30年にわたり、多くの人々がこの問題に答えようとしてきた。用いられた方法は多様であるが、これらの試みはすべて二つの主要な範疇に分かれる。すなわち、新しい量子化の方式を探すか、あるいは系と熱浴を合わせて扱う方法を用いるかである。以下では、それぞれの範疇における比較的重要な研究の一部を挙げる。
+
+1970年代の初めに、Kostin\cite{ref04} は非線形 Schrödinger 方程式を用いた理論を提案した。この理論は重ね合わせの原理に反するだけでなく、定常的な減衰状態のような、非常に議論の多い結果も示す。Nelson の確率量子化\cite{ref05} に基づいて、K. Yasue\cite{ref06} は Kostin の方程式を導いた。これが可能なのは、Nelson の量子化では Hamiltonian や Lagrangian の代わりに運動方程式そのものを知ればよいからである。ここでの主要な問題は、Nelson の理論が正しいかどうかということである。
+
+Dekker\cite{ref07} は、複素変数を用いる正準量子化の手続きを開発した。密度演算子の Wigner 変換に対する Fokker--Planck 方程式など、幾つかの興味深い結果を再現するにもかかわらず、この理論には不明瞭な点がある。例えば、彼は位置 $x(t)$ の方程式に陽な雑音源を導入し、さらに運動量の方程式にも別の雑音源を導入している。そのようにする物理的な理由は見いだせない。Dekker の研究における幾つかの点には後で立ち戻る。
+
+% Original PDF page 3 (printed p. 589).
+われわれの知る限り、これまでに最も成功している方法は Senitzky\cite{ref08} の研究によって切り開かれたものである。そこで彼は、対象とする系と熱浴との相互作用を陽に考慮した。その研究では、特に共振器内の電磁場モードの減衰を扱っている。彼の方策は、熱浴の演算子を消去することによって Heisenberg 描像で実行される。この理論は後に Mori\cite{ref09} によって一般化された。同じ方向に沿って、Zwanzig\cite{ref10} と Nakajima\cite{ref11} は Schrödinger 描像で研究し、密度演算子に対する一般化されたマスター方程式を得た。この種の方法についての優れた総説は文献 \cite{ref12,ref13} にある。
+
+この問題に対するもう一つの方法は、古典的な Langevin 方程式 \eqref{eq:1.1} を量子の場合へ一般化しようとするものである。これを行う最も単純な方法は、式 \eqref{eq:1.1} 自体は変えずに、式 \eqref{eq:1.2} によって表された古典的な力の相関を
+\begin{equation}
+ \langle F(t)F(t')\rangle
+ =\frac{1}{2\pi}\int e^{-i\omega(t-t')}\eta\hbar\omega
+ \coth\left(\frac{\hbar\omega}{2kT}\right)\,d\omega
+ \tag{1.2$'$}\label{eq:1.2prime}
+\end{equation}
+という式で置き換えることである。ここでは $\omega$ に、例えば $\Omega$ という適切な切断を設ける。$|t-t'|\gg\Omega^{-1}$ という時間間隔に関心があるならば、式 \eqref{eq:1.2prime} は高温では、すなわち $kT\gg\hbar|t-t'|^{-1}$ では、事実上式 \eqref{eq:1.2} と等価であるが、低温ではそれと異なる。ごく最近、この方法は Koch ら\cite{ref14} によって Josephson 接合の低温での振る舞いの解析に用いられた。その理論的基礎も、最近 Benguria と Kac\cite{ref15} によって論じられている。後者の議論から明らかなように、調和振動子という特殊な場合を超えて「量子 Langevin 方程式」がどこまで有効であるかという一般的な問題は、大きく未解決のままである。
+
+本論文で採用する一般的な方法は、文献 \cite{ref08,ref09,ref10,ref11,ref12,ref13} の研究と多くの共通点を持つ。すなわち、散逸系それ自体を量子化することは試みず、初めから複雑な環境と相互作用するものとして扱う。まさにこの相互作用が散逸を生じさせるのである。系と環境からなる完全な「宇宙」は閉じたものとして扱うことができるので、それに標準的な量子化の手続きを適用することには、もちろん何の支障もない。その後、環境の座標を消去し、散逸系だけについて閉じた方程式を得る。この消去を行うには、当然ながら系と環境との相互作用について十分に単純な模型を選ばなければならない。さらに、その模型は古典的な高温極限で古典的な Brownian 運動の結果を再現するように構成されていなければならない。
+
+関連した問題を研究した論文は数多い。Ford ら\cite{ref16} は、二次のポテンシャルを通じて互いに相互作用する同種粒子の列を研究した。そのうちの一つに着目し、古典的な領域でそれを Brownian 粒子として振る舞わせるには、粒子間ポテンシャルがどのような形でなければならないかを調べた。Iche と Nozières\cite{ref17} は、環境中の重い粒子について断熱展開を構成したが、得られた結果は主として形式的なものである。
+
+% Original PDF page 4 (printed p. 590).
+Davies\cite{ref18} は、系の粒子の拡散的な振る舞いや、Markoff 型の Fokker--Planck 方程式などについて、幾つかの優れた厳密な結果を証明した。しかし、それらが成り立つのは、減衰が極めて弱い場合だけである。Schwinger\cite{ref19} は、熱浴に弱く結合した量子振動子の運動に自身の作用原理を適用し、振動数のずれと一定の減衰という問題を注意深く研究した。
+
+本論文の目的は、質量や摩擦係数など、原理的には実験で測定できる現象論的パラメータだけを含む、散逸的な量子力学系の閉じた方程式を、どこまで得られるかを調べることである。このために、系と環境との相互作用について特定の模型を設定し、適切な極限で Brownian 運動の古典的方程式を再現するという条件から、模型のパラメータを定める\cite{ref20}。その上で、より一般的な場合、例えば量子的な場合に何が導かれるかを調べる。密度行列の伝播関数について、相互作用のない場合にすでに現れる式よりもわずかに複雑なだけの一般的な形式的表式を、汎関数積分の形で書き下せることを示す。また、調和振動子という特殊な場合には、任意の減衰の強さと任意の温度について、それを明示的に評価できることを示す。応用として、ある種類の純粋状態から出発する減衰調和振動子の時間発展を明示的に研究する。一貫して用いる手法は、量子力学の汎関数積分による定式化であり、より具体的には Feynman と Vernon の「影響汎関数」の手法である。
+
+この研究の当初の動機は、ポテンシャル障壁を通り抜ける量子力学的トンネル現象に対する散逸の効果を理解したいということであった。汎関数積分法そのものはこの問題に非常によく適しているが、本論文で展開する特定の方法はそうではないことが分かった。逆に、トンネル問題に最も適した方法、すなわち「虚時間」表示を用い、4点関数ではなく2点関数を考える方法は、古典的に到達可能な領域での系の時間発展を論じるのにはあまり適していない。この理由から、文献 \cite{ref21} に示したトンネル問題の扱いとは、本論文の議論を分けるのが妥当であると考える。それでも両者に共通する問題は多く、特に散逸機構についてのわれわれの模型の一般性と現実性の程度、および速度に依存する結合によって生じる修正がそれに当たる。こうした問題の一部は文献 \cite{ref21} でさらに詳しく論じている。したがって本論文の各所で、この研究を相互参照する。
+
+第2節では、影響汎関数の Feynman--Vernon 理論\cite{ref22,ref23} を概説する。第3節と第4節では、熱浴の具体的な模型について影響汎関数を評価する。これによって、適切な状況での Brownian 粒子の縮約密度演算子の伝播関数が得られる。第5節では、量子的な表式の $\hbar\to0$ の極限を調べることにより、Brownian 運動の古典的方程式を再現することを扱う。第3節と第4節の結果の応用を第6節に示す。特に、時刻ゼロにおいて Gaussian 型の、必ずしも最小不確定性ではない純粋状態の波束で記述される減衰調和振動子を考え、その後のすべての時刻について密度行列を明示的に計算する。最後に第7節で結論を述べる。
+
+% Original PDF page 5 (printed p. 591).
+\sectionlink{Feynman--Vernon 理論}
+
+第2の系 B、すなわち熱浴と相互作用する系 A を考え、次の Hamiltonian で記述する。
+\begin{equation}
+ H=H_{\mathrm A}+H_{\mathrm I}+H_{\mathrm B}.
+ \tag{2.1}\label{eq:2.1}
+\end{equation}
+ここで
+\begin{equation}
+ H_{\mathrm A}=-\frac{\hbar^2}{2M}\frac{\partial^2}{\partial x^2}+v(x)
+ \tag{2.2}\label{eq:2.2}
+\end{equation}
+は、質量 $M$、座標 $x$ の粒子によって表される系の Hamiltonian であり、
+\begin{equation}
+ H_{\mathrm B}=-\frac{\hbar^2}{2m}\frac{\partial^2}{\partial\bm R^2}
+ +\frac12\sum_{i\ne j}v_{\mathrm B}(R_i,R_j)
+ \tag{2.3}\label{eq:2.3}
+\end{equation}
+は、座標 $R_i$、質量 $m$ の $N$ 個の粒子からなる熱浴の Hamiltonian である。$N$ 成分ベクトル $\bm R$ は $\bm R=(R_1,\ldots,R_N)$ を表す。最後に、$H_{\mathrm I}$ は
+\begin{equation}
+ H_{\mathrm I}=\sum_i v_i(x,R_i)
+ \tag{2.4}\label{eq:2.4}
+\end{equation}
+で与えられる相互作用 Hamiltonian である。
+
+Feynman--Vernon 理論\cite{ref22,ref23} を述べるに当たっての出発点は、時刻 $t$ における系と熱浴を合わせた密度演算子の積分形
+\begin{equation}
+ \rho(t)=\exp\left(-\frac{iHt}{\hbar}\right)\rho(0)
+ \exp\left(\frac{iHt}{\hbar}\right)
+ \tag{2.5}\label{eq:2.5}
+\end{equation}
+である。これは座標表示では
+\begin{equation}
+ \begin{aligned}
+ \langle x\bm R|\rho(t)|y\bm Q\rangle
+ ={}&\int dx'\,dy'\,d\bm R'\,d\bm Q'
+ \left\langle x,\bm R\left|\exp\left(-\frac{iHt}{\hbar}\right)\right|x'\bm R'\right\rangle\\
+ &\quad\times\langle x'\bm R'|\rho(0)|y'\bm Q'\rangle
+ \left\langle y'\bm Q'\left|\exp\left(\frac{iHt}{\hbar}\right)\right|y\bm Q\right\rangle
+ \end{aligned}
+ \tag{2.6}\label{eq:2.6}
+\end{equation}
+と書くことができる。
+
+% Original PDF page 6 (printed p. 592).
+式 \eqref{eq:2.6} で $H$ を含む項は、容易に次のように認められる\cite{ref22}。
+\begin{equation}
+ \begin{aligned}
+ \left\langle x\bm R\left|\exp\left(-\frac{iHt}{\hbar}\right)\right|x'\bm R'\right\rangle
+ &\equiv K(x,\bm R,t;x',\bm R',0)\\
+ &=\iint\mathcal D x\,\mathcal D\bm R\,
+ \exp\left(\frac{i}{\hbar}S[x,\bm R]\right),
+ \end{aligned}
+ \tag{2.7}\label{eq:2.7}
+\end{equation}
+また、
+\begin{equation}
+ \begin{aligned}
+ \left\langle y'\bm Q'\left|\exp\left(\frac{iHt}{\hbar}\right)\right|y\bm Q\right\rangle
+ &\equiv K^*(y,\bm Q,t;y',\bm Q',0)\\
+ &=\iint\mathcal D y\,\mathcal D\bm Q\,
+ \exp\left(-\frac{i}{\hbar}S[y,\bm Q]\right).
+ \end{aligned}
+ \tag{2.8}\label{eq:2.8}
+\end{equation}
+すべての汎関数積分は、端点が $x(t)=x$、$x(0)=x'$、$y(t)=y$、$y(0)=y'$、$\bm R(t)=\bm R$、$\bm R(0)=\bm R'$、$\bm Q(t)=\bm Q$、$\bm Q(0)=\bm Q'$ である経路 $x(t')$、$y(t')$、$\bm R(t')$、$\bm Q(t')$ について評価する。式 \eqref{eq:2.7} と \eqref{eq:2.8} における作用 $S$ は
+\begin{equation}
+ S=S_{\mathrm A}+S_{\mathrm I}+S_{\mathrm B}=\int_0^t L\,dt'
+ \tag{2.9}\label{eq:2.9}
+\end{equation}
+で与えられ、ここで
+\begin{equation}
+ \begin{aligned}
+ L=L_{\mathrm A}+L_{\mathrm I}+L_{\mathrm B}
+ ={}&\frac12 M\dot{x}^{,2}-v(x)-\sum_i v_i(x,R_i)\\
+ &+\sum_i\frac12m\dot R_i^{,2}-\frac12\sum_{i\ne j}v_{\mathrm B}(R_i,R_j)
+ \end{aligned}
+ \tag{2.10}\label{eq:2.10}
+\end{equation}
+である。こうして式 \eqref{eq:2.6} は
+\begin{equation}
+ \begin{aligned}
+ \langle x\bm R|\rho(t)|y\bm Q\rangle
+ ={}&\int dx'\,dy'\,d\bm Q'\,d\bm R'
+ K(x,\bm R,t;x',\bm R',0)\\
+ &\times K^*(y,\bm Q,t;y',\bm Q',0)
+ \langle x'\bm R'|\rho(0)|y'\bm Q'\rangle
+ \end{aligned}
+ \tag{2.11}\label{eq:2.11}
+\end{equation}
+と書くことができる。
+
+この密度演算子の表式は、系と熱浴を合わせた全体の振る舞いを記述する。しかし、そのすべての情報を求めているわけではない。熱浴の具体的な振る舞いによらず、系 A の性質を知りたいのである。必要なのは、熱浴が系 A に及ぼす影響だけである。したがって、実際に求めている量は全密度演算子ではなく、いわゆる縮約密度演算子である\cite{ref03,ref12,ref13}。これは、式 \eqref{eq:2.11} においてすべての環境の座標についてトレースをとれば容易に得られる。すなわち、
+\begin{equation}
+ \begin{aligned}
+ \widetilde\rho(x,y,t)
+ &\equiv\int d\bm R\,\langle x\bm R|\rho(t)|y\bm R\rangle\\
+ &=\int dx'\,dy'\,d\bm R'\,d\bm Q'\,d\bm R\,
+ K(x,\bm R,t;x',\bm R',0)\\
+ &\qquad\times K^*(y,\bm R,t;y',\bm Q',0)
+ \langle x'\bm R'|\rho(0)|y'\bm Q'\rangle.
+ \end{aligned}
+ \tag{2.12}\label{eq:2.12}
+\end{equation}
+ここで、初期の全密度演算子が
+\begin{equation}
+ \rho(0)=\rho_{\mathrm A}(0)\rho_{\mathrm B}(0)
+ \tag{2.13}\label{eq:2.13}
+\end{equation}
+で与えられると仮定する。
+
+% Original PDF page 7 (printed p. 593).
+ここで $\rho_{\mathrm B}(0)$ と $\rho_{\mathrm A}(0)$ は、それぞれ熱浴と系が互いに相互作用していないときの密度演算子である。$t=0$ の後では、両者とも時間とともに変化してよい。式 \eqref{eq:2.13} を式 \eqref{eq:2.12} に代入し、式 \eqref{eq:2.7} から \eqref{eq:2.10} を用いると、
+\begin{equation}
+ \widetilde\rho(x,y,t)=\int dx'\,dy'\,
+ J(x,y,t;x',y',0)\rho_{\mathrm A}(x',y',0)
+ \tag{2.14}\label{eq:2.14}
+\end{equation}
+を得る。ここで
+\begin{equation}
+ J(x,y,t;x',y',0)=\iint\mathcal D x\,\mathcal D y\,
+ \exp\left(\frac{iS_{\mathrm A}[x]}{\hbar}\right)
+ \exp\left(-\frac{iS_{\mathrm A}[y]}{\hbar}\right)\mathcal F[x,y]
+ \tag{2.15}\label{eq:2.15}
+\end{equation}
+であり、
+\begin{equation}
+ \begin{aligned}
+ \mathcal F[x,y]={}&\int d\bm R'\,d\bm Q'\,d\bm R\,
+ \rho_{\mathrm B}(\bm R',\bm Q',0)\iint\mathcal D\bm R\,\mathcal D\bm Q\\
+ &\times\exp\left\{\frac{i}{\hbar}\left(
+ S_{\mathrm I}[x,\bm R]-S_{\mathrm I}[y,\bm Q]
+ +S_{\mathrm B}[\bm R]-S_{\mathrm B}[\bm Q]\right)\right\}
+ \end{aligned}
+ \tag{2.16}\label{eq:2.16}
+\end{equation}
+が、いわゆる影響汎関数である\cite{ref22,ref23}。
+
+対象とする系と環境との間に相互作用がなければ、影響汎関数は1に等しい。このとき式 \eqref{eq:2.15} は、一つは時間の順方向へ、他方は逆方向へ進む二つの伝播関数の積に帰着する。これは、閉じた系では密度演算子が波動関数とその複素共役との積として書けるからである。相互作用を入れると、この二つの伝播は自由には起こらなくなり、代わって影響汎関数がそれらを結び付ける。
+
+式 \eqref{eq:2.15} は、われわれが展開する Brownian 運動の量子論における中心的な公式である。
+
+\sectionlink{模型}
+
+原理的には問題は解けている。式 \eqref{eq:2.3} と \eqref{eq:2.4} の粒子間ポテンシャル $v_i(x,R_i)$ と $v_{\mathrm B}(R_i,R_j)$、および $\rho_{\mathrm B}(0)$ で記述される熱浴の初期状態が分かれば、式 \eqref{eq:2.16} の影響汎関数を求めることができる。しかし、経験から分かるように、現実はそれほど単純ではない。多体系の分野で厳密に解ける問題はごく少ない。問題を完全に一般的なまま厳密に解けると考えるのは望みがない。必要なのは、構成上解くことのできる特定の模型を用いることであり、それから、多くの他の系にも拡張できると考えられる幾つかの一般的な結論を引き出すことを期待する。
+
+熱浴は、絶対最小値をとる点 $\bm R_0=(R_{10},R_{20},\ldots,R_{N0})$ を持つ一般的なポテンシャル $v(R_1,\ldots,R_N)$ を通じて相互作用する粒子からなると仮定する。ここで、一般的な Hamiltonian \eqref{eq:2.2} で記述される系 A を熱浴に結合し、系に対する熱浴の線形応答だけを考えればよいという意味で、その結合は弱いものとする。
+
+% Original PDF page 8 (printed p. 594).
+このとき熱浴は系によってごく弱く摂動されるだけなので、熱浴を調和近似で記述できる\footnote{散逸系の一般的な記述としてこの模型を正当化できるかという問題は、文献 \cite{ref21} でさらに論じている。}。二つの系の相互作用は仮定により線形であり、系は一般的なポテンシャル $v(x)$ の作用を受ける。確かめておくべきことは、系において平衡からの非常に大きなずれを考える必要がないという点だけである。これは、すでに用い始めたすべての近似を保つために必要となる。言い換えれば、次の形の Hamiltonian で記述される全体系を研究したいのである。
+\begin{equation}
+ \begin{aligned}
+ H&=H_{\mathrm A}+H_{\mathrm I}+H_{\mathrm B}\\
+ &=\frac{p^2}{2M}+v(x)+x\sum_k C_kR_k
+ +\sum_k\frac{p_k^2}{2m}+\sum_k\frac12m\omega_k^2R_k^2.
+ \end{aligned}
+ \tag{3.1}\label{eq:3.1}
+\end{equation}
+ここで $C_k$ は熱浴の粒子と系 A との結合定数であり、$\omega_k$ は熱浴の粒子の運動の振動数である。式 \eqref{eq:2.16} に現れる作用は、今や
+\begin{equation}
+ S_{\mathrm B}[\bm R]+S_{\mathrm I}[x,\bm R]
+ =\int_0^t L_{\mathrm B}(\bm R,\dot{\bm R})\,dt
+ +\int_0^t L_{\mathrm I}(x,\bm R)\,dt
+ \tag{3.2}\label{eq:3.2}
+\end{equation}
+と書ける。ここで
+\begin{equation}
+ L_{\mathrm B}=\sum_k\frac12m\dot R_k^{,2}
+ -\sum_k\frac12m\omega_k^2R_k^2
+ \tag{3.3}\label{eq:3.3}
+\end{equation}
+であり、また
+\begin{equation}
+ L_{\mathrm I}=-x\sum_k C_kR_k
+ \tag{3.4}\label{eq:3.4}
+\end{equation}
+である。この問題は文献 \cite{ref22,ref23} で厳密に解かれており、式 \eqref{eq:2.16} の影響汎関数の最終的な表式は
+\begin{equation}
+ \begin{aligned}
+ \mathcal F[x,y]=\exp\biggl\{ -\frac1\hbar\int_0^t d\tau\int_0^\tau ds\,
+ &[x(\tau)-y(\tau)]\\
+ &\times[\alpha(\tau-s)x(s)-\alpha^*(\tau-s)y(s)]\biggr\}
+ \end{aligned}
+ \tag{3.5}\label{eq:3.5}
+\end{equation}
+となる。ここで
+\begin{equation}
+ \alpha(\tau-s)=\sum_k\frac{C_k^2}{2m\omega_k}
+ \left[e^{-i\omega_k(\tau-s)}
+ +\frac{e^{i\omega_k(\tau-s)}}{e^{\hbar\omega_k/kT}-1}
+ +\frac{e^{-i\omega_k(\tau-s)}}{e^{\hbar\omega_k/kT}-1}\right]
+ \tag{3.6}\label{eq:3.6}
+\end{equation}
+である。
+
+% Original PDF page 9 (printed p. 595).
+ここでは、環境が初め温度 $T$ の平衡状態にあると仮定した。これは、その初期密度行列を
+\begin{equation}
+ \rho_{\mathrm B}(\bm R',\bm Q',0)
+ =\prod_k\rho_{\mathrm B}^{(k)}(R_k',Q_k',0)
+ \tag{3.7}\label{eq:3.7}
+\end{equation}
+と書けることを意味する。ただし、通常のように
+\begin{equation}
+ \begin{aligned}
+ \rho_{\mathrm B}^{(k)}(R_k',Q_k',0)
+ ={}&\frac{m\omega_k}{2\pi\hbar\sinh(\hbar\omega_k/kT)}\\
+ &\times\exp\left\{-\frac{m\omega_k}{2\hbar\sinh(\hbar\omega_k/kT)}
+ \left[(R_k'^2+Q_k'^2)\cosh\frac{\hbar\omega_k}{kT}-2R_k'Q_k'\right]\right\}.
+ \end{aligned}
+ \tag{3.8}\label{eq:3.8}
+\end{equation}
+影響汎関数を表すには、$\alpha(\tau-s)$ の実部と虚部 $\alpha_{\mathrm R}$、$\alpha_{\mathrm I}$ を用いると、はるかに便利である。実際、密度演算子の伝播関数は
+\begin{equation}
+ \begin{aligned}
+ J(x,y,t;x',y',0)={}&\iint\mathcal D x\,\mathcal D y\,
+ \exp\biggl\{\frac{i}{\hbar}\biggl(S_{\mathrm A}[x]-S_{\mathrm A}[y]\\
+ &\quad-\int_0^t d\tau\int_0^\tau ds\,
+ [x(\tau)-y(\tau)]\alpha_{\mathrm I}(\tau-s)[x(s)+y(s)]\biggr)\biggr\}\\
+ &\times\exp\biggl\{-\frac1\hbar\int_0^t d\tau\int_0^\tau ds\,
+ [x(\tau)-y(\tau)]\alpha_{\mathrm R}(\tau-s)[x(s)-y(s)]\biggr\}
+ \end{aligned}
+ \tag{3.9}\label{eq:3.9}
+\end{equation}
+と書ける。ここで $\alpha_{\mathrm R}$ と $\alpha_{\mathrm I}$ は
+\begin{equation}
+ \alpha_{\mathrm R}(\tau-s)=\sum_k\frac{C_k^2}{2m\omega_k}
+ \coth\frac{\hbar\omega_k}{2kT}\cos\omega_k(\tau-s)
+ \tag{3.10}\label{eq:3.10}
+\end{equation}
+および
+\begin{equation}
+ \alpha_{\mathrm I}(\tau-s)=-\sum_k\frac{C_k^2}{2m\omega_k}
+ \sin\omega_k(\tau-s)
+ \tag{3.11}\label{eq:3.11}
+\end{equation}
+で与えられる。
+
+さて、$t=0$ における系の縮約密度行列が与えられれば、式 \eqref{eq:2.14} と \eqref{eq:3.9} によってその時間発展が得られる。もはや熱浴の座標には依存しない。模型 Hamiltonian \eqref{eq:3.1} に関する限り、問題は厳密に解けている。これらすべてを展開した主要な目的は、古典極限で Brownian 粒子を記述することであった。しかし、この段階では、そのようなことが起こるという証拠は何もない。それどころか、この厳密解から不可逆過程を得る方法は見当たらない。
+
+% Original PDF page 10 (printed p. 596).
+この問題を解くには、振動子の集団が実際の熱浴として振る舞うためには、幾つかの明確な性質を備えていなければならないことを思い出す必要がある。例えば、対象とする系が失ったエネルギーが有限時間内に系へ戻らないよう、熱浴は無限の大きさを持たなければならない。ここで、振動子の集団が、空間の有限な領域における何らかの物理量の基準振動モードの集合を表すとしよう。例えば、箱の中の電磁場の基準振動モードの集合や、結晶中の原子の平衡位置からの振動であり得る。ただし、振動子の集団についてのより一般的な考察は文献 \cite{ref21} を参照されたい。したがって、体積を無限大にする極限をとるということは、許容される振動子の振動数を連続体として考える必要があることを意味する。
+
+次に、連続体極限で振動子の分布をうまく選べば Brownian 運動に導かれることを示すため、幾つかの議論を行う。その後、選んだ模型を用いて、古典極限で Fokker--Planck 方程式を導く。
+
+式 \eqref{eq:3.1} のように系 A を熱浴 B に結合する代わりに、古典的な外力 $F(\tau)$ を加えて励起すると仮定しよう。この場合、密度行列の伝播関数が
+\begin{equation}
+ \begin{aligned}
+ J(x,y,t;x',y',0)=\iint\mathcal D x\,\mathcal D y\,
+ \exp\left\{\frac{i}{\hbar}\left(S_{\mathrm A}[x]-S_{\mathrm A}[y]
+ +\int_0^t[x(\tau)-y(\tau)]F(\tau)\,d\tau\right)\right\}
+ \end{aligned}
+ \tag{3.12}\label{eq:3.12}
+\end{equation}
+で与えられることは容易に理解できる\cite{ref22}。
+
+さらに、$F(\tau)$ 自体は正確には分からず、異なる履歴 $F(\tau)$ の確率分布汎関数 $P[F(\tau)]$ が分かっているものとすると、平均された密度行列の伝播関数は
+\begin{equation}
+ \begin{aligned}
+ J(x,y,t;x',y',0)={}&\iiint\mathcal D x\,\mathcal D y\,\mathcal D F\,P[F(\tau)]\\
+ &\times\exp\left\{\frac{i}{\hbar}\left(S_{\mathrm A}[x]-S_{\mathrm A}[y]
+ +\int_0^t[x(\tau)-y(\tau)]F(\tau)\,d\tau\right)\right\}
+ \end{aligned}
+ \tag{3.13}\label{eq:3.13}
+\end{equation}
+となる。式 \eqref{eq:3.13} における $F(\tau)$ についての汎関数積分は、よく知られた特性汎関数\cite{ref22}
+\begin{equation}
+ \begin{aligned}
+ \phi\left[\frac{x(\tau)-y(\tau)}{\hbar}\right]
+ \equiv\int\mathcal D F(\tau)\,P[F(\tau)]
+ \exp\left\{i\int_0^t\left[\frac{x(\tau)-y(\tau)}{\hbar}\right]F(\tau)\,d\tau\right\}
+ \end{aligned}
+ \tag{3.14}\label{eq:3.14}
+\end{equation}
+である。式 \eqref{eq:3.14} を用いると、異なる二つの時刻における力の相関を次のように求めることができる。
+% The words "instants as" at the start of original PDF page 11 are included in the preceding sentence.

@@ -1,0 +1,432 @@
+% 原文 PDF p.21（誌面 p.607）。直前の導入文は part2.tex に収録。
+\begin{equation}
+\begin{aligned}
+\tilde\rho(x,y,t)={}&\iint\frac{\mathrm d\beta'_1\,\mathrm d\beta'_2}{A^2}
+\exp\!\left(\frac{iM{\beta'_1}^2}{2\epsilon\hbar}\right)
+\exp\!\left(-\frac{iM{\beta'_2}^2}{2\epsilon\hbar}\right)
+\Bigg[\tilde\rho(x,y,t)
+-\frac{\partial\tilde\rho}{\partial x}\beta'_1
+-\frac{\partial\tilde\rho}{\partial y}\beta'_2\\
+&-\frac{\partial\tilde\rho}{\partial x}\gamma(x-y)\epsilon
++\frac{\partial\tilde\rho}{\partial y}\gamma(x-y)\epsilon
++\frac12\frac{\partial^2\tilde\rho}{\partial x^2}{\beta'_1}^2
++\frac{\partial^2\tilde\rho}{\partial x\partial y}\beta'_1\beta'_2\\
+&+\frac12\frac{\partial^2\tilde\rho}{\partial y^2}{\beta'_2}^2
+-\frac{i\epsilon}{\hbar}v_{\mathrm R}(x)\tilde\rho
++\frac{i\epsilon}{\hbar}v_{\mathrm R}(y)\tilde\rho
+-\frac{2M\gamma kT\epsilon}{\hbar}(x-y)^2\tilde\rho\Bigg].
+\end{aligned}
+\tag{5.8}\label{eq:5.8}
+\end{equation}
+式\eqref{eq:5.8}に現れる積分はすべて Fresnel 型であり、その主要な寄与が $\beta'_1=\beta'_2=0$ のまわりの微小な領域から来ることが分かっているので、積分範囲を $-\infty$ から $+\infty$ として評価できる。式\eqref{eq:5.8}の左辺を $\mathcal O(\epsilon)$ の項まで展開し、右辺の対応する項と等置すると、以下のことが分かる。
+
+a) $\epsilon$ の零次の項から、規格化定数
+\begin{equation}
+A^2=\frac{2\pi\epsilon\hbar}{M}
+\tag{5.9}\label{eq:5.9}
+\end{equation}
+が得られる。
+
+b) $\epsilon$ の一次の項から、半古典的領域における $\tilde\rho$ の求める運動方程式
+\begin{equation}
+\begin{aligned}
+\frac{\partial\tilde\rho}{\partial t}={}&
+-\frac{\hbar}{2Mi}\frac{\partial^2\tilde\rho}{\partial x^2}
++\frac{\hbar}{2Mi}\frac{\partial^2\tilde\rho}{\partial y^2}
+-\gamma(x-y)\frac{\partial\tilde\rho}{\partial x}
++\gamma(x-y)\frac{\partial\tilde\rho}{\partial y}
++\frac{v_{\mathrm R}(x)}{i\hbar}\tilde\rho\\
+&-\frac{v_{\mathrm R}(y)}{i\hbar}\tilde\rho
+-\frac{2M\gamma kT}{\hbar^2}(x-y)^2\tilde\rho
+\end{aligned}
+\tag{5.10}\label{eq:5.10}
+\end{equation}
+が得られる。
+
+式\eqref{eq:5.10}が $\tilde\rho$ に対する最も一般的な方程式ではないことを、ここでもう一度強調しておきたい。この式が有効なのは $2kT\gtrsim\hbar\Omega\gg\hbar\omega_{\mathrm R}$ の場合に限られる。より一般的な結果を得ようとするなら、式\eqref{eq:3.38}の代わりに式\eqref{eq:5.1}を書くことは許されず、式\eqref{eq:5.10}の最後の項は時間積分を含むことになる（系の過去の履歴に依存することになる）。
+
+以前に導かれたマスター方程式と比較するには、式\eqref{eq:5.10}の形は最も適したものではない。むしろ、表現に依存しない演算子方程式として書きたい。そのためには、
+\begin{equation}
+\begin{gathered}
+\langle x\mid y\rangle=\delta(x-y),\qquad
+\langle x\mid v(x')\mid y\rangle=v(y)\delta(x-y),\\
+\langle x\mid p\mid y\rangle=-i\hbar\frac{\partial}{\partial x}\delta(x-y)
+\end{gathered}
+\tag{5.11}\label{eq:5.11}
+\end{equation}
+などの恒等式を用いればよい。これらを用いると、式\eqref{eq:5.10}は演算子方程式
+% 原文 PDF p.22（誌面 p.608）。
+\begin{equation}
+\begin{aligned}
+\frac{\partial\tilde\rho}{\partial t}={}&
+\frac{1}{i\hbar}[H_{\mathrm R},\tilde\rho]
++\frac{\gamma}{2i\hbar}[\{p,x\},\tilde\rho]
+-\frac{D}{\hbar^2}[x,[x,\tilde\rho]]\\
+&+\frac{\Delta}{\hbar^2}\bigl([x,\tilde\rho p]-[p,\tilde\rho x]\bigr)
+\end{aligned}
+\tag{5.12}\label{eq:5.12}
+\end{equation}
+の座標表示であることを確かめられる。ここで $H_{\mathrm R}$ は系単独の繰り込まれた Hamiltonian、$D=\eta kT$、$\Delta=-i\hbar\gamma$ であり、$[\ ,\ ]$ は交換子、$\{\ ,\ \}$ は反交換子を表す。式\eqref{eq:5.12}は Dekker\cite{ref07} により、全く異なる方法で導かれている。実際には、彼の方程式は（$D$ 以外に）さらに二つの拡散項を含み、それらがある条件のもとで消えることを彼は示している。さらに、序論で述べたように、これらの追加項は位置の運動方程式に雑音源を含めたことに由来する。もう一つの相違は、Dekker の方程式が、$D$ にある有限の値を与えることで零温度においても有効なのに対し、我々の式は $T$ が高く $D=\eta kT$ の場合にしか有効でないことである。
+
+本節の初めに、$\tilde\rho$ に対するマスター方程式が得られても、それを位相空間内の古典的分布の方程式と比較するには、さらにもう一段階が必要であると指摘した。前に述べたように、ここで必要なのは、
+\begin{equation}
+w(x,p,t)=\frac{1}{2\pi\hbar}\int_{-\infty}^{\infty}
+\exp\!\left(\frac{ipy}{\hbar}\right)
+\left\langle x-\frac y2\,\middle|\,\tilde\rho\,\middle|\,x+\frac y2\right\rangle\mathrm dy
+\tag{5.13}\label{eq:5.13}
+\end{equation}
+で定義される Wigner 分布（すなわち $\tilde\rho$ の Wigner 変換）である。
+
+Wigner 分布は系の純粋に量子的な記述を与えるものだが、半古典的領域に関心があるときに非常に重要になる。その理由は、Wigner の理論が系の古典的な位相空間内で直接記述されるためである。$\hbar\to0$ のとき、$w(x,p,t)$ は位相空間内の古典的分布に近づく。この主張の妥当性についての議論は、文献\cite{ref03,ref30}を参照されたい。
+
+式\eqref{eq:5.12}の Wigner 変換を取り、恒等式\eqref{eq:5.11}を用いると、次式が得られる（詳細は文献\cite{ref07}を参照）。
+\begin{equation}
+\frac{\partial w}{\partial t}
+=-\frac{\partial}{\partial x}(pw)
++\frac{\partial}{\partial p}(v'_{\mathrm R}w)
++2\gamma\frac{\partial}{\partial p}(pw)
++D\frac{\partial^2w}{\partial p^2}.
+\tag{5.14}\label{eq:5.14}
+\end{equation}
+これは、系の縮約密度演算子の Wigner 変換の時間発展を記述する、よく知られた Fokker--Planck 方程式である。これは純粋に量子力学的な方程式である。しかし、$D=\eta kT$ としていることと整合させるためには、$w$ の式で $\hbar\to0$ の極限を取る必要がある。前に述べたように、この極限において $w(p,x,t)$ は古典的な位相空間分布に近づく。したがって、$\hbar\to0$ のとき、式\eqref{eq:5.14}は古典的な Brownian 粒子の位相空間分布の時間発展を記述すると結論できる。
+
+% 原文 PDF p.23（誌面 p.609）。
+また、式\eqref{eq:5.14}の右辺第三項は、式\eqref{eq:3.38}の指数の虚部に $\gamma$ に依存する項が存在することの直接の帰結であると分かる。したがって、この項が Brownian 粒子の古典的運動方程式に $\eta\dot x$ の形の力を出現させる原因である。
+
+ここまでで得られたのは、伝播関数 $J$ に対する我々の量子力学的な式\eqref{eq:3.38}が、Brownian 粒子の古典的運動を記述すると考えられている方程式と完全に整合するということである。またこれは、式\eqref{eq:3.23}における $\rho_{\mathrm D}(\omega)C^2(\omega)$ の選択が非常に適切であり、現象論的な減衰定数 $\eta$ だけを用いて $J$ を記述できることも意味している。
+
+\sectionlink{いくつかの応用}\label{sec:6}
+本節では、いくつかの具体例、すなわち減衰単振動子と、その特殊な場合である減衰する自由粒子について、$\tilde\rho(x,y,t)$ の振る舞いを調べる。極端な量子極限（$T\to0$）にも関心があるので、ここでは高温という制限を外す。ただし、その前に、本論文で示した模型は何種類かの運動と両立することを指摘しておきたい。例えば、調和ポテンシャル $v(x)=\frac12M\omega^2x^2$ から出発するとしよう。この理論の微視的パラメータを適切に選ぶことにより、不足減衰運動と過減衰運動のいずれも記述できることが容易に示される。これは、座標結合の場合にも速度結合の場合にも成り立つ。両者の相違は、前者では $\gamma$ と比較すべき振動数が $\omega_{\mathrm R}^2\equiv\omega^2-(\Delta\omega)^2$ で与えられる繰り込まれた振動数 $\omega_{\mathrm R}$ であるのに対し、後者では $\omega_{\mathrm R}=\omega$ となることである。詳細は文献\cite{ref31}を参照されたい。
+
+これから、調和振動子および自由粒子（$\omega_{\mathrm R}=0$）について式\eqref{eq:3.38}を評価する。まず、式\eqref{eq:3.38}を
+\begin{equation}
+J(x_{\mathrm f},y_{\mathrm f},t;x_{\mathrm i},y_{\mathrm i},0)
+=\iint\mathcal Dx\,\mathcal Dy\,
+\exp\!\left(\frac{i}{\hbar}\tilde S[x,y]\right)
+\exp\!\left(-\frac1\hbar\phi[x,y]\right)
+\tag{6.1}\label{eq:6.1}
+\end{equation}
+と書き直す。ここで
+\begin{equation}
+\tilde S[x,y]=\int_0^tL(x,\dot x,y,\dot y)\,\mathrm d\tau
+-\int_0^tM\gamma x\dot x\,\mathrm d\tau
++\int_0^tM\gamma y\dot y\,\mathrm d\tau,
+\tag{6.2}\label{eq:6.2}
+\end{equation}
+\begin{equation}
+L=\frac12M\dot x^2-\frac12M\dot y^2
+-\frac12M\omega_{\mathrm R}^2x^2+\frac12M\omega_{\mathrm R}^2y^2
+-M\gamma x\dot y+M\gamma y\dot x
+\tag{6.3}\label{eq:6.3}
+\end{equation}
+および
+\begin{equation}
+\begin{aligned}
+\phi[x,y]={}&\frac{2M\gamma}{\pi}\int_0^\Omega
+\nu\coth\!\left(\frac{\hbar\nu}{2kT}\right)
+\int_0^t\int_0^\tau[x(\tau)-y(\tau)]\\
+&\qquad\times\cos\nu(\tau-s)[x(s)-y(s)]\,\mathrm ds\,\mathrm d\tau\,\mathrm d\nu
+\end{aligned}
+\tag{6.4}\label{eq:6.4}
+\end{equation}
+である。
+
+% 原文 PDF p.24（誌面 p.610）。
+式\eqref{eq:6.1}を評価する手順は簡単である。$\tilde S[x,y]$ を極値にする二次元経路のまわりで被積分関数全体を展開する。この経路は
+\begin{equation}
+\frac{\delta\tilde S}{\delta x}
+=\frac{\mathrm d}{\mathrm d\tau}\frac{\partial L}{\partial\dot x}
+-\frac{\partial L}{\partial x}
+=M\ddot x+M\gamma\dot y+M\omega_{\mathrm R}^2x=0,
+\tag{6.5}\label{eq:6.5}
+\end{equation}
+\begin{equation}
+\frac{\delta\tilde S}{\delta y}
+=\frac{\mathrm d}{\mathrm d\tau}\frac{\partial L}{\partial\dot y}
+-\frac{\partial L}{\partial y}
+=M\ddot y+M\gamma\dot x+M\omega_{\mathrm R}^2y=0
+\tag{6.6}\label{eq:6.6}
+\end{equation}
+から求められる。式\eqref{eq:6.2}の最後の二項は端点の変分だけを含むためである。式\eqref{eq:6.5}と\eqref{eq:6.6}を解くには、新しい変数を導入すると便利である。そこで
+\begin{equation}
+X(\tau)=x(\tau)+y(\tau),\qquad
+\xi(\tau)=x(\tau)-y(\tau)
+\tag{6.7}\label{eq:6.7}
+\end{equation}
+と定義すると、方程式は
+\begin{equation}
+\ddot X+2\gamma\dot X+\omega_{\mathrm R}^2X=0,
+\tag{6.8}\label{eq:6.8}
+\end{equation}
+\begin{equation}
+\ddot\xi-2\gamma\dot\xi+\omega_{\mathrm R}^2\xi=0
+\tag{6.9}\label{eq:6.9}
+\end{equation}
+となる。
+
+$X(t)=X_{\mathrm f}$、$\xi(t)=\xi_{\mathrm f}$、$X(0)=X_{\mathrm i}$、$\xi(0)=\xi_{\mathrm i}$ のとき、不足減衰調和振動子（以下 UDHO）について、その解は
+\begin{equation}
+\tilde X(\tau)=(\sin\omega t)^{-1}
+\bigl\{X_{\mathrm f}e^{\gamma t}\sin\omega\tau
++X_{\mathrm i}\sin\omega(t-\tau)\bigr\}e^{-\gamma\tau},
+\tag{6.10}\label{eq:6.10}
+\end{equation}
+\begin{equation}
+\tilde\xi(\tau)=(\sin\omega t)^{-1}
+\bigl\{\xi_{\mathrm f}e^{-\gamma t}\sin\omega\tau
++\xi_{\mathrm i}\sin\omega(t-\tau)\bigr\}e^{\gamma\tau}
+\tag{6.11}\label{eq:6.11}
+\end{equation}
+であり、ここで $\omega^2\equiv\omega_{\mathrm R}^2-\gamma^2$ である。過減衰の場合（ODHO）の解は、式\eqref{eq:6.10}と\eqref{eq:6.11}で $\omega$ を $i\tilde\omega$ に置き換えることにより得られる。ここで $\tilde\omega^2\equiv\gamma^2-\omega_{\mathrm R}^2$ である。自由粒子（FP）については $\omega$ を $i\gamma$ に置き換える。実際、これらの置換は以後の式にも常に適用できるが、その一部（FP の式）では、必要に応じて $\omega_{\mathrm R}\to0$ の極限を慎重に取る必要があることに注意されたい。このことを念頭に置き、本節の式は UDHO に対してだけ記すことにする。
+
+経路\eqref{eq:6.10}--\eqref{eq:6.11}に沿って計算した作用 $\tilde S[X,\xi]$ は、
+\begin{equation}
+\begin{aligned}
+\tilde S_{\mathrm{cl}}={}&K(t)[X_{\mathrm f}\xi_{\mathrm f}+X_{\mathrm i}\xi_{\mathrm i}]
+-L(t)X_{\mathrm i}\xi_{\mathrm f}-N(t)X_{\mathrm f}\xi_{\mathrm i}\\
+&-\frac{M\gamma}{2}[X_{\mathrm f}\xi_{\mathrm f}-X_{\mathrm i}\xi_{\mathrm i}]
+\end{aligned}
+\tag{6.12}\label{eq:6.12}
+\end{equation}
+と表せることが分かる。ここで
+\begin{equation}
+K(t)=\frac{M\omega}{2}\cot\omega t,\qquad
+L(t)=\frac{M\omega e^{-\gamma t}}{2\sin\omega t},\qquad
+N(t)=\frac{M\omega e^{\gamma t}}{2\sin\omega t}
+\tag{6.13}\label{eq:6.13}
+\end{equation}
+である。
+
+ここで、平行移動した経路
+\begin{equation}
+\xi'(\tau)=\xi(\tau)-\tilde\xi(\tau),\qquad
+X'(\tau)=X(\tau)-\tilde X(\tau)
+\tag{6.14}\label{eq:6.14}
+\end{equation}
+を用いて汎関数積分を書こう。
+% 原文 PDF p.25（誌面 p.611）。
+境界条件は $\xi'(0)=\xi'(t)=0$ および $X'(0)=X'(t)=0$ である。すると、
+\begin{equation}
+\begin{aligned}
+J(X_{\mathrm i},\xi_{\mathrm f},t;X_{\mathrm i},\xi_{\mathrm i},0)
+={}&\exp\!\left(\frac{i}{\hbar}\tilde S_{\mathrm{cl}}\right)
+\exp\!\left[-\frac1\hbar\{A(t)\xi_{\mathrm f}^2
++B(t)\xi_{\mathrm f}\xi_{\mathrm i}+C(t)\xi_{\mathrm i}^2\}\right]\\
+&\times G(X_{\mathrm f},\xi_{\mathrm f},t;X_{\mathrm i},\xi_{\mathrm i},0)
+\end{aligned}
+\tag{6.15}\label{eq:6.15}
+\end{equation}
+が得られる。ここで
+\begin{equation}
+A(t)=\frac{M\gamma}{\pi}\int_0^\Omega
+\mathrm d\nu\,\nu\coth\!\left(\frac{\hbar\nu}{2kT}\right)A_\nu(t),
+\tag{6.16}\label{eq:6.16}
+\end{equation}
+\begin{equation}
+A_\nu(t)=\frac{e^{-2\gamma t}}{\sin^2\omega t}
+\int_0^t\int_0^t\sin\omega\tau\cos\nu(\tau-s)\sin\omega s\,
+e^{\gamma(\tau+s)}\,\mathrm d\tau\,\mathrm ds,
+\tag{6.17}\label{eq:6.17}
+\end{equation}
+\begin{equation}
+B(t)=\frac{M\gamma}{\pi}\int_0^\Omega
+\mathrm d\nu\,\nu\coth\!\left(\frac{\hbar\nu}{2kT}\right)B_\nu(t),
+\tag{6.18}\label{eq:6.18}
+\end{equation}
+\begin{equation}
+B_\nu(t)=\frac{2e^{-\gamma t}}{\sin^2\omega t}
+\int_0^t\int_0^t\sin\omega\tau\cos\nu(\tau-s)\sin\omega(t-s)\,
+e^{\gamma(\tau+s)}\,\mathrm d\tau\,\mathrm ds,
+\tag{6.19}\label{eq:6.19}
+\end{equation}
+\begin{equation}
+C(t)=\frac{M\gamma}{\pi}\int_0^\Omega
+\mathrm d\nu\,\nu\coth\!\left(\frac{\hbar\nu}{2kT}\right)C_\nu(t),
+\tag{6.20}\label{eq:6.20}
+\end{equation}
+\begin{equation}
+C_\nu(t)=\frac1{\sin^2\omega t}
+\int_0^t\int_0^t\sin\omega(t-\tau)\cos\nu(\tau-s)\sin\omega(t-s)\,
+e^{\gamma(\tau+s)}\,\mathrm d\tau\,\mathrm ds,
+\tag{6.21}\label{eq:6.21}
+\end{equation}
+\begin{equation}
+\begin{aligned}
+G(X_{\mathrm f},\xi_{\mathrm f},t;X_{\mathrm i},\xi_{\mathrm i},0)
+={}&\iint\frac{\mathcal D\xi'\,\mathcal DX'}2
+\exp\!\left(\frac{i}{\hbar}\tilde S[X',\xi']\right)
+\exp\!\left(-\frac2\hbar\phi_T[\xi',\xi']\right)\\
+&\times\exp\!\left(\frac1\hbar\phi_T[\tilde\xi,\xi']\right)
+\end{aligned}
+\tag{6.22}\label{eq:6.22}
+\end{equation}
+および
+\begin{equation}
+\phi_T[\tilde\xi,\xi']=\frac{M\gamma}{\pi}\int_0^\Omega
+\mathrm d\nu\,\nu\coth\!\left(\frac{\hbar\nu}{2kT}\right)
+\int_0^t\int_0^t\tilde\xi(\tau)\cos\nu(\tau-s)\xi'(s)\,\mathrm d\tau\,\mathrm ds
+\tag{6.23}\label{eq:6.23}
+\end{equation}
+である。
+
+残っているのは汎関数積分\eqref{eq:6.22}の評価である。$\xi'(\tau)$ と $X'(\tau)$ はどちらも $\tau=0$ と $\tau=t$ で消えるので、同じ境界条件を満たす直交系を用いて展開できる\cite{ref22}。
+% 原文 PDF p.26（誌面 p.612）。
+\begin{equation}
+X'(\tau)=\sum_nX_n\sin\omega_n\tau,\qquad
+\xi'(\tau)=\sum_m\xi_m\sin\omega_m\tau,
+\tag{6.24}\label{eq:6.24}
+\end{equation}
+ここで $\omega_n=n\pi/t$ である。式\eqref{eq:6.24}を式\eqref{eq:6.22}に代入し、いくつかの簡単な積分を行うと（同様の手順は文献\cite{ref22}を参照）、
+\begin{equation}
+G(X_{\mathrm f},\xi_{\mathrm f},t;X_{\mathrm i},\xi_{\mathrm i},0)
+=F^2(t)=\lim_{N\to\infty}\frac{4\tilde C}{Mt}
+(2\pi\hbar)^N\prod_{i=1}^N\frac1{\omega_i^2-\omega_{\mathrm R}^2}
+\tag{6.25}\label{eq:6.25}
+\end{equation}
+が得られる。ここで $\tilde C$ は規格化定数である。この結果は、減衰がない場合の波動関数の振幅の二乗と正確に等しい。したがって、減衰が変えるのは $J(X_{\mathrm f},\xi_{\mathrm f},t;X_{\mathrm i},\xi_{\mathrm i},0)$ の指数だけであり、その最終的な形は
+\begin{equation}
+\begin{aligned}
+J={}&F^2(t)\exp\!\Bigg[\frac{i}{\hbar}\Bigg\{
+\left[K(t)-\frac{M\gamma}{2}\right]X_{\mathrm f}\xi_{\mathrm f}
++\left[K(t)+\frac{M\gamma}{2}\right]X_{\mathrm i}\xi_{\mathrm i}\\
+&\hspace{38mm}-L(t)X_{\mathrm i}\xi_{\mathrm f}
+-N(t)X_{\mathrm f}\xi_{\mathrm i}\Bigg\}\Bigg]
+\exp\!\left[-\frac1\hbar\{A(t)\xi_{\mathrm f}^2
++B(t)\xi_{\mathrm f}\xi_{\mathrm i}+C(t)\xi_{\mathrm i}^2\}\right]
+\end{aligned}
+\tag{6.26}\label{eq:6.26}
+\end{equation}
+となる。
+
+これで、関心のある系の縮約密度演算子の時間発展を計算するために必要な道具が得られた。例えば、初めに系が、原点を中心とし初期運動量 $p$、幅 $\sigma$ の波束で記述される純粋状態にあるとしよう。このとき縮約密度演算子は
+\begin{equation}
+\tilde\rho(X_{\mathrm i},\xi_{\mathrm i},0)
+=(2\pi\sigma^2)^{-1/2}
+\exp\!\left(\frac{ip\xi_{\mathrm i}}{\hbar}\right)
+\exp\!\left(-\frac{X_{\mathrm i}^2+\xi_{\mathrm i}^2}{8\sigma^2}\right)
+\tag{6.27}\label{eq:6.27}
+\end{equation}
+であり、その時間発展は
+\begin{equation}
+\tilde\rho(X_{\mathrm f},\xi_{\mathrm f},t)
+=\iint\mathrm dX_{\mathrm i}\,\mathrm d\xi_{\mathrm i}\,
+J(X_{\mathrm f},\xi_{\mathrm f},t;X_{\mathrm i},\xi_{\mathrm i},0)
+\tilde\rho(X_{\mathrm i},\xi_{\mathrm i},0)
+\tag{6.28}\label{eq:6.28}
+\end{equation}
+と書ける。これは式\eqref{eq:6.27}と\eqref{eq:6.26}を代入することで評価できる。式\eqref{eq:6.28}の積分はすべて Gaussian 積分であり、非常に簡単である。しかし、その簡単さにもかかわらず、中間段階で得られる式はかなり長いため、ここでは最終結果だけを示す。
+\begin{equation}
+\begin{aligned}
+\tilde\rho(X_{\mathrm f},\xi_{\mathrm f},t)
+={}&F^2(t)\left[\frac{\pi^2\hbar^2}{2\sigma^2K_1+\hbar C_1}\right]
+\exp\!\left[-\frac{N^2}{2\sigma^2K_1^2+4\hbar C_1^2}
+\left(X_{\mathrm f}-\frac p{2N}\right)^2\right]\\
+&\times\exp\!\left[-\left\{\frac A\hbar+\frac{2\sigma^2L^2}{\hbar^2}
+-\frac{(4\sigma^2K_1L-B\hbar)^2}{\hbar^2(8\sigma^2K_1^2+4\hbar C_1)}\right\}\xi_{\mathrm f}^2\right]\\
+&\times\exp\!\left[\frac1\hbar\left\{K_2X_{\mathrm f}\xi_{\mathrm f}
+-\frac{(4\sigma^2K_1L-B\hbar)N}{4\sigma^2K_1^2+2\hbar C_1}
+\left(X_{\mathrm f}-\frac pN\right)\xi_{\mathrm f}\right\}\right].
+\end{aligned}
+\tag{6.29}\label{eq:6.29}
+\end{equation}
+% 原文 PDF p.27（誌面 p.613）。
+ここで、$A$、$B$、$C_1$、$K_1$、$K_2$、$L$、$N$ はすべて時間の関数であることに注意し、
+\begin{equation}
+C_1(t)\equiv C(t)+\frac{\hbar}{8\sigma^2},\qquad
+K_1(t)\equiv K(t)+\frac{M\gamma}{2},\qquad
+K_2(t)\equiv K(t)-\frac{M\gamma}{2}
+\tag{6.30}\label{eq:6.30}
+\end{equation}
+と定義した。
+
+特に興味深いのは、式\eqref{eq:6.29}において $\xi_{\mathrm f}=x_{\mathrm f}-y_{\mathrm f}=0$、すなわち $X_{\mathrm f}=x_{\mathrm f}+y_{\mathrm f}=2x_{\mathrm f}$ とすることで得られる式
+\begin{equation}
+\tilde\rho(x_{\mathrm f},x_{\mathrm f},t)
+=F^2(t)\left[\frac{\pi^2\hbar^2}{2\sigma^2K_1^2+\hbar C_1}\right]^{1/2}
+\exp\!\left[-\frac{N^2}{2\sigma^2K_1^2+\hbar C_1}
+\left(x_{\mathrm f}-\frac p{2N}\right)^2\right]
+\tag{6.31}\label{eq:6.31}
+\end{equation}
+である。これは、初期の $|\psi(x)|^2$ が時間とともにどのように発展するかを示している。その中心は
+\begin{equation}
+x_0(t)=\frac p{2N(t)}
+\tag{6.32}\label{eq:6.32}
+\end{equation}
+で与えられる経路に従う。これは減衰する古典粒子の経路であり、例えば UDHO では
+\begin{equation}
+x_0(t)=\frac p{M\omega}\sin\omega t\,e^{-\gamma t}
+\tag{6.33}\label{eq:6.33}
+\end{equation}
+となる。一方、その幅は
+\begin{equation}
+\sigma^2(t)=\frac12\left(\frac{2\sigma^2K_1^2(t)+\hbar C_1(t)}{N^2(t)}\right)
+\tag{6.34}\label{eq:6.34}
+\end{equation}
+に従う。
+
+この式は、任意の時刻 $t$ における $\tilde\rho(x,x,t)$ の幅を与える。これを無限時間で調べると、興味深い結果が得られる。手順は単純だが、非常に煩雑である。式\eqref{eq:6.13}、\eqref{eq:6.20}、\eqref{eq:6.21}、\eqref{eq:6.30}を式\eqref{eq:6.34}に代入すると、
+\begin{equation}
+\begin{aligned}
+\sigma^2(t\to\infty)
+&=\left\langle\bigl(x-x_0(\infty)\bigr)^2\right\rangle\\
+&=\frac{\hbar}{\pi}\int_0^\infty\mathrm d\nu\,
+\coth\!\left(\frac{\hbar\nu}{2kT}\right)
+\left(\frac1M\frac{2\gamma\nu}{(\omega_{\mathrm R}^2-\nu^2)^2+4\gamma^2\nu^2}\right)
+\end{aligned}
+\tag{6.35}\label{eq:6.35}
+\end{equation}
+が得られる。ここでは積分の上限で $\Omega\to\infty$ の極限を取った。式\eqref{eq:6.35}は非常によく知られたものである。振動数 $\omega_{\mathrm R}$ の調和振動子の外力 $F(t)$ に対する応答の虚部は
+\begin{equation}
+\chi''(\nu)=\frac1M\frac{2\gamma\nu}{(\nu^2-\omega_{\mathrm R}^2)^2+4\gamma^2\nu^2}
+\tag{6.36}\label{eq:6.36}
+\end{equation}
+で与えられる。したがって、
+\begin{equation}
+\sigma^2(\infty)=\frac{\hbar}{\pi}\int_0^\infty\mathrm d\nu\,
+\coth\!\left(\frac{\hbar\nu}{2kT}\right)\chi''(\nu)
+\tag{6.37}\label{eq:6.37}
+\end{equation}
+となり、これはよく知られた揺動散逸定理である\cite{ref32}。
+
+% 原文 PDF p.28（誌面 p.614）。
+\sectionlink{結論}\label{sec:7}
+熱浴と相互作用する粒子の具体的な模型を用いて、その粒子の縮約密度演算子の伝播関数に対する式\eqref{eq:3.38}を導いた。前節で示したように、ある状況では、任意の時刻 $t$、あらゆる温度における $\tilde\rho(x,y,t)$ の閉じた式を得ることができた。波束 $\tilde\rho(x,x,t)$ の中心は古典的な Brownian 粒子の運動に従い（式\eqref{eq:6.33}を参照）、その無限時間極限における幅は揺動散逸定理\eqref{eq:6.35}と一致することを示した。後者の結果について、もう少し詳しく考察できる。
+
+まず、式\eqref{eq:6.35}は文献\cite{ref27}と一致しない。そこでは、自由粒子の波束の幅は無限時間で「凍結する」と主張されている。式\eqref{eq:6.35}で $\omega_{\mathrm R}\to0$ とすると、$T\to0$ のとき、式\eqref{eq:6.35}は $\nu\to0$ において $(-\ln\nu)$ のように発散することを示せる。これは、$t\to\infty$ のとき $\sigma^2(t)$ が $\ln t$ のように振る舞うということに等しい。したがって、$\sigma^2(t)$ の広がりは減衰がない場合（$\sigma^2(t)=\sqrt{A+Bt^2}$）より遅いが、凍結することはない。
+
+我々は、両者の方法のこの相違は、我々と異なり文献\cite{ref27}の著者たちがいかなる拡散効果も考慮していないことに起因すると考えている。式\eqref{eq:6.1}で $\phi[x,y]=0$ とすることにより、二つの方法の物理的解釈が全く異なるにもかかわらず、彼らの結果を再現できる。
+
+Morse と Feshbach の Lagrangian から出発して Brownian 運動を量子化しようとする他の試みにおいても、拡散項は省略されていた（例えば、文献\cite{ref33,ref34}、あるいは文献\cite{ref35}の第3節と第6節を参照）。
+
+第二の比較は、減衰が極めて小さい極限（$\gamma\to0$）を調べるときに現れる。この場合、$t\to\infty$ における最終的な幅は、任意の温度で
+\begin{equation}
+\sigma^2(\infty)=\frac{\hbar}{2M\omega_{\mathrm R}}
+\coth\!\left(\frac{\hbar\omega_{\mathrm R}}{2kT}\right)
+\tag{7.1}\label{eq:7.1}
+\end{equation}
+と求められる。これは、平衡量子統計力学のよく知られた結果である\cite{ref22}。式\eqref{eq:3.38}で与えられる厳密な伝播関数 $J$ の代わりに、式\eqref{eq:5.1}において $2MkT\gamma$ を $\hbar M\gamma\omega_{\mathrm R}\coth(\hbar\omega_{\mathrm R}/2kT)$ に置き換えたものを用いても、同じ式が得られるはずである。言い換えると、（運動量空間における）拡散定数は
+\begin{equation}
+D=M\gamma\omega_{\mathrm R}\hbar
+\coth\!\left(\frac{\hbar\omega_{\mathrm R}}{2kT}\right)
+\tag{7.2}\label{eq:7.2}
+\end{equation}
+で与えられ、あらゆる温度で有効であるはずだ。$T\to\infty$ のとき、式\eqref{eq:7.2}は古典的な関係 $D=2M\gamma kT$ を与え、一方、$T\to0$ のとき拡散定数は
+\begin{equation}
+D=M\gamma\hbar\omega_{\mathrm R}=\frac12\eta\hbar\omega_{\mathrm R}
+\tag{7.3}\label{eq:7.3}
+\end{equation}
+となる。これは Dekker\cite{ref07} が見いだした結果である。
+
+% 原文 PDF p.29（誌面 p.615）。
+序論で指摘したように、Dekker は位置演算子と運動量演算子の運動方程式に明示的な雑音源を用い、複素変数に正準量子化を適用した（ただし、式\eqref{eq:7.3}の別の導出については文献\cite{ref36}を参照）。確かに、こうした操作を許す微視的模型は存在する。しかし、非常に弱い減衰の極限では、これらの方程式の解は通常の方程式（運動量の方程式だけに雑音源があるもの）の解と同じになることを示せる\cite{ref37}。
+
+式\eqref{eq:7.2}で提案した工夫は、有限の $\gamma$ に対しては正しくないように思われる。この工夫は、式\eqref{eq:3.9}の影響汎関数の指数に現れる核 $\alpha_{\mathrm R}(t-t')$ を、常に温度の関数と $(t-t')$ のデルタ関数との積で置き換えられることを意味する。しかし、我々の具体的な模型ではそうならない。式\eqref{eq:7.2}が任意の $\gamma$ に対して正しくなるような別の熱浴模型を見いだせるとしても、我々の模型は、この手順が一般的でないことを示す反例となる。
+
+式\eqref{eq:7.2}の形の拡散定数は Papadopoulos\cite{ref28} と Svin'in\cite{ref38} によって提案されている。しかし、ここでも、彼らの理論が有効なのは弱い減衰の極限だけである。これは、その式が成り立つための必要条件だからである。
+
+実際、量子的領域においてさえも、Markoff 型の方程式（時間核を含まないもの）で平衡への緩和を記述しようとすることは、多くの物理学者にとって長年の夢であった。しかし、我々はその可能性にやや懐疑的である。我々が示したように、簡単な模型でも、全く Markoff 型でないまま、平衡統計力学と線形応答理論の両方を漸近的に再現できるためである。Ford ら\cite{ref16}も、量子極限における Markoff 型という仮定について同じ結論に達している。ここで論じているのは拡散項だけであることに注意されたい。我々のドリフト項（$\gamma$ を含む項）は常に Markoff 型である。後者に対する非 Markoff 型の補正を求めるには、Brownian 粒子の短時間の振る舞いを記述するのに重要な総和則による $\chi''(\nu)$ の修正を調べる必要がある。
+
+最後に、系と環境の結合について、一見非常に恣意的に見える模型を採用したが、結果の主要な特徴は、その詳細にはあまり左右されないはずであることを強調しておきたい。特に、量 $\rho_{\mathrm D}(\omega)C^2(\omega)$ に対する式\eqref{eq:3.23}の選択を変更しても、系の特徴的な振動数と同程度の $\omega$ に対して式\eqref{eq:3.23}の形が引き続き成り立ちさえすれば、結果に定性的な違いはほとんど生じないはずである。実際に影響を受けるのは振動数のずれ $(\Delta\omega)^2$ だけであり、いずれにせよ、これは直接には観測できない（トンネル問題における類似の点についての文献\cite{ref21}の議論を参照）。
+
+\sectionlink*{謝辞}
+有益な議論、書簡のやり取り、およびプレプリントを提供してくださった G. Barton 博士、P.L. Knight 博士、A.B. Pippard 教授、K.L. Sebastian 博士、D.J. Wallace 教授、A.F.R. de Toledo Piza 教授に感謝する。

@@ -1,0 +1,140 @@
+\documentclass[a4paper,11pt]{ltjsarticle}
+
+% ========== package ========== %
+% --- 数式環境 --- %
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+% --- 数式環境 END --- %
+% ブラケット
+\usepackage{braket}
+% ベクトルの太文字
+\usepackage{bm}
+% 添え字左右上下 \fourIdx{左上}{左下}{右上}{右下}{ベース} で使う．Iは大文字
+\usepackage{fouridx}
+% 色
+\usepackage{color}
+% 余白指定
+\usepackage{geometry}
+% --- 索引（hyperref より前に読み込む） --- %
+\usepackage{makeidx}
+\makeindex
+% --- ページ内リンク --- %
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue,hypertexnames=true,plainpages=false}
+% --- ページ内リンク END --- %
+% 花文字
+\usepackage{mathrsfs}
+% 画像
+\usepackage{graphicx}
+% tcolorbox
+\usepackage{tcolorbox}
+% appendix
+\usepackage{appendix}
+% --- 参考文献 --- %
+\usepackage{etoolbox}
+\usepackage{fontspec} % fontspecは読み込んでOKですが、設定順序に注意が必要です
+%% --- 参考文献フォント --- %%
+  \IfFontExistsTF{Times New Roman}{
+    \newfontfamily\bibfontface[Ligatures=TeX]{Times New Roman}
+  }{
+    \newfontfamily\bibfontface[Ligatures=TeX]{FreeSerif} % 代替フォント
+  }
+%% --- 参考文献フォント END --- %%
+%% --- 参考文献リンク位置 --- %%
+  \BeforeBeginEnvironment{thebibliography}{%
+    \phantomsection
+    \addcontentsline{toc}{section}{参考文献}
+  }
+  \AtBeginEnvironment{thebibliography}{%
+    \normalfont\bibfontface
+  }
+%% --- 参考文献のリンク位置 --- %%
+% --- 参考文献 END --- %
+% --- 索引の見出し・目次リンク --- %
+\renewcommand{\indexname}{\hyperlink{toc}{索引}}
+\BeforeBeginEnvironment{theindex}{%
+  \clearpage
+  \phantomsection
+  \addcontentsline{toc}{section}{索引}
+}
+% 項目は英語キーでアルファベット順に整列し、各ページ番号を本文へリンクする。
+% page.<表示番号> の宛先を重複させない（通し番号、または Roman 前付＋Arabic 本文）。
+% hypertexnames=false だけで重複を回避すると索引が誤ページへ飛ぶため使用しない。
+% 用語の出現箇所に記す例：
+% \index{decoherence@Decoherence(デコヒーレンス)|hyperpage}
+% 生成手順：LuaLaTeX → BibTeX（文献がある場合）→ makeindex → LuaLaTeX 2回。
+% --- 索引 END --- %
+% ========== package END ========== %
+
+% ========== newcommand ========== %
+% --- セクションから目次へのリンク --- %
+\NewDocumentCommand{\sectionlink}{s m}{%
+  \IfBooleanTF{#1}{%
+    \section*{\hyperlink{toc}{#2}}%
+    \phantomsection\addcontentsline{toc}{section}{#2}%
+  }{\section[#2]{\hyperlink{toc}{#2}}}%
+}
+\newcommand{\subsectionlink}[1]{\subsection[#1]{\hyperlink{toc}{#1}}}
+% セクション番号リンク
+\makeatletter
+\renewcommand{\@seccntformat}[1]{%
+  \protect\hyperlink{toc}{\csname the#1\endcsname}\quad
+}
+\makeatother
+
+\numberwithin{equation}{section}
+% ==========- newcommand END ========== %
+% Explicit original equation tags leave amsmath's counter unchanged.
+% Step it separately to keep the automatic PDF destinations unique.
+\BeforeBeginEnvironment{equation}{\stepcounter{equation}}
+\allowdisplaybreaks
+%===========================================================
+% --- タイトル --- %
+%===========================================================
+\geometry{left=25mm, right=25mm, top=30mm, bottom=30mm}
+% 日本語題名 → 英語原題 → arXiv abs → INSPIRE-HEP literature の順。
+% URL が空の行は表示しない。対象文献がない場合は出版社・DOI 等で代用する。
+\newcommand{\papertitlejp}{量子 Brownian 運動への経路積分アプローチ}
+\newcommand{\papertitleen}{Path integral approach to quantum Brownian motion}
+\newcommand{\paperarxivurl}{https://doi.org/10.1016/0378-4371(83)90013-4} % 例：https://arxiv.org/abs/2508.14262v2
+\newcommand{\paperarxivlabel}{Physica A 121 (1983) 587--616 (DOI)} % 例：arXiv:2508.14262v2 [quant-ph]
+\newcommand{\paperinspireurl}{https://inspirehep.net/literature/176411} % 例：https://inspirehep.net/literature/文献番号
+\newcommand{\paperinspirelabel}{INSPIRE-HEP: 176411} % 例：INSPIRE-HEP、または代用先の出版社・DOI
+\title{%
+  \bfseries\papertitlejp\\[0.5em]
+  {\normalfont\large\papertitleen}%
+  \ifdefempty{\paperarxivurl}{}{\\[0.4em]{\normalfont\normalsize
+    \href{\paperarxivurl}{\paperarxivlabel}}}%
+  \ifdefempty{\paperinspireurl}{}{\\[0.4em]{\normalfont\normalsize
+    \href{\paperinspireurl}{\paperinspirelabel}}}%
+}
+\input{sections/frontmatter}
+\author{\paperauthors}
+\hypersetup{pdftitle={量子 Brownian 運動への経路積分アプローチ},pdfauthor={A.O. Caldeira and A.J. Leggett}}
+\pdfstringdefDisableCommands{\def\hyperlink#1#2{#2}}
+\date{2026年10月29日}
+
+%===========================================================
+% --- 以下本文 --- %
+%===========================================================
+\begin{document}
+\maketitle
+\begin{center}\small\originalreceiptdates\end{center}
+\begin{abstract}
+\paperabstract
+\end{abstract}
+\clearpage
+\hypertarget{toc}{}
+\tableofcontents
+\clearpage
+% Keep original reference numbering even when a citation appears later in prose.
+\nocite{ref01,ref02,ref03,ref04,ref05,ref06,ref07,ref08,ref09,ref10,ref11,ref12,ref13,ref14,ref15,ref16,ref17,ref18,ref19,ref20,ref21,ref22,ref23,ref24,ref25,ref26,ref27,ref28,ref29,ref30,ref31,ref32,ref33,ref34,ref35,ref36,ref37,ref38}
+\input{sections/part1}
+\input{sections/part2}
+\input{sections/part3}
+\clearpage
+\renewcommand{\refname}{\hyperlink{toc}{参考文献}}
+\bibliographystyle{utphys}
+\bibliography{ref}
+\end{document}

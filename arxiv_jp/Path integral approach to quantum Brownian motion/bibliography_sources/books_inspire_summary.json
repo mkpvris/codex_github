@@ -1,0 +1,111 @@
+[
+  [
+    1,
+    "https://inspirehep.net/api/literature?q=t+%22Selected+papers+on+noise%22&size=30",
+    0,
+    []
+  ],
+  [
+    3,
+    "https://inspirehep.net/api/literature?q=a+Louisell+and+t+radiation&size=30",
+    0,
+    []
+  ],
+  [
+    22,
+    "https://inspirehep.net/api/literature?q=a+Feynman+and+a+Hibbs+and+t+quantum&size=30",
+    0,
+    []
+  ],
+  [
+    24,
+    "https://inspirehep.net/api/literature?q=a+Forster+and+t+hydrodynamic&size=30",
+    0,
+    []
+  ],
+  [
+    25,
+    "https://inspirehep.net/api/literature?q=a+Morse+and+a+Feshbach+and+t+methods&size=30",
+    0,
+    []
+  ],
+  [
+    31,
+    "https://inspirehep.net/api/literature?q=a+Caldeira+and+date+1980+and+document_type+thesis&size=30",
+    0,
+    []
+  ],
+  [
+    32,
+    "https://inspirehep.net/api/literature?q=a+Landau+and+a+Lifshitz+and+t+statistical&size=30",
+    1,
+    [
+      {
+        "id": "1411177",
+        "m": {
+          "titles": [
+            {
+              "title": "Statistical Physics, Part 1"
+            }
+          ],
+          "authors": [
+            {
+              "full_name_unicode_normalized": "landau, l.d.",
+              "full_name": "Landau, L.D.",
+              "record": {
+                "$ref": "https://inspirehep.net/api/authors/1019139"
+              },
+              "last_name": "Landau",
+              "ids": [
+                {
+                  "schema": "INSPIRE BAI",
+                  "value": "Lev.Davidovich.Landau.1"
+                }
+              ],
+              "signature_block": "LANDl",
+              "uuid": "5faafb51-eced-4943-9d42-1d735e7aa0bc",
+              "first_name": "L.D.",
+              "recid": 1019139
+            },
+            {
+              "full_name_unicode_normalized": "lifshitz, e.m.",
+              "full_name": "Lifshitz, E.M.",
+              "record": {
+                "$ref": "https://inspirehep.net/api/authors/2265887"
+              },
+              "last_name": "Lifshitz",
+              "ids": [
+                {
+                  "schema": "INSPIRE BAI",
+                  "value": "E.M.Lifshitz.1"
+                }
+              ],
+              "signature_block": "LAFSATe",
+              "uuid": "9b5df116-32da-4ae7-953c-bb626c7e88f6",
+              "first_name": "E.M.",
+              "recid": 2265887
+            }
+          ],
+          "imprints": [
+            {
+              "date": "1980",
+              "publisher": "Butterworth-Heinemann",
+              "place": "Oxford"
+            }
+          ],
+          "publication_info": null,
+          "document_type": [
+            "book"
+          ],
+          "editions": null,
+          "isbns": [
+            {
+              "medium": "print",
+              "value": "9780750633727"
+            }
+          ]
+        }
+      }
+    ]
+  ]
+]

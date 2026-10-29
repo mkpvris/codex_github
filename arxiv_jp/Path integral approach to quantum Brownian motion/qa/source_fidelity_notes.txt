@@ -1,0 +1,43 @@
+Source fidelity and final verification
+Source: A. O. Caldeira and A. J. Leggett, Path integral approach to quantum Brownian motion,
+Physica A 121 (1983) 587-616. User-provided PDF, 30 pages.
+Japanese PDF: complete text, abstract, author affiliations, original title footnote,
+receipt/revision dates, sections 1-7, acknowledgements, 124 displayed equation labels,
+and all 38 numbered references. The original contains no figures, tables, appendices,
+or index. No translator explanation or new index was inserted in the PDF.
+
+The complete original pages were visually checked during transcription. Prose in
+parts 1 and 2 was independently reviewed. Equations 6.22, 6.29, and 6.31 were
+independently read at high resolution by a second reviewer.
+
+Source-level unusual expressions were reproduced literally rather than silently
+corrected. These include the prefactor in 3.8; signs in 5.3 and 5.5; the power of
+hbar in 5.8; drift coefficient in 5.14; first argument of J in 6.15; signs and
+arguments in 6.22; and several powers, coefficients, and factors in 6.29 relative
+to 6.31. The source expression for the asymptotic wavepacket width in section 7
+was also preserved. These notes are outside the translated paper.
+
+Bibliographic source matching, original bibliographic discrepancies, and records
+not available in INSPIRE are documented in bibliography_sources/acquisition_report.md.
+The actual thesis title for reference 31 was not present in the source and could
+not be independently established; no guessed title was inserted.
+
+The copied template alone was modified where necessary: actual metadata,
+starred section backlinks, and distinct automatic equation destinations for
+explicit original equation tags. TeX ligatures were enabled in the copied
+bibliography font so quotation marks and page-range dashes render correctly.
+The source template directory was not edited.
+
+Build: LuaLaTeX -> BibTeX -> LuaLaTeX -> LuaLaTeX, with additional passes after
+the link-destination correction. No unresolved reference, missing glyph,
+overfull box, or duplicate PDF destination remains. Template math fonts use
+normal size substitutions at very small script sizes.
+BibTeX reports the one known empty title in reference 31, because that title
+is absent from the original and could not be verified. The entry remains a
+PhD thesis with its original author, institution, year, and unpublished status.
+
+Machine checks: qa/link_verification.json records all PDF internal and external
+links, individual citation destinations, equation target-page matches, and unique
+page destinations. Final rendered pages are preserved under qa/pages/.
+
+Final visual QA passed for all 29 pages. Pages 3-14 and 15-26 were checked by independent reviewers. The cover, contents, and bibliography pages were checked by the primary reviewer. All final PNGs are retained.

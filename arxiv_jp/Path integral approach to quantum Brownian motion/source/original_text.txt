@@ -1,0 +1,1191 @@
+=== PDF PAGE 1 / PRINTED 587 ===
+Physics 121A (1983) 587-616 North-Hollund Publishing Co. 
+PATH INTEGRAL APPROACH TO QUANTUM BROWNIAN MOTION* 
+A.O. CALDEIRA 
+institute de Fi.sica “Gleh Wrrtughin”, Universidude Es~uduul de Cumpinas, 
+13.100 Cumpinus - SP - Brusil 
+and 
+A.J. LEGGETT 
+School of Murhemuticul und Physical Sciences, University of Su.we.u, Brighton BN I !QQH, Suswx, UK 
+Received 25 August 1982 
+Revised 4 January 1983 
+We apply the influence-functional method of Feynman and Vernon to the study of Brownian 
+motion at arbitrary temperature. By choosing a specific model for the dissipative interaction of the 
+system of interest with its environment, we are able to evaluate the influence functional in closed 
+form and express it in terms of a few parameters such as the phenomenological viscosity coefficient. 
+We show that in the limit h +O the results obtained from the influence functional formalism reduce 
+to the classical Fokker-Planck equation. In the case of a simple harmonic oscillator with arbitrarily 
+strong damping and at arbitrary temperature, we obtain an explicit expression for the time evolution 
+of the complete density matrix p(x, x’, I) when the system starts in a particular kind of pure state. 
+We compare our results with those of other approaches to the problem of dissipation in quantum 
+mechanics. 
+1. Introduction 
+In nature there are many systems which, in the classical regime, can adequately 
+be described by equations of motion of the form 
+mj;_ + yX + u’(x) = F(t). (1.1) 
+This could stand, for example, for a particle of colloidal size immersed in a viscous 
+fluid. In this case, m is the mass of the particle, q is a damping constant, V(X) is 
+the potential acting on the particle and F(t) is the so-called fluctuating force. The 
+latter obeys the relations 
+(F(O) = 0, 
+(am) = 2qk73(t - t’), (1.2) 
+where ( ) represents the statistical average over the ensemble of identically 
+prepared systems. Eq. (1.1) subject to the relations (1.2) is the well-known 
+* Based on part of a thesis submitted by A.O. Caldeira for the degree of D. Phil. at the University 
+of Sussex, September 1980. 
+0378-4371/83/0000-0000/$03.00 0 1983 North-Holland 
+
+=== PDF PAGE 2 / PRINTED 588 ===
+588 A.O. CALDEIRA AND A.J. LEGGETT 
+Langevin equation which has been used as the basis for the theory of Brownian 
+motion for over half a century now’). 
+Like any other phenomenological equation, (1 .I) has a restricted range of 
+validity. It is reasonable to use Langevin equations when we are interested in the 
+long time behaviour of the system. By long times we mean times long compared 
+to the relaxation time of the reservoir coupled to the system in question. 
+In the above-mentioned example we do not need to bother about quantum 
+effects because a macroscopic particle in a viscous medium can be well described 
+by the classical theory. However, in many other situations, things do not work 
+in this way. If we take, for example, a LCR circuit we know that the equation 
+for the charge at the capacitor plates has the form (1.1). As the temperature starts 
+to achieve very low values we expect to observe quantum effects in this system. 
+Therefore a very natural question arises: how can one reconcile damped equations 
+of motion with the processes of quantization? 
+The origin of this question lies in the fact that the standard procedures of 
+quantization are based on the existence of either a Hamiltonian or a Lagrangian 
+function for the system in which we are interested. On the other hand it is well 
+known that we cannot obtain (1.1) from the application of the classical Lagrange’s 
+or Hamilton’s equations to any Lagrangian or Hamiltonian which has no explicit 
+time dependence. The employment of time-dependent functions would allow us 
+to use the standard procedures of quantization directly2). However, this approach 
+would inevitably lead us to face some problems with the uncertainty principlej). 
+Over the last two or three decades, many people have tried to answer this 
+question. In spite of the variety of methods used, all these attempts fall into two 
+main categories: They either look for new schemes of quantization or use the 
+system-plus-reservoir approach. We shall list some of the more important works 
+in each category in what follows. 
+In the beginning of the seventies, Kostin4) proposed a theory with a non-linear 
+Schroedinger equation. Besides violating the superposition principle, this theory 
+shows some highly controversial results such as stationary damped states. On the 
+basis of Nelson’s Stochastic Quantizatior?), K. Yasue6) deduced Kostin’s equa- 
+tion. It is possible to do so because in Nelson’s quantization what one needs to 
+know is the equation of motion itself instead of Hamiltonians or Lagrangians. The 
+main question here is whether Nelson’s theory is correct or not. 
+Dekker’) developed a canonical quantization procedure using complex vari- 
+ables. Despite reproducing some interesting results, such as the Fokker-Planck 
+equation for the Wigner transform of the density operator, his theory seems 
+obscure in some points. For example, he introduces an explicit noise source for 
+the equation of the position, x(t), and another one for the momentum equation. 
+We see no physical reason to do so. We shall return to some points in Dekker’s 
+work later on. 
+
+=== PDF PAGE 3 / PRINTED 589 ===
+PATH INTEGRAL APPROACH TO QUANTUM BROWNIAN MOTION 589 
+The most successful approach we are aware of so far was pioneered by the work 
+of Senitzky*). There, he takes explicitly into account the interaction of the system 
+of interest with a reservoir. In his work he was particularly involved with the 
+damping of electromagnetic field modes in a cavity. His strategy is carried out in 
+the Heisenberg picture with the elimination of the reservoir operators. This theory 
+was generalized later by Mori’). Still along these lines, Zwanzig’O) and Nakajima”) 
+worked in the Schroedinger picture to get generalized master equations for the 
+density operator. Excellent reviews of this sort of approach can be found in”) and 
+13 
+1. 
+One further approach to this problem consists of attempting to generalize the 
+classical Langevin equation (1.1) to the quantum case. The simplest way to do this 
+is to leave equation (1 .l) itself unchanged, but to replace the classical force 
+correlation expressed by (1.2) by the equation 
+-i’-‘)tjho coth (1.2’) 
+with some suitable cutoff on o, say s2. If we are interested in time intervals 
+It - t’l B s1 -I, then eq. (1.2’) is effectively equivalent to (1.2) at high temperatures 
+(kT 9 h(t - Cl-‘) but diverges from it at low temperatures. Very recently, this 
+approach has been used by Koch et a1.14) to analyze the low-temperature 
+behaviour of Josephson junctions; its theoretical foundation has also been recently 
+discussed by Benguria and Ka@). It will be clear from the latter discussion that 
+the general question of the validity of the “quantum Langevin equation” outside 
+the especial case of the harmonic oscillator is a very open one. 
+The general approach we shall adopt in this paper has much in common with 
+the work of refs. 8-13. That is, we shall not even attempt to quantize the 
+dissipative system itself, but will instead treat it from the beginning as interacting 
+with a complex environment; it is precisely this interaction which will give rise to 
+dissipation. Since the complete “universe” formed by the system plus environment 
+may be treated as closed, there is of course no objection to applying to it the 
+standard quantization procedures. Having done this, we will then eliminate the 
+environment coordinates so as to obtain closed equation for the dissipative system 
+alone. To achieve this elimination we must of course choose a sufficiently simple 
+model for the systemenvironment interaction. Moreover, the model must be so 
+constructed as to reproduce the results for classical Brownian motion in the 
+classical (high-temperature) limit. 
+A number of papers in the literature have studied related questions. Ford et 
+a1.16) studied an array of identical particles interacting with each other through 
+quadratic potentials. Fixing one of them, they investigated the form the inter- 
+particle potential would have to have to make it a Brownian particle in the 
+classical regime. Iche and Nozieres’7) constructed a general adiabatic expansion 
+
+=== PDF PAGE 4 / PRINTED 590 ===
+590 A.O. CALDEIRA AND A.J. LEGGETT 
+for heavy particles in an environment but the results they obtain are mainly 
+formal. Davies”) has proved some nice rigorous results concerning the diffusive 
+behaviour of the particles of the system, Markoffian Fokker-Planck equations and 
+so on. However, they hold only for extremely underdamped cases. Schwinger”) 
+applied his action principle to the motion of a quantum oscillator weakly coupled 
+to a bath and studied carefully the problems of the frequency shift and constant 
+damping. 
+What we aim to do in the present paper is to explore how far it is possible to 
+obtain closed equations for a dissipative quantum-mechanical system which 
+involve only phenomenological parameters (in principle experimentally accessible) 
+such as mass, friction coefficient etc. To this end we set up a specific model of the 
+systemenvironment interaction and fit the parameters of the model from the 
+condition that it reproduce the classical equations of Brownian motion in the 
+appropriate limit2’). We then explore its consequences in the more general, e.g. 
+quantum, case. We show that a general formal expression (in the form of a 
+functional integral) for the propagator of the density matrix can be written down 
+which is only slightly more complicated than that which already occurs in the 
+noninteracting case, and that in the special case of the harmonic oscillator it can 
+be evaluated explicitly for all degrees of damping and all temperatures. As an 
+application we study explicitly the time development of a damped harmonic 
+oscillator which starts out in a certain kind of pure state. The technique used 
+throughout is the functional integral formulation of quantum mechanics, and 
+more specifically the “influence functional” technique of Feynman and Vernon. 
+The original motivation of this work was our desire to understand the effect of 
+dissipation on the phenomenon of quantum mechanical tunnelling through a 
+potential barrier. It turns out that while the functional integral method itself is 
+very well suited to this problem, the particular approach developed in the present 
+paper is not; conversely, the method most appropriate to the tunneling problem 
+(which involves the “imaginary-time“ representation and the consideration of two 
+rather than four-point functions) is not well suited to the discussion of the time 
+evplution of a system in the classically accessible region. For this reason we feel 
+it is logical to separate the present discussion from our treatment of the tunnelling 
+problem, which is given in ref. 21. Nevertheless a number of questions are 
+common to the two discussions, in particular the question of the generality and 
+degree of realism of our model of the dissipative mechanism and the modifications 
+introduced by velocity-dependent coupling, and some of these questions are 
+discussed in greater detail in”). We will therefore cross-reference this work at 
+various points in the present paper. 
+In section 2, we review the Feynman-Vernon theory of the influence 
+functiona122,23). In sections 3 and 4 we evaluate the influence functional for specific 
+models of the reservoir. This gives us the propagator for the reduced density 
+
+=== PDF PAGE 5 / PRINTED 591 ===
+PATH INTEGRAL APPROACH TO QUANTUM BROWNIAN MOTION 591 
+operator of the Brownian particle under appropriate circumstances. Section 5 
+deals with the recovery of the classical equations of Brownian motion when we 
+study the limit h -+O of our quanta1 expressions. Applications of the results of 
+sections 3 and 4 are presented in section 6; in particular, we consider a damped 
+harmonic oscillator which is described at time zero by a Gaussian (not necessarily 
+minimum-uncertainty) pure state wave packet, and calculate its density matrix 
+explicitly for all subsequent times. Finally, in section 7 we draw our conclusions. 
+2. Feynman-Vernon theory 
+Let us consider a system A interacting with a second system B (the reservoir) 
+described by the following Hamiltonian: 
+H=H,+H,+H,, (2.1) 
+where 
+HA= -&-$+u(x), (2.2) 
+is the Hamiltonian of the system represented by a particle of mass M and 
+coordinate x, 
+HB= -;$+ixvB(Ri,Rj) 
+i#I 
+(2.3) 
+is the Hamiltonian of the reservoir consisting of N particles of coordinates Ri and 
+masses m. The N-component vector R stands for R = (R,, . . . , RN). Finally, HI 
+is the interaction Hamiltonian given by 
+(2.4) 
+Our starting point in presenting the Feynman-Vernon theory22*23) is the integral 
+form of the density operator of the system plus reservoir at a time t, 
+p(t)=exp-yp(O)expy, 
+which in the coordinate representation can be written as 
+(~Rlp(t)l~Q) = ldx’ dy’ dR’ dQ’( x, Rlexp -T Ix'R') 
+x (x’R’lp(O)y’Q’)(y’Q’lexp Tiy Q) . 
+(2.5) 
+(2.6) 
+
+=== PDF PAGE 6 / PRINTED 592 ===
+592 A.O. CALDEIRA AND A.J. LEGGETT 
+Those terms containing H in (2.6) are easily recognized as”) 
+and 
+where all the functional integrations are evaluated over paths x(t), y(t), R(t’) 
+and Q(t’) with endpoints x(t) = x, x(0) =x’, y(t) = y, y(0) =y’, R(t) = R, 
+R(0) = R’, Q(t) = Q and Q(O) = Q’. In (2.7) and (2.8) the action S is given by 
+S=S,+S,+S,= Ldt’, 
+s 
+(2.9) 
+where 
+n 
+L = L, + L, + L, = i Mx2 - u(x) - 1 u,(x, R,) + c irn&f - $1 v,(Ri, R,) 
+i i i#i 
+(2.10) 
+In this way we can write (2.6) as 
+(xR(PW~YQ> = [ dx’ dy’ dQ’ dR’K(x, R, t; x’, R’, O)K*(y, Q, t; y’, Q’, 0) 
+J 
+x (x’R’l~(o)l~‘Q’> . (2.11) 
+This expression for the density operator describes the behaviour of the system 
+plus reservoir as a whole. However, we do not wish to have all that information. 
+We want access to the properties of the system A regardless of the specific 
+behaviour of the reservoir. All we need is its influence on the system A. Then the 
+quantity we are really looking for is not the total density operator but the so-called 
+reduced density operator 3.‘2*‘3). This is easily obtained by tracing out all the 
+environment coordinates in (2.11). So, 
+~(x,Y, t) = [dR(xRlp(r)lyR) = [ dx’ dy’ dR’ dQ’ dRK(x, R, t; x’, R’, 0) 
+J 
+x K*(Y, R, t; Y ‘Q’, O);x.R.lp(O)l~ ‘Q’) . 
+Now, suppose we initially have the total density operator 
+P (0) = PA(O)PB(O) 3 
+(2.12) 
+given by 
+(2.13) 
+
+=== PDF PAGE 7 / PRINTED 593 ===
+PATH INTEGRAL APPROACH TO QUANTUM BROWNrAN MOTION 593 
+where ~~(0) and pA(0) are the density operators of the reservoir and,.$e-*m 
+respectively, when they are not interacting with each other. After t = 0 they may 
+both change with time. Inserting (2.13) in (2.12) and using (2.7) to (2.10) we get 
+,XGY,~)= dx’dy’J(x,y,t;x’,y’,O)p,(x’,y’,O), s (2.14) 
+where 
+J(x, Y, t; x’, Y’, 0) WI . &[Y 1 = D~Dyexpi~exp-ihF[x,y] (2.15) 
+and 
+9[x, y] = 
+s 
+dR’ dQ’ dRp,(R’, Q’, 0) DR DQ exp i 
+x C%k RI - NY, Ql + %[Rl - NQI) (2.16) 
+is the so-called influence functiona122,23). 
+When there is no interaction between the system of interest and the environment 
+the influence functional is equal to one. Then our expression (2.15) reduces to a 
+product of two propagators, one forward and the other one backward in time. 
+This happens because for a closed system the density operator can be written as 
+the product of the wave function with its complex conjugate. When the interaction 
+is switched on we do not have these two propagations taking place freely. Instead, 
+the influence functional couples them. 
+Expression (2.15) is the central formula in our development of the quantum 
+theory of Brownian motion. 
+3. The model 
+In principle our problem is solved. Once we know the interparticle potentials 
+vi(x, Ri) and us(Ri, Rj) in equations (2.3) and (2.4) and the initial state of the 
+reservoir, described by pB(0), we can find the influence functional in (2.16). 
+However, our experience tells us that life is not that simple. We know that very 
+few problems can be solved exactly in the field of many body systems. It is hopeless 
+to think we can solve the problem exactly in its full generality. What we need to 
+do is to employ a specific model, soluble by construction, from which we expect 
+to draw some general conclusions we believe can be extended to many other 
+systems. 
+Let us assume our reservoir is composed of particles interacting through a 
+general potential u(R,, . . . , RN) which has an absolute minimum R,, = (R,,, 
+R20, . . . , Rm). Now, suppose we couple to it the system A described by the general 
+
+=== PDF PAGE 8 / PRINTED 594 ===
+594 A.O. CALDELRA AND A.J. LEGGETT 
+Hamiltonian (2.2) and that the coupling is weak in the sense that we have to 
+consider just the linear response of the reservoir to the system. In this way, the 
+reservoir is very weakly perturbed by the system and we are allowed to describe 
+the former in the harmonic approximation*. The interaction between the two 
+systems is linear by hypothesis and the system is subject to a general potential 
+V(X). The only thing we must be sure of is that we shall not have to consider very 
+drastic deviations from equilibrium in the system; this is necessary in order to 
+preserve all the approximations we have already started to make. In other words 
+we want to study the whole system described by a Hamiltonian of the form 
+(3.1) 
+where the C,‘s are the coupling constants of the reservoir particles to the system 
+A and the wk’s are the frequencies of motion of the reservoir particles. The action 
+that appears in (2.16) can now be written as 
+S,[R] + S,[x, R] = 
+J 
+L,(R, R> dt + 
+J 
+L,(x, R) dt , (3.2) 
+0 0 
+where 
+and 
+(3.3) 
+L, = - x 1 C,R, . 
+k 
+(3.4) 
+This problem has been solved exactly in22.23 ) and the final expression for the 
+influence functional in (2.16) is 
+F[x, y] = exp - i [x(r) -y(r)][cr(z - s)x(s) - c(*(z - s)y(s)] dz ds, 
+0 0 (3.5) 
+where 
+c: cY(z -s>=c- 
+k 2mwk 
+exp-i&r --s)+ ho exp ic!&(r - 3) + exp - iok(r - s> 
+exp$ - 1 hc% exp- - 1 
+kT 1 (3.6) 
+*The question of the justification for this model as general description of dissipative systems is 
+further discussed in ref. 21. 
+
+=== PDF PAGE 9 / PRINTED 595 ===
+PATH INTEGRAL APPROACH TO QUANTUM BROWNIAN MOTION 595 
+and we have assumed that the environment is initially in equilibrium at tem- 
+perature T which means that its initial density matrix can be written as 
+A@‘, Q’, 0) = I-j ~if’(R;, Q;, 0) 3 
+with the usual 
+(3.7) 
+d?(R;, Q;, 0) = m"k 
+271h Sinh(hc&/kT) exp - 
+mwk 
+2h sinh@wJkT) 
+x (RL2 + QL2) coshz - 2R;Q; 
+II . (3.8) 
+A much more useful way to write the influence functional is in terms of the real 
+and imaginary parts, aR and a, of a(r - s). In fact we can write the propagator 
+for the density operator as 
+I 7 
+SJx] - S,[y] - 
+ss 
+[x(r) - Y(~)l 
+0 0 
+x a,(~ - s)[x(s) -t y(s)] dr ds 
+I 7 
+1 x exp-- h ss 
+[x(r) - ~(~k,(~ - s)tx(s) - y(s)1 dt ds > 
+0 0 
+(3.9) 
+where aR and aI are given by 
+c: aR(z -s)=C- 
+k 2mok 
+coth $; COS ok@ - S) (3.10) 
+and 
+a,(7 - s) = - $& sin e_&(r - s) . 
+k 
+(3.11) 
+Now, once we have the reduced density matrix of the system at t = 0, 
+expressions (2.14) and (3.9) will give us its time development. There is no 
+dependence on reservoir coordinates any longer. As far as the model Hamiltonian 
+(3.1) is concerned we have solved the problem exactly. Now, our main goal in 
+developing all this was to describe a Brownian particle in the classical limit. At 
+this stage it is clear we have no evidence of any such thing occurring. On the 
+contrary, we see no way we can get an irreversible process out of our exact 
+solution. 
+
+=== PDF PAGE 10 / PRINTED 596 ===
+596 A.O. CALDEIRA AND A.J. LEGGETI 
+To solve this problem we need to remember that the ensemble of oscillators 
+must have some definite characteristics in order to behave as an actual reservoir. 
+For example, a reservoir must have infinite size in such a way that the energy lost 
+by the system of interest will not return to it within a finite period of time. Now, 
+suppose that our ensemble of oscillators represents the set of normal modes of 
+vibration of a certain physical quantity in a finite region of space. For instance, 
+it could be the set of normal modes of the electromagnetic field in a box or the 
+vibration of atoms from their equilibrium positions in a crystal (however, see ref. 
+21 for more general considerations about the ensemble of oscillators). Therefore, 
+taking the limit of infinite volume means that we need to consider a continuum 
+of allowed oscillator frequencies. 
+What we intend to do next is to give some arguments to indicate that one can 
+manage to choose a very suitable distribution of oscillators in the continuum limit 
+which will lead us to the Brownian motion. Later on, we shall adopt the chosen 
+model to deduce the Fokker-Planck equation in the classical limit. 
+Suppose that instead of coupling the system A to a reservoir B as we have done 
+in (3.1), we were to excite it by applying a classical external force F(r). In that 
+case, one can easily convince oneself that the propagator of the density matrix 
+would be given byz2) 
+[x(t) - Y(T)lF(T) dz (3.12) 
+If, in addition, we consider that F(r) is not known exactly but instead we know 
+the probability distribution functional P[F(r)] of different histories F(r), the 
+averaged density matrix propagator reads 
+Dx Dy DI;P[F(r)] exp S,[x] - S,b] 
+(3.13) 
+The functional integration over F(r) in the expression (3.13) is the well-known 
+characteristic functiona12’) 
+~[“(‘)~~(~)]~yDI.,P,FolCrpiSII(T1n)(r)lr(i)dT. (3.14) 
+0 
+With the help of (3.14) we can find the correlation of forces between two different 
+
+=== PDF PAGE 11 / PRINTED 597 ===
+PATH INTEGRAL APPROACH TO QUANTUM BROWNIAN MOTION 591 
+instants as 
+(3.15) 
+where 6 stands for functional differentiation (or variation). When P[F(z)] is a 
+Gaussian distribution, 4 has a very simple form22), 
+m[T”‘hY”‘]=‘e~p-~jj td~)-_y(t)lA(~ --~)b(~)--.d~)ld~ ds, 
+00 
+(3.16) 
+which with the help of (3.15) gives 
+(F(5)&)) = A (5 - 8) . (3.17) 
+Now, inserting (3.14) back into (3.13) and assuming P[F(r)] is a Gaussian 
+functional distribution, the propagator J reads 
+Dx DY exp i (PAM - &[YI} exp - $ LX(~) 
+0 0 
+- y(z)]A(z - s)[x(s) -y(s)] dz ds . (3.18) 
+Comparing (3.18) to (3.9) we notice that those two expressions are very similar 
+to each other except for the additional imaginary part that appears in the exponent 
+of (3.9). Regardless of this difference we believe that the real part of the exponents 
+plays the same role in the two cases. The physical meaning of A (T - s) in (3.18) 
+or ha,(r - s) in (3.9) cannot be different. So, ha,(r - s) must give the correlation 
+of forces in the classical regime. The question now is: under what conditions will 
+our quantum-mechanical model reproduce the correlation between the stochastic 
+forces acting on a classical Brownian particle? This is not hard to answer. The only 
+thing we need to do is to investigate the behaviour of ho,(z - s) for high 
+temperatures. When kT B hook (3.10) becomes 
+%(T - s) +g cos Wi(Z - s) + j&W c0sw,(z-s)+*~‘, 
+8 
+(3.19) 
+As we are looking for the expansion of Ra,(t - s) we see that its leading term is 
+ha,(z - s) 2&$ cos co& - s) + 0(h2), (3.20) 
+thus, this is the classical correlation to which our quantum mechanical model led 
+
+=== PDF PAGE 12 / PRINTED 598 ===
+598 A.O. CALDEIRA AND A.J. LEGGETT 
+us. We wish to compare (3.20) to the well-known correlation 
+(F(r)&)) = 2?'/k73(T - S), 
+given by the classical theory of the Brownian motion. Here, 
+of forces’), 
+(3.21) 
+u is the damping 
+constant. To do so, let us consider a continuum of oscillators with density p,,(o). 
+Then. 
+I 
+hU,(T - S) % 5 P(w) 
+PD(O I__ w? 
+COSOJ(T -s)dw. (3.22) 
+If we choose’“) 
+p,(w)P(o) = (3.23) 
+where we have introduced a high frequency cutoff Sz in the distribution of 
+oscillators, eq. (3.22) becomes 
+1 sinCJ(2 -s) 
+hCi,(T - s) = (F(T)F(S)) = 2qkT; 
+(t -3) ’ 
+(3.24) 
+which tends to (3.21) if we let Q -+a. In other words, we shall recover (3.21) when 
+we are interested in times much longer than the typical time R ‘, meaning that 
+it is the low-frequency behaviour of (3.23) which is important in this case. This 
+fact is in accordance with the classical theory of Brownian motion since (3.21) 
+is valid only when we consider times longer than the typical relaxation time of the 
+reservoir. 
+We can still go a bit further if we write (3.10) as 
+ha,(r -S)=; dwx;i(m)coth$Tcosro(r --s), 
+I 0 
+where we have defined 
+(3.25) 
+(3.26) 
+This induces us to regard ha,(7 - s) as a time correlation function of an operator 
+F(t) at different instants. Thus, defining 
+haR(7 -s)= t((~<7),~:(s)})-(F"(r))(F"(s)), (3.27) 
+we recover (3.21) in the classical limit provided that P(t) becomes the classical 
+fluctuating force F(t) in that limit. Expression (3.25) is the well-known 
+
+=== PDF PAGE 13 / PRINTED 599 ===
+PATH INTEGRAL APPROACH TO QUANTUM BROWNIAN MOTION 599 
+fluctuationdissipation theorem”). The advantage of using (3.25) and (3.26) is that 
+besides allowing us to find a suitable distribution of oscillators to recover (3.21) 
+it allows us to find corrections to that distribution by employing sum rules for 
+x&(o). Obviously, these corrections will be important only when we are interested 
+in the short time behaviour of the system24). 
+In order to find the final form of the propagator for the reduced density 
+operator, we still need to find the additional imaginary part in the exponent we 
+have mentioned earlier. At this stage it is a very simple task because the 
+distribution of oscillators is already fixed by (3.23). Inserting this expression in 
+(3.11) one gets 
+P 
+d a,(z -s)=II--p 
+27rd(r -s) s 
+cos w(r - S) do, (3.28) 
+which tends to 
+-R 
+ad7 - 4 = v d(7 _ s) --5(7 -s) 
+as Q+co. Finally, using (3.25) and (3.28) in (3.9) we have 
+I r J(x,y,t;x’,y’,O)= S,[x] - S,[y] - 
+!I 
+rt[x(~)-Y(~)l 
+00 
+d x-6(7 -S)[x(S)+y(s)]drds d(r - s) 
+1 n,lw 
+f r 
+xexp-z 7 s 
+coth gT 
+ss [x(r) -YIP 
+0 00 
+x cos w(z - s)[x(s) -y(s)] * dz ds do. (3.30) 
+This expression can be further simplified if we integrate the term containing the 
+derivative of the delta function by parts. The procedure is straightforward and the 
+result is 
+ss d 
+q[X(r)--(r)]d(t _S) ____ 6(r - s)[x(s) + y(s)] dr ds 
+0 0 
+= - q[x’(r) - y*(z)]G(O) dz 
+0 
++; 
+s [x(z)i.(z) + x(z).?(7) -_d7>W) --Y(7)i(7)1 d7. 
+0 
+(3.3 1) 
+
+=== PDF PAGE 14 / PRINTED 600 ===
+600 A.O. CALDEIRA AND A.J. LEGGET-I 
+At first sight one would worry about the divergence due to S(0). However, we must 
+be careful in interpreting that term. We do better to remember that it comes from 
+the expression (3.28) when L? -co. Thus we can write 
+6(O) = lim 
+sinQ(r -8) a 
+n-r 71(2--s) _=!nS (3.32) 
+Now, as we can see from (3.31), 6(O) appears multiplying the damping constant 
+‘I, so, the product 16(O) is actually 
+~6(0)= lim *, 
+R-n’ n (3.33) 
+This is a very subtle point. At first sight, one should obviously say that when 
+Q+cc this expression diverges. On the other hand, we could argue against this 
+statement by saying that the meaning of the limit R+cc is to consider Q much 
+higher than the typical frequencies for the motion of the Brownian particle. 
+Consequently, depending on how q is related to 52, one would expect the product 
+qs2 to be finite (if v is really the phenomenological damping constant). However, 
+this argument is not free from criticism either. 
+A more formal way to see what happens is by integrating both sides of (3.23). 
+Then, assuming that we have N oscillators in the reservoir and that C(w) = C, a 
+constant, we can express the right hand side of (3.33) as 
+r/Q 3NC’ __=------- 
+n 2mfS2 
+(3.34) 
+In this expression both N and R tend to infinity. Therefore, @I diverges or not 
+depending on the term NSZ m2. If we adopt an ensemble of oscillators where 
+Sz cc N’12 as a model (3.34) clearly converges. 
+However, all these arguments can be avoided if we investigate the limit of large 
+Sz only after evaluating those integrals which contain a,(r - s). If we do this, the 
+first integral on the right-hand side of (3.31) reads 
+, I 
+$ 
+s 
+[-u2(T) _ y2(t)] & + Prdy(o)n+ ‘(‘)I 
+s 
+q [x(z) -y(z)] &. (3.35) 
+0 0 
+where we have appropriately replaced 6(z - s) by (l/x) sin[Q(r - s)]/(r - s). The 
+limit of large 52 simply reflects the fact that we are interested in times 
+t z co -I $ a-‘. Consequently the second term in (3.35) becomes &[x2(0) - y2(0)] 
+which is clearly much smaller than the first one. This result allows us to substitute 
+Q+(O) by @/rc in (3.31) without taking the limit Sz +co. For further considerations 
+about the frequency shift (see definition (3.37) below) we refer the reader to section 
+4 of this paper and to2’). 
+
+=== PDF PAGE 15 / PRINTED 601 ===
+PATH INTEGRAL APPROACH TO QUANTUM BROWNIAN MOTION 
+Defining the relaxation constant y as 
+y = ?/2M 
+and the frequency shift do as 
+we can finally write (3.30) as 
+&[xl - &bl 
+-My 
+s 
+(xi -yj +xj -yi)dz 
+0 
+’ ?f! j-to cothgjj[x(7)-v(7)] xexp-h IL 
+0 00 
+xcoso(7--)[x(s)--((s)]dzdsdo, 
+where we have introduced S, as the renormalized action given by 
+I I 
+S,= [;M,$2-v(x)]d7 + 
+s s 
+$M(Ao)2x2d7. 
+0 0 
+601 
+(3.36) 
+(3.37) 
+(3.38) 
+(3.39) 
+In other words S, is the action with the potential u(x) renormalized by the 
+subtraction of a harmonic term with frequency do. From now on we shall call 
+it the renormalized potential us(x). In the case u(x) = iMo2x2 (simple harmonic 
+oscillator) we define also a renormalized frequency oR by wi = w2 - (Am)‘. This 
+effective potential felt by the particle may always result when we couple it to a 
+reservoir”). Here, this assumes a very simple form because of the model we have 
+been employing to the environment. 
+At this point we wish to emphasize some connections of our expression (3.38) 
+with other previously developed ones. To start with let us notice that the 
+imaginary exponent of that expression is very similar to a two variable action 
+proposed by Morse and Feshbachz5). Suppose for simplicity that uR(x) = 0, then 
+calling the imaginary part of that exponent S,, we have 
+, 
+Se,= [fkC2-$4j2-kQ(xi --y+ +xj -yi)]dz. 
+s 
+(3.40) 
+0 
+Now, defining a new. set of variables {X, j} obtained from the original set by a 
+
+=== PDF PAGE 16 / PRINTED 602 ===
+602 A.O. CALDEIRA AND A.J. LEGGETT 
+rotation by rc/4 we get 
+(3.41) 
+where the Morse and Feshbach Lagrangian spontaneously appears integrated 
+over time. Thus, our expression (3.38) gives us a clue of how to interpret that 
+Lagrangian correctly. The variables ?c and jj (or x and y) cannot be thought as 
+being representative of two different systems interacting with each other. Instead 
+they represent coupled paths going forward and backward in time. These two 
+paths are needed to describe the time evolution of p”(x, y, t). A diagrammatic 
+expansion for the coupling of those paths is made in ref. 17 for a general 
+interaction with a heat bath using the Kjeldysh formalismz6). 
+Some years ago, Nemes and Piza*‘) created a phenomenological theory for 
+dealing with damping in quantum mechanics based on the Morse and Feshbach 
+Lagrangian. There, they regard jj as an unphysical variable and trace it out. The 
+procedure is very interesting; however, they end up with a result which contradicts 
+the linear response theory, namely, the freezing of the width of the wave packet 
+at long times. 
+In a context much closer to ours, Papadopoulos”) deduced an expression very 
+similar to (3.38). Nevertheless, there are two main differences between our 
+formulae. The first one concerns the real exponent in (3.38), which he writes as 
+(real exponent) = - $ M$o coth $$ 
+s 
+[x(r) -Y(T)]* dr , 
+0 
+(3.42) 
+for the case of a harmonic oscillator with frequency o. This can be shown to be 
+a particular case of our expression. We shall exploit this point later on, in section 
+6. The second difference is that he does not have the y dependent term in the 
+imaginary exponent of (3.38). To account for the final effect of that sort 
+he introduces an explicit time-dependent damping ad hoc. However, we 
+is totally unnecessary since a y-dependent term arises spontaneously 
+microscopic calculation. 
+of term 
+think it 
+from a 
+4. Coupling to velocities 
+Suppose we wish to study the motion of a particle coupled to a reservoir such 
+that the total Lagrangian is given by 
+ux, x, q, 4) = ; Mi2 - v(x) + x 1 e,lji + c $ncj~ - 1 grlofqf . 
+I I 
+(4.1) 
+
+=== PDF PAGE 17 / PRINTED 603 ===
+PATH INTEGRAL APPROACH TO QUANTUM BROWNIAN MOTION 603 
+This expression differs from the one with which we dealt above only through the 
+coupling term (compare (3.4) and (4.1)). 
+Consequently, we cannot apply the results of the previous section to this new 
+model, at least directly. What we are going to show is that we can transform (4.1) 
+into a very similar Lagrangian with a coordinate coupling instead. 
+In order to overcome this probiem, let us introduce a new set of coordinates 
+given by 
+y, = m4, + e,x . (4.2) 
+If we write L(x, i’, y, j) and use the Euler-Lagrange equations we shall not 
+reproduce the correct equations of motion we obtain from (4.1). This means that 
+L is not invariant under the transformation (4.2). It is a very simple exercise to 
+prove that the correct Langrangian in the new set of variables is 
+i(x,x,y.~)=:Mx2-v(x)-~~+~~ +iC I 
+, s-;+ (4.3) 
+Defining an extra variable R, such that 
+R-y, 
+mo, ’ 
+we can rewrite (4.3) as 
+(4.4) 
+E(x, i, R, d) = i MX2 - v(x) - 7 s + 1 C,xR, + 1 irndf - 1 ;mwfRf , 
+l I i I 
+(4.5) 
+where Ci = e,oi, which is exactly of the form of the Lagrangian we used in the 
+previous section. The difference here is that the transformation (4.2) introduced 
+a new quadratic term into the bare potential v(x). Thus, the new potential is 
+i(x)=v(x)+$&x2~ I 
+(4.6) 
+Now we can proceed as we have done before. Our problem was reduced to the 
+one of section 3. The propagator for the reduced density operator is once again 
+given by the expression (3.38). What is worth noting here is the form of the 
+renormalized potential V,(x) which is written as 
+r&(x) = V(x) - 4 M(Aco)~x~. (4.7) 
+The frequency shift do is defined in eq. (3.37) however, to get it we have already 
+assumed a specific distribution of oscillators. We can proceed more generally if 
+we follow the steps (3.28) to (3.31) with a,(z -3) given by the more general 
+
+=== PDF PAGE 18 / PRINTED 604 ===
+604 A.O. CALDEIRA AND A.J. LEGGETT 
+expression (3.11). In this way do is such that 
+M(do)2=2C C2 
+~coso,(z -5) 
+, 2mof 
+=2+ 
+T=s , 2mof’ (4.8) 
+which clearly reduces to (3.37) if we assume the distribution (3.23) to be valid. The 
+advantage of working with (4.8) is that we can show that the correction potential 
+which depends on do, exactly cancels the extra bit in (4.6). Moreover, this fact 
+is completely independent of the distribution of oscillators we are using. Thus, for 
+the model proposed in (4.1) we can say that the renormalized potential is the same 
+as the bare one. that is 
+&(x) = v(x). 
+The physical interest of the apparently rather academic point discussed in this 
+section lies in the conclusion that not every system which is dissipatively coupled 
+to its environment need undergo a frequency shift (or potential renormalization) 
+due to the coupling. This point is of some significance in the context of the 
+quantization of LCR- circuits and similar systems (where a failure to appreciate 
+it has, indeed, caused some unnecessary confusion in the recent literature), and 
+is discussed further in ref. 21. 
+5. The Fokker-Planck equation 
+In the last two sections we derived an expression for the propagator of the 
+reduced density operator of a particle interacting with a reservoir with some 
+specific characteristics. We also showed that in classical limit, the real exponential 
+of (3.38) reduces to the characteristic functional of the stochastic force acting on 
+a Brownian particle. At the same time we gave a definite form for the additional 
+imaginary part of the integrand, i.e. the term involving x.?, etc, in (3.38). The 
+question we want to answer now is whether this term makes sense. In other words: 
+is that term compatible with the classical Brownian motion of a particle? In order 
+to answer this question we shall initially investigate the equation of motion for 
+the reduced density operator in the semiclassical region. If we wish to compare 
+this equation to the one of a classical Brownian particle we must find a way to 
+write it down in the phase-space representation. That is the only way we can 
+compare it to the equation of motion of the phase-space distribution in classical 
+physics. The way we can perform the transformation from the Hilbert to the phase 
+space is by using the so-called Wigner distribution function29). For recent reviews 
+on Wigner’s formalism we refer the reader to3”O). 
+Let us start by writing (3.38) when 2kT 2 hln 9 ho,, 52 being the cutoff 
+
+=== PDF PAGE 19 / PRINTED 605 ===
+PATH INTEGRAL APPROACH TO QUANTUM BROWNIAN MOTION 605 
+frequency of the reservoir oscillators. This reads 
+&[x] - S,[y] - My 
+s 
+[xi - yj, 
+0 
+Tl[x(r) - y(r)]2 dr . (5.1) 
+0 
+At this point one should worry about the meaning of this high temperature 
+quantum-mechanical propagator. Of course this expression becomes meaningless 
+if we consider the classical limit kT 9 ho, and still keep its quanta1 form. 
+However, one must bear in mind that this is our first step to obtain an equation 
+of motion for the reduced density operator in the classical limit. Later, we shall 
+take the appropriate measures in order to be consistent with this approximation. 
+We shall use (5.1) rather than (3.38) only to simplify our future expressions. 
+What we shall do now is to follow Feynman’s procedure inz2) when he derives 
+the Schroedinger equation from the functional integration formalism. Here our 
+problem is analogous to that one. While in2*) one has the propagator for the wave 
+function from which one gets the equation of motion for $, here we have the 
+propagator for the density operator from which we intend to get a master equation 
+for b. 
+Suppose we have the reduced density operator at a time t and wish to find its 
+value at t + L where e +O. By (2.14) we have 
+P(x,y,t +c)= 
+ss 
+dx’ dy’J(x, y, t + 6; x’, y’, t)p”(x’, y ‘, t) . (5.2) 
+The propagator J in (5.2) can be written in a very simple form when L is small. 
+To do so we only need to remember that for small time intervals any regular path 
+can be approximated by a straight line. Thus, functional integrations over paths 
+in short time intervals can be put equal to the value of the integrand times a 
+normalization constant22). Then, 
+I+6 
+J(x,y,t+c;x’,y’,t)=$exp$ 
+‘is 
+($fi2 - uR(x)) dr 
+I+6 t+c 
+- 
+s 
+($f~’ - u&) dr - 
+s 
+My[xl -yi, +yi -xp]dr 
+1 f f 
+I+6 
+1 x exp-- A2 s 
+2MykT[x - y]* dr . 
+I 
+(5.3) 
+
+=== PDF PAGE 20 / PRINTED 606 ===
+606 A.O. CALDEIRA AND A.J. LEGGETT 
+All the integrals appearing above can also be approximated when c-0. Calling 
+x(t + t) = x, Y(t + 6) =Y, x(t) = x’ and Y(t) =Y’ and using the fact that 
+I+< 
+x-x’ xz_------, 4,&-Y’ and t t s 
+(5.4) 
+, 
+in the expression for J, eq. (5.2) becomes 
+_!!7 (x _3, +7 (y _;)82_!!$3x _y)2 
+- y (x - Y )(P, - 82) - F (BE - 8212 
+i 
+xp”(x -B,?Y -B*,t>3 (5.5) 
+where x - x’ s j?, and y - y’ = p2. Now we can evaluate (5.5) in the limit t -+O. 
+First of all we must notice that the integral in (5.5) contains two very fast 
+oscillating terms with exponents proportional to t -I. It is clear the main 
+contribution comes from 8, and /& very small, otherwise the factor 
+exp(iM/2th)(B: - /?:) would oscillate wildly giving no finite contribution to (5.5). 
+To be more specific, we want 
+8, Z/?*M $ 
+0 
+“2, (5.6) 
+because in this region the phase of both exponentials will change by an amount 
+of order 1. One might wonder at this point about the contribution of the region 
+jj, z flz z b with finite fi. In this case the phase of the two exponentials combined 
+would change by an amount of order 1 when 
+(5.7) 
+Now, if we define new variables D; = p, - y(x - y)~ and /J; = b2 + y(x - y)t and 
+expand the exponentials of (5.5) in t we can easily show that in the limit E +O all 
+terms depending on d/I in the integrand will be 0(6*). This means that we can 
+safely forget the region j?, z p2 z /I. 
+The procedure now is simple. Let us expand p(x - j?,, Y - fi2, t) for fl, z. b2 z 0 
+
+=== PDF PAGE 21 / PRINTED 607 ===
+PATH INTEGRAL APPROACH TO QUANTUM BROWNIAN MOTION 607 
+and keep all terms O(c) in the product. In terms of /I; and /?; it reads 
+a2i +:_P;'-ILUR(X)~+lEURCV)P"- 
+ay h h q!E(x_y)$j . 1 (5.8) All the integrals appearing in (5.8) are of the Fresnel type and can be evaluated 
+from - cc to + co since we know their main contribution will come from a tiny 
+region about /I; = /I; = 0. Expanding the left-hand side of (5.8) up to terms Co(t) 
+and equating them to the corresponding ones on the right-hand side one concludes 
+the following: 
+a) The zeroth order term in t gives us the normalization constant 
+27Lch A2=---; 
+M (5.9) 
+b) The first order term in t gives us the desired equation of motion for fi in the 
+semiclassical region, 
+ac h a2b+ ii a2b a6 hdx) _ 
+rpp 2Mi 8.x’ ----~-~(x -Y); +y(x -Y)- +- 2M i ay ay ihP 
+OR(Y) - 2M@T( _ y)‘p”. -TP-Tx (5.10) 
+Once again, we wish to emphasize that (5.10) is not the most general equation 
+for p”. It is valid only when we have 2kT >, h0 9 Aw,. If we were interested in 
+obtaining something more general we would not have been allowed to write (5.1) 
+instead of (3.38) and the last term of (5.10) would involve a time integration (it 
+would depend on the past history of the system). 
+The form (5.10) is not the most suitable one if we wish to compare it to 
+previously developed master equations. We would rather write it as an operator 
+equation independent of representation. This can be done with the help of some 
+identities such as 
+and 
+(x IY) =w -Y>, (XIW)IY) = U(YV(X -Y) 
+(5.11) 
+(ilp(y)= -S&6(x-y). 
+Employing them one can check that (5.10) is the coordinate representation of the 
+
+=== PDF PAGE 22 / PRINTED 608 ===
+608 A.O. CALDEIRA AND A.J. LEGGETT 
+operator equation 
+(5.12) 
+where H, is the renormalized Hamiltonian of the system alone, D = qkT, 
+A = - ihy and [ ,] stands for the commutators while ( , } for the anti-commutators. 
+Eq. (5.12) was deduced by Dekker’) by a completely different method. Actually 
+his equation contains two additional diffusive terms (besides D) which he shows 
+to vanish under certain conditions. Moreover those extra terms are due to the 
+inclusion of noise sources in the equation of motion of the position as we 
+mentioned in the introduction. Another difference is that Dekker’s equation is 
+valid for zero temperature with D given by some finite value while ours is valid 
+only when T is high and D = qkT. 
+At the beginning of this section we have pointed out that once we had the 
+master equation for p’, another step would be necessary to compare it to the 
+equation for the classical distribution in phase space. As we have said before what 
+we need now is the Wigner distribution (or, the Wigner transform of p”) defined 
+by 7 
+(5.13) 
+In spite of presenting a purely quanta1 description of a system the Wigner 
+distribution becomes very important when we are interested in the semiclassical 
+region. This is because Wigner’s theory is described directly in the classical phase 
+space of the system. When h -+O, w(x,p, t) tends to the classical distribution in 
+phase space. For discussions on the validity of this assertion we refer the reader 
+back to refs. 3 and 30. 
+If we take the Wigner transform of equation (5.12) and employ the identities 
+(5.11) we shall find (see’) for details) 
+aw ~pr~+%+~+27~prv+D111’ 
+Z = -ax ap ap ap' ’ (5.14) 
+which is the well-known Fokker-Planck equation describing the time development 
+of the Wigner transform of the reduced density operator of the system. This is a 
+purely quantum mechanical equation. However, in order to be consistent with the 
+fact that we are considering D = VkT we need to take the limit h-+0 in the 
+expression for w. As we said before, w(p, x, t) tends to the classical phase space 
+distribution in this limit. Then we conclude that (5.14) describes the time 
+development of the phase space distribution of a classical Brownian particle when 
+h-+0. 
+
+=== PDF PAGE 23 / PRINTED 609 ===
+PATH INTEGRAL APPROACH TO QUANTUM BROWNIAN MOTION 609 
+We also realize that the third term on the right-hand side of (5.14) is a direct 
+consequence of the existence of the y dependent term in the imaginary part of the 
+exponent in (3.38). Therefore, the latter is responsible for the appearance of a force 
+of the form VA! in the classical equation of motion for the Brownian particle. 
+What we have achieved so far is that our quantum-mechanical expression (3.38) 
+for the propagator J is in total accordance with the equations believed to describe 
+the classical motion of a Brownian particle. It also means that the choice made 
+for p,(w) C’(o) in (3.23) is a very suitable one, allowing us to describe J solely 
+in terms of the phenomenological damping constant q. 
+6. Some applications 
+In this section we shall study the behaviour of p”(x, y, t) for some specific 
+examples, namely the damped simple harmonic oscillator and its special case, a 
+damped free particle. We shall now drop the restriction of high temperatures 
+because we are interested in the extreme quantum limit (T-0) as well. However, 
+before starting it we would like to point out that the model presented in this paper 
+is compatible with several kinds of motion. For example, suppose we start off from 
+a harmonic potential u(x) = $4w2x2. One can easily show that both underdamped 
+and overdamped motions can be described by a proper choice of the microscopic 
+parameters of the theory. This is valid for coordinate coupling as well as for 
+velocity coupling. The difference between these two cases is that in the former one, 
+it is the renormalized frequency wR given by ok = o* - (do)* which is the 
+frequency to be compared to y, while in the latter this oR is such that wR = w. For 
+details we refer the reader to3’). 
+Now, we shall proceed to evaluate (3.38) for the harmonic oscillator and the 
+free patrticle (wR = 0). To begin with let us rewrite (3.38) as 
+J(xf3 Yf3 l; xi, Yi, O> Dx DY ev i @, ~1 exp - :4rX, ~1, (6.1) 
+where 
+I 
+S[x,y]= 
+s 
+L(x,.?,y,j)dz- (6.2) 
+0 0 0 
+L =;Mi*-+Mj*-+M~;x*+fMco;y*-Myxj +Myyi (6.3) 
+0 00 
+x cos v(z - s)[x(s) - y(s)] ds dz dv . (6.4) 
+
+=== PDF PAGE 24 / PRINTED 610 ===
+610 A.O. CALDEIRA AND A.J. LEGGETT 
+The procedure to evaluate (6.1) is simple. We shall expand the whole integrand 
+about the two-dimensional path which makes s”[x, y] an extremum. This path is 
+found by 
+ss” d aL aL 
+iG=zax-ax =Mi+My~+Mc&x=O, 
+8s” d aL dL 
+by dr aj -=Mj+MyifMwZ,y=O, 
+(3) 
+(6.5) 
+(6.6) 
+because the last two terms in (6.2) involve just end point variations. It is suitable 
+to introduce new variables in order to solve (6.5) and (6.6). Then we define 
+X(z) = x(s) +-V(T) and t(z) = x(z) -J(T) (6.7) 
+and our equations become 
+x+2ylli+o2,x=o, (6.8) 
+4’-2y[+o2,5 =o. (6.9) 
+When X(t) = X,, C(t) = &, X(0) = X, and ((0) = t,, their solutions are: 
+X(z)=(sinwt)~‘(X,e;“sinw~ +X,sino(t -T)}e-;‘, (6.10) 
+[(T) = (sin wt)-‘{tfe -?‘sin oz + 5, sin o(f - T)] eYi, (6.1 1) 
+for the underdamped harmonic oscillator (UDHO from now on) with 
+<I)’ E oi - 1”. Fo r tl le overdamped case (ODHO) the solutions are obtained by 
+substituting w by iG in (6.10) and (6.1 1) where ~3’ E y’- ok, while for the free 
+particle (FP) the substitution is of w by iy. Actually, these substitutions will be 
+always valid for our subsequent expressions, however we warn the reader that in 
+some of them (FP ones) the limit (,+--+O must be taken carefully wherever it is 
+necessary. Bearing this in mind we shall write the formulae in this section only 
+for the UDHO. 
+The action ,‘?[,I’, <] calculated along those paths (6.10-6. I 1) is found to be 
+expressible as 
+(6.12) 
+Now. let us write our functional integral in terms of the translated paths 
+c’(T) = C(T) - c(T) and X’(T)=X(T)-z?(T), 
+
+=== PDF PAGE 25 / PRINTED 611 ===
+PATH INTEGRAL APPROACH TO QUANTUM BROWNIAN MOTION 
+with t’(O) = t’(t) = 0 and X’(0) = X’(t) = 0. Then one gets 
+R 
+A(t) = T s 
+dvv coth $yI,(t), 
+0 
+I I 
+A,(t) = g 
+ss sin or cos V(T - S) sin ws e”‘+ ‘) dr ds , 
+0 0 
+R 
+B(t) = T s 
+dvv coth $&IV(~), 
+0 
+, I 
+B(r)= y7’ Y 
+sin’ot sin wr cos v(z - S) sin w(t - s) ey(‘+“) dr ds , 
+0 0 
+R 
+C(t) = G s 
+dvv coth &T C,(t) , 
+0 
+, , 
+sinw(t -r)cosv(z -.r)sino(t -.s)ey(r+S)dr ds, 
+0 0 
+x exp k ME 5'1 
+and 
+&.[& (‘I= $ I 
+dvv coth $& ~(z)cosv(z -s){‘(S)dr ds. 
+0 0 0 
+611 
+(6.15) 
+(6.16) 
+(6.17) 
+(6.18) 
+(6.19) 
+(6.20) 
+(6.21) 
+(6.22) 
+(6.23) 
+What is left to evaluate now is the functional integral (6.22). As both t’(z) and 
+X’(z) vanish at z = 0 and t = t, we can expand them in terms of an orthogonal 
+
+=== PDF PAGE 26 / PRINTED 612 ===
+612 A.O. CALDEIRA AND A.J. LEGGETT 
+set obeying the same boundary conditions**), 
+X’(t) = C X, sin W,T and ~‘(r)=~&,,sino,,,r, (6.24) 
+n m 
+where o, = m/t. Now, inserting (6.24) in (6.22) one gets after some straight- 
+forward integrations (see”) for similar procedure) 
+(6.25) 
+where c is the normalization constant. This result is exactly the square of the wave 
+function amplitude for the undamped case. So, it means that the damping modifies 
+just the exponent of J(X, ts t; X,, t,, 0) and its final form is 
+L(r)XiSf- N(t)XfS, exp - k {A(t)Sf + B(tEf5; + C(t)tY} . (6.26) 
+Now we have the tool we need to calculate the time development of the reduced 
+density operator of the system in which we are interested. For example, suppose 
+we initially have the system in a pure state described by a wave packet centered 
+at the origin with initial momentum p and width 0. The reduced density operator 
+is then 
+p(X,, (,, 0) = (2na*)- I:* exp !+ exp - v (6.27) 
+and its time evolution reads 
+d(& 5f, 2) = 
+ss 
+dX, dS,J(& i’r> f; x,, 5,,O)p”W,, r,, 0) . (6.28) 
+which can be evaluated with the insertion of (6.27) and (6.26). All the integrations 
+in (6.28) are Gaussians and very simple. However, despite the simplicity the 
+resulting expressions in the intermediate steps are quite lengthy, forcing us to 
+quote only the final result 
+x exp - 
+c A 2a’L’ 
+x+p- 
+(4a*K,L - Bh)* 
+ii? h2(8a2K; + 4hC,) 1 5? 
+f 
+x exp i K2Xfrf - (6.29) 
+
+=== PDF PAGE 27 / PRINTED 613 ===
+PATH INTEGRAL APPROACH TO QUANTUM BROWNIAN MOTION 613 
+where we must remember that A, B, Cl, K,, K2, L and N are all functions of time 
+and have defined 
+c,(r)~c(r)+$, ~,(t)=K(r)+y and Kdt)=K(l)-y. (6.30) 
+Of particular interest is the expression we can get from (6.29) by making 
+&=x,-yr=O or X,=xr+y,=2x,, that is 
+P(x,,x,,I)=F2(1)[2~2~~~~C1]1’2exp-2o~~-hC,(x’-~)2. (6.31) 
+This shows how the initial 1$(x)1’ develops in time. Its centre follows the path 
+given by 
+P q(t) = - 3 2N(t) 
+(6.32) 
+which is the one of a classical damped particle, for example, for the UDHO it 
+reads 
+x0(t) = & sin ot edy’ 
+while its width obeys the equation 
+l?(t) = ; 20’K:(t) + fiC,(t) 
+> N2(t) ’ 
+(6.33) 
+(6.34) 
+This expression gives us the width of p(x, x, t) at any time t. An interesting result 
+is obtained when we study it at infinite times. The procedure is straightforward 
+but extremely tedious. Inserting (6.13), (6.20) (6.21) and (6.30) into (6.34) one gets 
+02(t+co) = ((x - x,(a~))~) = h rr[ vcoth&(&(W;_~$v+4Y2v2)~ d 
+0 (6.35) 
+where we took the limit s2 + co at the upper limit of integration. Expression (6.35) 
+is a very familiar one. The imaginary part of the response of a harmonic oscillator 
+of frequency oR to an external force F(t) is given by 
+x”(V) = 1 w A4 (v’ - Wi)’ + 4y2v2 
+Thus, 
+cc 
+a2(ca) = 1 s 
+dv coth &“(v), 
+0 
+which is the well-known fluctuationdissipation theorem[32]. 
+(6.36) 
+(6.37) 
+
+=== PDF PAGE 28 / PRINTED 614 ===
+614 A.O. CALDEIRA AND A.J. LEGGETT 
+7. Conclusions 
+Using a specific model for a particle interacting with a reservoir we have 
+deduced the expression (3.38) for the propagator of the reduced density operator 
+of that particle. Under certain circumstances we could get a closed expression for 
+b(x, y, t) at any instant t and for all temperatures as we have shown in the 
+previous section. The centre of the packet p(x, x, t) follows the motion of a 
+classical Brownian particle (see (6.33)) and its width in the infinite time limit is 
+shown to agree with the fluctuation-dissipation theorem (6.35). The latter result 
+can be exploited a bit further. 
+To start with, (6.35) disagrees with ref. 27. There the authors claim that the 
+width of the wave packet of a free particle “freezes” at infinite time. If we make 
+wR+O in (6.35) we can show that when T-0, (6.35) diverges as (- lnv) as v -+O. 
+This is equivalent to say that a’(t) behaves as In t when t +co. Consequently, a’(t) 
+spreads slower than it does in the undamped case (a’(t) = J-), however 
+it does not freeze. 
+We attribute this difference between our approaches to the fact that, unlike us, 
+the authors of?‘) do not take any sort of diffusive effects into account. By making 
+4[x, y] = 0 in (6.1) we reproduce their results, despite the completely different 
+physical interpretation of the two approaches. 
+Diffusion terms were also omitted from other attempts to quantize Brownian 
+Motion starting from the Morse and Feshbach Lagrangian (see, for example, refs. 
+33 and 34 or sections 3 and 6 of ref. 35). 
+Our second comparison comes out when we study the extremely underdamped 
+limit (y -0). When this happens the final width at t -+ cc can be worked out at 
+any temperature as 
+h 
+a’(c0) = - ho 
+2M0, coth 2 2kT’ (7.1) 
+which is the well-known result of equilibrium quantum statistical mechanicsZ2). 
+The same expression should be obtained if instead of working with the exact 
+propagator J given by (3.38) we had worked with the one in (5.1) but with 2MkTy 
+replaced by hMyw, coth(hoJ2kT). In other words, we should have a diffusion 
+constant (in momentum space) given by 
+D = Myo, h coth ho, 2kT’ (7.2) 
+valid at all temperatures. When T-co, (7.2) gives us the classical relation 
+D = 2MykT, while when T-+0 the diffusion constant becomes 
+D = Myhw, = $,&wR, (7.3) 
+which is the result found by Dekker’). 
+
+=== PDF PAGE 29 / PRINTED 615 ===
+PATH INTEGRAL APPROACH TO QUANTUM BROWNIAN MOTION 615 
+As we have pointed out in the introduction, Dekker applied canonical 
+quantization to complex variables making use of explicit noise sources in the 
+equations of motion of the position and momentum operators (however, see ref. 
+36 for an alternative derivation of expression (7.3)). It is true there are microscopic 
+models which allow one to do so, nevertheless it can be showr?‘) that these 
+equations have the same solutions as the usual ones (with noise sources only in 
+the momentum equation) in the limit of very weak damping. 
+The trick proposed in (7.2) does not seem to be correct for finite y. It means 
+that the kernel cl,(t - t’) appearing in the exponent of the influence functional in 
+(3.9) can always be replaced by a function of the temperature times a delta 
+function of (t - t’). However, this is not true for our specific model. Even if one 
+can find a different model for the reservoir for which (7.2) is correct for any y, 
+our model serves as a counter-example to show that the procedure is not general. 
+A diffusion constant of the form (7.2) was proposed by Papadopoulos2*) and 
+Svin’in3’). But, once again, their theories are valid only in the weak damping limit 
+because this is a necessary condition for the validity of that expression. 
+Actually, it has been an old dream of many physicists to try to describe the 
+relaxation to equilibrium by Markoffian equations (no time kernels involved) even 
+in the quantum regime. However, we are a bit sceptical about the possibility of 
+this, since as we have shown simple models can recover both equilibrium statistical 
+mechanics and linear response theory asymptotically without being Markoffian at 
+all. Ford et al.16) also achieved the same conclusion about the Markoffian 
+assumption in the quantum limit. Notice that we are talking here only about the 
+diffusion terms. Our drift term (the one involving y) is always Markoffian. In order 
+to find non-Markoffian corrections to the latter one needs to study the 
+modifications of x”(v) due to the sum rules which are important to describe the 
+short time behaviour of the Brownian particle. 
+Finally, we should emphasize that although we have taken a model for the 
+system-environment coupling that at first sight looks very arbitrary, the main 
+features of our results should be fairly insensitive to its details. In particular, 
+modification of the choice (3.23) for the quantity p,(o)C2(o) should make little 
+qualitative difference to the results provided only that the form (3.23) continues 
+to hold for o of the order of the characteristic frequencies of the system; all it will 
+really affect is the frequency shift (Am)‘, which is in any case not directly ob- 
+servable (cf. the discussion of the analogous point in the tunnelling problem ir?‘). 
+Acknowledgements 
+We are grateful to Dr. G. Barton, Dr. P.L. Knight, Prof. A.B. Pippard, Dr. K.L. 
+Sebastian, Prof. D.J. Wallace and Prof. A.F.R. de Toledo Piza for helpful 
+discussions, correspondence and preprints. 
+
+=== PDF PAGE 30 / PRINTED 616 ===
+616 A.O. CALDEIRA AND A.J. LEGGETT 
+References 
+[I] Selected Papers on Noise and Stochastic Processes, Nelson Wax, ed. (Dover, 
+New York, 1954). 
+[2] E. Kanai. Prog. Theor. Phys. 3. (1948) 440. 
+[3] W.H. Louisell, Quantum Statistical Properties of Radiation (Wiley, New York, 1973). 
+[4] M.D. Kostin, J. Chem. Phys. 57 (1972) 3589. 
+[S] E. Nelson, Phys. Rev. 150 (1966) 1079. 
+[6] K. Yasue, Annals of Physics 114 (1978) 479. 
+[7] H. Dekker, Phys. Rev. A 16 (1977) 2116. 
+[S] I.R. Senitzky, Phys. Rev. 119 (1960) 670. 
+[9] H. Mori, Prog. Theor. Phys. 33 (1965) 423. 
+[IO] R. Zwanzig, J. Chem. Phys. 33 (1960) 1338. 
+[I I] S. Nakajima, Prog. Theor. Phys. 20 (1958) 948. 
+[I21 H. Haken, Rev. Mod. Phys. 47 (1975) 67. 
+[I31 F. Haake, in: Quantum Statistics in Optics and Solid State Physics, Springer Tracts in Modern 
+Physics, vol. 66 (Springer, Berlin, 1973). 
+[I41 R.H. Koch, D.J. Van Harlingen and John Clarke, Phys. Rev. Lett 45 (1980) 2132. 
+[I51 R. Benguria and M. Kac, Phys. Rev. Lett. 46 (1981) 1. 
+[ 161 G.W. Ford, M. Kac and P. Mazur. J. Math. Phys. 6 (1965) 504. 
+[17] G. Iche and P. Nozieres, Physica 91A (1978) 485. 
+[IS] E.B. Davies, Quantum Theory of Open Systems (Academic Press, New York. 1976). 
+(191 J. Schwinger, J. Math. Phys. 2 (1961) 407. 
+[20] R. Zwanzig, J. Stat. Phys. 9 (1973) 215. 
+[21] A.O. Caldeira and A.J. Leggett, to appear in Annals of Physics, 
+[22] R.P. Feynman and A.R. Hibbs. Quantum Mechanics and Path Integrals (McGraw-Hill, New 
+York. 1965). 
+[23] R.P. Feynman and F.L. Vernon. Annals of Physics 24 (1963) 118. 
+[24] D. Forster, Hydrodynamic Fluctuations. Broken Symmetry, and Correlation Functions 
+(Benjamin, New York, 1975). 
+[25] P.M. Morse and H. Feshbach, Methods of Theoretical Physics (McGraw-Hill, New York. 1953) 
+sect. 3.2. 
+[26] L.V. Kjeldysh, JEPT-Sov. Phys. 20 (1965) 1018. 
+[27] M.C. Nemes and A.F.R. de Toledo Piza, Revista Brasileira de Fisica 7 (1977) 261. 
+[28] G.J. Papadopoulos, J. Phys. A 1 (1968) 413. 
+[29] E. Wigner. Phys. Rev. 40 (1932) 749. 
+[30] M.V. Berry, Phil. Trans. of the Roy. Sot. of London 287 (1977) 237. 
+[31] A.O. Caldeira. Ph.D. Thesis, University of Sussex (1980) unpublished. 
+[32] L.D. .Landau and E.M. Lifshitz, Statistical Physics (Pergamon, London, 1969) p. 393. 
+[33] Y. Tikochinsky. J. Math. Phys. 19 (1978) 888. 
+[34] H. Feshbach and Y. Tikochinsky, in: A Festschrift for 1.1. Rabi, Trans. New York AC. SC. 
+Ser. 2 vol. 38 (1977) 44. 
+[35] H. Dekker, Phys. Rep. 80 (1981) 1. 
+[36] H. Dekker, Physica 95A (1979) 31 I. 
+[37] G.S. Agarwal, Phys. Rev. A 4 (1971) 739. 
+138) I.R. Svin’in, Theor. Math. Fiz. 27 (1976) 270. 

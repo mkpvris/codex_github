@@ -1,0 +1,434 @@
+% Source PDF p.11 (printed p.597); lead-in to (3.15) is in part1.tex.
+\begin{equation}
+\langle F(\xi)F(s)\rangle
+=-\left.
+\frac{\delta^2\phi}
+{\delta\!\left[\dfrac{x(\xi)-y(\xi)}{\hbar}\right]
+ \delta\!\left[\dfrac{x(s)-y(s)}{\hbar}\right]}
+\right|_{x=y},
+\tag{3.15}\label{eq:3.15}
+\end{equation}
+ここで $\delta$ は汎関数微分（または変分）を表す。$P[F(\tau)]$ が Gaussian 分布であるとき、$\phi$ は非常に簡単な形をとる\cite{ref22}。
+\begin{equation}
+\begin{aligned}
+\phi\!\left[\frac{x(\tau)-y(\tau)}{\hbar}\right]
+=\exp\biggl\{-\frac{1}{\hbar^2}\int_0^t\!\mathrm d\tau\int_0^\tau\!\mathrm ds\,
+[x(\tau)-y(\tau)]A(\tau-s)[x(s)-y(s)]\biggr\},
+\end{aligned}
+\tag{3.16}\label{eq:3.16}
+\end{equation}
+これと\eqref{eq:3.15}から、
+\begin{equation}
+\langle F(\xi)F(s)\rangle=A(\xi-s)
+\tag{3.17}\label{eq:3.17}
+\end{equation}
+を得る。
+
+ここで\eqref{eq:3.14}を\eqref{eq:3.13}に代入し、$P[F(\tau)]$ が Gaussian 型の汎関数分布であると仮定すると、伝播関数 $J$ は
+\begin{equation}
+\begin{aligned}
+J(x,y,t;x',y',0)
+={}&\iint\mathcal D x\,\mathcal D y\,
+\exp\!\left\{\frac{\mathrm i}{\hbar}(S_A[x]-S_A[y])\right\}\\
+&\times\exp\biggl\{-\frac{1}{\hbar^2}
+\int_0^t\!\mathrm d\tau\int_0^\tau\!\mathrm ds\,
+[x(\tau)-y(\tau)]A(\tau-s)[x(s)-y(s)]\biggr\}
+\end{aligned}
+\tag{3.18}\label{eq:3.18}
+\end{equation}
+となる。
+
+\eqref{eq:3.18}と\eqref{eq:3.9}を比較すると、\eqref{eq:3.9}の指数に現れる付加的な虚部を除いて、両者は非常によく似ている。この違いにかかわらず、指数の実部は二つの場合で同じ役割を果たすと考えられる。\eqref{eq:3.18}の $A(\tau-s)$ と\eqref{eq:3.9}の $\hbar\alpha_R(\tau-s)$ の物理的意味が異なるはずはない。したがって、$\hbar\alpha_R(\tau-s)$ は古典領域における力の相関を与えなければならない。ここでの問題は、どのような条件の下で、この量子力学的模型が古典的な Brownian 粒子に作用する確率的な力の相関を再現するか、ということである。これに答えるのは難しくない。高温での $\hbar\alpha_R(\tau-s)$ の振る舞いを調べればよい。$kT\gg\hbar\omega_k$ のとき、\eqref{eq:3.10}は
+\begin{equation}
+\alpha_R(\tau-s)\approx
+\frac{kT}{m\hbar}\sum_i\frac{C_i^2}{\omega_i^2}\cos\omega_i(\tau-s)
++\frac{\hbar}{12mkT}\sum_i C_i^2\cos\omega_i(\tau-s)+\cdots
+\tag{3.19}\label{eq:3.19}
+\end{equation}
+となる。求めているのは $\hbar\alpha_R(\tau-s)$ の展開なので、その主要項は
+\begin{equation}
+\hbar\alpha_R(\tau-s)\approx
+\frac{kT}{m}\sum_i\frac{C_i^2}{\omega_i^2}\cos\omega_i(\tau-s)
++\mathcal O(\hbar^2)
+\tag{3.20}\label{eq:3.20}
+\end{equation}
+である。これが、この量子力学的模型から得られる古典的な相関である。
+
+% Source PDF p.12 (printed p.598).
+\eqref{eq:3.20}を、Brownian 運動の古典論が与えるよく知られた力の相関\cite{ref01}
+\begin{equation}
+\langle F(\tau)F(s)\rangle=2\eta kT\delta(\tau-s)
+\tag{3.21}\label{eq:3.21}
+\end{equation}
+と比較したい。ここで $\eta$ は減衰定数である。そのため、密度 $\rho_D(\omega)$ の連続な振動子分布を考える。すると、
+\begin{equation}
+\hbar\alpha_R(\tau-s)\approx\frac{kT}{m}
+\int_0^\infty\rho_D(\omega)\frac{C^2(\omega)}{\omega^2}
+\cos\omega(\tau-s)\,\mathrm d\omega
+\tag{3.22}\label{eq:3.22}
+\end{equation}
+となる。ここで、次のように選ぶ\cite{ref20}。
+\begin{equation}
+\rho_D(\omega)C^2(\omega)=
+\begin{cases}
+\dfrac{2m\eta\omega^2}{\pi},&\omega<\Omega,\\[0.5em]
+0,&\omega>\Omega.
+\end{cases}
+\tag{3.23}\label{eq:3.23}
+\end{equation}
+振動子分布に高周波数カットオフ $\Omega$ を導入すると、\eqref{eq:3.22}は
+\begin{equation}
+\hbar\alpha_R(\tau-s)=\langle F(\tau)F(s)\rangle
+=2\eta kT\frac{1}{\pi}\frac{\sin\Omega(\tau-s)}{\tau-s}
+\tag{3.24}\label{eq:3.24}
+\end{equation}
+となり、$\Omega\to\infty$ とすれば\eqref{eq:3.21}に近づく。言い換えれば、特徴的な時間 $\Omega^{-1}$ よりもはるかに長い時間に着目するとき、\eqref{eq:3.21}が再現される。これは、この場合には\eqref{eq:3.23}の低周波数での振る舞いが重要であることを意味する。この事実は Brownian 運動の古典論と整合している。なぜなら、\eqref{eq:3.21}が成り立つのは、熱浴の特徴的な緩和時間よりも長い時間を考える場合に限られるからである。
+
+\eqref{eq:3.10}を
+\begin{equation}
+\hbar\alpha_R(\tau-s)=\frac{\hbar}{\pi}\int_0^\infty
+\mathrm d\omega\,\chi''_{FF}(\omega)
+\coth\frac{\hbar\omega}{2kT}\cos\omega(\tau-s)
+\tag{3.25}\label{eq:3.25}
+\end{equation}
+と書けば、さらに少し議論を進められる。ここでは
+\begin{equation}
+\chi''_{FF}(\omega)=\sum_i\frac{\pi C_i^2}{2m\omega_i}
+\delta(\omega-\omega_i)
+\tag{3.26}\label{eq:3.26}
+\end{equation}
+と定義した。これにより、$\hbar\alpha_R(\tau-s)$ を、異なる時刻におけるある演算子 $\widetilde F(t)$ の時間相関関数とみなすことができる。したがって、
+\begin{equation}
+\hbar\alpha_R(\tau-s)=
+\tfrac12\langle\{\widetilde F(\tau),\widetilde F(s)\}\rangle
+-\langle\widetilde F(\tau)\rangle\langle\widetilde F(s)\rangle
+\tag{3.27}\label{eq:3.27}
+\end{equation}
+と定義すれば、古典極限で $\widetilde F(t)$ が古典的な揺動力 $F(t)$ になる限り、この極限で\eqref{eq:3.21}が再現される。式\eqref{eq:3.25}はよく知られた揺動散逸定理である\cite{ref24}。
+
+% Source PDF p.13 (printed p.599).
+\eqref{eq:3.25}と\eqref{eq:3.26}を用いる利点は、\eqref{eq:3.21}を再現する適切な振動子分布を見いだせるだけでなく、$\chi''_{FF}(\omega)$ の和則を用いて、その分布に対する補正も求められることである。もちろん、これらの補正が重要になるのは、系の短時間の振る舞いに着目するときに限られる\cite{ref24}。
+
+縮約密度演算子の伝播関数の最終的な形を得るには、先に述べた指数中の付加的な虚部を求める必要がある。この段階では、振動子分布はすでに\eqref{eq:3.23}によって定まっているので、それは非常に簡単である。この式を\eqref{eq:3.11}に代入すると、
+\begin{equation}
+\alpha_I(\tau-s)=\frac{\eta}{2\pi}\frac{\mathrm d}{\mathrm d(\tau-s)}
+\int_{-\Omega}^{\Omega}\cos\omega(\tau-s)\,\mathrm d\omega
+\tag{3.28}\label{eq:3.28}
+\end{equation}
+を得る。これは $\Omega\to\infty$ のとき
+\begin{equation}
+\alpha_I(\tau-s)=\eta\frac{\mathrm d}{\mathrm d(\tau-s)}\delta(\tau-s)
+\tag{3.29}\label{eq:3.29}
+\end{equation}
+に近づく。最後に、\eqref{eq:3.25}と\eqref{eq:3.28}を\eqref{eq:3.9}に用いると、
+\begin{equation}
+\begin{aligned}
+J(x,y,t;x',y',0)
+={}&\iint\mathcal D x\,\mathcal D y\,
+\exp\biggl\{\frac{\mathrm i}{\hbar}\biggl(
+S_A[x]-S_A[y]\\
+&-\int_0^t\!\mathrm d\tau\int_0^\tau\!\mathrm ds\,
+\eta[x(\tau)-y(\tau)]
+\frac{\mathrm d}{\mathrm d(\tau-s)}\delta(\tau-s)[x(s)+y(s)]
+\biggr)\biggr\}\\
+&\times\exp\biggl\{-\frac{1}{\hbar}\int_0^\Omega
+\frac{\eta\omega}{\pi}\coth\frac{\hbar\omega}{2kT}\,
+\mathrm d\omega\int_0^t\!\mathrm d\tau\int_0^\tau\!\mathrm ds\,
+[x(\tau)-y(\tau)]\\
+&\hspace{9em}\times\cos\omega(\tau-s)[x(s)-y(s)]\biggr\}
+\end{aligned}
+\tag{3.30}\label{eq:3.30}
+\end{equation}
+となる。この式は、デルタ関数の微分を含む項を部分積分することで、さらに簡単にできる。計算は直接的であり、結果は
+\begin{equation}
+\begin{aligned}
+&\int_0^t\!\mathrm d\tau\int_0^\tau\!\mathrm ds\,
+\eta[x(\tau)-y(\tau)]\frac{\mathrm d}{\mathrm d(\tau-s)}
+\delta(\tau-s)[x(s)+y(s)]\\
+&\quad=-\int_0^t\eta[x^2(\tau)-y^2(\tau)]\delta(0)\,\mathrm d\tau\\
+&\qquad\quad+\frac{\eta}{2}\int_0^t
+[x(\tau)\dot x(\tau)+x(\tau)\dot y(\tau)
+-y(\tau)\dot x(\tau)-y(\tau)\dot y(\tau)]\,\mathrm d\tau
+\end{aligned}
+\tag{3.31}\label{eq:3.31}
+\end{equation}
+となる。
+
+% Source PDF p.14 (printed p.600).
+一見すると、$\delta(0)$ による発散が気になるだろう。しかし、この項の解釈には注意が必要である。これは $\Omega\to\infty$ のときの式\eqref{eq:3.28}から生じたものであることを思い出すとよい。したがって、
+\begin{equation}
+\delta(0)=\lim_{\Omega\to\infty}
+\left.\frac{\sin\Omega(\tau-s)}{\pi(\tau-s)}\right|_{\tau=s}
+=\lim_{\Omega\to\infty}\frac{\Omega}{\pi}
+\tag{3.32}\label{eq:3.32}
+\end{equation}
+と書ける。\eqref{eq:3.31}から分かるように、$\delta(0)$ は減衰定数 $\eta$ と掛け合わされて現れるので、積 $\eta\delta(0)$ は実際には
+\begin{equation}
+\eta\delta(0)=\lim_{\Omega\to\infty}\frac{\eta\Omega}{\pi}
+\tag{3.33}\label{eq:3.33}
+\end{equation}
+である。
+
+これは非常に微妙な点である。一見すると、$\Omega\to\infty$ のときこの式は当然発散すると言うべきだろう。一方、この主張に対して、極限 $\Omega\to\infty$ の意味は、Brownian 粒子の運動の特徴的な周波数よりも $\Omega$ をはるかに大きくとることなのだ、と反論することもできる。したがって、$\eta$ と $\Omega$ の関係によっては、積 $\eta\Omega$ が有限になると期待できる（$\eta$ が本当に現象論的な減衰定数であるならば）。しかし、この議論にも批判の余地はある。
+
+何が起こるかをより形式的に調べるには、\eqref{eq:3.23}の両辺を積分すればよい。熱浴中に $N$ 個の振動子があり、$C(\omega)=C$ が定数であると仮定すると、\eqref{eq:3.33}の右辺は
+\begin{equation}
+\frac{\eta\Omega}{\pi}=\frac{3NC^2}{2m\Omega^2}
+\tag{3.34}\label{eq:3.34}
+\end{equation}
+と表せる。この式では $N$ と $\Omega$ がともに無限大に近づく。したがって、$\eta\Omega$ が発散するかどうかは $N\Omega^{-2}$ に依存する。$\Omega\propto N^{1/2}$ となる振動子集団を模型として採用すれば、\eqref{eq:3.34}は明らかに収束する。
+
+しかし、$\alpha_I(\tau-s)$ を含む積分を評価した後で初めて大きな $\Omega$ の極限を調べれば、これらの議論はすべて避けられる。そうすると、\eqref{eq:3.31}の右辺の第1積分は
+\begin{equation}
+\begin{aligned}
+-\frac{\eta\Omega}{\pi}\int_0^t[x^2(\tau)-y^2(\tau)]\,\mathrm d\tau
++\frac{\eta[x(0)+y(0)]}{\pi}
+\int_0^t\frac{\sin\Omega\tau}{\tau}[x(\tau)-y(\tau)]\,\mathrm d\tau
+\end{aligned}
+\tag{3.35}\label{eq:3.35}
+\end{equation}
+となる。ここでは $\delta(\tau-s)$ を適切に $(1/\pi)\sin[\Omega(\tau-s)]/(\tau-s)$ で置き換えた。大きな $\Omega$ の極限は、時間 $t\approx\omega^{-1}\gg\Omega^{-1}$ に着目しているという事実を反映しているにすぎない。その結果、\eqref{eq:3.35}の第2項は $\frac12\eta[x^2(0)-y^2(0)]$ となり、これは明らかに第1項よりもはるかに小さい。この結果により、極限 $\Omega\to\infty$ をとることなく、\eqref{eq:3.31}において $\eta\delta(0)$ を $\eta\Omega/\pi$ で置き換えることができる。周波数シフト（後述の定義\eqref{eq:3.37}を参照）に関する詳しい考察については、本論文の第4節および文献\cite{ref21}を参照されたい。
+
+% Source PDF p.15 (printed p.601).
+緩和定数 $\gamma$ を
+\begin{equation}
+\gamma\equiv\eta/2M
+\tag{3.36}\label{eq:3.36}
+\end{equation}
+と定義し、周波数シフト $\Delta\omega$ を
+\begin{equation}
+(\Delta\omega)^2\equiv\frac{4\gamma\Omega}{\pi}
+\tag{3.37}\label{eq:3.37}
+\end{equation}
+と定義すると、最終的に\eqref{eq:3.30}は
+\begin{equation}
+\begin{aligned}
+J(x,y,t;x',y',0)
+={}&\iint\mathcal D x\,\mathcal D y\,
+\exp\biggl\{\frac{\mathrm i}{\hbar}\biggl(
+S_R[x]-S_R[y]\\
+&\hspace{4em}-M\gamma\int_0^t
+(x\dot x-y\dot y+x\dot y-y\dot x)\,\mathrm d\tau\biggr)\biggr\}\\
+&\times\exp\biggl\{-\frac{1}{\hbar}\frac{2M\gamma}{\pi}
+\int_0^\Omega\!\mathrm d\omega\,\omega\coth\frac{\hbar\omega}{2kT}
+\int_0^t\!\mathrm d\tau\int_0^\tau\!\mathrm ds\,
+[x(\tau)-y(\tau)]\\
+&\hspace{9em}\times\cos\omega(\tau-s)[x(s)-y(s)]\biggr\}
+\end{aligned}
+\tag{3.38}\label{eq:3.38}
+\end{equation}
+と書ける。ここでは、繰り込まれた作用 $S_R$ を
+\begin{equation}
+S_R=\int_0^t\bigl[\tfrac12 M\dot x^2-v(x)\bigr]\,\mathrm d\tau
++\int_0^t\tfrac12 M(\Delta\omega)^2x^2\,\mathrm d\tau
+\tag{3.39}\label{eq:3.39}
+\end{equation}
+で導入した。
+
+言い換えると、$S_R$ は、周波数 $\Delta\omega$ の調和項を差し引くことによってポテンシャル $v(x)$ を繰り込んだ作用である。以後、これを繰り込まれたポテンシャル $v_R(x)$ と呼ぶ。$v(x)=\frac12 M\omega^2x^2$（単純調和振動子）の場合には、繰り込まれた周波数 $\omega_R$ も $\omega_R^2\equiv\omega^2-(\Delta\omega)^2$ で定義する。粒子が感じるこのような有効ポテンシャルは、粒子を熱浴に結合すると一般に生じ得る\cite{ref17}。ここでは、環境に用いた模型のために、非常に簡単な形をとっている。
+
+ここで、われわれの式\eqref{eq:3.38}と、これまでに導かれた他の式との関連をいくつか強調しておきたい。まず、この式の指数の虚部が、Morse と Feshbach\cite{ref25}の提案した二変数の作用に非常によく似ていることに注意しよう。簡単のため $v_R(x)=0$ とし、この指数の虚部を $S_{\mathrm{eff}}$ と呼ぶと、
+\begin{equation}
+S_{\mathrm{eff}}=\int_0^t\bigl[\tfrac12 M\dot x^2-\tfrac12 M\dot y^2
+-M\gamma(x\dot x-y\dot y+x\dot y-y\dot x)\bigr]\,\mathrm d\tau
+\tag{3.40}\label{eq:3.40}
+\end{equation}
+となる。元の変数を $\pi/4$ 回転して得られる新しい変数の組 $\{\bar x,\bar y\}$ を定義すると、
+
+% Source PDF p.16 (printed p.602).
+\begin{equation}
+S_{\mathrm{eff}}=\int_0^t\left[M\dot{\bar x}\dot{\bar y}
+-\frac{\eta}{2}(\bar x\dot{\bar y}-\bar y\dot{\bar x})\right]\mathrm d\tau
++\eta\bigl(\bar x(t)\bar y(t)-\bar x(0)\bar y(0)\bigr)
+\tag{3.41}\label{eq:3.41}
+\end{equation}
+を得る。ここでは、Morse と Feshbach の Lagrangian が、時間について積分された形で自然に現れる。したがって、われわれの式\eqref{eq:3.38}は、その Lagrangian を正しく解釈する手掛かりを与えている。変数 $\bar x$ と $\bar y$（または $x$ と $y$）を、互いに相互作用する二つの異なる系を表すものと考えることはできない。これらは、時間を順方向および逆方向に進む、結合した経路を表す。この二つの経路は、$\widetilde\rho(x,y,t)$ の時間発展を記述するために必要である。熱浴との一般的な相互作用に対するこれらの経路の結合の図式展開は、Kjeldysh 形式\cite{ref26}を用いて文献\cite{ref17}で行われている。
+
+数年前、Nemes と Piza\cite{ref27}は、Morse と Feshbach の Lagrangian に基づいて、量子力学における減衰を扱う現象論的理論を構築した。そこでは $\bar y$ を非物理的な変数とみなし、それについてトレースをとっている。この手続きは非常に興味深いが、最終的には、長時間で波束の幅が凍結するという、線形応答理論に反する結果に至っている。
+
+われわれの議論により近い文脈で、Papadopoulos\cite{ref28}は\eqref{eq:3.38}に非常によく似た式を導いた。しかし、両者の式には二つの大きな違いがある。第一の違いは\eqref{eq:3.38}の実指数に関するもので、彼は周波数 $\omega$ の調和振動子の場合に、それを
+\begin{equation}
+\text{（実指数）}=-\frac{1}{\hbar^2}M\gamma\hbar\omega
+\coth\frac{\hbar\omega}{2kT}\int_0^t[x(\tau)-y(\tau)]^2\,\mathrm d\tau
+\tag{3.42}\label{eq:3.42}
+\end{equation}
+と書いている。これは、われわれの式の特殊な場合であることが示せる。この点は後に第6節で詳しく論じる。第二の違いは、彼の式には\eqref{eq:3.38}の虚指数にある $\gamma$ に依存する項がないことである。その種の項の最終的な効果を説明するため、彼は時間に陽に依存する減衰をその場しのぎで導入している。しかし、$\gamma$ に依存する項は微視的な計算から自然に生じるので、そのような導入はまったく不要であるとわれわれは考える。
+
+\sectionlink{速度への結合}
+\label{sec:4}
+全 Lagrangian が
+\begin{equation}
+L(x,\dot x,\boldsymbol q,\dot{\boldsymbol q})
+=\tfrac12 M\dot x^2-v(x)+x\sum_i e_i\dot q_i
++\sum_i\tfrac12 m\dot q_i^2-\sum_i\tfrac12 m\omega_i^2q_i^2
+\tag{4.1}\label{eq:4.1}
+\end{equation}
+で与えられるように、熱浴に結合した粒子の運動を調べたいとしよう。
+
+% Source PDF p.17 (printed p.603).
+この式がこれまで扱ってきたものと異なるのは、結合項だけである（\eqref{eq:3.4}と\eqref{eq:4.1}を比較せよ）。
+
+したがって、少なくとも直接には、前節の結果をこの新しい模型に適用することはできない。これから示すのは、\eqref{eq:4.1}を、座標に結合する非常によく似た Lagrangian へ変換できるということである。
+
+この問題を克服するため、次の新しい座標の組を導入しよう。
+\begin{equation}
+y_i=m\dot q_i+e_i x
+\tag{4.2}\label{eq:4.2}
+\end{equation}
+$L(x,\dot x,\boldsymbol y,\dot{\boldsymbol y})$ と書いて Euler--Lagrange 方程式を用いても、\eqref{eq:4.1}から得られる正しい運動方程式は再現されない。これは、$L$ が変換\eqref{eq:4.2}の下で不変ではないことを意味する。新しい変数の組における正しい Lagrangian が
+\begin{equation}
+\begin{aligned}
+\widetilde L(x,\dot x,\boldsymbol y,\dot{\boldsymbol y})
+={}&\tfrac12 M\dot x^2-v(x)-\sum_i\frac{e_i^2x^2}{2m}
++\sum_i\frac{e_i y_i x}{m}\\
+&+\tfrac12\sum_i\frac{\dot y_i^2}{m\omega_i^2}
+-\tfrac12\sum_i\frac{y_i^2}{m}
+\end{aligned}
+\tag{4.3}\label{eq:4.3}
+\end{equation}
+となることは、非常に簡単な計算で確かめられる。さらに変数 $R_i$ を
+\begin{equation}
+R_i\equiv\frac{y_i}{m\omega_i}
+\tag{4.4}\label{eq:4.4}
+\end{equation}
+で定義すれば、\eqref{eq:4.3}を
+\begin{equation}
+\begin{aligned}
+\widetilde L(x,\dot x,\boldsymbol R,\dot{\boldsymbol R})
+={}&\tfrac12 M\dot x^2-v(x)-\sum_i\frac{C_i^2x^2}{2m\omega_i^2}
++\sum_i C_i xR_i\\
+&+\sum_i\tfrac12 m\dot R_i^2-\sum_i\tfrac12 m\omega_i^2R_i^2
+\end{aligned}
+\tag{4.5}\label{eq:4.5}
+\end{equation}
+と書き直せる。ここで $C_i\equiv e_i\omega_i$ であり、これは前節で用いた Lagrangian とまったく同じ形である。ここでの違いは、変換\eqref{eq:4.2}によって裸のポテンシャル $v(x)$ に新たな二次の項が導入されたことである。したがって、新しいポテンシャルは
+\begin{equation}
+\bar v(x)=v(x)+\sum_i\frac{C_i^2}{2m\omega_i^2}x^2
+\tag{4.6}\label{eq:4.6}
+\end{equation}
+となる。
+
+これで、以前と同じように議論を進められる。問題は第3節のものに帰着された。縮約密度演算子の伝播関数は、再び式\eqref{eq:3.38}で与えられる。ここで注目すべきなのは、繰り込まれたポテンシャル $\bar v_R(x)$ の形であり、これは
+\begin{equation}
+\bar v_R(x)=\bar v(x)-\tfrac12 M(\Delta\omega)^2x^2
+\tag{4.7}\label{eq:4.7}
+\end{equation}
+と書ける。
+
+周波数シフト $\Delta\omega$ は式\eqref{eq:3.37}で定義されているが、それを得る際には、すでに特定の振動子分布を仮定していた。$\alpha_I(\tau-s)$ を、より一般的な式\eqref{eq:3.11}で与えられるものとして、\eqref{eq:3.28}から\eqref{eq:3.31}までの手順をたどれば、より一般的に議論できる。その場合、$\Delta\omega$ は
+
+% Source PDF p.18 (printed p.604).
+\begin{equation}
+M(\Delta\omega)^2
+=\left.2\sum_i\frac{C_i^2}{2m\omega_i^2}
+\cos\omega_i(\tau-s)\right|_{\tau=s}
+=2\sum_i\frac{C_i^2}{2m\omega_i^2}
+\tag{4.8}\label{eq:4.8}
+\end{equation}
+を満たす。分布\eqref{eq:3.23}が成り立つと仮定すれば、これは明らかに\eqref{eq:3.37}に帰着する。\eqref{eq:4.8}を用いる利点は、$\Delta\omega$ に依存する補正ポテンシャルが、\eqref{eq:4.6}で加わった部分を正確に打ち消すことを示せる点にある。さらに、この事実は、用いている振動子分布にまったく依存しない。したがって、\eqref{eq:4.1}で提案した模型については、繰り込まれたポテンシャルは裸のポテンシャルと同じであると言える。すなわち、
+\begin{equation}
+\bar v_R(x)=v(x)
+\tag{4.9}\label{eq:4.9}
+\end{equation}
+である。
+
+この節で論じた一見するとかなり抽象的な点の物理的な意味は、環境に散逸的に結合しているすべての系が、その結合による周波数シフト（またはポテンシャルの繰り込み）を必ずしも受けるわけではない、という結論にある。この点は、LCR 回路および類似の系の量子化においてある程度重要であり（実際、この点を理解しなかったために、最近の文献で不要な混乱が生じた）、文献\cite{ref21}でさらに論じられている。
+
+\sectionlink{Fokker--Planck 方程式}
+\label{sec:5}
+前の二つの節で、ある特定の性質を持つ熱浴と相互作用する粒子の縮約密度演算子について、伝播関数の式を導いた。また、古典極限では、\eqref{eq:3.38}の実指数因子が、Brownian 粒子に作用する確率的な力の特性汎関数に帰着することも示した。同時に、被積分関数の付加的な虚部、すなわち\eqref{eq:3.38}の $x\dot x$ などを含む項にも、明確な形を与えた。ここで答えたい問題は、この項が意味を持つかどうかである。言い換えれば、この項は粒子の古典的な Brownian 運動と両立するのだろうか。この問いに答えるため、まず半古典領域における縮約密度演算子の運動方程式を調べる。この方程式を古典的な Brownian 粒子のものと比較するには、位相空間表示で書く方法を見つけなければならない。古典物理における位相空間分布の運動方程式と比較するには、それしか方法がない。Hilbert 空間から位相空間への変換は、いわゆる Wigner 分布関数\cite{ref29}を用いて行える。Wigner の形式に関する最近の総説については、文献\cite{ref03,ref30}を参照されたい。
+
+$2kT\gtrsim\hbar\Omega\gg\hbar\omega_R$ の場合に\eqref{eq:3.38}を書き下すことから始めよう。ここで $\Omega$ は熱浴の振動子のカットオフ周波数である。すると、
+
+% Source PDF p.19 (printed p.605).
+\begin{equation}
+\begin{aligned}
+J(x,y,t;x',y',0)
+={}&\iint\mathcal D x\,\mathcal D y\,
+\exp\biggl\{\frac{\mathrm i}{\hbar}\biggl(
+S_R[x]-S_R[y]\\
+&\hspace{4em}-M\gamma\int_0^t
+[x\dot x-y\dot y+x\dot y-y\dot x]\,\mathrm d\tau\biggr)\biggr\}\\
+&\times\exp\biggl\{-\frac{2M\gamma kT}{\hbar^2}
+\int_0^t[x(\tau)-y(\tau)]^2\,\mathrm d\tau\biggr\}
+\end{aligned}
+\tag{5.1}\label{eq:5.1}
+\end{equation}
+となる。
+
+ここで、この高温における量子力学的な伝播関数の意味を気にするべきであろう。もちろん、古典極限 $kT\gg\hbar\omega_R$ を考えながら、その量子的な形をなお保つならば、この式は無意味になる。しかし、これは古典極限における縮約密度演算子の運動方程式を得るための最初の段階であることを、忘れてはならない。後に、この近似と整合するよう適切な措置をとる。\eqref{eq:3.38}ではなく\eqref{eq:5.1}を用いるのは、これから現れる式を簡単にするためだけである。
+
+これから行うのは、Feynman が文献\cite{ref22}で汎関数積分形式から Schrödinger 方程式を導いたときの手続きに従うことである。ここでの問題は、その問題と類似している。文献\cite{ref22}では、波動関数の伝播関数から $\psi$ の運動方程式を得るのに対し、ここでは、密度演算子の伝播関数から $\widetilde\rho$ のマスター方程式を得ようとしている。
+
+時刻 $t$ での縮約密度演算子が分かっていて、$\epsilon\to0$ として、$t+\epsilon$ での値を求めたいとしよう。\eqref{eq:2.14}から、
+\begin{equation}
+\widetilde\rho(x,y,t+\epsilon)=\iint\mathrm dx'\,\mathrm dy'\,
+J(x,y,t+\epsilon;x',y',t)\widetilde\rho(x',y',t)
+\tag{5.2}\label{eq:5.2}
+\end{equation}
+となる。
+
+\eqref{eq:5.2}の伝播関数 $J$ は、$\epsilon$ が小さいとき、非常に簡単な形に書ける。そのためには、短い時間間隔において、任意の正則な経路は直線で近似できることを思い出すだけでよい。したがって、短い時間間隔内の経路に関する汎関数積分は、被積分関数の値に規格化定数を掛けたものに等しいと置ける\cite{ref22}。すると、
+\begin{equation}
+\begin{aligned}
+J(x,y,t+\epsilon;x',y',t)
+\approx{}&\frac{1}{A^2}\exp\biggl\{\frac{\mathrm i}{\hbar}\biggl[
+\int_t^{t+\epsilon}\bigl(\tfrac12 M\dot x^2-v_R(x)\bigr)\,\mathrm d\tau\\
+&-\int_t^{t+\epsilon}\bigl(\tfrac12 M\dot y^2-v_R(y)\bigr)\,\mathrm d\tau\\
+&-\int_t^{t+\epsilon}M\gamma
+[x\dot x-y\dot y+y\dot x-x\dot y]\,\mathrm d\tau\biggr]\biggr\}\\
+&\times\exp\biggl\{-\frac{1}{\hbar^2}\int_t^{t+\epsilon}
+2M\gamma kT[x-y]^2\,\mathrm d\tau\biggr\}
+\end{aligned}
+\tag{5.3}\label{eq:5.3}
+\end{equation}
+となる。
+
+% Source PDF p.20 (printed p.606).
+上に現れたすべての積分も、$\epsilon\to0$ のとき近似できる。$x(t+\epsilon)=x$、$y(t+\epsilon)=y$、$x(t)=x'$、$y(t)=y'$ とし、$J$ の式で
+\begin{equation}
+\dot x\approx\frac{x-x'}{\epsilon},\qquad
+\dot y\approx\frac{y-y'}{\epsilon},\qquad
+\int_t^{t+\epsilon}f(x(\tau))\,\mathrm d\tau
+\approx\epsilon f\!\left(\frac{x+x'}{2}\right)
+\tag{5.4}\label{eq:5.4}
+\end{equation}
+を用いると、式\eqref{eq:5.2}は
+\begin{equation}
+\begin{aligned}
+\widetilde\rho(x,y,t+\epsilon)
+={}&\int_{-\infty}^{\infty}\!\int_{-\infty}^{\infty}
+\mathrm d\beta_1\,\mathrm d\beta_2\,
+\exp\biggl\{\frac{\mathrm iM\beta_1^2}{2\epsilon\hbar}
+-\frac{\mathrm i\epsilon}{\hbar}v_R\!\left(x-\frac{\beta_1}{2}\right)
+-\frac{\mathrm iM\beta_2^2}{2\epsilon\hbar}\\
+&+\frac{\mathrm i\epsilon}{\hbar}v_R\!\left(y-\frac{\beta_2}{2}\right)
+-\frac{\mathrm iM\gamma}{\hbar}\left(x-\frac{\beta_1}{2}\right)\beta_2
++\frac{\mathrm iM\gamma}{\hbar}\left(y-\frac{\beta_2}{2}\right)\beta_1\\
+&-\frac{\mathrm iM\gamma}{\hbar}\left(x-\frac{\beta_1}{2}\right)\beta_1
++\frac{\mathrm iM\gamma}{\hbar}\left(y-\frac{\beta_2}{2}\right)\beta_2
+-\frac{2M\gamma kT\epsilon}{\hbar^2}(x-y)^2\\
+&-\frac{2M\gamma kT\epsilon}{\hbar^2}(x-y)(\beta_1-\beta_2)
+-\frac{M\gamma kT\epsilon}{\hbar^2}(\beta_1-\beta_2)^2\biggr\}\\
+&\times\widetilde\rho(x-\beta_1,y-\beta_2,t)
+\end{aligned}
+\tag{5.5}\label{eq:5.5}
+\end{equation}
+となる。ここで $x-x'\equiv\beta_1$ および $y-y'\equiv\beta_2$ とした。これで、$\epsilon\to0$ の極限で\eqref{eq:5.5}を評価できる。
+
+まず、\eqref{eq:5.5}の積分には、指数が $\epsilon^{-1}$ に比例する、非常に速く振動する二つの項が含まれていることに注意しなければならない。主要な寄与が、$\beta_1$ と $\beta_2$ が非常に小さいところから来ることは明らかである。そうでなければ、因子 $\exp[(\mathrm iM/2\epsilon\hbar)(\beta_1^2-\beta_2^2)]$ は激しく振動し、\eqref{eq:5.5}に有限の寄与を与えない。より具体的には、
+\begin{equation}
+\beta_1\approx\beta_2\approx\left(\frac{\epsilon\hbar}{M}\right)^{1/2}
+\tag{5.6}\label{eq:5.6}
+\end{equation}
+という領域が必要である。この領域では、両方の指数因子の位相が1の程度だけ変化するからである。ここで、有限の $\beta$ を持つ領域 $\beta_1\approx\beta_2\approx\beta$ からの寄与はどうなるのか、と疑問に思うかもしれない。この場合、二つの指数因子を合わせた位相が1の程度だけ変化するのは、
+\begin{equation}
+\Delta\beta\equiv\beta_1-\beta_2\approx\frac{\epsilon\hbar}{M\beta}
+\tag{5.7}\label{eq:5.7}
+\end{equation}
+のときである。
+
+ここで、新しい変数 $\beta'_1\equiv\beta_1-\gamma(x-y)\epsilon$ および $\beta'_2\equiv\beta_2+\gamma(x-y)\epsilon$ を定義し、\eqref{eq:5.5}の指数因子を $\epsilon$ について展開すると、$\epsilon\to0$ の極限で、被積分関数中の $\Delta\beta$ に依存するすべての項が $\mathcal O(\epsilon^2)$ になることを容易に示せる。これは、領域 $\beta_1\approx\beta_2\approx\beta$ を無視してよいことを意味する。
+
+次に行う手順は簡単である。$\beta_1\approx\beta_2\approx0$ のまわりで $\widetilde\rho(x-\beta_1,y-\beta_2,t)$ を展開し、積の中で $\mathcal O(\epsilon)$ の項をすべて残そう。$\beta'_1$ および $\beta'_2$ で表すと、次のようになる。
+% The final lead-in includes the first sentence continuation on source p.21.

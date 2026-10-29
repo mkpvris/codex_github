@@ -1,0 +1,874 @@
+{
+  "created": "1997-05-13T09:00:00+09:00",
+  "updated": "2023-12-13T21:07:41.8955+09:00",
+  "revision_id": 112,
+  "uuid": "bb669ce3-847f-47c5-af67-484399358591",
+  "metadata": {
+    "publication_info": [
+      {
+        "year": 1983,
+        "page_end": "616",
+        "page_start": "587",
+        "journal_title": "Physica A",
+        "journal_volume": "121"
+      }
+    ],
+    "citation_count": 1487,
+    "citation_count_without_self_citations": 1481,
+    "dois": [
+      {
+        "value": "10.1016/0378-4371(83)90013-4"
+      }
+    ],
+    "titles": [
+      {
+        "title": "Path integral approach to quantum Brownian motion"
+      }
+    ],
+    "$schema": "https://inspirehep.net/schemas/records/hep.json",
+    "authors": [
+      {
+        "uuid": "9a2e3d81-d974-418b-84df-f6737a57eb6f",
+        "record": {
+          "$ref": "https://inspirehep.net/api/authors/1066035"
+        },
+        "full_name": "Caldeira, A.O.",
+        "affiliations": [
+          {
+            "value": "Campinas State U.",
+            "record": {
+              "$ref": "https://inspirehep.net/api/institutions/902714"
+            }
+          }
+        ],
+        "signature_block": "CALDARa",
+        "raw_affiliations": [
+          {
+            "value": "Instituto de Física “Gleb Wataghin”, Universidade Estadual de Campinas, 13.100 Campinas - SP - Brazil"
+          }
+        ]
+      },
+      {
+        "uuid": "25386458-d0a0-4ba5-9d58-3d14e4ae79c0",
+        "record": {
+          "$ref": "https://inspirehep.net/api/authors/1019446"
+        },
+        "full_name": "Leggett, A.J.",
+        "affiliations": [
+          {
+            "value": "Sussex U.",
+            "record": {
+              "$ref": "https://inspirehep.net/api/institutions/903239"
+            }
+          }
+        ],
+        "signature_block": "LAGATa",
+        "curated_relation": true,
+        "raw_affiliations": [
+          {
+            "value": "School of Mathematical and Physical Sciences, University of Sussex, Brighton BN 1 9QH, Sussex, UK"
+          }
+        ]
+      }
+    ],
+    "curated": true,
+    "texkeys": [
+      "Caldeira:1982iu"
+    ],
+    "citeable": true,
+    "refereed": true,
+    "abstracts": [
+      {
+        "value": "We apply the influence-functional method of Feynman and Vernon to the study of Brownian motion at arbitrary temperature. By choosing a specific model for the dissipative interaction of the system of interest with its environment, we are able to evaluate the influence functional in closed form and express it in terms of a few parameters such as the phenomenological viscosity coefficient. We show that in the limit h→0 the results obtained from the influence functional formalism reduce to the classical Fokker-Planck equation. In the case of a simple harmonic oscillator with arbitrarily strong damping and at arbitrary temperature, we obtain an explicit expression for the time evolution of the complete density matrix ϱ( x, x′, t ) when the system starts in a particular kind of pure state. We compare our results with those of other approaches to the problem of dissipation in quantum mechanics.",
+        "source": "Elsevier"
+      }
+    ],
+    "references": [
+      {
+        "reference": {
+          "label": "1",
+          "title": {
+            "title": "Selected Papers on Noise and Stochastic Processes"
+          },
+          "authors": [
+            {
+              "full_name": "Wax, Nelson",
+              "inspire_role": "editor"
+            }
+          ],
+          "imprint": {
+            "publisher": "New York: Dover"
+          },
+          "publication_info": {
+            "year": 1954
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/2736257"
+        },
+        "reference": {
+          "label": "2",
+          "authors": [
+            {
+              "full_name": "Kanai, E."
+            }
+          ],
+          "publication_info": {
+            "year": 1948,
+            "artid": "440",
+            "page_start": "440",
+            "journal_title": "Prog.Theor.Phys.",
+            "journal_volume": "3"
+          }
+        }
+      },
+      {
+        "reference": {
+          "label": "3",
+          "title": {
+            "title": "Quantum Statistical Properties of Radiation"
+          },
+          "authors": [
+            {
+              "full_name": "Louisell, W.H."
+            }
+          ],
+          "imprint": {
+            "publisher": "Wiley New York"
+          },
+          "publication_info": {
+            "year": 1973
+          }
+        }
+      },
+      {
+        "reference": {
+          "label": "4",
+          "authors": [
+            {
+              "full_name": "Kostin, M.D."
+            }
+          ],
+          "publication_info": {
+            "year": 1972,
+            "artid": "3589",
+            "page_start": "3589",
+            "journal_title": "J.Chem.Phys.",
+            "journal_volume": "57"
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/50055"
+        },
+        "reference": {
+          "label": "5",
+          "authors": [
+            {
+              "full_name": "Nelson, E."
+            }
+          ],
+          "publication_info": {
+            "year": 1966,
+            "artid": "1079",
+            "page_start": "1079",
+            "journal_title": "Phys.Rev.",
+            "journal_volume": "150"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/129193"
+        },
+        "reference": {
+          "label": "6",
+          "authors": [
+            {
+              "full_name": "Yasue, K."
+            }
+          ],
+          "publication_info": {
+            "year": 1978,
+            "artid": "479",
+            "page_start": "479",
+            "journal_title": "Annals Phys.",
+            "journal_volume": "114"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "label": "7",
+          "authors": [
+            {
+              "full_name": "Dekker, H."
+            }
+          ],
+          "publication_info": {
+            "year": 1977,
+            "artid": "2116",
+            "page_start": "2116",
+            "journal_title": "Phys.Rev.A",
+            "journal_volume": "16"
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/47054"
+        },
+        "reference": {
+          "label": "8",
+          "authors": [
+            {
+              "full_name": "Senitzky, I.R."
+            }
+          ],
+          "publication_info": {
+            "year": 1960,
+            "artid": "670",
+            "page_start": "670",
+            "journal_title": "Phys.Rev.",
+            "journal_volume": "119"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/2736253"
+        },
+        "reference": {
+          "label": "9",
+          "authors": [
+            {
+              "full_name": "Mori, H."
+            }
+          ],
+          "publication_info": {
+            "year": 1965,
+            "artid": "423",
+            "page_start": "423",
+            "journal_title": "Prog.Theor.Phys.",
+            "journal_volume": "33"
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/2735417"
+        },
+        "reference": {
+          "label": "10",
+          "authors": [
+            {
+              "full_name": "Zwanzig, R."
+            }
+          ],
+          "publication_info": {
+            "year": 1960,
+            "artid": "1338",
+            "page_start": "1338",
+            "journal_title": "J.Chem.Phys.",
+            "journal_volume": "33"
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/2736294"
+        },
+        "reference": {
+          "label": "11",
+          "authors": [
+            {
+              "full_name": "Nakajima, S."
+            }
+          ],
+          "publication_info": {
+            "year": 1958,
+            "artid": "948",
+            "page_start": "948",
+            "journal_title": "Prog.Theor.Phys.",
+            "journal_volume": "20"
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/107282"
+        },
+        "reference": {
+          "label": "12",
+          "authors": [
+            {
+              "full_name": "Haken, H."
+            }
+          ],
+          "publication_info": {
+            "year": 1975,
+            "artid": "67",
+            "page_start": "67",
+            "journal_title": "Rev.Mod.Phys.",
+            "journal_volume": "47"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "misc": [
+            "Springer Tracts Mod.Phys.,vol.66"
+          ],
+          "label": "13",
+          "authors": [
+            {
+              "full_name": "Haake, F."
+            }
+          ],
+          "publication_info": {
+            "year": 1973
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/163878"
+        },
+        "reference": {
+          "label": "14",
+          "authors": [
+            {
+              "full_name": "Koch, R.H."
+            },
+            {
+              "full_name": "Van Harlingen, D.J."
+            },
+            {
+              "full_name": "Clarke"
+            },
+            {
+              "full_name": "John"
+            }
+          ],
+          "publication_info": {
+            "year": 1980,
+            "artid": "2132",
+            "page_start": "2132",
+            "journal_title": "Phys.Rev.Lett.",
+            "journal_volume": "45"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "label": "15",
+          "authors": [
+            {
+              "full_name": "Benguria, R."
+            },
+            {
+              "full_name": "Kac, M."
+            }
+          ],
+          "publication_info": {
+            "year": 1981,
+            "artid": "1",
+            "page_start": "1",
+            "journal_title": "Phys.Rev.Lett.",
+            "journal_volume": "46"
+          }
+        }
+      },
+      {
+        "reference": {
+          "label": "16",
+          "authors": [
+            {
+              "full_name": "Ford, G.W."
+            },
+            {
+              "full_name": "Kac, M."
+            },
+            {
+              "full_name": "Mazur, P."
+            }
+          ],
+          "publication_info": {
+            "year": 1965,
+            "artid": "504",
+            "page_start": "504",
+            "journal_title": "J.Math.Phys.",
+            "journal_volume": "6"
+          }
+        }
+      },
+      {
+        "reference": {
+          "label": "17",
+          "authors": [
+            {
+              "full_name": "Iche, G."
+            },
+            {
+              "full_name": "Nozieres, P."
+            }
+          ],
+          "publication_info": {
+            "year": 1978,
+            "artid": "485",
+            "page_start": "485",
+            "journal_title": "Physica A",
+            "journal_volume": "91"
+          }
+        }
+      },
+      {
+        "reference": {
+          "label": "18",
+          "title": {
+            "title": "Quantum Theory of Open Systems"
+          },
+          "authors": [
+            {
+              "full_name": "Davies, E.B."
+            }
+          ],
+          "imprint": {
+            "publisher": "Academic Press New York"
+          },
+          "publication_info": {
+            "year": 1976
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/9385"
+        },
+        "reference": {
+          "label": "19",
+          "authors": [
+            {
+              "full_name": "Schwinger, J."
+            }
+          ],
+          "publication_info": {
+            "year": 1961,
+            "artid": "407",
+            "page_start": "407",
+            "journal_title": "J.Math.Phys.",
+            "journal_volume": "2"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "label": "20",
+          "authors": [
+            {
+              "full_name": "Zwanzig, R."
+            }
+          ],
+          "publication_info": {
+            "year": 1973,
+            "artid": "215",
+            "page_start": "215",
+            "journal_title": "J.Statist.Phys.",
+            "journal_volume": "9"
+          }
+        }
+      },
+      {
+        "reference": {
+          "misc": [
+            "to appear in Annals of Physics"
+          ],
+          "label": "21",
+          "authors": [
+            {
+              "full_name": "Caldeira, A.O."
+            },
+            {
+              "full_name": "Leggett, A.J."
+            }
+          ]
+        }
+      },
+      {
+        "reference": {
+          "label": "22",
+          "title": {
+            "title": "Quantum Mechanics and Path Integrals"
+          },
+          "authors": [
+            {
+              "full_name": "Feynman, R.P."
+            },
+            {
+              "full_name": "Hibbs, A.R."
+            }
+          ],
+          "imprint": {
+            "publisher": "McGraw-Hill New York"
+          },
+          "publication_info": {
+            "year": 1965
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/9391"
+        },
+        "reference": {
+          "label": "23",
+          "authors": [
+            {
+              "full_name": "Feynman, R.P."
+            },
+            {
+              "full_name": "Vernon, F.L."
+            }
+          ],
+          "publication_info": {
+            "year": 1963,
+            "artid": "118",
+            "page_start": "118",
+            "journal_title": "Annals Phys.",
+            "journal_volume": "24"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "label": "24",
+          "title": {
+            "title": "Hydrodynamic Fluctuations, Broken Symmetry, and Correlation Functions"
+          },
+          "authors": [
+            {
+              "full_name": "Forster, D."
+            }
+          ],
+          "imprint": {
+            "publisher": "Benjamin New York"
+          },
+          "publication_info": {
+            "year": 1975
+          }
+        }
+      },
+      {
+        "reference": {
+          "misc": [
+            "sect. 3.2"
+          ],
+          "label": "25",
+          "title": {
+            "title": "Methods of Theoretical Physics"
+          },
+          "authors": [
+            {
+              "full_name": "Morse, P.M."
+            },
+            {
+              "full_name": "Feshbach, H."
+            }
+          ],
+          "imprint": {
+            "publisher": "McGraw-Hill New York"
+          },
+          "publication_info": {
+            "year": 1953
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/3567"
+        },
+        "reference": {
+          "label": "26",
+          "authors": [
+            {
+              "full_name": "Kjeldysh, L.V."
+            }
+          ],
+          "publication_info": {
+            "year": 1965,
+            "artid": "1018",
+            "page_start": "1018",
+            "journal_title": "Sov.Phys.JETP",
+            "journal_volume": "20"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "label": "27",
+          "authors": [
+            {
+              "full_name": "Nemes, M.C."
+            },
+            {
+              "full_name": "de Toledo Piza, A.F.R."
+            }
+          ],
+          "publication_info": {
+            "year": 1977,
+            "artid": "261",
+            "page_start": "261",
+            "journal_title": "Revista Brasileira de Física",
+            "journal_volume": "7"
+          }
+        }
+      },
+      {
+        "reference": {
+          "label": "28",
+          "authors": [
+            {
+              "full_name": "Papadopoulos, G.J."
+            }
+          ],
+          "publication_info": {
+            "year": 1968,
+            "artid": "413",
+            "page_start": "413",
+            "journal_title": "J.Phys.A",
+            "journal_volume": "1"
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/3198"
+        },
+        "reference": {
+          "label": "29",
+          "authors": [
+            {
+              "full_name": "Wigner, E."
+            }
+          ],
+          "publication_info": {
+            "year": 1932,
+            "artid": "749",
+            "page_start": "749",
+            "journal_title": "Phys.Rev.",
+            "journal_volume": "40"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "label": "30",
+          "authors": [
+            {
+              "full_name": "Berry, M.V."
+            }
+          ],
+          "publication_info": {
+            "year": 1977,
+            "artid": "237",
+            "page_start": "237",
+            "journal_title": "Phil.Trans.of the Roy.Soc.of London",
+            "journal_volume": "287"
+          }
+        }
+      },
+      {
+        "reference": {
+          "misc": [
+            "unpublished",
+            "Ph.D.Thesis"
+          ],
+          "label": "31",
+          "authors": [
+            {
+              "full_name": "Caldeira, A.O."
+            }
+          ],
+          "publication_info": {
+            "year": 1980
+          }
+        }
+      },
+      {
+        "reference": {
+          "label": "32",
+          "title": {
+            "title": "Statistical Physics"
+          },
+          "authors": [
+            {
+              "full_name": "Landau, L.D."
+            },
+            {
+              "full_name": "Lifshitz, E.M."
+            }
+          ],
+          "imprint": {
+            "publisher": "London: Pergamon"
+          },
+          "publication_info": {
+            "year": 1969
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/134075"
+        },
+        "reference": {
+          "label": "33",
+          "authors": [
+            {
+              "full_name": "Tikochinsky, Y."
+            }
+          ],
+          "publication_info": {
+            "year": 1978,
+            "artid": "888",
+            "page_start": "888",
+            "journal_title": "J.Math.Phys.",
+            "journal_volume": "19"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "label": "34",
+          "authors": [
+            {
+              "full_name": "Feshbach, H."
+            },
+            {
+              "full_name": "Tikochinsky, Y."
+            }
+          ],
+          "publication_info": {
+            "year": 1977,
+            "artid": "44",
+            "page_start": "44",
+            "journal_title": "A Festschrift for I.I.Rabi",
+            "journal_volume": "vol.38"
+          }
+        }
+      },
+      {
+        "reference": {
+          "label": "35",
+          "authors": [
+            {
+              "full_name": "Dekker, H."
+            }
+          ],
+          "publication_info": {
+            "year": 1981,
+            "artid": "1",
+            "page_start": "1",
+            "journal_title": "Phys.Rept.",
+            "journal_volume": "80"
+          }
+        }
+      },
+      {
+        "reference": {
+          "label": "36",
+          "authors": [
+            {
+              "full_name": "Dekker, H."
+            }
+          ],
+          "publication_info": {
+            "year": 1979,
+            "artid": "311",
+            "page_start": "311",
+            "journal_title": "Physica A",
+            "journal_volume": "95"
+          }
+        }
+      },
+      {
+        "record": {
+          "$ref": "https://inspirehep.net/api/literature/73218"
+        },
+        "reference": {
+          "label": "37",
+          "authors": [
+            {
+              "full_name": "Agarwal, G.S."
+            }
+          ],
+          "publication_info": {
+            "year": 1971,
+            "artid": "739",
+            "page_start": "739",
+            "journal_title": "Phys.Rev.A",
+            "journal_volume": "4"
+          }
+        },
+        "curated_relation": false
+      },
+      {
+        "reference": {
+          "label": "38",
+          "authors": [
+            {
+              "full_name": "Svin'in, I.R."
+            }
+          ],
+          "publication_info": {
+            "year": 1976,
+            "artid": "270",
+            "page_start": "270",
+            "journal_title": "Teor.Mat.Fiz.",
+            "journal_volume": "27"
+          }
+        }
+      }
+    ],
+    "document_type": [
+      "article"
+    ],
+    "preprint_date": "1982-08",
+    "control_number": 176411,
+    "legacy_version": "20200601201435.0",
+    "number_of_pages": 30,
+    "legacy_creation_date": "1997-05-13",
+    "external_system_identifiers": [
+      {
+        "value": "SPIRES-589632",
+        "schema": "SPIRES"
+      },
+      {
+        "value": "726154",
+        "schema": "MSNET"
+      }
+    ]
+  },
+  "links": {
+    "bibtex": "https://inspirehep.net/api/literature/176411?format=bibtex",
+    "latex-eu": "https://inspirehep.net/api/literature/176411?format=latex-eu",
+    "latex-us": "https://inspirehep.net/api/literature/176411?format=latex-us",
+    "json": "https://inspirehep.net/api/literature/176411?format=json",
+    "json-expanded": "https://inspirehep.net/api/literature/176411?format=json-expanded",
+    "cv": "https://inspirehep.net/api/literature/176411?format=cv",
+    "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A176411"
+  },
+  "id": "176411"
+}
